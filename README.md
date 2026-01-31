@@ -12,8 +12,17 @@ Official website for the MATE Desktop Environment: https://mate-desktop.org
 ### Prerequisites
 
 - Hugo extended version >= 0.146.0
+- Go >= 1.21 (required for Hugo Modules)
 
 ### Local Development
+
+Install dependencies:
+
+```bash
+hugo mod get
+```
+
+Start the development server:
 
 ```bash
 hugo serve
@@ -28,6 +37,27 @@ hugo
 ```
 
 Output will be in the `public/` directory.
+
+### Updating the Theme
+
+To update the Hextra theme to the latest version:
+
+```bash
+hugo mod get -u github.com/imfing/hextra
+```
+
+To update all Hugo modules:
+
+```bash
+hugo mod get -u
+```
+
+After updating, commit the changes to `go.mod` and `go.sum`:
+
+```bash
+git add go.mod go.sum
+git commit -m "Update Hugo modules"
+```
 
 ## Multilingual Support
 
