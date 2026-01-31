@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>MATE 1.24 发布 – MATE 桌面环境</title>
+  <meta name="description" content="经过大约一年的开发，MATE Desktop 团队终于发布了 MATE 1.24。非常感谢帮助实现这一目标的所有贡献者。
+{ width=50% }
+MATE 1.24 的新特性 此版本包含许多新功能，Bug 修复和常规改进。 一些最重要的亮点包括：
+我们再次这样做，一旦用户启动会话，MATE桌面环境将比以前更易于使用。 您要隐藏应用程序吗？ 现在，您可以设置要在启动时显示的应用程序。 Engrampa 现在支持一些其它格式，并且其中一些密码和Unicode字符支持得到了修复。 MATE之眼 现在支持Wayland，并且增加了对嵌入式颜色配置文件的支持。 * 缩略图生成器已在多处进行了修复。 * 添加了对 webp 文件的支持。 窗口管理器 marco 进行了很多更改： 我们带来了一堆过去的窗口装饰，以满足您的怀旧情怀。 最后添加了不可见的调整大小边框。无需再为寻找不到边框而费劲了！ 所有窗口控件（最小、最大、关闭按钮）现在都以 HiDPI 呈现。 Alt&#43;Tab 和工作区切换弹出窗口已_完全_重新设计。现在，它们以漂亮的OSD样式呈现，更具可配置性，并且可以响应键盘箭头。 现在，使用键盘平铺窗口允许您循环浏览不同的窗口大小。您不再只受限于一半的屏幕。 系统监视器 面板小程序现在支持 NVMe 驱动器。 计算器现在支持使用“pi”或“π”。 计算器 现在支持使用“ pi”或“π”。 一些支持预定义物理常数的修复程序。 控制中心现在在HiDPI显示器上正确显示其图标。 控制中心 现在可以在HiDPI显示屏上正确显示其图标。 添加了一个全新的 时间和日期管理器 应用程序。 首选应用程序应用程序在可访问性方面得到了改进，并更好地支持与IM客户端的集成。 改进了 首选应用程序 应用程序，以提高可访问性，并更好地支持与IM客户端的集成。 说到图标，我们自己的主题中的network manager小程序图标已经完全重新设计，现在可以在HiDPI显示器上使用。 如果您是那种不喜欢在忙碌、演讲或观看电影时被打扰的人，您会很高兴知道通知守护程序现在支持请勿打扰模式。 如果您是那种在忙碌、演讲或看电影时不喜欢被打扰的人，您会很高兴知道 通知守护程序 现在支持了“请勿打扰” 模式。 对 Wayland 兼容性的支持已大为改善。 状态图标（又称通知区，或系统托盘）支持HiDPI显示。 万达鱼改头换面，现在你可以尽情享受她的荣耀了。 万达鱼 得到了一个改造，现在你可以享受她完全的 HiDPI 支持。 整个面板及其核心小程序的各种可访问性改进。 如果你的系统不支持systemd您可能有兴趣知道我们已经添加了对[elogind]的支持(https://github.com/elogind/elogind)到伴侣屏幕保护程序和伴侣会话。 我们还添加了一个全新的MATE磁盘映像装入器实用程序。 菜单编辑器Mozo现在支持撤消和重做操作。 Pluma 插件现已完全切换到 Python 3。 Pluma 不再需要羡慕其他复杂编辑器的任何内容，因为它现在可以显示格式标记。 i18n：所有应用已从 intltools 迁移到 gettext。 MATE Desktop 1.24 的组件可通过以下链接下载：" /><link rel="canonical" href="http://localhost:1313/zh-cn/blog/2020-02-10-mate-1-24-released/" itemprop="url" />
+
+<meta property="og:title" content="MATE 1.24 发布">
+<meta
+  property="og:description"
+  content="
+    
+      经过大约一年的开发，MATE Desktop 团队终于发布了 MATE 1.24。非常感谢帮助实现这一目标的所有贡献者。
+{ width=50% }
+MATE 1.24 的新特性
+    此版本包含许多新功能，Bug 修复和常规改进。 一些最重要的亮点包括：
+
+我们再次这样做，一旦用户启动会话，MATE桌面环境将比以前更易于使用。 您要隐藏应用程序吗？ 现在，您可以设置要在启动时显示的应用程序。
+Engrampa 现在支持一些其它格式，并且其中一些密码和Unicode字符支持得到了修复。
+MATE之眼 现在支持Wayland，并且增加了对嵌入式颜色配置文件的支持。
+
+    * 缩略图生成器已在多处进行了修复。
+    * 添加了对 webp 文件的支持。
+
+
+窗口管理器 marco 进行了很多更改：
+
+我们带来了一堆过去的窗口装饰，以满足您的怀旧情怀。
+最后添加了不可见的调整大小边框。无需再为寻找不到边框而费劲了！
+所有窗口控件（最小、最大、关闭按钮）现在都以 HiDPI 呈现。
+Alt&#43;Tab 和工作区切换弹出窗口已_完全_重新设计。现在，它们以漂亮的OSD样式呈现，更具可配置性，并且可以响应键盘箭头。
+现在，使用键盘平铺窗口允许您循环浏览不同的窗口大小。您不再只受限于一半的屏幕。
+
+
+系统监视器 面板小程序现在支持 NVMe 驱动器。
+计算器现在支持使用“pi”或“π”。
+
+计算器 现在支持使用“ pi”或“π”。
+一些支持预定义物理常数的修复程序。
+
+
+控制中心现在在HiDPI显示器上正确显示其图标。
+控制中心 现在可以在HiDPI显示屏上正确显示其图标。
+添加了一个全新的 时间和日期管理器 应用程序。
+首选应用程序应用程序在可访问性方面得到了改进，并更好地支持与IM客户端的集成。
+改进了 首选应用程序 应用程序，以提高可访问性，并更好地支持与IM客户端的集成。
+说到图标，我们自己的主题中的network manager小程序图标已经完全重新设计，现在可以在HiDPI显示器上使用。
+如果您是那种不喜欢在忙碌、演讲或观看电影时被打扰的人，您会很高兴知道通知守护程序现在支持请勿打扰模式。
+如果您是那种在忙碌、演讲或看电影时不喜欢被打扰的人，您会很高兴知道 通知守护程序 现在支持了“请勿打扰” 模式。
+
+对 Wayland 兼容性的支持已大为改善。
+状态图标（又称通知区，或系统托盘）支持HiDPI显示。
+万达鱼改头换面，现在你可以尽情享受她的荣耀了。
+万达鱼 得到了一个改造，现在你可以享受她完全的 HiDPI 支持。
+整个面板及其核心小程序的各种可访问性改进。
+
+
+如果你的系统不支持systemd您可能有兴趣知道我们已经添加了对[elogind]的支持(https://github.com/elogind/elogind)到伴侣屏幕保护程序和伴侣会话。
+我们还添加了一个全新的MATE磁盘映像装入器实用程序。
+菜单编辑器Mozo现在支持撤消和重做操作。
+Pluma 插件现已完全切换到 Python 3。
+Pluma 不再需要羡慕其他复杂编辑器的任何内容，因为它现在可以显示格式标记。
+i18n：所有应用已从 intltools 迁移到 gettext。
+
+MATE Desktop 1.24 的组件可通过以下链接下载：
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="http://localhost:1313/zh-cn/blog/2020-02-10-mate-1-24-released/"><meta property="article:section" content="blog">
+
+<meta
+  property="article:published_time"
+  content="2020-02-10T00:00:00+00:00">
+
+
+<meta
+  property="article:modified_time"
+  content="2020-02-10T00:00:00+00:00">
+
+
+
+  <meta itemprop="name" content="MATE 1.24 发布">
+  <meta itemprop="description" content="经过大约一年的开发，MATE Desktop 团队终于发布了 MATE 1.24。非常感谢帮助实现这一目标的所有贡献者。
+{ width=50% }
+MATE 1.24 的新特性 此版本包含许多新功能，Bug 修复和常规改进。 一些最重要的亮点包括：
+我们再次这样做，一旦用户启动会话，MATE桌面环境将比以前更易于使用。 您要隐藏应用程序吗？ 现在，您可以设置要在启动时显示的应用程序。 Engrampa 现在支持一些其它格式，并且其中一些密码和Unicode字符支持得到了修复。 MATE之眼 现在支持Wayland，并且增加了对嵌入式颜色配置文件的支持。 * 缩略图生成器已在多处进行了修复。 * 添加了对 webp 文件的支持。 窗口管理器 marco 进行了很多更改： 我们带来了一堆过去的窗口装饰，以满足您的怀旧情怀。 最后添加了不可见的调整大小边框。无需再为寻找不到边框而费劲了！ 所有窗口控件（最小、最大、关闭按钮）现在都以 HiDPI 呈现。 Alt&#43;Tab 和工作区切换弹出窗口已_完全_重新设计。现在，它们以漂亮的OSD样式呈现，更具可配置性，并且可以响应键盘箭头。 现在，使用键盘平铺窗口允许您循环浏览不同的窗口大小。您不再只受限于一半的屏幕。 系统监视器 面板小程序现在支持 NVMe 驱动器。 计算器现在支持使用“pi”或“π”。 计算器 现在支持使用“ pi”或“π”。 一些支持预定义物理常数的修复程序。 控制中心现在在HiDPI显示器上正确显示其图标。 控制中心 现在可以在HiDPI显示屏上正确显示其图标。 添加了一个全新的 时间和日期管理器 应用程序。 首选应用程序应用程序在可访问性方面得到了改进，并更好地支持与IM客户端的集成。 改进了 首选应用程序 应用程序，以提高可访问性，并更好地支持与IM客户端的集成。 说到图标，我们自己的主题中的network manager小程序图标已经完全重新设计，现在可以在HiDPI显示器上使用。 如果您是那种不喜欢在忙碌、演讲或观看电影时被打扰的人，您会很高兴知道通知守护程序现在支持请勿打扰模式。 如果您是那种在忙碌、演讲或看电影时不喜欢被打扰的人，您会很高兴知道 通知守护程序 现在支持了“请勿打扰” 模式。 对 Wayland 兼容性的支持已大为改善。 状态图标（又称通知区，或系统托盘）支持HiDPI显示。 万达鱼改头换面，现在你可以尽情享受她的荣耀了。 万达鱼 得到了一个改造，现在你可以享受她完全的 HiDPI 支持。 整个面板及其核心小程序的各种可访问性改进。 如果你的系统不支持systemd您可能有兴趣知道我们已经添加了对[elogind]的支持(https://github.com/elogind/elogind)到伴侣屏幕保护程序和伴侣会话。 我们还添加了一个全新的MATE磁盘映像装入器实用程序。 菜单编辑器Mozo现在支持撤消和重做操作。 Pluma 插件现已完全切换到 Python 3。 Pluma 不再需要羡慕其他复杂编辑器的任何内容，因为它现在可以显示格式标记。 i18n：所有应用已从 intltools 迁移到 gettext。 MATE Desktop 1.24 的组件可通过以下链接下载：">
+  <meta itemprop="datePublished" content="2020-02-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2020-02-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1250">
+  <meta itemprop="keywords" content="Releases,发布">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MATE 1.24 发布">
+  <meta name="twitter:description" content="经过大约一年的开发，MATE Desktop 团队终于发布了 MATE 1.24。非常感谢帮助实现这一目标的所有贡献者。
+{ width=50% }
+MATE 1.24 的新特性 此版本包含许多新功能，Bug 修复和常规改进。 一些最重要的亮点包括：
+我们再次这样做，一旦用户启动会话，MATE桌面环境将比以前更易于使用。 您要隐藏应用程序吗？ 现在，您可以设置要在启动时显示的应用程序。 Engrampa 现在支持一些其它格式，并且其中一些密码和Unicode字符支持得到了修复。 MATE之眼 现在支持Wayland，并且增加了对嵌入式颜色配置文件的支持。 * 缩略图生成器已在多处进行了修复。 * 添加了对 webp 文件的支持。 窗口管理器 marco 进行了很多更改： 我们带来了一堆过去的窗口装饰，以满足您的怀旧情怀。 最后添加了不可见的调整大小边框。无需再为寻找不到边框而费劲了！ 所有窗口控件（最小、最大、关闭按钮）现在都以 HiDPI 呈现。 Alt&#43;Tab 和工作区切换弹出窗口已_完全_重新设计。现在，它们以漂亮的OSD样式呈现，更具可配置性，并且可以响应键盘箭头。 现在，使用键盘平铺窗口允许您循环浏览不同的窗口大小。您不再只受限于一半的屏幕。 系统监视器 面板小程序现在支持 NVMe 驱动器。 计算器现在支持使用“pi”或“π”。 计算器 现在支持使用“ pi”或“π”。 一些支持预定义物理常数的修复程序。 控制中心现在在HiDPI显示器上正确显示其图标。 控制中心 现在可以在HiDPI显示屏上正确显示其图标。 添加了一个全新的 时间和日期管理器 应用程序。 首选应用程序应用程序在可访问性方面得到了改进，并更好地支持与IM客户端的集成。 改进了 首选应用程序 应用程序，以提高可访问性，并更好地支持与IM客户端的集成。 说到图标，我们自己的主题中的network manager小程序图标已经完全重新设计，现在可以在HiDPI显示器上使用。 如果您是那种不喜欢在忙碌、演讲或观看电影时被打扰的人，您会很高兴知道通知守护程序现在支持请勿打扰模式。 如果您是那种在忙碌、演讲或看电影时不喜欢被打扰的人，您会很高兴知道 通知守护程序 现在支持了“请勿打扰” 模式。 对 Wayland 兼容性的支持已大为改善。 状态图标（又称通知区，或系统托盘）支持HiDPI显示。 万达鱼改头换面，现在你可以尽情享受她的荣耀了。 万达鱼 得到了一个改造，现在你可以享受她完全的 HiDPI 支持。 整个面板及其核心小程序的各种可访问性改进。 如果你的系统不支持systemd您可能有兴趣知道我们已经添加了对[elogind]的支持(https://github.com/elogind/elogind)到伴侣屏幕保护程序和伴侣会话。 我们还添加了一个全新的MATE磁盘映像装入器实用程序。 菜单编辑器Mozo现在支持撤消和重做操作。 Pluma 插件现已完全切换到 Python 3。 Pluma 不再需要羡慕其他复杂编辑器的任何内容，因为它现在可以显示格式标记。 i18n：所有应用已从 intltools 迁移到 gettext。 MATE Desktop 1.24 的组件可通过以下链接下载：">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
+  ></div>
+
+  <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-end hx:gap-2 hx:h-16 hx:px-6">
+    <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/zh-cn/">
+    <img class="hx:mr-2 hx:block hx:dark:hidden" src="/images/mate.png" alt="Logo" height="40" width="40" />
+    <img class="hx:mr-2 hx:hidden hx:dark:block" src="/images/mate.png" alt="Dark Logo" height="40" width="40" />
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none" title="MATE 桌面环境">MATE 桌面环境</span>
+</a>
+<a
+  title=""
+  href="/zh-cn/download"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Download</span>
+</a><a
+  title=""
+  href="/zh-cn/docs"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Documentation</span>
+</a><a
+  title=""
+  href="/zh-cn/blog"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:font-medium"
+><span class="hx:text-center">Blog</span>
+</a><a
+  title=""
+  href="/zh-cn/about"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">About</span>
+</a><a
+  title=""
+  href="/zh-cn/community"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Community</span>
+</a><div class="hextra-search-wrapper hx:relative hx:md:w-64">
+  <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
+    <input
+      placeholder="搜索文档..."
+      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx:absolute hx:my-1.5 hx:select-none hx:ltr:right-1.5 hx:rtl:left-1.5 hx:h-5 hx:rounded-sm hx:bg-white hx:px-1.5 hx:font-mono hx:text-[10px] hx:font-medium hx:text-gray-500 hx:border hx:border-gray-200 hx:dark:border-gray-100/20 hx:dark:bg-dark/50 hx:contrast-more:border-current hx:contrast-more:text-current hx:contrast-more:dark:border-current hx:items-center hx:gap-1 hx:transition-opacity hx:pointer-events-none hx:hidden hx:sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+          <a class="hx:p-2 hx:text-current" target="_blank" rel="noreferrer" href="https://github.com/mate-desktop" title="GitHub"><svg height=24 fill="currentColor" viewBox="3 3 18 18">
+  <path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path>
+</svg>
+<span class="hx:sr-only">GitHub</span>
+          </a><button type="button" aria-label="Menu" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:hidden hx:xl:block">
+    <div class="hx:px-4 hx:pt-4 hx:md:hidden">
+      <div class="hextra-search-wrapper hx:relative hx:md:w-64">
+  <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
+    <input
+      placeholder="搜索文档..."
+      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx:absolute hx:my-1.5 hx:select-none hx:ltr:right-1.5 hx:rtl:left-1.5 hx:h-5 hx:rounded-sm hx:bg-white hx:px-1.5 hx:font-mono hx:text-[10px] hx:font-medium hx:text-gray-500 hx:border hx:border-gray-200 hx:dark:border-gray-100/20 hx:dark:bg-dark/50 hx:contrast-more:border-current hx:contrast-more:text-current hx:contrast-more:dark:border-current hx:items-center hx:gap-1 hx:transition-opacity hx:pointer-events-none hx:hidden hx:sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+    </div><div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
+      
+      
+          <li class="open"><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/zh-cn/blog/"
+    
+  >Blogs
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
+    </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+    href="/zh-cn/blog/2020-02-10-mate-1-24-released/"
+    
+  >MATE 1.24 发布
+    </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#mate-124-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >MATE 1.24 的新特性</a>
+            </li>
+          <li>
+              <a
+                href="#%e6%9b%b4%e5%a4%9a%e7%bb%86%e8%8a%82"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >更多细节</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/zh-cn/blog/2019-03-18-mate-1-22-released/"
+    
+  >MATE 1.22 发布
+    </a>
+              
+            </li><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/zh-cn/blog/2018-02-07-mate-1-20-released/"
+    
+  >MATE 1.20 发布
+    </a>
+              
+            </li></ul>
+      </div></li>
+    </ul>
+
+    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div></div>
+  
+  
+    <div class="hx:md:hidden hx:justify-end hx:sticky hx:bottom-0 hx:max-h-(--menu-height) hx:bg-white hx:dark:bg-dark hx:mx-4 hx:py-4 hx:shadow-[0_-12px_16px_#fff] hx:flex hx:items-center hx:gap-2 hx:border-gray-200 hx:dark:border-neutral-800 hx:dark:shadow-[0_-12px_16px_#111] hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:shadow-none hx:border-t" data-toggle-animation="show"><div class="hx:flex hx:justify-items-start hx:grow">
+    <button
+      title="切换语言"
+      data-state="closed"
+      data-location=""
+      class="hextra-language-switcher hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:grow"
+      type="button"
+      aria-label="切换语言"
+    >
+      <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>简体中文</span></div>
+    </button>
+    <ul
+      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >English</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/de/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Deutsch</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/es/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Español</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/it/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Italiano</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ja/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >日本語</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/bg/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Български</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ca/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Català</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-cn/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >简体中文<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-tw/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >繁體中文</a>
+        </li>
+      </ul>
+  </div><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="切换主题"
+    data-state="closed"
+    data-location="bottom-right"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="切换主题"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+</div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+  >
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        浅色
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        深色
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        跟随系统
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+  </ul>
+</div></div></aside>
+    
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">此页上</p><ul>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-124-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7">MATE 1.24 的新特性
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#%e6%9b%b4%e5%a4%9a%e7%bb%86%e8%8a%82">更多细节
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#atril">atril
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#caja">caja
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#caja-dropbox">caja-dropbox
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#caja-extensions">caja-extensions
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#engrampa">engrampa
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#eom">eom
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#libmatekbd">libmatekbd
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#libmatemixer">libmatemixer
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#libmateweather">libmateweather
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#marco">marco
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-applets">mate-applets
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#%e4%bc%b4%e4%be%a3%e8%83%8c%e6%99%af">伴侣背景
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-calc">mate-calc
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-common">mate-common
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-control-center">mate-control-center
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-desktop">mate-desktop
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-icon-theme">mate-icon-theme
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#%e9%85%8d%e5%af%b9%e6%8c%87%e7%a4%ba%e5%99%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f">配对指示器小程序
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-media">mate-media
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-menus">mate-menus
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-netbook">mate-netbook
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-notification-daemon">mate-notification-daemon
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-panel">mate-panel
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-polkit">mate-polkit
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-power-manager">mate-power-manager
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-screensaver">mate-screensaver
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-sensors-applet">mate-sensors-applet
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-session-manager">mate-session-manager
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-settings-daemon">mate-settings-daemon
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-system-monitor">mate-system-monitor
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-terminal">mate-terminal
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-user-guide">mate-user-guide
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-user-share">mate-user-share
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-utils">mate-utils
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mozo">mozo
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#pluma">pluma
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#python-caja">python-caja
+        </a>
+      </li></ul>
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
+        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>返回顶部</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/zh-cn/blog/">Blogs</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">MATE 1.24 发布</div>
+  </div>
+
+        
+        <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mt-2">
+          <h1 class="hx:mb-0 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">MATE 1.24 发布</h1>
+          
+        </div>
+        
+        <div class="hx:mt-4 hx:mb-16 hx:text-gray-500 hx:dark:text-gray-400 hx:text-sm hx:flex hx:items-center hx:flex-wrap hx:gap-y-2"><span class="hx:mr-1">February 10, 2020</span><span class="hx:mx-1">·</span><a
+                  
+                  class="hx:group hx:inline-flex hx:items-center hx:text-current hx:gap-x-1.5 hx:mx-1"
+                  title="Wolfgang Ulbrich"
+                ><div class="hx:group-hover:underline">Wolfgang Ulbrich</div>
+                </a></div>
+        <div class="content">
+          <p>经过大约一年的开发，MATE Desktop 团队终于发布了 MATE 1.24。非常感谢帮助实现这一目标的所有贡献者。</p>
+<p><img src="/images/blog/about-mate-1.24.zh_cn.png" alt="MATE 关于对话框"  loading="lazy" />{ width=50% }</p>
+<h2>MATE 1.24 的新特性<span class="hx:absolute hx:-mt-20" id="mate-124-的新特性"></span>
+    <a href="#mate-124-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>此版本包含许多新功能，Bug 修复和常规改进。 一些最重要的亮点包括：</p>
+<ul>
+<li>我们再次这样做，一旦用户启动会话，MATE桌面环境将比以前更易于使用。 您要隐藏应用程序吗？ 现在，您可以设置要在启动时显示的应用程序。</li>
+<li><strong>Engrampa</strong> 现在支持一些其它格式，并且其中一些密码和Unicode字符支持得到了修复。</li>
+<li><strong>MATE之眼</strong> 现在支持<a href="https://wayland.freedesktop.org/"target="_blank" rel="noopener">Wayland</a>，并且增加了对嵌入式颜色配置文件的支持。
+<ul>
+<li>    * 缩略图生成器已在多处进行了修复。</li>
+<li>    * 添加了对 webp 文件的支持。</li>
+</ul>
+</li>
+<li>窗口管理器 <strong>marco</strong> 进行了很多更改：
+<ul>
+<li>我们带来了一堆过去的窗口装饰，以满足您的怀旧情怀。</li>
+<li>最后添加了不可见的调整大小边框。无需再为寻找不到边框而费劲了！</li>
+<li>所有窗口控件（最小、最大、关闭按钮）现在都以 HiDPI 呈现。</li>
+<li>Alt+Tab 和工作区切换弹出窗口已_完全_重新设计。现在，它们以漂亮的OSD样式呈现，更具可配置性，并且可以响应键盘箭头。</li>
+<li>现在，使用键盘平铺窗口允许您循环浏览不同的窗口大小。您不再只受限于一半的屏幕。</li>
+</ul>
+</li>
+<li><strong>系统监视器</strong> 面板小程序现在支持 NVMe 驱动器。</li>
+<li><strong>计算器</strong>现在支持使用“pi”或“π”。
+<ul>
+<li><strong>计算器</strong> 现在支持使用“ pi”或“π”。</li>
+<li>一些支持预定义物理常数的修复程序。</li>
+</ul>
+</li>
+<li><strong>控制中心</strong>现在在HiDPI显示器上正确显示其图标。</li>
+<li><strong>控制中心</strong> 现在可以在HiDPI显示屏上正确显示其图标。</li>
+<li>添加了一个全新的 <strong>时间和日期管理器</strong> 应用程序。</li>
+<li><strong>首选应用程序</strong>应用程序在可访问性方面得到了改进，并更好地支持与IM客户端的集成。</li>
+<li>改进了 <strong>首选应用程序</strong> 应用程序，以提高可访问性，并更好地支持与IM客户端的集成。</li>
+<li>说到图标，我们自己的主题中的network manager小程序图标已经完全重新设计，现在可以在HiDPI显示器上使用。</li>
+<li>如果您是那种不喜欢在忙碌、演讲或观看电影时被打扰的人，您会很高兴知道<strong>通知守护程序</strong>现在支持请勿打扰模式。</li>
+<li>如果您是那种在忙碌、演讲或看电影时不喜欢被打扰的人，您会很高兴知道 <strong>通知守护程序</strong> 现在支持了“请勿打扰” 模式。
+<ul>
+<li>对 <a href="https//wayland.freedesktop.org/"target="_blank" rel="noopener">Wayland</a> 兼容性的支持已大为改善。</li>
+<li>状态图标（又称<strong>通知区</strong>，或<strong>系统托盘</strong>）支持HiDPI显示。</li>
+<li><strong>万达鱼</strong>改头换面，现在你可以尽情享受她的荣耀了。</li>
+<li><strong>万达鱼</strong> 得到了一个改造，现在你可以享受她完全的 HiDPI 支持。</li>
+<li>整个面板及其核心小程序的各种可访问性改进。</li>
+</ul>
+</li>
+<li>如果你的系统不支持<a href="https://freedesktop.org/wiki/Software/systemd/"target="_blank" rel="noopener">systemd</a>您可能有兴趣知道我们已经添加了对[elogind]的支持(<a href="https://github.com/elogind/elogind"target="_blank" rel="noopener">https://github.com/elogind/elogind</a>)到<strong>伴侣屏幕保护程序</strong>和<strong>伴侣会话</strong>。</li>
+<li>我们还添加了一个全新的<strong>MATE磁盘映像装入器</strong>实用程序。</li>
+<li><strong>菜单编辑器Mozo</strong>现在支持撤消和重做操作。</li>
+<li><strong>Pluma</strong> 插件现已完全切换到 Python 3。</li>
+<li><strong>Pluma</strong> 不再需要羡慕其他复杂编辑器的任何内容，因为它现在可以显示格式标记。</li>
+<li>i18n：所有应用已从 intltools 迁移到 gettext。</li>
+</ul>
+<p>MATE Desktop 1.24 的组件可通过以下链接下载：</p>
+<ul>
+<li><a href="https://pub.mate-desktop.org/releases/1.24/"target="_blank" rel="noopener">https://pub.mate-desktop.org/releases/1.24/</a></li>
+</ul>
+<h2>更多细节<span class="hx:absolute hx:-mt-20" id="更多细节"></span>
+    <a href="#%e6%9b%b4%e5%a4%9a%e7%bb%86%e8%8a%82" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>这里有更多的细节</p>
+<h3>atril<span class="hx:absolute hx:-mt-20" id="atril"></span>
+    <a href="#atril" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复缩放时的高内存消耗</li>
+<li>修复制作缩略图和注释文本时的内存泄漏</li>
+<li>Drag and Drop：在 drag-and-drop操作开始时重置 <code>pressed_button</code>动作</li>
+<li>在菜单项上添加更多加速器</li>
+<li>删除“synctex”库的内部版本，仅使用软件供应商提供的外部版本</li>
+<li>修复希腊用户指南中阻止完成构建目标的错误</li>
+<li>Tiff后端：从TIFFREADRGBAIMAGEORIED解决故障</li>
+<li>Tiff后端：修复Tiff document.c中的缓冲区溢出</li>
+<li>Tiff backend: Fix a buffer overflow in tiff-document.c</li>
+<li>迁移到Python3进行测试</li>
+<li>需要GLib 2.54.0或更新版本</li>
+<li>需要WebKitGTK-4.0 2.6.0或更新版本</li>
+<li>需要Cairo 1.14.0或更新版本</li>
+<li>放弃WebKitGTK-3.0支持</li>
+<li>i18n:从intltools迁移到gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在完成更改日志<a href="https://github.com/mate-desktop/atril/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/atril/commits/master/</a></p>
+<h3>caja<span class="hx:absolute hx:-mt-20" id="caja"></span>
+    <a href="#caja" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>准备好使用GCC10</li>
+<li>fm-properties: 删除mate桌面缩略图帮助器的使用</li>
+<li>不要将文件名连字符</li>
+<li>添加一个新的扩展接口：CajaWidgetViewProviderAPI</li>
+<li>添加新对象：FmWidgetView</li>
+<li>修复翻译人员报告的语法错误</li>
+<li>修复了几个代码解析、Clang Static Analyzer、Cppcheck和GCC报告的弃用警告</li>
+<li>修复在韩国地区移动文件时Caja崩溃的问题</li>
+<li>使用“视图”选项卡中的“显示图标”选项</li>
+<li>添加用于在列表视图中隐藏图标的配置选项</li>
+<li>在几个菜单项上添加缺少的图标</li>
+<li>在列表视图中显示缩略图</li>
+<li>将更多图标渲染为cairo_曲面，以获得更好的HIDPI支持</li>
+<li>重构自定义CSS加载到单独的函数中</li>
+<li>添加对使用gla11y检查UI文件可访问性的支持</li>
+<li>在图标视图标签上恢复透明背景</li>
+<li>为文件的属性和 caja 的首选项窗口添加带有鼠标滚轮的滚动选项卡</li>
+<li>桌面：默认情况下在桌面项目上强制没有边框</li>
+<li>将 URL 前缀从 http 更改为 https</li>
+<li>caja-progress-info：向文件传输对话框添加工具提示</li>
+<li>在文件传输操作对话框中为按钮添加可访问的名称</li>
+<li>eel：删除日期和时间功能</li>
+<li>caja-file：修复不完整的文件替换对话框</li>
+<li>caja-file-operations：添加带有误报警告的评论</li>
+<li>修复多处内存泄漏</li>
+<li>i18n：允许翻译图形界面的更多元素</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/caja/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/caja/commits/master/</a> 完成更新日志</p>
+<h3>caja-dropbox<span class="hx:absolute hx:-mt-20" id="caja-dropbox"></span>
+    <a href="#caja-dropbox" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>使用 CAJA_EXTENSION_DIR_SYS 保存并显示系统 caja 扩展目录</li>
+<li>显示 caja-extension-dir 的完整路径</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/caja-dropbox/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/caja-dropbox/commits/master/</a> 完成更新日志</p>
+<h3>caja-extensions<span class="hx:absolute hx:-mt-20" id="caja-extensions"></span>
+    <a href="#caja-extensions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>caja-wallpaper-extension：修复内存泄漏</li>
+<li>image-converter: 从头开始重写 caja-image-resize.ui 修复弃用</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>使用 gupnp 1.0 或 1.2 版构建。</li>
+<li>image-converter：不要在上下文菜单中使用不存在的图标</li>
+<li>ii18n 图像转换器：允许选择角度下拉列表的翻译</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/caja-extensions/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/caja-extensions/commits/master/</a> 完成更新日志</p>
+<h3>engrampa<span class="hx:absolute hx:-mt-20" id="engrampa"></span>
+    <a href="#engrampa" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>准备使用 gcc 10</li>
+<li>fr-command-rpm：使用 rpm 软件包附带的 rpm2cpio 二进制文件</li>
+<li>将源 rpm 添加到支持的 MIME 类型</li>
+<li>7z：不要设置工作目录，即使用临时目录</li>
+<li>修复本地化的暂停 UI 逻辑</li>
+<li>Zstandard：更新 MIME 类型</li>
+<li>Ar：更新 MIME 类型并添加幻数</li>
+<li>LHA：修复互联网媒体类型</li>
+<li>dlg-package-installer：在错误对话框按钮中显示图标</li>
+<li>unace 2.5：不在文件列表中显示存档摘要</li>
+<li>java-utils：在读取包名之前删除空格</li>
+<li>添加 zcompress 支持</li>
+<li>fr-command-unarchiver：必要时询问密码</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>修复多个内存泄漏</li>
+<li>将手册升级到 docbook 5.0</li>
+<li>支持 .udeb 包格式</li>
+<li>在命令行上显示应用程序版本</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/engrampa/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/engrampa/commits/master/</a> 完成更新日志</p>
+<h3>eom<span class="hx:absolute hx:-mt-20" id="eom"></span>
+    <a href="#eom" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>为 webp 文件添加 eom-thumbnailer</li>
+<li>thumbnail:移除使用mate-desktop-thumbnail 帮助</li>
+<li>启用 Wayland 支持</li>
+<li>EomPrintPreview：修复 HiDPI 显示器上的预览缩略图</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>允许使用 Alpha 通道对图像进行颜色校正</li>
+<li>需要 GLib 2.52 或更新版本</li>
+<li>store：将当前目录下的任意图片文件添加到store</li>
+<li>将手册升级到 docbook 5.0</li>
+<li>使用持久页面设置</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/eom/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/eom/commits/master/</a> 完成更新日志</p>
+<h3>libmatekbd<span class="hx:absolute hx:-mt-20" id="libmatekbd"></span>
+    <a href="#libmatekbd" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>使用 UI gresources  文件</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/libmatekbd/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/libmatekbd/commits/master/</a> 完成更新日志</p>
+<h3>libmatemixer<span class="hx:absolute hx:-mt-20" id="libmatemixer"></span>
+    <a href="#libmatemixer" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/libmatemixer/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/libmatemixer/commits/master/</a> 完成更新日志</p>
+<h3>libmateweather<span class="hx:absolute hx:-mt-20" id="libmateweather"></span>
+    <a href="#libmateweather" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Locations：添加 Lleida – Alguaire 机场气象站</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>locations:更改俄罗斯顿河畔罗斯托夫的气象站</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/libmateweather/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/libmateweather/commits/master/</a> 完成更新日志</p>
+<h3>marco<span class="hx:absolute hx:-mt-20" id="marco"></span>
+    <a href="#marco" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>主题：修复所有主题的窗口控件 hidpi 渲染。</li>
+<li>tabpopup：完成返工</li>
+<li>window: 添加可选的尺寸</li>
+<li>添加更多窗口装饰主题：添加 Atlanta、Esco、Gorilla、Motif、Raleigh</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>修复未使用合成时在 frame.c 中使用 RBGA 视觉的问题</li>
+<li>修复了将窗口移动到边缘以与 CSD 客户端一起使用的问题。</li>
+<li>添加对meson构建系统的支持</li>
+<li>使 alt+tab 最大列数可配置并考虑窗口标签宽度</li>
+<li>添加隐形边框</li>
+<li>主题：从最大化平铺时修复窗口状态</li>
+<li>constraints：修复 meta_window_constrain() 中的内存泄漏</li>
+<li>alt+tab 弹出窗口：返工</li>
+<li>允许在 alt+tab 弹出窗口中使用向上/向下箭头键</li>
+<li>修复几个内存泄漏</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/marco/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/marco/commits/master/</a> 完成更新日志</p>
+<h3>mate-applets<span class="hx:absolute hx:-mt-20" id="mate-applets"></span>
+    <a href="#mate-applets" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>准备使用 gcc 10</li>
+<li>使用 ${datadir}/dbus-1/system.d 作为默认的 D-Bus 配置目录</li>
+<li>使 dbus 目录可配置</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>使 cpufreq 构建独立于内核头文件版本。</li>
+<li>geyes：避免内存泄漏</li>
+<li>multiload: 支持NVME 驱动</li>
+<li>使命令小程序异步运行命令</li>
+<li>在关于对话框中制作可翻译的文档</li>
+<li>在关于对话框中制作可翻译的版权信息</li>
+<li>确保关于对话框标题的正确翻译</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-applet/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-applet/commits/master/</a> 完成更新日志</p>
+<h3>伴侣背景<span class="hx:absolute hx:-mt-20" id="伴侣背景"></span>
+    <a href="#%e4%bc%b4%e4%be%a3%e8%83%8c%e6%99%af" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>启用对ninja构建系统的支持</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-backgrounds/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-backgrounds/commits/master/</a> 完成变更日志</p>
+<h3>mate-calc<span class="hx:absolute hx:-mt-20" id="mate-calc"></span>
+    <a href="#mate-calc" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复复数的科学表示</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>mp-equation：更新物理常数中的值以与数学按钮中的工具提示值匹配</li>
+<li>将单位工具提示添加到物理常数</li>
+<li>不要专注于点击</li>
+<li>mp-equation：添加预定义的物理常数</li>
+<li>将资源用于 UI 文件</li>
+<li>mp: 修正计算结果 ln (e ^ (i * π))</li>
+<li>以科学记数法显示小数</li>
+<li>mate-calc：修复内存泄漏</li>
+<li>除了“π”之外，添加对“pi”的支持</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-calc/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-calc/commits/master/</a> 完成更新日志</p>
+<h3>mate-common<span class="hx:absolute hx:-mt-20" id="mate-common"></span>
+    <a href="#mate-common" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>更新 MATE_CXX_WARNINGS 宏</li>
+<li>在 MATE_DEBUG_CHECK 中设置编译器调试标志</li>
+<li>检查 AX_APPEND_FLAG 和 AX_CHECK_COMPILE_FLAG 是否可用</li>
+<li>更新 mate-compiler-flags 宏</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-common/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-common/commits/master/</a> 完成更新日志</p>
+<h3>mate-control-center<span class="hx:absolute hx:-mt-20" id="mate-control-center"></span>
+    <a href="#mate-control-center" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>在系统数据目录中搜索系统主题</li>
+<li>display: 启用帮助按钮</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>HIDPI 显示器的几个图标修复</li>
+<li>字体查看器：将字体/集合添加到支持的 mimetypes</li>
+<li>font-viewer：添加 font/ttf 和 font/otf mime 类型</li>
+<li>在几个应用程序中修复内存泄漏</li>
+<li>鼠标：添加对加速配置文件的支持</li>
+<li>at-properties：从 dbus-glib 迁移到 gdbus</li>
+<li>支持 lightdm-gtk-greeter-settings 作为登录首选项程序</li>
+<li>删除 libXxf86 依赖项</li>
+<li>为 gla11y 使用 python3</li>
+<li>在多个 capplets 中添加带有鼠标滚轮的滚动选项卡</li>
+<li>添加对检查可访问性的支持 洋葱 使用 gla11y 的文件</li>
+<li>添加新的时间管理应用程序</li>
+<li>将即时通讯键绑定添加到 mate-keybinding-properties</li>
+<li>默认应用程序：为默认信使应用程序添加小部件</li>
+<li>capplets：为 UI 文件使用 gresources</li>
+<li>从 dbus-glib 迁移到 GDBus</li>
+<li>使用系统数据目录定位键绑定</li>
+<li>默认应用程序：改进 UI 可访问性</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-control-center/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-control-center/commits/master/</a> 完成变更日志</p>
+<h3>mate-desktop<span class="hx:absolute hx:-mt-20" id="mate-desktop"></span>
+    <a href="#mate-desktop" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Drop mate_desktop_thumbnail_scale_down_pixbuf()</li>
+<li>将缩略图的大小增加到 256</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>将剩余的外围架构移至 mate-settings-daemon</li>
+<li>模式：将鼠标模式移动到 mate-settings-daemon</li>
+<li>schemas：为默认信使定义架构</li>
+<li>添加配对语言的测试代码。</li>
+<li>添加对ninja构建系统的支持。</li>
+<li>修复一些内存泄漏</li>
+<li>MateHSV 实现（GtkHSV fork）</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-desktop/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-desktop/commits/master/</a> 完成更新日志</p>
+<h3>mate-icon-theme<span class="hx:absolute hx:-mt-20" id="mate-icon-theme"></span>
+    <a href="#mate-icon-theme" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>为移动网络连接添加状态图标</li>
+<li>Rework volume-status 图标</li>
+<li>添加 VPN 网络状态图标</li>
+<li>更新网络状态图标</li>
+<li>增加 dropbox-status 图标</li>
+<li>增加 mate/256x256/actions/mail-send.png</li>
+<li>修复 mate/22x22/devices/printer.png</li>
+<li>将 22x22px 图标升级到 24x24px 将 1px 添加到边缘</li>
+<li>使用径向渐变（模糊 13.9%，不透明度 73.4%）作为 MATE 标志阴影</li>
+<li>添加缺少的首选项系统时间图标</li>
+<li>在面板中以更好的对比度显示音量状态</li>
+<li>从 paper-sheets.svg 生成 png mimetypes 图标 - Mate 主题</li>
+<li>从源生成preferences-system-time.png</li>
+<li>从源生成 png 图标 - Mate 主题、应用程序、类别和设备</li>
+<li>更新 mate 主题的终端图标</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-icon-theme/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-icon-theme/commits/master/</a> 完成更新日志</p>
+<h3>配对指示器小程序<span class="hx:absolute hx:-mt-20" id="配对指示器小程序"></span>
+    <a href="#%e9%85%8d%e5%af%b9%e6%8c%87%e7%a4%ba%e5%99%a8%e5%b0%8f%e7%a8%8b%e5%ba%8f" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>调整指示器图标的大小以适合面板</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-indicator-applet/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-indicator-applet/commits/master/</a> 完成更新日志</p>
+<h3>mate-media<span class="hx:absolute hx:-mt-20" id="mate-media"></span>
+    <a href="#mate-media" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>gvc 小程序：添加缺少的翻译 (i18n)</li>
+<li>以与媒体键相同的可配置步骤滚动音量</li>
+<li>使用鼠标滚轮添加滚动界面</li>
+<li>允许禁用状态图标或面板小程序</li>
+<li>为输出启用静音菜单项</li>
+<li>添加一个新的真正的面板小程序</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-media/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-media/commits/master/</a> 完成更新日志</p>
+<h3>mate-menus<span class="hx:absolute hx:-mt-20" id="mate-menus"></span>
+    <a href="#mate-menus" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>安装 gir 文件时使用 datadir 和 libdir 变量</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-menus/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-menus/commits/master/</a> 完成更新日志</p>
+<h3>mate-netbook<span class="hx:absolute hx:-mt-20" id="mate-netbook"></span>
+    <a href="#mate-netbook" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>Fix several code analysis, deprecation warnings reported by Clang Static Analyzer, Cppcheck and GCC</li>
+<li>让“show-home-title”功能再次发挥作用</li>
+<li>更改窗口选择器小程序的首选项标签，并添加工具提示</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-netbook/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-netbook/commits/master/</a> 完成更新日志</p>
+<h3>mate-notification-daemon<span class="hx:absolute hx:-mt-20" id="mate-notification-daemon"></span>
+    <a href="#mate-notification-daemon" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>将 gresource 用于 mate-notification-properties.ui</li>
+<li>mate-notification-properties：添加免打扰功能</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-notification-daemon/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-notification-daemon/commits/master/</a> 完成更新日志</p>
+<h3>mate-panel<span class="hx:absolute hx:-mt-20" id="mate-panel"></span>
+    <a href="#mate-panel" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>避免在面板顶层使用双 a11y 描述</li>
+<li>时钟小程序：添加对 ATK 的调用以提供当前显示的时间</li>
+<li>clock applet: Add a call to ATK to provide the current displayed time</li>
+<li>fish：为 Wanda the Fish 使用更高分辨率的图像</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>panel-toplevel：修复扩展垂直面板上的小程序放置</li>
+<li>[clock-applet] 添加鼠标滚轮滚动界面标签</li>
+<li>对 Wayland 支持的更多改进</li>
+<li>使系统托盘仅 X11</li>
+<li>仅制作面板支柱 X11</li>
+<li>准备好面板-多显示器 Wayland</li>
+<li>准备好面板背景 Wayland</li>
+<li>使面板背景监视器仅 X11</li>
+<li>加载和存储小程序支持的平台</li>
+<li>panel-addto 支持禁用小程序</li>
+<li>面板添加到 Wayland 支持</li>
+<li>修复面板重置后重新加载默认布局</li>
+<li>修复面板重置时的随机崩溃</li>
+<li>窗口列表：悬停时显示窗口预览</li>
+<li>修复面板小程序键盘焦点陷阱</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-panel/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-panel/commits/master/</a> 完成变更日志</p>
+<h3>mate-polkit<span class="hx:absolute hx:-mt-20" id="mate-polkit"></span>
+    <a href="#mate-polkit" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>从 GSimpleAsyncResult 迁移到 GTask</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-polkit/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-polkit/commits/master/</a> 完成更新日志</p>
+<h3>mate-power-manager<span class="hx:absolute hx:-mt-20" id="mate-power-manager"></span>
+    <a href="#mate-power-manager" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>图标：添加更高分辨率的图标</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>需要 upower-0.99.8 或更新版本</li>
+<li>使用 up_client_get_devices2()</li>
+<li>为 ui 文件使用 gresources</li>
+<li>使用鼠标滚轮添加滚动界面选项卡</li>
+<li>添加 conf 选项以禁用低鼠标功率警告</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-power-manager/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-power-manager/commits/master/</a> 完成变更日志</p>
+<h3>mate-screensaver<span class="hx:absolute hx:-mt-20" id="mate-screensaver"></span>
+    <a href="#mate-screensaver" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>确保在挂起时锁定并在恢复时解锁</li>
+<li>为 ui 文件使用 gresources</li>
+<li>删除 libXxf86 依赖项</li>
+<li>添加 ELOGIND 支持</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-screensaver/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-screensaver/commits/master/</a> 完成更新日志</p>
+<h3>mate-sensors-applet<span class="hx:absolute hx:-mt-20" id="mate-sensors-applet"></span>
+    <a href="#mate-sensors-applet" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-sensors-applet/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-sensors-applet/commits/master/</a> 完成更新日志</p>
+<h3>mate-session-manager<span class="hx:absolute hx:-mt-20" id="mate-session-manager"></span>
+    <a href="#mate-session-manager" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>使用 gnome-keyring 3.34 修复超时</li>
+<li>删除 GNOME_KEYRING_LIFETIME_FD</li>
+<li>修复 mate-session-properties 垂直缩放</li>
+<li>test-inhibit: 迁移到 gdbus</li>
+<li>添加显示隐藏复选框和 gsettings 标志。</li>
+<li>在启动应用程序中隐藏 NoDisplay 应用程序</li>
+<li>修复多个内存泄漏</li>
+<li>添加硬件兼容性文件</li>
+<li>修复无法检索 org.gnome.SessionManager.Renderer 属性</li>
+<li>添加 mate_session_check_accelerated 帮助</li>
+<li>添加 ELOGIND 支持</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-session-manager/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-session-manager/commits/master/</a> 完成变更日志</p>
+<h3>mate-settings-daemon<span class="hx:absolute hx:-mt-20" id="mate-settings-daemon"></span>
+    <a href="#mate-settings-daemon" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>需要 DBUS 1.10.0 或更新版本</li>
+<li>默认 DBUS_SYS_DIR 为 ${datadir}/dbus-1/system.d</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>xrandr：为托盘小程序添加更大的图标尺寸</li>
+<li>从启动应用程序 capplet 中隐藏 MATE 设置守护程序</li>
+<li>从 mate-desktop 添加剩余的外围架构</li>
+<li>鼠标：添加加速度配置文件</li>
+<li>在 gschema 中将 media-keys volume-step 默认值从 6 更改为 5</li>
+<li>插件：删除 libXxf86 依赖项</li>
+<li>插件管理：代码优化</li>
+<li>media-keys：执行由架构定义的默认即时消息应用程序</li>
+<li>locate-pointer：尝试定位时不要抓住指针按钮</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-settings-daemon/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-settings-daemon/commits/master/</a> 完成更新日志</p>
+<h3>mate-system-monitor<span class="hx:absolute hx:-mt-20" id="mate-system-monitor"></span>
+    <a href="#mate-system-monitor" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>需要 GLib 2.56.0 或更新版本</li>
+<li>改进对 HiDPI 的支持</li>
+<li>在使用和首选项部分添加磁盘 I/O 信息</li>
+<li>修复一些内存泄漏</li>
+<li>在进程信息上添加磁盘 IO</li>
+<li>在系统选项卡上显示 GPU 信息</li>
+<li>支持多达 32 个 CPU</li>
+<li>显示 ZFS 中的可用磁盘空间</li>
+<li>在系统选项卡中显示 OpenIndiana 版本和内核信息</li>
+<li>Show OpenIndiana release and kernel info in System tab</li>
+<li>修复 openSUSE Tumbleweed 滚动发布信息</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-system-monitor/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-system-monitor/commits/master/</a> 完成变更日志</p>
+<h3>mate-terminal<span class="hx:absolute hx:-mt-20" id="mate-terminal"></span>
+    <a href="#mate-terminal" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>准备使用 gcc 10</li>
+<li>修复多个内存泄漏</li>
+<li>终端屏幕：修复关闭窗口时的警告</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>使“突出显示鼠标指针下的东西”可配置</li>
+<li>如果关闭时有多个打开的选项卡，则显示确认对话框</li>
+<li>将手册升级到 docbook 5.0</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-terminal/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-terminal/commits/master/</a> 完成更新日志</p>
+<h3>mate-user-guide<span class="hx:absolute hx:-mt-20" id="mate-user-guide"></span>
+    <a href="#mate-user-guide" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>更新报告错误部分</li>
+<li>删除 custom-command-options 部分并解决语法问题</li>
+<li>更新首选应用程序部分</li>
+<li>用外部参照替换 docbook 链接并修复 linkend 属性（#30）</li>
+<li>将手册升级到 docbook 5.0</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-user-guide/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-user-guide/commits/master/</a> 完成变更日志</p>
+<h3>mate-user-share<span class="hx:absolute hx:-mt-20" id="mate-user-share"></span>
+    <a href="#mate-user-share" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>复 HTTPD 配置通知</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-user-share/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-user-share/commits/master/</a> 完成变更日志</p>
+<h3>mate-utils<span class="hx:absolute hx:-mt-20" id="mate-utils"></span>
+    <a href="#mate-utils" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>准备使用 gcc 10</li>
+<li>将资源用于 UI 文件</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>添加 MATE Disk Image Mounter 实用程序</li>
+<li>logview：使用当前语言环境的首选日期和时间表示</li>
+<li>使用鼠标滚轮添加滚动选项卡</li>
+<li>使inkscape 和rsvg-convert 成为可选项</li>
+<li>修复一些内存泄漏</li>
+<li>从 svg 文件重新生成 png 图标</li>
+<li>更新关于对话框中的文档</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mate-utils/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mate-utils/commits/master/</a> 完成更新日志</p>
+<h3>mozo<span class="hx:absolute hx:-mt-20" id="mozo"></span>
+    <a href="#mozo" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>添加撤消和重做按钮</li>
+<li>修复项目拖放创建副本，修复撤消，重做和刷新时崩溃</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>添加对meson构建系统的支持</li>
+<li>修复创建新菜单和项目</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/mozo/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/mozo/commits/master/</a> 完成更新日志</p>
+<h3>pluma<span class="hx:absolute hx:-mt-20" id="pluma"></span>
+    <a href="#pluma" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>添加显示不可打印字符（空格/制表符/换行符）的功能</li>
+<li>修复了 Clang Static Analyzer、Cppcheck 和 GCC 报告的几个代码分析、弃用警告</li>
+<li>window：不要覆盖 GdkWindowState</li>
+<li>修复一些内存泄漏</li>
+<li>使用 GtkSourceView 3.22 修复构建</li>
+<li>拼写检查插件：添加缺少的翻译 (i18n)</li>
+<li>添加对使用 gla11y 检查 UI 文件的可访问性的支持</li>
+<li>添加片段以切换评论/取消评论</li>
+<li>pluma-print-preview：修复警告：相同的表达式</li>
+<li>切换到 Python 3</li>
+<li>手册：更新如何从菜单中打开pluma</li>
+<li>将手册升级到 docbook 5.0</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>Complete changelog at <a href="https://github.com/mate-desktop/pluma/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/pluma/commits/master/</a></p>
+<h3>python-caja<span class="hx:absolute hx:-mt-20" id="python-caja"></span>
+    <a href="#python-caja" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>准备使用 gcc 10</li>
+<li>放弃对 Python 2 的支持</li>
+<li>添加对使用 Python 3.9 构建的支持</li>
+<li>i18n：从 intltools 迁移到 gettext</li>
+<li>g10n：更新翻译</li>
+</ul>
+<p>在 <a href="https://github.com/mate-desktop/python-caja/commits/master/"target="_blank" rel="noopener">https://github.com/mate-desktop/python-caja/commits/master/</a> 完成更新日志</p>
+
+        </div>
+    <div class="hx:mt-12 hx:mb-8 hx:block hx:text-xs hx:text-gray-500 hx:ltr:text-right hx:rtl:text-left hx:dark:text-gray-400">最后更新于 <time datetime="2020-02-10T00:00:00.000Z">February 10, 2020</time></div><div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
+        href="/zh-cn/blog/2019-03-18-mate-1-22-released/"
+        title="MATE 1.22 发布"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
+      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>MATE 1.22 发布</a></div></main>
+    </article>
+  </div>
+
+      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hx:mx-auto hx:flex hx:gap-2 hx:py-2 hx:px-4 hextra-max-footer-width"><div class="hx:flex hx:justify-items-start ">
+    <button
+      title="切换语言"
+      data-state="closed"
+      data-location=""
+      class="hextra-language-switcher hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:grow"
+      type="button"
+      aria-label="切换语言"
+    >
+      <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>简体中文</span></div>
+    </button>
+    <ul
+      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >English</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/de/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Deutsch</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/es/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Español</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/it/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Italiano</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ja/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >日本語</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/bg/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Български</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ca/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Català</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-cn/blog/2020-02-10-mate-1-24-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >简体中文<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-tw/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >繁體中文</a>
+        </li>
+      </ul>
+  </div><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="切换主题"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="切换主题"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">浅色</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">深色</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">跟随系统</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+  >
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        浅色
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        深色
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        跟随系统
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+  </ul>
+</div></div><hr class="hx:border-gray-200 hx:dark:border-neutral-800" /><div class="hextra-custom-footer hextra-max-footer-width hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+      class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
+    >
+      <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
+    <span>由 Hextra 驱动<svg height=1em class="hx:inline-block hx:ltr:ml-1 hx:rtl:mr-1 hx:align-[-2.5px]" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+  </a></div><div class="hx:mt-6 hx:text-xs">© 2025 Hextra Project.</div></div>
+    </div></footer>
+    
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
+        <script defer src="/zh-cn.search.js" integrity=""></script>
+  </body>
+</html>

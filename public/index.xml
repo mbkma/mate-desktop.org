@@ -1,0 +1,109 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MATE Desktop Environment – MATE Desktop Environment</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on MATE Desktop Environment</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+      
+    
+    
+    <item>
+      <title>MATE 1.28 Released</title>
+      <link>http://localhost:1313/blog/mate-1-28-released/</link>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/mate-1-28-released/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We are pleased to announce the release of MATE Desktop 1.28. This release brings many improvements and bug fixes.&lt;/p&gt;
+&lt;h2&gt;Highlights&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;highlights&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#highlights&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Wayland Progress&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;wayland-progress&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#wayland-progress&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;MATE 1.28 continues our work towards Wayland support. While we still recommend X11 for production use, significant progress has been made:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved compatibility with Wayland compositors&lt;/li&gt;
+&lt;li&gt;Updated libraries for better Wayland integration&lt;/li&gt;
+&lt;li&gt;Testing infrastructure improvements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Core Improvements&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;core-improvements&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#core-improvements&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Caja&lt;/strong&gt;: Enhanced file operations and better performance with large directories&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Marco&lt;/strong&gt;: Window manager improvements and better compositing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MATE Panel&lt;/strong&gt;: New applet features and stability fixes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Control Center&lt;/strong&gt;: Updated settings dialogs and better hardware support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Accessibility&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;accessibility&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#accessibility&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Improved screen reader compatibility&lt;/li&gt;
+&lt;li&gt;Better high contrast theme support&lt;/li&gt;
+&lt;li&gt;Enhanced keyboard navigation throughout the desktop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Under the Hood&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;under-the-hood&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#under-the-hood&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Updated to latest GTK3 features&lt;/li&gt;
+&lt;li&gt;Improved memory management&lt;/li&gt;
+&lt;li&gt;Better systemd integration&lt;/li&gt;
+&lt;li&gt;Security hardening across all components&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Download&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;download&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#download&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;MATE 1.28 is available in the repositories of most major distributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ubuntu MATE 24.04&lt;/strong&gt; - Ships with MATE 1.28&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fedora 40&lt;/strong&gt; - Available in official repos&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debian Testing&lt;/strong&gt; - Available now&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Arch Linux&lt;/strong&gt; - Available in [extra]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Thanks&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thanks&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#thanks&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Thank you to all contributors who made this release possible! Special thanks to our translators, packagers, and everyone who reported bugs and tested pre-releases.&lt;/p&gt;
+&lt;h2&gt;Get Involved&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;get-involved&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#get-involved&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Want to help with MATE development? Visit our &lt;a href=&#34;https://github.com/mate-desktop&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; to get started!&lt;/p&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Welcome to Our New Website</title>
+      <link>http://localhost:1313/blog/welcome-to-new-website/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/welcome-to-new-website/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We&amp;rsquo;re excited to launch our redesigned website! The new site is built with Hugo and provides faster loading times and improved documentation.&lt;/p&gt;
+&lt;h2&gt;What&amp;rsquo;s New&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;whats-new&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whats-new&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Modern Design&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;modern-design&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#modern-design&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The new website features a clean, modern design that&amp;rsquo;s easy to navigate while maintaining the classic feel that MATE users appreciate.&lt;/p&gt;
+&lt;h3&gt;Improved Documentation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;improved-documentation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#improved-documentation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;We&amp;rsquo;ve reorganized and expanded our documentation to help both new and experienced users:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Getting Started Guide&lt;/strong&gt; - For users new to MATE&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Installation Instructions&lt;/strong&gt; - Distribution-specific instructions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Configuration Guide&lt;/strong&gt; - Customize your desktop&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Application Documentation&lt;/strong&gt; - Learn about MATE apps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Better Performance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;better-performance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#better-performance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The new site is static, meaning it loads faster and uses fewer resources. Just like MATE itself, we believe in efficiency!&lt;/p&gt;
+&lt;h3&gt;Mobile Friendly&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mobile-friendly&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#mobile-friendly&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The responsive design ensures the site works well on phones and tablets, making it easy to look up information on any device.&lt;/p&gt;
+&lt;h2&gt;Contributing&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;contributing&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#contributing&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The website source is available on GitHub. We welcome contributions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix typos and improve documentation&lt;/li&gt;
+&lt;li&gt;Translate content to your language&lt;/li&gt;
+&lt;li&gt;Suggest improvements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Feedback&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;feedback&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#feedback&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;We&amp;rsquo;d love to hear your thoughts on the new website. Join us on IRC (#mate on libera.chat) or Matrix to share your feedback.&lt;/p&gt;
+&lt;p&gt;Thank you for being part of the MATE community!&lt;/p&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

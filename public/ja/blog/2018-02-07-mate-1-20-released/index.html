@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>MATE 1.20 を公開しました – MATE デスクトップ環境</title>
+  <meta name="description" content="11 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.20 のリリースを公表しました。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。
+MATE 1.20 で新しくなったこと このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。
+MATE デスクトップ 1.20 の主な変更点は次のとおりです。
+MATE デスクトップ 1.20 は、動的な検出とスケーリングによる HiDPI ディスプレイをサポートします。 Qt アプリケーションのための HiDPI ヒントも、クロスツールキット統合を改善するために環境へプッシュされます。 HiDPI モードを切り替えると、動的なサイズ変更とスケールが生じるので、ログアウトやログインは必要ありません。 Marco は現在、もし利用可能であれば DRI3 と XPresent をサポートします。 Marco 使用中のゲームのフレームレートが大幅に向上しています。 Marcoは、quadrant ドラッグウィンドウのタイリングをサポートするようになりました。カーソルキーを使用して Alt &#43; Tab スイッチャが操作可能になり、キーボードショートカットを使用してウィンドウを別のモニタへ移動できるようになりました。 グローバルメニューのサポート vala-panel-appmenu などのプロバイダが追加されました。 MATE パネルは Status Notifier Items (SNI) のサポートを大幅に改善しました。 ブックマークが GTK3&#43; ロケーションをサポートするようになりました。 MATE 端末は、背景画像をサポートし、Solarized テーマとキーバインディングを切り替えタブに追加しました。 文書ビューアの Atril は、大規模なオーバーホールを受けたので、あらゆる点で改善されています。すべてが良くなりました。 特に、視覚障害のあるユーザに対する操作支援サポートが大幅に改善されました。 キャレットナビゲーションを追加しました。 MATE アプレットから Invest アプレットが削除されました 。 Yahoo が提供するこの API は廃止されましたが、評判の良い代替品がありません。 パネルアプレットのサイズが、表示されている単位に基づいて正しく設定されるようになりました。また、多くのグラフが動的にスケールされます。 MATE のテーマは大幅に改善されたので、GTK 3.22 で公開されたすべてのスタイルクラスを完全に実装します。 Engrampa 書庫マネージャは、暗号化された 7z アーカイブのサポートを向上しました。 MATE センサーアプレットが (ようやく) udisks2 をサポートします。 OpenBSD 認証は MATE スクリーンセーバでサポートされていて、Atril の minizip はより多くの BSD バリアントをサポートしています。 翻訳が更新されました。翻訳者のチームに感謝します！ また、ディストリビューションのメンテナーの方々にとっては、GTK3&#43; と GLib の最低要件に行き当たりました。 MATE デスクトップ 1.20 をビルドするためには、GTK3.22 と GLib2.50 またはそれ以降が必要です。 Wayland ログには Wayland への言及がいくつかあるかもしれませんが、あまり興奮しないでください。それはあなたが考えているようなことではありません :-) MATE デスクトップ 1.20 の各種コンポーネントは、次の場所からダウンロードできます。" /><link rel="canonical" href="http://localhost:1313/ja/blog/2018-02-07-mate-1-20-released/" itemprop="url" />
+
+<meta property="og:title" content="MATE 1.20 を公開しました">
+<meta
+  property="og:description"
+  content="
+    
+      11 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.20 のリリースを公表しました。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。
+
+MATE 1.20 で新しくなったこと
+    このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。
+MATE デスクトップ 1.20 の主な変更点は次のとおりです。
+
+MATE デスクトップ 1.20 は、動的な検出とスケーリングによる HiDPI ディスプレイをサポートします。
+
+Qt アプリケーションのための HiDPI ヒントも、クロスツールキット統合を改善するために環境へプッシュされます。
+HiDPI モードを切り替えると、動的なサイズ変更とスケールが生じるので、ログアウトやログインは必要ありません。
+
+
+Marco は現在、もし利用可能であれば DRI3 と XPresent をサポートします。
+
+Marco 使用中のゲームのフレームレートが大幅に向上しています。
+
+
+Marcoは、quadrant ドラッグウィンドウのタイリングをサポートするようになりました。カーソルキーを使用して Alt &#43; Tab スイッチャが操作可能になり、キーボードショートカットを使用してウィンドウを別のモニタへ移動できるようになりました。
+グローバルメニューのサポート vala-panel-appmenu などのプロバイダが追加されました。
+MATE パネルは Status Notifier Items (SNI) のサポートを大幅に改善しました。
+ブックマークが GTK3&#43; ロケーションをサポートするようになりました。
+MATE 端末は、背景画像をサポートし、Solarized テーマとキーバインディングを切り替えタブに追加しました。
+文書ビューアの Atril は、大規模なオーバーホールを受けたので、あらゆる点で改善されています。すべてが良くなりました。
+
+特に、視覚障害のあるユーザに対する操作支援サポートが大幅に改善されました。
+キャレットナビゲーションを追加しました。
+
+
+MATE アプレットから Invest アプレットが削除されました 。
+
+Yahoo が提供するこの API は廃止されましたが、評判の良い代替品がありません。
+
+
+パネルアプレットのサイズが、表示されている単位に基づいて正しく設定されるようになりました。また、多くのグラフが動的にスケールされます。
+MATE のテーマは大幅に改善されたので、GTK 3.22 で公開されたすべてのスタイルクラスを完全に実装します。
+Engrampa 書庫マネージャは、暗号化された 7z アーカイブのサポートを向上しました。
+MATE センサーアプレットが (ようやく) udisks2 をサポートします。
+OpenBSD 認証は MATE スクリーンセーバでサポートされていて、Atril の minizip はより多くの BSD バリアントをサポートしています。
+翻訳が更新されました。翻訳者のチームに感謝します！
+また、ディストリビューションのメンテナーの方々にとっては、GTK3&#43; と GLib の最低要件に行き当たりました。
+
+MATE デスクトップ 1.20 をビルドするためには、GTK3.22 と GLib2.50 またはそれ以降が必要です。
+
+
+Wayland ログには Wayland への言及がいくつかあるかもしれませんが、あまり興奮しないでください。それはあなたが考えているようなことではありません :-)
+
+MATE デスクトップ 1.20 の各種コンポーネントは、次の場所からダウンロードできます。
+    
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="http://localhost:1313/ja/blog/2018-02-07-mate-1-20-released/"><meta property="article:section" content="blog">
+
+<meta
+  property="article:published_time"
+  content="2018-02-07T00:00:00+00:00">
+
+
+<meta
+  property="article:modified_time"
+  content="2018-02-07T00:00:00+00:00">
+
+
+
+  <meta itemprop="name" content="MATE 1.20 を公開しました">
+  <meta itemprop="description" content="11 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.20 のリリースを公表しました。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。
+MATE 1.20 で新しくなったこと このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。
+MATE デスクトップ 1.20 の主な変更点は次のとおりです。
+MATE デスクトップ 1.20 は、動的な検出とスケーリングによる HiDPI ディスプレイをサポートします。 Qt アプリケーションのための HiDPI ヒントも、クロスツールキット統合を改善するために環境へプッシュされます。 HiDPI モードを切り替えると、動的なサイズ変更とスケールが生じるので、ログアウトやログインは必要ありません。 Marco は現在、もし利用可能であれば DRI3 と XPresent をサポートします。 Marco 使用中のゲームのフレームレートが大幅に向上しています。 Marcoは、quadrant ドラッグウィンドウのタイリングをサポートするようになりました。カーソルキーを使用して Alt &#43; Tab スイッチャが操作可能になり、キーボードショートカットを使用してウィンドウを別のモニタへ移動できるようになりました。 グローバルメニューのサポート vala-panel-appmenu などのプロバイダが追加されました。 MATE パネルは Status Notifier Items (SNI) のサポートを大幅に改善しました。 ブックマークが GTK3&#43; ロケーションをサポートするようになりました。 MATE 端末は、背景画像をサポートし、Solarized テーマとキーバインディングを切り替えタブに追加しました。 文書ビューアの Atril は、大規模なオーバーホールを受けたので、あらゆる点で改善されています。すべてが良くなりました。 特に、視覚障害のあるユーザに対する操作支援サポートが大幅に改善されました。 キャレットナビゲーションを追加しました。 MATE アプレットから Invest アプレットが削除されました 。 Yahoo が提供するこの API は廃止されましたが、評判の良い代替品がありません。 パネルアプレットのサイズが、表示されている単位に基づいて正しく設定されるようになりました。また、多くのグラフが動的にスケールされます。 MATE のテーマは大幅に改善されたので、GTK 3.22 で公開されたすべてのスタイルクラスを完全に実装します。 Engrampa 書庫マネージャは、暗号化された 7z アーカイブのサポートを向上しました。 MATE センサーアプレットが (ようやく) udisks2 をサポートします。 OpenBSD 認証は MATE スクリーンセーバでサポートされていて、Atril の minizip はより多くの BSD バリアントをサポートしています。 翻訳が更新されました。翻訳者のチームに感謝します！ また、ディストリビューションのメンテナーの方々にとっては、GTK3&#43; と GLib の最低要件に行き当たりました。 MATE デスクトップ 1.20 をビルドするためには、GTK3.22 と GLib2.50 またはそれ以降が必要です。 Wayland ログには Wayland への言及がいくつかあるかもしれませんが、あまり興奮しないでください。それはあなたが考えているようなことではありません :-) MATE デスクトップ 1.20 の各種コンポーネントは、次の場所からダウンロードできます。">
+  <meta itemprop="datePublished" content="2018-02-07T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2018-02-07T00:00:00+00:00">
+  <meta itemprop="wordCount" content="3178">
+  <meta itemprop="keywords" content="Releases">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MATE 1.20 を公開しました">
+  <meta name="twitter:description" content="11 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.20 のリリースを公表しました。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。
+MATE 1.20 で新しくなったこと このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。
+MATE デスクトップ 1.20 の主な変更点は次のとおりです。
+MATE デスクトップ 1.20 は、動的な検出とスケーリングによる HiDPI ディスプレイをサポートします。 Qt アプリケーションのための HiDPI ヒントも、クロスツールキット統合を改善するために環境へプッシュされます。 HiDPI モードを切り替えると、動的なサイズ変更とスケールが生じるので、ログアウトやログインは必要ありません。 Marco は現在、もし利用可能であれば DRI3 と XPresent をサポートします。 Marco 使用中のゲームのフレームレートが大幅に向上しています。 Marcoは、quadrant ドラッグウィンドウのタイリングをサポートするようになりました。カーソルキーを使用して Alt &#43; Tab スイッチャが操作可能になり、キーボードショートカットを使用してウィンドウを別のモニタへ移動できるようになりました。 グローバルメニューのサポート vala-panel-appmenu などのプロバイダが追加されました。 MATE パネルは Status Notifier Items (SNI) のサポートを大幅に改善しました。 ブックマークが GTK3&#43; ロケーションをサポートするようになりました。 MATE 端末は、背景画像をサポートし、Solarized テーマとキーバインディングを切り替えタブに追加しました。 文書ビューアの Atril は、大規模なオーバーホールを受けたので、あらゆる点で改善されています。すべてが良くなりました。 特に、視覚障害のあるユーザに対する操作支援サポートが大幅に改善されました。 キャレットナビゲーションを追加しました。 MATE アプレットから Invest アプレットが削除されました 。 Yahoo が提供するこの API は廃止されましたが、評判の良い代替品がありません。 パネルアプレットのサイズが、表示されている単位に基づいて正しく設定されるようになりました。また、多くのグラフが動的にスケールされます。 MATE のテーマは大幅に改善されたので、GTK 3.22 で公開されたすべてのスタイルクラスを完全に実装します。 Engrampa 書庫マネージャは、暗号化された 7z アーカイブのサポートを向上しました。 MATE センサーアプレットが (ようやく) udisks2 をサポートします。 OpenBSD 認証は MATE スクリーンセーバでサポートされていて、Atril の minizip はより多くの BSD バリアントをサポートしています。 翻訳が更新されました。翻訳者のチームに感謝します！ また、ディストリビューションのメンテナーの方々にとっては、GTK3&#43; と GLib の最低要件に行き当たりました。 MATE デスクトップ 1.20 をビルドするためには、GTK3.22 と GLib2.50 またはそれ以降が必要です。 Wayland ログには Wayland への言及がいくつかあるかもしれませんが、あまり興奮しないでください。それはあなたが考えているようなことではありません :-) MATE デスクトップ 1.20 の各種コンポーネントは、次の場所からダウンロードできます。">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
+  ></div>
+
+  <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-end hx:gap-2 hx:h-16 hx:px-6">
+    <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/ja/">
+    <img class="hx:mr-2 hx:block hx:dark:hidden" src="/images/mate.png" alt="Logo" height="40" width="40" />
+    <img class="hx:mr-2 hx:hidden hx:dark:block" src="/images/mate.png" alt="Dark Logo" height="40" width="40" />
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none" title="MATE デスクトップ環境">MATE デスクトップ環境</span>
+</a>
+<a
+  title=""
+  href="/ja/download"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Download</span>
+</a><a
+  title=""
+  href="/ja/docs"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Documentation</span>
+</a><a
+  title=""
+  href="/ja/blog"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:font-medium"
+><span class="hx:text-center">Blog</span>
+</a><a
+  title=""
+  href="/ja/about"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">About</span>
+</a><a
+  title=""
+  href="/ja/community"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Community</span>
+</a><div class="hextra-search-wrapper hx:relative hx:md:w-64">
+  <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
+    <input
+      placeholder="検索..."
+      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx:absolute hx:my-1.5 hx:select-none hx:ltr:right-1.5 hx:rtl:left-1.5 hx:h-5 hx:rounded-sm hx:bg-white hx:px-1.5 hx:font-mono hx:text-[10px] hx:font-medium hx:text-gray-500 hx:border hx:border-gray-200 hx:dark:border-gray-100/20 hx:dark:bg-dark/50 hx:contrast-more:border-current hx:contrast-more:text-current hx:contrast-more:dark:border-current hx:items-center hx:gap-1 hx:transition-opacity hx:pointer-events-none hx:hidden hx:sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+          <a class="hx:p-2 hx:text-current" target="_blank" rel="noreferrer" href="https://github.com/mate-desktop" title="GitHub"><svg height=24 fill="currentColor" viewBox="3 3 18 18">
+  <path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path>
+</svg>
+<span class="hx:sr-only">GitHub</span>
+          </a><button type="button" aria-label="Menu" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:hidden hx:xl:block">
+    <div class="hx:px-4 hx:pt-4 hx:md:hidden">
+      <div class="hextra-search-wrapper hx:relative hx:md:w-64">
+  <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
+    <input
+      placeholder="検索..."
+      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx:absolute hx:my-1.5 hx:select-none hx:ltr:right-1.5 hx:rtl:left-1.5 hx:h-5 hx:rounded-sm hx:bg-white hx:px-1.5 hx:font-mono hx:text-[10px] hx:font-medium hx:text-gray-500 hx:border hx:border-gray-200 hx:dark:border-gray-100/20 hx:dark:bg-dark/50 hx:contrast-more:border-current hx:contrast-more:text-current hx:contrast-more:dark:border-current hx:items-center hx:gap-1 hx:transition-opacity hx:pointer-events-none hx:hidden hx:sm:flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+    </div><div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
+      
+      
+          <li class="open"><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/ja/blog/"
+    
+  >Blogs
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
+    </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/ja/blog/2021-08-08-mate-1-26-released/"
+    
+  >MATE 1.26 を公開しました
+    </a>
+              
+            </li><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/ja/blog/2020-02-10-mate-1-24-released/"
+    
+  >MATE 1.24 を公開しました
+    </a>
+              
+            </li><li class="hx:flex hx:flex-col open"><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
+    href="/ja/blog/2018-02-07-mate-1-20-released/"
+    
+  >MATE 1.20 を公開しました
+    </a>
+  
+    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
+              <a
+                href="#mate-120-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >MATE 1.20 で新しくなったこと</a>
+            </li>
+          <li>
+              <a
+                href="#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9"
+                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
+              >Changelog 変更点</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="hx:flex hx:flex-col "><a
+    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+    href="/ja/blog/2017-03-13-mate-1-18-released/"
+    
+  >MATE 1.18 を公開しました
+    </a>
+              
+            </li></ul>
+      </div></li>
+    </ul>
+
+    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div></div>
+  
+  
+    <div class="hx:md:hidden hx:justify-end hx:sticky hx:bottom-0 hx:max-h-(--menu-height) hx:bg-white hx:dark:bg-dark hx:mx-4 hx:py-4 hx:shadow-[0_-12px_16px_#fff] hx:flex hx:items-center hx:gap-2 hx:border-gray-200 hx:dark:border-neutral-800 hx:dark:shadow-[0_-12px_16px_#111] hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:shadow-none hx:border-t" data-toggle-animation="show"><div class="hx:flex hx:justify-items-start hx:grow">
+    <button
+      title="言語を変更"
+      data-state="closed"
+      data-location=""
+      class="hextra-language-switcher hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:grow"
+      type="button"
+      aria-label="言語を変更"
+    >
+      <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>日本語</span></div>
+    </button>
+    <ul
+      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >English</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/de/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Deutsch</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/es/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Español</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/it/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Italiano</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ja/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >日本語<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/bg/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Български</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ca/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Català</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-cn/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >简体中文</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-tw/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >繁體中文</a>
+        </li>
+      </ul>
+  </div><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="テーマを変更"
+    data-state="closed"
+    data-location="bottom-right"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="テーマを変更"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+</div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+  >
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        ライト
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        ダーク
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+  </ul>
+</div></div></aside>
+    
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">このページの内容</p><ul>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-120-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8">MATE 1.20 で新しくなったこと
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9">Changelog 変更点
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-desktop-1200">mate-desktop 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-user-guide-1200">mate-user-guide 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#libmatekbd-1200">libmatekbd 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#libmateweather-1200">libmateweather 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-icon-theme-1200">mate-icon-theme 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#caja-1200">caja 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-polkit-1200">mate-polkit 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#marco-1200">marco 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-settings-daemon-1200">mate-settings-daemon 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-session-manager-1200">mate-session-manager 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-menus-1200">mate-menus 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-panel-1200">mate-panel 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-backgrounds-1200">mate-backgrounds 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-themes-3228-%e3%81%8b%e3%82%89-32215-%e3%81%b8">mate-themes 3.22.8 から 3.22.15 へ
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-notification-daemon-1200">mate-notification-daemon 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-control-center-1200">mate-control-center 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-screensaver-1200">mate-screensaver 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-media-1200">mate-media 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-power-manager-1200">mate-power-manager 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-system-monitor-1200">mate-system-monitor 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#atril-1200">atril 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#caja-extensions-1200">caja-extensions 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#engrampa-1200">engrampa 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#eom-1200">eom 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-applets-1200">mate-applets 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-calc-1200">mate-calc 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-icon-theme-faenza-1200">mate-icon-theme-faenza 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-indicator-applet-1200">mate-indicator-applet 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-netbook-1200">mate-netbook 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-sensors-applet-1200">mate-sensors-applet 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-terminal-1200">mate-terminal 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-user-share-1200">mate-user-share 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mate-utils-1200">mate-utils 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#mozo-1200">mozo 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#pluma-1200">pluma 1.20.0
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word" href="#python-caja-1200">python-caja 1.20.0
+        </a>
+      </li></ul>
+      <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
+        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>トップにスクロール</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
+        <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
+          <a href="/ja/blog/">Blogs</a>
+        </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">MATE 1.20 を公開しました</div>
+  </div>
+
+        
+        <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mt-2">
+          <h1 class="hx:mb-0 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">MATE 1.20 を公開しました</h1>
+          
+        </div>
+        
+        <div class="hx:mt-4 hx:mb-16 hx:text-gray-500 hx:dark:text-gray-400 hx:text-sm hx:flex hx:items-center hx:flex-wrap hx:gap-y-2"><span class="hx:mr-1">2月 7, 2018</span><span class="hx:mx-1">·</span><a
+                  
+                  class="hx:group hx:inline-flex hx:items-center hx:text-current hx:gap-x-1.5 hx:mx-1"
+                  title="Martin Wimpress"
+                ><div class="hx:group-hover:underline">Martin Wimpress</div>
+                </a></div>
+        <div class="content">
+          <p>11 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.20 のリリースを公表しました。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。</p>
+<p><img src="/images/blog/about-mate-1.20.png" alt="about"  loading="lazy" /></p>
+<h2>MATE 1.20 で新しくなったこと<span class="hx:absolute hx:-mt-20" id="mate-120-で新しくなったこと"></span>
+    <a href="#mate-120-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。</p>
+<p>MATE デスクトップ 1.20 の主な変更点は次のとおりです。</p>
+<ul>
+<li><strong>MATE デスクトップ 1.20 は、動的な検出とスケーリングによる HiDPI ディスプレイをサポートします。</strong>
+<ul>
+<li>Qt アプリケーションのための HiDPI ヒントも、クロスツールキット統合を改善するために環境へプッシュされます。</li>
+<li>HiDPI モードを切り替えると、動的なサイズ変更とスケールが生じるので、ログアウトやログインは必要ありません。</li>
+</ul>
+</li>
+<li><strong>Marco は現在、もし利用可能であれば <a href="https://lwn.net/Articles/569701/"target="_blank" rel="noopener">DRI3 と XPresent</a></strong> をサポートします。
+<ul>
+<li>Marco 使用中のゲームのフレームレートが大幅に向上しています。</li>
+</ul>
+</li>
+<li>Marcoは、<strong>quadrant ドラッグウィンドウのタイリング</strong>をサポートするようになりました。カーソルキーを使用して <kbd>Alt</kbd> + <kbd>Tab</kbd> スイッチャが操作可能になり、キーボードショートカットを使用してウィンドウを別のモニタへ移動できるようになりました。</li>
+<li><strong>グローバルメニューのサポート</strong> <a href="https://github.com/rilian-la-te/vala-panel-appmenu"target="_blank" rel="noopener">vala-panel-appmenu</a> などのプロバイダが追加されました。</li>
+<li>MATE パネルは <a href="https://www.freedesktop.org/wiki/Specifications/StatusNotifierItem/"target="_blank" rel="noopener">Status Notifier Items (SNI)</a> のサポートを大幅に改善しました。</li>
+<li><strong>ブックマークが GTK3+ ロケーションをサポートするようになりました</strong>。</li>
+<li>MATE 端末は、背景画像をサポートし、Solarized テーマとキーバインディングを切り替えタブに追加しました。</li>
+<li><strong>文書ビューアの Atril は、大規模なオーバーホールを受けた</strong>ので、あらゆる点で改善されています。すべてが良くなりました。
+<ul>
+<li>特に、視覚障害のあるユーザに対する操作支援サポートが大幅に改善されました。</li>
+<li>キャレットナビゲーションを追加しました。</li>
+</ul>
+</li>
+<li>MATE アプレットから <strong>Invest アプレットが削除されました</strong> 。
+<ul>
+<li>Yahoo が提供するこの API は廃止されましたが、評判の良い代替品がありません。</li>
+</ul>
+</li>
+<li>パネルアプレットのサイズが、表示されている単位に基づいて正しく設定されるようになりました。また、多くのグラフが動的にスケールされます。</li>
+<li><strong>MATE のテーマは大幅に改善された</strong>ので、GTK 3.22 で公開されたすべてのスタイルクラスを完全に実装します。</li>
+<li>Engrampa 書庫マネージャは、暗号化された 7z アーカイブのサポートを向上しました。</li>
+<li>MATE センサーアプレットが (ようやく) udisks2 をサポートします。</li>
+<li>OpenBSD 認証は MATE スクリーンセーバでサポートされていて、Atril の minizip はより多くの BSD バリアントをサポートしています。</li>
+<li>翻訳が更新されました。<em>翻訳者のチームに感謝します！</em></li>
+<li>また、ディストリビューションのメンテナーの方々にとっては、GTK3+ と GLib の最低要件に行き当たりました。
+<ul>
+<li>MATE デスクトップ 1.20 をビルドするためには、GTK3.22 と GLib2.50 またはそれ以降が必要です。</li>
+</ul>
+</li>
+<li>Wayland ログには Wayland への言及がいくつかあるかもしれませんが、あまり興奮しないでください。それはあなたが考えているようなことではありません <code>:-)</code></li>
+</ul>
+<p>MATE デスクトップ 1.20 の各種コンポーネントは、次の場所からダウンロードできます。</p>
+<ul>
+<li><a href="https://pub.mate-desktop.org/releases/1.20/"target="_blank" rel="noopener">https://pub.mate-desktop.org/releases/1.20/</a></li>
+</ul>
+<h2>Changelog 変更点<span class="hx:absolute hx:-mt-20" id="changelog-変更点"></span>
+    <a href="#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>変更点の詳細は以下のとおりです。</p>
+<h3>mate-desktop 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-desktop-1200"></span>
+    <a href="#mate-desktop-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>ウィンドウのスケーリングファクターに gsettings を追加</li>
+<li>最小 GLib バージョンの追加チェックを削除</li>
+<li>&lt; gtk+-3.22 ビットを削除し、必要な gtk+ バージョンを引き上げ</li>
+<li>schema: can-change-accels キーを削除。GTK+3 では動作しません。</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li><code>MateAboutDialog</code> の削除</li>
+<li>mate-about: libunique 参照の残りを削除</li>
+<li>mate-about: <code>GtkAboutDialog</code> への切り替え</li>
+<li>gtk3.22: 非推奨の <code>gdk_screen_get_monitor</code> 機能を回避:</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>mate-desktop-item: mate-about: 非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>mate-about: 非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_n_monitors</code> を回避</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li><code>man mate-about</code> のわずかな不正確さを修正</li>
+<li><code>mate-colorsel.c</code> 内の壊れたフォールバックカーソルを修正</li>
+<li>mate-colorsel: 非推奨の <code>GTK_STOCK_COLOR_PICKER</code> を使用中止</li>
+<li>グローバルメニューのサポートを追加</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-user-guide 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-user-guide-1200"></span>
+    <a href="#mate-user-guide-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>翻訳の更新</li>
+</ul>
+<h3>libmatekbd 1.20.0<span class="hx:absolute hx:-mt-20" id="libmatekbd-1200"></span>
+    <a href="#libmatekbd-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>&lt; gtk+-3.22 ビットを削除し、必要な gtk+ を引き上げ</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>matekbd-status: ステータスバーアイコン作成時の Gdk-CRITICAL 警告を修正</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>matekbd-indicator: 拡張しない</li>
+<li>matekbd-indicator: 非推奨の<code>gdk_cairo_create</code>を使用しない</li>
+<li>GtkIconInfo の奇妙な振る舞いを修正</li>
+<li>matekbd-indicator: 非推奨の GtkAlignment を使用中止</li>
+<li>keyboard-drawing: css の名前を matekbd-keyboard-drawing に設定</li>
+<li>キーラベルのフォントサイズを少し拡大</li>
+<li>matekbd-keyboard-drawing: ダブルバッファリングを設定を解除しない</li>
+<li>matekbd-keyboard-drawing: <code>XkbGetKeyboard()</code> 失敗時に対処</li>
+<li>matekbd-keyboard-drawing: gtk+keynav がフォーカスを奪うのを防止</li>
+<li>イントロスペクションの警告を修正</li>
+<li>show-layout.ui: 非推奨のウィジェットの使用中止</li>
+<li>UI: kbdraw を垂直方向に拡張</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>libmateweather 1.20.0<span class="hx:absolute hx:-mt-20" id="libmateweather-1200"></span>
+    <a href="#libmateweather-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>場所: ポーランド共和国ラドム市を追加</li>
+<li>場所: ジュコフスキー空港を追加 (ロシア共和国モスクワ市) を追加</li>
+<li>場所: シェレメチェボ空港の名前を修正 (ロシア共和国モスクワ市)</li>
+<li>タイムアウトを追加し、weather_info_abort でセッションを無効化</li>
+<li><code>weather_info_equal()</code> 関数の最初の部分を作成することで、WeatherInfo スパムの削減を開始します。この関数は、アプリケーションが2つの天気予報インスタンスが通知を無視できるほど 「同じ」 かどうかを判断するのに役立ちます。
+ 
+ </li>
+<li>実際に値をテストして、未使用 bsun の警告を削除します。</li>
+<li><code>soup_session_async_new()</code> の非推奨警告を修正</li>
+<li>ポーランドで見落としがあった、空港のある都市を追加</li>
+<li>Novosibirsk の時間帯を修正</li>
+<li>プエルトリコに Ceiba を追加</li>
+<li>doc : 古い MateConf の参考文献やその他の資料を削除</li>
+<li>カザフスタンの都市を更新</li>
+<li>実際に <code>$GIO_REQUIRED</code> 変数の値をチェック</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-icon-theme 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-icon-theme-1200"></span>
+    <a href="#mate-icon-theme-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>同じように壊れたフラグを置き換え</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>caja 1.20.0<span class="hx:absolute hx:-mt-20" id="caja-1200"></span>
+    <a href="#caja-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>GTK+ 3.14 用の CSS を廃止</li>
+<li>新しいタブを開いた時にタスクリストアイコンが変わるのを修正</li>
+<li>&lt;&gt; の代わりに &quot;&quot; を使用してローカルファイルを含めます。</li>
+<li>検索の終了後に <code>search_dispose</code> および <code>search_finilize</code> を実行することはできません。</li>
+<li>拡張機能の About ダイアログに不足していたウィンドウアイコンを追加</li>
+<li>libegg を一番上の srcdir へ移動し、残りの部分を削除</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>caja-places-sidebar: サイドバーが広い場合のマウント解除拒否を修正</li>
+<li>caja-places-sidebar: オーバーレイのスクロールバーを無効</li>
+<li>修正: リストビューでファイル名を変更する際の Enterキ ーの誤動作を修正</li>
+<li>新規ウィンドウでファイルを開く: <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>w</kbd></li>
+<li>zoom-control: マウスホイールのスクロールボタンでズームできるように変更</li>
+<li>表示 -&gt; 表示列: ダイアログ内容の垂直方向の展開を修正</li>
+<li>ディスクサイズの列の説明を少し書き換え</li>
+<li>修正: ファイル名の変更を行う際の誤った <kbd>Shift</kbd> + <kbd>Del</kbd> 動作</li>
+<li>icon-dnd: ハードコードの強調されたを削除</li>
+<li>修正: 背景画像の読み込み中に CPU 使用率が高く不具合を修正</li>
+<li>リストビュー: 拡大時に発生するアイコンの大きな余白を修正</li>
+<li>デスクトップの壁紙の拡大/縮小がすべてのモニタで機能することを確認</li>
+<li>ソースファイルから不正な +x 属性を削除</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>列のサイズを自動的に設定する機能を追加</li>
+<li>拡大率の変更時にすべての行を更新</li>
+<li>ズーム時にウィジェットのを再描画を強制</li>
+<li>pathbar: GTK+2 と同様にマウスホイールのスクロールを有効化</li>
+<li>libcaja-private: 内部の README からの間違ったリンクを削除</li>
+<li>private: 信頼できるシンボリックリンクから .desktop ファイルが起動可能なことを確認</li>
+<li>修正: デスクトップの壁紙が拡大/縮小できない問題</li>
+<li>open-with-dialog: ラベルの max-char-width を設定</li>
+<li>「開く」ダイアログにおける「開く」ボタンのテキスト位置のずれを修正</li>
+<li>推奨されない <code>gdk_screen_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>libegg: 廃止された <code>gtk_drag_begin</code> の入れ替え</li>
+<li>eggsmclient:  -Wcomment によるビルド時の警告を修正</li>
+<li>非推奨の <code>gtk_show_uri</code> を使用しません</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>挿入時におけるメディアの閲覧/自動実行を修正</li>
+<li><code>fm_icon_view_scroll_event()</code> での垂直方向にスクロールするコンパクト表示を修正</li>
+<li>property-browser: scrolledwindows にスタイルクラスフレームを追加</li>
+<li><code>caja-pathbar.c</code> における off-by-one エラーを修正</li>
+<li>機能の追加: ファイルのサイズを表示する時、ディスク上のサイズを表示</li>
+<li>DBus インターフェースの初期化を復元</li>
+<li>CSS: GTK 3.14 で別の caja-desktop.css を読み込み</li>
+<li>gtk+-3 のブックマークの場所を使用</li>
+<li>ダイアログで開く: アイコンのサイズを強制</li>
+<li>file: <code>caja_file_get_gicon</code> がカスタムアイコンも返すようにしました。</li>
+<li>グリッド幅をキャンバスにまで拡張</li>
+<li><code>atk_component_get_extents</code> を <code>atk_component_get_position</code> の代わりに使用</li>
+<li>隠しファイルを手動で解析しないでください - 2.36 以降は GIO が実行します。</li>
+<li>存在しない <code>MATE22_USER_DIR</code> 環境変数をチェックしません。</li>
+<li>存在しない <code>~/.mate2</code> ディレクトリをチェックしません。</li>
+<li>eel-accessibility: 使用されていないコードと古いコメントを削除</li>
+<li>選択後に正しい右クリックメニューを表示</li>
+<li>eel: 要素の表示属性が変わると、キャンバス上でのキューサイズを変更</li>
+<li>IconContainer に size_request を追加し、不要なリレーアウトを回避</li>
+<li>IconCanvasItem: カーソルを合わせた時、ファイル名が重複するのを修正</li>
+<li>eel: 不要な #include を条件付きで削除</li>
+<li>eel: 未使用のコードを eel-gdk-pixbuf-extensions から削除</li>
+<li>build 時の警告を修正 (そこでは const は必要ありません)</li>
+<li>gcc 4.9.2 でのビルドを修正 (既定では c89 モードになっているようです)</li>
+<li>検索: タグサポート (xattr::xdg.tags) を追加</li>
+<li>ファイル名のセル選択時に、リストビューの名前変更できない問題を修正</li>
+<li>property-browser: scrolledwindows にスタイルクラスフレームを追加</li>
+<li>caja-application.c: 初期化されない変数を修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-polkit 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-polkit-1200"></span>
+    <a href="#mate-polkit-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>polkitgtkmate ライブラリとその文書を削除</li>
+<li>ステータス通知でのアイコンの再表示/非表示を修正</li>
+<li>status-icon: ストックアイコンを使用しません。</li>
+<li>polkitmateauthenticationdialog: 非推奨の GtkAlignment を回避</li>
+<li>polkitmateauthenticationdialog: 非推奨の GTK_STOCK を置き換え</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>marco 1.20.0<span class="hx:absolute hx:-mt-20" id="marco-1200"></span>
+    <a href="#marco-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>build: 不要な pangoxft の要件を削除</li>
+<li>move_to_X キーバインドの小さなバグを修正</li>
+<li>サイズの異なるモニタでのバグを修正</li>
+<li>モニタのキーバインド再構築と <code>save_rect</code> の調整</li>
+<li>ウィンドウを別のモニタに移動するために簡単なショートカットを実装</li>
+<li>schema: タイピングミスの修正</li>
+<li>コンポジタ: 表示不能なウィンドウを描画しません。</li>
+<li>フレームのないウィンドウでの <code>meta_window_titlebar_is_onscreen()</code> の誤った結果を修正</li>
+<li>gtk3 の <code>_GTK_SHOW_WINDOW_MENU</code> イベントのサポートを追加</li>
+<li>新しいワークスペースへの移動キーバインドを処理するため、より洗練された方法を採用</li>
+<li>トップのタイリングを無効にする設定を実装</li>
+<li>ウィンドウを別のワークスペースに移動する際、タブのポップアップを実装</li>
+<li>keybindings.c: ビルド時の警告を修正</li>
+<li>全画面表示のとき、tile_resized を false にリセット</li>
+<li>ウィンドウを最大化しない時、<code>save_rect</code> にならない問題を修正</li>
+<li>コーナーを並べて表示するとき、水平方向と垂直方向のサイズ変更を可能に</li>
+<li>コーナーを並べないとき、ウィンドウが saved_rect にリセットされる問題を修正</li>
+<li>コーナーに並べる場合のキーバインドを追加</li>
+<li>マウスのドラッグによる簡単なコーナーへのタイリングを実装</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>XFIXS 領域が paint_windows の実行中にリークします。</li>
+<li>XPresent サポートなしで実行するために、より厳密なロジックを追加</li>
+<li>XPresent のオプション化</li>
+<li>xfwm4 からの一部変更を算入</li>
+<li>エラー発生時に present_pending のフラグを解除</li>
+<li>XPresent の拡張機能をサポート</li>
+<li>ユーザーがタイル表示からサイズ変更した時、ウィンドウフラグを保存</li>
+<li>並べて表示したウィンドウが水平方向にサイズ変更可能に</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>推奨されていない <code>gdk_screen_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_width</code> を回避</li>
+<li>display: 廃止された <code>GDK_DEVICE_MANAGER</code> を使用しません。</li>
+<li>tools: marco-mag と marco-grayscaletools を削除</li>
+<li>合成 keybinding/button-grab ウィンドウを修正</li>
+<li>既定またはユーザ設定のスケールを使用する代わりに、ウィンドウマネージャのウィンドウスケールをを強制的に 1 に設定します。</li>
+<li>非推奨の <code>gdk_display_get_screen</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>Alt/tab - 矢印キーコード + テンキーの矢印を定義</li>
+<li><kbd>Alt</kbd> + <kbd>Tab</kbd> ポップアップ中に矢印の使用が可能になりました。</li>
+<li>ui: フレーム内の無効なオブジェクト構築を修正</li>
+<li>README: GSettings キーの名前を修正</li>
+<li>キーバインド: 「現在のワークスペース」から大文字を削除</li>
+<li>現在のワークスペース名を変更するホットキーを追加</li>
+<li>非推奨のコードを修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-settings-daemon 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-settings-daemon-1200"></span>
+    <a href="#mate-settings-daemon-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>HiDPI: 初期化段階で xsettings を読み込みます。</li>
+<li>XSettings に HiDPI の設定を追加</li>
+<li>HiDPI ディスプレイへの対応を追加</li>
+<li>プラグイン: <code>_GNUC_UNUSED</code> は未使用ですが必要な変数です。</li>
+<li>xsettings: GTK+3 で動作しない CanChangeAccels を削除</li>
+<li>msd-datetime-mechanism.c: ビルド時の警告を削除</li>
+<li>msd-mpris-manager.c: ビルド時の警告を削除</li>
+<li>configure.ac: <code>GLIB_VERSION_MAX_ALLOWED</code> を削除</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-session-manager 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-session-manager-1200"></span>
+    <a href="#mate-session-manager-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>gsm-manager.c: ビルド時の警告を削除</li>
+<li>ログアウトまたはシャットダウン時のダイアログ表示で、フォーカスを失わないようにしました。</li>
+<li>スタイルクラス <code>logout-dialog</code> を追加</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>セッション開始時にすべてのユーザー定義環境を取得するには、systemd user-session を更新する必要があります。</li>
+<li>セッション開始時にすべてのユーザー定義環境を取得するには、dbus を更新する必要があります。</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-menus 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-menus-1200"></span>
+    <a href="#mate-menus-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>gio のバージョンを 2.50.0 に上げました。</li>
+<li>mate-applications-merged をシンボリックリンクに</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-panel 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-panel-1200"></span>
+    <a href="#mate-panel-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>HiDPI ディスプレイでのパネルの自動スケールに対応</li>
+<li>必要最低限の libwnck バージョンを 3.4.6 へ上げました。</li>
+<li>status-notifier: ツールチップのタイプが違ってもクラッシュしないように</li>
+<li>status-notifier: メニューレイアウトが正しくなくてもクラッシュしないように</li>
+<li>ステータス通知のラジオボタンの描画を修正</li>
+<li>panel-run-dialog: プログラムリストが有効な場合に不具合を修正</li>
+<li>「壊れたアプレット」ダイアログを表示する時はフォーカスを取得</li>
+<li>ワークスペース切替プロパティのダイアログを更新</li>
+<li>コードの一部を単純化</li>
+<li>背景の変更操作を取り消すプロセスを作り直し</li>
+<li>status-notifier: アイテムの NULL ケースを適切に処理</li>
+<li>status-notifier: パスによって呼び出された間違ったサイズのアイコンの処理</li>
+<li>status-notifier: パスで指定されたアイコンを読み込む</li>
+<li>アプリケーションがアイコン名ではなくパスを要求した場合、アイコンを読み込めない問題を修正</li>
+<li>ビルド時の警告を修正: <code>toplevel_configure_event</code> defined but not used</li>
+<li>ビルド時の警告を修正: <code>GLIB_VERSION_MIN_REQUIRED</code> redefined</li>
+<li>status-notifier: アイコンが見つからない場合の表示を修正</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>panel-toplevel: <code>panel_toplevel_queue_auto_hide()</code> でのポインタ境界チェックを削除</li>
+<li>以前から存在する gnome-panel の残りを削除</li>
+<li>解像度を大きく変更しても、右側のアイコン表示位置を維持</li>
+<li>wncklet: 破壊時のデータによる信号の切断</li>
+<li>clock: 破棄時にもう 1 つのシグナルハンドラを切断</li>
+<li>panel-applet-frame-dbus-c: 新規未使用の変数をコメントアウト</li>
+<li>Clock: &lt;0 に対して &lt;0 になり得ない変数はチェックしません。</li>
+<li>panel-applet-frame-dbus.c: 使用されていないコードブロックをコメントアウト</li>
+<li>panel-toplevel: 重複した break 文を削除</li>
+<li>status-notifier: cppcheck によって検出された重複チェックを削除</li>
+<li>status-notifier: パッシブな場合は mate-polkit アイコンを非表示</li>
+<li>ポップアップの位置修正を GTK 3.20 以前に適用</li>
+<li>GTK 3.22 ステータス通知: サイズ変更時にメニューを再配置</li>
+<li>GTK 3.22/status-notifer: 前回の表示以降にサイズが変更された場合、メニューの位置を修正</li>
+<li>特定のプロセス外のアプレットを追加した時、パネルが壊れないようにしました。</li>
+<li>ファイル/フォルダのランチャーが再び動作するようにしました。</li>
+<li>panel-context-menu: パネルリセットオプションに確認ダイアログを追加</li>
+<li>パネルのコンテキストメニューに「パネルのリセット」を追加</li>
+<li>clock: 壊れた時にシグナルハンドラを切断</li>
+<li>GLib 2.53.4 以降を使用してアプレットを移動/削除するとクラッシュする問題を修正</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>SNI サポートを有効/無効にするための gsettings キーを追加</li>
+<li>wncklet: セグメンテーションの不具合、インプロセススイッチャとメニューリストの削除に関する警告を停止</li>
+<li>fish: 削除後に元に戻る問題を修正</li>
+<li>Fish: ビルドのプロセス中における削除に係るすべての警告を停止</li>
+<li>Clock: 処理中のアプレットが削除された時の削除警告を修正</li>
+<li>clock: ビルド実行中にアプレットを削除する時、セグメンテーション違反となるのを停止</li>
+<li>libmate-panel-applet: タイプミスの修正 in id-&gt;factory_id</li>
+<li>libmate-panel-applet: 必要な場合のみ、<code>_panel_applet_shlib_factory()</code> を宣言</li>
+<li>libmate-panel-applet: dbus オブジェクトの登録解除中のエラーを修正</li>
+<li>libmate-panel-applet: ビルド時の警告を修正</li>
+<li>libmate-panel-applet: イントロスペクションの修正</li>
+<li>libmate-panel-applet: 不明なバス名を修正し、dbus オブジェクトの登録解除</li>
+<li>libmate-panel-applet GTK 3.14/3.16: custom bg w alpha の修正</li>
+<li>libmate-panel-applet: 特定アプレットのファクトリにダミー変数を含めます。</li>
+<li>libmate-panel-applet: プロセス中アプレットの背景描画を修正</li>
+<li>libpanel-applet/panel-applet.h: ファクトリの ID を <code>factory_id</code> へ変更</li>
+<li>libmate-panel-applet: panel-applet-private.h の追加</li>
+<li>実行中のアプレットに GtkPlug/GtkSocket を使用しません。</li>
+<li>アプレットのウィジェットを取得できるようにしました。</li>
+<li>libpanel-applet: <code>panel_applet_factory_get_applet_widget</code> の追加</li>
+<li>libpanel-applet: プロセスの種類とアプレットの UID を返します。</li>
+<li>libpanel-applet: ハッシュテーブルにファクトリを保存</li>
+<li>libpanel-applet: GtkPlug の作成を遅延</li>
+<li>libpanel-applet: プロセスの種類をプライベートデータへ追加</li>
+<li>libpanel-applet: <code>panel_applet_factory_main()</code> から <code>out_process</code> を削除</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_n_monitors</code> を回避</li>
+<li>fish: ビルド実行中にアプレットが細いラインで開くのを修正</li>
+<li>既定またはユーザ設定のスケールを使用する代わりに、パネルのウィンドウスケールをを強制的に 1 に設定します。</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>非推奨の <code>gdk_display_get_screen</code> を回避</li>
+<li>非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>透過性の user-set パネル背景でアプレットがクラッシュする問題を修正</li>
+<li>システムトレイ: 画像/透過色の背景上の非表示アイコンを修正</li>
+<li>垂直パネル上における、GTK テーマの画像背景サポートを修正</li>
+<li>GTK テーマでのパネル画像の背景が再び機能します。</li>
+<li>clock: 時間帯の文字上にカーソルを置くとパネルが画面の制限を超えて拡大する問題を修正</li>
+<li>GTK 3.18+: 既定の透過性パネルの背景を修正</li>
+<li>menu: メニュー項目を外にドラッグ&amp;ドロップした後でフォーカスを回復</li>
+<li>menu: メニュー項目のポップアップメニューを閉じた後にフォーカスを回復</li>
+<li>修正: メニューバー/メニューボタンで mozo が起動しない問題</li>
+<li>menu: メニュー項目のポップアップメニューから誤ったコードを削除</li>
+<li>ステータス通知: パネルの他の部分と同じメニューテーマに追従</li>
+<li>パネル間でのアプレットの移動を修正</li>
+<li>menu: 一部の .desktop ファイルに空のアイコンフィールドがある場合にクラッシュする問題を修正</li>
+<li>clock: 編集ボタンの視認性を適正に処理</li>
+<li>clock: 非推奨の <code>gtk_size_group_set_ignore_hidden</code> を削除</li>
+<li>clock: GtkButton を別の水平な GtkBox の元へ移動</li>
+<li>clock.c: 非推奨の <code>gtk_size_group_set_ignore_hidden</code> を削除</li>
+<li>アプリケーションの名前と説明をローカライズ</li>
+<li>menu-button: アプレットが削除された時は GSettings から切断</li>
+<li>action-button: アプレットが削除された時は GSettings から切断</li>
+<li>不必要な glib のチェックを削除</li>
+<li>ステータス通知: 不明なシグナル名でのクラッシュを修正</li>
+<li>場所メニューに GTK+3 のブックマークの位置を使用</li>
+<li>doc: 存在しないものへの参照を一部削除</li>
+<li>gcc 4.9.2 でのビルドを修正 (既定では c89 モードになっているようです)</li>
+<li>実行ダイアログ: 履歴表示を反転させるオプションを追加</li>
+<li>実行ダイアログ: 最大サイズ 1 の不正な履歴の長さを修正</li>
+<li>実行ダイアログ: 履歴サイズの変更を許可</li>
+<li>doc: 古い MateConf の参考文献を削除</li>
+<li>実行ダイアログ: 誤った履歴順序の修正</li>
+<li>ステータス通知: パッシブ項目を表示</li>
+<li>パネルメニューバー: ビルド警告と一部のスペースを修正</li>
+<li>展開したパネルをより小さな画面サイズに適合</li>
+<li>システムトレイ: 方向の変更を適切に伝達</li>
+<li>通知エリア: アイテムの向きを修正</li>
+<li>ワークスペース切替: <code>GDK_SCROLL_SMOOTH</code> の処理とビルド警告の修正</li>
+<li>ワークスペース切替のラッピングを再度有効化</li>
+<li>プレバンプバージョン</li>
+<li>スタイルの通知: icon-padding スタイルのプロパティを修正</li>
+<li>WM でのパネル切り替え時に表示されるパネルの説明を簡略化</li>
+<li>ステータス通知: メモリリークを防止</li>
+<li>使用されていない <code>sys/timeb.h</code> ヘッダを削除</li>
+<li>status-notifier-watcher: 登録済みアイテムの再登録を許可</li>
+<li>カスタムアイコンの設定</li>
+<li>ステータス通知: メモリリークの防止</li>
+<li>通知エリア: メモリリークの分類項目を修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-backgrounds 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-backgrounds-1200"></span>
+    <a href="#mate-backgrounds-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>以前から存在する gnome-panel の残りを削除</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-themes 3.22.8 から 3.22.15 へ<span class="hx:absolute hx:-mt-20" id="mate-themes-3228-から-32215-へ"></span>
+    <a href="#mate-themes-3228-%e3%81%8b%e3%82%89-32215-%e3%81%b8" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>サブマリンテーマ: engrampa のツールバーで box-shadow を削除</li>
+<li>サブマリンテーマ: caja-sidebar ツリービューからパディングを削除</li>
+<li>all themes caja: スクロールウィンドウの枠から右側の境界線を削除</li>
+<li>Menta metacity テーマ: 最大化時にウィンドウの左/右境界線を削除</li>
+<li>ブラック MATE: スクロールバーの谷に境界線を書き込みます。</li>
+<li>すべてのテーマ: スクロールウィンドウの枠から右側の境界線を削除</li>
+<li>サブマリンテーマ: ヘッダバーの button.suggested-action の前景色を修正</li>
+<li>ブラック MATE: Yelp/Lireoffice/Firefox でのスクロールバーの問題を回避</li>
+<li>「Gtk+-3.20 all themes: Yelpでの再描画の問題修正」を元に戻しました。</li>
+<li>TOK/TG: スライダ: 元のサイズを維持</li>
+<li>Gtk+-3.20 サブマリン: サイドバーの treeview.selected/hover で境界の半径を小さくしました。</li>
+<li>Gtk+-3.20 サブマリン: スピンボタンエントリのフォント色を設定</li>
+<li>Gtk+-3.20 サブマリンテーマ: gitg のヘッダバーでのジャンプボタンを修正</li>
+<li>Gtk+-3.20 サブマリンテーマ: caja-icon-view で dnd を設定</li>
+<li>Gtk+-3.20 T. テーマ: mate-volume-control notebook における二重枠の修正</li>
+<li>Gtk+-3.20 サブマリンテーマ: pluma-statusbar-button のフォーカス状態を修正</li>
+<li>Gtk+-3.20 の多くのテーマ: メニュー項目のアクセラレータホバーをデザイン</li>
+<li>すべてのテーマ: mate-1.20 用のパネルグリッドのイメージをロードするため、シンタックスを変更</li>
+<li>Gtk+-3.20 サブマリンテーマ: トップの borderradius を .titlebar &gt; headerbar へ設定</li>
+<li>Gtk+-3.20 の多くのテーマ: GtkEntry のプライマリ/セカンダリイメージでのパディングを修正</li>
+<li>Gtk+-3.20 TRAD テーマ: メニューの grey-out arrows の色を修正</li>
+<li>TOK/TG: radio mixed というメニュー項目を追加</li>
+<li>TOK/TG メニュー項目: checkboxes とラジオボタンを再度デザイン</li>
+<li>Gtk+-3.20 の多くのテーマ: スライダが範囲外の場合に GtkScale スライダのマウス選択を修正</li>
+<li>Gtk+-3.20 すべてのテーマ: yelp での再描画の問題を修正</li>
+<li>Gtk+-3.20 グリーンラグナ: 一部のメニューを修正</li>
+<li>Gtk+-3.20 Menta テーマ: メニューの矢印にトランジション効果を追加</li>
+<li>Gtk+-3.20 Menta テーマ: Firefox メニューの設定を削除</li>
+<li>Gtk+-3.20 サブマリンテーマ: ラベルからトランジション効果を削除</li>
+<li>gtk+ ハイコントラストテーマ用の index.theme ファイルを追加</li>
+<li>Gtk+-3.20 の多数のテーマ: 時計アプレットの clockmap 境界を設定</li>
+<li>Gtk+-3.20 サブマリンテーマ: 時計アプレットの一部を修正</li>
+<li>Gtk+-3.20 BlackMate: 一部のパネルクロック修正</li>
+<li>TOK/TG: caja: ノートブックのヘッダーの境界を単色で表示</li>
+<li>Gtk+-3.20 Menta テーマ: ツールヒントにハードコードされた背景色を使用</li>
+<li>BlackMATE: CSD アプリケーションを合成されていないヘッダーバーを四角形のウィンドウ枠に一致</li>
+<li>BlackMATE: 多数の CSD アプリケーション修正</li>
+<li>BlackMATE: CSD アプリケーションの修正</li>
+<li>Gtk+-3.20 Menta テーマ: パネルアプレットのボタン色を変更</li>
+<li>Gtk+-3.20 Menta テーマ: メニューバーのメニュー項目の移行時間を変更</li>
+<li>Gtk+-3.20 Menta テーマ: パネルに通常のメニューバーのメニュー項目スタイルを使用</li>
+<li>Gtk+-3.20 Menta テーマ: メニュー項目からトランジション効果を削除</li>
+<li>TOK/TG: mate-terminal:: ノートブックのヘッダーの境界を単色で表示</li>
+<li>Gtk+-3.20 BlackMATE: Google Chrome における URL バーのフォント色を修正</li>
+<li>Gtk+-3.20 BlackMATE: メニュー項目でのアクセラレータのフォント色を変更</li>
+<li>TOK/TG: xfce4-terminal: ノートブックのヘッダー境界を単色に</li>
+<li>TOK/TG: ノートブックのヘッダーからグラデーションを削除</li>
+<li>カーソル: ファイル作成にカラーピッカーを追加</li>
+<li>Gtk+-3.20 サブマリンテーマ: pluma のサイドバーを改善</li>
+<li>Gtk+-3.20 サブマリンテーマ: pluma のエラーダイアログにおける前景色を修正</li>
+<li>ブラックMATE: 完全なノンコンポジット m-s-d OSD をデザイン</li>
+<li>ブラックMATE: 非コンポジット OSD ケースにて、新しい msd-osd-window-solid スタイルクラスをサポート</li>
+<li>ブラックMATE: Caja のラベル名変更を読みやすくしました。</li>
+<li>ハイコントラストの反転: テーマが実際に適用された時の Caja のリネームラベルを修正</li>
+<li>カーソル: カラーピッカーのカーソル画像を追加</li>
+<li>GTK+-3.20 サブマリンテーマ: mate- と mintmenu の改善</li>
+<li>Gtk+-3.20 menta テーマ: mate- と mint-menu の改善</li>
+<li>Gtk+-3.20 伝統的テーマ: 一部のダイアログウィンドウを改善</li>
+<li>伝統的テーマ: MATE インジケータアプレットの背景を描画しません。</li>
+<li>Gtk+-3.20 の多数テーマ: caja の非表示ペインのリストビューで背景色を修正</li>
+<li>Gtk+-3.20 すべてのテーマ: 新しい css 名 matekbd-keyboard-drawing を追加</li>
+<li>metacity サブマリンテーマ: metacity または compiz WMが使用されている場合は、内枠を修正</li>
+<li>TOK/TG: xfce4-terminal: ノートブックのヘッダー境界を階調色に</li>
+<li>TOK/TG: ノートブックのタブの余白を 2 ピクセル大きくします</li>
+<li>menta: &ldquo;{{&rdquo; typo で gtk-widgets.css ファイルが壊れる問題を修正</li>
+<li>すべてのテーマ: 印刷ダイアログの用紙の描写が正しく表示されない問題を修正</li>
+<li>Gtk+-3.20 Menta テーマ: バックドロップと通常の状態を区別しない</li>
+<li>Gtk+-3.20 多数のテーマ: Mate-Panel の非表示ボタンを修正</li>
+<li>TOK/TG: caja ではノートブックのヘッダー境界に階調色を設定</li>
+<li>Gtk+-3.20 サブマリンテーマ: Mate-Panel の非表示ボタンを修正</li>
+<li>TOK/TG: xfce4-terminal のタブと多分他のアプリケーションについても境界を修正</li>
+<li>Gtk+-3.20 すべてのテーマ: mate-menu の改善</li>
+<li>Gtk+-3.20 すべてのテーマ: キーボードレイアウトのデザインを改善</li>
+<li>TOK/TG: mate-terminal: ノートブックのヘッダー境界を階調色に設定</li>
+<li>Gtk+-3.20 トラディショナル: mate-terminal でノートブックのヘッダー境界に色を設定</li>
+<li>Gtk+-3.20 Menta テーマ: mate-applications.css の分類</li>
+<li>Menta テーマ: ノートブックのヘッダーの境界に色を設定</li>
+<li>TOK/TG: パネルグリッドに新しい色を採用</li>
+<li>Gtk+-3.20 すべてのテーマ: mate-keyboard-layout-viewer のデザイン</li>
+<li>伝統的テーマ - Menta のアプレットハンドルを使用</li>
+<li>TOK/TG: mate-terminal: ノートブックの代わりにヘッダータブの枠線を使用</li>
+<li>Gtk+-3.20 ハイコントラストの反転: 不足しているアセットを追加して実行時警告を回避</li>
+<li>Menta テーマ: ロック画面における不適切な枠線の色を削除</li>
+<li>Gtk+-3.20 サブマリン: ロック画面における不適切な枠線の色を削除</li>
+<li>グリーンラグナ: MATE 端末のノートブックタブ境界を修正</li>
+<li>サブマリンテーマ: MATE 端末のノートブックタブ境界を修正</li>
+<li>Gtk+-3.20 Menta テーマ: MATE 端末のノートブックタブ境界を修正</li>
+<li>伝統的テーマ: MATE 端末の見かけ向上のために一部の行を削除</li>
+<li>Gtk+-3.20 多数のテーマ: ノートブックの端末には境界線を使いません。</li>
+<li>伝統的テーマ: 印刷ダイアログの改善</li>
+<li>伝統的テーマ: pavu-control 用にノートブックの境界を設定 (適切に修正)</li>
+<li>伝統的テーマ: pavu-control 用にノートブックの境界を設定</li>
+<li>Gtk+-3.20 グリーンラグナ: スクロールバーの接合部をデザイン</li>
+<li>Gtk+-3.20: Firefox 用の煩わしいワイルドカードを追加</li>
+<li>Gtk+-3.20 グリーンラグナ: caja サイドバーの一部の境界を修正</li>
+<li>Gtk+-3.20 グリーンラグナ: GtkSwitch のボーダーの色を変更</li>
+<li>Gtk+-3.20 グリーンラグナ: スクロールバーのボーダーの色を変更</li>
+<li>GTK+-3.20 グリーンラグナ: insensitive_bg_color の変更</li>
+<li>Gtk+-3.20 グリーンラグナ: ネットブックの改善</li>
+<li>伝統的テーマ: ノートブック内の不要な 2 行を削除</li>
+<li>Gtk+-3.20 グリーンラグナ: フレームの境界部分の書き直しとその他の改善</li>
+<li>グリーンラグナ metacity: ボーダーサイズの拡大</li>
+<li>サブマリン metacity: ボーダーサイズの拡大</li>
+<li>Gtk+-3.20 Submarine: リストの行の dim-labels に色を設定</li>
+<li>伝統的なテーマ: チェックマークが付いたノートブックのタブで、より多くの境界線の色を設定</li>
+<li>Gtk+-3.20 サブマリンテーマ: ステータスバーにパディングを設定</li>
+<li>Gtk+-3.20: mate-font-viewer ツールバーのジャンプボタンを修正</li>
+<li>GTK+-3.20 サブマリンテーマ: ヘッダーバーとポップオーバーメニューの改善</li>
+<li>Gtk+-3.20 サブマリンテーマ: gedit ステータスバーのパディングを設定</li>
+<li>Gtk+-3.20 Menta テーマ: button.fat に不足していた border-image を追加。filezilla と atril で確認済み</li>
+<li>Gtk+-3.20 Menta テーマ: ノートブックの一部改善</li>
+<li>Firefox の検索候補に表示される URL の色を修正</li>
+<li>Gtk+-3.20 Menta テーマ: フレームの境界部分の書き直しとその他の改善 (mega commit)</li>
+<li>伝統的なテーマ: ノートブックのタブのパディングを小さく</li>
+<li>Gtk+-3.20 サブマリンテーマ: 複数の改善</li>
+<li>Gtk+-3.22 サブマリンテーマ: ノートブックの一部改善</li>
+<li>Gtk+-3.22 サブマリンテーマ: フレームのボーダーを再作成</li>
+<li>Gtk+-3.20 サブマリンテーマ: rubberband の前回のコミットを修正</li>
+<li>Gtk+-3.20 サブマリンテーマ: mate-screenshot の rubberband を修正</li>
+<li>Gtk+-3.20 サブマリンテーマ: ツールバーのラベルカラーを修正</li>
+<li>伝統的なテーマ: アクティブなタブで階調色を使用</li>
+<li>Gtk+-2.0 グリーンラグナ: gtkrc でハードコードされた 16 進数の色を使用</li>
+<li>Gtk+-2.0 の多くのテーマ: gtkrc で色定義に oneliner を使用</li>
+<li>伝統的なテーマ: 一部のアプレットに border-image を追加</li>
+<li>Gtk+-3.20 伝統的なテーマ: GtkInfobar 全体に境界を使用</li>
+<li>Gtk+-3.20 伝統的なテーマ: Firefox で一部の境界を修正する回避策</li>
+<li>Gtk+-3.20 伝統的なテーマ: コンボボックスボタンのジャンプを修正</li>
+<li>Gtk+-3.20 多くのテーマ: GtkAssistant のサイドバーを修正</li>
+<li>Gtk+-3.20 サブマリンテーマ: GtkAssistant のサイドバーを修正</li>
+<li>Gtk+-3 すべてのテーマ: NaTrayApplet-icon-size を設定しません</li>
+</ul>
+<h3>mate-notification-daemon 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-notification-daemon-1200"></span>
+    <a href="#mate-notification-daemon-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_n_monitors</code> を回避</li>
+<li>タイムアウトが大きい場合に CPU 使用率が高くなるのを修正</li>
+<li>アイコンファイルの URI-encode パスをアンエスケープ</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-control-center 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-control-center-1200"></span>
+    <a href="#mate-control-center-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>HiDPI ディスプレイ用にフォントの DPI を拡大</li>
+<li>HiDPI ディスプレイへの対応を追加</li>
+<li>theme-installer.c: <code>mate_theme_install_real</code> に <code>g_object_unref</code> がありません</li>
+<li>theme-util.c: 削除したテーマの再インストールで失敗する問題を修正</li>
+<li>XZ 形式をインストールするためのテーマ圧縮パッケージをサポート</li>
+<li>使用しない変数を削除</li>
+<li>eggcellrendererkeys.c: ビルド時の警告を削除</li>
+<li>MacOS のサポートに関連した一部の残骸を削除</li>
+<li>theme-thumbnail.c: <code>write</code> と <code>pipe</code> でのビルド時の警告を修正</li>
+<li>libslab: 検索エントリウィジェットを <code>GtkEntry</code> として格納</li>
+<li>libslab: 検索アイコンの位置ずれを修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-screensaver 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-screensaver-1200"></span>
+    <a href="#mate-screensaver-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>ロック画面の HiDPI サポートを追加</li>
+<li>gs-lock-plug.c: ビルド時の警告を修正</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>mate-screensaver-command の正しい manpage を復元</li>
+<li>初期設定のループを修正</li>
+<li>修正: すべての言語でアイドルスライダを表示</li>
+<li>glib が最大バージョンを要求するのを削除</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gtk_show_uri</code> を回避</li>
+<li><code>bsd_auth(3)</code> を使って OpenBSD 認証を実装しました。</li>
+<li>バグ修正: <code>g_get_real_name</code> は決して NULL ポインタを返しません</li>
+<li>lock-dialog UI: 非推奨のウィジェットを回避</li>
+<li>バグ修正: モニタジオメトリがオーバーラップした構成で、スクリーンセーバとロック画面が正しく表示されない問題</li>
+<li>[GTK+3.20] GdkSeat へ切り替え</li>
+<li>パスワード入力ウィジェットに入力目的を設定</li>
+<li>コピーテーマダイアログ: 変数タイプの誤りに関するビルド警告を修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-media 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-media-1200"></span>
+    <a href="#mate-media-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>gvc-applet: NULLオブジェクトの refcount を増やしません</li>
+<li>gvc-combo-box: シグナルの引数を修正</li>
+<li>アプレット: 「サウンド設定」メニューのアイコンを復元</li>
+<li>非推奨の <code>gdk_screen_get_height</code> を回避</li>
+<li>アプレット: GTK+ &gt;= 3.20 で GdkSeat を使用</li>
+<li>アプレット: ポップアップでキーボードが機能します</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>アイコンテーマの変更時にトレイアイコンを更新</li>
+<li>ミキサダイアログ: scrolledwindow よりスタイルクラスフレームを削除</li>
+<li>音量調節ダイアログ: 非推奨の GtkAlignment を回避</li>
+<li>アプレット: 音量をミュートしてもポップアップで表示</li>
+<li>アプレット: 音量の増加量を改善</li>
+<li>非推奨警告を既定で有効化</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-power-manager 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-power-manager-1200"></span>
+    <a href="#mate-power-manager-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>非推奨の GtkStock を回避</li>
+<li>inhibit: 先のコミットにおけるスパムログのエラーを修正</li>
+<li>inhibit applet: アイコンの描画を修正</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>さらに指摘のあったタイプミスを修正</li>
+<li>綴りの間違いを訂正しました。</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>不明な DBus シグナル名では中断しません</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_display_get_screen</code> を回避</li>
+<li>非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>アイコンテーマの変更時にトレイアイコンを更新</li>
+<li>実際に <code>$XPROTO_REQUIRED</code> 変数の値をチェック</li>
+<li>statistics UI: スタイルクラス mpm-statistics の追加</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-system-monitor 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-system-monitor-1200"></span>
+    <a href="#mate-system-monitor-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>procman.cpp: ビルド警告の引数 1 が null で、non-null が期待される部分を修正</li>
+<li>sysinfo.cpp: 次のビルド時警告を修正: this ‘if’ clause does not guard&hellip;</li>
+<li>proctable.cpp: 次のビルド時警告を修正: this ‘else’ clause does not guard&hellip;</li>
+<li>システムロゴの位置を修正</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>プロセステーブル: 大文字と小文字を区別をしないで検索</li>
+<li>sysinfo: すべてのラベルでフォーカスを無効化</li>
+<li>非推奨の <code>gdk_screen_width/height</code> を回避</li>
+<li>sysinfo: 非推奨の GtkAlignment を回避</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>atril 1.20.0<span class="hx:absolute hx:-mt-20" id="atril-1200"></span>
+    <a href="#atril-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>build: GTK+3 以前のオプションを削除</li>
+<li>epub: minizip がより多くの BSD バージョンに対応</li>
+<li>previewer: スタイルクラス atril-previewer-window を追加</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>シェル: メニューにキャレットナビゲーションを表示</li>
+<li>ev-link-accessible: 開始と終了のインデックスを取得する方法の効率を改善</li>
+<li>フォームフィールドをそのページの AtkObject の子として表示</li>
+<li>画像をページの AtkObject の子として公開</li>
+<li>リンクをページの AtkObject の子として公開</li>
+<li>ev-view-accessible: 特定の文書の矩形が表示されているかどうかの判別方法を追加</li>
+<li>ev-page-cache: 指定したページがキャッシュされているかチェックする方法を追加</li>
+<li>libview: 検索結果にジャンプする時、キャレットカーソルを更新</li>
+<li>libview: 表示されるページ範囲が変更されたとき、<code>ATK_STATE_SHOWING</code> を更新</li>
+<li>libview: ページに AtkComponent を実装</li>
+<li>libview: Shift+クリックによるテキスト選択を修正</li>
+<li>a11y: EvPageAccessible を要求したときはテキストがキャッシュされます</li>
+<li>a11y: EvPageAccessible で atk の状態を管理</li>
+<li>a11y: EvPageAccessible に ATK_RELATION_FLOWS_TO/FROM を適用する場合は追加</li>
+<li>a11y: AtkHyperText の実装を EvViewAccessible から EvPageAccessible へ移動</li>
+<li>a11y: AtkText の実装を EvViewAccessible から EvPageAccessible へ移動</li>
+<li>a11y: EvPageAccessible を EvViewAccessible の子として公開</li>
+<li>a11y: 新しい EvPageAccessible</li>
+<li>libview: EvViewAccessible テキストサポートの一部の壊れた部分を修正</li>
+<li>libview: AtkHyperlink インデックスを取得する際、キャレットナビゲーションを考慮</li>
+<li>a11y: <code>atk_text_get_caret_offset</code> の実装を整理</li>
+<li>a11y: <code>atk_text_get_caret_offset</code> の実装を修正</li>
+<li>view: set_caret_cursor_position が適用された場合に &ldquo;cursor-moved&rdquo; と表示</li>
+<li>非推奨の <code>atk_text_get_text_{before,after}_offset()</code> への対応を削除</li>
+<li>a11y: EvViewAccessible に AtkDocument を実装</li>
+<li>a11y: キャレットナビゲーションが有効な場合、操作支援の現在のページはカーソルページになります。</li>
+<li>ev-view-accessible: モデル設定時に <code>document_changed_cb</code> を呼び出します。</li>
+<li>キャレットメッセージ領域の一部のテキストを修正</li>
+<li>ev-view-accessible: <code>ev_view_accessible_get_link</code> でのクラッシュを修正</li>
+<li>ev-view-accessible: 現在のページでキャッシュされたデータをクリア</li>
+<li>shell: <code>view_actions_focus_out_cb</code> を削除</li>
+<li>shell: <code>ev_window_set_view_accels_sensitivity</code> を削除</li>
+<li>shell: フォーカスのあるウィジェットに順方向に加速</li>
+<li>view accel アクションにグローバル配列を使用</li>
+<li>djvu 文書内のテキストを選択した時クラッシュする問題を修正</li>
+<li>shell: メッセージ領域のストックアイテムを修正</li>
+<li>docs: libview: type builtins セクションの再追加</li>
+<li>キャレットナビゲーション付きの epub 文書でのクラッシュを修正</li>
+<li>キャレットカーソルの位置を文書のメタデータに保存</li>
+<li>libview: <code>ev_view_set_caret_cursor_position</code> の追加</li>
+<li>libview: スクロールで場所を検索しているあいだでも、現在のページを更新</li>
+<li>libview: キャレットナビゲーションを有効/無効にした時、再描画のスケジュールを設定しません</li>
+<li>libview: カーソルが表示されているページにない時にはキャレットカーソルの点滅を停止</li>
+<li>shell: F7 キーを押すとキャレットナビゲーションが有効/無効化</li>
+<li>libview: <code>ev_view_supports_caret_navigation()</code> の追加</li>
+<li>ev-link-accesible: リンク内の最後の文字の後のインデックス/オフセットを返します</li>
+<li>help: 除去された選択モードへの参照を削除</li>
+<li>libview: ページ余白での開始/終了を修正</li>
+<li>libview: 選択の際にスキャンするページを減らしました</li>
+<li>libview: 使用しない矩形選択モードを削除</li>
+<li>libview: ev_view_accessible_get_selection の作り直し</li>
+<li>libview: キャレットカーソルが移動する時はビュー全体を再描画しません</li>
+<li>libview: 行間移動時には、カーソルを配置した後でカーソル領域を更新</li>
+<li>ev-view-accessible: <code>ev_view_accesssible_get_n_selections</code> の修正</li>
+<li>ev-view-accessibl: キャレットナビゲーションが有効な時の get_caret_offset を修正</li>
+<li>libview: 行間の移動が失敗した時は、エラーベルを使用してすぐ戻ります</li>
+<li>libview: <code>ensure_rectangle_is_visible</code> でサイズ変更を予定しません</li>
+<li>libview: 選択肢がある時はカーソルの点滅を停止</li>
+<li>libview: ev_view_scroll を廃止して <code>g_signal_emit_by_name</code> を採用</li>
+<li>ev-window: <code>ev_view_scroll</code> の代わりに g_signal_emit_by という名前を使用</li>
+<li>previewer: スクロールアクセラレータを削除</li>
+<li>ev-window: スクロールアクセラレータを削除</li>
+<li>libview: スクロールキーのバインドを EvView へ追加</li>
+<li>libview: h、j、k、l バインディングに対して、スクロールシグナルの第2パラメータのタイプを修正</li>
+<li>libview: NULL を渡す merge_selection_region を使って選択を消去</li>
+<li>ev-pixbuf-cache: ジョブ選択をクリアするときにも選択領域をクリア</li>
+<li>ev-pixbuf-cache: 新しい選択が必要なときの条件を修正</li>
+<li>ev-view-accessible: get_run_attributes を書き直して、文書のテキスト属性を返すようにしました</li>
+<li>pdf: <code>ev_document_text_get_text_attrs()</code> の実装</li>
+<li>libview: バックエンドからテキスト属性を取得し、ページキャッシュへ保存</li>
+<li>libdocument: <code>ev_document_text_get_text_attrs()</code> の追加</li>
+<li>libview: AtkText text-caret-moved および text-selection-changed シグナルを出力</li>
+<li>libview: カーソルを移動したときは選択を解除</li>
+<li>libview: アクティブな選択がある場合、キャレットカーソルを非表示</li>
+<li>libview: pixbuf キャッシュから空の領域の代わりに NULL を返します</li>
+<li>libview: ビューがフォーカスされていない時はキャレットカーソルを描画しない</li>
+<li>libview: 列が複数ある文書内におけるキャレットカーソルの行間移動を修正</li>
+<li>libview: 現在のページ範囲に複数の前後ページをプレキャッシュします。</li>
+<li>ev-pixbuf-cache: スクロール方向に応じて、前または次のジョブを最初にスケジュールします</li>
+<li>ev-pixbuf-cache: 前のページを逆の順序で描画するようにジョブをスケジュール</li>
+<li>libview: キャレットカーソルが移動したことを通知する <code>cursor-moved</code> シグナルを追加しました。</li>
+<li>libview: テキストを選択する時、不要な領域のコピーを回避</li>
+<li>libview: より大きなダメージ領域を使用して選択を再描画</li>
+<li>libview: 破損領域が変更されていない場合は再描画をキューに入れません</li>
+<li>libview: 新旧選択の統合を無効化</li>
+<li>libview: 選択範囲の外側をクリックした時はキャレットカーソルを移動</li>
+<li>libview: 未使用の in_selection メンバを SelectionInfo 構造から削除</li>
+<li>libview: 行間でキャレットを移動する場合は、オフセットを行の内側に保持</li>
+<li>libview: 行の冒頭/末尾にキャレットカーソルを配置</li>
+<li>libview: すべてのテキスト選択時は再描画のスケジュールを非設定</li>
+<li>libview: 選択リストの作成には、append の代わりに prepend + reverse を使用</li>
+<li>libview: GSslice を使用して EvViewSelection を割当て</li>
+<li>libview: キャレットカーソルを使用してテキストを選択します。</li>
+<li>libview: マウスでテキストを選択した後はキャレットカーソルを更新</li>
+<li>libview: 選択を計算するとき、ページ境界線を考慮</li>
+<li>libview: 複数のページを選択した時クラッシュする問題を修正</li>
+<li>libview: カーソルをクリックして移動後、カーソルが点滅するようにしました</li>
+<li>libview: <code>get_caret_cursor_rect_from_offset</code> と <code>get_caret_cursor_area</code> を統合</li>
+<li>libview: エラーのベル音にて、キャレットナビゲーションのエラーを通知</li>
+<li>libview: カーソル位置が変更されていない場合は、クリック後に再描画しません</li>
+<li>libview: カレットナビゲーションに GtkBindings を使用</li>
+<li>libview: EvView::binding-activated シグナルを EvView::scroll へ名前変更</li>
+<li>libview: クリックすることでキャレットカーソルを配置</li>
+<li>libview: <code>EvPixbufCache</code> を使用して選択領域を検索</li>
+<li>libview: <code>ev_pixbuf_cache_get_selection_surface</code> を 2 つの関数に分割</li>
+<li>libview: 領域から選択したハイライトを描画</li>
+<li>libview: キャレットカーソルの再描画に使用される損傷領域を修正</li>
+<li>libview: 別のページから対象を移動した時、実際にページを更新</li>
+<li>libview: キャレットカーソルが更新されていない場合、現在のページを更新せず、カーソル位置までスクロール</li>
+<li>libview: キャレットカーソルを点滅させます</li>
+<li>libview: テキストレイアウトのかわりに論理属性を使用して、キャレットカーソルを移動</li>
+<li>libview: ページキャッシュからテキスト論理属性を取得する方法を追加</li>
+<li>libview: キャレットナビゲーションを初めて実装</li>
+<li>libview: 描画ページと選択面のコードをリファクタリング</li>
+<li>shell: epub のメニューで <code>ViewDualOddLeft</code> を無効化</li>
+<li>libview: 高さ要求に関連するページキャッシュにのみアクセス</li>
+<li>デュアルレイアウトと連続レイアウトのショートカットキーを有効化</li>
+<li>ev-view: キーイベントをフォーカスされたフォームフィールドに転送</li>
+<li>ページに合わせる、幅に合わせる、というオプションのショートカットキーを追加</li>
+<li>shell: 既定では 1 ページだけの PDF をデュアルモードで開きません</li>
+<li>libview: current_page を負の数値に更新しません</li>
+<li>libview: ページレイアウトのモード化</li>
+<li>libview: 可読性を最適化するために新しいズームモードを追加</li>
+<li>Fit Page Width を Fit Width へ名前変更</li>
+<li>Best Fit mode を Fit Page へ名前変更</li>
+<li>表示メニューに奇数ページを残してデュアルページを移動</li>
+<li>libview: 非推奨となった gtk_container_set_resize_mode の使用を削除</li>
+<li>shell: キャストする前に文書が注釈のインタフェースを実装しているかチェック</li>
+<li>削除時には注釈のサイドバーを更新</li>
+<li>libdocument: <code>ev_mapping_list_remove</code> の無効化</li>
+<li>page-cache: <code>ev_page_cache_mark_dirty()</code> へ flags パラメータを追加</li>
+<li>pdf: 注釈がなくなった時は、注釈マッピングをリセット</li>
+<li>ビューポップアップメニューに注釈を削除するオプションを追加</li>
+<li>libview: ev_view_remove_annotation の追加</li>
+<li>pdf: remove_annotation 仮想機能を実装</li>
+<li>libdocument: ev_mapping_list_remove の追加</li>
+<li>libdocument: remove_annotation を DocumentAnnotations へ追加</li>
+<li>pdf: 注釈の名前を一意に</li>
+<li>pdf: 他のタイプの注釈を追加するためのサポートを追加</li>
+<li>libview: ev_view_set_focused_element と make it public internally の名前変更</li>
+<li>注釈ウィンドウの透過度を変更</li>
+<li>注釈ウィンドウの色を変更</li>
+<li>libview: マウスボタンを押した時、フォームフィールドとリンクのフォーカスを取得</li>
+<li>libdocument: <code>ev_mapping_list_get</code> の追加</li>
+<li>pdf: アクティベーションリンクを持っているフィールドには、アクティベーションリンクを追加</li>
+<li>libview: フォームフィールドのアクティブ化リンクが存在する場合には処理</li>
+<li>libdocument: activation_link を EvFormField 構造に追加</li>
+<li>ev-properties-licence: 非推奨となった GtkAlignment の使用回避</li>
+<li>libview: : 非推奨の gtk_adjustment_changed を回避</li>
+<li>ev-job-find: 2 つのメソッドをスキップとしてマーク</li>
+<li>ev-jobs: <code>ev_job_failed_from_error</code> のシャドウを <code>ev_job_failed</code> に</li>
+<li>libview: 不足している転送注釈と要素タイプ注釈を追加</li>
+<li>ev-mapping-list: ボックス型にしました</li>
+<li>libdocument: 不足している転送注釈と要素タイプ注釈を追加</li>
+<li>gtk 3.22: 非推奨の gdk_screen_get_monitor&hellip; 関数を回避</li>
+<li><code>gdk_screen_get_primary_monitor/gdk_screen_get_monitor_scale_factor</code> を回避</li>
+<li>ev-document-misc.c: 非推奨の <code>gdk_screen_get_width/height_mm</code> を回避</li>
+<li>dvi: ファイル名を引用することで、コマンド・インジェクション攻撃を軽減</li>
+<li>mdvi-lib: コンパイル時の警告 (const-correctness) を修正</li>
+<li>libmisc: ページラベルの文字幅を設定</li>
+<li>libview: 非連続モードで小さなページをスクロール</li>
+<li>libview: ビューで <code>GDK_SMOOTH_SCROLL</code> イベントを有効化</li>
+<li>libview: Ctrl+マウスホイールズームは、ウィンドウ中心ではなくポインタ中心に</li>
+<li>ev-view: ページ切り替えにパンジェスチャを追加</li>
+<li>ev-view: <code>GtkScrolledWindow</code> を親ウィジェットとして明示的に要求</li>
+<li>ev-view: ピンチ/ズームジェスチャを追加して文書の拡大縮小を処理</li>
+<li>sidebar-thumbnails: 全画面表示後に起きる不要な移動の開始を修正</li>
+<li>sidebar-thumbnails: スクロール時に表示範囲を1つ余分にプリロード</li>
+<li>sidebar-thumbnails: 描画済みのサムネイルを保持</li>
+<li>sidebar-thumbnails: スクロールの不自然さを修正</li>
+<li>annotations-sidebar: デザインの見直し</li>
+<li>ev-annotation-window: ウィンドウ枠の色の設定を修正</li>
+<li>libview: 作成後に注釈ウィンドウのフォーカスが変わるのを修正</li>
+<li>libview: ev_annotation_window のフォーカスを修正</li>
+<li>libview: 注釈ウィンドウのフォント色を変更しない</li>
+<li>shell: 注釈に GdkRGBA を使用</li>
+<li>libdocument: GdkRGBA を使用して EvAnnotation API を追加</li>
+<li>libdocument: 新しい非推奨マクロの使用</li>
+<li>非推奨のマクロを追加</li>
+<li>以前の HDPI コミットによって発生するランタイム警告を修正</li>
+<li>モニターの拡大率を考慮してズームを計算する。</li>
+<li>メインビューに hi-dpi サポートを追加</li>
+<li>shell: gimpcellrenderertoggle を廃止</li>
+<li>sidebar-layers: 実際に使用可能にし、実行時の警告を修正</li>
+<li>libview: 注釈ウィンドウのアイコンサイズを設定</li>
+<li>libview: 変更をドロップダウンに埋め込み形式で保存</li>
+<li>libdocument: アクティブページと非アクティブページのシャドウの描画を調整</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>ev-window: 非推奨の <code>GtkToolbar-shadow-type</code> を削除</li>
+<li>annotation-properties-dialog: ヘッダバーを使用しない</li>
+<li>非推奨の <code>gdk_display_get_screen</code> と <code>gdk_display_get_n_screens</code> を回避</li>
+<li>ev-window: 非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>build: 生成された .caja-extension ファイルを適切に消去</li>
+<li>build: cairo &gt;=1.10.0 が必要で、古いコードをいくつかを削除</li>
+<li>shell: utils から使用されていないコードを削除</li>
+<li>ev-view: 非推奨の <code>gtk_drag_begin</code> を回避</li>
+<li>egg-editable-toolbar: 非推奨の <code>gtk_drag_begin</code> を回避</li>
+<li>message-area: 一部の <code>GtkStock</code> の非推奨を置き換え</li>
+<li>ev-sidebar: 非推奨の <code>GTK_STOCK_CLOSE</code> アイコンを回避</li>
+<li>password-view: 一部の非推奨 <code>GtkStock</code> を置き換え</li>
+<li>password-view: 非推奨の <code>GtkAlignment</code> を使用中止</li>
+<li>toolbar-editor: 非推奨の <code>GtkAlignment</code> を使用中止</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>caja-extensions 1.20.0<span class="hx:absolute hx:-mt-20" id="caja-extensions-1200"></span>
+    <a href="#caja-extensions-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>xattr-tags: 拡張機能の説明で適切な英語を使用</li>
+<li>po: xattrs 拡張からの翻訳可能な文字列を追加</li>
+<li>xattr-tags: 拡張機能の説明を修正</li>
+<li>open-terminal: 文字列の重複を過度に使用しない</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>sendto burn: 非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>xattr-tags: 今では不要となったため、hack を削除。</li>
+<li>xattr-tags: 未定義の参照を引き起こすタイプミスを修正</li>
+<li><code>libcaja_gksu_la_LDFLAGS</code> 変数の宣言を修正</li>
+<li>xattr-tags: 起動メッセージに不足していた新しい行を追加</li>
+<li>xattr-tags: 保存された属性をエスケープしない。</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>engrampa 1.20.0<span class="hx:absolute hx:-mt-20" id="engrampa-1200"></span>
+    <a href="#engrampa-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>build: <code>PKG_CONFIG</code> を使用してクロスビルドを修正</li>
+<li>About ダイアログと Caja 拡張機能に著作権表示を追加</li>
+<li>7z: Fix: リストが暗号化されていないパスワードでファイル名変更</li>
+<li>7z: Fix: 暗号化されたリストを使用したファイル/フォルダの削除/名前変更</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>もっと一般的な gtk+ 関数を使用</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>進捗ダイアログに「Show the Files and Quit」ボタンを追加</li>
+<li>Fix: 「最大」圧縮レベルで zip ファイルを作成</li>
+<li>履歴を正しくブラウズしない問題を修正</li>
+<li>「すべてのファイルを表示」でフォルダを非表示</li>
+<li>ファイルの置換ダイアログボックスにおける、スキップボタンの不正な動作を修正</li>
+<li>UI files: 非推奨の回避</li>
+<li>gtk-utils: <code>GTK_STOCK</code> の非推奨事項を削除</li>
+<li>gtk-utils: 非推奨の gtk_icon_size_lookup_for_settings を回避</li>
+<li>fr-window: <code>GTK_STOCK</code> の一部の非推奨事項を削除</li>
+<li>スタイルクラスフレームを scrolledwindows へ追加</li>
+<li>fr-window: 非推奨の <code>GtkMisc</code> と <code>GtkAlignment</code> を回避</li>
+<li>dlg-add-folder: 非推奨の <code>gtk_alignment_new()</code> を回避</li>
+<li>build: クリーニング時に、ハードコードされたファイル名の代わりに変数を使用</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>eom 1.20.0<span class="hx:absolute hx:-mt-20" id="eom-1200"></span>
+    <a href="#eom-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>GTK+ 3.18 用の CSS を廃止</li>
+<li>egg-editable-toolbar.c/egg-toolbars-model.c: 未使用の変数を削除</li>
+<li>print-preview: カスタムコードを GDK 関数の呼び出しと置き換え</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>複数の eom ウィンドウがある空ウィンドウを閉じる時、その警告を修正</li>
+<li>EomThumbView: 廃止された <code>gtk_menu_popup</code> 関数を置き換え</li>
+<li>multiple-save-as-dialog.ui: 廃止されたウィジェットを回避</li>
+<li>error-message: GtkStock を置き換え</li>
+<li>多数の instrospection 警告を修正</li>
+<li>EomScrollView: 廃止された override_background の呼び出しを修正</li>
+<li>EomPropertiesDialog: 非推奨の警告を修正</li>
+<li>EomThumbNav: 廃止された関数という警告の修正</li>
+<li>EomScrollView: 廃止された <code>gtk_menu_popup</code> 関数を置き換え</li>
+<li>EomScrollView: GtkDeviceManager から GdkSeat へ切り替え</li>
+<li>関数の注釈でのタイプミスを修正</li>
+<li>&lt; gtk+=3.20 には異なる css ファイルを使用</li>
+<li>EomWindow: 親ウィンドウのファイルを開くダイアログを一時的に設定</li>
+<li>settings: RGB カラー定義をデフォルトとして使用</li>
+<li>UI: 廃止されたウィジェットの使用を回避</li>
+<li>EomCloseConfirmationDialog: プライマリラベルの最大幅文字を設定</li>
+<li>EomCloseConfirmationDialog: 画像一覧のサイズを修正</li>
+<li>印刷用紙の向きは、既定でイメージ寸法に基づき設定</li>
+<li>印刷時に JPEG ファイルを PNG として再圧縮しない</li>
+<li>EomFileChooser: 画像プレビューの生成に MateThumbnailFactory を使用</li>
+<li>EomPropertiesDialog: 透過の背景色に RGBA を許可</li>
+<li>preferences-ui: <code>MateColorButton</code> の使用を廃止</li>
+<li>EomScrollView: 背景色と透過色を <code>GdkRGBA</code> へと切り替え</li>
+<li>EomPrintPreview: 不要な色解析を回避</li>
+<li>GtkStock の一部の非推奨事項を修正</li>
+<li>EomCloseConfirmationDialog: 廃止された <code>GTK_STOCK_DIALOG_WARNING</code> の置き換え</li>
+<li>toolbar-editor: 廃止された GtkAlignment を回避</li>
+<li>eom-image.c の SVG 処理を最新にして、svgz ファイルタイプを正しく認識</li>
+<li>eom_uri_converter: GList のリークを修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-applets 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-applets-1200"></span>
+    <a href="#mate-applets-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>multiload: ユーザ定義のしきい値を使用してネットワークグラフをスケーリング</li>
+<li>multiload: タブとスペースが多くの場所で混在するのを修正</li>
+<li>multiload: 一部の場所での空白を修正</li>
+<li>multiload: 不要な空白の一部を削除</li>
+<li>weather: 設定ダイアログを開いたといき発生する可能性のあるクラッシュを修正</li>
+<li>壊れた invest-applet とすべての Python 依存関係を削除</li>
+<li><code>fgets</code> の戻り値を無視するようにビルド警告を修正</li>
+<li>command: 間隔の範囲を解除</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>build: gtksourceview が見つからない時は、このパッケージ名を表示</li>
+<li>Cpufreq: ツールチップを最新の値で更新</li>
+<li>Cpufreq: ビルド時の警告を修正</li>
+<li>Cpufreq: 数字がユニットラベルで移動するのを中止</li>
+<li>描画の丸め方でのエラーを修正</li>
+<li>cpufreq: 周波数/単位/パーセントのラベル最大幅の計算を修正</li>
+<li>stickynotes: テキストの選択を修正</li>
+<li>cpufreq: スタイル変更時にアプレットサイズ（フォントサイズなど）を更新</li>
+<li>GSettings の変更を動的に認識</li>
+<li>GSettings: マウントされたボリュームに表示されるチェックマークの色</li>
+<li>cpufreq: アプレットがランダムで見えなくなる問題を修正</li>
+<li>マウントされたドライブは、少し異なるアイコンで表示</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>ビルド時の misleading_indentation and maybe-uninitialized という警告を修正</li>
+<li>非推奨の <code>gdk_screen_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>すべてのアプレットは、非推奨の <code>gtk_show_uri</code> を使用しない</li>
+<li>新しいデジタルテーマを追加</li>
+<li>drivemount: ビルド時の警告を修正</li>
+<li>cpufreq-prefs: 非推奨の <code>gtk_show_uri</code> を使用しない</li>
+<li>bump libmateweather は 1.19.1 が必要</li>
+<li>weather: 場所が変更された場合、気象情報の更新を中止</li>
+<li>weather: (<code>weather_info_equal()</code> によって決定されたように)、weather 更新が以前の更新と同じ場合に、通知を送信しないロジックを追加</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>drivemount: リストが空の場合、media-floppy アイコンを表示</li>
+<li>stickynotes: 以前のコミットを少々書き直し、dir name をリークしない。</li>
+<li>stickynotes: <code>stickynotes-applet.xml</code> の親ディレクトリが無い場合はそれを作成</li>
+<li>荷重グラフは平均荷重に従って自動的にスケール</li>
+<li>trashapplet: 未使用のコードを削除</li>
+<li>cpufreq: すべてのコアで周波数を設定</li>
+<li>GError のメモリリークを修正</li>
+<li>コマンドアプレットで crasher を修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-calc 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-calc-1200"></span>
+    <a href="#mate-calc-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>設定ダイアログの閉じるボタンに、アイコン画像を追加</li>
+<li>非推奨の GtkStock を回避</li>
+<li>About ダイアログに不足していたウィンドウアイコンを追加</li>
+<li>math-window: 非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-icon-theme-faenza 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-icon-theme-faenza-1200"></span>
+    <a href="#mate-icon-theme-faenza-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>元のプロジェクトに従い、ライセンスを GPL3 へ変更</li>
+<li>ダークテーマに MATE ロゴを使用するよう修正</li>
+</ul>
+<h3>mate-indicator-applet 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-indicator-applet-1200"></span>
+    <a href="#mate-indicator-applet-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Ayatana Indicators とUbuntu Indicators のどちらに対しても、ビルドをサポート</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-netbook 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-netbook-1200"></span>
+    <a href="#mate-netbook-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>window picker: disconnect シグナルハンドラは、dispose 関数を指定</li>
+<li>window picker: 設定ダイアログにアイコンを追加</li>
+<li>window picker: 設定ダイアログボタンの垂直方向の拡張を無効に</li>
+<li>window picker: タスクバーのアイコンを About ダイアログへ追加</li>
+<li>maximus: 無効なウィンドウ ID でクラッシュしない</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-sensors-applet 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-sensors-applet-1200"></span>
+    <a href="#mate-sensors-applet-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>build: udisk2 プラグインを再び有効化</li>
+<li>廃止された udisks プラグインを削除</li>
+<li>udisks plugin: GValue 変数のメモリ管理を修正</li>
+<li>非推奨の eee プラグインを削除</li>
+<li>取り外した HDD のポップアップシャワーを修正</li>
+<li>ibm-acpi.c: ビルド時の警告を修正</li>
+<li>eee-plugin.c: ビルド時の警告を修正</li>
+<li>active-sensor.c: ビルド時の警告を修正</li>
+<li>sensors-applet.c: ビルド時の警告を修正</li>
+<li>インデントを修正</li>
+<li>project クリーンアップの修正</li>
+<li>数字の変化に対応してアプレットの移動をを停止</li>
+<li>センサーの保存順序を修正</li>
+<li>温度単位の非表示を更新</li>
+<li>コードの重複を削除</li>
+<li>sensor-applet.c: 廃止された GtkMisc を置き換え</li>
+<li>sensor-applet.c: 非推奨の <code>GTK_STOCK_MISSING_IMAGE</code> を回避</li>
+<li>sensor-config-dialog: 非推奨の GtkAlignment を回避</li>
+<li>sensor-config-dialog: 非推奨の GtkColorButton を使用しない</li>
+<li>prefs-dialog: スタイルクラスフレームを scrolledwindow へ追加</li>
+<li>prefs-dialog: 非推奨の GtkAlignment を回避</li>
+<li>prefs-dialog: 非推奨の <code>GTK_VBUTTON_BOX</code>, <code>GTK_TYPE_{H,V}BOX</code> を回避</li>
+<li><code>sensor_applet</code> グリッドに <code>GTK_ALIGN_CENTER</code> を使用</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-terminal 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-terminal-1200"></span>
+    <a href="#mate-terminal-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>VTE 0.46 が必要</li>
+<li>screen: <code>TERM</code> および <code>COLORTERM</code> 環境変数の設定を無くす</li>
+<li>schema: 一部のキーの要約と説明を修正</li>
+<li>キーボードのショートカットより &ldquo;&hellip;&rdquo; を削除</li>
+<li>profile-editor: 最初のパレットカラーを適切に初期化</li>
+<li>terminal-screen.c: 未使用の変数を削除</li>
+<li><code>chdir</code> の戻り値を無視するようにビルド警告を修正</li>
+<li>タブの中クリックで、gsettings キーが追加されて機能が有効化</li>
+<li>インデントをいくつかのファイルでより統一</li>
+<li>DBus メソッドの呼び出し処理時のクラッシュを修正</li>
+<li>Spelling: 空白の削除, in the terminal, Ctrl</li>
+<li>gnome-terminal より solarized テーマを追加</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li><kbd>ctrl</kbd> + <kbd>tab</kbd> と <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>tab</kbd> を使用して、タブの切り替えを実現</li>
+<li>「検索」キーボードショートカットの再マッピングを許可</li>
+<li>VTE3 で背景の画像ををサポート</li>
+<li>find-dialog.ui: キーボードの選択を修正</li>
+<li>非推奨の <code>vte_terminal_search_get_gregex</code> を回避</li>
+<li>「すべて選択」キーボードショートカットを追加: <kbd>control</kbd> + <kbd>shift</kbd> + <kbd>A<kbd></li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>terminal-util: 非推奨の <code>gtk_show_uri</code> を回避</li>
+<li>非推奨の <code>gdk_display_get_screen</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>右ボタンのダブルクリックで Xorg がクラッシュする問題を修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-user-share 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-user-share-1200"></span>
+    <a href="#mate-user-share-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>build: 正しいマクロを使用してクロスビルドを修正</li>
+<li>非推奨の <code>gtk_show_uri</code> を使用しない</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mate-utils 1.20.0<span class="hx:absolute hx:-mt-20" id="mate-utils-1200"></span>
+    <a href="#mate-utils-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>HiDPI ディスプレイのスクリーンショットのサポート追加</li>
+<li>mate-screenshot: 新しいボタンを追加</li>
+<li>screenshot-save.c: <code>pipe</code> <code>write</code> および <code>read</code> でのビルド警告を修正</li>
+<li>スタイルクラス logview-window を追加</li>
+<li>翻訳の更新</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>baobab: グラフ上でマウスホイールを使用してズーム</li>
+<li>screenshot: 未使用のコードを削除</li>
+<li>screenshot: ウィンドウタイトルは、後で使用されないので取得しない</li>
+<li>baobab/logview/dictionary: 著作権表示を About ダイアログへ追加</li>
+<li>baobab: リモート接続ダイアログに一時的な親を設定</li>
+<li>baobab:  ui ファイルで設定ダイアログを非表示</li>
+<li>baobab: About ダイアログの親ウィンドウを設定</li>
+<li>非推奨の <code>gdk_screen_get_active_window</code> を回避</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>非推奨の <code>gdk_screen_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>screenshot: 非推奨の GdkDevice オブジェクトを回避</li>
+<li>dictionary: 非推奨の GdkDevice オブジェクトを回避</li>
+<li>非推奨の <code>gdk_screen_get_n_monitors</code> を回避</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>gdict-applet: 非推奨の <code>gtk_show_uri</code> を使用しない</li>
+<li>非推奨の <code>gtk_show_uri</code> を使用しない</li>
+<li>非推奨の <code>gdk_screen_get_number</code> を回避</li>
+<li>searchtool &amp; logview: 廃止された GtkAlignment を回避</li>
+<li>mate-screenshot: スクリーンショットの領域保存時における、ビジーカーソルの表示を修正</li>
+<li>screenshot: ファイル名のタイムスタンプを変換しない</li>
+<li>mate-dictionary: FTBFS を時々修正するために、正しいヘッダを含める</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>mozo 1.20.0<span class="hx:absolute hx:-mt-20" id="mozo-1200"></span>
+    <a href="#mozo-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>翻訳の更新</li>
+</ul>
+<h3>pluma 1.20.0<span class="hx:absolute hx:-mt-20" id="pluma-1200"></span>
+    <a href="#pluma-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><code>peas_engine_enable_loader</code> を正しい場所に配置</li>
+<li>最近使用したファイル一覧が再び有効になるように修正</li>
+<li>使用しない変数を削除</li>
+<li>pluma-spell-checker-language.c: ビルド時の警告を修正</li>
+<li>pluma.c: ビルド時の警告を削除</li>
+<li>pluma-document.c: ビルド時の警告を修正</li>
+<li>pluma-window: GtkRecentData を割り当てる代わりにスタックさせる</li>
+<li>WidthOfScreen と HeightOfScreen の実装</li>
+<li>バックリファレンスによる正規表現置換を修正 ( 例: <code>&quot;\0&quot;</code> )</li>
+<li>pluma-view.c: 同じジョブを実行するために、2つのの静的変数の代わりに1つの静的変数を使用</li>
+<li>同じワークスペースのウィンドウで Pluma が開いていることを確認する</li>
+<li>Pluma が、[右 + 中クリック] <kbd>ctrl</kbd> + <kbd>+</kbd> / <kbd>ctrl</kbd> + テンキーの <kbd>-</kbd> を押すと、予期せずにタブが閉じる問題を修正</li>
+<li>gsettings キーの追加: ファイルが変更された場合には保存の確認を表示</li>
+<li>[中 + 右] ボタンを押しながら <kbd>ctrl</kbd> + <kbd>+</kbd> / <kbd>ctrl</kbd> + <kbd>-</kbd> をクリックしてフォントサイズを増減した際の不正な動作を修正</li>
+<li>変更が無い場合には文書の保存を要求しない</li>
+<li>gsettings キーを追加して、サイドペインでタブを表示/非表示 (デフォルト) に</li>
+<li>サイドバー使用時にはタブを表示しない</li>
+<li>gtk 3.22: 非推奨の <code>gdk_screen_get_monitor</code> 関数を回避</li>
+<li>非推奨の <code>gdk_screen_get_width/height</code> を回避</li>
+<li>非推奨の <code>gdk_screen_make_display_name</code> を回避</li>
+<li>pluma-help:  <code>deprecated gtk_show_uri</code> を使用しない</li>
+<li>filebrowser: <code>deprecated gtk_show_uri</code> を使用しない</li>
+<li>非推奨の <code>gdk_display_get_screen</code> と <code>gdk_screen_get_number</code> を回避</li>
+<li>もし外部で文書が変更された場合には、それを保存可能にする</li>
+<li>もし文書に変更がない場合には、それを保存可能とはしない</li>
+<li>print-preferences UI: 一部の基本的な非推奨事項を修正</li>
+<li>encoding-dialog UI: 一部の基本的な非推奨事項を修正</li>
+<li>preferences-dialog UI: 一部の基本的な非推奨事項を修正</li>
+<li>pluma-panel: 廃止された GtkImage タイプを削除</li>
+<li>plumal-panel: 一部の非推奨 GtkStock を削除</li>
+<li>search-dialogs: -Wpointer-compare 警告を削除</li>
+<li>tag-list-plugin: 非推奨の GtkStock を回避</li>
+<li>file-browser-widget: 一個の非推奨ストックを修正</li>
+<li>configure: <code>GLIB_VERSION_MAX_ALLOWED</code> を廃止</li>
+<li>File browser: GIOScheduler を使用しない（廃止のため）</li>
+<li>file-browser-view: 一部のビルド警告を非表示</li>
+<li>pluma-view: 非推奨の GtkStock を回避</li>
+<li>pluma-tab: 一部の GtkStock アイコンを置き換え</li>
+<li>pluma-notebook: 非推奨の <code>gdk_cursor_new</code> を使用しない</li>
+<li>progress-message-area: GtkStock の１個の非推奨を修正</li>
+<li>io-error-message-dialog: 一部の GtkStock 非推奨警告を修正</li>
+<li>Pluma の中ボタンをクリックすると、突然タブが終了する問題を修正</li>
+<li>pluma-notebook.c: ビルド時の警告を削除</li>
+<li>直前に開いたタブの右側をダブルクリックして、新しいタブを開く</li>
+<li>gtk ブックマークファイルの新しい場所をサポート</li>
+<li>docs: オプションメニューではなく、エンコード・コンボボックスを用意</li>
+<li>PlumaStatus への参照を削除</li>
+<li>docs: 存在しないアイテムへの参照を削除</li>
+<li>filebrowser: 隠しファイルを解析しない - 2.36 以降は GIO が実行します。</li>
+<li>close confirm dialog: すべてのラベルで選択を有効にし、フォーカスを無効に</li>
+<li>close confirm dialog: ラベルの最大幅を設定</li>
+<li>コードコメントのタイプミスを修正</li>
+<li>Wayland 上での起動を修正</li>
+<li>modelines: 複数の Pluma ウィンドウのうちの1つを閉じた時、ランダムクラッシュする問題を修正</li>
+<li>翻訳の更新</li>
+</ul>
+<h3>python-caja 1.20.0<span class="hx:absolute hx:-mt-20" id="python-caja-1200"></span>
+    <a href="#python-caja-1200" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>翻訳の更新</li>
+</ul>
+
+        </div>
+    <div class="hx:mt-12 hx:mb-8 hx:block hx:text-xs hx:text-gray-500 hx:ltr:text-right hx:rtl:text-left hx:dark:text-gray-400">最終更新日 <time datetime="2018-02-07T00:00:00.000Z">2月 7, 2018</time></div><div class="hx:mb-8 hx:flex hx:items-center hx:border-t hx:pt-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-neutral-400 hx:dark:contrast-more:border-neutral-400 hx:print:hidden"><a
+        href="/ja/blog/2017-03-13-mate-1-18-released/"
+        title="MATE 1.18 を公開しました"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:pr-4 hx:rtl:pl-4"
+      ><svg class="hx:inline hx:h-5 hx:shrink-0 hx:ltr:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>MATE 1.18 を公開しました</a><a
+        href="/ja/blog/2020-02-10-mate-1-24-released/"
+        title="MATE 1.24 を公開しました"
+        class="hx:flex hx:max-w-[50%] hx:items-center hx:gap-1 hx:py-4 hx:text-base hx:font-medium hx:text-gray-600 hx:transition-colors [word-break:break-word] hx:hover:text-primary-600 hx:dark:text-gray-300 hx:md:text-lg hx:ltr:ml-auto hx:ltr:pl-4 hx:ltr:text-right hx:rtl:mr-auto hx:rtl:pr-4 hx:rtl:text-left"
+      >MATE 1.24 を公開しました<svg class="hx:inline hx:h-5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div></main>
+    </article>
+  </div>
+
+      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hx:mx-auto hx:flex hx:gap-2 hx:py-2 hx:px-4 hextra-max-footer-width"><div class="hx:flex hx:justify-items-start ">
+    <button
+      title="言語を変更"
+      data-state="closed"
+      data-location=""
+      class="hextra-language-switcher hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:grow"
+      type="button"
+      aria-label="言語を変更"
+    >
+      <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>日本語</span></div>
+    </button>
+    <ul
+      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+      style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    >
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >English</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/de/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Deutsch</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/es/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Español</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/it/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Italiano</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ja/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >日本語<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/bg/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Български</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/ca/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >Català</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-cn/blog/2018-02-07-mate-1-20-released/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >简体中文</a>
+        </li>
+      
+        
+        <li class="hx:flex hx:flex-col">
+          <a
+            href="/zh-tw/"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+          >繁體中文</a>
+        </li>
+      </ul>
+  </div><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="テーマを変更"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="テーマを変更"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">ライト</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">ダーク</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+  >
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        ライト
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        ダーク
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+    <li class="hx:flex hx:flex-col">
+      <p
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </p>
+    </li>
+  </ul>
+</div></div><hr class="hx:border-gray-200 hx:dark:border-neutral-800" /><div class="hextra-custom-footer hextra-max-footer-width hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+      class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
+    >
+      <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
+    <span>提供元 Hextra<svg height=1em class="hx:inline-block hx:ltr:ml-1 hx:rtl:mr-1 hx:align-[-2.5px]" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+  </a></div><div class="hx:mt-6 hx:text-xs">© 2025 Hextra プロジェクト。</div></div>
+    </div></footer>
+    
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script>
+        <script defer src="/ja.search.js" integrity=""></script>
+  </body>
+</html>
