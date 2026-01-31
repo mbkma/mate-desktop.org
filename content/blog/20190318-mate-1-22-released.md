@@ -5,6 +5,7 @@ tags: [Releases]
 authors:
   - name: Victor Kareh
 slug: 2019-03-18-mate-1-22-released
+description: "MATE Desktop 1.22 features Wayland support in the panel, Python 3 ports, improved session manager, and modernized window and desktop switchers."
 ---
 After about a year of development, the MATE Desktop team have finally released MATE 1.22. A big thank you to all contributors who helped to make this happen.
 

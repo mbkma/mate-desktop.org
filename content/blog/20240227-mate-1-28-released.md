@@ -5,6 +5,7 @@ tags: [Releases]
 authors:
   - name: Johannes Unruh
 slug: 2024-02-27-mate-1-28-released
+description: "MATE Desktop 1.28 brings enhanced Wayland support, modernized codebase, and numerous improvements to Atril, Caja, Marco, and other components."
 ---
 # MATE 1.28 Released
 

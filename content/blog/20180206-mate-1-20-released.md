@@ -5,9 +5,10 @@ tags: [Releases]
 authors:
   - name: Martin Wimpress
 slug: 2018-02-07-mate-1-20-released
+description: "After 11 months of development the MATE Desktop team are pleased to announce the release of MATE Desktop 1.20 with HiDPI support, improved window manager, and hundreds of bug fixes."
 ---
-After 11 months of development the MATE Desktop team are pleased as punch to 
-announce the release of MATE Desktop 1.20. We'd like to thank every MATE 
+After 11 months of development the MATE Desktop team are pleased as punch to
+announce the release of MATE Desktop 1.20. We'd like to thank every MATE
 contributor for their help making this release possible.
 
 ![about](/images/blog/about-mate-1.20.png)

@@ -5,6 +5,7 @@ tags: [Releases]
 authors:
   - name: Johannes Unruh
 slug: 2021-08-08-mate-1-26-released
+description: "MATE Desktop 1.26 adds Wayland support, a new Pluma mini map, Do Not Disturb applet, and many improvements while maintaining the classic look and feel."
 ---
 This release might have taken a little longer than usual but now after 18 month of development we are very pleased to release MATE 1.26. A big thank you to all contributors who helped to make this happen.
 

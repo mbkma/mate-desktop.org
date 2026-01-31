@@ -5,6 +5,7 @@ tags: [Releases]
 authors:
   - name: Martin Wimpress
 slug: 2017-03-13-mate-1-18-released
+description: "MATE Desktop 1.18 completes the GTK3+ migration, adds libinput support for mouse and touchpad, and greatly improves accessibility."
 ---
 After 6 months of development the MATE Desktop team are proud to
 announce the release of MATE Desktop 1.18. We'd like to thank every

@@ -5,6 +5,7 @@ tags: [Releases]
 authors:
   - name: Wolfgang Ulbrich
 slug: 2020-02-10-mate-1-24-released
+description: "MATE Desktop 1.24 brings invisible resize borders, improved window decorations, Wayland support in Eye of MATE, and many usability improvements."
 ---
 After about a year of development, the MATE Desktop team have finally released MATE 1.24. A big thank you to all contributors who helped to make this happen.
 
