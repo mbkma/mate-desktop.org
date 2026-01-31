@@ -6,8 +6,11 @@ enableRobotsTXT = true
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 
+# Summary length for blog previews (2-3 sentences)
+summaryLength = 50
+
 [outputs]
-  home = ['html']
+  home = ['html', 'rss']
   page = ['html']
   section = ['html', 'rss']
 
