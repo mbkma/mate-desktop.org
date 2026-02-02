@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['jbuf_5fcrank_5fdest_0',['JBUF_CRANK_DEST',['../jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874af6e4aa152203a774ee81024b994bc786',1,'jpegint-8a.h']]],
+  ['jbuf_5fpass_5fthru_1',['JBUF_PASS_THRU',['../jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874ac4537a68c2b4991aa0aa16bfd364faf4',1,'jpegint-8a.h']]],
+  ['jbuf_5fsave_5fand_5fpass_2',['JBUF_SAVE_AND_PASS',['../jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874aedb54e7419f575f61531cd66a6eb2447',1,'jpegint-8a.h']]],
+  ['jbuf_5fsave_5fsource_3',['JBUF_SAVE_SOURCE',['../jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874a9bd990af3f9fa4181bfb4783515c583d',1,'jpegint-8a.h']]],
+  ['jcopyopt_5fall_4',['JCOPYOPT_ALL',['../transupp-8a_8h.html#a65c3abad1d72d7ac3f89ef621613c553afedac1a02c9e88bd8728433b9301bf2b',1,'transupp-8a.h']]],
+  ['jcopyopt_5fcomments_5',['JCOPYOPT_COMMENTS',['../transupp-8a_8h.html#a65c3abad1d72d7ac3f89ef621613c553ac9a81502d8ebd4eae5acc77d9523ae42',1,'transupp-8a.h']]],
+  ['jcopyopt_5fnone_6',['JCOPYOPT_NONE',['../transupp-8a_8h.html#a65c3abad1d72d7ac3f89ef621613c553ab7f793a912d8fa20dbb45d6340547570',1,'transupp-8a.h']]],
+  ['jcrop_5fneg_7',['JCROP_NEG',['../transupp-8a_8h.html#a8286e58d1d84a5e78d711cd37e9b68a2a7270efa5a7a1fe46079f207717564be2',1,'transupp-8a.h']]],
+  ['jcrop_5fpos_8',['JCROP_POS',['../transupp-8a_8h.html#a8286e58d1d84a5e78d711cd37e9b68a2a31cf57b7df4579e6b684756ddf69e51d',1,'transupp-8a.h']]],
+  ['jcrop_5funset_9',['JCROP_UNSET',['../transupp-8a_8h.html#a8286e58d1d84a5e78d711cd37e9b68a2a698897d4b1945d35116992823e4cacdb',1,'transupp-8a.h']]],
+  ['job_5ffinished_10',['JOB_FINISHED',['../ev-pixbuf-cache_8c.html#aca9297ed9c01b9d6e2c02db0a79c4145ad1052010c1be02e582a503d9b823e825',1,'ev-pixbuf-cache.c']]],
+  ['jxform_5fflip_5fh_11',['JXFORM_FLIP_H',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315a1f49341c48b481f2e8ed911840a3fbe3',1,'transupp-8a.h']]],
+  ['jxform_5fflip_5fv_12',['JXFORM_FLIP_V',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315ae522c3e42f2258a43ec693632f30cda4',1,'transupp-8a.h']]],
+  ['jxform_5fnone_13',['JXFORM_NONE',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315abfca53d9f6c4fd7ae9a90dbc7cdf0a03',1,'transupp-8a.h']]],
+  ['jxform_5frot_5f180_14',['JXFORM_ROT_180',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315adf60d76040ace4a0a7f0b5248af6f556',1,'transupp-8a.h']]],
+  ['jxform_5frot_5f270_15',['JXFORM_ROT_270',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315a2f7ec56736e086e309eef1a593bd3e67',1,'transupp-8a.h']]],
+  ['jxform_5frot_5f90_16',['JXFORM_ROT_90',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315af40c41fbed3c0713a2506c5a09b148eb',1,'transupp-8a.h']]],
+  ['jxform_5ftranspose_17',['JXFORM_TRANSPOSE',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315a6f2b9779602ffd890b0ef0b0fc997af7',1,'transupp-8a.h']]],
+  ['jxform_5ftransverse_18',['JXFORM_TRANSVERSE',['../transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315a87c797c76d9acff5f7134c671d99345e',1,'transupp-8a.h']]]
+];

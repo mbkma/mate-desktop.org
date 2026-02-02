@@ -1,0 +1,25 @@
+var dir_8044c098039a1275a57d9510a0575ddd =
+[
+    [ "gdict-about.c", "gdict-about_8c.html", "gdict-about_8c" ],
+    [ "gdict-about.h", "gdict-about_8h.html", "gdict-about_8h" ],
+    [ "gdict-aligned-window.c", "gdict-aligned-window_8c.html", "gdict-aligned-window_8c" ],
+    [ "gdict-aligned-window.h", "gdict-aligned-window_8h.html", "gdict-aligned-window_8h" ],
+    [ "gdict-app.c", "gdict-app_8c.html", "gdict-app_8c" ],
+    [ "gdict-app.h", "gdict-app_8h.html", "gdict-app_8h" ],
+    [ "gdict-applet.c", "gdict-applet_8c.html", "gdict-applet_8c" ],
+    [ "gdict-applet.h", "gdict-applet_8h.html", "gdict-applet_8h" ],
+    [ "gdict-common.c", "gdict-common_8c.html", "gdict-common_8c" ],
+    [ "gdict-common.h", "gdict-common_8h.html", "gdict-common_8h" ],
+    [ "gdict-pref-dialog.c", "gdict-pref-dialog_8c.html", "gdict-pref-dialog_8c" ],
+    [ "gdict-pref-dialog.h", "gdict-pref-dialog_8h.html", "gdict-pref-dialog_8h" ],
+    [ "gdict-print.c", "gdict-print_8c.html", "gdict-print_8c" ],
+    [ "gdict-print.h", "gdict-print_8h.html", "gdict-print_8h" ],
+    [ "gdict-sidebar.c", "gdict-sidebar_8c.html", "gdict-sidebar_8c" ],
+    [ "gdict-sidebar.h", "gdict-sidebar_8h.html", "gdict-sidebar_8h" ],
+    [ "gdict-source-dialog.c", "gdict-source-dialog_8c.html", "gdict-source-dialog_8c" ],
+    [ "gdict-source-dialog.h", "gdict-source-dialog_8h.html", "gdict-source-dialog_8h" ],
+    [ "gdict-window.c", "gdict-window_8c.html", "gdict-window_8c" ],
+    [ "gdict-window.h", "gdict-window_8h.html", "gdict-window_8h" ],
+    [ "main.c", "mate-utils_2mate-dictionary_2src_2main_8c.html", "mate-utils_2mate-dictionary_2src_2main_8c" ],
+    [ "Makefile.in", "mate-utils_2mate-dictionary_2src_2Makefile_8in.html", null ]
+];

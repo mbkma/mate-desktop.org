@@ -1,0 +1,28 @@
+var mate_settings_plugin_info_8h =
+[
+    [ "MateSettingsPluginInfo", "structMateSettingsPluginInfo.html", "structMateSettingsPluginInfo" ],
+    [ "MateSettingsPluginInfoClass", "structMateSettingsPluginInfoClass.html", "structMateSettingsPluginInfoClass" ],
+    [ "MATE_IS_SETTINGS_PLUGIN_INFO", "mate-settings-plugin-info_8h.html#a56f10170bb73ab17b856995785baface", null ],
+    [ "MATE_IS_SETTINGS_PLUGIN_INFO_CLASS", "mate-settings-plugin-info_8h.html#ab70be7782f93cf4622bd78ade350c571", null ],
+    [ "MATE_SETTINGS_PLUGIN_INFO", "mate-settings-plugin-info_8h.html#a6c42c2b87687f24720a505fde4318986", null ],
+    [ "MATE_SETTINGS_PLUGIN_INFO_CLASS", "mate-settings-plugin-info_8h.html#afad3b052bbc5f3c96fc7652aa637dd18", null ],
+    [ "MATE_SETTINGS_PLUGIN_INFO_GET_CLASS", "mate-settings-plugin-info_8h.html#a760b81950cd51bcf1d1aaabb48ba1d65", null ],
+    [ "MATE_TYPE_SETTINGS_PLUGIN_INFO", "mate-settings-plugin-info_8h.html#ae18e94cd9da90e0e51a3d161771113ff", null ],
+    [ "MateSettingsPluginInfoPrivate", "mate-settings-plugin-info_8h.html#a5eca29b38483cf0629d5ab52e0451832", null ],
+    [ "mate_settings_plugin_info_activate", "mate-settings-plugin-info_8h.html#acce1b204ca777ef6dc073b48fc0671bb", null ],
+    [ "mate_settings_plugin_info_deactivate", "mate-settings-plugin-info_8h.html#a5b319bfc91b4d84a140fa50eb85e3412", null ],
+    [ "mate_settings_plugin_info_get_authors", "mate-settings-plugin-info_8h.html#a9019f60b8031074a9f1f4838cd5bd35d", null ],
+    [ "mate_settings_plugin_info_get_copyright", "mate-settings-plugin-info_8h.html#af08eb4824712960c885056168202f1fa", null ],
+    [ "mate_settings_plugin_info_get_description", "mate-settings-plugin-info_8h.html#ae148655369ebbf9dc8c775c7b12424dd", null ],
+    [ "mate_settings_plugin_info_get_enabled", "mate-settings-plugin-info_8h.html#a24fd1f0355ea6fdf19a8477a430f9e36", null ],
+    [ "mate_settings_plugin_info_get_location", "mate-settings-plugin-info_8h.html#a646310e79111d7cb3883b17e686bc563", null ],
+    [ "mate_settings_plugin_info_get_name", "mate-settings-plugin-info_8h.html#a8331731e9ce90d957b55bbc61f19da4d", null ],
+    [ "mate_settings_plugin_info_get_priority", "mate-settings-plugin-info_8h.html#aab5bbe008bee6482a467b834782888ee", null ],
+    [ "mate_settings_plugin_info_get_type", "mate-settings-plugin-info_8h.html#aaad8498bccff1d4032fa0788ee10af05", null ],
+    [ "mate_settings_plugin_info_get_website", "mate-settings-plugin-info_8h.html#a4f12083f91112922cdcb60dafd09eb66", null ],
+    [ "mate_settings_plugin_info_is_active", "mate-settings-plugin-info_8h.html#af10059eb9753e2ad37ceb8b773a31f82", null ],
+    [ "mate_settings_plugin_info_is_available", "mate-settings-plugin-info_8h.html#aee9def301d736d4b34450c72def956ff", null ],
+    [ "mate_settings_plugin_info_new_from_file", "mate-settings-plugin-info_8h.html#aa95af162dede88a287400a68acab3409", null ],
+    [ "mate_settings_plugin_info_set_priority", "mate-settings-plugin-info_8h.html#ae287155253dc56e358a0cc0cc5f490df", null ],
+    [ "mate_settings_plugin_info_set_schema", "mate-settings-plugin-info_8h.html#a2c1f367a23f086a9c38b91268e76bd0c", null ]
+];

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['you_20have_20to_20put_20the_20plugin_20folder_20here_20each_20plugin_20folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_0',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['you_20want_20to_20write_20a_20plugin_20you_20have_20to_20put_20the_20plugin_20folder_20here_20each_20plugin_20folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_1',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]]
+];

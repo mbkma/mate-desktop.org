@@ -1,0 +1,28 @@
+var atril_2cut_n_paste_2toolbar_editor_2egg_toolbars_model_8c =
+[
+    [ "egg_toolbars_model_add_item", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#aae557e248629459af13d9e4ff6248d5c", null ],
+    [ "egg_toolbars_model_add_toolbar", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a0ed4d0593e45d18dddd1775260eba516", null ],
+    [ "egg_toolbars_model_delete_item", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#ae2879d4121f63593728e5245107ed5be", null ],
+    [ "egg_toolbars_model_get_data", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a9d92fffbcc36eca2dec3d67e1f046a25", null ],
+    [ "egg_toolbars_model_get_flags", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a8f7884d20d9dbb398e62eba6c7afd178", null ],
+    [ "egg_toolbars_model_get_name", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a367b458f7c731a830431f6205a5a81f2", null ],
+    [ "egg_toolbars_model_get_name_avail", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a11b77966ab29b14b9305f7179462ef8c", null ],
+    [ "egg_toolbars_model_get_name_flags", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#ac668a91d13ecfb7b10bc293e3f7929f6", null ],
+    [ "egg_toolbars_model_get_types", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#acc302239980ada2f3ed107e628e8e709", null ],
+    [ "egg_toolbars_model_item_nth", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#ae5a011f07b72781fa8150423544a21cf", null ],
+    [ "egg_toolbars_model_load_names", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#afddfb26fd9eff42279678fe4115bb1d3", null ],
+    [ "egg_toolbars_model_load_names_from_resource", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a374dfffce094d2b8f576f01eb6eaf478", null ],
+    [ "egg_toolbars_model_load_toolbars", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#aaf36d08734e4200d7c9275397553f588", null ],
+    [ "egg_toolbars_model_load_toolbars_from_resource", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#ad970b63f03096539767507756125d309", null ],
+    [ "egg_toolbars_model_move_item", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#ac4bb419fcb64d475883559dfc076b3ed", null ],
+    [ "egg_toolbars_model_n_items", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a95f626e89e29a4383b700e309b226ddc", null ],
+    [ "egg_toolbars_model_n_toolbars", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a7c92145feb4daabb8893b784a115b53d", null ],
+    [ "egg_toolbars_model_new", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a894cd31ea27af38de8015f9b0deff31c", null ],
+    [ "egg_toolbars_model_remove_item", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#af38151ae98e56b66445ab446e6c84b74", null ],
+    [ "egg_toolbars_model_remove_toolbar", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#acad8af54bde632935d3b70e3085060b7", null ],
+    [ "egg_toolbars_model_save_toolbars", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a25fac037de1d03ba7b33622550fdeddb", null ],
+    [ "egg_toolbars_model_set_flags", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a6396b2365dd8941cca1fe563ba97a371", null ],
+    [ "egg_toolbars_model_set_name_flags", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#aa98d6c55a0608e92d60902a527ef3299", null ],
+    [ "egg_toolbars_model_set_types", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#ae68afa47aa41579be78db3814e42c3be", null ],
+    [ "egg_toolbars_model_toolbar_nth", "atril_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8c.html#a3cddb394a74f72cd58d15df8363bb739", null ]
+];

@@ -1,0 +1,45 @@
+var gdict_utils_8h =
+[
+    [ "GDICT_DEFAULT_DATABASE", "gdict-utils_8h.html#a61bcbaf7ee256a3393a3d695316590f5", null ],
+    [ "GDICT_DEFAULT_FONT_NAME", "gdict-utils_8h.html#a47023e98ce93b011772a50104fa284ec", null ],
+    [ "GDICT_DEFAULT_STRATEGY", "gdict-utils_8h.html#ac81d612450912bdaf711072f3a1ece4e", null ],
+    [ "GDICT_IS_VALID_STATUS_CODE", "gdict-utils_8h.html#a3d6ba17de9a3699f32490f10c57ff59a", null ],
+    [ "GdictContextProp", "gdict-utils_8h.html#abd01a39c6510e8ea23b20d1fad33c6b5", [
+      [ "GDICT_CONTEXT_PROP_FIRST", "gdict-utils_8h.html#abd01a39c6510e8ea23b20d1fad33c6b5a05a056b5c87524c35bbdbd6d3e0e21e7", null ],
+      [ "GDICT_CONTEXT_PROP_LOCAL_ONLY", "gdict-utils_8h.html#abd01a39c6510e8ea23b20d1fad33c6b5a67fda7cd745762adc8f05770afcf91ba", null ],
+      [ "GDICT_CONTEXT_PROP_LAST", "gdict-utils_8h.html#abd01a39c6510e8ea23b20d1fad33c6b5a52ac6d1ede4b92073058795445523d3a", null ]
+    ] ],
+    [ "GdictStatusCode", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80", [
+      [ "GDICT_STATUS_INVALID", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a411e6bd7ba6ce680fba4ced572ce33c1", null ],
+      [ "GDICT_STATUS_N_DATABASES_PRESENT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a71eafd37b433eff4b7bb16b98a976576", null ],
+      [ "GDICT_STATUS_N_STRATEGIES_PRESENT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a96526c51c1022960b4dac891b5208c92", null ],
+      [ "GDICT_STATUS_DATABASE_INFO", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a80ccf1bbed840387f846f845e98f125a", null ],
+      [ "GDICT_STATUS_HELP_TEXT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a6b5e1d98b415f4d73bd451eab867b1fd", null ],
+      [ "GDICT_STATUS_SERVER_INFO", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80aa2b5429d2f248770005b862fe6680304", null ],
+      [ "GDICT_STATUS_CHALLENGE", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a519dcc0138233aa57da306a037029168", null ],
+      [ "GDICT_STATUS_N_DEFINITIONS_RETRIEVED", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80af4350107225e2f1ccf89d513bbd0123e", null ],
+      [ "GDICT_STATUS_WORD_DB_NAME", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a689c7bfda36d4cf8921a973c46250bde", null ],
+      [ "GDICT_STATUS_N_MATCHES_FOUND", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a9c5c5ba11bd48c28c132f73099c646d2", null ],
+      [ "GDICT_STATUS_CONNECT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a2f291adf95249192970810677b696fa7", null ],
+      [ "GDICT_STATUS_QUIT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a8398b8161dd42fa26e52fad711272787", null ],
+      [ "GDICT_STATUS_AUTH_OK", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a4749d1f1fe6896ac2d31e40346612d11", null ],
+      [ "GDICT_STATUS_OK", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a9d28f271ed2f83c4328aa17eb2006baa", null ],
+      [ "GDICT_STATUS_SEND_RESPONSE", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80abefbb312f0c9882c9de3cb9740064c31", null ],
+      [ "GDICT_STATUS_SERVER_DOWN", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a87454fdbd474bf9fe33584beca85cc73", null ],
+      [ "GDICT_STATUS_SHUTDOWN", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80af56ce007cde0efb3b983b83727655fa4", null ],
+      [ "GDICT_STATUS_BAD_COMMAND", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80ad5a4ccfc6ad9d200d013f684ec9bd08d", null ],
+      [ "GDICT_STATUS_BAD_PARAMETERS", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a6315d2de90dc5c1d6959d1df94b68e8a", null ],
+      [ "GDICT_STATUS_COMMAND_NOT_IMPLEMENTED", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a2944db71fbeb6c26408daa824da32959", null ],
+      [ "GDICT_STATUS_PARAMETER_NOT_IMPLEMENTED", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a358fa148c5a13c253d1946a7410478fb", null ],
+      [ "GDICT_STATUS_NO_ACCESS", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80ab8684fe9223d3014174e71f5ba54791f", null ],
+      [ "GDICT_STATUS_USE_SHOW_INFO", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a958e1be5a3ca5600c43de16041ec5e57", null ],
+      [ "GDICT_STATUS_UNKNOWN_MECHANISM", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a4a4c61236224c5e0a927760a0cf74044", null ],
+      [ "GDICT_STATUS_BAD_DATABASE", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80ab3ce50b7f3b4e898a555a6176a2a4764", null ],
+      [ "GDICT_STATUS_BAD_STRATEGY", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a4ce5d9763586aded7c03513738c1d7fc", null ],
+      [ "GDICT_STATUS_NO_MATCH", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a8646356c00598335e9b3629d41752551", null ],
+      [ "GDICT_STATUS_NO_DATABASES_PRESENT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a55240ffbe56aac046721094d7fd5f5e2", null ],
+      [ "GDICT_STATUS_NO_STRATEGIES_PRESENT", "gdict-utils_8h.html#a348373460f40b314435fac28161cbd80a059ba5ce7231cc31fde11a29357c38ae", null ]
+    ] ],
+    [ "gdict_debug_init", "gdict-utils_8h.html#a54e888f77a10d3bfa3e8d33af8d8b4d2", null ],
+    [ "gdict_get_option_group", "gdict-utils_8h.html#a363987ea2ce6c753c100a38966d9af33", null ]
+];

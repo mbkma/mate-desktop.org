@@ -1,0 +1,27 @@
+var struct__MateMixerStreamControlClass =
+[
+    [ "get_app_info", "struct__MateMixerStreamControlClass.html#a27d6294bdc1ba2ee17151df55c9818df", null ],
+    [ "get_base_volume", "struct__MateMixerStreamControlClass.html#a42e083cf4e4d65c722d9330d52c8cb81", null ],
+    [ "get_channel_decibel", "struct__MateMixerStreamControlClass.html#a414e6d1a4357ff8551c79d29a51ee393", null ],
+    [ "get_channel_position", "struct__MateMixerStreamControlClass.html#a64c67aa398b6a9c2a84241b6ad66bd17", null ],
+    [ "get_channel_volume", "struct__MateMixerStreamControlClass.html#a01b0dda5d8ea80a54e6a115356f45aab", null ],
+    [ "get_decibel", "struct__MateMixerStreamControlClass.html#a2edddfdeba6f5e7421cbe2d5596a0b27", null ],
+    [ "get_max_volume", "struct__MateMixerStreamControlClass.html#a55cfe51a950b1163bf1e86ea16733c2a", null ],
+    [ "get_min_volume", "struct__MateMixerStreamControlClass.html#a8c508c88a32a48b7131f33652f036aa0", null ],
+    [ "get_monitor_enabled", "struct__MateMixerStreamControlClass.html#aa74a065f9d6d69b98fa1876b8952029f", null ],
+    [ "get_normal_volume", "struct__MateMixerStreamControlClass.html#ab40a0a39d49dee2378989c42f6d066cc", null ],
+    [ "get_num_channels", "struct__MateMixerStreamControlClass.html#a2b4cd8ce900f7a1fdd6feb1802e366e6", null ],
+    [ "get_volume", "struct__MateMixerStreamControlClass.html#a5e88f2a7d13e5e871facf268fa79a273", null ],
+    [ "has_channel_position", "struct__MateMixerStreamControlClass.html#ae86b9ca2da9db4054a72d7a90e657a22", null ],
+    [ "monitor_value", "struct__MateMixerStreamControlClass.html#ae11203a73eae92f18796597f1ac09f19", null ],
+    [ "parent_class", "struct__MateMixerStreamControlClass.html#a88a1fbf53ec16054e233150c7411113b", null ],
+    [ "set_balance", "struct__MateMixerStreamControlClass.html#a234b5b2c35b3be79e58353004f086b5e", null ],
+    [ "set_channel_decibel", "struct__MateMixerStreamControlClass.html#a4018343dced67d29e8a8db0fec3ecb07", null ],
+    [ "set_channel_volume", "struct__MateMixerStreamControlClass.html#ac6babca6cb8e9052f8873bc9aa0ce3b6", null ],
+    [ "set_decibel", "struct__MateMixerStreamControlClass.html#a1ca0353c9ab74540e6a59935a08a8a12", null ],
+    [ "set_fade", "struct__MateMixerStreamControlClass.html#a373a5d404b3ef095e732cf2ac82f7a9e", null ],
+    [ "set_monitor_enabled", "struct__MateMixerStreamControlClass.html#ab3fc40e6991e37c495019a8083fa5b6f", null ],
+    [ "set_mute", "struct__MateMixerStreamControlClass.html#a6bc3e67d0747f0e5abf79aaaddec6479", null ],
+    [ "set_stream", "struct__MateMixerStreamControlClass.html#adbcb1c0e0185e53715cba803f562ed51", null ],
+    [ "set_volume", "struct__MateMixerStreamControlClass.html#af9948025f9ea9e9b55ccd22691a9fdc4", null ]
+];

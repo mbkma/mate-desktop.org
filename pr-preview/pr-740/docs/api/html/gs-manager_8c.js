@@ -1,0 +1,28 @@
+var gs_manager_8c =
+[
+    [ "FADE_TIMEOUT", "gs-manager_8c.html#aca88e38692f4ce08fff54b39671176ba", null ],
+    [ "MATE_DESKTOP_USE_UNSTABLE_API", "gs-manager_8c.html#accf002c50d07fec7ddcaf35fde15c5e9", null ],
+    [ "gs_manager_cancel_unlock_request", "gs-manager_8c.html#a9fb3cc8e34df7cd47e490a98126ed77f", null ],
+    [ "gs_manager_cycle", "gs-manager_8c.html#afe8a41804f0a0656ed7b6e52476d9d10", null ],
+    [ "gs_manager_get_active", "gs-manager_8c.html#ad820a8b37bf717238dbe899316998349", null ],
+    [ "gs_manager_get_lock_active", "gs-manager_8c.html#ae00b9897eb206118b890b284422f8d46", null ],
+    [ "gs_manager_get_lock_enabled", "gs-manager_8c.html#a6bee77f49b875ece1645e2ef40f5cfde", null ],
+    [ "gs_manager_new", "gs-manager_8c.html#a8b01e94d98fdb5c307463b5c3387e076", null ],
+    [ "gs_manager_request_unlock", "gs-manager_8c.html#a19b4f81fd75b89362e6026b72f01f922", null ],
+    [ "gs_manager_set_active", "gs-manager_8c.html#af16182e4755365dececc31ecbdc99432", null ],
+    [ "gs_manager_set_cycle_timeout", "gs-manager_8c.html#a4117e2adfb314d82ac249ed5e67e3b0f", null ],
+    [ "gs_manager_set_keyboard_command", "gs-manager_8c.html#a4a808f48e9a8f414a3b64595033462e5", null ],
+    [ "gs_manager_set_keyboard_enabled", "gs-manager_8c.html#a75d2de4eccb0a7126b47b0d99b79aa44", null ],
+    [ "gs_manager_set_lock_active", "gs-manager_8c.html#a8969bdc20b19d83734105fac98ac7b7a", null ],
+    [ "gs_manager_set_lock_enabled", "gs-manager_8c.html#a6208efd034d9ed79462c772c9464f59a", null ],
+    [ "gs_manager_set_lock_timeout", "gs-manager_8c.html#ac1d39ae5890cd8457389add66c404876", null ],
+    [ "gs_manager_set_logout_command", "gs-manager_8c.html#ad72a4ff139797bbb977014dcb10348d1", null ],
+    [ "gs_manager_set_logout_enabled", "gs-manager_8c.html#a189e99c80781d7be9adcf9f462df1a11", null ],
+    [ "gs_manager_set_logout_timeout", "gs-manager_8c.html#a670374837e55316c9313ca52fbc9a6ac", null ],
+    [ "gs_manager_set_mode", "gs-manager_8c.html#a75d18b60bffe81a74b210a961aa41b2d", null ],
+    [ "gs_manager_set_status_message", "gs-manager_8c.html#a9c51bd01d7ea9275e57f7a14a811efd6", null ],
+    [ "gs_manager_set_themes", "gs-manager_8c.html#ae4c43041cc32d84c247be62ab93f8f06", null ],
+    [ "gs_manager_set_throttled", "gs-manager_8c.html#a6111939766be4933680b9e783b403bae", null ],
+    [ "gs_manager_set_user_switch_enabled", "gs-manager_8c.html#a872d40e36e4f137204a2b2f35db29731", null ],
+    [ "gs_manager_show_message", "gs-manager_8c.html#accbaea51d9ce29c8305ef2a54d3938bd", null ]
+];

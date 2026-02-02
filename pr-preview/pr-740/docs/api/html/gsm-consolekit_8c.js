@@ -1,0 +1,27 @@
+var gsm_consolekit_8c =
+[
+    [ "CK_INTERFACE", "gsm-consolekit_8c.html#ac940462b6e9fb9d9d5064f55ff6c1528", null ],
+    [ "CK_MANAGER_INTERFACE", "gsm-consolekit_8c.html#ab7879e63ccf793abcddf324552326845", null ],
+    [ "CK_MANAGER_PATH", "gsm-consolekit_8c.html#a666d7dd7da966d7e857d78f462135359", null ],
+    [ "CK_NAME", "gsm-consolekit_8c.html#a9bf322090bb00095044a7da58cb69365", null ],
+    [ "CK_PATH", "gsm-consolekit_8c.html#aec20289c941b9a050ceeea71d8853742", null ],
+    [ "CK_SEAT_INTERFACE", "gsm-consolekit_8c.html#aadffa3fafcf1f97883fea916e0c31108", null ],
+    [ "CK_SESSION_INTERFACE", "gsm-consolekit_8c.html#abb2439bc521b600a2dfe9cba9db680cc", null ],
+    [ "G_DEFINE_TYPE_WITH_PRIVATE", "gsm-consolekit_8c.html#afd1510032294168e68f45ee3d0cb51eb", null ],
+    [ "gsm_consolekit_attempt_hibernate", "gsm-consolekit_8c.html#aff1045139cbf34ac2af9e0df7fe66aae", null ],
+    [ "gsm_consolekit_attempt_restart", "gsm-consolekit_8c.html#a141f56ebd794bd45d201376801ba3611", null ],
+    [ "gsm_consolekit_attempt_stop", "gsm-consolekit_8c.html#a1778203a9981b23c5a6230f2ea7edfb7", null ],
+    [ "gsm_consolekit_attempt_suspend", "gsm-consolekit_8c.html#ab331dfde89a51105090929984f410e4b", null ],
+    [ "gsm_consolekit_can_hibernate", "gsm-consolekit_8c.html#af95bb847513a2789cb43889eeabfd343", null ],
+    [ "gsm_consolekit_can_restart", "gsm-consolekit_8c.html#a076f338098cf2c60c6991c644fb63e46", null ],
+    [ "gsm_consolekit_can_stop", "gsm-consolekit_8c.html#af0304c9781576e0d222c22d59d26628b", null ],
+    [ "gsm_consolekit_can_suspend", "gsm-consolekit_8c.html#ac57b15054ffee577c947bcd72335500f", null ],
+    [ "gsm_consolekit_can_switch_user", "gsm-consolekit_8c.html#a4456615415182a643efcae66b35d45cd", null ],
+    [ "gsm_consolekit_error_quark", "gsm-consolekit_8c.html#acf035ba9f9c26d72d6a6bbe703f2a310", null ],
+    [ "gsm_consolekit_get_current_session_type", "gsm-consolekit_8c.html#a317fedc9a4a70df63fb1160042181869", null ],
+    [ "gsm_consolekit_get_restart_privileges", "gsm-consolekit_8c.html#ab8e8e4bddc4001972588e7134f9bdf22", null ],
+    [ "gsm_consolekit_get_stop_privileges", "gsm-consolekit_8c.html#ac05a6370a0f704fb68a59cad73f1d8f3", null ],
+    [ "gsm_consolekit_new", "gsm-consolekit_8c.html#ad5aaafe0034235346982e261ec6e1efe", null ],
+    [ "gsm_consolekit_set_session_idle", "gsm-consolekit_8c.html#a816734876c2e8ac5a0c022413aa3ad24", null ],
+    [ "gsm_get_consolekit", "gsm-consolekit_8c.html#a3b446c15f5352adb09fb21edafa324e8", null ]
+];

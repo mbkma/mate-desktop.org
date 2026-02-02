@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['xdg_2duser_2ddir_2dlookup_2ec_0',['xdg-user-dir-lookup.c',['../xdg-user-dir-lookup_8c.html',1,'']]],
+  ['xdg_2duser_2ddir_2dlookup_2eh_1',['xdg-user-dir-lookup.h',['../xdg-user-dir-lookup_8h.html',1,'']]],
+  ['xprops_2ec_2',['xprops.c',['../xprops_8c.html',1,'']]],
+  ['xprops_2eh_3',['xprops.h',['../xprops_8h.html',1,'']]],
+  ['xps_2ddocument_2ec_4',['xps-document.c',['../xps-document_8c.html',1,'']]],
+  ['xps_2ddocument_2eh_5',['xps-document.h',['../xps-document_8h.html',1,'']]],
+  ['xpsdocument_2eatril_2dbackend_2edesktop_2ein_6',['xpsdocument.atril-backend.desktop.in',['../xpsdocument_8atril-backend_8desktop_8in.html',1,'']]],
+  ['xrandr_2dcapplet_2ec_7',['xrandr-capplet.c',['../xrandr-capplet_8c.html',1,'']]],
+  ['xrandr_2emate_2dsettings_2dplugin_2edesktop_2ein_8',['xrandr.mate-settings-plugin.desktop.in',['../xrandr_8mate-settings-plugin_8desktop_8in.html',1,'']]],
+  ['xrdb_2emate_2dsettings_2dplugin_2edesktop_2ein_9',['xrdb.mate-settings-plugin.desktop.in',['../xrdb_8mate-settings-plugin_8desktop_8in.html',1,'']]],
+  ['xsettings_2dcommon_2ec_10',['xsettings-common.c',['../xsettings-common_8c.html',1,'']]],
+  ['xsettings_2dcommon_2eh_11',['xsettings-common.h',['../xsettings-common_8h.html',1,'']]],
+  ['xsettings_2dmanager_2ec_12',['xsettings-manager.c',['../xsettings-manager_8c.html',1,'']]],
+  ['xsettings_2dmanager_2eh_13',['xsettings-manager.h',['../xsettings-manager_8h.html',1,'']]],
+  ['xsettings_2emate_2dsettings_2dplugin_2edesktop_2ein_14',['xsettings.mate-settings-plugin.desktop.in',['../xsettings_8mate-settings-plugin_8desktop_8in.html',1,'']]],
+  ['xslt_2etags_2exml_2ein_15',['XSLT.tags.xml.in',['../XSLT_8tags_8xml_8in.html',1,'']]],
+  ['xstuff_2ec_16',['xstuff.c',['../xstuff_8c.html',1,'']]],
+  ['xstuff_2eh_17',['xstuff.h',['../xstuff_8h.html',1,'']]],
+  ['xul_2etags_2exml_2ein_18',['XUL.tags.xml.in',['../XUL_8tags_8xml_8in.html',1,'']]]
+];

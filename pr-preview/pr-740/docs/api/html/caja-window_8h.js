@@ -1,0 +1,45 @@
+var caja_window_8h =
+[
+    [ "CajaWindowClass", "structCajaWindowClass.html", "structCajaWindowClass" ],
+    [ "CajaWindow", "structCajaWindow.html", "structCajaWindow" ],
+    [ "CAJA_IS_WINDOW", "caja-window_8h.html#ade789509c6f04be94cfa2ae9812caebd", null ],
+    [ "CAJA_IS_WINDOW_CLASS", "caja-window_8h.html#a376b88ba902bc4d56179419b5dc9d060", null ],
+    [ "CAJA_TYPE_WINDOW", "caja-window_8h.html#a13c5854d34802132e8538f69e1142aa8", null ],
+    [ "CAJA_WINDOW", "caja-window_8h.html#a473cbdfd73b520fce2513930cc21d788", null ],
+    [ "CAJA_WINDOW_CLASS", "caja-window_8h.html#ab0548233af4643ca475b3d91a9eb09f6", null ],
+    [ "CAJA_WINDOW_GET_CLASS", "caja-window_8h.html#aadf635b6eec00bb4f04953ec3e7aff3e", null ],
+    [ "CAJA_WINDOW_SLOT_DEFINED", "caja-window_8h.html#aac39936ce3ac852cd133b115e56361f5", null ],
+    [ "CajaWindowOpenSlotFlags", "caja-window_8h.html#a862cdcca7c81d1fc16c1856cf0f367ea", null ],
+    [ "CajaWindowPane", "caja-window_8h.html#ae2d6643534eafa023bcf92841021f4c4", null ],
+    [ "CajaWindowPrivate", "caja-window_8h.html#a3c05dd21bc188f2b2c9259b84d40debe", null ],
+    [ "CajaWindowSlotClass", "caja-window_8h.html#a0d3a9cffe6fa9ab857acb7fc1da69889", null ],
+    [ "CajaWindowOpenSlotFlags", "caja-window_8h.html#a3e19dac771473d028b5a933c486f2fe1", [
+      [ "CAJA_WINDOW_OPEN_SLOT_NONE", "caja-window_8h.html#a3e19dac771473d028b5a933c486f2fe1a99d5eca112811475e827ff4ed1452a11", null ],
+      [ "CAJA_WINDOW_OPEN_SLOT_APPEND", "caja-window_8h.html#a3e19dac771473d028b5a933c486f2fe1a346900e126a6d95a42326a8aa0aae33c", null ]
+    ] ],
+    [ "CajaWindowShowState", "caja-window_8h.html#a008f74fdba04c7c286a1c63c605a20cb", [
+      [ "CAJA_WINDOW_NOT_SHOWN", "caja-window_8h.html#a008f74fdba04c7c286a1c63c605a20cba6f85df35635ba146c5fbfa80ef811f33", null ],
+      [ "CAJA_WINDOW_POSITION_SET", "caja-window_8h.html#a008f74fdba04c7c286a1c63c605a20cbafdfea0fb1c338b5938df513be5e5dca2", null ],
+      [ "CAJA_WINDOW_SHOULD_SHOW", "caja-window_8h.html#a008f74fdba04c7c286a1c63c605a20cba309d01ab94885f2545b376e851ef1280", null ]
+    ] ],
+    [ "caja_window_allow_reload", "caja-window_8h.html#a06fe335cc9197b88604aec25b50de69d", null ],
+    [ "caja_window_allow_stop", "caja-window_8h.html#af36d4a29fe7743a862259a5466262e55", null ],
+    [ "caja_window_allow_up", "caja-window_8h.html#a863648e00e4642cbfb6a1655cc1074ef", null ],
+    [ "caja_window_close", "caja-window_8h.html#a43aa9c66412a7d64d81e5842c214bc0a", null ],
+    [ "caja_window_connect_content_view", "caja-window_8h.html#a3f918d1c90b7bbe513f1130b6d19f531", null ],
+    [ "caja_window_disconnect_content_view", "caja-window_8h.html#a9e6ee7fb6318ac1c04eef9e905095fa6", null ],
+    [ "caja_window_display_error", "caja-window_8h.html#a8cfc1baa68f08726a46268d075d038a3", null ],
+    [ "caja_window_get_type", "caja-window_8h.html#a2e30237f49d09d3009dad09eca0daed0", null ],
+    [ "caja_window_get_ui_manager", "caja-window_8h.html#a75f3425012bfe1d7c78e19f6bc683892", null ],
+    [ "caja_window_go_home", "caja-window_8h.html#ab64d5bfe2a34b8510812f54b6f64b71d", null ],
+    [ "caja_window_go_to", "caja-window_8h.html#a0f498ef17f42afd8d4f773ddcbe71b50", null ],
+    [ "caja_window_go_to_full", "caja-window_8h.html#a44be80e542bc28cff5ca40d2f68ffe40", null ],
+    [ "caja_window_go_to_tab", "caja-window_8h.html#a5626f9a74cf30a9bc01b635937d5f0d4", null ],
+    [ "caja_window_go_to_with_selection", "caja-window_8h.html#a1ff23da6829f6896aebaf9c06c421bda", null ],
+    [ "caja_window_go_up", "caja-window_8h.html#a077591fe57ec608d0bd1e52aa72e9085", null ],
+    [ "caja_window_new_tab", "caja-window_8h.html#aefa70da02ed57f445743baa5fbecf94d", null ],
+    [ "caja_window_new_window", "caja-window_8h.html#a0a2dfa9e7a262f693bf6ef9a77377c50", null ],
+    [ "caja_window_prompt_for_location", "caja-window_8h.html#ad900258728ca11120f521b46a6b4a6f1", null ],
+    [ "caja_window_reload", "caja-window_8h.html#a94a4870150016abb5a3ca030235f27bf", null ],
+    [ "caja_window_show_window", "caja-window_8h.html#a617e7290e1863f562cdbc3a0b85a3e89", null ]
+];

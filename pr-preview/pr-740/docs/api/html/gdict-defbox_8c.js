@@ -1,0 +1,27 @@
+var gdict_defbox_8c =
+[
+    [ "ERROR_MARGIN", "gdict-defbox_8c.html#a0c09e5677405154c120ab1181f2b886f", null ],
+    [ "GTK_TEXT_UNKNOWN_CHAR", "gdict-defbox_8c.html#a80eed17c17b777a772f66d5f36234882", null ],
+    [ "QUERY_MARGIN", "gdict-defbox_8c.html#a90fe670fa669cb218a3e792c0703a420", null ],
+    [ "gdict_defbox_clear", "gdict-defbox_8c.html#acaba1718c32438c0d924f9ba6ed24399", null ],
+    [ "gdict_defbox_copy_to_clipboard", "gdict-defbox_8c.html#aeb6a6d86bc9a9e04891a1adb949e4cc2", null ],
+    [ "gdict_defbox_count_definitions", "gdict-defbox_8c.html#aa0f237a9e70a8dc98632b5a84b9ea11b", null ],
+    [ "gdict_defbox_find_next", "gdict-defbox_8c.html#a86517c887f6150c98045f265c9e094fb", null ],
+    [ "gdict_defbox_find_previous", "gdict-defbox_8c.html#aa6bd005b7f542dbc55644da039edc6f3", null ],
+    [ "gdict_defbox_get_context", "gdict-defbox_8c.html#a78a620fc86fc35d55d6071588cac3a89", null ],
+    [ "gdict_defbox_get_database", "gdict-defbox_8c.html#a32b1c12c2d5dad4b17e1348d38277e72", null ],
+    [ "gdict_defbox_get_font_name", "gdict-defbox_8c.html#a9d952fff0ab246742019feb27c6c1cb3", null ],
+    [ "gdict_defbox_get_selected_word", "gdict-defbox_8c.html#a821f427645015e2ded9c8a09c7333ec8", null ],
+    [ "gdict_defbox_get_show_find", "gdict-defbox_8c.html#aab0391474742626829d75d127fb4556b", null ],
+    [ "gdict_defbox_get_text", "gdict-defbox_8c.html#afce71f69d75c742af89baed9988fcebd", null ],
+    [ "gdict_defbox_get_word", "gdict-defbox_8c.html#a5c5ae4a06814152c72365029a4f947f9", null ],
+    [ "gdict_defbox_jump_to_definition", "gdict-defbox_8c.html#a4f8f95465146936d2a94d6582b550304", null ],
+    [ "gdict_defbox_lookup", "gdict-defbox_8c.html#aa1dcc1d1dfd3e0223ea5c3fd5ab00bf4", null ],
+    [ "gdict_defbox_new", "gdict-defbox_8c.html#a687496fbb24ef56457f2fd17d2c02017", null ],
+    [ "gdict_defbox_new_with_context", "gdict-defbox_8c.html#a668924eb61fe6b40e196b89857b32b1a", null ],
+    [ "gdict_defbox_select_all", "gdict-defbox_8c.html#aa6c8c690a75a3c9a8fe33b8e8a4c9684", null ],
+    [ "gdict_defbox_set_context", "gdict-defbox_8c.html#a699c7324d6b806a6ec7ce34ed871c34e", null ],
+    [ "gdict_defbox_set_database", "gdict-defbox_8c.html#a597a2c8bd991952869d9d91eb59956aa", null ],
+    [ "gdict_defbox_set_font_name", "gdict-defbox_8c.html#aced7a3c52d20f62b371b4b97abbfeedb", null ],
+    [ "gdict_defbox_set_show_find", "gdict-defbox_8c.html#ad93afde5cfdd39cde0828168ea8f5d07", null ]
+];

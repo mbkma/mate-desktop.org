@@ -1,0 +1,28 @@
+var dir_d68d7fd075760f05cd6ea7af93516b84 =
+[
+    [ "alsa-backend.c", "alsa-backend_8c.html", "alsa-backend_8c" ],
+    [ "alsa-backend.h", "alsa-backend_8h.html", "alsa-backend_8h" ],
+    [ "alsa-compat.h", "alsa-compat_8h.html", "alsa-compat_8h" ],
+    [ "alsa-constants.c", "alsa-constants_8c.html", "alsa-constants_8c" ],
+    [ "alsa-constants.h", "alsa-constants_8h.html", "alsa-constants_8h" ],
+    [ "alsa-device.c", "alsa-device_8c.html", "alsa-device_8c" ],
+    [ "alsa-device.h", "alsa-device_8h.html", "alsa-device_8h" ],
+    [ "alsa-element.c", "alsa-element_8c.html", "alsa-element_8c" ],
+    [ "alsa-element.h", "alsa-element_8h.html", "alsa-element_8h" ],
+    [ "alsa-stream-control.c", "alsa-stream-control_8c.html", "alsa-stream-control_8c" ],
+    [ "alsa-stream-control.h", "alsa-stream-control_8h.html", "alsa-stream-control_8h" ],
+    [ "alsa-stream-input-control.c", "alsa-stream-input-control_8c.html", "alsa-stream-input-control_8c" ],
+    [ "alsa-stream-input-control.h", "alsa-stream-input-control_8h.html", "alsa-stream-input-control_8h" ],
+    [ "alsa-stream-output-control.c", "alsa-stream-output-control_8c.html", "alsa-stream-output-control_8c" ],
+    [ "alsa-stream-output-control.h", "alsa-stream-output-control_8h.html", "alsa-stream-output-control_8h" ],
+    [ "alsa-stream.c", "alsa-stream_8c.html", "alsa-stream_8c" ],
+    [ "alsa-stream.h", "alsa-stream_8h.html", "alsa-stream_8h" ],
+    [ "alsa-switch-option.c", "alsa-switch-option_8c.html", "alsa-switch-option_8c" ],
+    [ "alsa-switch-option.h", "alsa-switch-option_8h.html", "alsa-switch-option_8h" ],
+    [ "alsa-switch.c", "alsa-switch_8c.html", "alsa-switch_8c" ],
+    [ "alsa-switch.h", "alsa-switch_8h.html", "alsa-switch_8h" ],
+    [ "alsa-toggle.c", "alsa-toggle_8c.html", "alsa-toggle_8c" ],
+    [ "alsa-toggle.h", "alsa-toggle_8h.html", "alsa-toggle_8h" ],
+    [ "alsa-types.h", "alsa-types_8h.html", "alsa-types_8h" ],
+    [ "Makefile.in", "libmatemixer_2backends_2alsa_2Makefile_8in.html", null ]
+];

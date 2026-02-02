@@ -1,0 +1,28 @@
+var caja_extensions_2config_8h =
+[
+    [ "ENABLE_NLS", "caja-extensions_2config_8h.html#a7cc70673e1bfa2cbbc58f1733a8aa344", null ],
+    [ "GAJIM_SHARE_DIR", "caja-extensions_2config_8h.html#a227ba732494999ecea49356c8a0709cc", null ],
+    [ "GETTEXT_PACKAGE", "caja-extensions_2config_8h.html#ab23870bd5469d09c183b5a4e89efd81d", null ],
+    [ "HAVE_DCGETTEXT", "caja-extensions_2config_8h.html#acc7d833fd02af49a7557f004021382ae", null ],
+    [ "HAVE_DLFCN_H", "caja-extensions_2config_8h.html#a0ee1617ff2f6885ef384a3dd46f9b9d7", null ],
+    [ "HAVE_GETTEXT", "caja-extensions_2config_8h.html#af1f713a125fcc35140c75f5526aafd23", null ],
+    [ "HAVE_INTTYPES_H", "caja-extensions_2config_8h.html#ab90a030ff2790ebdc176660a6dd2a478", null ],
+    [ "HAVE_STDINT_H", "caja-extensions_2config_8h.html#ab6cd6d1c63c1e26ea2d4537b77148354", null ],
+    [ "HAVE_STDIO_H", "caja-extensions_2config_8h.html#ae021ce4fe74984428cc97427b7358fda", null ],
+    [ "HAVE_STDLIB_H", "caja-extensions_2config_8h.html#a9e0e434ec1a6ddbd97db12b5a32905e0", null ],
+    [ "HAVE_STRING_H", "caja-extensions_2config_8h.html#ad4c234dd1625255dc626a15886306e7d", null ],
+    [ "HAVE_STRINGS_H", "caja-extensions_2config_8h.html#a405d10d46190bcb0320524c54eafc850", null ],
+    [ "HAVE_SYS_STAT_H", "caja-extensions_2config_8h.html#ace156430ba007d19b4348a950d0c692b", null ],
+    [ "HAVE_SYS_TYPES_H", "caja-extensions_2config_8h.html#a69dc70bea5d1f8bd2be9740e974fa666", null ],
+    [ "HAVE_UNISTD_H", "caja-extensions_2config_8h.html#a219b06937831d0da94d801ab13987639", null ],
+    [ "LT_OBJDIR", "caja-extensions_2config_8h.html#ac2d5925d76379847dd9fc4747b061659", null ],
+    [ "PACKAGE", "caja-extensions_2config_8h.html#aca8570fb706c81df371b7f9bc454ae03", null ],
+    [ "PACKAGE_BUGREPORT", "caja-extensions_2config_8h.html#a1d1d2d7f8d2f95b376954d649ab03233", null ],
+    [ "PACKAGE_NAME", "caja-extensions_2config_8h.html#a1c0439e4355794c09b64274849eb0279", null ],
+    [ "PACKAGE_STRING", "caja-extensions_2config_8h.html#ac73e6f903c16eca7710f92e36e1c6fbf", null ],
+    [ "PACKAGE_TARNAME", "caja-extensions_2config_8h.html#af415af6bfede0e8d5453708afe68651c", null ],
+    [ "PACKAGE_URL", "caja-extensions_2config_8h.html#a5c93853116d5a50307b6744f147840aa", null ],
+    [ "PACKAGE_VERSION", "caja-extensions_2config_8h.html#aa326a05d5e30f9e9a4bb0b4469d5d0c0", null ],
+    [ "STDC_HEADERS", "caja-extensions_2config_8h.html#a550e5c272cc3cf3814651721167dcd23", null ],
+    [ "VERSION", "caja-extensions_2config_8h.html#a1c6d5de492ac61ad29aec7aa9a436bbf", null ]
+];

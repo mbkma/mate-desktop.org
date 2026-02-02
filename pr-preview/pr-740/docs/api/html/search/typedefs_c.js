@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['offset_0',['offset',['../ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19',1,'ioapi.h']]],
+  ['op_1',['Op',['../gste-slideshow_8c.html#a5898c8d0a4b2f21b04a4ceb44e46cf46',1,'gste-slideshow.c']]],
+  ['opresult_2',['OpResult',['../gste-slideshow_8c.html#abebc7c301dcbcb468db49939fedf19c2',1,'gste-slideshow.c']]],
+  ['origin_3',['origin',['../ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade',1,'ioapi.h']]],
+  ['ossbackend_4',['OssBackend',['../oss-types_8h.html#a9fc574c2f09645b94abe5fb6eca09851',1,'oss-types.h']]],
+  ['ossbackendclass_5',['OssBackendClass',['../oss-backend_8h.html#a019eb52a5b4fcb28cbeea7e50c61090e',1,'oss-backend.h']]],
+  ['ossbackendprivate_6',['OssBackendPrivate',['../oss-backend_8h.html#a9c2ce935e9ee0b2e47cb39699eb16af6',1,'oss-backend.h']]],
+  ['ossdevice_7',['OssDevice',['../oss-types_8h.html#ae71abc179409fd314ebc711bb4d27e56',1,'oss-types.h']]],
+  ['ossdeviceclass_8',['OssDeviceClass',['../oss-device_8h.html#ab4489c0f8a65e68281906e65dd23628d',1,'oss-device.h']]],
+  ['ossdeviceprivate_9',['OssDevicePrivate',['../oss-device_8h.html#a0896fb01a0874df6f6098601df05ce6b',1,'oss-device.h']]],
+  ['ossstream_10',['OssStream',['../oss-types_8h.html#a5c8d8e6dadd80b65d32a33280ad01e6a',1,'oss-types.h']]],
+  ['ossstreamclass_11',['OssStreamClass',['../oss-stream_8h.html#a65b82b5a9c89f1ee636bb1f0396efa6d',1,'oss-stream.h']]],
+  ['ossstreamcontrol_12',['OssStreamControl',['../oss-types_8h.html#a13a444e769b440d7222c449cad2ad838',1,'oss-types.h']]],
+  ['ossstreamcontrolclass_13',['OssStreamControlClass',['../oss-stream-control_8h.html#a62df72a5ae9cfb4d318a9717f08878ba',1,'oss-stream-control.h']]],
+  ['ossstreamcontrolprivate_14',['OssStreamControlPrivate',['../oss-stream-control_8h.html#ac839c5467b65a31f0923ed9c76588363',1,'oss-stream-control.h']]],
+  ['ossstreamprivate_15',['OssStreamPrivate',['../oss-stream_8h.html#aa93cabef87e2a05aa714a8bb980cac93',1,'oss-stream.h']]],
+  ['ossswitch_16',['OssSwitch',['../oss-types_8h.html#aff25da4649f2a39d774e4f5f6aeb91e3',1,'oss-types.h']]],
+  ['ossswitchclass_17',['OssSwitchClass',['../oss-switch_8h.html#add047400714786383b0819b72f86c2d0',1,'oss-switch.h']]],
+  ['ossswitchoption_18',['OssSwitchOption',['../oss-types_8h.html#a576f402919bc3715b76b067cfc96f8dd',1,'oss-types.h']]],
+  ['ossswitchoptionclass_19',['OssSwitchOptionClass',['../oss-switch-option_8h.html#af1203cbf10392a09a0299f6459980dc7',1,'oss-switch-option.h']]],
+  ['ossswitchoptionprivate_20',['OssSwitchOptionPrivate',['../oss-switch-option_8h.html#ab71a1aaebfac22aa19f7959a77029756',1,'oss-switch-option.h']]],
+  ['ossswitchprivate_21',['OssSwitchPrivate',['../oss-switch_8h.html#a0df96e7270fab897c66a7dad9986a86f',1,'oss-switch.h']]]
+];

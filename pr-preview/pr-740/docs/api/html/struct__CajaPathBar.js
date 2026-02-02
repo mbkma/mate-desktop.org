@@ -1,0 +1,25 @@
+var struct__CajaPathBar =
+[
+    [ "button_list", "struct__CajaPathBar.html#aeb241f678592531dbf3a4b8d42c300ed", null ],
+    [ "button_offset", "struct__CajaPathBar.html#ab1e9f9372f44fae91f4412e8409a6121", null ],
+    [ "current_button_data", "struct__CajaPathBar.html#ade090fa3244aaf3cbe77b25831ffda6e", null ],
+    [ "current_path", "struct__CajaPathBar.html#aea5cca6e99023cc0a3fa2f4748df693c", null ],
+    [ "desktop_path", "struct__CajaPathBar.html#a38f814ca241652b037646161c83934d7", null ],
+    [ "down_slider_button", "struct__CajaPathBar.html#a946f135d1b2b3740f1c6961998f29844", null ],
+    [ "drag_slider_timeout", "struct__CajaPathBar.html#afe874f8c61ae858c123f64728bb7ac22", null ],
+    [ "drag_slider_timeout_for_up_button", "struct__CajaPathBar.html#a29c9071499d3a6d644aea6b64a98a549", null ],
+    [ "fake_root", "struct__CajaPathBar.html#a734cb1c3e063d0950a149a88037847e8", null ],
+    [ "first_scrolled_button", "struct__CajaPathBar.html#a4ec20f70a7b161161d662906a1a6ab90", null ],
+    [ "home_path", "struct__CajaPathBar.html#a4acbb84b0719e70bcb63d4b4231d86cd", null ],
+    [ "icon_size", "struct__CajaPathBar.html#a8b29b58f4e2f31cd4542a9d2bd804f5e", null ],
+    [ "ignore_click", "struct__CajaPathBar.html#ac6e2f427ca3eaa7acb468dc3d944e45c", null ],
+    [ "need_timer", "struct__CajaPathBar.html#ab8da862cdc26cf3613ad4cced476a006", null ],
+    [ "parent", "struct__CajaPathBar.html#a2d16e968700cae873fdbc8098876da69", null ],
+    [ "root_path", "struct__CajaPathBar.html#ad6aeb4b245947439e6088fc696c826c2", null ],
+    [ "settings_signal_id", "struct__CajaPathBar.html#ac247e8e45a8111a1d93ef02e6230f323", null ],
+    [ "slider_visible", "struct__CajaPathBar.html#a730a73a526f5086aaa628de93b088850", null ],
+    [ "slider_width", "struct__CajaPathBar.html#a60b24c1a2bc9dd0a98df1aaa65044585", null ],
+    [ "spacing", "struct__CajaPathBar.html#aa59af64a11b8ab817297218cdd02da65", null ],
+    [ "timer", "struct__CajaPathBar.html#a3e574d83f3e04b5174d26614e5378945", null ],
+    [ "up_slider_button", "struct__CajaPathBar.html#af54b57d02834058d8df049ebad18c66b", null ]
+];

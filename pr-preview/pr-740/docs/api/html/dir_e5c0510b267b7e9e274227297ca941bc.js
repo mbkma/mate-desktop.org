@@ -1,0 +1,28 @@
+var dir_e5c0510b267b7e9e274227297ca941bc =
+[
+    [ "Makefile.in", "mate-panel_2mate-panel_2libpanel-util_2Makefile_8in.html", null ],
+    [ "panel-cleanup.c", "panel-cleanup_8c.html", "panel-cleanup_8c" ],
+    [ "panel-cleanup.h", "panel-cleanup_8h.html", "panel-cleanup_8h" ],
+    [ "panel-color.c", "panel-color_8c.html", "panel-color_8c" ],
+    [ "panel-color.h", "panel-color_8h.html", "panel-color_8h" ],
+    [ "panel-error.c", "panel-error_8c.html", "panel-error_8c" ],
+    [ "panel-error.h", "panel-error_8h.html", "panel-error_8h" ],
+    [ "panel-glib.c", "panel-glib_8c.html", "panel-glib_8c" ],
+    [ "panel-glib.h", "panel-glib_8h.html", "panel-glib_8h" ],
+    [ "panel-gtk.c", "panel-gtk_8c.html", "panel-gtk_8c" ],
+    [ "panel-gtk.h", "panel-gtk_8h.html", "panel-gtk_8h" ],
+    [ "panel-icon-chooser.c", "panel-icon-chooser_8c.html", "panel-icon-chooser_8c" ],
+    [ "panel-icon-chooser.h", "panel-icon-chooser_8h.html", "panel-icon-chooser_8h" ],
+    [ "panel-keyfile.c", "panel-keyfile_8c.html", "panel-keyfile_8c" ],
+    [ "panel-keyfile.h", "panel-keyfile_8h.html", "panel-keyfile_8h" ],
+    [ "panel-launch.c", "panel-launch_8c.html", "panel-launch_8c" ],
+    [ "panel-launch.h", "panel-launch_8h.html", "panel-launch_8h" ],
+    [ "panel-list.c", "panel-list_8c.html", "panel-list_8c" ],
+    [ "panel-list.h", "panel-list_8h.html", "panel-list_8h" ],
+    [ "panel-session-manager.c", "panel-session-manager_8c.html", "panel-session-manager_8c" ],
+    [ "panel-session-manager.h", "panel-session-manager_8h.html", "panel-session-manager_8h" ],
+    [ "panel-show.c", "panel-show_8c.html", "panel-show_8c" ],
+    [ "panel-show.h", "panel-show_8h.html", "panel-show_8h" ],
+    [ "panel-xdg.c", "panel-xdg_8c.html", "panel-xdg_8c" ],
+    [ "panel-xdg.h", "panel-xdg_8h.html", "panel-xdg_8h" ]
+];

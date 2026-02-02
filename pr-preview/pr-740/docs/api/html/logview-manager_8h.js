@@ -1,0 +1,25 @@
+var logview_manager_8h =
+[
+    [ "_LogviewManager", "struct__LogviewManager.html", "struct__LogviewManager" ],
+    [ "_LogviewManagerClass", "struct__LogviewManagerClass.html", "struct__LogviewManagerClass" ],
+    [ "LOGVIEW_IS_MANAGER", "logview-manager_8h.html#a678befcb37df2c789906bf05002ba7ec", null ],
+    [ "LOGVIEW_IS_MANAGER_CLASS", "logview-manager_8h.html#a015fd5932e9a11f44750c2a88cf93ecb", null ],
+    [ "LOGVIEW_MANAGER", "logview-manager_8h.html#aebbd2d4ad35ae1ef0d09f8623caf65cf", null ],
+    [ "LOGVIEW_MANAGER_CLASS", "logview-manager_8h.html#a2d653e5ecbe6661d77a2fd7e412d5794", null ],
+    [ "LOGVIEW_MANAGER_GET_CLASS", "logview-manager_8h.html#aad6d51b94e593672eccdc93a16554698", null ],
+    [ "LOGVIEW_TYPE_MANAGER", "logview-manager_8h.html#a2869ea9da9e8bfccc1aca7e92743fab5", null ],
+    [ "LogviewManager", "logview-manager_8h.html#a942dbbc678a0b40846685f9cb267f76f", null ],
+    [ "LogviewManagerClass", "logview-manager_8h.html#a3728dbe1b9f634d6efbd5d47b2088f24", null ],
+    [ "LogviewManagerPrivate", "logview-manager_8h.html#a0d64f5c611a133912264c220911d9048", null ],
+    [ "logview_manager_add_log_from_gfile", "logview-manager_8h.html#a2ba1d103a58ce1248a9fba6f34b1516c", null ],
+    [ "logview_manager_add_logs_from_name_list", "logview-manager_8h.html#af6ed77cc263b3a5636930b6be5d2b690", null ],
+    [ "logview_manager_add_logs_from_names", "logview-manager_8h.html#aacf66bfe98d73162f06267701bbc904c", null ],
+    [ "logview_manager_close_active_log", "logview-manager_8h.html#ae306ceb43f9397a2fac84f1171f84ca9", null ],
+    [ "logview_manager_get", "logview-manager_8h.html#ad9967b6905d5a2a21ac41f811cbab703", null ],
+    [ "logview_manager_get_active_log", "logview-manager_8h.html#aee11ecea60a4e22f83fff7334d70de77", null ],
+    [ "logview_manager_get_if_loaded", "logview-manager_8h.html#a3f1b47c9fd31dd7a87242ef4cebf6922", null ],
+    [ "logview_manager_get_log_count", "logview-manager_8h.html#a13e881f0bce1335385ccf405328f2fbb", null ],
+    [ "logview_manager_get_type", "logview-manager_8h.html#a9c1e44094ef1d9500d0fb1cd0565c3d8", null ],
+    [ "logview_manager_log_is_active", "logview-manager_8h.html#a9f33f5feee824f385c67095fa96e4d6c", null ],
+    [ "logview_manager_set_active_log", "logview-manager_8h.html#a747f98faf367297502d6a40be299f086", null ]
+];

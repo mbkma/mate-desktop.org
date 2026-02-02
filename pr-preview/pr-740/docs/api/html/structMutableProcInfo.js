@@ -1,0 +1,25 @@
+var structMutableProcInfo =
+[
+    [ "MutableProcInfo", "structMutableProcInfo.html#a985e1bcaf879711ed21a579d7a28f61f", null ],
+    [ "cgroup_name", "structMutableProcInfo.html#ac86f290ec3f47d38fc77b28f48669de7", null ],
+    [ "cpu_time", "structMutableProcInfo.html#a29fe0901926bbd7c5ca31d9199bde159", null ],
+    [ "disk_read_bytes_current", "structMutableProcInfo.html#aab7e827b801fc26bb743f1776e28cac5", null ],
+    [ "disk_read_bytes_total", "structMutableProcInfo.html#a2cf062765b2cdf52e4a34d762c54cc10", null ],
+    [ "disk_write_bytes_current", "structMutableProcInfo.html#a2dbb3be4f4bd5e62ba7e1d93dbcdbd71", null ],
+    [ "disk_write_bytes_total", "structMutableProcInfo.html#aa730fb5a0e140d7e7370079b98cd60d3", null ],
+    [ "mem", "structMutableProcInfo.html#a13e49907ac7d0dc3fe8a907f972c9db4", null ],
+    [ "memres", "structMutableProcInfo.html#a4f51720b3126d538e16d05adb5c52582", null ],
+    [ "memshared", "structMutableProcInfo.html#a85dc9e790e2c3b6a17d270f78f669294", null ],
+    [ "memwritable", "structMutableProcInfo.html#a5cae3b2b48622448c3503ea581bf0635", null ],
+    [ "nice", "structMutableProcInfo.html#af8dcc330edb0427184c0f71074beab25", null ],
+    [ "owner", "structMutableProcInfo.html#a235012f8db9ddd01436b449d74a5bf74", null ],
+    [ "pcpu", "structMutableProcInfo.html#a5bb1ca1bd82da6a13305f1313e6de414", null ],
+    [ "seat", "structMutableProcInfo.html#ad762713cd470a3a961655127afcfa5f1", null ],
+    [ "session", "structMutableProcInfo.html#a6eb76e616015b85ff18afde34712d8d4", null ],
+    [ "start_time", "structMutableProcInfo.html#a2a90dedf0b85e8a9371e4ddd1031757f", null ],
+    [ "status", "structMutableProcInfo.html#a5b98f92a31d95cb9a387c1817d13ba58", null ],
+    [ "unit", "structMutableProcInfo.html#ac5d25b7fdb217547b2bdf0d458124db5", null ],
+    [ "user", "structMutableProcInfo.html#a71013d92758d60293c830f5d1dd33a67", null ],
+    [ "vmsize", "structMutableProcInfo.html#a58884638c35aa7b588a10ccca60e426a", null ],
+    [ "wchan", "structMutableProcInfo.html#a86a56a7bc73788381dc9965fdf9b694c", null ]
+];

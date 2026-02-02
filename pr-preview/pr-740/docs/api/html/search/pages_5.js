@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['faq_0',['FAQ',['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md21',1,'']]],
+  ['features_1',['FEATURES',['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md19',1,'HOW TO ADD EXTERNAL FEATURES'],['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md18',1,'MARCO FEATURES']]],
+  ['features_20and_20caveats_2',['MARCO BUGS, NON-FEATURES, AND CAVEATS',['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md20',1,'']]],
+  ['file_20browser_20pane_20plugin_3',['File Browser Pane Plugin',['../dir_2d6cfd2821ca18c43a8a3bcb07a93d70.html#autotoc_md61',1,'']]],
+  ['file_20format_4',['Configuration file format',['../dir_26c3cf2246321c119de4295396ae34f0.html#autotoc_md31',1,'']]],
+  ['file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_5',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['files_20created_6',['New Files Created',['../md_mate-terminal_2CLAUDE.html#autotoc_md41',1,'']]],
+  ['files_20modified_7',['Key Files Modified',['../md_mate-terminal_2CLAUDE.html#autotoc_md40',1,'']]],
+  ['files_20removed_8',['Files Removed',['../md_mate-terminal_2CLAUDE.html#autotoc_md42',1,'']]],
+  ['folder_20here_20each_20plugin_20folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_9',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_10',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['folders_20for_20better_20understanding_11',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['for_20better_20understanding_12',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['for_20pluma_20if_20you_20want_20to_20write_20a_20plugin_20you_20have_20to_20put_20the_20plugin_20folder_20here_20each_20plugin_20folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_13',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['for_20this_20mapping_14',['index for this mapping',['../page.html',1,'']]],
+  ['format_15',['Configuration file format',['../dir_26c3cf2246321c119de4295396ae34f0.html#autotoc_md31',1,'']]],
+  ['future_20libmateui_20integration_20points_16',['Future libmateui Integration Points',['../md_mate-terminal_2CLAUDE.html#autotoc_md56',1,'']]]
+];

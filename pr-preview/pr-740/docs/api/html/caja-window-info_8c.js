@@ -1,0 +1,26 @@
+var caja_window_info_8c =
+[
+    [ "caja_window_info_close", "caja-window-info_8c.html#af8dd10123569d781c43c14743f607c1b", null ],
+    [ "caja_window_info_get_active_slot", "caja-window-info_8c.html#a6085a5dcee01b8dea2b27e3a9a589ad2", null ],
+    [ "caja_window_info_get_backup_files_mode", "caja-window-info_8c.html#a7865a93d3d79993b2ca8655521b06568", null ],
+    [ "caja_window_info_get_current_location", "caja-window-info_8c.html#a390fcaeedd67b96b116712885888ff68", null ],
+    [ "caja_window_info_get_extra_slot", "caja-window-info_8c.html#a95b5df8f5a9212938fa18003db403a60", null ],
+    [ "caja_window_info_get_hidden_files_mode", "caja-window-info_8c.html#a1db4394a0bb7bda11e281da33ad08117", null ],
+    [ "caja_window_info_get_history", "caja-window-info_8c.html#aa2660fe9681b8df8418a0eee55575657", null ],
+    [ "caja_window_info_get_initiated_unmount", "caja-window-info_8c.html#a36bcdaeded77a1160ca54d1533dcaf62", null ],
+    [ "caja_window_info_get_selection", "caja-window-info_8c.html#a1edc8bdbe4e25012e6cd27b6624fa72f", null ],
+    [ "caja_window_info_get_selection_count", "caja-window-info_8c.html#aa18cc7ee72c25e3a25d65aa97dc6ae89", null ],
+    [ "caja_window_info_get_title", "caja-window-info_8c.html#a8e97881902dd03d408a433d3729f4ef3", null ],
+    [ "caja_window_info_get_type", "caja-window-info_8c.html#a4f9cb16e61d152284dddf4c782d87eb2", null ],
+    [ "caja_window_info_get_ui_manager", "caja-window-info_8c.html#a6a1f9d0d23f948ebbff5224d52d649ef", null ],
+    [ "caja_window_info_get_window_type", "caja-window-info_8c.html#a2f07a23e4712bebddd6f6a9451b8f02f", null ],
+    [ "caja_window_info_push_status", "caja-window-info_8c.html#a3c60874ff1dfbce63e9cd81ee91e7cee", null ],
+    [ "caja_window_info_report_load_complete", "caja-window-info_8c.html#ac06fc4778050bd6c09b122ab90b0f650", null ],
+    [ "caja_window_info_report_load_underway", "caja-window-info_8c.html#ab8ca3c0fe26844bae26895ae1926c651", null ],
+    [ "caja_window_info_report_selection_changed", "caja-window-info_8c.html#a4e85d5e46f2247f29bd505d886993c33", null ],
+    [ "caja_window_info_report_view_failed", "caja-window-info_8c.html#a66bcc2d1b2c58d4bd1dd73d8f5c64788", null ],
+    [ "caja_window_info_set_backup_files_mode", "caja-window-info_8c.html#a4bae1f2bff099154d06b20b43cae5100", null ],
+    [ "caja_window_info_set_hidden_files_mode", "caja-window-info_8c.html#a153abd357724f0357ffa8d1caa94d04e", null ],
+    [ "caja_window_info_set_initiated_unmount", "caja-window-info_8c.html#a6cd054af77e24211d7cf23f9b9493100", null ],
+    [ "caja_window_info_view_visible", "caja-window-info_8c.html#a99f9d52f1630e93a91595d0ad89c59f6", null ]
+];

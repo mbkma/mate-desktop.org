@@ -1,0 +1,25 @@
+var fontmap_8c =
+[
+    [ "DROUND", "fontmap_8c.html#a96d0fd32d42598d29e8f156a056bfe48", null ],
+    [ "ENC_HASH_SIZE", "fontmap_8c.html#a754c14b8858accc4d7b53b79b5c85c05", null ],
+    [ "ENCNAME_HASH_SIZE", "fontmap_8c.html#ab30ea6848f1c067b29ae9654c964d53c", null ],
+    [ "MAP_HASH_SIZE", "fontmap_8c.html#ad4b11d022f33415630c7429a0c80f3b5", null ],
+    [ "PSMAP_HASH_SIZE", "fontmap_8c.html#a32bc6176cf8ef66ff84cca2e662653c6", null ],
+    [ "TRANSFORM", "fontmap_8c.html#af351c91a4f809da8df37f5511aa7bac1", null ],
+    [ "DviFontMap", "fontmap_8c.html#a5e18efdcb662220ca866839fa9bb4b02", null ],
+    [ "PSFontMap", "fontmap_8c.html#a46e4772a8ae0066127bf8dfcf1e6e718", null ],
+    [ "mdvi_add_fontmap_file", "fontmap_8c.html#af7e14e7b62b4344e3f769b2ff0c9366e", null ],
+    [ "mdvi_encode_glyph", "fontmap_8c.html#a1ff8e60e97d61920348b08ebc325e990", null ],
+    [ "mdvi_flush_encodings", "fontmap_8c.html#afc57a2be95dfa9a611551154ec86ac92", null ],
+    [ "mdvi_flush_fontmaps", "fontmap_8c.html#a943a48a6d12d315074334233ae43acbd", null ],
+    [ "mdvi_install_fontmap", "fontmap_8c.html#ac7422789ab1b3fdbcad29f68f64d8d5e", null ],
+    [ "mdvi_load_fontmap", "fontmap_8c.html#a50de4a4e4ed750dbd8615240fdd1c738", null ],
+    [ "mdvi_ps_find_font", "fontmap_8c.html#abc034922f2a19a161d4275891e8372b7", null ],
+    [ "mdvi_ps_flush_fonts", "fontmap_8c.html#aac5f6e5cdd753b1936090fbf0512de4d", null ],
+    [ "mdvi_ps_get_metrics", "fontmap_8c.html#af4054b00a9a90281561573134561456f", null ],
+    [ "mdvi_ps_read_fontmap", "fontmap_8c.html#abfebb73b9b4875f2f76c1f0ef28d3def", null ],
+    [ "mdvi_query_fontmap", "fontmap_8c.html#aa1fd9a72bab70d31c49b1052c9568072", null ],
+    [ "mdvi_release_encoding", "fontmap_8c.html#aef71bc764aec226137420ae4007409e2", null ],
+    [ "mdvi_request_encoding", "fontmap_8c.html#a64b9327b0f6a6861087ef7d81bcf9007", null ],
+    [ "ps_init_default_paths", "fontmap_8c.html#ab9dbf0c18e6eab49f3cfa57500c9edd8", null ]
+];

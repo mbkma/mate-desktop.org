@@ -1,0 +1,115 @@
+<map id="pluma&#45;message&#45;bus.h" name="pluma&#45;message&#45;bus.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1591,5,1748,31"/>
+<area shape="rect" id="Node000002" href="$pluma-file-browser-messages_8h.html" title=" " alt="" coords="1112,152,1251,192"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1620,37,1243,154,1241,149,1619,32"/>
+<area shape="rect" id="Node000005" href="$pluma-message-bus_8c.html" title=" " alt="" coords="1943,79,2097,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1739,31,1964,76,1963,81,1738,36"/>
+<area shape="rect" id="Node000006" href="$pluma-window-private_8h.html" title=" " alt="" coords="695,159,865,185"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1589,36,847,162,847,157,1588,30"/>
+<area shape="rect" id="Node000012" href="$pluma-window_8h.html" title=" " alt="" coords="1796,79,1919,104"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1713,33,1828,76,1826,81,1711,38"/>
+<area shape="rect" id="Node000003" href="$pluma-file-browser-messages_8c.html" title=" " alt="" coords="864,240,1003,280"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1115,199,988,243,987,237,1113,194"/>
+<area shape="rect" id="Node000004" href="$pluma-file-browser-plugin_8c.html" title=" " alt="" coords="2001,240,2140,280"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="1264,177,1988,237,2001,240,2000,245,1988,243,1264,183"/>
+<area shape="rect" id="Node000007" href="$pluma-commands-file_8c.html" title=" " alt="" coords="466,247,630,273"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="737,192,580,250,578,245,735,187"/>
+<area shape="rect" id="Node000008" href="$pluma-commands-search_8c.html" title=" " alt="" coords="654,247,839,273"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="773,199,754,248,749,246,768,197"/>
+<area shape="rect" id="Node000009" href="$pluma-commands-view_8c.html" title=" " alt="" coords="1027,247,1199,273"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="838,185,1070,245,1068,250,837,191"/>
+<area shape="rect" id="Node000010" href="$pluma-settings_8c.html" title=" " alt="" coords="173,247,296,273"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="711,190,683,195,578,209,495,217,413,226,309,243,276,250,275,245,307,237,412,220,495,211,577,204,682,189,710,185"/>
+<area shape="rect" id="Node000011" href="$pluma-window_8c.html" title=" " alt="" coords="321,247,442,273"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="709,190,454,243,425,250,423,245,453,237,708,185"/>
+<area shape="poly" id="edge45_Node000012_Node000002" title=" " alt="" coords="1782,100,1553,120,1411,135,1270,155,1251,158,1250,153,1269,149,1411,130,1552,114,1782,95"/>
+<area shape="poly" id="edge46_Node000012_Node000004" title=" " alt="" coords="1867,116,1883,154,1895,173,1910,190,1954,220,2002,240,2000,245,1951,225,1906,194,1891,176,1878,156,1862,118"/>
+<area shape="poly" id="edge70_Node000012_Node000006" title=" " alt="" coords="1782,99,1417,118,1177,135,934,155,866,162,865,157,933,149,1176,129,1416,113,1782,93"/>
+<area shape="poly" id="edge26_Node000012_Node000007" title=" " alt="" coords="1782,97,1599,103,1364,114,1136,131,1042,142,971,155,945,163,925,173,905,184,878,195,605,250,604,245,877,189,903,179,922,169,943,158,970,149,1042,137,1136,126,1364,109,1598,98,1782,92"/>
+<area shape="poly" id="edge27_Node000012_Node000008" title=" " alt="" coords="1782,96,1653,99,1483,108,1292,126,1101,155,1036,172,971,195,786,250,785,245,970,189,1034,167,1099,149,1291,120,1482,103,1653,94,1782,90"/>
+<area shape="poly" id="edge28_Node000012_Node000009" title=" " alt="" coords="1783,97,1694,102,1586,112,1469,129,1353,155,1308,172,1264,194,1140,250,1138,245,1262,190,1305,167,1351,149,1468,124,1585,107,1694,97,1782,92"/>
+<area shape="poly" id="edge56_Node000012_Node000010" title=" " alt="" coords="1782,96,1425,99,934,109,694,116,489,126,340,139,294,146,271,154,253,175,243,200,237,248,232,247,238,199,249,172,268,150,292,141,339,134,488,121,694,111,934,103,1425,94,1782,90"/>
+<area shape="poly" id="edge71_Node000012_Node000011" title=" " alt="" coords="1782,96,1492,100,1101,110,737,128,605,140,529,155,513,162,502,171,478,194,399,249,396,245,474,190,499,167,510,158,527,149,605,135,736,122,1100,105,1492,95,1782,91"/>
+<area shape="rect" id="Node000013" href="$pluma-app_8h.html" title=" " alt="" coords="1427,159,1525,185"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1783,108,1670,128,1545,155,1516,162,1515,157,1543,149,1669,123,1782,103"/>
+<area shape="rect" id="Node000016" href="$pluma-application_8c.html" title=" " alt="" coords="1599,247,1739,273"/>
+<area shape="poly" id="edge20_Node000012_Node000016" title=" " alt="" coords="1783,105,1690,124,1652,137,1629,154,1623,165,1622,176,1629,202,1644,226,1660,245,1656,249,1639,229,1624,204,1616,177,1618,163,1625,150,1649,133,1689,119,1782,99"/>
+<area shape="rect" id="Node000017" href="$pluma-close-confirmation-dialog_8c.html" title=" " alt="" coords="1224,240,1403,280"/>
+<area shape="poly" id="edge22_Node000012_Node000017" title=" " alt="" coords="1783,99,1685,105,1575,116,1474,132,1434,142,1404,154,1378,173,1356,196,1325,241,1321,238,1352,193,1375,169,1401,150,1432,137,1473,127,1574,110,1685,100,1782,93"/>
+<area shape="rect" id="Node000018" href="$pluma-enum-types_8c.html" title=" " alt="" coords="1427,247,1575,273"/>
+<area shape="poly" id="edge44_Node000012_Node000018" title=" " alt="" coords="1782,94,1684,96,1574,104,1522,112,1477,122,1441,136,1417,154,1410,166,1410,178,1416,190,1425,203,1453,227,1481,245,1479,249,1450,231,1421,207,1411,193,1405,179,1405,164,1413,150,1438,132,1475,117,1521,107,1573,99,1683,91,1782,89"/>
+<area shape="rect" id="Node000020" href="$pluma-session_8c.html" title=" " alt="" coords="1763,247,1882,273"/>
+<area shape="poly" id="edge55_Node000012_Node000020" title=" " alt="" coords="1783,106,1697,125,1662,138,1641,154,1633,172,1641,190,1659,201,1696,216,1785,245,1783,250,1695,221,1657,206,1637,194,1628,172,1637,150,1659,134,1695,120,1782,101"/>
+<area shape="rect" id="Node000037" href="$pluma_8c.html" title=" " alt="" coords="1906,247,1977,273"/>
+<area shape="poly" id="edge73_Node000012_Node000037" title=" " alt="" coords="1857,118,1857,154,1866,191,1877,208,1892,223,1922,245,1919,249,1888,227,1873,211,1862,193,1851,154,1851,118"/>
+<area shape="rect" id="Node000038" href="$pluma-bookmarks-plugin_8c.html" title=" " alt="" coords="2185,159,2370,185"/>
+<area shape="poly" id="edge21_Node000012_Node000038" title=" " alt="" coords="1932,104,2217,157,2216,162,1931,109"/>
+<area shape="rect" id="Node000039" href="$pluma-commands-documents_8c.html" title=" " alt="" coords="2165,247,2379,273"/>
+<area shape="poly" id="edge23_Node000012_Node000039" title=" " alt="" coords="1933,104,2002,123,2072,150,2101,169,2129,190,2190,221,2245,245,2243,250,2188,226,2127,194,2098,173,2069,154,2000,128,1932,110"/>
+<area shape="rect" id="Node000040" href="$pluma-commands-edit_8c.html" title=" " alt="" coords="3302,247,3471,273"/>
+<area shape="poly" id="edge24_Node000012_Node000040" title=" " alt="" coords="1932,101,2217,105,2686,110,2926,115,3136,122,3290,134,3338,141,3363,150,3380,172,3389,199,3391,247,3385,247,3383,200,3375,175,3360,154,3337,146,3289,139,3136,128,2926,120,2686,115,2217,110,1932,106"/>
+<area shape="rect" id="Node000041" href="$pluma-commands-file-print_8c.html" title=" " alt="" coords="2404,240,2559,280"/>
+<area shape="poly" id="edge25_Node000012_Node000041" title=" " alt="" coords="1933,104,2038,125,2120,150,2136,160,2147,170,2158,180,2173,190,2404,240,2403,245,2171,194,2154,184,2143,174,2133,164,2118,154,2037,131,1932,109"/>
+<area shape="rect" id="Node000042" href="$pluma-commands_8h.html" title=" " alt="" coords="1651,159,1794,185"/>
+<area shape="poly" id="edge29_Node000012_Node000042" title=" " alt="" coords="1827,113,1744,161,1741,157,1824,109"/>
+<area shape="rect" id="Node000045" href="$pluma-docinfo-plugin_8c.html" title=" " alt="" coords="2395,159,2557,185"/>
+<area shape="poly" id="edge41_Node000012_Node000045" title=" " alt="" coords="1933,101,2060,116,2159,124,2257,133,2382,149,2423,157,2422,162,2381,155,2257,138,2159,129,2059,121,1932,107"/>
+<area shape="rect" id="Node000046" href="$pluma-documents-panel_8h.html" title=" " alt="" coords="282,159,465,185"/>
+<area shape="poly" id="edge42_Node000012_Node000046" title=" " alt="" coords="1782,95,1561,98,1240,106,866,124,673,137,484,155,433,162,432,157,484,149,673,132,866,118,1240,100,1561,92,1782,90"/>
+<area shape="rect" id="Node000048" href="$pluma-file-browser-utils_8h.html" title=" " alt="" coords="1920,152,2059,192"/>
+<area shape="poly" id="edge47_Node000012_Node000048" title=" " alt="" coords="1890,109,1959,150,1956,154,1887,114"/>
+<area shape="rect" id="Node000053" href="$pluma-modeline-plugin_8c.html" title=" " alt="" coords="2582,159,2757,185"/>
+<area shape="poly" id="edge49_Node000012_Node000053" title=" " alt="" coords="1933,101,2113,117,2253,124,2393,131,2570,149,2615,157,2614,162,2569,155,2392,136,2253,129,2112,123,1932,107"/>
+<area shape="rect" id="Node000031" href="$pluma-notebook_8c.html" title=" " alt="" coords="2781,159,2915,185"/>
+<area shape="poly" id="edge50_Node000012_Node000031" title=" " alt="" coords="1932,101,2060,112,2168,118,2353,120,2536,125,2643,134,2768,149,2806,157,2805,162,2768,155,2642,139,2536,130,2353,125,2168,123,2060,118,1932,107"/>
+<area shape="rect" id="Node000054" href="$pluma-panel_8c.html" title=" " alt="" coords="2939,159,3047,185"/>
+<area shape="poly" id="edge51_Node000012_Node000054" title=" " alt="" coords="1933,101,2085,113,2213,117,2433,115,2538,115,2651,118,2778,129,2927,149,2959,157,2958,162,2926,155,2777,134,2651,124,2538,120,2433,121,2213,123,2084,118,1933,107"/>
+<area shape="rect" id="Node000055" href="$pluma-plugin_8c.html" title=" " alt="" coords="3072,159,3184,185"/>
+<area shape="poly" id="edge52_Node000012_Node000055" title=" " alt="" coords="1932,101,2104,114,2250,118,2499,115,2618,113,2746,117,2890,128,3059,149,3092,157,3091,162,3058,155,2889,133,2745,122,2618,119,2499,120,2250,124,2104,119,1932,107"/>
+<area shape="rect" id="Node000056" href="$pluma-preferences-dialog_8h.html" title=" " alt="" coords="3424,159,3616,185"/>
+<area shape="poly" id="edge53_Node000012_Node000056" title=" " alt="" coords="1933,101,2157,118,2347,125,2515,126,2671,124,2827,122,2994,124,3183,132,3406,149,3460,157,3459,162,3405,155,3183,137,2994,129,2827,128,2671,129,2515,132,2347,131,2157,123,1932,107"/>
+<area shape="rect" id="Node000057" href="$pluma-sort-plugin_8c.html" title=" " alt="" coords="3208,159,3349,185"/>
+<area shape="poly" id="edge57_Node000012_Node000057" title=" " alt="" coords="1932,101,2125,115,2289,121,2567,118,2701,116,2844,119,3006,129,3196,149,3236,157,3235,162,3196,155,3006,134,2844,124,2701,122,2567,123,2288,126,2125,121,1932,107"/>
+<area shape="rect" id="Node000058" href="$pluma-spell-plugin_8c.html" title=" " alt="" coords="5,247,149,273"/>
+<area shape="poly" id="edge58_Node000012_Node000058" title=" " alt="" coords="1782,96,1436,99,954,108,500,126,335,139,278,146,239,155,194,174,152,201,91,249,88,245,148,196,191,170,238,149,277,141,335,133,500,120,954,103,1435,94,1782,90"/>
+<area shape="rect" id="Node000059" href="$pluma-statusbar_8h.html" title=" " alt="" coords="540,159,671,185"/>
+<area shape="poly" id="edge59_Node000012_Node000059" title=" " alt="" coords="1782,94,1590,95,1317,102,1002,120,841,135,683,155,647,162,646,157,682,149,840,130,1002,115,1317,96,1590,89,1782,89"/>
+<area shape="rect" id="Node000061" href="$pluma-taglist-plugin-panel_8h.html" title=" " alt="" coords="4462,152,4605,192"/>
+<area shape="poly" id="edge64_Node000012_Node000061" title=" " alt="" coords="1933,101,2132,116,2315,126,2639,131,2924,126,3190,115,3456,105,3741,103,3896,107,4063,116,4245,130,4443,149,4462,152,4461,157,4442,155,4244,135,4063,121,3896,113,3741,108,3456,110,3191,120,2924,131,2639,137,2314,131,2132,121,1932,107"/>
+<area shape="rect" id="Node000063" href="$pluma-taglist-plugin_8c.html" title=" " alt="" coords="4402,247,4555,273"/>
+<area shape="poly" id="edge66_Node000012_Node000063" title=" " alt="" coords="1932,101,2400,105,3209,106,3628,110,3996,118,4268,130,4354,139,4400,150,4428,170,4450,197,4477,246,4472,249,4446,200,4424,174,4398,154,4353,144,4268,135,3996,123,3628,115,3209,112,2400,110,1932,106"/>
+<area shape="rect" id="Node000064" href="$pluma-time-plugin_8c.html" title=" " alt="" coords="3640,159,3784,185"/>
+<area shape="poly" id="edge67_Node000012_Node000064" title=" " alt="" coords="1932,101,2191,119,2410,124,2603,122,2783,116,2963,111,3155,112,3372,124,3628,149,3669,157,3668,162,3628,155,3372,129,3155,118,2963,117,2783,121,2603,127,2410,129,2190,124,1932,107"/>
+<area shape="rect" id="Node000065" href="$pluma-trail-save-plugin_8c.html" title=" " alt="" coords="3808,159,3979,185"/>
+<area shape="poly" id="edge68_Node000012_Node000065" title=" " alt="" coords="1933,101,2216,121,2457,127,2669,125,2867,119,3064,114,3275,115,3515,125,3796,149,3843,157,3842,162,3796,155,3514,130,3275,120,3064,120,2867,125,2669,131,2457,132,2216,126,1932,107"/>
+<area shape="rect" id="Node000066" href="$pluma-window-activatable_8c.html" title=" " alt="" coords="4003,159,4194,185"/>
+<area shape="poly" id="edge69_Node000012_Node000066" title=" " alt="" coords="1933,101,2246,123,2512,130,2746,128,2964,122,3181,116,3415,116,3679,125,3991,149,4043,157,4042,162,3990,155,3679,130,3415,121,3182,122,2964,127,2746,133,2512,135,2246,128,1932,107"/>
+<area shape="rect" id="Node000067" href="$pluma-word-completion-plugin_8c.html" title=" " alt="" coords="4219,152,4387,192"/>
+<area shape="poly" id="edge72_Node000012_Node000067" title=" " alt="" coords="1932,101,2278,124,2572,131,2830,127,3071,118,3312,111,3570,109,3862,120,4026,132,4206,149,4219,151,4218,156,4205,155,4026,138,3861,126,3570,115,3312,116,3071,124,2831,132,2572,136,2278,129,1932,107"/>
+<area shape="poly" id="edge16_Node000013_Node000004" title=" " alt="" coords="1539,178,1776,207,1988,237,2002,240,2001,245,1988,243,1775,213,1539,183"/>
+<area shape="poly" id="edge18_Node000013_Node000011" title=" " alt="" coords="1413,182,1263,195,1035,205,857,208,680,215,576,226,454,243,420,250,419,245,453,237,575,220,679,210,857,202,1035,200,1262,189,1412,177"/>
+<area shape="poly" id="edge13_Node000013_Node000016" title=" " alt="" coords="1516,188,1644,245,1642,250,1514,193"/>
+<area shape="poly" id="edge14_Node000013_Node000017" title=" " alt="" coords="1443,194,1350,242,1348,237,1441,189"/>
+<area shape="poly" id="edge15_Node000013_Node000018" title=" " alt="" coords="1486,197,1500,246,1495,248,1481,199"/>
+<area shape="poly" id="edge17_Node000013_Node000020" title=" " alt="" coords="1537,185,1751,237,1780,245,1779,250,1750,243,1536,190"/>
+<area shape="poly" id="edge19_Node000013_Node000037" title=" " alt="" coords="1539,179,1729,207,1825,223,1894,237,1916,245,1914,250,1893,243,1824,228,1728,212,1539,184"/>
+<area shape="poly" id="edge37_Node000042_Node000004" title=" " alt="" coords="1783,185,2002,239,2000,244,1782,191"/>
+<area shape="poly" id="edge34_Node000042_Node000007" title=" " alt="" coords="1638,185,1538,195,1285,208,1089,211,892,218,777,228,642,243,599,250,598,245,641,237,777,222,892,213,1089,206,1285,203,1537,189,1637,180"/>
+<area shape="poly" id="edge35_Node000042_Node000008" title=" " alt="" coords="1638,185,1538,195,1345,208,1194,214,1044,223,852,243,805,250,804,245,852,237,1044,218,1194,209,1344,203,1537,189,1637,180"/>
+<area shape="poly" id="edge36_Node000042_Node000009" title=" " alt="" coords="1637,186,1443,210,1212,243,1171,250,1170,245,1212,237,1442,204,1637,180"/>
+<area shape="poly" id="edge39_Node000042_Node000011" title=" " alt="" coords="1638,186,1538,195,1372,204,1232,207,994,205,879,205,756,210,617,221,454,243,420,250,419,245,453,237,617,216,756,205,879,200,994,200,1232,201,1372,198,1537,189,1637,180"/>
+<area shape="poly" id="edge30_Node000042_Node000016" title=" " alt="" coords="1710,198,1679,248,1674,245,1706,195"/>
+<area shape="poly" id="edge38_Node000042_Node000020" title=" " alt="" coords="1748,192,1810,245,1807,249,1745,196"/>
+<area shape="poly" id="edge40_Node000042_Node000037" title=" " alt="" coords="1766,187,1913,245,1911,250,1764,192"/>
+<area shape="poly" id="edge31_Node000042_Node000039" title=" " alt="" coords="1808,184,2152,237,2199,245,2199,250,2152,243,1807,189"/>
+<area shape="poly" id="edge32_Node000042_Node000040" title=" " alt="" coords="1808,180,1908,189,2318,215,2719,234,3302,254,3302,259,2719,239,2317,220,1908,195,1808,186"/>
+<area shape="poly" id="edge33_Node000042_Node000041" title=" " alt="" coords="1808,179,1908,189,2150,209,2256,219,2391,237,2404,240,2403,245,2390,243,2255,224,2150,215,1908,195,1808,185"/>
+<area shape="poly" id="edge43_Node000046_Node000011" title=" " alt="" coords="378,198,383,247,378,247,373,199"/>
+<area shape="poly" id="edge48_Node000048_Node000004" title=" " alt="" coords="2019,200,2055,238,2051,242,2015,204"/>
+<area shape="poly" id="edge54_Node000056_Node000040" title=" " alt="" coords="3492,194,3406,249,3403,245,3489,190"/>
+<area shape="poly" id="edge60_Node000059_Node000007" title=" " alt="" coords="592,198,558,248,554,245,588,195"/>
+<area shape="poly" id="edge61_Node000059_Node000008" title=" " alt="" coords="637,189,729,245,726,249,634,194"/>
+<area shape="poly" id="edge63_Node000059_Node000011" title=" " alt="" coords="563,192,412,250,410,245,561,187"/>
+<area shape="poly" id="edge62_Node000059_Node000058" title=" " alt="" coords="527,187,162,243,126,250,125,245,161,237,526,182"/>
+<area shape="poly" id="edge65_Node000061_Node000063" title=" " alt="" coords="4516,205,4488,248,4484,245,4512,202"/>
+</map>

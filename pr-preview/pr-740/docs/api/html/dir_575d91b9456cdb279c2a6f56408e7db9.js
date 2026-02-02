@@ -1,0 +1,25 @@
+var dir_575d91b9456cdb279c2a6f56408e7db9 =
+[
+    [ "about-dialog.c", "about-dialog_8c.html", "about-dialog_8c" ],
+    [ "about-dialog.h", "about-dialog_8h.html", "about-dialog_8h" ],
+    [ "active-sensor-libnotify.c", "active-sensor-libnotify_8c.html", "active-sensor-libnotify_8c" ],
+    [ "active-sensor-libnotify.h", "active-sensor-libnotify_8h.html", "active-sensor-libnotify_8h" ],
+    [ "active-sensor.c", "active-sensor_8c.html", "active-sensor_8c" ],
+    [ "active-sensor.h", "active-sensor_8h.html", "active-sensor_8h" ],
+    [ "config.h", "mate-sensors-applet_2sensors-applet_2config_8h.html", "mate-sensors-applet_2sensors-applet_2config_8h" ],
+    [ "config.h.in", "mate-sensors-applet_2sensors-applet_2config_8h_8in.html", null ],
+    [ "main.c", "mate-sensors-applet_2sensors-applet_2main_8c.html", "mate-sensors-applet_2sensors-applet_2main_8c" ],
+    [ "Makefile.in", "mate-sensors-applet_2sensors-applet_2Makefile_8in.html", null ],
+    [ "prefs-dialog.c", "prefs-dialog_8c.html", "prefs-dialog_8c" ],
+    [ "prefs-dialog.h", "prefs-dialog_8h.html", "prefs-dialog_8h" ],
+    [ "sensor-config-dialog.c", "sensor-config-dialog_8c.html", "sensor-config-dialog_8c" ],
+    [ "sensor-config-dialog.h", "sensor-config-dialog_8h.html", "sensor-config-dialog_8h" ],
+    [ "sensors-applet-plugin.h", "sensors-applet-plugin_8h.html", "sensors-applet-plugin_8h" ],
+    [ "sensors-applet-plugins.c", "sensors-applet-plugins_8c.html", "sensors-applet-plugins_8c" ],
+    [ "sensors-applet-plugins.h", "sensors-applet-plugins_8h.html", "sensors-applet-plugins_8h" ],
+    [ "sensors-applet-sensor.h", "sensors-applet-sensor_8h.html", "sensors-applet-sensor_8h" ],
+    [ "sensors-applet-settings.c", "sensors-applet-settings_8c.html", "sensors-applet-settings_8c" ],
+    [ "sensors-applet-settings.h", "sensors-applet-settings_8h.html", "sensors-applet-settings_8h" ],
+    [ "sensors-applet.c", "sensors-applet_8c.html", "sensors-applet_8c" ],
+    [ "sensors-applet.h", "sensors-applet_8h.html", "sensors-applet_8h" ]
+];

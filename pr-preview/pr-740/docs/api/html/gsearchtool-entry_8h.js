@@ -1,0 +1,27 @@
+var gsearchtool_entry_8h =
+[
+    [ "_GsearchHistoryEntryClass", "struct__GsearchHistoryEntryClass.html", "struct__GsearchHistoryEntryClass" ],
+    [ "_GsearchHistoryEntry", "struct__GsearchHistoryEntry.html", "struct__GsearchHistoryEntry" ],
+    [ "GSEARCH_HISTORY_ENTRY", "gsearchtool-entry_8h.html#a3296a677b43d6a27f313b11f5c91a2b6", null ],
+    [ "GSEARCH_HISTORY_ENTRY_CLASS", "gsearchtool-entry_8h.html#a040dd333742bdba3e924bd8a4f8e94b0", null ],
+    [ "GSEARCH_HISTORY_ENTRY_GET_CLASS", "gsearchtool-entry_8h.html#a004064ad96c165a9e048ee021fb7cf9d", null ],
+    [ "GSEARCH_IS_HISTORY_ENTRY", "gsearchtool-entry_8h.html#a8491264a25f8c346e6aaa51bf077e085", null ],
+    [ "GSEARCH_IS_HISTORY_ENTRY_CLASS", "gsearchtool-entry_8h.html#a0db0611fefa70e0a7b892aac6da33d9a", null ],
+    [ "GSEARCH_TYPE_HISTORY_ENTRY", "gsearchtool-entry_8h.html#ae7e4e37df8b6baf30451423ef5b8b6d6", null ],
+    [ "GsearchHistoryEntry", "gsearchtool-entry_8h.html#a231486be7e663c61f5d2d295aa4bf694", null ],
+    [ "GsearchHistoryEntryClass", "gsearchtool-entry_8h.html#ac285ac633e4a2d69f7484b795d4f023d", null ],
+    [ "GsearchHistoryEntryEscapeFunc", "gsearchtool-entry_8h.html#abab5cd90fc4d384de0bd621704e103d9", null ],
+    [ "GsearchHistoryEntryPrivate", "gsearchtool-entry_8h.html#a753b4d31c9b98178bbfdadd6f562d295", null ],
+    [ "gsearch_history_entry_append_text", "gsearchtool-entry_8h.html#a919f6f4cd275c1ae030122ee0eda1ed8", null ],
+    [ "gsearch_history_entry_clear", "gsearchtool-entry_8h.html#af2a8731eaef3a3a1e1499e3e43a223bb", null ],
+    [ "gsearch_history_entry_get_enable_completion", "gsearchtool-entry_8h.html#a42e1be4211bf63d097493d734a5e1a52", null ],
+    [ "gsearch_history_entry_get_entry", "gsearchtool-entry_8h.html#a6222647efd367d2e989a02f74e81dda8", null ],
+    [ "gsearch_history_entry_get_history_id", "gsearchtool-entry_8h.html#ac268515fc042d682ba2c4a5369727fd5", null ],
+    [ "gsearch_history_entry_get_history_length", "gsearchtool-entry_8h.html#acd96da8b8df49f107fe4f140ec0090af", null ],
+    [ "gsearch_history_entry_get_type", "gsearchtool-entry_8h.html#a4b7b43949a856bfe7954ca88488f475f", null ],
+    [ "gsearch_history_entry_new", "gsearchtool-entry_8h.html#ab1fea0669d07df4cf9c2a0ae35d670e7", null ],
+    [ "gsearch_history_entry_prepend_text", "gsearchtool-entry_8h.html#a313c6ecd60d88f88ba89ced62c2fc581", null ],
+    [ "gsearch_history_entry_set_enable_completion", "gsearchtool-entry_8h.html#a131e5634c871935f8122a3a71ab06f5b", null ],
+    [ "gsearch_history_entry_set_escape_func", "gsearchtool-entry_8h.html#a763d092f09fac18105a340dc57afe2c8", null ],
+    [ "gsearch_history_entry_set_history_length", "gsearchtool-entry_8h.html#ab4e01d37056fed18a48dc4e982bd7c12", null ]
+];

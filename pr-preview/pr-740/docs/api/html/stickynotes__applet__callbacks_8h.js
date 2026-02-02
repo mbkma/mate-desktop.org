@@ -1,0 +1,25 @@
+var stickynotes__applet__callbacks_8h =
+[
+    [ "applet_button_cb", "stickynotes__applet__callbacks_8h.html#a592d836a0254033e35d809b26f2979f3", null ],
+    [ "applet_change_orient_cb", "stickynotes__applet__callbacks_8h.html#a8f8ab3b43e3a3ab82ef62e2a82406e19", null ],
+    [ "applet_cross_cb", "stickynotes__applet__callbacks_8h.html#a84c79291e71789b0b8f7b55e09b8c035", null ],
+    [ "applet_destroy_cb", "stickynotes__applet__callbacks_8h.html#ace971ab14496e7d5b71da6e1855cf9e6", null ],
+    [ "applet_focus_cb", "stickynotes__applet__callbacks_8h.html#a389b8121c90a8c8b9000068572d7e3c3", null ],
+    [ "applet_key_cb", "stickynotes__applet__callbacks_8h.html#a04c42b069b21b901a834f419400a1b94", null ],
+    [ "applet_size_allocate_cb", "stickynotes__applet__callbacks_8h.html#a6fbd6ad0a6774607a1443b3b04b33f9a", null ],
+    [ "install_check_click_on_desktop", "stickynotes__applet__callbacks_8h.html#aae0d726dac5d642dc92268a03f0b3fed", null ],
+    [ "menu_about_cb", "stickynotes__applet__callbacks_8h.html#a0e182e19702a9531eb614b56d45c9512", null ],
+    [ "menu_create_cb", "stickynotes__applet__callbacks_8h.html#ade6bf316eb3687c3ed094f56ce2cd692", null ],
+    [ "menu_destroy_all_cb", "stickynotes__applet__callbacks_8h.html#a948aa95851fa8fdc9d2e2898412caf75", null ],
+    [ "menu_help_cb", "stickynotes__applet__callbacks_8h.html#ac23ec43cc6d130113e4b80652c0bca9d", null ],
+    [ "menu_hide_notes_cb", "stickynotes__applet__callbacks_8h.html#af42f22ed9580c9b945c839967110f532", null ],
+    [ "menu_new_note_cb", "stickynotes__applet__callbacks_8h.html#a27529be5f5e9075d4e7c8a57d036a23a", null ],
+    [ "menu_preferences_cb", "stickynotes__applet__callbacks_8h.html#a17ebc63ff69939beabcd38db5e02da16", null ],
+    [ "menu_toggle_lock_cb", "stickynotes__applet__callbacks_8h.html#a1d49b37e11d293ea0b41345020cf3908", null ],
+    [ "preferences_apply_cb", "stickynotes__applet__callbacks_8h.html#a5b4fa594bb60bcca3f2118c12456a443", null ],
+    [ "preferences_color_cb", "stickynotes__applet__callbacks_8h.html#a65b6371e9144d1f0cbb2291a5c4b9605", null ],
+    [ "preferences_delete_cb", "stickynotes__applet__callbacks_8h.html#a539a40b03cd4295f4143b9d1287bc5de", null ],
+    [ "preferences_font_cb", "stickynotes__applet__callbacks_8h.html#ad7f4067b5b23db53e33bd3f12cc6801e", null ],
+    [ "preferences_response_cb", "stickynotes__applet__callbacks_8h.html#a6037b708476e837207731e789920432e", null ],
+    [ "preferences_save_cb", "stickynotes__applet__callbacks_8h.html#ac0000b8ed642c1f0d86694e8013aa7eb", null ]
+];

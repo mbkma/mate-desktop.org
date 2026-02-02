@@ -1,0 +1,25 @@
+var dir_a1aba84dea2a914927d46b6b67302167 =
+[
+    [ "cpufreq-selector", "dir_44808dc3d87b213bf0afd6ad122a30ec.html", "dir_44808dc3d87b213bf0afd6ad122a30ec" ],
+    [ "cpufreq-applet.c", "cpufreq-applet_8c.html", "cpufreq-applet_8c" ],
+    [ "cpufreq-applet.h", "cpufreq-applet_8h.html", "cpufreq-applet_8h" ],
+    [ "cpufreq-monitor-cpuinfo.c", "cpufreq-monitor-cpuinfo_8c.html", "cpufreq-monitor-cpuinfo_8c" ],
+    [ "cpufreq-monitor-cpuinfo.h", "cpufreq-monitor-cpuinfo_8h.html", "cpufreq-monitor-cpuinfo_8h" ],
+    [ "cpufreq-monitor-factory.c", "cpufreq-monitor-factory_8c.html", "cpufreq-monitor-factory_8c" ],
+    [ "cpufreq-monitor-factory.h", "cpufreq-monitor-factory_8h.html", "cpufreq-monitor-factory_8h" ],
+    [ "cpufreq-monitor-libcpufreq.c", "cpufreq-monitor-libcpufreq_8c.html", "cpufreq-monitor-libcpufreq_8c" ],
+    [ "cpufreq-monitor-libcpufreq.h", "cpufreq-monitor-libcpufreq_8h.html", "cpufreq-monitor-libcpufreq_8h" ],
+    [ "cpufreq-monitor-sysfs.c", "cpufreq-monitor-sysfs_8c.html", "cpufreq-monitor-sysfs_8c" ],
+    [ "cpufreq-monitor-sysfs.h", "cpufreq-monitor-sysfs_8h.html", "cpufreq-monitor-sysfs_8h" ],
+    [ "cpufreq-monitor.c", "cpufreq-monitor_8c.html", "cpufreq-monitor_8c" ],
+    [ "cpufreq-monitor.h", "cpufreq-monitor_8h.html", "cpufreq-monitor_8h" ],
+    [ "cpufreq-popup.c", "cpufreq-popup_8c.html", "cpufreq-popup_8c" ],
+    [ "cpufreq-popup.h", "cpufreq-popup_8h.html", "cpufreq-popup_8h" ],
+    [ "cpufreq-prefs.c", "cpufreq-prefs_8c.html", "cpufreq-prefs_8c" ],
+    [ "cpufreq-prefs.h", "cpufreq-prefs_8h.html", "cpufreq-prefs_8h" ],
+    [ "cpufreq-selector.c", "cpufreq-selector_8c.html", "cpufreq-selector_8c" ],
+    [ "cpufreq-selector.h", "cpufreq-selector_8h.html", "cpufreq-selector_8h" ],
+    [ "cpufreq-utils.c", "cpufreq-utils_8c.html", "cpufreq-utils_8c" ],
+    [ "cpufreq-utils.h", "cpufreq-utils_8h.html", "cpufreq-utils_8h" ],
+    [ "Makefile.in", "mate-applets_2cpufreq_2src_2Makefile_8in.html", null ]
+];

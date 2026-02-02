@@ -1,0 +1,26 @@
+var app_shell_8h =
+[
+    [ "NewAppConfig", "structNewAppConfig.html", "structNewAppConfig" ],
+    [ "_AppShellData", "struct__AppShellData.html", "struct__AppShellData" ],
+    [ "CategoryData", "structCategoryData.html", "structCategoryData" ],
+    [ "AppAction", "structAppAction.html", "structAppAction" ],
+    [ "NewAppData", "structNewAppData.html", "structNewAppData" ],
+    [ "APP_ACTION_KEY", "app-shell_8h.html#ab6992788ec911d5e41d7bf1204ee0785", null ],
+    [ "GROUP_POSITION_NUMBER_KEY", "app-shell_8h.html#a34b3d15ea5d7ad7837d725a8d7784ad4", null ],
+    [ "MATEMENU_I_KNOW_THIS_IS_UNSTABLE", "app-shell_8h.html#a0b8f95908f5cef696b4545a81c6b808b", null ],
+    [ "SIZING_HEIGHT_PERCENT", "app-shell_8h.html#a1c28ca2867df094219aeeaa1db4ee7d3", null ],
+    [ "SIZING_SCREEN_WIDTH_LARGE", "app-shell_8h.html#a44fb7f5b2d4ff641510481cefd5f887f", null ],
+    [ "SIZING_SCREEN_WIDTH_LARGE_NUMCOLS", "app-shell_8h.html#aa1ead63907a9abb6f2870cc6061eb7cc", null ],
+    [ "SIZING_SCREEN_WIDTH_MEDIUM", "app-shell_8h.html#a8bba1193edf5bd5b70bc8e51d9ef4840", null ],
+    [ "SIZING_SCREEN_WIDTH_MEDIUM_NUMCOLS", "app-shell_8h.html#ac01b87bb3bda7129e8b8c5cfdec184dc", null ],
+    [ "SIZING_SCREEN_WIDTH_SMALL", "app-shell_8h.html#acbc2b2b2c31da152d85e3d673b070218", null ],
+    [ "SIZING_SCREEN_WIDTH_SMALL_NUMCOLS", "app-shell_8h.html#a536385f871dc3ce2570dcd6c9f98f66b", null ],
+    [ "SIZING_TILE_WIDTH", "app-shell_8h.html#abfcdb8c363d7fcd05c959a53643e6a2d", null ],
+    [ "AppShellData", "app-shell_8h.html#af62bd4523f42fb1c22af0b1dd1669545", null ],
+    [ "appshelldata_new", "app-shell_8h.html#a32643486b36b7060cc55fbb933680673", null ],
+    [ "create_main_window", "app-shell_8h.html#ab4bd5c29435caea525696674aaab93f1", null ],
+    [ "generate_categories", "app-shell_8h.html#a9b21d85ec94ebc58d90be1b18848f42d", null ],
+    [ "hide_shell", "app-shell_8h.html#ab22660163abc6818d9adf27dbf4f267a", null ],
+    [ "layout_shell", "app-shell_8h.html#ad5fcf5f39b4a2e1622b876356a4eae45", null ],
+    [ "show_shell", "app-shell_8h.html#a1249d228c2d0e4b9cc045a6f0c7109a7", null ]
+];

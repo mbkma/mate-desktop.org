@@ -1,0 +1,27 @@
+var mate_ui_util_8c =
+[
+    [ "mate_ui_util_add_style_class", "mate-ui-util_8c.html#a46e167a98f04dd7c837606161609dd76", null ],
+    [ "mate_ui_util_create_label_with_mnemonic", "mate-ui-util_8c.html#a7393ca402cb119dd63df64d328e406c3", null ],
+    [ "mate_ui_util_ensure_dir", "mate-ui-util_8c.html#a5e0dd5a058fbf149296ca6272548f0fe", null ],
+    [ "mate_ui_util_format_size", "mate-ui-util_8c.html#af7a5ff61ba41e772ca1be6857e978b42", null ],
+    [ "mate_ui_util_format_time", "mate-ui-util_8c.html#a8207448d793db05c3f262a80273a9512", null ],
+    [ "mate_ui_util_get_cache_dir", "mate-ui-util_8c.html#a4645a5499d9ce0dee8fa3f7bbd3c789c", null ],
+    [ "mate_ui_util_get_config_dir", "mate-ui-util_8c.html#a72cd8fded3e02d1b1cf1ed8f1243f0de", null ],
+    [ "mate_ui_util_get_data_dir", "mate-ui-util_8c.html#aa3b96cccfa072c5a416fba31725ad574", null ],
+    [ "mate_ui_util_get_icon", "mate-ui-util_8c.html#ad8037f0d66286f27b97e8eed8514f6bd", null ],
+    [ "mate_ui_util_get_window_position", "mate-ui-util_8c.html#a95b6e2706d017512ee088fca2efa21d3", null ],
+    [ "mate_ui_util_icon_name_for_mimetype", "mate-ui-util_8c.html#a62ad796cf8886e4fad9131161a5a4c6b", null ],
+    [ "mate_ui_util_is_wayland", "mate-ui-util_8c.html#a4b2635b98bd2bf053455cc44ff09014e", null ],
+    [ "mate_ui_util_is_x11", "mate-ui-util_8c.html#a1a698dcc887308b5734e2e5eb56f1cf0", null ],
+    [ "mate_ui_util_load_css", "mate-ui-util_8c.html#a0984f74127a769037fd9600e513e33b4", null ],
+    [ "mate_ui_util_load_css_file", "mate-ui-util_8c.html#a2eb8aa85c7313afb0b77d879f4bfc6cf", null ],
+    [ "mate_ui_util_remove_style_class", "mate-ui-util_8c.html#a4d4704b0e40e76718f157c10f529d23a", null ],
+    [ "mate_ui_util_set_widget_tooltip", "mate-ui-util_8c.html#a5188e1a0de0ed6f983230d77d5a8501b", null ],
+    [ "mate_ui_util_set_window_position", "mate-ui-util_8c.html#a01ba341adbe1976d69966e2b2b94b7f2", null ],
+    [ "mate_ui_util_show_help", "mate-ui-util_8c.html#a797168f9a573e580bacfc4fc17728f07", null ],
+    [ "mate_ui_util_show_uri", "mate-ui-util_8c.html#a95e2adbe1e3c36b2d683902549ae5bec", null ],
+    [ "mate_ui_util_show_url", "mate-ui-util_8c.html#a03c58222e8ee2d33b829a263bef2edf3", null ],
+    [ "mate_ui_util_spawn_command_async", "mate-ui-util_8c.html#acf211374179c062de112bcbe7ffb7d44", null ],
+    [ "mate_ui_util_widget_set_margin", "mate-ui-util_8c.html#a9c13d7a6c5b2e8b26e2f099a19f1db9c", null ],
+    [ "mate_ui_util_widget_set_margins", "mate-ui-util_8c.html#a78c9bb994586c71a0ada9588647dd3b0", null ]
+];

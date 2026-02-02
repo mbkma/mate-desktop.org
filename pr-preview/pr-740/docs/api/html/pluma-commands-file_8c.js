@@ -1,0 +1,26 @@
+var pluma_commands_file_8c =
+[
+    [ "PLUMA_IS_CLOSING_ALL", "pluma-commands-file_8c.html#a8466c11764ac4361ccdbfdd06142122b", null ],
+    [ "PLUMA_IS_CLOSING_TAB", "pluma-commands-file_8c.html#a266a9f19256efe2507268c9947f03dcd", null ],
+    [ "PLUMA_IS_QUITTING", "pluma-commands-file_8c.html#a26b906e91b510c9d1c9951437fef334b", null ],
+    [ "PLUMA_IS_QUITTING_ALL", "pluma-commands-file_8c.html#afcf4eca564ae83a4c564446dc52bc166", null ],
+    [ "PLUMA_LIST_OF_TABS_TO_SAVE_AS", "pluma-commands-file_8c.html#a87cf2db7664bfc5a1eed0f33df31eace", null ],
+    [ "PLUMA_OPEN_DIALOG_KEY", "pluma-commands-file_8c.html#a3c9fc0deff267cc522b4eeeb7f426c9d", null ],
+    [ "PLUMA_TAB_TO_SAVE_AS", "pluma-commands-file_8c.html#aaf5e456ea0f98222ce33094143f6b1b0", null ],
+    [ "_pluma_cmd_file_close", "pluma-commands-file_8c.html#abbdecfb0c7a520ab520af5532a988599", null ],
+    [ "_pluma_cmd_file_close_all", "pluma-commands-file_8c.html#a62fe58965984b3c51c2b97422c54ba0b", null ],
+    [ "_pluma_cmd_file_close_tab", "pluma-commands-file_8c.html#ab15be3b02ab596f300e61edd695cc710", null ],
+    [ "_pluma_cmd_file_new", "pluma-commands-file_8c.html#a358f7dbf5d2c1cd629556ebbeba5715e", null ],
+    [ "_pluma_cmd_file_open", "pluma-commands-file_8c.html#a80786651595012441cc432d925ed232c", null ],
+    [ "_pluma_cmd_file_quit", "pluma-commands-file_8c.html#a299608a9c5a767816c6ef26be0b4ae37", null ],
+    [ "_pluma_cmd_file_revert", "pluma-commands-file_8c.html#a45203911708c67a3d870cf5ef65cb7e1", null ],
+    [ "_pluma_cmd_file_save", "pluma-commands-file_8c.html#ae50fb59cf7f4f729430735a9baf47774", null ],
+    [ "_pluma_cmd_file_save_all", "pluma-commands-file_8c.html#aa7991c1a6b26c28097a4ff8fd9cc1412", null ],
+    [ "_pluma_cmd_file_save_as", "pluma-commands-file_8c.html#aaf9fbfe2062833f7736dc376f1c01278", null ],
+    [ "_pluma_cmd_file_save_documents_list", "pluma-commands-file_8c.html#af29e80a2095d93b4e59f37c5e861e6ce", null ],
+    [ "_pluma_cmd_load_files_from_prompt", "pluma-commands-file_8c.html#ae120c5569edff0ec574f3ae11f74e7d8", null ],
+    [ "pluma_commands_load_uri", "pluma-commands-file_8c.html#a8f0d697261efd27219c9deeb84de605b", null ],
+    [ "pluma_commands_load_uris", "pluma-commands-file_8c.html#a59699575343f2d6479ab9447b6c2bfc3", null ],
+    [ "pluma_commands_save_all_documents", "pluma-commands-file_8c.html#ae39316fa73016dff6a7cedb78e974e83", null ],
+    [ "pluma_commands_save_document", "pluma-commands-file_8c.html#a64b3cf5c9be66e44a072d07de5d802a1", null ]
+];

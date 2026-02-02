@@ -1,0 +1,26 @@
+var structProcConfig =
+[
+    [ "bg_color", "structProcConfig.html#a2bbaf283d366d06b7e068e43267bfe6a", null ],
+    [ "cpu_color", "structProcConfig.html#aad7483620b549fa9de575e7670a64a32", null ],
+    [ "current_tab", "structProcConfig.html#a9372465914efb7704e10fea6a081b0b5", null ],
+    [ "disks_update_interval", "structProcConfig.html#aa2da052a35e2c59b37f65427d7c42763", null ],
+    [ "frame_color", "structProcConfig.html#ad26783169351f943532a19363ab96cdb", null ],
+    [ "graph_update_interval", "structProcConfig.html#ad3365ee9c6e38309febfbc089dc3dd9a", null ],
+    [ "height", "structProcConfig.html#aee1a5b64afa657d971bc1aca476f5049", null ],
+    [ "maximized", "structProcConfig.html#ac77326593fb698b79c440b6ba879c4e6", null ],
+    [ "mem_color", "structProcConfig.html#a162644d175cb7a388bfbac651d749ea5", null ],
+    [ "net_in_color", "structProcConfig.html#a9200a5492fe34f438c78d260f3e94176", null ],
+    [ "net_out_color", "structProcConfig.html#a92ec789f98c3579f601805afc29bbfa2", null ],
+    [ "network_in_bits", "structProcConfig.html#a27e6d45dffe82976d0255006b5ef6e69", null ],
+    [ "num_cpus", "structProcConfig.html#a235689774d7811ae6ff1dded96c3867e", null ],
+    [ "show_all_fs", "structProcConfig.html#a9453032ee018e6430361e986163d9a28", null ],
+    [ "show_kill_warning", "structProcConfig.html#aeca95e34121e3ce7fb03d5adc0f39d3e", null ],
+    [ "show_tree", "structProcConfig.html#a95aa2321f7827151cbe06ee5dec55949", null ],
+    [ "solaris_mode", "structProcConfig.html#a713b7dc0c55d71b40bb2e1ceacb89a79", null ],
+    [ "swap_color", "structProcConfig.html#add3fcb82c6271306af46c4eee0cff207", null ],
+    [ "update_interval", "structProcConfig.html#ae44a1eb5bf844936425383b3331c0657", null ],
+    [ "whose_process", "structProcConfig.html#a835205592a63a484c26a6c65a23db645", null ],
+    [ "width", "structProcConfig.html#a05bae0bc0f5a634ea1441a0f08cce449", null ],
+    [ "xpos", "structProcConfig.html#a471b3a6782c62558cbfde4f84063194c", null ],
+    [ "ypos", "structProcConfig.html#a20763bccca2c99338cabeec49ad77044", null ]
+];

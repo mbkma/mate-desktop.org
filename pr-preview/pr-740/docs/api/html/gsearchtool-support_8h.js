@@ -1,0 +1,26 @@
+var gsearchtool_support_8h =
+[
+    [ "ICON_SIZE", "gsearchtool-support_8h.html#adf24cd7bee569151330489a0fe592349", null ],
+    [ "backslash_backslash_characters", "gsearchtool-support_8h.html#a6166337e569d6e5375a65652ddef17ce", null ],
+    [ "backslash_special_characters", "gsearchtool-support_8h.html#abc61009fb405f70dcb9cbf3ac295da5b", null ],
+    [ "compare_regex", "gsearchtool-support_8h.html#aa5a0ff9558909cecf98fee8aedf02573", null ],
+    [ "escape_double_quotes", "gsearchtool-support_8h.html#aca68e1d5d689fadcb3494381fabad401", null ],
+    [ "escape_single_quotes", "gsearchtool-support_8h.html#a8388c4044948752b5872c5e49d69e799", null ],
+    [ "get_file_pixbuf", "gsearchtool-support_8h.html#a22eb020c66d8c04b3d44c9f4011a33c3", null ],
+    [ "get_file_type_description", "gsearchtool-support_8h.html#a4cb8bc74a22372eeed7a702b28277a53", null ],
+    [ "get_readable_date", "gsearchtool-support_8h.html#afbf4b74c170d22723659b48606308930", null ],
+    [ "gsearchtool_button_new_with_icon", "gsearchtool-support_8h.html#a5c461b9dfac317f043eae4ade5001388", null ],
+    [ "gsearchtool_get_columns_order", "gsearchtool-support_8h.html#add287b5a0fc144fb5bb8ca3c94ae5fe5", null ],
+    [ "gsearchtool_get_next_duplicate_name", "gsearchtool-support_8h.html#a0cd3bb15de3b572230edc5cb6e916300", null ],
+    [ "gsearchtool_get_stored_window_geometry", "gsearchtool-support_8h.html#aa1eca367914d908fa511782fc80b7d95", null ],
+    [ "gsearchtool_get_unique_filename", "gsearchtool-support_8h.html#aa15f5771e4e4ccf6d43c48e1f62f0aaa", null ],
+    [ "gsearchtool_set_columns_order", "gsearchtool-support_8h.html#a00725a411861e6b9c4c50260787b5d6c", null ],
+    [ "is_path_hidden", "gsearchtool-support_8h.html#ac7e76ff2e77f5006c0d0651e2f5218cb", null ],
+    [ "is_quick_search_excluded_path", "gsearchtool-support_8h.html#a686d867a6550fdac677a8d9317926660", null ],
+    [ "is_second_scan_excluded_path", "gsearchtool-support_8h.html#af7097e4c48ed3fa953cf328be7cc6b90", null ],
+    [ "launch_file", "gsearchtool-support_8h.html#a1c593dab9032f477bdc7214c78544606", null ],
+    [ "limit_string_to_x_lines", "gsearchtool-support_8h.html#a342edb87809ad06e79094f2437ade906", null ],
+    [ "open_file_with_application", "gsearchtool-support_8h.html#a1af6414c7b8aff07390b011b5f6e6b3f", null ],
+    [ "open_file_with_filemanager", "gsearchtool-support_8h.html#af9ad142f023ecc9a1d1ff92028c6e771", null ],
+    [ "remove_mnemonic_character", "gsearchtool-support_8h.html#a1191eab07104deb91bf32b8423ba6b0c", null ]
+];

@@ -1,0 +1,27 @@
+var mate_rr_config_8c =
+[
+    [ "CONFIG_BACKUP_BASENAME", "mate-rr-config_8c.html#af63f5bd203fa98caa9b40f4b190f3c0d", null ],
+    [ "CONFIG_INTENDED_BASENAME", "mate-rr-config_8c.html#a60f73813c16e8d6e81df3d1f24751f95", null ],
+    [ "MATE_DESKTOP_USE_UNSTABLE_API", "mate-rr-config_8c.html#accf002c50d07fec7ddcaf35fde15c5e9", null ],
+    [ "TOPLEVEL_ELEMENT", "mate-rr-config_8c.html#aed2d67a277c33de6c78139c18677b14a", null ],
+    [ "CrtcAssignment", "mate-rr-config_8c.html#a6b0414df4e911b51c7bb4cf28a98a145", null ],
+    [ "CrtcInfo", "mate-rr-config_8c.html#ad1f2f6b0c3c01ac8270d8ea30ef3feb7", null ],
+    [ "Parser", "mate-rr-config_8c.html#a32c6aca8cceda7984a398188caca4d3a", null ],
+    [ "mate_rr_config_applicable", "mate-rr-config_8c.html#a797ccc7d58a0d55b626e0229dd07d7e0", null ],
+    [ "mate_rr_config_apply_from_filename_with_time", "mate-rr-config_8c.html#af4f4b4c79dc0e595d752aa603e40fe23", null ],
+    [ "mate_rr_config_apply_with_time", "mate-rr-config_8c.html#a1b0aa1130bbda3d930ba3377552b7c69", null ],
+    [ "mate_rr_config_ensure_primary", "mate-rr-config_8c.html#a43c7c6788a385935f698a188bd5b05fc", null ],
+    [ "mate_rr_config_equal", "mate-rr-config_8c.html#ab94b7c834c8f34f9f9f19784e9f6737e", null ],
+    [ "mate_rr_config_get_backup_filename", "mate-rr-config_8c.html#a3d7d05242dd02e304a0de5dfba598490", null ],
+    [ "mate_rr_config_get_clone", "mate-rr-config_8c.html#ab05b5771837917ae9cb2c6606afa5cf1", null ],
+    [ "mate_rr_config_get_intended_filename", "mate-rr-config_8c.html#a0b5d323032a384ac7a745a571fe32765", null ],
+    [ "mate_rr_config_get_outputs", "mate-rr-config_8c.html#ac00f0fae16ebd66d53e5f212d5e5f5f3", null ],
+    [ "mate_rr_config_load_current", "mate-rr-config_8c.html#a60041630b10505f766204d34e7f82d4b", null ],
+    [ "mate_rr_config_load_filename", "mate-rr-config_8c.html#a786f1a9359507d94449706aeff3d82b4", null ],
+    [ "mate_rr_config_match", "mate-rr-config_8c.html#a2067cb9347e72c0f2838c8065c228ad3", null ],
+    [ "mate_rr_config_new_current", "mate-rr-config_8c.html#a031c3dbd49919ddd5eecafcfed880669", null ],
+    [ "mate_rr_config_new_stored", "mate-rr-config_8c.html#a46ef49e51e6b6fdc45b90e52b69e04d8", null ],
+    [ "mate_rr_config_sanitize", "mate-rr-config_8c.html#a11e5fb6a71a056d714a7896b46416ee6", null ],
+    [ "mate_rr_config_save", "mate-rr-config_8c.html#a591d050ee68924e06afe99a6020ec5b3", null ],
+    [ "mate_rr_config_set_clone", "mate-rr-config_8c.html#afef2f30e3ed5e64d77ddc9fe99c87402", null ]
+];

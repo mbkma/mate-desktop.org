@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['save_20without_20trailing_20spaces_20plugin_0',['Save Without Trailing Spaces Plugin',['../dir_8696f1bda162b8f7322666e337c31890.html#autotoc_md68',1,'']]],
+  ['schemas_20unchanged_1',['GSettings Schemas (Unchanged)',['../md_mate-terminal_2CLAUDE.html#autotoc_md53',1,'']]],
+  ['sections_2',['Dynamic Menu Sections',['../md_mate-terminal_2CLAUDE.html#autotoc_md49',1,'']]],
+  ['see_20the_20other_20folders_20for_20better_20understanding_3',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['shrinking_20marco_4',['SHRINKING MARCO',['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md17',1,'']]],
+  ['signals_20and_20their_20usages_5',['Some signals and their usages',['../cact-main-window_8h.html#autotoc_md5',1,'']]],
+  ['some_20signals_20and_20their_20usages_6',['Some signals and their usages',['../cact-main-window_8h.html#autotoc_md5',1,'']]],
+  ['sort_20plugin_7',['Sort Plugin',['../dir_5e45b4f7a4fe7e707dbbe41da0079662.html#autotoc_md64',1,'']]],
+  ['spaces_20plugin_8',['Save Without Trailing Spaces Plugin',['../dir_8696f1bda162b8f7322666e337c31890.html#autotoc_md68',1,'']]],
+  ['spell_20checker_20plugin_9',['Spell Checker Plugin',['../dir_6370a5ee55ffa4fd07f880a1b057e007.html#autotoc_md65',1,'']]],
+  ['start_20travis_20ci_10',['Start Travis CI',['../dir_26c3cf2246321c119de4295396ae34f0.html#autotoc_md34',1,'']]],
+  ['started_11',['Getting Started',['../dir_da894201c60227a11a26265658f9d362.html#autotoc_md13',1,'']]],
+  ['statistics_20plugin_12',['Document Statistics Plugin',['../dir_db6e7b79e914d5132f1708c0a3dd8b0e.html#autotoc_md60',1,'']]],
+  ['step_13',['Steps by Step',['../dir_26c3cf2246321c119de4295396ae34f0.html#autotoc_md30',1,'']]],
+  ['steps_20by_20step_14',['Steps by Step',['../dir_26c3cf2246321c119de4295396ae34f0.html#autotoc_md30',1,'']]],
+  ['strategy_15',['GTK4 Transition Strategy',['../dir_da894201c60227a11a26265658f9d362.html#autotoc_md10',1,'']]],
+  ['structure_16',['Structure',['../md_mate-terminal_2CLAUDE.html#autotoc_md39',1,'Application Structure'],['../md_mate-terminal_2CLAUDE.html#autotoc_md48',1,'Menu Structure']]],
+  ['submitting_20patches_17',['REPORTING BUGS AND SUBMITTING PATCHES',['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md16',1,'']]],
+  ['summary_18',['Summary',['../md_mate-terminal_2CLAUDE.html#autotoc_md37',1,'']]],
+  ['switching_19',['Tab Switching',['../md_mate-terminal_2CLAUDE.html#autotoc_md50',1,'']]],
+  ['system_20',['System',['../md_mate-terminal_2CLAUDE.html#autotoc_md46',1,'Accelerator System'],['../md_mate-terminal_2CLAUDE.html#autotoc_md43',1,'GAction System']]],
+  ['system_20gtkbuilder_20gmenu_21',['Menu System (GtkBuilder/GMenu)',['../md_mate-terminal_2CLAUDE.html#autotoc_md47',1,'']]],
+  ['system_20requirements_22',['System Requirements',['../dir_c05567dd88b6bbdf3ef598e8086ee49b.html#autotoc_md58',1,'']]]
+];

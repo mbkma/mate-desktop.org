@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['hard_0',['Why a direct GTK3 → GTK4 jump is hard',['../dir_da894201c60227a11a26265658f9d362.html#autotoc_md11',1,'']]],
+  ['have_20to_20put_20the_20plugin_20folder_20here_20each_20plugin_20folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_1',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_2',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['here_20each_20plugin_20folder_20must_20contain_20a_20readme_20file_20having_20a_20brief_20description_20of_20the_20plugin_20see_20the_20other_20folders_20for_20better_20understanding_3',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_166f9068eb34071d8791e1d90dab0c93.html#autotoc_md63',1,'']]],
+  ['history_4',['Calctool history',['../dir_249f757aa651face2fc3544c0a77eff6.html#autotoc_md24',1,'']]],
+  ['how_20to_20add_20external_20features_5',['HOW TO ADD EXTERNAL FEATURES',['../dir_c51f31fdc44256341e0cc2776a36006a.html#autotoc_md19',1,'']]],
+  ['how_20to_20report_20bugs_6',['How to report bugs',['../dir_8f1305c31d0b6a03d18eba92ae09704e.html#autotoc_md73',1,'']]]
+];

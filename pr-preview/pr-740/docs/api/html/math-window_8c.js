@@ -1,0 +1,27 @@
+var math_window_8c =
+[
+    [ "ABOUT_GROUP", "math-window_8c.html#a57bc099d462a54e96145a5c5f0dd4763", null ],
+    [ "CALCULATOR_MENU_LABEL", "math-window_8c.html#a5950578d6cb275e6b716501c13cace6c", null ],
+    [ "EMAILIFY", "math-window_8c.html#a5909d0254a27cb3a4d70a0bb4661dc43", null ],
+    [ "GDK_KEY_F1", "math-window_8c.html#aebcaa834b9b19268c2460c33e18b8bf9", null ],
+    [ "GDK_KEY_W", "math-window_8c.html#ad68f23eb8cc190f3c1870563d81f785c", null ],
+    [ "GDK_KEY_Z", "math-window_8c.html#af172558dea1904ae56dc459421bf500d", null ],
+    [ "HELP_CONTENTS_LABEL", "math-window_8c.html#af95e8da560eba68513b13bd68a0cf899", null ],
+    [ "HELP_MENU_LABEL", "math-window_8c.html#a51f3a96be6649e8eb133980ebb4a8b77", null ],
+    [ "MODE_ADVANCED_LABEL", "math-window_8c.html#a9fcdc507127dc6049c8105b9dcfe1d64", null ],
+    [ "MODE_BASIC_LABEL", "math-window_8c.html#a5c5e29a7a5365a753ff8b5cef2f204e6", null ],
+    [ "MODE_FINANCIAL_LABEL", "math-window_8c.html#a68e5a951e881dcfd31f36865fa065ba4", null ],
+    [ "MODE_MENU_LABEL", "math-window_8c.html#a62f4483556f9357317e3bb5d3c606522", null ],
+    [ "MODE_PROGRAMMING_LABEL", "math-window_8c.html#a6cac81f1f0f35d20e80833c6a584f176", null ],
+    [ "VIEW_HISTORY_LABEL", "math-window_8c.html#a40e18105160cb60d4bd07fc20e6c5843", null ],
+    [ "VIEW_MENU_LABEL", "math-window_8c.html#a97e73a27445cd6d531115857b6d1a953", null ],
+    [ "G_DEFINE_TYPE_WITH_PRIVATE", "math-window_8c.html#adef56876f66cd78d16c77f348963bae3", null ],
+    [ "math_window_critical_error", "math-window_8c.html#a878b5a235e73af101bd212774477abc4", null ],
+    [ "math_window_get_buttons", "math-window_8c.html#a0e9a63e9ed525a8cd5dd9a7022c23807", null ],
+    [ "math_window_get_display", "math-window_8c.html#ae76a10668aa66f9efafc9361651d7503", null ],
+    [ "math_window_get_equation", "math-window_8c.html#a4a1871710e01b41188de51e70afa1297", null ],
+    [ "math_window_get_menu_bar", "math-window_8c.html#a58c14154c41a6c2423e427c4f647df2d", null ],
+    [ "math_window_get_show_history", "math-window_8c.html#ad39b501fa688d3762720cb036a346704", null ],
+    [ "math_window_new", "math-window_8c.html#ada5e113db1b74fd660a76e659b95d1e5", null ],
+    [ "math_window_set_show_history", "math-window_8c.html#a8f95ef410be2db9718d0f712f5eeadc5", null ]
+];
