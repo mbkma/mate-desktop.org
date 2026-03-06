@@ -1,0 +1,38 @@
+var pluma_app_8h =
+[
+    [ "_PlumaApp", "struct__PlumaApp.html", "struct__PlumaApp" ],
+    [ "_PlumaAppClass", "struct__PlumaAppClass.html", "struct__PlumaAppClass" ],
+    [ "PLUMA_APP", "pluma-app_8h.html#af684a232aef891dce1bb9c1d1eaf68f5", null ],
+    [ "PLUMA_APP_CLASS", "pluma-app_8h.html#a54267441a3e13ac0024f06c5ed1c8b34", null ],
+    [ "PLUMA_APP_GET_CLASS", "pluma-app_8h.html#a61c28545cc34fa08c44c953ee8828e19", null ],
+    [ "PLUMA_IS_APP", "pluma-app_8h.html#a510f9c5845d71c58c7ad509000bdbafa", null ],
+    [ "PLUMA_IS_APP_CLASS", "pluma-app_8h.html#ae7f522a02ef987fa4eb9b7b562c63c4e", null ],
+    [ "PLUMA_TYPE_APP", "pluma-app_8h.html#ad052473797087043b94fdde5967b61ef", null ],
+    [ "PlumaApp", "pluma-app_8h.html#a3c5df41eb1b02a8cce448829dae6490f", null ],
+    [ "PlumaAppClass", "pluma-app_8h.html#aa65a80c572f1fac01404dc12c06fb582", null ],
+    [ "PlumaAppPrivate", "pluma-app_8h.html#ade78ee7ccefa47d088f13be0f0538d09", null ],
+    [ "PlumaLockdownMask", "pluma-app_8h.html#ae2357c06ab2fb02556e17cf06b53de2f", [
+      [ "PLUMA_LOCKDOWN_COMMAND_LINE", "pluma-app_8h.html#ae2357c06ab2fb02556e17cf06b53de2fad6506842548db4857bee2c988c3b4976", null ],
+      [ "PLUMA_LOCKDOWN_PRINTING", "pluma-app_8h.html#ae2357c06ab2fb02556e17cf06b53de2fab586f8d64ddc4080530a02555da7c7d4", null ],
+      [ "PLUMA_LOCKDOWN_PRINT_SETUP", "pluma-app_8h.html#ae2357c06ab2fb02556e17cf06b53de2fa7100c62a7ef6519d5589de6d34d540e7", null ],
+      [ "PLUMA_LOCKDOWN_SAVE_TO_DISK", "pluma-app_8h.html#ae2357c06ab2fb02556e17cf06b53de2fafe3839af66b7ab737af4c951f0da7fb5", null ],
+      [ "PLUMA_LOCKDOWN_ALL", "pluma-app_8h.html#ae2357c06ab2fb02556e17cf06b53de2fa84940cab47574c055dc9bbd071dca340", null ]
+    ] ],
+    [ "_pluma_app_get_default_page_setup", "pluma-app_8h.html#a798911d742ee9d0d09bfd380ba6c770e", null ],
+    [ "_pluma_app_get_default_print_settings", "pluma-app_8h.html#a98df61785539a3b4428b31073277a246", null ],
+    [ "_pluma_app_get_window_in_viewport", "pluma-app_8h.html#a4a146c674c60f5eda60e767a75c6d626", null ],
+    [ "_pluma_app_restore_window", "pluma-app_8h.html#a0c14e93d8e1263abccedbdd4700307c0", null ],
+    [ "_pluma_app_set_default_page_setup", "pluma-app_8h.html#a4cfd306c90df39f212a69b24d2c46438", null ],
+    [ "_pluma_app_set_default_print_settings", "pluma-app_8h.html#a3530ad07649ded01696029cf2ebc6e0c", null ],
+    [ "_pluma_app_set_lockdown", "pluma-app_8h.html#a253b2749704762dded884eec6857032e", null ],
+    [ "_pluma_app_set_lockdown_bit", "pluma-app_8h.html#aca74dcd3d962366b39f60bcdffdea7c6", null ],
+    [ "_pluma_window_set_lockdown", "pluma-app_8h.html#add60d7b9f3153e12cffe9abbd4e7c712", null ],
+    [ "pluma_app_create_window", "pluma-app_8h.html#a867c293e5ab454481839379d2a71edc8", null ],
+    [ "pluma_app_get_active_window", "pluma-app_8h.html#a7964a8a2e5433ee10e2d8aa31f85376d", null ],
+    [ "pluma_app_get_default", "pluma-app_8h.html#a097a1532e3f2844bed45d5007476a0dd", null ],
+    [ "pluma_app_get_documents", "pluma-app_8h.html#a33e038f3e87d145b46a31cb88da884bd", null ],
+    [ "pluma_app_get_lockdown", "pluma-app_8h.html#a03647619b44a54540690012aa0836591", null ],
+    [ "pluma_app_get_type", "pluma-app_8h.html#a69f33fcef65e899f92d0638b2af4d5ff", null ],
+    [ "pluma_app_get_views", "pluma-app_8h.html#abc5dfa894b5033f4d5eeea6c8c4cdd7c", null ],
+    [ "pluma_app_get_windows", "pluma-app_8h.html#aba178837f1ae6ba1f1650b7da9f3a4a6", null ]
+];

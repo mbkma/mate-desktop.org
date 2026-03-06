@@ -1,0 +1,25 @@
+var pluma_document_saver_8h =
+[
+    [ "_PlumaDocumentSaver", "struct__PlumaDocumentSaver.html", "struct__PlumaDocumentSaver" ],
+    [ "_PlumaDocumentSaverClass", "struct__PlumaDocumentSaverClass.html", "struct__PlumaDocumentSaverClass" ],
+    [ "PLUMA_DOCUMENT_SAVER", "pluma-document-saver_8h.html#a5a74493da1cf3213ab9b153822b9dc09", null ],
+    [ "PLUMA_DOCUMENT_SAVER_CLASS", "pluma-document-saver_8h.html#afb9f943bb78c49959f99c06eb132377c", null ],
+    [ "PLUMA_DOCUMENT_SAVER_GET_CLASS", "pluma-document-saver_8h.html#afb300d14e7f3d480471b4bc43f7ee392", null ],
+    [ "PLUMA_IS_DOCUMENT_SAVER", "pluma-document-saver_8h.html#a5082efb8e8ee4deb8970cf437278aa5c", null ],
+    [ "PLUMA_IS_DOCUMENT_SAVER_CLASS", "pluma-document-saver_8h.html#a9954553a1820b22ad71265f63797f719", null ],
+    [ "PLUMA_TYPE_DOCUMENT_SAVER", "pluma-document-saver_8h.html#a81054df9018e7ef9a634414d1c3e31b1", null ],
+    [ "PlumaDocumentSaver", "pluma-document-saver_8h.html#a2894c2c5458f63e2d721883c367c597f", null ],
+    [ "PlumaDocumentSaverClass", "pluma-document-saver_8h.html#a82d0e23b2ca59b0db6abbde7d44f1498", null ],
+    [ "PlumaDocumentSaverPrivate", "pluma-document-saver_8h.html#a418ae367f40d6a502ba09275f503a681", null ],
+    [ "pluma_document_saver_get_backup_uri", "pluma-document-saver_8h.html#adeae2d7580c1b8b311d0dc1d85972155", null ],
+    [ "pluma_document_saver_get_bytes_written", "pluma-document-saver_8h.html#ad0c3488cd29145bf4d05d2630fe7cf25", null ],
+    [ "pluma_document_saver_get_document", "pluma-document-saver_8h.html#a29c1c4f5aa1e0229602262d33c6020c1", null ],
+    [ "pluma_document_saver_get_file_size", "pluma-document-saver_8h.html#a607269fbf19696bafb5815f933b911bd", null ],
+    [ "pluma_document_saver_get_info", "pluma-document-saver_8h.html#a7fe4f9f1c62dc2ede52223e7d33e8dfb", null ],
+    [ "pluma_document_saver_get_type", "pluma-document-saver_8h.html#a98868bb72061ab220728a92dc14c35f4", null ],
+    [ "pluma_document_saver_get_uri", "pluma-document-saver_8h.html#a220c89a02ab4c1074b2a4e7dd2b3a1c6", null ],
+    [ "pluma_document_saver_new", "pluma-document-saver_8h.html#a6cb7812597956e0134abd32b282f962c", null ],
+    [ "pluma_document_saver_save", "pluma-document-saver_8h.html#aeca0dbdb4c66e1a7729b464b4293a117", null ],
+    [ "pluma_document_saver_saving", "pluma-document-saver_8h.html#a61d08867981719eb6577f06cf361e000", null ],
+    [ "pluma_document_saver_set_backup_uri", "pluma-document-saver_8h.html#a6e1fb7305b168c7171bc4e5872bccd88", null ]
+];

@@ -1,0 +1,27 @@
+var cadp_keys_8h =
+[
+    [ "CADP_GROUP_DESKTOP", "cadp-keys_8h.html#ad1d2eedd1542f6b4f1e555f8f16c5765", null ],
+    [ "CADP_GROUP_PROFILE", "cadp-keys_8h.html#a3275ff411b3238f2544e47e30e446bdf", null ],
+    [ "CADP_KEY_CAPABILITIES", "cadp-keys_8h.html#a1cc046f55afb8c8d267c907ab0933a80", null ],
+    [ "CADP_KEY_EXECUTION_MODE", "cadp-keys_8h.html#afea75064d6d626e61028ef6b20ebe2de", null ],
+    [ "CADP_KEY_HIDDEN", "cadp-keys_8h.html#af7cd6a47530f3842c25151bf86ec0847", null ],
+    [ "CADP_KEY_ITEMS_LIST", "cadp-keys_8h.html#a15bcec989dd0ec359c3f8b01a898a395", null ],
+    [ "CADP_KEY_NO_DISPLAY", "cadp-keys_8h.html#aa895fdc52a92456b81dfc70c30629199", null ],
+    [ "CADP_KEY_NOT_SHOW_IN", "cadp-keys_8h.html#aa5d7525ae012f5a6574ef86c6e2c9d59", null ],
+    [ "CADP_KEY_ONLY_SHOW_IN", "cadp-keys_8h.html#ab4325ca590a41ccb428f3acfe9d169bb", null ],
+    [ "CADP_KEY_PROFILES", "cadp-keys_8h.html#af98368099195163213ac0fce5d122b58", null ],
+    [ "CADP_KEY_TYPE", "cadp-keys_8h.html#a28b9dc4544cd7cb307a1ec052ac972af", null ],
+    [ "CADP_VALUE_CAPABILITY_EXECUTABLE", "cadp-keys_8h.html#a808077fc2b65bd5be803e532e7df9c11", null ],
+    [ "CADP_VALUE_CAPABILITY_LOCAL", "cadp-keys_8h.html#abe4cac52e703cafd843c734ee1136525", null ],
+    [ "CADP_VALUE_CAPABILITY_OWNER", "cadp-keys_8h.html#a77dccc8dd40ed10cc2c63a5e03ecd0d7", null ],
+    [ "CADP_VALUE_CAPABILITY_READABLE", "cadp-keys_8h.html#aba2bd9d63470a66372faa84c498bf321", null ],
+    [ "CADP_VALUE_CAPABILITY_WRITABLE", "cadp-keys_8h.html#a51156f4f224c6f77f18ac0c517e632be", null ],
+    [ "CADP_VALUE_EXECUTION_MODE_DISPLAY_OUTPUT", "cadp-keys_8h.html#af89db7e4785790c66fc499c9df2415f0", null ],
+    [ "CADP_VALUE_EXECUTION_MODE_EMBEDDED", "cadp-keys_8h.html#a99d3b2605e2e5780814320ae206e3f27", null ],
+    [ "CADP_VALUE_EXECUTION_MODE_MAXIMIZED", "cadp-keys_8h.html#abf39c90313900678e4d6355c3360acd5", null ],
+    [ "CADP_VALUE_EXECUTION_MODE_MINIMIZED", "cadp-keys_8h.html#a100888455c2bedac3af3e3e902c69945", null ],
+    [ "CADP_VALUE_EXECUTION_MODE_NORMAL", "cadp-keys_8h.html#a2e99249649ccafc6cba45d6d73418e0f", null ],
+    [ "CADP_VALUE_EXECUTION_MODE_TERMINAL", "cadp-keys_8h.html#a2e2bca8e7e0e9130210138835fe53284", null ],
+    [ "CADP_VALUE_TYPE_ACTION", "cadp-keys_8h.html#a42524a431a8d57c84e2411d2e8a1ef95", null ],
+    [ "CADP_VALUE_TYPE_MENU", "cadp-keys_8h.html#aa1a62e828e2ab23cc11370bf07efdfe2", null ]
+];

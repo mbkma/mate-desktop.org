@@ -1,0 +1,27 @@
+var dir_8e9f7b525a4f9e70a9ec6c1457428f24 =
+[
+    [ "gdict-client-context.c", "gdict-client-context_8c.html", "gdict-client-context_8c" ],
+    [ "gdict-client-context.h", "gdict-client-context_8h.html", "gdict-client-context_8h" ],
+    [ "gdict-context-private.h", "gdict-context-private_8h.html", "gdict-context-private_8h" ],
+    [ "gdict-context.c", "gdict-context_8c.html", "gdict-context_8c" ],
+    [ "gdict-context.h", "gdict-context_8h.html", "gdict-context_8h" ],
+    [ "gdict-database-chooser.c", "gdict-database-chooser_8c.html", "gdict-database-chooser_8c" ],
+    [ "gdict-database-chooser.h", "gdict-database-chooser_8h.html", "gdict-database-chooser_8h" ],
+    [ "gdict-debug.h", "gdict-debug_8h.html", "gdict-debug_8h" ],
+    [ "gdict-defbox.c", "gdict-defbox_8c.html", "gdict-defbox_8c" ],
+    [ "gdict-defbox.h", "gdict-defbox_8h.html", "gdict-defbox_8h" ],
+    [ "gdict-private.h", "gdict-private_8h.html", "gdict-private_8h" ],
+    [ "gdict-source-chooser.c", "gdict-source-chooser_8c.html", "gdict-source-chooser_8c" ],
+    [ "gdict-source-chooser.h", "gdict-source-chooser_8h.html", "gdict-source-chooser_8h" ],
+    [ "gdict-source-loader.c", "gdict-source-loader_8c.html", "gdict-source-loader_8c" ],
+    [ "gdict-source-loader.h", "gdict-source-loader_8h.html", "gdict-source-loader_8h" ],
+    [ "gdict-source.c", "gdict-source_8c.html", "gdict-source_8c" ],
+    [ "gdict-source.h", "gdict-source_8h.html", "gdict-source_8h" ],
+    [ "gdict-speller.c", "gdict-speller_8c.html", "gdict-speller_8c" ],
+    [ "gdict-speller.h", "gdict-speller_8h.html", "gdict-speller_8h" ],
+    [ "gdict-strategy-chooser.c", "gdict-strategy-chooser_8c.html", "gdict-strategy-chooser_8c" ],
+    [ "gdict-strategy-chooser.h", "gdict-strategy-chooser_8h.html", "gdict-strategy-chooser_8h" ],
+    [ "gdict-utils.c", "gdict-utils_8c.html", "gdict-utils_8c" ],
+    [ "gdict-utils.h", "gdict-utils_8h.html", "gdict-utils_8h" ],
+    [ "gdict.h", "gdict_8h.html", null ]
+];

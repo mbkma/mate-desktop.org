@@ -1,0 +1,26 @@
+var gsm_systemd_8c =
+[
+    [ "SD_INTERFACE", "gsm-systemd_8c.html#a754cc347524efae6e57d30d48c03b40f", null ],
+    [ "SD_NAME", "gsm-systemd_8c.html#a6bf3660bd82dea6b66cf871cb0808ff1", null ],
+    [ "SD_PATH", "gsm-systemd_8c.html#ab5fe6f0089122ae5d8c9586e83b2229e", null ],
+    [ "SD_SEAT_INTERFACE", "gsm-systemd_8c.html#afaa8bca2f792fe4af6221e1e523bea7f", null ],
+    [ "SD_SESSION_INTERFACE", "gsm-systemd_8c.html#a5ce8d6c629834a0eccb4076800241f20", null ],
+    [ "G_DEFINE_TYPE_WITH_PRIVATE", "gsm-systemd_8c.html#ab089ed5188dd3a32788710b8e6b80f32", null ],
+    [ "gsm_get_systemd", "gsm-systemd_8c.html#a58e5420a55b5a06f69bce1f56e020f08", null ],
+    [ "gsm_systemd_attempt_hibernate", "gsm-systemd_8c.html#a1fbfbdf52d0b9ac4c34d6e603020d92f", null ],
+    [ "gsm_systemd_attempt_restart", "gsm-systemd_8c.html#a6cf65f4f489ed42aa07726dc49fba882", null ],
+    [ "gsm_systemd_attempt_stop", "gsm-systemd_8c.html#a47ed4a8596cb5c82160bf03eccbc9b95", null ],
+    [ "gsm_systemd_attempt_suspend", "gsm-systemd_8c.html#a8c9717b63d1036a1bb3d0598039f5ef9", null ],
+    [ "gsm_systemd_can_hibernate", "gsm-systemd_8c.html#a7a559fe9b4487315a94a2adb1eb3db44", null ],
+    [ "gsm_systemd_can_restart", "gsm-systemd_8c.html#acafd0b74807192ca69767c7ab2d39598", null ],
+    [ "gsm_systemd_can_stop", "gsm-systemd_8c.html#a3a1b4e83bf03d1bb79829aaa7cdcb7fc", null ],
+    [ "gsm_systemd_can_suspend", "gsm-systemd_8c.html#a66a5394c4286e4477f17c4b4fd72468c", null ],
+    [ "gsm_systemd_can_switch_user", "gsm-systemd_8c.html#a76b6b79bad5ae4bf5aaeb3bae2e6a899", null ],
+    [ "gsm_systemd_error_quark", "gsm-systemd_8c.html#aa8451d13eefcbc916e01aff9e53e54d3", null ],
+    [ "gsm_systemd_get_current_session_type", "gsm-systemd_8c.html#aa94336c3ef37e4256054225fdf033eb2", null ],
+    [ "gsm_systemd_get_restart_privileges", "gsm-systemd_8c.html#a18651ba23ec96b6406c550f88a1c87c8", null ],
+    [ "gsm_systemd_get_stop_privileges", "gsm-systemd_8c.html#a0344f8a26664edbf83f86cfbda6c9658", null ],
+    [ "gsm_systemd_is_last_session_for_user", "gsm-systemd_8c.html#abd49b9234fe47a7761738a33fa32aa13", null ],
+    [ "gsm_systemd_new", "gsm-systemd_8c.html#a62c8a06216d0e64b29692e84163d28f2", null ],
+    [ "gsm_systemd_set_session_idle", "gsm-systemd_8c.html#ab97eba5a3748523a96bb61dc6e5a3808", null ]
+];

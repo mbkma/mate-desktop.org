@@ -1,0 +1,25 @@
+var matemixer_enum_types_8h =
+[
+    [ "MATE_MIXER_TYPE_BACKEND_FLAGS", "matemixer-enum-types_8h.html#aa5092e02a3dcf7942733be6007a2a821", null ],
+    [ "MATE_MIXER_TYPE_BACKEND_TYPE", "matemixer-enum-types_8h.html#aaa0368edd37f7b68bf683b1db1ea1fb9", null ],
+    [ "MATE_MIXER_TYPE_CHANNEL_POSITION", "matemixer-enum-types_8h.html#a3340d3b53620a642c6dd30908d71ae5d", null ],
+    [ "MATE_MIXER_TYPE_DEVICE_SWITCH_ROLE", "matemixer-enum-types_8h.html#a3d8a76e00be087c29d00ba7408c5e48d", null ],
+    [ "MATE_MIXER_TYPE_DIRECTION", "matemixer-enum-types_8h.html#ad3e18012675ccdfc68830eb3cdaaf47c", null ],
+    [ "MATE_MIXER_TYPE_STATE", "matemixer-enum-types_8h.html#a788dfd93aca8205b4ba65a3c39c67132", null ],
+    [ "MATE_MIXER_TYPE_STREAM_CONTROL_FLAGS", "matemixer-enum-types_8h.html#a599264253b08f85092b0685a5f92a59b", null ],
+    [ "MATE_MIXER_TYPE_STREAM_CONTROL_MEDIA_ROLE", "matemixer-enum-types_8h.html#a8e89d49ad962f67484cc6fafc022842e", null ],
+    [ "MATE_MIXER_TYPE_STREAM_CONTROL_ROLE", "matemixer-enum-types_8h.html#ac88b5c344e945f71e9b21ceffcf6130a", null ],
+    [ "MATE_MIXER_TYPE_STREAM_SWITCH_FLAGS", "matemixer-enum-types_8h.html#adb6df044a60744b177bdfa194d74bae6", null ],
+    [ "MATE_MIXER_TYPE_STREAM_SWITCH_ROLE", "matemixer-enum-types_8h.html#a1a6a2acd727ccd6b4512ec0159ab35a2", null ],
+    [ "mate_mixer_backend_flags_get_type", "matemixer-enum-types_8h.html#a44c4cd37139fb88d9b7ceb479bffd102", null ],
+    [ "mate_mixer_backend_type_get_type", "matemixer-enum-types_8h.html#a458b1d64f7e2440e7cbfbb9061135566", null ],
+    [ "mate_mixer_channel_position_get_type", "matemixer-enum-types_8h.html#abf911d9e19a941396b3ee5a24ad67a7d", null ],
+    [ "mate_mixer_device_switch_role_get_type", "matemixer-enum-types_8h.html#a6e891b3c76642883abced2f7d6cb3058", null ],
+    [ "mate_mixer_direction_get_type", "matemixer-enum-types_8h.html#acef265e01ef9b93fd5d3619b1a7bbb45", null ],
+    [ "mate_mixer_state_get_type", "matemixer-enum-types_8h.html#a065327d79885571ea00cdb70ea952c75", null ],
+    [ "mate_mixer_stream_control_flags_get_type", "matemixer-enum-types_8h.html#a894ab7c67da8166cb08c0f843d40bf18", null ],
+    [ "mate_mixer_stream_control_media_role_get_type", "matemixer-enum-types_8h.html#ae5dfc6795e01d1d5290d3e9c87c87fb9", null ],
+    [ "mate_mixer_stream_control_role_get_type", "matemixer-enum-types_8h.html#a267f861f0f25cae6f1dc508c97360d19", null ],
+    [ "mate_mixer_stream_switch_flags_get_type", "matemixer-enum-types_8h.html#a9510af38aad732bb45679527a991cd06", null ],
+    [ "mate_mixer_stream_switch_role_get_type", "matemixer-enum-types_8h.html#a1335b2771de5f3969fcbe9ea8b435064", null ]
+];

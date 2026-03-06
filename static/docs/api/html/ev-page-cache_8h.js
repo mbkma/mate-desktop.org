@@ -1,0 +1,25 @@
+var ev_page_cache_8h =
+[
+    [ "EV_IS_PAGE_CACHE", "ev-page-cache_8h.html#aa6e6f38cedb168efeb3b5cc10d018e4c", null ],
+    [ "EV_PAGE_CACHE", "ev-page-cache_8h.html#af580630a0e595c72e03286f23e4391e9", null ],
+    [ "EV_TYPE_PAGE_CACHE", "ev-page-cache_8h.html#ab60018f54cfc6af2e747e7a5d818996d", null ],
+    [ "EvPageCache", "ev-page-cache_8h.html#ae0a6f5b5b809d282143d6701b6bcc33f", null ],
+    [ "EvPageCacheClass", "ev-page-cache_8h.html#a96c04358c16dc3ec1cf9290aa05161f1", null ],
+    [ "ev_page_cache_ensure_page", "ev-page-cache_8h.html#ae472ee9f37b0bf4b24483674141f6f47", null ],
+    [ "ev_page_cache_get_annot_mapping", "ev-page-cache_8h.html#af6d57b97c4417623325ecfec3df54780", null ],
+    [ "ev_page_cache_get_flags", "ev-page-cache_8h.html#a710879ae906e30c6cb662cb7c5a7df51", null ],
+    [ "ev_page_cache_get_form_field_mapping", "ev-page-cache_8h.html#af5c8c829746f6116cd8e1de6bbb71b09", null ],
+    [ "ev_page_cache_get_image_mapping", "ev-page-cache_8h.html#a4e1ab1434fd639df32ab12a427c749dc", null ],
+    [ "ev_page_cache_get_link_mapping", "ev-page-cache_8h.html#ad4113b6618d004a575c74d193e81f166", null ],
+    [ "ev_page_cache_get_text", "ev-page-cache_8h.html#a5166ac52fc6c49f640b2235a148d74fd", null ],
+    [ "ev_page_cache_get_text_attrs", "ev-page-cache_8h.html#a7439e8e255a91e0d95d5776f8b4571c4", null ],
+    [ "ev_page_cache_get_text_layout", "ev-page-cache_8h.html#a98caf2933580b49cdc02e62761021156", null ],
+    [ "ev_page_cache_get_text_log_attrs", "ev-page-cache_8h.html#a62dabc4ecaa6b60faa075d35af20a581", null ],
+    [ "ev_page_cache_get_text_mapping", "ev-page-cache_8h.html#a6c0c2ae918ec763035cafb47fde5036e", null ],
+    [ "ev_page_cache_get_type", "ev-page-cache_8h.html#a91d7d3eea3307f879005e54229f24b9c", null ],
+    [ "ev_page_cache_is_page_cached", "ev-page-cache_8h.html#aa5ef2306799155c69d8ffc0d0fbffbdd", null ],
+    [ "ev_page_cache_mark_dirty", "ev-page-cache_8h.html#adb894744c67bbf999b513c550487f3ac", null ],
+    [ "ev_page_cache_new", "ev-page-cache_8h.html#aec80d36723b64bca2bc4afc383813ceb", null ],
+    [ "ev_page_cache_set_flags", "ev-page-cache_8h.html#aa53dc3c5d68bbd28698eea283bc457d1", null ],
+    [ "ev_page_cache_set_page_range", "ev-page-cache_8h.html#aa14283303685bd99a3787031cd3eab1b", null ]
+];

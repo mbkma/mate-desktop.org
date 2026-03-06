@@ -1,0 +1,27 @@
+var pluma_history_entry_8h =
+[
+    [ "_PlumaHistoryEntryClass", "struct__PlumaHistoryEntryClass.html", "struct__PlumaHistoryEntryClass" ],
+    [ "_PlumaHistoryEntry", "struct__PlumaHistoryEntry.html", "struct__PlumaHistoryEntry" ],
+    [ "PLUMA_HISTORY_ENTRY", "pluma-history-entry_8h.html#a67bdd6b5aa08d151f804dce6012f5df9", null ],
+    [ "PLUMA_HISTORY_ENTRY_CLASS", "pluma-history-entry_8h.html#a6f4ccf9e3bbf785d79336b9ed54dbd30", null ],
+    [ "PLUMA_HISTORY_ENTRY_GET_CLASS", "pluma-history-entry_8h.html#ac193d903cb39ad49bdb6ac5df399e7f7", null ],
+    [ "PLUMA_IS_HISTORY_ENTRY", "pluma-history-entry_8h.html#a0ad56ba1559d0c8a75d553318ab20804", null ],
+    [ "PLUMA_IS_HISTORY_ENTRY_CLASS", "pluma-history-entry_8h.html#a394164ef62721c5ab0905a2551eab1be", null ],
+    [ "PLUMA_TYPE_HISTORY_ENTRY", "pluma-history-entry_8h.html#a2406a85cab943a09988db473e93f04c9", null ],
+    [ "PlumaHistoryEntry", "pluma-history-entry_8h.html#aa0c7bcb7442b407de9f5154a3593b486", null ],
+    [ "PlumaHistoryEntryClass", "pluma-history-entry_8h.html#a47d11f509d86b842d4c8add152e80f2a", null ],
+    [ "PlumaHistoryEntryEscapeFunc", "pluma-history-entry_8h.html#a796d016d6922b784fa176fa6f4a183fa", null ],
+    [ "PlumaHistoryEntryPrivate", "pluma-history-entry_8h.html#a63022474cbf34f4c0b1799fb1b89ca2d", null ],
+    [ "pluma_history_entry_append_text", "pluma-history-entry_8h.html#aab4304567b5c3ec36477838567b33d5f", null ],
+    [ "pluma_history_entry_clear", "pluma-history-entry_8h.html#a31eaeda907901b8a13fd04f271139120", null ],
+    [ "pluma_history_entry_get_enable_completion", "pluma-history-entry_8h.html#a0573b116b5bc0de20fd04dc57ef06fc0", null ],
+    [ "pluma_history_entry_get_entry", "pluma-history-entry_8h.html#aa8d50b181fa90c793848ca4545b9e45d", null ],
+    [ "pluma_history_entry_get_history_id", "pluma-history-entry_8h.html#a693e9ba2403e66db192b342909f7d836", null ],
+    [ "pluma_history_entry_get_history_length", "pluma-history-entry_8h.html#a8058c6e9f84e6eb4d94b6bbc684422b1", null ],
+    [ "pluma_history_entry_get_type", "pluma-history-entry_8h.html#a5562bb83673ddfbbea165356a3d46bf9", null ],
+    [ "pluma_history_entry_new", "pluma-history-entry_8h.html#a3cc98b8729a002dcdd78ed6b98130d91", null ],
+    [ "pluma_history_entry_prepend_text", "pluma-history-entry_8h.html#ae6df16c3a8f5cf6762def8232d216915", null ],
+    [ "pluma_history_entry_set_enable_completion", "pluma-history-entry_8h.html#a92ddb0fa2606eb112d8bedf9f0be6dc0", null ],
+    [ "pluma_history_entry_set_escape_func", "pluma-history-entry_8h.html#a068d5764a313aec15f1f4a169666ec9b", null ],
+    [ "pluma_history_entry_set_history_length", "pluma-history-entry_8h.html#a15e35063e47648f183c7fee13de5cb25", null ]
+];

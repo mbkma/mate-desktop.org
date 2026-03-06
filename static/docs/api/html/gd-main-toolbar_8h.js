@@ -1,0 +1,26 @@
+var gd_main_toolbar_8h =
+[
+    [ "_GdMainToolbar", "struct__GdMainToolbar.html", "struct__GdMainToolbar" ],
+    [ "_GdMainToolbarClass", "struct__GdMainToolbarClass.html", "struct__GdMainToolbarClass" ],
+    [ "GD_IS_MAIN_TOOLBAR", "gd-main-toolbar_8h.html#a5db6add1dcb9da5b3a6f811527ff0c92", null ],
+    [ "GD_IS_MAIN_TOOLBAR_CLASS", "gd-main-toolbar_8h.html#ac897525bda62e8394b3ee68675976ddb", null ],
+    [ "GD_MAIN_TOOLBAR", "gd-main-toolbar_8h.html#ab1aaf999eb9dba5dedca9307b6f027ed", null ],
+    [ "GD_MAIN_TOOLBAR_CLASS", "gd-main-toolbar_8h.html#a47786fe74241b6c2a0ef17f0aa362487", null ],
+    [ "GD_MAIN_TOOLBAR_GET_CLASS", "gd-main-toolbar_8h.html#a016658f1e24346ccb5c7463ab7203904", null ],
+    [ "GD_TYPE_MAIN_TOOLBAR", "gd-main-toolbar_8h.html#a7cd62f125ecd77f46e0703c7b845894e", null ],
+    [ "GdMainToolbar", "gd-main-toolbar_8h.html#ac16d3e79e50e282423fe5f9db0673aca", null ],
+    [ "GdMainToolbarClass", "gd-main-toolbar_8h.html#a9ea90980fa42124de1d960f9fc11042d", null ],
+    [ "GdMainToolbarPrivate", "gd-main-toolbar_8h.html#a4f1f17bfb3caf2a944bfcd1257d73d18", null ],
+    [ "gd_main_toolbar_add_button", "gd-main-toolbar_8h.html#a78c0158a9ec2b6ea2d1557a2720c4aa9", null ],
+    [ "gd_main_toolbar_add_menu", "gd-main-toolbar_8h.html#a94c8ffe9fa07b99ccfd95f05cb8df996", null ],
+    [ "gd_main_toolbar_add_mode", "gd-main-toolbar_8h.html#a840f2a2e9e32556494e0c658414236a5", null ],
+    [ "gd_main_toolbar_add_toggle", "gd-main-toolbar_8h.html#a881bcb8790582c0f63247e7de1626cfc", null ],
+    [ "gd_main_toolbar_add_widget", "gd-main-toolbar_8h.html#ad8915721dd2b33c958bed1ea4f59e462", null ],
+    [ "gd_main_toolbar_clear", "gd-main-toolbar_8h.html#ae4bdd72300f4511a9736f549d6cacdad", null ],
+    [ "gd_main_toolbar_get_show_modes", "gd-main-toolbar_8h.html#a359cc010e52db7c58b0430deea103585", null ],
+    [ "gd_main_toolbar_get_type", "gd-main-toolbar_8h.html#a8461e735a24f2dfdd4847740d2d54f12", null ],
+    [ "gd_main_toolbar_new", "gd-main-toolbar_8h.html#a6ac3bbcae7fa6416d415d956995fa8c2", null ],
+    [ "gd_main_toolbar_set_labels", "gd-main-toolbar_8h.html#a175a81762633513d0d1fd9f4cb7b2432", null ],
+    [ "gd_main_toolbar_set_labels_menu", "gd-main-toolbar_8h.html#ae32cc3ed797f863c182664d45e5a995a", null ],
+    [ "gd_main_toolbar_set_show_modes", "gd-main-toolbar_8h.html#a2e09ec73e96fa4d9622b21571cd52864", null ]
+];

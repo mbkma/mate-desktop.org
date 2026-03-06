@@ -1,0 +1,25 @@
+var pluma_panel_8h =
+[
+    [ "_PlumaPanel", "struct__PlumaPanel.html", "struct__PlumaPanel" ],
+    [ "_PlumaPanelClass", "struct__PlumaPanelClass.html", "struct__PlumaPanelClass" ],
+    [ "PLUMA_IS_PANEL", "pluma-panel_8h.html#a1d731903c5d9c3cb49b3894035be260f", null ],
+    [ "PLUMA_IS_PANEL_CLASS", "pluma-panel_8h.html#abba2d2fac60d18376b534527560b986b", null ],
+    [ "PLUMA_PANEL", "pluma-panel_8h.html#a628f4fc5ef11dccb36bf725037f9a756", null ],
+    [ "PLUMA_PANEL_CLASS", "pluma-panel_8h.html#aac397eee7f7abbacb8ad4385d553aac4", null ],
+    [ "PLUMA_PANEL_GET_CLASS", "pluma-panel_8h.html#a8658e90dc90367e0f38b2d45d0cf15b3", null ],
+    [ "PLUMA_TYPE_PANEL", "pluma-panel_8h.html#a47b2d2df34a333e5b8539a54c89ca6ba", null ],
+    [ "PlumaPanel", "pluma-panel_8h.html#aa7fceac7fffbc9392e0a835cbad9f474", null ],
+    [ "PlumaPanelClass", "pluma-panel_8h.html#a75a4448279c9b104a14e5b1fcb86bedf", null ],
+    [ "PlumaPanelPrivate", "pluma-panel_8h.html#ab533f8051618313eec686eb66b56df04", null ],
+    [ "_pluma_panel_get_active_item_id", "pluma-panel_8h.html#a77f128f55bb0e04f835d70f9c506e605", null ],
+    [ "_pluma_panel_set_active_item_by_id", "pluma-panel_8h.html#aa70c15308c99267e693d5a3c6840be29", null ],
+    [ "pluma_panel_activate_item", "pluma-panel_8h.html#a23d9a722c46a4e0da33940d4749680ed", null ],
+    [ "pluma_panel_add_item", "pluma-panel_8h.html#a5731a79570824ab65f273e857b510335", null ],
+    [ "pluma_panel_add_item_with_icon", "pluma-panel_8h.html#a85ad06cc2bad1630447bfbb8b0d6ff3f", null ],
+    [ "pluma_panel_get_n_items", "pluma-panel_8h.html#a17fe926d10614996bf2e90a41b14df06", null ],
+    [ "pluma_panel_get_orientation", "pluma-panel_8h.html#a1a91b8e6e1fd3d6e7c718385bfd7cd1f", null ],
+    [ "pluma_panel_get_type", "pluma-panel_8h.html#a148fc8c14fcab8f5b550f74c13ff53a0", null ],
+    [ "pluma_panel_item_is_active", "pluma-panel_8h.html#a0c1e160e3abe81385a133d11c5916f0e", null ],
+    [ "pluma_panel_new", "pluma-panel_8h.html#ae8c876a26f910ecb68711d2ea34799b4", null ],
+    [ "pluma_panel_remove_item", "pluma-panel_8h.html#ac983fc928d6801cf26acab238cfb539e", null ]
+];

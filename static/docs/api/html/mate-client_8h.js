@@ -1,0 +1,88 @@
+var mate_client_8h =
+[
+    [ "_MateClient", "struct__MateClient.html", "struct__MateClient" ],
+    [ "_MateClientClass", "struct__MateClientClass.html", "struct__MateClientClass" ],
+    [ "MATE_CLIENT", "mate-client_8h.html#aadb80aadcf2882e425d60fc6c98db977", null ],
+    [ "MATE_CLIENT_CLASS", "mate-client_8h.html#a8cb7b3327b5831012708158d221258a9", null ],
+    [ "MATE_CLIENT_CONNECTED", "mate-client_8h.html#af478115cf1bd74ca70da0c6577bf9e77", null ],
+    [ "MATE_CLIENT_GET_CLASS", "mate-client_8h.html#a819fc51e01c555bc0f1b96e3228a1db6", null ],
+    [ "MATE_CLIENT_MODULE", "mate-client_8h.html#aff299a44b482937eceb5b15ddf48beba", null ],
+    [ "MATE_CLIENT_PARAM_SM_CONNECT", "mate-client_8h.html#a81f14253bd7945788882b729b69a866d", null ],
+    [ "MATE_IS_CLIENT", "mate-client_8h.html#a503a3d6b39a34a2575f6e9be950dcc11", null ],
+    [ "MATE_IS_CLIENT_CLASS", "mate-client_8h.html#ace541d98db2cfa119b493ef7e329a573", null ],
+    [ "MATE_TYPE_CLIENT", "mate-client_8h.html#a4f75670b7641e1b080562e27232c49c5", null ],
+    [ "MateClient", "mate-client_8h.html#ac91434ef9eb1ea200e07903a4d4db0f5", null ],
+    [ "MateClientClass", "mate-client_8h.html#a929e7a2666ceee2f9d045e6b79e05787", null ],
+    [ "MateInteractFunction", "mate-client_8h.html#a1c8e4154385dc034fdad3b48a89cd7cb", null ],
+    [ "MateClientFlags", "mate-client_8h.html#ac515d5474b55a6f7e4d10b5e469a8b49", [
+      [ "MATE_CLIENT_IS_CONNECTED", "mate-client_8h.html#ac515d5474b55a6f7e4d10b5e469a8b49abf323dd4da5eac9a976c00e1f9e13619", null ],
+      [ "MATE_CLIENT_RESTARTED", "mate-client_8h.html#ac515d5474b55a6f7e4d10b5e469a8b49a46b8b47a4bad6505d62c9c9e64fe851a", null ],
+      [ "MATE_CLIENT_RESTORED", "mate-client_8h.html#ac515d5474b55a6f7e4d10b5e469a8b49a504d62ce35520d9d84e316eb87f9fb33", null ]
+    ] ],
+    [ "MateClientState", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186", [
+      [ "MATE_CLIENT_IDLE", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186a6ce0dd0d8ac02b5e209ab01de2169eab", null ],
+      [ "MATE_CLIENT_SAVING_PHASE_1", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186a451fe4b934f25691a42fa9064b63adba", null ],
+      [ "MATE_CLIENT_WAITING_FOR_PHASE_2", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186a905ef0bc2b743717d4aa3de2a2efb769", null ],
+      [ "MATE_CLIENT_SAVING_PHASE_2", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186aadc6a86d1d6e0de915f09df1789e8600", null ],
+      [ "MATE_CLIENT_FROZEN", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186ab20fa0b29fd2d159f2453eba4e7ce1e7", null ],
+      [ "MATE_CLIENT_DISCONNECTED", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186a27ec84e41c4fe39a58f88f6dec3ca905", null ],
+      [ "MATE_CLIENT_REGISTERING", "mate-client_8h.html#aec7b70d8d7c12fb2827070ae5fbd8186a2c9dacbc63716f498a3a9fa4ff73b700", null ]
+    ] ],
+    [ "MateDialogType", "mate-client_8h.html#ada72cef8005f4a54cce2176afba9418c", [
+      [ "MATE_DIALOG_ERROR", "mate-client_8h.html#ada72cef8005f4a54cce2176afba9418ca77b2c300181f5e8bcf18ec7c43613567", null ],
+      [ "MATE_DIALOG_NORMAL", "mate-client_8h.html#ada72cef8005f4a54cce2176afba9418ca97d32846dade9095ff707927ac19cf14", null ]
+    ] ],
+    [ "MateInteractStyle", "mate-client_8h.html#a3276c511a7b06a4cfb179cde4e5a45b8", [
+      [ "MATE_INTERACT_NONE", "mate-client_8h.html#a3276c511a7b06a4cfb179cde4e5a45b8ad8128a3e4862a79f5ce3aced0e8c3f90", null ],
+      [ "MATE_INTERACT_ERRORS", "mate-client_8h.html#a3276c511a7b06a4cfb179cde4e5a45b8a303efe2ea17f3a63952bc15d21c8c478", null ],
+      [ "MATE_INTERACT_ANY", "mate-client_8h.html#a3276c511a7b06a4cfb179cde4e5a45b8ac61df2714777a3dea87cef0cffe18b0e", null ]
+    ] ],
+    [ "MateRestartStyle", "mate-client_8h.html#a4e8de3154123cf801659861071211055", [
+      [ "MATE_RESTART_IF_RUNNING", "mate-client_8h.html#a4e8de3154123cf801659861071211055ab829123a65eaa43db234ac2a528b5fbb", null ],
+      [ "MATE_RESTART_ANYWAY", "mate-client_8h.html#a4e8de3154123cf801659861071211055aceb04fcc32adf86516bc77fbb88bb622", null ],
+      [ "MATE_RESTART_IMMEDIATELY", "mate-client_8h.html#a4e8de3154123cf801659861071211055aa062ac3ae22611315edce5ee89dfb180", null ],
+      [ "MATE_RESTART_NEVER", "mate-client_8h.html#a4e8de3154123cf801659861071211055a3a31573cdeedb527f1a0528749f8d701", null ]
+    ] ],
+    [ "MateSaveStyle", "mate-client_8h.html#a677ca34989b8955d7caaac29bfe65cdc", [
+      [ "MATE_SAVE_GLOBAL", "mate-client_8h.html#a677ca34989b8955d7caaac29bfe65cdcade5ac31e61e2140733bd87c2211d29b9", null ],
+      [ "MATE_SAVE_LOCAL", "mate-client_8h.html#a677ca34989b8955d7caaac29bfe65cdcade789e04d35b8614ead60e9adc6f54af", null ],
+      [ "MATE_SAVE_BOTH", "mate-client_8h.html#a677ca34989b8955d7caaac29bfe65cdca4f6d1748fda22a7d6e365507976388ea", null ]
+    ] ],
+    [ "mate_client_add_static_arg", "mate-client_8h.html#a2099755d731d5322a4d38b14b6c3060a", null ],
+    [ "mate_client_connect", "mate-client_8h.html#a767c3134aec166a03992390df511dd06", null ],
+    [ "mate_client_disable_master_connection", "mate-client_8h.html#a7ab69f36eba4c8e7bbf218c8213fa8a9", null ],
+    [ "mate_client_disconnect", "mate-client_8h.html#a0391a5c5f8878a887d4d36bda84fe473", null ],
+    [ "mate_client_flush", "mate-client_8h.html#aa943a5284d2c78b0a8c41f1febe83b58", null ],
+    [ "mate_client_get_config_prefix", "mate-client_8h.html#aecfad8cc8f7ea1d89da90c80008e6052", null ],
+    [ "mate_client_get_desktop_id", "mate-client_8h.html#af0da84eb7186cbdea1a2728f45ce99c4", null ],
+    [ "mate_client_get_flags", "mate-client_8h.html#a59c5115544612f4bbac85d10b36b9aa7", null ],
+    [ "mate_client_get_global_config_prefix", "mate-client_8h.html#a5a21caa170a8073585d85312f5c2c7e5", null ],
+    [ "mate_client_get_id", "mate-client_8h.html#a5972f6abb80176c6d12841097569a9cc", null ],
+    [ "mate_client_get_previous_id", "mate-client_8h.html#ac955e321996fe78ba66f6b3dabebceb7", null ],
+    [ "mate_client_get_type", "mate-client_8h.html#aaedda6bb0d5023ca46b05f80bc0bf639", null ],
+    [ "mate_client_module_info_get", "mate-client_8h.html#ae2cb432cdb658c2d69c87f25b11dcb5d", null ],
+    [ "mate_client_new", "mate-client_8h.html#aefef1fa1432ddd8cec58c7602e1e1c29", null ],
+    [ "mate_client_new_without_connection", "mate-client_8h.html#a1c25bd310b09a65c12e183f32e6b807f", null ],
+    [ "mate_client_request_interaction", "mate-client_8h.html#abfdcbb1954e6b8c8ffbc8a01f7581d9b", null ],
+    [ "mate_client_request_interaction_interp", "mate-client_8h.html#a5ecfd5b8537a26e0b95c9b47ed379704", null ],
+    [ "mate_client_request_phase_2", "mate-client_8h.html#a3bcf6c8d80d4b53560ee2c328365a006", null ],
+    [ "mate_client_request_save", "mate-client_8h.html#a19049c8958ef3f3aed779c29a7867867", null ],
+    [ "mate_client_save_any_dialog", "mate-client_8h.html#a9d32c205660595ccc746625bcd264095", null ],
+    [ "mate_client_save_error_dialog", "mate-client_8h.html#a1b3e7ad70148d1dc3c47db5223fba9d9", null ],
+    [ "mate_client_set_clone_command", "mate-client_8h.html#a318d747015deb0f7290fabefc22179ce", null ],
+    [ "mate_client_set_current_directory", "mate-client_8h.html#a006e5364b8cd44c8cdbcc053c1a9afd6", null ],
+    [ "mate_client_set_discard_command", "mate-client_8h.html#a9cb32d3c208853ae1c724854e167f503", null ],
+    [ "mate_client_set_environment", "mate-client_8h.html#a02d382f08864efabf1d800d418118f67", null ],
+    [ "mate_client_set_global_config_prefix", "mate-client_8h.html#a0d9a158ddbcc9754bcc5ddf0d8ea8490", null ],
+    [ "mate_client_set_id", "mate-client_8h.html#ac125602c762dcf9ad22dcfc24e3d594f", null ],
+    [ "mate_client_set_priority", "mate-client_8h.html#ab1a71bff0f72ab544e54efd29853ea8c", null ],
+    [ "mate_client_set_process_id", "mate-client_8h.html#a1c0c9e07eeda8e80657e1501719a53d0", null ],
+    [ "mate_client_set_program", "mate-client_8h.html#ac356b059bae0385ca8736abdbaf3be77", null ],
+    [ "mate_client_set_resign_command", "mate-client_8h.html#ae3a0b94f6b257a93152b3464bce5226f", null ],
+    [ "mate_client_set_restart_command", "mate-client_8h.html#a1bfcac2baa3a304eb78a404fe84494c7", null ],
+    [ "mate_client_set_restart_style", "mate-client_8h.html#a5eb6f46d0a820f212ba830ce94542e6b", null ],
+    [ "mate_client_set_shutdown_command", "mate-client_8h.html#a65600e5f63db20f8ce55a1f67e5c9fc5", null ],
+    [ "mate_client_set_user_id", "mate-client_8h.html#a961d527f5ad12dce625e808577b34c88", null ],
+    [ "mate_interaction_key_return", "mate-client_8h.html#acd645f81a3fec74f6b03601c9803f7b9", null ],
+    [ "mate_master_client", "mate-client_8h.html#afcb158f1dabfc2f145699940b19010df", null ]
+];

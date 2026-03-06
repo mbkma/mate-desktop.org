@@ -1,0 +1,26 @@
+var pulse_backend_8c =
+[
+    [ "BACKEND_FLAGS", "pulse-backend_8c.html#a873e1822393cefc53f77f6d0f0801a41", null ],
+    [ "BACKEND_NAME", "pulse-backend_8c.html#a4ca088faea50dba1b9dd8b16964030c3", null ],
+    [ "BACKEND_PRIORITY", "pulse-backend_8c.html#afe5ba9a81409c06d4733e7864c7f3aa2", null ],
+    [ "PULSE_APP_ICON", "pulse-backend_8c.html#ae756eb853b563426e56abe905bf9b8a2", null ],
+    [ "PULSE_APP_ID", "pulse-backend_8c.html#a52265095285378f7e6bfa8c7613d730e", null ],
+    [ "PULSE_APP_NAME", "pulse-backend_8c.html#a184eaf1c6eb872d79081ef3f9205c2a9", null ],
+    [ "PULSE_APP_VERSION", "pulse-backend_8c.html#a84822ab0e6f4c4be2a2caa21ca886c06", null ],
+    [ "PULSE_CHANGE_STATE", "pulse-backend_8c.html#a5138b6d07cb1623dae2c7261a824743f", null ],
+    [ "PULSE_GET_DEFAULT_SINK", "pulse-backend_8c.html#a87899a40ee385bc2d4b37585086dc4cd", null ],
+    [ "PULSE_GET_DEFAULT_SOURCE", "pulse-backend_8c.html#a022b351f1101d17befcfcb32f4181605", null ],
+    [ "PULSE_GET_HANGING", "pulse-backend_8c.html#a3c0a81f70fba19de8d94b852782dd59d", null ],
+    [ "PULSE_GET_PENDING_SINK", "pulse-backend_8c.html#ada113a2dd53b3d6f72967b4f1b80b44e", null ],
+    [ "PULSE_GET_PENDING_SOURCE", "pulse-backend_8c.html#a0b9bfd3a1589110ddd686f429618d448", null ],
+    [ "PULSE_SET_DEFAULT_SINK", "pulse-backend_8c.html#aa2e41d4e42edd3a188367dcc45854831", null ],
+    [ "PULSE_SET_DEFAULT_SOURCE", "pulse-backend_8c.html#abec52f3b7b44b3c8b9b9d083efb6aae0", null ],
+    [ "PULSE_SET_HANGING", "pulse-backend_8c.html#acd8163bf056a56b5d7b7e68a4d2fcceb", null ],
+    [ "PULSE_SET_PENDING_SINK", "pulse-backend_8c.html#a1e51a43bc39f9087dccfd1c827c5527d", null ],
+    [ "PULSE_SET_PENDING_SINK_NULL", "pulse-backend_8c.html#a855b6c0f5928f219ac02f488475db73b", null ],
+    [ "PULSE_SET_PENDING_SOURCE", "pulse-backend_8c.html#a5b35586d21c8e0fc895f61759dd35fa5", null ],
+    [ "PULSE_SET_PENDING_SOURCE_NULL", "pulse-backend_8c.html#adfc53315731660514c669f9081fed326", null ],
+    [ "PULSE_UNSET_HANGING", "pulse-backend_8c.html#a056c69604f94e19d36e1d6b580958cd2", null ],
+    [ "backend_module_get_info", "pulse-backend_8c.html#ad370caaf471783b1b7fecf98ad4599d8", null ],
+    [ "backend_module_init", "pulse-backend_8c.html#a32aa95ef81ac2925eef0dfe8232fbf6a", null ]
+];

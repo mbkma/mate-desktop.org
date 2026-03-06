@@ -1,0 +1,27 @@
+var mate_dialog_8c =
+[
+    [ "MATE_STOCK_BUTTON_PADDING", "mate-dialog_8c.html#a85befb88a5d1d3e315c7bbaf0fd08d21", null ],
+    [ "mate_dialog_append_button", "mate-dialog_8c.html#adb704d8807bfb38363cbdd2d2ba18063", null ],
+    [ "mate_dialog_append_button_with_pixmap", "mate-dialog_8c.html#aaaed7d3b23062fa48d22e8a6adc0eba8", null ],
+    [ "mate_dialog_append_buttons", "mate-dialog_8c.html#a3683a088c726f8abad3ad6dc6ec152c8", null ],
+    [ "mate_dialog_append_buttons_with_pixmaps", "mate-dialog_8c.html#a6b8bea3e000630534ef6cbad58b73f13", null ],
+    [ "mate_dialog_append_buttonsv", "mate-dialog_8c.html#a4f14608707bab8bbff26edfa0574d480", null ],
+    [ "mate_dialog_button_connect", "mate-dialog_8c.html#a34bb77366ba75493079b5e66268b1086", null ],
+    [ "mate_dialog_button_connect_object", "mate-dialog_8c.html#a22b4bc5c48c3f5ede4eb1af77b2c321b", null ],
+    [ "mate_dialog_close", "mate-dialog_8c.html#a7f0ba111a4b62ef781a576164b86f776", null ],
+    [ "mate_dialog_close_hides", "mate-dialog_8c.html#a70c617f3f31b5ca3368eed659f18e2bd", null ],
+    [ "mate_dialog_construct", "mate-dialog_8c.html#a780dfa0c51a07bc9c9e63d4de9601c2f", null ],
+    [ "mate_dialog_constructv", "mate-dialog_8c.html#a8db4dc7f21a0b93cc683fda4dff36627", null ],
+    [ "mate_dialog_editable_enters", "mate-dialog_8c.html#a0ead9e14ac573c770773c25eff1523b1", null ],
+    [ "mate_dialog_get_type", "mate-dialog_8c.html#a65c5016f9400215a02f750631c83edd9", null ],
+    [ "mate_dialog_grab_focus", "mate-dialog_8c.html#a8f10367139b7f0c9ddf8c9ea46a0d066", null ],
+    [ "mate_dialog_new", "mate-dialog_8c.html#a57a34bdf5d46a27c48543e355525e02f", null ],
+    [ "mate_dialog_newv", "mate-dialog_8c.html#ae5de10023669545631ccbebdf49d0e13", null ],
+    [ "mate_dialog_run", "mate-dialog_8c.html#ac73e4e20ee3e845c717a7e883845e542", null ],
+    [ "mate_dialog_run_and_close", "mate-dialog_8c.html#acd60e394c2ded37dd699a22424699aba", null ],
+    [ "mate_dialog_set_accelerator", "mate-dialog_8c.html#a48b5a4c4ca42bf16e0da3108901b670c", null ],
+    [ "mate_dialog_set_close", "mate-dialog_8c.html#ab7e38c5a42c48742b8694e46f5fb24c3", null ],
+    [ "mate_dialog_set_default", "mate-dialog_8c.html#a322cc9dda6d00c2853716c5ec096a67a", null ],
+    [ "mate_dialog_set_parent", "mate-dialog_8c.html#a49a6fe03675bcbadf50fffce136d87ba", null ],
+    [ "mate_dialog_set_sensitive", "mate-dialog_8c.html#a928986ae17da5638f39c109f867a945a", null ]
+];

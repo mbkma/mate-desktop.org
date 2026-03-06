@@ -1,0 +1,27 @@
+var eel_background_8c =
+[
+    [ "CLAMP_COLOR", "eel-background_8c.html#a4ef44071da09eb9c4d297e814a079d5c", null ],
+    [ "SATURATE", "eel-background_8c.html#a4ab526db08cd0410d2f034fe42057df9", null ],
+    [ "eel_background_draw", "eel-background_8c.html#a7b19e4a22255a99357ceff90f2da3a1b", null ],
+    [ "eel_background_get_color", "eel-background_8c.html#a8db8349b728c7c31dea54565ecc1809d", null ],
+    [ "eel_background_get_image_uri", "eel-background_8c.html#a0421a132f5a5cbbc0381db5d1acde9f8", null ],
+    [ "eel_background_is_dark", "eel-background_8c.html#ac668cea2042c429f25c7e41fc3315b35", null ],
+    [ "eel_background_is_desktop", "eel-background_8c.html#a492b7973cfe29ae0f8fdad9f74e588d8", null ],
+    [ "eel_background_is_set", "eel-background_8c.html#a058bbf162c0e085964d62bbab93583ae", null ],
+    [ "eel_background_new", "eel-background_8c.html#adc7dcac9aa7095b0d2b2921bdf1136c7", null ],
+    [ "eel_background_reset", "eel-background_8c.html#a0b3998e3dc3ea0274c79d2dd545d3052", null ],
+    [ "eel_background_set_active", "eel-background_8c.html#add3f120be84bd5145d5dca0f188d9a6b", null ],
+    [ "eel_background_set_color", "eel-background_8c.html#a114693a5c3b520a5d6cc9ccd9ff8dd74", null ],
+    [ "eel_background_set_desktop", "eel-background_8c.html#a9b252d29faa5e1722891cfce0e2cd092", null ],
+    [ "eel_background_set_dropped_color", "eel-background_8c.html#a1a333d003ac877afb4406c4b13108246", null ],
+    [ "eel_background_set_dropped_image", "eel-background_8c.html#a687cb02d3a3a16ce73e051d0b8c00ffb", null ],
+    [ "eel_background_set_image_uri", "eel-background_8c.html#af16c69bcaaf7a696bb63d8c8a3eaa212", null ],
+    [ "eel_background_set_use_base", "eel-background_8c.html#a04d3b0810c3e932ebd77c25866ac8b6d", null ],
+    [ "eel_bg_get_desktop_color", "eel-background_8c.html#acbb559f153221fd22a6cd2f5400d7140", null ],
+    [ "eel_bg_load_from_gsettings", "eel-background_8c.html#aba415cc5073f4acbbe4293e7c6c03c3f", null ],
+    [ "eel_bg_load_from_system_gsettings", "eel-background_8c.html#aef2cc1899cea5f51834342598ae5b699", null ],
+    [ "eel_bg_save_to_gsettings", "eel-background_8c.html#a73a40f77f7309a23d3b7a7071779d1d4", null ],
+    [ "eel_bg_set_placement", "eel-background_8c.html#a67935c93e188119da36def6a2b22d4a4", null ],
+    [ "eel_get_widget_background", "eel-background_8c.html#afa084d321dda2e84f8dbc63ff39bc7aa", null ],
+    [ "eel_self_check_background", "eel-background_8c.html#a1b03aa7f4c44841471921bdeda45710c", null ]
+];

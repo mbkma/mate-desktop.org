@@ -1,0 +1,25 @@
+var struct__MateThemeMetaInfo =
+[
+    [ "application_font", "struct__MateThemeMetaInfo.html#a5ba3fcd9733d6332f13cb0251d9e69d6", null ],
+    [ "background_image", "struct__MateThemeMetaInfo.html#a7f83f99165a5fd678280b65726d8fe32", null ],
+    [ "comment", "struct__MateThemeMetaInfo.html#a6db4f37e4f02270bc87c35d1847f650f", null ],
+    [ "cursor_size", "struct__MateThemeMetaInfo.html#a0fef06152373b3d9a639f3128e2b447d", null ],
+    [ "cursor_theme_name", "struct__MateThemeMetaInfo.html#aa2e4b918ffb18f591913eae467e04a81", null ],
+    [ "desktop_font", "struct__MateThemeMetaInfo.html#acc6ce3418e1484c39347d2ee77a8218e", null ],
+    [ "documents_font", "struct__MateThemeMetaInfo.html#ae754b471475792739703030270bb9849", null ],
+    [ "gtk_color_scheme", "struct__MateThemeMetaInfo.html#a4ba17a6b117653f1ebe05089c5ffe1d8", null ],
+    [ "gtk_theme_name", "struct__MateThemeMetaInfo.html#a1e069a630c55bb52373435cce725e852", null ],
+    [ "hidden", "struct__MateThemeMetaInfo.html#aa8aec0423eb5ede966ff8abc21fa8327", null ],
+    [ "icon_file", "struct__MateThemeMetaInfo.html#a8668b10d5947a7e052c3fc339e7ce416", null ],
+    [ "icon_theme_name", "struct__MateThemeMetaInfo.html#ae3f0582c4f37dbb1ee8119b27ce51922", null ],
+    [ "marco_theme_name", "struct__MateThemeMetaInfo.html#a35164582faa661acc9ccd329fc6e9604", null ],
+    [ "monospace_font", "struct__MateThemeMetaInfo.html#a73028c58c9430bfcc89db4f0e07a3713", null ],
+    [ "name", "struct__MateThemeMetaInfo.html#af64bf878ec051461076debb9c35ebc78", null ],
+    [ "notification_theme_name", "struct__MateThemeMetaInfo.html#ab64bba87666ed05c9902ac4fa44c405a", null ],
+    [ "path", "struct__MateThemeMetaInfo.html#a082b2ed386ecd67bb8a8545e10b44e6e", null ],
+    [ "priority", "struct__MateThemeMetaInfo.html#a3f51ac9aacea1337f5d60b409703ccfa", null ],
+    [ "readable_name", "struct__MateThemeMetaInfo.html#a4078fdecc02917650975c34cded3fb57", null ],
+    [ "sound_theme_name", "struct__MateThemeMetaInfo.html#ac12b8373e9fdb2e8633717187230ad85", null ],
+    [ "type", "struct__MateThemeMetaInfo.html#abcbcf6469d9efc026d5c25244a2ece6d", null ],
+    [ "windowtitle_font", "struct__MateThemeMetaInfo.html#a27ea5abbdec56f83615ba3945abf051d", null ]
+];

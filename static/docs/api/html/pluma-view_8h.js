@@ -1,0 +1,28 @@
+var pluma_view_8h =
+[
+    [ "_PlumaView", "struct__PlumaView.html", "struct__PlumaView" ],
+    [ "_PlumaViewClass", "struct__PlumaViewClass.html", "struct__PlumaViewClass" ],
+    [ "PLUMA_IS_VIEW", "pluma-view_8h.html#a769166915c6bde97f75afc7c0f878979", null ],
+    [ "PLUMA_IS_VIEW_CLASS", "pluma-view_8h.html#adc3cd6df670804f3f4905b3b80bffc12", null ],
+    [ "PLUMA_TYPE_VIEW", "pluma-view_8h.html#a3b039a131811623f94aff410a6082873", null ],
+    [ "PLUMA_VIEW", "pluma-view_8h.html#a6c2fda359954f4a9fee1f18f8a654775", null ],
+    [ "PLUMA_VIEW_CLASS", "pluma-view_8h.html#a70dd472cedde04f94cf02b35a0bc5513", null ],
+    [ "PLUMA_VIEW_GET_CLASS", "pluma-view_8h.html#acfb91c7b54c4f6af665504680a1a774b", null ],
+    [ "PlumaView", "pluma-view_8h.html#a696a511fea1c29e9417888d354a784c6", null ],
+    [ "PlumaViewClass", "pluma-view_8h.html#aa3f534dff1c01d20ce91d1fe812d7a80", null ],
+    [ "PlumaViewPrivate", "pluma-view_8h.html#a01796c1a350c550431ccd2840f538828", null ],
+    [ "pluma_override_font", "pluma-view_8h.html#ac12a55b9b23be050c48a692ab9af172f", null ],
+    [ "pluma_view_copy_clipboard", "pluma-view_8h.html#a0a5b8e5f9826f276103bd4d9b931eb54", null ],
+    [ "pluma_view_cut_clipboard", "pluma-view_8h.html#afffbd87b01694e064ff7f3c5a961f5c0", null ],
+    [ "pluma_view_delete_selection", "pluma-view_8h.html#a82857ad512df0355b2a67a5d844ac92c", null ],
+    [ "pluma_view_get_type", "pluma-view_8h.html#adbee021797a82f79dedbf02854ac4cfa", null ],
+    [ "pluma_view_invert_case_selection", "pluma-view_8h.html#a5a13f79b7eb28443e2852f83a4215c2d", null ],
+    [ "pluma_view_lower_case_selection", "pluma-view_8h.html#a2f4ca96d904fbfae4e4404da34903506", null ],
+    [ "pluma_view_new", "pluma-view_8h.html#a28b65302517275e2bdc6bf271599cd4f", null ],
+    [ "pluma_view_paste_clipboard", "pluma-view_8h.html#ab5ff38ab94aef5059c5a823fb6406def", null ],
+    [ "pluma_view_scroll_to_cursor", "pluma-view_8h.html#a55b308ceb7a87184c5ef1fd639057de0", null ],
+    [ "pluma_view_select_all", "pluma-view_8h.html#af1efe33cc5298883b6eae5ee49c5bbc5", null ],
+    [ "pluma_view_set_font", "pluma-view_8h.html#aaecd09c979223a435b2bed7398ab2348", null ],
+    [ "pluma_view_title_case_selection", "pluma-view_8h.html#aa454c16a62b9d22e9ae7c212b59cf181", null ],
+    [ "pluma_view_upper_case_selection", "pluma-view_8h.html#a61033c086dbb1730f1d0fe625e7d6b10", null ]
+];

@@ -1,0 +1,27 @@
+var clock_location_8c =
+[
+    [ "WEATHER_EMPTY_CODE", "clock-location_8c.html#a11ad78366bfc30ff3f8810fe095b48fd", null ],
+    [ "WEATHER_TIMEOUT_BASE", "clock-location_8c.html#a1216434fd37ea63291c06eeb921f2a13", null ],
+    [ "WEATHER_TIMEOUT_MAX", "clock-location_8c.html#a64cd9ba170b5cbf46ebda4a7d4b7a1c0", null ],
+    [ "clock_location_find_and_ref", "clock-location_8c.html#a058780efc3e9a80b084950cea45c4afe", null ],
+    [ "clock_location_get_city", "clock-location_8c.html#ad09edb4650a2111af01997c456e3f609", null ],
+    [ "clock_location_get_coords", "clock-location_8c.html#a6c5b3c31f95181647f7c4e374b3c39a4", null ],
+    [ "clock_location_get_display_name", "clock-location_8c.html#ae14ff35c4a270cf095ae156b8f470642", null ],
+    [ "clock_location_get_name", "clock-location_8c.html#a64d7693b4c964fac0151e613e3a4e60a", null ],
+    [ "clock_location_get_offset", "clock-location_8c.html#af8a0250c6fcbb2c716dc06c3e902b6e2", null ],
+    [ "clock_location_get_timezone", "clock-location_8c.html#a359bf8ce2d927e336a5826e04ebcae82", null ],
+    [ "clock_location_get_tzname", "clock-location_8c.html#ab51d470946a412041c344e3ab7b2af26", null ],
+    [ "clock_location_get_weather_code", "clock-location_8c.html#aef5ae67af08340419933c9aaa8139439", null ],
+    [ "clock_location_get_weather_info", "clock-location_8c.html#a24b3a77dce4b34464408b8616ee2aae8", null ],
+    [ "clock_location_is_current", "clock-location_8c.html#a0184d2836434615215beff872061d0b4", null ],
+    [ "clock_location_is_current_timezone", "clock-location_8c.html#a7f3a09e902db140ec26a7295c3f5c9f6", null ],
+    [ "clock_location_localtime", "clock-location_8c.html#a4c47a77b35cb47352a85f82d4615a26d", null ],
+    [ "clock_location_make_current", "clock-location_8c.html#a2383b89e08f8fe04d741323cbe405054", null ],
+    [ "clock_location_new", "clock-location_8c.html#a53e42efc6e3a4bdabc9b253e41e32887", null ],
+    [ "clock_location_set_city", "clock-location_8c.html#a030fa28bd26be5117e1266a8f5778706", null ],
+    [ "clock_location_set_coords", "clock-location_8c.html#a119311624d3ba099c33a50c65e4356a9", null ],
+    [ "clock_location_set_name", "clock-location_8c.html#ac7ec2c0085d8f7831c62b9cfe32c9682", null ],
+    [ "clock_location_set_timezone", "clock-location_8c.html#a86dfa7bb2b5511129aee5a970e3695d8", null ],
+    [ "clock_location_set_weather_code", "clock-location_8c.html#a6f9fcf43b665402acea2fae5dcd826c7", null ],
+    [ "clock_location_set_weather_prefs", "clock-location_8c.html#a2b120f1264b2b7cb0360345b2b2edfd7", null ]
+];

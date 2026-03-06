@@ -1,0 +1,25 @@
+var fr_init_8h =
+[
+    [ "ViewerData", "structViewerData.html", "structViewerData" ],
+    [ "CommandData", "structCommandData.html", "structCommandData" ],
+    [ "get_archive_filename_extension", "fr-init_8h.html#a3ace452ab6f62a89e662880686b1ddfa", null ],
+    [ "get_command_type_from_mime_type", "fr-init_8h.html#a9cd1bbe349dda6fea510f0e7d9862bea", null ],
+    [ "get_mime_type_from_extension", "fr-init_8h.html#a278d47d333274cb429cb833fe5d95ff9", null ],
+    [ "get_mime_type_index", "fr-init_8h.html#a6679fd167bcfc4a98cdceca5c0782766", null ],
+    [ "get_preferred_command_for_mime_type", "fr-init_8h.html#a7f825ab309af2432be52f969bc471f31", null ],
+    [ "initialize_data", "fr-init_8h.html#acec79f816050fc12cc71625681fda311", null ],
+    [ "release_data", "fr-init_8h.html#a4837149143baa54896188f66338edaad", null ],
+    [ "sort_mime_types_by_description", "fr-init_8h.html#a161c0741e4bd661a307897cc54b4a97d", null ],
+    [ "sort_mime_types_by_extension", "fr-init_8h.html#af7c76ffc0aa42bf08b8667cf4f1b7c51", null ],
+    [ "update_registered_commands_capabilities", "fr-init_8h.html#a5b224bce7bdde198108ac61451421c19", null ],
+    [ "CommandList", "fr-init_8h.html#af29a2fd2c73dd0935eca9caecb9f0894", null ],
+    [ "create_type", "fr-init_8h.html#a7491e9c991563bdfd2c730ff56d43f3a", null ],
+    [ "file_ext_type", "fr-init_8h.html#ad52cdd1940f8223799963a9c7e77c5a2", null ],
+    [ "ForceDirectoryCreation", "fr-init_8h.html#a4609d710998531a673f6f79d078e3b5f", null ],
+    [ "mime_type_desc", "fr-init_8h.html#a6a6c8ef023fc022751a21182aa08d54b", null ],
+    [ "open_type", "fr-init_8h.html#a943db0b05cbefe1b898e761b65b69086", null ],
+    [ "ProgramsCache", "fr-init_8h.html#a3577b35f8594a4043aacf2c4647d8734", null ],
+    [ "Registered_Commands", "fr-init_8h.html#a18162074dab91868ee08bc4cafe1f87d", null ],
+    [ "save_type", "fr-init_8h.html#affed2bbbc1fbae0720b1ab766b3c3949", null ],
+    [ "single_file_save_type", "fr-init_8h.html#a0b214ea2f546517157ea03c7524fbfca", null ]
+];

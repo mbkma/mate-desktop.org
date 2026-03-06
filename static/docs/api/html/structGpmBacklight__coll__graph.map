@@ -1,0 +1,41 @@
+<map id="GpmBacklight" name="GpmBacklight">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1168,131,1283,157"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="931,131,1091,157"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1105,141,1168,141,1168,147,1105,147"/>
+<area shape="rect" id="Node000003" href="$structGpmBrightness.html" title=" " alt="" coords="687,7,809,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="819,34,863,48,908,67,958,98,997,129,993,133,955,103,905,72,862,53,817,39"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="441,7,609,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="624,17,686,17,686,23,624,23"/>
+<area shape="rect" id="Node000005" href="$structGpmButton.html" title=" " alt="" coords="700,57,796,82"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="810,80,907,105,976,129,975,134,906,111,809,85"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="454,57,597,82"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="611,67,700,67,700,72,611,72"/>
+<area shape="rect" id="Node000007" href="$structGpmControl.html" title=" " alt="" coords="698,106,798,131"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="812,122,931,134,930,139,812,127"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="452,106,599,131"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="612,116,698,116,698,121,612,121"/>
+<area shape="rect" id="Node000009" href="$structGpmDpms.html" title=" " alt="" coords="703,155,793,181"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="807,166,906,161,953,154,954,159,907,167,807,171"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="457,155,594,181"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="608,165,702,165,702,171,608,171"/>
+<area shape="rect" id="Node000011" href="$structGpmIdle.html" title=" " alt="" coords="709,205,787,230"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="800,209,852,200,906,187,948,171,984,154,986,159,950,176,907,192,853,205,801,214"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="464,205,587,230"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="600,215,709,215,709,220,600,220"/>
+<area shape="rect" id="Node000013" href="$structEggIdletime.html" title=" " alt="" coords="233,155,333,181"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="348,178,464,202,463,207,346,183"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="7,155,153,181"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="168,165,233,165,233,171,168,171"/>
+<area shape="rect" id="Node000015" href="$structGpmLoad.html" title=" " alt="" coords="241,205,325,230"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="339,215,464,215,464,220,339,220"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="15,205,145,230"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="159,215,241,215,241,220,159,220"/>
+<area shape="rect" id="Node000017" href="$structGpmSession.html" title=" " alt="" coords="232,254,335,279"/>
+<area shape="poly" id="edge16_Node000012_Node000017" title=" " alt="" coords="348,251,463,227,464,232,349,256"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="5,254,155,279"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="168,264,232,264,232,269,168,269"/>
+<area shape="rect" id="Node000019" href="$structEggConsoleKit.html" title=" " alt="" coords="690,254,806,279"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="819,253,863,241,905,224,957,190,995,155,998,159,960,194,908,229,864,246,820,258"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="444,254,607,279"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="620,264,690,264,690,269,620,269"/>
+</map>

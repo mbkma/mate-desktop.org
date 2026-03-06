@@ -1,0 +1,26 @@
+var struct__LoadGraph =
+[
+    [ "allocated", "struct__LoadGraph.html#af835d71d3537acfc3d10d898a5fad330", null ],
+    [ "box", "struct__LoadGraph.html#a8408ff9860617a43ee28a99e1715a417", null ],
+    [ "colors", "struct__LoadGraph.html#a826fcf4e1245b72815fad557eb01d05a", null ],
+    [ "data", "struct__LoadGraph.html#ab27f262fb856567e765518e6f9d55bfe", null ],
+    [ "disp", "struct__LoadGraph.html#ab6b5bdc5d61f9fdf66c59bbab9bc9981", null ],
+    [ "draw_height", "struct__LoadGraph.html#a70d54ee667a3719ee0e9fb05bb352164", null ],
+    [ "draw_width", "struct__LoadGraph.html#afe97706ca395e3fe59683e3f3661f817", null ],
+    [ "frame", "struct__LoadGraph.html#a620117651f62c72138ab657d8c391a2c", null ],
+    [ "get_data", "struct__LoadGraph.html#a7317f70a160ff9baa7eb90d786aee9bc", null ],
+    [ "id", "struct__LoadGraph.html#af8a705a5781c1581d891d2f3508af091", null ],
+    [ "main_widget", "struct__LoadGraph.html#a169a0af6b8545b1d18fec7acd26fb5f8", null ],
+    [ "multiload", "struct__LoadGraph.html#a15ee514a94ff1f60d8adb99324f67aa9", null ],
+    [ "n", "struct__LoadGraph.html#a0f2eb8fc2f510af59dbfaac2f511a061", null ],
+    [ "name", "struct__LoadGraph.html#a630718fc58eb20e13c6d904c6a984ddf", null ],
+    [ "orient", "struct__LoadGraph.html#a9b8c5062582d600ca6a4d7d8addd3352", null ],
+    [ "pixel_size", "struct__LoadGraph.html#a058a27b77a91d7a8ea0c9d3c59ad9cbe", null ],
+    [ "pos", "struct__LoadGraph.html#ade8655ce4e8dc360000d0a400ab7dd23", null ],
+    [ "size", "struct__LoadGraph.html#a0cdd071fe4a11c8517d9534b42e53851", null ],
+    [ "speed", "struct__LoadGraph.html#adc61a4ca594b518cab5af5a584147704", null ],
+    [ "surface", "struct__LoadGraph.html#ae181e7b2baaf2b3db4fc4a050c6d12c0", null ],
+    [ "timer_index", "struct__LoadGraph.html#a0e6cd5c06a1874649ba083e922cfc32a", null ],
+    [ "tooltip_update", "struct__LoadGraph.html#a70e4fc38073e95a01238057405e8af35", null ],
+    [ "visible", "struct__LoadGraph.html#ab4cdbee9fe62577ce722c03f499b82b3", null ]
+];

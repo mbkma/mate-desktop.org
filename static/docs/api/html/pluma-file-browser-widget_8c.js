@@ -1,0 +1,25 @@
+var pluma_file_browser_widget_8c =
+[
+    [ "LOCATION_DATA_KEY", "pluma-file-browser-widget_8c.html#adcf0eb190e840a637fe6f7ab7fe9feb3", null ],
+    [ "XML_UI_FILE", "pluma-file-browser-widget_8c.html#aa782b9db183ed43eb15b6944728ee4f2", null ],
+    [ "SignalNode", "pluma-file-browser-widget_8c.html#a31f48babee0e878848bef9dbfedf4bac", null ],
+    [ "_pluma_file_browser_widget_register_type", "pluma-file-browser-widget_8c.html#a0e03938d6cea5989b9b4bfd38632d852", null ],
+    [ "G_DEFINE_DYNAMIC_TYPE_EXTENDED", "pluma-file-browser-widget_8c.html#a5806426a44fc8e9027700ba7baab7720", null ],
+    [ "pluma_file_browser_widget_add_filter", "pluma-file-browser-widget_8c.html#ad829301a7855dfd7a1577bb1edf97f3b", null ],
+    [ "pluma_file_browser_widget_get_bookmarks_store", "pluma-file-browser-widget_8c.html#aa9e44f1bb4a499e9f980e9790648c915", null ],
+    [ "pluma_file_browser_widget_get_browser_store", "pluma-file-browser-widget_8c.html#a2c9c126005ec048e5cf2193fe0269917", null ],
+    [ "pluma_file_browser_widget_get_browser_view", "pluma-file-browser-widget_8c.html#aa1746aa36c87ebc2af7052fc370ad929", null ],
+    [ "pluma_file_browser_widget_get_filter_entry", "pluma-file-browser-widget_8c.html#a9657aebfe744fb34d869e04c6a885d2c", null ],
+    [ "pluma_file_browser_widget_get_selected_directory", "pluma-file-browser-widget_8c.html#ad3a8e87e22f4ef464d3f1179d5d90966", null ],
+    [ "pluma_file_browser_widget_get_ui_manager", "pluma-file-browser-widget_8c.html#a74bc72a5d3579da416d9d6e9ac174409", null ],
+    [ "pluma_file_browser_widget_history_back", "pluma-file-browser-widget_8c.html#ac0d42905728a513421debceed31853d4", null ],
+    [ "pluma_file_browser_widget_history_forward", "pluma-file-browser-widget_8c.html#ae40bc4b5095e0935a063295d07290a98", null ],
+    [ "pluma_file_browser_widget_new", "pluma-file-browser-widget_8c.html#ad34e4b9aa24162580fd1cc49a5e12ad9", null ],
+    [ "pluma_file_browser_widget_refresh", "pluma-file-browser-widget_8c.html#a492ca26122a892ef91c01f91c56845e0", null ],
+    [ "pluma_file_browser_widget_remove_filter", "pluma-file-browser-widget_8c.html#a3e10b990ca925d30439c8d6794a47713", null ],
+    [ "pluma_file_browser_widget_set_filter_pattern", "pluma-file-browser-widget_8c.html#a8d99738db2c4b3b9d61b7cf8498bad49", null ],
+    [ "pluma_file_browser_widget_set_root", "pluma-file-browser-widget_8c.html#a96e4820d241e5ddc4462639ebe97e3ab", null ],
+    [ "pluma_file_browser_widget_set_root_and_virtual_root", "pluma-file-browser-widget_8c.html#a201bd4a90a2625ef6c3d89feeb5a4466", null ],
+    [ "pluma_file_browser_widget_show_bookmarks", "pluma-file-browser-widget_8c.html#a5173e9f1f8e453125468b3352bb83bac", null ],
+    [ "pluma_file_browser_widget_show_files", "pluma-file-browser-widget_8c.html#a010be6b100fe1fb494259445420d7d80", null ]
+];
