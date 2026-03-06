@@ -88,8 +88,8 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 MATE 1.22 的新特性 此版本包含大量關鍵錯誤修復和漏洞改進。一些重要的亮點包括：
 MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了大量的代碼重構工作。 顯示器小程序(display applet) 得到了全面的改進，從而允許直接在面板上對顯示器進行更好的控制。 定時器小程序(timer applet) 現在有了更好的鼠標交互 Wanda the Fish 現在可以在 HiDPI 顯示器上正常工作（魚圖像仍然是像素化的，保持其原始設計） 窗口管理器(marco) 對 metacity-themes 的支持升級到了版本3 我們還對窗口和桌面切換器進行了現代化改造，使其更具視覺吸引力 會話管理器(mate-session-manager) 現在可以正確地終止由 systemd 啓動的用戶進程。此外，應用程序可以在用戶選擇的延遲後自動啓動 我們已經將許多程序完全移植到了 Python 3，包括 MATE 之眼圖像查看器 和 python-caja 插件庫，以及 mate-menus 庫 文件管理器(caja) 現在可以設置爲長時間運行的文件操作顯示桌面通知 MATE 之眼圖像查看器(eom) 的側邊欄經過了重新設計，並對圖像元數據提供了更好的支持 文本編輯器(pluma) 中的標籤現在可以通過鍵盤快捷鍵和鼠標滾動進行切換 計算器 現在可以支持高達15個字符的精度，複製/粘貼支持也有所改進。 Engrama 增加了對幾種新壓縮格式的支持，以及新的暫停/重新啓動功能。 添加了一些新的快捷鍵，包括支持不同類型的多媒體鍵，如藍牙、WiFi、觸摸板和全局 Killswitch 等。 一系列內部管理任務已被處理： 我們的大多數項目現在已經從 dbus-glib 遷移到了 GDBus。 通過修復內存泄漏和編譯警告，我們已經改善了許多項目的穩定性。 爲了跟上最新版本的 GTK，我們刪除了舊的不推薦使用的代碼。 添加和更新了大量的文檔。 我們所有的項目現在都使用 Travis CI 來確保我們在一些主要發行版上進行乾淨的構建。 MATE Desktop 1.22 的組件可通過以下鏈接下載：">
 
-    <link rel="preload" href="/css/compiled/main.min.893726d788cb132232ed4cbf88ecc91fadecd73f19d15326520b0a31de23809f.css" as="style" integrity="sha256-iTcm14jLEyIy7Uy/iOzJH63s1z8Z0VMmUgsKMd4jgJ8=" />
-    <link href="/css/compiled/main.min.893726d788cb132232ed4cbf88ecc91fadecd73f19d15326520b0a31de23809f.css" rel="stylesheet" integrity="sha256-iTcm14jLEyIy7Uy/iOzJH63s1z8Z0VMmUgsKMd4jgJ8=" />
+    <link rel="preload" href="/css/compiled/main.min.6951a190cdd69d5910a81dd78e024cb492d89ff22d5dc3b67fd2d500208a3474.css" as="style" integrity="sha256-aVGhkM3WnVkQqB3XjgJMtJLYn/ItXcO2f9LVACCKNHQ=" />
+    <link href="/css/compiled/main.min.6951a190cdd69d5910a81dd78e024cb492d89ff22d5dc3b67fd2d500208a3474.css" rel="stylesheet" integrity="sha256-aVGhkM3WnVkQqB3XjgJMtJLYn/ItXcO2f9LVACCKNHQ=" />
 
   
 
@@ -98,32 +98,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 
 
 
-  <script>
-    
-
-    function setTheme(theme) {
-      document.documentElement.classList.remove("light", "dark");
-
-      if (theme !== "light" && theme !== "dark") {
-       theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      }
-
-      document.documentElement.classList.add(theme);
-      document.documentElement.style.colorScheme = theme;
-    }
-
-    setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'system')
-
-  </script>
-
-  <script>
-    
-
-    if (localStorage.getItem('banner-closed')) {
-      document.documentElement.style.setProperty("--hextra-banner-height", "0px");
-      document.documentElement.classList.add("hextra-banner-hidden");
-    }
-  </script>
+<script src="/js/main-head.min.94da6f95b126542222dab3a6e07ffefe1aaf63ec3ca555e827b58b80e7d3f0b7.js" integrity="sha256-lNpvlbEmVCIi2rOm4H/&#43;/hqvY&#43;w8pVXoJ7WLgOfT8Lc="></script>
 
   
   
@@ -152,7 +127,8 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 </style>
 
 </head>
-<body><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+<body>
+    <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">跳至內容</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
   <div
     class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
   ></div>
@@ -161,7 +137,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
     <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/zh-tw/">
     <img class="hx:mr-2 hx:block hx:dark:hidden" src="/images/mate.png" alt="Logo" height="40" width="40" />
     <img class="hx:mr-2 hx:hidden hx:dark:block" src="/images/mate.png" alt="Dark Logo" height="40" width="40" />
-    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none" title="MATE 桌面環境">MATE 桌面環境</span>
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">MATE 桌面環境</span>
 </a>
 <a
   title=""
@@ -203,8 +179,10 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
   <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
     <input
       placeholder="搜尋文檔..."
-      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      aria-label="搜尋文檔..."
+      class="hextra-search-input hx:hextra-focus-visible hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus-visible:bg-white hx:dark:focus-visible:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
       type="search"
+      autocomplete="off"
       value=""
       spellcheck="false"
     />
@@ -218,8 +196,10 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
   <div>
     <ul
       class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      aria-label="搜尋結果"
       style="transition: max-height 0.2s ease 0s;"
     ></ul>
+    <div class="hextra-search-status hx:sr-only" aria-live="polite" role="status"></div>
   </div>
 </div>
 
@@ -227,20 +207,21 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
   <path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path>
 </svg>
 <span class="hx:sr-only">GitHub</span>
-          </a><button type="button" aria-label="Menu" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+          </a><button type="button" aria-label="選單" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-2 hx:rounded-sm hx:p-2 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
   </nav>
 </div>
 
   <div class="hx:mx-auto hx:flex hextra-max-page-width">
     <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:hidden hx:xl:block">
-  
-  <div class="hx:px-4 hx:pt-4 hx:md:hidden">
-    <div class="hextra-search-wrapper hx:relative hx:md:w-64">
+    <div class="hx:px-4 hx:pt-4 hx:md:hidden">
+      <div class="hextra-search-wrapper hx:relative hx:md:w-64">
   <div class="hx:relative hx:flex hx:items-center hx:text-gray-900 hx:contrast-more:text-gray-800 hx:dark:text-gray-300 hx:contrast-more:dark:text-gray-300">
     <input
       placeholder="搜尋文檔..."
-      class="hextra-search-input hx:focus:hextra-focus hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus:bg-white hx:dark:focus:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
+      aria-label="搜尋文檔..."
+      class="hextra-search-input hx:hextra-focus-visible hx:block hx:w-full hx:appearance-none hx:rounded-lg hx:px-3 hx:py-2 hx:transition-colors hx:text-base hx:leading-tight hx:md:text-sm hx:bg-black/[.05] hx:dark:bg-gray-50/10 hx:focus-visible:bg-white hx:dark:focus-visible:bg-dark hx:placeholder:text-gray-500 hx:dark:placeholder:text-gray-400 hx:contrast-more:border hx:contrast-more:border-current"
       type="search"
+      autocomplete="off"
       value=""
       spellcheck="false"
     />
@@ -254,46 +235,245 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
   <div>
     <ul
       class="hextra-search-results hextra-scrollbar hx:hidden hx:border hx:border-gray-200 hx:bg-white hx:text-gray-100 hx:dark:border-neutral-800 hx:dark:bg-neutral-900 hx:absolute hx:top-full hx:z-20 hx:mt-2 hx:overflow-auto hx:overscroll-contain hx:rounded-xl hx:py-2.5 hx:shadow-xl hx:max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] hx:md:max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx:inset-x-0 hx:ltr:md:left-auto hx:rtl:md:right-auto hx:contrast-more:border hx:contrast-more:border-gray-900 hx:contrast-more:dark:border-gray-50 hx:w-screen hx:min-h-[100px] hx:max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      aria-label="搜尋結果"
       style="transition: max-height 0.2s ease 0s;"
     ></ul>
+    <div class="hextra-search-status hx:sr-only" aria-live="polite" role="status"></div>
   </div>
 </div>
 
-  </div>
-  <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    </div><div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
     <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
       
       
-          <li class="open"><a
-    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
-    href="/zh-tw/blog/"
-    
-  >Blogs
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></span>
-    </a><div class="hx:ltr:pr-0 hx:overflow-hidden">
-        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col open"><a
-    class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
-    href="/zh-tw/blog/2019-03-18-mate-1-22-released/"
-    
-  >MATE 1.22 發佈
+          <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/download/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">下載</span>
     </a>
-  
-    <ul class='hx:flex hx:flex-col hx:gap-1 hx:relative hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:dark:before:bg-neutral-800 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:pr-3 hx:rtl:before:right-0 hx:ltr:ml-3 hx:rtl:mr-3'><li>
-              <a
-                href="#mate-122-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >MATE 1.22 的新特性</a>
-            </li>
-          <li>
-              <a
-                href="#%e8%ae%8a%e6%9b%b4%e6%97%a5%e8%aa%8c"
-                class="hx:flex hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [word-break:break-word] hx:cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:contrast-more:border hx:gap-2 hx:before:opacity-25 hx:before:content-['#'] hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:text-gray-900 hx:contrast-more:dark:text-gray-50 hx:contrast-more:border-transparent hx:contrast-more:hover:border-gray-900 hx:contrast-more:dark:hover:border-gray-50"
-              >變更日誌</a>
-            </li>
-          </ul>
-  
+  </div></li>
+          <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">文件</span>
+    </a>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="切換章節" aria-expanded="false"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+  </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/getting-started/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Getting Started</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/installation/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Installation</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/configuration/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Configuration</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/applications/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Applications</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/troubleshooting/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Troubleshooting</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/docs/faq/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">FAQ</span>
+    </a>
+  </div>
+              
+            </li></ul>
+      </div></li>
+          <li class="open"><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">部落格</span>
+    </a>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="切換章節" aria-expanded="true"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+  </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/2024-02-27-mate-1-28-released/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.28 released</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/2021-08-08-mate-1-26-released/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.26 released</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/2020-02-10-mate-1-24-released/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.24 released</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/2019-03-18-mate-1-22-released/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.22 released</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/2018-02-07-mate-1-20-released/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.20 released</span>
+    </a>
+  </div>
+              
+            </li><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/blog/2017-03-13-mate-1-18-released/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.18 released</span>
+    </a>
+  </div>
+              
+            </li></ul>
+      </div></li>
+          <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/about/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">關於</span>
+    </a>
+  </div></li>
+          <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/community/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">社群</span>
+    </a>
+  </div></li>
+          <li class=""><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:ltr:pr-8 hx:rtl:pl-8
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/releases/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Releases</span>
+    </a>
+      <button type="button" class="hextra-sidebar-collapsible-button hx:absolute hx:top-1/2 hx:-translate-y-1/2 hx:ltr:right-2 hx:rtl:left-2 hx:shrink-0 hx:cursor-pointer hx:p-0 hx:text-gray-500 hx:dark:text-neutral-400 hx:group-hover:text-gray-900 hx:dark:group-hover:text-gray-50 hx:group-data-[active=true]:text-primary-800 hx:group-data-[active=true]:dark:text-primary-600 hx:hextra-focus-visible-inset" aria-label="切換章節" aria-expanded="false"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:h-[18px] hx:min-w-[18px] hx:rounded-xs hx:p-0.5 hx:hover:bg-gray-800/5 hx:dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx:origin-center hx:transition-transform hx:rtl:-rotate-180"></path></svg></button>
+  </div><div class="hextra-sidebar-children hx:ltr:pr-0 hx:rtl:pl-0 hx:overflow-hidden">
+        <ul class='hx:relative hx:flex hx:flex-col hx:gap-1 hx:before:absolute hx:before:inset-y-1 hx:before:w-px hx:before:bg-gray-200 hx:before:content-[""] hx:ltr:ml-3 hx:ltr:pl-3 hx:ltr:before:left-0 hx:rtl:mr-3 hx:rtl:pr-3 hx:rtl:before:right-0 hx:dark:before:bg-neutral-800'><li class="hx:flex hx:flex-col "><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none]
+      hx:hextra-focus-visible-inset
+        hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/releases/1/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">MATE 1.24</span>
+    </a>
+  </div>
               
             </li></ul>
       </div></li>
@@ -310,83 +490,95 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
       class="hextra-language-switcher hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:grow"
       type="button"
       aria-label="切換語言"
+      aria-expanded="false"
+      aria-haspopup="menu"
     >
       <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>繁體中文</span></div>
     </button>
     <ul
-      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-md hx:ring-1 hx:ring-black/5 hx:bg-white hx:py-1 hx:text-sm hx:shadow-lg hx:dark:ring-white/20 hx:dark:bg-neutral-800"
+      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
       style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+      role="menu"
     >
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/de/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Deutsch</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/es/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Español</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/it/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Italiano</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/ja/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >日本語</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/bg/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Български</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/ca/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Català</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/zh-cn/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >简体中文</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/zh-tw/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >繁體中文<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
         </li>
       </ul>
@@ -398,6 +590,8 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
     class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
     type="button"
     aria-label="切換主題"
+    aria-expanded="false"
+    aria-haspopup="menu"
   >
     <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
   <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
@@ -405,202 +599,216 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 </div>
   </button>
   <ul
-    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-md hx:ring-1 hx:ring-black/5 hx:bg-white hx:py-1 hx:text-sm hx:shadow-lg hx:dark:ring-white/20 hx:dark:bg-neutral-800"
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
     data-theme="light"
+    role="menu"
   >
-    <li class="hx:flex hx:flex-col">
-      <p
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
         data-item="light"
-        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
       >
         淺色
          <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-      </p>
+      </button>
     </li>
-    <li class="hx:flex hx:flex-col">
-      <p
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
         data-item="dark"
-        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
       >
         深色
          <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-      </p>
+      </button>
     </li>
-    <li class="hx:flex hx:flex-col">
-      <p
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
         data-item="system"
-        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
       >
-        System
+        系統
          <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-      </p>
+      </button>
     </li>
   </ul>
-</div></div></aside>
+</div>
+</div></aside>
     
-<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="table of contents">
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="目錄">
     <div class="hextra-scrollbar hx:sticky hx:top-16 hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4"><p class="hx:mb-4 hx:font-semibold hx:tracking-tight">此頁上</p><ul>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-122-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7">MATE 1.22 的新特性
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-122-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7">MATE 1.22 的新特性
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:font-medium hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#%e8%ae%8a%e6%9b%b4%e6%97%a5%e8%aa%8c">變更日誌
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#%e8%ae%8a%e6%9b%b4%e6%97%a5%e8%aa%8c">變更日誌
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#atril">atril
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#atril">atril
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#caja">caja
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#caja">caja
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#caja-dropbox">caja-dropbox
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#caja-dropbox">caja-dropbox
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#caja-extensions">caja-extensions
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#caja-extensions">caja-extensions
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#engrampa">engrampa
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#engrampa">engrampa
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#eom">eom
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#eom">eom
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#libmatekbd">libmatekbd
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#libmatekbd">libmatekbd
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#libmatemixer">libmatemixer
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#libmatemixer">libmatemixer
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#libmateweather">libmateweather
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#libmateweather">libmateweather
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#marco">marco
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#marco">marco
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-applets">mate-applets
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-applets">mate-applets
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-backgrounds">mate-backgrounds
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-backgrounds">mate-backgrounds
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-calc">mate-calc
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-calc">mate-calc
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-common">mate-common
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-common">mate-common
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-control-center">mate-control-center
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-control-center">mate-control-center
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-desktop">mate-desktop
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-desktop">mate-desktop
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-icon-theme">mate-icon-theme
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-icon-theme">mate-icon-theme
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-indicator-applet">mate-indicator-applet
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-indicator-applet">mate-indicator-applet
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-media">mate-media
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-media">mate-media
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-menus">mate-menus
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-menus">mate-menus
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-netbook">mate-netbook
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-netbook">mate-netbook
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-notification-daemon">mate-notification-daemon
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-notification-daemon">mate-notification-daemon
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-panel">mate-panel
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-panel">mate-panel
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-polkit">mate-polkit
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-polkit">mate-polkit
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-power-manager">mate-power-manager
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-power-manager">mate-power-manager
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-screensaver">mate-screensaver
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-screensaver">mate-screensaver
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-sensors-applet">mate-sensors-applet
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-sensors-applet">mate-sensors-applet
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-session-manager">mate-session-manager
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-session-manager">mate-session-manager
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-settings-daemon">mate-settings-daemon
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-settings-daemon">mate-settings-daemon
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-system-monitor">mate-system-monitor
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-system-monitor">mate-system-monitor
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-terminal">mate-terminal
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-terminal">mate-terminal
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-user-guide">mate-user-guide
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-user-guide">mate-user-guide
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-user-share">mate-user-share
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-user-share">mate-user-share
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mate-utils">mate-utils
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mate-utils">mate-utils
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#mozo">mozo
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#mozo">mozo
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#pluma">pluma
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#pluma">pluma
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
-        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:break-words" href="#python-caja">python-caja
+        <a class="hx:ltr:pl-4 hx:rtl:pr-4 hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#python-caja">python-caja
         </a>
       </li></ul>
       <div class="hx:mt-8 hx:border-t hx:bg-white hx:pt-8 hx:shadow-[0_-12px_16px_white] hx:dark:bg-dark hx:dark:shadow-[0_-12px_16px_#111] hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
-        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+        <button id="backToTop" tabindex="-1" onClick="scrollUp();" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
           <span>返回頂部</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
           </svg>
         </button>
@@ -610,14 +818,19 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 
 
     <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-      <main class="hx:w-full hx:min-w-0 hx:max-w-6xl hx:px-6 hx:pt-4 hx:md:px-12">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
         <div class="hx:mt-1.5 hx:flex hx:items-center hx:gap-1 hx:overflow-hidden hx:text-sm hx:text-gray-500 hx:dark:text-gray-400 hx:contrast-more:text-current">
         <div class="hx:whitespace-nowrap hx:transition-colors hx:min-w-[24px] hx:overflow-hidden hx:text-ellipsis hx:hover:text-gray-900 hx:dark:hover:text-gray-100">
-          <a href="/zh-tw/blog/">Blogs</a>
+          <a href="/zh-tw/blog/" class="hx:inline-block hx:rounded-sm hx:hextra-focus-visible-inset">Blogs</a>
         </div><svg class="hx:w-3.5 hx:shrink-0 hx:rtl:-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx:whitespace-nowrap hx:transition-colors hx:font-medium hx:text-gray-700 hx:contrast-more:font-bold hx:contrast-more:text-current hx:dark:text-gray-100 hx:contrast-more:dark:text-current">MATE 1.22 發佈</div>
   </div>
 
-        <h1 class="hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">MATE 1.22 發佈</h1>
+        
+        <div class="hx:flex hx:flex-col hx:sm:flex-row hx:items-start hx:sm:items-center hx:sm:justify-between hx:gap-4 hx:mt-2">
+          <h1 class="hx:mb-0 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">MATE 1.22 發佈</h1>
+          
+        </div>
+        
         <div class="hx:mt-4 hx:mb-16 hx:text-gray-500 hx:dark:text-gray-400 hx:text-sm hx:flex hx:items-center hx:flex-wrap hx:gap-y-2"><span class="hx:mr-1">March 18, 2019</span><span class="hx:mx-1">·</span><a
                   
                   class="hx:group hx:inline-flex hx:items-center hx:text-current hx:gap-x-1.5 hx:mx-1"
@@ -628,7 +841,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
           <p>經過大約一年的開發，MATE Desktop 團隊終於發佈了 MATE 1.22。非常感謝幫助實現這一目標的所有貢獻者。</p>
 <p><img src="/images/blog/about-mate-1.22.zh_tw.png" alt="about"  loading="lazy" /></p>
 <h2>MATE 1.22 的新特性<span class="hx:absolute hx:-mt-20" id="mate-122-的新特性"></span>
-    <a href="#mate-122-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>此版本包含大量關鍵錯誤修復和漏洞改進。一些重要的亮點包括：</p>
+    <a href="#mate-122-%e7%9a%84%e6%96%b0%e7%89%b9%e6%80%a7" class="subheading-anchor" aria-label="此章節的永久連結"></a></h2><p>此版本包含大量關鍵錯誤修復和漏洞改進。一些重要的亮點包括：</p>
 <ul>
 <li><strong>MATE面板(mate-panel)</strong> 增加了對 <a href="https://wayland.freedesktop.org/"target="_blank" rel="noopener">Wayland</a> 顯示後端的支持，爲此做了大量的代碼重構工作。
 <ul>
@@ -665,9 +878,9 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://pub.mate-desktop.org/releases/1.22/"target="_blank" rel="noopener">https://pub.mate-desktop.org/releases/1.22/</a></li>
 </ul>
 <h2>變更日誌<span class="hx:absolute hx:-mt-20" id="變更日誌"></span>
-    <a href="#%e8%ae%8a%e6%9b%b4%e6%97%a5%e8%aa%8c" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>以下是各個組件的詳細更改記錄。</p>
+    <a href="#%e8%ae%8a%e6%9b%b4%e6%97%a5%e8%aa%8c" class="subheading-anchor" aria-label="此章節的永久連結"></a></h2><p>以下是各個組件的詳細更改記錄。</p>
 <h3>atril<span class="hx:absolute hx:-mt-20" id="atril"></span>
-    <a href="#atril" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#atril" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/atril/commit/9031100"target="_blank" rel="noopener">9031100</a> Add update-authors.pl script which helps to update atril.about</li>
 <li><a href="https://github.com/mate-desktop/atril/commit/a67e572"target="_blank" rel="noopener">a67e572</a> Read authors (updated) from atril.about gresource</li>
 <li><a href="https://github.com/mate-desktop/atril/commit/9a4748b"target="_blank" rel="noopener">9a4748b</a> Enable Travis CI for all branches</li>
@@ -831,7 +1044,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/atril/commit/42e6a5f"target="_blank" rel="noopener">42e6a5f</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>caja<span class="hx:absolute hx:-mt-20" id="caja"></span>
-    <a href="#caja" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#caja" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/caja/commit/601c853"target="_blank" rel="noopener">601c853</a> eel-gdk-pixbuf-extensions: Fix division by zero</li>
 <li><a href="https://github.com/mate-desktop/caja/commit/6e6c9c6"target="_blank" rel="noopener">6e6c9c6</a> caja-file: Fix use of memory after it is freed</li>
 <li><a href="https://github.com/mate-desktop/caja/commit/0bd2d81"target="_blank" rel="noopener">0bd2d81</a> caja-icon-container: Fix use of memory after it is freed</li>
@@ -1065,7 +1278,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/caja/commit/dabd62d"target="_blank" rel="noopener">dabd62d</a> fix backgrounds and emblems dialog content rendering</li>
 </ul>
 <h3>caja-dropbox<span class="hx:absolute hx:-mt-20" id="caja-dropbox"></span>
-    <a href="#caja-dropbox" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#caja-dropbox" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/caja-dropbox/commit/5fdcb17"target="_blank" rel="noopener">5fdcb17</a> Use CAJA_EXTENSION_DIR_SYS to save and show system caja extension dir</li>
 <li><a href="https://github.com/mate-desktop/caja-dropbox/commit/fdc25dc"target="_blank" rel="noopener">fdc25dc</a> show full path of caja-extension-dir</li>
 <li><a href="https://github.com/mate-desktop/caja-dropbox/commit/6d281bc"target="_blank" rel="noopener">6d281bc</a> fix distcheck about caja_extension_dir</li>
@@ -1097,7 +1310,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/caja-dropbox/commit/394578f"target="_blank" rel="noopener">394578f</a> pre-bump version</li>
 </ul>
 <h3>caja-extensions<span class="hx:absolute hx:-mt-20" id="caja-extensions"></span>
-    <a href="#caja-extensions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#caja-extensions" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/caja-extensions/commit/2e1a77b"target="_blank" rel="noopener">2e1a77b</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/caja-extensions/commit/dde037d"target="_blank" rel="noopener">dde037d</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/caja-extensions/commit/512e1c8"target="_blank" rel="noopener">512e1c8</a> require caja &gt;= 1.21.3</li>
@@ -1113,7 +1326,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/caja-extensions/commit/7db6ed1"target="_blank" rel="noopener">7db6ed1</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>engrampa<span class="hx:absolute hx:-mt-20" id="engrampa"></span>
-    <a href="#engrampa" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#engrampa" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/engrampa/commit/8e1c290"target="_blank" rel="noopener">8e1c290</a> fr-process: Fix memory leak</li>
 <li><a href="https://github.com/mate-desktop/engrampa/commit/84db3ea"target="_blank" rel="noopener">84db3ea</a> add Travis-CI support</li>
 <li><a href="https://github.com/mate-desktop/engrampa/commit/29b4e67"target="_blank" rel="noopener">29b4e67</a> Tx: syn with fixed translations from transifex</li>
@@ -1179,7 +1392,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/engrampa/commit/2e9c1a1"target="_blank" rel="noopener">2e9c1a1</a> avoid deprecated GtkStock</li>
 </ul>
 <h3>eom<span class="hx:absolute hx:-mt-20" id="eom"></span>
-    <a href="#eom" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#eom" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/eom/commit/905f8b7"target="_blank" rel="noopener">905f8b7</a> Help: Fix version to 1.22 and update pot file</li>
 <li><a href="https://github.com/mate-desktop/eom/commit/bc141be"target="_blank" rel="noopener">bc141be</a> help: update copyright</li>
 <li><a href="https://github.com/mate-desktop/eom/commit/bbcca8d"target="_blank" rel="noopener">bbcca8d</a> Upgrade the manual to docbook 5.0</li>
@@ -1335,7 +1548,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/eom/commit/ae3e2a4"target="_blank" rel="noopener">ae3e2a4</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>libmatekbd<span class="hx:absolute hx:-mt-20" id="libmatekbd"></span>
-    <a href="#libmatekbd" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#libmatekbd" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/libmatekbd/commit/7e730f0"target="_blank" rel="noopener">7e730f0</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/libmatekbd/commit/e6e0234"target="_blank" rel="noopener">e6e0234</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/libmatekbd/commit/dc04e96"target="_blank" rel="noopener">dc04e96</a> rename g_strv_equal to matekbd_strv_equal</li>
@@ -1351,7 +1564,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/libmatekbd/commit/90dba6e"target="_blank" rel="noopener">90dba6e</a> Use gdk screen resolution for font in keyboard status notification icon, to get correct scaling on HiPDI displays.</li>
 </ul>
 <h3>libmatemixer<span class="hx:absolute hx:-mt-20" id="libmatemixer"></span>
-    <a href="#libmatemixer" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#libmatemixer" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/libmatemixer/commit/4d4520c"target="_blank" rel="noopener">4d4520c</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/libmatemixer/commit/8653076"target="_blank" rel="noopener">8653076</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/libmatemixer/commit/ae50369"target="_blank" rel="noopener">ae50369</a> add missing po file</li>
@@ -1364,7 +1577,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/libmatemixer/commit/8afb1b3"target="_blank" rel="noopener">8afb1b3</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>libmateweather<span class="hx:absolute hx:-mt-20" id="libmateweather"></span>
-    <a href="#libmateweather" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#libmateweather" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/libmateweather/commit/33a4dd5"target="_blank" rel="noopener">33a4dd5</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/libmateweather/commit/78e3339"target="_blank" rel="noopener">78e3339</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/libmateweather/commit/c0e6a9b"target="_blank" rel="noopener">c0e6a9b</a> disable deprecation warnings for distcheck</li>
@@ -1388,7 +1601,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/libmateweather/commit/11cd30b"target="_blank" rel="noopener">11cd30b</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>marco<span class="hx:absolute hx:-mt-20" id="marco"></span>
-    <a href="#marco" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#marco" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/marco/commit/369338f"target="_blank" rel="noopener">369338f</a> Do not judge whether the window is decorated or not</li>
 <li><a href="https://github.com/mate-desktop/marco/commit/230f96c"target="_blank" rel="noopener">230f96c</a> screen: Fix use of memory after it is freed</li>
 <li><a href="https://github.com/mate-desktop/marco/commit/76a5cff"target="_blank" rel="noopener">76a5cff</a> [Security] Use &lsquo;g_strlcpy&rsquo; instead of &lsquo;strcpy&rsquo;</li>
@@ -1467,7 +1680,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/marco/commit/79f998c"target="_blank" rel="noopener">79f998c</a> Fixes move_to_center moving window between monitors</li>
 </ul>
 <h3>mate-applets<span class="hx:absolute hx:-mt-20" id="mate-applets"></span>
-    <a href="#mate-applets" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-applets" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-applets/commit/cb5ffc11"target="_blank" rel="noopener">cb5ffc11</a> add Travis-CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-applets/commit/c6259e49"target="_blank" rel="noopener">c6259e49</a> Issues reported by translators</li>
 <li><a href="https://github.com/mate-desktop/mate-applets/commit/3b5b33a0"target="_blank" rel="noopener">3b5b33a0</a> multiload: ignore privileged mount points</li>
@@ -1562,14 +1775,14 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-applets/commit/607d5228"target="_blank" rel="noopener">607d5228</a> avoid deprecated GtkStock</li>
 </ul>
 <h3>mate-backgrounds<span class="hx:absolute hx:-mt-20" id="mate-backgrounds"></span>
-    <a href="#mate-backgrounds" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-backgrounds" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-backgrounds/commit/d741473"target="_blank" rel="noopener">d741473</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-backgrounds/commit/c3f5eb6"target="_blank" rel="noopener">c3f5eb6</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-backgrounds/commit/556fd12"target="_blank" rel="noopener">556fd12</a> transifex: set minimum_perc and type in config file</li>
 <li><a href="https://github.com/mate-desktop/mate-backgrounds/commit/1e960de"target="_blank" rel="noopener">1e960de</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-calc<span class="hx:absolute hx:-mt-20" id="mate-calc"></span>
-    <a href="#mate-calc" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-calc" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-calc/commit/5600c81"target="_blank" rel="noopener">5600c81</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-calc/commit/98f0b9b"target="_blank" rel="noopener">98f0b9b</a> math-window: update copyright year to 2019</li>
 <li><a href="https://github.com/mate-desktop/mate-calc/commit/bfb8cd7"target="_blank" rel="noopener">bfb8cd7</a> Tx: update resource for transifex server</li>
@@ -1625,11 +1838,11 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-calc/commit/a64b304"target="_blank" rel="noopener">a64b304</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-common<span class="hx:absolute hx:-mt-20" id="mate-common"></span>
-    <a href="#mate-common" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-common" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-common/commit/a89ecee"target="_blank" rel="noopener">a89ecee</a> initial travis ci</li>
 </ul>
 <h3>mate-control-center<span class="hx:absolute hx:-mt-20" id="mate-control-center"></span>
-    <a href="#mate-control-center" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-control-center" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-control-center/commit/378becd"target="_blank" rel="noopener">378becd</a> yaml use lower boolean strings</li>
 <li><a href="https://github.com/mate-desktop/mate-control-center/commit/ed6353d"target="_blank" rel="noopener">ed6353d</a> add installation instructions</li>
 <li><a href="https://github.com/mate-desktop/mate-control-center/commit/f0ec6cb"target="_blank" rel="noopener">f0ec6cb</a> Travis: use github links for downloading tarballs</li>
@@ -1740,7 +1953,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-control-center/commit/61cde4b"target="_blank" rel="noopener">61cde4b</a> transifex: add type PO to client config file</li>
 </ul>
 <h3>mate-desktop<span class="hx:absolute hx:-mt-20" id="mate-desktop"></span>
-    <a href="#mate-desktop" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-desktop" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-desktop/commit/137fd47"target="_blank" rel="noopener">137fd47</a> [Security] Use &lsquo;g_strlcpy&rsquo; instead of &lsquo;strcpy&rsquo;</li>
 <li><a href="https://github.com/mate-desktop/mate-desktop/commit/3233410"target="_blank" rel="noopener">3233410</a> [Security] test-ditem: Use &lsquo;g_strlcat&rsquo; instead of &lsquo;strcat&rsquo;</li>
 <li><a href="https://github.com/mate-desktop/mate-desktop/commit/b6bcccf"target="_blank" rel="noopener">b6bcccf</a> Prepare for docker-build 0.1.1 merge into master</li>
@@ -1792,7 +2005,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-desktop/commit/2059f58"target="_blank" rel="noopener">2059f58</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-icon-theme<span class="hx:absolute hx:-mt-20" id="mate-icon-theme"></span>
-    <a href="#mate-icon-theme" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-icon-theme" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-icon-theme/commit/eee2a8b"target="_blank" rel="noopener">eee2a8b</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-icon-theme/commit/3e72529"target="_blank" rel="noopener">3e72529</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-icon-theme/commit/5823371"target="_blank" rel="noopener">5823371</a> pre-bump version</li>
@@ -1813,7 +2026,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-icon-theme/commit/d454349"target="_blank" rel="noopener">d454349</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-indicator-applet<span class="hx:absolute hx:-mt-20" id="mate-indicator-applet"></span>
-    <a href="#mate-indicator-applet" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-indicator-applet" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-indicator-applet/commit/b8e45a5"target="_blank" rel="noopener">b8e45a5</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-indicator-applet/commit/e9b6aee"target="_blank" rel="noopener">e9b6aee</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-indicator-applet/commit/eeed710"target="_blank" rel="noopener">eeed710</a> Make translatable the copyright in about dialog</li>
@@ -1830,7 +2043,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-indicator-applet/commit/b51b549"target="_blank" rel="noopener">b51b549</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-media<span class="hx:absolute hx:-mt-20" id="mate-media"></span>
-    <a href="#mate-media" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-media" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-media/commit/ad1f495"target="_blank" rel="noopener">ad1f495</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-media/commit/b7d4d16"target="_blank" rel="noopener">b7d4d16</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-media/commit/f64fbb2"target="_blank" rel="noopener">f64fbb2</a> disable deprecation warnings for distcheck</li>
@@ -1845,7 +2058,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-media/commit/12539df"target="_blank" rel="noopener">12539df</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-menus<span class="hx:absolute hx:-mt-20" id="mate-menus"></span>
-    <a href="#mate-menus" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-menus" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-menus/commit/4bca866"target="_blank" rel="noopener">4bca866</a> Adjust the packages installation location</li>
 <li><a href="https://github.com/mate-desktop/mate-menus/commit/6226441"target="_blank" rel="noopener">6226441</a> enable for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-menus/commit/9d1f626"target="_blank" rel="noopener">9d1f626</a> initial travis-ci support</li>
@@ -1869,7 +2082,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-menus/commit/df38513"target="_blank" rel="noopener">df38513</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-netbook<span class="hx:absolute hx:-mt-20" id="mate-netbook"></span>
-    <a href="#mate-netbook" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-netbook" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-netbook/commit/288eaed"target="_blank" rel="noopener">288eaed</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-netbook/commit/7df6fe1"target="_blank" rel="noopener">7df6fe1</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-netbook/commit/92910b6"target="_blank" rel="noopener">92910b6</a> avoid deprecated &lsquo;gdk_error_trap_push/pop/pop_ignored&rsquo; and &lsquo;gdk_flush&rsquo;</li>
@@ -1883,7 +2096,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-netbook/commit/6c25a73"target="_blank" rel="noopener">6c25a73</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-notification-daemon<span class="hx:absolute hx:-mt-20" id="mate-notification-daemon"></span>
-    <a href="#mate-notification-daemon" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-notification-daemon" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-notification-daemon/commit/e143ad5"target="_blank" rel="noopener">e143ad5</a> Prepare for docker-build 0.1.1 merge into master</li>
 <li><a href="https://github.com/mate-desktop/mate-notification-daemon/commit/ae121af"target="_blank" rel="noopener">ae121af</a> update to use archlinux/base image</li>
 <li><a href="https://github.com/mate-desktop/mate-notification-daemon/commit/fa47df1"target="_blank" rel="noopener">fa47df1</a> Update to use the latest docker-build script.</li>
@@ -1909,7 +2122,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-notification-daemon/commit/23fe34b"target="_blank" rel="noopener">23fe34b</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-panel<span class="hx:absolute hx:-mt-20" id="mate-panel"></span>
-    <a href="#mate-panel" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-panel" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-panel/commit/1db7d2a"target="_blank" rel="noopener">1db7d2a</a> Ensure proper translation of the about dialog title</li>
 <li><a href="https://github.com/mate-desktop/mate-panel/commit/84c0435"target="_blank" rel="noopener">84c0435</a> Prepare for docker-build 0.1.1 merge into master</li>
 <li><a href="https://github.com/mate-desktop/mate-panel/commit/e0efbab"target="_blank" rel="noopener">e0efbab</a> Make translatable the copyright in about dialog</li>
@@ -2143,7 +2356,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-panel/commit/5ea3006"target="_blank" rel="noopener">5ea3006</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-polkit<span class="hx:absolute hx:-mt-20" id="mate-polkit"></span>
-    <a href="#mate-polkit" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-polkit" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-polkit/commit/22de40a"target="_blank" rel="noopener">22de40a</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-polkit/commit/fbbd4e9"target="_blank" rel="noopener">fbbd4e9</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-polkit/commit/5485eeb"target="_blank" rel="noopener">5485eeb</a> disable deprecation warnings for distcheck</li>
@@ -2155,7 +2368,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-polkit/commit/264fefb"target="_blank" rel="noopener">264fefb</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-power-manager<span class="hx:absolute hx:-mt-20" id="mate-power-manager"></span>
-    <a href="#mate-power-manager" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-power-manager" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-power-manager/commit/fd27849"target="_blank" rel="noopener">fd27849</a> add require packages for archlinux</li>
 <li><a href="https://github.com/mate-desktop/mate-power-manager/commit/a763309"target="_blank" rel="noopener">a763309</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-power-manager/commit/5dca0aa"target="_blank" rel="noopener">5dca0aa</a> use libtool generated during build instead of external one</li>
@@ -2194,7 +2407,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-power-manager/commit/96eeaff"target="_blank" rel="noopener">96eeaff</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-screensaver<span class="hx:absolute hx:-mt-20" id="mate-screensaver"></span>
-    <a href="#mate-screensaver" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-screensaver" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-screensaver/commit/f8bc365"target="_blank" rel="noopener">f8bc365</a> Tx: sync with transifex</li>
 <li><a href="https://github.com/mate-desktop/mate-screensaver/commit/cd70be5"target="_blank" rel="noopener">cd70be5</a> let distcheck pass on debian</li>
 <li><a href="https://github.com/mate-desktop/mate-screensaver/commit/feca97f"target="_blank" rel="noopener">feca97f</a> Initialize Travis CI support</li>
@@ -2226,7 +2439,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-screensaver/commit/f94dbce"target="_blank" rel="noopener">f94dbce</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-sensors-applet<span class="hx:absolute hx:-mt-20" id="mate-sensors-applet"></span>
-    <a href="#mate-sensors-applet" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-sensors-applet" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-sensors-applet/commit/707bf62"target="_blank" rel="noopener">707bf62</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-sensors-applet/commit/4ea376a"target="_blank" rel="noopener">4ea376a</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-sensors-applet/commit/2628689"target="_blank" rel="noopener">2628689</a> Make translatable the copyright in about dialog</li>
@@ -2257,7 +2470,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-sensors-applet/commit/34edb53"target="_blank" rel="noopener">34edb53</a> prefs-dialog: use hscrollbar-policy GTK_POLICY_NEVER</li>
 </ul>
 <h3>mate-session-manager<span class="hx:absolute hx:-mt-20" id="mate-session-manager"></span>
-    <a href="#mate-session-manager" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-session-manager" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-session-manager/commit/7f0a938"target="_blank" rel="noopener">7f0a938</a> Guard against missing systemd</li>
 <li><a href="https://github.com/mate-desktop/mate-session-manager/commit/9e97673"target="_blank" rel="noopener">9e97673</a> Prepare for docker-build 0.1.1 merge into master</li>
 <li><a href="https://github.com/mate-desktop/mate-session-manager/commit/2dede6b"target="_blank" rel="noopener">2dede6b</a> use archlinux/base image</li>
@@ -2308,7 +2521,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-session-manager/commit/9555a9c"target="_blank" rel="noopener">9555a9c</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-settings-daemon<span class="hx:absolute hx:-mt-20" id="mate-settings-daemon"></span>
-    <a href="#mate-settings-daemon" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-settings-daemon" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-settings-daemon/commit/8c36ec4"target="_blank" rel="noopener">8c36ec4</a> Prepare for docker-build 0.1.1 merge into master</li>
 <li><a href="https://github.com/mate-desktop/mate-settings-daemon/commit/631481c"target="_blank" rel="noopener">631481c</a> use debian.sh on master branch</li>
 <li><a href="https://github.com/mate-desktop/mate-settings-daemon/commit/5919cb0"target="_blank" rel="noopener">5919cb0</a> fixed make distcheck on debian</li>
@@ -2395,7 +2608,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-settings-daemon/commit/982a89b"target="_blank" rel="noopener">982a89b</a> Scale OSD size correctly on HiDPI displays (#212)</li>
 </ul>
 <h3>mate-system-monitor<span class="hx:absolute hx:-mt-20" id="mate-system-monitor"></span>
-    <a href="#mate-system-monitor" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-system-monitor" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-system-monitor/commit/ee025a6"target="_blank" rel="noopener">ee025a6</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-system-monitor/commit/0523541"target="_blank" rel="noopener">0523541</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-system-monitor/commit/2eec5c4"target="_blank" rel="noopener">2eec5c4</a> Ensure proper translation of the about dialog title</li>
@@ -2431,7 +2644,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-system-monitor/commit/892030f"target="_blank" rel="noopener">892030f</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-terminal<span class="hx:absolute hx:-mt-20" id="mate-terminal"></span>
-    <a href="#mate-terminal" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-terminal" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-terminal/commit/4bd3e7c"target="_blank" rel="noopener">4bd3e7c</a> Enable Travis CI for all branches</li>
 <li><a href="https://github.com/mate-desktop/mate-terminal/commit/b3ed723"target="_blank" rel="noopener">b3ed723</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-terminal/commit/d30504d"target="_blank" rel="noopener">d30504d</a> Remove unused files in help dir</li>
@@ -2478,7 +2691,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-terminal/commit/b84724d"target="_blank" rel="noopener">b84724d</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-user-guide<span class="hx:absolute hx:-mt-20" id="mate-user-guide"></span>
-    <a href="#mate-user-guide" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-user-guide" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-user-guide/commit/a1f2703"target="_blank" rel="noopener">a1f2703</a> Fix version to 1.22</li>
 <li><a href="https://github.com/mate-desktop/mate-user-guide/commit/25ffe55"target="_blank" rel="noopener">25ffe55</a> help: update copyright</li>
 <li><a href="https://github.com/mate-desktop/mate-user-guide/commit/ee873c2"target="_blank" rel="noopener">ee873c2</a> Upgrade the manual to docbook 5.0</li>
@@ -2547,7 +2760,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-user-guide/commit/446141e"target="_blank" rel="noopener">446141e</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-user-share<span class="hx:absolute hx:-mt-20" id="mate-user-share"></span>
-    <a href="#mate-user-share" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-user-share" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-user-share/commit/626657a"target="_blank" rel="noopener">626657a</a> Use the same legal.xml file</li>
 <li><a href="https://github.com/mate-desktop/mate-user-share/commit/b52e5e5"target="_blank" rel="noopener">b52e5e5</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-user-share/commit/064c2ba"target="_blank" rel="noopener">064c2ba</a> caja-share-bar: avoid deprecated &lsquo;g_type_class_add_private&rsquo;</li>
@@ -2565,7 +2778,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-user-share/commit/6bfba36"target="_blank" rel="noopener">6bfba36</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mate-utils<span class="hx:absolute hx:-mt-20" id="mate-utils"></span>
-    <a href="#mate-utils" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mate-utils" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mate-utils/commit/0dd612b"target="_blank" rel="noopener">0dd612b</a> Initialize Travis CI support</li>
 <li><a href="https://github.com/mate-desktop/mate-utils/commit/f2c1234"target="_blank" rel="noopener">f2c1234</a> Make translatable the copyright in about dialog</li>
 <li><a href="https://github.com/mate-desktop/mate-utils/commit/879a0cf"target="_blank" rel="noopener">879a0cf</a> enable translations for  ca@valencia again</li>
@@ -2609,7 +2822,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mate-utils/commit/9a7733d"target="_blank" rel="noopener">9a7733d</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>mozo<span class="hx:absolute hx:-mt-20" id="mozo"></span>
-    <a href="#mozo" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#mozo" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/mozo/commit/ffe5e71"target="_blank" rel="noopener">ffe5e71</a> Fix creating new menus and items</li>
 <li><a href="https://github.com/mate-desktop/mozo/commit/30caedb"target="_blank" rel="noopener">30caedb</a> Fix moving a menu corrupting the menu</li>
 <li><a href="https://github.com/mate-desktop/mozo/commit/ae480e9"target="_blank" rel="noopener">ae480e9</a> Fix menu entry can not move</li>
@@ -2629,7 +2842,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/mozo/commit/dbae4a6"target="_blank" rel="noopener">dbae4a6</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>pluma<span class="hx:absolute hx:-mt-20" id="pluma"></span>
-    <a href="#pluma" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#pluma" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/pluma/commit/cfe2c64"target="_blank" rel="noopener">cfe2c64</a> help: update copyright</li>
 <li><a href="https://github.com/mate-desktop/pluma/commit/396fe5a"target="_blank" rel="noopener">396fe5a</a> Use ITS in docbook article info, validate with dbits schemas</li>
 <li><a href="https://github.com/mate-desktop/pluma/commit/82638e2"target="_blank" rel="noopener">82638e2</a> Upgrade the manual to docbook 5.0</li>
@@ -2765,7 +2978,7 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 <li><a href="https://github.com/mate-desktop/pluma/commit/5b67394"target="_blank" rel="noopener">5b67394</a> transifex: set minimum_perc and type in config file</li>
 </ul>
 <h3>python-caja<span class="hx:absolute hx:-mt-20" id="python-caja"></span>
-    <a href="#python-caja" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+    <a href="#python-caja" class="subheading-anchor" aria-label="此章節的永久連結"></a></h3><ul>
 <li><a href="https://github.com/mate-desktop/python-caja/commit/00f7530"target="_blank" rel="noopener">00f7530</a> fix distcheck when use python3</li>
 <li><a href="https://github.com/mate-desktop/python-caja/commit/25a6c2a"target="_blank" rel="noopener">25a6c2a</a> use PYTHON=python3 environment variable for building</li>
 <li><a href="https://github.com/mate-desktop/python-caja/commit/fd8e389"target="_blank" rel="noopener">fd8e389</a> Enable Travis CI for all branches</li>
@@ -2791,7 +3004,8 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
 </ul>
 
         </div>
-    <div class="hx:mt-12 hx:mb-8 hx:block hx:text-xs hx:text-gray-500 hx:ltr:text-right hx:rtl:text-left hx:dark:text-gray-400">最後更新於 <time datetime="2019-03-18T00:00:00.000Z">March 18, 2019</time></div></main>
+    <div class="hx:mt-12 hx:mb-8 hx:block hx:text-xs hx:text-gray-500 hx:ltr:text-right hx:rtl:text-left hx:dark:text-gray-400">
+      最後更新於 <time datetime="2019-03-18T00:00:00.000Z">March 18, 2019</time></div></main>
     </article>
   </div>
 
@@ -2803,83 +3017,95 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
       class="hextra-language-switcher hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:grow"
       type="button"
       aria-label="切換語言"
+      aria-expanded="false"
+      aria-haspopup="menu"
     >
       <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg><span>繁體中文</span></div>
     </button>
     <ul
-      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-md hx:ring-1 hx:ring-black/5 hx:bg-white hx:py-1 hx:text-sm hx:shadow-lg hx:dark:ring-white/20 hx:dark:bg-neutral-800"
+      class="hextra-language-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
       style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+      role="menu"
     >
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >English</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/de/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Deutsch</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/es/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Español</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/it/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Italiano</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/ja/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >日本語</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/bg/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Български</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/ca/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >Català</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/zh-cn/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >简体中文</a>
         </li>
       
         
-        <li class="hx:flex hx:flex-col">
+        <li role="none" class="hx:flex hx:flex-col">
           <a
             href="/zh-tw/blog/2019-03-18-mate-1-22-released/"
-            class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+            role="menuitem"
+            class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
           >繁體中文<span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span></a>
         </li>
       </ul>
@@ -2891,46 +3117,62 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
     class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
     type="button"
     aria-label="切換主題"
+    aria-expanded="false"
+    aria-haspopup="menu"
   >
     <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">淺色</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">深色</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
   <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
 </svg>
-<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">系統</span></div>
   </button>
   <ul
-    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-md hx:ring-1 hx:ring-black/5 hx:bg-white hx:py-1 hx:text-sm hx:shadow-lg hx:dark:ring-white/20 hx:dark:bg-neutral-800"
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
     style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
     data-theme="light"
+    role="menu"
   >
-    <li class="hx:flex hx:flex-col">
-      <p
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
         data-item="light"
-        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
       >
         淺色
          <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-      </p>
+      </button>
     </li>
-    <li class="hx:flex hx:flex-col">
-      <p
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
         data-item="dark"
-        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
       >
         深色
          <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-      </p>
+      </button>
     </li>
-    <li class="hx:flex hx:flex-col">
-      <p
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
         data-item="system"
-        class="hx:text-gray-800 hx:dark:text-gray-100 hx:hover:bg-primary-50 hx:hover:text-primary-600 hx:hover:dark:bg-primary-500/10 hx:hover:dark:text-primary-600 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
       >
-        System
+        系統
          <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
-      </p>
+      </button>
     </li>
   </ul>
-</div></div><hr class="hx:border-gray-200 hx:dark:border-neutral-800" /><div class="hextra-custom-footer hextra-max-footer-width hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+</div>
+</div><hr class="hx:border-gray-200 hx:dark:border-neutral-800" /><div class="hextra-custom-footer hextra-max-footer-width hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
       class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
     >
       <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
@@ -2938,8 +3180,8 @@ MATE面板(mate-panel) 增加了對 Wayland 顯示後端的支持，爲此做了
   </a></div><div class="hx:mt-6 hx:text-xs">© 2025 MATE 桌面團隊</div></div>
     </div></footer>
     
-    <script defer src="/js/main.min.81d098b8e24a542f4f79c7d1c435306b88eb8601f3ac58cc729c299e2d21ad3e.js" integrity="sha256-gdCYuOJKVC9PecfRxDUwa4jrhgHzrFjMcpwpni0hrT4="></script>
+    <script defer src="/js/main.min.cbffe606b79d26f8813b28319505bce709860d948f62aae13c168f03af5872c6.js" integrity="sha256-y//mBredJviBOygxlQW85wmGDZSPYqrhPBaPA69YcsY="></script>
 <script defer src="/js/flexsearch.433e941a8a573ebb9931fc16fc75266ab6b93f569ac2fb4f3dc66882e0416f4c.js" integrity="sha256-Qz6UGopXPruZMfwW/HUmara5P1aawvtPPcZoguBBb0w=" crossorigin="anonymous"></script>
-        <script defer src="/zh-tw.search.min.6a68bf940ae98d5eb92f0a7dae815cbf276a8eb90f164efba8c679344971913b.js" integrity="sha256-ami/lArpjV65Lwp9roFcvydqjrkPFk77qMZ5NElxkTs="></script>
+        <script defer src="/zh-tw.search.min.a4a4e2fb7541fa613ac215926cc899747a88a061a788791134b23c6722205a78.js" integrity="sha256-pKTi&#43;3VB&#43;mE6whWSbMiZdHqIoGGniHkRNLI8ZyIgWng="></script>
   </body>
 </html>

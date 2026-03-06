@@ -27,7 +27,7 @@
         &lt;p&gt;今回のリリースには通常よりも少し時間がかかったかもしれませんが、18ヶ月の開発期間を経て、MATE 1.26 がリリースできたことをうれしく思います。このリリース実現するために協力していただいたすべての貢献者のみなさんに感謝します。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mate-desktop.org/images/blog/about-mate-1.26.ja.png&#34; alt=&#34;MATE About dialog&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;h2&gt;MATE 1.26 で新しくなったこと&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-126-で新しくなったこと&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-126-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;今回のリリースの課題は、MATE デスクトップに新しい機能を追加すると同時に、私たち全員が知っていて愛している、ルック＆フィールを維持することでした。追加されたすべての機能は確かに非常にエキサイティングですが、私たちは多数のバグ修正、コードベースの最新化、パフォーマンスの最適化を行うことを忘れませんでした。&lt;/p&gt;
+    &lt;a href=&#34;#mate-126-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;今回のリリースの課題は、MATE デスクトップに新しい機能を追加すると同時に、私たち全員が知っていて愛している、ルック＆フィールを維持することでした。追加されたすべての機能は確かに非常にエキサイティングですが、私たちは多数のバグ修正、コードベースの最新化、パフォーマンスの最適化を行うことを忘れませんでした。&lt;/p&gt;
 &lt;p&gt;MATE デスクトップ 1.26 の主な変更点は次のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;私たちは、&lt;a href=&#34;https://wayland.freedesktop.org/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wayland&lt;/a&gt;では Atril、システムモニタ、Pluma、端末、その他デスクトップのコンポーネントをサポートしています。さらに、電卓と端末は &lt;a href=&#34;https://mesonbuild.com/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Meson&lt;/a&gt; でビルドできるようになりました。&lt;/li&gt;
@@ -68,9 +68,9 @@
 &lt;li&gt;&lt;a href=&#34;https://pub.mate-desktop.org/releases/1.26/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://pub.mate-desktop.org/releases/1.26/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;詳細情報&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;詳細情報&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e8%a9%b3%e7%b4%b0%e6%83%85%e5%a0%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;詳細は以下のとおりです。&lt;/p&gt;
+    &lt;a href=&#34;#%e8%a9%b3%e7%b4%b0%e6%83%85%e5%a0%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;詳細は以下のとおりです。&lt;/p&gt;
 &lt;h3&gt;Atril 文書ビューア&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;atril-文書ビューア&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#atril-%e6%96%87%e6%9b%b8%e3%83%93%e3%83%a5%e3%83%bc%e3%82%a2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#atril-%e6%96%87%e6%9b%b8%e3%83%93%e3%83%a5%e3%83%bc%e3%82%a2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ヘルプは完全に書き直されました (TeX ファイルを大量に作成する場合は、必ず新しい synctex のセクションを参照してください)&lt;/li&gt;
 &lt;li&gt;ev-window.c: EvWebView は必要な場合のみ作成されます&lt;/li&gt;
 &lt;li&gt;ev-sidebar-links: ページの逆リンク検索を最適化 (サイドバーのリンクの非常に低速な線形検索が、特別なバイナリツリー内の検索に置き換えられました)&lt;/li&gt;
@@ -84,7 +84,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/atril/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/atril/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Caja ファイルマネージャ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-ファイルマネージャ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;作成時刻の情報をリストの列に追加できるようになりました。&lt;/li&gt;
 &lt;li&gt;デスクトップ上でアイコンのロック位置をブロックする設定を追加&lt;/li&gt;
 &lt;li&gt;ドラッグ＆ドロップ時のファイルシステムのチェック機能向上&lt;/li&gt;
@@ -102,20 +102,20 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次の changelog にあります: &lt;a href=&#34;https://github.com/mate-desktop/caja/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/caja/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;caja-actions&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-actions&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-actions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-actions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;今回のリリースで初登場です。&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext へ移行&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;caja-dropbox&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-dropbox&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-dropbox&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-dropbox&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i18n のサポートを追加&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次の changelog にあります: &lt;a href=&#34;https://github.com/mate-desktop/caja-dropbox/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/caja-dropbox/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;caja-extensions&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-extensions&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-extensions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-extensions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gksu: 新しいスレッドでコマンドを実行しません&lt;/li&gt;
 &lt;li&gt;glade ファイルで gtk+ 3.22 が必要&lt;/li&gt;
 &lt;li&gt;sendto: E メール送信用の evolution コマンドを修正&lt;/li&gt;
@@ -126,7 +126,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次の changelog にあります: &lt;a href=&#34;https://github.com/mate-desktop/caja-extensions/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/caja-extensions/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Engrampa 書庫マネージャ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;engrampa-書庫マネージャ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#engrampa-%e6%9b%b8%e5%ba%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#engrampa-%e6%9b%b8%e5%ba%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;rar 6.00: アーカイブファイルの内容リストを暗号化ファイルリストに修正&lt;/li&gt;
 &lt;li&gt;電子書籍 (EPUB) のサポートを追加&lt;/li&gt;
 &lt;li&gt;ARC アーカイブのサポートを追加&lt;/li&gt;
@@ -137,7 +137,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次にあります：&lt;a href=&#34;https://github.com/mate-desktop/engrampa/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/engrampa/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;eom 画像ビューア&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;eom-画像ビューア&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#eom-%e7%94%bb%e5%83%8f%e3%83%93%e3%83%a5%e3%83%bc%e3%82%a2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#eom-%e7%94%bb%e5%83%8f%e3%83%93%e3%83%a5%e3%83%bc%e3%82%a2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ui ファイルのアップグレード&lt;/li&gt;
 &lt;li&gt;画像を移動するためにドラッグした時スクロールバーが確実に移動するようにしました&lt;/li&gt;
 &lt;li&gt;ダイアログウィンドウでのタブスクロールのサポートを追加&lt;/li&gt;
@@ -147,19 +147,19 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は、&lt;a href=&#34;https://github.com/mate-desktop/eom/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/eom/commits/master/&lt;/a&gt; に掲載しています。&lt;/p&gt;
 &lt;h3&gt;libmatekbd&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatekbd&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatekbd&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatekbd&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;キーボードレイアウト表示のキー名のフォントサイズを小さくしました。&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/libmatekbd/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/libmatekbd/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;libmatemixer&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatemixer&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatemixer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatemixer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;alsa: udev サポートの追加&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/libmatemixer/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/libmatemixer/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;libmateweather お天気 MATE&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmateweather-お天気-mate&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmateweather-%e3%81%8a%e5%a4%a9%e6%b0%97-mate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmateweather-%e3%81%8a%e5%a4%a9%e6%b0%97-mate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ベルリン・テーゲル空港を外しました。&lt;/li&gt;
 &lt;li&gt;ブラジルの 2 都市を追加&lt;/li&gt;
 &lt;li&gt;タイの都市を更新&lt;/li&gt;
@@ -167,7 +167,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです &lt;a href=&#34;https://github.com/mate-desktop/libmateweather/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/libmateweather/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Marco ウィンドウマネージャ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;marco-ウィンドウマネージャ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#marco-%e3%82%a6%e3%82%a3%e3%83%b3%e3%83%89%e3%82%a6%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#marco-%e3%82%a6%e3%82%a3%e3%83%b3%e3%83%89%e3%82%a6%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;window: _GNOME_WM_STRUT_AREA のサポートを追加&lt;/li&gt;
 &lt;li&gt;screen: _GTK_WORKAREAS_Dn のサポートを追加&lt;/li&gt;
 &lt;li&gt;window: 左右に並べて表示されたウィンドウにシャドウをレンダリングしません。&lt;/li&gt;
@@ -183,7 +183,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/marco/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/marco/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-applets MATE アプレット&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-applets-mate-アプレット&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-applets-mate-%e3%82%a2%e3%83%97%e3%83%ac%e3%83%83%e3%83%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-applets-mate-%e3%82%a2%e3%83%97%e3%83%ac%e3%83%83%e3%83%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;netspeed: ダウンしているインターフェイスを選択できます。&lt;/li&gt;
 &lt;li&gt;netspeed: デバイスの詳細ダイアログにすべての IPv6 アドレスを表示&lt;/li&gt;
 &lt;li&gt;netspeed: 有効な場合、すべての IP アドレスをツールヒントに表示&lt;/li&gt;
@@ -199,13 +199,13 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります： &lt;a href=&#34;https://github.com/mate-desktop/mate-applets/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-applets/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-backgrounds 背景&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-backgrounds-背景&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-backgrounds-%e8%83%8c%e6%99%af&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-backgrounds-%e8%83%8c%e6%99%af&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;新しい &amp;lsquo;Something slowly gets clear&amp;rsquo; というゾウの壁紙&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-backgrounds/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-backgrounds/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-calc 電卓&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-calc-電卓&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-calc-%e9%9b%bb%e5%8d%93&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-calc-%e9%9b%bb%e5%8d%93&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;GNU MPFR/MPC ライブラリへ移植&lt;/li&gt;
 &lt;li&gt;オプションを追加して、最近の計算履歴を表示&lt;/li&gt;
 &lt;li&gt;キーボードショートカットを使用して履歴をナビゲート (Alt+Up)/(Alt+Down)&lt;/li&gt;
@@ -222,12 +222,12 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-calc/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-calc/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-common&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-common&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-common&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-common&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-common/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-common/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-control-center コントロールセンタ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-control-center-コントロールセンタ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-control-center-%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e3%82%bb%e3%83%b3%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-control-center-%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e3%82%bb%e3%83%b3%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;windows-applet: 新しく、Alt-Tab でウィンドウの境界表示と、トップタイリング（ウィンドウスナップ）許可のオプションを追加&lt;/li&gt;
 &lt;li&gt;windows-applet: 新しいコンポジットマネージャ・タブ&lt;/li&gt;
 &lt;li&gt;windows-applet: 新しいタイトルバーレイアウトオプション &amp;ldquo;left (メニューあり)&amp;rdquo; および &amp;ldquo;right (メニューなし)&amp;rdquo;&lt;/li&gt;
@@ -244,7 +244,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-control-center/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-control-center/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-desktop&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-desktop&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-desktop&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-desktop&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;a11y-keyboard: capslock-beep-enable gsetting の追加&lt;/li&gt;
 &lt;li&gt;サムネイルキャッシュの最大期間を設定します。&lt;/li&gt;
 &lt;li&gt;GLib 2.61.2+ の GTimeVal 非推奨警告を削除&lt;/li&gt;
@@ -253,19 +253,19 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-desktop/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-desktop/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-icon-theme&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-icon-theme&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-icon-theme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-icon-theme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;一部の png ファイルから実行ビットを削除します。&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-icon-theme/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-icon-theme/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-indicator-applet&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-indicator-applet&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-indicator-applet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-indicator-applet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;applet-main: GtkStock アイコンの置き換え&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-indicator-applet/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-indicator-applet/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-media&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-media&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-media&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-media&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ミュート/ミュート解除の checkmenuitem を imagemenuitem へ置き換え&lt;/li&gt;
 &lt;li&gt;panel-applet: スピーカーがマイクの横か上に表示されるようにします。&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
@@ -273,21 +273,21 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-media/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-media/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-menus MATE メニュー&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-menus-mate-メニュー&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-menus-mate-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-menus-mate-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;コレクション・メニューの追加&lt;/li&gt;
 &lt;li&gt;build: ネイティブ言語サポート (NLS) を無効にするオプション (&lt;code&gt;--disable-nls&lt;/code&gt;) を追加&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-menus/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-menus/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-netbook MATE ネットブック&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-netbook-mate-ネットブック&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-netbook-mate-%e3%83%8d%e3%83%83%e3%83%88%e3%83%96%e3%83%83%e3%82%af&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-netbook-mate-%e3%83%8d%e3%83%83%e3%83%88%e3%83%96%e3%83%83%e3%82%af&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mate-window: GtkStock アイコンの置き換え&lt;/li&gt;
 &lt;li&gt;mate-maximus-autostart.desktop: 非推奨のエンコード・キーを削除&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-netbook/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-netbook/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MATE 通知デーモン&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-通知デーモン&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-%e9%80%9a%e7%9f%a5%e3%83%87%e3%83%bc%e3%83%a2%e3%83%b3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-%e9%80%9a%e7%9f%a5%e3%83%87%e3%83%bc%e3%83%a2%e3%83%b3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Do Not Disturb アプレットの追加&lt;/li&gt;
 &lt;li&gt;最初の Wayland バックエンドを追加&lt;/li&gt;
 &lt;li&gt;通知の本文にハイパーリンクのサポートを追加&lt;/li&gt;
@@ -299,7 +299,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: at &lt;a href=&#34;https://github.com/mate-desktop/mate-notification-daemon/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-notification-daemon/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-panel MATE パネル&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-panel-mate-パネル&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-panel-mate-%e3%83%91%e3%83%8d%e3%83%ab&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-panel-mate-%e3%83%91%e3%83%8d%e3%83%ab&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;workspace-switcher: xmonad WM をサポート&lt;/li&gt;
 &lt;li&gt;場所メニューの最近使用した文書一覧を設定可能な長さにします。&lt;/li&gt;
 &lt;li&gt;ウィンドウリストにマウススクロールオプションの無効を追加&lt;/li&gt;
@@ -315,12 +315,12 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-panel/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-panel/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-polkit&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-polkit&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-polkit&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-polkit&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-polkit/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-polkit/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-power-manager MATE 電源管理&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-power-manager-mate-電源管理&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-power-manager-mate-%e9%9b%bb%e6%ba%90%e7%ae%a1%e7%90%86&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-power-manager-mate-%e9%9b%bb%e6%ba%90%e7%ae%a1%e7%90%86&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mate-power-preferences: キーボードの調光を有効にするオプションの追加&lt;/li&gt;
 &lt;li&gt;デフォルトを libgnome-keyring から libsecret へ切り替え&lt;/li&gt;
 &lt;li&gt;明るさの調整アプレット: スライドが UI を下に圧迫しないようにしました。&lt;/li&gt;
@@ -334,7 +334,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-power-manager/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-power-manager/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-screensaver スクリーンセーバ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-screensaver-スクリーンセーバ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-screensaver-%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%bb%e3%83%bc%e3%83%90&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-screensaver-%e3%82%b9%e3%82%af%e3%83%aa%e3%83%bc%e3%83%b3%e3%82%bb%e3%83%bc%e3%83%90&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ロック画面で日時の書式を変更できるようにしました。&lt;/li&gt;
 &lt;li&gt;パスワード入力時にパスワードエンブレムの表示/非表示を追加&lt;/li&gt;
 &lt;li&gt;mate-screensaver-preferences: ファイル選択ダイアログにロック画像のプレビューを表示&lt;/li&gt;
@@ -344,7 +344,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-screensaver/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-screensaver/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-sensors-applet センサーアプレット&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-sensors-applet-センサーアプレット&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-sensors-applet-%e3%82%bb%e3%83%b3%e3%82%b5%e3%83%bc%e3%82%a2%e3%83%97%e3%83%ac%e3%83%83%e3%83%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-sensors-applet-%e3%82%bb%e3%83%b3%e3%82%b5%e3%83%bc%e3%82%a2%e3%83%97%e3%83%ac%e3%83%83%e3%83%88&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;aticonfig プラグインの削除&lt;/li&gt;
 &lt;li&gt;sonypi-plugin.c: sonypi プラグインの GNU/Hurd への移植性を向上&lt;/li&gt;
 &lt;li&gt;libsensors-plugin: GRegex へ移植&lt;/li&gt;
@@ -352,7 +352,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-sensors-applet/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-sensors-applet/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MATE セッションマネージャ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-セッションマネージャ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-%e3%82%bb%e3%83%83%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;freedesktop のガイドラインに従って、隠しキーを使用した自動実行を無効にします。&lt;/li&gt;
 &lt;li&gt;mate-screensaver が使用できない場合、xscreensaver をサポートします。&lt;/li&gt;
 &lt;li&gt;GTK3 でのタブスクロールのサポートを追加&lt;/li&gt;
@@ -364,7 +364,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-session-manager/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-session-manager/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-settings-daemon&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-settings-daemon&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-settings-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-settings-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;xsettings: Qt HiDPI 環境設定の改善&lt;/li&gt;
 &lt;li&gt;a11y-keyboard: togglekeys-backend 設定のサポートを追加&lt;/li&gt;
 &lt;li&gt;&amp;ndash;without-libatspi オプションと色々なステータス行を追加&lt;/li&gt;
@@ -375,7 +375,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-settings-daemon/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-settings-daemon/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MATE システムモニタ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-システムモニタ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%83%a2%e3%83%8b%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0%e3%83%a2%e3%83%8b%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Wayland のサポート追加&lt;/li&gt;
 &lt;li&gt;GtkApplication へ移植&lt;/li&gt;
 &lt;li&gt;pretty-table: アプリケーションアイコンの取得に GIO を優先&lt;/li&gt;
@@ -385,7 +385,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-system-monitor/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-system-monitor/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MATE 端末&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-端末&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-%e7%ab%af%e6%9c%ab&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-%e7%ab%af%e6%9c%ab&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;デスクトップファイルの検証警告を修正&lt;/li&gt;
 &lt;li&gt;meson ビルドシステムの追加&lt;/li&gt;
 &lt;li&gt;GTK3 でのタブスクロールのサポートを追加&lt;/li&gt;
@@ -398,20 +398,20 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-terminal/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-terminal/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MATE ユーザーガイド&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-ユーザーガイド&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e3%82%ac%e3%82%a4%e3%83%89&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e3%82%ac%e3%82%a4%e3%83%89&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;一部のイタリア数字から実行ビットを削除&lt;/li&gt;
 &lt;li&gt;build: ネイティブ言語サポート (NLS) を無効にするオプション (&lt;code&gt;--disable-nls&lt;/code&gt;) を追加&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-user-guide/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-user-guide/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;MATE ユーザー共有&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-ユーザー共有&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e5%85%b1%e6%9c%89&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-%e3%83%a6%e3%83%bc%e3%82%b6%e3%83%bc%e5%85%b1%e6%9c%89&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mate-common の MATE_COMPILE_WARNINGS を使用&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-user-share/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-user-share/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-utils&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-utils&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-utils&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-utils&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mate-screenshot: 下部にあるボタンの順序を修正&lt;/li&gt;
 &lt;li&gt;mate-screenshot: mate-screenshot.ui でストックアイコンを使用しません。&lt;/li&gt;
 &lt;li&gt;logview: logview-filter.ui を最初から書き直し&lt;/li&gt;
@@ -422,14 +422,14 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-utils/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-utils/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Mozo メニューエディタ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mozo-メニューエディタ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mozo-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mozo-%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mozo.ui を最初から書き直し&lt;/li&gt;
 &lt;li&gt;collection ディレクトリを編集する際の奇妙な動作を修正&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/mozo/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mozo/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Pluma テキストエディタ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pluma-テキストエディタ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pluma-%e3%83%86%e3%82%ad%e3%82%b9%e3%83%88%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#pluma-%e3%83%86%e3%82%ad%e3%82%b9%e3%83%88%e3%82%a8%e3%83%87%e3%82%a3%e3%82%bf&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;sort プラグインを新しい GtkSourceView api へ移植&lt;/li&gt;
 &lt;li&gt;window-construct プロパティーを使用するためのプラグインを移植&lt;/li&gt;
 &lt;li&gt;build: gtksourceview-4 へ移植&lt;/li&gt;
@@ -449,7 +449,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/pluma/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/pluma/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Pluma プラグイン&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pluma-プラグイン&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pluma-%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#pluma-%e3%83%97%e3%83%a9%e3%82%b0%e3%82%a4%e3%83%b3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;今回のリリースで初登場です。&lt;/li&gt;
 &lt;li&gt;パッケージには、次の追加プラグインが含まれています。
 &lt;ul&gt;
@@ -465,7 +465,7 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;python-caja&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;python-caja&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#python-caja&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#python-caja&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;scan-build によって報告されたメモリリークの修正&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
@@ -486,7 +486,7 @@
         &lt;p&gt;約 1 年の開発期間を経て、MATE デスクトップチームはついに MATE 1.24 をリリースしました。このリリース実現のために協力していただいたすべての貢献者に感謝します。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mate-desktop.org/images/blog/about-mate-1.24.png&#34; alt=&#34;MATE ダイアログ情報&#34;  loading=&#34;lazy&#34; /&gt;{ width=50% }&lt;/p&gt;
 &lt;h2&gt;MATE 1.24 で新しくなったこと&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-124-で新しくなったこと&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-124-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;このリリースには、多くの新機能、バグ修正、一般的な改善が含まれています。最も重要なハイライトは次のとおりです。&lt;/p&gt;
+    &lt;a href=&#34;#mate-124-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;このリリースには、多くの新機能、バグ修正、一般的な改善が含まれています。最も重要なハイライトは次のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ユーザーがセッションを開始すると、MATE デスクトップ環境は以前よりも使いやすくなりました。アプリケーションの起動を非表示にしたいですか？ 今では、起動時に表示するアプリケーションが設定できるようになりました。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Engrampa&lt;/strong&gt;は現在、複数の形式を追加でサポートするほか、一部の形式ではパスワードとユニコード文字のサポートが改善されています。&lt;/li&gt;
@@ -540,9 +540,9 @@
 &lt;li&gt;&lt;a href=&#34;https://pub.mate-desktop.org/releases/1.24/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://pub.mate-desktop.org/releases/1.24/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;詳細情報&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;詳細情報&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e8%a9%b3%e7%b4%b0%e6%83%85%e5%a0%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;詳細は以下のとおりです。&lt;/p&gt;
+    &lt;a href=&#34;#%e8%a9%b3%e7%b4%b0%e6%83%85%e5%a0%b1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;詳細は以下のとおりです。&lt;/p&gt;
 &lt;h3&gt;Atril 文書ビューア&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;atril-文書ビューア&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#atril-%e6%96%87%e6%9b%b8%e3%83%93%e3%83%a5%e3%83%bc%e3%82%a2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#atril-%e6%96%87%e6%9b%b8%e3%83%93%e3%83%a5%e3%83%bc%e3%82%a2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ズーム時の大量のメモリ消費を修正&lt;/li&gt;
 &lt;li&gt;サムネイルを作成してテキストに注釈を付ける際のメモリリーク修正&lt;/li&gt;
 &lt;li&gt;ドラッグ＆ドロップ: ドラッグ＆ドロップ操作を開始するとき、 &lt;code&gt;pressed_button&lt;/code&gt; アクションをリセット&lt;/li&gt;
@@ -562,7 +562,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点はこちら: &lt;a href=&#34;https://github.com/mate-desktop/atril/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/atril/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Caja ファイルマネージャ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-ファイルマネージャ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gcc10 が使用可能に&lt;/li&gt;
 &lt;li&gt;fm-properties: mate-desktop-thumbnail ヘルパーの使用を削除&lt;/li&gt;
 &lt;li&gt;ファイル名をハイフネーションしません&lt;/li&gt;
@@ -594,13 +594,13 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次の changelog にあります: &lt;a href=&#34;https://github.com/mate-desktop/caja/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/caja/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Caja-dropbox&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-dropbox&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-dropbox&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-dropbox&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;CAJA_EXTENSION_DIR_SYS を使用して、Caja 拡張ディレクトリを保存および表示&lt;/li&gt;
 &lt;li&gt;caja-extension-dir の絶対パスを表示&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次の changelog にあります: &lt;a href=&#34;https://github.com/mate-desktop/caja-dropbox/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/caja-dropbox/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Caja 拡張機能&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-拡張機能&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-%e6%8b%a1%e5%bc%b5%e6%a9%9f%e8%83%bd&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-%e6%8b%a1%e5%bc%b5%e6%a9%9f%e8%83%bd&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;caja-wallpaper-extension: メモリリークの修正&lt;/li&gt;
 &lt;li&gt;image-converter: caja-image-resize.ui の非推奨事項を修正して最初から書き直し&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC で報告されたコード解析、非推奨警告を修正&lt;/li&gt;
@@ -612,7 +612,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次の changelog にあります: &lt;a href=&#34;https://github.com/mate-desktop/caja-extensions/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/caja-extensions/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Engrampa 書庫マネージャ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;engrampa-書庫マネージャ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#engrampa-%e6%9b%b8%e5%ba%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#engrampa-%e6%9b%b8%e5%ba%ab%e3%83%9e%e3%83%8d%e3%83%bc%e3%82%b8%e3%83%a3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gcc 10 の使用が可能に&lt;/li&gt;
 &lt;li&gt;fr-command-rpm: rpm パッケージ同梱の rpm2cpio バイナリを使用&lt;/li&gt;
 &lt;li&gt;サポートされている mime-type に source rpm を追加&lt;/li&gt;
@@ -636,7 +636,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次にあります：&lt;a href=&#34;https://github.com/mate-desktop/engrampa/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/engrampa/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;eom&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;eom&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#eom&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#eom&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;webp ファイル用の eom-thumbnailer を追加&lt;/li&gt;
 &lt;li&gt;thumbnail: mate-desktop-thumbnailヘルパーの使用を削除&lt;/li&gt;
 &lt;li&gt;Wayland のサポートを有効化&lt;/li&gt;
@@ -652,7 +652,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は、&lt;a href=&#34;https://github.com/mate-desktop/eom/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/eom/commits/master/&lt;/a&gt; に掲載しています。&lt;/p&gt;
 &lt;h3&gt;libmatekbd&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatekbd&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatekbd&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatekbd&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析、非推奨警告の修正&lt;/li&gt;
 &lt;li&gt;UIファイルに gresources を使用&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext への移行&lt;/li&gt;
@@ -660,14 +660,14 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです &lt;a href=&#34;https://github.com/mate-desktop/libmatekbd/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/libmatekbd/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;libmatemixer&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatemixer&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatemixer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatemixer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析、非推奨警告の修正&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext への移行&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです &lt;a href=&#34;https://github.com/mate-desktop/libmatemixer/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/libmatemixer/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;お天気 MATE&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;お天気-mate&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e3%81%8a%e5%a4%a9%e6%b0%97-mate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#%e3%81%8a%e5%a4%a9%e6%b0%97-mate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;場所: Lleida–Alguaire Airport weather station を追加&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析、非推奨警告の修正&lt;/li&gt;
 &lt;li&gt;場所: ロシアの Rostov-on-Don 気象台の変更&lt;/li&gt;
@@ -676,7 +676,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです &lt;a href=&#34;https://github.com/mate-desktop/libmateweather/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/libmateweather/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;marco&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;marco&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#marco&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#marco&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;テーマ: 全テーマのウィンドウ制御の非表示レンダリングを修正&lt;/li&gt;
 &lt;li&gt;tabpopup: 完全な作り直し&lt;/li&gt;
 &lt;li&gt;window: オプションのタイルサイズサイクルを追加&lt;/li&gt;
@@ -697,7 +697,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです &lt;a href=&#34;https://github.com/mate-desktop/marco/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/marco/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-applets&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-applets&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-applets&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-applets&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gcc10 を使用する準備が整っています&lt;/li&gt;
 &lt;li&gt;デフォルトの D-Bus 設定ディレクトリとして ${datadir}/dbus-1/system.d を使用&lt;/li&gt;
 &lt;li&gt;dbus ディレクトリを設定可能に&lt;/li&gt;
@@ -714,14 +714,14 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります： &lt;a href=&#34;https://github.com/mate-desktop/mate-applets/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-applets/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-backgrounds&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-backgrounds&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-backgrounds&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-backgrounds&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;meson ビルドシステムのサポートを有効化&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext への移行&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-backgrounds/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-backgrounds/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-calc&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-calc&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-calc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-calc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;複素数の科学的表記を修正&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析、非推奨警告の修正&lt;/li&gt;
 &lt;li&gt;mp-equation: 物理定数の値を更新して、数値ボタンのツールチップの値と一致&lt;/li&gt;
@@ -738,7 +738,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-calc/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-calc/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-common&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-common&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-common&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-common&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;MATE_CXX_WARNINGS マクロの更新&lt;/li&gt;
 &lt;li&gt;コンパイラデバッグフラグを MATE_DEBUG_CHECK に設定&lt;/li&gt;
 &lt;li&gt;AX_APPEND_FLAG および AX_CHECK_COMPILE_FLAG が使用可能かをチェック&lt;/li&gt;
@@ -746,7 +746,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-common/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-common/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-control-center&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-control-center&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-control-center&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-control-center&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;システムデータディレクトリ内でシステムのテーマを検索&lt;/li&gt;
 &lt;li&gt;display: ヘルプボタンを有効に&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析、非推奨警告の修正&lt;/li&gt;
@@ -773,7 +773,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-control-center/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-control-center/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-desktop&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-desktop&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-desktop&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-desktop&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mate_desktop_thumbnail_scale_down_pixbuf() の削除&lt;/li&gt;
 &lt;li&gt;サムネイルのサイズを 256 へと増加&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析、非推奨警告の修正&lt;/li&gt;
@@ -789,7 +789,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-desktop/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-desktop/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-icon-theme&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-icon-theme&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-icon-theme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-icon-theme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;モバイルネットワーク接続のステータスアイコンを追加&lt;/li&gt;
 &lt;li&gt;volume-status アイコンの作り直し&lt;/li&gt;
 &lt;li&gt;VPN ネットワークステータスアイコンを追加&lt;/li&gt;
@@ -810,14 +810,14 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-icon-theme/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-icon-theme/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-indicator-applet&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-indicator-applet&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-indicator-applet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-indicator-applet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;インジケータアイコンのサイズをパネルに合わせて変更&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext へ移行&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-indicator-applet/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-indicator-applet/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-media&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-media&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-media&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-media&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;gvc applet: 欠落している翻訳の追加 (i18n)&lt;/li&gt;
 &lt;li&gt;media-key と同様に、ボリュームを設定可能な手順でスクロール&lt;/li&gt;
@@ -830,14 +830,14 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-media/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-media/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-menus&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-menus&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-menus&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-menus&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gir ファイルのインストール時に datadir 変数と libdir 変数を使用&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext へ移行&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-menus/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-menus/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-netbook&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-netbook&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-netbook&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-netbook&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;アプレットのウィンドウタイトルの太字を無効にするオプションを追加&lt;/li&gt;
 &lt;li&gt;&amp;lsquo;show-home-title&amp;rsquo; 機能を復活&lt;/li&gt;
@@ -847,7 +847,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-netbook/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-netbook/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-notification-daemon&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-notification-daemon&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-notification-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-notification-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;mate-notification-properties.ui に gresource を使用&lt;/li&gt;
 &lt;li&gt;mate-notification-properties: do-not-disturb 機能を追加&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext へ移行&lt;/li&gt;
@@ -855,7 +855,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: at &lt;a href=&#34;https://github.com/mate-desktop/mate-notification-daemon/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-notification-daemon/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-panel&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-panel&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-panel&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-panel&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;パネルのトップレベルでの a11y の重複説明を回避&lt;/li&gt;
 &lt;li&gt;clock applet: ATK にコールを追加し、現在表示時刻を提供&lt;/li&gt;
 &lt;li&gt;status-notifier: HIDPI サポートの改善&lt;/li&gt;
@@ -881,7 +881,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-panel/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-panel/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-polkit&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-polkit&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-polkit&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-polkit&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;GSimpleAsyncResult から GTask への移行&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext への移行&lt;/li&gt;
@@ -889,7 +889,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-polkit/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-polkit/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-power-manager&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-power-manager&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-power-manager&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-power-manager&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;icons: 高解像度のアイコンを追加&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;upower-0.99.8 以降が必要&lt;/li&gt;
@@ -902,7 +902,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-power-manager/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-power-manager/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-screensaver&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-screensaver&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-screensaver&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-screensaver&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;サスペンド時のロックとリジューム時のロック解除を確実に&lt;/li&gt;
 &lt;li&gt;UI ファイルに gresources を使用&lt;/li&gt;
@@ -912,13 +912,13 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-screensaver/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-screensaver/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-sensors-applet&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-sensors-applet&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-sensors-applet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-sensors-applet&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;i18n: intltools から gettext へ移行&lt;/li&gt;
 &lt;li&gt;g10n: 翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-sensors-applet/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-sensors-applet/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-session-manager&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-session-manager&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-session-manager&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-session-manager&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;gnome-keyring 3.34 でタイムアウトする問題を修正&lt;/li&gt;
 &lt;li&gt;GNOME_KEYRING_LIFETIME_FD を削除&lt;/li&gt;
@@ -936,7 +936,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-session-manager/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-session-manager/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-settings-daemon&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-settings-daemon&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-settings-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-settings-daemon&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;DBUS 1.10.0 以降が必要&lt;/li&gt;
 &lt;li&gt;既定の DBUS_SYS_DIR を ${datadir}/dbus-1/system.d へ変更&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
@@ -954,7 +954,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-settings-daemon/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-settings-daemon/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-system-monitor&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-system-monitor&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-system-monitor&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-system-monitor&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;GLib 2.56.0 以降が必要&lt;/li&gt;
 &lt;li&gt;HiDPI サポートの改善&lt;/li&gt;
@@ -972,7 +972,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-system-monitor/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-system-monitor/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-terminal&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-terminal&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-terminal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-terminal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gcc 10 の使用が可能に&lt;/li&gt;
 &lt;li&gt;複数のメモリリークを修正&lt;/li&gt;
 &lt;li&gt;terminal-screen: ウィンドウを閉じる時の警告を修正&lt;/li&gt;
@@ -985,7 +985,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-terminal/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-terminal/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-user-guide&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-user-guide&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-user-guide&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-user-guide&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;reporting-bugs セクションの更新&lt;/li&gt;
 &lt;li&gt;custom-command-options セクションを削除し、構文のアドレスを指定&lt;/li&gt;
 &lt;li&gt;お気に入りのアプリケーションの項目を更新&lt;/li&gt;
@@ -995,7 +995,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-user-guide/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-user-guide/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-user-share&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-user-share&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-user-share&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-user-share&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;HTTPD の設定通知を修正&lt;/li&gt;
 &lt;li&gt;i18n: intltools から gettext へ移行&lt;/li&gt;
@@ -1003,7 +1003,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-user-share/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-user-share/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mate-utils&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-utils&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-utils&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-utils&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gcc 10 の使用が可能に&lt;/li&gt;
 &lt;li&gt;UI ファイルに gresources を使用&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
@@ -1019,7 +1019,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な changelog は次にあります: &lt;a href=&#34;https://github.com/mate-desktop/mate-utils/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mate-utils/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;mozo&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mozo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mozo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mozo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;元に戻す ボタンと やり直し ボタンを追加&lt;/li&gt;
 &lt;li&gt;アイテムのドラッグ＆ドロップによるコピー作成の修正および、元に戻す、やり直し、リフレッシュ時のクラッシュを修正&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
@@ -1030,7 +1030,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/mozo/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/mozo/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;pluma&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pluma&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pluma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#pluma&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;印刷できない文字 (スペース/タブ/改行) を表示する機能を追加&lt;/li&gt;
 &lt;li&gt;Clang Static Analyzer、Cppcheck、および GCC によって報告されたコード解析や非推奨警告を修正&lt;/li&gt;
 &lt;li&gt;window: GdkWindowState を上書きしない&lt;/li&gt;
@@ -1048,7 +1048,7 @@
 &lt;/ul&gt;
 &lt;p&gt;完全な変更点は次のとおりです: &lt;a href=&#34;https://github.com/mate-desktop/pluma/commits/master/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mate-desktop/pluma/commits/master/&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;python-caja&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;python-caja&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#python-caja&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#python-caja&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gcc 10 の使用が可能に&lt;/li&gt;
 &lt;li&gt;Python 2 のサポートを廃止&lt;/li&gt;
 &lt;li&gt;Python 3.9 を使用したビルドのサポートを追加&lt;/li&gt;
@@ -1072,7 +1072,7 @@
         &lt;p&gt;11 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.20 のリリースを公表しました。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mate-desktop.org/images/blog/about-mate-1.20.png&#34; alt=&#34;about&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;h2&gt;MATE 1.20 で新しくなったこと&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-120-で新しくなったこと&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-120-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。&lt;/p&gt;
+    &lt;a href=&#34;#mate-120-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;このリリースの課題は、廃止されたコードを置き換え、コードベースの大部分を近代化することによって、MATE デスクトップを安定させることでした。また、ウィンドウマネージャ (Marco) を改善し、HiDPI のサポートを追加しました。その過程で、何百もの不具合を修正しました。&lt;/p&gt;
 &lt;p&gt;MATE デスクトップ 1.20 の主な変更点は次のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;MATE デスクトップ 1.20 は、動的な検出とスケーリングによる HiDPI ディスプレイをサポートします。&lt;/strong&gt;
@@ -1120,9 +1120,9 @@
 &lt;li&gt;&lt;a href=&#34;https://pub.mate-desktop.org/releases/1.20/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://pub.mate-desktop.org/releases/1.20/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Changelog 変更点&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;changelog-変更点&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;変更点の詳細は以下のとおりです。&lt;/p&gt;
+    &lt;a href=&#34;#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;変更点の詳細は以下のとおりです。&lt;/p&gt;
 &lt;h3&gt;mate-desktop 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-desktop-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-desktop-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-desktop-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ウィンドウのスケーリングファクターに gsettings を追加&lt;/li&gt;
 &lt;li&gt;最小 GLib バージョンの追加チェックを削除&lt;/li&gt;
 &lt;li&gt;&amp;lt; gtk+-3.22 ビットを削除し、必要な gtk+ バージョンを引き上げ&lt;/li&gt;
@@ -1145,11 +1145,11 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-user-guide 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-user-guide-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-user-guide-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-user-guide-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;libmatekbd 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatekbd-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatekbd-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatekbd-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&amp;lt; gtk+-3.22 ビットを削除し、必要な gtk+ を引き上げ&lt;/li&gt;
 &lt;li&gt;WidthOfScreen と HeightOfScreen の実装&lt;/li&gt;
 &lt;li&gt;matekbd-status: ステータスバーアイコン作成時の Gdk-CRITICAL 警告を修正&lt;/li&gt;
@@ -1171,7 +1171,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;libmateweather 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmateweather-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmateweather-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmateweather-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;場所: ポーランド共和国ラドム市を追加&lt;/li&gt;
 &lt;li&gt;場所: ジュコフスキー空港を追加 (ロシア共和国モスクワ市) を追加&lt;/li&gt;
 &lt;li&gt;場所: シェレメチェボ空港の名前を修正 (ロシア共和国モスクワ市)&lt;/li&gt;
@@ -1190,12 +1190,12 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-icon-theme 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-icon-theme-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-icon-theme-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-icon-theme-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;同じように壊れたフラグを置き換え&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;caja 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;GTK+ 3.14 用の CSS を廃止&lt;/li&gt;
 &lt;li&gt;新しいタブを開いた時にタスクリストアイコンが変わるのを修正&lt;/li&gt;
 &lt;li&gt;&amp;lt;&amp;gt; の代わりに &amp;quot;&amp;quot; を使用してローカルファイルを含めます。&lt;/li&gt;
@@ -1264,7 +1264,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-polkit 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-polkit-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-polkit-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-polkit-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;polkitgtkmate ライブラリとその文書を削除&lt;/li&gt;
 &lt;li&gt;ステータス通知でのアイコンの再表示/非表示を修正&lt;/li&gt;
 &lt;li&gt;status-icon: ストックアイコンを使用しません。&lt;/li&gt;
@@ -1273,7 +1273,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;marco 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;marco-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#marco-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#marco-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;build: 不要な pangoxft の要件を削除&lt;/li&gt;
 &lt;li&gt;move_to_X キーバインドの小さなバグを修正&lt;/li&gt;
 &lt;li&gt;サイズの異なるモニタでのバグを修正&lt;/li&gt;
@@ -1321,7 +1321,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-settings-daemon 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-settings-daemon-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-settings-daemon-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-settings-daemon-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;HiDPI: 初期化段階で xsettings を読み込みます。&lt;/li&gt;
 &lt;li&gt;XSettings に HiDPI の設定を追加&lt;/li&gt;
 &lt;li&gt;HiDPI ディスプレイへの対応を追加&lt;/li&gt;
@@ -1333,7 +1333,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-session-manager 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-session-manager-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-session-manager-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-session-manager-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gsm-manager.c: ビルド時の警告を削除&lt;/li&gt;
 &lt;li&gt;ログアウトまたはシャットダウン時のダイアログ表示で、フォーカスを失わないようにしました。&lt;/li&gt;
 &lt;li&gt;スタイルクラス &lt;code&gt;logout-dialog&lt;/code&gt; を追加&lt;/li&gt;
@@ -1345,13 +1345,13 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-menus 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-menus-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-menus-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-menus-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gio のバージョンを 2.50.0 に上げました。&lt;/li&gt;
 &lt;li&gt;mate-applications-merged をシンボリックリンクに&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-panel 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-panel-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-panel-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-panel-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;HiDPI ディスプレイでのパネルの自動スケールに対応&lt;/li&gt;
 &lt;li&gt;必要最低限の libwnck バージョンを 3.4.6 へ上げました。&lt;/li&gt;
 &lt;li&gt;status-notifier: ツールチップのタイプが違ってもクラッシュしないように&lt;/li&gt;
@@ -1473,12 +1473,12 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-backgrounds 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-backgrounds-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-backgrounds-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-backgrounds-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;以前から存在する gnome-panel の残りを削除&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-themes 3.22.8 から 3.22.15 へ&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-themes-3228-から-32215-へ&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-themes-3228-%e3%81%8b%e3%82%89-32215-%e3%81%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-themes-3228-%e3%81%8b%e3%82%89-32215-%e3%81%b8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;サブマリンテーマ: engrampa のツールバーで box-shadow を削除&lt;/li&gt;
 &lt;li&gt;サブマリンテーマ: caja-sidebar ツリービューからパディングを削除&lt;/li&gt;
 &lt;li&gt;all themes caja: スクロールウィンドウの枠から右側の境界線を削除&lt;/li&gt;
@@ -1611,7 +1611,7 @@
 &lt;li&gt;Gtk+-3 すべてのテーマ: NaTrayApplet-icon-size を設定しません&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-notification-daemon 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-notification-daemon-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-notification-daemon-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-notification-daemon-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;WidthOfScreen と HeightOfScreen の実装&lt;/li&gt;
 &lt;li&gt;gtk 3.22: 非推奨の &lt;code&gt;gdk_screen_get_monitor&lt;/code&gt; 関数を回避&lt;/li&gt;
 &lt;li&gt;非推奨の &lt;code&gt;gdk_screen_get_width/height&lt;/code&gt; を回避&lt;/li&gt;
@@ -1621,7 +1621,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-control-center 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-control-center-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-control-center-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-control-center-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;HiDPI ディスプレイ用にフォントの DPI を拡大&lt;/li&gt;
 &lt;li&gt;HiDPI ディスプレイへの対応を追加&lt;/li&gt;
 &lt;li&gt;theme-installer.c: &lt;code&gt;mate_theme_install_real&lt;/code&gt; に &lt;code&gt;g_object_unref&lt;/code&gt; がありません&lt;/li&gt;
@@ -1636,7 +1636,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-screensaver 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-screensaver-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-screensaver-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-screensaver-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ロック画面の HiDPI サポートを追加&lt;/li&gt;
 &lt;li&gt;gs-lock-plug.c: ビルド時の警告を修正&lt;/li&gt;
 &lt;li&gt;WidthOfScreen と HeightOfScreen の実装&lt;/li&gt;
@@ -1656,7 +1656,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-media 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-media-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-media-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-media-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;gvc-applet: NULLオブジェクトの refcount を増やしません&lt;/li&gt;
 &lt;li&gt;gvc-combo-box: シグナルの引数を修正&lt;/li&gt;
 &lt;li&gt;アプレット: 「サウンド設定」メニューのアイコンを復元&lt;/li&gt;
@@ -1673,7 +1673,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-power-manager 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-power-manager-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-power-manager-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-power-manager-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;非推奨の GtkStock を回避&lt;/li&gt;
 &lt;li&gt;inhibit: 先のコミットにおけるスパムログのエラーを修正&lt;/li&gt;
 &lt;li&gt;inhibit applet: アイコンの描画を修正&lt;/li&gt;
@@ -1691,7 +1691,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-system-monitor 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-system-monitor-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-system-monitor-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-system-monitor-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;procman.cpp: ビルド警告の引数 1 が null で、non-null が期待される部分を修正&lt;/li&gt;
 &lt;li&gt;sysinfo.cpp: 次のビルド時警告を修正: this ‘if’ clause does not guard&amp;hellip;&lt;/li&gt;
 &lt;li&gt;proctable.cpp: 次のビルド時警告を修正: this ‘else’ clause does not guard&amp;hellip;&lt;/li&gt;
@@ -1704,7 +1704,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;atril 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;atril-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#atril-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#atril-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;build: GTK+3 以前のオプションを削除&lt;/li&gt;
 &lt;li&gt;epub: minizip がより多くの BSD バージョンに対応&lt;/li&gt;
 &lt;li&gt;previewer: スタイルクラス atril-previewer-window を追加&lt;/li&gt;
@@ -1915,7 +1915,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;caja-extensions 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-extensions-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-extensions-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-extensions-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;xattr-tags: 拡張機能の説明で適切な英語を使用&lt;/li&gt;
 &lt;li&gt;po: xattrs 拡張からの翻訳可能な文字列を追加&lt;/li&gt;
 &lt;li&gt;xattr-tags: 拡張機能の説明を修正&lt;/li&gt;
@@ -1930,7 +1930,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;engrampa 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;engrampa-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#engrampa-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#engrampa-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;build: &lt;code&gt;PKG_CONFIG&lt;/code&gt; を使用してクロスビルドを修正&lt;/li&gt;
 &lt;li&gt;About ダイアログと Caja 拡張機能に著作権表示を追加&lt;/li&gt;
 &lt;li&gt;7z: Fix: リストが暗号化されていないパスワードでファイル名変更&lt;/li&gt;
@@ -1955,7 +1955,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;eom 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;eom-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#eom-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#eom-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;GTK+ 3.18 用の CSS を廃止&lt;/li&gt;
 &lt;li&gt;egg-editable-toolbar.c/egg-toolbars-model.c: 未使用の変数を削除&lt;/li&gt;
 &lt;li&gt;print-preview: カスタムコードを GDK 関数の呼び出しと置き換え&lt;/li&gt;
@@ -1994,7 +1994,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-applets 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-applets-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-applets-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-applets-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;multiload: ユーザ定義のしきい値を使用してネットワークグラフをスケーリング&lt;/li&gt;
 &lt;li&gt;multiload: タブとスペースが多くの場所で混在するのを修正&lt;/li&gt;
 &lt;li&gt;multiload: 一部の場所での空白を修正&lt;/li&gt;
@@ -2039,7 +2039,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-calc 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-calc-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-calc-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-calc-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;設定ダイアログの閉じるボタンに、アイコン画像を追加&lt;/li&gt;
 &lt;li&gt;非推奨の GtkStock を回避&lt;/li&gt;
 &lt;li&gt;About ダイアログに不足していたウィンドウアイコンを追加&lt;/li&gt;
@@ -2047,17 +2047,17 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-icon-theme-faenza 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-icon-theme-faenza-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-icon-theme-faenza-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-icon-theme-faenza-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;元のプロジェクトに従い、ライセンスを GPL3 へ変更&lt;/li&gt;
 &lt;li&gt;ダークテーマに MATE ロゴを使用するよう修正&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-indicator-applet 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-indicator-applet-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-indicator-applet-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-indicator-applet-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Ayatana Indicators とUbuntu Indicators のどちらに対しても、ビルドをサポート&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-netbook 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-netbook-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-netbook-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-netbook-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;WidthOfScreen と HeightOfScreen の実装&lt;/li&gt;
 &lt;li&gt;window picker: disconnect シグナルハンドラは、dispose 関数を指定&lt;/li&gt;
 &lt;li&gt;window picker: 設定ダイアログにアイコンを追加&lt;/li&gt;
@@ -2067,7 +2067,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-sensors-applet 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-sensors-applet-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-sensors-applet-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-sensors-applet-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;build: udisk2 プラグインを再び有効化&lt;/li&gt;
 &lt;li&gt;廃止された udisks プラグインを削除&lt;/li&gt;
 &lt;li&gt;udisks plugin: GValue 変数のメモリ管理を修正&lt;/li&gt;
@@ -2094,7 +2094,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-terminal 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-terminal-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-terminal-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-terminal-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;VTE 0.46 が必要&lt;/li&gt;
 &lt;li&gt;screen: &lt;code&gt;TERM&lt;/code&gt; および &lt;code&gt;COLORTERM&lt;/code&gt; 環境変数の設定を無くす&lt;/li&gt;
 &lt;li&gt;schema: 一部のキーの要約と説明を修正&lt;/li&gt;
@@ -2124,13 +2124,13 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-user-share 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-user-share-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-user-share-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-user-share-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;build: 正しいマクロを使用してクロスビルドを修正&lt;/li&gt;
 &lt;li&gt;非推奨の &lt;code&gt;gtk_show_uri&lt;/code&gt; を使用しない&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-utils 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-utils-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-utils-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-utils-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;HiDPI ディスプレイのスクリーンショットのサポート追加&lt;/li&gt;
 &lt;li&gt;mate-screenshot: 新しいボタンを追加&lt;/li&gt;
 &lt;li&gt;screenshot-save.c: &lt;code&gt;pipe&lt;/code&gt; &lt;code&gt;write&lt;/code&gt; および &lt;code&gt;read&lt;/code&gt; でのビルド警告を修正&lt;/li&gt;
@@ -2162,11 +2162,11 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mozo 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mozo-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mozo-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mozo-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;pluma 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pluma-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pluma-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#pluma-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;peas_engine_enable_loader&lt;/code&gt; を正しい場所に配置&lt;/li&gt;
 &lt;li&gt;最近使用したファイル一覧が再び有効になるように修正&lt;/li&gt;
 &lt;li&gt;使用しない変数を削除&lt;/li&gt;
@@ -2224,7 +2224,7 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;python-caja 1.20.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;python-caja-1200&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#python-caja-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#python-caja-1200&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2243,7 +2243,7 @@
         &lt;p&gt;6 ヶ月の開発期間を経て、MATE デスクトップチームは MATE デスクトップ 1.18 のリリースを公表できたことをうれしく思います。このリリースを可能にしていただいた全ての MATE 貢献者の方々に感謝します。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://mate-desktop.org/images/blog/about-mate-1.18.png&#34; alt=&#34;about&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;h2&gt;MATE 1.18 で新しくなったこと&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-118-で新しくなったこと&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-118-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;このリリースは、MATE デスクトップ 1.16 が今だに依存している、一部の非推奨コンポーネントを置き換えるために、GTK3+ への移行を完成し新技術を採用することに焦点を当てています。&lt;/p&gt;
+    &lt;a href=&#34;#mate-118-%e3%81%a7%e6%96%b0%e3%81%97%e3%81%8f%e3%81%aa%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;このリリースは、MATE デスクトップ 1.16 が今だに依存している、一部の非推奨コンポーネントを置き換えるために、GTK3+ への移行を完成し新技術を採用することに焦点を当てています。&lt;/p&gt;
 &lt;p&gt;MATE デスクトップ 1.18 の主な変更項目は次のとおりです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;MATE デスクトップ一式に含まれるアプリケーションとコンポーネントは、GTK3+ のみとなりました。&lt;/strong&gt;
@@ -2302,14 +2302,14 @@
 &lt;li&gt;&lt;a href=&#34;https://pub.mate-desktop.org/releases/1.18/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://pub.mate-desktop.org/releases/1.18/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Changelog 変更点&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;changelog-変更点&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;変更点の詳細は以下のとおりです。&lt;/p&gt;
+    &lt;a href=&#34;#changelog-%e5%a4%89%e6%9b%b4%e7%82%b9&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;変更点の詳細は以下のとおりです。&lt;/p&gt;
 &lt;h3&gt;mate-common 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-common-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-common-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-common-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-desktop 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-desktop-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-desktop-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-desktop-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;GTK+3への移動(GTK+&amp;gt;=3.14が必要)、GTK+2 のコードと &amp;ndash;with-gtk オプションを削除
@@ -2326,13 +2326,13 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-user-guide 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-user-guide-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-user-guide-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-user-guide-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;libmatekbd 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatekbd-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatekbd-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatekbd-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;GTK+3への移動(GTK+&amp;gt;=3.14が必要)、GTK+2 のコードと &amp;ndash;with-gtk オプションを削除
@@ -2340,13 +2340,13 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;libmatemixer 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmatemixer-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmatemixer-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmatemixer-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;libmateweather 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;libmateweather-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#libmateweather-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#libmateweather-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;GTK+3への移動(GTK+&amp;gt;=3.14が必要)、GTK+2 のコードと &amp;ndash;with-gtk オプションを削除
@@ -2360,11 +2360,11 @@
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-icon-theme 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-icon-theme-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-icon-theme-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-icon-theme-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;caja 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;Build: libmate-desktop &amp;gt;= 1.17.3 以上が必要&lt;/li&gt;
@@ -2389,14 +2389,14 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-polkit 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-polkit-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-polkit-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-polkit-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;GTK+ の一部の非推奨事項を修正&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;marco 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;marco-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#marco-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#marco-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;GTK+3 への移動 (GTK+&amp;gt;=3.14 が必要)、GTK+2 のコードと &amp;ndash;with-gtk オプションを削除
@@ -2410,7 +2410,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-settings-daemon 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-settings-daemon-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-settings-daemon-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-settings-daemon-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: XInput が無条件に必要&lt;/li&gt;
@@ -2426,7 +2426,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-session-manager 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-session-manager-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-session-manager-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-session-manager-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;廃止予定の upower サスペンド/ハイバネート機能を ConsoleKit2 相当の機能へと置き換え (&amp;ndash;enable-upower ビルドオプションを削除)
@@ -2434,13 +2434,13 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-menus 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-menus-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-menus-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-menus-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-panel 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-panel-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-panel-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-panel-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: libmate-menu &amp;gt;= 1.10 と dconf &amp;gt;= 0.13.4 が必要&lt;/li&gt;
@@ -2458,11 +2458,11 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-backgrounds 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-backgrounds-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-backgrounds-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-backgrounds-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-notification-daemon 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-notification-daemon-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-notification-daemon-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-notification-daemon-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;アクションアイコンのサポートを実装 (メディアプレーヤーで使用される再生コントロールアイコンなど)
@@ -2471,7 +2471,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-control-center 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-control-center-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-control-center-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-control-center-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: libmatekbd、libmate-desktop、marco, m-s-d &amp;gt;= 1.17 が必要&lt;/li&gt;
@@ -2490,7 +2490,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-screensaver 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-screensaver-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-screensaver-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-screensaver-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: require libmate-menu &amp;gt;= 1.10 以上が必要&lt;/li&gt;
@@ -2502,7 +2502,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-media 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-media-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-media-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-media-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: libmatemixer &amp;gt;= 1.10 以上と libmate-desktop &amp;gt;= 1.17 以上が必要&lt;/li&gt;
@@ -2513,7 +2513,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-power-manager 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-power-manager-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-power-manager-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-power-manager-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: xproto &amp;gt;= 7.0.15 以上が必要&lt;/li&gt;
@@ -2528,7 +2528,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-system-monitor 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-system-monitor-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-system-monitor-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-system-monitor-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;他のユーザに対して、&lt;code&gt;kill&lt;/code&gt; と &lt;code&gt;renice&lt;/code&gt; を使うために &lt;code&gt;pkexec&lt;/code&gt; のサポートを追加したので、
@@ -2537,7 +2537,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;atril 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;atril-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#atril-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#atril-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: caja &amp;gt;= 1.17.1 以上が必要&lt;/li&gt;
@@ -2553,13 +2553,13 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;caja-dropbox 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-dropbox-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-dropbox-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-dropbox-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: libcaja-extension 1.17.1 と GLib 2.36 が必要&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;caja-extensions 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;caja-extensions-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#caja-extensions-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#caja-extensions-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: caja &amp;gt;= 1.17.1 以上と libmate-desktop &amp;gt;= 1.17.0 以上が必要&lt;/li&gt;
@@ -2569,7 +2569,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;engrampa 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;engrampa-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#engrampa-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#engrampa-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;rar/unrar バージョンをチェックして、すべてのバージョンで新しい日付スタイルを使用できるようにしました。&lt;/li&gt;
 &lt;li&gt;修正: rar ファイルリストには、最新のバイナリで正しい日付が表示されます。&lt;/li&gt;
 &lt;li&gt;修正: 圧縮後に 7z の最初の分割ボリュームを展開&lt;/li&gt;
@@ -2589,7 +2589,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;eom 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;eom-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#eom-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#eom-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;Build: libmate-desktop &amp;gt;= 1.17. 以上が必要&lt;/li&gt;
@@ -2601,7 +2601,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-applets 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-applets-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-applets-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-applets-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;Build: libmateweather と mate-panel &amp;gt;= 1.17 以上が必要&lt;/li&gt;
@@ -2614,15 +2614,15 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-calc 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-calc-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-calc-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-calc-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;AppData の追加&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-icon-theme-faenza 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-icon-theme-faenza-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-icon-theme-faenza-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-icon-theme-faenza-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Bump バージョン&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-indicator-applet 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-indicator-applet-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-indicator-applet-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-indicator-applet-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;Build: 概要に新しいスタイルインジケータのサポートステータスを表示&lt;/li&gt;
@@ -2632,7 +2632,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-netbook 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-netbook-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-netbook-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-netbook-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: mate-panel &amp;gt;= 1.17 以上が必要&lt;/li&gt;
@@ -2641,7 +2641,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-sensors-applet 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-sensors-applet-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-sensors-applet-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-sensors-applet-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: mate-panel &amp;gt;= 1.17 以上が必要&lt;/li&gt;
@@ -2652,14 +2652,14 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-terminal 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-terminal-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-terminal-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-terminal-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;マウスの中ボタンでタブを閉じる機能を追加&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-user-share 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-user-share-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-user-share-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-user-share-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: caja &amp;gt;= 1.17.1 以上が必要&lt;/li&gt;
@@ -2667,7 +2667,7 @@ windows&lt;/li&gt;
  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mate-utils 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mate-utils-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mate-utils-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mate-utils-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;ビルド: mate-panel &amp;gt;= 1.17 以上が必要&lt;/li&gt;
@@ -2678,13 +2678,13 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;mozo 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mozo-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#mozo-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#mozo-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;pluma 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pluma-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#pluma-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#pluma-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;ニュース: リリース情報の生成を容易にするため、一貫性があってプロジェクト全体で共通する、マークダウンのような書式を使用します。
  &lt;/li&gt;
 &lt;li&gt;GTK+3への移動(GTK+&amp;gt;=3.14が必要)、GTK+2 のコードと &amp;ndash;with-gtk オプションを削除
@@ -2705,7 +2705,7 @@ windows&lt;/li&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;python-caja 1.18.0&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;python-caja-1180&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#python-caja-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+    &lt;a href=&#34;#python-caja-1180&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;このセクションへのパーマリンク&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;翻訳の更新&lt;/li&gt;
 &lt;li&gt;GTK+3 だけのサポート: Caja 1.17.1 と pygobject-3.0 が必要&lt;/li&gt;
 &lt;li&gt;Python 2.5 の古いチェックを削除。これは最近では不要なため。&lt;/li&gt;
