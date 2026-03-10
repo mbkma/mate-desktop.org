@@ -42,6 +42,7 @@ var pluma_window_8h =
     [ "pluma_window_get_documents", "pluma-window_8h.html#aa3de99d1983d26ff4a012ce68657b38a", null ],
     [ "pluma_window_get_group", "pluma-window_8h.html#a362188a34442617058e0290ca48a2f1e", null ],
     [ "pluma_window_get_message_bus", "pluma-window_8h.html#a8af981bb728eb06437fa998d1c8395c5", null ],
+    [ "pluma_window_get_right_panel", "pluma-window_8h.html#a90c52b417f7cf311e387f07763c6f57f", null ],
     [ "pluma_window_get_side_panel", "pluma-window_8h.html#ae58cb4d9c00aa252fb32b09faaedfbce", null ],
     [ "pluma_window_get_state", "pluma-window_8h.html#ab35f8e7fa6546604e5d30318ab3792ca", null ],
     [ "pluma_window_get_statusbar", "pluma-window_8h.html#abdc0c68fbda6873aa5272e9ca4128695", null ],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX176 =
 {
+"structGpmPrefsClass.html#ac2fdaadb315a8d6adc6f194e5b31d14b":[34,0,1332,0],
+"structGpmScreensaver.html":[34,0,1333],
+"structGpmScreensaver.html#aaba38eb5f8ae89b7cd0762937a26cf86":[34,0,1333,0],
+"structGpmScreensaver.html#ac431141525a194c3104bcaab09988b6b":[34,0,1333,1],
+"structGpmScreensaverClass.html":[34,0,1334],
+"structGpmScreensaverClass.html#a393c87c826034ed3d5e54cd98c9712c9":[34,0,1334,0],
+"structGpmSession.html":[34,0,1335],
 "structGpmSession.html#a5c5fc6f565472cc89e0d6dcd198618ef":[34,0,1335,0],
 "structGpmSession.html#ad73087d564a20bd61c9026fa88edd63d":[34,0,1335,1],
 "structGpmSessionClass.html":[34,0,1336],
@@ -242,12 +249,5 @@ var NAVTREEINDEX176 =
 "structMateSettingsPluginClass.html#a63a205aa6ca40766d545f8146fef07fd":[34,0,1424,2],
 "structMateSettingsPluginClass.html#a7e1ac836c59beb1e052b708a60ab9104":[34,0,1424,1],
 "structMateSettingsPluginClass.html#ae1762026ddc82338a90c85a320d51b4a":[34,0,1424,0],
-"structMateSettingsPluginInfo.html":[34,0,1425],
-"structMateSettingsPluginInfo.html#a70156a48cb77dbdc8ce65d8f4b8018a5":[34,0,1425,1],
-"structMateSettingsPluginInfo.html#ab7e0c013816a056410925eba6b1601f8":[34,0,1425,0],
-"structMateSettingsPluginInfoClass.html":[34,0,1426],
-"structMateSettingsPluginInfoClass.html#a2e52769b0d181e0fd25ef58431f9539d":[34,0,1426,0],
-"structMateSettingsPluginInfoClass.html#a2fd38516390a05373b88a1202ce14529":[34,0,1426,1],
-"structMateSettingsPluginInfoClass.html#ae20ca11b5ba7912bff4304223e4f4b21":[34,0,1426,2],
-"structMateUIInfo.html":[34,0,1427]
+"structMateSettingsPluginInfo.html":[34,0,1425]
 };

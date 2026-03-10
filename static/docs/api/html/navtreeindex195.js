@@ -1,5 +1,12 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMixerStoredControlClass.html#ae08c6ee522f203720c50c3dee74ba738":[34,0,641,0],
+"struct__MateMixerStream.html":[34,0,642],
+"struct__MateMixerStream.html#abcd000649e74e69547830ad6eb9ace0b":[34,0,642,0],
+"struct__MateMixerStream.html#ac2e48f7dda0c3735a0fe551cb23e33b0":[34,0,642,1],
+"struct__MateMixerStreamClass.html":[34,0,643],
+"struct__MateMixerStreamClass.html#a4ecbe015038a4b78ed8fada17ea3b8b3":[34,0,643,5],
+"struct__MateMixerStreamClass.html#a50ef7e65eacb9197c773360ccf86551d":[34,0,643,4],
 "struct__MateMixerStreamClass.html#a5b8a46b37e2a116a5dedb8c29b35d704":[34,0,643,6],
 "struct__MateMixerStreamClass.html#a5eb4ca36925cb2c447215727f83a3354":[34,0,643,0],
 "struct__MateMixerStreamClass.html#a6a7216d26a94db79b6bcef985b898aa1":[34,0,643,7],
@@ -242,12 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateWeatherPrefs.html#a8a4d66cfe93766bb72892b067c9dbd19":[34,0,683,1],
 "struct__MateWeatherPrefs.html#a8a5bd2cc327955c1ef105ed6f45e28e6":[34,0,683,9],
 "struct__MateWeatherPrefs.html#aab2dd000028ca90b222da46649f3b0bb":[34,0,683,11],
-"struct__MateWeatherPrefs.html#ab8aa6952e2bdc215a812081b6be20234":[34,0,683,8],
-"struct__MateWeatherPrefs.html#add55ab827da2daec897829029f765912":[34,0,683,3],
-"struct__MateWeatherPrefs.html#af6b1703f8755e141d7ba672a704e89e3":[34,0,683,2],
-"struct__MatekbdDesktopConfig.html":[34,0,605],
-"struct__MatekbdDesktopConfig.html#a1a5b57e78ea238da3c5686e5be017afa":[34,0,605,2],
-"struct__MatekbdDesktopConfig.html#a5d59d5300ca5bb9065a1c2bf669d66e2":[34,0,605,5],
-"struct__MatekbdDesktopConfig.html#ac9c1e148bc37bfc21ac6fbffc2d93b74":[34,0,605,4],
-"struct__MatekbdDesktopConfig.html#acc6b623f7b626bc770aff994262cfc56":[34,0,605,3]
+"struct__MateWeatherPrefs.html#ab8aa6952e2bdc215a812081b6be20234":[34,0,683,8]
 };

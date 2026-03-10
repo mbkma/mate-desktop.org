@@ -41,6 +41,7 @@ var pluma_commands_8h =
     [ "_pluma_cmd_search_replace", "pluma-commands_8h.html#a785401db537b6edb16ab5ada6d999878", null ],
     [ "_pluma_cmd_view_leave_fullscreen_mode", "pluma-commands_8h.html#af41b782846c2aab32781281cb7b059a1", null ],
     [ "_pluma_cmd_view_show_bottom_pane", "pluma-commands_8h.html#abb330b83a29dda36d85aa76e0a5551d7", null ],
+    [ "_pluma_cmd_view_show_right_pane", "pluma-commands_8h.html#ae2014fbf18487a5d283d41d577b0c8d4", null ],
     [ "_pluma_cmd_view_show_side_pane", "pluma-commands_8h.html#a755afb05fc3a9f2d41e333e6f027dc85", null ],
     [ "_pluma_cmd_view_show_statusbar", "pluma-commands_8h.html#a79aafdb692c7ee4f5a2488817c52557d", null ],
     [ "_pluma_cmd_view_show_toolbar", "pluma-commands_8h.html#a17f084a684a52f98f6fdc3c4482392fe", null ],

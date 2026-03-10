@@ -1,5 +1,7 @@
 var NAVTREEINDEX154 =
 {
+"pluma-message-type_8c.html#a45e1e7aa2bcdd8c66aa948aca395e2f7":[35,0,0,34,1,51,7],
+"pluma-message-type_8c.html#a52f4a4486cfcfcb9217cee58e4137fa5":[35,0,0,34,1,51,13],
 "pluma-message-type_8c.html#a5379c6ccb1fd6f9f36c7f7875f9a6e87":[35,0,0,34,1,51,8],
 "pluma-message-type_8c.html#a6d36c59d8051ea9e4425b6919b110f4f":[35,0,0,34,1,51,0],
 "pluma-message-type_8c.html#a7548b230f31f4a6cc339839cf4e9098e":[35,0,0,34,1,51,1],
@@ -195,12 +197,12 @@ var NAVTREEINDEX154 =
 "pluma-plugin_8h.html#a0a87998f4e8cee4888f2a89df3d5639b":[35,0,0,34,3,0,1,0],
 "pluma-plugin_8h.html#a181997ff72152d607a729cfb69f51b1b":[35,0,0,34,3,0,1,8],
 "pluma-plugin_8h.html#a3854c393868dc914375a7ddc982b7e6b":[35,0,0,34,3,0,1,7],
-"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[35,0,0,34,3,0,1,3],
 "pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[35,0,0,34,3,0,1,4],
+"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[35,0,0,34,3,0,1,3],
 "pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[35,0,0,34,3,0,1,5],
 "pluma-plugin_8h.html#a6928648f3a3267c1e8ed2fdc9251baed":[35,0,0,34,3,0,1,6],
-"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[35,0,0,34,3,0,1,2],
 "pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[35,0,0,34,3,0,1,1],
+"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[35,0,0,34,3,0,1,2],
 "pluma-plugin_8h_source.html":[35,0,0,34,3,0,1],
 "pluma-plugins-engine_8c.html":[35,0,0,34,1,63],
 "pluma-plugins-engine_8c.html#a0c06287ef7d8e0b5c172f56bd5e129be":[35,0,0,34,1,63,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX154 =
 "pluma-print-job_8c.html#a50ba2de7e6c99fa0cc60e14f780f8891":[35,0,0,34,1,65,6],
 "pluma-print-job_8c.html#a569fd185cf5c5dbe93becc7a62038c59":[35,0,0,34,1,65,3],
 "pluma-print-job_8c.html#ac2f3cdf1c39976f801f98876c61203de":[35,0,0,34,1,65,4],
-"pluma-print-job_8c.html#ad93a667bda4a9aab28172133b5492c20":[35,0,0,34,1,65,2],
-"pluma-print-job_8c_source.html":[35,0,0,34,1,65],
-"pluma-print-job_8h.html":[35,0,0,34,1,66]
+"pluma-print-job_8c.html#ad93a667bda4a9aab28172133b5492c20":[35,0,0,34,1,65,2]
 };

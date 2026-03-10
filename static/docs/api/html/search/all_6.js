@@ -776,7 +776,7 @@ var searchData=
   ['fontmap_773',['fontmap',['../struct__DviContext.html#a1dd1c99d9b9c13724ccde3218e3eabe7',1,'_DviContext']]],
   ['fontmap_2ec_774',['fontmap.c',['../fontmap_8c.html',1,'']]],
   ['fontmap_2eh_775',['fontmap.h',['../fontmap_8h.html',1,'']]],
-  ['fontname_776',['fontname',['../struct__DviFontMapEnt.html#a7244d23ea435682c6eae2ed8aac289b6',1,'_DviFontMapEnt::fontname'],['../struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437',1,'_DviFont::fontname'],['../struct__MateIconTextItem.html#a4ffc57bb080d7dbdee4d492f62683587',1,'_MateIconTextItem::fontname'],['../structGlobalFontInfo.html#a79ab1c6dcc3cda242657bec09e6dad01',1,'GlobalFontInfo::fontName']]],
+  ['fontname_776',['fontname',['../structGlobalFontInfo.html#a79ab1c6dcc3cda242657bec09e6dad01',1,'GlobalFontInfo::fontName'],['../struct__DviFontMapEnt.html#a7244d23ea435682c6eae2ed8aac289b6',1,'_DviFontMapEnt::fontname'],['../struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437',1,'_DviFont::fontname'],['../struct__MateIconTextItem.html#a4ffc57bb080d7dbdee4d492f62683587',1,'_MateIconTextItem::fontname']]],
   ['fonts_777',['fonts',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md54',1,'🔧 Setting Themes and Fonts'],['../struct__DviContext.html#a289511d9f8472cc24480fc2c6ccb5058',1,'_DviContext::fonts']]],
   ['fonts_2ec_778',['fonts.c',['../fonts_8c.html',1,'']]],
   ['fonts_2eh_779',['fonts.h',['../fonts_8h.html',1,'']]],

@@ -1,5 +1,12 @@
 var NAVTREEINDEX200 =
 {
+"struct__PanelDItemEditorClass.html#ac26ecdcd711c9041a0215d55b3f9f7ff":[34,0,777,7],
+"struct__PanelDItemEditorClass.html#ae4b9f049538520862a2bb5bed7405a19":[34,0,777,2],
+"struct__PanelDItemEditorClass.html#aef81600680a78b31897665a56f04e713":[34,0,777,6],
+"struct__PanelData.html":[34,0,773],
+"struct__PanelData.html#a34c2f2aabd95b03d629d67ad271f3abc":[34,0,773,0],
+"struct__PanelData.html#a520697009723d234cf5989dc7dbcca0a":[34,0,773,1],
+"struct__PanelData.html#a671159327b89e37dfa920861fbf04224":[34,0,773,2],
 "struct__PanelData.html#aea4bdd60668f2f35f463332849a67676":[34,0,773,3],
 "struct__PanelDesktopMenuItem.html":[34,0,774],
 "struct__PanelDesktopMenuItem.html#a076ee15101ef1638b86ebad0e6412f49":[34,0,774,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX200 =
 "struct__PlumaNotebookClass.html":[34,0,844],
 "struct__PlumaNotebookClass.html#a7821b7b47f99132794b19d6f039f6a13":[34,0,844,1],
 "struct__PlumaNotebookClass.html#a7d79c33581f0669c9009f6b1dd8961c7":[34,0,844,3],
-"struct__PlumaNotebookClass.html#aaee4559ba799385c9e8a16373f29a629":[34,0,844,2],
-"struct__PlumaNotebookClass.html#ad448d3cb627dbd7718f106ddbbaf9b64":[34,0,844,4],
-"struct__PlumaNotebookClass.html#aea96cd8038576fdf4428a02a96a4c954":[34,0,844,5],
-"struct__PlumaNotebookClass.html#afff817b4d69a9ee97df4e5463bee0ecd":[34,0,844,0],
-"struct__PlumaPanel.html":[34,0,845],
-"struct__PlumaPanel.html#a2cd163b61b1bf97f06acae396f80457b":[34,0,845,0],
-"struct__PlumaPanel.html#abd949f704166af1d28be06fbf2c04cb2":[34,0,845,1],
-"struct__PlumaPanelClass.html":[34,0,846]
+"struct__PlumaNotebookClass.html#aaee4559ba799385c9e8a16373f29a629":[34,0,844,2]
 };

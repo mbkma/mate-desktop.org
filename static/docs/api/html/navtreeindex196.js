@@ -1,5 +1,12 @@
 var NAVTREEINDEX196 =
 {
+"struct__MateWeatherPrefs.html#add55ab827da2daec897829029f765912":[34,0,683,3],
+"struct__MateWeatherPrefs.html#af6b1703f8755e141d7ba672a704e89e3":[34,0,683,2],
+"struct__MatekbdDesktopConfig.html":[34,0,605],
+"struct__MatekbdDesktopConfig.html#a1a5b57e78ea238da3c5686e5be017afa":[34,0,605,2],
+"struct__MatekbdDesktopConfig.html#a5d59d5300ca5bb9065a1c2bf669d66e2":[34,0,605,5],
+"struct__MatekbdDesktopConfig.html#ac9c1e148bc37bfc21ac6fbffc2d93b74":[34,0,605,4],
+"struct__MatekbdDesktopConfig.html#acc6b623f7b626bc770aff994262cfc56":[34,0,605,3],
 "struct__MatekbdDesktopConfig.html#ad35b6ef4aaf048ba53f5490448136707":[34,0,605,1],
 "struct__MatekbdDesktopConfig.html#adadc24ac5151c5e66872ab13133b592a":[34,0,605,7],
 "struct__MatekbdDesktopConfig.html#aefbcfd5defb6e6433c93afb44a4f695e":[34,0,605,6],
@@ -242,12 +249,5 @@ var NAVTREEINDEX196 =
 "struct__MetaDisplay.html#ab753fdbc4fada76807d0d711cf35a41d":[34,0,697,71],
 "struct__MetaDisplay.html#ab7df40ad4551748e60c17359aea2732c":[34,0,697,72],
 "struct__MetaDisplay.html#abc816f1245d3453697c5e4cef3ec8543":[34,0,697,61],
-"struct__MetaDisplay.html#abfa27f50fcd9d5ab6138205011e639de":[34,0,697,65],
-"struct__MetaDisplay.html#ac66bf2f346c4863c295d5d7a9f0bf6bf":[34,0,697,11],
-"struct__MetaDisplay.html#ac6d639eaeaeb9c6949d113e248cd1f42":[34,0,697,57],
-"struct__MetaDisplay.html#acf8de257b0b2dfc3c0ef5f45e70876c3":[34,0,697,3],
-"struct__MetaDisplay.html#acf95297894b325a316e46f026837016f":[34,0,697,63],
-"struct__MetaDisplay.html#ad094cffaafc85c20ff50454beb2061e2":[34,0,697,50],
-"struct__MetaDisplay.html#ad44d20cf187d358b2531b6643223352f":[34,0,697,56],
-"struct__MetaDisplay.html#ad5f6dfce567d3acb10d057b448c20526":[34,0,697,70]
+"struct__MetaDisplay.html#abfa27f50fcd9d5ab6138205011e639de":[34,0,697,65]
 };

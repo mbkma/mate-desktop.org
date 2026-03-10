@@ -1,5 +1,12 @@
 var NAVTREEINDEX194 =
 {
+"struct__MateDruidPageEdge.html#acd1cac5d23664be531de390a6c701790":[34,0,584,12],
+"struct__MateDruidPageEdge.html#ad8a1ff55875fee53e5c2721045f5f53e":[34,0,584,4],
+"struct__MateDruidPageEdge.html#ae2466249e58e5aacc2a6fb0e5f6e5e6b":[34,0,584,3],
+"struct__MateDruidPageEdge.html#afbc870345f8ba42a4de14f413a8b8a35":[34,0,584,2],
+"struct__MateDruidPageEdgeClass.html":[34,0,585],
+"struct__MateDruidPageEdgeClass.html#a3ad9cab1201491a63b8b3bc553904f62":[34,0,585,2],
+"struct__MateDruidPageEdgeClass.html#a8c21f59b16b458b2e8049b9c4fdf03ce":[34,0,585,0],
 "struct__MateDruidPageEdgeClass.html#af2407f39250c8939668ec77bdc2d2250":[34,0,585,1],
 "struct__MateDruidPageStandard.html":[34,0,586],
 "struct__MateDruidPageStandard.html#a151bf85284e95c34ce684132c270f32c":[34,0,586,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX194 =
 "struct__MateMixerStoredControl.html":[34,0,640],
 "struct__MateMixerStoredControl.html#a7bc94f7d69aa0002a1466657e266bd19":[34,0,640,1],
 "struct__MateMixerStoredControl.html#a88961bca9af710866687bcc4da2e05f8":[34,0,640,0],
-"struct__MateMixerStoredControlClass.html":[34,0,641],
-"struct__MateMixerStoredControlClass.html#ae08c6ee522f203720c50c3dee74ba738":[34,0,641,0],
-"struct__MateMixerStream.html":[34,0,642],
-"struct__MateMixerStream.html#abcd000649e74e69547830ad6eb9ace0b":[34,0,642,0],
-"struct__MateMixerStream.html#ac2e48f7dda0c3735a0fe551cb23e33b0":[34,0,642,1],
-"struct__MateMixerStreamClass.html":[34,0,643],
-"struct__MateMixerStreamClass.html#a4ecbe015038a4b78ed8fada17ea3b8b3":[34,0,643,5],
-"struct__MateMixerStreamClass.html#a50ef7e65eacb9197c773360ccf86551d":[34,0,643,4]
+"struct__MateMixerStoredControlClass.html":[34,0,641]
 };

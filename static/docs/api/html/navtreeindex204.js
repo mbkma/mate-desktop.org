@@ -1,5 +1,15 @@
 var NAVTREEINDEX204 =
 {
+"structjpeg__d__main__controller.html":[34,0,1386],
+"structjpeg__d__main__controller.html#a6fd68ad0d0296dcc299119db1128c294":[34,0,1386,1],
+"structjpeg__d__main__controller.html#affd488d3ef78b5080ec5b2a00c8198a5":[34,0,1386,0],
+"structjpeg__d__post__controller.html":[34,0,1387],
+"structjpeg__d__post__controller.html#a349b2ff7508568d13a9294f3e79163aa":[34,0,1387,1],
+"structjpeg__d__post__controller.html#adb337adcfe3a314ceac4b626a73d87c3":[34,0,1387,0],
+"structjpeg__decomp__master.html":[34,0,1388],
+"structjpeg__decomp__master.html#a7dec615b828e443ddddf99078d1edb9a":[34,0,1388,0],
+"structjpeg__decomp__master.html#a93cbde036bd87ab00b0ac8214e27bbe1":[34,0,1388,2],
+"structjpeg__decomp__master.html#ab0e51667ba436fad82e7cf95b1bd4120":[34,0,1388,1],
 "structjpeg__downsampler.html":[34,0,1389],
 "structjpeg__downsampler.html#a1ca33229e63cdb80020c714f1cd28ea0":[34,0,1389,1],
 "structjpeg__downsampler.html#a611ebcb0ae11e4d1c6ba4222caacaec4":[34,0,1389,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX204 =
 "structzlib__filefunc64__def__s.html#a04f5366c9e7e48343357bb88b46998f9":[34,0,1676,7],
 "structzlib__filefunc64__def__s.html#a53df1c67f9b44a61e607b9cfb9c409c0":[34,0,1676,3],
 "structzlib__filefunc64__def__s.html#a5f6d2267b03488a9edc3fdd9a2da0c2f":[34,0,1676,0],
-"structzlib__filefunc64__def__s.html#a5fd1cd36c741000649328d0db54523c5":[34,0,1676,4],
-"structzlib__filefunc64__def__s.html#a88b8bd0d697c49e384915fcab765b5b3":[34,0,1676,6],
-"structzlib__filefunc64__def__s.html#aaf7d9825e2afc16c93cec9956c4f1a10":[34,0,1676,1],
-"structzlib__filefunc64__def__s.html#ab03b3242d363b748ea6e60b7b9e5e6d1":[34,0,1676,5],
-"structzlib__filefunc64__def__s.html#abdac5e81672673ef1f4242d6fdc49d2d":[34,0,1676,2],
-"structzlib__filefunc__def__s.html":[34,0,1677],
-"structzlib__filefunc__def__s.html#a4747bdf97a3f44fe4b958114c11e1dcf":[34,0,1677,5],
-"structzlib__filefunc__def__s.html#a494b6d634b61bdc7fc7caed8e4fbe3f4":[34,0,1677,0],
-"structzlib__filefunc__def__s.html#a49b78a559140e495b94af4d9dfe5c4e9":[34,0,1677,3],
-"structzlib__filefunc__def__s.html#a61182b5b3ff83fb509b57ab4d2d9816d":[34,0,1677,2],
-"structzlib__filefunc__def__s.html#a710b490fec793486ef5bedd9f2e1136d":[34,0,1677,7]
+"structzlib__filefunc64__def__s.html#a5fd1cd36c741000649328d0db54523c5":[34,0,1676,4]
 };

@@ -1,15 +1,20 @@
 var NAVTREEINDEX156 =
 {
-"pluma-settings_8h.html#aefdb7575b9fe9c75274842aacb246955":[35,0,0,34,1,74,58],
-"pluma-settings_8h.html#af53ea6c6c6b81f3acf1736a2eaf4d10b":[35,0,0,34,1,74,66],
+"pluma-settings_8h.html#ae399551ba5d90af13e756dfa1d5a4f16":[35,0,0,34,1,74,35],
+"pluma-settings_8h.html#ae63028a0a9b8d6d5454d8c4aa606d01c":[35,0,0,34,1,74,7],
+"pluma-settings_8h.html#aed80236f09bea682f00e81a41649bbf5":[35,0,0,34,1,74,44],
+"pluma-settings_8h.html#aefc0b3eb3760c68d1dafb8b0972853ac":[35,0,0,34,1,74,54],
+"pluma-settings_8h.html#aefdb7575b9fe9c75274842aacb246955":[35,0,0,34,1,74,61],
+"pluma-settings_8h.html#af53ea6c6c6b81f3acf1736a2eaf4d10b":[35,0,0,34,1,74,69],
 "pluma-settings_8h.html#af5c5ff97142bd9221868c9b5baba20c7":[35,0,0,34,1,74,42],
-"pluma-settings_8h.html#af5e03ee9c8dca6300b67271f7b896ed2":[35,0,0,34,1,74,46],
-"pluma-settings_8h.html#af6811e0a5af6d476c7d2914bfeed511d":[35,0,0,34,1,74,68],
+"pluma-settings_8h.html#af5e03ee9c8dca6300b67271f7b896ed2":[35,0,0,34,1,74,49],
+"pluma-settings_8h.html#af6811e0a5af6d476c7d2914bfeed511d":[35,0,0,34,1,74,71],
 "pluma-settings_8h.html#af8aa0f51293d762a21f14d1dc477768a":[35,0,0,34,1,74,33],
 "pluma-settings_8h.html#af9bef280ca97b25a759750063a3d0d98":[35,0,0,34,1,74,43],
 "pluma-settings_8h.html#afb848a86d9476afc06d5341f1a006fd3":[35,0,0,34,1,74,18],
 "pluma-settings_8h.html#afb8f791ba23032ab542131a6a02c562a":[35,0,0,34,1,74,14],
-"pluma-settings_8h.html#afbba95fc57c84c862eef42716692eb7d":[35,0,0,34,1,74,57],
+"pluma-settings_8h.html#afbba95fc57c84c862eef42716692eb7d":[35,0,0,34,1,74,60],
+"pluma-settings_8h.html#afe100f0cabb95670a8f820932d8ed343":[35,0,0,34,1,74,46],
 "pluma-settings_8h_source.html":[35,0,0,34,1,74],
 "pluma-smart-charset-converter_8c.html":[35,0,0,34,1,75],
 "pluma-smart-charset-converter_8c.html#a4a61417a82e5ca3e43e3755474beb052":[35,0,0,34,1,75,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX156 =
 "pluma-style-scheme-manager_8c.html":[35,0,0,34,1,81],
 "pluma-style-scheme-manager_8c.html#a020c9206ff8cabb23e50d3c76054e3bb":[35,0,0,34,1,81,2],
 "pluma-style-scheme-manager_8c.html#a0a6e1c5a4635a163911c7c107460ee40":[35,0,0,34,1,81,1],
-"pluma-style-scheme-manager_8c.html#a58c997163382d66e932fb97df982bbcd":[35,0,0,34,1,81,0],
-"pluma-style-scheme-manager_8c.html#a6f5a83b1d8c9e1fbf6fe904b5c2bf088":[35,0,0,34,1,81,4],
-"pluma-style-scheme-manager_8c.html#a8dab3986dbd7557099027271f8cbaa46":[35,0,0,34,1,81,3],
-"pluma-style-scheme-manager_8c_source.html":[35,0,0,34,1,81],
-"pluma-style-scheme-manager_8h.html":[35,0,0,34,1,82],
-"pluma-style-scheme-manager_8h.html#a020c9206ff8cabb23e50d3c76054e3bb":[35,0,0,34,1,82,2]
+"pluma-style-scheme-manager_8c.html#a58c997163382d66e932fb97df982bbcd":[35,0,0,34,1,81,0]
 };

@@ -129,10 +129,11 @@ var searchData=
   ['horizontal_5fstripes_126',['horizontal_stripes',['../struct__MetaDrawOp.html#a7cf6276d93f1f2d534669b78a7a116d0',1,'_MetaDrawOp']]],
   ['hourspin_127',['HourSpin',['../structTimeAdmin.html#ab16bf3b15ce365789705869a9589f000',1,'TimeAdmin']]],
   ['hpaned_128',['hpaned',['../struct__PlumaWindowPrivate.html#a66784ab71293d56c3c44f58b82d74a2f',1,'_PlumaWindowPrivate']]],
-  ['hscroll_5fpolicy_129',['hscroll_policy',['../struct__EvView.html#a895ae143a9cbb881f473647b54434b0b',1,'_EvView']]],
-  ['hshrink_130',['hshrink',['../struct__DviParams.html#a772fc274414e7728029835f41981a8dc',1,'_DviParams']]],
-  ['hwaddr_131',['hwaddr',['../structDevInfo.html#adf1e9aab79fb7e937b51728c0d67f9ee',1,'DevInfo']]],
-  ['hyper_5findicator_132',['hyper_indicator',['../structAccessxStatusApplet.html#a4347750f542f8cb18f71f2a22f4cc118',1,'AccessxStatusApplet']]],
-  ['hyper_5fmask_133',['hyper_mask',['../struct__MetaDisplay.html#a9e6370dbe7d4ae6e621cb67c2202e9dc',1,'_MetaDisplay']]],
-  ['hyperlink_134',['hyperlink',['../struct__TerminalScreenPopupInfo.html#a4c860ef78518eeba236109255f199398',1,'_TerminalScreenPopupInfo']]]
+  ['hpaned_5finner_129',['hpaned_inner',['../struct__PlumaWindowPrivate.html#a5b40b8e0825e7f1ccd10d2d5a178f2f8',1,'_PlumaWindowPrivate']]],
+  ['hscroll_5fpolicy_130',['hscroll_policy',['../struct__EvView.html#a895ae143a9cbb881f473647b54434b0b',1,'_EvView']]],
+  ['hshrink_131',['hshrink',['../struct__DviParams.html#a772fc274414e7728029835f41981a8dc',1,'_DviParams']]],
+  ['hwaddr_132',['hwaddr',['../structDevInfo.html#adf1e9aab79fb7e937b51728c0d67f9ee',1,'DevInfo']]],
+  ['hyper_5findicator_133',['hyper_indicator',['../structAccessxStatusApplet.html#a4347750f542f8cb18f71f2a22f4cc118',1,'AccessxStatusApplet']]],
+  ['hyper_5fmask_134',['hyper_mask',['../struct__MetaDisplay.html#a9e6370dbe7d4ae6e621cb67c2202e9dc',1,'_MetaDisplay']]],
+  ['hyperlink_135',['hyperlink',['../struct__TerminalScreenPopupInfo.html#a4c860ef78518eeba236109255f199398',1,'_TerminalScreenPopupInfo']]]
 ];
