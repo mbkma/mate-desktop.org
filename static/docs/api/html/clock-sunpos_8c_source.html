@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('clock-sunpos_8c_source.html',''); init
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">/* Calculate number of days since 4713BC.</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">static</span> gdouble</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>unix_time_to_julian_date (gint unix_time)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>unix_time_to_julian_date (gint64 unix_time)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="clock-sunpos_8c.html#a01927fa4465a1391bc765f2f6c79a0b8">UNIX_EPOCH</a> + (double) unix_time / (60 * 60 * 24);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
