@@ -394,16 +394,16 @@ var NAVTREEINDEX =
 "terminal-screen_8c.html#af68f2d0d1616e5d5535715bf858fc0e4",
 "terminal-window_8h.html#af7888710189bcb0f8fdd68453f140bf8",
 "test-virtuals-without-test_8c.html#a5213a6e16e844b058885a5dee0fde8ff",
-"theme-util_8h.html",
-"theme_8h.html#af2e709183e2493570a8a4357e661d096",
-"time-zones_8h.html#a0ebfc1ff461ed5447098c2be4db2157a",
-"time-zones_8h.html#a99ab3a95186a97f21a8dc9b6114a9b7a",
-"transupp-8a_8h.html#a3bd91a70e242595a427afbcbafa1e306",
-"unzip_8c.html#a87020390a71a0591c13e22b1b529573b",
-"weather-sun_8c.html",
-"window-list_8c.html#a3e5585cc4aaa0bc75d5230f99124f128a866689c3cdc8b20f42c63382252cf829",
-"window_8c.html#a7f6368e43236f26c2f23f0243b855597",
-"xprops_8h.html#a8189db1d0d2b3a820e97070c0f52c0bb"
+"theme-util_8c.html#a601affb1a96ee2b066956829d896611a",
+"theme_8h.html#af07a4b38f8777ebb4206eefe652d31d7",
+"time-zones_8h.html#a0a5edc01a00d72bb52e6ad6f6e04799d",
+"time-zones_8h.html#a973c77100389bf0c467a21b1f9780a91",
+"transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315abfca53d9f6c4fd7ae9a90dbc7cdf0a03",
+"unzip_8c.html#a67559097ba938e4e85257da3fc6d827d",
+"weather-priv_8h.html#af12bcb1c6c70a0e255cfd93cd1022af5",
+"window-list_8c.html#a18c3c641f3ef61c34ccc77cfb3384eec",
+"window_8c.html#a7a4d7f70bd2e23e854a7dee902ee8c14",
+"xprops_8h.html#a69400793cde2088075ae3ab70a890e1b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

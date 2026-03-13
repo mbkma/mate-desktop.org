@@ -12,6 +12,7 @@ var dir_e1538a806a24d0ba155a7f7eae760b96 =
     [ "mateweather-xml.h", "mateweather-xml_8h.html", "mateweather-xml_8h" ],
     [ "parser.c", "libmateweather_2libmateweather_2parser_8c.html", "libmateweather_2libmateweather_2parser_8c" ],
     [ "parser.h", "libmateweather_2libmateweather_2parser_8h.html", "libmateweather_2libmateweather_2parser_8h" ],
+    [ "test_libmateweather.c", "test__libmateweather_8c.html", "test__libmateweather_8c" ],
     [ "test_locations.c", "test__locations_8c.html", "test__locations_8c" ],
     [ "test_metar.c", "test__metar_8c.html", "test__metar_8c" ],
     [ "test_sun_moon.c", "test__sun__moon_8c.html", "test__sun__moon_8c" ],

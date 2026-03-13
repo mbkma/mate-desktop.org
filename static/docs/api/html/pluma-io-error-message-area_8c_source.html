@@ -1273,7 +1273,7 @@ $(document).ready(function(){initNavTree('pluma-io-error-message-area_8c_source.
 <div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    gchar *full_formatted_uri;</div>
 <div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>    gchar *uri_for_display;</div>
 <div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    gchar *temp_uri_for_display;</div>
-<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    <span class="keyword">const</span> gchar *primary_text;</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    gchar *primary_text;</div>
 <div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>    <span class="keyword">const</span> gchar *secondary_text;</div>
 <div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>    GtkWidget *message_area;</div>
 <div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span> </div>
@@ -1324,10 +1324,12 @@ $(document).ready(function(){initNavTree('pluma-io-error-message-area_8c_source.
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>                    primary_text,</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>                    secondary_text);</div>
 <div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span> </div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    <span class="keywordflow">return</span> message_area;</div>
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>}</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    g_free (primary_text);</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span> </div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>    <span class="keywordflow">return</span> message_area;</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>}</div>
 </div>
-<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span> </div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span> </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>

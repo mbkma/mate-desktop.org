@@ -327,7 +327,7 @@ Functions</h2></td></tr>
 <p>Cancels the dialog if it is currenlty running.</p>
 <p>Returns: TRUE if the dialog was running. </p>
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01193">1193</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01196">1196</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="polkitmateauthenticationdialog_8h_source.html#l00046">_PolkitMateAuthenticationDialog::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -354,7 +354,7 @@ Functions</h2></td></tr>
 <p>Gets the currently selected user.</p>
 <p>Returns: The currently selected user (free with g_free()) or NULL if no user is currently selected. </p>
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01172">1172</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01175">1175</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="polkitmateauthenticationdialog_8h_source.html#l00046">_PolkitMateAuthenticationDialog::priv</a>.</p>
 
@@ -396,7 +396,7 @@ Functions</h2></td></tr>
 <p>polkit_mate_authentication_dialog_indicate_error: @dialog: the auth dialog</p>
 <p>Call this function to indicate an authentication error; typically shakes the window </p>
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01027">1027</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01030">1030</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 </div>
 </div>
@@ -459,7 +459,7 @@ Functions</h2></td></tr>
 <p>Yada yada yada...</p>
 <p>Returns: A new password dialog. </p>
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l00987">987</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l00990">990</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="polkitmateauthenticationdialog_8h_source.html#l00033">POLKIT_MATE_TYPE_AUTHENTICATION_DIALOG</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -514,7 +514,7 @@ Functions</h2></td></tr>
 <p>Runs @dialog in a recursive main loop until a response to @prompt have been obtained from the user.</p>
 <p>Returns: The response (free with g_free()) or NULL if one of @was_cancelled or @new_user_selected has been set to TRUE. </p>
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01111">1111</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01114">1114</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="polkitmateauthenticationdialog_8h_source.html#l00046">_PolkitMateAuthenticationDialog::priv</a>, <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l00043">RESPONSE_USER_SELECTED</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -540,7 +540,7 @@ Functions</h2></td></tr>
 <p>If there is only one element in the the users array (which is set upon construction) or an user has already been selected, this function returns immediately with the return value TRUE.</p>
 <p>Returns: TRUE if a user is selected (use polkit_mate_dialog_get_selected_user() to obtain the user) or FALSE if the dialog was cancelled. </p>
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01071">1071</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01074">1074</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="polkitmateauthenticationdialog_8h_source.html#l00046">_PolkitMateAuthenticationDialog::priv</a>, <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l00043">RESPONSE_USER_SELECTED</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -572,7 +572,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01178">1178</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="polkitmateauthenticationdialog_8c_source.html#l01181">1181</a> of file <a class="el" href="polkitmateauthenticationdialog_8c_source.html">polkitmateauthenticationdialog.c</a>.</p>
 
 <p class="reference">References <a class="el" href="polkitmateauthenticationdialog_8h_source.html#l00046">_PolkitMateAuthenticationDialog::priv</a>.</p>
 

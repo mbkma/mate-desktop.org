@@ -224,7 +224,7 @@ var searchData=
   ['plumawordcompletionplugin_221',['PlumaWordCompletionPlugin',['../pluma-word-completion-plugin_8h.html#a87e6eae1a9372f0f204a07b898ca3ea1',1,'pluma-word-completion-plugin.h']]],
   ['plumawordcompletionpluginclass_222',['PlumaWordCompletionPluginClass',['../pluma-word-completion-plugin_8h.html#adb5ac2395e5c98cd787e5b77ccea1ba2',1,'pluma-word-completion-plugin.h']]],
   ['plumawordcompletionpluginprivate_223',['PlumaWordCompletionPluginPrivate',['../pluma-word-completion-plugin_8h.html#ada344d414bc9dbcf71f48a0c63d134dd',1,'pluma-word-completion-plugin.h']]],
-  ['point_224',['point',['../gste-starfield_8c.html#a37e9de632d1eb76ff7dcd3d8172add7d',1,'point:&#160;gste-starfield.c'],['../floaters_8c.html#a184fa32e8e7e95b0596d604fc3c645c8',1,'Point:&#160;floaters.c']]],
+  ['point_224',['point',['../floaters_8c.html#a184fa32e8e7e95b0596d604fc3c645c8',1,'Point:&#160;floaters.c'],['../gste-starfield_8c.html#a37e9de632d1eb76ff7dcd3d8172add7d',1,'point:&#160;gste-starfield.c']]],
   ['pointer_225',['Pointer',['../sysdeps_8h.html#ae274f9e1a208e72b8f1f67e6d23bf4ff',1,'sysdeps.h']]],
   ['polkitmateauthenticationdialog_226',['PolkitMateAuthenticationDialog',['../polkitmateauthenticationdialog_8h.html#ac152f0133bf6f5eae4b80761b979623c',1,'polkitmateauthenticationdialog.h']]],
   ['polkitmateauthenticationdialogclass_227',['PolkitMateAuthenticationDialogClass',['../polkitmateauthenticationdialog_8h.html#a7c16956bf58a4990d08e707c25cf9f44',1,'polkitmateauthenticationdialog.h']]],

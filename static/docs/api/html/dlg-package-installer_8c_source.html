@@ -314,130 +314,131 @@ $(document).ready(function(){initNavTree('dlg-package-installer_8c_source.html',
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                       <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;There was an internal error trying to search for applications:&quot;</span>),</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                       <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>);</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        g_clear_error (&amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>confirm_search_dialog_response_cb (GtkDialog *dialog,</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                   <span class="keywordtype">int</span>        response_id,</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                   gpointer   <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>{</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    InstallerData *idata = <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    gtk_widget_destroy (GTK_WIDGET (dialog));</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">if</span> (response_id == GTK_RESPONSE_YES) {</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        install_packages (idata);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    }</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <a class="code hl_function" href="fr-window_8c.html#a4eb38d6c8d251c409e9a84c0702f4b80">fr_window_stop_batch</a> (idata-&gt;window);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        installer_data_free (idata);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">static</span> GtkWidget *</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>create_button (<span class="keyword">const</span> <span class="keywordtype">char</span> *icon_name,</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>           <span class="keyword">const</span> <span class="keywordtype">char</span> *text)</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>{</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    GtkIconTheme *icon_theme;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    GtkWidget    *button;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    button = gtk_button_new_with_mnemonic (text);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    icon_theme = gtk_icon_theme_get_default ();</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordflow">if</span> (gtk_icon_theme_has_icon (icon_theme, icon_name)) {</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        GtkWidget *image;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_BUTTON);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        gtk_button_set_image (GTK_BUTTON (button), image);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    }</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    gtk_widget_set_can_default (button, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    gtk_widget_show (button);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keywordflow">return</span> button;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>}</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_PACKAGEKIT */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00264" data-start="{" data-end="}">
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno"><a class="line" href="dlg-package-installer_8c.html#aee0dfb6025eb3b5e0516fac42f20265e">  264</a></span><a class="code hl_function" href="dlg-package-installer_8c.html#aee0dfb6025eb3b5e0516fac42f20265e">dlg_package_installer</a> (<a class="code hl_struct" href="struct__FrWindow.html">FrWindow</a>  *window,</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>               <a class="code hl_struct" href="struct__FrArchive.html">FrArchive</a> *archive,</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>               <a class="code hl_enumeration" href="fr-command_8h.html#aad0732e199eae07de67850fb7ce45943">FrAction</a>   <a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>)</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>{</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    InstallerData   *idata;</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    GType            command_type;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <a class="code hl_struct" href="struct__FrCommand.html">FrCommand</a>       *<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    idata = g_new0 (InstallerData, 1);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    idata-&gt;window = g_object_ref (window);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    idata-&gt;archive = g_object_ref (archive);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    idata-&gt;action = <a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    command_type = <a class="code hl_function" href="fr-init_8c.html#a7f825ab309af2432be52f969bc471f31">get_preferred_command_for_mime_type</a> (idata-&gt;archive-&gt;content_type, <a class="code hl_define" href="typedefs_8h.html#ab5edc745d556a963b6f603dc1df33455">FR_COMMAND_CAN_READ_WRITE</a>);</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">if</span> (command_type == 0)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        command_type = <a class="code hl_function" href="fr-init_8c.html#a7f825ab309af2432be52f969bc471f31">get_preferred_command_for_mime_type</a> (idata-&gt;archive-&gt;content_type, <a class="code hl_enumvalue" href="typedefs_8h.html#a4e7f1944ba67cdd7f7e2cd36c78b6b6ca51745eb771c4e41bbfa9fbe19542b51b">FR_COMMAND_CAN_READ</a>);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">if</span> (command_type == 0) {</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Archive type not supported.&quot;</span>));</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a> = g_object_new (command_type, 0);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    idata-&gt;packages = <a class="code hl_function" href="fr-command_8c.html#acd510affa2753debed101b4c943237a8">fr_command_get_packages</a> (<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>, idata-&gt;archive-&gt;content_type);</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    g_object_unref (<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>);</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keywordflow">if</span> (idata-&gt;packages == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Archive type not supported.&quot;</span>));</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#ifdef ENABLE_PACKAGEKIT</span></div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    {</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <span class="keywordtype">char</span>      *secondary_text;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        GtkWidget *dialog;</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        <span class="keywordtype">char</span>      *description;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        description = g_content_type_get_description (idata-&gt;archive-&gt;content_type);</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        secondary_text = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;There is no command installed for %s files.\nDo you want to search for a command to open this file?&quot;</span>),</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                                          description);</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        dialog = <a class="code hl_function" href="gtk-utils_8c.html#adb556844d33553d8df50b5d960b1e3b3">_gtk_message_dialog_new</a> (GTK_WINDOW (idata-&gt;window),</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                          GTK_DIALOG_MODAL,</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                          <span class="stringliteral">&quot;dialog-error&quot;</span>,</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                          <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Could not open this file type&quot;</span>),</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                          secondary_text,</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                          <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        gtk_dialog_add_action_widget (GTK_DIALOG (dialog),</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                                      create_button (<span class="stringliteral">&quot;process-stop&quot;</span>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;_Cancel&quot;</span>)),</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                                      GTK_RESPONSE_NO);</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        gtk_dialog_add_action_widget (GTK_DIALOG (dialog),</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                                      create_button (<span class="stringliteral">&quot;edit-find&quot;</span>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;_Search Command&quot;</span>)),</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                                      GTK_RESPONSE_YES);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_YES);</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        g_signal_connect (dialog, <span class="stringliteral">&quot;response&quot;</span>, G_CALLBACK (confirm_search_dialog_response_cb), idata);</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        gtk_widget_show (dialog);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        g_free (description);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        g_free (secondary_text);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    }</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="preprocessor">#else </span><span class="comment">/* ! ENABLE_PACKAGEKIT */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Archive type not supported.&quot;</span>));</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_PACKAGEKIT */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>}</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        g_free (<a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        g_clear_error (&amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    }</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>confirm_search_dialog_response_cb (GtkDialog *dialog,</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                   <span class="keywordtype">int</span>        response_id,</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                   gpointer   <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>{</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    InstallerData *idata = <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    gtk_widget_destroy (GTK_WIDGET (dialog));</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">if</span> (response_id == GTK_RESPONSE_YES) {</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        install_packages (idata);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <a class="code hl_function" href="fr-window_8c.html#a4eb38d6c8d251c409e9a84c0702f4b80">fr_window_stop_batch</a> (idata-&gt;window);</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        installer_data_free (idata);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>}</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="keyword">static</span> GtkWidget *</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>create_button (<span class="keyword">const</span> <span class="keywordtype">char</span> *icon_name,</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>           <span class="keyword">const</span> <span class="keywordtype">char</span> *text)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>{</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    GtkIconTheme *icon_theme;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    GtkWidget    *button;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    button = gtk_button_new_with_mnemonic (text);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    icon_theme = gtk_icon_theme_get_default ();</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">if</span> (gtk_icon_theme_has_icon (icon_theme, icon_name)) {</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        GtkWidget *image;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_BUTTON);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        gtk_button_set_image (GTK_BUTTON (button), image);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    gtk_widget_set_can_default (button, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    gtk_widget_show (button);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">return</span> button;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_PACKAGEKIT */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00265" data-start="{" data-end="}">
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno"><a class="line" href="dlg-package-installer_8c.html#aee0dfb6025eb3b5e0516fac42f20265e">  265</a></span><a class="code hl_function" href="dlg-package-installer_8c.html#aee0dfb6025eb3b5e0516fac42f20265e">dlg_package_installer</a> (<a class="code hl_struct" href="struct__FrWindow.html">FrWindow</a>  *window,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>               <a class="code hl_struct" href="struct__FrArchive.html">FrArchive</a> *archive,</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>               <a class="code hl_enumeration" href="fr-command_8h.html#aad0732e199eae07de67850fb7ce45943">FrAction</a>   <a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>)</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>{</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    InstallerData   *idata;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    GType            command_type;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <a class="code hl_struct" href="struct__FrCommand.html">FrCommand</a>       *<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    idata = g_new0 (InstallerData, 1);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    idata-&gt;window = g_object_ref (window);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    idata-&gt;archive = g_object_ref (archive);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    idata-&gt;action = <a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    command_type = <a class="code hl_function" href="fr-init_8c.html#a7f825ab309af2432be52f969bc471f31">get_preferred_command_for_mime_type</a> (idata-&gt;archive-&gt;content_type, <a class="code hl_define" href="typedefs_8h.html#ab5edc745d556a963b6f603dc1df33455">FR_COMMAND_CAN_READ_WRITE</a>);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">if</span> (command_type == 0)</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        command_type = <a class="code hl_function" href="fr-init_8c.html#a7f825ab309af2432be52f969bc471f31">get_preferred_command_for_mime_type</a> (idata-&gt;archive-&gt;content_type, <a class="code hl_enumvalue" href="typedefs_8h.html#a4e7f1944ba67cdd7f7e2cd36c78b6b6ca51745eb771c4e41bbfa9fbe19542b51b">FR_COMMAND_CAN_READ</a>);</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordflow">if</span> (command_type == 0) {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Archive type not supported.&quot;</span>));</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    }</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a> = g_object_new (command_type, 0);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    idata-&gt;packages = <a class="code hl_function" href="fr-command_8c.html#acd510affa2753debed101b4c943237a8">fr_command_get_packages</a> (<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>, idata-&gt;archive-&gt;content_type);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    g_object_unref (<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keywordflow">if</span> (idata-&gt;packages == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Archive type not supported.&quot;</span>));</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    }</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">#ifdef ENABLE_PACKAGEKIT</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordtype">char</span>      *secondary_text;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        GtkWidget *dialog;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="keywordtype">char</span>      *description;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        description = g_content_type_get_description (idata-&gt;archive-&gt;content_type);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        secondary_text = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;There is no command installed for %s files.\nDo you want to search for a command to open this file?&quot;</span>),</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                                          description);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        dialog = <a class="code hl_function" href="gtk-utils_8c.html#adb556844d33553d8df50b5d960b1e3b3">_gtk_message_dialog_new</a> (GTK_WINDOW (idata-&gt;window),</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>                          GTK_DIALOG_MODAL,</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                          <span class="stringliteral">&quot;dialog-error&quot;</span>,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                          <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Could not open this file type&quot;</span>),</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                          secondary_text,</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                          <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        gtk_dialog_add_action_widget (GTK_DIALOG (dialog),</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                                      create_button (<span class="stringliteral">&quot;process-stop&quot;</span>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;_Cancel&quot;</span>)),</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                                      GTK_RESPONSE_NO);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>        gtk_dialog_add_action_widget (GTK_DIALOG (dialog),</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                                      create_button (<span class="stringliteral">&quot;edit-find&quot;</span>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;_Search Command&quot;</span>)),</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                                      GTK_RESPONSE_YES);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_YES);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        g_signal_connect (dialog, <span class="stringliteral">&quot;response&quot;</span>, G_CALLBACK (confirm_search_dialog_response_cb), idata);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        gtk_widget_show (dialog);</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        g_free (description);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        g_free (secondary_text);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    }</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="preprocessor">#else </span><span class="comment">/* ! ENABLE_PACKAGEKIT */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    package_installer_terminated (idata, <a class="code hl_enumvalue" href="typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1">FR_PROC_ERROR_GENERIC</a>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Archive type not supported.&quot;</span>));</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_PACKAGEKIT */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="abaobab-utils_8c_html_a56d03d3e20ba3f5875dfaf98f41c80ad"><div class="ttname"><a href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a></div><div class="ttdeci">void message(const gchar *primary_msg, const gchar *secondary_msg, GtkMessageType type, GtkWidget *parent)</div><div class="ttdef"><b>Definition</b> <a href="baobab-utils_8c_source.html#l00227">baobab-utils.c:227</a></div></div>
 <div class="ttc" id="acaja-navigation-window_8c_html_ab1db9bdb9ca2c111e4aef51de082553e"><div class="ttname"><a href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a></div><div class="ttdeci">const char * action</div><div class="ttdef"><b>Definition</b> <a href="caja-navigation-window_8c_source.html#l00100">caja-navigation-window.c:100</a></div></div>
-<div class="ttc" id="adlg-package-installer_8c_html_aee0dfb6025eb3b5e0516fac42f20265e"><div class="ttname"><a href="dlg-package-installer_8c.html#aee0dfb6025eb3b5e0516fac42f20265e">dlg_package_installer</a></div><div class="ttdeci">void dlg_package_installer(FrWindow *window, FrArchive *archive, FrAction action)</div><div class="ttdef"><b>Definition</b> <a href="dlg-package-installer_8c_source.html#l00264">dlg-package-installer.c:264</a></div></div>
+<div class="ttc" id="adlg-package-installer_8c_html_aee0dfb6025eb3b5e0516fac42f20265e"><div class="ttname"><a href="dlg-package-installer_8c.html#aee0dfb6025eb3b5e0516fac42f20265e">dlg_package_installer</a></div><div class="ttdeci">void dlg_package_installer(FrWindow *window, FrArchive *archive, FrAction action)</div><div class="ttdef"><b>Definition</b> <a href="dlg-package-installer_8c_source.html#l00265">dlg-package-installer.c:265</a></div></div>
 <div class="ttc" id="adlg-package-installer_8h_html"><div class="ttname"><a href="dlg-package-installer_8h.html">dlg-package-installer.h</a></div></div>
 <div class="ttc" id="afr-archive_8c_html_a837dadd6f86a9fee4d038fec5c42d44d"><div class="ttname"><a href="fr-archive_8c.html#a837dadd6f86a9fee4d038fec5c42d44d">fr_archive_action_completed</a></div><div class="ttdeci">void fr_archive_action_completed(FrArchive *archive, FrAction action, FrProcErrorType error_type, const char *error_details)</div><div class="ttdef"><b>Definition</b> <a href="fr-archive_8c_source.html#l00304">fr-archive.c:304</a></div></div>
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
