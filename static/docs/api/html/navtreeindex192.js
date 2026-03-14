@@ -1,11 +1,5 @@
 var NAVTREEINDEX192 =
 {
-"struct__GdictSourceChooserClass.html":[34,0,489],
-"struct__GdictSourceChooserClass.html#a017f4a0bd6dc520678cc9fac6646d321":[34,0,489,7],
-"struct__GdictSourceChooserClass.html#a19c17bacf2c97c574b9f817d2e32cd6e":[34,0,489,4],
-"struct__GdictSourceChooserClass.html#a2f4c1902679106e570791b13a6a26e72":[34,0,489,6],
-"struct__GdictSourceChooserClass.html#a449fbd5b293356fb7e55ca4093e6044b":[34,0,489,1],
-"struct__GdictSourceChooserClass.html#a4d44486fa813d0d04ea592c77025940c":[34,0,489,5],
 "struct__GdictSourceChooserClass.html#a68bad9a6f8c75cee0c3af7a85ba0b01c":[34,0,489,2],
 "struct__GdictSourceChooserClass.html#a9192855f19f4c90588139d81fee2b6eb":[34,0,489,0],
 "struct__GdictSourceChooserClass.html#afa9ee001311d13b0e5e20fc2b3262ed6":[34,0,489,8],
@@ -249,5 +243,11 @@ var NAVTREEINDEX192 =
 "struct__LogviewFilterManager.html#afe706959d48d423f467e726a6010cbbd":[34,0,545,1],
 "struct__LogviewFilterManagerClass.html":[34,0,546],
 "struct__LogviewFilterManagerClass.html#a355a9f673a2b3ef8bfc7d95640da67c4":[34,0,546,0],
-"struct__LogviewFindbar.html":[34,0,547]
+"struct__LogviewFindbar.html":[34,0,547],
+"struct__LogviewFindbar.html#a6fbc53b6542a189ef0fefd871b349ff6":[34,0,547,0],
+"struct__LogviewFindbar.html#abb80821ed0d4bb3011e1353595ecb66b":[34,0,547,1],
+"struct__LogviewFindbarClass.html":[34,0,548],
+"struct__LogviewFindbarClass.html#a03c159ce2b893c6aa60294423b2093c3":[34,0,548,0],
+"struct__LogviewFindbarClass.html#abe9a70f514eeafc4cd1ddd7ce0ebc1c3":[34,0,548,1],
+"struct__LogviewFindbarClass.html#aeb871aa0126a630de083f9b255887dc9":[34,0,548,3]
 };

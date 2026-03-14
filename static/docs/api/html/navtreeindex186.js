@@ -1,11 +1,5 @@
 var NAVTREEINDEX186 =
 {
-"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3":[34,0,184,20],
-"struct__DviParams.html#a2dc3028c00da865b30603cd34d9c3e38":[34,0,184,3],
-"struct__DviParams.html#a3bbe4ea2ce47dfb1aef292fa990f7729":[34,0,184,5],
-"struct__DviParams.html#a44ebb1e8950af2383eae7df5af488d3b":[34,0,184,7],
-"struct__DviParams.html#a468fd59ca8f0bd6be8b0327fbc57540a":[34,0,184,13],
-"struct__DviParams.html#a51b1ebaf389ff390ccc363f56254ff8a":[34,0,184,2],
 "struct__DviParams.html#a652321310308d5dd705087c6f1b2a6d9":[34,0,184,11],
 "struct__DviParams.html#a714ceb7f93f2ca63f44558f2e822fe9c":[34,0,184,15],
 "struct__DviParams.html#a772fc274414e7728029835f41981a8dc":[34,0,184,10],
@@ -249,5 +243,11 @@ var NAVTREEINDEX186 =
 "struct__EomFileChooser.html#a27cce09e3a4e6f72fa77317ebb60017b":[34,0,224,0],
 "struct__EomFileChooser.html#af3068697a28e815931b795483c99a0ee":[34,0,224,1],
 "struct__EomFileChooserClass.html":[34,0,225],
-"struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[34,0,225,0]
+"struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[34,0,225,0],
+"struct__EomFullscreenPlugin.html":[34,0,226],
+"struct__EomFullscreenPlugin.html#a37cfd70cb238e5fe1b2b6bfe0623b35c":[34,0,226,0],
+"struct__EomFullscreenPlugin.html#a4c9a8ff7dcf4fe5911bb7161f24d4278":[34,0,226,2],
+"struct__EomFullscreenPlugin.html#aa01c16b8065d09c3380ae4264f16b107":[34,0,226,1],
+"struct__EomFullscreenPluginClass.html":[34,0,227],
+"struct__EomFullscreenPluginClass.html#a4251f7f8846e52c43b8c1a554cf36884":[34,0,227,0]
 };

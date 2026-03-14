@@ -80,7 +80,7 @@ var searchData=
   ['license_77',['license',['../struct__EvDocumentInfo.html#a438c04bce85650d36a6d8368b927b016',1,'_EvDocumentInfo']]],
   ['lig_78',['lig',['../struct__t__ligature.html#aa7488b870ebf224a5b5372a64d2f9bb7',1,'_t_ligature']]],
   ['ligs_79',['ligs',['../structCharMetricInfo.html#af80521649706b11528a0614168d0d32f',1,'CharMetricInfo']]],
-  ['line_80',['line',['../struct__MetaDrawOp.html#a82fb187351e11520f58298c2499b6d28',1,'_MetaDrawOp::line'],['../structCajaDropboxHookserv.html#a6029c50cafdb08fd61d917fcfac2446a',1,'CajaDropboxHookserv::line'],['../struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64',1,'_EvSourceLink::line']]],
+  ['line_80',['line',['../struct__MetaDrawOp.html#abdf6a707211853eabbc80587a4a3bad5',1,'_MetaDrawOp::line'],['../structCajaDropboxHookserv.html#a6029c50cafdb08fd61d917fcfac2446a',1,'CajaDropboxHookserv::line'],['../struct__EvSourceLink.html#ac48f6422979fb999255c4a9e8e081c64',1,'_EvSourceLink::line']]],
   ['line_5fdata_81',['line_data',['../structFrChannelData.html#ac632de24669262147a2ef36e3873924c',1,'FrChannelData']]],
   ['line_5ffunc_82',['line_func',['../structFrChannelData.html#a958d9390af29969adad549c209d9d16f',1,'FrChannelData']]],
   ['line_5fno_83',['line_no',['../struct__FrCommandArj.html#a34722ddd82641a5e0ba05e0ac14b9164',1,'_FrCommandArj']]],

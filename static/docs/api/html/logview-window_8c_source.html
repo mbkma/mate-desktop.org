@@ -1457,241 +1457,242 @@ $(document).ready(function(){initNavTree('logview-window_8c_source.html',''); in
 <div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>                                       &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span> </div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>  <span class="keywordflow">if</span> (res == <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>) {</div>
-<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>    priv-&gt;ui_manager = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>    g_critical (<span class="stringliteral">&quot;Can&#39;t load the UI description: %s&quot;</span>, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
-<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>    g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
-<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>  }</div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span> </div>
-<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>  w = (GtkWidget *)gtk_builder_get_object (priv-&gt;ui_manager, <span class="stringliteral">&quot;logmenubar&quot;</span>);</div>
-<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>  gtk_box_pack_start (GTK_BOX (vbox), w, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>  gtk_widget_show (w);</div>
-<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span> </div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>  <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (menu_keybindings); i++)</div>
-<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>  {</div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a> = (GtkWidget*)gtk_builder_get_object (priv-&gt;ui_manager, menu_keybindings[i].widget_id);</div>
-<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    gtk_widget_add_accelerator (<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>, <span class="stringliteral">&quot;activate&quot;</span>, accel_group,</div>
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>                                menu_keybindings[i].<a class="code hl_variable" href="logview-window_8c.html#a888e6c5029ec136fce57590063aea630">keyval</a>,</div>
-<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>                                menu_keybindings[i].<a class="code hl_variable" href="logview-window_8c.html#a8164253c43e605419c284398c0d12861">modifier</a>,</div>
-<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>                                GTK_ACCEL_VISIBLE);</div>
-<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>  }</div>
-<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>  <span class="comment">/* panes */</span></div>
-<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>  hpaned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);</div>
-<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  gtk_box_pack_start (GTK_BOX (vbox), hpaned, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
-<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>  priv-&gt;hpaned = hpaned;</div>
-<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>  gtk_widget_show (hpaned);</div>
-<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span> </div>
-<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>  <span class="comment">/* first pane : sidebar (list of logs) */</span></div>
-<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>  priv-&gt;sidebar = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);</div>
-<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>  gtk_widget_show (priv-&gt;sidebar);</div>
-<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span> </div>
-<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>  <span class="comment">/* first pane: log list */</span></div>
-<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>  w = gtk_scrolled_window_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>  gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (w),</div>
-<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>                                  GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);</div>
-<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>  gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (w),</div>
-<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>                                       GTK_SHADOW_ETCHED_IN);</div>
-<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span> </div>
-<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>  priv-&gt;loglist = <a class="code hl_function" href="logview-loglist_8c.html#ab32357c14a40939a9c27e9f3a87c29b1">logview_loglist_new</a> ();</div>
-<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>  gtk_container_add (GTK_CONTAINER (w), priv-&gt;loglist);</div>
-<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>  gtk_box_pack_start (GTK_BOX (priv-&gt;sidebar), w, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
-<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>  gtk_paned_pack1 (GTK_PANED (hpaned), priv-&gt;sidebar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>  gtk_widget_show (w);</div>
-<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>  gtk_widget_show (priv-&gt;loglist);</div>
-<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span> </div>
-<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>  g_signal_connect (priv-&gt;loglist, <span class="stringliteral">&quot;day_selected&quot;</span>,</div>
-<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>                    G_CALLBACK (loglist_day_selected_cb), logview);</div>
-<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>  g_signal_connect (priv-&gt;loglist, <span class="stringliteral">&quot;day_cleared&quot;</span>,</div>
-<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>                    G_CALLBACK (loglist_day_cleared_cb), logview);</div>
-<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span> </div>
-<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>  <span class="comment">/* second pane: log */</span></div>
-<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>  main_view = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);</div>
-<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>  gtk_paned_pack2 (GTK_PANED (hpaned), main_view, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
-<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span> </div>
-<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span>  <span class="comment">/* second pane: error message area */</span></div>
-<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>  priv-&gt;message_area = gtk_info_bar_new ();</div>
-<div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span>  message_area_create_error_box (logview, priv-&gt;message_area);</div>
-<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>  gtk_info_bar_add_button (GTK_INFO_BAR (priv-&gt;message_area),</div>
-<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>                           <span class="stringliteral">&quot;gtk-close&quot;</span>, GTK_RESPONSE_CLOSE);</div>
-<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>  gtk_box_pack_start (GTK_BOX (main_view), priv-&gt;message_area, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span> </div>
-<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>  <span class="comment">/* second pane: text view */</span></div>
-<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>  w = gtk_scrolled_window_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>  gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (w),</div>
-<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>                                  GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);</div>
-<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>  gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (w), GTK_SHADOW_IN);</div>
-<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span>  gtk_box_pack_start (GTK_BOX (main_view), w, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
-<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>  gtk_widget_show (w);</div>
-<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span> </div>
-<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span>  priv-&gt;tag_table = gtk_text_tag_table_new ();</div>
-<div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span>  populate_tag_table (priv-&gt;tag_table);</div>
-<div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span> </div>
-<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span>  priv-&gt;text_view = gtk_text_view_new ();</div>
-<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>  g_object_set (priv-&gt;text_view, <span class="stringliteral">&quot;editable&quot;</span>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>  populate_style_tag_table (logview);</div>
-<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span> </div>
-<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>  gtk_container_add (GTK_CONTAINER (w), priv-&gt;text_view);</div>
-<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>  gtk_widget_show (priv-&gt;text_view);</div>
-<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span> </div>
-<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span>  <span class="comment">/* use the desktop monospace font */</span></div>
-<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span>  monospace_font_name = <a class="code hl_function" href="logview-prefs_8c.html#af818aa1deea267093afc8b49074cab50">logview_prefs_get_monospace_font_name</a> (priv-&gt;prefs);</div>
-<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span>  logview_set_font (logview, monospace_font_name);</div>
-<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>  g_free (monospace_font_name);</div>
-<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span> </div>
-<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>  <span class="comment">/* remember the original font size */</span></div>
-<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>  context = gtk_widget_get_pango_context (priv-&gt;text_view);</div>
-<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>  fontdesc = pango_context_get_font_description (context);</div>
-<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>  priv-&gt;original_fontsize = pango_font_description_get_size (fontdesc) / PANGO_SCALE;</div>
-<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span> </div>
-<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>  <span class="comment">/* restore saved zoom */</span></div>
-<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>  priv-&gt;fontsize = <a class="code hl_function" href="logview-prefs_8c.html#a4e9033b9f08b4f93769e0e1d31d3b302">logview_prefs_get_stored_fontsize</a> (priv-&gt;prefs);</div>
-<div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span> </div>
-<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>  <span class="keywordflow">if</span> (priv-&gt;fontsize &lt;= 0) {</div>
-<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    <span class="comment">/* restore the default */</span></div>
-<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>    logview_normal_text (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, logview);</div>
-<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>    logview_set_fontsize (logview, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>  }</div>
-<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span> </div>
-<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>  <span class="comment">/* version selector */</span></div>
-<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>  priv-&gt;version_bar = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);</div>
-<div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span>  gtk_container_set_border_width (GTK_CONTAINER (priv-&gt;version_bar), 3);</div>
-<div class="line"><a id="l01459" name="l01459"></a><span class="lineno"> 1459</span>  priv-&gt;version_selector = gtk_combo_box_text_new ();</div>
-<div class="line"><a id="l01460" name="l01460"></a><span class="lineno"> 1460</span>  g_signal_connect (priv-&gt;version_selector, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"> 1461</span>                    G_CALLBACK (logview_version_selector_changed), logview);</div>
-<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span>  w = gtk_label_new (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Version: &quot;</span>));</div>
-<div class="line"><a id="l01463" name="l01463"></a><span class="lineno"> 1463</span> </div>
-<div class="line"><a id="l01464" name="l01464"></a><span class="lineno"> 1464</span>  gtk_box_pack_end (GTK_BOX (priv-&gt;version_bar), priv-&gt;version_selector, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01465" name="l01465"></a><span class="lineno"> 1465</span>  gtk_box_pack_end (GTK_BOX (priv-&gt;version_bar), w, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>  gtk_box_pack_end (GTK_BOX (main_view), priv-&gt;version_bar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span> </div>
-<div class="line"><a id="l01468" name="l01468"></a><span class="lineno"> 1468</span>  priv-&gt;find_bar = <a class="code hl_function" href="logview-findbar_8c.html#ac9bbacc307fa982a9063227491be5f42">logview_findbar_new</a> ();</div>
-<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>  gtk_box_pack_end (GTK_BOX (main_view), priv-&gt;find_bar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span> </div>
-<div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;previous&quot;</span>,</div>
-<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>                    G_CALLBACK (findbar_previous_cb), logview);</div>
-<div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;next&quot;</span>,</div>
-<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span>                    G_CALLBACK (findbar_next_cb), logview);</div>
-<div class="line"><a id="l01475" name="l01475"></a><span class="lineno"> 1475</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;text_changed&quot;</span>,</div>
-<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"> 1476</span>                    G_CALLBACK (findbar_text_changed_cb), logview);</div>
-<div class="line"><a id="l01477" name="l01477"></a><span class="lineno"> 1477</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;close&quot;</span>,</div>
-<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"> 1478</span>                    G_CALLBACK (findbar_close_cb), logview);</div>
-<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span> </div>
-<div class="line"><a id="l01480" name="l01480"></a><span class="lineno"> 1480</span>  <span class="comment">/* signal handlers</span></div>
-<div class="line"><a id="l01481" name="l01481"></a><span class="lineno"> 1481</span><span class="comment">   * - first is used to remember/restore the window size on quit.</span></div>
-<div class="line"><a id="l01482" name="l01482"></a><span class="lineno"> 1482</span><span class="comment">   */</span></div>
-<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span>  g_signal_connect (logview, <span class="stringliteral">&quot;configure_event&quot;</span>,</div>
-<div class="line"><a id="l01484" name="l01484"></a><span class="lineno"> 1484</span>                    G_CALLBACK (window_size_changed_cb), logview);</div>
-<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span>  g_signal_connect (priv-&gt;prefs, <span class="stringliteral">&quot;system-font-changed&quot;</span>,</div>
-<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span>                    G_CALLBACK (font_changed_cb), logview);</div>
-<div class="line"><a id="l01487" name="l01487"></a><span class="lineno"> 1487</span>  g_signal_connect (priv-&gt;manager, <span class="stringliteral">&quot;active-changed&quot;</span>,</div>
-<div class="line"><a id="l01488" name="l01488"></a><span class="lineno"> 1488</span>                    G_CALLBACK (active_log_changed_cb), logview);</div>
-<div class="line"><a id="l01489" name="l01489"></a><span class="lineno"> 1489</span>  g_signal_connect (logview, <span class="stringliteral">&quot;key-press-event&quot;</span>,</div>
-<div class="line"><a id="l01490" name="l01490"></a><span class="lineno"> 1490</span>                    G_CALLBACK (key_press_event_cb), logview);</div>
-<div class="line"><a id="l01491" name="l01491"></a><span class="lineno"> 1491</span> </div>
-<div class="line"><a id="l01492" name="l01492"></a><span class="lineno"> 1492</span>  <span class="comment">/* status area at bottom */</span></div>
-<div class="line"><a id="l01493" name="l01493"></a><span class="lineno"> 1493</span>  priv-&gt;statusbar = gtk_statusbar_new ();</div>
-<div class="line"><a id="l01494" name="l01494"></a><span class="lineno"> 1494</span>    gtk_widget_set_margin_top (GTK_WIDGET (logview-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;statusbar), 0);</div>
-<div class="line"><a id="l01495" name="l01495"></a><span class="lineno"> 1495</span>    gtk_widget_set_margin_bottom (GTK_WIDGET (logview-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;statusbar), 0);</div>
-<div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span> </div>
-<div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span>  gtk_box_pack_start (GTK_BOX (vbox), priv-&gt;statusbar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
-<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>  gtk_widget_show (priv-&gt;statusbar);</div>
-<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span> </div>
-<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span>  <span class="comment">/* Filter menu */</span></div>
-<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>  priv-&gt;filter_action_group = (GActionGroup*)g_simple_action_group_new ();</div>
-<div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>  gtk_widget_insert_action_group (GTK_WIDGET (logview), <span class="stringliteral">&quot;filter&quot;</span>, priv-&gt;filter_action_group);</div>
-<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>  priv-&gt;active_filters = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>  update_filter_menu (logview);</div>
-<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span> </div>
-<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>  gtk_widget_show (vbox);</div>
-<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>  gtk_widget_show (main_view);</div>
-<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>}</div>
-<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span> </div>
-<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>logview_window_class_init (<a class="code hl_struct" href="struct__LogviewWindowClass.html">LogviewWindowClass</a> *klass)</div>
-<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>{</div>
-<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>  GObjectClass *object_class = (GObjectClass *) klass;</div>
-<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span> </div>
-<div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>  object_class-&gt;finalize = logview_window_finalize;</div>
-<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>}</div>
-<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span> </div>
-<div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span><span class="comment">/* public methods */</span></div>
-<div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span> </div>
-<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span>GtkWidget *</div>
-<div class="foldopen" id="foldopen01521" data-start="{" data-end="}">
-<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"><a class="line" href="logview-window_8c.html#a4c1411e8969d844f33d939d4aa9219f4"> 1521</a></span><a class="code hl_function" href="logview-window_8c.html#a4c1411e8969d844f33d939d4aa9219f4">logview_window_new</a> ()</div>
-<div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span>{</div>
-<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>  <a class="code hl_struct" href="struct__LogviewWindow.html">LogviewWindow</a> *logview;</div>
-<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span> </div>
-<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>  logview = g_object_new (<a class="code hl_define" href="logview-window_8h.html#a57c57604dfe2e8cab57572122816b839">LOGVIEW_TYPE_WINDOW</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span> </div>
-<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>  <span class="keywordflow">if</span> (logview-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;ui_manager == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span>  }</div>
-<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span> </div>
-<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>  <span class="keywordflow">return</span> GTK_WIDGET (logview);</div>
-<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>}</div>
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span>    g_object_unref (priv-&gt;ui_manager);</div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span>    priv-&gt;ui_manager = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>    g_critical (<span class="stringliteral">&quot;Can&#39;t load the UI description: %s&quot;</span>, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span>    g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>  }</div>
+<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span> </div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>  w = (GtkWidget *)gtk_builder_get_object (priv-&gt;ui_manager, <span class="stringliteral">&quot;logmenubar&quot;</span>);</div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>  gtk_box_pack_start (GTK_BOX (vbox), w, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>  gtk_widget_show (w);</div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span> </div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>  <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (menu_keybindings); i++)</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>  {</div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a> = (GtkWidget*)gtk_builder_get_object (priv-&gt;ui_manager, menu_keybindings[i].widget_id);</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>    gtk_widget_add_accelerator (<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>, <span class="stringliteral">&quot;activate&quot;</span>, accel_group,</div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>                                menu_keybindings[i].<a class="code hl_variable" href="logview-window_8c.html#a888e6c5029ec136fce57590063aea630">keyval</a>,</div>
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>                                menu_keybindings[i].<a class="code hl_variable" href="logview-window_8c.html#a8164253c43e605419c284398c0d12861">modifier</a>,</div>
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>                                GTK_ACCEL_VISIBLE);</div>
+<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>  }</div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>  <span class="comment">/* panes */</span></div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>  hpaned = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);</div>
+<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>  gtk_box_pack_start (GTK_BOX (vbox), hpaned, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
+<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>  priv-&gt;hpaned = hpaned;</div>
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span>  gtk_widget_show (hpaned);</div>
+<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span> </div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>  <span class="comment">/* first pane : sidebar (list of logs) */</span></div>
+<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>  priv-&gt;sidebar = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);</div>
+<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>  gtk_widget_show (priv-&gt;sidebar);</div>
+<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span> </div>
+<div class="line"><a id="l01389" name="l01389"></a><span class="lineno"> 1389</span>  <span class="comment">/* first pane: log list */</span></div>
+<div class="line"><a id="l01390" name="l01390"></a><span class="lineno"> 1390</span>  w = gtk_scrolled_window_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01391" name="l01391"></a><span class="lineno"> 1391</span>  gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (w),</div>
+<div class="line"><a id="l01392" name="l01392"></a><span class="lineno"> 1392</span>                                  GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);</div>
+<div class="line"><a id="l01393" name="l01393"></a><span class="lineno"> 1393</span>  gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (w),</div>
+<div class="line"><a id="l01394" name="l01394"></a><span class="lineno"> 1394</span>                                       GTK_SHADOW_ETCHED_IN);</div>
+<div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span> </div>
+<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>  priv-&gt;loglist = <a class="code hl_function" href="logview-loglist_8c.html#ab32357c14a40939a9c27e9f3a87c29b1">logview_loglist_new</a> ();</div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>  gtk_container_add (GTK_CONTAINER (w), priv-&gt;loglist);</div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>  gtk_box_pack_start (GTK_BOX (priv-&gt;sidebar), w, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
+<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>  gtk_paned_pack1 (GTK_PANED (hpaned), priv-&gt;sidebar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>  gtk_widget_show (w);</div>
+<div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>  gtk_widget_show (priv-&gt;loglist);</div>
+<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span> </div>
+<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>  g_signal_connect (priv-&gt;loglist, <span class="stringliteral">&quot;day_selected&quot;</span>,</div>
+<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>                    G_CALLBACK (loglist_day_selected_cb), logview);</div>
+<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>  g_signal_connect (priv-&gt;loglist, <span class="stringliteral">&quot;day_cleared&quot;</span>,</div>
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span>                    G_CALLBACK (loglist_day_cleared_cb), logview);</div>
+<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span> </div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>  <span class="comment">/* second pane: log */</span></div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>  main_view = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);</div>
+<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span>  gtk_paned_pack2 (GTK_PANED (hpaned), main_view, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span> </div>
+<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>  <span class="comment">/* second pane: error message area */</span></div>
+<div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span>  priv-&gt;message_area = gtk_info_bar_new ();</div>
+<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>  message_area_create_error_box (logview, priv-&gt;message_area);</div>
+<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>  gtk_info_bar_add_button (GTK_INFO_BAR (priv-&gt;message_area),</div>
+<div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span>                           <span class="stringliteral">&quot;gtk-close&quot;</span>, GTK_RESPONSE_CLOSE);</div>
+<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>  gtk_box_pack_start (GTK_BOX (main_view), priv-&gt;message_area, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span> </div>
+<div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span>  <span class="comment">/* second pane: text view */</span></div>
+<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>  w = gtk_scrolled_window_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>  gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (w),</div>
+<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>                                  GTK_POLICY_AUTOMATIC, GTK_POLICY_AUTOMATIC);</div>
+<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span>  gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (w), GTK_SHADOW_IN);</div>
+<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>  gtk_box_pack_start (GTK_BOX (main_view), w, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
+<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span>  gtk_widget_show (w);</div>
+<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span> </div>
+<div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span>  priv-&gt;tag_table = gtk_text_tag_table_new ();</div>
+<div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span>  populate_tag_table (priv-&gt;tag_table);</div>
+<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span> </div>
+<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>  priv-&gt;text_view = gtk_text_view_new ();</div>
+<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>  g_object_set (priv-&gt;text_view, <span class="stringliteral">&quot;editable&quot;</span>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>  populate_style_tag_table (logview);</div>
+<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span> </div>
+<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>  gtk_container_add (GTK_CONTAINER (w), priv-&gt;text_view);</div>
+<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span>  gtk_widget_show (priv-&gt;text_view);</div>
+<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span> </div>
+<div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span>  <span class="comment">/* use the desktop monospace font */</span></div>
+<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span>  monospace_font_name = <a class="code hl_function" href="logview-prefs_8c.html#af818aa1deea267093afc8b49074cab50">logview_prefs_get_monospace_font_name</a> (priv-&gt;prefs);</div>
+<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>  logview_set_font (logview, monospace_font_name);</div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>  g_free (monospace_font_name);</div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span> </div>
+<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>  <span class="comment">/* remember the original font size */</span></div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>  context = gtk_widget_get_pango_context (priv-&gt;text_view);</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>  fontdesc = pango_context_get_font_description (context);</div>
+<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>  priv-&gt;original_fontsize = pango_font_description_get_size (fontdesc) / PANGO_SCALE;</div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span> </div>
+<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>  <span class="comment">/* restore saved zoom */</span></div>
+<div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>  priv-&gt;fontsize = <a class="code hl_function" href="logview-prefs_8c.html#a4e9033b9f08b4f93769e0e1d31d3b302">logview_prefs_get_stored_fontsize</a> (priv-&gt;prefs);</div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span> </div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>  <span class="keywordflow">if</span> (priv-&gt;fontsize &lt;= 0) {</div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>    <span class="comment">/* restore the default */</span></div>
+<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>    logview_normal_text (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, logview);</div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>    logview_set_fontsize (logview, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>  }</div>
+<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span> </div>
+<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>  <span class="comment">/* version selector */</span></div>
+<div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span>  priv-&gt;version_bar = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);</div>
+<div class="line"><a id="l01459" name="l01459"></a><span class="lineno"> 1459</span>  gtk_container_set_border_width (GTK_CONTAINER (priv-&gt;version_bar), 3);</div>
+<div class="line"><a id="l01460" name="l01460"></a><span class="lineno"> 1460</span>  priv-&gt;version_selector = gtk_combo_box_text_new ();</div>
+<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"> 1461</span>  g_signal_connect (priv-&gt;version_selector, <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span>                    G_CALLBACK (logview_version_selector_changed), logview);</div>
+<div class="line"><a id="l01463" name="l01463"></a><span class="lineno"> 1463</span>  w = gtk_label_new (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Version: &quot;</span>));</div>
+<div class="line"><a id="l01464" name="l01464"></a><span class="lineno"> 1464</span> </div>
+<div class="line"><a id="l01465" name="l01465"></a><span class="lineno"> 1465</span>  gtk_box_pack_end (GTK_BOX (priv-&gt;version_bar), priv-&gt;version_selector, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>  gtk_box_pack_end (GTK_BOX (priv-&gt;version_bar), w, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span>  gtk_box_pack_end (GTK_BOX (main_view), priv-&gt;version_bar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01468" name="l01468"></a><span class="lineno"> 1468</span> </div>
+<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>  priv-&gt;find_bar = <a class="code hl_function" href="logview-findbar_8c.html#ac9bbacc307fa982a9063227491be5f42">logview_findbar_new</a> ();</div>
+<div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span>  gtk_box_pack_end (GTK_BOX (main_view), priv-&gt;find_bar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span> </div>
+<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;previous&quot;</span>,</div>
+<div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span>                    G_CALLBACK (findbar_previous_cb), logview);</div>
+<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;next&quot;</span>,</div>
+<div class="line"><a id="l01475" name="l01475"></a><span class="lineno"> 1475</span>                    G_CALLBACK (findbar_next_cb), logview);</div>
+<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"> 1476</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;text_changed&quot;</span>,</div>
+<div class="line"><a id="l01477" name="l01477"></a><span class="lineno"> 1477</span>                    G_CALLBACK (findbar_text_changed_cb), logview);</div>
+<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"> 1478</span>  g_signal_connect (priv-&gt;find_bar, <span class="stringliteral">&quot;close&quot;</span>,</div>
+<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span>                    G_CALLBACK (findbar_close_cb), logview);</div>
+<div class="line"><a id="l01480" name="l01480"></a><span class="lineno"> 1480</span> </div>
+<div class="line"><a id="l01481" name="l01481"></a><span class="lineno"> 1481</span>  <span class="comment">/* signal handlers</span></div>
+<div class="line"><a id="l01482" name="l01482"></a><span class="lineno"> 1482</span><span class="comment">   * - first is used to remember/restore the window size on quit.</span></div>
+<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span><span class="comment">   */</span></div>
+<div class="line"><a id="l01484" name="l01484"></a><span class="lineno"> 1484</span>  g_signal_connect (logview, <span class="stringliteral">&quot;configure_event&quot;</span>,</div>
+<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span>                    G_CALLBACK (window_size_changed_cb), logview);</div>
+<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span>  g_signal_connect (priv-&gt;prefs, <span class="stringliteral">&quot;system-font-changed&quot;</span>,</div>
+<div class="line"><a id="l01487" name="l01487"></a><span class="lineno"> 1487</span>                    G_CALLBACK (font_changed_cb), logview);</div>
+<div class="line"><a id="l01488" name="l01488"></a><span class="lineno"> 1488</span>  g_signal_connect (priv-&gt;manager, <span class="stringliteral">&quot;active-changed&quot;</span>,</div>
+<div class="line"><a id="l01489" name="l01489"></a><span class="lineno"> 1489</span>                    G_CALLBACK (active_log_changed_cb), logview);</div>
+<div class="line"><a id="l01490" name="l01490"></a><span class="lineno"> 1490</span>  g_signal_connect (logview, <span class="stringliteral">&quot;key-press-event&quot;</span>,</div>
+<div class="line"><a id="l01491" name="l01491"></a><span class="lineno"> 1491</span>                    G_CALLBACK (key_press_event_cb), logview);</div>
+<div class="line"><a id="l01492" name="l01492"></a><span class="lineno"> 1492</span> </div>
+<div class="line"><a id="l01493" name="l01493"></a><span class="lineno"> 1493</span>  <span class="comment">/* status area at bottom */</span></div>
+<div class="line"><a id="l01494" name="l01494"></a><span class="lineno"> 1494</span>  priv-&gt;statusbar = gtk_statusbar_new ();</div>
+<div class="line"><a id="l01495" name="l01495"></a><span class="lineno"> 1495</span>    gtk_widget_set_margin_top (GTK_WIDGET (logview-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;statusbar), 0);</div>
+<div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span>    gtk_widget_set_margin_bottom (GTK_WIDGET (logview-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;statusbar), 0);</div>
+<div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span> </div>
+<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>  gtk_box_pack_start (GTK_BOX (vbox), priv-&gt;statusbar, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
+<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span>  gtk_widget_show (priv-&gt;statusbar);</div>
+<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span> </div>
+<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>  <span class="comment">/* Filter menu */</span></div>
+<div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>  priv-&gt;filter_action_group = (GActionGroup*)g_simple_action_group_new ();</div>
+<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>  gtk_widget_insert_action_group (GTK_WIDGET (logview), <span class="stringliteral">&quot;filter&quot;</span>, priv-&gt;filter_action_group);</div>
+<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>  priv-&gt;active_filters = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>  update_filter_menu (logview);</div>
+<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span> </div>
+<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>  gtk_widget_show (vbox);</div>
+<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>  gtk_widget_show (main_view);</div>
+<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span>}</div>
+<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span> </div>
+<div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>logview_window_class_init (<a class="code hl_struct" href="struct__LogviewWindowClass.html">LogviewWindowClass</a> *klass)</div>
+<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>{</div>
+<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>  GObjectClass *object_class = (GObjectClass *) klass;</div>
+<div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span> </div>
+<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>  object_class-&gt;finalize = logview_window_finalize;</div>
+<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>}</div>
+<div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span> </div>
+<div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span><span class="comment">/* public methods */</span></div>
+<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span> </div>
+<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>GtkWidget *</div>
+<div class="foldopen" id="foldopen01522" data-start="{" data-end="}">
+<div class="line"><a id="l01522" name="l01522"></a><span class="lineno"><a class="line" href="logview-window_8c.html#a4c1411e8969d844f33d939d4aa9219f4"> 1522</a></span><a class="code hl_function" href="logview-window_8c.html#a4c1411e8969d844f33d939d4aa9219f4">logview_window_new</a> ()</div>
+<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>{</div>
+<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>  <a class="code hl_struct" href="struct__LogviewWindow.html">LogviewWindow</a> *logview;</div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span> </div>
+<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>  logview = g_object_new (<a class="code hl_define" href="logview-window_8h.html#a57c57604dfe2e8cab57572122816b839">LOGVIEW_TYPE_WINDOW</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span> </div>
+<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>  <span class="keywordflow">if</span> (logview-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;ui_manager == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>  }</div>
+<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span> </div>
+<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>  <span class="keywordflow">return</span> GTK_WIDGET (logview);</div>
+<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>}</div>
 </div>
-<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span> </div>
-<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen01535" data-start="{" data-end="}">
-<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"><a class="line" href="logview-window_8c.html#ac5813d406df87ed5a43641910793e95f"> 1535</a></span><a class="code hl_function" href="logview-window_8c.html#ac5813d406df87ed5a43641910793e95f">logview_window_add_error</a> (<a class="code hl_struct" href="struct__LogviewWindow.html">LogviewWindow</a> *window,</div>
-<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>                          <span class="keyword">const</span> <span class="keywordtype">char</span> *primary,</div>
-<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>                          <span class="keyword">const</span> <span class="keywordtype">char</span> *secondary)</div>
-<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>{</div>
-<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>  <a class="code hl_typedef" href="logview-window_8h.html#ab3703cfaaa86c7650206984ce8fc8813">LogviewWindowPrivate</a> *priv;</div>
-<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span> </div>
-<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>  g_assert (<a class="code hl_define" href="logview-window_8h.html#aab2c80f6a1dd163c83c53a89029a5e0b">LOGVIEW_IS_WINDOW</a> (window));</div>
-<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>  priv = window-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>;</div>
-<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span> </div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>  message_area_set_labels (window,</div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>                           primary, secondary);</div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span> </div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>  gtk_widget_show (priv-&gt;message_area);</div>
-<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span> </div>
-<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>  g_signal_connect (priv-&gt;message_area, <span class="stringliteral">&quot;response&quot;</span>,</div>
-<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>                    G_CALLBACK (message_area_response_cb), window);</div>
-<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>}</div>
+<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span> </div>
+<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen01536" data-start="{" data-end="}">
+<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"><a class="line" href="logview-window_8c.html#ac5813d406df87ed5a43641910793e95f"> 1536</a></span><a class="code hl_function" href="logview-window_8c.html#ac5813d406df87ed5a43641910793e95f">logview_window_add_error</a> (<a class="code hl_struct" href="struct__LogviewWindow.html">LogviewWindow</a> *window,</div>
+<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>                          <span class="keyword">const</span> <span class="keywordtype">char</span> *primary,</div>
+<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>                          <span class="keyword">const</span> <span class="keywordtype">char</span> *secondary)</div>
+<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>{</div>
+<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>  <a class="code hl_typedef" href="logview-window_8h.html#ab3703cfaaa86c7650206984ce8fc8813">LogviewWindowPrivate</a> *priv;</div>
+<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span> </div>
+<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>  g_assert (<a class="code hl_define" href="logview-window_8h.html#aab2c80f6a1dd163c83c53a89029a5e0b">LOGVIEW_IS_WINDOW</a> (window));</div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>  priv = window-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>;</div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span> </div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>  message_area_set_labels (window,</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>                           primary, secondary);</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span> </div>
+<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>  gtk_widget_show (priv-&gt;message_area);</div>
+<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span> </div>
+<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>  g_signal_connect (priv-&gt;message_area, <span class="stringliteral">&quot;response&quot;</span>,</div>
+<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>                    G_CALLBACK (message_area_response_cb), window);</div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>}</div>
 </div>
-<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span> </div>
-<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen01554" data-start="{" data-end="}">
-<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"><a class="line" href="logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f"> 1554</a></span><a class="code hl_function" href="logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f">logview_window_add_errors</a> (<a class="code hl_struct" href="struct__LogviewWindow.html">LogviewWindow</a> *window,</div>
-<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>                           GPtrArray *errors)</div>
-<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>{</div>
-<div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>  <span class="keywordtype">char</span> *primary, *secondary;</div>
-<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>  GString *str;</div>
-<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>  <span class="keywordtype">char</span> **err;</div>
-<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>  <span class="keywordtype">int</span> i;</div>
-<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span> </div>
-<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>  g_assert (<a class="code hl_define" href="logview-window_8h.html#aab2c80f6a1dd163c83c53a89029a5e0b">LOGVIEW_IS_WINDOW</a> (window));</div>
-<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>  g_assert (errors-&gt;len &gt; 1);</div>
-<div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span> </div>
-<div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span>  primary = g_strdup (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Could not open the following files:&quot;</span>));</div>
-<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span>  str = g_string_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span> </div>
-<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>  <span class="keywordflow">for</span> (i = 0; i &lt; errors-&gt;len; i++) {</div>
-<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>    err = (<span class="keywordtype">char</span> **) g_ptr_array_index (errors, i);</div>
-<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span>    g_string_append (str, err[0]);</div>
-<div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span>    g_string_append (str, <span class="stringliteral">&quot;: &quot;</span>);</div>
-<div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>    g_string_append (str, err[1]);</div>
-<div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>    g_string_append (str, <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"> 1574</span>  }</div>
-<div class="line"><a id="l01575" name="l01575"></a><span class="lineno"> 1575</span> </div>
-<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"> 1576</span>  secondary = g_string_free (str, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span> </div>
-<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span>  message_area_set_labels (window, primary, secondary);</div>
-<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span> </div>
-<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span>  gtk_widget_show (window-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;message_area);</div>
-<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span> </div>
-<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>  g_signal_connect (window-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;message_area, <span class="stringliteral">&quot;response&quot;</span>,</div>
-<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>                    G_CALLBACK (message_area_response_cb), window);</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span> </div>
-<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>  g_free (primary);</div>
-<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>  g_free (secondary);</div>
-<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>}</div>
+<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span> </div>
+<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen01555" data-start="{" data-end="}">
+<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"><a class="line" href="logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f"> 1555</a></span><a class="code hl_function" href="logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f">logview_window_add_errors</a> (<a class="code hl_struct" href="struct__LogviewWindow.html">LogviewWindow</a> *window,</div>
+<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>                           GPtrArray *errors)</div>
+<div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>{</div>
+<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>  <span class="keywordtype">char</span> *primary, *secondary;</div>
+<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>  GString *str;</div>
+<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>  <span class="keywordtype">char</span> **err;</div>
+<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>  <span class="keywordtype">int</span> i;</div>
+<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span> </div>
+<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>  g_assert (<a class="code hl_define" href="logview-window_8h.html#aab2c80f6a1dd163c83c53a89029a5e0b">LOGVIEW_IS_WINDOW</a> (window));</div>
+<div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>  g_assert (errors-&gt;len &gt; 1);</div>
+<div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span> </div>
+<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span>  primary = g_strdup (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Could not open the following files:&quot;</span>));</div>
+<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>  str = g_string_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span> </div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>  <span class="keywordflow">for</span> (i = 0; i &lt; errors-&gt;len; i++) {</div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span>    err = (<span class="keywordtype">char</span> **) g_ptr_array_index (errors, i);</div>
+<div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span>    g_string_append (str, err[0]);</div>
+<div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>    g_string_append (str, <span class="stringliteral">&quot;: &quot;</span>);</div>
+<div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>    g_string_append (str, err[1]);</div>
+<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"> 1574</span>    g_string_append (str, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l01575" name="l01575"></a><span class="lineno"> 1575</span>  }</div>
+<div class="line"><a id="l01576" name="l01576"></a><span class="lineno"> 1576</span> </div>
+<div class="line"><a id="l01577" name="l01577"></a><span class="lineno"> 1577</span>  secondary = g_string_free (str, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l01578" name="l01578"></a><span class="lineno"> 1578</span> </div>
+<div class="line"><a id="l01579" name="l01579"></a><span class="lineno"> 1579</span>  message_area_set_labels (window, primary, secondary);</div>
+<div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span> </div>
+<div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>  gtk_widget_show (window-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;message_area);</div>
+<div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span> </div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>  g_signal_connect (window-&gt;<a class="code hl_variable" href="struct__LogviewWindow.html#a83e40a29e291af0f0e0efcbde83b9b39">priv</a>-&gt;message_area, <span class="stringliteral">&quot;response&quot;</span>,</div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>                    G_CALLBACK (message_area_response_cb), window);</div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span> </div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>  g_free (primary);</div>
+<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>  g_free (secondary);</div>
+<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span>}</div>
 </div>
-<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span> </div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span> </div>
 <div class="ttc" id="aactions_8c_html_a516c61ecc89fc964baa18932b31c2c90"><div class="ttname"><a href="actions_8c.html#a516c61ecc89fc964baa18932b31c2c90">activate_toggle</a></div><div class="ttdeci">void activate_toggle(GSimpleAction *action, GVariant *parameter, gpointer user_data)</div><div class="ttdef"><b>Definition</b> <a href="actions_8c_source.html#l00882">actions.c:882</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -1743,17 +1744,17 @@ $(document).ready(function(){initNavTree('logview-window_8c_source.html',''); in
 <div class="ttc" id="alogview-prefs_8c_html_aefca8676ae786b45968d0d0e9150983b"><div class="ttname"><a href="logview-prefs_8c.html#aefca8676ae786b45968d0d0e9150983b">logview_prefs_get_filter</a></div><div class="ttdeci">LogviewFilter * logview_prefs_get_filter(LogviewPrefs *prefs, const gchar *name)</div><div class="ttdef"><b>Definition</b> <a href="logview-prefs_8c_source.html#l00533">logview-prefs.c:533</a></div></div>
 <div class="ttc" id="alogview-prefs_8c_html_af818aa1deea267093afc8b49074cab50"><div class="ttname"><a href="logview-prefs_8c.html#af818aa1deea267093afc8b49074cab50">logview_prefs_get_monospace_font_name</a></div><div class="ttdeci">char * logview_prefs_get_monospace_font_name(LogviewPrefs *prefs)</div><div class="ttdef"><b>Definition</b> <a href="logview-prefs_8c_source.html#l00355">logview-prefs.c:355</a></div></div>
 <div class="ttc" id="alogview-prefs_8h_html"><div class="ttname"><a href="logview-prefs_8h.html">logview-prefs.h</a></div></div>
-<div class="ttc" id="alogview-window_8c_html_a161cfacdc0a0254a07f3251ad2b4ac2f"><div class="ttname"><a href="logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f">logview_window_add_errors</a></div><div class="ttdeci">void logview_window_add_errors(LogviewWindow *window, GPtrArray *errors)</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01554">logview-window.c:1554</a></div></div>
+<div class="ttc" id="alogview-window_8c_html_a161cfacdc0a0254a07f3251ad2b4ac2f"><div class="ttname"><a href="logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f">logview_window_add_errors</a></div><div class="ttdeci">void logview_window_add_errors(LogviewWindow *window, GPtrArray *errors)</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01555">logview-window.c:1555</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a1804d2c87e9111b804aeaf11b9c64b88"><div class="ttname"><a href="logview-window_8c.html#a1804d2c87e9111b804aeaf11b9c64b88">action</a></div><div class="ttdeci">const gchar * action</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01178">logview-window.c:1178</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a24b0b135eb9a4e0a96c46dae8fd3a644"><div class="ttname"><a href="logview-window_8c.html#a24b0b135eb9a4e0a96c46dae8fd3a644">widget_id</a></div><div class="ttdeci">const gchar * widget_id</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00899">logview-window.c:899</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a2db6504c6c7b71fb4233fc6cc4922be2"><div class="ttname"><a href="logview-window_8c.html#a2db6504c6c7b71fb4233fc6cc4922be2">G_DEFINE_TYPE_WITH_PRIVATE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_PRIVATE(LogviewWindow, logview_window, GTK_TYPE_WINDOW)</div></div>
-<div class="ttc" id="alogview-window_8c_html_a4c1411e8969d844f33d939d4aa9219f4"><div class="ttname"><a href="logview-window_8c.html#a4c1411e8969d844f33d939d4aa9219f4">logview_window_new</a></div><div class="ttdeci">GtkWidget * logview_window_new()</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01521">logview-window.c:1521</a></div></div>
+<div class="ttc" id="alogview-window_8c_html_a4c1411e8969d844f33d939d4aa9219f4"><div class="ttname"><a href="logview-window_8c.html#a4c1411e8969d844f33d939d4aa9219f4">logview_window_new</a></div><div class="ttdeci">GtkWidget * logview_window_new()</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01522">logview-window.c:1522</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a5b48d20856d120726b258c48204641a9"><div class="ttname"><a href="logview-window_8c.html#a5b48d20856d120726b258c48204641a9">DEFAULT_LOGVIEW_FONT</a></div><div class="ttdeci">#define DEFAULT_LOGVIEW_FONT</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00245">logview-window.c:245</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a8164253c43e605419c284398c0d12861"><div class="ttname"><a href="logview-window_8c.html#a8164253c43e605419c284398c0d12861">modifier</a></div><div class="ttdeci">GdkModifierType modifier</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00898">logview-window.c:898</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a83fb08f765fec108ccbc518b2d2d16c0"><div class="ttname"><a href="logview-window_8c.html#a83fb08f765fec108ccbc518b2d2d16c0">SEARCH_END_MARK</a></div><div class="ttdeci">#define SEARCH_END_MARK</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00043">logview-window.c:43</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a888e6c5029ec136fce57590063aea630"><div class="ttname"><a href="logview-window_8c.html#a888e6c5029ec136fce57590063aea630">keyval</a></div><div class="ttdeci">guint keyval</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00897">logview-window.c:897</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_a9e4f245d8edc8289199dc0f60e747fe9"><div class="ttname"><a href="logview-window_8c.html#a9e4f245d8edc8289199dc0f60e747fe9">SEARCH_START_MARK</a></div><div class="ttdeci">#define SEARCH_START_MARK</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00042">logview-window.c:42</a></div></div>
-<div class="ttc" id="alogview-window_8c_html_ac5813d406df87ed5a43641910793e95f"><div class="ttname"><a href="logview-window_8c.html#ac5813d406df87ed5a43641910793e95f">logview_window_add_error</a></div><div class="ttdeci">void logview_window_add_error(LogviewWindow *window, const char *primary, const char *secondary)</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01535">logview-window.c:1535</a></div></div>
+<div class="ttc" id="alogview-window_8c_html_ac5813d406df87ed5a43641910793e95f"><div class="ttname"><a href="logview-window_8c.html#ac5813d406df87ed5a43641910793e95f">logview_window_add_error</a></div><div class="ttdeci">void logview_window_add_error(LogviewWindow *window, const char *primary, const char *secondary)</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l01536">logview-window.c:1536</a></div></div>
 <div class="ttc" id="alogview-window_8c_html_af0b5cfa4242ae7f98ba80fd23ef8afa9"><div class="ttname"><a href="logview-window_8c.html#af0b5cfa4242ae7f98ba80fd23ef8afa9">APP_NAME</a></div><div class="ttdeci">#define APP_NAME</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8c_source.html#l00041">logview-window.c:41</a></div></div>
 <div class="ttc" id="alogview-window_8h_html"><div class="ttname"><a href="logview-window_8h.html">logview-window.h</a></div></div>
 <div class="ttc" id="alogview-window_8h_html_a57c57604dfe2e8cab57572122816b839"><div class="ttname"><a href="logview-window_8h.html#a57c57604dfe2e8cab57572122816b839">LOGVIEW_TYPE_WINDOW</a></div><div class="ttdeci">#define LOGVIEW_TYPE_WINDOW</div><div class="ttdef"><b>Definition</b> <a href="logview-window_8h_source.html#l00026">logview-window.h:26</a></div></div>

@@ -1,11 +1,5 @@
 var NAVTREEINDEX90 =
 {
-"i2c-sys-plugin_8c.html#aca450e3a22a217c3d28eb8035dfd749f":[35,0,0,26,1,4,0,0],
-"i2c-sys-plugin_8c.html#ad556b67a590a4e204059882c2d0740d0":[35,0,0,26,1,4,0,1],
-"i2c-sys-plugin_8c_source.html":[35,0,0,26,1,4,0],
-"i2c-sys-plugin_8h.html":[35,0,0,26,1,4,1],
-"i2c-sys-plugin_8h_source.html":[35,0,0,26,1,4,1],
-"i8k-plugin_8c.html":[35,0,0,26,1,5,0],
 "i8k-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[35,0,0,26,1,5,0,3],
 "i8k-plugin_8c.html#a65a1069872492aa0a4c66db12bf3d3be":[35,0,0,26,1,5,0,0],
 "i8k-plugin_8c.html#aa6ca93acbd005deadd231685a93e2bc7":[35,0,0,26,1,5,0,1],
@@ -249,5 +243,11 @@ var NAVTREEINDEX90 =
 "java-utils_8h_source.html":[35,0,0,5,1,98],
 "jpegint-8a_8h.html":[35,0,0,6,1,0],
 "jpegint-8a_8h.html#a001bb927b860cbf08e382d79a482d676":[35,0,0,6,1,0,42],
-"jpegint-8a_8h.html#a0a26b600cd2435fc699edc42f13e265a":[35,0,0,6,1,0,24]
+"jpegint-8a_8h.html#a0a26b600cd2435fc699edc42f13e265a":[35,0,0,6,1,0,24],
+"jpegint-8a_8h.html#a1237b7006d409f24d576b18545778b8c":[35,0,0,6,1,0,20],
+"jpegint-8a_8h.html#a17ed230357bc97c0f71699717856ebbe":[35,0,0,6,1,0,52],
+"jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874":[35,0,0,6,1,0,39],
+"jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874a9bd990af3f9fa4181bfb4783515c583d":[35,0,0,6,1,0,39,1],
+"jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874ac4537a68c2b4991aa0aa16bfd364faf4":[35,0,0,6,1,0,39,0],
+"jpegint-8a_8h.html#a1f0803342372ac62b6903c399399c874aedb54e7419f575f61531cd66a6eb2447":[35,0,0,6,1,0,39,3]
 };

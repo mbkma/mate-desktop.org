@@ -1,11 +1,5 @@
 var NAVTREEINDEX86 =
 {
-"gsm-inhibitor_8h.html#a353e4efe689a0603b93e455de7e95320":[35,0,0,27,1,15,6],
-"gsm-inhibitor_8h.html#a3798cc4078da132f678c0cfea5799877":[35,0,0,27,1,15,9],
-"gsm-inhibitor_8h.html#a389710cd61a7f392fb9fc94b9eb10685":[35,0,0,27,1,15,13],
-"gsm-inhibitor_8h.html#a49e0a96035c49d6f2f3bf2d829751633":[35,0,0,27,1,15,14],
-"gsm-inhibitor_8h.html#a4c525ba8744b4e809507ab99d9b8f146":[35,0,0,27,1,15,19],
-"gsm-inhibitor_8h.html#a5935e99c41fdb8fd2a113ea83443053c":[35,0,0,27,1,15,8],
 "gsm-inhibitor_8h.html#a5f6710560e82fe7440c6d9400e3ae41f":[35,0,0,27,1,15,21],
 "gsm-inhibitor_8h.html#a6a70375627b7abb460d22e12935483ba":[35,0,0,27,1,15,7],
 "gsm-inhibitor_8h.html#aad0eb4023f244dfb0aec82906af45174":[35,0,0,27,1,15,16],
@@ -249,5 +243,11 @@ var NAVTREEINDEX86 =
 "gsm-store_8h_source.html":[35,0,0,27,1,25],
 "gsm-systemd_8c.html":[35,0,0,27,1,26],
 "gsm-systemd_8c.html#a0344f8a26664edbf83f86cfbda6c9658":[35,0,0,27,1,26,19],
-"gsm-systemd_8c.html#a18651ba23ec96b6406c550f88a1c87c8":[35,0,0,27,1,26,18]
+"gsm-systemd_8c.html#a18651ba23ec96b6406c550f88a1c87c8":[35,0,0,27,1,26,18],
+"gsm-systemd_8c.html#a1fbfbdf52d0b9ac4c34d6e603020d92f":[35,0,0,27,1,26,7],
+"gsm-systemd_8c.html#a3a1b4e83bf03d1bb79829aaa7cdcb7fc":[35,0,0,27,1,26,13],
+"gsm-systemd_8c.html#a47ed4a8596cb5c82160bf03eccbc9b95":[35,0,0,27,1,26,9],
+"gsm-systemd_8c.html#a58e5420a55b5a06f69bce1f56e020f08":[35,0,0,27,1,26,6],
+"gsm-systemd_8c.html#a5ce8d6c629834a0eccb4076800241f20":[35,0,0,27,1,26,4],
+"gsm-systemd_8c.html#a62c8a06216d0e64b29692e84163d28f2":[35,0,0,27,1,26,21]
 };

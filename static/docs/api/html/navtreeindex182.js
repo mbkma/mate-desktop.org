@@ -1,11 +1,5 @@
 var NAVTREEINDEX182 =
 {
-"struct__AutoScaler.html#a5892b39e6fc9e37293aa20b964db69a9":[34,0,27,3],
-"struct__AutoScaler.html#a8e5ddb55b976e5b6b3a463c1ebc22458":[34,0,27,2],
-"struct__AutoScaler.html#a9bfab23eb396dce7e736c0a3c9e9a535":[34,0,27,1],
-"struct__BaobabApplication.html":[34,0,28],
-"struct__BaobabApplication.html#a09c1be8ee06b60d674e583b494bacca7":[34,0,28,5],
-"struct__BaobabApplication.html#a0fc4b1216c41d3a4dbb15bb594209621":[34,0,28,15],
 "struct__BaobabApplication.html#a1ead1b0451e3ca59a4bbfb9547683768":[34,0,28,2],
 "struct__BaobabApplication.html#a2369e3ac55de45876bbf421b06de363b":[34,0,28,23],
 "struct__BaobabApplication.html#a24901d5e548bb6f420454ca9b1989fbe":[34,0,28,22],
@@ -249,5 +243,11 @@ var NAVTREEINDEX182 =
 "struct__CajaDropbox.html#a4fc26a3ff432a3fbc73aeade88a6a529":[34,0,58,0],
 "struct__CajaDropbox.html#a52081f3ff58135f58c34ca92b4bebe56":[34,0,58,1],
 "struct__CajaDropbox.html#aa9484e12444f4dd8685c04578015e481":[34,0,58,2],
-"struct__CajaDropbox.html#adf2c2c1d65594ddd191cf6f385cabee1":[34,0,58,5]
+"struct__CajaDropbox.html#adf2c2c1d65594ddd191cf6f385cabee1":[34,0,58,5],
+"struct__CajaDropbox.html#ae66768c70f7572dc9e2d34a609b574b8":[34,0,58,3],
+"struct__CajaDropbox.html#ae967314b6505050997ab125989bdc18c":[34,0,58,4],
+"struct__CajaDropboxClass.html":[34,0,59],
+"struct__CajaDropboxClass.html#a91ffcd4d25fd6e02f93524859bbc1654":[34,0,59,0],
+"struct__CajaFileConflictDialog.html":[34,0,60],
+"struct__CajaFileConflictDialog.html#a612cc4797d306135501a4612d61260a0":[34,0,60,0]
 };

@@ -247,7 +247,7 @@ var NAVTREEINDEX84 =
 "gsm-app-dialog_8h.html#adf4d6cd0b1b54d3da9a7770e8b786e5e":[35,0,0,27,0,1,0],
 "gsm-app-dialog_8h_source.html":[35,0,0,27,0,1],
 "gsm-app_8c.html":[35,0,0,27,1,2],
-"gsm-app_8c.html#a0aec5bf2a18b7f4acff9dcfce69c7bfc":[35,0,0,27,1,2,5],
-"gsm-app_8c.html#a10c89bcdc78e73f6c3141e759f1c195c":[35,0,0,27,1,2,3],
-"gsm-app_8c.html#a19ba8bf0054c4cd382d487a8383dbece":[35,0,0,27,1,2,1]
+"gsm-app_8c.html#a19ba8bf0054c4cd382d487a8383dbece":[35,0,0,27,1,2,1],
+"gsm-app_8c.html#a1d41b8d595864ef5fea6d4cf0a21768a":[35,0,0,27,1,2,9],
+"gsm-app_8c.html#a22901df9545ddfc0c7e3cd77de072b27":[35,0,0,27,1,2,14]
 };

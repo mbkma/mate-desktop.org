@@ -1,11 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"msd-smartcard-manager_8c.html#a5354f700148d71b1b0b0e38addd2c74a":[35,0,0,28,1,14,0,8],
-"msd-smartcard-manager_8c.html#a563b4899b17b2686124ea7c873738b77":[35,0,0,28,1,14,0,4],
-"msd-smartcard-manager_8c.html#a563b4899b17b2686124ea7c873738b77a2d6ee57fe6fc4524a6b008fb5c9c544d":[35,0,0,28,1,14,0,4,0],
-"msd-smartcard-manager_8c.html#a563b4899b17b2686124ea7c873738b77a7ac607fd801040d169a71b956536fa1d":[35,0,0,28,1,14,0,4,1],
-"msd-smartcard-manager_8c.html#a563b4899b17b2686124ea7c873738b77a7e757d9e3d04fdb31100a20055217ee4":[35,0,0,28,1,14,0,4,3],
-"msd-smartcard-manager_8c.html#a563b4899b17b2686124ea7c873738b77ad0c470ab48641cadcb7d76f7846e017b":[35,0,0,28,1,14,0,4,2],
 "msd-smartcard-manager_8c.html#a8365d33f3aae00b8b22d17be0caa56d9":[35,0,0,28,1,14,0,6],
 "msd-smartcard-manager_8c.html#aaad9550ff4c8b386a46829670aaf4711":[35,0,0,28,1,14,0,5],
 "msd-smartcard-manager_8c.html#ac2d75df79b635f1bebfd351716696321":[35,0,0,28,1,14,0,7],
@@ -249,5 +243,11 @@ var NAVTREEINDEX127 =
 "msd-xrandr-manager_8c.html#a9fac20e46bbbabe074a844dac326845f":[35,0,0,28,1,17,0,16],
 "msd-xrandr-manager_8c.html#ab8e11dd402fa07022a8e6ebde2cc9a34":[35,0,0,28,1,17,0,12],
 "msd-xrandr-manager_8c.html#ac3a06cae24f2f4d385fbb73ccd98356e":[35,0,0,28,1,17,0,6],
-"msd-xrandr-manager_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[35,0,0,28,1,17,0,7]
+"msd-xrandr-manager_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[35,0,0,28,1,17,0,7],
+"msd-xrandr-manager_8c.html#acfe9b639ee9c676330e1cf208b07a28c":[35,0,0,28,1,17,0,19],
+"msd-xrandr-manager_8c.html#adee39238ec60ad0b47b41b8ba54d6e72":[35,0,0,28,1,17,0,3],
+"msd-xrandr-manager_8c.html#aee2432b0523a9d9dd08f218f0780194b":[35,0,0,28,1,17,0,2],
+"msd-xrandr-manager_8c.html#af72cfb435d93be008bbe0c9e8828223e":[35,0,0,28,1,17,0,8],
+"msd-xrandr-manager_8c_source.html":[35,0,0,28,1,17,0],
+"msd-xrandr-manager_8h.html":[35,0,0,28,1,17,1]
 };

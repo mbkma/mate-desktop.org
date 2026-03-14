@@ -1,11 +1,5 @@
 var NAVTREEINDEX176 =
 {
-"structGpmPrefsClass.html#ac2fdaadb315a8d6adc6f194e5b31d14b":[34,0,1332,0],
-"structGpmScreensaver.html":[34,0,1333],
-"structGpmScreensaver.html#aaba38eb5f8ae89b7cd0762937a26cf86":[34,0,1333,0],
-"structGpmScreensaver.html#ac431141525a194c3104bcaab09988b6b":[34,0,1333,1],
-"structGpmScreensaverClass.html":[34,0,1334],
-"structGpmScreensaverClass.html#a393c87c826034ed3d5e54cd98c9712c9":[34,0,1334,0],
 "structGpmSession.html":[34,0,1335],
 "structGpmSession.html#a5c5fc6f565472cc89e0d6dcd198618ef":[34,0,1335,0],
 "structGpmSession.html#ad73087d564a20bd61c9026fa88edd63d":[34,0,1335,1],
@@ -96,16 +90,16 @@ var NAVTREEINDEX176 =
 "structLoadGraph.html#a382266f4689ab39de33749ecde3e7192":[34,0,1406,22],
 "structLoadGraph.html#a40fd265eb5008963a5aa36a16a13b3a3":[34,0,1406,38],
 "structLoadGraph.html#a43937dae780ecc4351dc47424c974c7b":[34,0,1406,0],
-"structLoadGraph.html#a47c2636b3dded24e40332aeee12cc5bb":[34,0,1406,6],
 "structLoadGraph.html#a6209b50d8cf0a348ac5236349c7d31da":[34,0,1406,30],
 "structLoadGraph.html#a647d40fa9c45e5d080db82efec7baa56":[34,0,1406,25],
+"structLoadGraph.html#a6d4a8fd49e65c81d423cb40a7a0a9e06":[34,0,1406,27],
 "structLoadGraph.html#a7a3021f7dbfd7cf1d0b59cf6ab0f54e2":[34,0,1406,15],
 "structLoadGraph.html#a84180baed60022d9244d07b9d6b4b513":[34,0,1406,9],
 "structLoadGraph.html#a87d85d454e8533d7223971177387055e":[34,0,1406,8],
 "structLoadGraph.html#a881743065d9f1306e3d84124ac728692":[34,0,1406,11],
 "structLoadGraph.html#a91670b16d6cac2af2d018440fc4aaeb6":[34,0,1406,3],
-"structLoadGraph.html#a91b0306ab1797a18c0f5116347242362":[34,0,1406,27],
 "structLoadGraph.html#a92edefb349ad821367dfa6d88cd4d6c0":[34,0,1406,36],
+"structLoadGraph.html#a94c668dcd98c86cba83f78dcbd3868ab":[34,0,1406,6],
 "structLoadGraph.html#a9de4c4985058309f5fe2ae2fa5bf1042":[34,0,1406,10],
 "structLoadGraph.html#aa4f99e86742a895483b8579b35f3178d":[34,0,1406,4],
 "structLoadGraph.html#aa6d26c079743047d9527bb75eca683e0":[34,0,1406,37],
@@ -249,5 +243,11 @@ var NAVTREEINDEX176 =
 "structMateSettingsPluginClass.html#a63a205aa6ca40766d545f8146fef07fd":[34,0,1424,2],
 "structMateSettingsPluginClass.html#a7e1ac836c59beb1e052b708a60ab9104":[34,0,1424,1],
 "structMateSettingsPluginClass.html#ae1762026ddc82338a90c85a320d51b4a":[34,0,1424,0],
-"structMateSettingsPluginInfo.html":[34,0,1425]
+"structMateSettingsPluginInfo.html":[34,0,1425],
+"structMateSettingsPluginInfo.html#a70156a48cb77dbdc8ce65d8f4b8018a5":[34,0,1425,1],
+"structMateSettingsPluginInfo.html#ab7e0c013816a056410925eba6b1601f8":[34,0,1425,0],
+"structMateSettingsPluginInfoClass.html":[34,0,1426],
+"structMateSettingsPluginInfoClass.html#a2e52769b0d181e0fd25ef58431f9539d":[34,0,1426,0],
+"structMateSettingsPluginInfoClass.html#a2fd38516390a05373b88a1202ce14529":[34,0,1426,1],
+"structMateSettingsPluginInfoClass.html#ae20ca11b5ba7912bff4304223e4f4b21":[34,0,1426,2]
 };

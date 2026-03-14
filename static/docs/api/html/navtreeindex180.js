@@ -1,11 +1,5 @@
 var NAVTREEINDEX180 =
 {
-"structPrefsDialog.html#aa5405d98e4498fdf80e8319a36979156":[34,0,1611,7],
-"structPrefsDialog.html#aa7f11102f1f4d400d1b90914ad6f930d":[34,0,1611,33],
-"structPrefsDialog.html#ab413400c08b1c0771aeef84abb8a78a2":[34,0,1611,28],
-"structPrefsDialog.html#ab597d357264f21064460af413b4d29c3":[34,0,1611,18],
-"structPrefsDialog.html#abc90f5e37f1c5ce7ee8f5f43f4fcf3dc":[34,0,1611,22],
-"structPrefsDialog.html#aca6c9a92b0a6ade55a448448159578b5":[34,0,1611,30],
 "structPrefsDialog.html#ad3072a64b850708098dfeec48aaf8d1e":[34,0,1611,24],
 "structPrefsDialog.html#ad4386eb37b1fe13e1c4fa54370ba80e2":[34,0,1611,3],
 "structPrefsDialog.html#ad8c6b497636462cae8a19a9ef0bfea1f":[34,0,1611,6],
@@ -249,5 +243,11 @@ var NAVTREEINDEX180 =
 "structTestIFaceInterface.html#a4100b4ae46e5c84c76fddbec2e7b195a":[34,0,1641,1],
 "structTestIFaceInterface.html#ae33a2bf9dd53fe94e24ac876f44b0f24":[34,0,1641,0],
 "structTestIFaceInterface.html#af4cf6645c9313ca9e8d2281d3878e163":[34,0,1641,3],
-"structTestIFaceInterface.html#af56389c9d9dc2ccaa2c4d769fcb83916":[34,0,1641,2]
+"structTestIFaceInterface.html#af56389c9d9dc2ccaa2c4d769fcb83916":[34,0,1641,2],
+"structThemedIcon.html":[34,0,1642],
+"structThemedIcon.html#a1caf8752dba08b431fe4a7b4c218a0e2":[34,0,1642,1],
+"structThemedIcon.html#ae351a4e68148a311a1f57109e0637a2c":[34,0,1642,0],
+"structThemedIcon.html#ae7a252a0a8fdb6d42bae667545a03f0b":[34,0,1642,2],
+"structThemedIconClass.html":[34,0,1643],
+"structThemedIconClass.html#a4ddb1118f51885d0d5fb39e509d24b27":[34,0,1643,0]
 };

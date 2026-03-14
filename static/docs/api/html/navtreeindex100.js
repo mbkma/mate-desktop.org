@@ -1,11 +1,5 @@
 var NAVTREEINDEX100 =
 {
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a57d5276449007d4d096376e3a0180556":[35,0,0,15,0,13,5,3],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a83461ab0a3e3cc24bf849047f4628a38":[35,0,0,15,0,13,5,2],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a83c4beb738b3ae6f0f09f203942675af":[35,0,0,15,0,13,5,0],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a9e40b084209237b475f6bad36bf06d6d":[35,0,0,15,0,13,5,1],
-"mate-desktop-item_8c.html#ac85b90c872243a13856409550f12d150":[35,0,0,15,0,13,22],
-"mate-desktop-item_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[35,0,0,15,0,13,1],
 "mate-desktop-item_8c.html#ace9477eef3fe5ba14ac4236b55f03904":[35,0,0,15,0,13,23],
 "mate-desktop-item_8c.html#ad559fa0d1a654c83c811bf52668d2714":[35,0,0,15,0,13,36],
 "mate-desktop-item_8c.html#ae2fb9fc30cb45bc7b699aaddf64401e6":[35,0,0,15,0,13,44],
@@ -249,5 +243,11 @@ var NAVTREEINDEX100 =
 "mate-dialog_8c.html#a85befb88a5d1d3e315c7bbaf0fd08d21":[35,0,0,9,2,20,0],
 "mate-dialog_8c.html#a8db4dc7f21a0b93cc683fda4dff36627":[35,0,0,9,2,20,11],
 "mate-dialog_8c.html#a8f10367139b7f0c9ddf8c9ea46a0d066":[35,0,0,9,2,20,14],
-"mate-dialog_8c.html#a928986ae17da5638f39c109f867a945a":[35,0,0,9,2,20,23]
+"mate-dialog_8c.html#a928986ae17da5638f39c109f867a945a":[35,0,0,9,2,20,23],
+"mate-dialog_8c.html#aaaed7d3b23062fa48d22e8a6adc0eba8":[35,0,0,9,2,20,2],
+"mate-dialog_8c.html#ab7e38c5a42c48742b8694e46f5fb24c3":[35,0,0,9,2,20,20],
+"mate-dialog_8c.html#ac73e4e20ee3e845c717a7e883845e542":[35,0,0,9,2,20,17],
+"mate-dialog_8c.html#acd60e394c2ded37dd699a22424699aba":[35,0,0,9,2,20,18],
+"mate-dialog_8c.html#adb704d8807bfb38363cbdd2d2ba18063":[35,0,0,9,2,20,1],
+"mate-dialog_8c.html#ae5de10023669545631ccbebdf49d0e13":[35,0,0,9,2,20,16]
 };

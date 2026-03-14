@@ -1,11 +1,5 @@
 var NAVTREEINDEX98 =
 {
-"mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a41eec0e415ef791ea36b4dc4c4ce5125":[35,0,0,13,0,41,5,13],
-"mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a47faac484d035a72e994e559e5c1f585":[35,0,0,13,0,41,5,8],
-"mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a6331ce25617d646938ab7b00675f074a":[35,0,0,13,0,41,5,2],
-"mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a63467fbd0e0dcc2ab8be261d4c993fb0":[35,0,0,13,0,41,5,0],
-"mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a652dd1bf8a9412f28660cd6b11c6eeb6":[35,0,0,13,0,41,5,9],
-"mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a6ff9422916fd006e5045eae02eae02d5":[35,0,0,13,0,41,5,5],
 "mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006a71404184cae8f2c37d200eea17089d69":[35,0,0,13,0,41,5,10],
 "mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006aa82a6d4aeda74a18c47992fabb092b9a":[35,0,0,13,0,41,5,1],
 "mate-calc_2src_2parser_8h.html#aa4e7d1a473d0280792d98ddb184d3006addd8f46262af4c218e1a18660c6da6d8":[35,0,0,13,0,41,5,7],
@@ -249,5 +243,11 @@ var NAVTREEINDEX98 =
 "mate-colorsel_8h.html#a8df710f68a1f4b30db8727856741f438":[35,0,0,15,0,8,31],
 "mate-colorsel_8h.html#a920e6136a3b87894548214cc9c7e72ff":[35,0,0,15,0,8,2],
 "mate-colorsel_8h.html#a978238eaad010a05c9cfb01f4c682e40":[35,0,0,15,0,8,9],
-"mate-colorsel_8h.html#a9ceced1c1da5bdb143b709cc2c80c629":[35,0,0,15,0,8,11]
+"mate-colorsel_8h.html#a9ceced1c1da5bdb143b709cc2c80c629":[35,0,0,15,0,8,11],
+"mate-colorsel_8h.html#aa1639245113e6509b10a1d56e3b67eb1":[35,0,0,15,0,8,27],
+"mate-colorsel_8h.html#aab8cc1b6f12fff215eff37087f44848d":[35,0,0,15,0,8,22],
+"mate-colorsel_8h.html#ab6465b14c3add18018391d95ca9bd016":[35,0,0,15,0,8,3],
+"mate-colorsel_8h.html#abcc4ea095eb146ae93f9235849a608a3":[35,0,0,15,0,8,5],
+"mate-colorsel_8h.html#ac8ee2fb739c053647e26dc59bf5d8ed0":[35,0,0,15,0,8,20],
+"mate-colorsel_8h.html#ac9817564af13570d58f82744bf6c8d22":[35,0,0,15,0,8,12]
 };

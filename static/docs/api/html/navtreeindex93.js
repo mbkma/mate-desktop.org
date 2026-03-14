@@ -1,11 +1,5 @@
 var NAVTREEINDEX93 =
 {
-"logview-prefs_8h.html#a18a15ae52f1c30a5971dce8abd03f7f0":[35,0,0,32,2,0,18,6],
-"logview-prefs_8h.html#a2a44c68eb354e5f59814727eb8d74a66":[35,0,0,32,2,0,18,19],
-"logview-prefs_8h.html#a43c1707a221ea83caa5a6689e17d2817":[35,0,0,32,2,0,18,21],
-"logview-prefs_8h.html#a4e751a2f748fa45e87cb9444aea589b5":[35,0,0,32,2,0,18,24],
-"logview-prefs_8h.html#a4e9033b9f08b4f93769e0e1d31d3b302":[35,0,0,32,2,0,18,18],
-"logview-prefs_8h.html#a50ce87be92d4f9694423618b4594535e":[35,0,0,32,2,0,18,5],
 "logview-prefs_8h.html#a6276fdfd36bb2717d36f9fb41ec4bed1":[35,0,0,32,2,0,18,2],
 "logview-prefs_8h.html#a6777db44b78099a0fc03952dfe4521d3":[35,0,0,32,2,0,18,23],
 "logview-prefs_8h.html#a6b2b04c022a21fab58c63a803e859aae":[35,0,0,32,2,0,18,15],
@@ -249,5 +243,11 @@ var NAVTREEINDEX93 =
 "marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a3ed8606e17c333c847b1346ceb18046d":[35,0,0,11,0,2,2,28,9],
 "marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a428ea0b85e1935d9b1f459cfcdebbc09":[35,0,0,11,0,2,2,28,4],
 "marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a52e39920c4f29a1764a968b2572918d2":[35,0,0,11,0,2,2,28,3],
-"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a5fff046665c99ccfe909152232e9fc73":[35,0,0,11,0,2,2,28,13]
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a5fff046665c99ccfe909152232e9fc73":[35,0,0,11,0,2,2,28,13],
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a716160efd8e5572b00b5d54871bb84fb":[35,0,0,11,0,2,2,28,15],
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a82cab0cb669a27aecefbb13fb7768745":[35,0,0,11,0,2,2,28,17],
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a86db965c073bb11d55ef9cf89c22daa4":[35,0,0,11,0,2,2,28,0],
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a8a30a49c210fe438b469c09bb558914e":[35,0,0,11,0,2,2,28,12],
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a9d307b2aa37c769b0ce6e488d9a56a12":[35,0,0,11,0,2,2,28,11],
+"marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69aadccdd9e37e7f3a3f4f17d3fdc0a00f1":[35,0,0,11,0,2,2,28,5]
 };

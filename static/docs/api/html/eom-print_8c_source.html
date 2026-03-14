@@ -623,11 +623,14 @@ $(document).ready(function(){initNavTree('eom-print_8c_source.html',''); initRes
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>        key_file = g_key_file_new ();</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    }</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    gtk_print_settings_to_key_file (print_settings, key_file, <a class="code hl_define" href="eom-print_8c.html#a12d8f1aeaf0515c4b0506e2b6e932b1e">EOM_PRINT_SETTINGS_GROUP</a>);</div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    eom_print_save_key_file (key_file);</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="comment">/* Clear n-copies settings since we do not want to persist that one */</span></div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    gtk_print_settings_unset (print_settings, GTK_PRINT_SETTINGS_N_COPIES);</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    g_key_file_free (key_file);</div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>}</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    gtk_print_settings_to_key_file (print_settings, key_file, <a class="code hl_define" href="eom-print_8c.html#a12d8f1aeaf0515c4b0506e2b6e932b1e">EOM_PRINT_SETTINGS_GROUP</a>);</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    eom_print_save_key_file (key_file);</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    g_key_file_free (key_file);</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>

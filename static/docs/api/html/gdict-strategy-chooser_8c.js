@@ -15,5 +15,5 @@ var gdict_strategy_chooser_8c =
     [ "gdict_strategy_chooser_set_context", "gdict-strategy-chooser_8c.html#a0d1b0eff22cebb2c1e8abbafb96fe1b0", null ],
     [ "gdict_strategy_chooser_set_current_strategy", "gdict-strategy-chooser_8c.html#a0ba8699023b1e713186016ff25fa4ad8", null ],
     [ "gdict_strategy_chooser_unselect_strategy", "gdict-strategy-chooser_8c.html#aac5f586208bc880279cf856b51154ec2", null ],
-    [ "StratType", "gdict-strategy-chooser_8c.html#a3cc1d3822f74774a02a8bd02dc4b64ac", null ]
+    [ "StratType", "gdict-strategy-chooser_8c.html#ab5ee7b56f5e25de3a49c6da4a2c7c231", null ]
 ];
