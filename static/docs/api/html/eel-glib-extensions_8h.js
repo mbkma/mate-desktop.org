@@ -1,0 +1,26 @@
+var eel_glib_extensions_8h =
+[
+    [ "eel_boolean_bit", "eel-glib-extensions_8h.html#ac69a07a5461af0d9576f02872ba8a142", null ],
+    [ "EelPredicateFunction", "eel-glib-extensions_8h.html#a4cb7b9a93b7bca4e859f56218a37d61a", null ],
+    [ "eel_add_weak_pointer", "eel-glib-extensions_8h.html#abbc3ec9de5149c7c3117c9fc2c624a48", null ],
+    [ "eel_g_hash_table_new_free_at_exit", "eel-glib-extensions_8h.html#a33bf6a1f14d36d96e32e816cac27e001", null ],
+    [ "eel_g_hash_table_safe_for_each", "eel-glib-extensions_8h.html#ac279d08b144b3c978ad3b90e1fe48714", null ],
+    [ "eel_g_list_equal", "eel-glib-extensions_8h.html#a21482894fcfacf729e23f8b391d9c737", null ],
+    [ "eel_g_list_exactly_one_item", "eel-glib-extensions_8h.html#a54344882715e7cef4127f31cb934c6ba", null ],
+    [ "eel_g_list_free_deep", "eel-glib-extensions_8h.html#a192439d7618ca963665feed697fbf244", null ],
+    [ "eel_g_list_more_than_one_item", "eel-glib-extensions_8h.html#a55ab95d5d86273c80ce80569d0d82ec7", null ],
+    [ "eel_g_list_partition", "eel-glib-extensions_8h.html#ae34a1c86a5d3cad9d71a7c721a0239b1", null ],
+    [ "eel_g_lists_sort_and_check_for_intersection", "eel-glib-extensions_8h.html#a27d7a3b90ae5b2d7009d75e616fb0d06", null ],
+    [ "eel_g_settings_add_auto_boolean", "eel-glib-extensions_8h.html#abb630a1c3a8a921b33a90f51082e4aa1", null ],
+    [ "eel_g_settings_add_auto_enum", "eel-glib-extensions_8h.html#aedd79d12de729758b5a7f3268505951e", null ],
+    [ "eel_g_settings_add_auto_int", "eel-glib-extensions_8h.html#a027a5b1786b0c5155b01b702027cbe4e", null ],
+    [ "eel_g_settings_add_auto_strv", "eel-glib-extensions_8h.html#afa3cc2e6c70280fb25aa816389917f60", null ],
+    [ "eel_g_settings_add_auto_strv_as_quarks", "eel-glib-extensions_8h.html#ab6d24161b7530ed9f51143d5ec2ef937", null ],
+    [ "eel_g_str_list_alphabetize", "eel-glib-extensions_8h.html#a1eee054f6a6305e7cf97e93b9a1fda83", null ],
+    [ "eel_g_str_list_equal", "eel-glib-extensions_8h.html#ad9cddf0ce84c4e19a76da9c0e75389cc", null ],
+    [ "eel_g_str_list_index", "eel-glib-extensions_8h.html#aedb84cbae6c4cd51d5cf0fb18edb264c", null ],
+    [ "eel_g_strv_equal", "eel-glib-extensions_8h.html#ac250b6abba8effc764685f477727a9d5", null ],
+    [ "eel_g_strv_find", "eel-glib-extensions_8h.html#a25c3a4e59c0e3d1dd10395b6d96110fc", null ],
+    [ "eel_remove_weak_pointer", "eel-glib-extensions_8h.html#ab28d001e905c28665255ad7f3ac5e158", null ],
+    [ "eel_round", "eel-glib-extensions_8h.html#ad880e38f310941e9680e408668d56311", null ]
+];

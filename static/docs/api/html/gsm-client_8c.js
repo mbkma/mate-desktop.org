@@ -1,0 +1,26 @@
+var gsm_client_8c =
+[
+    [ "ENUM_ENTRY", "gsm-client_8c.html#a4ab8205a323552d2791705ce43fd7626", null ],
+    [ "gsm_client_cancel_end_session", "gsm-client_8c.html#ae719efd8b186058fbefd366e06dcb8cb", null ],
+    [ "gsm_client_disconnected", "gsm-client_8c.html#abd3608556b4a277f5c45f0e03030d3fc", null ],
+    [ "gsm_client_end_session", "gsm-client_8c.html#a4f8d104ff280bcca8ae1043c24952756", null ],
+    [ "gsm_client_end_session_response", "gsm-client_8c.html#aa644fee32f6dca2814b48801e5315c60", null ],
+    [ "gsm_client_error_get_type", "gsm-client_8c.html#a70fcc580b98a4da9f5844b98d3dce739", null ],
+    [ "gsm_client_error_quark", "gsm-client_8c.html#af0063ef4e2002e9c88c33af1b790f323", null ],
+    [ "gsm_client_get_app_id", "gsm-client_8c.html#a6020ef7503bb27a1497d7c9dff81e132", null ],
+    [ "gsm_client_get_app_name", "gsm-client_8c.html#afc641bba756b999720ede6238899451c", null ],
+    [ "gsm_client_get_restart_style_hint", "gsm-client_8c.html#a34621df8521a759eef1018639ffab8af", null ],
+    [ "gsm_client_get_startup_id", "gsm-client_8c.html#a52a5bed6ec728847f4ed725a8d8e83a4", null ],
+    [ "gsm_client_get_status", "gsm-client_8c.html#a6d2abb86d6f18c7571547a7789b05ca8", null ],
+    [ "gsm_client_get_unix_process_id", "gsm-client_8c.html#a9be7e380e42f1426025a7b4f37c3b99f", null ],
+    [ "gsm_client_peek_app_id", "gsm-client_8c.html#a3561129aee0dfb270f10b73fd69389dd", null ],
+    [ "gsm_client_peek_id", "gsm-client_8c.html#a4f221f46eec7b9c44243f6954e8e491c", null ],
+    [ "gsm_client_peek_restart_style_hint", "gsm-client_8c.html#ac1e77df755d161fcdb89f1bc6f93b3e8", null ],
+    [ "gsm_client_peek_startup_id", "gsm-client_8c.html#a861e09690c70054f90a7b741e9cc7c87", null ],
+    [ "gsm_client_peek_status", "gsm-client_8c.html#a710f8b64bd16592fbaa4fcf22a158ef6", null ],
+    [ "gsm_client_query_end_session", "gsm-client_8c.html#ac9965e419682fb28006173f3608d1c15", null ],
+    [ "gsm_client_save", "gsm-client_8c.html#abea8f5df094fc621c839b2a699a4d5b0", null ],
+    [ "gsm_client_set_app_id", "gsm-client_8c.html#a233eeaf24a68c3e9c79097cc4e357772", null ],
+    [ "gsm_client_set_status", "gsm-client_8c.html#acaeb2e92aadb363e22f0ec5340dca1e3", null ],
+    [ "gsm_client_stop", "gsm-client_8c.html#ae6bd4b1c416d7a5b49edd9569f6063df", null ]
+];

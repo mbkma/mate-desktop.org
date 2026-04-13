@@ -1,0 +1,27 @@
+var matemixer_context_8c =
+[
+    [ "G_DEFINE_TYPE_WITH_PRIVATE", "matemixer-context_8c.html#ad0a9b00bda93e00f9f3276d25766c1cf", null ],
+    [ "mate_mixer_context_close", "matemixer-context_8c.html#a9715a956bdbbd9178ae2145f2411cbd4", null ],
+    [ "mate_mixer_context_get_backend_flags", "matemixer-context_8c.html#a27e501673bd875862e93884cc769b0c3", null ],
+    [ "mate_mixer_context_get_backend_name", "matemixer-context_8c.html#a7950424c487172a92b615c8bf751f310", null ],
+    [ "mate_mixer_context_get_backend_type", "matemixer-context_8c.html#a12ddd7d729d66cae7348e4509ef1b418", null ],
+    [ "mate_mixer_context_get_default_input_stream", "matemixer-context_8c.html#a44a5ffa048da22cd02fd6e55ede54733", null ],
+    [ "mate_mixer_context_get_default_output_stream", "matemixer-context_8c.html#a7790537bc9eb2fecc30c0f24d1c93af7", null ],
+    [ "mate_mixer_context_get_device", "matemixer-context_8c.html#a9f8ba520e1e69dca7de9d3a73d3207a7", null ],
+    [ "mate_mixer_context_get_state", "matemixer-context_8c.html#a268627eec542d39203eff489aa2d29a9", null ],
+    [ "mate_mixer_context_get_stored_control", "matemixer-context_8c.html#a1cd591e807a45db0cf02862c1280855d", null ],
+    [ "mate_mixer_context_get_stream", "matemixer-context_8c.html#af7c9f8437d045da9079096a4aad938c0", null ],
+    [ "mate_mixer_context_list_devices", "matemixer-context_8c.html#a4887cce16580fdb4d5ea08919c1ed246", null ],
+    [ "mate_mixer_context_list_stored_controls", "matemixer-context_8c.html#aa0387e74cabddb0df77ee480c819500c", null ],
+    [ "mate_mixer_context_list_streams", "matemixer-context_8c.html#af80e00b89c3b22724e35c7037474d208", null ],
+    [ "mate_mixer_context_new", "matemixer-context_8c.html#a23e00cbca96b8a2a71a8bb53c0e53884", null ],
+    [ "mate_mixer_context_open", "matemixer-context_8c.html#ab438f78514995b7a4126469c6f3baa21", null ],
+    [ "mate_mixer_context_set_app_icon", "matemixer-context_8c.html#a0ff028fb95675f880a33ea5077d23343", null ],
+    [ "mate_mixer_context_set_app_id", "matemixer-context_8c.html#aa709f50c618bf6d370ca9cc0a6d1092a", null ],
+    [ "mate_mixer_context_set_app_name", "matemixer-context_8c.html#a72f16737f2019d644bdce32bb4c29f1c", null ],
+    [ "mate_mixer_context_set_app_version", "matemixer-context_8c.html#a2089ce56a12cc453d65b929c43ae966f", null ],
+    [ "mate_mixer_context_set_backend_type", "matemixer-context_8c.html#a39d8f223f51f6ba03a3fdf3ad5d97f30", null ],
+    [ "mate_mixer_context_set_default_input_stream", "matemixer-context_8c.html#ae1033de8602191f57ab24ca580d547c9", null ],
+    [ "mate_mixer_context_set_default_output_stream", "matemixer-context_8c.html#a64fb8e68e9316f4b24662f476333b0f1", null ],
+    [ "mate_mixer_context_set_server_address", "matemixer-context_8c.html#a2fa53cf3072be442b55756e1704315fe", null ]
+];

@@ -1,0 +1,84 @@
+<map id="matemixer&#45;backend.h" name="matemixer&#45;backend.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1083,5,1247,31"/>
+<area shape="rect" id="Node000002" href="$matemixer-backend_8c.html" title=" " alt="" coords="965,79,1127,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1135,40,1067,81,1064,76,1132,35"/>
+<area shape="rect" id="Node000003" href="$matemixer-context_8c.html" title=" " alt="" coords="5,159,164,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1167,45,1161,77,1153,93,1141,106,1117,118,1079,127,970,140,828,147,670,151,366,151,184,155,138,162,137,157,183,149,365,146,670,145,828,142,969,135,1078,122,1115,113,1138,102,1148,90,1155,75,1162,44"/>
+<area shape="rect" id="Node000004" href="$matemixer-private_8h.html" title=" " alt="" coords="2283,79,2439,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1260,22,2283,83,2282,88,1260,28"/>
+<area shape="poly" id="edge13_Node000004_Node000003" title=" " alt="" coords="2269,96,1850,100,1247,109,633,127,377,139,184,155,137,162,136,157,183,149,377,134,633,122,1247,104,1850,95,2269,91"/>
+<area shape="rect" id="Node000005" href="$alsa-backend_8c.html" title=" " alt="" coords="192,240,311,265"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="2269,96,1784,102,1110,113,505,130,309,142,252,148,229,154,223,163,220,173,223,197,233,220,245,238,240,241,229,222,218,198,215,173,218,161,226,150,251,143,309,136,504,125,1110,108,1784,96,2268,91"/>
+<area shape="rect" id="Node000006" href="$alsa-backend_8h.html" title=" " alt="" coords="239,159,359,185"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="2269,95,1882,97,1333,105,778,123,546,137,372,155,337,162,336,157,371,149,546,132,778,118,1333,100,1882,92,2269,90"/>
+<area shape="rect" id="Node000007" href="$alsa-stream-control_8c.html" title=" " alt="" coords="384,159,545,185"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="2269,96,1914,101,1420,112,922,129,714,141,557,155,514,162,513,157,556,149,714,136,921,124,1419,107,1914,96,2269,91"/>
+<area shape="rect" id="Node000008" href="$alsa-stream-input-control_8c.html" title=" " alt="" coords="569,159,768,185"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="2269,95,2013,96,1645,103,1217,121,997,136,781,155,729,162,728,157,780,149,996,130,1216,116,1644,98,2013,90,2269,89"/>
+<area shape="rect" id="Node000009" href="$alsa-stream-output-control_8c.html" title=" " alt="" coords="793,152,939,192"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="2269,97,1605,116,1227,132,1071,143,952,155,940,156,939,151,951,149,1070,138,1227,127,1605,110,2269,92"/>
+<area shape="rect" id="Node000010" href="$alsa-stream_8c.html" title=" " alt="" coords="964,159,1075,185"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="2269,97,1669,114,1333,131,1193,142,1088,155,1056,162,1054,157,1087,149,1193,137,1332,126,1669,109,2269,92"/>
+<area shape="rect" id="Node000011" href="$alsa-switch_8c.html" title=" " alt="" coords="1099,159,1206,185"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="2269,97,1731,116,1434,132,1312,143,1218,155,1188,162,1186,157,1218,149,1311,137,1434,127,1731,110,2269,92"/>
+<area shape="rect" id="Node000012" href="$alsa-toggle_8c.html" title=" " alt="" coords="1230,159,1337,185"/>
+<area shape="poly" id="edge12_Node000004_Node000012" title=" " alt="" coords="2269,98,1794,118,1537,134,1349,155,1319,162,1317,157,1348,149,1536,129,1794,112,2269,93"/>
+<area shape="rect" id="Node000013" href="$matemixer_8c.html" title=" " alt="" coords="1361,159,1464,185"/>
+<area shape="poly" id="edge14_Node000004_Node000013" title=" " alt="" coords="2269,96,2119,99,1923,109,1704,126,1484,155,1451,162,1450,157,1483,149,1703,121,1922,103,2119,94,2269,90"/>
+<area shape="rect" id="Node000014" href="$null-backend_8c.html" title=" " alt="" coords="1469,240,1585,265"/>
+<area shape="poly" id="edge15_Node000004_Node000014" title=" " alt="" coords="2269,95,2073,97,1839,105,1730,112,1636,123,1566,137,1543,145,1529,154,1519,174,1517,197,1525,239,1520,240,1511,197,1514,172,1525,150,1540,140,1564,132,1635,118,1729,107,1839,100,2073,92,2269,90"/>
+<area shape="rect" id="Node000015" href="$null-backend_8h.html" title=" " alt="" coords="1539,159,1657,185"/>
+<area shape="poly" id="edge16_Node000004_Node000015" title=" " alt="" coords="2269,99,2002,116,1839,132,1676,155,1641,162,1640,157,1675,149,1838,127,2002,111,2269,94"/>
+<area shape="rect" id="Node000016" href="$oss-backend_8c.html" title=" " alt="" coords="1683,240,1798,265"/>
+<area shape="poly" id="edge18_Node000004_Node000016" title=" " alt="" coords="2269,97,2117,102,1945,113,1797,129,1747,141,1721,154,1715,163,1713,174,1715,197,1724,220,1735,239,1730,241,1719,222,1710,198,1707,173,1710,161,1718,150,1746,136,1796,124,1944,107,2117,97,2269,92"/>
+<area shape="rect" id="Node000017" href="$oss-backend_8h.html" title=" " alt="" coords="1731,159,1846,185"/>
+<area shape="poly" id="edge19_Node000004_Node000017" title=" " alt="" coords="2269,102,2079,121,1968,136,1859,155,1828,162,1826,157,1857,149,1968,131,2078,116,2269,97"/>
+<area shape="rect" id="Node000018" href="$oss-device_8c.html" title=" " alt="" coords="1871,159,1973,185"/>
+<area shape="poly" id="edge21_Node000004_Node000018" title=" " alt="" coords="2269,106,2135,126,1985,155,1958,162,1957,157,1984,149,2134,121,2269,101"/>
+<area shape="rect" id="Node000019" href="$oss-stream-control_8c.html" title=" " alt="" coords="1997,159,2153,185"/>
+<area shape="poly" id="edge22_Node000004_Node000019" title=" " alt="" coords="2307,110,2118,162,2116,157,2305,105"/>
+<area shape="rect" id="Node000020" href="$oss-stream_8c.html" title=" " alt="" coords="2178,159,2285,185"/>
+<area shape="poly" id="edge23_Node000004_Node000020" title=" " alt="" coords="2331,113,2252,161,2249,157,2329,109"/>
+<area shape="rect" id="Node000021" href="$oss-switch_8c.html" title=" " alt="" coords="2309,159,2412,185"/>
+<area shape="poly" id="edge24_Node000004_Node000021" title=" " alt="" coords="2363,118,2363,159,2358,159,2358,118"/>
+<area shape="rect" id="Node000022" href="$pulse-backend_8c.html" title=" " alt="" coords="2437,240,2564,265"/>
+<area shape="poly" id="edge25_Node000004_Node000022" title=" " alt="" coords="2386,112,2425,150,2465,198,2495,238,2490,241,2461,202,2421,154,2383,115"/>
+<area shape="rect" id="Node000023" href="$pulse-backend_8h.html" title=" " alt="" coords="2487,159,2615,185"/>
+<area shape="poly" id="edge26_Node000004_Node000023" title=" " alt="" coords="2402,107,2525,157,2523,162,2400,112"/>
+<area shape="rect" id="Node000024" href="$pulse-device-profile_8c.html" title=" " alt="" coords="2639,159,2802,185"/>
+<area shape="poly" id="edge28_Node000004_Node000024" title=" " alt="" coords="2427,104,2669,157,2668,162,2426,110"/>
+<area shape="rect" id="Node000025" href="$pulse-device-switch_8c.html" title=" " alt="" coords="2826,159,2989,185"/>
+<area shape="poly" id="edge29_Node000004_Node000025" title=" " alt="" coords="2453,100,2621,121,2814,149,2854,157,2853,162,2814,155,2620,126,2452,105"/>
+<area shape="rect" id="Node000026" href="$pulse-device_8c.html" title=" " alt="" coords="3013,159,3129,185"/>
+<area shape="poly" id="edge30_Node000004_Node000026" title=" " alt="" coords="2453,94,2701,111,2851,127,3001,149,3034,157,3032,162,3000,155,2851,132,2701,116,2452,99"/>
+<area shape="rect" id="Node000027" href="$pulse-ext-stream_8c.html" title=" " alt="" coords="3153,159,3299,185"/>
+<area shape="poly" id="edge31_Node000004_Node000027" title=" " alt="" coords="2453,93,2759,109,2951,126,3142,149,3181,157,3180,162,3142,155,2950,131,2759,115,2452,98"/>
+<area shape="rect" id="Node000028" href="$pulse-port-switch_8c.html" title=" " alt="" coords="3323,159,3470,185"/>
+<area shape="poly" id="edge32_Node000004_Node000028" title=" " alt="" coords="2452,91,2614,95,2828,105,3069,122,3312,149,3351,157,3350,162,3311,155,3069,128,2828,110,2614,101,2452,96"/>
+<area shape="rect" id="Node000029" href="$pulse-port_8c.html" title=" " alt="" coords="3494,159,3593,185"/>
+<area shape="poly" id="edge33_Node000004_Node000029" title=" " alt="" coords="2452,92,2980,110,3271,127,3391,137,3483,149,3512,157,3511,162,3481,155,3390,142,3270,132,2980,115,2452,97"/>
+<area shape="rect" id="Node000030" href="$pulse-sink-control_8c.html" title=" " alt="" coords="3617,159,3768,185"/>
+<area shape="poly" id="edge34_Node000004_Node000030" title=" " alt="" coords="2453,89,2660,91,2946,98,3273,117,3441,131,3605,149,3646,157,3645,162,3604,155,3440,136,3273,122,2946,104,2660,96,2453,95"/>
+<area shape="rect" id="Node000031" href="$pulse-sink-input_8c.html" title=" " alt="" coords="3793,159,3931,185"/>
+<area shape="poly" id="edge35_Node000004_Node000031" title=" " alt="" coords="2453,92,3122,109,3503,126,3661,137,3781,149,3820,157,3819,162,3780,155,3660,142,3502,132,3122,115,2453,97"/>
+<area shape="rect" id="Node000032" href="$pulse-sink-switch_8c.html" title=" " alt="" coords="3955,159,4102,185"/>
+<area shape="poly" id="edge36_Node000004_Node000032" title=" " alt="" coords="2453,91,3198,108,3629,125,3808,136,3944,149,3984,157,3983,162,3943,155,3807,142,3628,131,3198,113,2452,97"/>
+<area shape="rect" id="Node000033" href="$pulse-sink_8c.html" title=" " alt="" coords="4127,159,4227,185"/>
+<area shape="poly" id="edge37_Node000004_Node000033" title=" " alt="" coords="2452,90,2798,92,3279,100,3762,118,3963,132,4114,149,4144,157,4143,162,4114,155,3962,137,3761,123,3279,105,2798,97,2452,95"/>
+<area shape="rect" id="Node000034" href="$pulse-source-control_8c.html" title=" " alt="" coords="4251,159,4417,185"/>
+<area shape="poly" id="edge38_Node000004_Node000034" title=" " alt="" coords="2453,91,2820,96,3337,106,3858,124,4075,135,4240,149,4285,157,4284,162,4239,155,4075,141,3857,129,3336,112,2820,101,2453,96"/>
+<area shape="rect" id="Node000035" href="$pulse-source-output_8c.html" title=" " alt="" coords="4442,159,4605,185"/>
+<area shape="poly" id="edge39_Node000004_Node000035" title=" " alt="" coords="2452,91,2853,95,3425,104,4005,122,4247,134,4430,149,4475,157,4474,162,4430,155,4247,139,4005,127,3425,110,2853,100,2452,96"/>
+<area shape="rect" id="Node000036" href="$pulse-source-switch_8c.html" title=" " alt="" coords="4629,159,4791,185"/>
+<area shape="poly" id="edge40_Node000004_Node000036" title=" " alt="" coords="2453,90,2885,93,3511,102,4149,120,4416,133,4617,149,4662,157,4661,162,4616,155,4415,138,4149,125,3511,108,2885,99,2453,96"/>
+<area shape="rect" id="Node000037" href="$pulse-source_8c.html" title=" " alt="" coords="4816,159,4932,185"/>
+<area shape="poly" id="edge41_Node000004_Node000037" title=" " alt="" coords="2453,91,3696,109,4395,127,4652,137,4804,149,4838,157,4837,162,4803,155,4652,143,4395,132,3696,115,2453,96"/>
+<area shape="rect" id="Node000038" href="$pulse-stream-control_8c.html" title=" " alt="" coords="4956,159,5125,185"/>
+<area shape="poly" id="edge42_Node000004_Node000038" title=" " alt="" coords="2453,90,2942,92,3663,100,4402,117,4711,131,4945,149,4991,157,4990,162,4944,155,4711,137,4402,123,3663,105,2942,97,2453,95"/>
+<area shape="rect" id="Node000039" href="$pulse-stream_8c.html" title=" " alt="" coords="5149,159,5268,185"/>
+<area shape="poly" id="edge43_Node000004_Node000039" title=" " alt="" coords="2452,91,3024,96,3862,107,4668,125,4964,136,5138,149,5173,157,5172,162,5138,155,4963,141,4667,130,3862,112,3024,101,2452,96"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="287,198,261,241,256,238,283,195"/>
+<area shape="poly" id="edge17_Node000015_Node000014" title=" " alt="" coords="1580,197,1540,242,1536,238,1576,193"/>
+<area shape="poly" id="edge20_Node000017_Node000016" title=" " alt="" coords="1777,198,1750,241,1746,238,1772,195"/>
+<area shape="poly" id="edge27_Node000023_Node000022" title=" " alt="" coords="2539,198,2510,241,2506,238,2534,195"/>
+</map>

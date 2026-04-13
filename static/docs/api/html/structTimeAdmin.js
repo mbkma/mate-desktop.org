@@ -1,0 +1,27 @@
+var structTimeAdmin =
+[
+    [ "ApplyId", "structTimeAdmin.html#af920444937422e79c2fe4fbd0c93d771", null ],
+    [ "ButtonLock", "structTimeAdmin.html#a03a0de6db17b9ae4e6fe1a9baf89004e", null ],
+    [ "Calendar", "structTimeAdmin.html#a643788ff541d3473c3e95ee206d62097", null ],
+    [ "CityListStore", "structTimeAdmin.html#aef972410f52d890744d762ce3ddd3463", null ],
+    [ "CityModelSort", "structTimeAdmin.html#a97a3ac4cc31e5c2fd4509490930e8b6a", null ],
+    [ "Connection", "structTimeAdmin.html#a7db3bc54d09a397d53741522773d7161", null ],
+    [ "dialog", "structTimeAdmin.html#a51a28a43584bd3ffc44b98b64373df7b", null ],
+    [ "HourSpin", "structTimeAdmin.html#ab16bf3b15ce365789705869a9589f000", null ],
+    [ "MainWindow", "structTimeAdmin.html#a342ea18b48fb115ffd2675efaac121ad", null ],
+    [ "map", "structTimeAdmin.html#a4b924900989ffd1638d9ef9f0bc48d40", null ],
+    [ "MinuteSpin", "structTimeAdmin.html#a5404b2a2fc870b06eab0c623e32f5b0f", null ],
+    [ "NtpState", "structTimeAdmin.html#a323094f14b498278504ae58be7746d4a", null ],
+    [ "NtpSyncSwitch", "structTimeAdmin.html#a9aa72b159dc80ad12c1cbe95defcbdab", null ],
+    [ "Permission", "structTimeAdmin.html#ad66ae68f01b6fabef9007532991ae864", null ],
+    [ "proxy", "structTimeAdmin.html#ae8d21483984705dc429db8ad6166651c", null ],
+    [ "SaveButton", "structTimeAdmin.html#a4904c45d1a0de76c37dd99026a6a95ba", null ],
+    [ "SearchBar", "structTimeAdmin.html#a7088158e51bd99a36eacdbb3cb2ce0db", null ],
+    [ "SecondSpin", "structTimeAdmin.html#a215da01d7ce222151df07684e8125312", null ],
+    [ "TimeZoneButton", "structTimeAdmin.html#a604873feb373f330844849eb0eacf372", null ],
+    [ "TimeZoneEntry", "structTimeAdmin.html#a9edd9adad240d4f09a29daa8ca02d165", null ],
+    [ "TimezoneEntry", "structTimeAdmin.html#a7835fa024077e72ee7bb3e7b72362628", null ],
+    [ "TZclose", "structTimeAdmin.html#aeddfd5c943607d30978147a23ba5d3bc", null ],
+    [ "TZconfire", "structTimeAdmin.html#a7fc5ae262e49323bfd3ff4812fff60eb", null ],
+    [ "UpdateTimeId", "structTimeAdmin.html#a8ef9ccbb7432c452303a978e3898e936", null ]
+];

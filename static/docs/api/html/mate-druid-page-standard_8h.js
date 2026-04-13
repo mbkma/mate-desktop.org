@@ -1,0 +1,28 @@
+var mate_druid_page_standard_8h =
+[
+    [ "_MateDruidPageStandard", "struct__MateDruidPageStandard.html", "struct__MateDruidPageStandard" ],
+    [ "_MateDruidPageStandardClass", "struct__MateDruidPageStandardClass.html", "struct__MateDruidPageStandardClass" ],
+    [ "MATE_DRUID_PAGE_STANDARD", "mate-druid-page-standard_8h.html#a095339aba2f3142d9126040bb498f1a1", null ],
+    [ "MATE_DRUID_PAGE_STANDARD_CLASS", "mate-druid-page-standard_8h.html#ae5342898820022b5c0d9f1ab1972a115", null ],
+    [ "MATE_DRUID_PAGE_STANDARD_GET_CLASS", "mate-druid-page-standard_8h.html#a60b2497790ed66932fc6d295cd968f03", null ],
+    [ "mate_druid_page_standard_set_bg_color", "mate-druid-page-standard_8h.html#a2bf479e2251a812b0252b6e71e429b4f", null ],
+    [ "mate_druid_page_standard_set_logo_bg_color", "mate-druid-page-standard_8h.html#a42000ea3cfb2a9ec75c2f2b8098589de", null ],
+    [ "mate_druid_page_standard_set_title_color", "mate-druid-page-standard_8h.html#a51be3b9d78e96e3acdd9a5601bd31b1a", null ],
+    [ "MATE_IS_DRUID_PAGE_STANDARD", "mate-druid-page-standard_8h.html#ac356338cc15934448103343e15f39762", null ],
+    [ "MATE_IS_DRUID_PAGE_STANDARD_CLASS", "mate-druid-page-standard_8h.html#a763dfa9b61fc614050f1214065cdac77", null ],
+    [ "MATE_TYPE_DRUID_PAGE_STANDARD", "mate-druid-page-standard_8h.html#a033537de09e17e12a5862ea74b8b9d72", null ],
+    [ "MateDruidPageStandard", "mate-druid-page-standard_8h.html#a3d8dcd28b8e4c245d7210e4b3e871ef6", null ],
+    [ "MateDruidPageStandardClass", "mate-druid-page-standard_8h.html#ae3873580ba79f0161664db3517558510", null ],
+    [ "MateDruidPageStandardPrivate", "mate-druid-page-standard_8h.html#a2939bcb14e1313ed3995b6da48a583a8", null ],
+    [ "mate_druid_page_standard_append_item", "mate-druid-page-standard_8h.html#af8f37e24c09a88b50dc3d22217a2d46e", null ],
+    [ "mate_druid_page_standard_get_type", "mate-druid-page-standard_8h.html#aab9b0912088a6b7b16f9214f241b88a6", null ],
+    [ "mate_druid_page_standard_new", "mate-druid-page-standard_8h.html#ab0fd6bb753040ed9e289797fa6a99aeb", null ],
+    [ "mate_druid_page_standard_new_with_vals", "mate-druid-page-standard_8h.html#acd5e635919952eca6a9ee7421ff8699e", null ],
+    [ "mate_druid_page_standard_set_background", "mate-druid-page-standard_8h.html#a272a268c35146ca39740a615a614fbea", null ],
+    [ "mate_druid_page_standard_set_contents_background", "mate-druid-page-standard_8h.html#a83925ad6d9873d9008fd6c4d9f26d33a", null ],
+    [ "mate_druid_page_standard_set_logo", "mate-druid-page-standard_8h.html#a2f2d5c6733e0c7e4da37a48ce8cbd02d", null ],
+    [ "mate_druid_page_standard_set_logo_background", "mate-druid-page-standard_8h.html#abbc268572cd6744bbfe7bc822dfcffb6", null ],
+    [ "mate_druid_page_standard_set_title", "mate-druid-page-standard_8h.html#a3dae029b18c379f48553291511cb0acc", null ],
+    [ "mate_druid_page_standard_set_title_foreground", "mate-druid-page-standard_8h.html#ae6db495a6321406b04b13f0f77592f58", null ],
+    [ "mate_druid_page_standard_set_top_watermark", "mate-druid-page-standard_8h.html#ac1e0ef900fc13cfdb43d5d65639217c4", null ]
+];

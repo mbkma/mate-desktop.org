@@ -1,0 +1,35 @@
+var mp_serializer_8h =
+[
+    [ "MpSerializer", "structMpSerializer.html", "structMpSerializer" ],
+    [ "MpSerializerClass", "structMpSerializerClass.html", "structMpSerializerClass" ],
+    [ "MP_SERIALIZER", "mp-serializer_8h.html#a1e26596947d9019dc94f348038fe68e7", null ],
+    [ "MP_TYPE_SERIALIZER", "mp-serializer_8h.html#a563a008d191a258b7cebd7dfccf35b68", null ],
+    [ "MpSerializerPrivate", "mp-serializer_8h.html#a0786a187876dcd1dedb57c507bbef887", null ],
+    [ "MpDisplayFormat", "mp-serializer_8h.html#aee12fd68f480c2d40267087276043b68", [
+      [ "MP_DISPLAY_FORMAT_AUTOMATIC", "mp-serializer_8h.html#aee12fd68f480c2d40267087276043b68ab0926570b4480bc66b5c2081dbaf2ec8", null ],
+      [ "MP_DISPLAY_FORMAT_FIXED", "mp-serializer_8h.html#aee12fd68f480c2d40267087276043b68a671263864c6a63b47d77f60a6aa870b3", null ],
+      [ "MP_DISPLAY_FORMAT_SCIENTIFIC", "mp-serializer_8h.html#aee12fd68f480c2d40267087276043b68a3d0704c69fa35711ae44b2e6b61bc760", null ],
+      [ "MP_DISPLAY_FORMAT_ENGINEERING", "mp-serializer_8h.html#aee12fd68f480c2d40267087276043b68a33f1145c50075feb58d085ca93fd7546", null ]
+    ] ],
+    [ "mp_serializer_from_string", "mp-serializer_8h.html#a3400c7514afcee7ef71c8550c754cb7b", null ],
+    [ "mp_serializer_get_base", "mp-serializer_8h.html#a2bd927eef7fba4a8dfc3e6fa70d6a4dd", null ],
+    [ "mp_serializer_get_leading_digits", "mp-serializer_8h.html#a221b689deb4d07b150b2f2e848657989", null ],
+    [ "mp_serializer_get_number_format", "mp-serializer_8h.html#a945f17cdd5216d8badc89334a29c144d", null ],
+    [ "mp_serializer_get_radix", "mp-serializer_8h.html#a44d25ee9fc18e52cc16062592db0c2bc", null ],
+    [ "mp_serializer_get_show_thousands_separators", "mp-serializer_8h.html#a705eb2e992b677e09beaafb898194ec6", null ],
+    [ "mp_serializer_get_show_trailing_zeroes", "mp-serializer_8h.html#a0ce6ea72a0b0fe7c50fa875580f99cce", null ],
+    [ "mp_serializer_get_thousands_separator", "mp-serializer_8h.html#a8500ef0216bac766f779688d915f2543", null ],
+    [ "mp_serializer_get_thousands_separator_count", "mp-serializer_8h.html#a3409fbd1d61f272b1754ecdb63a87565", null ],
+    [ "mp_serializer_get_trailing_digits", "mp-serializer_8h.html#acaaa54d416aef189e3782abe6cc5ccab", null ],
+    [ "mp_serializer_get_type", "mp-serializer_8h.html#a76225b1f1238cd4ad40007a73da38f48", null ],
+    [ "mp_serializer_new", "mp-serializer_8h.html#ae19dfecf2040cea2f4d1270d2f747b0f", null ],
+    [ "mp_serializer_set_base", "mp-serializer_8h.html#a09419d45c78ded27ac205de47d851b22", null ],
+    [ "mp_serializer_set_leading_digits", "mp-serializer_8h.html#a3fbb591c24e847f363a63e8cbbf58c28", null ],
+    [ "mp_serializer_set_number_format", "mp-serializer_8h.html#aced943490f973d7227593ae18d35f6ee", null ],
+    [ "mp_serializer_set_radix", "mp-serializer_8h.html#a3475dc421a15706f79be7073146c46b6", null ],
+    [ "mp_serializer_set_show_thousands_separators", "mp-serializer_8h.html#a8bd1235074dd6c0946895176b282e2da", null ],
+    [ "mp_serializer_set_show_trailing_zeroes", "mp-serializer_8h.html#abe30df095d2cf97ce72ee49ab0e0e3cc", null ],
+    [ "mp_serializer_set_thousands_separator", "mp-serializer_8h.html#ad874f7cacfed0d394eea0b6db21387c2", null ],
+    [ "mp_serializer_set_trailing_digits", "mp-serializer_8h.html#ab19c2bd96e013588dd213a74ebcb6304", null ],
+    [ "mp_serializer_to_string", "mp-serializer_8h.html#ab0d2fd88e5a6e63769985922977b0f0f", null ]
+];

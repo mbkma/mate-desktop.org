@@ -1,0 +1,27 @@
+var caja_file_operations_8h =
+[
+    [ "CajaCopyCallback", "caja-file-operations_8h.html#a0319c2caa2835883bb72dfc63f83248c", null ],
+    [ "CajaCreateCallback", "caja-file-operations_8h.html#aa2387803d3285f1b450e3bf04117d4e3", null ],
+    [ "CajaDeleteCallback", "caja-file-operations_8h.html#a1288ee1ebcb1428347373a550ec88b30", null ],
+    [ "CajaMountCallback", "caja-file-operations_8h.html#a0c4a685ad87b8ae3d7b7664b7553959a", null ],
+    [ "CajaOpCallback", "caja-file-operations_8h.html#a3b07a2dfce95e1affb57da677437c68d", null ],
+    [ "CajaUnmountCallback", "caja-file-operations_8h.html#a7449ac200b6859e5066392a61fbeec88", null ],
+    [ "caja_application_notify_unmount_show", "caja-file-operations_8h.html#aa20a4911ee807651bdde7261bb53f1db", null ],
+    [ "caja_file_mark_desktop_file_trusted", "caja-file-operations_8h.html#aacd570d370ec8f56f8419b89865ad377", null ],
+    [ "caja_file_operations_copy", "caja-file-operations_8h.html#ac8017b7325e0dec1ba69c1396e43babe", null ],
+    [ "caja_file_operations_copy_move", "caja-file-operations_8h.html#a568a391d5defc35d92bd15bc26cfef40", null ],
+    [ "caja_file_operations_delete", "caja-file-operations_8h.html#a24e570b44a281d678ca2148caf767d6a", null ],
+    [ "caja_file_operations_duplicate", "caja-file-operations_8h.html#ab5d9b64e51d6cce449ae9b0c5753943f", null ],
+    [ "caja_file_operations_empty_trash", "caja-file-operations_8h.html#a3a3f8ca39062863fcbd638f0fe2a59a2", null ],
+    [ "caja_file_operations_link", "caja-file-operations_8h.html#af831498a39a113ed9df9ffc7b95b06d3", null ],
+    [ "caja_file_operations_mount_volume", "caja-file-operations_8h.html#a7565432673308b754aa4f697effcd6ff", null ],
+    [ "caja_file_operations_mount_volume_full", "caja-file-operations_8h.html#a52df1780903fecdfbc23638beb930df2", null ],
+    [ "caja_file_operations_move", "caja-file-operations_8h.html#a47ba36095f9c3ee74a7ed95520c9b8ea", null ],
+    [ "caja_file_operations_new_file", "caja-file-operations_8h.html#ae9056d550cd014cf9d3b5436269b89f2", null ],
+    [ "caja_file_operations_new_file_from_template", "caja-file-operations_8h.html#a94757f21c785929b403f39ce7e0c8f59", null ],
+    [ "caja_file_operations_new_folder", "caja-file-operations_8h.html#afaf5db2b4cb09a224fe9be71d847067b", null ],
+    [ "caja_file_operations_trash_or_delete", "caja-file-operations_8h.html#ad3a2c8f35402a6a648e914aa927d21ac", null ],
+    [ "caja_file_operations_unmount_mount", "caja-file-operations_8h.html#a5fd4bcaa942c155830e03209779244bb", null ],
+    [ "caja_file_operations_unmount_mount_full", "caja-file-operations_8h.html#a9ec36edd5c6823bce9af4cd7d64ec6da", null ],
+    [ "caja_file_set_permissions_recursive", "caja-file-operations_8h.html#afd55f392696be3b402b52f2fcb3c5023", null ]
+];

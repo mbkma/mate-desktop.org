@@ -1,0 +1,26 @@
+var mate_panel_applet_8c =
+[
+    [ "GDK_IS_X11_DISPLAY", "mate-panel-applet_8c.html#a59ad01704f8b88ba9fac520818f2b921", null ],
+    [ "MATE_PANEL_APPLET_INTERFACE", "mate-panel-applet_8c.html#a53ff8e820b21ada07afd7b49398a256a", null ],
+    [ "MATE_PANEL_APPLET_OBJECT_PATH", "mate-panel-applet_8c.html#a76a3972046952e9ee6feff5892f64786", null ],
+    [ "_mate_panel_applet_apply_css", "mate-panel-applet_8c.html#a867b589ae19fc850fa3786c44224e4fb", null ],
+    [ "mate_panel_applet_factory_main", "mate-panel-applet_8c.html#a74fa3f8de47198cb57d41cf9cb8cb63e", null ],
+    [ "mate_panel_applet_factory_setup_in_process", "mate-panel-applet_8c.html#afcf93fa347e5601ee084c2c51d3dda6b", null ],
+    [ "mate_panel_applet_get_applet_widget", "mate-panel-applet_8c.html#a32a2dc45bb4fd1580cd8ce4abd146fbe", null ],
+    [ "mate_panel_applet_get_background", "mate-panel-applet_8c.html#a0ebdbc2e9cefa91dd88dd2afa0103392", null ],
+    [ "mate_panel_applet_get_flags", "mate-panel-applet_8c.html#af35bcd48aadc6f6d47758fd895497432", null ],
+    [ "mate_panel_applet_get_locked_down", "mate-panel-applet_8c.html#a8b0adcd9acec2d4ef76f44873de66726", null ],
+    [ "mate_panel_applet_get_object_path", "mate-panel-applet_8c.html#aaf4c67ee29ec5c264cd715e26d071787", null ],
+    [ "mate_panel_applet_get_orient", "mate-panel-applet_8c.html#a560a18ee1b8f6757df188c752b786d51", null ],
+    [ "mate_panel_applet_get_preferences_path", "mate-panel-applet_8c.html#ad4464c6d48124c29f00e8ab369b62330", null ],
+    [ "mate_panel_applet_get_size", "mate-panel-applet_8c.html#a7ec126479c23fa7a6caf15da2bf3bdaa", null ],
+    [ "mate_panel_applet_get_xid", "mate-panel-applet_8c.html#acac3f7df4559eb5fc36baec9c15ca847", null ],
+    [ "mate_panel_applet_new", "mate-panel-applet_8c.html#a8b40c9e013570126625f9c74bf7c408a", null ],
+    [ "mate_panel_applet_request_focus", "mate-panel-applet_8c.html#a6f5906c606abeec8bd3a3cfc7907e1a2", null ],
+    [ "mate_panel_applet_set_background_widget", "mate-panel-applet_8c.html#ab56526733500954afa283e2e8053284c", null ],
+    [ "mate_panel_applet_set_flags", "mate-panel-applet_8c.html#a086a89c91d47b0417ff81f5e17141c77", null ],
+    [ "mate_panel_applet_set_size_hints", "mate-panel-applet_8c.html#a9cdca13702147f7b57b5b722ff7e58bc", null ],
+    [ "mate_panel_applet_setup_menu", "mate-panel-applet_8c.html#a09653619dba2e74e83637834e1681cbb", null ],
+    [ "mate_panel_applet_setup_menu_from_file", "mate-panel-applet_8c.html#a820208ffd55aa6652b8fd0abb5c9c242", null ],
+    [ "mate_panel_applet_setup_menu_from_resource", "mate-panel-applet_8c.html#a57f26128837c1ca7dc274f91d1a34888", null ]
+];

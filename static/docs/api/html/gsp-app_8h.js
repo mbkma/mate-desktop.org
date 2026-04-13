@@ -1,0 +1,25 @@
+var gsp_app_8h =
+[
+    [ "GSP_TYPE_APP", "gsp-app_8h.html#a3353439bb9bd21ebb01e67c4072c45d8", null ],
+    [ "G_DECLARE_DERIVABLE_TYPE", "gsp-app_8h.html#ace1256231167cf10d9a97afb1c31da40", null ],
+    [ "gsp_app_copy_desktop_file", "gsp-app_8h.html#a02f1e964a8bece327b81c0e9e97b63bd", null ],
+    [ "gsp_app_create", "gsp-app_8h.html#a0b5ac091422bd5ed6d49da1af4924f53", null ],
+    [ "gsp_app_delete", "gsp-app_8h.html#a4501b5131d58ac4fd7225e1bd6c204a8", null ],
+    [ "gsp_app_get_basename", "gsp-app_8h.html#a5a8e21099b064fc8c5cb870a7ec793f8", null ],
+    [ "gsp_app_get_comment", "gsp-app_8h.html#ad00d13db45db7d7ce8b212047c81b4af", null ],
+    [ "gsp_app_get_delay", "gsp-app_8h.html#a8dd42c07049e35fba2af93c4027c6b27", null ],
+    [ "gsp_app_get_description", "gsp-app_8h.html#aeb97abace9930faccb71592cb30eb88d", null ],
+    [ "gsp_app_get_exec", "gsp-app_8h.html#a78489305eecb70eea45af9fc1284ec7e", null ],
+    [ "gsp_app_get_hidden", "gsp-app_8h.html#adf200e589722c8fb3a30a14dc061a6d5", null ],
+    [ "gsp_app_get_icon", "gsp-app_8h.html#ac0c840eb9e39300e3cdb98a8553f2544", null ],
+    [ "gsp_app_get_name", "gsp-app_8h.html#a0cb013e4f3ddc78bbc95fd6dbecfbe88", null ],
+    [ "gsp_app_get_nodisplay", "gsp-app_8h.html#a46c78758e5b66ebb32dbcba0d53bd1f6", null ],
+    [ "gsp_app_get_path", "gsp-app_8h.html#aeb934e5258d7de7bc223558b066c164f", null ],
+    [ "gsp_app_get_xdg_position", "gsp-app_8h.html#a657a4eece922cbc3e1c198e7757c7d64", null ],
+    [ "gsp_app_get_xdg_system_position", "gsp-app_8h.html#a5c827c22b7dc0c51ba50da09e5379ab6", null ],
+    [ "gsp_app_new", "gsp-app_8h.html#a6119f36a4ecfa27e1b73dfe2332e1582", null ],
+    [ "gsp_app_reload_at", "gsp-app_8h.html#a37bc1993d3ea6af5109ef3d61d59dc90", null ],
+    [ "gsp_app_set_hidden", "gsp-app_8h.html#af05faa455488063e19b79620d8288453", null ],
+    [ "gsp_app_set_xdg_system_position", "gsp-app_8h.html#a4e463bb93f82dda865303885b060e26f", null ],
+    [ "gsp_app_update", "gsp-app_8h.html#a197af8889b00eff21f3e259c8e8528dc", null ]
+];

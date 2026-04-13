@@ -1,0 +1,28 @@
+var structDetailedTiming =
+[
+    [ "analog", "structDetailedTiming.html#a56fd61d3a2736ca7b3b94d4d80a6c143", null ],
+    [ "bipolar", "structDetailedTiming.html#adbc30b6a9a7100f8e1108810957b481f", null ],
+    [ "composite", "structDetailedTiming.html#a5bf4188f80c526b06b07894d89e5f3ab", null ],
+    [ "connector", "structDetailedTiming.html#aebf2afa5feecee594ce9ef15bdbe830b", null ],
+    [ "digital", "structDetailedTiming.html#a31904a626b06702b9761fceb71ba2a89", null ],
+    [ "digital_sync", "structDetailedTiming.html#ac3afa3691f412e8fac989e6513109691", null ],
+    [ "h_addr", "structDetailedTiming.html#a85c0d36888c55c4ee71121b85cea61b9", null ],
+    [ "h_blank", "structDetailedTiming.html#a27daa8f6f8dfb12a284941ed5e43aa4f", null ],
+    [ "h_front_porch", "structDetailedTiming.html#a0bd43278c3e0b28253d33dc6f3c821ee", null ],
+    [ "h_sync", "structDetailedTiming.html#aae294c5b56cd6d5b2a31e9f64be4f028", null ],
+    [ "height_mm", "structDetailedTiming.html#afe4bfdcd55e1bf373f1fd65eb2e3df3c", null ],
+    [ "interlaced", "structDetailedTiming.html#a803871a4e74c68526f783f2590fcc04e", null ],
+    [ "negative_hsync", "structDetailedTiming.html#a00a010bd94ca8a3a621ec0981298508e", null ],
+    [ "negative_vsync", "structDetailedTiming.html#a3cedca2e48d82b3762ef9a3e5250c8dd", null ],
+    [ "pixel_clock", "structDetailedTiming.html#ac210b55f04f91f4be986146c4ce705bd", null ],
+    [ "right_border", "structDetailedTiming.html#aa1491bed93f2661857917f5d8e27f1c5", null ],
+    [ "serrations", "structDetailedTiming.html#a9541cca370b1f34aff76662ab9320882", null ],
+    [ "stereo", "structDetailedTiming.html#a60d0525fe3c0c72215630305260bef8b", null ],
+    [ "sync_on_green", "structDetailedTiming.html#a64b7159458a1f5cf86883ad63d82e46e", null ],
+    [ "top_border", "structDetailedTiming.html#a607f0584a31d507eabb8f374409f3f12", null ],
+    [ "v_addr", "structDetailedTiming.html#ac643634cfa7b6cbab2f56aeb7ee5e642", null ],
+    [ "v_blank", "structDetailedTiming.html#ab9bd4082c1d9db55360e4f82b51fd0b8", null ],
+    [ "v_front_porch", "structDetailedTiming.html#a0b5aeb6a79d5ace9535896021834d2c6", null ],
+    [ "v_sync", "structDetailedTiming.html#a8e7063314d3391b34cfc06779bb16683", null ],
+    [ "width_mm", "structDetailedTiming.html#aab5396222ed975b2a746081d40d8162e", null ]
+];

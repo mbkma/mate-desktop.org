@@ -1,0 +1,47 @@
+var gpm_statistics_8c =
+[
+    [ "GPM_HISTORY_CHARGE_TEXT", "gpm-statistics_8c.html#a9003848c1a61316e483072d468bcab42", null ],
+    [ "GPM_HISTORY_CHARGE_VALUE", "gpm-statistics_8c.html#a69a6b2b87d608b7fbd3a8e18471fa441", null ],
+    [ "GPM_HISTORY_DAY_TEXT", "gpm-statistics_8c.html#a0888c895904a6bf964bde1fe38c7e008", null ],
+    [ "GPM_HISTORY_DAY_VALUE", "gpm-statistics_8c.html#a6c5d6c839046ccc55d61d0cd41ddb16b", null ],
+    [ "GPM_HISTORY_HOUR_TEXT", "gpm-statistics_8c.html#ac75c98dd8ac9e409758f019dacedf2c3", null ],
+    [ "GPM_HISTORY_HOUR_VALUE", "gpm-statistics_8c.html#a11ea18fba6475688b8b91aea285b2671", null ],
+    [ "GPM_HISTORY_HOURS_TEXT", "gpm-statistics_8c.html#a23f9859be97a348068a4ff6c72168d4c", null ],
+    [ "GPM_HISTORY_HOURS_VALUE", "gpm-statistics_8c.html#a8862e15287e16d08b642095c2c47a559", null ],
+    [ "GPM_HISTORY_MINUTE_TEXT", "gpm-statistics_8c.html#ab5d91c8587698b88e6905199c3716d4d", null ],
+    [ "GPM_HISTORY_MINUTE_VALUE", "gpm-statistics_8c.html#a744bc23ddf67118fa3738273f93e2eaa", null ],
+    [ "GPM_HISTORY_POWER_VALUE", "gpm-statistics_8c.html#a955faa93493c1a5b8b921a25b2fe4c31", null ],
+    [ "GPM_HISTORY_RATE_TEXT", "gpm-statistics_8c.html#a55c5c5063b825122666c0d967f225aa8", null ],
+    [ "GPM_HISTORY_RATE_VALUE", "gpm-statistics_8c.html#acdf182282adb4183fcb42e9597175fbb", null ],
+    [ "GPM_HISTORY_TIME_EMPTY_TEXT", "gpm-statistics_8c.html#a4bc0d85407f3543023bf02bd68941a90", null ],
+    [ "GPM_HISTORY_TIME_EMPTY_VALUE", "gpm-statistics_8c.html#a788784a590bac9ba3d3cfb06055ebec1", null ],
+    [ "GPM_HISTORY_TIME_FULL_TEXT", "gpm-statistics_8c.html#ada3394f21b4d04ec453d5fcd7c6d2363", null ],
+    [ "GPM_HISTORY_TIME_FULL_VALUE", "gpm-statistics_8c.html#ad9e16ee903880b7ee637c5a9c415f73a", null ],
+    [ "GPM_HISTORY_WEEK_TEXT", "gpm-statistics_8c.html#a368b057b17f64d606e85a6780f40d401", null ],
+    [ "GPM_HISTORY_WEEK_VALUE", "gpm-statistics_8c.html#a56531fbf1d6e775ce4b8dafd84a99991", null ],
+    [ "GPM_STATS_CHARGE_ACCURACY_TEXT", "gpm-statistics_8c.html#afc09bcca179254b2c4745ed58991491a", null ],
+    [ "GPM_STATS_CHARGE_ACCURACY_VALUE", "gpm-statistics_8c.html#ad51c0464b2a772622a6c9e2c99529161", null ],
+    [ "GPM_STATS_CHARGE_DATA_TEXT", "gpm-statistics_8c.html#a62374d7584ff9a13a79b2076d837b66f", null ],
+    [ "GPM_STATS_CHARGE_DATA_VALUE", "gpm-statistics_8c.html#a9de2a27fd4ba4123cc4800952585669b", null ],
+    [ "GPM_STATS_DISCHARGE_ACCURACY_TEXT", "gpm-statistics_8c.html#afbf488d5a8bdf893b2969e139266045b", null ],
+    [ "GPM_STATS_DISCHARGE_ACCURACY_VALUE", "gpm-statistics_8c.html#a4a913e56ab3dc215ab129f45d05e5ad1", null ],
+    [ "GPM_STATS_DISCHARGE_DATA_TEXT", "gpm-statistics_8c.html#ac432dc88876cdea44ce51b2cd4632509", null ],
+    [ "GPM_STATS_DISCHARGE_DATA_VALUE", "gpm-statistics_8c.html#af73096779ae003c93d3afe0aa1cb63a5", null ],
+    [ "history_type_enum", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343", [
+      [ "GPM_HISTORY_RATE_TYPE", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343ab2173b7bfbfdbc15568b7ab22d3107c6", null ],
+      [ "GPM_HISTORY_CHARGE_TYPE", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343ace4ca975b9f16eaa7fdc5ccba014523b", null ],
+      [ "GPM_HISTORY_TIME_FULL_TYPE", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343a024bf42eadff0403e9d74f1d07fac2db", null ],
+      [ "GPM_HISTORY_TIME_EMPTY_TYPE", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343a43606a5493e4ce0d38118b1fe34b6a3c", null ],
+      [ "GPM_HISTORY_POWER_TYPE", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343a7260eca4869506580002e83d375230ae", null ],
+      [ "GPM_HISTORY_LAST_TYPE", "gpm-statistics_8c.html#a001b53bedf6682f433097b7ae086a343a62a66bff464d3cbbc4bc41e4764e8a9e", null ]
+    ] ],
+    [ "stats_type_enum", "gpm-statistics_8c.html#acf9b51a34487f652764360a142b6b1ad", [
+      [ "GPM_STATS_CHARGE_TYPE", "gpm-statistics_8c.html#acf9b51a34487f652764360a142b6b1adae22a509c2da87f0bb215643ca13ccd2d", null ],
+      [ "GPM_STATS_DISCHARGE_TYPE", "gpm-statistics_8c.html#acf9b51a34487f652764360a142b6b1adaf7f68147993b9c493817601df6605f89", null ],
+      [ "GPM_STATS_CHARGE_ACCURACY_TYPE", "gpm-statistics_8c.html#acf9b51a34487f652764360a142b6b1ada28afa72571aebb2d6da02438838d98e6", null ],
+      [ "GPM_STATS_DISCHARGE_ACCURACY_TYPE", "gpm-statistics_8c.html#acf9b51a34487f652764360a142b6b1ada7ebebddc3b281df44289d094459007ae", null ],
+      [ "GPM_STATS_LAST_TYPE", "gpm-statistics_8c.html#acf9b51a34487f652764360a142b6b1ada7c96471b97132712ec7783284b39a241", null ]
+    ] ],
+    [ "main", "gpm-statistics_8c.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
+    [ "current_device", "gpm-statistics_8c.html#a1d002460753f41072380bf0b80bc3d76", null ]
+];

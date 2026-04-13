@@ -1,0 +1,27 @@
+var panel_action_button_8h =
+[
+    [ "_PanelActionButton", "struct__PanelActionButton.html", "struct__PanelActionButton" ],
+    [ "_PanelActionButtonClass", "struct__PanelActionButtonClass.html", "struct__PanelActionButtonClass" ],
+    [ "PANEL_ACTION_BUTTON", "panel-action-button_8h.html#a1db1a791d7e635024898f5cac5f868b8", null ],
+    [ "PANEL_ACTION_BUTTON_CLASS", "panel-action-button_8h.html#a70cb4ad3caa49768249eab800e298983", null ],
+    [ "PANEL_ACTION_BUTTON_GET_CLASS", "panel-action-button_8h.html#a51e39623d58e9a5842a7c1e2fbc9dc2b", null ],
+    [ "PANEL_IS_ACTION_BUTTON", "panel-action-button_8h.html#adcb2c00a5054b954edbdfa39c7cc8327", null ],
+    [ "PANEL_IS_ACTION_BUTTON_CLASS", "panel-action-button_8h.html#a738f4f8690d2b878e0a0ee8204c2ec54", null ],
+    [ "PANEL_TYPE_ACTION_BUTTON", "panel-action-button_8h.html#ae1ec199cda3d6e4fdbfab70fe226f37a", null ],
+    [ "PanelActionButton", "panel-action-button_8h.html#a9c0eecdd6ec9ec6f2f81149ed3f5b9fa", null ],
+    [ "PanelActionButtonClass", "panel-action-button_8h.html#a5144426a47e8c5fff6b9e0842ba68098", null ],
+    [ "PanelActionButtonPrivate", "panel-action-button_8h.html#aedafd372867ca414b6a4682d02270c7f", null ],
+    [ "panel_action_button_create", "panel-action-button_8h.html#a7e76b35a64a13c148e870c581d4266df", null ],
+    [ "panel_action_button_get_type", "panel-action-button_8h.html#a260e46dc0d4ced686ee8911d9f3f0a81", null ],
+    [ "panel_action_button_invoke_menu", "panel-action-button_8h.html#abdebe94136838bebb988366c35e03604", null ],
+    [ "panel_action_button_load_from_drag", "panel-action-button_8h.html#afa3d6930638dee32793597e1d3fe342f", null ],
+    [ "panel_action_button_load_from_gsettings", "panel-action-button_8h.html#a30370ec8152fd403c2a5406251e2b8f6", null ],
+    [ "panel_action_button_set_dnd_enabled", "panel-action-button_8h.html#a210bdca047263c09e9f338245a664b1a", null ],
+    [ "panel_action_button_set_type", "panel-action-button_8h.html#a6631efbc58fbb50842e6d319bfca0f4b", null ],
+    [ "panel_action_get_drag_id", "panel-action-button_8h.html#ac5930e6ae510fef10d3ee0e3f11327c7", null ],
+    [ "panel_action_get_icon_name", "panel-action-button_8h.html#af6c21b16fe73f715d6d7c996c494439b", null ],
+    [ "panel_action_get_invoke", "panel-action-button_8h.html#ad0fa65a205cbbb149bb08b4dddf82dac", null ],
+    [ "panel_action_get_is_disabled", "panel-action-button_8h.html#ae11d309da84640c7e6581345eac8d708", null ],
+    [ "panel_action_get_text", "panel-action-button_8h.html#a53857a123961528ed237054fdc2562fd", null ],
+    [ "panel_action_get_tooltip", "panel-action-button_8h.html#a9aa0c620e3580d990b89c15a8048ff68", null ]
+];

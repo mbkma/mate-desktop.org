@@ -1,0 +1,51 @@
+<map id="_PlumaApp" name="_PlumaApp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="152,841,247,867"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="129,753,270,779"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,793,202,841,197,841,197,793"/>
+<area shape="rect" id="Node000003" href="$struct__PlumaWindow.html" title=" " alt="" coords="138,665,261,691"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="202,705,202,753,197,753,197,705"/>
+<area shape="rect" id="Node000004" href="$struct__PlumaWindowPrivate.html" title=" " alt="" coords="115,577,283,603"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="202,617,202,665,197,665,197,617"/>
+<area shape="rect" id="Node000005" href="$struct__PlumaMessageBus.html" title=" " alt="" coords="51,489,203,515"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="138,526,153,552,181,575,178,579,149,555,134,529"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,401,204,427"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="114,439,127,488,122,489,109,441"/>
+<area shape="rect" id="Node000007" href="$struct__PlumaTab.html" title=" " alt="" coords="240,489,332,515"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="271,528,247,555,218,579,214,575,243,551,267,524"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="229,401,367,427"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="297,440,290,489,285,488,292,440"/>
+<area shape="rect" id="Node000009" href="$struct__PlumaPrintJob.html" title=" " alt="" coords="85,313,205,339"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="153,351,160,364,169,375,196,388,237,399,236,404,194,393,166,379,155,367,149,353"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="43,211,209,236"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="133,249,145,313,140,314,128,250"/>
+<area shape="rect" id="Node000011" href="$struct__PlumaView.html" title=" " alt="" coords="75,108,177,133"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="129,147,129,211,123,211,123,147"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="52,13,200,38"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="129,52,129,108,123,108,123,52"/>
+<area shape="rect" id="Node000013" href="$struct__PlumaDocument.html" title=" " alt="" coords="379,108,516,133"/>
+<area shape="poly" id="edge12_Node000010_Node000013" title=" " alt="" coords="365,125,284,135,242,145,202,160,185,172,169,189,141,213,138,209,165,185,181,168,199,155,240,140,283,129,364,119"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="648,401,831,427"/>
+<area shape="poly" id="edge26_Node000014_Node000013" title=" " alt="" coords="412,142,365,169,320,205,304,225,294,246,292,267,302,288,323,308,357,326,400,343,449,358,555,382,654,399,653,404,554,387,447,363,398,348,354,331,320,312,297,291,287,268,289,245,299,222,316,202,362,165,409,137"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="946,211,1173,236"/>
+<area shape="poly" id="edge17_Node000017_Node000013" title=" " alt="" coords="530,133,990,208,989,213,529,138"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="485,211,705,236"/>
+<area shape="poly" id="edge23_Node000021_Node000013" title=" " alt="" coords="461,144,476,166,494,185,518,198,543,208,541,213,515,203,491,189,471,169,457,147"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="648,401,582,378,550,362,522,341,500,317,482,289,460,229,449,173,445,134,450,133,454,173,465,228,487,287,504,314,525,337,553,357,584,373,649,396"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="768,108,897,133"/>
+<area shape="poly" id="edge27_Node000008_Node000015" title=" " alt="" coords="814,146,772,189,720,238,687,268,648,292,614,303,586,306,558,308,524,316,465,337,408,361,321,403,319,399,406,356,463,332,523,311,558,303,586,301,613,298,646,287,683,264,716,234,768,186,811,142"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="852,144,882,191,910,252,918,285,921,318,915,350,899,379,872,394,831,405,830,399,870,389,895,375,910,348,915,318,913,286,905,254,877,193,848,146"/>
+<area shape="poly" id="edge18_Node000017_Node000015" title=" " alt="" coords="885,136,920,155,933,171,945,185,972,198,1000,208,998,213,969,203,942,189,928,174,916,159,882,141"/>
+<area shape="poly" id="edge24_Node000021_Node000015" title=" " alt="" coords="754,126,658,135,619,145,595,159,589,171,588,184,593,210,588,211,582,184,584,169,591,156,617,140,658,129,754,120"/>
+<area shape="rect" id="Node000016" href="$struct__PlumaDocumentLoader.html" title=" " alt="" coords="963,313,1145,339"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="1019,347,935,380,825,404,824,399,933,375,1018,342"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1061,250,1057,313,1052,313,1055,250"/>
+<area shape="rect" id="Node000018" href="$struct__PlumaSmartCharsetConverter.html" title=" " alt="" coords="1031,108,1253,133"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1137,147,1128,168,1115,188,1084,213,1081,209,1111,185,1123,166,1132,145"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1031,5,1253,45"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="1145,59,1145,108,1139,108,1139,59"/>
+<area shape="rect" id="Node000020" href="$struct__PlumaDocumentSaver.html" title=" " alt="" coords="536,313,711,339"/>
+<area shape="poly" id="edge21_Node000014_Node000020" title=" " alt="" coords="651,345,725,399,722,403,648,349"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="605,249,623,313,618,314,600,250"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="735,313,877,339"/>
+<area shape="poly" id="edge25_Node000014_Node000022" title=" " alt="" coords="791,351,751,402,747,399,786,348"/>
+</map>

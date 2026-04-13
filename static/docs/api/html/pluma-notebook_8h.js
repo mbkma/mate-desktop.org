@@ -1,0 +1,25 @@
+var pluma_notebook_8h =
+[
+    [ "_PlumaNotebook", "struct__PlumaNotebook.html", "struct__PlumaNotebook" ],
+    [ "_PlumaNotebookClass", "struct__PlumaNotebookClass.html", "struct__PlumaNotebookClass" ],
+    [ "PLUMA_IS_NOTEBOOK", "pluma-notebook_8h.html#a068d92f54bf141715cc6e8ea971bd95e", null ],
+    [ "PLUMA_IS_NOTEBOOK_CLASS", "pluma-notebook_8h.html#a844b319de22c9a477ee6ea0ebd96d50a", null ],
+    [ "PLUMA_NOTEBOOK", "pluma-notebook_8h.html#ab6ecc340ca2c4bf5bb95238e7eaf1467", null ],
+    [ "PLUMA_NOTEBOOK_CLASS", "pluma-notebook_8h.html#abf6d797b1ed3674cdc905d755377497e", null ],
+    [ "PLUMA_NOTEBOOK_GET_CLASS", "pluma-notebook_8h.html#a7607fb51215541a7bad18ba53a07c978", null ],
+    [ "PLUMA_TYPE_NOTEBOOK", "pluma-notebook_8h.html#ac55a9ba53080bad8e9e9c6f702fe56d3", null ],
+    [ "PlumaNotebook", "pluma-notebook_8h.html#adfbd99bfc70403e9c54cdcb7e07c7c24", null ],
+    [ "PlumaNotebookClass", "pluma-notebook_8h.html#addba32942d774f57961eb37f3982fc9a", null ],
+    [ "PlumaNotebookPrivate", "pluma-notebook_8h.html#a26dfea48562e854cad8e7f5a5fba6d2b", null ],
+    [ "pluma_notebook_add_tab", "pluma-notebook_8h.html#ad907f537ab017b1d225412697d551a41", null ],
+    [ "pluma_notebook_get_close_buttons_sensitive", "pluma-notebook_8h.html#a4695c6f6b4948a35620492f66f4f0de9", null ],
+    [ "pluma_notebook_get_tab_drag_and_drop_enabled", "pluma-notebook_8h.html#a5cd87b736f37ebb68087aaaafa81de3e", null ],
+    [ "pluma_notebook_get_type", "pluma-notebook_8h.html#acbce7070d52058dcdf30b722e3f86e5a", null ],
+    [ "pluma_notebook_move_tab", "pluma-notebook_8h.html#ad1c02b1b16415f9f6ef0b6ec35c49420", null ],
+    [ "pluma_notebook_new", "pluma-notebook_8h.html#a92fa9829a88230072d31e353779875d7", null ],
+    [ "pluma_notebook_remove_all_tabs", "pluma-notebook_8h.html#a299b41c96f1a36575844f4ae45055c50", null ],
+    [ "pluma_notebook_remove_tab", "pluma-notebook_8h.html#ade2735a583d8c9e1f2eb7f46454a1eb5", null ],
+    [ "pluma_notebook_reorder_tab", "pluma-notebook_8h.html#a435d5b644751301a9826eebe9b23266f", null ],
+    [ "pluma_notebook_set_close_buttons_sensitive", "pluma-notebook_8h.html#aa72dc292b0876c6dd5d5e4e172ba91f2", null ],
+    [ "pluma_notebook_set_tab_drag_and_drop_enabled", "pluma-notebook_8h.html#a64540f8640b45c97fd619e9cdc8d1102", null ]
+];

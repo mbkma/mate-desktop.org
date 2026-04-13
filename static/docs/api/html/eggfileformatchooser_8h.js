@@ -1,0 +1,25 @@
+var eggfileformatchooser_8h =
+[
+    [ "_EggFileFormatChooser", "struct__EggFileFormatChooser.html", "struct__EggFileFormatChooser" ],
+    [ "_EggFileFormatChooserClass", "struct__EggFileFormatChooserClass.html", "struct__EggFileFormatChooserClass" ],
+    [ "EGG_FILE_FORMAT_CHOOSER", "eggfileformatchooser_8h.html#a24f89a5a581170c960d709cc55952631", null ],
+    [ "EGG_FILE_FORMAT_CHOOSER_CLASS", "eggfileformatchooser_8h.html#adc7be47a80f0ec9f2a0b5575250e6364", null ],
+    [ "EGG_FILE_FORMAT_CHOOSER_GET_CLASS", "eggfileformatchooser_8h.html#a73ed361f005a2abd1d67f1c088dbbab0", null ],
+    [ "EGG_IS_FILE_FORMAT_CHOOSER", "eggfileformatchooser_8h.html#a48bcd64572a7fb36f7978dec9889cdd3", null ],
+    [ "EGG_IS_FILE_FORMAT_CHOOSER_CLASS", "eggfileformatchooser_8h.html#a2fa15422f1a0916131c40c683a01dce3", null ],
+    [ "EGG_TYPE_FILE_FORMAT_CHOOSER", "eggfileformatchooser_8h.html#ac3e14a268174fc0677ba349b630a9ba0", null ],
+    [ "EggFileFormatChooser", "eggfileformatchooser_8h.html#a38b5e319c359c49e531acdb766092100", null ],
+    [ "EggFileFormatChooserClass", "eggfileformatchooser_8h.html#a5538a009ec3fb089fcf820b0e9efea08", null ],
+    [ "EggFileFormatChooserPrivate", "eggfileformatchooser_8h.html#a683fd6248f72a4b870bb6195d57fbd4c", null ],
+    [ "egg_file_format_chooser_add_format", "eggfileformatchooser_8h.html#a425f9e7b313ed0d165996eebd2a85506", null ],
+    [ "egg_file_format_chooser_add_pixbuf_formats", "eggfileformatchooser_8h.html#ad24ceb313d7c6271fbb70919602bfccc", null ],
+    [ "egg_file_format_chooser_append_extension", "eggfileformatchooser_8h.html#ada93086bdbf6bf6b31266031cf402d7e", null ],
+    [ "egg_file_format_chooser_emit_size_changed", "eggfileformatchooser_8h.html#a683bedf99688e9e70f6827a748d11c72", null ],
+    [ "egg_file_format_chooser_get_format", "eggfileformatchooser_8h.html#a9e26cdb66566f90d701675feb983dd7e", null ],
+    [ "egg_file_format_chooser_get_format_data", "eggfileformatchooser_8h.html#a19b8158fed304f7adfd064f404ea0539", null ],
+    [ "egg_file_format_chooser_get_type", "eggfileformatchooser_8h.html#a20ad2ace0336b58032d7e8e471fe3676", null ],
+    [ "egg_file_format_chooser_new", "eggfileformatchooser_8h.html#a1a8e052a9087b484f4c1ef6f86a0642c", null ],
+    [ "egg_file_format_chooser_remove_format", "eggfileformatchooser_8h.html#ae37ecf3daff884eb366f14b0a91cae4e", null ],
+    [ "egg_file_format_chooser_set_format", "eggfileformatchooser_8h.html#a46f0d16691bae9caf8e29f5dae3ce6a4", null ],
+    [ "egg_file_format_chooser_set_format_data", "eggfileformatchooser_8h.html#a0f3032d442152ee006c4bb5b1a9c0472", null ]
+];

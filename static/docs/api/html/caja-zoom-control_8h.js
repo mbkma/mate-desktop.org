@@ -1,0 +1,26 @@
+var caja_zoom_control_8h =
+[
+    [ "CajaZoomControl", "structCajaZoomControl.html", "structCajaZoomControl" ],
+    [ "CajaZoomControlClass", "structCajaZoomControlClass.html", "structCajaZoomControlClass" ],
+    [ "CAJA_IS_ZOOM_CONTROL", "caja-zoom-control_8h.html#a7ad1da746a35760d2abb2b4164c5767d", null ],
+    [ "CAJA_IS_ZOOM_CONTROL_CLASS", "caja-zoom-control_8h.html#a79bb479b40cd6fc45bd34ad55ff47103", null ],
+    [ "CAJA_TYPE_ZOOM_CONTROL", "caja-zoom-control_8h.html#ade96c5195e90fe689e22aa99ce668958", null ],
+    [ "CAJA_ZOOM_CONTROL", "caja-zoom-control_8h.html#ab8fb41ace079f201d23b7963b9825870", null ],
+    [ "CAJA_ZOOM_CONTROL_CLASS", "caja-zoom-control_8h.html#a87511c64450adfbea6a00f43d157bae0", null ],
+    [ "CAJA_ZOOM_CONTROL_GET_CLASS", "caja-zoom-control_8h.html#ad83874ddc187c336b2d4887ab8d9b265", null ],
+    [ "CajaZoomControl", "caja-zoom-control_8h.html#a12c0f280ebe85a179692d0fa85baaba9", null ],
+    [ "CajaZoomControlClass", "caja-zoom-control_8h.html#a988ecb0063594735f9fb7e87667337c1", null ],
+    [ "CajaZoomControlPrivate", "caja-zoom-control_8h.html#a03b49852e99827589be4d45561610364", null ],
+    [ "caja_zoom_control_can_zoom_in", "caja-zoom-control_8h.html#a59e06a59035610b22522038cd380f739", null ],
+    [ "caja_zoom_control_can_zoom_out", "caja-zoom-control_8h.html#ae71ed218220ddb2af750837ff6afd34b", null ],
+    [ "caja_zoom_control_get_max_zoom_level", "caja-zoom-control_8h.html#afd5d3cd59f3799c3139ebb5e8ccd9153", null ],
+    [ "caja_zoom_control_get_min_zoom_level", "caja-zoom-control_8h.html#a38df53032c27fc901a260be11245b58a", null ],
+    [ "caja_zoom_control_get_type", "caja-zoom-control_8h.html#a6c31cc1b78412dbd27a8c1d94734a5ce", null ],
+    [ "caja_zoom_control_get_zoom_level", "caja-zoom-control_8h.html#a0ab0af4d47bcb0b609ac7facfc9d587b", null ],
+    [ "caja_zoom_control_has_max_zoom_level", "caja-zoom-control_8h.html#a18a745ba9ed371af3a502a3e56e86323", null ],
+    [ "caja_zoom_control_has_min_zoom_level", "caja-zoom-control_8h.html#a39527771dd50ac405cddd3beab478a15", null ],
+    [ "caja_zoom_control_new", "caja-zoom-control_8h.html#a32691ca21444d769cd47391fd28b85ec", null ],
+    [ "caja_zoom_control_set_active_appearance", "caja-zoom-control_8h.html#a4cbe451580fabce4a1ec7839ff76df44", null ],
+    [ "caja_zoom_control_set_parameters", "caja-zoom-control_8h.html#ae8170b62d54283cef5bcd7a2969bb81a", null ],
+    [ "caja_zoom_control_set_zoom_level", "caja-zoom-control_8h.html#a840e22bff3cac3bbc7eb976898299ca8", null ]
+];

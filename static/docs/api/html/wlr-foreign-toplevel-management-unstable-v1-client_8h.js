@@ -1,0 +1,48 @@
+var wlr_foreign_toplevel_management_unstable_v1_client_8h =
+[
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_ACTIVATE", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a1b08badbfe2f4b07ad12a11dea4851d0", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_ACTIVATE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga7bf1d7ff3f1808a6061ae9eae592b860", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_APP_ID_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga14303b3089ed470953345b0a62d28cd7", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_CLOSE", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#acf8f0be167d2e120581552c3a0d8a0e1", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_CLOSE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga995a2e77b6fa7a04fe5b0d8e66d782e4", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_CLOSED_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gaa6e3c210b7851838c203cfd4f35875cc", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_DESTROY", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#adbcb7f191449a9a61fde05142dfada76", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_DESTROY_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga5b9894673a07bd45cc1485f309dec390", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_DONE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga0dbfc958eb4e3fd79b25894c59d8549e", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_ERROR_ENUM", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a5ef986ef873d69273973e938b229ea39", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_OUTPUT_ENTER_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gaf715b0434cb6d083a04df24f76015df0", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_OUTPUT_LEAVE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gaf36de26fd9acaea09b494b484c4c6ae9", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_FULLSCREEN", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#ab5b618e4768dbbaa971dbfc7d5495f75", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_FULLSCREEN_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga9bde22edcb1f72f7348c78eab4476b6c", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_MAXIMIZED", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a1b0315b6bf32e1910e674879fe8cd61e", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_MAXIMIZED_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga6bacad5da2d39d8398b25ac91f82eeb3", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_MINIMIZED", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a8b38a28464d3dac89b5bcd220e6191b1", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_MINIMIZED_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga043635ba85bda2bcd509f5af41543333", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_RECTANGLE", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#ae371cdf8152a99b9522e3a980e6e1cf8", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_SET_RECTANGLE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga7ed84ba7851fb298a91133b229e1c592", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_ENUM", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a13f2bcee111c62ab87b40893ed8ff689", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_FULLSCREEN_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gaa8812f6a6ed6d13c30402a7f919464ce", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga5d664fecfb6818f2ad7fda0de8d49d49", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_TITLE_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gac4338feda2dec8d0511465453b1e0e67", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_UNSET_FULLSCREEN", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a3708b40607393dd73e07a68e10db9b02", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_UNSET_FULLSCREEN_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gad5738e0a0739c1d6496d7562bd9fc0d4", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_UNSET_MAXIMIZED", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#ae6cd2ee334f8039fd9c0105a0ad29c23", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_UNSET_MAXIMIZED_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga2201e603339a51192276692581072e98", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_UNSET_MINIMIZED", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a2203280329bce3641d2283b9bf0322b3", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_UNSET_MINIMIZED_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gaddd9dbb21d3312d0246af9a66c103c9c", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_MANAGER_V1_FINISHED_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__manager__v1.html#gaa746da92a216055389c74f5920021f5d", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_MANAGER_V1_STOP", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#aa9dd9fe6cb8b06ad2160ec7beb98f4f5", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_MANAGER_V1_STOP_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__manager__v1.html#gafbe85be50cdd165f30c4d738a3582d01", null ],
+    [ "ZWLR_FOREIGN_TOPLEVEL_MANAGER_V1_TOPLEVEL_SINCE_VERSION", "group__iface__zwlr__foreign__toplevel__manager__v1.html#ga53c68add2e6369c8816addcb763f4ef9", null ],
+    [ "zwlr_foreign_toplevel_handle_v1_error", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a119fd43cc4307a632e8966ebd99a2535", [
+      [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_ERROR_INVALID_RECTANGLE", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a119fd43cc4307a632e8966ebd99a2535abf51374d40dfaa3b91a7b84aee8b077c", null ]
+    ] ],
+    [ "zwlr_foreign_toplevel_handle_v1_state", "group__iface__zwlr__foreign__toplevel__handle__v1.html#ga689475249539475d829e05d5db625bd5", [
+      [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_MAXIMIZED", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gga689475249539475d829e05d5db625bd5a0bc0e659d579ab3937c812f665a53568", null ],
+      [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_MINIMIZED", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gga689475249539475d829e05d5db625bd5a35d24da36f6dba09d2c4e5319d5eea27", null ],
+      [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_ACTIVATED", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gga689475249539475d829e05d5db625bd5ae8e568cb73c407f68d5d57f372841f27", null ],
+      [ "ZWLR_FOREIGN_TOPLEVEL_HANDLE_V1_STATE_FULLSCREEN", "group__iface__zwlr__foreign__toplevel__handle__v1.html#gga689475249539475d829e05d5db625bd5a02e34c09671d8bf1f909df99abafbb5f", null ]
+    ] ],
+    [ "zwlr_foreign_toplevel_handle_v1_interface", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a8ba3c4c3a85036803cae732dedf42d0d", null ],
+    [ "zwlr_foreign_toplevel_manager_v1_interface", "wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a473a090b7636c7825c5000140a83ddfd", null ]
+];

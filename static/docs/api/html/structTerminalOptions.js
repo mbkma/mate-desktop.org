@@ -1,0 +1,27 @@
+var structTerminalOptions =
+[
+    [ "config_file", "structTerminalOptions.html#a67fcc7468954839b81d11adeb77c0fad", null ],
+    [ "default_fullscreen", "structTerminalOptions.html#a4393d9860402d0a6f78929cc97b3e604", null ],
+    [ "default_geometry", "structTerminalOptions.html#a0d2c4bd1a1baa6809aeb3698893a13ea", null ],
+    [ "default_icon", "structTerminalOptions.html#a9bab3d8dc62f588edffabc47261f81b9", null ],
+    [ "default_maximize", "structTerminalOptions.html#a2720dcc42fbd8f9f4be2c73adc6bb72b", null ],
+    [ "default_profile", "structTerminalOptions.html#af156dbc32c64d58d989e4b029c21be83", null ],
+    [ "default_profile_is_id", "structTerminalOptions.html#a6918a07a26c74891a69dde6fb9c5a726", null ],
+    [ "default_role", "structTerminalOptions.html#a06bd5f7474eb3d641dee86093ea91515", null ],
+    [ "default_title", "structTerminalOptions.html#ad135ad5dc252b061dccfd2d2329b0ce0", null ],
+    [ "default_window_menubar_forced", "structTerminalOptions.html#a9e12665113db67d54f2a79e4b1752a0d", null ],
+    [ "default_window_menubar_state", "structTerminalOptions.html#ae2e01a7aa1665691ea2b40705238b854", null ],
+    [ "default_working_dir", "structTerminalOptions.html#a965f57646c66fcc22a4ad2b90ce09730", null ],
+    [ "display_name", "structTerminalOptions.html#af219d7772a51b96a9d44fbe8b21c9ca3", null ],
+    [ "env", "structTerminalOptions.html#a1c82dbf7846f0fd0d0d1ec4a4ee9cadd", null ],
+    [ "exec_argv", "structTerminalOptions.html#acc07de8955aa5199669cc5d34f2e4768", null ],
+    [ "execute", "structTerminalOptions.html#a586a191857e6a89e7e0452ca2906796c", null ],
+    [ "initial_windows", "structTerminalOptions.html#a6b1ab1693ca17823feccbcb6d54ef3f4", null ],
+    [ "initial_workspace", "structTerminalOptions.html#a93e8a6dfff7de1cdcb895eb9a45ae3ea", null ],
+    [ "load_config", "structTerminalOptions.html#afcd9ca06f6f0ded9f61681c33f91017f", null ],
+    [ "remote_arguments", "structTerminalOptions.html#a08e336a5fef2a3beea54be95e8e05551", null ],
+    [ "save_config", "structTerminalOptions.html#ae8a14158d02a01e78b8086609af65176", null ],
+    [ "startup_id", "structTerminalOptions.html#ab1a0d73037762ed8703993d63d689e37", null ],
+    [ "use_factory", "structTerminalOptions.html#a5b5044e412cd247b8c4f0d8bbeacd7b1", null ],
+    [ "zoom", "structTerminalOptions.html#ac2985c48591988d82c99d3f3eec17c5b", null ]
+];

@@ -1,0 +1,28 @@
+var gdict_source_chooser_8h =
+[
+    [ "_GdictSourceChooser", "struct__GdictSourceChooser.html", "struct__GdictSourceChooser" ],
+    [ "_GdictSourceChooserClass", "struct__GdictSourceChooserClass.html", "struct__GdictSourceChooserClass" ],
+    [ "GDICT_IS_SOURCE_CHOOSER", "gdict-source-chooser_8h.html#a94c53a447bd27f5c774e479198e97faf", null ],
+    [ "GDICT_IS_SOURCE_CHOOSER_CLASS", "gdict-source-chooser_8h.html#a4a89bfa444bd23401d59406e515ce386", null ],
+    [ "GDICT_SOURCE_CHOOSER", "gdict-source-chooser_8h.html#a12e81cdad30030d1790a218233036031", null ],
+    [ "GDICT_SOURCE_CHOOSER_CLASS", "gdict-source-chooser_8h.html#a4435e254b58f122b5f324df141160f7e", null ],
+    [ "GDICT_SOURCE_CHOOSER_GET_CLASS", "gdict-source-chooser_8h.html#a3477d01d2eec7e6f9ef823a3fddc5355", null ],
+    [ "GDICT_TYPE_SOURCE_CHOOSER", "gdict-source-chooser_8h.html#ad2cee3c51e0f5e2555879f5ca22d182b", null ],
+    [ "GdictSourceChooser", "gdict-source-chooser_8h.html#a951679daf783c86dae46aa61cdcec1ee", null ],
+    [ "GdictSourceChooserClass", "gdict-source-chooser_8h.html#afa02ba98ae72ddba27d01895231b8861", null ],
+    [ "GdictSourceChooserPrivate", "gdict-source-chooser_8h.html#ab7eb8cd1d53d7d49b4df45fe89cae595", null ],
+    [ "gdict_source_chooser_add_button", "gdict-source-chooser_8h.html#a26d3696633f0843a48e7d54b6e5f4321", null ],
+    [ "gdict_source_chooser_count_sources", "gdict-source-chooser_8h.html#a4581aaf9de3487a46052ed85d915c7a3", null ],
+    [ "gdict_source_chooser_get_current_source", "gdict-source-chooser_8h.html#a924f1448cf55b931b4214809b9d214b9", null ],
+    [ "gdict_source_chooser_get_loader", "gdict-source-chooser_8h.html#a27c736b0886b7a6d14259bbf20e5a12e", null ],
+    [ "gdict_source_chooser_get_sources", "gdict-source-chooser_8h.html#ade21632ec901b5dcfa6623ab1a93ce74", null ],
+    [ "gdict_source_chooser_get_type", "gdict-source-chooser_8h.html#ae9cf46f968127830d59e7e1cbf4a1c57", null ],
+    [ "gdict_source_chooser_has_source", "gdict-source-chooser_8h.html#a2c4a2235ad10c82e6b6deb61ecc9d91f", null ],
+    [ "gdict_source_chooser_new", "gdict-source-chooser_8h.html#a77bc8e00d52602e2cf9b4b2910c840b1", null ],
+    [ "gdict_source_chooser_new_with_loader", "gdict-source-chooser_8h.html#acab3f9593773497b81813772b21476ce", null ],
+    [ "gdict_source_chooser_refresh", "gdict-source-chooser_8h.html#aab1bbc3a725fd6e5cc64174c68494a0d", null ],
+    [ "gdict_source_chooser_select_source", "gdict-source-chooser_8h.html#aee5a3776c8cd21d1eed9b4e395c7bf51", null ],
+    [ "gdict_source_chooser_set_current_source", "gdict-source-chooser_8h.html#a23c776bb75a372c12cdbf218f56a5d05", null ],
+    [ "gdict_source_chooser_set_loader", "gdict-source-chooser_8h.html#a91a993be19f7e64a415feeab46d22b59", null ],
+    [ "gdict_source_chooser_unselect_source", "gdict-source-chooser_8h.html#a6bcd110dadfc352d63da62e645bc460b", null ]
+];

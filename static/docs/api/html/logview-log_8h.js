@@ -1,0 +1,38 @@
+var logview_log_8h =
+[
+    [ "_LogviewLog", "struct__LogviewLog.html", "struct__LogviewLog" ],
+    [ "_LogviewLogClass", "struct__LogviewLogClass.html", "struct__LogviewLogClass" ],
+    [ "LOGVIEW_ERROR_QUARK", "logview-log_8h.html#ac3767ddfc883a0f8d7431b26f02b0585", null ],
+    [ "LOGVIEW_IS_LOG", "logview-log_8h.html#af0971c9c54016d05d8288648542717fd", null ],
+    [ "LOGVIEW_IS_LOG_CLASS", "logview-log_8h.html#a62d13f487cda7ae00be9c02499991294", null ],
+    [ "LOGVIEW_LOG", "logview-log_8h.html#af27b979aebde51c1f9f4bedca8cc8229", null ],
+    [ "LOGVIEW_LOG_CLASS", "logview-log_8h.html#ad0fbe763930b570e515efc7780578571", null ],
+    [ "LOGVIEW_LOG_GET_CLASS", "logview-log_8h.html#a4134d07b5f81d091075797e7220974ca", null ],
+    [ "LOGVIEW_TYPE_LOG", "logview-log_8h.html#a0420a1fe2baa1b869039f52542537f96", null ],
+    [ "LogviewCreateCallback", "logview-log_8h.html#a692675b0161bdc7f515ffd5a8344d7b9", null ],
+    [ "LogviewLog", "logview-log_8h.html#a745a4a54069f7ae95b3e3eadbaf3020f", null ],
+    [ "LogviewLogClass", "logview-log_8h.html#a3da211e2155dc7910d7921cf21984128", null ],
+    [ "LogviewLogPrivate", "logview-log_8h.html#af073c1178a4369d3677ad9000864f460", null ],
+    [ "LogviewNewLinesCallback", "logview-log_8h.html#a544b57e9d5497f8d24c73bda45cab51a", null ],
+    [ "LogviewErrorEnum", "logview-log_8h.html#ab8de696514f326247ed5378383829f2f", [
+      [ "LOGVIEW_ERROR_FAILED", "logview-log_8h.html#ab8de696514f326247ed5378383829f2fae6b40950a50be61e7a3d6489ea246f08", null ],
+      [ "LOGVIEW_ERROR_PERMISSION_DENIED", "logview-log_8h.html#ab8de696514f326247ed5378383829f2fa5f59189d3a65d6c7b2379214403d8c76", null ],
+      [ "LOGVIEW_ERROR_ZLIB", "logview-log_8h.html#ab8de696514f326247ed5378383829f2faef278098d6ec02c774f0976dcd481e08", null ],
+      [ "LOGVIEW_ERROR_NOT_SUPPORTED", "logview-log_8h.html#ab8de696514f326247ed5378383829f2fa78bd059c2161ca0d2c2f710847fb4e9f", null ],
+      [ "LOGVIEW_ERROR_NOT_A_LOG", "logview-log_8h.html#ab8de696514f326247ed5378383829f2fa1f2cf8bd566c8006cd2a1a4a41a161a3", null ]
+    ] ],
+    [ "logview_log_create", "logview-log_8h.html#a197e7a98acfdf257d965d22c3fc10463", null ],
+    [ "logview_log_create_from_gfile", "logview-log_8h.html#a77aba2ea6bea140ca588f31b34d06b7d", null ],
+    [ "logview_log_get_cached_lines", "logview-log_8h.html#a7c78e6f9d86ab711ed0f7cc3387ba3cb", null ],
+    [ "logview_log_get_cached_lines_number", "logview-log_8h.html#a1b784b1aed20b84d6d0d14d7f75d7d87", null ],
+    [ "logview_log_get_days_for_cached_lines", "logview-log_8h.html#ad8058c0fee9b207a9fd3a96f93892922", null ],
+    [ "logview_log_get_display_name", "logview-log_8h.html#a1117d343e97ddf8865f23ba05df0f4cb", null ],
+    [ "logview_log_get_file_size", "logview-log_8h.html#a11d413724cd656735b113848002cf9d0", null ],
+    [ "logview_log_get_gfile", "logview-log_8h.html#a05b93a39a5fa3862988977ea60cdb65d", null ],
+    [ "logview_log_get_has_days", "logview-log_8h.html#ae5b0a8d0a2566183329d1da27dc51d52", null ],
+    [ "logview_log_get_timestamp", "logview-log_8h.html#a7d8d0d273cea1d0ce12dbf88c3c04351", null ],
+    [ "logview_log_get_type", "logview-log_8h.html#a200914f45c0d6f14986867fcbe3ba7af", null ],
+    [ "logview_log_get_uri", "logview-log_8h.html#aa935bafccc7957d63ceb52d910783125", null ],
+    [ "logview_log_has_new_lines", "logview-log_8h.html#a3fe18e087d2d07e19b89150f0ce9720a", null ],
+    [ "logview_log_read_new_lines", "logview-log_8h.html#a9e209fdf273867febb5afa303f9b50ec", null ]
+];

@@ -1,0 +1,25 @@
+var na_updater_8h =
+[
+    [ "NAUpdater", "structNAUpdater.html", "structNAUpdater" ],
+    [ "NAUpdaterClass", "structNAUpdaterClass.html", "structNAUpdaterClass" ],
+    [ "NA_IS_UPDATER", "na-updater_8h.html#afb3929393c61969b8f48f42b2b3f5a00", null ],
+    [ "NA_IS_UPDATER_CLASS", "na-updater_8h.html#a23294bc189db5c65e16533307b55fb79", null ],
+    [ "NA_TYPE_UPDATER", "na-updater_8h.html#a6266d5f7027b7d16ce14a4fed87e65e0", null ],
+    [ "NA_UPDATER", "na-updater_8h.html#a19d26a46082a3721e0626642feb4265d", null ],
+    [ "NA_UPDATER_CLASS", "na-updater_8h.html#a65a834d74133f4a7b81e1170872ce9c9", null ],
+    [ "NA_UPDATER_GET_CLASS", "na-updater_8h.html#a0976fe3139d03debe7ee94799ee64a5e", null ],
+    [ "NAUpdaterClassPrivate", "na-updater_8h.html#ad63e0f96b49c7d5c57ea693f2a428abd", null ],
+    [ "NAUpdaterPrivate", "na-updater_8h.html#a80c78b26b9fa448a5aff9d74176009cc", null ],
+    [ "na_updater_append_item", "na-updater_8h.html#aceda2c7756f9240ce0491c8acce69240", null ],
+    [ "na_updater_are_preferences_locked", "na-updater_8h.html#a4eee9b67978e34b64c25fa2c53bb0dc2", null ],
+    [ "na_updater_check_item_writability_status", "na-updater_8h.html#a06ffb8d5f636ff1210f3ff8eeb3f7ce2", null ],
+    [ "na_updater_delete_item", "na-updater_8h.html#a92d9e2df3dfd0f9cd9831ad2902ab28b", null ],
+    [ "na_updater_get_type", "na-updater_8h.html#a303ffa57be64885bb14671f48ab36143", null ],
+    [ "na_updater_insert_item", "na-updater_8h.html#a64c8f9a5746eccc137c9f067c105caf9", null ],
+    [ "na_updater_is_level_zero_writable", "na-updater_8h.html#a79f8e7a5d3b2e0c306549b8de655cb27", null ],
+    [ "na_updater_load_items", "na-updater_8h.html#ac9a142d1e4ba5f4bf2fd78178307a426", null ],
+    [ "na_updater_new", "na-updater_8h.html#a23d535690826b0dc2415fc85a17a4fdf", null ],
+    [ "na_updater_remove_item", "na-updater_8h.html#ad57f6108f678e197a86171da11359c77", null ],
+    [ "na_updater_should_pasted_be_relabeled", "na-updater_8h.html#a193f4de2c54dd0a27444721d719ff0d4", null ],
+    [ "na_updater_write_item", "na-updater_8h.html#ab6de7e5bde4ef247069099bb32c09023", null ]
+];

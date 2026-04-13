@@ -1,0 +1,28 @@
+var mate_panel_2mate_panel_2applet_8h =
+[
+    [ "AppletInfo", "structAppletInfo.html", "structAppletInfo" ],
+    [ "AppletUserMenu", "structAppletUserMenu.html", "structAppletUserMenu" ],
+    [ "APPLET_EVENT_MASK", "mate-panel_2mate-panel_2applet_8h.html#a40b28182af14a7c8ca12d98abb46f47b", null ],
+    [ "CallbackEnabledFunc", "mate-panel_2mate-panel_2applet_8h.html#a8fc0ae362d10a91eb54ff6780ce11eef", null ],
+    [ "mate_panel_applet_add_callback", "mate-panel_2mate-panel_2applet_8h.html#a809a9a7a012b5bbba0c8c5e04905f944", null ],
+    [ "mate_panel_applet_can_freely_move", "mate-panel_2mate-panel_2applet_8h.html#ac7b900ec64ca6f6b643a0a0bebea12c3", null ],
+    [ "mate_panel_applet_clean", "mate-panel_2mate-panel_2applet_8h.html#a5b1bd83815291328c1943302baaaf3fe", null ],
+    [ "mate_panel_applet_clear_user_menu", "mate-panel_2mate-panel_2applet_8h.html#a4ab7d01601d41559d8c5e5edcef64af1", null ],
+    [ "mate_panel_applet_create_menu", "mate-panel_2mate-panel_2applet_8h.html#a9269755b7a9b1eed5df401d3bb8bbab0", null ],
+    [ "mate_panel_applet_get_by_id", "mate-panel_2mate-panel_2applet_8h.html#a2d7a3aeb55da4d39d00a0f11e1305d3d", null ],
+    [ "mate_panel_applet_get_by_type", "mate-panel_2mate-panel_2applet_8h.html#a472ea678b2b16c2dc1ca754ff99f9c49", null ],
+    [ "mate_panel_applet_get_callback", "mate-panel_2mate-panel_2applet_8h.html#ab949fc4f9765b456a662a7590c7f90e9", null ],
+    [ "mate_panel_applet_get_id", "mate-panel_2mate-panel_2applet_8h.html#acef43fb89a54d1a7141b50d93ebd0eb2", null ],
+    [ "mate_panel_applet_get_id_by_widget", "mate-panel_2mate-panel_2applet_8h.html#a831e9980a52edfde0fd3bffe3e36db32", null ],
+    [ "mate_panel_applet_get_position", "mate-panel_2mate-panel_2applet_8h.html#a3b169688acd9636efd9c24343f007ff2", null ],
+    [ "mate_panel_applet_list_applets", "mate-panel_2mate-panel_2applet_8h.html#adbd874f52ec28ba557729d3c45e1ee60", null ],
+    [ "mate_panel_applet_load_queued_applets", "mate-panel_2mate-panel_2applet_8h.html#a80d7b5e5082d9f840a2f4e930c81cdd9", null ],
+    [ "mate_panel_applet_lockable", "mate-panel_2mate-panel_2applet_8h.html#aeadd8590874cfa8d3a4ad18af24c224e", null ],
+    [ "mate_panel_applet_menu_set_recurse", "mate-panel_2mate-panel_2applet_8h.html#a0c283b2c7425551a360a8237580da05f", null ],
+    [ "mate_panel_applet_on_load_queue", "mate-panel_2mate-panel_2applet_8h.html#a31f91ac4618fe62f2b5de5e09a480ceb", null ],
+    [ "mate_panel_applet_queue_applet_to_load", "mate-panel_2mate-panel_2applet_8h.html#a6d25b39619a11e78f86a2e06d6f62f3c", null ],
+    [ "mate_panel_applet_register", "mate-panel_2mate-panel_2applet_8h.html#a01ca5b4dc775ed06903317dd3778c683", null ],
+    [ "mate_panel_applet_save_position", "mate-panel_2mate-panel_2applet_8h.html#af1c28443c5372796b5dc46d5ef54aac2", null ],
+    [ "mate_panel_applet_stop_loading", "mate-panel_2mate-panel_2applet_8h.html#ae12cdc04aa9177fc94d31d7c8e34d96c", null ],
+    [ "mate_panel_applet_toggle_locked", "mate-panel_2mate-panel_2applet_8h.html#ae34e1dd74bcb558f485220fa091bab8c", null ]
+];

@@ -1,0 +1,27 @@
+var panel_menu_button_8h =
+[
+    [ "_PanelMenuButton", "struct__PanelMenuButton.html", "struct__PanelMenuButton" ],
+    [ "_PanelMenuButtonClass", "struct__PanelMenuButtonClass.html", "struct__PanelMenuButtonClass" ],
+    [ "PANEL_IS_MENU_BUTTON", "panel-menu-button_8h.html#a989c23ccb16b9c1375a80af33220660b", null ],
+    [ "PANEL_IS_MENU_BUTTON_CLASS", "panel-menu-button_8h.html#a61875debdec3c214246ff203ae76f4ae", null ],
+    [ "PANEL_MENU_BUTTON", "panel-menu-button_8h.html#a70f993bae62215ee54963845edb0b2ad", null ],
+    [ "PANEL_MENU_BUTTON_CLASS", "panel-menu-button_8h.html#a477bfaffcbdd81f80402428dd2235d19", null ],
+    [ "PANEL_MENU_BUTTON_GET_CLASS", "panel-menu-button_8h.html#a8879fb327b4ee451a32fcdaa32df1f89", null ],
+    [ "PANEL_TYPE_MENU_BUTTON", "panel-menu-button_8h.html#abe496500031a2b9c70ae79e5eeda73ac", null ],
+    [ "PanelMenuButton", "panel-menu-button_8h.html#ae60b9745eb238bd6798089106dd9895b", null ],
+    [ "PanelMenuButtonClass", "panel-menu-button_8h.html#ac8af4f7b19ec85f45f36a64e7f0b5232", null ],
+    [ "PanelMenuButtonPrivate", "panel-menu-button_8h.html#aa20ea726c59fdd3435e5d28601b38ba6", null ],
+    [ "panel_menu_button_create", "panel-menu-button_8h.html#a9ee3a9088c1ecfac4f0328433242fdca", null ],
+    [ "panel_menu_button_get_type", "panel-menu-button_8h.html#a67a90967f09de0b94ebc9c46871e8eb8", null ],
+    [ "panel_menu_button_get_use_menu_path", "panel-menu-button_8h.html#a12a3516ce8aff4ea312e67d9ea72688a", null ],
+    [ "panel_menu_button_invoke_menu", "panel-menu-button_8h.html#a463da53ffb21ff88071867d1e8d47fa7", null ],
+    [ "panel_menu_button_load_from_gsettings", "panel-menu-button_8h.html#aac3e2790769a30cc3b26ad78da568816", null ],
+    [ "panel_menu_button_popup_menu", "panel-menu-button_8h.html#a837bc38465d4324514087438a8d94173", null ],
+    [ "panel_menu_button_set_custom_icon", "panel-menu-button_8h.html#a29a05b528a7057d17e0001aa91dcad46", null ],
+    [ "panel_menu_button_set_dnd_enabled", "panel-menu-button_8h.html#aadc1f46ad45f0f0c5de602f05d258b1b", null ],
+    [ "panel_menu_button_set_has_arrow", "panel-menu-button_8h.html#a595204a956a4195465225058be7445f7", null ],
+    [ "panel_menu_button_set_menu_path", "panel-menu-button_8h.html#a50ece9c4e3ce8569a72205e33fa9ed7b", null ],
+    [ "panel_menu_button_set_tooltip", "panel-menu-button_8h.html#aa1708bccbd98112ec22ec073180da575", null ],
+    [ "panel_menu_button_set_use_custom_icon", "panel-menu-button_8h.html#a6d25321b1722efc9d21c7dda846c93ad", null ],
+    [ "panel_menu_button_set_use_menu_path", "panel-menu-button_8h.html#a22f900c4e31d1fcc12b83a712bdbf8fb", null ]
+];

@@ -1,0 +1,27 @@
+var gdict_speller_8h =
+[
+    [ "_GdictSpeller", "struct__GdictSpeller.html", "struct__GdictSpeller" ],
+    [ "_GdictSpellerClass", "struct__GdictSpellerClass.html", "struct__GdictSpellerClass" ],
+    [ "GDICT_IS_SPELLER", "gdict-speller_8h.html#aa414432640631d996609530b6e253884", null ],
+    [ "GDICT_IS_SPELLER_CLASS", "gdict-speller_8h.html#abc8e0d80434453ceb2cc76fe8a066ace", null ],
+    [ "GDICT_SPELLER", "gdict-speller_8h.html#a14bb9483f3c7c91463b584002d4f5b6e", null ],
+    [ "GDICT_SPELLER_CLASS", "gdict-speller_8h.html#a98ad4d297b062b8c1f3ef7217c51bc7f", null ],
+    [ "GDICT_SPELLER_GET_CLASS", "gdict-speller_8h.html#a244c07af348ee2faa7be1a9cab850eb4", null ],
+    [ "GDICT_TYPE_SPELLER", "gdict-speller_8h.html#ad1a084d20bbfeccff1662fba5f481e25", null ],
+    [ "GdictSpeller", "gdict-speller_8h.html#ad504564b2e46deee09d358b18a04e4a6", null ],
+    [ "GdictSpellerClass", "gdict-speller_8h.html#acff580e465aa461151bdeb5990062ecd", null ],
+    [ "GdictSpellerPrivate", "gdict-speller_8h.html#a3e0fef2e0e38f49489e6f5476497a0fd", null ],
+    [ "gdict_speller_clear", "gdict-speller_8h.html#aa3d281a394878886ce9e8b59806383f6", null ],
+    [ "gdict_speller_count_matches", "gdict-speller_8h.html#a7c5501f28f11963b9d64b8d0c7cf969b", null ],
+    [ "gdict_speller_get_context", "gdict-speller_8h.html#a7ec0cc7c03463b0087dc23c386ff98e1", null ],
+    [ "gdict_speller_get_database", "gdict-speller_8h.html#a942ce1d2201e3e0736611ed9fda1ad66", null ],
+    [ "gdict_speller_get_matches", "gdict-speller_8h.html#ae9557211cbd10112ee977941c1fffd9c", null ],
+    [ "gdict_speller_get_strategy", "gdict-speller_8h.html#a090b8acaaf08d0fb683c40fde334188b", null ],
+    [ "gdict_speller_get_type", "gdict-speller_8h.html#a1261dd6eeb9925cc0c7d622073786687", null ],
+    [ "gdict_speller_match", "gdict-speller_8h.html#ac3afe2f2a8bf588fa565237eaef32398", null ],
+    [ "gdict_speller_new", "gdict-speller_8h.html#a81c3c587196ccace26b92ff6228fcc7a", null ],
+    [ "gdict_speller_new_with_context", "gdict-speller_8h.html#a2fdbf28e05e8de9b080e680522983cf5", null ],
+    [ "gdict_speller_set_context", "gdict-speller_8h.html#a980c5578d383b203feae2bac774c39f2", null ],
+    [ "gdict_speller_set_database", "gdict-speller_8h.html#a57b335729ebae3e2e221b00094bb0d73", null ],
+    [ "gdict_speller_set_strategy", "gdict-speller_8h.html#a29e68f60ecbf3172b90ea9d57ab54bf7", null ]
+];

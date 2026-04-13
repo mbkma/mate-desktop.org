@@ -1,0 +1,28 @@
+var marco_2src_2core_2stack_8c =
+[
+    [ "WINDOW_HAS_TRANSIENT_TYPE", "marco_2src_2core_2stack_8c.html#aa6b5c06ba25ba1b3863d9bb2e0460a58", null ],
+    [ "WINDOW_IN_STACK", "marco_2src_2core_2stack_8c.html#abb101f0aef14a3e4687e0bf69d5eae93", null ],
+    [ "WINDOW_TRANSIENT_FOR_WHOLE_GROUP", "marco_2src_2core_2stack_8c.html#ac96a39e4b0f2e135b536dcd2a8959e39", null ],
+    [ "Constraint", "marco_2src_2core_2stack_8c.html#ac652e551795190bd931332c33858f450", null ],
+    [ "meta_stack_add", "marco_2src_2core_2stack_8c.html#aa6ec1cb23b8d80701bdab3f5cbaaf0df", null ],
+    [ "meta_stack_free", "marco_2src_2core_2stack_8c.html#aa8e40d9483c2fc0116bd8e2ebb1921e0", null ],
+    [ "meta_stack_freeze", "marco_2src_2core_2stack_8c.html#ab810a8a8e0887a4e6a62d0615977c770", null ],
+    [ "meta_stack_get_above", "marco_2src_2core_2stack_8c.html#a5ded82739d9b05c49844f2d2fa8c7436", null ],
+    [ "meta_stack_get_below", "marco_2src_2core_2stack_8c.html#aba6813d54714d9a09abfdae55a76ddf5", null ],
+    [ "meta_stack_get_bottom", "marco_2src_2core_2stack_8c.html#ad743087731e54e42cfa89a7b81f14849", null ],
+    [ "meta_stack_get_default_focus_window", "marco_2src_2core_2stack_8c.html#ab5287fccb82673923c82e4f6d53ed29d", null ],
+    [ "meta_stack_get_default_focus_window_at_point", "marco_2src_2core_2stack_8c.html#acc9ebb38490d3e7c6f4d059bd04c4a04", null ],
+    [ "meta_stack_get_positions", "marco_2src_2core_2stack_8c.html#a72c32e5117563fd42770dd76605f175f", null ],
+    [ "meta_stack_get_top", "marco_2src_2core_2stack_8c.html#a32bfd2054a0ebc79fc3ff483f8d8a8cf", null ],
+    [ "meta_stack_list_windows", "marco_2src_2core_2stack_8c.html#a3f994a2249053f63651003434df8c625", null ],
+    [ "meta_stack_lower", "marco_2src_2core_2stack_8c.html#ac320c5d977e5813884d640ce60850035", null ],
+    [ "meta_stack_new", "marco_2src_2core_2stack_8c.html#a6bc97e3f005a47eea6c627e7b2bf543c", null ],
+    [ "meta_stack_raise", "marco_2src_2core_2stack_8c.html#ad3cb3b78a59952be60a6b5030789ba97", null ],
+    [ "meta_stack_remove", "marco_2src_2core_2stack_8c.html#a34cd7f47456b523e694c65f95ad29c0b", null ],
+    [ "meta_stack_set_positions", "marco_2src_2core_2stack_8c.html#a0d65e6a90eff420428aaa015d739933d", null ],
+    [ "meta_stack_thaw", "marco_2src_2core_2stack_8c.html#a99cb4b5e40b27c32e5302a446c292a12", null ],
+    [ "meta_stack_update_layer", "marco_2src_2core_2stack_8c.html#a6faad481631513b53b6dd268eba969de", null ],
+    [ "meta_stack_update_transient", "marco_2src_2core_2stack_8c.html#ad14f99afb97f018a92241726380b67bb", null ],
+    [ "meta_stack_windows_cmp", "marco_2src_2core_2stack_8c.html#a6dd4ab8f6eb83f8433fab6dad8e2552f", null ],
+    [ "meta_window_set_stack_position", "marco_2src_2core_2stack_8c.html#af5188e6b461b640a800428230755776a", null ]
+];

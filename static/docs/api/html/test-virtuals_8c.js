@@ -1,0 +1,25 @@
+var test_virtuals_8c =
+[
+    [ "PWI_FIRST", "test-virtuals_8c.html#ae98ab46385624568a725574eb80e820a", null ],
+    [ "PWI_FIRST_CLASS", "test-virtuals_8c.html#abdffec5b2b3d72dbdaa1e1224359bc94", null ],
+    [ "PWI_FIRST_GET_CLASS", "test-virtuals_8c.html#a5cc7e09fccb97a0e6b1893a8d0ced8fd", null ],
+    [ "PWI_IS_FIRST", "test-virtuals_8c.html#aed2bda3dbfbff5fb8d8da7ae13c76188", null ],
+    [ "PWI_IS_FIRST_CLASS", "test-virtuals_8c.html#a723f5d6450849011e842759bab734a90", null ],
+    [ "PWI_IS_SECOND", "test-virtuals_8c.html#aa43d09bd5908c6eaa7e2d7fd58fb4be6", null ],
+    [ "PWI_IS_SECOND_CLASS", "test-virtuals_8c.html#a9bce2e96efd65c15d5644ac510f84fbd", null ],
+    [ "PWI_IS_THREE", "test-virtuals_8c.html#a65d46914bcd5ba550836c39f6c3ad22e", null ],
+    [ "PWI_IS_THREE_CLASS", "test-virtuals_8c.html#a9856c197c204ce0bc0dab31bf050a608", null ],
+    [ "PWI_SECOND", "test-virtuals_8c.html#aeb413d788163928a1e5342a83209e1a5", null ],
+    [ "PWI_SECOND_CLASS", "test-virtuals_8c.html#afddd1cf2224007432a57d74bf87f0e9f", null ],
+    [ "PWI_SECOND_GET_CLASS", "test-virtuals_8c.html#a5b90ee97cd616a58a0a4034d0972d434", null ],
+    [ "PWI_THREE", "test-virtuals_8c.html#af99482cac3c1f3194517b62bc802bab6", null ],
+    [ "PWI_THREE_CLASS", "test-virtuals_8c.html#a557679b1de89a766d9ceed7c9508bc6d", null ],
+    [ "PWI_THREE_GET_CLASS", "test-virtuals_8c.html#a99d1a1c39a44ff81588b619b4a8f374a", null ],
+    [ "PWI_TYPE_FIRST", "test-virtuals_8c.html#a37c9e8182d12f9fd4553fffb4df082f3", null ],
+    [ "PWI_TYPE_SECOND", "test-virtuals_8c.html#a540bcbd39106d5f823442bb8014e4190", null ],
+    [ "PWI_TYPE_THREE", "test-virtuals_8c.html#aa94bf312f84eed66162aaafb947cb1df", null ],
+    [ "main", "test-virtuals_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
+    [ "pwi_first_fn_a", "test-virtuals_8c.html#a506137add22d8c1a4913ea3dd12e3f9e", null ],
+    [ "pwi_first_fn_b", "test-virtuals_8c.html#a5213a6e16e844b058885a5dee0fde8ff", null ],
+    [ "pwi_first_fn_c", "test-virtuals_8c.html#ac1da1100ed458e012e58d3ad3b15de1a", null ]
+];

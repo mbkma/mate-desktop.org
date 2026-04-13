@@ -1,0 +1,27 @@
+var struct__CajaWindowPrivate =
+[
+    [ "active_pane", "struct__CajaWindowPrivate.html#a86efb36515c19d51087391b56e638fed", null ],
+    [ "bookmark_list", "struct__CajaWindowPrivate.html#a93969b2395aa428fa354e740d21fe3cf", null ],
+    [ "bookmarks_action_group", "struct__CajaWindowPrivate.html#ad2bd860d38b9d2c09e1a30954b9b88cb", null ],
+    [ "bookmarks_merge_id", "struct__CajaWindowPrivate.html#a51cc1bd9fe646689ff2d51fca4a82405", null ],
+    [ "extensions_menu_action_group", "struct__CajaWindowPrivate.html#add784b68c9d8ca02799d2b428a6872f7", null ],
+    [ "extensions_menu_merge_id", "struct__CajaWindowPrivate.html#a75b8fd3165a74eddcba7ca5fe77c6bec", null ],
+    [ "extra_viewer", "struct__CajaWindowPrivate.html#ae1b1920e397a201670291c84afd3d462", null ],
+    [ "extra_viewer_merge_id", "struct__CajaWindowPrivate.html#a0e525eb6029ae6ae2b8491ae61f3d856", null ],
+    [ "extra_viewer_radio_action", "struct__CajaWindowPrivate.html#a0d1fbae93bd70a1fdc3d0b08caa90f51", null ],
+    [ "grid", "struct__CajaWindowPrivate.html#a67b4226d42b5305168b270224770846b", null ],
+    [ "help_message_cid", "struct__CajaWindowPrivate.html#aa2c3c637ff205a4d115d0bfdd3242ab6", null ],
+    [ "initiated_unmount", "struct__CajaWindowPrivate.html#a4e1346037c58e17f8c65cdb430219e83", null ],
+    [ "main_action_group", "struct__CajaWindowPrivate.html#acb4eff4f338aa2803c2fbe37f8940329", null ],
+    [ "menubar", "struct__CajaWindowPrivate.html#aff04f4acdf0ccc39c4dc821746576d1f", null ],
+    [ "panes", "struct__CajaWindowPrivate.html#ab599f96555817574013f51971e5df1c2", null ],
+    [ "short_list_merge_id", "struct__CajaWindowPrivate.html#a3eb29dfd67d9fda5f5336d47a8fa4465", null ],
+    [ "short_list_viewers", "struct__CajaWindowPrivate.html#a37b7449a76378629be1c8a0ccce38b41", null ],
+    [ "show_backup_files_mode", "struct__CajaWindowPrivate.html#a52114b17a40964031ad924e62480271d", null ],
+    [ "show_hidden_files_mode", "struct__CajaWindowPrivate.html#adb767968dcc0948dcdbd63c04b91b447", null ],
+    [ "statusbar", "struct__CajaWindowPrivate.html#a58f1eb24d848e8ab78aca542a3fa5a00", null ],
+    [ "temporarily_ignore_view_signals", "struct__CajaWindowPrivate.html#ad12207d9890d91b53afd2a929c21fd00", null ],
+    [ "ui_manager", "struct__CajaWindowPrivate.html#ae42f61224d52f41caa86637c99aef42a", null ],
+    [ "view_as_action_group", "struct__CajaWindowPrivate.html#aab4204f769876f45b3635559c1dcf707", null ],
+    [ "view_as_radio_action", "struct__CajaWindowPrivate.html#ac488f69c91eed16cd6f2e34ec85c2ea1", null ]
+];

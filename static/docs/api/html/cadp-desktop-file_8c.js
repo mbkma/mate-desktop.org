@@ -1,0 +1,27 @@
+var cadp_desktop_file_8c =
+[
+    [ "cadp_desktop_file_get_boolean", "cadp-desktop-file_8c.html#af6a978ba2c36caf1d514d4b27f3ffa4b", null ],
+    [ "cadp_desktop_file_get_file_type", "cadp-desktop-file_8c.html#a48fbc8b237b302e16e614c0cdf629762", null ],
+    [ "cadp_desktop_file_get_id", "cadp-desktop-file_8c.html#af6fac04d9be54269b6e4c1e98d9f3540", null ],
+    [ "cadp_desktop_file_get_key_file", "cadp-desktop-file_8c.html#aa3a64531cb0a98daba4f0538dd444c5c", null ],
+    [ "cadp_desktop_file_get_key_file_uri", "cadp-desktop-file_8c.html#aff9fa4ef820478c87dbf028d92ff32f9", null ],
+    [ "cadp_desktop_file_get_locale_string", "cadp-desktop-file_8c.html#a75e3ce7c7101b2ac796fbf58bb934aab", null ],
+    [ "cadp_desktop_file_get_profiles", "cadp-desktop-file_8c.html#aa1273e27e8391ad2401716dc9040ea06", null ],
+    [ "cadp_desktop_file_get_string", "cadp-desktop-file_8c.html#ac7f54d6c285698531fd06f375d3362d5", null ],
+    [ "cadp_desktop_file_get_string_list", "cadp-desktop-file_8c.html#a9b11a39a910d3f1ff836bbb2240a40db", null ],
+    [ "cadp_desktop_file_get_type", "cadp-desktop-file_8c.html#a2d44b9427a1a44474dc17676464bc36a", null ],
+    [ "cadp_desktop_file_get_uint", "cadp-desktop-file_8c.html#a0f856c22daab1dd2f1470d0961d67b64", null ],
+    [ "cadp_desktop_file_has_profile", "cadp-desktop-file_8c.html#ac96e1e311c2cb18818a036aeed2eed6b", null ],
+    [ "cadp_desktop_file_new", "cadp-desktop-file_8c.html#a65ca3b376d97c2721236bda5248bdb25", null ],
+    [ "cadp_desktop_file_new_for_write", "cadp-desktop-file_8c.html#a167eebea5b3f45e7b57268e4a5a6ad0b", null ],
+    [ "cadp_desktop_file_new_from_path", "cadp-desktop-file_8c.html#aa051665c7e5dc6cde492269fc3ee3751", null ],
+    [ "cadp_desktop_file_new_from_uri", "cadp-desktop-file_8c.html#ac95cd6e99760dabb1a464a3dd6e5c459", null ],
+    [ "cadp_desktop_file_remove_key", "cadp-desktop-file_8c.html#a5ad93c4a8c77ea2c673b165fc62a68e7", null ],
+    [ "cadp_desktop_file_remove_profile", "cadp-desktop-file_8c.html#afd8de3768a188b945ee2275e1fcecc4f", null ],
+    [ "cadp_desktop_file_set_boolean", "cadp-desktop-file_8c.html#afabd29a628e62a25e55ae35e250d066d", null ],
+    [ "cadp_desktop_file_set_locale_string", "cadp-desktop-file_8c.html#a8a60ee152569082d905a16068554da47", null ],
+    [ "cadp_desktop_file_set_string", "cadp-desktop-file_8c.html#ace03ba8f66840095ba515839f1066c38", null ],
+    [ "cadp_desktop_file_set_string_list", "cadp-desktop-file_8c.html#af5e5a52f1c7f41a4ea2ab066c42e9a2b", null ],
+    [ "cadp_desktop_file_set_uint", "cadp-desktop-file_8c.html#aafe82e017b69a80a6c4720d35eb26c93", null ],
+    [ "cadp_desktop_file_write", "cadp-desktop-file_8c.html#a5a0df04907dac945d0f5a31e3201b383", null ]
+];
