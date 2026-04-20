@@ -1,5 +1,14 @@
 var NAVTREEINDEX101 =
 {
+"mate-dialog_8c.html#a928986ae17da5638f39c109f867a945a":[35,0,0,9,2,20,23],
+"mate-dialog_8c.html#aaaed7d3b23062fa48d22e8a6adc0eba8":[35,0,0,9,2,20,2],
+"mate-dialog_8c.html#ab7e38c5a42c48742b8694e46f5fb24c3":[35,0,0,9,2,20,20],
+"mate-dialog_8c.html#ac73e4e20ee3e845c717a7e883845e542":[35,0,0,9,2,20,17],
+"mate-dialog_8c.html#acd60e394c2ded37dd699a22424699aba":[35,0,0,9,2,20,18],
+"mate-dialog_8c.html#adb704d8807bfb38363cbdd2d2ba18063":[35,0,0,9,2,20,1],
+"mate-dialog_8c.html#ae5de10023669545631ccbebdf49d0e13":[35,0,0,9,2,20,16],
+"mate-dialog_8c_source.html":[35,0,0,9,2,20],
+"mate-dialog_8h.html":[35,0,0,9,2,21],
 "mate-dialog_8h.html#a04b6a37a796c51178025702d7ac779a7":[35,0,0,9,2,21,11],
 "mate-dialog_8h.html#a0ead9e14ac573c770773c25eff1523b1":[35,0,0,9,2,21,33],
 "mate-dialog_8h.html#a12cedc9f2cdfd9fbb3c11b0e3b752438":[35,0,0,9,2,21,12],
@@ -240,14 +249,5 @@ var NAVTREEINDEX101 =
 "mate-font-picker_8c.html#a1bba34397b2fa527d301775f76ba8c4d":[35,0,0,9,2,32,3],
 "mate-font-picker_8c.html#a2ff0198c378e6c5e9947608990d5a808":[35,0,0,9,2,32,10],
 "mate-font-picker_8c.html#a4033834a7f346313a57c75f670df025d":[35,0,0,9,2,32,6],
-"mate-font-picker_8c.html#a4066053d1c5cb8167887fc18c6359345":[35,0,0,9,2,32,13],
-"mate-font-picker_8c.html#a85221dfdea2ee78bdbb6970999eafb4a":[35,0,0,9,2,32,14],
-"mate-font-picker_8c.html#a8d607bd15eedfbef33f1366e31a3be25":[35,0,0,9,2,32,11],
-"mate-font-picker_8c.html#a97969e53a826e53d006a40be79504ffa":[35,0,0,9,2,32,12],
-"mate-font-picker_8c.html#aa46fc2527cdbd470b9eeb123f1a4c7e7":[35,0,0,9,2,32,0],
-"mate-font-picker_8c.html#abb6f478fade1b539d0f1b87ff6fc5453":[35,0,0,9,2,32,5],
-"mate-font-picker_8c.html#acf816c19b91822e08aa7c55ad3fbfc46":[35,0,0,9,2,32,4],
-"mate-font-picker_8c.html#acfb158335df63d39ec26bad31795a70b":[35,0,0,9,2,32,8],
-"mate-font-picker_8c.html#ad3c0a6be3dd01d384f5b6ce492ed926f":[35,0,0,9,2,32,2],
-"mate-font-picker_8c.html#ad8cc95043a593197a9ac2dcf539f7f52":[35,0,0,9,2,32,7]
+"mate-font-picker_8c.html#a4066053d1c5cb8167887fc18c6359345":[35,0,0,9,2,32,13]
 };

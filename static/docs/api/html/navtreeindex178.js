@@ -1,5 +1,13 @@
 var NAVTREEINDEX178 =
 {
+"structMsdDatetimeMechanism.html#abdc616907ac6e8dc55faef8608dd441a":[34,0,1486,0],
+"structMsdDatetimeMechanismClass.html":[34,0,1487],
+"structMsdDatetimeMechanismClass.html#a5cc0690df1dbf3a6cd60fc1c5e633545":[34,0,1487,0],
+"structMsdDummyManager.html":[34,0,1488],
+"structMsdDummyManager.html#a3982bcaed8afa9b541d9297c456b9584":[34,0,1488,0],
+"structMsdDummyManager.html#ac130924253d306974df5d61ba34de046":[34,0,1488,1],
+"structMsdDummyManagerClass.html":[34,0,1489],
+"structMsdDummyManagerClass.html#ae64d9847b08a3e78e4b579850f26a751":[34,0,1489,0],
 "structMsdDummyPlugin.html":[34,0,1490],
 "structMsdDummyPlugin.html#a6ead69b05cd87f1707f4bfafdc00aab4":[34,0,1490,0],
 "structMsdDummyPlugin.html#ace0de21b4210c106498a29c487d9b603":[34,0,1490,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX178 =
 "structNAIFactoryProviderInterface.html#a318877614cabd4c1424a83300f840757":[34,0,1549,2],
 "structNAIFactoryProviderInterface.html#a3c8f45e5994116c9352f736701cab852":[34,0,1549,1],
 "structNAIFactoryProviderInterface.html#a3e85ea3006ef98f420b6664c0d3f3b7d":[34,0,1549,5],
-"structNAIFactoryProviderInterface.html#a626aeeae72ec9f53838060dc291adb29":[34,0,1549,0],
-"structNAIFactoryProviderInterface.html#a6ba8211041688814ae5b892fa397e872":[34,0,1549,8],
-"structNAIFactoryProviderInterface.html#a7c556ec05a4b6b3808359a216975fe36":[34,0,1549,3],
-"structNAIFactoryProviderInterface.html#acec4c3e631a94b15a4a3b3b53529fdee":[34,0,1549,7],
-"structNAIIOProviderInterface.html":[34,0,1552],
-"structNAIIOProviderInterface.html#a00f08e19597e2bbe4dd5ed0831b55bd5":[34,0,1552,10],
-"structNAIIOProviderInterface.html#a01a964e07c80f373bbc94a6c6e40fd4d":[34,0,1552,7],
-"structNAIIOProviderInterface.html#a053ab8390d36372290576dc5a7c3864e":[34,0,1552,6],
-"structNAIIOProviderInterface.html#a2ae8fa2ea6175bb5de69446d0558a278":[34,0,1552,8]
+"structNAIFactoryProviderInterface.html#a626aeeae72ec9f53838060dc291adb29":[34,0,1549,0]
 };

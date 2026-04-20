@@ -1,5 +1,14 @@
 var NAVTREEINDEX158 =
 {
+"pluma-utils_8h.html#a138fa8df40459ab335f2b06f116ffda4":[35,0,0,34,1,89,19],
+"pluma-utils_8h.html#a1a98d73798aae85a2bc28f4069318d2e":[35,0,0,34,1,89,25],
+"pluma-utils_8h.html#a1c7a6942b96470626c20f36c3871b7fb":[35,0,0,34,1,89,34],
+"pluma-utils_8h.html#a2714238f1b6d763c231cafadd187f624":[35,0,0,34,1,89,14],
+"pluma-utils_8h.html#a2abdef32f7f82ec8dc4507dcb6293552":[35,0,0,34,1,89,6],
+"pluma-utils_8h.html#a2d81faaf758efa8ac04846b9c7b1083a":[35,0,0,34,1,89,9],
+"pluma-utils_8h.html#a2f0f1fa5b1b19571cfe5275856558ed8":[35,0,0,34,1,89,16],
+"pluma-utils_8h.html#a3f52be22445a944b3493e02c02e5ea7c":[35,0,0,34,1,89,2],
+"pluma-utils_8h.html#a3f83744ef24142144fc36239f17619b9":[35,0,0,34,1,89,12],
 "pluma-utils_8h.html#a424606703a8771d73daa1c5ee476340d":[35,0,0,34,1,89,22],
 "pluma-utils_8h.html#a4264fcdbd0780460bd162222ad20cb8b":[35,0,0,34,1,89,23],
 "pluma-utils_8h.html#a447589781d9f7751cea183600b1a6811":[35,0,0,34,1,89,20],
@@ -240,14 +249,5 @@ var NAVTREEINDEX158 =
 "plumatextregion_8h.html#a5be09fc55926359a474b124270dee0a7":[35,0,0,34,1,101,3],
 "plumatextregion_8h.html#a72d7fa84b8881a94a2cd7d390e463090":[35,0,0,34,1,101,7],
 "plumatextregion_8h.html#a75f81c7257bfefbcc435ccbcb2ec312d":[35,0,0,34,1,101,5],
-"plumatextregion_8h.html#a84821bf808b96776543590e2e1bccd38":[35,0,0,34,1,101,9],
-"plumatextregion_8h.html#a951906639deed349dadb02178098b8cc":[35,0,0,34,1,101,11],
-"plumatextregion_8h.html#a9b6de4c76ba451c7823f77d710f72a28":[35,0,0,34,1,101,14],
-"plumatextregion_8h.html#a9b88f2d6c1f8d5937eff048fe41a25a2":[35,0,0,34,1,101,4],
-"plumatextregion_8h.html#ac760b57adc60706ca6b4310d3c4a514e":[35,0,0,34,1,101,10],
-"plumatextregion_8h.html#ad6262eb98227dedb4fd4f76bcbec7908":[35,0,0,34,1,101,1],
-"plumatextregion_8h.html#add086a884a26b7c122ccc73e88d67aa3":[35,0,0,34,1,101,12],
-"plumatextregion_8h.html#ae368e92174a0811005349fc7037ffbaf":[35,0,0,34,1,101,6],
-"plumatextregion_8h.html#ae691686d00e6fb94059370e117413d19":[35,0,0,34,1,101,8],
-"plumatextregion_8h_source.html":[35,0,0,34,1,101]
+"plumatextregion_8h.html#a84821bf808b96776543590e2e1bccd38":[35,0,0,34,1,101,9]
 };

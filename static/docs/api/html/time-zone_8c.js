@@ -12,7 +12,7 @@ var time_zone_8c =
     [ "tz_info_get_clean_name", "time-zone_8c.html#a37feb3e32dc6cebb08f66ea8e80aec92", null ],
     [ "tz_load_db", "time-zone_8c.html#a24e0852e4a518d247a776de55cf039bf", null ],
     [ "tz_location_get_utc_offset", "time-zone_8c.html#a052aa36c1710ee8f06277d14ef9afe74", null ],
-    [ "aliases", "time-zone_8c.html#a0681c3ee8f98109abbb42aebb3062e20", null ],
+    [ "aliases", "time-zone_8c.html#a70dc3cc9eb86dbcccb5eeb0abb9657c7", null ],
     [ "dest", "time-zone_8c.html#ad447182ef5af9e4ff1446dbe2507f630", null ],
     [ "orig", "time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2", null ]
 ];

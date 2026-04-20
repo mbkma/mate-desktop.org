@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('selection_8cpp_source.html',''); initR
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">void</span> SelectionMemento::add_to_selected(GtkTreeModel* model, GtkTreePath*, GtkTreeIter* iter, gpointer <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        guint pid = 0;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        gtk_tree_model_get(model, iter, <a class="code hl_enumvalue" href="proctable_8h.html#a82322c0dcd551792fb3824f7b0b8cecda5565cae2c0dd398b8d90b93b8b4f9f90">COL_PID</a>, &amp;pid, -1);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        gtk_tree_model_get(model, iter, <a class="code hl_enumvalue" href="proctable_8h.html#af459f6210575244956b1d7bb6f8c98caa5565cae2c0dd398b8d90b93b8b4f9f90">COL_PID</a>, &amp;pid, -1);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">if</span> (pid)</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keyword">static_cast&lt;</span>SelectionMemento*<span class="keyword">&gt;</span>(<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)-&gt;pids.push_back(pid);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    }</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('selection_8cpp_source.html',''); initR
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="anamespaceprocman_html"><div class="ttname"><a href="namespaceprocman.html">procman</a></div><div class="ttdef"><b>Definition</b> <a href="argv_8cpp_source.html#l00009">argv.cpp:10</a></div></div>
 <div class="ttc" id="aproctable_8h_html"><div class="ttname"><a href="proctable_8h.html">proctable.h</a></div></div>
-<div class="ttc" id="aproctable_8h_html_a82322c0dcd551792fb3824f7b0b8cecda5565cae2c0dd398b8d90b93b8b4f9f90"><div class="ttname"><a href="proctable_8h.html#a82322c0dcd551792fb3824f7b0b8cecda5565cae2c0dd398b8d90b93b8b4f9f90">COL_PID</a></div><div class="ttdeci">@ COL_PID</div><div class="ttdef"><b>Definition</b> <a href="proctable_8h_source.html#l00042">proctable.h:42</a></div></div>
+<div class="ttc" id="aproctable_8h_html_af459f6210575244956b1d7bb6f8c98caa5565cae2c0dd398b8d90b93b8b4f9f90"><div class="ttname"><a href="proctable_8h.html#af459f6210575244956b1d7bb6f8c98caa5565cae2c0dd398b8d90b93b8b4f9f90">COL_PID</a></div><div class="ttdeci">@ COL_PID</div><div class="ttdef"><b>Definition</b> <a href="proctable_8h_source.html#l00042">proctable.h:42</a></div></div>
 <div class="ttc" id="aselection_8h_html"><div class="ttname"><a href="selection_8h.html">selection.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

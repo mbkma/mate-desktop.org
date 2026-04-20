@@ -1,5 +1,14 @@
 var NAVTREEINDEX110 =
 {
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8c.html#af30fe7214f3f9a7b2b9194cb91de33c3":[35,0,0,28,1,3,6,11],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8c.html#af61c4c4b2b89568b72420a65c414ffed":[35,0,0,28,1,3,6,1],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8c_source.html":[35,0,0,28,1,3,6],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html":[35,0,0,28,1,3,7],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a02b48e3b00176cf5055ab57d681d58a3":[35,0,0,28,1,3,7,8],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a0402bfa2384ccdac65c151eb6ac74be0":[35,0,0,28,1,3,7,4],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a3f19c96a6b5f3321896354d38f7eac87":[35,0,0,28,1,3,7,3],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a490a5f0e3db3a72fce3be78ba75b86f7":[35,0,0,28,1,3,7,15],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a539ebd74fd14b284e6bfa6fd08c232a2":[35,0,0,28,1,3,7,6],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a5b72ff90752a0dee5a9e0c39f799c8d4":[35,0,0,28,1,3,7,12],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a6704be35c4eeeb8268afb476c23d1f71":[35,0,0,28,1,3,7,13],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#a6c1c919a6ec304f3fca2f6e15db2e8d4":[35,0,0,28,1,3,7,14],
@@ -240,14 +249,5 @@ var NAVTREEINDEX110 =
 "mate-settings-plugin-info_8h.html#aee9def301d736d4b34450c72def956ff":[35,0,0,28,0,8,21],
 "mate-settings-plugin-info_8h.html#af08eb4824712960c885056168202f1fa":[35,0,0,28,0,8,12],
 "mate-settings-plugin-info_8h.html#af10059eb9753e2ad37ceb8b773a31f82":[35,0,0,28,0,8,20],
-"mate-settings-plugin-info_8h.html#afad3b052bbc5f3c96fc7652aa637dd18":[35,0,0,28,0,8,5],
-"mate-settings-plugin-info_8h_source.html":[35,0,0,28,0,8],
-"mate-settings-plugin_8c.html":[35,0,0,28,0,9],
-"mate-settings-plugin_8c.html#a00650ee886e4770c014a6faafec5ff67":[35,0,0,28,0,9,0],
-"mate-settings-plugin_8c.html#ab004f810a914c9221d871ae8d6df611a":[35,0,0,28,0,9,1],
-"mate-settings-plugin_8c_source.html":[35,0,0,28,0,9],
-"mate-settings-plugin_8h.html":[35,0,0,28,0,10],
-"mate-settings-plugin_8h.html#a00650ee886e4770c014a6faafec5ff67":[35,0,0,28,0,10,10],
-"mate-settings-plugin_8h.html#a05cdeb2030fc6ce404defb7128509d64":[35,0,0,28,0,10,5],
-"mate-settings-plugin_8h.html#a183009cebb36c1f3ef93dcb43c4a3b85":[35,0,0,28,0,10,4]
+"mate-settings-plugin-info_8h.html#afad3b052bbc5f3c96fc7652aa637dd18":[35,0,0,28,0,8,5]
 };

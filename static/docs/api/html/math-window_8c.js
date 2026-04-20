@@ -15,7 +15,7 @@ var math_window_8c =
     [ "MODE_PROGRAMMING_LABEL", "math-window_8c.html#a6cac81f1f0f35d20e80833c6a584f176", null ],
     [ "VIEW_HISTORY_LABEL", "math-window_8c.html#a40e18105160cb60d4bd07fc20e6c5843", null ],
     [ "VIEW_MENU_LABEL", "math-window_8c.html#a97e73a27445cd6d531115857b6d1a953", null ],
-    [ "G_DEFINE_TYPE_WITH_PRIVATE", "math-window_8c.html#adef56876f66cd78d16c77f348963bae3", null ],
+    [ "G_DEFINE_TYPE_WITH_PRIVATE", "math-window_8c.html#ab44b1610b755e3004b01054912dc2442", null ],
     [ "math_window_critical_error", "math-window_8c.html#a878b5a235e73af101bd212774477abc4", null ],
     [ "math_window_get_buttons", "math-window_8c.html#a0e9a63e9ed525a8cd5dd9a7022c23807", null ],
     [ "math_window_get_display", "math-window_8c.html#ae76a10668aa66f9efafc9361651d7503", null ],

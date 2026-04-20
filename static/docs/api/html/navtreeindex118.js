@@ -1,5 +1,14 @@
 var NAVTREEINDEX118 =
 {
+"matemixer-switch_8h.html#a10a009001db60f9d904ddba98f6795b6":[35,0,0,8,2,34,15],
+"matemixer-switch_8h.html#a249649a9edac7283bf9bd08069ec5cc5":[35,0,0,8,2,34,13],
+"matemixer-switch_8h.html#a2a7e9097c3ab032e930e388ca073a409":[35,0,0,8,2,34,12],
+"matemixer-switch_8h.html#a2bb030748ab5449d04cbd0daae347734":[35,0,0,8,2,34,4],
+"matemixer-switch_8h.html#a36cbec67bc4b76284d972fbcd6699c21":[35,0,0,8,2,34,9],
+"matemixer-switch_8h.html#a37b9b846abb0b548ea02da2217245213":[35,0,0,8,2,34,14],
+"matemixer-switch_8h.html#a54a5796ff360a00561d890072f571797":[35,0,0,8,2,34,3],
+"matemixer-switch_8h.html#a564e7f1d56ee278d3d8d68e336ba9707":[35,0,0,8,2,34,5],
+"matemixer-switch_8h.html#a6b6b8e33e7ef4485eacc43a9a2b0c236":[35,0,0,8,2,34,11],
 "matemixer-switch_8h.html#a795209a056956fd70319d776c93e5cda":[35,0,0,8,2,34,16],
 "matemixer-switch_8h.html#a7efb5db1b76c0914bb91d6e621eb82f7":[35,0,0,8,2,34,7],
 "matemixer-switch_8h.html#acf5a5386106b286ff6f11f0e2647bb35":[35,0,0,8,2,34,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX118 =
 "mateweather-prefs_8h.html#a1e453bea3e8bedaa1022b817174f9acb":[35,0,0,10,0,5,7],
 "mateweather-prefs_8h.html#a437fbd49f29477a8d017157b0e786666":[35,0,0,10,0,5,4],
 "mateweather-prefs_8h.html#a9372ddfc99b208ec36267436c4c1fb74":[35,0,0,10,0,5,10],
-"mateweather-prefs_8h.html#a99584fabef25e9bdbd3e1988588ed890":[35,0,0,10,0,5,9],
-"mateweather-prefs_8h.html#a9ec9eee8f77d6da9902f641101af136f":[35,0,0,10,0,5,1],
-"mateweather-prefs_8h.html#aad576397921360e823a318200581c11c":[35,0,0,10,0,5,6],
-"mateweather-prefs_8h.html#aeb037acccbc121bd481b99a866573bae":[35,0,0,10,0,5,5],
-"mateweather-prefs_8h.html#af36f99f38abc217bd4b98a4c0a03b2e3":[35,0,0,10,0,5,2],
-"mateweather-prefs_8h_source.html":[35,0,0,10,0,5],
-"mateweather-timezone_8c.html":[35,0,0,10,0,6],
-"mateweather-timezone_8c.html#a02edb451f4b2a96d9c9b86dbc53171ed":[35,0,0,10,0,6,16],
-"mateweather-timezone_8c.html#a073e2b120191c41bec75e30a3be6d346":[35,0,0,10,0,6,9],
-"mateweather-timezone_8c.html#a208baab8c5b8a4f510de5a99b0b58d77":[35,0,0,10,0,6,11]
+"mateweather-prefs_8h.html#a99584fabef25e9bdbd3e1988588ed890":[35,0,0,10,0,5,9]
 };

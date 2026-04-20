@@ -1,5 +1,13 @@
 var NAVTREEINDEX203 =
 {
+"struct__TerminalScreenContainer.html":[34,0,970],
+"struct__TerminalScreenContainer.html#a04af13d3a6208ad6c2611e8f725257a7":[34,0,970,1],
+"struct__TerminalScreenContainer.html#aea8672d818c27f87ae1fda155b46dfe4":[34,0,970,0],
+"struct__TerminalScreenContainerClass.html":[34,0,971],
+"struct__TerminalScreenContainerClass.html#a726d230b126767facbbecd78a5f7828f":[34,0,971,0],
+"struct__TerminalScreenPopupInfo.html":[34,0,972],
+"struct__TerminalScreenPopupInfo.html#a23db8e339b51bab86d57c5b92aae2880":[34,0,972,0],
+"struct__TerminalScreenPopupInfo.html#a4c860ef78518eeba236109255f199398":[34,0,972,2],
 "struct__TerminalScreenPopupInfo.html#a4ee2d0e81503ad249521ccff8fe20c29":[34,0,972,6],
 "struct__TerminalScreenPopupInfo.html#a52af7339e75ae18a201d196186431353":[34,0,972,1],
 "struct__TerminalScreenPopupInfo.html#a7a7875e74485239e2b7147c75d657e8b":[34,0,972,8],
@@ -130,11 +138,11 @@ var NAVTREEINDEX203 =
 "struct__XSettingsSetting.html":[34,0,994],
 "struct__XSettingsSetting.html#a14050a46a703fe2a76aa0defbab212b9":[34,0,994,1],
 "struct__XSettingsSetting.html#a433ee65c177db4c04ce64b4ad1d9ecad":[34,0,994,3],
+"struct__XSettingsSetting.html#a6a412f62a010e7ea61bf0dcc30e602e3":[34,0,994,0],
 "struct__XSettingsSetting.html#a9f457736b4cdcfe360509a43740a6d5e":[34,0,994,2],
 "struct__XSettingsSetting.html#aa7f75a91b9c6b75c706f9dae07f02f13":[34,0,994,4],
 "struct__XSettingsSetting.html#ace2066e84a9e05db679d500346a17661":[34,0,994,6],
 "struct__XSettingsSetting.html#ae85ea1668a8b11b0082f2c2bcf562e48":[34,0,994,5],
-"struct__XSettingsSetting.html#af128aab55cb2e5c316afe0d9bc6fe32a":[34,0,994,0],
 "struct__charpick__button__cb__data.html":[34,0,136],
 "struct__charpick__button__cb__data.html#a30a771626ee425bcb60cc2a802a2648e":[34,0,136,1],
 "struct__charpick__button__cb__data.html#ab7116524cb4f345382727fcdb27fe33e":[34,0,136,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX203 =
 "structjpeg__d__coef__controller.html":[34,0,1385],
 "structjpeg__d__coef__controller.html#a4c0e8d307e0852eae338a0f4f3c96edb":[34,0,1385,0],
 "structjpeg__d__coef__controller.html#a5d61ba56d9f5d8de0662df091aa6d9e1":[34,0,1385,1],
-"structjpeg__d__coef__controller.html#a6611f9e18fbbbb13d117caadb5d14dc1":[34,0,1385,4],
-"structjpeg__d__coef__controller.html#ab4b18cfac761c7186363a845e36f342c":[34,0,1385,2],
-"structjpeg__d__coef__controller.html#addb7a363607be97630bf37175267fd58":[34,0,1385,3],
-"structjpeg__d__main__controller.html":[34,0,1386],
-"structjpeg__d__main__controller.html#a6fd68ad0d0296dcc299119db1128c294":[34,0,1386,1],
-"structjpeg__d__main__controller.html#affd488d3ef78b5080ec5b2a00c8198a5":[34,0,1386,0],
-"structjpeg__d__post__controller.html":[34,0,1387],
-"structjpeg__d__post__controller.html#a349b2ff7508568d13a9294f3e79163aa":[34,0,1387,1],
-"structjpeg__d__post__controller.html#adb337adcfe3a314ceac4b626a73d87c3":[34,0,1387,0]
+"structjpeg__d__coef__controller.html#a6611f9e18fbbbb13d117caadb5d14dc1":[34,0,1385,4]
 };

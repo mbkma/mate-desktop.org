@@ -1,5 +1,14 @@
 var NAVTREEINDEX99 =
 {
+"mate-colorsel_8h.html#a9ceced1c1da5bdb143b709cc2c80c629":[35,0,0,15,0,8,11],
+"mate-colorsel_8h.html#aa1639245113e6509b10a1d56e3b67eb1":[35,0,0,15,0,8,27],
+"mate-colorsel_8h.html#aab8cc1b6f12fff215eff37087f44848d":[35,0,0,15,0,8,22],
+"mate-colorsel_8h.html#ab6465b14c3add18018391d95ca9bd016":[35,0,0,15,0,8,3],
+"mate-colorsel_8h.html#abcc4ea095eb146ae93f9235849a608a3":[35,0,0,15,0,8,5],
+"mate-colorsel_8h.html#ac8ee2fb739c053647e26dc59bf5d8ed0":[35,0,0,15,0,8,20],
+"mate-colorsel_8h.html#ac9817564af13570d58f82744bf6c8d22":[35,0,0,15,0,8,12],
+"mate-colorsel_8h.html#ad42385bdd8f8d89f7ddd34c69da97531":[35,0,0,15,0,8,29],
+"mate-colorsel_8h.html#ad43a46d8570e5d5a847c6b192dca636b":[35,0,0,15,0,8,33],
 "mate-colorsel_8h.html#ad660437a8c60b5f3fe21f01b3607b1db":[35,0,0,15,0,8,17],
 "mate-colorsel_8h.html#aee90d16d390113b128a608b41b62aedb":[35,0,0,15,0,8,16],
 "mate-colorsel_8h.html#afdad1ee2cf6894c211b330894429bd01":[35,0,0,15,0,8,6],
@@ -240,14 +249,5 @@ var NAVTREEINDEX99 =
 "mate-desktop-item_8c.html#ab4c1612ed9409581eaaf6f940336e0d6a149a510a6e3f4de81c043e91d9d7b484":[35,0,0,15,0,13,4,1],
 "mate-desktop-item_8c.html#ab4c1612ed9409581eaaf6f940336e0d6ad55fd2227e314b5da42d87833f0a7583":[35,0,0,15,0,13,4,0],
 "mate-desktop-item_8c.html#ab4c1612ed9409581eaaf6f940336e0d6adf0938804782e316f618d09bb24b8023":[35,0,0,15,0,13,4,2],
-"mate-desktop-item_8c.html#abb1c9c04a4adab4b0fb24995304d85d3":[35,0,0,15,0,13,45],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107":[35,0,0,15,0,13,5],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a57d5276449007d4d096376e3a0180556":[35,0,0,15,0,13,5,3],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a83461ab0a3e3cc24bf849047f4628a38":[35,0,0,15,0,13,5,2],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a83c4beb738b3ae6f0f09f203942675af":[35,0,0,15,0,13,5,0],
-"mate-desktop-item_8c.html#ac32291f3a839fe01ad0708ab8c53d107a9e40b084209237b475f6bad36bf06d6d":[35,0,0,15,0,13,5,1],
-"mate-desktop-item_8c.html#ac85b90c872243a13856409550f12d150":[35,0,0,15,0,13,22],
-"mate-desktop-item_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[35,0,0,15,0,13,1],
-"mate-desktop-item_8c.html#ace9477eef3fe5ba14ac4236b55f03904":[35,0,0,15,0,13,23],
-"mate-desktop-item_8c.html#ad559fa0d1a654c83c811bf52668d2714":[35,0,0,15,0,13,36]
+"mate-desktop-item_8c.html#abb1c9c04a4adab4b0fb24995304d85d3":[35,0,0,15,0,13,45]
 };

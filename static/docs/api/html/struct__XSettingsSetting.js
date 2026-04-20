@@ -1,6 +1,6 @@
 var struct__XSettingsSetting =
 [
-    [ "data", "struct__XSettingsSetting.html#af128aab55cb2e5c316afe0d9bc6fe32a", null ],
+    [ "data", "struct__XSettingsSetting.html#a6a412f62a010e7ea61bf0dcc30e602e3", null ],
     [ "last_change_serial", "struct__XSettingsSetting.html#a14050a46a703fe2a76aa0defbab212b9", null ],
     [ "name", "struct__XSettingsSetting.html#a9f457736b4cdcfe360509a43740a6d5e", null ],
     [ "type", "struct__XSettingsSetting.html#a433ee65c177db4c04ce64b4ad1d9ecad", null ],

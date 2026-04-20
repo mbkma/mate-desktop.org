@@ -1,5 +1,14 @@
 var NAVTREEINDEX153 =
 {
+"pluma-file-browser-view_8c.html":[35,0,0,34,0,1,11],
+"pluma-file-browser-view_8c.html#a195080bb74f4a36657073efaf08562ee":[35,0,0,34,0,1,11,6],
+"pluma-file-browser-view_8c.html#a4b5251f2e2797232624a42cfe75c239d":[35,0,0,34,0,1,11,2],
+"pluma-file-browser-view_8c.html#a4c57bec4abdff8bf60f28cca20672a94":[35,0,0,34,0,1,11,4],
+"pluma-file-browser-view_8c.html#a6fef8a7d3f0adf4515630a3ffcaa5ace":[35,0,0,34,0,1,11,0],
+"pluma-file-browser-view_8c.html#a9e075897f2de67cea53749ca657d3e41":[35,0,0,34,0,1,11,1],
+"pluma-file-browser-view_8c.html#ada06eee7ac5287b2edc2427846ef0098":[35,0,0,34,0,1,11,3],
+"pluma-file-browser-view_8c.html#aef20a76b695aefbdcc46d8de3d4ae27e":[35,0,0,34,0,1,11,5],
+"pluma-file-browser-view_8c_source.html":[35,0,0,34,0,1,11],
 "pluma-file-browser-view_8h.html":[35,0,0,34,0,1,12],
 "pluma-file-browser-view_8h.html#a195080bb74f4a36657073efaf08562ee":[35,0,0,34,0,1,12,19],
 "pluma-file-browser-view_8h.html#a1c14c5f8ed7b090ade0b66acc33e1751":[35,0,0,34,0,1,12,9],
@@ -240,14 +249,5 @@ var NAVTREEINDEX153 =
 "pluma-message-type_8c.html#a0ca070576c9e233b2f8d4c07a6420900":[35,0,0,34,1,51,14],
 "pluma-message-type_8c.html#a0f41e4c2082b6274b481e0f3d33f26ba":[35,0,0,34,1,51,11],
 "pluma-message-type_8c.html#a1b0ce0b9b2bbd592e37de9bb5e2170ec":[35,0,0,34,1,51,6],
-"pluma-message-type_8c.html#a1f6d8a3fd252747951c7e8e3627f047b":[35,0,0,34,1,51,4],
-"pluma-message-type_8c.html#a25ed643e7111da62cc44b783425e5b4f":[35,0,0,34,1,51,10],
-"pluma-message-type_8c.html#a45e1e7aa2bcdd8c66aa948aca395e2f7":[35,0,0,34,1,51,7],
-"pluma-message-type_8c.html#a52f4a4486cfcfcb9217cee58e4137fa5":[35,0,0,34,1,51,13],
-"pluma-message-type_8c.html#a5379c6ccb1fd6f9f36c7f7875f9a6e87":[35,0,0,34,1,51,8],
-"pluma-message-type_8c.html#a6d36c59d8051ea9e4425b6919b110f4f":[35,0,0,34,1,51,0],
-"pluma-message-type_8c.html#a7548b230f31f4a6cc339839cf4e9098e":[35,0,0,34,1,51,1],
-"pluma-message-type_8c.html#a7a7349823dd38b837a5996902b4a52ff":[35,0,0,34,1,51,3],
-"pluma-message-type_8c.html#a9f7d77a6e6d135555989a9ccdb123982":[35,0,0,34,1,51,2],
-"pluma-message-type_8c.html#aa879915702b3516586497811f2b1f747":[35,0,0,34,1,51,15]
+"pluma-message-type_8c.html#a1f6d8a3fd252747951c7e8e3627f047b":[35,0,0,34,1,51,4]
 };

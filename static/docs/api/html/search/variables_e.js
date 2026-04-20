@@ -64,7 +64,7 @@ var searchData=
   ['need_5fupdate_61',['need_update',['../struct__EelCanvas.html#a04e8fa4b686e9bf7a57a1adc547397ee',1,'_EelCanvas']]],
   ['negative_5fhsync_62',['negative_hsync',['../structDetailedTiming.html#a00a010bd94ca8a3a621ec0981298508e',1,'DetailedTiming']]],
   ['negative_5fvsync_63',['negative_vsync',['../structDetailedTiming.html#a3cedca2e48d82b3762ef9a3e5250c8dd',1,'DetailedTiming']]],
-  ['net_64',['net',['../structLoadGraph.html#a6d4a8fd49e65c81d423cb40a7a0a9e06',1,'LoadGraph']]],
+  ['net_64',['net',['../structLoadGraph.html#a91b0306ab1797a18c0f5116347242362',1,'LoadGraph']]],
   ['net_5fgraph_65',['net_graph',['../structProcData.html#a422d514eabd601f9920b632e98454752',1,'ProcData']]],
   ['net_5fin_66',['net_in',['../structLoadGraphLabels.html#af46af29652dc15e70c8d752e3fbe5c64',1,'LoadGraphLabels']]],
   ['net_5fin_5fcolor_67',['net_in_color',['../structProcConfig.html#a9200a5492fe34f438c78d260f3e94176',1,'ProcConfig']]],

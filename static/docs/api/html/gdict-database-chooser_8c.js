@@ -15,5 +15,5 @@ var gdict_database_chooser_8c =
     [ "gdict_database_chooser_set_context", "gdict-database-chooser_8c.html#a8ba76414186bf6e7d2ad921c97d93b30", null ],
     [ "gdict_database_chooser_set_current_database", "gdict-database-chooser_8c.html#a641cf7220d01bf2e26f8b27351a63dfe", null ],
     [ "gdict_database_chooser_unselect_database", "gdict-database-chooser_8c.html#adc90590cc6e33e942e81eb139eb17db6", null ],
-    [ "DBType", "gdict-database-chooser_8c.html#a5695266656460787f7339fbf1e1b51e2", null ]
+    [ "DBType", "gdict-database-chooser_8c.html#a474cd68eb878b06a1150c2cefaf37354", null ]
 ];

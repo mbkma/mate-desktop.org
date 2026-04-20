@@ -1,5 +1,14 @@
 var NAVTREEINDEX107 =
 {
+"mate-panel_2mate-panel_2applet_8c.html#a5b1bd83815291328c1943302baaaf3fe":[35,0,0,22,2,2,3],
+"mate-panel_2mate-panel_2applet_8c.html#a5bc1cf76f5c482356f4af33f3c4d44bc":[35,0,0,22,2,2,0],
+"mate-panel_2mate-panel_2applet_8c.html#a6b064999d78014c8456a0b1d592372e6":[35,0,0,22,2,2,10],
+"mate-panel_2mate-panel_2applet_8c.html#a6d25b39619a11e78f86a2e06d6f62f3c":[35,0,0,22,2,2,17],
+"mate-panel_2mate-panel_2applet_8c.html#a80d7b5e5082d9f840a2f4e930c81cdd9":[35,0,0,22,2,2,13],
+"mate-panel_2mate-panel_2applet_8c.html#a9269755b7a9b1eed5df401d3bb8bbab0":[35,0,0,22,2,2,5],
+"mate-panel_2mate-panel_2applet_8c.html#ac316779203e3fad21cb97a018a14030b":[35,0,0,22,2,2,1],
+"mate-panel_2mate-panel_2applet_8c.html#ac7b900ec64ca6f6b643a0a0bebea12c3":[35,0,0,22,2,2,2],
+"mate-panel_2mate-panel_2applet_8c.html#acef43fb89a54d1a7141b50d93ebd0eb2":[35,0,0,22,2,2,9],
 "mate-panel_2mate-panel_2applet_8c.html#adbd874f52ec28ba557729d3c45e1ee60":[35,0,0,22,2,2,12],
 "mate-panel_2mate-panel_2applet_8c.html#ae12cdc04aa9177fc94d31d7c8e34d96c":[35,0,0,22,2,2,20],
 "mate-panel_2mate-panel_2applet_8c.html#ae34e1dd74bcb558f485220fa091bab8c":[35,0,0,22,2,2,21],
@@ -240,14 +249,5 @@ var NAVTREEINDEX107 =
 "mate-propertybox_8c_source.html":[35,0,0,9,2,68],
 "mate-propertybox_8h.html":[35,0,0,9,2,69],
 "mate-propertybox_8h.html#a382f2f8aa14a962ee36d4a9e6c97c532":[35,0,0,9,2,69,6],
-"mate-propertybox_8h.html#a4164e8b294e9ad1504a7b4bfd0476608":[35,0,0,9,2,69,2],
-"mate-propertybox_8h.html#a63dee0182dc8c9f2fd4519b0e4a59993":[35,0,0,9,2,69,10],
-"mate-propertybox_8h.html#a797ee00bdea4e0b6e893f22b48868fa5":[35,0,0,9,2,69,16],
-"mate-propertybox_8h.html#a815012eedbdbd45a2f1213a98c515ca9":[35,0,0,9,2,69,14],
-"mate-propertybox_8h.html#a89aac9e315c1eec03bf7ee99be1636d8":[35,0,0,9,2,69,4],
-"mate-propertybox_8h.html#a8a443bfe616b914407c1a3c19ec77801":[35,0,0,9,2,69,13],
-"mate-propertybox_8h.html#ab34acd821c2a3f4d499179f9c4fe45a4":[35,0,0,9,2,69,5],
-"mate-propertybox_8h.html#ab71e05007b39318ba224f0004dd2825f":[35,0,0,9,2,69,12],
-"mate-propertybox_8h.html#abbd2de73ef8f603cc9416e14d15ccdc5":[35,0,0,9,2,69,7],
-"mate-propertybox_8h.html#abffc497f6f27de16c0c36fefeb278c83":[35,0,0,9,2,69,15]
+"mate-propertybox_8h.html#a4164e8b294e9ad1504a7b4bfd0476608":[35,0,0,9,2,69,2]
 };

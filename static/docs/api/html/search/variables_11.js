@@ -21,7 +21,7 @@ var searchData=
   ['query_5feditor_18',['query_editor',['../structCajaWindowSlot.html#a97cd412c0bc31672c740b377a471ec63',1,'CajaWindowSlot']]],
   ['query_5fend_5fsession_19',['query_end_session',['../structGpmSessionClass.html#a27bdeb5150789b73b63ef5aab5ea18c7',1,'GpmSessionClass']]],
   ['queued_5fsettings_20',['queued_settings',['../struct__PanelToplevel.html#a3ea76bf560128d5949b5c94d5efed82a',1,'_PanelToplevel']]],
-  ['quit_21',['quit',['../struct__EggSMClientClass.html#a565fbda8a0c41ac037ac7355f5083b86',1,'_EggSMClientClass::quit'],['../structMathWindowClass.html#a50d1b6c8f198c73d436c0526c6fb35eb',1,'MathWindowClass::quit'],['../structGSListenerClass.html#a5dcb06add1f8c483f86c70bd9ffd0668',1,'GSListenerClass::quit']]],
+  ['quit_21',['quit',['../struct__EggSMClientClass.html#a565fbda8a0c41ac037ac7355f5083b86',1,'_EggSMClientClass::quit'],['../structGSListenerClass.html#a5dcb06add1f8c483f86c70bd9ffd0668',1,'GSListenerClass::quit']]],
   ['quit_5faction_5fgroup_22',['quit_action_group',['../struct__PlumaWindowPrivate.html#a301e556d67e66783621abb836a62c492',1,'_PlumaWindowPrivate']]],
   ['quit_5fcancelled_23',['quit_cancelled',['../struct__EggSMClientClass.html#a1ecc083820403a2a74fc9908d4b7fd81',1,'_EggSMClientClass']]],
   ['quit_5frequested_24',['quit_requested',['../struct__EggSMClientClass.html#ad4bf39b64c1b2895a12cc7ecc059415d',1,'_EggSMClientClass']]]

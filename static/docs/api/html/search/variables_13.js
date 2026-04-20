@@ -422,7 +422,7 @@ var searchData=
   ['strategy_419',['strategy',['../struct__GdictWindow.html#a35fb084152694d6555474acc6a51c00e',1,'_GdictWindow']]],
   ['strategy_5factivated_420',['strategy_activated',['../struct__GdictStrategyChooserClass.html#ad1dcc3a295155d2d4ef5783a352b9748',1,'_GdictStrategyChooserClass']]],
   ['strategy_5ffound_421',['strategy_found',['../struct__GdictContextIface.html#ac6fca78550e78219760fa5737125e9b1',1,'_GdictContextIface']]],
-  ['strattype_422',['StratType',['../gdict-strategy-chooser_8c.html#ab5ee7b56f5e25de3a49c6da4a2c7c231',1,'gdict-strategy-chooser.c']]],
+  ['strattype_422',['StratType',['../gdict-strategy-chooser_8c.html#a3cc1d3822f74774a02a8bd02dc4b64ac',1,'gdict-strategy-chooser.c']]],
   ['stream_423',['stream',['../structPreLexerState.html#a65f6d0dc32f280647c8a3144f8bec5a1',1,'PreLexerState::stream'],['../struct__FrCommandUnarchiver.html#a4d29a25b663d788e5bd26cb9fbb5b793',1,'_FrCommandUnarchiver::stream']]],
   ['stream_5fadded_424',['stream_added',['../struct__MateMixerDeviceClass.html#a235058552df7359e749fb2a9eff76666',1,'_MateMixerDeviceClass::stream_added'],['../struct__MateMixerContextClass.html#a3b45d2498accb56a8fef75aceba16dc0',1,'_MateMixerContextClass::stream_added'],['../struct__MateMixerBackendClass.html#a6adee1de3322a69a4af7ce9140f957f3',1,'_MateMixerBackendClass::stream_added']]],
   ['stream_5fremoved_425',['stream_removed',['../struct__MateMixerDeviceClass.html#a5b6df693162e84f96a4d8bdf8bc62dc0',1,'_MateMixerDeviceClass::stream_removed'],['../struct__MateMixerContextClass.html#a6fcead369bae57cc72a593e64d66b043',1,'_MateMixerContextClass::stream_removed'],['../struct__MateMixerBackendClass.html#a46259527ea12bffd897192b1e8d19543',1,'_MateMixerBackendClass::stream_removed']]],

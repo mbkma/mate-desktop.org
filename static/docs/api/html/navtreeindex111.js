@@ -1,5 +1,14 @@
 var NAVTREEINDEX111 =
 {
+"mate-settings-plugin-info_8h_source.html":[35,0,0,28,0,8],
+"mate-settings-plugin_8c.html":[35,0,0,28,0,9],
+"mate-settings-plugin_8c.html#a00650ee886e4770c014a6faafec5ff67":[35,0,0,28,0,9,0],
+"mate-settings-plugin_8c.html#ab004f810a914c9221d871ae8d6df611a":[35,0,0,28,0,9,1],
+"mate-settings-plugin_8c_source.html":[35,0,0,28,0,9],
+"mate-settings-plugin_8h.html":[35,0,0,28,0,10],
+"mate-settings-plugin_8h.html#a00650ee886e4770c014a6faafec5ff67":[35,0,0,28,0,10,10],
+"mate-settings-plugin_8h.html#a05cdeb2030fc6ce404defb7128509d64":[35,0,0,28,0,10,5],
+"mate-settings-plugin_8h.html#a183009cebb36c1f3ef93dcb43c4a3b85":[35,0,0,28,0,10,4],
 "mate-settings-plugin_8h.html#a2daa3fd4a39e7a02974222cdf8b49881":[35,0,0,28,0,10,12],
 "mate-settings-plugin_8h.html#a5b16cf9e5d2810beee4e47a9b7ac60ba":[35,0,0,28,0,10,9],
 "mate-settings-plugin_8h.html#a7af7d71582e0b93d7dfc6e24603a9619":[35,0,0,28,0,10,6],
@@ -240,14 +249,5 @@ var NAVTREEINDEX111 =
 "mate-system-monitor_2src_2callbacks_8h.html#ace4bb8c2fa4ba7b96bf03b920c13366c":[35,0,0,29,0,3,23],
 "mate-system-monitor_2src_2callbacks_8h.html#ad0da186af2e2c8ed7bc935cc8899d05a":[35,0,0,29,0,3,12],
 "mate-system-monitor_2src_2callbacks_8h.html#ae7726f5efdafeb3c1fa08de90451d671":[35,0,0,29,0,3,16],
-"mate-system-monitor_2src_2callbacks_8h.html#aea6b9d53f526a19226d57644dea9a805":[35,0,0,29,0,3,11],
-"mate-system-monitor_2src_2callbacks_8h.html#af4ee012a61764f03a68a29737a58c1a1":[35,0,0,29,0,3,18],
-"mate-system-monitor_2src_2callbacks_8h.html#af8d5eee00ea5c1d25d2ea94ddf329584":[35,0,0,29,0,3,1],
-"mate-system-monitor_2src_2callbacks_8h.html#afaf4068cdcd2d5a48e614195c39015ac":[35,0,0,29,0,3,3],
-"mate-system-monitor_2src_2callbacks_8h_source.html":[35,0,0,29,0,3],
-"mate-system-monitor_2src_2load-graph_8h.html":[35,0,0,29,0,16],
-"mate-system-monitor_2src_2load-graph_8h.html#a29320a4a1071fff49549f71225fb6b06":[35,0,0,29,0,16,5],
-"mate-system-monitor_2src_2load-graph_8h.html#a391decc7c8af073e495f458f6bef2237":[35,0,0,29,0,16,6],
-"mate-system-monitor_2src_2load-graph_8h.html#a4f084e4b33b2a44714cbfda9186d44f5":[35,0,0,29,0,16,2],
-"mate-system-monitor_2src_2load-graph_8h.html#a5e7b13ae6471a714f22f2a797a3167a3":[35,0,0,29,0,16,7]
+"mate-system-monitor_2src_2callbacks_8h.html#aea6b9d53f526a19226d57644dea9a805":[35,0,0,29,0,3,11]
 };

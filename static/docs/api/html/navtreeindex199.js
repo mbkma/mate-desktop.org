@@ -1,5 +1,13 @@
 var NAVTREEINDEX199 =
 {
+"struct__MetaWindow.html#afdffbcaf274aa0b47e687b6a61eaeaf7":[34,0,724,125],
+"struct__MetaWindowMenu.html":[34,0,725],
+"struct__MetaWindowMenu.html#a49d3a07994315bbfc3091e84282f4d78":[34,0,725,0],
+"struct__MetaWindowMenu.html#a6df00084a4858cf1805d067b8fad7a43":[34,0,725,4],
+"struct__MetaWindowMenu.html#a7a2af667a9a6b98c3ef9d40d4374fec4":[34,0,725,3],
+"struct__MetaWindowMenu.html#ab2b588c799f4f57b94fce0c32536a027":[34,0,725,2],
+"struct__MetaWindowMenu.html#adba59436cebba8605b72c53684b3e5d2":[34,0,725,6],
+"struct__MetaWindowMenu.html#ae68cfce1a463c1a08e55352269c33581":[34,0,725,1],
 "struct__MetaWindowMenu.html#aff7c0de7c353031c0ecce862bfafeeba":[34,0,725,5],
 "struct__MetaWindowSessionInfo.html":[34,0,726],
 "struct__MetaWindowSessionInfo.html#a1428f645650c6d056f587f95efec2215":[34,0,726,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX199 =
 "struct__PanelDItemEditorClass.html":[34,0,777],
 "struct__PanelDItemEditorClass.html#a05bbeed8aaa8a2becddc91afc7745f75":[34,0,777,4],
 "struct__PanelDItemEditorClass.html#a5cf31a0de26085716c06962e452011ea":[34,0,777,0],
-"struct__PanelDItemEditorClass.html#a6aff4d169c3489b9db73ec335b8f714c":[34,0,777,1],
-"struct__PanelDItemEditorClass.html#a83618cc42909ca7b8abf1e5ab92b0e06":[34,0,777,5],
-"struct__PanelDItemEditorClass.html#a8d9484be36027e750406b3fb195c582a":[34,0,777,3],
-"struct__PanelDItemEditorClass.html#ac26ecdcd711c9041a0215d55b3f9f7ff":[34,0,777,7],
-"struct__PanelDItemEditorClass.html#ae4b9f049538520862a2bb5bed7405a19":[34,0,777,2],
-"struct__PanelDItemEditorClass.html#aef81600680a78b31897665a56f04e713":[34,0,777,6],
-"struct__PanelData.html":[34,0,773],
-"struct__PanelData.html#a34c2f2aabd95b03d629d67ad271f3abc":[34,0,773,0],
-"struct__PanelData.html#a520697009723d234cf5989dc7dbcca0a":[34,0,773,1]
+"struct__PanelDItemEditorClass.html#a6aff4d169c3489b9db73ec335b8f714c":[34,0,777,1]
 };

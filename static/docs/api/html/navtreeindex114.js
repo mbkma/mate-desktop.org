@@ -1,5 +1,14 @@
 var NAVTREEINDEX114 =
 {
+"matekbd-desktop-config_8c.html#a15fde6481829df9ba3636d52f86f8c39":[35,0,0,7,0,1,10],
+"matekbd-desktop-config_8c.html#a2c724d7210b68441081f34a7d3b2713f":[35,0,0,7,0,1,9],
+"matekbd-desktop-config_8c.html#a2fafe32965b3a545c0a9a4803fe4638c":[35,0,0,7,0,1,5],
+"matekbd-desktop-config_8c.html#a41bd286e626c7e7193f6350d562f43bc":[35,0,0,7,0,1,6],
+"matekbd-desktop-config_8c.html#a46b71fa031dabe89bbe9f651436faeb1":[35,0,0,7,0,1,7],
+"matekbd-desktop-config_8c.html#a46d06f2cb6584feec9e32ec8dfa923fe":[35,0,0,7,0,1,1],
+"matekbd-desktop-config_8c.html#a658b676914418d9418d60961319b2ea7":[35,0,0,7,0,1,16],
+"matekbd-desktop-config_8c.html#a6d756d05fadba95f477f25006d1fec96":[35,0,0,7,0,1,0],
+"matekbd-desktop-config_8c.html#a8e84604ddb972252be5c0b24716c386e":[35,0,0,7,0,1,13],
 "matekbd-desktop-config_8c.html#aad93119944764b7894700f1e70e494bd":[35,0,0,7,0,1,11],
 "matekbd-desktop-config_8c.html#ab05841f2bfb4595c29b059a0a9ea7199":[35,0,0,7,0,1,12],
 "matekbd-desktop-config_8c.html#ac4870e306a39a63d691bee50df4594cf":[35,0,0,7,0,1,15],
@@ -240,14 +249,5 @@ var NAVTREEINDEX114 =
 "matekbd-status_8h.html#a6290fbeeece3d2d7776777c6f73c86b8":[35,0,0,7,0,12,7],
 "matekbd-status_8h.html#a84a566ddfbee083f3bbf85dd9a125c3c":[35,0,0,7,0,12,13],
 "matekbd-status_8h.html#a9541c815975bb6be4fdcec620596629f":[35,0,0,7,0,12,10],
-"matekbd-status_8h.html#a982f82bc98f3633b93e4cf7f177e3ae1":[35,0,0,7,0,12,4],
-"matekbd-status_8h.html#ab0598d8ecd26fd1e884a9849d4caef0a":[35,0,0,7,0,12,9],
-"matekbd-status_8h.html#ab4c2fee79ee9a8299543f4ebee9161aa":[35,0,0,7,0,12,16],
-"matekbd-status_8h.html#ab6610d90c198a6cf37b102109e23ba02":[35,0,0,7,0,12,11],
-"matekbd-status_8h.html#acaa3d8afc7db0f5051d95a910f12ce55":[35,0,0,7,0,12,12],
-"matekbd-status_8h.html#acccce99449a18179d762c6f40094d6b5":[35,0,0,7,0,12,3],
-"matekbd-status_8h.html#adc3cb46ceeb6c8aa939c973cdc23eb05":[35,0,0,7,0,12,6],
-"matekbd-status_8h.html#afb51e86c4154e6bb244d524de89de825":[35,0,0,7,0,12,2],
-"matekbd-status_8h_source.html":[35,0,0,7,0,12],
-"matekbd-util_8c.html":[35,0,0,7,0,13]
+"matekbd-status_8h.html#a982f82bc98f3633b93e4cf7f177e3ae1":[35,0,0,7,0,12,4]
 };

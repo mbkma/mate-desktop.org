@@ -8,6 +8,8 @@ var dir_17d0cb3be60ba8238250adcbb2439e37 =
     [ "financial.h", "financial_8h.html", "financial_8h" ],
     [ "lexer.c", "lexer_8c.html", "lexer_8c" ],
     [ "lexer.h", "lexer_8h.html", "lexer_8h" ],
+    [ "mate-calc-application.c", "mate-calc-application_8c.html", "mate-calc-application_8c" ],
+    [ "mate-calc-application.h", "mate-calc-application_8h.html", "mate-calc-application_8h" ],
     [ "mate-calc-cmd.c", "mate-calc-cmd_8c.html", "mate-calc-cmd_8c" ],
     [ "mate-calc.c", "mate-calc_8c.html", "mate-calc_8c" ],
     [ "math-buttons.c", "math-buttons_8c.html", "math-buttons_8c" ],

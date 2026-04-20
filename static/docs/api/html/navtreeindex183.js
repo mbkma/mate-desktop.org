@@ -1,5 +1,13 @@
 var NAVTREEINDEX183 =
 {
+"struct__CajaDropbox.html#ae66768c70f7572dc9e2d34a609b574b8":[34,0,58,3],
+"struct__CajaDropbox.html#ae967314b6505050997ab125989bdc18c":[34,0,58,4],
+"struct__CajaDropboxClass.html":[34,0,59],
+"struct__CajaDropboxClass.html#a91ffcd4d25fd6e02f93524859bbc1654":[34,0,59,0],
+"struct__CajaFileConflictDialog.html":[34,0,60],
+"struct__CajaFileConflictDialog.html#a612cc4797d306135501a4612d61260a0":[34,0,60,0],
+"struct__CajaFileConflictDialog.html#a77ba02ac26f0266f2d244bc1653f79f1":[34,0,60,1],
+"struct__CajaFileConflictDialogClass.html":[34,0,61],
 "struct__CajaFileConflictDialogClass.html#a173c5c978c5eb79cd391369305ada7db":[34,0,61,0],
 "struct__CajaFileInfoIface.html":[34,0,62],
 "struct__CajaFileInfoIface.html#a01ce38135870f550d88c246c1178edaf":[34,0,62,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaPathBar.html#a4ec20f70a7b161161d662906a1a6ab90":[34,0,94,9],
 "struct__CajaPathBar.html#a60b24c1a2bc9dd0a98df1aaa65044585":[34,0,94,18],
 "struct__CajaPathBar.html#a730a73a526f5086aaa628de93b088850":[34,0,94,17],
-"struct__CajaPathBar.html#a734cb1c3e063d0950a149a88037847e8":[34,0,94,8],
-"struct__CajaPathBar.html#a8b29b58f4e2f31cd4542a9d2bd804f5e":[34,0,94,11],
-"struct__CajaPathBar.html#a946f135d1b2b3740f1c6961998f29844":[34,0,94,5],
-"struct__CajaPathBar.html#aa59af64a11b8ab817297218cdd02da65":[34,0,94,19],
-"struct__CajaPathBar.html#ab1e9f9372f44fae91f4412e8409a6121":[34,0,94,1],
-"struct__CajaPathBar.html#ab8da862cdc26cf3613ad4cced476a006":[34,0,94,13],
-"struct__CajaPathBar.html#ac247e8e45a8111a1d93ef02e6230f323":[34,0,94,16],
-"struct__CajaPathBar.html#ac6e2f427ca3eaa7acb468dc3d944e45c":[34,0,94,12],
-"struct__CajaPathBar.html#ad6aeb4b245947439e6088fc696c826c2":[34,0,94,15]
+"struct__CajaPathBar.html#a734cb1c3e063d0950a149a88037847e8":[34,0,94,8]
 };
