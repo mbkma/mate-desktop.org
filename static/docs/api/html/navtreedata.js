@@ -29,71 +29,77 @@ var NAVTREE =
     [ "#EvPage", "an.html", null ],
     [ "page index", "a.html", null ],
     [ "index for this mapping", "page.html", null ],
-    [ "Atril", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html", [
-      [ "Atril Requirements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md0", null ],
-      [ "Atril Optional Backend Libraries", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md1", null ],
-      [ "Atril Requirements to Run Tests", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md2", null ],
-      [ "Atril Compilation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md3", null ]
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html", [
+      [ "Atril", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md0", null ],
+      [ "Atril Requirements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md1", null ],
+      [ "Atril Optional Backend Libraries", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md2", null ],
+      [ "Atril Requirements to Run Tests", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md3", null ],
+      [ "Atril Compilation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2atril_2README.html#autotoc_md4", null ]
     ] ],
     [ "property page to display", "the.html", null ],
-    [ "Mate Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja-actions_2README.html", [
-      [ "Description", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja-actions_2README.html#autotoc_md4", null ]
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja_2README.html", null ],
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja-actions_2README.html", [
+      [ "Mate Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja-actions_2README.html#autotoc_md14", null ],
+      [ "Description", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja-actions_2README.html#autotoc_md15", null ]
     ] ],
     [ "EOM Plugin Development Guide", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html", [
-      [ "Quick Start", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md7", null ],
-      [ "Plugin Structure", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md8", [
-        [ "Basic Plugin Template", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md9", null ],
-        [ "Plugin Descriptor", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md10", null ],
-        [ "Build File", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md11", null ]
+      [ "Quick Start", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md18", null ],
+      [ "Plugin Structure", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md19", [
+        [ "Basic Plugin Template", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md20", null ],
+        [ "Plugin Descriptor", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md21", null ],
+        [ "Build File", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md22", null ]
       ] ],
-      [ "Common Tasks", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md12", [
-        [ "Adding a Menu Item", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md13", null ],
-        [ "Working with Images", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md14", null ],
-        [ "Responding to Events", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md15", null ]
+      [ "Common Tasks", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md23", [
+        [ "Adding a Menu Item", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md24", null ],
+        [ "Working with Images", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md25", null ],
+        [ "Responding to Events", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md26", null ]
       ] ],
-      [ "Key APIs", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md16", [
-        [ "EomWindow", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md17", null ],
-        [ "EomImage", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md18", null ]
+      [ "Key APIs", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md27", [
+        [ "EomWindow", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md28", null ],
+        [ "EomImage", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md29", null ]
       ] ],
-      [ "Building and Testing", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md19", null ],
-      [ "Built-in Examples", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md20", null ],
-      [ "Tips", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md21", null ],
-      [ "Complete Example", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md22", null ],
-      [ "Resources", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md23", null ],
-      [ "Next Steps", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md24", null ]
+      [ "Building and Testing", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md30", null ],
+      [ "Built-in Examples", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md31", null ],
+      [ "Tips", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md32", null ],
+      [ "Complete Example", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md33", null ],
+      [ "Resources", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md34", null ],
+      [ "Next Steps", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md35", null ]
     ] ],
     [ "page to be inserted.", "The.html", null ],
     [ "@back_page into the list of", "after.html", null ],
     [ "be prepended to the list.  Since #MateDruid is", "will.html", null ],
     [ "the end of the internal list.", "onto.html", null ],
     [ "already be in the druid.", "must.html", null ],
-    [ "Marco <a href=\"https://travis-ci.org/mate-desktop/marco\" ><img src=\"https://travis-ci.org/mate-desktop/marco.svg?branch=master\" alt=\"Build Status\"/></a>", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html", [
-      [ "COMPILING MARCO", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md25", null ],
-      [ "REPORTING BUGS AND SUBMITTING PATCHES", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md26", null ],
-      [ "SHRINKING MARCO", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md27", null ],
-      [ "MARCO FEATURES", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md28", null ],
-      [ "HOW TO ADD EXTERNAL FEATURES", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md29", null ],
-      [ "MARCO BUGS, NON-FEATURES, AND CAVEATS", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md30", null ],
-      [ "FAQ", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md31", null ]
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html", [
+      [ "Marco <a href=\"https://travis-ci.org/mate-desktop/marco\" ><img src=\"https://travis-ci.org/mate-desktop/marco.svg?branch=master\" alt=\"Build Status\"/></a>", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md36", null ],
+      [ "COMPILING MARCO", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md37", null ],
+      [ "REPORTING BUGS AND SUBMITTING PATCHES", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md38", null ],
+      [ "SHRINKING MARCO", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md39", null ],
+      [ "MARCO FEATURES", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md40", null ],
+      [ "HOW TO ADD EXTERNAL FEATURES", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md41", null ],
+      [ "MARCO BUGS, NON-FEATURES, AND CAVEATS", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md42", null ],
+      [ "FAQ", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md43", null ]
     ] ],
-    [ "MATE Calculator", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html", [
-      [ "General Information", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md33", null ],
-      [ "Calctool history", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md34", null ],
-      [ "Build/Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md35", null ],
-      [ "Acknowledgements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md36", null ]
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html", [
+      [ "MATE Calculator", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md44", [
+        [ "General Information", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md45", null ],
+        [ "Calctool history", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md46", null ],
+        [ "Build/Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md47", null ],
+        [ "Acknowledgements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md48", null ]
+      ] ]
     ] ],
     [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html", [
-      [ "Usage", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md38", [
-        [ "Command line usage", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md39", null ],
-        [ "Steps by Step", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md40", null ]
+      [ "Usage", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md50", [
+        [ "Command line usage", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md51", null ],
+        [ "Steps by Step", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md52", null ]
       ] ],
-      [ "Configuration file format", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md41", [
-        [ "Environmental variable", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md42", null ]
+      [ "Configuration file format", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md53", [
+        [ "Environmental variable", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md54", null ]
       ] ],
-      [ "Travis CI", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md43", [
-        [ "Start Travis CI", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md44", null ]
+      [ "Travis CI", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md55", [
+        [ "Start Travis CI", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md56", null ]
       ] ],
-      [ "Run docker-build on Travis CI", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md45", null ]
+      [ "Run docker-build on Travis CI", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md57", null ]
     ] ],
     [ "The wlr_foreign_toplevel_management_unstable_v1 protocol", "page_wlr_foreign_toplevel_management_unstable_v1.html", [
       [ "Interfaces", "page_wlr_foreign_toplevel_management_unstable_v1.html#page_ifaces_wlr_foreign_toplevel_management_unstable_v1", null ],
@@ -108,25 +114,26 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Baobab", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2baobab_2README.html", [
-      [ "What is Baobab", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2baobab_2README.html#autotoc_md46", null ],
-      [ "System Requirements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2baobab_2README.html#autotoc_md47", null ]
+      [ "What is Baobab", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2baobab_2README.html#autotoc_md58", null ],
+      [ "System Requirements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2baobab_2README.html#autotoc_md59", null ]
     ] ],
     [ "MATE Dictionary", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2mate-dictionary_2README.html", null ],
-    [ "mate-utils", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2README.html", [
-      [ "Requirements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2README.html#autotoc_md48", null ]
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2README.html", [
+      [ "mate-utils", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2README.html#autotoc_md60", null ],
+      [ "Requirements", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-utils_2README.html#autotoc_md61", null ]
     ] ],
     [ "🚀 MATE Wayland Session", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html", [
-      [ "📦 Building MATE-WAYLAND-SESSION", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md50", null ],
-      [ "🐞 Reporting Bugs and Submitting Patches", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md51", null ],
-      [ "📋 Details of MATE-WAYLAND-SESSION", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md52", [
-        [ "🛠 Configuration", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md53", null ],
-        [ "🔧 Setting Themes and Fonts", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md54", null ],
-        [ "📑 GSettings Override", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md55", null ],
-        [ "🎨 Window Decoration", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md56", null ],
-        [ "XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md57", null ]
+      [ "📦 Building MATE-WAYLAND-SESSION", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md63", null ],
+      [ "🐞 Reporting Bugs and Submitting Patches", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md64", null ],
+      [ "📋 Details of MATE-WAYLAND-SESSION", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md65", [
+        [ "🛠 Configuration", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md66", null ],
+        [ "🔧 Setting Themes and Fonts", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md67", null ],
+        [ "📑 GSettings Override", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md68", null ],
+        [ "🎨 Window Decoration", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md69", null ],
+        [ "XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md70", null ]
       ] ],
-      [ "📂 Wayfire Configuration Manager (WCM) Recommended", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md58", [
-        [ "Known issues", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md59", null ]
+      [ "📂 Wayfire Configuration Manager (WCM) Recommended", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md71", [
+        [ "Known issues", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md72", null ]
       ] ]
     ] ],
     [ "Document Statistics Plugin", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2docinfo_2README.html", null ],
@@ -138,16 +145,18 @@ var NAVTREE =
     [ "Tag List Plugin", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2taglist_2README.html", null ],
     [ "Insert Date/Time Plugin", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2time_2README.html", null ],
     [ "Save Without Trailing Spaces Plugin", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2trailsave_2README.html", null ],
-    [ "Pluma - The MATE text editor", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html", [
-      [ "General Information", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md70", null ],
-      [ "Build/Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md71", null ],
-      [ "Running Tests", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md72", null ],
-      [ "How to report bugs", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md73", null ],
-      [ "Patches", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md74", null ]
+    [ "README", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html", [
+      [ "Pluma - The MATE text editor", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md82", [
+        [ "General Information", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md83", null ],
+        [ "Build/Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md84", null ],
+        [ "Running Tests", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md85", null ],
+        [ "How to report bugs", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md86", null ],
+        [ "Patches", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2README.html#autotoc_md87", null ]
+      ] ]
     ] ],
     [ "pluma-plugins", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html", [
-      [ "General Information", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html#autotoc_md76", null ],
-      [ "Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html#autotoc_md77", null ]
+      [ "General Information", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html#autotoc_md89", null ],
+      [ "Installation", "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html#autotoc_md90", null ]
     ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespace Members", "namespacemembers.html", [
@@ -305,105 +314,105 @@ var NAVTREEINDEX =
 "mateweather-prefs_8h.html#a9ec9eee8f77d6da9902f641101af136f",
 "math-equation_8h.html#aa3e43cab6513642087c9f8e17b6c375f",
 "md5_8h_source.html",
-"mdvi_8h.html#a7b4b54c3be27e6c387ecf6f9b27625e7",
-"menu-monitor_8h.html#a99fb1258a86d93712b3b349698b4a21c",
-"mp_8h.html",
-"msd-background-plugin_8h_source.html",
-"msd-ldsm-dialog_8c.html#acc010ba5b5dc39c8b0b9c29fd21c1506",
-"msd-smartcard-manager_8c.html#a4e7c8198b3d9517aa3810c148359b9c9",
-"msd-xrandr-manager_8c.html#accf002c50d07fec7ddcaf35fde15c5e9",
-"na-core-utils_8c.html#ac48bef40d9635f439120e9dcf8e367b0",
-"na-host_8h.html",
-"na-iio-provider_8h.html#a72146d47ecea521b41b6f78c4a69e031a8aaaff7a829943dfc2ba2e1f4c1719c7",
-"na-object-action-factory_8c.html#a677b6205a71f79f9e43c379374415be2",
-"na-object-menu_8h.html#a24eabbdd01b6be5ca6b46fe848587603",
-"na-settings_8h.html#a8f35632da1e234e36576343e1a11f7bf",
-"netspeed_2src_2netspeed_8c.html#a612827705bda734434bacba893227446",
-"nl80211_8h.html#a1b394ff0f621e37deb5dcc5121adf8d7aaa91d7168aedc76341bb3ce0e8d10556",
-"nl80211_8h.html#a4028027ef1d384cd2912113b752969c1acb49cbda7b5351a04c0e1c7ef642ba98",
-"nl80211_8h.html#a78789f9b13299ccf8043c96fa716ce29a6f42453ced8677d5f8cc28178980af9e",
-"nl80211_8h.html#abfa276e8b83786a9c791f3665b0212e9",
-"nl80211_8h.html#ae0499ae54aad714e58a3c6a28b2a5c96a7caf3f3f25d3670aed8bd3171caa870a",
-"nl80211_8h.html#af9458e602a02c740c7c3f1a6e583712fa1be107965c8c4a48dd8d3d521e12ba82",
-"oss-stream-control_8h.html#aa2141d52e0c8a4f82f61a7d98f9402f0",
-"panel-applet-frame-dbus_8h_source.html",
-"panel-ditem-editor_8h.html#a1c2782665ca63da510c29dbaafdd1b70",
-"panel-list_8c.html#a24a97d51f619b902470abd8318b1f9a5",
-"panel-profile_8c.html#aed893ffd3e41e5a25444005d72461fed",
-"panel-show_8h.html#a50a3ec093619c581e4ad0d6a127aced2",
-"panel-util_8h.html#ac4d3526fc85ea610225861a0f62b82b4",
-"pk_8c.html#a90384ba63457988dbdfc0ded6ce56ddb",
-"pluma-commands-search_8c.html#a7d0f276ef9214e15b89932dc72782070",
-"pluma-document-saver_8h.html#afb300d14e7f3d480471b4bc43f7ee392",
-"pluma-encodings_8c.html#ae6d159792b369cbcc6e37a63f62794c2a9eb06007b1d17dfb0dc569a4f0d264ed",
-"pluma-file-browser-view_8c.html",
-"pluma-message-type_8c.html#a25ed643e7111da62cc44b783425e5b4f",
-"pluma-print-job_8c.html#ad93a667bda4a9aab28172133b5492c20",
-"pluma-settings_8h.html#ae279d08b9047c9a15d789b8d69519c97",
-"pluma-style-scheme-manager_8c.html#a58c997163382d66e932fb97df982bbcd",
-"pluma-utils_8h.html#a138fa8df40459ab335f2b06f116ffda4",
-"plumatextregion_8h.html#a951906639deed349dadb02178098b8cc",
-"prefs_8c.html#a9a3d64aef89897edcaf12b2063fb5119",
-"prelexer_8h.html#a840520129dd7f87f289c617c26d6c88fa6f6b49afa37488c1b026c68e01784000",
-"pulse-connection_8c.html#af8fcc3e882b9d1d7356a570fbe3a7711",
-"pulse-sink-input_8h.html#a788568095b9beabc8696502cd6c2160b",
-"rfkill_8h.html#aa3ba7f385a92765ef103ad3432eedb28a5d4872df7c416db0bd0924c11ed60622",
-"scrollarea_8c.html#af23901ed48a69452757d6b4450161b02",
-"server_8c.html#a0ddf1224851353fc92bfbff6f499fa97",
-"sn-dbus-menu_8h.html#a8d7e8d10f753102b9f4a57274bc92560",
-"src_2gpm-common_8h.html#ad57134bc6afcea953e78ea90c4a97a1d",
-"structAppearanceData.html#a4c8703cbc8cc4b7ae507e752f817e17e",
-"structCactMenubar.html",
-"structCajaHistorySidebar.html#a83b810b04954199017b05702894b0a67",
-"structCajaSearchEngineClass.html",
-"structDetailedTiming.html#a45c3ed60123e5af89a22cef59337662a",
-"structEvPrintRange.html#af2a6e382ce7f6d4e4a581b266029859e",
-"structFrMimeTypeDescription.html",
-"structGpmPrefsClass.html#a8c5c3408eb7e26cc3703c1adefc88f85",
-"structMateSettingsPluginInfo.html",
-"structMsdDatetimeMechanism.html#abdc616907ac6e8dc55faef8608dd441a",
-"structNAIFactoryProviderInterface.html#a6ba8211041688814ae5b892fa397e872",
-"structPrefsDialog.html#aa5405d98e4498fdf80e8319a36979156",
-"structThemedIcon.html",
-"struct__AutoScaler.html#a5892b39e6fc9e37293aa20b964db69a9",
-"struct__CajaDropbox.html#ae66768c70f7572dc9e2d34a609b574b8",
-"struct__CajaPathBar.html#a8b29b58f4e2f31cd4542a9d2bd804f5e",
-"struct__CalendarWindow.html#a099f6b619722471be350e52cebb2e1f9",
-"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3",
-"struct__EomFullscreenPlugin.html",
-"struct__EvAsyncRendererInterface.html#a742af09c16996574c8e380508ad268e4",
-"struct__EvJobExportClass.html",
-"struct__EvView.html#a407b1ff1a500bd9d008fc2e4723461c9",
-"struct__FrCommandTar.html#a75542f2b4ff5f749b9c1e0f01f5dcf98",
-"struct__GdictSourceChooser.html#a0ee9e8f239325a6c07246f45c0865d9c",
-"struct__LogviewFilterManagerClass.html#a355a9f673a2b3ef8bfc7d95640da67c4",
-"struct__MateDruidPageEdge.html#a9caeb2a1a24bed5b6c53cdb34b02be7a",
-"struct__MateMixerStoredControl.html#a88961bca9af710866687bcc4da2e05f8",
-"struct__MateWeatherPrefs.html#aab2dd000028ca90b222da46649f3b0bb",
-"struct__MetaDisplay.html#abc816f1245d3453697c5e4cef3ec8543",
-"struct__MetaPreview.html#ad5057002f4bcc8162a71917379436374",
-"struct__MetaWindow.html#afdffbcaf274aa0b47e687b6a61eaeaf7",
-"struct__PanelDItemEditorClass.html#a83618cc42909ca7b8abf1e5ab92b0e06",
-"struct__PlumaNotebookClass.html#a7d79c33581f0669c9009f6b1dd8961c7",
-"struct__ProgressData.html#a9fc63772017719bd3a1b06f56e22f1a5",
-"struct__TerminalScreenContainer.html",
-"structjpeg__d__coef__controller.html#ab4b18cfac761c7186363a845e36f342c",
-"structzlib__filefunc64__def__s.html#a5f6d2267b03488a9edc3fdd9a2da0c2f",
-"terminal-accels_8c.html#a9861c0005f9e4eeacfff828700634c9e",
-"terminal-profile_8c.html#a2d4e5e11fafb6a0ecf377da1da02eedd",
-"terminal-screen_8c.html#ad318bbf43cb9182d165e8ce8691a1583",
-"terminal-window_8h.html#aec696570681cb4b498bf0e6840730b00",
-"test-virtuals-without-test_8c.html#a4f3d8ddb1621ba451ffab6c6a5dcc52d",
-"theme-util_8c.html#a1b22d2e547ecbfdcef3c4f5ade036ec5",
-"theme_8h.html#aeec3d8502edc8540d4bebb8b762937b0",
-"time-zones_8h.html#a09a90faa77de9a49337c09645e2ba867",
-"time-zones_8h.html#a95af3c9337c5e444aa546e901b3f0502",
-"transupp-8a_8h.html#a1133cd2487f1134aed16868dc1f04315a6f2b9779602ffd890b0ef0b0fc997af7",
-"unzip_8c.html#a65deebb4ecb3ba110c343c21a4cd9a75",
-"weather-priv_8h.html#ac6769e31dbed2515db42b56a231f0daa",
-"window-list_8c.html",
-"window_8c.html#a65bfe5c37a84f93380b9d05e28eeef8e",
-"xprops_8h.html#a553ba677a51dfded832c8f46e8f07937"
+"mdvi_8h.html#a6eacc17388f1b10ed7b27c77f76bb2fd",
+"menu-monitor_8h.html#a0b954efebeedeb20252c8ad066d0b41f",
+"mp_8c.html#af21b9bb6c0802e4266acb48b97e7424b",
+"msd-background-plugin_8h.html#a80e7b086cad5178d61c4f7d8c5fe52d8",
+"msd-keygrab_8h.html#ac115434655f029103d98dcdf6aa0afd8",
+"msd-rfkill-plugin_8h.html#ae9af4b34690b7143adcee6bfe37f8e60",
+"msd-xrandr-manager_8c.html#a82a472631e1a1cc300ffe026a42321ba",
+"na-core-utils_8c.html#aac19c21241d587cc9e15c19c6a5a1db5",
+"na-gtk-utils_8h_source.html",
+"na-iio-provider_8h.html#a72146d47ecea521b41b6f78c4a69e031a369e9f9a7fe27f2125c2e8f2e82d8921",
+"na-module_8h.html#abb73639bb084e646989c15f2bf535155",
+"na-object-menu_8c.html#a24eabbdd01b6be5ca6b46fe848587603",
+"na-settings_8h.html#a73c4a4278f707cc2635a20e341b6f1bd",
+"netspeed-preferences_8h.html",
+"nl80211_8h.html#a1b394ff0f621e37deb5dcc5121adf8d7a9e7a0f351ae43a6b3e91bc058c51ee4c",
+"nl80211_8h.html#a4028027ef1d384cd2912113b752969c1a686007b5dcc1056d231960d10641c373",
+"nl80211_8h.html#a733516986d237fb0c5d09263517ba10caa0d445085cdb080c0c614f7397581201",
+"nl80211_8h.html#abcde53441c302a9bb9e92eeefed86933a867c25c1cc511c7d8aa378d54db8626a",
+"nl80211_8h.html#ae0499ae54aad714e58a3c6a28b2a5c96a7960c4620beff6267bc51b4a8a3bc4c7",
+"nl80211_8h.html#af8c47d2dcd0950f3930d5b74d411af83ab41b8a01dc76c68f0292d5a7d3877e67",
+"oss-stream-control_8h.html",
+"panel-applet-frame-dbus_8h.html#a581edad644dcd9a7bc0ef6e0ee2a5dc9",
+"panel-ditem-editor_8c.html#adb29690b704f9a3f0070405fd6411b02",
+"panel-layout_8c.html#a59ad01704f8b88ba9fac520818f2b921",
+"panel-profile_8c.html#acaad60b254fabfaa04f70e7dc2a34abb",
+"panel-shell_8h_source.html",
+"panel-util_8h.html#aaa14537f2ada506b7e95e24e34a1326a",
+"pk_8c.html",
+"pluma-commands-search_8c.html",
+"pluma-document-saver_8h.html#a81054df9018e7ef9a634414d1c3e31b1",
+"pluma-encodings_8c.html#ae6d159792b369cbcc6e37a63f62794c2a8d7b6df8917fd1010fdf006211e7fd79",
+"pluma-file-browser-utils_8h.html#a0549b80053b21fe288fad054bda8df58",
+"pluma-message-bus_8h.html#afa13e8457cb17ec3580e1d59c9c84c7a",
+"pluma-print-job_8c.html",
+"pluma-settings_8h.html#acc23c517686e474e0f1094775b859a19",
+"pluma-statusbar_8h.html#ae64e75a2bb4a17cc3087aa4bf1e4aadb",
+"pluma-utils_8c.html#afc46d9b321c783fba1bdf7e0fd5f95a2",
+"plumatextregion_8h.html#a110c926d78ea383d22f9c3050d159b61",
+"prefs_8c.html#a8c7fb3da65756c716dfaaceb8bb9522a",
+"prelexer_8h.html#a840520129dd7f87f289c617c26d6c88fa4317889bed41bd6743e04437ac342cac",
+"pulse-connection_8c.html#ad7b293babaa4ac8989c53207e6511dd2",
+"pulse-sink-input_8h.html#a11c74b58e2027a15746af710a2ed366f",
+"rfkill_8h.html#a7818169a1138abf56fd8aa72e3b9a578",
+"scrollarea_8c.html#aa4af9806f55d17f5e61d3af631bcade1",
+"sensors-applet_8h.html#ad8a470f4018bc3c13e3292cb3651757da690d4b56adf17ce92586cb86eea5470d",
+"sn-dbus-menu-item_8h_source.html",
+"src_2gpm-common_8h.html#abfeb9a86296e16f3838dffe6c6588a46a3554493f7b55b2dfda8800f285410dac",
+"structAppearanceData.html#a2db4742a4703f2e14bb734c396dc1d8d",
+"structCactIconChooserClass.html#a42647cfb2e46200a1d970d717d02373e",
+"structCajaFileOperation.html#ad8c8a1ae6059400f7c7465999cefbac3",
+"structCajaSearchEngine.html",
+"structDetailedTiming.html#a00a010bd94ca8a3a621ec0981298508e",
+"structEvFileExporterContext.html#a774da833811579726268947451c708d6",
+"structFrExtensionType.html",
+"structGpmPointObj.html#a772092386e5df1af083299b1ee01ad16",
+"structMateSettingsManagerClass.html#a836bdf410e01a39be9f2bf29cd137b56",
+"structMsdClipboardPlugin.html",
+"structNAIFactoryProviderInterface.html",
+"structPrefsDialog.html#a86bbf37f24c950a55072f206d50e2142",
+"structTestDerivedClass.html#aa4a2d98bd7ddf110a55395eb7b351596",
+"struct__AppletSizeHintsAlloc.html#a4843c1f35a91bda4e7ae451018294e38",
+"struct__CajaDirectoryPrivate.html#ae00f23a64482ac6c89220608d00cd45a",
+"struct__CajaPathBar.html#a38f814ca241652b037646161c83934d7",
+"struct__CalendarSources.html#a79d4ce6c826768ee9a8dd62d197f4f41",
+"struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579",
+"struct__EomCloseConfirmationDialogClass.html",
+"struct__EphyZoomControl.html",
+"struct__EvJobClass.html#a348d4140d36e2a9fe78ed306b7057472",
+"struct__EvView.html#a28964bdcfec0753d509c785a83b826b0",
+"struct__FrCommandRpm.html#abeaacc58a95ac4da8e94ecadb8d63423",
+"struct__GdictSidebarClass.html#ae8802b7c1d30f3237118b2f3b09913e5",
+"struct__LogviewFilter.html#ab275e05bed17028e7bd8e08fe065744b",
+"struct__MateDruidPageEdge.html#a0d0fb6c838621360821fbf19af880b03",
+"struct__MateMixerDeviceSwitch.html",
+"struct__MateWeatherPrefs.html#a186aa5228d7e5c596804bff1459987e8",
+"struct__MetaDisplay.html#aa6a79d102b7991313de0a7fcb7e764a8",
+"struct__MetaPreview.html#a53ecb21793466a3d3255b9529ecc1afc",
+"struct__MetaWindow.html#aee106e6c3ec100d0d8eb679122ef1e9b",
+"struct__PanelDItemEditor.html",
+"struct__PlumaModelinePluginClass.html",
+"struct__ProgressData.html#a733f10b529df36599a51301f5e3580ac",
+"struct__TerminalScreen.html#ac2b48d760d440b9af013eaab45e55d82",
+"structjpeg__comp__master.html#aac35b3d9e718376d1aacdde9df32e75d",
+"structzlib__filefunc64__32__def__s.html#a2c6e18405ec9c8b2d482055e9bf06766",
+"terminal-accels_8c.html#a74f8378733b4ea24c99a2bfe35fface5",
+"terminal-profile_8c.html#a0d70155a12cd35b728fa0feab4462c60",
+"terminal-screen_8c.html#ab9af027789cc970040e7ad557b8cb230",
+"terminal-window_8h.html#ab4d5554076c4354aa4bbc1c39533f965",
+"test-virtuals-without-test_8c.html#a0952495cf81374bbda4076c8a8971537",
+"theme-thumbnail_8h.html#a93ba72fdaa4a590401fc9dfac33920b2",
+"theme_8h.html#ae968e668ce147fc87383cac28427fc29a6541d40b05c178ebc1916733662205a4",
+"time-zones_8h.html#a0610e44b43a5f17ea793b1b36b290db0",
+"time-zones_8h.html#a90b87fa6e46b9d6415aba0787a662c40",
+"transupp-8a_8c.html#a93d32abadf28d2c8332e842e5c71add5",
+"unzip_8c.html#a5881cddc4d4941ff604508ee4a564c25",
+"weather-priv_8h.html#a9f840195797463187237f548de22b112",
+"weather_8h.html#af444f27c26700ab34b8cd3be4cc27020",
+"window_8c.html#a592d5c7a86ea52869cd425e26dc55d30",
+"xprops_8h.html#a2a3604e2a559dca253ddb834a2e88173"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

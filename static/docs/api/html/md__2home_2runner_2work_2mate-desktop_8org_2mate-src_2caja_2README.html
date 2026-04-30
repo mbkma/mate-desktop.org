@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MATE Desktop Environment: File Browser Pane Plugin</title>
+<title>MATE Desktop Environment: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2filebrowser_2README.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja_2README.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -90,10 +90,56 @@ $(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">File Browser Pane Plugin</div></div>
+  <div class="headertitle"><div class="title">README</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md74"></a> The File Browser Pane plugin shows your files and folders in the side pane, allowing you to quickly open files. To know more, see the <b>Plugins</b> section of the pluma user manual. </p>
+<div class="textblock"><p><a href="https://translate.fedoraproject.org/engage/mate-desktop/"><img src="https://translate.fedoraproject.org/widget/mate-desktop/svg-badge.svg" alt="Translation status" style="pointer-events: none;" class="inline"/></a></p>
+<p><a href="https://github.com/mate-desktop/caja/actions/workflows/builds.yml"><img src="https://github.com/mate-desktop/caja/actions/workflows/builds.yml/badge.svg?branch=master" alt="Build Status" style="pointer-events: none;" class="inline"/></a> <a href="https://github.com/mate-desktop/caja/releases"><img src="https://img.shields.io/github/v/release/mate-desktop/caja" alt="Release" class="inline"/></a> <a href="https://webchat.freenode.net/?channels=mate">![IRC Network](https://img.shields.io/badge/irc-freenode-blue.svg "IRC Freenode")</a></p>
+<h1 align="center"><img src="https://github.com/mate-desktop/mate-icon-theme/raw/master/mate/256x256/apps/system-file-manager.png" alt="Caja" width="128" height="128" class="inline"/> <br  />
+ Caja </h1>
+<p align="center"></p>
+<p><b>The file manager for the MATE desktop</b></p>
+<div align="center"><img src="https://mate-desktop.org/gallery/1.24/english/007.png" alt="Caja Screenshot" class="inline"/></div><h2><a class="anchor" id="autotoc_md5"></a>
+Installation</h2>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Ubuntu</h3>
+<div class="fragment"><div class="line">sudo apt install caja</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+Fedora</h3>
+<div class="fragment"><div class="line">sudo dnf install caja</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
+Building</h2>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Source</h3>
+<p>You'll need the following dependencies:</p>
+<ul>
+<li><code>exempi</code></li>
+<li><code>gobject-introspection</code></li>
+<li><code>libnotify</code></li>
+<li><code>libexif</code></li>
+<li><code>gvfs</code></li>
+<li><code>mate-common</code></li>
+<li><code>mate-desktop</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Building</h3>
+<div class="fragment"><div class="line">git clone --recurse-submodules https://github.com/mate-desktop/caja.git</div>
+<div class="line">cd caja</div>
+<div class="line">./autogen.sh --prefix=/usr</div>
+<div class="line">make</div>
+<div class="line">make install</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+Hacking on Caja</h2>
+<p>Please see the HACKING file for information about hacking on caja.</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+How to report bugs / errors in translations</h2>
+<p>Bugs should be reported in GitHub</p>
+<p><a href="https://github.com/mate-desktop/caja/issues">https://github.com/mate-desktop/caja/issues</a></p>
+<p>We are using transifex for translations. <a href="https://www.transifex.com/mate/MATE/dashboard/">https://www.transifex.com/mate/MATE/dashboard/</a></p>
+<p>Please create an account, become a member of your language team and fix it there.</p>
+<h2><a class="anchor" id="autotoc_md13"></a>
+Package status</h2>
+<p><a href="https://repology.org/project/caja/versions"><img src="https://repology.org/badge/vertical-allrepos/caja.svg" alt="Packaging status" style="pointer-events: none;" class="inline"/></a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

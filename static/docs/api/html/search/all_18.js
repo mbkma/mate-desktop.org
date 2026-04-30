@@ -115,7 +115,7 @@ var searchData=
   ['xscreen_112',['xscreen',['../struct__MetaScreen.html#a2100d711eeff2a80bba5396d321e6555',1,'_MetaScreen::xscreen'],['../structMateRRScreenPrivate.html#a42dd54281ed00ab2d95a57cdef7a10b5',1,'MateRRScreenPrivate::xscreen']]],
   ['xserver_5ftime_5fis_5fbefore_113',['XSERVER_TIME_IS_BEFORE',['../display-private_8h.html#abae371093d3799951edfc31ccad617f3',1,'display-private.h']]],
   ['xserver_5ftime_5fis_5fbefore_5fassuming_5freal_5ftimestamps_114',['XSERVER_TIME_IS_BEFORE_ASSUMING_REAL_TIMESTAMPS',['../display-private_8h.html#a873815d10ffed6f4f4e454029eda3c5e',1,'display-private.h']]],
-  ['xsettings_20manager_20still_20used_20but_20only_20for_20xwayland_20apps_20which_20otherwise_20follow_20gtk_20defaults_115',['XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md57',1,'']]],
+  ['xsettings_20manager_20still_20used_20but_20only_20for_20xwayland_20apps_20which_20otherwise_20follow_20gtk_20defaults_115',['XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md70',1,'']]],
   ['xsettings_2dcommon_2ec_116',['xsettings-common.c',['../xsettings-common_8c.html',1,'']]],
   ['xsettings_2dcommon_2eh_117',['xsettings-common.h',['../xsettings-common_8h.html',1,'']]],
   ['xsettings_2dmanager_2ec_118',['xsettings-manager.c',['../xsettings-manager_8c.html',1,'']]],
@@ -181,7 +181,7 @@ var searchData=
   ['xtransient_5ffor_178',['xtransient_for',['../struct__MetaWindow.html#aa84051888046fc81b56b33cdca0931d4',1,'_MetaWindow']]],
   ['xvalue_179',['XValue',['../terminal-window_8c.html#a82f4c5ff290afd71a4319944e1da5d42',1,'terminal-window.c']]],
   ['xvisual_180',['xvisual',['../struct__MetaWindow.html#a1f7b150e994e74d19d50273aafddf380',1,'_MetaWindow']]],
-  ['xwayland_20apps_20which_20otherwise_20follow_20gtk_20defaults_181',['XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md57',1,'']]],
+  ['xwayland_20apps_20which_20otherwise_20follow_20gtk_20defaults_181',['XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md70',1,'']]],
   ['xwindow_182',['xwindow',['../struct__MetaFrame.html#ae6be3e07150327cd743d4ee473455066',1,'_MetaFrame::xwindow'],['../struct__MetaWindow.html#ac48c1f544e9fda1696f1291231d34ac4',1,'_MetaWindow::xwindow'],['../structMetaPropValue.html#a1cfcd984110085c3c12ef6570a4e261f',1,'MetaPropValue::xwindow'],['../struct__MetaUIFrame.html#a6a3ae41b82fff77e939d42599ee5729d',1,'_MetaUIFrame::xwindow']]],
   ['xy_5fclip_5flimit_183',['XY_CLIP_LIMIT',['../gste-starfield_8c.html#ad81ceef62de0c7149043faf0f28ac3be',1,'gste-starfield.c']]]
 ];

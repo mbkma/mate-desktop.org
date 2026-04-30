@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MATE Desktop Environment: Marco &lt;a href=&quot;https://travis-ci.org/mate-desktop/marco&quot; &gt;&lt;img src=&quot;https://travis-ci.org/mate-desktop/marco.svg?branch=master&quot; alt=&quot;Build Status&quot;/&gt;&lt;/a&gt;</title>
+<title>MATE Desktop Environment: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,20 +90,23 @@ $(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Marco &lt;a href="https://travis-ci.org/mate-desktop/marco" &gt;&lt;img src="https://travis-ci.org/mate-desktop/marco.svg?branch=master" alt="Build Status"/&gt;&lt;/a&gt;</div></div>
+  <div class="headertitle"><div class="title">README</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>MATE Marco is a fork of GNOME Metacity.</p>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<div class="textblock"><p><a href="https://translate.fedoraproject.org/engage/mate-desktop/"><img src="https://translate.fedoraproject.org/widget/mate-desktop/svg-badge.svg" alt="Translation status" style="pointer-events: none;" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md36"></a>
+Marco &lt;a href="https://travis-ci.org/mate-desktop/marco" &gt;&lt;img src="https://travis-ci.org/mate-desktop/marco.svg?branch=master" alt="Build Status"/&gt;&lt;/a&gt;</h1>
+<p>MATE Marco is a fork of GNOME Metacity.</p>
+<h1><a class="anchor" id="autotoc_md37"></a>
 COMPILING MARCO</h1>
 <p>You need GTK+ 3.22. For startup notification to work you need libstartup-notification at <a href="http://www.freedesktop.org/software/startup-notification/">http://www.freedesktop.org/software/startup-notification/</a>.</p>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 REPORTING BUGS AND SUBMITTING PATCHES</h1>
 <p>Report new bugs on <a href="https://github.com/mate-desktop/marco">https://github.com/mate-desktop/marco</a>. Please check for duplicates, <em>especially</em> if you are reporting a feature request.</p>
 <p>Please do <em>not</em> add "me too!" or "yes I really want this!" comments to feature requests on GitHub. Please read <a href="http://pobox.com/~hp/features.html">http://pobox.com/~hp/features.html</a> prior to adding any kind of flame about missing features or misfeatures.</p>
 <p>Feel free to send patches too; Marco is relatively small and simple, so if you find a bug or want to add a feature it should be pretty easy. Send me mail, or file a pull request at <a href="https://github.com/mate-desktop/marco/pulls">https://github.com/mate-desktop/marco/pulls</a></p>
 <p>See the HACKING file for some notes on hacking Marco.</p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 SHRINKING MARCO</h1>
 <p>Not that marco is huge, but a substantial amount of code is in preferences handling, in static strings that aren't essential, and in the theme engine.</p>
 <p>You can strip about 70K from the marco binary by compiling with options such as:</p>
@@ -115,7 +118,7 @@ SHRINKING MARCO</h1>
 <li>add <code>--disable-themes</code>, which would replace theme.c and <a class="el" href="theme-parser_8c.html">theme-parser.c</a> with a hardcoded implementation of the interface in <a class="el" href="theme_8h.html">theme.h</a>, should save about 80K. This should be fairly easy.</li>
 <li>add <code>--disable-gtk</code>, which would implement the interface in ui.h without using GTK. This one is easier than you think because the main part of the window manager doesn't use GTK directly, but is still fairly hard to do. You would probably have to give up some of the features, such as window menus, as menus are pretty complex to implement well. So time may be better spent adding a GTK configure script feature to build GTK with only a small core set of functionality.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md28"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 MARCO FEATURES</h1>
 <ul>
 <li>Boring window manager for the adult in you. Many window managers are like Marshmallow Froot Loops; Marco is like Cheerios.</li>
@@ -192,14 +195,14 @@ MARCO FEATURES</h1>
 <li>does basic colormap handling</li>
 <li>and much more! well, maybe not a lot more.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md29"></a>
+<h1><a class="anchor" id="autotoc_md41"></a>
 HOW TO ADD EXTERNAL FEATURES</h1>
 <p>You can write a marco "plugin" such as a pager, window list, icon box, task menu, or even things like "window matching" using the Extended Window Manager Hints. See <a href="http://www.freedesktop.org">http://www.freedesktop.org</a> for the EWMH specification. An easy-to-use library called "libwnck" is available that uses the EWMH and is specifically designed for writing WM accessories.</p>
 <p>You might be interested in existing accessories such as "Devil's Pie" by Ross Burton, which add features to Marco (or other EWMH-compliant WMs).</p>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md42"></a>
 MARCO BUGS, NON-FEATURES, AND CAVEATS</h1>
 <p>See github: <a href="https://github.com/mate-desktop/marco/issues">https://github.com/mate-desktop/marco/issues</a></p>
-<h1><a class="anchor" id="autotoc_md31"></a>
+<h1><a class="anchor" id="autotoc_md43"></a>
 FAQ</h1>
 <p>Q: Will you add my feature?</p>
 <p>A: If it makes sense to turn on unconditionally, or is genuinely a harmless preference that I would not be embarrassed to put in a simple, uncluttered, user-friendly configuration dialog.</p>

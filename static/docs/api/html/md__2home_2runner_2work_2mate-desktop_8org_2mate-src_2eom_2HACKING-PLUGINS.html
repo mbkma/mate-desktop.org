@@ -93,8 +93,8 @@ $(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_
   <div class="headertitle"><div class="title">EOM Plugin Development Guide</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md6"></a> Quick guide for creating plugins for Eye of MATE (EOM).</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<div class="textblock"><p><a class="anchor" id="autotoc_md17"></a> Quick guide for creating plugins for Eye of MATE (EOM).</p>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Quick Start</h1>
 <p>EOM uses <b>libpeas</b> for plugins. A plugin extends EOM by implementing the <code>EomWindowActivatable</code> interface.</p>
 <p><b>What you can do:</b></p><ul>
@@ -105,7 +105,7 @@ Quick Start</h1>
 </ul>
 <p><b>Languages:</b> C or Python 3</p>
 <p><b>Install location:</b> <code>~/.local/share/eom/plugins/your-plugin-name/</code></p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Plugin Structure</h1>
 <p>Every plugin needs these files:</p>
 <ol type="1">
@@ -114,7 +114,7 @@ Plugin Structure</h1>
 <li><b>Plugin descriptor</b> - <code>my-plugin.plugin</code></li>
 <li><b>Build file</b> - <code>Makefile</code></li>
 </ol>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Basic Plugin Template</h2>
 <p><b>Note:</b> This is a simplified template. For a complete working example with all necessary boilerplate, see <code>plugins/reload/</code> in the EOM source tree.</p>
 <div class="fragment"><div class="line"><span class="comment">// my-plugin.h</span></div>
@@ -290,7 +290,7 @@ Basic Plugin Template</h2>
 <div class="ttc" id="astruct__EomWindowActivatableInterface_html"><div class="ttname"><a href="struct__EomWindowActivatableInterface.html">_EomWindowActivatableInterface</a></div><div class="ttdef"><b>Definition</b> <a href="eom-window-activatable_8h_source.html#l00052">eom-window-activatable.h:53</a></div></div>
 <div class="ttc" id="astruct__EomWindowActivatableInterface_html_a7026a01192cab930b43c0afa436740ac"><div class="ttname"><a href="struct__EomWindowActivatableInterface.html#a7026a01192cab930b43c0afa436740ac">_EomWindowActivatableInterface::deactivate</a></div><div class="ttdeci">void(* deactivate)(EomWindowActivatable *activatable)</div><div class="ttdef"><b>Definition</b> <a href="eom-window-activatable_8h_source.html#l00059">eom-window-activatable.h:59</a></div></div>
 <div class="ttc" id="astruct__EomWindowActivatableInterface_html_a88ae7995831365ef47d1a1adc18310ae"><div class="ttname"><a href="struct__EomWindowActivatableInterface.html#a88ae7995831365ef47d1a1adc18310ae">_EomWindowActivatableInterface::activate</a></div><div class="ttdeci">void(* activate)(EomWindowActivatable *activatable)</div><div class="ttdef"><b>Definition</b> <a href="eom-window-activatable_8h_source.html#l00058">eom-window-activatable.h:58</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md10"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
 Plugin Descriptor</h2>
 <div class="fragment"><div class="line"># my-plugin.plugin</div>
 <div class="line">[Plugin]</div>
@@ -301,7 +301,7 @@ Plugin Descriptor</h2>
 <div class="line">Authors=Your Name &lt;email@example.com&gt;</div>
 <div class="line">Copyright=Copyright © 2025 Your Name</div>
 <div class="line">Website=https://mate-desktop.org</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md11"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md22"></a>
 Build File</h2>
 <div class="fragment"><div class="line"># Makefile</div>
 <div class="line">PLUGIN_NAME = my-plugin</div>
@@ -324,9 +324,9 @@ Build File</h2>
 <div class="line"> </div>
 <div class="line">clean:</div>
 <div class="line">    rm -f lib$(PLUGIN_NAME).so</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md12"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md23"></a>
 Common Tasks</h1>
-<h2><a class="anchor" id="autotoc_md13"></a>
+<h2><a class="anchor" id="autotoc_md24"></a>
 Adding a Menu Item</h2>
 <div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line">my_action_callback (GtkAction *<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>, <a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window)</div>
@@ -359,7 +359,7 @@ Adding a Menu Item</h2>
 <div class="line">}</div>
 <div class="ttc" id="acaja-navigation-window_8c_html_ab1db9bdb9ca2c111e4aef51de082553e"><div class="ttname"><a href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a></div><div class="ttdeci">const char * action</div><div class="ttdef"><b>Definition</b> <a href="caja-navigation-window_8c_source.html#l00100">caja-navigation-window.c:100</a></div></div>
 <div class="ttc" id="aeom-window_8c_html_adc475a56fabaabb1c77fc39f11ea94db"><div class="ttname"><a href="eom-window_8c.html#adc475a56fabaabb1c77fc39f11ea94db">eom_window_get_ui_manager</a></div><div class="ttdeci">GtkUIManager * eom_window_get_ui_manager(EomWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="eom-window_8c_source.html#l05501">eom-window.c:5501</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md25"></a>
 Working with Images</h2>
 <div class="fragment"><div class="line"><span class="comment">// Get current image</span></div>
 <div class="line"><a class="code hl_struct" href="struct__EomImage.html">EomImage</a> *image = <a class="code hl_function" href="eom-window_8c.html#a7ab987854c36eb2cf8523b2a44021c04">eom_window_get_image</a> (window);</div>
@@ -388,7 +388,7 @@ Working with Images</h2>
 <div class="ttc" id="aeom-window_8c_html_a7ab987854c36eb2cf8523b2a44021c04"><div class="ttname"><a href="eom-window_8c.html#a7ab987854c36eb2cf8523b2a44021c04">eom_window_get_image</a></div><div class="ttdeci">EomImage * eom_window_get_image(EomWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="eom-window_8c_source.html#l05663">eom-window.c:5663</a></div></div>
 <div class="ttc" id="astruct__EomImage_html"><div class="ttname"><a href="struct__EomImage.html">_EomImage</a></div><div class="ttdef"><b>Definition</b> <a href="eom-image_8h_source.html#l00094">eom-image.h:94</a></div></div>
 <div class="ttc" id="astruct__EomTransform_html"><div class="ttname"><a href="struct__EomTransform.html">_EomTransform</a></div><div class="ttdef"><b>Definition</b> <a href="eom-transform_8h_source.html#l00042">eom-transform.h:42</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md15"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md26"></a>
 Responding to Events</h2>
 <div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line">on_image_changed (<a class="code hl_struct" href="struct__EomThumbView.html">EomThumbView</a> *view, MyPlugin *plugin)</div>
@@ -417,9 +417,9 @@ Responding to Events</h2>
 <div class="line">}</div>
 <div class="ttc" id="aeom-window_8c_html_aa2a9387e8744f93e37db22033f4b0856"><div class="ttname"><a href="eom-window_8c.html#aa2a9387e8744f93e37db22033f4b0856">eom_window_get_thumb_view</a></div><div class="ttdeci">GtkWidget * eom_window_get_thumb_view(EomWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="eom-window_8c_source.html#l05614">eom-window.c:5614</a></div></div>
 <div class="ttc" id="astruct__EomThumbView_html"><div class="ttname"><a href="struct__EomThumbView.html">_EomThumbView</a></div><div class="ttdef"><b>Definition</b> <a href="eom-thumb-view_8h_source.html#l00050">eom-thumb-view.h:50</a></div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md27"></a>
 Key APIs</h1>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 EomWindow</h2>
 <div class="fragment"><div class="line"><a class="code hl_struct" href="struct__EomImage.html">EomImage</a> *     <a class="code hl_function" href="eom-window_8c.html#a7ab987854c36eb2cf8523b2a44021c04">eom_window_get_image</a>      (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window);</div>
 <div class="line">GtkUIManager * <a class="code hl_function" href="eom-window_8c.html#adc475a56fabaabb1c77fc39f11ea94db">eom_window_get_ui_manager</a> (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window);</div>
@@ -431,7 +431,7 @@ EomWindow</h2>
 <div class="ttc" id="aeom-window_8c_html_a9f91d5d2331d700a0fea2f6a0967b28c"><div class="ttname"><a href="eom-window_8c.html#a9f91d5d2331d700a0fea2f6a0967b28c">eom_window_get_sidebar</a></div><div class="ttdeci">GtkWidget * eom_window_get_sidebar(EomWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="eom-window_8c_source.html#l05598">eom-window.c:5598</a></div></div>
 <div class="ttc" id="aeom-window_8c_html_ab08528d5c53724a54a901011bd15470a"><div class="ttname"><a href="eom-window_8c.html#ab08528d5c53724a54a901011bd15470a">eom_window_get_view</a></div><div class="ttdeci">GtkWidget * eom_window_get_view(EomWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="eom-window_8c_source.html#l05582">eom-window.c:5582</a></div></div>
 <div class="ttc" id="aeom-window_8c_html_afffb1f25974d4b4d5b986ed55ae964cc"><div class="ttname"><a href="eom-window_8c.html#afffb1f25974d4b4d5b986ed55ae964cc">eom_window_reload_image</a></div><div class="ttdeci">void eom_window_reload_image(EomWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="eom-window_8c_source.html#l05698">eom-window.c:5698</a></div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md29"></a>
 EomImage</h2>
 <div class="fragment"><div class="line">GdkPixbuf * <a class="code hl_function" href="eom-image_8c.html#a63ca33e59e55dc9979e1370b578f87d2">eom_image_get_pixbuf</a>  (<a class="code hl_struct" href="struct__EomImage.html">EomImage</a> *img);</div>
 <div class="line"><span class="keywordtype">void</span>        <a class="code hl_function" href="eom-image_8c.html#a9ee39daebd7107bcf14cfb31493e66d5">eom_image_get_size</a>    (<a class="code hl_struct" href="struct__EomImage.html">EomImage</a> *img, gint *width, gint *height);</div>
@@ -440,7 +440,7 @@ EomImage</h2>
 <div class="line">gboolean    <a class="code hl_function" href="eom-image_8c.html#a1ded5b9503d74a69d43430295ce84cba">eom_image_is_jpeg</a>     (<a class="code hl_struct" href="struct__EomImage.html">EomImage</a> *img);</div>
 <div class="ttc" id="astruct__EomJob_html"><div class="ttname"><a href="struct__EomJob.html">_EomJob</a></div><div class="ttdef"><b>Definition</b> <a href="eom-jobs_8h_source.html#l00118">eom-jobs.h:119</a></div></div>
 </div><!-- fragment --><p>See <code><a class="el" href="eom-window_8h.html">src/eom-window.h</a></code> and <code><a class="el" href="eom-image_8h.html">src/eom-image.h</a></code> for complete API.</p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md30"></a>
 Building and Testing</h1>
 <div class="fragment"><div class="line"># Build the plugin</div>
 <div class="line">make</div>
@@ -452,7 +452,7 @@ Building and Testing</h1>
 <div class="line">eom</div>
 <div class="line"># Go to Edit → Preferences → Plugins</div>
 <div class="line"># Enable your plugin</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md31"></a>
 Built-in Examples</h1>
 <p>Study these plugins in the <code>plugins/</code> directory:</p>
 <ol type="1">
@@ -460,7 +460,7 @@ Built-in Examples</h1>
 <li><b>reload</b> - Adding menu items (reload image from disk)</li>
 <li><b>statusbar-date</b> - Widget manipulation and EXIF reading</li>
 </ol>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md32"></a>
 Tips</h1>
 <ul>
 <li><b>Memory management</b>: Always <code>g_object_unref()</code> objects and <code>g_free()</code> allocated memory</li>
@@ -468,7 +468,7 @@ Tips</h1>
 <li><b>Debugging</b>: Run with <code>EOM_DEBUG_PLUGINS=1 eom</code> or <code>EOM_DEBUG=1 eom</code> to see plugin messages</li>
 <li><b>Headers</b>: All EOM headers are in <code>/usr/include/eom/</code> (install <code>libeom-dev</code>)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md33"></a>
 Complete Example</h1>
 <p>See <code>plugins/reload/</code> in the EOM source for a complete, simple example showing:</p><ul>
 <li>Plugin structure with proper GObject boilerplate</li>
@@ -476,7 +476,7 @@ Complete Example</h1>
 <li>Calling EOM window functions</li>
 <li>Proper activation and deactivation</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md34"></a>
 Resources</h1>
 <ul>
 <li><b>libpeas source/examples</b>: <a href="https://gitlab.gnome.org/GNOME/libpeas/-/tree/1.36?ref_type=heads">https://gitlab.gnome.org/GNOME/libpeas/-/tree/1.36?ref_type=heads</a></li>
@@ -485,7 +485,7 @@ Resources</h1>
 <li><b>MATE wiki</b>: <a href="https://wiki.mate-desktop.org/">https://wiki.mate-desktop.org/</a></li>
 <li><b>GObject Tutorial</b>: <a href="https://docs.gtk.org/gobject/">https://docs.gtk.org/gobject/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md35"></a>
 Next Steps</h1>
 <ol type="1">
 <li>Copy one of the built-in plugins as a template</li>

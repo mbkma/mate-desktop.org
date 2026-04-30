@@ -7,8 +7,5 @@ var searchData=
   ['sort_20plugin_4',['Sort Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2sort_2README.html',1,'']]],
   ['spaces_20plugin_5',['Save Without Trailing Spaces Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2trailsave_2README.html',1,'']]],
   ['spell_20checker_20plugin_6',['Spell Checker Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2spell_2README.html',1,'']]],
-  ['src_20https_3a_20travis_20ci_20org_20mate_20desktop_20marco_20svg_20branch_20master_20alt_20build_20status_20a_7',['Marco &lt;a href=&quot;https://travis-ci.org/mate-desktop/marco&quot; &gt;&lt;img src=&quot;https://travis-ci.org/mate-desktop/marco.svg?branch=master&quot; alt=&quot;Build Status&quot;/&gt;&lt;/a&gt;',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html',1,'']]],
-  ['statistics_20plugin_8',['Document Statistics Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2docinfo_2README.html',1,'']]],
-  ['status_20a_9',['Marco &lt;a href=&quot;https://travis-ci.org/mate-desktop/marco&quot; &gt;&lt;img src=&quot;https://travis-ci.org/mate-desktop/marco.svg?branch=master&quot; alt=&quot;Build Status&quot;/&gt;&lt;/a&gt;',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html',1,'']]],
-  ['svg_20branch_20master_20alt_20build_20status_20a_10',['Marco &lt;a href=&quot;https://travis-ci.org/mate-desktop/marco&quot; &gt;&lt;img src=&quot;https://travis-ci.org/mate-desktop/marco.svg?branch=master&quot; alt=&quot;Build Status&quot;/&gt;&lt;/a&gt;',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html',1,'']]]
+  ['statistics_20plugin_7',['Document Statistics Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2docinfo_2README.html',1,'']]]
 ];
