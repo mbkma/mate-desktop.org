@@ -1,5 +1,7 @@
 var NAVTREEINDEX154 =
 {
+"pluma-message-bus_8h.html#af0b4423eedc60dece6144d82e3a3527c":[36,0,0,34,1,50,29],
+"pluma-message-bus_8h.html#af56ad5cd208e50cd38eee3865c4e77ec":[36,0,0,34,1,50,14],
 "pluma-message-bus_8h.html#afa13e8457cb17ec3580e1d59c9c84c7a":[36,0,0,34,1,50,24],
 "pluma-message-bus_8h_source.html":[36,0,0,34,1,50],
 "pluma-message-type_8c.html":[36,0,0,34,1,51],
@@ -247,7 +249,5 @@ var NAVTREEINDEX154 =
 "pluma-preferences-dialog_8h.html#ae097841e0e3c634f34c40e7bacb292d8":[36,0,0,34,1,0,5,6],
 "pluma-preferences-dialog_8h.html#af397ed9a435fb7ce11af30b264afc725":[36,0,0,34,1,0,5,3],
 "pluma-preferences-dialog_8h.html#afbd9efbf87d0526d0c3de62037e91d8a":[36,0,0,34,1,0,5,4],
-"pluma-preferences-dialog_8h.html#afd03e5cb159c8122bff00e9d4b16ea82":[36,0,0,34,1,0,5,7],
-"pluma-preferences-dialog_8h.html#aff9ac4d819536a858b4410978ef1358d":[36,0,0,34,1,0,5,9],
-"pluma-preferences-dialog_8h_source.html":[36,0,0,34,1,0,5]
+"pluma-preferences-dialog_8h.html#afd03e5cb159c8122bff00e9d4b16ea82":[36,0,0,34,1,0,5,7]
 };

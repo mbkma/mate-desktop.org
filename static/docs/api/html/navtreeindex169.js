@@ -1,5 +1,7 @@
 var NAVTREEINDEX169 =
 {
+"structAppearanceData.html#a1f1b96fbe535226415b8b0d2d4dbd30a":[35,0,1003,11],
+"structAppearanceData.html#a2d87d77d94a2e611c0e544038dd70573":[35,0,1003,6],
 "structAppearanceData.html#a2db4742a4703f2e14bb734c396dc1d8d":[35,0,1003,28],
 "structAppearanceData.html#a322b084d3daf40530ae325f74bcc0e81":[35,0,1003,5],
 "structAppearanceData.html#a3f8862d6d29f4ba178ad848b0c7d7729":[35,0,1003,32],
@@ -247,7 +249,5 @@ var NAVTREEINDEX169 =
 "structCactISchemesTabInterface.html#aaf6f0daa0356b411ee1caff4766a2eef":[35,0,1057,1],
 "structCactIconChooser.html":[35,0,1050],
 "structCactIconChooser.html#a55c25fe046cdf8db6d08a28e17456d56":[35,0,1050,1],
-"structCactIconChooser.html#ad87dd85599a240938f6cf3044987d767":[35,0,1050,0],
-"structCactIconChooserClass.html":[35,0,1051],
-"structCactIconChooserClass.html#a066a6f276d069471e1b14a6d634f3bcd":[35,0,1051,0]
+"structCactIconChooser.html#ad87dd85599a240938f6cf3044987d767":[35,0,1050,0]
 };

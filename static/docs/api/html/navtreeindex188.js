@@ -1,5 +1,7 @@
 var NAVTREEINDEX188 =
 {
+"struct__EphyZoomActionClass.html#a983fc862f837f9e3985640dde8118853":[35,0,292,0],
+"struct__EphyZoomActionClass.html#aa4069f6ff27a18c9d01d6b91db186933":[35,0,292,1],
 "struct__EphyZoomControl.html":[35,0,293],
 "struct__EphyZoomControl.html#a09e9064e173dcc9b6d3ca2645336d0bd":[35,0,293,1],
 "struct__EphyZoomControl.html#a57cee29b06bf855c021adbb9b1eb5e33":[35,0,293,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX188 =
 "struct__EvJobAttachments.html#a6dd85a26dcadceb56314c9617f33ef5a":[35,0,344,0],
 "struct__EvJobAttachments.html#aec16e336ee54fb2286bd7df1b506ad4e":[35,0,344,1],
 "struct__EvJobAttachmentsClass.html":[35,0,345],
-"struct__EvJobAttachmentsClass.html#acdcf7be777afa723c1675546c147462e":[35,0,345,0],
-"struct__EvJobClass.html":[35,0,346],
-"struct__EvJobClass.html#a102060e2960f289a72a5d5d07b9c0e2d":[35,0,346,3]
+"struct__EvJobAttachmentsClass.html#acdcf7be777afa723c1675546c147462e":[35,0,345,0]
 };

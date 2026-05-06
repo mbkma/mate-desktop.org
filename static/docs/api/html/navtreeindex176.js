@@ -1,5 +1,7 @@
 var NAVTREEINDEX176 =
 {
+"structGpmPointObj.html":[35,0,1330],
+"structGpmPointObj.html#a653934d3de5adfcf742c57d52a1cc069":[35,0,1330,0],
 "structGpmPointObj.html#a772092386e5df1af083299b1ee01ad16":[35,0,1330,1],
 "structGpmPointObj.html#ac4e0bcdf3fc71c336f456ca5a8206a4b":[35,0,1330,2],
 "structGpmPrefs.html":[35,0,1331],
@@ -247,7 +249,5 @@ var NAVTREEINDEX176 =
 "structMateSettingsManager.html":[35,0,1421],
 "structMateSettingsManager.html#aa1b9bacfc29fd5e82701a5bab6bbf5ec":[35,0,1421,0],
 "structMateSettingsManager.html#abdb5d262b681bc1ffb861a4460894013":[35,0,1421,1],
-"structMateSettingsManagerClass.html":[35,0,1422],
-"structMateSettingsManagerClass.html#a096cff7c2cecbae1747d83d4fb2b0818":[35,0,1422,0],
-"structMateSettingsManagerClass.html#a33973bcf9b98494c642b1dfecadf1363":[35,0,1422,2]
+"structMateSettingsManagerClass.html":[35,0,1422]
 };

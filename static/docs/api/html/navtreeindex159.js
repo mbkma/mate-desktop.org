@@ -1,5 +1,7 @@
 var NAVTREEINDEX159 =
 {
+"plumatextregion_8c_source.html":[36,0,0,34,1,100],
+"plumatextregion_8h.html":[36,0,0,34,1,101],
 "plumatextregion_8h.html#a110c926d78ea383d22f9c3050d159b61":[36,0,0,34,1,101,13],
 "plumatextregion_8h.html#a33e6dcbd24e9441fff0b5d9cc7e3cc76":[36,0,0,34,1,101,15],
 "plumatextregion_8h.html#a4a695d14eb19a8d783c1c28ff47a168d":[36,0,0,34,1,101,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX159 =
 "prefs_8c.html#a756dd8e58f29dd88c8eafb7a43a43658":[36,0,0,11,0,1,34,66],
 "prefs_8c.html#a7cb6c3d467ed35b5f7c556f8e1bbbf80":[36,0,0,11,0,1,34,19],
 "prefs_8c.html#a7d128d5e922c33bd4c02474778d3827f":[36,0,0,11,0,1,34,43],
-"prefs_8c.html#a810857cdc16ae662ff76a1e8224fa123":[36,0,0,11,0,1,34,38],
-"prefs_8c.html#a82bf6f28063dab8fa2b154def4276f1c":[36,0,0,11,0,1,34,3],
-"prefs_8c.html#a896508219b0b993fe5c1f16bba9689a8":[36,0,0,11,0,1,34,45]
+"prefs_8c.html#a810857cdc16ae662ff76a1e8224fa123":[36,0,0,11,0,1,34,38]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX165 =
 {
+"scrollarea_8c.html#a83b43aafad05926dc4cae8f23fa7a4bb":[36,0,0,14,0,5,1,18],
+"scrollarea_8c.html#a96484527d97ab9f7554d4a7d4b360624":[36,0,0,14,0,5,1,16],
 "scrollarea_8c.html#aa4af9806f55d17f5e61d3af631bcade1":[36,0,0,14,0,5,1,22],
 "scrollarea_8c.html#aab4feb110bac6d2ee55f1251bb67a16c":[36,0,0,14,0,5,1,15],
 "scrollarea_8c.html#ac1214df7969844a37619b3227437ad08":[36,0,0,14,0,5,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX165 =
 "sensors-applet_8h.html#aae06bfd6859ba34a1f7c60ee440ac2f4":[36,0,0,26,2,18,30],
 "sensors-applet_8h.html#ac588ddf76e8de351583e74b1c0c3e53e":[36,0,0,26,2,18,26],
 "sensors-applet_8h.html#acd90c5b1a4c1cc3dbbd5acdcc5125565":[36,0,0,26,2,18,8],
-"sensors-applet_8h.html#ad48e6bfea7b0bf893ba0dc659d0fce1e":[36,0,0,26,2,18,19],
-"sensors-applet_8h.html#ad86a68cf160d804b06fc938b15dddaa0":[36,0,0,26,2,18,25],
-"sensors-applet_8h.html#ad8a470f4018bc3c13e3292cb3651757d":[36,0,0,26,2,18,14]
+"sensors-applet_8h.html#ad48e6bfea7b0bf893ba0dc659d0fce1e":[36,0,0,26,2,18,19]
 };

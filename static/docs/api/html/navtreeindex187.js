@@ -1,5 +1,7 @@
 var NAVTREEINDEX187 =
 {
+"struct__EomCloseConfirmationDialog.html#a343aac877fa35e0c8022b49519b3d133":[35,0,222,0],
+"struct__EomCloseConfirmationDialog.html#a4d452ecb2d64ccc68a4805cd4b613f82":[35,0,222,1],
 "struct__EomCloseConfirmationDialogClass.html":[35,0,223],
 "struct__EomCloseConfirmationDialogClass.html#a0c8d0260585636207f835b1dcb726b45":[35,0,223,0],
 "struct__EomFileChooser.html":[35,0,224],
@@ -247,7 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EphyZoomAction.html":[35,0,291],
 "struct__EphyZoomAction.html#aa22062c79140b272cbe0d18c74beaeea":[35,0,291,1],
 "struct__EphyZoomAction.html#ae348b099c237e92eaf428d330d9cf3e4":[35,0,291,0],
-"struct__EphyZoomActionClass.html":[35,0,292],
-"struct__EphyZoomActionClass.html#a983fc862f837f9e3985640dde8118853":[35,0,292,0],
-"struct__EphyZoomActionClass.html#aa4069f6ff27a18c9d01d6b91db186933":[35,0,292,1]
+"struct__EphyZoomActionClass.html":[35,0,292]
 };

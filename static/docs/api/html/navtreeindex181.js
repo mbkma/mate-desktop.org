@@ -1,5 +1,7 @@
 var NAVTREEINDEX181 =
 {
+"structTestDerived.html#a83b6b9e62b11cead136d9eb6fc716ce8":[35,0,1639,1],
+"structTestDerivedClass.html":[35,0,1640],
 "structTestDerivedClass.html#aa4a2d98bd7ddf110a55395eb7b351596":[35,0,1640,0],
 "structTestDerivedClass.html#ae0e9713254d6ebf0a5763bdb2a7c4140":[35,0,1640,1],
 "structTestIFaceInterface.html":[35,0,1641],
@@ -247,7 +249,5 @@ var NAVTREEINDEX181 =
 "struct__AppletData.html#adf47866cde13026022be0c36edb0d97f":[35,0,21,11],
 "struct__AppletData.html#af3e5f7ac012844775134f13622281210":[35,0,21,0],
 "struct__AppletSizeHints.html":[35,0,22],
-"struct__AppletSizeHints.html#a30f0b8f17dbebf9f576bd7bb59ee5e0e":[35,0,22,0],
-"struct__AppletSizeHints.html#ac76c91f73fbe05546c552d56754dce19":[35,0,22,1],
-"struct__AppletSizeHintsAlloc.html":[35,0,23]
+"struct__AppletSizeHints.html#a30f0b8f17dbebf9f576bd7bb59ee5e0e":[35,0,22,0]
 };

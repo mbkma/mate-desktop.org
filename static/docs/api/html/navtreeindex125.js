@@ -1,5 +1,7 @@
 var NAVTREEINDEX125 =
 {
+"msd-background-plugin_8h.html#a5228535c94537a62b5f4b1c9901fdb42":[36,0,0,28,1,2,3,9],
+"msd-background-plugin_8h.html#a5eed3b869e46f19a3ed64d13f05c429d":[36,0,0,28,1,2,3,7],
 "msd-background-plugin_8h.html#a80e7b086cad5178d61c4f7d8c5fe52d8":[36,0,0,28,1,2,3,10],
 "msd-background-plugin_8h.html#a98ab866597e1d15a0a2a41217f388d68":[36,0,0,28,1,2,3,5],
 "msd-background-plugin_8h.html#a9cb40e6e5708c69adcb452d396ae90f1":[36,0,0,28,1,2,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX125 =
 "msd-keygrab_8c.html#a19f9e3f49fa48db0715fe5e2862907ed":[36,0,0,28,1,4,4,2],
 "msd-keygrab_8c.html#ac115434655f029103d98dcdf6aa0afd8":[36,0,0,28,1,4,4,3],
 "msd-keygrab_8c.html#ad4c6aea60be369420fb9db33236e3ff1":[36,0,0,28,1,4,4,1],
-"msd-keygrab_8c_source.html":[36,0,0,28,1,4,4],
-"msd-keygrab_8h.html":[36,0,0,28,1,4,5],
-"msd-keygrab_8h.html#a19f9e3f49fa48db0715fe5e2862907ed":[36,0,0,28,1,4,5,2]
+"msd-keygrab_8c_source.html":[36,0,0,28,1,4,4]
 };

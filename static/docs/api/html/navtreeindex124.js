@@ -1,5 +1,7 @@
 var NAVTREEINDEX124 =
 {
+"mp_8c.html#ae7efd49ea0cd6fde14a8eb0f415e09fa":[36,0,0,13,0,40,30],
+"mp_8c.html#aef26072fa2046f42019b7244a94e9455":[36,0,0,13,0,40,13],
 "mp_8c.html#af21b9bb6c0802e4266acb48b97e7424b":[36,0,0,13,0,40,23],
 "mp_8c.html#af2563ff44e02e226ee51cee7f8ec78b4":[36,0,0,13,0,40,1],
 "mp_8c.html#af4564c7f73e2033e26a769d62939c910":[36,0,0,13,0,40,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX124 =
 "msd-background-manager_8h_source.html":[36,0,0,28,1,2,1],
 "msd-background-plugin_8c.html":[36,0,0,28,1,2,2],
 "msd-background-plugin_8c_source.html":[36,0,0,28,1,2,2],
-"msd-background-plugin_8h.html":[36,0,0,28,1,2,3],
-"msd-background-plugin_8h.html#a5228535c94537a62b5f4b1c9901fdb42":[36,0,0,28,1,2,3,9],
-"msd-background-plugin_8h.html#a5eed3b869e46f19a3ed64d13f05c429d":[36,0,0,28,1,2,3,7]
+"msd-background-plugin_8h.html":[36,0,0,28,1,2,3]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX186 =
 {
+"struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[35,0,182,3],
+"struct__DviPaperSpec.html":[35,0,183],
 "struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579":[35,0,183,0],
 "struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[35,0,183,1],
 "struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871":[35,0,183,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX186 =
 "struct__EomClipboardHandler.html#aaf1599669e31f38e4b3fe0997468ee1f":[35,0,220,0],
 "struct__EomClipboardHandlerClass.html":[35,0,221],
 "struct__EomClipboardHandlerClass.html#ae3e0439c15186aa3723affbd8e37340e":[35,0,221,0],
-"struct__EomCloseConfirmationDialog.html":[35,0,222],
-"struct__EomCloseConfirmationDialog.html#a343aac877fa35e0c8022b49519b3d133":[35,0,222,0],
-"struct__EomCloseConfirmationDialog.html#a4d452ecb2d64ccc68a4805cd4b613f82":[35,0,222,1]
+"struct__EomCloseConfirmationDialog.html":[35,0,222]
 };

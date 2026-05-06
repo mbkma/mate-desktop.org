@@ -1,5 +1,7 @@
 var NAVTREEINDEX191 =
 {
+"struct__FrCommandRarClass.html#a29fd17e04d24096e57fa5872f624a46b":[35,0,454,0],
+"struct__FrCommandRpm.html":[35,0,455],
 "struct__FrCommandRpm.html#abeaacc58a95ac4da8e94ecadb8d63423":[35,0,455,0],
 "struct__FrCommandRpm.html#adeac739deee672254f319e07b0940642":[35,0,455,1],
 "struct__FrCommandRpmClass.html":[35,0,456],
@@ -247,7 +249,5 @@ var NAVTREEINDEX191 =
 "struct__GdictSidebar.html#a81b830556e042401814ed47302306947":[35,0,485,1],
 "struct__GdictSidebarClass.html":[35,0,486],
 "struct__GdictSidebarClass.html#a5c2b3031d41e93cc4f8d8c956f78259a":[35,0,486,5],
-"struct__GdictSidebarClass.html#a6e5987b19e9b9b59b549e858726a332b":[35,0,486,4],
-"struct__GdictSidebarClass.html#a89182de64d2c0558fa8ee8b09afac6cc":[35,0,486,1],
-"struct__GdictSidebarClass.html#ac3702591597be441a75109edcbe6de63":[35,0,486,6]
+"struct__GdictSidebarClass.html#a6e5987b19e9b9b59b549e858726a332b":[35,0,486,4]
 };

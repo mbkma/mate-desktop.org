@@ -1,5 +1,7 @@
 var NAVTREEINDEX127 =
 {
+"msd-rfkill-plugin_8h.html#adfd2633bf6b2a31e95857547db58198d":[36,0,0,28,1,13,3,6],
+"msd-rfkill-plugin_8h.html#ae7bf81e8adae62a7dc7c37d8d784a6ee":[36,0,0,28,1,13,3,9],
 "msd-rfkill-plugin_8h.html#ae9af4b34690b7143adcee6bfe37f8e60":[36,0,0,28,1,13,3,11],
 "msd-rfkill-plugin_8h_source.html":[36,0,0,28,1,13,3],
 "msd-smartcard-manager_8c.html":[36,0,0,28,1,14,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX127 =
 "msd-xrandr-manager_8c.html#a181c6426cdb037d561b8873d834d3bdb":[36,0,0,28,1,17,0,13],
 "msd-xrandr-manager_8c.html#a439d877a2affcf5de50bb57d26dc9830":[36,0,0,28,1,17,0,17],
 "msd-xrandr-manager_8c.html#a4dd2ec6d26e9ec71c5a55d952a240b9a":[36,0,0,28,1,17,0,1],
-"msd-xrandr-manager_8c.html#a601268713f7f8033851d4530ae080dbb":[36,0,0,28,1,17,0,11],
-"msd-xrandr-manager_8c.html#a63befdb47cb4bd0bbb67d1ca9d868d60":[36,0,0,28,1,17,0,4],
-"msd-xrandr-manager_8c.html#a72abed48e7094b8a1093cf29350c3b60":[36,0,0,28,1,17,0,10]
+"msd-xrandr-manager_8c.html#a601268713f7f8033851d4530ae080dbb":[36,0,0,28,1,17,0,11]
 };

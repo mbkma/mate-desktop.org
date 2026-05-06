@@ -1,5 +1,7 @@
 var NAVTREEINDEX175 =
 {
+"structFrChannelData.html#ad1df4f267ae220bc5878088f4cf00553":[35,0,1294,3],
+"structFrChannelData.html#ad5aaf2909ecffb756f35e716422e0c86":[35,0,1294,4],
 "structFrExtensionType.html":[35,0,1295],
 "structFrExtensionType.html#a43a0af58c3d9b0b97d7431dab135aa17":[35,0,1295,1],
 "structFrExtensionType.html#abc7a002c555a4aa7f4e83797ca3193a5":[35,0,1295,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX175 =
 "structGpmPhoneClass.html#abaefc8efd0773ca5cd0a8b9ff0ee897f":[35,0,1329,2],
 "structGpmPhoneClass.html#abf2935fa999b2711ee5b6e017d29ff53":[35,0,1329,3],
 "structGpmPhoneClass.html#ad6616b2f3db1ff31aaf0c8fc9d47a331":[35,0,1329,0],
-"structGpmPhoneClass.html#af88cf29c293be5db8ac3b70f352b23f8":[35,0,1329,1],
-"structGpmPointObj.html":[35,0,1330],
-"structGpmPointObj.html#a653934d3de5adfcf742c57d52a1cc069":[35,0,1330,0]
+"structGpmPhoneClass.html#af88cf29c293be5db8ac3b70f352b23f8":[35,0,1329,1]
 };

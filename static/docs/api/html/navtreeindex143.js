@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"panel-applet-frame-dbus_8h.html#a36e72eae9b5ce4b2b5f666596960ac2b":[36,0,0,22,2,0,3,2],
+"panel-applet-frame-dbus_8h.html#a3ca3e794d80f380530b1d1dd5d8269e9":[36,0,0,22,2,0,3,4],
 "panel-applet-frame-dbus_8h.html#a581edad644dcd9a7bc0ef6e0ee2a5dc9":[36,0,0,22,2,0,3,12],
 "panel-applet-frame-dbus_8h.html#a649173cb9b45fa9d1a5014e88d2fae15":[36,0,0,22,2,0,3,5],
 "panel-applet-frame-dbus_8h.html#a650b22cec8e4b921d8cb4eac81dcacbc":[36,0,0,22,2,0,3,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "panel-ditem-editor_8c.html#a784c6e026a23fc3ea1eb29b6aec30b46a8b33c885925b9f2e91c0f2c8c03901e8":[36,0,0,22,2,37,4,1],
 "panel-ditem-editor_8c.html#a784c6e026a23fc3ea1eb29b6aec30b46ab7e25fa7d89f5ab8d4d4dbfaf5b40568":[36,0,0,22,2,37,4,2],
 "panel-ditem-editor_8c.html#a88b0c801354994c3fbb25991a4d0a93e":[36,0,0,22,2,37,12],
-"panel-ditem-editor_8c.html#a97fbd97cbfc10250f57a04cc11fb78a6":[36,0,0,22,2,37,6],
-"panel-ditem-editor_8c.html#ab41bd089a5328c5a923e55451429d67d":[36,0,0,22,2,37,3],
-"panel-ditem-editor_8c.html#ac133eef25677b71b0452fb74952dd051":[36,0,0,22,2,37,1]
+"panel-ditem-editor_8c.html#a97fbd97cbfc10250f57a04cc11fb78a6":[36,0,0,22,2,37,6]
 };

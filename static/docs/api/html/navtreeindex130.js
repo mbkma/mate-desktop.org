@@ -1,5 +1,7 @@
 var NAVTREEINDEX130 =
 {
+"na-gtk-utils_8h.html#aeabff8f00bc4a75fe4f1bf97ae1ce81f":[36,0,0,2,0,2,18,7],
+"na-gtk-utils_8h.html#afa7d1330a6a948eb381cddd1c958f24c":[36,0,0,2,0,2,18,1],
 "na-gtk-utils_8h_source.html":[36,0,0,2,0,2,18],
 "na-host_8c.html":[36,0,0,22,0,2,7],
 "na-host_8c.html#a4ef798a6c403a0b98ae6fc82e8640d78":[36,0,0,22,0,2,7,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX130 =
 "na-iio-provider_8h.html#a282b5525d80a33197ca10c15eaf5a9b2a8d0e0038dc81db161ea476d4b3c1ccd8":[36,0,0,2,0,0,15,7,4],
 "na-iio-provider_8h.html#a282b5525d80a33197ca10c15eaf5a9b2a9adedecc6946c14ee0507f51e75846d2":[36,0,0,2,0,0,15,7,3],
 "na-iio-provider_8h.html#a282b5525d80a33197ca10c15eaf5a9b2abaebc3dc3795f0a3776470e908d37c1d":[36,0,0,2,0,0,15,7,5],
-"na-iio-provider_8h.html#a5042d09db671692d93c2d5269ddd5b3b":[36,0,0,2,0,0,15,4],
-"na-iio-provider_8h.html#a72146d47ecea521b41b6f78c4a69e031":[36,0,0,2,0,0,15,8],
-"na-iio-provider_8h.html#a72146d47ecea521b41b6f78c4a69e031a02640ce1207a4c582953705b3cc3f3af":[36,0,0,2,0,0,15,8,0]
+"na-iio-provider_8h.html#a5042d09db671692d93c2d5269ddd5b3b":[36,0,0,2,0,0,15,4]
 };

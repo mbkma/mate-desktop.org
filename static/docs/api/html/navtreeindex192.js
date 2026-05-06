@@ -1,5 +1,7 @@
 var NAVTREEINDEX192 =
 {
+"struct__GdictSidebarClass.html#a89182de64d2c0558fa8ee8b09afac6cc":[35,0,486,1],
+"struct__GdictSidebarClass.html#ac3702591597be441a75109edcbe6de63":[35,0,486,6],
 "struct__GdictSidebarClass.html#ae8802b7c1d30f3237118b2f3b09913e5":[35,0,486,0],
 "struct__GdictSidebarClass.html#af6c8fe8778fab033cf85da7e7f2fc173":[35,0,486,2],
 "struct__GdictSidebarClass.html#afa94e7b3f0430e003adfbf9472c84acb":[35,0,486,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX192 =
 "struct__LogviewApp.html#a51a287d02e7bf6658097cc94682672eb":[35,0,541,0],
 "struct__LogviewAppClass.html":[35,0,542],
 "struct__LogviewAppClass.html#a0462bf1010bdd2dc3eccf033ab8eeee8":[35,0,542,1],
-"struct__LogviewAppClass.html#ad6bda50a63df30a9a88265369690970b":[35,0,542,0],
-"struct__LogviewFilter.html":[35,0,543],
-"struct__LogviewFilter.html#a0f08e70b2f32631230862fc8ad61a090":[35,0,543,1]
+"struct__LogviewAppClass.html#ad6bda50a63df30a9a88265369690970b":[35,0,542,0]
 };

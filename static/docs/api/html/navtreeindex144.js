@@ -1,5 +1,7 @@
 var NAVTREEINDEX144 =
 {
+"panel-ditem-editor_8c.html#ab41bd089a5328c5a923e55451429d67d":[36,0,0,22,2,37,3],
+"panel-ditem-editor_8c.html#ac133eef25677b71b0452fb74952dd051":[36,0,0,22,2,37,1],
 "panel-ditem-editor_8c.html#adb29690b704f9a3f0070405fd6411b02":[36,0,0,22,2,37,7],
 "panel-ditem-editor_8c.html#afb5866b7cc6d7c5b1550300572e235b0":[36,0,0,22,2,37,5],
 "panel-ditem-editor_8c.html#afbc5330c8cb6b1efc55a9626a00ab15d":[36,0,0,22,2,37,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX144 =
 "panel-launch_8h.html#a749d04bda12fe3ef53869fc9dcd4ffd4":[36,0,0,22,2,1,15,3],
 "panel-launch_8h.html#ab151b42a2be8820c2f06b65fb0b18def":[36,0,0,22,2,1,15,4],
 "panel-launch_8h.html#aee20b52140a302d3c64397fe535ef33d":[36,0,0,22,2,1,15,2],
-"panel-launch_8h_source.html":[36,0,0,22,2,1,15],
-"panel-layout_8c.html":[36,0,0,22,2,47],
-"panel-layout_8c.html#a130ffe8cd144bd45a9120d184ea13877":[36,0,0,22,2,47,1]
+"panel-launch_8h_source.html":[36,0,0,22,2,1,15]
 };

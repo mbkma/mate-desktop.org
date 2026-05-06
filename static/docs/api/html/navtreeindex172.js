@@ -1,5 +1,7 @@
 var NAVTREEINDEX172 =
 {
+"structCajaSearchDirectoryFileClass.html":[35,0,1152],
+"structCajaSearchDirectoryFileClass.html#ab4e3d5f6591abffc0884c535f4403966":[35,0,1152,0],
 "structCajaSearchEngine.html":[35,0,1153],
 "structCajaSearchEngine.html#ae2dc8e1624291b88cb8dba042ed150f4":[35,0,1153,0],
 "structCajaSearchEngineBeagle.html":[35,0,1154],
@@ -247,7 +249,5 @@ var NAVTREEINDEX172 =
 "structDay.html":[35,0,1208],
 "structDay.html#a3df3ecd81413d0bef7cb959ff1b8dd63":[35,0,1208,3],
 "structDay.html#a63ae732b9831522ca778b46e0c5dfb3b":[35,0,1208,2],
-"structDay.html#abc1b422ba7373f151eb06af8ad6f969f":[35,0,1208,0],
-"structDay.html#ad148730072951dddf07de0bbf0115db7":[35,0,1208,1],
-"structDetailedTiming.html":[35,0,1209]
+"structDay.html#abc1b422ba7373f151eb06af8ad6f969f":[35,0,1208,0]
 };

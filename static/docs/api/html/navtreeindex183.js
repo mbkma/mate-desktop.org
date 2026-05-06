@@ -1,5 +1,7 @@
 var NAVTREEINDEX183 =
 {
+"struct__CajaDirectoryPrivate.html#addf2cd8d4ebd84ef7ed4a810706d4757":[35,0,57,2],
+"struct__CajaDirectoryPrivate.html#adefa2294b32cb0b3f32724656c83ab97":[35,0,57,15],
 "struct__CajaDirectoryPrivate.html#ae00f23a64482ac6c89220608d00cd45a":[35,0,57,31],
 "struct__CajaDirectoryPrivate.html#afb61110f8e2ce6adebbcd2451e250a3e":[35,0,57,24],
 "struct__CajaDropbox.html":[35,0,58],
@@ -247,7 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaOpenWithDialogClass.html":[35,0,93],
 "struct__CajaOpenWithDialogClass.html#a8bf5aab8752b8f736e171dd22b940594":[35,0,93,1],
 "struct__CajaOpenWithDialogClass.html#ab01e43e53bda6dfc876be436ec8fac78":[35,0,93,0],
-"struct__CajaPathBar.html":[35,0,94],
-"struct__CajaPathBar.html#a29c9071499d3a6d644aea6b64a98a549":[35,0,94,7],
-"struct__CajaPathBar.html#a2d16e968700cae873fdbc8098876da69":[35,0,94,14]
+"struct__CajaPathBar.html":[35,0,94]
 };

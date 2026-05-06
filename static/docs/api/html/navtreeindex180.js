@@ -1,5 +1,7 @@
 var NAVTREEINDEX180 =
 {
+"structPrefsDialog.html#a7a3abe8c9e9a41320571777f349b5bec":[35,0,1611,13],
+"structPrefsDialog.html#a814c65cc521f7d379d70d6e2c7201877":[35,0,1611,15],
 "structPrefsDialog.html#a86bbf37f24c950a55072f206d50e2142":[35,0,1611,32],
 "structPrefsDialog.html#a8df21d811128a42c6ea9d1baeeb0a239":[35,0,1611,4],
 "structPrefsDialog.html#a8ff223c6136f25df45be8629e61282ea":[35,0,1611,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX180 =
 "structTestBaseClass.html#a084a32688a692f7e96884540f93bd9b6":[35,0,1638,1],
 "structTestBaseClass.html#a9520a29966b97e77ccb2662804ad2c7d":[35,0,1638,0],
 "structTestDerived.html":[35,0,1639],
-"structTestDerived.html#a58d8bfde0f2dbc2115acbd1788da4d40":[35,0,1639,0],
-"structTestDerived.html#a83b6b9e62b11cead136d9eb6fc716ce8":[35,0,1639,1],
-"structTestDerivedClass.html":[35,0,1640]
+"structTestDerived.html#a58d8bfde0f2dbc2115acbd1788da4d40":[35,0,1639,0]
 };

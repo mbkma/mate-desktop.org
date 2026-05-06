@@ -1,5 +1,7 @@
 var NAVTREEINDEX209 =
 {
+"terminal-window_8h.html#aa7b92ad7c6d09a7721e1b9315965a54c":[36,0,0,30,0,38,13],
+"terminal-window_8h.html#aa82fc200fa38dbe4b11f005e5b883afb":[36,0,0,30,0,38,12],
 "terminal-window_8h.html#ab4d5554076c4354aa4bbc1c39533f965":[36,0,0,30,0,38,25],
 "terminal-window_8h.html#ab678cc58f2ada600be38449f3f5c202f":[36,0,0,30,0,38,11],
 "terminal-window_8h.html#ac7b16cde1934d0e23010c1672b1fa719":[36,0,0,30,0,38,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX209 =
 "test-size-hints_8c_source.html":[36,0,0,11,0,5,4],
 "test-system-timezone_8c.html":[36,0,0,22,0,0,25],
 "test-system-timezone_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[36,0,0,22,0,0,25,0],
-"test-system-timezone_8c_source.html":[36,0,0,22,0,0,25],
-"test-virtuals-without-test_8c.html":[36,0,0,2,0,6,12],
-"test-virtuals-without-test_8c.html#a017afb2365bcdb78ad522db84664e1af":[36,0,0,2,0,6,12,10]
+"test-system-timezone_8c_source.html":[36,0,0,22,0,0,25]
 };

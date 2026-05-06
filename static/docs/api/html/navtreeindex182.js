@@ -1,5 +1,7 @@
 var NAVTREEINDEX182 =
 {
+"struct__AppletSizeHints.html#ac76c91f73fbe05546c552d56754dce19":[35,0,22,1],
+"struct__AppletSizeHintsAlloc.html":[35,0,23],
 "struct__AppletSizeHintsAlloc.html#a4843c1f35a91bda4e7ae451018294e38":[35,0,23,0],
 "struct__AppletSizeHintsAlloc.html#a954d175b663ba6d2d65103305dbe4c30":[35,0,23,1],
 "struct__AutoScaler.html":[35,0,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX182 =
 "struct__CajaDirectoryPrivate.html#ac6faa84677f6357a3efa44ee16e60b21":[35,0,57,26],
 "struct__CajaDirectoryPrivate.html#ad556d894ddccea3e060879fade4df9c3":[35,0,57,0],
 "struct__CajaDirectoryPrivate.html#ad7bf9ce39da3fca54c99f7ce623aa4d3":[35,0,57,16],
-"struct__CajaDirectoryPrivate.html#ada155239c651fe060849b64e317386d2":[35,0,57,38],
-"struct__CajaDirectoryPrivate.html#addf2cd8d4ebd84ef7ed4a810706d4757":[35,0,57,2],
-"struct__CajaDirectoryPrivate.html#adefa2294b32cb0b3f32724656c83ab97":[35,0,57,15]
+"struct__CajaDirectoryPrivate.html#ada155239c651fe060849b64e317386d2":[35,0,57,38]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMixerDeviceClass.html#abd6aaca855af0bc2a26605122a51e93e":[35,0,637,0],
+"struct__MateMixerDeviceClass.html#ac74615602c9350aaf0a1961f3319af66":[35,0,637,8],
 "struct__MateMixerDeviceSwitch.html":[35,0,638],
 "struct__MateMixerDeviceSwitch.html#a39a3700094aaac5f9a7d28232c492766":[35,0,638,1],
 "struct__MateMixerDeviceSwitch.html#adc3ec956d31bc0dee58b7ba2b16a394c":[35,0,638,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateWeatherPref.html#af0f290473532154317e1e3b30a4db2c1":[35,0,681,1],
 "struct__MateWeatherPref.html#af5eda81cc4884ccf320f0099f419297f":[35,0,681,0],
 "struct__MateWeatherPrefClass.html":[35,0,682],
-"struct__MateWeatherPrefClass.html#a09a3be1e6ca2f4fc92198ac45f0b547d":[35,0,682,0],
-"struct__MateWeatherPrefs.html":[35,0,683],
-"struct__MateWeatherPrefs.html#a0f584802cb5a62afafcdb4e45dfce0b3":[35,0,683,10]
+"struct__MateWeatherPrefClass.html#a09a3be1e6ca2f4fc92198ac45f0b547d":[35,0,682,0]
 };

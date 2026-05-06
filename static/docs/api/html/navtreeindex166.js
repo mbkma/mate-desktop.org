@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"sensors-applet_8h.html#ad86a68cf160d804b06fc938b15dddaa0":[36,0,0,26,2,18,25],
+"sensors-applet_8h.html#ad8a470f4018bc3c13e3292cb3651757d":[36,0,0,26,2,18,14],
 "sensors-applet_8h.html#ad8a470f4018bc3c13e3292cb3651757da690d4b56adf17ce92586cb86eea5470d":[36,0,0,26,2,18,14,1],
 "sensors-applet_8h.html#ad8a470f4018bc3c13e3292cb3651757da90a8e6e1d12c45b862edd5a772ac5304":[36,0,0,26,2,18,14,0],
 "sensors-applet_8h.html#adce238094c0356c69007e505aa503151":[36,0,0,26,2,18,28],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "sn-dbus-menu-item_8c_source.html":[36,0,0,22,0,2,1,0],
 "sn-dbus-menu-item_8h.html":[36,0,0,22,0,2,1,1],
 "sn-dbus-menu-item_8h.html#a01e67b238063a9640f0c5cc92f7ea96d":[36,0,0,22,0,2,1,1,2],
-"sn-dbus-menu-item_8h.html#a929bf074c0e4857d1db9b2b976db59aa":[36,0,0,22,0,2,1,1,5],
-"sn-dbus-menu-item_8h.html#a9d6d7d3d8abc2cb37968767d654949f2":[36,0,0,22,0,2,1,1,3],
-"sn-dbus-menu-item_8h.html#afc67aab665ddbf3687baec2c0938b935":[36,0,0,22,0,2,1,1,4]
+"sn-dbus-menu-item_8h.html#a929bf074c0e4857d1db9b2b976db59aa":[36,0,0,22,0,2,1,1,5]
 };

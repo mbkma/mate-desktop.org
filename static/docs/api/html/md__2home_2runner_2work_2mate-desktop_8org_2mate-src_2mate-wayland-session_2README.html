@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MATE Desktop Environment: 🚀 MATE Wayland Session</title>
+<title>MATE Desktop Environment: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,18 +90,21 @@ $(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">🚀 MATE Wayland Session</div></div>
+  <div class="headertitle"><div class="title">README</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md62"></a> Wayland session using Wayfire for the MATE desktop</p>
-<h1><a class="anchor" id="autotoc_md63"></a>
-📦 Building MATE-WAYLAND-SESSION</h1>
+<div class="textblock"><p><a href="https://translate.fedoraproject.org/engage/mate-desktop/"><img src="https://translate.fedoraproject.org/widget/mate-desktop/svg-badge.svg" alt="Translation status" style="pointer-events: none;" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md62"></a>
+🚀 MATE Wayland Session</h1>
+<p>Wayland session using Wayfire for the MATE desktop</p>
+<h2><a class="anchor" id="autotoc_md63"></a>
+📦 Building MATE-WAYLAND-SESSION</h2>
 <p>You need Wayfire installed to run this session, as the startup script and configuration file are Wayfire-specific. Autotools or Meson will install the files in the correct places.</p>
-<h1><a class="anchor" id="autotoc_md64"></a>
-🐞 Reporting Bugs and Submitting Patches</h1>
+<h2><a class="anchor" id="autotoc_md64"></a>
+🐞 Reporting Bugs and Submitting Patches</h2>
 <p>Report new bugs on <a href="https://github.com/mate-desktop/mate-wayland-session">GitHub</a>. Please check for duplicates, especially for feature requests.</p>
-<h1><a class="anchor" id="autotoc_md65"></a>
-📋 Details of MATE-WAYLAND-SESSION</h1>
+<h2><a class="anchor" id="autotoc_md65"></a>
+📋 Details of MATE-WAYLAND-SESSION</h2>
 <p>This is a simple and experimental MATE session using Wayfire, a Wayland compositor reimplementing much of the look and feel of Compiz.</p>
 <ul>
 <li><b>Display Managers</b>: Tested and known to work under SDDM, should work with any Wayland-supporting display manager.</li>
@@ -109,33 +112,33 @@ $(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_
 <li><b>Startup Configuration</b>: Edit <code>~/.config/wayfire.ini</code> to add <code>mate-wayland-components.sh</code> and disable the default Wayfire shell.</li>
 <li><b>Components</b>: Starts MATE components like Caja and Mate-panel without interfering with other parts of any existing Wayfire configuration</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md66"></a>
-🛠 Configuration</h2>
+<h3><a class="anchor" id="autotoc_md66"></a>
+🛠 Configuration</h3>
 <ul>
 <li><b>GSettings</b>: GNOME, not MATE, gsettings preferences apply for fonts and icon themes under Wayland. For XWayland apps, MATE settings are applied.</li>
 <li><b>GTK Options</b>: Many options selectable in X11 are hardcoded in Wayland. For example, headerbars on dialogs clash with the MATE UI and can be fixed by installing <a href="https://github.com/lah7/gtk3-classic">GTK 3 with gtk3-classic patches</a>.</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md67"></a>
-🔧 Setting Themes and Fonts</h2>
+<h3><a class="anchor" id="autotoc_md67"></a>
+🔧 Setting Themes and Fonts</h3>
 <p>Use <code>dconf-editor</code> to reset the GTK theme, icon theme, and fonts in <code>org/gnome/desktop/interface</code>. Apply preferences under both MATE and GNOME to theme Wayland and XWayland apps consistently.</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
-📑 GSettings Override</h2>
+<h3><a class="anchor" id="autotoc_md68"></a>
+📑 GSettings Override</h3>
 <p>A gsettings override file sets the MATE icon theme and Menta GTK theme, and turns off overlay scrolling on a new or default install.</p>
-<h2><a class="anchor" id="autotoc_md69"></a>
-🎨 Window Decoration</h2>
+<h3><a class="anchor" id="autotoc_md69"></a>
+🎨 Window Decoration</h3>
 <p>We no longer replace wayfire's default CSD with SSD for native wayland windows as it looks far better than the default decorator and follows marco themes as now defined in the GTK theme quite well</p>
 <p>The Wayfire Firedecor Plugin is no longer supported upstream The default decoration plugin is now used instead, but is only needed for xwayland windows</p>
 <ul>
 <li><b>Future Development</b>: Another decorator under development can read Marco themes from <a href="https://github.com/marcof-nikogo/wf-external-decoration">wf-external-decoration</a> and with a simpler system and more reliable functioning but not rendering quite as well from (<a href="https://github.com/marcof-nikogo/metacity-decor">https://github.com/marcof-nikogo/metacity-decor</a>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md70"></a>
-XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults</h2>
+<h3><a class="anchor" id="autotoc_md70"></a>
+XSettings Manager still used but only for Xwayland apps which otherwise follow GTK defaults</h3>
 <p>Wayland compositors control more of the session than X11 window managers. Wayfire in Wayland handles much of what Marco, mate-session-manager, and mate-settings-daemon do in X11. Non-wayland supporting apps such as GTK2 apps run under Xwayland, these still benefit from having a running xsettings manager itself under xwayland</p>
-<h1><a class="anchor" id="autotoc_md71"></a>
-📂 Wayfire Configuration Manager (WCM) Recommended</h1>
+<h2><a class="anchor" id="autotoc_md71"></a>
+📂 Wayfire Configuration Manager (WCM) Recommended</h2>
 <p>Wayfire Configuration Manager provides a GUI similar to CCSM for Compiz, allowing control over many options managed by the compositor in a Wayland session.</p>
-<h2><a class="anchor" id="autotoc_md72"></a>
-Known issues</h2>
+<h3><a class="anchor" id="autotoc_md72"></a>
+Known issues</h3>
 <p>Do not set Application ID Mode in workarounds to anything other than it's default of "stock" as doing so will prevent mate-panel's window list from finding the application icons </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

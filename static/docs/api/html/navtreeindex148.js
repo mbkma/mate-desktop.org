@@ -1,5 +1,7 @@
 var NAVTREEINDEX148 =
 {
+"panel-util_8h.html#a981802cc322f76549057fc442c612a32":[36,0,0,22,2,87,21],
+"panel-util_8h.html#a9d42106d94e33d9e46c10d3bd394f901":[36,0,0,22,2,87,12],
 "panel-util_8h.html#aaa14537f2ada506b7e95e24e34a1326a":[36,0,0,22,2,87,9],
 "panel-util_8h.html#aaf0cc9c0ccefc21ec1c903a911efcbcb":[36,0,0,22,2,87,11],
 "panel-util_8h.html#ab6e2ddc82bcdeb7398bce99739120d87":[36,0,0,22,2,87,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX148 =
 "pixbuf-document_8h.html#aa11f03cc0112edfc6533b2943a2a7ad2":[36,0,0,0,0,5,1,0],
 "pixbuf-document_8h.html#ab0734be1f0153d045d38be7f09b24e89":[36,0,0,0,0,5,1,4],
 "pixbuf-document_8h.html#ab4b3f002698601c928294722dd3a76a0":[36,0,0,0,0,5,1,5],
-"pixbuf-document_8h.html#ac4631ceefe64c54d5b04e273d3a3e283":[36,0,0,0,0,5,1,1],
-"pixbuf-document_8h.html#add63d7fd9f69acebe8a12d968b5430f2":[36,0,0,0,0,5,1,2],
-"pixbuf-document_8h_source.html":[36,0,0,0,0,5,1]
+"pixbuf-document_8h.html#ac4631ceefe64c54d5b04e273d3a3e283":[36,0,0,0,0,5,1,1]
 };

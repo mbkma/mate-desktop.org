@@ -1,5 +1,7 @@
 var NAVTREEINDEX201 =
 {
+"struct__PlumaModelinePlugin.html#a343515a33d8c3441174fa9a0006915e8":[35,0,841,0],
+"struct__PlumaModelinePlugin.html#ab8d44cd6633ba5cdde487b96a344b129":[35,0,841,1],
 "struct__PlumaModelinePluginClass.html":[35,0,842],
 "struct__PlumaModelinePluginClass.html#a521e917a5132ae10d3abc6c780809870":[35,0,842,0],
 "struct__PlumaNotebook.html":[35,0,843],
@@ -247,7 +249,5 @@ var NAVTREEINDEX201 =
 "struct__ProgressData.html#a27a402a0412a7a0e4ff49bf08a666b74":[35,0,900,25],
 "struct__ProgressData.html#a2eec79c600d29692bbc94a0fd4cd2ffd":[35,0,900,3],
 "struct__ProgressData.html#a39a9a82c95b4749f79aa30656184ad82":[35,0,900,14],
-"struct__ProgressData.html#a5085ed4968541716982cac7c423ef58e":[35,0,900,20],
-"struct__ProgressData.html#a694a9f0531e8b91b84d653b9b157a935":[35,0,900,7],
-"struct__ProgressData.html#a70cf77605d2d36dc46484b7e78e12da6":[35,0,900,4]
+"struct__ProgressData.html#a5085ed4968541716982cac7c423ef58e":[35,0,900,20]
 };

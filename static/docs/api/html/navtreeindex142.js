@@ -1,5 +1,7 @@
 var NAVTREEINDEX142 =
 {
+"oss-stream-control_8c.html#aba9edf89e7e087d649ae9a222afd2ce1":[36,0,0,8,0,2,5,0],
+"oss-stream-control_8c_source.html":[36,0,0,8,0,2,5],
 "oss-stream-control_8h.html":[36,0,0,8,0,2,6],
 "oss-stream-control_8h.html#a24b74b58b3de0f55dd8aaf1d9e7d1443":[36,0,0,8,0,2,6,10],
 "oss-stream-control_8h.html#a4591f31935442c2f5564bc0515eb87fe":[36,0,0,8,0,2,6,14],
@@ -247,7 +249,5 @@ var NAVTREEINDEX142 =
 "panel-applet-frame-dbus_8c_source.html":[36,0,0,22,2,0,2],
 "panel-applet-frame-dbus_8h.html":[36,0,0,22,2,0,3],
 "panel-applet-frame-dbus_8h.html#a08553e2b7a21f6a3f2fb08cc49133d11":[36,0,0,22,2,0,3,6],
-"panel-applet-frame-dbus_8h.html#a19dc482d5db9da077aebb5f032202577":[36,0,0,22,2,0,3,9],
-"panel-applet-frame-dbus_8h.html#a36e72eae9b5ce4b2b5f666596960ac2b":[36,0,0,22,2,0,3,2],
-"panel-applet-frame-dbus_8h.html#a3ca3e794d80f380530b1d1dd5d8269e9":[36,0,0,22,2,0,3,4]
+"panel-applet-frame-dbus_8h.html#a19dc482d5db9da077aebb5f032202577":[36,0,0,22,2,0,3,9]
 };

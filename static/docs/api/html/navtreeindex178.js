@@ -1,5 +1,7 @@
 var NAVTREEINDEX178 =
 {
+"structMsdClipboardManagerClass.html":[35,0,1483],
+"structMsdClipboardManagerClass.html#a85034a100c3d8cef152aa3eeba2f457e":[35,0,1483,0],
 "structMsdClipboardPlugin.html":[35,0,1484],
 "structMsdClipboardPlugin.html#a3b32ec3d095d488a8bde61f57c8638b9":[35,0,1484,0],
 "structMsdClipboardPlugin.html#a54f73424a458d14fe4ad3b3473c3a8b9":[35,0,1484,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX178 =
 "structNAIFactoryObjectInterface.html#a5af1b5bb76a1d5079de50ecbde9f25db":[35,0,1548,4],
 "structNAIFactoryObjectInterface.html#a649439130bf4b55a8bb08c6ce938413f":[35,0,1548,3],
 "structNAIFactoryObjectInterface.html#a7c96048a9fec0e7a234edee108ba4516":[35,0,1548,7],
-"structNAIFactoryObjectInterface.html#a7c994384b521aa796ca3e4540cac6ac4":[35,0,1548,8],
-"structNAIFactoryObjectInterface.html#a813eb71a0d6363d518cae06bb7924ea5":[35,0,1548,5],
-"structNAIFactoryObjectInterface.html#a9d0c57fc35152b3741c83377f55909d0":[35,0,1548,1]
+"structNAIFactoryObjectInterface.html#a7c994384b521aa796ca3e4540cac6ac4":[35,0,1548,8]
 };
