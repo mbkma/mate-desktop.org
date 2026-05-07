@@ -404,7 +404,7 @@ var NAVTREEINDEX =
 "structxPropWMState.html#ad18072d377945fed6cfa0ff2fa6d3327",
 "terminal-accels_8c.html#a71381659f6fd841fe4c04b393b1f5e82",
 "terminal-profile_8c.html#a09dcbff45bbcda8e3f227a438c6b3fae",
-"terminal-screen_8c.html#ab16db63434594adec104f9e724cc37b3",
+"terminal-screen_8c.html#ab107435fc1b4cec6b8b9f431fc6b70a4",
 "terminal-window_8h.html#aa7b92ad7c6d09a7721e1b9315965a54c",
 "test-virtuals-without-test_8c.html",
 "theme-thumbnail_8h.html#a52bcc9700be93c856d1e5da69ecb733b",

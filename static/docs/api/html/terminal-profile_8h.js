@@ -83,6 +83,7 @@ var terminal_profile_8h =
     [ "_terminal_profile_forget", "terminal-profile_8h.html#ae6859d14f32ddb97e1f3f9c53061d56a", null ],
     [ "_terminal_profile_get_forgotten", "terminal-profile_8h.html#a964ba77c99f5b959201c4fb3d366e946", null ],
     [ "_terminal_profile_new", "terminal-profile_8h.html#af071e36552c9d644ae5b32f4d0822b7d", null ],
+    [ "rgba_equal", "terminal-profile_8h.html#ac8e96149c12b1607946893e546f5f631", null ],
     [ "terminal_profile_get_palette", "terminal-profile_8h.html#a7337eace2fb54d819aa823862bcbf366", null ],
     [ "terminal_profile_get_palette_is_builtin", "terminal-profile_8h.html#a63ce75e9ea35f007749108bfb7952ef0", null ],
     [ "terminal_profile_get_property_boolean", "terminal-profile_8h.html#a7f99f48033a8b52b893f4f5f820206f4", null ],

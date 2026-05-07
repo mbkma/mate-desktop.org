@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ubuntu_0',['Ubuntu',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja_2README.html#autotoc_md6',1,'']]],
-  ['uchar_1',['uchar',['../sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2',1,'Uchar:&#160;sysdeps.h'],['../edid_8h.html#a65f85814a8290f9797005d3b28e7e5fc',1,'uchar:&#160;edid.h']]],
+  ['uchar_1',['uchar',['../edid_8h.html#a65f85814a8290f9797005d3b28e7e5fc',1,'uchar:&#160;edid.h'],['../sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2',1,'Uchar:&#160;sysdeps.h']]],
   ['udisks2_2dplugin_2ec_2',['udisks2-plugin.c',['../udisks2-plugin_8c.html',1,'']]],
   ['udisks2_2dplugin_2eh_3',['udisks2-plugin.h',['../udisks2-plugin_8h.html',1,'']]],
   ['udisks2_5fbus_5fname_4',['UDISKS2_BUS_NAME',['../udisks2-plugin_8c.html#af0a5ff93d43f0ca15ab7fcb7923a6422',1,'udisks2-plugin.c']]],

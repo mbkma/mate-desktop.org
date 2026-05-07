@@ -361,6 +361,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a399b7fdf9967732a7e43ced19bb17a93" id="r_a399b7fdf9967732a7e43ced19bb17a93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-profile_8c.html#a399b7fdf9967732a7e43ced19bb17a93">G_DEFINE_TYPE_WITH_PRIVATE</a> (<a class="el" href="terminal-profile_8h.html#af3d9e891f7933a8fd82861e1722a21e4">TerminalProfile</a>, terminal_profile, G_TYPE_OBJECT)</td></tr>
 <tr class="separator:a399b7fdf9967732a7e43ced19bb17a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e96149c12b1607946893e546f5f631" id="r_ac8e96149c12b1607946893e546f5f631"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a> (const GdkRGBA *a, const GdkRGBA *<a class="el" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>)</td></tr>
+<tr class="separator:ac8e96149c12b1607946893e546f5f631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af071e36552c9d644ae5b32f4d0822b7d" id="r_af071e36552c9d644ae5b32f4d0822b7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="terminal-profile_8h.html#af3d9e891f7933a8fd82861e1722a21e4">TerminalProfile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-profile_8c.html#af071e36552c9d644ae5b32f4d0822b7d">_terminal_profile_new</a> (const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>)</td></tr>
 <tr class="separator:af071e36552c9d644ae5b32f4d0822b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6859d14f32ddb97e1f3f9c53061d56a" id="r_ae6859d14f32ddb97e1f3f9c53061d56a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-profile_8c.html#ae6859d14f32ddb97e1f3f9c53061d56a">_terminal_profile_forget</a> (<a class="el" href="terminal-profile_8h.html#af3d9e891f7933a8fd82861e1722a21e4">TerminalProfile</a> *profile)</td></tr>
@@ -2292,6 +2294,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac8e96149c12b1607946893e546f5f631" name="ac8e96149c12b1607946893e546f5f631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e96149c12b1607946893e546f5f631">&#9670;&#160;</a></span>rgba_equal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean rgba_equal </td>
+          <td>(</td>
+          <td class="paramtype">const GdkRGBA *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GdkRGBA *&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="terminal-profile_8c_source.html#l00315">315</a> of file <a class="el" href="terminal-profile_8c_source.html">terminal-profile.c</a>.</p>
+
+<p class="reference">References <a class="el" href="jpegint-8a_8h_source.html#l00370">b</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="terminal-profile_8c_source.html#l01668">terminal_profile_modify_palette_entry()</a>.</p>
+
+</div>
+</div>
 <a id="a7337eace2fb54d819aa823862bcbf366" name="a7337eace2fb54d819aa823862bcbf366"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7337eace2fb54d819aa823862bcbf366">&#9670;&#160;</a></span>terminal_profile_get_palette()</h2>
 
@@ -2492,7 +2528,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l02307">_terminal_screen_update_scrollbar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l02285">_terminal_screen_update_scrollbar()</a>.</p>
 
 </div>
 </div>
@@ -2592,7 +2628,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l02444">terminal_screen_save_config()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l02422">terminal_screen_save_config()</a>.</p>
 
 </div>
 </div>
@@ -2630,7 +2666,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="terminal-profile_8c_source.html#l01668">1668</a> of file <a class="el" href="terminal-profile_8c_source.html">terminal-profile.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="terminal-profile_8h_source.html#l00128">_TerminalProfile::priv</a>, <a class="el" href="terminal-profile_8c_source.html#l00070">PROP_PALETTE</a>, <a class="el" href="terminal-profile_8h_source.html#l00091">TERMINAL_PROFILE_PALETTE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="terminal-profile_8h_source.html#l00128">_TerminalProfile::priv</a>, <a class="el" href="terminal-profile_8c_source.html#l00070">PROP_PALETTE</a>, <a class="el" href="terminal-profile_8c_source.html#l00315">rgba_equal()</a>, <a class="el" href="terminal-profile_8h_source.html#l00091">TERMINAL_PROFILE_PALETTE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>

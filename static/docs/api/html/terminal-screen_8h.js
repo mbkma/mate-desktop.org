@@ -32,7 +32,6 @@ var terminal_screen_8h =
     [ "_terminal_screen_update_scrollbar", "terminal-screen_8h.html#ad1ab6d3965e78f13cc282d20dc804f95", null ],
     [ "terminal_screen_get_cell_size", "terminal-screen_8h.html#a31fc926940b94c44fa20b2af5295e25c", null ],
     [ "terminal_screen_get_current_dir", "terminal-screen_8h.html#a92ae7886ed6278790bfb65a67bdc2101", null ],
-    [ "terminal_screen_get_current_dir_with_fallback", "terminal-screen_8h.html#a153e4cd164e84c076ff450ee78ece715", null ],
     [ "terminal_screen_get_dynamic_icon_title", "terminal-screen_8h.html#a413fc124b0c4a195c5613d1f2d10fbfe", null ],
     [ "terminal_screen_get_dynamic_title", "terminal-screen_8h.html#a9c7f11b6127e1a6d0b21d4b93b72ccdd", null ],
     [ "terminal_screen_get_font_scale", "terminal-screen_8h.html#ac964b8a621cb1e4e9dc34f7c9112cd6b", null ],

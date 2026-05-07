@@ -238,8 +238,6 @@ Functions</h2></td></tr>
 <tr class="separator:a413fc124b0c4a195c5613d1f2d10fbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ae7886ed6278790bfb65a67bdc2101" id="r_a92ae7886ed6278790bfb65a67bdc2101"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-screen_8c.html#a92ae7886ed6278790bfb65a67bdc2101">terminal_screen_get_current_dir</a> (<a class="el" href="terminal-screen_8h.html#aafe8bb5f6e228a8c16124ec0e0202f20">TerminalScreen</a> *screen)</td></tr>
 <tr class="separator:a92ae7886ed6278790bfb65a67bdc2101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a153e4cd164e84c076ff450ee78ece715" id="r_a153e4cd164e84c076ff450ee78ece715"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-screen_8c.html#a153e4cd164e84c076ff450ee78ece715">terminal_screen_get_current_dir_with_fallback</a> (<a class="el" href="terminal-screen_8h.html#aafe8bb5f6e228a8c16124ec0e0202f20">TerminalScreen</a> *screen)</td></tr>
-<tr class="separator:a153e4cd164e84c076ff450ee78ece715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a565c3e580011fefa944ecca3a68a9aee" id="r_a565c3e580011fefa944ecca3a68a9aee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-screen_8c.html#a565c3e580011fefa944ecca3a68a9aee">terminal_screen_set_font_scale</a> (<a class="el" href="terminal-screen_8h.html#aafe8bb5f6e228a8c16124ec0e0202f20">TerminalScreen</a> *screen, double factor)</td></tr>
 <tr class="separator:a565c3e580011fefa944ecca3a68a9aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac964b8a621cb1e4e9dc34f7c9112cd6b" id="r_ac964b8a621cb1e4e9dc34f7c9112cd6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal-screen_8c.html#ac964b8a621cb1e4e9dc34f7c9112cd6b">terminal_screen_get_font_scale</a> (<a class="el" href="terminal-screen_8h.html#aafe8bb5f6e228a8c16124ec0e0202f20">TerminalScreen</a> *screen)</td></tr>
@@ -592,7 +590,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02307">2307</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02285">2285</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-profile_8c_source.html#l01514">terminal_profile_get_property_enum()</a>, <a class="el" href="terminal-profile_8h_source.html#l00095">TERMINAL_PROFILE_SCROLLBAR_POSITION</a>, <a class="el" href="terminal-screen-container_8c_source.html#l00338">terminal_screen_container_get_from_screen()</a>, <a class="el" href="terminal-screen-container_8c_source.html#l00407">terminal_screen_container_set_placement()</a>, <a class="el" href="terminal-screen-container_8c_source.html#l00354">terminal_screen_container_set_policy()</a>, <a class="el" href="terminal-profile_8h_source.html#l00043">TERMINAL_SCROLLBAR_HIDDEN</a>, <a class="el" href="terminal-profile_8h_source.html#l00041">TERMINAL_SCROLLBAR_LEFT</a>, and <a class="el" href="terminal-profile_8h_source.html#l00042">TERMINAL_SCROLLBAR_RIGHT</a>.</p>
 
@@ -630,7 +628,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02352">2352</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02330">2330</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="terminal-window_8c_source.html#l03491">terminal_window_update_geometry()</a>.</p>
 
@@ -652,39 +650,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>terminal_screen_get_current_dir: @screen:</p>
-<p>Tries to determine the current working directory of the foreground process in @screen's PTY, falling back to the current working directory of the primary child.</p>
+<p>Tries to determine the current working directory of the terminal. First tries OSC 7 (current directory URI set by the shell), then falls back to reading /proc for the child process's cwd, and finally to the initial working directory.</p>
 <p>Returns: a newly allocated string containing the current working directory, or NULL on failure </p>
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01892">1892</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01893">1893</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l01929">terminal_screen_get_current_dir_with_fallback()</a>, and <a class="el" href="terminal-screen_8c_source.html#l02444">terminal_screen_save_config()</a>.</p>
-
-</div>
-</div>
-<a id="a153e4cd164e84c076ff450ee78ece715" name="a153e4cd164e84c076ff450ee78ece715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a153e4cd164e84c076ff450ee78ece715">&#9670;&#160;</a></span>terminal_screen_get_current_dir_with_fallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char * terminal_screen_get_current_dir_with_fallback </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="terminal-screen_8h.html#aafe8bb5f6e228a8c16124ec0e0202f20">TerminalScreen</a> *&#160;</td>
-          <td class="paramname"><em>screen</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>terminal_screen_get_current_dir_with_fallback: @screen:</p>
-<p>Like <a class="el" href="terminal-screen_8c.html#a92ae7886ed6278790bfb65a67bdc2101">terminal_screen_get_current_dir()</a>, but falls back to returning @screen's initial working directory, with a further fallback to the user's home directory.</p>
-<p>Returns: a newly allocated string containing the current working directory, or NULL on failure </p>
-
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01929">1929</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
-
-<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, and <a class="el" href="terminal-screen_8c_source.html#l01892">terminal_screen_get_current_dir()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l02422">terminal_screen_save_config()</a>.</p>
 
 </div>
 </div>
@@ -748,7 +721,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01964">1964</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01942">1942</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, and <a class="el" href="terminal-screen_8h_source.html#l00047">TERMINAL_IS_SCREEN</a>.</p>
 
@@ -920,7 +893,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02341">2341</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02319">2319</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="terminal-window_8c_source.html#l04626">terminal_window_save_state()</a>, <a class="el" href="terminal-window_8c_source.html#l03491">terminal_window_update_geometry()</a>, and <a class="el" href="terminal-window_8c_source.html#l02891">terminal_window_update_size_set_geometry()</a>.</p>
 
@@ -967,7 +940,7 @@ Functions</h2></td></tr>
 <p>Checks whether there's a foreground process running in this terminal.</p>
 <p>Returns: TRUE iff there's a foreground process running in @screen </p>
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02488">2488</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02466">2466</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1025,7 +998,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l00723">723</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
-<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-profile_8h_source.html#l00116">TERMINAL_IS_PROFILE</a>, <a class="el" href="terminal-profile_8h_source.html#l00083">TERMINAL_PROFILE_DEFAULT_SIZE_COLUMNS</a>, <a class="el" href="terminal-profile_8h_source.html#l00084">TERMINAL_PROFILE_DEFAULT_SIZE_ROWS</a>, <a class="el" href="terminal-profile_8c_source.html#l01472">terminal_profile_get_property_boolean()</a>, <a class="el" href="terminal-profile_8c_source.html#l01528">terminal_profile_get_property_int()</a>, <a class="el" href="terminal-profile_8h_source.html#l00103">TERMINAL_PROFILE_USE_CUSTOM_DEFAULT_SIZE</a>, <a class="el" href="terminal-screen_8c_source.html#l01195">terminal_screen_set_font()</a>, <a class="el" href="terminal-screen_8c_source.html#l01942">terminal_screen_set_font_scale()</a>, <a class="el" href="terminal-screen_8c_source.html#l01340">terminal_screen_set_initial_environment()</a>, <a class="el" href="terminal-screen_8c_source.html#l01319">terminal_screen_set_override_command()</a>, <a class="el" href="terminal-screen_8c_source.html#l01850">terminal_screen_set_override_title()</a>, <a class="el" href="terminal-screen_8c_source.html#l01260">terminal_screen_set_profile()</a>, and <a class="el" href="terminal-screen_8h_source.html#l00044">TERMINAL_TYPE_SCREEN</a>.</p>
+<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-profile_8h_source.html#l00116">TERMINAL_IS_PROFILE</a>, <a class="el" href="terminal-profile_8h_source.html#l00083">TERMINAL_PROFILE_DEFAULT_SIZE_COLUMNS</a>, <a class="el" href="terminal-profile_8h_source.html#l00084">TERMINAL_PROFILE_DEFAULT_SIZE_ROWS</a>, <a class="el" href="terminal-profile_8c_source.html#l01472">terminal_profile_get_property_boolean()</a>, <a class="el" href="terminal-profile_8c_source.html#l01528">terminal_profile_get_property_int()</a>, <a class="el" href="terminal-profile_8h_source.html#l00103">TERMINAL_PROFILE_USE_CUSTOM_DEFAULT_SIZE</a>, <a class="el" href="terminal-screen_8c_source.html#l01195">terminal_screen_set_font()</a>, <a class="el" href="terminal-screen_8c_source.html#l01920">terminal_screen_set_font_scale()</a>, <a class="el" href="terminal-screen_8c_source.html#l01340">terminal_screen_set_initial_environment()</a>, <a class="el" href="terminal-screen_8c_source.html#l01319">terminal_screen_set_override_command()</a>, <a class="el" href="terminal-screen_8c_source.html#l01850">terminal_screen_set_override_title()</a>, <a class="el" href="terminal-screen_8c_source.html#l01260">terminal_screen_set_profile()</a>, and <a class="el" href="terminal-screen_8h_source.html#l00044">TERMINAL_TYPE_SCREEN</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="terminal-app_8c_source.html#l01895">terminal_app_new_terminal()</a>.</p>
 
@@ -1049,7 +1022,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01671">1671</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
-<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="terminal-screen_8h_source.html#l00147">_TerminalScreenPopupInfo::ref_count</a>.</p>
+<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="terminal-screen_8h_source.html#l00146">_TerminalScreenPopupInfo::ref_count</a>.</p>
 
 </div>
 </div>
@@ -1071,7 +1044,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01680">1680</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
-<p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00151">_TerminalScreenPopupInfo::hyperlink</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00147">_TerminalScreenPopupInfo::ref_count</a>, <a class="el" href="terminal-screen_8h_source.html#l00149">_TerminalScreenPopupInfo::screen</a>, and <a class="el" href="terminal-screen_8h_source.html#l00150">_TerminalScreenPopupInfo::url</a>.</p>
+<p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00150">_TerminalScreenPopupInfo::hyperlink</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="terminal-screen_8h_source.html#l00146">_TerminalScreenPopupInfo::ref_count</a>, <a class="el" href="terminal-screen_8h_source.html#l00148">_TerminalScreenPopupInfo::screen</a>, and <a class="el" href="terminal-screen_8h_source.html#l00149">_TerminalScreenPopupInfo::url</a>.</p>
 
 </div>
 </div>
@@ -1107,9 +1080,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02444">2444</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02422">2422</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
-<p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-app_8h_source.html#l00053">TERMINAL_CONFIG_TERMINAL_PROP_COMMAND</a>, <a class="el" href="terminal-app_8h_source.html#l00052">TERMINAL_CONFIG_TERMINAL_PROP_HEIGHT</a>, <a class="el" href="terminal-app_8h_source.html#l00054">TERMINAL_CONFIG_TERMINAL_PROP_PROFILE_ID</a>, <a class="el" href="terminal-app_8h_source.html#l00055">TERMINAL_CONFIG_TERMINAL_PROP_TITLE</a>, <a class="el" href="terminal-app_8h_source.html#l00056">TERMINAL_CONFIG_TERMINAL_PROP_WIDTH</a>, <a class="el" href="terminal-app_8h_source.html#l00057">TERMINAL_CONFIG_TERMINAL_PROP_WORKING_DIRECTORY</a>, <a class="el" href="terminal-app_8h_source.html#l00058">TERMINAL_CONFIG_TERMINAL_PROP_ZOOM</a>, <a class="el" href="terminal-profile_8c_source.html#l01556">terminal_profile_get_property_string()</a>, <a class="el" href="terminal-profile_8h_source.html#l00090">TERMINAL_PROFILE_NAME</a>, <a class="el" href="terminal-screen_8c_source.html#l01892">terminal_screen_get_current_dir()</a>, <a class="el" href="terminal-util_8c_source.html#l00422">terminal_util_key_file_set_argv()</a>, and <a class="el" href="terminal-util_8c_source.html#l00390">terminal_util_key_file_set_string_escape()</a>.</p>
+<p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-app_8h_source.html#l00053">TERMINAL_CONFIG_TERMINAL_PROP_COMMAND</a>, <a class="el" href="terminal-app_8h_source.html#l00052">TERMINAL_CONFIG_TERMINAL_PROP_HEIGHT</a>, <a class="el" href="terminal-app_8h_source.html#l00054">TERMINAL_CONFIG_TERMINAL_PROP_PROFILE_ID</a>, <a class="el" href="terminal-app_8h_source.html#l00055">TERMINAL_CONFIG_TERMINAL_PROP_TITLE</a>, <a class="el" href="terminal-app_8h_source.html#l00056">TERMINAL_CONFIG_TERMINAL_PROP_WIDTH</a>, <a class="el" href="terminal-app_8h_source.html#l00057">TERMINAL_CONFIG_TERMINAL_PROP_WORKING_DIRECTORY</a>, <a class="el" href="terminal-app_8h_source.html#l00058">TERMINAL_CONFIG_TERMINAL_PROP_ZOOM</a>, <a class="el" href="terminal-profile_8c_source.html#l01556">terminal_profile_get_property_string()</a>, <a class="el" href="terminal-profile_8h_source.html#l00090">TERMINAL_PROFILE_NAME</a>, <a class="el" href="terminal-screen_8c_source.html#l01893">terminal_screen_get_current_dir()</a>, <a class="el" href="terminal-util_8c_source.html#l00422">terminal_util_key_file_set_argv()</a>, and <a class="el" href="terminal-util_8c_source.html#l00390">terminal_util_key_file_set_string_escape()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="terminal-window_8c_source.html#l04626">terminal_window_save_state()</a>.</p>
 
@@ -1165,9 +1138,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01942">1942</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l01920">1920</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
-<p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-screen_8h_source.html#l00047">TERMINAL_IS_SCREEN</a>, <a class="el" href="terminal-screen_8h_source.html#l00143">TERMINAL_SCALE_MAXIMUM</a>, and <a class="el" href="terminal-screen_8h_source.html#l00142">TERMINAL_SCALE_MINIMUM</a>.</p>
+<p class="reference">References <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, <a class="el" href="terminal-screen_8h_source.html#l00047">TERMINAL_IS_SCREEN</a>, <a class="el" href="terminal-screen_8h_source.html#l00142">TERMINAL_SCALE_MAXIMUM</a>, and <a class="el" href="terminal-screen_8h_source.html#l00141">TERMINAL_SCALE_MINIMUM</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="terminal-screen_8c_source.html#l00723">terminal_screen_new()</a>.</p>
 
@@ -1335,7 +1308,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02056">2056</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="terminal-screen_8c_source.html#l02034">2034</a> of file <a class="el" href="terminal-screen_8c_source.html">terminal-screen.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="terminal-screen_8h_source.html#l00059">_TerminalScreen::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 

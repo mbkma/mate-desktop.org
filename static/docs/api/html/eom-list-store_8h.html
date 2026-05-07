@@ -470,9 +470,9 @@ Functions</h2></td></tr>
 <p>Adds a list of #GFile's to @store. The given list must be NULL-terminated.</p>
 <p>If any of the #GFile's in @file_list is a directory, all the images in that directory will be added to @store. If the list of files contains only one file and this is a regular file, then all the images in the same directory will be added as well to @store. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00550">550</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00551">551</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eom-image_8c_source.html#l02242">eom_image_is_supported_mime_type()</a>, <a class="el" href="eom-list-store_8c_source.html#l00768">eom_list_store_get_pos_by_iter()</a>, <a class="el" href="eom-util_8c_source.html#l00487">eom_util_get_content_type_with_fallback()</a>, <a class="el" href="caja-sendto-command_8c_source.html#l00053">file_list</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="eom-list-store_8h_source.html#l00061">_EomListStore::priv</a>.</p>
+<p class="reference">References <a class="el" href="eom-image_8c_source.html#l02242">eom_image_is_supported_mime_type()</a>, <a class="el" href="eom-list-store_8c_source.html#l00769">eom_list_store_get_pos_by_iter()</a>, <a class="el" href="eom-util_8c_source.html#l00487">eom_util_get_content_type_with_fallback()</a>, <a class="el" href="caja-sendto-command_8c_source.html#l00053">file_list</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="eom-list-store_8h_source.html#l00061">_EomListStore::priv</a>.</p>
 
 </div>
 </div>
@@ -508,7 +508,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="eom-list-store_8h_source.html#l00054">EOM_LIST_STORE_EOM_IMAGE</a>, <a class="el" href="eom-list-store_8h_source.html#l00053">EOM_LIST_STORE_THUMB_SET</a>, <a class="el" href="eom-list-store_8h_source.html#l00052">EOM_LIST_STORE_THUMBNAIL</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="eom-list-store_8h_source.html#l00061">_EomListStore::priv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eom-list-store_8c_source.html#l00686">eom_list_store_new_from_glist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eom-list-store_8c_source.html#l00687">eom_list_store_new_from_glist()</a>.</p>
 
 </div>
 </div>
@@ -541,7 +541,7 @@ Functions</h2></td></tr>
 <p>Gets the <a class="el" href="eom-image-save-info_8h.html#a11f7708d5c19af4336a19fcf5a539573">EomImage</a> in the position @pos of @store. If there is no image at position @pos, NULL is returned.</p>
 <p>Returns: (transfer full): the <a class="el" href="eom-image-save-info_8h.html#a11f7708d5c19af4336a19fcf5a539573">EomImage</a> in position @pos or NULL. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00742">742</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00743">743</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-list-store_8h_source.html#l00045">EOM_IS_LIST_STORE</a>, <a class="el" href="eom-list-store_8h_source.html#l00054">EOM_LIST_STORE_EOM_IMAGE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -566,7 +566,7 @@ Functions</h2></td></tr>
 <p>Gets the position of the <a class="el" href="eom-image-save-info_8h.html#a11f7708d5c19af4336a19fcf5a539573">EomImage</a> that should be loaded first. If not set, it returns -1.</p>
 <p>Returns: the position of the image to be loaded first or -1. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00810">810</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00811">811</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-list-store_8h_source.html#l00045">EOM_IS_LIST_STORE</a>, and <a class="el" href="eom-list-store_8h_source.html#l00061">_EomListStore::priv</a>.</p>
 
@@ -603,9 +603,9 @@ Functions</h2></td></tr>
 <p>Gets the position wherestored in @store. Ifnot stored in @store, -1 is returned.</p>
 <p>Returns: the position of@store or -1 if not found. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00711">711</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00712">712</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eom-image_8c_source.html#l02081">eom_image_get_file()</a>, <a class="el" href="eom-image_8h_source.html#l00064">EOM_IS_IMAGE</a>, <a class="el" href="eom-list-store_8h_source.html#l00045">EOM_IS_LIST_STORE</a>, and <a class="el" href="eom-list-store_8c_source.html#l00768">eom_list_store_get_pos_by_iter()</a>.</p>
+<p class="reference">References <a class="el" href="eom-image_8c_source.html#l02081">eom_image_get_file()</a>, <a class="el" href="eom-image_8h_source.html#l00064">EOM_IS_IMAGE</a>, <a class="el" href="eom-list-store_8h_source.html#l00045">EOM_IS_LIST_STORE</a>, and <a class="el" href="eom-list-store_8c_source.html#l00769">eom_list_store_get_pos_by_iter()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="eom-thumb-view_8c_source.html#l00916">eom_thumb_view_set_current_image()</a>.</p>
 
@@ -640,9 +640,9 @@ Functions</h2></td></tr>
 <p>Gets the position of the image pointed by @iter.</p>
 <p>Returns: The position of the image pointed by @iter. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00768">768</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00769">769</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eom-list-store_8c_source.html#l00550">eom_list_store_add_files()</a>, and <a class="el" href="eom-list-store_8c_source.html#l00711">eom_list_store_get_pos_by_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eom-list-store_8c_source.html#l00551">eom_list_store_add_files()</a>, and <a class="el" href="eom-list-store_8c_source.html#l00712">eom_list_store_get_pos_by_image()</a>.</p>
 
 </div>
 </div>
@@ -683,11 +683,11 @@ Functions</h2></td></tr>
 <p>Returns the number of images in the store.</p>
 <p>Returns: The number of images in @store. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00792">792</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00793">793</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-list-store_8h_source.html#l00045">EOM_IS_LIST_STORE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eom-thumb-view_8c_source.html#l00957">eom_thumb_view_select_single()</a>, <a class="el" href="eom-thumb-view_8c_source.html#l00718">eom_thumb_view_set_model()</a>, and <a class="el" href="eom-window_8c_source.html#l05679">eom_window_is_empty()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eom-thumb-view_8c_source.html#l00957">eom_thumb_view_select_single()</a>, <a class="el" href="eom-thumb-view_8c_source.html#l00718">eom_thumb_view_set_model()</a>, and <a class="el" href="eom-window_8c_source.html#l05688">eom_window_is_empty()</a>.</p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="eom-list-store_8h_source.html#l00042">EOM_TYPE_LIST_STORE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eom-list-store_8c_source.html#l00686">eom_list_store_new_from_glist()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eom-list-store_8c_source.html#l00687">eom_list_store_new_from_glist()</a>.</p>
 
 </div>
 </div>
@@ -737,7 +737,7 @@ Functions</h2></td></tr>
 <p>Creates a new <a class="el" href="eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620">EomListStore</a> from a list of <a class="el" href="eom-image-save-info_8h.html#a11f7708d5c19af4336a19fcf5a539573">EomImage</a>'s. The given list must be NULL-terminated.</p>
 <p>Returns: a new <a class="el" href="eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620">EomListStore</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00686">686</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00687">687</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-image_8h_source.html#l00062">EOM_IMAGE</a>, <a class="el" href="eom-list-store_8h_source.html#l00043">EOM_LIST_STORE</a>, <a class="el" href="eom-list-store_8c_source.html#l00336">eom_list_store_append_image()</a>, <a class="el" href="eom-list-store_8c_source.html#l00179">eom_list_store_new()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -771,7 +771,7 @@ Functions</h2></td></tr>
 <p>eom_list_store_remove_image: @store: An <a class="el" href="eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620">EomListStore</a>. An <a class="el" href="eom-image-save-info_8h.html#a11f7708d5c19af4336a19fcf5a539573">EomImage</a>.</p>
 <p>Removes@store. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00660">660</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00661">661</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-image_8c_source.html#l02081">eom_image_get_file()</a>, <a class="el" href="eom-image_8h_source.html#l00064">EOM_IS_IMAGE</a>, and <a class="el" href="eom-list-store_8h_source.html#l00045">EOM_IS_LIST_STORE</a>.</p>
 
@@ -805,7 +805,7 @@ Functions</h2></td></tr>
 <p>eom_list_store_thumbnail_refresh: @store: An <a class="el" href="eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620">EomListStore</a>. @iter: A #GtkTreeIter pointing to an image in @store.</p>
 <p>Refreshes the thumbnail for the image pointed by @iter. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00934">934</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00935">935</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 </div>
 </div>
@@ -837,7 +837,7 @@ Functions</h2></td></tr>
 <p>eom_list_store_thumbnail_set: @store: An <a class="el" href="eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620">EomListStore</a>. @iter: A #GtkTreeIter pointing to an image in @store.</p>
 <p>Sets the thumbnail for the image pointed by @iter. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00880">880</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00881">881</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-list-store_8h_source.html#l00053">EOM_LIST_STORE_THUMB_SET</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
@@ -871,7 +871,7 @@ Functions</h2></td></tr>
 <p>eom_list_store_thumbnail_unset: @store: An <a class="el" href="eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620">EomListStore</a>. @iter: A #GtkTreeIter pointing to an image in @store.</p>
 <p>Unsets the thumbnail for the image pointed by @iter, changing it to a "busy" icon. </p>
 
-<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00906">906</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eom-list-store_8c_source.html#l00907">907</a> of file <a class="el" href="eom-list-store_8c_source.html">eom-list-store.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eom-image_8c_source.html#l01295">eom_image_set_thumbnail()</a>, <a class="el" href="eom-list-store_8h_source.html#l00054">EOM_LIST_STORE_EOM_IMAGE</a>, <a class="el" href="eom-list-store_8h_source.html#l00053">EOM_LIST_STORE_THUMB_SET</a>, <a class="el" href="eom-list-store_8h_source.html#l00052">EOM_LIST_STORE_THUMBNAIL</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="eom-list-store_8h_source.html#l00061">_EomListStore::priv</a>.</p>
 

@@ -27,6 +27,7 @@ var searchData=
   ['requests_5finit_24',['requests_init',['../weather-priv_8h.html#ac6769e31dbed2515db42b56a231f0daa',1,'requests_init(WeatherInfo *info):&#160;weather.c'],['../weather_8c.html#ac6769e31dbed2515db42b56a231f0daa',1,'requests_init(WeatherInfo *info):&#160;weather.c']]],
   ['reset_25',['reset',['../classSmoothRefresh.html#a7b5323e78c9df018640a269ee823a06a',1,'SmoothRefresh']]],
   ['restore_26',['restore',['../classprocman_1_1SelectionMemento.html#a0703a9296c88c3bd7543e57d46f6238d',1,'procman::SelectionMemento']]],
-  ['root_27',['root',['../namespaceprocman_1_1settings.html#ace212a59bdd0400ac56f9dcaba6517b1',1,'procman::settings']]],
-  ['runtimezonedialog_28',['runtimezonedialog',['../time-zone_8c.html#a737faf3d295ebd2a41d6955e790b7d50',1,'RunTimeZoneDialog(GtkButton *button, gpointer data):&#160;time-zone.c'],['../time-zone_8h.html#a737faf3d295ebd2a41d6955e790b7d50',1,'RunTimeZoneDialog(GtkButton *button, gpointer data):&#160;time-zone.c']]]
+  ['rgba_5fequal_27',['rgba_equal',['../terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631',1,'rgba_equal(const GdkRGBA *a, const GdkRGBA *b):&#160;terminal-profile.c'],['../terminal-profile_8h.html#ac8e96149c12b1607946893e546f5f631',1,'rgba_equal(const GdkRGBA *a, const GdkRGBA *b):&#160;terminal-profile.c']]],
+  ['root_28',['root',['../namespaceprocman_1_1settings.html#ace212a59bdd0400ac56f9dcaba6517b1',1,'procman::settings']]],
+  ['runtimezonedialog_29',['runtimezonedialog',['../time-zone_8c.html#a737faf3d295ebd2a41d6955e790b7d50',1,'RunTimeZoneDialog(GtkButton *button, gpointer data):&#160;time-zone.c'],['../time-zone_8h.html#a737faf3d295ebd2a41d6955e790b7d50',1,'RunTimeZoneDialog(GtkButton *button, gpointer data):&#160;time-zone.c']]]
 ];

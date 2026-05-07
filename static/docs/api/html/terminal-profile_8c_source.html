@@ -411,8 +411,9 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="terminal-profile_8c.html#a399b7fdf9967732a7e43ced19bb17a93">  311</a></span><a class="code hl_function" href="terminal-profile_8c.html#a399b7fdf9967732a7e43ced19bb17a93">G_DEFINE_TYPE_WITH_PRIVATE</a> (<a class="code hl_struct" href="struct__TerminalProfile.html">TerminalProfile</a>, terminal_profile, G_TYPE_OBJECT);</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">/* gdk_rgba_equal is too strict! */</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>rgba_equal (<span class="keyword">const</span> GdkRGBA *a,</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>gboolean</div>
+<div class="foldopen" id="foldopen00315" data-start="{" data-end="}">
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno"><a class="line" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">  315</a></span><a class="code hl_function" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a> (<span class="keyword">const</span> GdkRGBA *a,</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            <span class="keyword">const</span> GdkRGBA *<a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>)</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>{</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    gdouble dr, dg, db, da;</div>
@@ -424,6 +425,7 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">return</span> (dr * dr + dg * dg + db * db + da * da) &lt; 1e-4;</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>}</div>
+</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>palette_cmp (<span class="keyword">const</span> GdkRGBA *ca,</div>
@@ -432,7 +434,7 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    guint i;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_define" href="terminal-profile_8h.html#acf768106a7467e81ba6f592d1c9dfa72">TERMINAL_PALETTE_SIZE</a>; ++i)</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">if</span> (!rgba_equal (&amp;ca[i], &amp;<a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>[i]))</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a> (&amp;ca[i], &amp;<a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>[i]))</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -520,7 +522,7 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">if</span> (G_PARAM_SPEC_VALUE_TYPE (pspec) == GDK_TYPE_RGBA)</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        <span class="keywordflow">return</span> rgba_equal (g_value_get_boxed (va), g_value_get_boxed (vb));</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a> (g_value_get_boxed (va), g_value_get_boxed (vb));</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordflow">if</span> (G_PARAM_SPEC_VALUE_TYPE (pspec) == PANGO_TYPE_FONT_DESCRIPTION)</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        <span class="keywordflow">return</span> pango_font_description_equal (g_value_get_boxed (va), g_value_get_boxed (vb));</div>
@@ -538,7 +540,7 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        <span class="keywordflow">for</span> (i = 0; i &lt; ara-&gt;n_values; ++i)</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>            <span class="keywordflow">if</span> (!rgba_equal (g_value_get_boxed (g_value_array_get_nth (ara, i)),</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>            <span class="keywordflow">if</span> (!<a class="code hl_function" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a> (g_value_get_boxed (g_value_array_get_nth (ara, i)),</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>                                  g_value_get_boxed (g_value_array_get_nth (arb, i))))</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>                <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
@@ -1815,7 +1817,7 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>    value = g_value_array_get_nth (array, i);</div>
 <div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>    old_color = g_value_get_boxed (value);</div>
 <div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span>    <span class="keywordflow">if</span> (!old_color ||</div>
-<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>            !rgba_equal (old_color, color))</div>
+<div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span>            !<a class="code hl_function" href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a> (old_color, color))</div>
 <div class="line"><a id="l01686" name="l01686"></a><span class="lineno"> 1686</span>    {</div>
 <div class="line"><a id="l01687" name="l01687"></a><span class="lineno"> 1687</span>        g_value_set_boxed (value, color);</div>
 <div class="line"><a id="l01688" name="l01688"></a><span class="lineno"> 1688</span>        g_object_notify (G_OBJECT (profile), <a class="code hl_define" href="terminal-profile_8h.html#a677ac39fd72537b65be0da1b5a3a69be">TERMINAL_PROFILE_PALETTE</a>);</div>
@@ -1977,6 +1979,7 @@ $(document).ready(function(){initNavTree('terminal-profile_8c_source.html',''); 
 <div class="ttc" id="aterminal-profile_8c_html_abab87e4c9b1cea63570eda6d54bba8cc"><div class="ttname"><a href="terminal-profile_8c.html#abab87e4c9b1cea63570eda6d54bba8cc">DEFAULT_NAME</a></div><div class="ttdeci">#define DEFAULT_NAME</div><div class="ttdef"><b>Definition</b> <a href="terminal-profile_8c_source.html#l00150">terminal-profile.c:150</a></div></div>
 <div class="ttc" id="aterminal-profile_8c_html_abd7075bb063d875b0e7ac51fcca0620f"><div class="ttname"><a href="terminal-profile_8c.html#abd7075bb063d875b0e7ac51fcca0620f">KEY_USE_CUSTOM_DEFAULT_SIZE</a></div><div class="ttdeci">#define KEY_USE_CUSTOM_DEFAULT_SIZE</div><div class="ttdef"><b>Definition</b> <a href="terminal-profile_8c_source.html#l00123">terminal-profile.c:123</a></div></div>
 <div class="ttc" id="aterminal-profile_8c_html_ac7aed11b03091cacfb50a25442c5f28f"><div class="ttname"><a href="terminal-profile_8c.html#ac7aed11b03091cacfb50a25442c5f28f">KEY_DELETE_BINDING</a></div><div class="ttdeci">#define KEY_DELETE_BINDING</div><div class="ttdef"><b>Definition</b> <a href="terminal-profile_8c_source.html#l00106">terminal-profile.c:106</a></div></div>
+<div class="ttc" id="aterminal-profile_8c_html_ac8e96149c12b1607946893e546f5f631"><div class="ttname"><a href="terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631">rgba_equal</a></div><div class="ttdeci">gboolean rgba_equal(const GdkRGBA *a, const GdkRGBA *b)</div><div class="ttdef"><b>Definition</b> <a href="terminal-profile_8c_source.html#l00315">terminal-profile.c:315</a></div></div>
 <div class="ttc" id="aterminal-profile_8c_html_acabd7ad178b45a05147d32bcb8c1f4d4"><div class="ttname"><a href="terminal-profile_8c.html#acabd7ad178b45a05147d32bcb8c1f4d4">TERMINAL_PROFILE_PROPERTY_VALUE_ARRAY_BOXED</a></div><div class="ttdeci">#define TERMINAL_PROFILE_PROPERTY_VALUE_ARRAY_BOXED(prop, propElementName, propElementType, propGSettings)</div></div>
 <div class="ttc" id="aterminal-profile_8c_html_acb0e363b8a27d1129d00050773935e61"><div class="ttname"><a href="terminal-profile_8c.html#acb0e363b8a27d1129d00050773935e61">KEY_USE_SYSTEM_FONT</a></div><div class="ttdeci">#define KEY_USE_SYSTEM_FONT</div><div class="ttdef"><b>Definition</b> <a href="terminal-profile_8c_source.html#l00126">terminal-profile.c:126</a></div></div>
 <div class="ttc" id="aterminal-profile_8c_html_ace8e63bf900a1aff8f5a62b1c8f0973a"><div class="ttname"><a href="terminal-profile_8c.html#ace8e63bf900a1aff8f5a62b1c8f0973a">DEFAULT_USE_CUSTOM_COMMAND</a></div><div class="ttdeci">#define DEFAULT_USE_CUSTOM_COMMAND</div><div class="ttdef"><b>Definition</b> <a href="terminal-profile_8c_source.html#l00162">terminal-profile.c:162</a></div></div>
