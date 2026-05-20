@@ -1,7 +1,7 @@
 var structMonitorInfo =
 [
     [ "active_off", "structMonitorInfo.html#a5809756cdc0459422027036552204eed", null ],
-    [ "analog", "structMonitorInfo.html#a562833fe234da59bb937315c054d8d68", null ],
+    [ "analog", "structMonitorInfo.html#a2f73e435f44059329deb333ead7ce04b", null ],
     [ "aspect_ratio", "structMonitorInfo.html#a60afe49923ae0979afdc0aa9965a4669", null ],
     [ "bits_per_primary", "structMonitorInfo.html#a2f93472c8780fd627d2fe3383aec098b", null ],
     [ "blank_to_black", "structMonitorInfo.html#af899599ea8f0ee68e1f4364798424e4d", null ],
@@ -11,10 +11,10 @@ var structMonitorInfo =
     [ "color_type", "structMonitorInfo.html#a60c70151564558c1eb3b49d49c012189", null ],
     [ "composite_sync_on_green", "structMonitorInfo.html#a7e0bb1673083d8ade380a7d362af7873", null ],
     [ "composite_sync_on_h", "structMonitorInfo.html#a8068f348bb05392a9efd44d74bc42870", null ],
-    [ "connector", "structMonitorInfo.html#a4cd81991bded4ff52498fb376770ad18", null ],
+    [ "connector", "structMonitorInfo.html#add561c62ab866328450ed71a93424ce2", null ],
     [ "continuous_frequency", "structMonitorInfo.html#a1e3bd8d230e65b11f21928e45bee9765", null ],
     [ "detailed_timings", "structMonitorInfo.html#ab0a9134879d0f6d871fbafccf1b1cebf", null ],
-    [ "digital", "structMonitorInfo.html#a7c8227d9cff2d13c78bc2b95a567eeae", null ],
+    [ "digital", "structMonitorInfo.html#a0334fb3a51af5cd18cb57a0b55644fcf", null ],
     [ "dsc_product_name", "structMonitorInfo.html#a3cb085daf089851323bfa907352b0867", null ],
     [ "dsc_serial_number", "structMonitorInfo.html#a5cf91a81e40663efb0b26a8f1aeada4c", null ],
     [ "dsc_string", "structMonitorInfo.html#ad9fc5d776ce2b7edefeec9df30990524", null ],

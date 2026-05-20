@@ -140,6 +140,9 @@ Enumerations</h2></td></tr>
 <tr class="memitem:a80155586fa275b28773c9b203f52caba" id="r_a80155586fa275b28773c9b203f52caba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ev-annotation_8c.html#a80155586fa275b28773c9b203f52cabaa7ccb391710ce91236453c270d8f4da77">PROP_ATTACHMENT_ATTACHMENT</a> = PROP_MARKUP_POPUP_IS_OPEN + 1
  }</td></tr>
 <tr class="separator:a80155586fa275b28773c9b203f52caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7b47dd702d9e331586d485013fd1ea" id="r_a6b7b47dd702d9e331586d485013fd1ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="ev-annotation_8c.html#a6b7b47dd702d9e331586d485013fd1eaa117fd7f010ecb6fd3540b61719e8f630">PROP_TEXT_MARKUP_TYPE</a> = PROP_MARKUP_POPUP_IS_OPEN + 1
+ }</td></tr>
+<tr class="separator:a6b7b47dd702d9e331586d485013fd1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -147,6 +150,8 @@ Functions</h2></td></tr>
 <tr class="separator:a90344c069ddc0cb785e9687da04163ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a61ef392633021627740e40dda4dc2" id="r_af9a61ef392633021627740e40dda4dc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#af9a61ef392633021627740e40dda4dc2">G_DEFINE_TYPE_WITH_CODE</a> (<a class="el" href="ev-annotation_8h.html#a62ff016338ee24dd92430feb96d1b437">EvAnnotationAttachment</a>, ev_annotation_attachment, <a class="el" href="ev-annotation_8h.html#a5f7912e7b6d609a84264e53f79bcfde0">EV_TYPE_ANNOTATION</a>, { G_IMPLEMENT_INTERFACE(<a class="el" href="ev-annotation_8h.html#accb6d824cf8d0ff16c9bd978630e306d">EV_TYPE_ANNOTATION_MARKUP</a>, ev_annotation_attachment_markup_iface_init);})</td></tr>
 <tr class="separator:af9a61ef392633021627740e40dda4dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f1642b80be0723ca88a94ce7676c666" id="r_a1f1642b80be0723ca88a94ce7676c666"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#a1f1642b80be0723ca88a94ce7676c666">G_DEFINE_TYPE_WITH_CODE</a> (<a class="el" href="ev-annotation_8h.html#a518c73000c69970c6b53982aa90ce41c">EvAnnotationTextMarkup</a>, ev_annotation_text_markup, <a class="el" href="ev-annotation_8h.html#a5f7912e7b6d609a84264e53f79bcfde0">EV_TYPE_ANNOTATION</a>, { G_IMPLEMENT_INTERFACE(<a class="el" href="ev-annotation_8h.html#accb6d824cf8d0ff16c9bd978630e306d">EV_TYPE_ANNOTATION_MARKUP</a>, ev_annotation_text_markup_markup_iface_init);})</td></tr>
+<tr class="separator:a1f1642b80be0723ca88a94ce7676c666"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add69f7c77d3c85b0fb0e4453516406bc" id="r_add69f7c77d3c85b0fb0e4453516406bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-annotation_8h.html#afefd731d42807f616c59d29b3beb2568">EvAnnotationType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#add69f7c77d3c85b0fb0e4453516406bc">ev_annotation_get_annotation_type</a> (<a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot)</td></tr>
 <tr class="separator:add69f7c77d3c85b0fb0e4453516406bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7544b32832c17043165710ce2cd781d6" id="r_a7544b32832c17043165710ce2cd781d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#a7544b32832c17043165710ce2cd781d6">ev_annotation_get_page</a> (<a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *annot)</td></tr>
@@ -213,6 +218,16 @@ Functions</h2></td></tr>
 <tr class="separator:a245b20390e5c08d3f330c5fa16af6879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6abe6fbdc64b56d9899b6ed982fdbe26" id="r_a6abe6fbdc64b56d9899b6ed982fdbe26"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#a6abe6fbdc64b56d9899b6ed982fdbe26">ev_annotation_attachment_set_attachment</a> (<a class="el" href="ev-annotation_8h.html#a62ff016338ee24dd92430feb96d1b437">EvAnnotationAttachment</a> *annot, <a class="el" href="ev-attachment_8h.html#a738107412d2b822511d9e1ffb3f41dd6">EvAttachment</a> *attachment)</td></tr>
 <tr class="separator:a6abe6fbdc64b56d9899b6ed982fdbe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48d30347279bf7af60c79dfb35e692b" id="r_af48d30347279bf7af60c79dfb35e692b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#af48d30347279bf7af60c79dfb35e692b">ev_annotation_text_markup_highlight_new</a> (<a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *page)</td></tr>
+<tr class="separator:af48d30347279bf7af60c79dfb35e692b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669c62ab2915a46c904864d48ecb67bf" id="r_a669c62ab2915a46c904864d48ecb67bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#a669c62ab2915a46c904864d48ecb67bf">ev_annotation_text_markup_strike_out_new</a> (<a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *page)</td></tr>
+<tr class="separator:a669c62ab2915a46c904864d48ecb67bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe78becab9deba73d091bd4e9cb84bcd" id="r_abe78becab9deba73d091bd4e9cb84bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#abe78becab9deba73d091bd4e9cb84bcd">ev_annotation_text_markup_underline_new</a> (<a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *page)</td></tr>
+<tr class="separator:abe78becab9deba73d091bd4e9cb84bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c5b196a15c95cafc4d3922faa5b62c" id="r_a32c5b196a15c95cafc4d3922faa5b62c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#a32c5b196a15c95cafc4d3922faa5b62c">ev_annotation_text_markup_squiggly_new</a> (<a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *page)</td></tr>
+<tr class="separator:a32c5b196a15c95cafc4d3922faa5b62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811374ea1c42aafd5f369227682712fd" id="r_a811374ea1c42aafd5f369227682712fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf">EvAnnotationTextMarkupType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-annotation_8c.html#a811374ea1c42aafd5f369227682712fd">ev_annotation_text_markup_get_markup_type</a> (<a class="el" href="ev-annotation_8h.html#a518c73000c69970c6b53982aa90ce41c">EvAnnotationTextMarkup</a> *annot)</td></tr>
+<tr class="separator:a811374ea1c42aafd5f369227682712fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a16af7b253440dadd46a80a4b9fddba4d" name="a16af7b253440dadd46a80a4b9fddba4d"></a>
@@ -236,7 +251,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a16af7b253440dadd46a80a4b9fddba4da32eb128652026b32ea83821e9eb1b9d5" name="a16af7b253440dadd46a80a4b9fddba4da32eb128652026b32ea83821e9eb1b9d5"></a>PROP_ANNOT_RGBA&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00073">73</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00084">84</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 </div>
 </div>
@@ -260,7 +275,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aba01db17f4a2bfbc3db60dc172972a25a91a36fa47c4e485a32b39f6615c7aac3" name="aba01db17f4a2bfbc3db60dc172972a25a91a36fa47c4e485a32b39f6615c7aac3"></a>PROP_MARKUP_POPUP_IS_OPEN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00084">84</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00095">95</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 </div>
 </div>
@@ -280,7 +295,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aaf105ae5beaca1dee30ae54530691fceae35a3228be21cc6d92b535a35f1969cd" name="aaf105ae5beaca1dee30ae54530691fceae35a3228be21cc6d92b535a35f1969cd"></a>PROP_TEXT_IS_OPEN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00094">94</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00105">105</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 </div>
 </div>
@@ -299,7 +314,26 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a80155586fa275b28773c9b203f52cabaa7ccb391710ce91236453c270d8f4da77" name="a80155586fa275b28773c9b203f52cabaa7ccb391710ce91236453c270d8f4da77"></a>PROP_ATTACHMENT_ATTACHMENT&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00100">100</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00111">111</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+
+</div>
+</div>
+<a id="a6b7b47dd702d9e331586d485013fd1ea" name="a6b7b47dd702d9e331586d485013fd1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7b47dd702d9e331586d485013fd1ea">&#9670;&#160;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6b7b47dd702d9e331586d485013fd1eaa117fd7f010ecb6fd3540b61719e8f630" name="a6b7b47dd702d9e331586d485013fd1eaa117fd7f010ecb6fd3540b61719e8f630"></a>PROP_TEXT_MARKUP_TYPE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00116">116</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 </div>
 </div>
@@ -322,7 +356,7 @@ Functions</h2></td></tr>
 <p>ev_annotation_attachment_get_attachment: @annot: an <a class="el" href="ev-annotation_8h.html#a62ff016338ee24dd92430feb96d1b437">EvAnnotationAttachment</a></p>
 <p>Returns: (transfer none): an <a class="el" href="ev-attachment_8h.html#a738107412d2b822511d9e1ffb3f41dd6">EvAttachment</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01197">1197</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01218">1218</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00066">EV_IS_ANNOTATION_ATTACHMENT</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -354,7 +388,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01179">1179</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01200">1200</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00040">EV_ANNOTATION</a>, <a class="el" href="ev-attachment_8h_source.html#l00039">EV_IS_ATTACHMENT</a>, <a class="el" href="ev-annotation_8h_source.html#l00063">EV_TYPE_ANNOTATION_ATTACHMENT</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -386,7 +420,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01205">1205</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01226">1226</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00066">EV_IS_ANNOTATION_ATTACHMENT</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -421,7 +455,7 @@ Functions</h2></td></tr>
 <p>Compare @annot and @other.</p>
 <p>Returns: TRUE if @annot is equal to @other, FALSE otherwise </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00333">333</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00354">354</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
@@ -443,7 +477,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00283">283</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00304">304</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>.</p>
 
@@ -480,11 +514,11 @@ Functions</h2></td></tr>
 <p>Get the color of @annot.</p>
 <p>Deprecated: 1.2.1: Use <a class="el" href="ev-annotation_8c.html#a91a6696fb6b0fbca6e3eecb7d096790b">ev_annotation_get_rgba()</a> instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00528">528</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00549">549</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ev-annotation_8c_source.html#l00593">ev_annotation_get_rgba()</a>, <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="ev-annotation_8c_source.html#l00614">ev_annotation_get_rgba()</a>, <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ev-annotation_8c_source.html#l00558">ev_annotation_set_color()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ev-annotation_8c_source.html#l00579">ev_annotation_set_color()</a>.</p>
 
 </div>
 </div>
@@ -507,7 +541,7 @@ Functions</h2></td></tr>
 <p>Get the contents of @annot. The contents of @annot is the text that is displayed in the annotation, or an alternate description of the annotation's content for non-text annotations</p>
 <p>Returns: a string with the contents of the annotation or NULL if @annot has no contents. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00354">354</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00375">375</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -532,7 +566,7 @@ Functions</h2></td></tr>
 <p>Get the last modification date of @annot.</p>
 <p>Returns: A string containing the last modification date. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00444">444</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00465">465</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -557,7 +591,7 @@ Functions</h2></td></tr>
 <p>Get the name of @annot. The name of the annotation is a string that uniquely indenftifies @annot amongs all the annotations in the same page.</p>
 <p>Returns: the string with the annotation's name. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00400">400</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00421">421</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -582,7 +616,7 @@ Functions</h2></td></tr>
 <p>Get the page where @annot appears.</p>
 <p>Returns: (transfer none): the <a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> where @annot appears </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00299">299</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00320">320</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -607,7 +641,7 @@ Functions</h2></td></tr>
 <p>Get the index of the page where @annot appears. Note that the index is 0 based.</p>
 <p>Returns: the page index. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00316">316</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00337">337</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>.</p>
 
@@ -644,11 +678,11 @@ Functions</h2></td></tr>
 <p>Gets the color of @annot.</p>
 <p>Since: 1.2.1 </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00593">593</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00614">614</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ev-annotation_8c_source.html#l00528">ev_annotation_get_color()</a>, and <a class="el" href="ev-annotation-properties-dialog_8c_source.html#l00250">ev_annotation_properties_dialog_new_with_annotation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ev-annotation_8c_source.html#l00549">ev_annotation_get_color()</a>, and <a class="el" href="ev-annotation-properties-dialog_8c_source.html#l00250">ev_annotation_properties_dialog_new_with_annotation()</a>.</p>
 
 </div>
 </div>
@@ -668,7 +702,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00785">785</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00806">806</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -692,7 +726,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00818">818</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00839">839</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>.</p>
 
@@ -716,7 +750,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00914">914</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00935">935</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
@@ -750,7 +784,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00878">878</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00899">899</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -772,7 +806,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00848">848</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00869">869</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
@@ -804,7 +838,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00859">859</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00880">880</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -836,7 +870,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00796">796</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00817">817</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="special_8c_source.html#l00053">label</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -868,7 +902,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00829">829</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00850">850</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -900,7 +934,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00925">925</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00946">946</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -932,7 +966,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00891">891</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00912">912</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00050">EV_IS_ANNOTATION_MARKUP</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>, <a class="el" href="ev-document_8h_source.html#l00193">_EvRectangle::x1</a>, <a class="el" href="ev-document_8h_source.html#l00195">_EvRectangle::x2</a>, <a class="el" href="ev-document_8h_source.html#l00194">_EvRectangle::y1</a>, and <a class="el" href="ev-document_8h_source.html#l00196">_EvRectangle::y2</a>.</p>
 
@@ -968,9 +1002,9 @@ Functions</h2></td></tr>
 <p>Returns: TRUE when the color has been changed, FALSE otherwise.</p>
 <p>Deprecated: 1.2.1: Use <a class="el" href="ev-annotation_8c.html#a2070dec065e8e4adbd3a205b3fd37835">ev_annotation_set_rgba()</a> instead. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00558">558</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00579">579</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ev-annotation_8c_source.html#l00528">ev_annotation_get_color()</a>, <a class="el" href="ev-annotation_8c_source.html#l00614">ev_annotation_set_rgba()</a>, <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="ev-annotation_8c_source.html#l00549">ev_annotation_get_color()</a>, <a class="el" href="ev-annotation_8c_source.html#l00635">ev_annotation_set_rgba()</a>, <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1037,7 @@ Functions</h2></td></tr>
 <p>Set the contents of @annot. You can monitor changes in the annotation's contents by connecting to notify::contents signal of @annot.</p>
 <p>Returns: TRUE if the contents have been changed, FALSE otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00372">372</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00393">393</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1038,7 +1072,7 @@ Functions</h2></td></tr>
 <p>Set the last modification date of @annot to @modified. To set the last modification date using a #gint64, use <a class="el" href="ev-annotation_8c.html#a23dbd1a63badd6678059921c63f4bdd3">ev_annotation_set_modified_from_time()</a> instead. You can monitor changes to the last modification date by connecting to the notify::modified signal on @annot.</p>
 <p>Returns: TRUE if the last modification date has been updated, FALSE otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00465">465</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00486">486</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1073,7 +1107,7 @@ Functions</h2></td></tr>
 <p>Set the last modification date of @annot to @utime. You can monitor changes to the last modification date by connectin to the notify::modified sinal on @annot. For the time-format used, see <a class="el" href="ev-document-misc_8c.html#a517d7882d3c3d7554f99af03e6f7c661">ev_document_misc_format_date()</a>.</p>
 <p>Returns: TRUE if the last modified date has been updated, FALSE otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00495">495</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00516">516</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-document-misc_8c_source.html#l00362">ev_document_misc_format_date()</a>, <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1108,7 +1142,7 @@ Functions</h2></td></tr>
 <p>Set the name of @annot. You can monitor changes of the annotation name by connecting to the notify::name signal on @annot.</p>
 <p>Returns: TRUE when the name has been changed, FALSE otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00418">418</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00439">439</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1144,11 +1178,11 @@ Functions</h2></td></tr>
 <p>Returns: TRUE if the color has been changed, FALSE otherwise</p>
 <p>Since: 1.2.1 </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00614">614</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l00635">635</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00042">EV_IS_ANNOTATION</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ev-annotation_8c_source.html#l00558">ev_annotation_set_color()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ev-annotation_8c_source.html#l00579">ev_annotation_set_color()</a>.</p>
 
 </div>
 </div>
@@ -1168,7 +1202,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01041">1041</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01062">1062</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00058">EV_IS_ANNOTATION_TEXT</a>.</p>
 
@@ -1192,9 +1226,119 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01065">1065</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01086">1086</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00058">EV_IS_ANNOTATION_TEXT</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
+
+</div>
+</div>
+<a id="a811374ea1c42aafd5f369227682712fd" name="a811374ea1c42aafd5f369227682712fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811374ea1c42aafd5f369227682712fd">&#9670;&#160;</a></span>ev_annotation_text_markup_get_markup_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-annotation_8h.html#a3773aa7733a0bcbb2e340dab0f8cfdcf">EvAnnotationTextMarkupType</a> ev_annotation_text_markup_get_markup_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-annotation_8h.html#a518c73000c69970c6b53982aa90ce41c">EvAnnotationTextMarkup</a> *&#160;</td>
+          <td class="paramname"><em>annot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01356">1356</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00074">EV_IS_ANNOTATION_TEXT_MARKUP</a>.</p>
+
+</div>
+</div>
+<a id="af48d30347279bf7af60c79dfb35e692b" name="af48d30347279bf7af60c79dfb35e692b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48d30347279bf7af60c79dfb35e692b">&#9670;&#160;</a></span>ev_annotation_text_markup_highlight_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> * ev_annotation_text_markup_highlight_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01320">1320</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00040">EV_ANNOTATION</a>, <a class="el" href="ev-annotation_8h_source.html#l00114">EV_ANNOTATION_TEXT_MARKUP_HIGHLIGHT</a>, <a class="el" href="ev-annotation_8h_source.html#l00071">EV_TYPE_ANNOTATION_TEXT_MARKUP</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a32c5b196a15c95cafc4d3922faa5b62c" name="a32c5b196a15c95cafc4d3922faa5b62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c5b196a15c95cafc4d3922faa5b62c">&#9670;&#160;</a></span>ev_annotation_text_markup_squiggly_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> * ev_annotation_text_markup_squiggly_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01347">1347</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00040">EV_ANNOTATION</a>, <a class="el" href="ev-annotation_8h_source.html#l00117">EV_ANNOTATION_TEXT_MARKUP_SQUIGGLY</a>, <a class="el" href="ev-annotation_8h_source.html#l00071">EV_TYPE_ANNOTATION_TEXT_MARKUP</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a669c62ab2915a46c904864d48ecb67bf" name="a669c62ab2915a46c904864d48ecb67bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a669c62ab2915a46c904864d48ecb67bf">&#9670;&#160;</a></span>ev_annotation_text_markup_strike_out_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> * ev_annotation_text_markup_strike_out_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01329">1329</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00040">EV_ANNOTATION</a>, <a class="el" href="ev-annotation_8h_source.html#l00115">EV_ANNOTATION_TEXT_MARKUP_STRIKE_OUT</a>, <a class="el" href="ev-annotation_8h_source.html#l00071">EV_TYPE_ANNOTATION_TEXT_MARKUP</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="abe78becab9deba73d091bd4e9cb84bcd" name="abe78becab9deba73d091bd4e9cb84bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe78becab9deba73d091bd4e9cb84bcd">&#9670;&#160;</a></span>ev_annotation_text_markup_underline_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ev-annotation_8h.html#a5369fe8739e3dc7489d5d5405c719de6">EvAnnotation</a> * ev_annotation_text_markup_underline_new </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-page_8h.html#a92f7e353e6f98a3fc0039666049a1f10">EvPage</a> *&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01338">1338</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00040">EV_ANNOTATION</a>, <a class="el" href="ev-annotation_8h_source.html#l00116">EV_ANNOTATION_TEXT_MARKUP_UNDERLINE</a>, <a class="el" href="ev-annotation_8h_source.html#l00071">EV_TYPE_ANNOTATION_TEXT_MARKUP</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1358,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01033">1033</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01054">1054</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00040">EV_ANNOTATION</a>, <a class="el" href="ev-annotation_8h_source.html#l00055">EV_TYPE_ANNOTATION_TEXT</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1246,7 +1390,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01049">1049</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01070">1070</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00058">EV_IS_ANNOTATION_TEXT</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1278,14 +1422,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01073">1073</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-annotation_8c_source.html#l01094">1094</a> of file <a class="el" href="ev-annotation_8c_source.html">ev-annotation.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00058">EV_IS_ANNOTATION_TEXT</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
 <a id="af9a61ef392633021627740e40dda4dc2" name="af9a61ef392633021627740e40dda4dc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9a61ef392633021627740e40dda4dc2">&#9670;&#160;</a></span>G_DEFINE_TYPE_WITH_CODE() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a61ef392633021627740e40dda4dc2">&#9670;&#160;</a></span>G_DEFINE_TYPE_WITH_CODE() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1327,7 +1471,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a90344c069ddc0cb785e9687da04163ec" name="a90344c069ddc0cb785e9687da04163ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90344c069ddc0cb785e9687da04163ec">&#9670;&#160;</a></span>G_DEFINE_TYPE_WITH_CODE() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90344c069ddc0cb785e9687da04163ec">&#9670;&#160;</a></span>G_DEFINE_TYPE_WITH_CODE() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1354,6 +1498,48 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">{ G_IMPLEMENT_INTERFACE(<a class="el" href="ev-annotation_8h.html#accb6d824cf8d0ff16c9bd978630e306d">EV_TYPE_ANNOTATION_MARKUP</a>, ev_annotation_text_markup_iface_init);}&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="ev-annotation_8h_source.html#l00047">EV_TYPE_ANNOTATION_MARKUP</a>.</p>
+
+</div>
+</div>
+<a id="a1f1642b80be0723ca88a94ce7676c666" name="a1f1642b80be0723ca88a94ce7676c666"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1642b80be0723ca88a94ce7676c666">&#9670;&#160;</a></span>G_DEFINE_TYPE_WITH_CODE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">G_DEFINE_TYPE_WITH_CODE </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-annotation_8h.html#a518c73000c69970c6b53982aa90ce41c">EvAnnotationTextMarkup</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ev_annotation_text_markup&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="ev-annotation_8h.html#a5f7912e7b6d609a84264e53f79bcfde0">EV_TYPE_ANNOTATION</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">{ G_IMPLEMENT_INTERFACE(<a class="el" href="ev-annotation_8h.html#accb6d824cf8d0ff16c9bd978630e306d">EV_TYPE_ANNOTATION_MARKUP</a>, ev_annotation_text_markup_markup_iface_init);}&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

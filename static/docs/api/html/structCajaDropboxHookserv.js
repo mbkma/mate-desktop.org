@@ -6,7 +6,7 @@ var structCajaDropboxHookserv =
     [ "connected", "structCajaDropboxHookserv.html#a97a2acd9f0a8ae65b350c1f5f68991e5", null ],
     [ "dispatch_table", "structCajaDropboxHookserv.html#a13952d1f02c4cdc6fb74f1d877766d34", null ],
     [ "event_source", "structCajaDropboxHookserv.html#a7ba817690d176e973b63e5733bba0f38", null ],
-    [ "hhsi", "structCajaDropboxHookserv.html#a332d56808bc537df7fd6156d7d9a3aac", null ],
+    [ "hhsi", "structCajaDropboxHookserv.html#a9e262fb98120eb336074f8d27fa9579b", null ],
     [ "line", "structCajaDropboxHookserv.html#a6029c50cafdb08fd61d917fcfac2446a", null ],
     [ "numargs", "structCajaDropboxHookserv.html#ace62bc003da106db6eb32f73b666d227", null ],
     [ "onconnect_hooklist", "structCajaDropboxHookserv.html#af8205dbd6ea442445a57cbd36a71dce2", null ],

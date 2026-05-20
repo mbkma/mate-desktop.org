@@ -162,7 +162,7 @@ Basic Plugin Template</h2>
 <div class="line"> </div>
 <div class="line"><span class="keyword">enum</span> {</div>
 <div class="line">    <a class="code hl_enumvalue" href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a>,</div>
-<div class="line">    <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#ac8347fa324c6412b168db6df3464ad80a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a></div>
+<div class="line">    <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#abe821d0fac05333be298917dcb50ee1da5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a></div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Initialize plugin instance</span></div>
@@ -196,7 +196,7 @@ Basic Plugin Template</h2>
 <div class="line">    MyPlugin *plugin = MY_PLUGIN (<span class="keywordtype">object</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line">    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#ac8347fa324c6412b168db6df3464ad80a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>:</div>
+<div class="line">    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#abe821d0fac05333be298917dcb50ee1da5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>:</div>
 <div class="line">        plugin-&gt;window = <a class="code hl_define" href="eom-window_8h.html#af1545d50c0f496aed22908e468eea140">EOM_WINDOW</a> (g_value_dup_object (value));</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line">    <span class="keywordflow">default</span>:</div>
@@ -215,7 +215,7 @@ Basic Plugin Template</h2>
 <div class="line">    MyPlugin *plugin = MY_PLUGIN (<span class="keywordtype">object</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">switch</span> (prop_id) {</div>
-<div class="line">    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#ac8347fa324c6412b168db6df3464ad80a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>:</div>
+<div class="line">    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#abe821d0fac05333be298917dcb50ee1da5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>:</div>
 <div class="line">        g_value_set_object (value, plugin-&gt;window);</div>
 <div class="line">        <span class="keywordflow">break</span>;</div>
 <div class="line">    <span class="keywordflow">default</span>:</div>
@@ -252,7 +252,7 @@ Basic Plugin Template</h2>
 <div class="line">    object_class-&gt;set_property = my_plugin_set_property;</div>
 <div class="line">    object_class-&gt;get_property = my_plugin_get_property;</div>
 <div class="line"> </div>
-<div class="line">    g_object_class_override_property (object_class, <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#ac8347fa324c6412b168db6df3464ad80a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>, <span class="stringliteral">&quot;window&quot;</span>);</div>
+<div class="line">    g_object_class_override_property (object_class, <a class="code hl_enumvalue" href="caja-navigation-action_8c.html#abe821d0fac05333be298917dcb50ee1da5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a>, <span class="stringliteral">&quot;window&quot;</span>);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Required by G_DEFINE_DYNAMIC_TYPE_EXTENDED</span></div>
@@ -279,7 +279,7 @@ Basic Plugin Template</h2>
 <div class="line">        <a class="code hl_define" href="eom-window-activatable_8h.html#aba1729209330554cb66d7a954d827d48">EOM_TYPE_WINDOW_ACTIVATABLE</a>, MY_TYPE_PLUGIN);</div>
 <div class="line">}</div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="acaja-navigation-action_8c_html_ac8347fa324c6412b168db6df3464ad80a5444259366dcb8d3b0e146507c9e0174"><div class="ttname"><a href="caja-navigation-action_8c.html#ac8347fa324c6412b168db6df3464ad80a5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a></div><div class="ttdeci">@ PROP_WINDOW</div><div class="ttdef"><b>Definition</b> <a href="caja-navigation-action_8c_source.html#l00054">caja-navigation-action.c:53</a></div></div>
+<div class="ttc" id="acaja-navigation-action_8c_html_abe821d0fac05333be298917dcb50ee1da5444259366dcb8d3b0e146507c9e0174"><div class="ttname"><a href="caja-navigation-action_8c.html#abe821d0fac05333be298917dcb50ee1da5444259366dcb8d3b0e146507c9e0174">PROP_WINDOW</a></div><div class="ttdeci">@ PROP_WINDOW</div><div class="ttdef"><b>Definition</b> <a href="caja-navigation-action_8c_source.html#l00054">caja-navigation-action.c:53</a></div></div>
 <div class="ttc" id="adjvu-document_8c_html_a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c"><div class="ttname"><a href="djvu-document_8c.html#a06fc87d81c62e9abb8790b6e5713c55bac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a></div><div class="ttdeci">@ PROP_0</div><div class="ttdef"><b>Definition</b> <a href="djvu-document_8c_source.html#l00043">djvu-document.c:43</a></div></div>
 <div class="ttc" id="aeom-fullscreen-plugin_8c_html_ae7b9d5422d8c079457af8e0c968ed9e8"><div class="ttname"><a href="eom-fullscreen-plugin_8c.html#ae7b9d5422d8c079457af8e0c968ed9e8">G_DEFINE_DYNAMIC_TYPE_EXTENDED</a></div><div class="ttdeci">G_DEFINE_DYNAMIC_TYPE_EXTENDED(EomFullscreenPlugin, eom_fullscreen_plugin, PEAS_TYPE_EXTENSION_BASE, 0, G_IMPLEMENT_INTERFACE_DYNAMIC(EOM_TYPE_WINDOW_ACTIVATABLE, eom_window_activatable_iface_init))</div><div class="ttdef"><b>Definition</b> <a href="eom-fullscreen-plugin_8c_source.html#l00017">eom-fullscreen-plugin.c:17</a></div></div>
 <div class="ttc" id="aeom-window-activatable_8h_html"><div class="ttname"><a href="eom-window-activatable_8h.html">eom-window-activatable.h</a></div></div>

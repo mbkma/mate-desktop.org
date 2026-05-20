@@ -30,9 +30,15 @@ var ev_annotation_8c =
     [ "ev_annotation_set_rgba", "ev-annotation_8c.html#a2070dec065e8e4adbd3a205b3fd37835", null ],
     [ "ev_annotation_text_get_icon", "ev-annotation_8c.html#ae44a298829da0a9c0b2b1eb4b63300ca", null ],
     [ "ev_annotation_text_get_is_open", "ev-annotation_8c.html#a045846595a750c083ff6b03ae5037575", null ],
+    [ "ev_annotation_text_markup_get_markup_type", "ev-annotation_8c.html#a811374ea1c42aafd5f369227682712fd", null ],
+    [ "ev_annotation_text_markup_highlight_new", "ev-annotation_8c.html#af48d30347279bf7af60c79dfb35e692b", null ],
+    [ "ev_annotation_text_markup_squiggly_new", "ev-annotation_8c.html#a32c5b196a15c95cafc4d3922faa5b62c", null ],
+    [ "ev_annotation_text_markup_strike_out_new", "ev-annotation_8c.html#a669c62ab2915a46c904864d48ecb67bf", null ],
+    [ "ev_annotation_text_markup_underline_new", "ev-annotation_8c.html#abe78becab9deba73d091bd4e9cb84bcd", null ],
     [ "ev_annotation_text_new", "ev-annotation_8c.html#a6a3b78fb17a6537ae078ed922933c417", null ],
     [ "ev_annotation_text_set_icon", "ev-annotation_8c.html#a496d8d578f35e594fe4cdf026998e30a", null ],
     [ "ev_annotation_text_set_is_open", "ev-annotation_8c.html#a625198c1876de899a6e9023df007997d", null ],
     [ "G_DEFINE_TYPE_WITH_CODE", "ev-annotation_8c.html#af9a61ef392633021627740e40dda4dc2", null ],
-    [ "G_DEFINE_TYPE_WITH_CODE", "ev-annotation_8c.html#a90344c069ddc0cb785e9687da04163ec", null ]
+    [ "G_DEFINE_TYPE_WITH_CODE", "ev-annotation_8c.html#a90344c069ddc0cb785e9687da04163ec", null ],
+    [ "G_DEFINE_TYPE_WITH_CODE", "ev-annotation_8c.html#a1f1642b80be0723ca88a94ce7676c666", null ]
 ];

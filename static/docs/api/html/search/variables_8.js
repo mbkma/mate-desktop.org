@@ -103,7 +103,7 @@ var searchData=
   ['help_5fbutton_100',['help_button',['../struct__MatePropertyBox.html#a75f676d33ecbc529dc131eeedfaf229a',1,'_MatePropertyBox::help_button'],['../struct__MateColorSelectionDialog.html#a05bd91d685620ce654ac83c762d609c9',1,'_MateColorSelectionDialog::help_button']]],
   ['help_5fmessage_5fcid_101',['help_message_cid',['../struct__CajaWindowPrivate.html#aa2c3c637ff205a4d115d0bfdd3242ab6',1,'_CajaWindowPrivate']]],
   ['hh_102',['hh',['../struct__DviState.html#a4ac42406e2350e679d3d9560d6b686ed',1,'_DviState']]],
-  ['hhsi_103',['hhsi',['../structCajaDropboxHookserv.html#a332d56808bc537df7fd6156d7d9a3aac',1,'CajaDropboxHookserv']]],
+  ['hhsi_103',['hhsi',['../structCajaDropboxHookserv.html#a9e262fb98120eb336074f8d27fa9579b',1,'CajaDropboxHookserv']]],
   ['hibernate_104',['hibernate',['../structGpmTrayIconClass.html#a0723c9022196f00549845692b022ddac',1,'GpmTrayIconClass']]],
   ['hic_105',['hic',['../struct__TFMInfo.html#a6e9bad25b54b04253298b0f1931d9d35',1,'_TFMInfo::hic'],['../struct__DviFont.html#a321e8128fa0b603d2b356b8d069c1c28',1,'_DviFont::hic']]],
   ['hidden_106',['hidden',['../struct__MetaTabEntry.html#a503cfa49da67056c8f8b4c8ce7c9431c',1,'_MetaTabEntry::hidden'],['../struct__MateThemeCommonInfo.html#a8dc3e3068d8e031a45fe0f44f1002956',1,'_MateThemeCommonInfo::hidden'],['../struct__MateThemeInfo.html#a436ca01ded341d98834293a6342e2fcb',1,'_MateThemeInfo::hidden'],['../struct__MateThemeCursorInfo.html#a62edabc6fa48cdcee633bfd2ec9f3b17',1,'_MateThemeCursorInfo::hidden'],['../struct__MateThemeMetaInfo.html#aa8aec0423eb5ede966ff8abc21fa8327',1,'_MateThemeMetaInfo::hidden']]],
