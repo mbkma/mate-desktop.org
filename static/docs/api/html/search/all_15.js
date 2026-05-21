@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ubuntu_0',['Ubuntu',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2caja_2README.html#autotoc_md6',1,'']]],
-  ['uchar_1',['uchar',['../sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2',1,'Uchar:&#160;sysdeps.h'],['../edid_8h.html#a65f85814a8290f9797005d3b28e7e5fc',1,'uchar:&#160;edid.h']]],
+  ['uchar_1',['uchar',['../edid_8h.html#a65f85814a8290f9797005d3b28e7e5fc',1,'uchar:&#160;edid.h'],['../sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2',1,'Uchar:&#160;sysdeps.h']]],
   ['udisks2_2dplugin_2ec_2',['udisks2-plugin.c',['../udisks2-plugin_8c.html',1,'']]],
   ['udisks2_2dplugin_2eh_3',['udisks2-plugin.h',['../udisks2-plugin_8h.html',1,'']]],
   ['udisks2_5fbus_5fname_4',['UDISKS2_BUS_NAME',['../udisks2-plugin_8c.html#af0a5ff93d43f0ca15ab7fcb7923a6422',1,'udisks2-plugin.c']]],
@@ -33,7 +33,7 @@ var searchData=
   ['uimanager_30',['uimanager',['../structProcData.html#a70f8b3cd47c7cbdac05e2b342ef5edeb',1,'ProcData']]],
   ['uint_31',['uint',['../sysdeps_8h.html#a72f3b9c93d14360be2ab10b2cd7f55ec',1,'UINT:&#160;sysdeps.h'],['../sysdeps_8h.html#a4840c4503b7d10cea5e08416eb3716f1',1,'Uint:&#160;sysdeps.h']]],
   ['uint8_32',['Uint8',['../sysdeps_8h.html#af84840501dec18061d18a68c162a8fa2',1,'sysdeps.h']]],
-  ['ulong_33',['ulong',['../ioapi_8h.html#a50e9e9d5c30e481de822ad68fe537986',1,'uLong(ZCALLBACK *read_file_func) OF((voidpf opaque:&#160;ioapi.h'],['../sysdeps_8h.html#ae896befe19461ac700776e254bb8d34d',1,'Ulong:&#160;sysdeps.h']]],
+  ['ulong_33',['ulong',['../sysdeps_8h.html#ae896befe19461ac700776e254bb8d34d',1,'Ulong:&#160;sysdeps.h'],['../ioapi_8h.html#a50e9e9d5c30e481de822ad68fe537986',1,'uLong(ZCALLBACK *read_file_func) OF((voidpf opaque:&#160;ioapi.h']]],
   ['unabove_5frect_34',['unabove_rect',['../struct__MetaFrameGeometry.html#a09caef3ba9e15e162eecf9714ba19889',1,'_MetaFrameGeometry']]],
   ['unarchiver_5fmime_5ftype_35',['unarchiver_mime_type',['../fr-command-unarchiver_8c.html#a819bb0f1d11491ddd76f2a757b776a90',1,'fr-command-unarchiver.c']]],
   ['unblock_5fchanged_36',['UNBLOCK_CHANGED',['../panel-ditem-editor_8c.html#ab41bd089a5328c5a923e55451429d67d',1,'panel-ditem-editor.c']]],
@@ -42,7 +42,7 @@ var searchData=
   ['uncompress_39',['uncompress',['../struct__FrCommandClass.html#acd7ad78a1c5b7f2333e5825d032b1a24',1,'_FrCommandClass']]],
   ['uncompressed_5fsize_40',['uncompressed_size',['../structunz__file__info64__s.html#a8cf74465a9d0641cdf1bb22c33f09b42',1,'unz_file_info64_s::uncompressed_size'],['../structunz__file__info__s.html#a7696a98511bc57e389485e5313a9c2bf',1,'unz_file_info_s::uncompressed_size']]],
   ['unconfirmed_41',['unconfirmed',['../struct__CajaFilePrivate.html#a48f9c75aba09f355a3e59b6949bda042',1,'_CajaFilePrivate']]],
-  ['undefined_42',['undefined',['../edid_8h.html#a209a41a363c6409f7276f93a08cc7ab0a605159e8a4c32319fd69b5d151369d93',1,'UNDEFINED:&#160;edid.h'],['../dviread_8c.html#ab2def108e6646106fe32200a4015f695',1,'undefined(DviContext *dvi, int opcode):&#160;dviread.c']]],
+  ['undefined_42',['undefined',['../dviread_8c.html#ab2def108e6646106fe32200a4015f695',1,'undefined(DviContext *dvi, int opcode):&#160;dviread.c'],['../edid_8h.html#a209a41a363c6409f7276f93a08cc7ab0a605159e8a4c32319fd69b5d151369d93',1,'UNDEFINED:&#160;edid.h']]],
   ['undefined_5fcolor_43',['UNDEFINED_COLOR',['../edid_8h.html#a5e133660cf9d4bcd1cb6a49e3ec16f83aeaabef1f9042fb68b5ddf662e1db8ff5',1,'edid.h']]],
   ['undefined_5ftime_44',['undefined_time',['../caja-file_8h.html#aef1ebdf703ce7f626bbe909905c2ac86',1,'UNDEFINED_TIME:&#160;caja-file.h'],['../caja-icon-container_8c.html#aef1ebdf703ce7f626bbe909905c2ac86',1,'UNDEFINED_TIME:&#160;caja-icon-container.c']]],
   ['underlineposition_45',['underlinePosition',['../structGlobalFontInfo.html#a2dd77e9fcdddd766cf1f12435e17b800',1,'GlobalFontInfo']]],
