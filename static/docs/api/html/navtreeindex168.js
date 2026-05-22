@@ -1,5 +1,8 @@
 var NAVTREEINDEX168 =
 {
+"src_2gpm-common_8h.html#a76c18abf4483900eea2f9c4bb20b2fa8":[36,0,0,24,1,22,65],
+"src_2gpm-common_8h.html#a7935f2477bca5e1509f3e080a1938ea5":[36,0,0,24,1,22,30],
+"src_2gpm-common_8h.html#a7cfec1a25d59ff2d4426676f73797295":[36,0,0,24,1,22,73],
 "src_2gpm-common_8h.html#a7dc30bd570e15b7352ddb182e6f5eaa1":[36,0,0,24,1,22,75],
 "src_2gpm-common_8h.html#a8438a2c04d2f38e6708004bff4b25bad":[36,0,0,24,1,22,36],
 "src_2gpm-common_8h.html#a8a73d0d29ce1ce5f8d4f5b1db1fcdb04":[36,0,0,24,1,22,70],
@@ -246,8 +249,5 @@ var NAVTREEINDEX168 =
 "structAlsaControlData.html#a275793867dded55e38ab13777c90cc4c":[35,0,997,0],
 "structAlsaControlData.html#a345175d5f0c0c4f83fa16e7860e0d593":[35,0,997,4],
 "structAlsaControlData.html#a59300369f4eabf06ef107e9d84efbca1":[35,0,997,5],
-"structAlsaControlData.html#a736303cb8d18991c340b17434d04131b":[35,0,997,7],
-"structAlsaControlData.html#a81f30a507938c7e29440687986cd05ff":[35,0,997,12],
-"structAlsaControlData.html#a84e52ac71e2493daf803a6f6e47fb9d4":[35,0,997,11],
-"structAlsaControlData.html#abea2b0b0bb6e02f07fc8849b81e05e9c":[35,0,997,6]
+"structAlsaControlData.html#a736303cb8d18991c340b17434d04131b":[35,0,997,7]
 };

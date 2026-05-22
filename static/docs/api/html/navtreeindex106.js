@@ -1,5 +1,8 @@
 var NAVTREEINDEX106 =
 {
+"mate-notification-applet_8c.html":[36,0,0,21,0,0,4],
+"mate-notification-applet_8c.html#abf0bf789cac8e6b2cd01b0f5523a72b6":[36,0,0,21,0,0,4,1],
+"mate-notification-applet_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[36,0,0,21,0,0,4,0],
 "mate-notification-applet_8c.html#adcf8e1871e048e20e265ed6745465c7c":[36,0,0,21,0,0,4,2],
 "mate-notification-applet_8c_source.html":[36,0,0,21,0,0,4],
 "mate-notification-daemon_2src_2daemon_2stack_8c.html":[36,0,0,21,0,2,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX106 =
 "mate-panel_2applets_2notification__area_2main_8h.html#a9ca865539017b97e99aeb0e7de9735bc":[36,0,0,22,0,2,4,8],
 "mate-panel_2applets_2notification__area_2main_8h.html#ae8377b97d811f818e467d95716c3a32c":[36,0,0,22,0,2,4,9],
 "mate-panel_2applets_2notification__area_2main_8h_source.html":[36,0,0,22,0,2,4],
-"mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8c.html":[36,0,0,22,0,2,2,0],
-"mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8c.html#a1b01e79e9870113720c0f6d9d612a52a":[36,0,0,22,0,2,2,0,1],
-"mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8c.html#a323d60150d94a9f5f599bb97726ac384":[36,0,0,22,0,2,2,0,0],
-"mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8c.html#a84d1c15c5f311acc38a8c1c622088d4a":[36,0,0,22,0,2,2,0,2]
+"mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8c.html":[36,0,0,22,0,2,2,0]
 };

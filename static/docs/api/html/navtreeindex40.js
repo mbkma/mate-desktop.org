@@ -1,5 +1,8 @@
 var NAVTREEINDEX40 =
 {
+"dropbox-client-util_8c.html#a7c0210f4221cce668b9ac635754fc7f6":[36,0,0,3,0,5,1],
+"dropbox-client-util_8c.html#ac78fd2594ff07e8c2016fed4cee94fa2":[36,0,0,3,0,5,0],
+"dropbox-client-util_8c.html#acccd2476398d59ea0abc2fd9bf6699ae":[36,0,0,3,0,5,2],
 "dropbox-client-util_8c_source.html":[36,0,0,3,0,5],
 "dropbox-client-util_8h.html":[36,0,0,3,0,6],
 "dropbox-client-util_8h.html#a7c0210f4221cce668b9ac635754fc7f6":[36,0,0,3,0,6,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX40 =
 "dviread_8c.html#a10431d6ed08445537e83dee24c550206":[36,0,0,0,0,2,0,10,21],
 "dviread_8c.html#a176f130796bdb70b99c6b17d21c39c50":[36,0,0,0,0,2,0,10,17],
 "dviread_8c.html#a17dd6b69b2134718685f5aefece45e74":[36,0,0,0,0,2,0,10,20],
-"dviread_8c.html#a29f4997ac89ea58dfb27c3c6b612342c":[36,0,0,0,0,2,0,10,39],
-"dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150":[36,0,0,0,0,2,0,10,48],
-"dviread_8c.html#a34210163f07cd578e650310b6a811366":[36,0,0,0,0,2,0,10,32],
-"dviread_8c.html#a360db52cd8c8857889a02ca421aa629b":[36,0,0,0,0,2,0,10,18]
+"dviread_8c.html#a29f4997ac89ea58dfb27c3c6b612342c":[36,0,0,0,0,2,0,10,39]
 };

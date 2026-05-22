@@ -1,5 +1,8 @@
 var NAVTREEINDEX179 =
 {
+"structNAIExporterFileParmsv2.html#aa2a7f89d05a759b24c72fbeb2095582c":[35,0,1545,4],
+"structNAIExporterFileParmsv2.html#ac167c03341b4c071cdd15ac3d2437cf0":[35,0,1545,3],
+"structNAIExporterFileParmsv2.html#ad8e5e5211e995a59f91b561c2c0c3ca2":[35,0,1545,0],
 "structNAIExporterFormatv2.html":[35,0,1546],
 "structNAIExporterFormatv2.html#a45f581ddfe4e4576d2b348c810b535fc":[35,0,1546,0],
 "structNAIExporterFormatv2.html#a4ca14f2748b0fbb21fd77ce7aefff6b5":[35,0,1546,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX179 =
 "structPosToken.html#a30edab73c57953a1610919434c60d157":[33,1,0,9],
 "structPosToken.html#a447d12db0c05e0f852966a46612efd0c":[33,1,0,10],
 "structPosToken.html#a4686b39d2b1f7e1ff986d3742910cf0b":[33,1,0,3],
-"structPosToken.html#a4a38cc173c91d6ec5bba00ef46b5a06b":[33,1,0,2],
-"structPosToken.html#a67c5474c0e88aded0d81e01e116c3d91":[33,1,0,1],
-"structPosToken.html#a730457ff7d296913c2fe4a2cbccb38de":[33,1,0,6],
-"structPosToken.html#a911c4554b9d7fd4b658aac3c98d542b5":[33,1,0,8]
+"structPosToken.html#a4a38cc173c91d6ec5bba00ef46b5a06b":[33,1,0,2]
 };

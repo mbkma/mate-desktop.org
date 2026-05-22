@@ -1,5 +1,8 @@
 var NAVTREEINDEX192 =
 {
+"struct__GdictDefbox.html#af7b6fe7c295c23cf6d1e81c3025f0789":[35,0,481,1],
+"struct__GdictDefboxClass.html":[35,0,482],
+"struct__GdictDefboxClass.html#a3fb9c0d214e4ea2529425a7d4ccc28d2":[35,0,482,5],
 "struct__GdictDefboxClass.html#a459040a3123dd0ddae6457e0b3bd35f4":[35,0,482,4],
 "struct__GdictDefboxClass.html#a463877a9f3dd40053870b492b19c3a73":[35,0,482,2],
 "struct__GdictDefboxClass.html#a7ee346546ca93b5b66b99397aba68c7c":[35,0,482,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX192 =
 "struct__List.html#a669807b6d903fba05da82c90758e2c83":[35,0,539,3],
 "struct__List.html#abbb26ea07074f08f390bea26212381ac":[35,0,539,2],
 "struct__List.html#ac55d15566eaa7bf4a84399a113de3472":[35,0,539,0],
-"struct__LoadGraph.html":[35,0,540],
-"struct__LoadGraph.html#a058a27b77a91d7a8ea0c9d3c59ad9cbe":[35,0,540,15],
-"struct__LoadGraph.html#a0cdd071fe4a11c8517d9534b42e53851":[35,0,540,17],
-"struct__LoadGraph.html#a0e6cd5c06a1874649ba083e922cfc32a":[35,0,540,20]
+"struct__LoadGraph.html":[35,0,540]
 };

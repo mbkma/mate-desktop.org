@@ -1,5 +1,8 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMixerBackendInfo.html#aaf0d7ea3b803eafcd234deab09f070ca":[35,0,631,1],
+"struct__MateMixerBackendInfo.html#ab80c54c0940223b0bbbd35d43221b651":[35,0,631,4],
+"struct__MateMixerBackendModule.html":[35,0,632],
 "struct__MateMixerBackendModule.html#a164384864697c8e69df637e805fbf5d9":[35,0,632,1],
 "struct__MateMixerBackendModule.html#a5040f876089cd9652b7e9e8ec4722d7a":[35,0,632,0],
 "struct__MateMixerBackendModuleClass.html":[35,0,633],
@@ -246,8 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateWPItem.html#a1ddb845fb4090019ef367676d6f6a81b":[35,0,685,1],
 "struct__MateWPItem.html#a2651e889d74bfda63d66a8c1c1618890":[35,0,685,6],
 "struct__MateWPItem.html#a2e7d71d318f508ddcfafe6c659457b05":[35,0,685,3],
-"struct__MateWPItem.html#a32cc76f86fc965084dd850ec17beade0":[35,0,685,0],
-"struct__MateWPItem.html#a3a41dc64dbfca95627bf6dea980c67ce":[35,0,685,8],
-"struct__MateWPItem.html#a50786d65c8a8bdeaa1299e2d03f88625":[35,0,685,7],
-"struct__MateWPItem.html#a5e33cedf01d49646e082017116850f4c":[35,0,685,9]
+"struct__MateWPItem.html#a32cc76f86fc965084dd850ec17beade0":[35,0,685,0]
 };

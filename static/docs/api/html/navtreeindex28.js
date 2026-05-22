@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"caja-sidebar-title_8h.html#a3509d7a03e3404feff2a93e3400b68d5":[36,0,0,1,3,67,10],
+"caja-sidebar-title_8h.html#a3ccd2cbd6af47f3538649bce1663cfad":[36,0,0,1,3,67,14],
+"caja-sidebar-title_8h.html#a3f53d4638b1bd8ae39a11367f67aa269":[36,0,0,1,3,67,4],
 "caja-sidebar-title_8h.html#a5e43e93d71c315296abed77b19ff3371":[36,0,0,1,3,67,15],
 "caja-sidebar-title_8h.html#a606f0b80de77338715cb9fdc2a0ecbaf":[36,0,0,1,3,67,2],
 "caja-sidebar-title_8h.html#a92e250b744ee1652b8d176175d05d979":[36,0,0,1,3,67,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX28 =
 "caja-vfs-directory_8h.html#a916b648a024a1373408e3af34a2a8035":[36,0,0,1,2,132,4],
 "caja-vfs-directory_8h.html#aa7ba22c57eec4507650770a8330b7d17":[36,0,0,1,2,132,7],
 "caja-vfs-directory_8h.html#ab7fa078a3abf5423911d7114eaa8187b":[36,0,0,1,2,132,2],
-"caja-vfs-directory_8h_source.html":[36,0,0,1,2,132],
-"caja-vfs-file_8c.html":[36,0,0,1,2,133],
-"caja-vfs-file_8c.html#a5dbd27c6cfbe91584d57108d15811542":[36,0,0,1,2,133,0],
-"caja-vfs-file_8c_source.html":[36,0,0,1,2,133]
+"caja-vfs-directory_8h_source.html":[36,0,0,1,2,132]
 };

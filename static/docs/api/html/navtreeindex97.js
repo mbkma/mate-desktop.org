@@ -1,5 +1,8 @@
 var NAVTREEINDEX97 =
 {
+"mate-appbar_8c_source.html":[36,0,0,9,2,10],
+"mate-appbar_8h.html":[36,0,0,9,2,11],
+"mate-appbar_8h.html#a0b7823222e34048496c83edb0ddf309c":[36,0,0,9,2,11,9],
 "mate-appbar_8h.html#a1a3851914c819662add508f401b5e32e":[36,0,0,9,2,11,7],
 "mate-appbar_8h.html#a371bdcfd8a9d1097e5a62b796b69a8fc":[36,0,0,9,2,11,22],
 "mate-appbar_8h.html#a42c2bd7de4589e12a7e92aea6e58e89f":[36,0,0,9,2,11,21],
@@ -246,8 +249,5 @@ var NAVTREEINDEX97 =
 "mate-bg_8h.html#aea8385180c957d0d564f9db32abe0ef5":[36,0,0,15,0,6,38],
 "mate-bg_8h.html#aef7531fe9a1380057e9551ca959b49be":[36,0,0,15,0,6,27],
 "mate-bg_8h.html#af477a27eb0bbde39e13a736f1cdc9275":[36,0,0,15,0,6,21],
-"mate-bg_8h.html#af9f5d79562191422b2494a733ad440ca":[36,0,0,15,0,6,45],
-"mate-bg_8h_source.html":[36,0,0,15,0,6],
-"mate-calc-application_8c.html":[36,0,0,13,0,8],
-"mate-calc-application_8c.html#a0e2646fbfd47bac05117bf0c9e167ecc":[36,0,0,13,0,8,1]
+"mate-bg_8h.html#af9f5d79562191422b2494a733ad440ca":[36,0,0,15,0,6,45]
 };

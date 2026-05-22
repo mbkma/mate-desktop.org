@@ -1,5 +1,8 @@
 var NAVTREEINDEX30 =
 {
+"caja-window-manage-views_8c.html#a1112d172f92c1bbbadd1d743f8f644c5":[36,0,0,1,3,76,1],
+"caja-window-manage-views_8c.html#a1b12d7f7d4134e201837876609ee69c6":[36,0,0,1,3,76,4],
+"caja-window-manage-views_8c.html#a255e328eca77d8599191acc0d8a078be":[36,0,0,1,3,76,3],
 "caja-window-manage-views_8c.html#a4128480d3fc6db6124cd7999d6ffede5":[36,0,0,1,3,76,6],
 "caja-window-manage-views_8c.html#a77e69f17883754fa0d945286e3c4b573":[36,0,0,1,3,76,14],
 "caja-window-manage-views_8c.html#a791432e453e8f577771b88b9792d969d":[36,0,0,1,3,76,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX30 =
 "caja-window-toolbars_8c.html#a4436638c2a21fa0c4f9a044c7414cb28":[36,0,0,1,3,84,1],
 "caja-window-toolbars_8c.html#a589dc33239f96c3d93f6d8bdf0f1659d":[36,0,0,1,3,84,0],
 "caja-window-toolbars_8c.html#adb32d9d1027d90bc372c4e3c58a1a9be":[36,0,0,1,3,84,3],
-"caja-window-toolbars_8c.html#adff703d5538f4fcbea1ee786d9c80c5b":[36,0,0,1,3,84,2],
-"caja-window-toolbars_8c.html#aeceb94747d74a3c74d4c4924a6149da6":[36,0,0,1,3,84,4],
-"caja-window-toolbars_8c_source.html":[36,0,0,1,3,84],
-"caja-window_8c.html":[36,0,0,1,3,85]
+"caja-window-toolbars_8c.html#adff703d5538f4fcbea1ee786d9c80c5b":[36,0,0,1,3,84,2]
 };

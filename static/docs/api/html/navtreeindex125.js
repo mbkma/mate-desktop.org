@@ -1,5 +1,8 @@
 var NAVTREEINDEX125 =
 {
+"msd-a11y-settings-plugin_8c_source.html":[36,0,0,28,1,1,2],
+"msd-a11y-settings-plugin_8h.html":[36,0,0,28,1,1,3],
+"msd-a11y-settings-plugin_8h.html#a0535a727466da2369b5ebffffb151b84":[36,0,0,28,1,1,3,9],
 "msd-a11y-settings-plugin_8h.html#a07fdbfc73308a64f39cf0581fb01adfa":[36,0,0,28,1,1,3,7],
 "msd-a11y-settings-plugin_8h.html#a0fcce7c5d5deb09441fb7bded1e12608":[36,0,0,28,1,1,3,2],
 "msd-a11y-settings-plugin_8h.html#a11d833817c695f7a1ecfc03e7541a578":[36,0,0,28,1,1,3,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX125 =
 "msd-keyboard-plugin_8h.html#a0579dc1468cc616ba8f66cbbfced855a":[36,0,0,28,1,9,5,5],
 "msd-keyboard-plugin_8h.html#a0be99231557cc75a641faf01622f3d12":[36,0,0,28,1,9,5,7],
 "msd-keyboard-plugin_8h.html#a19b3d708632c5e3bc86c3741e5d3c8c1":[36,0,0,28,1,9,5,8],
-"msd-keyboard-plugin_8h.html#a357b905e0b47174cbc7c1bee3e1306ec":[36,0,0,28,1,9,5,2],
-"msd-keyboard-plugin_8h.html#a3672a78b7e95797330de7dfa1a10d6c5":[36,0,0,28,1,9,5,4],
-"msd-keyboard-plugin_8h.html#a80e7b086cad5178d61c4f7d8c5fe52d8":[36,0,0,28,1,9,5,10],
-"msd-keyboard-plugin_8h.html#aab494d2ed0ecd01af697ce49cc4644a5":[36,0,0,28,1,9,5,9]
+"msd-keyboard-plugin_8h.html#a357b905e0b47174cbc7c1bee3e1306ec":[36,0,0,28,1,9,5,2]
 };

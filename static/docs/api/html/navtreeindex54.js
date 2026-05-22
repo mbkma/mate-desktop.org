@@ -1,5 +1,8 @@
 var NAVTREEINDEX54 =
 {
+"ev-annotation-properties-dialog_8c.html#a113f92f6132f7aae34041e5762a84181":[36,0,0,0,7,2,5],
+"ev-annotation-properties-dialog_8c.html#a4682d2c58b0bdd047d7c1bb01bc8c3ff":[36,0,0,0,7,2,1],
+"ev-annotation-properties-dialog_8c.html#a53365e3a07b485b05cb617b0336ece56":[36,0,0,0,7,2,0],
 "ev-annotation-properties-dialog_8c.html#a717bee739b5a7c25f428f9a28704f8f2":[36,0,0,0,7,2,6],
 "ev-annotation-properties-dialog_8c.html#ab48710d00b01a5c0d57d0d96f78f8eb1":[36,0,0,0,7,2,2],
 "ev-annotation-properties-dialog_8c.html#ac2f0ea3e8c7ad1014dadf008e4c5044e":[36,0,0,0,7,2,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX54 =
 "ev-archive_8c.html#aba3bd860fc07b112400a8f504d7b9a98":[36,0,0,0,0,0,2,3],
 "ev-archive_8c.html#ac1653134010f16eb0f6f5d8aad818fd5":[36,0,0,0,0,0,2,11],
 "ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49":[36,0,0,0,0,0,2,12],
-"ev-archive_8c.html#aee8cff562977cbb36886578e71b7b80f":[36,0,0,0,0,0,2,6],
-"ev-archive_8c.html#af98e332e014dafdca0e9f673be48188d":[36,0,0,0,0,0,2,2],
-"ev-archive_8c_source.html":[36,0,0,0,0,0,2],
-"ev-archive_8h.html":[36,0,0,0,0,0,3]
+"ev-archive_8c.html#aee8cff562977cbb36886578e71b7b80f":[36,0,0,0,0,0,2,6]
 };

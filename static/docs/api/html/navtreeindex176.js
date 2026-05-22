@@ -1,5 +1,8 @@
 var NAVTREEINDEX176 =
 {
+"structGpmIdle.html#a482eebb1719cc9d360254da08d197523":[35,0,1320,0],
+"structGpmIdle.html#a558807daf3442dd087e25c345c5757b8":[35,0,1320,1],
+"structGpmIdleClass.html":[35,0,1321],
 "structGpmIdleClass.html#a04479e76417f3935c16e2788cc910004":[35,0,1321,0],
 "structGpmIdleClass.html#a4eea02087dfee58f18ee35f3860afca7":[35,0,1321,1],
 "structGpmKbdBacklight.html":[35,0,1322],
@@ -246,8 +249,5 @@ var NAVTREEINDEX176 =
 "structMateRROutputInfoPrivate.html#a51be2e1855e5af7da894907b1a41b6c1":[35,0,1417,15],
 "structMateRROutputInfoPrivate.html#a5acc048f1fef08f188500367489f968e":[35,0,1417,2],
 "structMateRROutputInfoPrivate.html#a6d2d93170817728c9c8430241a6b6f11":[35,0,1417,0],
-"structMateRROutputInfoPrivate.html#a7987826fc6dc206b3639aff692fd70bd":[35,0,1417,16],
-"structMateRROutputInfoPrivate.html#a8d823195779d2a89c28725a7cb158518":[35,0,1417,5],
-"structMateRROutputInfoPrivate.html#a8f4e1d010668c8c417bafb3991529db0":[35,0,1417,12],
-"structMateRROutputInfoPrivate.html#aa456c2d6749ef7de52086436ce4a350f":[35,0,1417,4]
+"structMateRROutputInfoPrivate.html#a7987826fc6dc206b3639aff692fd70bd":[35,0,1417,16]
 };

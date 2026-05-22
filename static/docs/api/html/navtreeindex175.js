@@ -1,5 +1,8 @@
 var NAVTREEINDEX175 =
 {
+"structFontInfo.html#a142ec970f47b58403da9dbcbb5488073":[35,0,1288,5],
+"structFontInfo.html#a27fa607afe78ec3b7d4e48e84cb782b4":[35,0,1288,1],
+"structFontInfo.html#a4ffad0c03cbd7f9018e0cd0eb6eda8e7":[35,0,1288,0],
 "structFontInfo.html#aa1f938f93d48ac79aa07f60532042987":[35,0,1288,6],
 "structFontInfo.html#aac327a049e69e3d2610ce15cc4e13e48":[35,0,1288,9],
 "structFontInfo.html#abdeda76506ad72ddb6172a17403d2c99":[35,0,1288,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX175 =
 "structGpmGraphWidgetKeyData.html":[35,0,1319],
 "structGpmGraphWidgetKeyData.html#a24a7121bafba1d85d60408abb5452168":[35,0,1319,0],
 "structGpmGraphWidgetKeyData.html#ace4d6b0304657758ae841cd7ecf2753c":[35,0,1319,1],
-"structGpmIdle.html":[35,0,1320],
-"structGpmIdle.html#a482eebb1719cc9d360254da08d197523":[35,0,1320,0],
-"structGpmIdle.html#a558807daf3442dd087e25c345c5757b8":[35,0,1320,1],
-"structGpmIdleClass.html":[35,0,1321]
+"structGpmIdle.html":[35,0,1320]
 };

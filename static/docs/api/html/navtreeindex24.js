@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"caja-monitor_8h.html#a88e71c8aa51aa6d442d37d8311e7caee":[36,0,0,1,2,90,2],
+"caja-monitor_8h.html#aeb746e9befeea87761ee2502dd4615ae":[36,0,0,1,2,90,0],
+"caja-monitor_8h.html#aece2bb4ef6a79f1efdadf27adaf620a0":[36,0,0,1,2,90,1],
 "caja-monitor_8h_source.html":[36,0,0,1,2,90],
 "caja-navigation-action_8c.html":[36,0,0,1,3,39],
 "caja-navigation-action_8c.html#a0742cf65d20e4f57b140af9189a8cb59":[36,0,0,1,3,39,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "caja-open-terminal_8c.html#ab879348215e1e20481ea3bb129043423":[36,0,0,4,3,0,8],
 "caja-open-terminal_8c.html#ac38fbe99f045195348ad1374975af4ee":[36,0,0,4,3,0,7],
 "caja-open-terminal_8c.html#ac4942c5aa4e6f5e5ee00f6220319263d":[36,0,0,4,3,0,1],
-"caja-open-terminal_8c.html#ac8119087f0782e671c4f8ae12db9979a":[36,0,0,4,3,0,0],
-"caja-open-terminal_8c.html#ad362b11ca9cf9eb676d6c64c1bfbd801":[36,0,0,4,3,0,5],
-"caja-open-terminal_8c_source.html":[36,0,0,4,3,0],
-"caja-open-terminal_8h.html":[36,0,0,4,3,1]
+"caja-open-terminal_8c.html#ac8119087f0782e671c4f8ae12db9979a":[36,0,0,4,3,0,0]
 };

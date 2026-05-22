@@ -1,5 +1,8 @@
 var NAVTREEINDEX67 =
 {
+"fm-desktop-icon-view_8h.html#a576b5110ca7e48442d223041b91d069b":[36,0,0,1,3,0,3,8],
+"fm-desktop-icon-view_8h.html#a5ffb504a71f5296132e91454035770db":[36,0,0,1,3,0,3,3],
+"fm-desktop-icon-view_8h.html#a6ca3be9e3b8f2a4c82ffa70aa3694de2":[36,0,0,1,3,0,3,9],
 "fm-desktop-icon-view_8h.html#aa6fdc4043637078e4e450e32374e831e":[36,0,0,1,3,0,3,2],
 "fm-desktop-icon-view_8h.html#aa8e239eb32344fb89d202d1200a55bd1":[36,0,0,1,3,0,3,11],
 "fm-desktop-icon-view_8h.html#ad489851e51d4a73dbdc698911bdfe856":[36,0,0,1,3,0,3,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX67 =
 "fm-icon-container_8c.html":[36,0,0,1,3,0,14],
 "fm-icon-container_8c.html#a681a37b060dc2688192386ef80d64795":[36,0,0,1,3,0,14,4],
 "fm-icon-container_8c.html#a6998d808992bd3a5d4e0bacf1ef69e62":[36,0,0,1,3,0,14,3],
-"fm-icon-container_8c.html#a894830391bd1a6077cf128fc57473fe6":[36,0,0,1,3,0,14,1],
-"fm-icon-container_8c.html#a8b4d3fe352a6a622ef87585b1c8ed7a6":[36,0,0,1,3,0,14,0],
-"fm-icon-container_8c.html#a8b4d3fe352a6a622ef87585b1c8ed7a6a1cd76105ae01c1e2c20aa487b8fd88a6":[36,0,0,1,3,0,14,0,2],
-"fm-icon-container_8c.html#a8b4d3fe352a6a622ef87585b1c8ed7a6a4217fef1c2a28dd8857cac706bd7d4a7":[36,0,0,1,3,0,14,0,5]
+"fm-icon-container_8c.html#a894830391bd1a6077cf128fc57473fe6":[36,0,0,1,3,0,14,1]
 };

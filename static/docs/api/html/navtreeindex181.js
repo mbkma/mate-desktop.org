@@ -1,5 +1,8 @@
 var NAVTREEINDEX181 =
 {
+"structTerminalOptions.html#a1c82dbf7846f0fd0d0d1ec4a4ee9cadd":[35,0,1636,13],
+"structTerminalOptions.html#a2720dcc42fbd8f9f4be2c73adc6bb72b":[35,0,1636,4],
+"structTerminalOptions.html#a4393d9860402d0a6f78929cc97b3e604":[35,0,1636,1],
 "structTerminalOptions.html#a586a191857e6a89e7e0452ca2906796c":[35,0,1636,15],
 "structTerminalOptions.html#a5b5044e412cd247b8c4f0d8bbeacd7b1":[35,0,1636,22],
 "structTerminalOptions.html#a67fcc7468954839b81d11adeb77c0fad":[35,0,1636,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX181 =
 "struct__AppShellData.html#a8883578862727f7dfd7a309121c58004":[35,0,26,4],
 "struct__AppShellData.html#a8b260b524919f5812edd6f8a77d1df2b":[35,0,26,18],
 "struct__AppShellData.html#a93e3468e43e329df799c3f8603c66d15":[35,0,26,10],
-"struct__AppShellData.html#a9c792197b4696beac6f6094769ebcb87":[35,0,26,6],
-"struct__AppShellData.html#a9cf041bc3ed2485b31b4c6155adcae92":[35,0,26,2],
-"struct__AppShellData.html#aa454dc9f02fd5a86ca9cf290831fb7d1":[35,0,26,13],
-"struct__AppShellData.html#aa87ae069bbb71d63d87d433c70d3dd46":[35,0,26,22]
+"struct__AppShellData.html#a9c792197b4696beac6f6094769ebcb87":[35,0,26,6]
 };

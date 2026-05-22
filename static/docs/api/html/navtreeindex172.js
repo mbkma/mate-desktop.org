@@ -1,5 +1,8 @@
 var NAVTREEINDEX172 =
 {
+"structCajaQuery.html#a520bd97ad39c50a7831f5511ca324731":[35,0,1141,0],
+"structCajaQueryClass.html":[35,0,1142],
+"structCajaQueryClass.html#a927f299454978689ea816209f67558d3":[35,0,1142,0],
 "structCajaQueryEditor.html":[35,0,1143],
 "structCajaQueryEditor.html#a3d79eca1c84bb8eef752b6b0ef521016":[35,0,1143,1],
 "structCajaQueryEditor.html#aa337ff55d53d96656b36b963e5d96926":[35,0,1143,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX172 =
 "structClockMapClass.html#a313d620bb50b9eb3866869f451652e85":[35,0,1201,1],
 "structClockMapClass.html#a7e5e22eedeb84bf08965ee87ac436385":[35,0,1201,0],
 "structCommandData.html":[35,0,1202],
-"structCommandData.html#a13a63c5c4791af99fb320a657b6f1550":[35,0,1202,10],
-"structCommandData.html#a192f57871c25d10d852bd9af400cb770":[35,0,1202,0],
-"structCommandData.html#a1bf2a07d3cfbbdfa052e0d49ab388c07":[35,0,1202,2],
-"structCommandData.html#a1c14daf09f21b5f8dd36a18f4470988f":[35,0,1202,3]
+"structCommandData.html#a13a63c5c4791af99fb320a657b6f1550":[35,0,1202,10]
 };

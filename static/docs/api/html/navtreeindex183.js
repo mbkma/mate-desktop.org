@@ -1,5 +1,8 @@
 var NAVTREEINDEX183 =
 {
+"struct__CajaDirectoryPrivate.html#a42e3cd2284ef5727e1560132e8fc3a00":[35,0,57,29],
+"struct__CajaDirectoryPrivate.html#a44cca55e205efac891212fd4f3d3b848":[35,0,57,40],
+"struct__CajaDirectoryPrivate.html#a4ddc4097d58f31854a78c801c45fd81f":[35,0,57,22],
 "struct__CajaDirectoryPrivate.html#a4e1db1a371f7259520c45b3f23879582":[35,0,57,23],
 "struct__CajaDirectoryPrivate.html#a51df08f1709e881e87edc6e1db38cce1":[35,0,57,10],
 "struct__CajaDirectoryPrivate.html#a5289a57d0af600164d3a0e2fdc5986d9":[35,0,57,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaNavigationWindowPrivate.html#a5176885025ec892d668706d03a2947d1":[35,0,85,15],
 "struct__CajaNavigationWindowPrivate.html#a6c7d6c66ecfb4de8b67cd164dc46a4ce":[35,0,85,2],
 "struct__CajaNavigationWindowPrivate.html#a701a124b25722596ddb645319778f1b2":[35,0,85,0],
-"struct__CajaNavigationWindowPrivate.html#a7634538884a7e4a389476d9fd6490e38":[35,0,85,3],
-"struct__CajaNavigationWindowPrivate.html#a7a5e28d61828cda635c4da3d0409e393":[35,0,85,11],
-"struct__CajaNavigationWindowPrivate.html#a992d71d63ebeee83c44166aac9e500e9":[35,0,85,14],
-"struct__CajaNavigationWindowPrivate.html#a9e70586689ae8239caeefef5805ebd1d":[35,0,85,6]
+"struct__CajaNavigationWindowPrivate.html#a7634538884a7e4a389476d9fd6490e38":[35,0,85,3]
 };

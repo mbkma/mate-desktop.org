@@ -1,5 +1,8 @@
 var NAVTREEINDEX202 =
 {
+"struct__PlumaWindowPrivate.html#adbb4bbae199201195733ae3011c2c947":[35,0,895,38],
+"struct__PlumaWindowPrivate.html#adc349f8ace8cc4f2a455b3ca603daf9a":[35,0,895,12],
+"struct__PlumaWindowPrivate.html#adf9e47535a087ec5719336ac5399409a":[35,0,895,6],
 "struct__PlumaWindowPrivate.html#afd6bc3a5dae8a59e9d76354b954944d2":[35,0,895,44],
 "struct__PlumaWindowPrivate.html#afd8fc9fa7b67304c21b1a93ed143b7c4":[35,0,895,42],
 "struct__PlumaWindowPrivate.html#afe599e8f4fa5ad966c54fc52c385be0c":[35,0,895,35],
@@ -246,8 +249,5 @@ var NAVTREEINDEX202 =
 "struct__TaskItem.html":[35,0,956],
 "struct__TaskItem.html#a1ed690900e356e26a194d6a7af7b717a":[35,0,956,1],
 "struct__TaskItem.html#a8a7572d195288fe8e9eb201321af530d":[35,0,956,0],
-"struct__TaskItemClass.html":[35,0,957],
-"struct__TaskItemClass.html#a7fe214d253346e84696cfd6c88296b09":[35,0,957,1],
-"struct__TaskItemClass.html#ab0ef128989db6883308c0d685758a03d":[35,0,957,0],
-"struct__TaskList.html":[35,0,958]
+"struct__TaskItemClass.html":[35,0,957]
 };

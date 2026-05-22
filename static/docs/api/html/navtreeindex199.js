@@ -1,5 +1,8 @@
 var NAVTREEINDEX199 =
 {
+"struct__MetaWindow.html#aac716f7743124b0974d872d40f4ce2bf":[35,0,724,45],
+"struct__MetaWindow.html#aad662a3ccbd44b75db493fae9d263a85":[35,0,724,97],
+"struct__MetaWindow.html#aad9cc670837f119f3adcd6ff61904fc1":[35,0,724,15],
 "struct__MetaWindow.html#aadd46f0322eec13042efd95f51072337":[35,0,724,110],
 "struct__MetaWindow.html#aadd753ecca01a34defbabd0e057ac793":[35,0,724,13],
 "struct__MetaWindow.html#ab1ff1e3229230961bf9532abef7812f1":[35,0,724,38],
@@ -246,8 +249,5 @@ var NAVTREEINDEX199 =
 "struct__OssSwitch.html#acb98c8860578a5c8c1c6d16e6d9c1a09":[35,0,766,1],
 "struct__OssSwitch.html#af71fad760a595af6fd9c0d0a602ee7c1":[35,0,766,0],
 "struct__OssSwitchClass.html":[35,0,767],
-"struct__OssSwitchClass.html#a774ac2013c6f6b2d375b4e91a203acab":[35,0,767,0],
-"struct__OssSwitchOption.html":[35,0,768],
-"struct__OssSwitchOption.html#a119343da64ce5bf6d28e5478e76620b0":[35,0,768,1],
-"struct__OssSwitchOption.html#afacceeed4f67570874748e7a90e9ac1f":[35,0,768,0]
+"struct__OssSwitchClass.html#a774ac2013c6f6b2d375b4e91a203acab":[35,0,767,0]
 };

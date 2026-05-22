@@ -1,5 +1,8 @@
 var NAVTREEINDEX104 =
 {
+"mate-keyboard-properties-xkb_8c.html#a7070cbbeeae7fbbc071bc7d8c52ebe5b":[36,0,0,14,0,7,2,4],
+"mate-keyboard-properties-xkb_8c.html#a79f5560f842e7481bd0b685deaaa0d26":[36,0,0,14,0,7,2,1],
+"mate-keyboard-properties-xkb_8c.html#a7cb4c03eb56e9c2a566b3b2bfc25b2dc":[36,0,0,14,0,7,2,7],
 "mate-keyboard-properties-xkb_8c.html#a7f4297c1efd8d00c685c96b0f2415681":[36,0,0,14,0,7,2,2],
 "mate-keyboard-properties-xkb_8c.html#a910f05c7d52f1b48c1da5f3a42d8f409":[36,0,0,14,0,7,2,12],
 "mate-keyboard-properties-xkb_8c.html#aba339fbb18221a542735d919a4df9a68":[36,0,0,14,0,7,2,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX104 =
 "mate-mdi_8c.html#a6b3dcf9cab9eb7be135e827555e45b8f":[36,0,0,9,2,57,12],
 "mate-mdi_8c.html#a6f6cf52c7811a1e1d215c91487ba384f":[36,0,0,9,2,57,35],
 "mate-mdi_8c.html#a70dd45051150ead9d6f0f266a5adfe9a":[36,0,0,9,2,57,5],
-"mate-mdi_8c.html#a7a4635ac52704ba8b1b6471714d3fcc6":[36,0,0,9,2,57,2],
-"mate-mdi_8c.html#a7a6886f846b3880fd654cd4521635e60":[36,0,0,9,2,57,22],
-"mate-mdi_8c.html#a8c19879afc029e0aaaf35ef9ea7fc24f":[36,0,0,9,2,57,27],
-"mate-mdi_8c.html#a9361d768ba2b6214788bc798b676b510":[36,0,0,9,2,57,6]
+"mate-mdi_8c.html#a7a4635ac52704ba8b1b6471714d3fcc6":[36,0,0,9,2,57,2]
 };

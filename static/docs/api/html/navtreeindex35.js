@@ -1,5 +1,8 @@
 var NAVTREEINDEX35 =
 {
+"core_8h.html#ac6a30a34bd74205988f968b04d5ad7f9":[36,0,0,11,0,2,4,30],
+"core_8h.html#ad2ea8cc29c86ebd70ca2fdb3410ef4dd":[36,0,0,11,0,2,4,16],
+"core_8h.html#ad9910814a7d91c516d33fc6d0f95c71a":[36,0,0,11,0,2,4,20],
 "core_8h.html#adc3044113f6e82fec809e0b18f9a7088":[36,0,0,11,0,2,4,29],
 "core_8h.html#ae6b351b951ff8d3d16cd6b45f3d592a7":[36,0,0,11,0,2,4,11],
 "core_8h.html#aee5c47118e3be10166791fb41d69b9b6":[36,0,0,11,0,2,4,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX35 =
 "cpufreq-selector_2cpufreq-selector_8c.html":[36,0,0,12,4,0,0,8],
 "cpufreq-selector_2cpufreq-selector_8c.html#a7a6ca72832e72c42ba76a1f0afb261c5":[36,0,0,12,4,0,0,8,2],
 "cpufreq-selector_2cpufreq-selector_8c.html#a9e49e57c44454846a824fb0a9260ee60":[36,0,0,12,4,0,0,8,1],
-"cpufreq-selector_2cpufreq-selector_8c.html#ae4a5e27cbec0dda361935040f69763d8":[36,0,0,12,4,0,0,8,0],
-"cpufreq-selector_2cpufreq-selector_8c_source.html":[36,0,0,12,4,0,0,8],
-"cpufreq-selector_2cpufreq-selector_8h.html":[36,0,0,12,4,0,0,9],
-"cpufreq-selector_2cpufreq-selector_8h.html#a009a221d2e4e57a36a277b6b080f885a":[36,0,0,12,4,0,0,9,3]
+"cpufreq-selector_2cpufreq-selector_8c.html#ae4a5e27cbec0dda361935040f69763d8":[36,0,0,12,4,0,0,8,0]
 };

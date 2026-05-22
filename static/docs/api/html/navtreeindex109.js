@@ -1,5 +1,8 @@
 var NAVTREEINDEX109 =
 {
+"mate-rr_8h.html#a478c3ff2758df70f7d6a111becce5eba":[36,0,0,15,0,34,68],
+"mate-rr_8h.html#a48e4f78b7049d7c54425e5b1193349b8":[36,0,0,15,0,34,15],
+"mate-rr_8h.html#a4e3daaff5dd0603bbebf5533d77b26a1":[36,0,0,15,0,34,42],
 "mate-rr_8h.html#a51de48cd8de4a48bbfd4a48bf66c7bab":[36,0,0,15,0,34,6],
 "mate-rr_8h.html#a52053ee2c0c085ac4ee8e72563938196":[36,0,0,15,0,34,40],
 "mate-rr_8h.html#a58ef5ba89e34c7fac9bb3943f770773e":[36,0,0,15,0,34,65],
@@ -246,8 +249,5 @@ var NAVTREEINDEX109 =
 "mate-settings-daemon_2mate-settings-daemon_2main_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[36,0,0,28,0,0,7],
 "mate-settings-daemon_2mate-settings-daemon_2main_8c.html#a1afea90778215048301cfe0000bc9e8c":[36,0,0,28,0,0,2],
 "mate-settings-daemon_2mate-settings-daemon_2main_8c.html#a593fc182e102ed1fa072429325c68c0a":[36,0,0,28,0,0,1],
-"mate-settings-daemon_2mate-settings-daemon_2main_8c.html#a9ebe937ba7c24751f03924fa71114648":[36,0,0,28,0,0,5],
-"mate-settings-daemon_2mate-settings-daemon_2main_8c.html#ab81789307b0bf63bcd71f91fec78e839":[36,0,0,28,0,0,4],
-"mate-settings-daemon_2mate-settings-daemon_2main_8c.html#abdf89cee8f68de5922e536552db886f9":[36,0,0,28,0,0,3],
-"mate-settings-daemon_2mate-settings-daemon_2main_8c.html#aee5885a9e0097da71f7e95c8b8de9391":[36,0,0,28,0,0,0]
+"mate-settings-daemon_2mate-settings-daemon_2main_8c.html#a9ebe937ba7c24751f03924fa71114648":[36,0,0,28,0,0,5]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX174 =
 {
+"structEggToolbarsItemType.html#a9b04e81cf9381aaa093d77554eb11c07":[35,0,1248,2],
+"structEggToolbarsItemType.html#aabd9b68392d5b0a97d2e9a74571d9d19":[35,0,1248,0],
+"structEggToolbarsModel.html":[35,0,1249],
 "structEggToolbarsModel.html#a15136a6e49e006f217392033a95bdb49":[35,0,1249,1],
 "structEggToolbarsModel.html#a681285a52c77785812e8d665b7df1828":[35,0,1249,0],
 "structEggToolbarsModelClass.html":[35,0,1250],
@@ -246,8 +249,5 @@ var NAVTREEINDEX174 =
 "structFontInfo.html":[35,0,1288],
 "structFontInfo.html#a0a48d9ee5151b0496696c115b5b2e7d9":[35,0,1288,3],
 "structFontInfo.html#a106ea659d8fd1904ce9f77095b99fa38":[35,0,1288,2],
-"structFontInfo.html#a10e07e4d0833f3186bbb6926bde54450":[35,0,1288,8],
-"structFontInfo.html#a142ec970f47b58403da9dbcbb5488073":[35,0,1288,5],
-"structFontInfo.html#a27fa607afe78ec3b7d4e48e84cb782b4":[35,0,1288,1],
-"structFontInfo.html#a4ffad0c03cbd7f9018e0cd0eb6eda8e7":[35,0,1288,0]
+"structFontInfo.html#a10e07e4d0833f3186bbb6926bde54450":[35,0,1288,8]
 };

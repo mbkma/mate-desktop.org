@@ -1,5 +1,8 @@
 var NAVTREEINDEX203 =
 {
+"struct__TaskItemClass.html#a7fe214d253346e84696cfd6c88296b09":[35,0,957,1],
+"struct__TaskItemClass.html#ab0ef128989db6883308c0d685758a03d":[35,0,957,0],
+"struct__TaskList.html":[35,0,958],
 "struct__TaskList.html#a17f52631847b6b8a609a1a72d6393f54":[35,0,958,1],
 "struct__TaskList.html#a2d1dd3d77156eccaa7cf4e6797bfba6c":[35,0,958,0],
 "struct__TaskListClass.html":[35,0,959],
@@ -246,8 +249,5 @@ var NAVTREEINDEX203 =
 "structieee80211__mcs__info.html#a22e411766bdb03a53c34078096e9fae5":[35,0,1372,3],
 "structieee80211__mcs__info.html#a886c020d8b80cf545484b4452ee28fd4":[35,0,1372,1],
 "structieee80211__mcs__info.html#ace2388ee5a9f89a9957fa78b39d2d954":[35,0,1372,0],
-"structieee80211__mcs__info.html#ae6d23ab945de614a7b8370963517999b":[35,0,1372,2],
-"structieee80211__vht__cap.html":[35,0,1373],
-"structieee80211__vht__cap.html#a81cac7dcf8f09e5aaf4e9ca5f9d870e2":[35,0,1373,0],
-"structieee80211__vht__cap.html#aed95fb1c0278bfdf0aefabfa3bce9f8e":[35,0,1373,1]
+"structieee80211__mcs__info.html#ae6d23ab945de614a7b8370963517999b":[35,0,1372,2]
 };

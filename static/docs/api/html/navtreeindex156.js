@@ -1,5 +1,8 @@
 var NAVTREEINDEX156 =
 {
+"pluma-settings_8h.html#a58a9e762aad14bf2d2400450065bd284":[36,0,0,34,1,74,19],
+"pluma-settings_8h.html#a5bf8ff61583156a407ff7824fc255be7":[36,0,0,34,1,74,22],
+"pluma-settings_8h.html#a60fd914de8b4addc31b860e8f62bae30":[36,0,0,34,1,74,23],
 "pluma-settings_8h.html#a61ab39c8247e8386a18caf8b0d55ebfe":[36,0,0,34,1,74,56],
 "pluma-settings_8h.html#a624679d7269dab1aa7d55b2255adeb2c":[36,0,0,34,1,74,77],
 "pluma-settings_8h.html#a634f7cf51533fb12d39095235f124eff":[36,0,0,34,1,74,16],
@@ -246,8 +249,5 @@ var NAVTREEINDEX156 =
 "pluma-status-combo-box_8h.html#a776c101c0f2bea35d745fc5a073fb403":[36,0,0,34,1,78,2],
 "pluma-status-combo-box_8h.html#aa85610ea3c47b289a7ade790410b50ca":[36,0,0,34,1,78,21],
 "pluma-status-combo-box_8h.html#ab20bb292a4856c817081bb123c4130f1":[36,0,0,34,1,78,15],
-"pluma-status-combo-box_8h.html#abadd4bf10ea6c8850de1021390ae765d":[36,0,0,34,1,78,6],
-"pluma-status-combo-box_8h.html#abb5764a8ad0048e4ee2828a0b4d498bf":[36,0,0,34,1,78,4],
-"pluma-status-combo-box_8h.html#ac0d42810e32e7ea14f326876e8ffbc87":[36,0,0,34,1,78,13],
-"pluma-status-combo-box_8h.html#acea476ecca9d8907f39777d06dcf0086":[36,0,0,34,1,78,17]
+"pluma-status-combo-box_8h.html#abadd4bf10ea6c8850de1021390ae765d":[36,0,0,34,1,78,6]
 };

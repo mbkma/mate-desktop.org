@@ -1,5 +1,8 @@
 var NAVTREEINDEX186 =
 {
+"struct__DviFontRef.html#a7054aad30286553e48126964d8111257":[35,0,178,2],
+"struct__DviFontRef.html#abf9f7be963de5336f986264bfb6c3aa3":[35,0,178,0],
+"struct__DviFontSearch.html":[35,0,179],
 "struct__DviFontSearch.html#a0dc92b792e57a0df42682748d7db9625":[35,0,179,0],
 "struct__DviFontSearch.html#a237971897476b1fe7fdcb2d80e0f8ccb":[35,0,179,2],
 "struct__DviFontSearch.html#a3fcf145e91fda9a1b659d31d2ad4685e":[35,0,179,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX186 =
 "struct__EggSMClientClass.html#a7c692f4dd3f7fab1be11c3aad380be35":[35,0,212,1],
 "struct__EggSMClientClass.html#a8e50a145f8d9df959e64b77eae047c08":[35,0,212,2],
 "struct__EggSMClientClass.html#aa2c72829dc33e1a149b0a72edabf4f7a":[35,0,212,9],
-"struct__EggSMClientClass.html#aa84bf5e7a317049d06d09e1b72ee41d6":[35,0,212,10],
-"struct__EggSMClientClass.html#ac288a80ef3a423200e0e3ca705f5eb19":[35,0,212,4],
-"struct__EggSMClientClass.html#ad4bf39b64c1b2895a12cc7ecc059415d":[35,0,212,8],
-"struct__EggSMClientClass.html#af242f553f49f61bc55466d09132f2cbd":[35,0,212,0]
+"struct__EggSMClientClass.html#aa84bf5e7a317049d06d09e1b72ee41d6":[35,0,212,10]
 };

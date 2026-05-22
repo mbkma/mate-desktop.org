@@ -1,5 +1,8 @@
 var NAVTREEINDEX117 =
 {
+"matemixer-enums_8h.html#a8839577f6c0c0e20fd65318bdc6afb3da326adb52237a2a796b8d9d92d6fe02b5":[36,0,0,8,2,15,7,6],
+"matemixer-enums_8h.html#a8839577f6c0c0e20fd65318bdc6afb3da393c62dee959d8affd2f83df34dd2922":[36,0,0,8,2,15,7,8],
+"matemixer-enums_8h.html#a8839577f6c0c0e20fd65318bdc6afb3da7a311202e5e9c9a31a01e602408ea4e7":[36,0,0,8,2,15,7,4],
 "matemixer-enums_8h.html#a8839577f6c0c0e20fd65318bdc6afb3da8a3645d9bb9741e60bbc038fb252b33a":[36,0,0,8,2,15,7,2],
 "matemixer-enums_8h.html#a8839577f6c0c0e20fd65318bdc6afb3dad231c696902be614e8d787e4d9271bc6":[36,0,0,8,2,15,7,3],
 "matemixer-enums_8h.html#a8839577f6c0c0e20fd65318bdc6afb3dad3f43b9fa5b00b8eebcae6c0e4046229":[36,0,0,8,2,15,7,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX117 =
 "matemixer-switch-option_8c.html":[36,0,0,8,2,30],
 "matemixer-switch-option_8c.html#a0037d1d20c746e1f4f818aaee07dd6d7":[36,0,0,8,2,30,0],
 "matemixer-switch-option_8c.html#a1e4ff9f6fd57c6bdf59e410cc9280906":[36,0,0,8,2,30,2],
-"matemixer-switch-option_8c.html#a7473ec7638f9a56d35ce62514ae4c118":[36,0,0,8,2,30,1],
-"matemixer-switch-option_8c.html#ac5fd6601f40996260e3439bda35fb37f":[36,0,0,8,2,30,3],
-"matemixer-switch-option_8c_source.html":[36,0,0,8,2,30],
-"matemixer-switch-option_8h.html":[36,0,0,8,2,31]
+"matemixer-switch-option_8c.html#a7473ec7638f9a56d35ce62514ae4c118":[36,0,0,8,2,30,1]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX191 =
 {
+"struct__FrCommandIso.html#a9a416ead5f0d386c02cc72701d2752d5":[35,0,443,1],
+"struct__FrCommandIso.html#a9a4d5d0508d1f7815d379310707766b4":[35,0,443,0],
+"struct__FrCommandIso.html#af927682065f081c4f1850de7a4716969":[35,0,443,2],
 "struct__FrCommandIsoClass.html":[35,0,444],
 "struct__FrCommandIsoClass.html#a16581a831625ba5f4a7fad4e79643e56":[35,0,444,0],
 "struct__FrCommandJar.html":[35,0,445],
@@ -246,8 +249,5 @@ var NAVTREEINDEX191 =
 "struct__GdictDatabaseChooserClass.html#ab3f65c719249079601c9e33b5df7b9c2":[35,0,480,3],
 "struct__GdictDatabaseChooserClass.html#acc89c16de77b9da3795a9aace9434ed2":[35,0,480,6],
 "struct__GdictDefbox.html":[35,0,481],
-"struct__GdictDefbox.html#a619f51552f29d832b2ca873670d1ff5a":[35,0,481,0],
-"struct__GdictDefbox.html#af7b6fe7c295c23cf6d1e81c3025f0789":[35,0,481,1],
-"struct__GdictDefboxClass.html":[35,0,482],
-"struct__GdictDefboxClass.html#a3fb9c0d214e4ea2529425a7d4ccc28d2":[35,0,482,5]
+"struct__GdictDefbox.html#a619f51552f29d832b2ca873670d1ff5a":[35,0,481,0]
 };

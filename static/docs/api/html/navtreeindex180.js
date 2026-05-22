@@ -1,5 +1,8 @@
 var NAVTREEINDEX180 =
 {
+"structPosToken.html#a67c5474c0e88aded0d81e01e116c3d91":[33,1,0,1],
+"structPosToken.html#a730457ff7d296913c2fe4a2cbccb38de":[33,1,0,6],
+"structPosToken.html#a911c4554b9d7fd4b658aac3c98d542b5":[33,1,0,8],
 "structPosToken.html#aad36c106b151f3527ebe26ff923be3a4":[33,1,0,7],
 "structPosToken.html#aafe7e3c1f4c82a03f8604158a0e16b50":[33,1,0,5],
 "structPosToken.html#ac3a930151d3fc07fef557c5783824428":[33,1,0,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX180 =
 "structTerminalOptions.html":[35,0,1636],
 "structTerminalOptions.html#a06bd5f7474eb3d641dee86093ea91515":[35,0,1636,7],
 "structTerminalOptions.html#a08e336a5fef2a3beea54be95e8e05551":[35,0,1636,19],
-"structTerminalOptions.html#a0d2c4bd1a1baa6809aeb3698893a13ea":[35,0,1636,2],
-"structTerminalOptions.html#a1c82dbf7846f0fd0d0d1ec4a4ee9cadd":[35,0,1636,13],
-"structTerminalOptions.html#a2720dcc42fbd8f9f4be2c73adc6bb72b":[35,0,1636,4],
-"structTerminalOptions.html#a4393d9860402d0a6f78929cc97b3e604":[35,0,1636,1]
+"structTerminalOptions.html#a0d2c4bd1a1baa6809aeb3698893a13ea":[35,0,1636,2]
 };

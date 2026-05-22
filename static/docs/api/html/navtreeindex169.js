@@ -1,5 +1,8 @@
 var NAVTREEINDEX169 =
 {
+"structAlsaControlData.html#a81f30a507938c7e29440687986cd05ff":[35,0,997,12],
+"structAlsaControlData.html#a84e52ac71e2493daf803a6f6e47fb9d4":[35,0,997,11],
+"structAlsaControlData.html#abea2b0b0bb6e02f07fc8849b81e05e9c":[35,0,997,6],
 "structAlsaControlData.html#ac532d30dc03456e3c70f7d001528880d":[35,0,997,8],
 "structAlsaControlData.html#ace1dc4246dea4d16ada4c5237310b122":[35,0,997,3],
 "structAlsaControlData.html#ae2eb1d61e203e62b25a19a6fd99ead35":[35,0,997,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX169 =
 "structCactIActionTabInterface.html":[35,0,1046],
 "structCactIActionTabInterface.html#a47e274940e833b2b78ffaddcfa694876":[35,0,1046,0],
 "structCactIActionTabInterface.html#af921e64885d3c8f989a61966bd7c87b2":[35,0,1046,1],
-"structCactIBasenamesTabInterface.html":[35,0,1047],
-"structCactIBasenamesTabInterface.html#a0e062e64cb6cffdb5ae56aa76a851ef6":[35,0,1047,1],
-"structCactIBasenamesTabInterface.html#a45470230ad9cb59a5c150fb62f4218ba":[35,0,1047,0],
-"structCactICapabilitiesTabInterface.html":[35,0,1048]
+"structCactIBasenamesTabInterface.html":[35,0,1047]
 };

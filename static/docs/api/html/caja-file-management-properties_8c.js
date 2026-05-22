@@ -21,6 +21,7 @@ var caja_file_management_properties_8c =
     [ "CAJA_FILE_MANAGEMENT_PROPERTIES_SHOW_HIDDEN_WIDGET", "caja-file-management-properties_8c.html#ac53e4e937602a4a866148cab453d0194", null ],
     [ "CAJA_FILE_MANAGEMENT_PROPERTIES_SHOW_ICONS_IN_LIST_VIEW", "caja-file-management-properties_8c.html#a297299c8f75c6751334bb1f99eb91bb0", null ],
     [ "CAJA_FILE_MANAGEMENT_PROPERTIES_SORT_ORDER_WIDGET", "caja-file-management-properties_8c.html#a997ee203485c66e12e95921e5c801503", null ],
+    [ "CAJA_FILE_MANAGEMENT_PROPERTIES_THUMBNAIL_DIRECTORY_LIMIT_WIDGET", "caja-file-management-properties_8c.html#ab6d7cc12bf21e339c6a26c0c956375ad", null ],
     [ "CAJA_FILE_MANAGEMENT_PROPERTIES_THUMBNAIL_LIMIT_WIDGET", "caja-file-management-properties_8c.html#a20b2cb50a4c92f2245bdf1b5ee56eb9d", null ],
     [ "CAJA_FILE_MANAGEMENT_PROPERTIES_TRASH_CONFIRM_TRASH_WIDGET", "caja-file-management-properties_8c.html#aed884f80c2cb3973d587b459590a64f2", null ],
     [ "CAJA_FILE_MANAGEMENT_PROPERTIES_TRASH_CONFIRM_WIDGET", "caja-file-management-properties_8c.html#a553a3b32a4c21c02c50d967da4f71263", null ],

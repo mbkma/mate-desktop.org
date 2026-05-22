@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"caja-icon-canvas-item_8h_source.html":[36,0,0,1,2,66],
+"caja-icon-container_8c.html":[36,0,0,1,2,67],
 "caja-icon-container_8c.html#a01c4e1f845106e830cb02fab6cc323c0":[36,0,0,1,2,67,42],
 "caja-icon-container_8c.html#a03901d054d2d32d64b67dc3c904d1e62":[36,0,0,1,2,67,58],
 "caja-icon-container_8c.html#a0573bbbbcf85417ffb32eee394739775":[36,0,0,1,2,67,79],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "caja-icon-info_8c.html#adf687f11af97e17a65dfdbef67eccb67":[36,0,0,1,2,71,9],
 "caja-icon-info_8c.html#aeb5bdb8ca010aacc7166902164ea8666":[36,0,0,1,2,71,18],
 "caja-icon-info_8c.html#af2b744172f317230ebd9a11d1d2000f4":[36,0,0,1,2,71,11],
-"caja-icon-info_8c_source.html":[36,0,0,1,2,71],
-"caja-icon-info_8h.html":[36,0,0,1,2,72],
-"caja-icon-info_8h.html#a0a78ee44eee143b9dcfbe6a8a66ad5bc":[36,0,0,1,2,72,23]
+"caja-icon-info_8c_source.html":[36,0,0,1,2,71]
 };

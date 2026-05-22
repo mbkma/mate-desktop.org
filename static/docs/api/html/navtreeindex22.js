@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"caja-icon-info_8h.html":[36,0,0,1,2,72],
+"caja-icon-info_8h.html#a0a78ee44eee143b9dcfbe6a8a66ad5bc":[36,0,0,1,2,72,23],
 "caja-icon-info_8h.html#a202f1ee944e7dc0a79677ff8865495e9":[36,0,0,1,2,72,28],
 "caja-icon-info_8h.html#a237ca4e5a14a3e19fb18216f584b41fd":[36,0,0,1,2,72,42],
 "caja-icon-info_8h.html#a311766e31a6d1bf250d135d71c669c61":[36,0,0,1,2,72,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "caja-location-bar_8c.html#ab50cda29f958df890ca0177d13e6bfe4":[36,0,0,1,3,32,0],
 "caja-location-bar_8c.html#ab9696facb8c159c94b809fe05c809743":[36,0,0,1,3,32,9],
 "caja-location-bar_8c.html#ad61db7795f28443c8b3218d4a8503386":[36,0,0,1,3,32,2],
-"caja-location-bar_8c_source.html":[36,0,0,1,3,32],
-"caja-location-bar_8h.html":[36,0,0,1,3,33],
-"caja-location-bar_8h.html#a056ab366bdae2108a6c8c6b9f872f3a1":[36,0,0,1,3,33,7]
+"caja-location-bar_8c_source.html":[36,0,0,1,3,32]
 };

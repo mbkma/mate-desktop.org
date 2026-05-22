@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"comics-document_8h.html#aa76ab128c1eac16989b2757fca1e240f":[36,0,0,0,0,0,1,4],
+"comics-document_8h.html#aa966a7e64bbcf950a7f6f9c4093380c4":[36,0,0,0,0,0,1,2],
+"comics-document_8h.html#ac1e1bfa117a59b4088c3e705d92ae405":[36,0,0,0,0,0,1,1],
 "comics-document_8h.html#add45371ca93b7525801d648f6ab2e7ed":[36,0,0,0,0,0,1,3],
 "comics-document_8h_source.html":[36,0,0,0,0,0,1],
 "command_8c.html":[36,0,0,12,3,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX34 =
 "core_8h.html#ac17babceac404c45d5823a1d399c6ec2":[36,0,0,11,0,2,4,26],
 "core_8h.html#ac1a879496882e38055a29aac022b1e6d":[36,0,0,11,0,2,4,24],
 "core_8h.html#ac1f8f9f26c0026c6785d73c0b9de317b":[36,0,0,11,0,2,4,7],
-"core_8h.html#ac49fe3342d56309ae074a639410a8aaf":[36,0,0,11,0,2,4,28],
-"core_8h.html#ac6a30a34bd74205988f968b04d5ad7f9":[36,0,0,11,0,2,4,30],
-"core_8h.html#ad2ea8cc29c86ebd70ca2fdb3410ef4dd":[36,0,0,11,0,2,4,16],
-"core_8h.html#ad9910814a7d91c516d33fc6d0f95c71a":[36,0,0,11,0,2,4,20]
+"core_8h.html#ac49fe3342d56309ae074a639410a8aaf":[36,0,0,11,0,2,4,28]
 };

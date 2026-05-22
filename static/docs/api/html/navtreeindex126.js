@@ -1,5 +1,8 @@
 var NAVTREEINDEX126 =
 {
+"msd-keyboard-plugin_8h.html#a3672a78b7e95797330de7dfa1a10d6c5":[36,0,0,28,1,9,5,4],
+"msd-keyboard-plugin_8h.html#a80e7b086cad5178d61c4f7d8c5fe52d8":[36,0,0,28,1,9,5,10],
+"msd-keyboard-plugin_8h.html#aab494d2ed0ecd01af697ce49cc4644a5":[36,0,0,28,1,9,5,9],
 "msd-keyboard-plugin_8h.html#abe149535f188d9f54f6246fc1f903c0a":[36,0,0,28,1,9,5,3],
 "msd-keyboard-plugin_8h.html#af1ed7c19af2ba5ec5c29b0758cd7c3ed":[36,0,0,28,1,9,5,6],
 "msd-keyboard-plugin_8h_source.html":[36,0,0,28,1,9,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX126 =
 "msd-rfkill-manager_8c.html":[36,0,0,28,1,13,0],
 "msd-rfkill-manager_8c.html#a15323bb4615a69dc6f78169fb255db47":[36,0,0,28,1,13,0,2],
 "msd-rfkill-manager_8c.html#a7202c58bd5193765e6073d18536ea381":[36,0,0,28,1,13,0,5],
-"msd-rfkill-manager_8c.html#a8323d964618c6b24e7c3f2fdfef50955":[36,0,0,28,1,13,0,1],
-"msd-rfkill-manager_8c.html#a8860645622626e9ee64b6f87d0959851":[36,0,0,28,1,13,0,4],
-"msd-rfkill-manager_8c.html#ae3cfbabbf2192d66ca845dbaa2444241":[36,0,0,28,1,13,0,6],
-"msd-rfkill-manager_8c.html#ae5ac8757373288f4f5f1cb67b8db14c7":[36,0,0,28,1,13,0,3]
+"msd-rfkill-manager_8c.html#a8323d964618c6b24e7c3f2fdfef50955":[36,0,0,28,1,13,0,1]
 };

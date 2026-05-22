@@ -1,5 +1,8 @@
 var NAVTREEINDEX170 =
 {
+"structCactIBasenamesTabInterface.html#a0e062e64cb6cffdb5ae56aa76a851ef6":[35,0,1047,1],
+"structCactIBasenamesTabInterface.html#a45470230ad9cb59a5c150fb62f4218ba":[35,0,1047,0],
+"structCactICapabilitiesTabInterface.html":[35,0,1048],
 "structCactICapabilitiesTabInterface.html#af3466639d52873a5d14c3789126e4a7d":[35,0,1048,1],
 "structCactICapabilitiesTabInterface.html#af901b203e5bf83d996e6daebedf055f1":[35,0,1048,0],
 "structCactICommandTabInterface.html":[35,0,1049],
@@ -246,8 +249,5 @@ var NAVTREEINDEX170 =
 "structCajaFile.html#a1d81f5034db800df078140e43f0f4a05":[35,0,1111,0],
 "structCajaFileChangesQueuePosition.html":[35,0,1112],
 "structCajaFileChangesQueuePosition.html#a77a4c60410d2c56fb8c6e3be49a59a04":[35,0,1112,2],
-"structCajaFileChangesQueuePosition.html#a9c9372e63871ba8facabdff00a2143c3":[35,0,1112,0],
-"structCajaFileChangesQueuePosition.html#ab25bbb01d27b5f02bcdda995f69f5eab":[35,0,1112,3],
-"structCajaFileChangesQueuePosition.html#afa73fed06fe92121d513db3cea5bdb1a":[35,0,1112,1],
-"structCajaFileClass.html":[35,0,1113]
+"structCajaFileChangesQueuePosition.html#a9c9372e63871ba8facabdff00a2143c3":[35,0,1112,0]
 };

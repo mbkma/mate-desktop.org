@@ -1,5 +1,8 @@
 var NAVTREEINDEX187 =
 {
+"struct__EggSMClientClass.html#ac288a80ef3a423200e0e3ca705f5eb19":[35,0,212,4],
+"struct__EggSMClientClass.html#ad4bf39b64c1b2895a12cc7ecc059415d":[35,0,212,8],
+"struct__EggSMClientClass.html#af242f553f49f61bc55466d09132f2cbd":[35,0,212,0],
 "struct__EggTreeMultiDragSourceIface.html":[35,0,213],
 "struct__EggTreeMultiDragSourceIface.html#a005dea45877e94348a13bb64b8e3e543":[35,0,213,0],
 "struct__EggTreeMultiDragSourceIface.html#a1170920efb8fc13ca79d3dcbf100a4dd":[35,0,213,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EomThumbNav.html#a0a71ec5f866467af2ded672526ab0a8e":[35,0,280,0],
 "struct__EomThumbNav.html#a3991d4382ed8d68635b9e03349cc7063":[35,0,280,1],
 "struct__EomThumbNavClass.html":[35,0,281],
-"struct__EomThumbNavClass.html#a236428e3840b8d560dcc76702d2f0955":[35,0,281,0],
-"struct__EomThumbView.html":[35,0,282],
-"struct__EomThumbView.html#a6c7486ada417af9c2196e603789353ee":[35,0,282,0],
-"struct__EomThumbView.html#aa1a64d99249a81a4bb43afc49aa4f438":[35,0,282,1]
+"struct__EomThumbNavClass.html#a236428e3840b8d560dcc76702d2f0955":[35,0,281,0]
 };

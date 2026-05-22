@@ -1,5 +1,8 @@
 var NAVTREEINDEX144 =
 {
+"panel-config-global_8c_source.html":[36,0,0,22,2,33],
+"panel-config-global_8h.html":[36,0,0,22,2,34],
+"panel-config-global_8h.html#a1130acaca54ea5633488e396123c6ef4":[36,0,0,22,2,34,3],
 "panel-config-global_8h.html#a2e4053eda9b5963e7d90623f1af8bd0b":[36,0,0,22,2,34,2],
 "panel-config-global_8h.html#a48e05e305f29e8685eed73ddf2e4ac9f":[36,0,0,22,2,34,0],
 "panel-config-global_8h.html#a57f94d8761d8f30ff7a770171790f53f":[36,0,0,22,2,34,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX144 =
 "panel-keyfile_8c.html#aea1eb941ff289eca57b3df6653dc95ca":[36,0,0,22,2,1,12,7],
 "panel-keyfile_8c.html#aef0c96e0e6da173269b88e7487fa8f79":[36,0,0,22,2,1,12,2],
 "panel-keyfile_8c_source.html":[36,0,0,22,2,1,12],
-"panel-keyfile_8h.html":[36,0,0,22,2,1,13],
-"panel-keyfile_8h.html#a21cdb0761f2783d1682bd1f4ebc45093":[36,0,0,22,2,1,13,13],
-"panel-keyfile_8h.html#a29c493da419360eb0bb72b01ed661cf1":[36,0,0,22,2,1,13,3],
-"panel-keyfile_8h.html#a37d418e5abf20b0f6ac9c177f908db73":[36,0,0,22,2,1,13,10]
+"panel-keyfile_8h.html":[36,0,0,22,2,1,13]
 };

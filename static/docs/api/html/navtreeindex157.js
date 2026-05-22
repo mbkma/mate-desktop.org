@@ -1,5 +1,8 @@
 var NAVTREEINDEX157 =
 {
+"pluma-status-combo-box_8h.html#abb5764a8ad0048e4ee2828a0b4d498bf":[36,0,0,34,1,78,4],
+"pluma-status-combo-box_8h.html#ac0d42810e32e7ea14f326876e8ffbc87":[36,0,0,34,1,78,13],
+"pluma-status-combo-box_8h.html#acea476ecca9d8907f39777d06dcf0086":[36,0,0,34,1,78,17],
 "pluma-status-combo-box_8h.html#ae9aeaf4cc0d8350718a2986a159830eb":[36,0,0,34,1,78,5],
 "pluma-status-combo-box_8h.html#af24f6f30e3f93a43576f225d17b63277":[36,0,0,34,1,78,19],
 "pluma-status-combo-box_8h.html#af2778ee1e584214e7ee5f6d1f1010607":[36,0,0,34,1,78,14],
@@ -246,8 +249,5 @@ var NAVTREEINDEX157 =
 "pluma-trail-save-plugin_8h_source.html":[36,0,0,34,0,7,1],
 "pluma-ui_8h.html":[36,0,0,34,1,87],
 "pluma-ui_8h_source.html":[36,0,0,34,1,87],
-"pluma-utils_8c.html":[36,0,0,34,1,88],
-"pluma-utils_8c.html#a0a0116a1ff1e0c58bf363eafc598a7d8":[36,0,0,34,1,88,26],
-"pluma-utils_8c.html#a0d3d2ef110f5791cdc1840010319a4de":[36,0,0,34,1,88,30],
-"pluma-utils_8c.html#a138fa8df40459ab335f2b06f116ffda4":[36,0,0,34,1,88,16]
+"pluma-utils_8c.html":[36,0,0,34,1,88]
 };

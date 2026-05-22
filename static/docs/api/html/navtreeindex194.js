@@ -1,5 +1,8 @@
 var NAVTREEINDEX194 =
 {
+"struct__MateDialogClass.html#ad0230c42c9887ea5451d788f65af6007":[35,0,579,0],
+"struct__MateDialogClass.html#af19ebce2eccee9610c7de9e6e072a1ac":[35,0,579,1],
+"struct__MateDruid.html":[35,0,580],
 "struct__MateDruid.html#a15e6b5725fe99891d1f2db0d705fa7df":[35,0,580,3],
 "struct__MateDruid.html#a3c39bf540864ec407c7ece14a3ceea79":[35,0,580,5],
 "struct__MateDruid.html#a5fc7b0d9b2c8cd499df48c83563dabb8":[35,0,580,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX194 =
 "struct__MateMixerBackendInfo.html":[35,0,631],
 "struct__MateMixerBackendInfo.html#a193a6b454bb2faf1cb78f2d1b43c6bd0":[35,0,631,3],
 "struct__MateMixerBackendInfo.html#a9b21a5e639b8dfd5fd6a7464866e7c82":[35,0,631,2],
-"struct__MateMixerBackendInfo.html#a9f6b338845ed6251ede8d1fb7a5b87b4":[35,0,631,0],
-"struct__MateMixerBackendInfo.html#aaf0d7ea3b803eafcd234deab09f070ca":[35,0,631,1],
-"struct__MateMixerBackendInfo.html#ab80c54c0940223b0bbbd35d43221b651":[35,0,631,4],
-"struct__MateMixerBackendModule.html":[35,0,632]
+"struct__MateMixerBackendInfo.html#a9f6b338845ed6251ede8d1fb7a5b87b4":[35,0,631,0]
 };

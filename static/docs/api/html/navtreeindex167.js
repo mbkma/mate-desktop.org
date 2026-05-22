@@ -1,5 +1,8 @@
 var NAVTREEINDEX167 =
 {
+"smart-converter_8c_source.html":[36,0,0,34,2,4],
+"smooth__refresh_8cpp.html":[36,0,0,29,0,47],
+"smooth__refresh_8cpp_source.html":[36,0,0,29,0,47],
 "smooth__refresh_8h.html":[36,0,0,29,0,48],
 "smooth__refresh_8h_source.html":[36,0,0,29,0,48],
 "smu-sys-plugin_8c.html":[36,0,0,26,1,13,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX167 =
 "src_2gpm-common_8h.html#a6f237392ece31f39fc71df25b9042313":[36,0,0,24,1,22,33],
 "src_2gpm-common_8h.html#a7279a8cfb00ffa96e7a86925fe44df47":[36,0,0,24,1,22,46],
 "src_2gpm-common_8h.html#a73045c3d4ea574a738f964869bd1e847":[36,0,0,24,1,22,17],
-"src_2gpm-common_8h.html#a731a256cd523cd51cc426b40c58fcb6e":[36,0,0,24,1,22,34],
-"src_2gpm-common_8h.html#a76c18abf4483900eea2f9c4bb20b2fa8":[36,0,0,24,1,22,65],
-"src_2gpm-common_8h.html#a7935f2477bca5e1509f3e080a1938ea5":[36,0,0,24,1,22,30],
-"src_2gpm-common_8h.html#a7cfec1a25d59ff2d4426676f73797295":[36,0,0,24,1,22,73]
+"src_2gpm-common_8h.html#a731a256cd523cd51cc426b40c58fcb6e":[36,0,0,24,1,22,34]
 };

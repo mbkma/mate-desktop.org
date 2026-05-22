@@ -1,5 +1,8 @@
 var NAVTREEINDEX165 =
 {
+"screenshot-utils_8h.html#af431cd6754be7f8e8cdc9a7de079f4e4":[36,0,0,32,5,0,8,2],
+"screenshot-utils_8h_source.html":[36,0,0,32,5,0,8],
+"screenshot-xfer_8c.html":[36,0,0,32,5,0,9],
 "screenshot-xfer_8c.html#a4c37883e12a100a65bf2fe86dc3c9c9d":[36,0,0,32,5,0,9,0],
 "screenshot-xfer_8c_source.html":[36,0,0,32,5,0,9],
 "screenshot-xfer_8h.html":[36,0,0,32,5,0,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX165 =
 "sensors-applet_8h.html#a57c47894731d552109618df7a96778a2ae4b02545ea99bfca84cf7c2ff5f229e6":[36,0,0,26,2,18,15,3],
 "sensors-applet_8h.html#a57c47894731d552109618df7a96778a2af40720d2ddb9de2213545fbbbf763a43":[36,0,0,26,2,18,15,2],
 "sensors-applet_8h.html#a5989ed19948070f3b19b3954da33efb3":[36,0,0,26,2,18,16],
-"sensors-applet_8h.html#a5989ed19948070f3b19b3954da33efb3a1ee6e694f8ea36c8ed7c0e5c76439b50":[36,0,0,26,2,18,16,0],
-"sensors-applet_8h.html#a5989ed19948070f3b19b3954da33efb3a8b74b891ade5ec17d65734b07cc98ca6":[36,0,0,26,2,18,16,2],
-"sensors-applet_8h.html#a5989ed19948070f3b19b3954da33efb3ab788c882d39407e80b48d2a10786eae7":[36,0,0,26,2,18,16,1],
-"sensors-applet_8h.html#a59b40c5838e0a3d2bfbfa64c85d7ca27":[36,0,0,26,2,18,13]
+"sensors-applet_8h.html#a5989ed19948070f3b19b3954da33efb3a1ee6e694f8ea36c8ed7c0e5c76439b50":[36,0,0,26,2,18,16,0]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX127 =
 {
+"msd-rfkill-manager_8c.html#a8860645622626e9ee64b6f87d0959851":[36,0,0,28,1,13,0,4],
+"msd-rfkill-manager_8c.html#ae3cfbabbf2192d66ca845dbaa2444241":[36,0,0,28,1,13,0,6],
+"msd-rfkill-manager_8c.html#ae5ac8757373288f4f5f1cb67b8db14c7":[36,0,0,28,1,13,0,3],
 "msd-rfkill-manager_8c.html#af72cfb435d93be008bbe0c9e8828223e":[36,0,0,28,1,13,0,0],
 "msd-rfkill-manager_8c_source.html":[36,0,0,28,1,13,0],
 "msd-rfkill-manager_8h.html":[36,0,0,28,1,13,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX127 =
 "msd-typing-break-manager_8c.html":[36,0,0,28,1,16,0],
 "msd-typing-break-manager_8c.html#a405805293b2618037b1419372327082a":[36,0,0,28,1,16,0,2],
 "msd-typing-break-manager_8c.html#a51027d4ffde5538732b325e0baac7823":[36,0,0,28,1,16,0,3],
-"msd-typing-break-manager_8c.html#a5267dbe6c1b7221932f90a3d5adfe8c4":[36,0,0,28,1,16,0,0],
-"msd-typing-break-manager_8c.html#ae99cf89173083fdeaeffaae5719b56c8":[36,0,0,28,1,16,0,1],
-"msd-typing-break-manager_8c_source.html":[36,0,0,28,1,16,0],
-"msd-typing-break-manager_8h.html":[36,0,0,28,1,16,1]
+"msd-typing-break-manager_8c.html#a5267dbe6c1b7221932f90a3d5adfe8c4":[36,0,0,28,1,16,0,0]
 };

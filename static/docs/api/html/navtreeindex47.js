@@ -1,5 +1,8 @@
 var NAVTREEINDEX47 =
 {
+"eggfileformatchooser_8c.html#a09670425e2a793165e88150947235b51":[36,0,0,5,1,27,0],
+"eggfileformatchooser_8c.html#a0f3032d442152ee006c4bb5b1a9c0472":[36,0,0,5,1,27,11],
+"eggfileformatchooser_8c.html#a19b8158fed304f7adfd064f404ea0539":[36,0,0,5,1,27,7],
 "eggfileformatchooser_8c.html#a1a8e052a9087b484f4c1ef6f86a0642c":[36,0,0,5,1,27,8],
 "eggfileformatchooser_8c.html#a3c3598a0de358712dc46d1388544d60d":[36,0,0,5,1,27,3],
 "eggfileformatchooser_8c.html#a425f9e7b313ed0d165996eebd2a85506":[36,0,0,5,1,27,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX47 =
 "eom-clipboard-handler_8c.html#a1945c7fc6fb6f6446aa611252a166f46":[36,0,0,6,3,5,0],
 "eom-clipboard-handler_8c.html#a4c545c717d21752e6d95a6b5920e1f85":[36,0,0,6,3,5,1],
 "eom-clipboard-handler_8c_source.html":[36,0,0,6,3,5],
-"eom-clipboard-handler_8h.html":[36,0,0,6,3,6],
-"eom-clipboard-handler_8h.html#a1945c7fc6fb6f6446aa611252a166f46":[36,0,0,6,3,6,11],
-"eom-clipboard-handler_8h.html#a23b9ca7339a652217e39030a85e4b77d":[36,0,0,6,3,6,2],
-"eom-clipboard-handler_8h.html#a2ab8f338b6ee1599cef70249160eb7d7":[36,0,0,6,3,6,7]
+"eom-clipboard-handler_8h.html":[36,0,0,6,3,6]
 };

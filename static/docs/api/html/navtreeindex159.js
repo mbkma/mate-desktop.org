@@ -1,5 +1,8 @@
 var NAVTREEINDEX159 =
 {
+"pluma-word-completion-plugin_8h.html#a710af8342736fbec5b01c36f9a2d7dac":[36,0,0,35,0,2,1,4],
+"pluma-word-completion-plugin_8h.html#a87e6eae1a9372f0f204a07b898ca3ea1":[36,0,0,35,0,2,1,8],
+"pluma-word-completion-plugin_8h.html#aa4427a2dc5246da26995f09954c302b5":[36,0,0,35,0,2,1,5],
 "pluma-word-completion-plugin_8h.html#ac8381bbc571227b44855162fb744c079":[36,0,0,35,0,2,1,12],
 "pluma-word-completion-plugin_8h.html#ada344d414bc9dbcf71f48a0c63d134dd":[36,0,0,35,0,2,1,10],
 "pluma-word-completion-plugin_8h.html#adb5ac2395e5c98cd787e5b77ccea1ba2":[36,0,0,35,0,2,1,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX159 =
 "prefs_8c.html#a2d73074bb90388eae24418702836a7c0":[36,0,0,11,0,1,34,1],
 "prefs_8c.html#a2faedf4e03167b6f65f71381e522cb29":[36,0,0,11,0,1,34,61],
 "prefs_8c.html#a31764dbe10816ed3af0223b71ce5eb92":[36,0,0,11,0,1,34,56],
-"prefs_8c.html#a31b633eedffa4422791c90408160da71":[36,0,0,11,0,1,34,22],
-"prefs_8c.html#a354ff99b15cc3bb6b287f7abfbfd1145":[36,0,0,11,0,1,34,28],
-"prefs_8c.html#a3786a8e53a3a1e26cfc37d7d818130e7":[36,0,0,11,0,1,34,42],
-"prefs_8c.html#a37bdcc9e1823bedde4e441c128553afc":[36,0,0,11,0,1,34,24]
+"prefs_8c.html#a31b633eedffa4422791c90408160da71":[36,0,0,11,0,1,34,22]
 };

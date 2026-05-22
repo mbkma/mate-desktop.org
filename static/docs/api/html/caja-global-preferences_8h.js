@@ -40,6 +40,7 @@ var caja_global_preferences_8h =
     [ "CAJA_PREFERENCES_ICON_VIEW_LABELS_BESIDE_ICONS", "caja-global-preferences_8h.html#a32a1f8ab3eac1bf8e876dd7f2288ba46", null ],
     [ "CAJA_PREFERENCES_ICON_VIEW_TEXT_ELLIPSIS_LIMIT", "caja-global-preferences_8h.html#aa5b76018e2286d60ac0f3af420e609e3", null ],
     [ "CAJA_PREFERENCES_ICON_VIEW_THUMBNAIL_SIZE", "caja-global-preferences_8h.html#a902e1c1f400cea56e8c89224c8e726b6", null ],
+    [ "CAJA_PREFERENCES_IMAGE_FILE_THUMBNAIL_DIRECTORY_LIMIT", "caja-global-preferences_8h.html#a416b504dbc1cf5c9da6fa8291d9d5c95", null ],
     [ "CAJA_PREFERENCES_IMAGE_FILE_THUMBNAIL_LIMIT", "caja-global-preferences_8h.html#a250adadf81c6a05be6f03c4166a85ae8", null ],
     [ "CAJA_PREFERENCES_INSTALL_MIME_ACTIVATION", "caja-global-preferences_8h.html#a8ea92c1dfe2893205f0f358e83412a13", null ],
     [ "CAJA_PREFERENCES_LIST_VIEW_DEFAULT_COLUMN_ORDER", "caja-global-preferences_8h.html#a89e819c28e5516efa4e187b7dbcb9224", null ],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX142 =
 {
+"oss-device_8h.html#a0896fb01a0874df6f6098601df05ce6b":[36,0,0,8,0,2,4,9],
+"oss-device_8h.html#a1a4fa946d20230b1c09afd9e64dc9bfa":[36,0,0,8,0,2,4,13],
+"oss-device_8h.html#a1ef3f335a9777e5096022cea6ad69016":[36,0,0,8,0,2,4,3],
 "oss-device_8h.html#a3b890b866ddfe641876dd2097f75f27c":[36,0,0,8,0,2,4,17],
 "oss-device_8h.html#a3fee6b866f5a07b7aea5117b52a7d0ff":[36,0,0,8,0,2,4,2],
 "oss-device_8h.html#a7479fe8a8e644899584c50a408b24768":[36,0,0,8,0,2,4,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX142 =
 "panel-applet-container_8h.html#a1cc7cf17d81f82ccc6c8df093c62a6de":[36,0,0,22,2,0,1,21],
 "panel-applet-container_8h.html#a306a7e6604a9a9ca73a4d94f4c58a1e8":[36,0,0,22,2,0,1,16],
 "panel-applet-container_8h.html#a34f59c15591431cab51b4ef2e503c11f":[36,0,0,22,2,0,1,2],
-"panel-applet-container_8h.html#a4dffa12429613a150367d67a9d11cbd4":[36,0,0,22,2,0,1,20],
-"panel-applet-container_8h.html#a50f97385df83436f9def439a60d82037":[36,0,0,22,2,0,1,8],
-"panel-applet-container_8h.html#a603b26055bf97265aac6300311b20643":[36,0,0,22,2,0,1,24],
-"panel-applet-container_8h.html#a693b0d5554ffe63b5c9cc89cffb3cccb":[36,0,0,22,2,0,1,23]
+"panel-applet-container_8h.html#a4dffa12429613a150367d67a9d11cbd4":[36,0,0,22,2,0,1,20]
 };

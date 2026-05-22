@@ -1,5 +1,8 @@
 var NAVTREEINDEX162 =
 {
+"pulse-backend_8h_source.html":[36,0,0,8,0,3,1],
+"pulse-connection_8c.html":[36,0,0,8,0,3,2],
+"pulse-connection_8c.html#a0c38b9291c20a313c7a67b2e6216b8c5":[36,0,0,8,0,3,2,13],
 "pulse-connection_8c.html#a0c3969772ebc4d8e4801c9521739b3e0":[36,0,0,8,0,3,2,4],
 "pulse-connection_8c.html#a0d036c072d7aaf422b6a3ffcd293db81":[36,0,0,8,0,3,2,20],
 "pulse-connection_8c.html#a0eae04623724bf579f58a66b90ba836d":[36,0,0,8,0,3,2,28],
@@ -246,8 +249,5 @@ var NAVTREEINDEX162 =
 "pulse-port_8h.html#a7daca06a9bae1a4f5b8b57eb8a34cf8f":[36,0,0,8,0,3,22,11],
 "pulse-port_8h.html#a9aa18e9674cda363b8cb493da5f3cdaf":[36,0,0,8,0,3,22,2],
 "pulse-port_8h.html#aae0cca62367545708ea9e2de97406d61":[36,0,0,8,0,3,22,5],
-"pulse-port_8h.html#ab32de98d49ccfac8b41a1557c63c3895":[36,0,0,8,0,3,22,12],
-"pulse-port_8h.html#ac0278219604d947dd407cb2bb0244751":[36,0,0,8,0,3,22,8],
-"pulse-port_8h.html#adbd870f028b8c42618c87a74525b0353":[36,0,0,8,0,3,22,7],
-"pulse-port_8h.html#ae1143245a8489d53b1ca8f3a942622da":[36,0,0,8,0,3,22,3]
+"pulse-port_8h.html#ab32de98d49ccfac8b41a1557c63c3895":[36,0,0,8,0,3,22,12]
 };

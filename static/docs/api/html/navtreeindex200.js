@@ -1,5 +1,8 @@
 var NAVTREEINDEX200 =
 {
+"struct__OssSwitchOption.html":[35,0,768],
+"struct__OssSwitchOption.html#a119343da64ce5bf6d28e5478e76620b0":[35,0,768,1],
+"struct__OssSwitchOption.html#afacceeed4f67570874748e7a90e9ac1f":[35,0,768,0],
 "struct__OssSwitchOptionClass.html":[35,0,769],
 "struct__OssSwitchOptionClass.html#a5b741f8c6e4e9940c6ee8d59002bc3cb":[35,0,769,0],
 "struct__PanelActionButton.html":[35,0,770],
@@ -246,8 +249,5 @@ var NAVTREEINDEX200 =
 "struct__PlumaFileBrowserWidget.html":[35,0,831],
 "struct__PlumaFileBrowserWidget.html#aab62cd530f72eb749376620cfda7ce5d":[35,0,831,1],
 "struct__PlumaFileBrowserWidget.html#ab6da482cc026d6fd515436ffcca45cc2":[35,0,831,0],
-"struct__PlumaFileBrowserWidgetClass.html":[35,0,832],
-"struct__PlumaFileBrowserWidgetClass.html#a1225648b60897f2e2d3be271fc6c027f":[35,0,832,1],
-"struct__PlumaFileBrowserWidgetClass.html#a4066979c707ba392334f43c07e17ad91":[35,0,832,4],
-"struct__PlumaFileBrowserWidgetClass.html#a647920ce6b5d9ee6eaa7efa3430bfaa5":[35,0,832,3]
+"struct__PlumaFileBrowserWidgetClass.html":[35,0,832]
 };

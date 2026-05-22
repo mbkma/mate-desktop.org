@@ -1,5 +1,8 @@
 var NAVTREEINDEX182 =
 {
+"struct__AppShellData.html#a9cf041bc3ed2485b31b4c6155adcae92":[35,0,26,2],
+"struct__AppShellData.html#aa454dc9f02fd5a86ca9cf290831fb7d1":[35,0,26,13],
+"struct__AppShellData.html#aa87ae069bbb71d63d87d433c70d3dd46":[35,0,26,22],
 "struct__AppShellData.html#aa8c4700e9e9f83fc0eb68f0e7ad5f940":[35,0,26,28],
 "struct__AppShellData.html#aaa1e2c263a545983fc8fda2d15574456":[35,0,26,23],
 "struct__AppShellData.html#aab9f81a35ed6320b3196cfbbc369eb28":[35,0,26,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX182 =
 "struct__CajaDirectoryPrivate.html#a2edc54930783d86cad34cfd341ff8668":[35,0,57,1],
 "struct__CajaDirectoryPrivate.html#a2f5d4def2460e7c9400a38e300122d15":[35,0,57,27],
 "struct__CajaDirectoryPrivate.html#a3de6a135ca8a9c8f94ace1c474a4fda1":[35,0,57,37],
-"struct__CajaDirectoryPrivate.html#a4078a7f393454d57aa431db88cc46d63":[35,0,57,39],
-"struct__CajaDirectoryPrivate.html#a42e3cd2284ef5727e1560132e8fc3a00":[35,0,57,29],
-"struct__CajaDirectoryPrivate.html#a44cca55e205efac891212fd4f3d3b848":[35,0,57,40],
-"struct__CajaDirectoryPrivate.html#a4ddc4097d58f31854a78c801c45fd81f":[35,0,57,22]
+"struct__CajaDirectoryPrivate.html#a4078a7f393454d57aa431db88cc46d63":[35,0,57,39]
 };
