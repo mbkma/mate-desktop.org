@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"caja-file_8h.html#adf4b059555fbd5ace819b4f208ad29ee":[36,0,0,1,2,62,18],
+"caja-file_8h.html#adf4ec08e28f46144986bd4f1c02f1ea9":[36,0,0,1,2,62,63],
+"caja-file_8h.html#ae2826860a1175faa85b7e855ecb8d940":[36,0,0,1,2,62,69],
+"caja-file_8h.html#ae3b9ea556fdf86e1737a2d5f135a5476":[36,0,0,1,2,62,134],
 "caja-file_8h.html#ae85ae4b58ad50acff6d419529b18ad14":[36,0,0,1,2,62,87],
 "caja-file_8h.html#aeb2ddd02df9d64beafafe348ccf4054a":[36,0,0,1,2,62,117],
 "caja-file_8h.html#aec1dd7e4aa94a81a3fde5c938379c316":[36,0,0,1,2,62,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "caja-icon-canvas-item_8h.html#ad602e9a898aea3540c6598675c0dcbff":[36,0,0,1,2,66,12],
 "caja-icon-canvas-item_8h.html#ad6e7258561aac3334a906ba644ff8c3b":[36,0,0,1,2,66,5],
 "caja-icon-canvas-item_8h.html#ad7b0a220032acf5e69c9ecd889a9c235":[36,0,0,1,2,66,29],
-"caja-icon-canvas-item_8h.html#adcf1bcf2b50de54276d6d3db8dc778ad":[36,0,0,1,2,66,28],
-"caja-icon-canvas-item_8h.html#ae20d04f62c965b59b61828e61ab354bc":[36,0,0,1,2,66,15],
-"caja-icon-canvas-item_8h.html#af0bf284deef6702ae70e1b2ba090ff8f":[36,0,0,1,2,66,6],
-"caja-icon-canvas-item_8h.html#af662269f0ff309d2836e00ae57acccca":[36,0,0,1,2,66,32],
-"caja-icon-canvas-item_8h.html#afab20c7df8284e6bae339d0f74b24d41":[36,0,0,1,2,66,21]
+"caja-icon-canvas-item_8h.html#adcf1bcf2b50de54276d6d3db8dc778ad":[36,0,0,1,2,66,28]
 };

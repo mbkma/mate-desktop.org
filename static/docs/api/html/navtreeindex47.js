@@ -1,5 +1,9 @@
 var NAVTREEINDEX47 =
 {
+"eggcellrendererkeys_8h.html#adf619c3765e4caeec4f5b514d2cfac38":[36,0,0,14,0,6,3,8],
+"eggcellrendererkeys_8h.html#aeed4d08ca3515c0cdc64f66231ef17a1":[36,0,0,14,0,6,3,15],
+"eggcellrendererkeys_8h_source.html":[36,0,0,14,0,6,3],
+"eggfileformatchooser_8c.html":[36,0,0,5,1,27],
 "eggfileformatchooser_8c.html#a09670425e2a793165e88150947235b51":[36,0,0,5,1,27,0],
 "eggfileformatchooser_8c.html#a0f3032d442152ee006c4bb5b1a9c0472":[36,0,0,5,1,27,11],
 "eggfileformatchooser_8c.html#a19b8158fed304f7adfd064f404ea0539":[36,0,0,5,1,27,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX47 =
 "eom-application_8h.html#af5f46872e8cc64e6c1bc73dc18d1ba49":[36,0,0,6,3,4,3],
 "eom-application_8h.html#afa458ac0802f650146e476abab4e2018":[36,0,0,6,3,4,10],
 "eom-application_8h_source.html":[36,0,0,6,3,4],
-"eom-clipboard-handler_8c.html":[36,0,0,6,3,5],
-"eom-clipboard-handler_8c.html#a1945c7fc6fb6f6446aa611252a166f46":[36,0,0,6,3,5,0],
-"eom-clipboard-handler_8c.html#a4c545c717d21752e6d95a6b5920e1f85":[36,0,0,6,3,5,1],
-"eom-clipboard-handler_8c_source.html":[36,0,0,6,3,5],
-"eom-clipboard-handler_8h.html":[36,0,0,6,3,6]
+"eom-clipboard-handler_8c.html":[36,0,0,6,3,5]
 };

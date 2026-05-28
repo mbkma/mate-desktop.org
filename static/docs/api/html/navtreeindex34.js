@@ -1,5 +1,9 @@
 var NAVTREEINDEX34 =
 {
+"comics-document_8c_source.html":[36,0,0,0,0,0,0],
+"comics-document_8h.html":[36,0,0,0,0,0,1],
+"comics-document_8h.html#a1bff20fbe362ea9fae4d5c7807e4e822":[36,0,0,0,0,0,1,5],
+"comics-document_8h.html#a67a228a1aef85fe694a721efe63d0cbf":[36,0,0,0,0,0,1,0],
 "comics-document_8h.html#aa76ab128c1eac16989b2757fca1e240f":[36,0,0,0,0,0,1,4],
 "comics-document_8h.html#aa966a7e64bbcf950a7f6f9c4093380c4":[36,0,0,0,0,0,1,2],
 "comics-document_8h.html#ac1e1bfa117a59b4088c3e705d92ae405":[36,0,0,0,0,0,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX34 =
 "core_8h.html#a9bc7a7d4a7c775c6a1a273db6daae0a1":[36,0,0,11,0,2,4,21],
 "core_8h.html#a9f095f4b06a776b485c2cb3b5d7c036a":[36,0,0,11,0,2,4,37],
 "core_8h.html#aa1711d85d3fd7e6a659aab48b19a6eea":[36,0,0,11,0,2,4,3],
-"core_8h.html#aab803b18827e47dd674f8cd1c900fd84":[36,0,0,11,0,2,4,34],
-"core_8h.html#ac17babceac404c45d5823a1d399c6ec2":[36,0,0,11,0,2,4,26],
-"core_8h.html#ac1a879496882e38055a29aac022b1e6d":[36,0,0,11,0,2,4,24],
-"core_8h.html#ac1f8f9f26c0026c6785d73c0b9de317b":[36,0,0,11,0,2,4,7],
-"core_8h.html#ac49fe3342d56309ae074a639410a8aaf":[36,0,0,11,0,2,4,28]
+"core_8h.html#aab803b18827e47dd674f8cd1c900fd84":[36,0,0,11,0,2,4,34]
 };

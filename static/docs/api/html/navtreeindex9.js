@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"cact-clipboard_8h.html#ab3caa32080774373c06ecf7475040418":[36,0,0,2,0,1,28,14],
+"cact-clipboard_8h.html#ab98e7605453c1d5294891b8ce5a7befd":[36,0,0,2,0,1,28,5],
+"cact-clipboard_8h.html#aceca5713d4650211540113d9e9935ef9":[36,0,0,2,0,1,28,10],
+"cact-clipboard_8h.html#ad49d22db1e1496af9306627d72c11eb9":[36,0,0,2,0,1,28,3],
 "cact-clipboard_8h.html#ae03621d9ea855270afc9d5465eeaec6d":[36,0,0,2,0,1,28,2],
 "cact-clipboard_8h.html#aef9be5d951c40808c4c297fb945f1760":[36,0,0,2,0,1,28,20],
 "cact-clipboard_8h.html#af98dad1fac119029f51c2d9aadf73f26":[36,0,0,2,0,1,28,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "cact-main-toolbar_8c_source.html":[36,0,0,2,0,1,59],
 "cact-main-toolbar_8h.html":[36,0,0,2,0,1,60],
 "cact-main-toolbar_8h.html#a6c53ef3617159c0a3db71d891a2d25f2":[36,0,0,2,0,1,60,1],
-"cact-main-toolbar_8h.html#a7fd784a60086dbc54c01158b5c1a9b9a":[36,0,0,2,0,1,60,0],
-"cact-main-toolbar_8h_source.html":[36,0,0,2,0,1,60],
-"cact-main-window_8c.html":[36,0,0,2,0,1,61],
-"cact-main-window_8c.html#a1aee05501335b1c354de9aed529311ea":[36,0,0,2,0,1,61,2],
-"cact-main-window_8c.html#a294c25270b3b7303ff4a83de43e68bc3":[36,0,0,2,0,1,61,1]
+"cact-main-toolbar_8h.html#a7fd784a60086dbc54c01158b5c1a9b9a":[36,0,0,2,0,1,60,0]
 };

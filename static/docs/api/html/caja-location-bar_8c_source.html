@@ -666,89 +666,100 @@ $(document).ready(function(){initNavTree('caja-location-bar_8c_source.html','');
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>        g_object_unref (file);</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        <a class="code hl_function" href="caja-location-entry_8c.html#a98a4aee3feb43b3170b7b137f57b4dd4">caja_location_entry_update_current_location</a> (<a class="code hl_define" href="caja-location-entry_8h.html#a4de3e951deb754ae0deacd5ab68f4bbc">CAJA_LOCATION_ENTRY</a> (bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry),</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                formatted_location);</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        g_free (formatted_location);</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="comment">/* remember the original location for later comparison */</span></div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    <span class="keywordflow">if</span> (bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;last_location != location)</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    {</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        g_free (bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;last_location);</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;last_location = g_strdup (location);</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    }</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        <span class="comment">/* Add trailing slash in display only so users can immediately type a subfolder */</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        <span class="keywordflow">if</span> (!g_str_has_suffix (formatted_location, G_DIR_SEPARATOR_S))</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        {</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>            <span class="keywordtype">char</span> *display_location;</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>            display_location = g_strconcat (formatted_location, G_DIR_SEPARATOR_S, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>            <a class="code hl_function" href="caja-entry_8c.html#acdf1fbba63ab1aaef952638ceca4232b">caja_entry_set_text</a> (<a class="code hl_define" href="caja-entry_8h.html#abd7aa89aebe6db125a82c523f32a0b8d">CAJA_ENTRY</a> (bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry), display_location);</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>            g_free (display_location);</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        }</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    caja_location_bar_update_label (bar);</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>}</div>
-</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        g_free (formatted_location);</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>override_background_color (GtkWidget *widget,</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>                           GdkRGBA   *rgba)</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>{</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    gchar          *css;</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    GtkCssProvider *provider;</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    provider = gtk_css_provider_new ();</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    css = g_strdup_printf (<span class="stringliteral">&quot;entry { background-color: %s;}&quot;</span>,</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>                           gdk_rgba_to_string (rgba));</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    gtk_css_provider_load_from_data (provider, css, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    g_free (css);</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    gtk_style_context_add_provider (gtk_widget_get_style_context (widget),</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                                    GTK_STYLE_PROVIDER (provider),</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    g_object_unref (provider);</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>}</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">/* change background color based on activity state */</span></div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00618" data-start="{" data-end="}">
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno"><a class="line" href="caja-location-bar_8c.html#a789f6f881cb3cc4335660b7a0f655ed3">  618</a></span><a class="code hl_function" href="caja-location-bar_8c.html#a789f6f881cb3cc4335660b7a0f655ed3">caja_location_bar_set_active</a> (<a class="code hl_struct" href="structCajaLocationBar.html">CajaLocationBar</a> *location_bar, gboolean is_active)</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>{</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    GtkStyleContext *style;</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    GdkRGBA color;</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    GdkRGBA *c;</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    <span class="keyword">static</span> GdkRGBA bg_active;</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="keyword">static</span> GdkRGBA bg_inactive;</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    style = gtk_widget_get_style_context (GTK_WIDGET (location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry));</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    <span class="keywordflow">if</span> (is_active)</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        gtk_style_context_get (style, GTK_STATE_FLAG_NORMAL,</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>                               GTK_STYLE_PROPERTY_BACKGROUND_COLOR,</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>                               &amp;c, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        gtk_style_context_get (style, GTK_STATE_FLAG_INSENSITIVE,</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>                               GTK_STYLE_PROPERTY_BACKGROUND_COLOR,</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                               &amp;c, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    color = *c;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    gdk_rgba_free (c);</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keywordflow">if</span> (is_active)</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    {</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>        <span class="keywordflow">if</span> (gdk_rgba_equal (&amp;bg_active, &amp;bg_inactive))</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>            bg_active = color;</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        override_background_color (GTK_WIDGET (location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry), &amp;bg_active);</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    }</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    {</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        <span class="keywordflow">if</span> (gdk_rgba_equal (&amp;bg_active, &amp;bg_inactive))</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            bg_inactive = color;</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        override_background_color(GTK_WIDGET (location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry), &amp;bg_inactive);</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    }</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>}</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="comment">/* remember the original location for later comparison */</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span> </div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    <span class="keywordflow">if</span> (bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;last_location != location)</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    {</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        g_free (bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;last_location);</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;last_location = g_strdup (location);</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    }</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    caja_location_bar_update_label (bar);</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>}</div>
 </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>override_background_color (GtkWidget *widget,</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                           GdkRGBA   *rgba)</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>{</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    gchar          *css;</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    GtkCssProvider *provider;</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    provider = gtk_css_provider_new ();</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    css = g_strdup_printf (<span class="stringliteral">&quot;entry { background-color: %s;}&quot;</span>,</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>                           gdk_rgba_to_string (rgba));</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    gtk_css_provider_load_from_data (provider, css, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    g_free (css);</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    gtk_style_context_add_provider (gtk_widget_get_style_context (widget),</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>                                    GTK_STYLE_PROVIDER (provider),</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    g_object_unref (provider);</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>}</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment">/* change background color based on activity state */</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00629" data-start="{" data-end="}">
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno"><a class="line" href="caja-location-bar_8c.html#a789f6f881cb3cc4335660b7a0f655ed3">  629</a></span><a class="code hl_function" href="caja-location-bar_8c.html#a789f6f881cb3cc4335660b7a0f655ed3">caja_location_bar_set_active</a> (<a class="code hl_struct" href="structCajaLocationBar.html">CajaLocationBar</a> *location_bar, gboolean is_active)</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>{</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>    GtkStyleContext *style;</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    GdkRGBA color;</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    GdkRGBA *c;</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    <span class="keyword">static</span> GdkRGBA bg_active;</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="keyword">static</span> GdkRGBA bg_inactive;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    style = gtk_widget_get_style_context (GTK_WIDGET (location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry));</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    <span class="keywordflow">if</span> (is_active)</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        gtk_style_context_get (style, GTK_STATE_FLAG_NORMAL,</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>                               GTK_STYLE_PROPERTY_BACKGROUND_COLOR,</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>                               &amp;c, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>        gtk_style_context_get (style, GTK_STATE_FLAG_INSENSITIVE,</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>                               GTK_STYLE_PROPERTY_BACKGROUND_COLOR,</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>                               &amp;c, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    color = *c;</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    gdk_rgba_free (c);</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="keywordflow">if</span> (is_active)</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    {</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>        <span class="keywordflow">if</span> (gdk_rgba_equal (&amp;bg_active, &amp;bg_inactive))</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>            bg_active = color;</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><a class="code hl_struct" href="structCajaEntry.html">CajaEntry</a> *</div>
-<div class="foldopen" id="foldopen00657" data-start="{" data-end="}">
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno"><a class="line" href="caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994">  657</a></span><a class="code hl_function" href="caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994">caja_location_bar_get_entry</a> (<a class="code hl_struct" href="structCajaLocationBar.html">CajaLocationBar</a> *location_bar)</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>{</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    <span class="keywordflow">return</span> location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>}</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        override_background_color (GTK_WIDGET (location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry), &amp;bg_active);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    }</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    {</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        <span class="keywordflow">if</span> (gdk_rgba_equal (&amp;bg_active, &amp;bg_inactive))</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>            bg_inactive = color;</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        override_background_color(GTK_WIDGET (location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry), &amp;bg_inactive);</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    }</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>}</div>
+</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span> </div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><a class="code hl_struct" href="structCajaEntry.html">CajaEntry</a> *</div>
+<div class="foldopen" id="foldopen00668" data-start="{" data-end="}">
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno"><a class="line" href="caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994">  668</a></span><a class="code hl_function" href="caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994">caja_location_bar_get_entry</a> (<a class="code hl_struct" href="structCajaLocationBar.html">CajaLocationBar</a> *location_bar)</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>{</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    <span class="keywordflow">return</span> location_bar-&gt;<a class="code hl_variable" href="structCajaLocationBar.html#a99042bf7ae2827ff8108d6110266db98">details</a>-&gt;entry;</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -756,6 +767,7 @@ $(document).ready(function(){initNavTree('caja-location-bar_8c_source.html','');
 <div class="ttc" id="acaja-application_8c_html_a423d75e9bb1237dea737f9bd4f44ee46"><div class="ttname"><a href="caja-application_8c.html#a423d75e9bb1237dea737f9bd4f44ee46">caja_application_create_navigation_window</a></div><div class="ttdeci">CajaWindow * caja_application_create_navigation_window(CajaApplication *application, GdkScreen *screen)</div><div class="ttdef"><b>Definition</b> <a href="caja-application_8c_source.html#l01040">caja-application.c:1040</a></div></div>
 <div class="ttc" id="acaja-clipboard_8c_html_ab42caaba1ae1bf30cfb712896d1a45ff"><div class="ttname"><a href="caja-clipboard_8c.html#ab42caaba1ae1bf30cfb712896d1a45ff">caja_clipboard_set_up_editable</a></div><div class="ttdeci">void caja_clipboard_set_up_editable(GtkEditable *target, GtkUIManager *ui_manager, gboolean shares_selection_changes)</div><div class="ttdef"><b>Definition</b> <a href="caja-clipboard_8c_source.html#l00560">caja-clipboard.c:560</a></div></div>
 <div class="ttc" id="acaja-clipboard_8h_html"><div class="ttname"><a href="caja-clipboard_8h.html">caja-clipboard.h</a></div></div>
+<div class="ttc" id="acaja-entry_8c_html_acdf1fbba63ab1aaef952638ceca4232b"><div class="ttname"><a href="caja-entry_8c.html#acdf1fbba63ab1aaef952638ceca4232b">caja_entry_set_text</a></div><div class="ttdeci">void caja_entry_set_text(CajaEntry *entry, const gchar *text)</div><div class="ttdef"><b>Definition</b> <a href="caja-entry_8c_source.html#l00249">caja-entry.c:249</a></div></div>
 <div class="ttc" id="acaja-entry_8c_html_ae2c80e3fa7e6dfda0b0c60428b1ddef8"><div class="ttname"><a href="caja-entry_8c.html#ae2c80e3fa7e6dfda0b0c60428b1ddef8">caja_entry_select_all</a></div><div class="ttdeci">void caja_entry_select_all(CajaEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="caja-entry_8c_source.html#l00188">caja-entry.c:188</a></div></div>
 <div class="ttc" id="acaja-entry_8h_html_abd7aa89aebe6db125a82c523f32a0b8d"><div class="ttname"><a href="caja-entry_8h.html#abd7aa89aebe6db125a82c523f32a0b8d">CAJA_ENTRY</a></div><div class="ttdeci">#define CAJA_ENTRY(obj)</div><div class="ttdef"><b>Definition</b> <a href="caja-entry_8h_source.html#l00037">caja-entry.h:37</a></div></div>
 <div class="ttc" id="acaja-icon-dnd_8h_html"><div class="ttname"><a href="caja-icon-dnd_8h.html">caja-icon-dnd.h</a></div></div>
@@ -764,9 +776,9 @@ $(document).ready(function(){initNavTree('caja-location-bar_8c_source.html','');
 <div class="ttc" id="acaja-location-bar_8c_html_a09d9e56f5d4c14bc6d35272c7ee2692da114e0a2a9998892c4602898536c0ad59"><div class="ttname"><a href="caja-location-bar_8c.html#a09d9e56f5d4c14bc6d35272c7ee2692da114e0a2a9998892c4602898536c0ad59">CAJA_DND_NTARGETS</a></div><div class="ttdeci">@ CAJA_DND_NTARGETS</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00081">caja-location-bar.c:80</a></div></div>
 <div class="ttc" id="acaja-location-bar_8c_html_a09d9e56f5d4c14bc6d35272c7ee2692dade2856646d9dfe9ed2570a7e301f54a6"><div class="ttname"><a href="caja-location-bar_8c.html#a09d9e56f5d4c14bc6d35272c7ee2692dade2856646d9dfe9ed2570a7e301f54a6">CAJA_DND_MC_DESKTOP_ICON</a></div><div class="ttdeci">@ CAJA_DND_MC_DESKTOP_ICON</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00077">caja-location-bar.c:77</a></div></div>
 <div class="ttc" id="acaja-location-bar_8c_html_a10ba56108ef28496b857994c6b03faf5"><div class="ttname"><a href="caja-location-bar_8c.html#a10ba56108ef28496b857994c6b03faf5">CAJA_DND_URI_LIST_TYPE</a></div><div class="ttdeci">#define CAJA_DND_URI_LIST_TYPE</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00057">caja-location-bar.c:57</a></div></div>
-<div class="ttc" id="acaja-location-bar_8c_html_a30fb0f6e372dabceeb4a2593061e4994"><div class="ttname"><a href="caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994">caja_location_bar_get_entry</a></div><div class="ttdeci">CajaEntry * caja_location_bar_get_entry(CajaLocationBar *location_bar)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00657">caja-location-bar.c:657</a></div></div>
+<div class="ttc" id="acaja-location-bar_8c_html_a30fb0f6e372dabceeb4a2593061e4994"><div class="ttname"><a href="caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994">caja_location_bar_get_entry</a></div><div class="ttdeci">CajaEntry * caja_location_bar_get_entry(CajaLocationBar *location_bar)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00668">caja-location-bar.c:668</a></div></div>
 <div class="ttc" id="acaja-location-bar_8c_html_a4cb960b324ef039ca6aac93597892b2b"><div class="ttname"><a href="caja-location-bar_8c.html#a4cb960b324ef039ca6aac93597892b2b">caja_location_bar_activate</a></div><div class="ttdeci">void caja_location_bar_activate(CajaLocationBar *bar)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00406">caja-location-bar.c:406</a></div></div>
-<div class="ttc" id="acaja-location-bar_8c_html_a789f6f881cb3cc4335660b7a0f655ed3"><div class="ttname"><a href="caja-location-bar_8c.html#a789f6f881cb3cc4335660b7a0f655ed3">caja_location_bar_set_active</a></div><div class="ttdeci">void caja_location_bar_set_active(CajaLocationBar *location_bar, gboolean is_active)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00618">caja-location-bar.c:618</a></div></div>
+<div class="ttc" id="acaja-location-bar_8c_html_a789f6f881cb3cc4335660b7a0f655ed3"><div class="ttname"><a href="caja-location-bar_8c.html#a789f6f881cb3cc4335660b7a0f655ed3">caja_location_bar_set_active</a></div><div class="ttdeci">void caja_location_bar_set_active(CajaLocationBar *location_bar, gboolean is_active)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00629">caja-location-bar.c:629</a></div></div>
 <div class="ttc" id="acaja-location-bar_8c_html_a8cafed602d3f2d3e8ef42fde4fc18f4d"><div class="ttname"><a href="caja-location-bar_8c.html#a8cafed602d3f2d3e8ef42fde4fc18f4d">caja_location_bar_set_location</a></div><div class="ttdeci">void caja_location_bar_set_location(CajaLocationBar *bar, const char *location)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00559">caja-location-bar.c:559</a></div></div>
 <div class="ttc" id="acaja-location-bar_8c_html_a97bf0a161c3b431183bc91275d38ac8b"><div class="ttname"><a href="caja-location-bar_8c.html#a97bf0a161c3b431183bc91275d38ac8b">LOCATION_LABEL</a></div><div class="ttdeci">#define LOCATION_LABEL</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00062">caja-location-bar.c:62</a></div></div>
 <div class="ttc" id="acaja-location-bar_8c_html_aa6779d5b6b259e1853ca6de6d5ba922c"><div class="ttname"><a href="caja-location-bar_8c.html#aa6779d5b6b259e1853ca6de6d5ba922c">caja_location_bar_new</a></div><div class="ttdeci">GtkWidget * caja_location_bar_new(CajaNavigationWindowPane *pane)</div><div class="ttdef"><b>Definition</b> <a href="caja-location-bar_8c_source.html#l00541">caja-location-bar.c:541</a></div></div>

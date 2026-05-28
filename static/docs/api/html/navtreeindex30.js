@@ -1,5 +1,9 @@
 var NAVTREEINDEX30 =
 {
+"caja-window-info_8h_source.html":[36,0,0,1,2,140],
+"caja-window-manage-views_8c.html":[36,0,0,1,3,76],
+"caja-window-manage-views_8c.html#a06a0d4adc1183acb9dd4614439352230":[36,0,0,1,3,76,2],
+"caja-window-manage-views_8c.html#a0dfc13becfe2978041b1e8021e3de687":[36,0,0,1,3,76,10],
 "caja-window-manage-views_8c.html#a1112d172f92c1bbbadd1d743f8f644c5":[36,0,0,1,3,76,1],
 "caja-window-manage-views_8c.html#a1b12d7f7d4134e201837876609ee69c6":[36,0,0,1,3,76,4],
 "caja-window-manage-views_8c.html#a255e328eca77d8599191acc0d8a078be":[36,0,0,1,3,76,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX30 =
 "caja-window-slot_8h.html#afc10a313b9264c4be11fb734eca2cdd9":[36,0,0,1,3,83,5],
 "caja-window-slot_8h.html#afef835746409928eb8f5122c10a1d211":[36,0,0,1,3,83,2],
 "caja-window-slot_8h_source.html":[36,0,0,1,3,83],
-"caja-window-toolbars_8c.html":[36,0,0,1,3,84],
-"caja-window-toolbars_8c.html#a4436638c2a21fa0c4f9a044c7414cb28":[36,0,0,1,3,84,1],
-"caja-window-toolbars_8c.html#a589dc33239f96c3d93f6d8bdf0f1659d":[36,0,0,1,3,84,0],
-"caja-window-toolbars_8c.html#adb32d9d1027d90bc372c4e3c58a1a9be":[36,0,0,1,3,84,3],
-"caja-window-toolbars_8c.html#adff703d5538f4fcbea1ee786d9c80c5b":[36,0,0,1,3,84,2]
+"caja-window-toolbars_8c.html":[36,0,0,1,3,84]
 };

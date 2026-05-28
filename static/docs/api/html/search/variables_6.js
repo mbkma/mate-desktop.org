@@ -114,7 +114,7 @@ var searchData=
   ['fontfile_111',['fontfile',['../struct__DviFontMapEnt.html#ac38137254ea0f7c86751e5cbe413c636',1,'_DviFontMapEnt::fontfile'],['../structDviFontMapInfo.html#a7ba1d0dfd2f94fdb411e683c07b903e0',1,'DviFontMapInfo::fontfile']]],
   ['fontid_112',['fontid',['../struct__DviFontRef.html#abf9f7be963de5336f986264bfb6c3aa3',1,'_DviFontRef']]],
   ['fontmap_113',['fontmap',['../struct__DviContext.html#a1dd1c99d9b9c13724ccde3218e3eabe7',1,'_DviContext']]],
-  ['fontname_114',['fontname',['../struct__DviFontMapEnt.html#a7244d23ea435682c6eae2ed8aac289b6',1,'_DviFontMapEnt::fontname'],['../struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437',1,'_DviFont::fontname'],['../struct__MateIconTextItem.html#a4ffc57bb080d7dbdee4d492f62683587',1,'_MateIconTextItem::fontname'],['../structGlobalFontInfo.html#a79ab1c6dcc3cda242657bec09e6dad01',1,'GlobalFontInfo::fontName']]],
+  ['fontname_114',['fontname',['../structGlobalFontInfo.html#a79ab1c6dcc3cda242657bec09e6dad01',1,'GlobalFontInfo::fontName'],['../struct__DviFontMapEnt.html#a7244d23ea435682c6eae2ed8aac289b6',1,'_DviFontMapEnt::fontname'],['../struct__DviFont.html#ad75702c1a9d2940cdb56f0af63f70437',1,'_DviFont::fontname'],['../struct__MateIconTextItem.html#a4ffc57bb080d7dbdee4d492f62683587',1,'_MateIconTextItem::fontname']]],
   ['fonts_115',['fonts',['../struct__DviContext.html#a289511d9f8472cc24480fc2c6ccb5058',1,'_DviContext']]],
   ['fontsize_116',['fontsize',['../structLoadGraph.html#ae7ba33ba04bbaa4dbae5d68d5a81c876',1,'LoadGraph']]],
   ['force_5fgrayscale_117',['force_grayscale',['../structjpeg__transform__info.html#a26d925edb18e0095056b38312fb86e53',1,'jpeg_transform_info']]],

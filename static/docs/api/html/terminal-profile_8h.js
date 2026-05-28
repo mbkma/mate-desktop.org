@@ -34,6 +34,7 @@ var terminal_profile_8h =
     [ "TERMINAL_PROFILE_FONT", "terminal-profile_8h.html#a485837ba84590717b990b2acc2aa5f01", null ],
     [ "TERMINAL_PROFILE_FOREGROUND_COLOR", "terminal-profile_8h.html#a2b93b2b6ebc16be0a89c618c24c8db51", null ],
     [ "TERMINAL_PROFILE_GET_CLASS", "terminal-profile_8h.html#ac827d969722841bbfeba251c44466c39", null ],
+    [ "TERMINAL_PROFILE_ICON", "terminal-profile_8h.html#a996a56b6a8b2a28a5d59757fca73c575", null ],
     [ "TERMINAL_PROFILE_LOGIN_SHELL", "terminal-profile_8h.html#a7f6113f386c9942c229a49da80c7e618", null ],
     [ "TERMINAL_PROFILE_NAME", "terminal-profile_8h.html#a1a1d1c92b371cebd98178b8199348546", null ],
     [ "TERMINAL_PROFILE_PALETTE", "terminal-profile_8h.html#a677ac39fd72537b65be0da1b5a3a69be", null ],

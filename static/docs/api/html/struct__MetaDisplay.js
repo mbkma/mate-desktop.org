@@ -42,6 +42,7 @@ var struct__MetaDisplay =
     [ "grab_resize_timeout_id", "struct__MetaDisplay.html#a075ddd7f34b3596ada8a5cd88775c126", null ],
     [ "grab_screen", "struct__MetaDisplay.html#a08808ee80d1a40b1635021160a790cea", null ],
     [ "grab_threshold_movement_reached", "struct__MetaDisplay.html#ae0292144068ffac559b0ad66df25cfea", null ],
+    [ "grab_tile_match", "struct__MetaDisplay.html#a90e0660152eb3a93bf7074d43dcb9d3d", null ],
     [ "grab_tile_mode", "struct__MetaDisplay.html#a99ba89e11bed0fe88d239da30e2840b8", null ],
     [ "grab_tile_monitor_number", "struct__MetaDisplay.html#a57d79ea79c826616eb3adb58b0734cf6", null ],
     [ "grab_was_cancelled", "struct__MetaDisplay.html#a5a95a9eb4c3064c55ad989dd23fb0af9", null ],

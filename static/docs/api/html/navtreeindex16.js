@@ -1,5 +1,9 @@
 var NAVTREEINDEX16 =
 {
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813aded228d0e37c5688de7cca203ce5546a":[36,0,0,1,2,40,16,6],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813ae1840daa38582354c27d954d3e288c6b":[36,0,0,1,2,40,16,5],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813aee5e47383730812ef5e81d87f6c6a43e":[36,0,0,1,2,40,16,0],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813af4522ca7fa1e09c50bd5f381f9959709":[36,0,0,1,2,40,16,4],
 "caja-dnd_8h.html#abab7d54afeeacf933c73a3f81da18133":[36,0,0,1,2,40,8],
 "caja-dnd_8h.html#abd2ee523eaaa1854eca6088b24b69fbe":[36,0,0,1,2,40,23],
 "caja-dnd_8h.html#ac881295f8f904903bc94b7ba289c21a1":[36,0,0,1,2,40,31],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "caja-file-conflict-dialog_8h.html#aa366db810a25696e28cc78952f87b82a":[36,0,0,1,2,51,3],
 "caja-file-conflict-dialog_8h.html#ae9e13daabd9849e55c93eb55d669b38b":[36,0,0,1,2,51,5],
 "caja-file-conflict-dialog_8h.html#aec9a19207236c3a14ba4b040e24804cf":[36,0,0,1,2,51,2],
-"caja-file-conflict-dialog_8h_source.html":[36,0,0,1,2,51],
-"caja-file-dnd_8c.html":[36,0,0,1,2,52],
-"caja-file-dnd_8c.html#a0753a7e6c9888ebbd1b01f7392281ab4":[36,0,0,1,2,52,1],
-"caja-file-dnd_8c.html#a749eaca688955f39f683d0d40b86dfb8":[36,0,0,1,2,52,0],
-"caja-file-dnd_8c.html#ad05a4f3cf4c29c09bca312d86c33f4b7":[36,0,0,1,2,52,3]
+"caja-file-conflict-dialog_8h_source.html":[36,0,0,1,2,51]
 };

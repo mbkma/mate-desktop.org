@@ -34,11 +34,13 @@ var terminal_window_8c =
     [ "terminal_window_remove_screen", "terminal-window_8c.html#af25c7124e5e26a30c9f896fe45c9852b", null ],
     [ "terminal_window_save_state", "terminal-window_8c.html#a90b23dcd625921209752378b97113442", null ],
     [ "terminal_window_set_icon", "terminal-window_8c.html#ad4d6a87817082c94ea9f96754c293123", null ],
+    [ "terminal_window_set_icon_from_cli", "terminal-window_8c.html#a02d28d4f02b8c5950cf2955e16318ec8", null ],
     [ "terminal_window_set_is_restored", "terminal-window_8c.html#aa68da4b5366a6ba9752663fc665bc7c3", null ],
     [ "terminal_window_set_menubar_visible", "terminal-window_8c.html#a70b5c459a28492b5a145f1fb10aec760", null ],
     [ "terminal_window_switch_screen", "terminal-window_8c.html#ab4d5554076c4354aa4bbc1c39533f965", null ],
     [ "terminal_window_update_copy_selection", "terminal-window_8c.html#a45081fb6b5719f5f67222c5272755dab", null ],
     [ "terminal_window_update_geometry", "terminal-window_8c.html#a015c37f5530e51240aff9c9d9b1170b6", null ],
+    [ "terminal_window_update_icon", "terminal-window_8c.html#a9cc3ad37b805a1914b0f90e00d2fd662", null ],
     [ "terminal_window_update_size", "terminal-window_8c.html#a2a6e30944a55f523cebe82bca2ca546b", null ],
     [ "terminal_window_update_size_set_geometry", "terminal-window_8c.html#a5d6d77a1869cb0dae615206942c3536e", null ]
 ];

@@ -5,7 +5,9 @@ var marco_2src_2include_2common_8h =
     [ "MAX_BUTTONS_PER_CORNER", "marco_2src_2include_2common_8h.html#aa7909925aec17937d6c07cbcb24a1ff7", null ],
     [ "META_DEFAULT_ALT_TAB_EXPAND_TO_FIT_TITLE", "marco_2src_2include_2common_8h.html#a127c4e7440b54c2455016680026230db", null ],
     [ "META_DEFAULT_ALT_TAB_MAX_COLUMNS", "marco_2src_2include_2common_8h.html#ab1ce003daa3619f9020b48dd2538ded1", null ],
+    [ "META_DEFAULT_ALT_TAB_MINIMIZED_PLACEMENT", "marco_2src_2include_2common_8h.html#ac4d72c7e2666c3b8ca6284c07b788787", null ],
     [ "META_DEFAULT_ALT_TAB_RAISE_WINDOWS", "marco_2src_2include_2common_8h.html#a004404c2b57d8b64d5b95d053e894163", null ],
+    [ "META_DEFAULT_ALT_TAB_URGENT_PLACEMENT", "marco_2src_2include_2common_8h.html#a47669d4b9cf18f21ca799a4d60c6cb06", null ],
     [ "META_DEFAULT_ICON_NAME", "marco_2src_2include_2common_8h.html#a20c352f9fc7f20b9faf5f488aee879dc", null ],
     [ "META_DEFAULT_ICON_SIZE", "marco_2src_2include_2common_8h.html#a2098ee9fae4c357d0263674ed7aa3f60", null ],
     [ "META_MAX_ALT_TAB_MAX_COLUMNS", "marco_2src_2include_2common_8h.html#a050939e472cf757eb03fcd4e7a46bec9", null ],
@@ -184,6 +186,11 @@ var marco_2src_2include_2common_8h =
       [ "META_MENU_OP_MOVE_DOWN", "marco_2src_2include_2common_8h.html#a70b2a722ec252f2147c6166e7ed1804fa2b47a8cb1e24c9ce1eadb04dbe3bfaaa", null ],
       [ "META_MENU_OP_RECOVER", "marco_2src_2include_2common_8h.html#a70b2a722ec252f2147c6166e7ed1804faeb20fcf8a9f21f10927ea4b9bc9ea259", null ]
     ] ],
+    [ "MetaMinimizedWindowPlacement", "marco_2src_2include_2common_8h.html#a12d71bc00aac9af331350863a055d610", [
+      [ "META_MINIMIZED_WINDOW_PLACEMENT_MRU", "marco_2src_2include_2common_8h.html#a12d71bc00aac9af331350863a055d610af22e9fc29eac0e713cfefeba9e2d9e35", null ],
+      [ "META_MINIMIZED_WINDOW_PLACEMENT_END", "marco_2src_2include_2common_8h.html#a12d71bc00aac9af331350863a055d610af8af4581bd6a545f1877be0253fddac9", null ],
+      [ "META_MINIMIZED_WINDOW_PLACEMENT_HIDDEN", "marco_2src_2include_2common_8h.html#a12d71bc00aac9af331350863a055d610ac999366c44ad96fda02d55bd50027db0", null ]
+    ] ],
     [ "MetaPlacementMode", "marco_2src_2include_2common_8h.html#a058b79eb95a007939047062b04bf8d5d", [
       [ "META_PLACEMENT_MODE_AUTOMATIC", "marco_2src_2include_2common_8h.html#a058b79eb95a007939047062b04bf8d5daede8284b8a81d65c8a080ec772c3c55f", null ],
       [ "META_PLACEMENT_MODE_POINTER", "marco_2src_2include_2common_8h.html#a058b79eb95a007939047062b04bf8d5daea3b5d57df2731b8f96336a970bf3d55", null ],
@@ -194,6 +201,10 @@ var marco_2src_2include_2common_8h =
       [ "META_SIDE_RIGHT", "marco_2src_2include_2common_8h.html#a5101a8f56bd3fab72501b0f839331920a5da260fceaa14985847a1f9e24c96174", null ],
       [ "META_SIDE_TOP", "marco_2src_2include_2common_8h.html#a5101a8f56bd3fab72501b0f839331920aada923f35b22b0c981a62fe8f6964237", null ],
       [ "META_SIDE_BOTTOM", "marco_2src_2include_2common_8h.html#a5101a8f56bd3fab72501b0f839331920a004665dbffdb29fb226d1568a2c74ca3", null ]
+    ] ],
+    [ "MetaUrgentWindowPlacement", "marco_2src_2include_2common_8h.html#a7dcd77e08ce7e11fcd6a82da289a4e38", [
+      [ "META_URGENT_WINDOW_PLACEMENT_START", "marco_2src_2include_2common_8h.html#a7dcd77e08ce7e11fcd6a82da289a4e38afe5c6b2542b9f5172f4f177e839808a8", null ],
+      [ "META_URGENT_WINDOW_PLACEMENT_MRU", "marco_2src_2include_2common_8h.html#a7dcd77e08ce7e11fcd6a82da289a4e38a3f8b19794d85d809539fb255d27899dd", null ]
     ] ],
     [ "MetaVirtualModifier", "marco_2src_2include_2common_8h.html#a5f0a396475da6b777af78dbb746873d5", [
       [ "META_VIRTUAL_SHIFT_MASK", "marco_2src_2include_2common_8h.html#a5f0a396475da6b777af78dbb746873d5aa7190dc3a718615033aa79807e279843", null ],

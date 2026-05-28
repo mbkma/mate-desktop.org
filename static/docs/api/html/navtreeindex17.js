@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"caja-file-dnd_8c.html":[36,0,0,1,2,52],
+"caja-file-dnd_8c.html#a0753a7e6c9888ebbd1b01f7392281ab4":[36,0,0,1,2,52,1],
+"caja-file-dnd_8c.html#a749eaca688955f39f683d0d40b86dfb8":[36,0,0,1,2,52,0],
+"caja-file-dnd_8c.html#ad05a4f3cf4c29c09bca312d86c33f4b7":[36,0,0,1,2,52,3],
 "caja-file-dnd_8c.html#afa6ea397319fe592b2e8479d2d312a51":[36,0,0,1,2,52,2],
 "caja-file-dnd_8c_source.html":[36,0,0,1,2,52],
 "caja-file-dnd_8h.html":[36,0,0,1,2,53],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "caja-file-private_8h.html#afd28c193e87a8403a5045d8d7089704f":[36,0,0,1,2,56,5],
 "caja-file-private_8h_source.html":[36,0,0,1,2,56],
 "caja-file-queue_8c.html":[36,0,0,1,2,57],
-"caja-file-queue_8c.html#a2ef3a5cc662b4271fab4199e85edd276":[36,0,0,1,2,57,5],
-"caja-file-queue_8c.html#a39836aa2fd517f032b0b92da09383733":[36,0,0,1,2,57,2],
-"caja-file-queue_8c.html#aa2f4a158bdf0de0395e9119543e9d04c":[36,0,0,1,2,57,0],
-"caja-file-queue_8c.html#ad167bbdf4056f5ddca1fbd3c065bd74c":[36,0,0,1,2,57,1],
-"caja-file-queue_8c.html#ad8af37b182c8c8bfc49d699d5f022124":[36,0,0,1,2,57,6]
+"caja-file-queue_8c.html#a2ef3a5cc662b4271fab4199e85edd276":[36,0,0,1,2,57,5]
 };

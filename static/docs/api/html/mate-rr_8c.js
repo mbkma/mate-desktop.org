@@ -35,6 +35,7 @@ var mate_rr_8c =
     [ "mate_rr_output_get_current_mode", "mate-rr_8c.html#a52053ee2c0c085ac4ee8e72563938196", null ],
     [ "mate_rr_output_get_edid_data", "mate-rr_8c.html#a5cd84e7efdf0a4eea451863ce04b34b5", null ],
     [ "mate_rr_output_get_height_mm", "mate-rr_8c.html#a4e3daaff5dd0603bbebf5533d77b26a1", null ],
+    [ "mate_rr_output_get_hotplug_mode_update", "mate-rr_8c.html#a8ce0fb192b2f1b658fe6b16ebcb680e3", null ],
     [ "mate_rr_output_get_id", "mate-rr_8c.html#a9d0971e4286734fff92232b8973fe329", null ],
     [ "mate_rr_output_get_is_primary", "mate-rr_8c.html#a756e6fc76b4d1f7be222cf97bc124b66", null ],
     [ "mate_rr_output_get_name", "mate-rr_8c.html#a41457a58ff23973cd922af9383b59115", null ],

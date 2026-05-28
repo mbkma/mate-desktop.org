@@ -1,5 +1,9 @@
 var NAVTREEINDEX33 =
 {
+"classprocman_1_1OptionGroup.html":[35,0,0,1],
+"classprocman_1_1OptionGroup.html#a2caa971f51d7d845cf7661a130ddff7e":[35,0,0,1,3],
+"classprocman_1_1OptionGroup.html#a4961c23f3390651b4636ab3ad3eeab4f":[35,0,0,1,1],
+"classprocman_1_1OptionGroup.html#a5e9473a3fd111df55e8456f733f9fc76":[35,0,0,1,2],
 "classprocman_1_1OptionGroup.html#a81bf158302892294adc21c6d54818ecf":[35,0,0,1,0],
 "classprocman_1_1OptionGroup.html#adb939b5d46a035189ecec9db97a38ae9":[35,0,0,1,4],
 "classprocman_1_1SelectionMemento.html":[35,0,0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX33 =
 "comics-document_8c.html#a6fe8089c7af3b23c0684cb075d02d108":[36,0,0,0,0,0,0,7],
 "comics-document_8c.html#a92545dfa07e09c8f53f4a7450e9de1a8":[36,0,0,0,0,0,0,4],
 "comics-document_8c.html#ad51ded0bbd705f02f73fc60c0b721ced":[36,0,0,0,0,0,0,1],
-"comics-document_8c.html#ad6cd5acea4ead678821b84655d56cbd4":[36,0,0,0,0,0,0,0],
-"comics-document_8c_source.html":[36,0,0,0,0,0,0],
-"comics-document_8h.html":[36,0,0,0,0,0,1],
-"comics-document_8h.html#a1bff20fbe362ea9fae4d5c7807e4e822":[36,0,0,0,0,0,1,5],
-"comics-document_8h.html#a67a228a1aef85fe694a721efe63d0cbf":[36,0,0,0,0,0,1,0]
+"comics-document_8c.html#ad6cd5acea4ead678821b84655d56cbd4":[36,0,0,0,0,0,0,0]
 };

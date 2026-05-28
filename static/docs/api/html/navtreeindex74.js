@@ -1,5 +1,9 @@
 var NAVTREEINDEX74 =
 {
+"gdict-aligned-window_8h.html#aa98ed874c4a03c6b260709ff8f81f981":[36,0,0,32,3,1,3,3],
+"gdict-aligned-window_8h.html#ab67ec42df52e31a7a4e627f6e83aedc5":[36,0,0,32,3,1,3,8],
+"gdict-aligned-window_8h.html#ac9ff1e798008c7764d27cef60b99cd2c":[36,0,0,32,3,1,3,12],
+"gdict-aligned-window_8h.html#af54a734a520a580e9bc3c535f21c8af9":[36,0,0,32,3,1,3,6],
 "gdict-aligned-window_8h_source.html":[36,0,0,32,3,1,3],
 "gdict-app_8c.html":[36,0,0,32,3,1,4],
 "gdict-app_8c.html#a07094e9baa217d5cd081442e8f52f5f5":[36,0,0,32,3,1,4,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX74 =
 "gdict-database-chooser_8h.html#aca895d851afeb8c920b949c97d323b07":[36,0,0,32,3,0,6,22],
 "gdict-database-chooser_8h.html#ad5a26d528af9fe2139b126fd641773f0":[36,0,0,32,3,0,6,2],
 "gdict-database-chooser_8h.html#adb67787c28e6b3c184819ad562fb4ce2":[36,0,0,32,3,0,6,11],
-"gdict-database-chooser_8h.html#adc90590cc6e33e942e81eb139eb17db6":[36,0,0,32,3,0,6,25],
-"gdict-database-chooser_8h.html#ae305805ffbd63005660ef1d9d7e3f56f":[36,0,0,32,3,0,6,7],
-"gdict-database-chooser_8h_source.html":[36,0,0,32,3,0,6],
-"gdict-debug_8h.html":[36,0,0,32,3,0,7],
-"gdict-debug_8h.html#a1ab5360bb92b9091bedafadf854b058e":[36,0,0,32,3,0,7,2]
+"gdict-database-chooser_8h.html#adc90590cc6e33e942e81eb139eb17db6":[36,0,0,32,3,0,6,25]
 };

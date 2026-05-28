@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"caja-open-terminal_8c.html#ab879348215e1e20481ea3bb129043423":[36,0,0,4,3,0,8],
+"caja-open-terminal_8c.html#ac38fbe99f045195348ad1374975af4ee":[36,0,0,4,3,0,7],
+"caja-open-terminal_8c.html#ac4942c5aa4e6f5e5ee00f6220319263d":[36,0,0,4,3,0,1],
+"caja-open-terminal_8c.html#ac8119087f0782e671c4f8ae12db9979a":[36,0,0,4,3,0,0],
 "caja-open-terminal_8c.html#ad362b11ca9cf9eb676d6c64c1bfbd801":[36,0,0,4,3,0,5],
 "caja-open-terminal_8c_source.html":[36,0,0,4,3,0],
 "caja-open-terminal_8h.html":[36,0,0,4,3,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "caja-property-page_8h.html#aa940aee520d7a33c28df6721539ccd7f":[36,0,0,1,1,24,9],
 "caja-property-page_8h.html#acae0823483fffaaf6d647c9243d6d6cc":[36,0,0,1,1,24,5],
 "caja-property-page_8h.html#acbddf3e8ddaf175fd2dd5ce0540c8023":[36,0,0,1,1,24,4],
-"caja-property-page_8h.html#ad3c43de7085f48f7706e9a4827eec303":[36,0,0,1,1,24,3],
-"caja-property-page_8h.html#ae52a3b20e7ed8d85c277dca55f1dac8f":[36,0,0,1,1,24,10],
-"caja-property-page_8h.html#aedd86bf4ba9ddd9424cf01d5724e1a37":[36,0,0,1,1,24,7],
-"caja-property-page_8h_source.html":[36,0,0,1,1,24],
-"caja-python-object_8c.html":[36,0,0,36,0,0]
+"caja-property-page_8h.html#ad3c43de7085f48f7706e9a4827eec303":[36,0,0,1,1,24,3]
 };

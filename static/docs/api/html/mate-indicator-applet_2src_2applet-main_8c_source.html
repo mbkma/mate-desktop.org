@@ -1172,37 +1172,50 @@ $(document).ready(function(){initNavTree('mate-indicator-applet_2src_2applet-mai
 <div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>            packdirection);</div>
 <div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>    gtk_widget_set_can_focus (menubar, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    gtk_widget_set_name(GTK_WIDGET (menubar), <span class="stringliteral">&quot;fast-user-switch-menubar&quot;</span>);</div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>    g_signal_connect(menubar, <span class="stringliteral">&quot;button-press-event&quot;</span>, G_CALLBACK(menubar_press), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>    g_signal_connect_after(menubar, <span class="stringliteral">&quot;draw&quot;</span>, G_CALLBACK(menubar_on_draw), menubar);</div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>    g_signal_connect(applet, <span class="stringliteral">&quot;change-orient&quot;</span>,</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>            G_CALLBACK(matepanelapplet_reorient_cb), menubar);</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    gtk_container_set_border_width(GTK_CONTAINER(menubar), 0);</div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span> </div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    <span class="comment">/* Add in filter func */</span></div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    <a class="code hl_function" href="mate-indicator-applet_2src_2tomboykeybinder_8c.html#ae8cc580418f8d72a2a791dfc9a6e0971">tomboy_keybinder_bind</a>(hotkey_keycode, hotkey_filter, menubar);</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span> </div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>    load_modules(applet, menubar, &amp;indicators_loaded);</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span><span class="preprocessor">#if HAVE_AYATANA_INDICATOR_NG || HAVE_UBUNTU_INDICATOR_NG</span></div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    load_indicators_from_indicator_files(applet, menubar, &amp;indicators_loaded);</div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span> </div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>    <span class="keywordflow">if</span> (indicators_loaded == 0) {</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>        <span class="comment">/* A label to allow for click through */</span></div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>        GtkWidget * <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a> = gtk_label_new(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;No Indicators&quot;</span>));</div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>        <a class="code hl_function" href="mate-panel-applet_8c.html#ab56526733500954afa283e2e8053284c">mate_panel_applet_set_background_widget</a>(applet, <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>);</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>        gtk_container_add(GTK_CONTAINER(applet), <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>);</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>        gtk_widget_show(<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>);</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>        gtk_container_add(GTK_CONTAINER(applet), menubar);</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>        <a class="code hl_function" href="mate-panel-applet_8c.html#ab56526733500954afa283e2e8053284c">mate_panel_applet_set_background_widget</a>(applet, menubar);</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>        gtk_widget_show(menubar);</div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    }</div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span> </div>
-<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>    gtk_widget_show(GTK_WIDGET(applet));</div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span> </div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span> </div>
-<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>}</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span> </div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>    GtkCssProvider *css_provider = gtk_css_provider_new ();</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>    gtk_css_provider_load_from_data (css_provider,</div>
+<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>                                     <span class="stringliteral">&quot;#fast-user-switch-menubar {\n&quot;</span></div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>                                     <span class="stringliteral">&quot;background-color: transparent;\n&quot;</span></div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>                                     <span class="stringliteral">&quot;background-image: none;\n&quot;</span></div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>                                     <span class="stringliteral">&quot;}&quot;</span>,</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>                                     -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    gtk_style_context_add_provider (gtk_widget_get_style_context (menubar),</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>                                    GTK_STYLE_PROVIDER (css_provider),</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    g_object_unref (css_provider);</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span> </div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    g_signal_connect(menubar, <span class="stringliteral">&quot;button-press-event&quot;</span>, G_CALLBACK(menubar_press), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>    g_signal_connect_after(menubar, <span class="stringliteral">&quot;draw&quot;</span>, G_CALLBACK(menubar_on_draw), menubar);</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    g_signal_connect(applet, <span class="stringliteral">&quot;change-orient&quot;</span>,</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>            G_CALLBACK(matepanelapplet_reorient_cb), menubar);</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    gtk_container_set_border_width(GTK_CONTAINER(menubar), 0);</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span> </div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>    <span class="comment">/* Add in filter func */</span></div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>    <a class="code hl_function" href="mate-indicator-applet_2src_2tomboykeybinder_8c.html#ae8cc580418f8d72a2a791dfc9a6e0971">tomboy_keybinder_bind</a>(hotkey_keycode, hotkey_filter, menubar);</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span> </div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    load_modules(applet, menubar, &amp;indicators_loaded);</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span><span class="preprocessor">#if HAVE_AYATANA_INDICATOR_NG || HAVE_UBUNTU_INDICATOR_NG</span></div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    load_indicators_from_indicator_files(applet, menubar, &amp;indicators_loaded);</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span> </div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>    <span class="keywordflow">if</span> (indicators_loaded == 0) {</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>        <span class="comment">/* A label to allow for click through */</span></div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>        GtkWidget * <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a> = gtk_label_new(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;No Indicators&quot;</span>));</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>        <a class="code hl_function" href="mate-panel-applet_8c.html#ab56526733500954afa283e2e8053284c">mate_panel_applet_set_background_widget</a>(applet, <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>);</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>        gtk_container_add(GTK_CONTAINER(applet), <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>);</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>        gtk_widget_show(<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>);</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>        gtk_container_add(GTK_CONTAINER(applet), menubar);</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>        <a class="code hl_function" href="mate-panel-applet_8c.html#ab56526733500954afa283e2e8053284c">mate_panel_applet_set_background_widget</a>(applet, menubar);</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>        gtk_widget_show(menubar);</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    }</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span> </div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    gtk_widget_show(GTK_WIDGET(applet));</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span> </div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span> </div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>}</div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>

@@ -1,5 +1,9 @@
 var NAVTREEINDEX39 =
 {
+"djvu-text-page_8c.html":[36,0,0,0,0,1,5],
+"djvu-text-page_8c.html#a5445b1cb85167a2c3a24637de0a9e41e":[36,0,0,0,0,1,5,0],
+"djvu-text-page_8c.html#a5702d53b730159c62270d624ac63c808":[36,0,0,0,0,1,5,3],
+"djvu-text-page_8c.html#a894e5373d19c9ce8107d1bfe62326aea":[36,0,0,0,0,1,5,2],
 "djvu-text-page_8c.html#ab0d942e288acff87623702976935431f":[36,0,0,0,0,1,5,1],
 "djvu-text-page_8c.html#ab255ea19eba96a717ca7eba9824569e0":[36,0,0,0,0,1,5,4],
 "djvu-text-page_8c_source.html":[36,0,0,0,0,1,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX39 =
 "drive-list_8h.html#ad56a5d2cf63f14bc61db16407a6e2f08":[36,0,0,12,5,0,3,5],
 "drive-list_8h.html#adffefbe1f54260678b79012fc66e732c":[36,0,0,12,5,0,3,6],
 "drive-list_8h.html#ae12b0c2a2c1261f30be5e6cdac0a9393":[36,0,0,12,5,0,3,11],
-"drive-list_8h.html#af4a38769e2db6318f62342ea0407ee23":[36,0,0,12,5,0,3,10],
-"drive-list_8h_source.html":[36,0,0,12,5,0,3],
-"drivemount_8c.html":[36,0,0,12,5,0,4],
-"drivemount_8c_source.html":[36,0,0,12,5,0,4],
-"dropbox-client-util_8c.html":[36,0,0,3,0,5]
+"drive-list_8h.html#af4a38769e2db6318f62342ea0407ee23":[36,0,0,12,5,0,3,10]
 };

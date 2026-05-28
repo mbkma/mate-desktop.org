@@ -28,6 +28,7 @@ var window_8c =
     [ "meta_window_configure_request", "window_8c.html#aa916ad9dc94f9ff437611ab38fc91ead", null ],
     [ "meta_window_end_wireframe", "window_8c.html#a304e0f4ac4d1b0e993b92507abe0d5b2", null ],
     [ "meta_window_find_root_ancestor", "window_8c.html#a30de680f9cadc507b4c33251606f8aa4", null ],
+    [ "meta_window_find_tile_match", "window_8c.html#a0fa41beff3b7e8c3d0c323c461925240", null ],
     [ "meta_window_focus", "window_8c.html#a28fabbade5acc01e6da79e0e58b701e0", null ],
     [ "meta_window_foreach_ancestor", "window_8c.html#a65bfe5c37a84f93380b9d05e28eeef8e", null ],
     [ "meta_window_foreach_transient", "window_8c.html#a14be4510ce07f8038f238d75fba10fd0", null ],

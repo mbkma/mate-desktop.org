@@ -3,6 +3,7 @@ var structMateRRScreenPrivate =
     [ "connector_type_atom", "structMateRRScreenPrivate.html#a6823ca6f6b442fffc7b2bb3298f830f8", null ],
     [ "gdk_root", "structMateRRScreenPrivate.html#ae7af90f3a4a8abd81d51c0e0d803c172", null ],
     [ "gdk_screen", "structMateRRScreenPrivate.html#a6826c9e9f2c5c44b8437c63acf50a9c6", null ],
+    [ "hotplug_mode_update_atom", "structMateRRScreenPrivate.html#acf4255d7048ee065d29ab60246b78c73", null ],
     [ "info", "structMateRRScreenPrivate.html#aacfb17c9e2496423e95ffb5629971632", null ],
     [ "randr_event_base", "structMateRRScreenPrivate.html#a781f703f7737ba63390c350d377c9e0e", null ],
     [ "rr_major_version", "structMateRRScreenPrivate.html#af5f040a1f2baf10a6a4226fc7d4f636c", null ],

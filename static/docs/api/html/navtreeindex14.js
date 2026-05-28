@@ -1,5 +1,9 @@
 var NAVTREEINDEX14 =
 {
+"caja-connect-server-operation_8c.html":[36,0,0,1,3,15],
+"caja-connect-server-operation_8c.html#a5d525dbe810486c9605e06553b0d7d7b":[36,0,0,1,3,15,0],
+"caja-connect-server-operation_8c.html#a88802a63beb401abec713c158114f16f":[36,0,0,1,3,15,1],
+"caja-connect-server-operation_8c_source.html":[36,0,0,1,3,15],
 "caja-connect-server-operation_8h.html":[36,0,0,1,3,16],
 "caja-connect-server-operation_8h.html#a2075f0b9e4098dd95998faed1a68bfe4":[36,0,0,1,3,16,5],
 "caja-connect-server-operation_8h.html#a21d644c8667408021070886359892f1b":[36,0,0,1,3,16,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX14 =
 "caja-directory-async_8c.html#aecb47ab92e06958331abbae0d333b722":[36,0,0,1,2,32,15],
 "caja-directory-async_8c_source.html":[36,0,0,1,2,32],
 "caja-directory-background_8c.html":[36,0,0,1,2,33],
-"caja-directory-background_8c.html#a77411b6e208dbef43219b7ae837164a4":[36,0,0,1,2,33,0],
-"caja-directory-background_8c.html#a7a8984f767f2c497bad50a25c2957612":[36,0,0,1,2,33,1],
-"caja-directory-background_8c_source.html":[36,0,0,1,2,33],
-"caja-directory-background_8h.html":[36,0,0,1,2,34],
-"caja-directory-background_8h.html#a77411b6e208dbef43219b7ae837164a4":[36,0,0,1,2,34,0]
+"caja-directory-background_8c.html#a77411b6e208dbef43219b7ae837164a4":[36,0,0,1,2,33,0]
 };

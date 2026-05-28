@@ -1,5 +1,9 @@
 var NAVTREEINDEX84 =
 {
+"gsearchtool-callbacks_8c.html#ac60b521699ec4820b6c5d4b9f387fe5f":[36,0,0,32,1,1,0,12],
+"gsearchtool-callbacks_8c.html#ac87a6a0f03855234cba55c5d79ba9504":[36,0,0,32,1,1,0,0],
+"gsearchtool-callbacks_8c.html#ad1998a111dd206b0124aabe6edd90c5e":[36,0,0,32,1,1,0,16],
+"gsearchtool-callbacks_8c.html#ada332af23c7f6a02ab92343015a4c181":[36,0,0,32,1,1,0,39],
 "gsearchtool-callbacks_8c.html#ae3148288b05681c5dc2287e783b37eae":[36,0,0,32,1,1,0,13],
 "gsearchtool-callbacks_8c.html#aead3b139853e2a78712986ed1d22d764":[36,0,0,32,1,1,0,8],
 "gsearchtool-callbacks_8c.html#aebcdecbc3035e5baec2066d7e0a344a2":[36,0,0,32,1,1,0,10],
@@ -245,9 +249,5 @@ var NAVTREEINDEX84 =
 "gsearchtool_8h.html#ae23d0e8639c0103bbc50a86dd938c818":[36,0,0,32,1,1,5,8],
 "gsearchtool_8h.html#ae6b3685fd018e321f99a2c6056f87931":[36,0,0,32,1,1,5,16],
 "gsearchtool_8h_source.html":[36,0,0,32,1,1,5],
-"gsm-app-dialog_8c.html":[36,0,0,27,0,0],
-"gsm-app-dialog_8c.html#a03630c1ec4908f98428234e9d2c81cb2":[36,0,0,27,0,0,4],
-"gsm-app-dialog_8c.html#a1db0c4d0077f5e7c036067837383df4f":[36,0,0,27,0,0,12],
-"gsm-app-dialog_8c.html#a453a5c2e9525710ad76ec440838c8814":[36,0,0,27,0,0,7],
-"gsm-app-dialog_8c.html#a4f3a806a85e35d557a307d3e96da13fb":[36,0,0,27,0,0,5]
+"gsm-app-dialog_8c.html":[36,0,0,27,0,0]
 };
