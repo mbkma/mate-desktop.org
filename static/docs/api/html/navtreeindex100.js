@@ -1,9 +1,5 @@
 var NAVTREEINDEX100 =
 {
-"mate-desktop-item_8c.html#a1173d870da5338e57bd3a1acc37fb440":[36,0,0,15,0,13,37],
-"mate-desktop-item_8c.html#a12d4736524ec4a49ae0f1d3b4c35f38b":[36,0,0,15,0,13,18],
-"mate-desktop-item_8c.html#a1896366d62a366c1385a0acbad3fd1f2":[36,0,0,15,0,13,20],
-"mate-desktop-item_8c.html#a1bde9ac0e4c1c736578ab9941eef76c0":[36,0,0,15,0,13,2],
 "mate-desktop-item_8c.html#a1d9ea0f6ce0997293404eef756936d24":[36,0,0,15,0,13,12],
 "mate-desktop-item_8c.html#a2b986b376f5441886ce983a13d10a4c3":[36,0,0,15,0,13,29],
 "mate-desktop-item_8c.html#a2cf074fdd169f050e88871a256cffd8c":[36,0,0,15,0,13,30],
@@ -249,5 +245,9 @@ var NAVTREEINDEX100 =
 "mate-dialog-util_8c.html#acd938d2b5ac5d9f619523eb0f9a6d065":[36,0,0,9,2,18,10],
 "mate-dialog-util_8c.html#ad0df96de2f29ee208b9f990829df1ee5":[36,0,0,9,2,18,5],
 "mate-dialog-util_8c.html#ad52eba3465cac631c7b011575763c10e":[36,0,0,9,2,18,1],
-"mate-dialog-util_8c.html#ad9aba8968c3d6d4f54df4b9966b7bb67":[36,0,0,9,2,18,15]
+"mate-dialog-util_8c.html#ad9aba8968c3d6d4f54df4b9966b7bb67":[36,0,0,9,2,18,15],
+"mate-dialog-util_8c.html#ae64669ec92fd8422bef3e230e57e0c95":[36,0,0,9,2,18,12],
+"mate-dialog-util_8c.html#af1da4e962e75f90b2258cbd05cb0d951":[36,0,0,9,2,18,3],
+"mate-dialog-util_8c_source.html":[36,0,0,9,2,18],
+"mate-dialog-util_8h.html":[36,0,0,9,2,19]
 };

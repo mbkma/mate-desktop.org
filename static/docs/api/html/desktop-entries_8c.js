@@ -1,7 +1,6 @@
 var desktop_entries_8c =
 [
     [ "DESKTOP_ENTRY_GROUP", "desktop-entries_8c.html#a2551c6cf500b5d37ca3df7fefdb11bd5", null ],
-    [ "desktop_entry_add_legacy_category", "desktop-entries_8c.html#a2472d61e26e1ac7194d77983106a96a9", null ],
     [ "desktop_entry_copy", "desktop-entries_8c.html#a991f5412e2c87c98d5e58abf1407eec8", null ],
     [ "desktop_entry_get_app_info", "desktop-entries_8c.html#a04bd9a56f761c2884205e4355df779c9", null ],
     [ "desktop_entry_get_basename", "desktop-entries_8c.html#ac510eee136767f0f54b6e14845105549", null ],

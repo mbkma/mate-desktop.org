@@ -1,9 +1,5 @@
 var NAVTREEINDEX96 =
 {
-"mate-app-helper_8c.html#abed1d560d3e94f21ecc7e7fa10c3205b":[36,0,0,9,2,4,6],
-"mate-app-helper_8c.html#ae5e51241140105d60fa61068eec530fe":[36,0,0,9,2,4,18],
-"mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc":[36,0,0,9,2,4,1],
-"mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc":[36,0,0,9,2,4,0],
 "mate-app-helper_8c.html#afcaea927fbbef94ca99789c53736517f":[36,0,0,9,2,4,8],
 "mate-app-helper_8c_source.html":[36,0,0,9,2,4],
 "mate-app-helper_8h.html":[36,0,0,9,2,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX96 =
 "mate-app_8h.html#af912e3c1df1ce785f18b0af71569b6d2":[36,0,0,9,2,9,23],
 "mate-app_8h_source.html":[36,0,0,9,2,9],
 "mate-appbar_8c.html":[36,0,0,9,2,10],
-"mate-appbar_8c.html#a371bdcfd8a9d1097e5a62b796b69a8fc":[36,0,0,9,2,10,6]
+"mate-appbar_8c.html#a371bdcfd8a9d1097e5a62b796b69a8fc":[36,0,0,9,2,10,6],
+"mate-appbar_8c.html#a42c2bd7de4589e12a7e92aea6e58e89f":[36,0,0,9,2,10,5],
+"mate-appbar_8c.html#a4cb0547a66f738e415c445271d888a40":[36,0,0,9,2,10,2],
+"mate-appbar_8c.html#a4f622cb91fc4a6b19d141e92a0992486":[36,0,0,9,2,10,10],
+"mate-appbar_8c.html#a55d69de78f238e4daead7fac4d275036":[36,0,0,9,2,10,1]
 };

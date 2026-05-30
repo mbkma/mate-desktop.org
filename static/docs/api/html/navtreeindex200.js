@@ -1,9 +1,5 @@
 var NAVTREEINDEX200 =
 {
-"struct__OssDevice.html":[35,0,760],
-"struct__OssDevice.html#a314c827c873ec6e71599c4cb672adf8e":[35,0,760,1],
-"struct__OssDevice.html#affeb403e6e53824d60b01d0ebb2acdd2":[35,0,760,0],
-"struct__OssDeviceClass.html":[35,0,761],
 "struct__OssDeviceClass.html#a144aaed88c560aa4584538274f81c2b7":[35,0,761,0],
 "struct__OssDeviceClass.html#a81e39b5ed81e6bd876ef739038cb2888":[35,0,761,1],
 "struct__OssStream.html":[35,0,762],
@@ -249,5 +245,9 @@ var NAVTREEINDEX200 =
 "struct__PlumaFileBrowserStore.html#a24f1c1582857e3003b5ce810d88b3ace":[35,0,827,0],
 "struct__PlumaFileBrowserStore.html#a835f48fc9ac262cd86ca6b9412418e13":[35,0,827,1],
 "struct__PlumaFileBrowserStoreClass.html":[35,0,828],
-"struct__PlumaFileBrowserStoreClass.html#a4070bb551a5299165ffe15a236726921":[35,0,828,7]
+"struct__PlumaFileBrowserStoreClass.html#a4070bb551a5299165ffe15a236726921":[35,0,828,7],
+"struct__PlumaFileBrowserStoreClass.html#a478e390a4cc8e63321e575d8f5e73b05":[35,0,828,4],
+"struct__PlumaFileBrowserStoreClass.html#a7a5b369eb746ec96b10c0b596d8bb3fd":[35,0,828,0],
+"struct__PlumaFileBrowserStoreClass.html#a85e17c17d89aa65165a42fcccac2d0b0":[35,0,828,6],
+"struct__PlumaFileBrowserStoreClass.html#ab0d558e807debebce971b8cc4190e451":[35,0,828,3]
 };

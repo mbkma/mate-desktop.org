@@ -1,9 +1,5 @@
 var NAVTREEINDEX115 =
 {
-"matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564dafc5557e398522d7efdd5e9f7744f321e":[36,0,0,7,0,10,17,6],
-"matekbd-keyboard-drawing_8h.html#aaa0988680fd988e092ec07f7a6008b27":[36,0,0,7,0,10,30],
-"matekbd-keyboard-drawing_8h.html#aac97fcea6865700fc5627d9557ec559e":[36,0,0,7,0,10,28],
-"matekbd-keyboard-drawing_8h.html#ab6aeabe064071033ec60c5fcf15eb66d":[36,0,0,7,0,10,21],
 "matekbd-keyboard-drawing_8h.html#ac00997156364983f55b28fdf6b6f11ec":[36,0,0,7,0,10,27],
 "matekbd-keyboard-drawing_8h.html#ac79a93fe8ae29a678371247c1ec96a5b":[36,0,0,7,0,10,18],
 "matekbd-keyboard-drawing_8h.html#ac79a93fe8ae29a678371247c1ec96a5ba3fd45403833f5f0eca3d8fe3b7e3a68f":[36,0,0,7,0,10,18,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX115 =
 "matemixer-app-info_8c_source.html":[36,0,0,8,2,1],
 "matemixer-app-info_8h.html":[36,0,0,8,2,2],
 "matemixer-app-info_8h.html#a0ed928799da58abf1c59241ce2bcfe85":[36,0,0,8,2,2,3],
-"matemixer-app-info_8h.html#a1c6bfd0ece749622cac80cdce3166662":[36,0,0,8,2,2,0]
+"matemixer-app-info_8h.html#a1c6bfd0ece749622cac80cdce3166662":[36,0,0,8,2,2,0],
+"matemixer-app-info_8h.html#a57980bb160c3bdc40ddc5d5a428149d7":[36,0,0,8,2,2,2],
+"matemixer-app-info_8h.html#a6c683f9f934d8ff9ce0573376c082afc":[36,0,0,8,2,2,1],
+"matemixer-app-info_8h.html#a80c32b0116476a62c2e9bad38317bcc5":[36,0,0,8,2,2,5],
+"matemixer-app-info_8h.html#a83853e949f7e4a288cb50d46ca5c94a3":[36,0,0,8,2,2,4]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX101 =
 {
-"mate-dialog-util_8c.html#ae64669ec92fd8422bef3e230e57e0c95":[36,0,0,9,2,18,12],
-"mate-dialog-util_8c.html#af1da4e962e75f90b2258cbd05cb0d951":[36,0,0,9,2,18,3],
-"mate-dialog-util_8c_source.html":[36,0,0,9,2,18],
-"mate-dialog-util_8h.html":[36,0,0,9,2,19],
 "mate-dialog-util_8h.html#a019ac4b9f91a90637ff0ab420e5a6271":[36,0,0,9,2,19,8],
 "mate-dialog-util_8h.html#a33012df6b3d3a1cfbac95dc2cc42f3e5":[36,0,0,9,2,19,16],
 "mate-dialog-util_8h.html#a546affbd83d36d4f88abe24f74c9ba41":[36,0,0,9,2,19,14],
@@ -249,5 +245,9 @@ var NAVTREEINDEX101 =
 "mate-druid_8h.html#adf1c9b6cc32a68c381ca6ed5f2aff413":[36,0,0,9,2,29,5],
 "mate-druid_8h.html#ae3a69864e87c6a3cd6d6e10f624af107":[36,0,0,9,2,29,8],
 "mate-druid_8h.html#af32c879c50d01dfea711e27c82ddcc83":[36,0,0,9,2,29,15],
-"mate-druid_8h.html#afbbaec7b9bdf3be83026007f036bce96":[36,0,0,9,2,29,11]
+"mate-druid_8h.html#afbbaec7b9bdf3be83026007f036bce96":[36,0,0,9,2,29,11],
+"mate-druid_8h_source.html":[36,0,0,9,2,29],
+"mate-entry_8c.html":[36,0,0,9,2,30],
+"mate-entry_8c.html#a173f779f69e2d7919bf3820d1e045f0d":[36,0,0,9,2,30,3],
+"mate-entry_8c.html#a212bfee64ec72056832febf49c2872d7":[36,0,0,9,2,30,0]
 };

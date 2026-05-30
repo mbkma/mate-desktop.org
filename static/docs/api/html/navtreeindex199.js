@@ -1,9 +1,5 @@
 var NAVTREEINDEX199 =
 {
-"struct__MetaWindow.html#a854e2cb4246a95e2d6264affba5664f3":[35,0,724,78],
-"struct__MetaWindow.html#a87b87a5ad0e38689154977a0868cbc27":[35,0,724,95],
-"struct__MetaWindow.html#a8daafab5b830795ffe4383674011801e":[35,0,724,71],
-"struct__MetaWindow.html#a927abc839a05f387b584b0a9e8f10d63":[35,0,724,80],
 "struct__MetaWindow.html#a94d1f3af1ba22d977fb51f20c9a5f094":[35,0,724,79],
 "struct__MetaWindow.html#a98c7ebff4e597284569ef8f82811c9b3":[35,0,724,99],
 "struct__MetaWindow.html#a99a4367a4395dd74fd7ecaf32fb819f3":[35,0,724,54],
@@ -249,5 +245,9 @@ var NAVTREEINDEX199 =
 "struct__OssBackend.html#a6f566bc35fd0c883bb926d13cece6271":[35,0,758,0],
 "struct__OssBackend.html#ac30e8a8df296c6502db684e6677fcdf6":[35,0,758,1],
 "struct__OssBackendClass.html":[35,0,759],
-"struct__OssBackendClass.html#aa5c975f5cd08334f653b8d7744766165":[35,0,759,0]
+"struct__OssBackendClass.html#aa5c975f5cd08334f653b8d7744766165":[35,0,759,0],
+"struct__OssDevice.html":[35,0,760],
+"struct__OssDevice.html#a314c827c873ec6e71599c4cb672adf8e":[35,0,760,1],
+"struct__OssDevice.html#affeb403e6e53824d60b01d0ebb2acdd2":[35,0,760,0],
+"struct__OssDeviceClass.html":[35,0,761]
 };

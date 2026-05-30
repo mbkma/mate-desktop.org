@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"drive-list_8h_source.html":[36,0,0,12,5,0,3],
-"drivemount_8c.html":[36,0,0,12,5,0,4],
 "drivemount_8c_source.html":[36,0,0,12,5,0,4],
 "dropbox-client-util_8c.html":[36,0,0,3,0,5],
 "dropbox-client-util_8c.html#a7c0210f4221cce668b9ac635754fc7f6":[36,0,0,3,0,5,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX40 =
 "dviopcodes_8h_source.html":[36,0,0,0,0,2,0,9],
 "dviread_8c.html":[36,0,0,0,0,2,0,10],
 "dviread_8c.html#a022618eee56e9abc91304e707542c45b":[36,0,0,0,0,2,0,10,1],
-"dviread_8c.html#a05117055ab4cdfb1165554f4fb215682":[36,0,0,0,0,2,0,10,6]
+"dviread_8c.html#a05117055ab4cdfb1165554f4fb215682":[36,0,0,0,0,2,0,10,6],
+"dviread_8c.html#a10431d6ed08445537e83dee24c550206":[36,0,0,0,0,2,0,10,21],
+"dviread_8c.html#a176f130796bdb70b99c6b17d21c39c50":[36,0,0,0,0,2,0,10,17]
 };

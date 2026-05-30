@@ -17,7 +17,6 @@ var entry_directories_8h =
     [ "entry_directory_list_remove_monitors", "entry-directories_8h.html#a3d5e92ce958dc88a99ec198f41a609b3", null ],
     [ "entry_directory_list_unref", "entry-directories_8h.html#a133117d585e56e0727eae77375863887", null ],
     [ "entry_directory_new", "entry-directories_8h.html#aa34a63074d79bf91558519ec418c737f", null ],
-    [ "entry_directory_new_legacy", "entry-directories_8h.html#a3223c91eb15d2734239201d24c2a1c89", null ],
     [ "entry_directory_ref", "entry-directories_8h.html#abeadb84a3ef391a15b98aa2eb894d026", null ],
     [ "entry_directory_unref", "entry-directories_8h.html#a092a1985eb382ef5ff6145f3758e8039", null ]
 ];

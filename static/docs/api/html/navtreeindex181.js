@@ -1,9 +1,5 @@
 var NAVTREEINDEX181 =
 {
-"structStretchState.html#a9ceebb9365bb2808ac622c1dc163ce73":[35,0,1632,2],
-"structStretchState.html#aa4657bd5a7b14dfcdd2f4dadfd1ce76e":[35,0,1632,1],
-"structStretchState.html#ac01fc6ded7b132b64658dd4ef66f19b4":[35,0,1632,0],
-"structSystemTimezone.html":[35,0,1633],
 "structSystemTimezone.html#a7c74a417fe885250d7103b6396b422e2":[35,0,1633,0],
 "structSystemTimezoneClass.html":[35,0,1634],
 "structSystemTimezoneClass.html#a63dd6b24299b446075430f4326f9235e":[35,0,1634,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX181 =
 "struct__AppResizer.html#abc10e5b3882b18a946684526f4cab0b1":[35,0,24,6],
 "struct__AppResizer.html#ac1d0c155b2b92635f8ec1ed20d833f39":[35,0,24,8],
 "struct__AppResizer.html#ac26618255d29697f039b7e8d003f3a3f":[35,0,24,4],
-"struct__AppResizer.html#acf40126ede641d99b5cfb8052739742c":[35,0,24,1]
+"struct__AppResizer.html#acf40126ede641d99b5cfb8052739742c":[35,0,24,1],
+"struct__AppResizer.html#aebdb00fe010cb9ea705b44358b98b968":[35,0,24,2],
+"struct__AppResizerClass.html":[35,0,25],
+"struct__AppResizerClass.html#afa2954b9286e59dfe5116ad8e4a52e73":[35,0,25,0],
+"struct__AppShellData.html":[35,0,26]
 };

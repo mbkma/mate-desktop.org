@@ -1,9 +1,5 @@
 var NAVTREEINDEX179 =
 {
-"structNAIContextInterface.html#a938b9a4bede697f0426482d29a80e509":[35,0,1542,2],
-"structNAIContextInterface.html#abf49153b7080a88a2d7b81c6f6591945":[35,0,1542,0],
-"structNAIDuplicableInterface.html":[35,0,1543],
-"structNAIDuplicableInterface.html#a824b47dc0b7dfa0b14c9f7e136457821":[35,0,1543,4],
 "structNAIDuplicableInterface.html#a82a25b403c27f45844ced9a42dd41dfc":[35,0,1543,0],
 "structNAIDuplicableInterface.html#aa106851d1c07dc2188bc56c11c7bc2f2":[35,0,1543,2],
 "structNAIDuplicableInterface.html#ad18b9c455abd839ea8c0c773613062ef":[35,0,1543,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX179 =
 "structNotificationHistoryItem.html#a6f4ae2d0dc8bacb480aab4b71ef4ac25":[35,0,1604,7],
 "structNotificationHistoryItem.html#ac83287a11ce85cd518ed4d41fd389990":[35,0,1604,0],
 "structNotificationHistoryItem.html#ac9c6aa3ec760b687afea4b51230fff4d":[35,0,1604,2],
-"structNotificationHistoryItem.html#ae8738016d12bb9b3a4fed0a951101fe6":[35,0,1604,1]
+"structNotificationHistoryItem.html#ae8738016d12bb9b3a4fed0a951101fe6":[35,0,1604,1],
+"structOpenFile.html":[35,0,1605],
+"structOpenFile.html#a070b2040163a4657e82e75e3fa970ba7":[35,0,1605,1],
+"structOpenFile.html#a52c03c97433090134cc2d4959022b399":[35,0,1605,3],
+"structOpenFile.html#a74cc5e0f776029ef68774c12ec8c8391":[35,0,1605,2]
 };

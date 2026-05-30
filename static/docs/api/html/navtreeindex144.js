@@ -1,9 +1,5 @@
 var NAVTREEINDEX144 =
 {
-"panel-color_8c.html":[36,0,0,22,2,1,2],
-"panel-color_8c.html#a2dce170cd901fadddf769b3fc5b0cc3b":[36,0,0,22,2,1,2,0],
-"panel-color_8c_source.html":[36,0,0,22,2,1,2],
-"panel-color_8h.html":[36,0,0,22,2,1,3],
 "panel-color_8h.html#a2dce170cd901fadddf769b3fc5b0cc3b":[36,0,0,22,2,1,3,0],
 "panel-color_8h_source.html":[36,0,0,22,2,1,3],
 "panel-config-global_8c.html":[36,0,0,22,2,33],
@@ -249,5 +245,9 @@ var NAVTREEINDEX144 =
 "panel-icon-names_8h.html#ad839e4e30e1ad671f92d50bb44630553":[36,0,0,22,2,46,12],
 "panel-icon-names_8h.html#ad990ce87d522eb98b7a323b10bf870f4":[36,0,0,22,2,46,3],
 "panel-icon-names_8h.html#ade1c03c39a1cb9172c6ea77be7551cf8":[36,0,0,22,2,46,6],
-"panel-icon-names_8h_source.html":[36,0,0,22,2,46]
+"panel-icon-names_8h_source.html":[36,0,0,22,2,46],
+"panel-keyfile_8c.html":[36,0,0,22,2,1,12],
+"panel-keyfile_8c.html#a21cdb0761f2783d1682bd1f4ebc45093":[36,0,0,22,2,1,12,9],
+"panel-keyfile_8c.html#a37d418e5abf20b0f6ac9c177f908db73":[36,0,0,22,2,1,12,6],
+"panel-keyfile_8c.html#a673cb22ffdf6643bba72c24b035f008d":[36,0,0,22,2,1,12,5]
 };

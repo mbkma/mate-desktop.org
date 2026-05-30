@@ -1,9 +1,5 @@
 var NAVTREEINDEX156 =
 {
-"pluma-settings_8h.html#a29e44f77116c4189d48bdd6824c2c43aafec58fc88e974075c636914b2794bff6":[36,0,0,34,1,74,70,2],
-"pluma-settings_8h.html#a2f75bdcd6a14bce3ab0aa418d515e65b":[36,0,0,34,1,74,81],
-"pluma-settings_8h.html#a30ecf4c04eae8f375fac947f12dac798":[36,0,0,34,1,74,57],
-"pluma-settings_8h.html#a34aa05219329e1e82c0c76cf1b29045b":[36,0,0,34,1,74,75],
 "pluma-settings_8h.html#a3a70ce93467047ae8f59a94aaf10e398":[36,0,0,34,1,74,63],
 "pluma-settings_8h.html#a4602a705695c007dadb6827686b9b486":[36,0,0,34,1,74,67],
 "pluma-settings_8h.html#a4a138af4d08d1dcc3e23ed9e3572247c":[36,0,0,34,1,74,28],
@@ -32,8 +28,8 @@ var NAVTREEINDEX156 =
 "pluma-settings_8h.html#aa79a1496a4fb74f086ecb6fad0d377c4":[36,0,0,34,1,74,80],
 "pluma-settings_8h.html#aa930e28dde504aa7af638865f0955c31":[36,0,0,34,1,74,39],
 "pluma-settings_8h.html#ab1e695dc94fd49df7957c38304f19a0b":[36,0,0,34,1,74,68],
-"pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[36,0,0,34,1,74,65],
 "pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[36,0,0,34,1,74,64],
+"pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[36,0,0,34,1,74,65],
 "pluma-settings_8h.html#ab4a66042ef1149310a2aeb040a4fff1e":[36,0,0,34,1,74,4],
 "pluma-settings_8h.html#ab4dec487dc77cd2cf42b03bd1b89cfd3":[36,0,0,34,1,74,59],
 "pluma-settings_8h.html#ab69e32e557d2dbafe0886e423c18c0c0":[36,0,0,34,1,74,41],
@@ -249,5 +245,9 @@ var NAVTREEINDEX156 =
 "pluma-status-combo-box_8c.html#af2778ee1e584214e7ee5f6d1f1010607":[36,0,0,34,1,77,3],
 "pluma-status-combo-box_8c_source.html":[36,0,0,34,1,77],
 "pluma-status-combo-box_8h.html":[36,0,0,34,1,78],
-"pluma-status-combo-box_8h.html#a089092b9394e1b8f487b05e0b8c92e71":[36,0,0,34,1,78,22]
+"pluma-status-combo-box_8h.html#a089092b9394e1b8f487b05e0b8c92e71":[36,0,0,34,1,78,22],
+"pluma-status-combo-box_8h.html#a1cc69e8acf05c9fa15fce23a56632366":[36,0,0,34,1,78,18],
+"pluma-status-combo-box_8h.html#a1f87437034051a3f55809a8ba39d8fa5":[36,0,0,34,1,78,16],
+"pluma-status-combo-box_8h.html#a3746e4c3909a5c11b28c26bd22bac860":[36,0,0,34,1,78,7],
+"pluma-status-combo-box_8h.html#a433278a8cebea57778e7c28a94d3e2f1":[36,0,0,34,1,78,3]
 };

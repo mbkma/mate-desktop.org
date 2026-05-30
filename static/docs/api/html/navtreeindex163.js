@@ -1,9 +1,5 @@
 var NAVTREEINDEX163 =
 {
-"pulse-port-switch_8h.html#aa61bd9dc3e0036f730d0d63b2cfb1740":[36,0,0,8,0,3,20,12],
-"pulse-port-switch_8h.html#ad48e66505cc0cf91e5ea54f667cc9558":[36,0,0,8,0,3,20,3],
-"pulse-port-switch_8h.html#ad5beaf500c6fb447bf65d011ef9e040c":[36,0,0,8,0,3,20,8],
-"pulse-port-switch_8h.html#ae551b97552d343c5a8fd8c78a1ac2784":[36,0,0,8,0,3,20,9],
 "pulse-port-switch_8h.html#ae6a4189670979820a72f53a20c0d9fad":[36,0,0,8,0,3,20,5],
 "pulse-port-switch_8h_source.html":[36,0,0,8,0,3,20],
 "pulse-port_8c.html":[36,0,0,8,0,3,21],
@@ -249,5 +245,9 @@ var NAVTREEINDEX163 =
 "rar-utils_8c.html#adbd12641da3fbbc9f163c263dcd0224baa7e6aa05e6936da95755be270a3f2fef":[36,0,0,5,1,104,0,2],
 "rar-utils_8c.html#adbd12641da3fbbc9f163c263dcd0224bae5671afb5d335b1797c4032527caddda":[36,0,0,5,1,104,0,0],
 "rar-utils_8c_source.html":[36,0,0,5,1,104],
-"rar-utils_8h.html":[36,0,0,5,1,105]
+"rar-utils_8h.html":[36,0,0,5,1,105],
+"rar-utils_8h.html#a7f253a3cf3f579b229f61817d9a63874":[36,0,0,5,1,105,0],
+"rar-utils_8h_source.html":[36,0,0,5,1,105],
+"removable-devices_8c.html":[36,0,0,4,4,0,4,0],
+"removable-devices_8c.html#a8f13f1d11041087af611dbf83719f5d7":[36,0,0,4,4,0,4,0,1]
 };

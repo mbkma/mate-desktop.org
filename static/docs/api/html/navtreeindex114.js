@@ -1,9 +1,5 @@
 var NAVTREEINDEX114 =
 {
-"mate-wp-item_8c.html#adc7e75401e47e3b99dc83b2e7280c0ed":[36,0,0,14,0,2,16,9],
-"mate-wp-item_8c.html#ae207ec072472159d5f16dd8a330ba85a":[36,0,0,14,0,2,16,0],
-"mate-wp-item_8c.html#afc5c0aeaa5867c1fc32bef25aa1bdd77":[36,0,0,14,0,2,16,8],
-"mate-wp-item_8c_source.html":[36,0,0,14,0,2,16],
 "mate-wp-item_8h.html":[36,0,0,14,0,2,17],
 "mate-wp-item_8h.html#a071f9c07e4f7e12abdc12c4874a781d7":[36,0,0,14,0,2,17,7],
 "mate-wp-item_8h.html#a138c3ee44c502562fb4187d3570dc01c":[36,0,0,14,0,2,17,4],
@@ -249,5 +245,9 @@ var NAVTREEINDEX114 =
 "matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564dac61f95a3d8a307cfd302ef763dd92944":[36,0,0,7,0,10,17,3],
 "matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564dad89eb1e03e2ffa519abe95d3ceecad99":[36,0,0,7,0,10,17,5],
 "matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564daebe7c98b295e7027e2240639eb584e45":[36,0,0,7,0,10,17,0],
-"matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564daf3b715e1170f4482692c0c4aaf4c5baf":[36,0,0,7,0,10,17,2]
+"matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564daf3b715e1170f4482692c0c4aaf4c5baf":[36,0,0,7,0,10,17,2],
+"matekbd-keyboard-drawing_8h.html#a9f68f808822fb9036b278a3024fc564dafc5557e398522d7efdd5e9f7744f321e":[36,0,0,7,0,10,17,6],
+"matekbd-keyboard-drawing_8h.html#aaa0988680fd988e092ec07f7a6008b27":[36,0,0,7,0,10,30],
+"matekbd-keyboard-drawing_8h.html#aac97fcea6865700fc5627d9557ec559e":[36,0,0,7,0,10,28],
+"matekbd-keyboard-drawing_8h.html#ab6aeabe064071033ec60c5fcf15eb66d":[36,0,0,7,0,10,21]
 };

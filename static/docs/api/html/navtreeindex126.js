@@ -1,9 +1,5 @@
 var NAVTREEINDEX126 =
 {
-"msd-keyboard-manager_8h.html#aac85f7baed946906333dc223dbeec4cd":[36,0,0,28,1,9,3,6],
-"msd-keyboard-manager_8h.html#aafd52e50c3aa474089a7a3007d54bb67":[36,0,0,28,1,9,3,5],
-"msd-keyboard-manager_8h.html#acb3dcad8ebba54003fdf5b11fa210a51":[36,0,0,28,1,9,3,3],
-"msd-keyboard-manager_8h.html#af71863bfac6436e70592c1827d601b99":[36,0,0,28,1,9,3,13],
 "msd-keyboard-manager_8h.html#afa6bc99f3bab84471efa6a2db86ea0dd":[36,0,0,28,1,9,3,4],
 "msd-keyboard-manager_8h_source.html":[36,0,0,28,1,9,3],
 "msd-keyboard-plugin_8c.html":[36,0,0,28,1,9,4],
@@ -249,5 +245,9 @@ var NAVTREEINDEX126 =
 "msd-mpris-plugin_8c.html":[36,0,0,28,1,12,4],
 "msd-mpris-plugin_8c_source.html":[36,0,0,28,1,12,4],
 "msd-mpris-plugin_8h.html":[36,0,0,28,1,12,5],
-"msd-mpris-plugin_8h.html#a27f06b734d37425e1e2cd19cd41826da":[36,0,0,28,1,12,5,3]
+"msd-mpris-plugin_8h.html#a27f06b734d37425e1e2cd19cd41826da":[36,0,0,28,1,12,5,3],
+"msd-mpris-plugin_8h.html#a4c26e267ee8864554efbadf94f4c24f8":[36,0,0,28,1,12,5,2],
+"msd-mpris-plugin_8h.html#a6ae0ae296d311a3c21a40be8e55a7af6":[36,0,0,28,1,12,5,9],
+"msd-mpris-plugin_8h.html#a7dce878948eaaad26f2c29f4e5bdb48c":[36,0,0,28,1,12,5,6],
+"msd-mpris-plugin_8h.html#a80e7b086cad5178d61c4f7d8c5fe52d8":[36,0,0,28,1,12,5,10]
 };

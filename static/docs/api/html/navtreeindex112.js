@@ -1,9 +1,5 @@
 var NAVTREEINDEX112 =
 {
-"mate-stock-icons_8h.html#af907ecee146584d6e5e4487bb803b86e":[36,0,0,9,2,73,68],
-"mate-stock-icons_8h.html#af9cdf8c78c6714efb8a472193ce914e8":[36,0,0,9,2,73,161],
-"mate-stock-icons_8h.html#afc9506f152daada476cd3d46e634f39d":[36,0,0,9,2,73,9],
-"mate-stock-icons_8h.html#aff46e39fff3002a8148d960a99064ae8":[36,0,0,9,2,73,141],
 "mate-stock-icons_8h.html#aff55406b186afe62ca2cf203ef79ad00":[36,0,0,9,2,73,63],
 "mate-stock-icons_8h_source.html":[36,0,0,9,2,73],
 "mate-system-info_8c.html":[36,0,0,14,0,10,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX112 =
 "mate-thumbnail-pixbuf-utils_8c.html#a71e332f4e868ccb0a6ecd4a579d6282d":[36,0,0,9,2,76,0],
 "mate-thumbnail-pixbuf-utils_8c_source.html":[36,0,0,9,2,76],
 "mate-thumbnail_8c.html":[36,0,0,9,2,77],
-"mate-thumbnail_8c.html#a0c96a7ee6740c8e100837f5206ab40a9":[36,0,0,9,2,77,0]
+"mate-thumbnail_8c.html#a0c96a7ee6740c8e100837f5206ab40a9":[36,0,0,9,2,77,0],
+"mate-thumbnail_8c.html#a161984aa29c24165a98c1831fdb370d2":[36,0,0,9,2,77,8],
+"mate-thumbnail_8c.html#a19c6937faf1834bfca4515ef057fb139":[36,0,0,9,2,77,10],
+"mate-thumbnail_8c.html#a42ca0a8359b233f2622758cb2b34bb34":[36,0,0,9,2,77,13],
+"mate-thumbnail_8c.html#a477cd1854eb3b221463f381b763cbc67":[36,0,0,9,2,77,11]
 };

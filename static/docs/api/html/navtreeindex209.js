@@ -1,9 +1,5 @@
 var NAVTREEINDEX209 =
 {
-"terminal-window_8c.html#a240bd669d41b1ead0a2a03d20ff6b0c2":[36,0,0,30,0,37,2],
-"terminal-window_8c.html#a2a6e30944a55f523cebe82bca2ca546b":[36,0,0,30,0,37,41],
-"terminal-window_8c.html#a390534aad2b0f0ca6aee5d290229295f":[36,0,0,30,0,37,30],
-"terminal-window_8c.html#a3e75f1f011876a4283522b0158232899":[36,0,0,30,0,37,4],
 "terminal-window_8c.html#a40cc5176c37ab77b7fe8fcb2a8301754":[36,0,0,30,0,37,21],
 "terminal-window_8c.html#a410619917ba03e282b8f58e1e68ec5b1":[36,0,0,30,0,37,28],
 "terminal-window_8c.html#a45081fb6b5719f5f67222c5272755dab":[36,0,0,30,0,37,38],
@@ -249,5 +245,9 @@ var NAVTREEINDEX209 =
 "test-menu-spec_8c.html":[36,0,0,19,1,0],
 "test-menu-spec_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[36,0,0,19,1,0,0],
 "test-menu-spec_8c_source.html":[36,0,0,19,1,0],
-"test-module-plugin_8c.html":[36,0,0,2,0,6,8]
+"test-module-plugin_8c.html":[36,0,0,2,0,6,8],
+"test-module-plugin_8c.html#a147fd81e9772fbd33e7e413b19e2d16a":[36,0,0,2,0,6,8,8],
+"test-module-plugin_8c.html#a18235442c301f94e5fe9531b1bd14111":[36,0,0,2,0,6,8,6],
+"test-module-plugin_8c.html#a41c838d9a2678ceafd43d63657bade20":[36,0,0,2,0,6,8,4],
+"test-module-plugin_8c.html#a4ada034b0b434bb0fb83a6637121f44a":[36,0,0,2,0,6,8,2]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX143 =
 {
-"panel-applet-container_8c.html#aeb5685209379b25452c6bc3750d06d81":[36,0,0,22,2,0,0,5],
-"panel-applet-container_8c.html#aecbd5a7ecc9878422359e920a3e44f5c":[36,0,0,22,2,0,0,1],
-"panel-applet-container_8c_source.html":[36,0,0,22,2,0,0],
-"panel-applet-container_8h.html":[36,0,0,22,2,0,1],
 "panel-applet-container_8h.html#a0430a0188568b82e1441421444a8628d":[36,0,0,22,2,0,1,19],
 "panel-applet-container_8h.html#a092a677a830e2b34929bd7d22a3e3b89":[36,0,0,22,2,0,1,15],
 "panel-applet-container_8h.html#a10467ca2ee0b9d66e1dfbf679558e06e":[36,0,0,22,2,0,1,11],
@@ -249,5 +245,9 @@ var NAVTREEINDEX143 =
 "panel-cleanup_8h.html#aa2785ab0747c40548118c4ff87f8e4a5":[36,0,0,22,2,1,1,1],
 "panel-cleanup_8h.html#ab098f122d09f9b8f85a9a739c2c8c304":[36,0,0,22,2,1,1,3],
 "panel-cleanup_8h.html#acaa42f3460160b925b587b6b7251e7f7":[36,0,0,22,2,1,1,0],
-"panel-cleanup_8h_source.html":[36,0,0,22,2,1,1]
+"panel-cleanup_8h_source.html":[36,0,0,22,2,1,1],
+"panel-color_8c.html":[36,0,0,22,2,1,2],
+"panel-color_8c.html#a2dce170cd901fadddf769b3fc5b0cc3b":[36,0,0,22,2,1,2,0],
+"panel-color_8c_source.html":[36,0,0,22,2,1,2],
+"panel-color_8h.html":[36,0,0,22,2,1,3]
 };

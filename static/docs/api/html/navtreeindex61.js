@@ -1,9 +1,5 @@
 var NAVTREEINDEX61 =
 {
-"ev-message-area_8h.html#ae3b50aa2233ef6e504f11165057cb5ac":[36,0,0,0,7,24,16],
-"ev-message-area_8h.html#aec3efdd6ec56136c7a1f25b5c17616d8":[36,0,0,0,7,24,17],
-"ev-message-area_8h.html#afbc943d8ce6a082448cc39af64346a45":[36,0,0,0,7,24,8],
-"ev-message-area_8h_source.html":[36,0,0,0,7,24],
 "ev-metadata_8c.html":[36,0,0,0,7,25],
 "ev-metadata_8c.html#a0afb397e424cb2668a3e4bfd6354fabb":[36,0,0,0,7,25,2],
 "ev-metadata_8c.html#a2cd6608d4347a33b7e297d4ccc48acc0":[36,0,0,0,7,25,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX61 =
 "ev-password-view_8h_source.html":[36,0,0,0,7,34],
 "ev-pixbuf-cache_8c.html":[36,0,0,0,4,18],
 "ev-pixbuf-cache_8c.html#a204b545bb8ede269c4f109f8ae5b5c78":[36,0,0,0,4,18,3],
-"ev-pixbuf-cache_8c.html#a296b06f95c5416cad65558bd98d9679e":[36,0,0,0,4,18,7]
+"ev-pixbuf-cache_8c.html#a296b06f95c5416cad65558bd98d9679e":[36,0,0,0,4,18,7],
+"ev-pixbuf-cache_8c.html#a2e028ea5251d2baa01a7a4f527e27b65":[36,0,0,0,4,18,14],
+"ev-pixbuf-cache_8c.html#a3eb53660072b22f84bdd9be299092860":[36,0,0,0,4,18,15],
+"ev-pixbuf-cache_8c.html#a50063ac36c1fb5d349bb7066e5c9f93b":[36,0,0,0,4,18,2],
+"ev-pixbuf-cache_8c.html#a582405d80637998bdabcab0340834e39":[36,0,0,0,4,18,12]
 };

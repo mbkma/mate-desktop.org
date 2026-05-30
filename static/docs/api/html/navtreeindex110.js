@@ -1,9 +1,5 @@
 var NAVTREEINDEX110 =
 {
-"mate-session-save_8c.html#ad15da22386cca874ed8076881d4b2e7c":[36,0,0,27,2,5,5],
-"mate-session-save_8c.html#adeb185581eb0280c5ed6fbe0b3aab2f5":[36,0,0,27,2,5,3],
-"mate-session-save_8c.html#af38f0888a3897b3301f0450026b7f04d":[36,0,0,27,2,5,1],
-"mate-session-save_8c_source.html":[36,0,0,27,2,5],
 "mate-settings-bus_8c.html":[36,0,0,28,0,1],
 "mate-settings-bus_8c.html#ae9cbb6abf015c99a9a2f8718d6ed0876":[36,0,0,28,0,1,0],
 "mate-settings-bus_8c_source.html":[36,0,0,28,0,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX110 =
 "mate-settings-module_8h.html#ab2532204d55d699d5c9d1f27fca52e98":[36,0,0,28,0,6,0],
 "mate-settings-module_8h.html#abfd705074bcaa7c3ea9efdcfc45d51bb":[36,0,0,28,0,6,9],
 "mate-settings-module_8h.html#ade209641be148ccfb83c8c13239e8cb9":[36,0,0,28,0,6,10],
-"mate-settings-module_8h_source.html":[36,0,0,28,0,6]
+"mate-settings-module_8h_source.html":[36,0,0,28,0,6],
+"mate-settings-plugin-info_8c.html":[36,0,0,28,0,7],
+"mate-settings-plugin-info_8c.html#a24fd1f0355ea6fdf19a8477a430f9e36":[36,0,0,28,0,7,8],
+"mate-settings-plugin-info_8c.html#a2c1f367a23f086a9c38b91268e76bd0c":[36,0,0,28,0,7,17],
+"mate-settings-plugin-info_8c.html#a4f12083f91112922cdcb60dafd09eb66":[36,0,0,28,0,7,12]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX158 =
 {
-"pluma-trail-save-plugin_8h.html#a1108da1689fdcb8f875193530de45020":[36,0,0,34,0,7,1,7],
-"pluma-trail-save-plugin_8h.html#a2b71556221738b316694cae75a912c2b":[36,0,0,34,0,7,1,9],
-"pluma-trail-save-plugin_8h.html#a4b913bfcc7012325413c00c4c91c1583":[36,0,0,34,0,7,1,6],
-"pluma-trail-save-plugin_8h.html#a5bae814304650b66b2f633f197802979":[36,0,0,34,0,7,1,4],
 "pluma-trail-save-plugin_8h.html#a5c7567f8b75d23137b3eb98383c3ba4d":[36,0,0,34,0,7,1,8],
 "pluma-trail-save-plugin_8h.html#a6475011e8e7452f639ae4053037f76ec":[36,0,0,34,0,7,1,10],
 "pluma-trail-save-plugin_8h.html#ad9067dab9fdcb9e9fc4eab5586ee7ce6":[36,0,0,34,0,7,1,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX158 =
 "pluma-window_8h.html#ae58cb4d9c00aa252fb32b09faaedfbce":[36,0,0,34,1,98,36],
 "pluma-window_8h.html#aec8469a1e6dd9f39e9f10438b79f6398":[36,0,0,34,1,98,25],
 "pluma-window_8h.html#af67c37de5ae574f6a990eadc40f596d6":[36,0,0,34,1,98,24],
-"pluma-window_8h.html#af6ffa00c34c1ef7a8f3098c31f008ab2":[36,0,0,34,1,98,29]
+"pluma-window_8h.html#af6ffa00c34c1ef7a8f3098c31f008ab2":[36,0,0,34,1,98,29],
+"pluma-window_8h_source.html":[36,0,0,34,1,98],
+"pluma-word-completion-plugin_8c.html":[36,0,0,35,0,2,0],
+"pluma-word-completion-plugin_8c.html#a2e66de494ea6e5098af64bca9c5b1577":[36,0,0,35,0,2,0,4],
+"pluma-word-completion-plugin_8c.html#a4ed85b8aa0ea6347683548a002afe72e":[36,0,0,35,0,2,0,2]
 };

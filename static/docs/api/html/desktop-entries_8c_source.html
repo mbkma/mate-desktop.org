@@ -753,288 +753,250 @@ $(document).ready(function(){initNavTree('desktop-entries_8c_source.html',''); i
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>}</div>
 </div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
-<div class="foldopen" id="foldopen00626" data-start="{" data-end="}">
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a2472d61e26e1ac7194d77983106a96a9">  626</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a2472d61e26e1ac7194d77983106a96a9">desktop_entry_add_legacy_category</a>(DesktopEntry* entry)</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>{</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  GQuark *categories;</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  gsize   i;</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>  DesktopEntryDesktop *desktop_entry;</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>  g_return_if_fail (entry-&gt;type == <a class="code hl_enumvalue" href="desktop-entries_8h.html#a46c0ab3fa1e8b5d14883513af79232a4a7bf9ee3ddb52832ac80a97ad5b55f271">DESKTOP_ENTRY_DESKTOP</a>);</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment"> * Entry sets</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
+<div class="foldopen" id="foldopen00630" data-start="{" data-end="}">
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a4574a0861f5badc66141ef7f65c22bf6">  630</a></span><a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a>* <a class="code hl_function" href="desktop-entries_8c.html#a4574a0861f5badc66141ef7f65c22bf6">desktop_entry_set_new</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>{</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>  <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  desktop_entry = (DesktopEntryDesktop*) entry;</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  menu_verbose (<span class="stringliteral">&quot;Adding Legacy category to \&quot;%s\&quot;\n&quot;</span>,</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                entry-&gt;basename);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> = g_new0 (<a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a>, 1);</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount = 1;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  menu_verbose (<span class="stringliteral">&quot; New entry set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  <span class="keywordflow">if</span> (desktop_entry-&gt;categories != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    {</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>      i = 0;</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>      <span class="keywordflow">for</span> (; desktop_entry-&gt;categories[i]; i++);</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      categories = g_new0 (GQuark, i + 2);</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      i = 0;</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>      <span class="keywordflow">for</span> (; desktop_entry-&gt;categories[i]; i++)</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        categories[i] = desktop_entry-&gt;categories[i];</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    }</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    {</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>      categories = g_new0 (GQuark, 2);</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>      i = 0;</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    }</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  categories[i] = g_quark_from_string (<span class="stringliteral">&quot;Legacy&quot;</span>);</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  g_free (desktop_entry-&gt;categories);</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  desktop_entry-&gt;categories = categories;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>}</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>}</div>
 </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
+<div class="foldopen" id="foldopen00642" data-start="{" data-end="}">
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#ad457baacd2f9bbd8f1893d038646d49c">  642</a></span><a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a>* <a class="code hl_function" href="desktop-entries_8c.html#ad457baacd2f9bbd8f1893d038646d49c">desktop_entry_set_ref</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>{</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  g_return_val_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  g_return_val_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount &gt; 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount += 1;</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>}</div>
+</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
+<div class="foldopen" id="foldopen00652" data-start="{" data-end="}">
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a70ee260c7690c611a073cea255f7576c">  652</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a70ee260c7690c611a073cea255f7576c">desktop_entry_set_unref</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>{</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  g_return_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  g_return_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount &gt; 0);</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount -= 1;</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount == 0)</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    {</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>      menu_verbose (<span class="stringliteral">&quot; Deleting entry set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="comment"> * Entry sets</span></div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash)</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        g_hash_table_destroy (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash);</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>      <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
-<div class="foldopen" id="foldopen00666" data-start="{" data-end="}">
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a4574a0861f5badc66141ef7f65c22bf6">  666</a></span><a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a>* <a class="code hl_function" href="desktop-entries_8c.html#a4574a0861f5badc66141ef7f65c22bf6">desktop_entry_set_new</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>{</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>      g_free (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    }</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>}</div>
+</div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> = g_new0 (<a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a>, 1);</div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount = 1;</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  menu_verbose (<span class="stringliteral">&quot; New entry set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>}</div>
+<div class="foldopen" id="foldopen00670" data-start="{" data-end="}">
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">  670</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">desktop_entry_set_add_entry</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntry* entry, <span class="keyword">const</span> <span class="keywordtype">char</span>* file_id)</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>{</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  menu_verbose (<span class="stringliteral">&quot; Adding to set %p entry %s\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, file_id);</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    {</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>      <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash = g_hash_table_new_full (g_str_hash,</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>                                         g_str_equal,</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>                                         g_free,</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>                                         (GDestroyNotify) <a class="code hl_function" href="desktop-entries_8c.html#a72ef571c08839401f4d691319d4cc2d1">desktop_entry_unref</a>);</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    }</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  g_hash_table_replace (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>                        g_strdup (file_id),</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>                        <a class="code hl_function" href="desktop-entries_8c.html#a7df3c5b0fa379f8c6bc972f456376465">desktop_entry_ref</a> (entry));</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>}</div>
 </div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
-<div class="foldopen" id="foldopen00678" data-start="{" data-end="}">
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#ad457baacd2f9bbd8f1893d038646d49c">  678</a></span><a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a>* <a class="code hl_function" href="desktop-entries_8c.html#ad457baacd2f9bbd8f1893d038646d49c">desktop_entry_set_ref</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>{</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>  g_return_val_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  g_return_val_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount &gt; 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount += 1;</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>}</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span> </div>
+<div class="foldopen" id="foldopen00687" data-start="{" data-end="}">
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a6f608d270b9d1216318ae5fbdacce324">  687</a></span><a class="code hl_typedef" href="desktop-entries_8h.html#af9a0c268cfc649e8aa52f280359a8f9e">DesktopEntry</a>* <a class="code hl_function" href="desktop-entries_8c.html#a6f608d270b9d1216318ae5fbdacce324">desktop_entry_set_lookup</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* file_id)</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>{</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>  <span class="keywordflow">return</span> g_hash_table_lookup (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash, file_id);</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>}</div>
 </div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
-<div class="foldopen" id="foldopen00688" data-start="{" data-end="}">
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a70ee260c7690c611a073cea255f7576c">  688</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a70ee260c7690c611a073cea255f7576c">desktop_entry_set_unref</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>{</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>  g_return_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>  g_return_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount &gt; 0);</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>  <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount -= 1;</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;refcount == 0)</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    {</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>      menu_verbose (<span class="stringliteral">&quot; Deleting entry set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash)</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        g_hash_table_destroy (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash);</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>      <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>      g_free (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    }</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>}</div>
-</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
-<div class="foldopen" id="foldopen00706" data-start="{" data-end="}">
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">  706</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">desktop_entry_set_add_entry</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntry* entry, <span class="keyword">const</span> <span class="keywordtype">char</span>* file_id)</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>{</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  menu_verbose (<span class="stringliteral">&quot; Adding to set %p entry %s\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, file_id);</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a619861e76c28e82fb0aa411f07b9e9bc">DesktopEntrySetForeachFunc</a> func;</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>    gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>} EntryHashForeachData;</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="keyword">static</span> <span class="keywordtype">void</span> entry_hash_foreach(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, EntryHashForeachData* fd)</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>{</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    fd-&gt;func(file_id, entry, fd-&gt;user_data);</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>}</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
+<div class="foldopen" id="foldopen00705" data-start="{" data-end="}">
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#ad4418c96946ceab53097875a5dcb88e2">  705</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#ad4418c96946ceab53097875a5dcb88e2">desktop_entry_set_foreach</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, <a class="code hl_typedef" href="desktop-entries_8h.html#a619861e76c28e82fb0aa411f07b9e9bc">DesktopEntrySetForeachFunc</a> func, gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>{</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  g_return_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  g_return_if_fail (func != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    {</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>      <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash = g_hash_table_new_full (g_str_hash,</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>                                         g_str_equal,</div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>                                         g_free,</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>                                         (GDestroyNotify) <a class="code hl_function" href="desktop-entries_8c.html#a72ef571c08839401f4d691319d4cc2d1">desktop_entry_unref</a>);</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    }</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span> </div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>  g_hash_table_replace (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>                        g_strdup (file_id),</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>                        <a class="code hl_function" href="desktop-entries_8c.html#a7df3c5b0fa379f8c6bc972f456376465">desktop_entry_ref</a> (entry));</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>      EntryHashForeachData fd;</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span> </div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>      fd.func      = func;</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>      fd.user_data = <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>      g_hash_table_foreach (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>                            (GHFunc) entry_hash_foreach,</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>                            &amp;fd);</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    }</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>}</div>
 </div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
-<div class="foldopen" id="foldopen00723" data-start="{" data-end="}">
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a6f608d270b9d1216318ae5fbdacce324">  723</a></span><a class="code hl_typedef" href="desktop-entries_8h.html#af9a0c268cfc649e8aa52f280359a8f9e">DesktopEntry</a>* <a class="code hl_function" href="desktop-entries_8c.html#a6f608d270b9d1216318ae5fbdacce324">desktop_entry_set_lookup</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, <span class="keyword">const</span> <span class="keywordtype">char</span>* file_id)</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="keyword">static</span> <span class="keywordtype">void</span> desktop_entry_set_clear(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
 <div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>{</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>  <span class="keywordflow">return</span> g_hash_table_lookup (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash, file_id);</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>}</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  menu_verbose (<span class="stringliteral">&quot; Clearing set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    {</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>      g_hash_table_destroy (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash);</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>      <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    }</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>}</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>guint</div>
+<div class="foldopen" id="foldopen00735" data-start="{" data-end="}">
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">  735</a></span><a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (DesktopEntrySet *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>{</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>  <span class="keywordflow">return</span> g_hash_table_size (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash);</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>}</div>
 </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a619861e76c28e82fb0aa411f07b9e9bc">DesktopEntrySetForeachFunc</a> func;</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>} EntryHashForeachData;</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span> </div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="keyword">static</span> <span class="keywordtype">void</span> entry_hash_foreach(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, EntryHashForeachData* fd)</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>{</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    fd-&gt;func(file_id, entry, fd-&gt;user_data);</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>}</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
-<div class="foldopen" id="foldopen00741" data-start="{" data-end="}">
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#ad4418c96946ceab53097875a5dcb88e2">  741</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#ad4418c96946ceab53097875a5dcb88e2">desktop_entry_set_foreach</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, <a class="code hl_typedef" href="desktop-entries_8h.html#a619861e76c28e82fb0aa411f07b9e9bc">DesktopEntrySetForeachFunc</a> func, gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>{</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>  g_return_if_fail (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>  g_return_if_fail (func != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span> </div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    {</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>      EntryHashForeachData fd;</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> </div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>      fd.func      = func;</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>      fd.user_data = <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="keyword">static</span> <span class="keywordtype">void</span> union_foreach(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>{</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="comment">/* we are iterating over &quot;with&quot; adding anything not</span></div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span><span class="comment">     * already in &quot;set&quot;. We unconditionally overwrite</span></div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="comment">     * the stuff in &quot;set&quot; because we can assume</span></div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="comment">     * two entries with the same name are equivalent.</span></div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    <a class="code hl_function" href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">desktop_entry_set_add_entry</a>(<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, entry, file_id);</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>}</div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>      g_hash_table_foreach (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>                            (GHFunc) entry_hash_foreach,</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>                            &amp;fd);</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    }</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>}</div>
+<div class="foldopen" id="foldopen00753" data-start="{" data-end="}">
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#aafc29cdb3aa71b26f289b6da72adcad6">  753</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#aafc29cdb3aa71b26f289b6da72adcad6">desktop_entry_set_union</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntrySet* with)</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>{</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>  menu_verbose (<span class="stringliteral">&quot; Union of %p and %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, with);</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span> </div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (with) == 0)</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    <span class="keywordflow">return</span>; <span class="comment">/* A fast simple case */</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>  g_hash_table_foreach (with-&gt;hash,</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                        (GHFunc) union_foreach,</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>                        <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>}</div>
 </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span> </div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="keyword">static</span> <span class="keywordtype">void</span> desktop_entry_set_clear(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>{</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>  menu_verbose (<span class="stringliteral">&quot; Clearing set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    {</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>      g_hash_table_destroy (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash);</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>      <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    }</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>}</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *with;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>} IntersectData;</div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>guint</div>
-<div class="foldopen" id="foldopen00771" data-start="{" data-end="}">
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">  771</a></span><a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (DesktopEntrySet *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>{</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  <span class="keywordflow">return</span> g_hash_table_size (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash);</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>}</div>
-</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="keyword">static</span> gboolean intersect_foreach_remove(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, IntersectData* <span class="keywordtype">id</span>)</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>{</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>  <span class="comment">/* Remove everything in &quot;set&quot; which is not in &quot;with&quot; */</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>  <span class="keywordflow">if</span> (g_hash_table_lookup (<a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>-&gt;with-&gt;hash, file_id) != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span> </div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>  menu_verbose (<span class="stringliteral">&quot; Removing from %p entry %s\n&quot;</span>, <a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>-&gt;set, file_id);</div>
 <div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span> </div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="keyword">static</span> <span class="keywordtype">void</span> union_foreach(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>)</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>{</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <span class="comment">/* we are iterating over &quot;with&quot; adding anything not</span></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="comment">     * already in &quot;set&quot;. We unconditionally overwrite</span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="comment">     * the stuff in &quot;set&quot; because we can assume</span></div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span><span class="comment">     * two entries with the same name are equivalent.</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    <a class="code hl_function" href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">desktop_entry_set_add_entry</a>(<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, entry, file_id);</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>}</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
-<div class="foldopen" id="foldopen00789" data-start="{" data-end="}">
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#aafc29cdb3aa71b26f289b6da72adcad6">  789</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#aafc29cdb3aa71b26f289b6da72adcad6">desktop_entry_set_union</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntrySet* with)</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>{</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  menu_verbose (<span class="stringliteral">&quot; Union of %p and %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, with);</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (with) == 0)</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    <span class="keywordflow">return</span>; <span class="comment">/* A fast simple case */</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; <span class="comment">/* return TRUE to remove */</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>}</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span> </div>
+<div class="foldopen" id="foldopen00782" data-start="{" data-end="}">
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a065bdc18867640fb33f220ce09b84cae">  782</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a065bdc18867640fb33f220ce09b84cae">desktop_entry_set_intersection</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntrySet* with)</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>{</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  IntersectData <a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>;</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span> </div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  menu_verbose (<span class="stringliteral">&quot; Intersection of %p and %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, with);</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>) == 0 ||</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>      <a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (with) == 0)</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    {</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>      <span class="comment">/* A fast simple case */</span></div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>      desktop_entry_set_clear (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    }</div>
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  g_hash_table_foreach (with-&gt;hash,</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>                        (GHFunc) union_foreach,</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>                        <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>}</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  <span class="keywordtype">id</span>.set  = <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  <span class="keywordtype">id</span>.with = with;</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  g_hash_table_foreach_remove (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>                               (GHRFunc) intersect_foreach_remove,</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>                               &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>}</div>
 </div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span> </div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *with;</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>} IntersectData;</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span> </div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span><span class="keyword">static</span> gboolean intersect_foreach_remove(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, IntersectData* <span class="keywordtype">id</span>)</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>{</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  <span class="comment">/* Remove everything in &quot;set&quot; which is not in &quot;with&quot; */</span></div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span> </div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>  <span class="keywordflow">if</span> (g_hash_table_lookup (<a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>-&gt;with-&gt;hash, file_id) != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *other;</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>} SubtractData;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span><span class="keyword">static</span> gboolean subtract_foreach_remove(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, SubtractData* sd)</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>{</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  <span class="comment">/* Remove everything in &quot;set&quot; which is not in &quot;other&quot; */</span></div>
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span> </div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  menu_verbose (<span class="stringliteral">&quot; Removing from %p entry %s\n&quot;</span>, <a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>-&gt;set, file_id);</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span> </div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; <span class="comment">/* return TRUE to remove */</span></div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>}</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  <span class="keywordflow">if</span> (g_hash_table_lookup (sd-&gt;other-&gt;hash, file_id) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>  menu_verbose (<span class="stringliteral">&quot; Removing from %p entry %s\n&quot;</span>, sd-&gt;set, file_id);</div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span> </div>
-<div class="foldopen" id="foldopen00818" data-start="{" data-end="}">
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a065bdc18867640fb33f220ce09b84cae">  818</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a065bdc18867640fb33f220ce09b84cae">desktop_entry_set_intersection</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntrySet* with)</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>{</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>  IntersectData <a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>;</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span> </div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>  menu_verbose (<span class="stringliteral">&quot; Intersection of %p and %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, with);</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>) == 0 ||</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>      <a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (with) == 0)</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    {</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>      <span class="comment">/* A fast simple case */</span></div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>      desktop_entry_set_clear (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>);</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>    }</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span> </div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordtype">id</span>.set  = <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  <span class="keywordtype">id</span>.with = with;</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  g_hash_table_foreach_remove (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>                               (GHRFunc) intersect_foreach_remove,</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>                               &amp;<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>}</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; <span class="comment">/* return TRUE to remove */</span></div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>}</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span> </div>
+<div class="foldopen" id="foldopen00821" data-start="{" data-end="}">
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a6a875bcc785f3127b8cdce70c560b12b">  821</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a6a875bcc785f3127b8cdce70c560b12b">desktop_entry_set_subtract</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntrySet* other)</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>{</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>  SubtractData sd;</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>  menu_verbose (<span class="stringliteral">&quot; Subtract from %p set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, other);</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span> </div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>) == 0 ||</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>      <a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (other) == 0)</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>    <span class="keywordflow">return</span>; <span class="comment">/* A fast simple case */</span></div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  sd.set   = <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  sd.other = other;</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span> </div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>  g_hash_table_foreach_remove (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>                               (GHRFunc) subtract_foreach_remove,</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>                               &amp;sd);</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>}</div>
 </div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    <a class="code hl_typedef" href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a> *other;</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>} SubtractData;</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span> </div>
+<div class="foldopen" id="foldopen00839" data-start="{" data-end="}">
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#aa95da4aa36797595eb31e5d037e20deb">  839</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#aa95da4aa36797595eb31e5d037e20deb">desktop_entry_set_swap_contents</a>(DesktopEntrySet* a, DesktopEntrySet* <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>)</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>{</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>    GHashTable *tmp;</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span> </div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>    menu_verbose (<span class="stringliteral">&quot; Swap contents of %p and %p\n&quot;</span>, a, <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>);</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span> </div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span><span class="keyword">static</span> gboolean subtract_foreach_remove(<span class="keyword">const</span> <span class="keywordtype">char</span>* file_id, DesktopEntry* entry, SubtractData* sd)</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>{</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>  <span class="comment">/* Remove everything in &quot;set&quot; which is not in &quot;other&quot; */</span></div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>  <span class="keywordflow">if</span> (g_hash_table_lookup (sd-&gt;other-&gt;hash, file_id) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span> </div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>  menu_verbose (<span class="stringliteral">&quot; Removing from %p entry %s\n&quot;</span>, sd-&gt;set, file_id);</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>; <span class="comment">/* return TRUE to remove */</span></div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>}</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span> </div>
-<div class="foldopen" id="foldopen00857" data-start="{" data-end="}">
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#a6a875bcc785f3127b8cdce70c560b12b">  857</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#a6a875bcc785f3127b8cdce70c560b12b">desktop_entry_set_subtract</a>(DesktopEntrySet* <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, DesktopEntrySet* other)</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>{</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  SubtractData sd;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  menu_verbose (<span class="stringliteral">&quot; Subtract from %p set %p\n&quot;</span>, <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, other);</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span> </div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>) == 0 ||</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>      <a class="code hl_function" href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a> (other) == 0)</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>    <span class="keywordflow">return</span>; <span class="comment">/* A fast simple case */</span></div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span> </div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>  sd.set   = <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>  sd.other = other;</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span> </div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>  g_hash_table_foreach_remove (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>-&gt;hash,</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>                               (GHRFunc) subtract_foreach_remove,</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>                               &amp;sd);</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>}</div>
-</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
-<div class="foldopen" id="foldopen00875" data-start="{" data-end="}">
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno"><a class="line" href="desktop-entries_8c.html#aa95da4aa36797595eb31e5d037e20deb">  875</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="desktop-entries_8c.html#aa95da4aa36797595eb31e5d037e20deb">desktop_entry_set_swap_contents</a>(DesktopEntrySet* a, DesktopEntrySet* <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>)</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>{</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>    GHashTable *tmp;</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    menu_verbose (<span class="stringliteral">&quot; Swap contents of %p and %p\n&quot;</span>, a, <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>);</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span> </div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    tmp = a-&gt;hash;</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>     a-&gt;hash = <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>-&gt;hash;</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>-&gt;hash = tmp;</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>}</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    tmp = a-&gt;hash;</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>     a-&gt;hash = <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>-&gt;hash;</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>-&gt;hash = tmp;</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>}</div>
 </div>
 <div class="ttc" id="aactions_8c_html_aeffa2f0815ce90fecbda9aac199143db"><div class="ttname"><a href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a></div><div class="ttdeci">const char * id</div><div class="ttdef"><b>Definition</b> <a href="actions_8c_source.html#l00051">actions.c:51</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
@@ -1043,33 +1005,32 @@ $(document).ready(function(){initNavTree('desktop-entries_8c_source.html',''); i
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2common_8h_html_ab9fe116113ed7294c4cb842c31e3cc12"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ab9fe116113ed7294c4cb842c31e3cc12">strrchr</a></div><div class="ttdeci">#define strrchr</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2common_8h_source.html#l00034">atril/backend/dvi/mdvi-lib/common.h:34</a></div></div>
 <div class="ttc" id="acaja-sendto-command_8c_html_a04eec7ef11bc98458573e298eb7141fb"><div class="ttname"><a href="caja-sendto-command_8c.html#a04eec7ef11bc98458573e298eb7141fb">hash</a></div><div class="ttdeci">GHashTable * hash</div><div class="ttdef"><b>Definition</b> <a href="caja-sendto-command_8c_source.html#l00056">caja-sendto-command.c:56</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a04bd9a56f761c2884205e4355df779c9"><div class="ttname"><a href="desktop-entries_8c.html#a04bd9a56f761c2884205e4355df779c9">desktop_entry_get_app_info</a></div><div class="ttdeci">GDesktopAppInfo * desktop_entry_get_app_info(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00584">desktop-entries.c:584</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a065bdc18867640fb33f220ce09b84cae"><div class="ttname"><a href="desktop-entries_8c.html#a065bdc18867640fb33f220ce09b84cae">desktop_entry_set_intersection</a></div><div class="ttdeci">void desktop_entry_set_intersection(DesktopEntrySet *set, DesktopEntrySet *with)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00818">desktop-entries.c:818</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_a065bdc18867640fb33f220ce09b84cae"><div class="ttname"><a href="desktop-entries_8c.html#a065bdc18867640fb33f220ce09b84cae">desktop_entry_set_intersection</a></div><div class="ttdeci">void desktop_entry_set_intersection(DesktopEntrySet *set, DesktopEntrySet *with)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00782">desktop-entries.c:782</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a1f1103ea6fa84f17188204ecfac4d0de"><div class="ttname"><a href="desktop-entries_8c.html#a1f1103ea6fa84f17188204ecfac4d0de">desktop_entry_get_path</a></div><div class="ttdeci">const char * desktop_entry_get_path(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00514">desktop-entries.c:514</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a2472d61e26e1ac7194d77983106a96a9"><div class="ttname"><a href="desktop-entries_8c.html#a2472d61e26e1ac7194d77983106a96a9">desktop_entry_add_legacy_category</a></div><div class="ttdeci">void desktop_entry_add_legacy_category(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00626">desktop-entries.c:626</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a253e3c18ec0c10751013fc459686220e"><div class="ttname"><a href="desktop-entries_8c.html#a253e3c18ec0c10751013fc459686220e">desktop_entry_get_generic_name</a></div><div class="ttdeci">const char * desktop_entry_get_generic_name(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00532">desktop-entries.c:532</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a2551c6cf500b5d37ca3df7fefdb11bd5"><div class="ttname"><a href="desktop-entries_8c.html#a2551c6cf500b5d37ca3df7fefdb11bd5">DESKTOP_ENTRY_GROUP</a></div><div class="ttdeci">#define DESKTOP_ENTRY_GROUP</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00030">desktop-entries.c:30</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a2b050994360f572974ef4befb40ab708"><div class="ttname"><a href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a></div><div class="ttdeci">guint desktop_entry_set_get_count(DesktopEntrySet *set)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00771">desktop-entries.c:771</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_a2b050994360f572974ef4befb40ab708"><div class="ttname"><a href="desktop-entries_8c.html#a2b050994360f572974ef4befb40ab708">desktop_entry_set_get_count</a></div><div class="ttdeci">guint desktop_entry_set_get_count(DesktopEntrySet *set)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00735">desktop-entries.c:735</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a3a57b76db5bdb04d59ad3f2d16f070e3"><div class="ttname"><a href="desktop-entries_8c.html#a3a57b76db5bdb04d59ad3f2d16f070e3">desktop_entry_get_no_display</a></div><div class="ttdeci">gboolean desktop_entry_get_no_display(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00554">desktop-entries.c:554</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a4574a0861f5badc66141ef7f65c22bf6"><div class="ttname"><a href="desktop-entries_8c.html#a4574a0861f5badc66141ef7f65c22bf6">desktop_entry_set_new</a></div><div class="ttdeci">DesktopEntrySet * desktop_entry_set_new(void)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00666">desktop-entries.c:666</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_a4574a0861f5badc66141ef7f65c22bf6"><div class="ttname"><a href="desktop-entries_8c.html#a4574a0861f5badc66141ef7f65c22bf6">desktop_entry_set_new</a></div><div class="ttdeci">DesktopEntrySet * desktop_entry_set_new(void)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00630">desktop-entries.c:630</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a52ad0999ce46d8e8bcbe077f10138d78"><div class="ttname"><a href="desktop-entries_8c.html#a52ad0999ce46d8e8bcbe077f10138d78">desktop_entry_new</a></div><div class="ttdeci">DesktopEntry * desktop_entry_new(const char *path)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00321">desktop-entries.c:321</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a5395d6ab3a6dd4ac0718ec3a755af9e1"><div class="ttname"><a href="desktop-entries_8c.html#a5395d6ab3a6dd4ac0718ec3a755af9e1">desktop_entry_get_type</a></div><div class="ttdeci">DesktopEntryType desktop_entry_get_type(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00509">desktop-entries.c:509</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a6a875bcc785f3127b8cdce70c560b12b"><div class="ttname"><a href="desktop-entries_8c.html#a6a875bcc785f3127b8cdce70c560b12b">desktop_entry_set_subtract</a></div><div class="ttdeci">void desktop_entry_set_subtract(DesktopEntrySet *set, DesktopEntrySet *other)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00857">desktop-entries.c:857</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a6f608d270b9d1216318ae5fbdacce324"><div class="ttname"><a href="desktop-entries_8c.html#a6f608d270b9d1216318ae5fbdacce324">desktop_entry_set_lookup</a></div><div class="ttdeci">DesktopEntry * desktop_entry_set_lookup(DesktopEntrySet *set, const char *file_id)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00723">desktop-entries.c:723</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_a70ee260c7690c611a073cea255f7576c"><div class="ttname"><a href="desktop-entries_8c.html#a70ee260c7690c611a073cea255f7576c">desktop_entry_set_unref</a></div><div class="ttdeci">void desktop_entry_set_unref(DesktopEntrySet *set)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00688">desktop-entries.c:688</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_a6a875bcc785f3127b8cdce70c560b12b"><div class="ttname"><a href="desktop-entries_8c.html#a6a875bcc785f3127b8cdce70c560b12b">desktop_entry_set_subtract</a></div><div class="ttdeci">void desktop_entry_set_subtract(DesktopEntrySet *set, DesktopEntrySet *other)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00821">desktop-entries.c:821</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_a6f608d270b9d1216318ae5fbdacce324"><div class="ttname"><a href="desktop-entries_8c.html#a6f608d270b9d1216318ae5fbdacce324">desktop_entry_set_lookup</a></div><div class="ttdeci">DesktopEntry * desktop_entry_set_lookup(DesktopEntrySet *set, const char *file_id)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00687">desktop-entries.c:687</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_a70ee260c7690c611a073cea255f7576c"><div class="ttname"><a href="desktop-entries_8c.html#a70ee260c7690c611a073cea255f7576c">desktop_entry_set_unref</a></div><div class="ttdeci">void desktop_entry_set_unref(DesktopEntrySet *set)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00652">desktop-entries.c:652</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a72ef571c08839401f4d691319d4cc2d1"><div class="ttname"><a href="desktop-entries_8c.html#a72ef571c08839401f4d691319d4cc2d1">desktop_entry_unref</a></div><div class="ttdeci">void desktop_entry_unref(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00468">desktop-entries.c:468</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a7df3c5b0fa379f8c6bc972f456376465"><div class="ttname"><a href="desktop-entries_8c.html#a7df3c5b0fa379f8c6bc972f456376465">desktop_entry_ref</a></div><div class="ttdeci">DesktopEntry * desktop_entry_ref(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00400">desktop-entries.c:400</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a850768fa57d6680c354b943a1adab76d"><div class="ttname"><a href="desktop-entries_8c.html#a850768fa57d6680c354b943a1adab76d">desktop_entry_has_categories</a></div><div class="ttdeci">gboolean desktop_entry_has_categories(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00590">desktop-entries.c:590</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_a991f5412e2c87c98d5e58abf1407eec8"><div class="ttname"><a href="desktop-entries_8c.html#a991f5412e2c87c98d5e58abf1407eec8">desktop_entry_copy</a></div><div class="ttdeci">DesktopEntry * desktop_entry_copy(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00410">desktop-entries.c:410</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_aa4e8b781f4c3ca5b874fbdaf15270dc3"><div class="ttname"><a href="desktop-entries_8c.html#aa4e8b781f4c3ca5b874fbdaf15270dc3">desktop_entry_get_icon</a></div><div class="ttdeci">GIcon * desktop_entry_get_icon(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00547">desktop-entries.c:547</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_aa89869c5fd77f8118488b1e158a77b29"><div class="ttname"><a href="desktop-entries_8c.html#aa89869c5fd77f8118488b1e158a77b29">desktop_entry_get_comment</a></div><div class="ttdeci">const char * desktop_entry_get_comment(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00539">desktop-entries.c:539</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_aa95da4aa36797595eb31e5d037e20deb"><div class="ttname"><a href="desktop-entries_8c.html#aa95da4aa36797595eb31e5d037e20deb">desktop_entry_set_swap_contents</a></div><div class="ttdeci">void desktop_entry_set_swap_contents(DesktopEntrySet *a, DesktopEntrySet *b)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00875">desktop-entries.c:875</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_aafc29cdb3aa71b26f289b6da72adcad6"><div class="ttname"><a href="desktop-entries_8c.html#aafc29cdb3aa71b26f289b6da72adcad6">desktop_entry_set_union</a></div><div class="ttdeci">void desktop_entry_set_union(DesktopEntrySet *set, DesktopEntrySet *with)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00789">desktop-entries.c:789</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_aa95da4aa36797595eb31e5d037e20deb"><div class="ttname"><a href="desktop-entries_8c.html#aa95da4aa36797595eb31e5d037e20deb">desktop_entry_set_swap_contents</a></div><div class="ttdeci">void desktop_entry_set_swap_contents(DesktopEntrySet *a, DesktopEntrySet *b)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00839">desktop-entries.c:839</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_aafc29cdb3aa71b26f289b6da72adcad6"><div class="ttname"><a href="desktop-entries_8c.html#aafc29cdb3aa71b26f289b6da72adcad6">desktop_entry_set_union</a></div><div class="ttdeci">void desktop_entry_set_union(DesktopEntrySet *set, DesktopEntrySet *with)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00753">desktop-entries.c:753</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_ab59b5a01dddfa9fb3d98ad48ce1a9e00"><div class="ttname"><a href="desktop-entries_8c.html#ab59b5a01dddfa9fb3d98ad48ce1a9e00">desktop_entry_reload</a></div><div class="ttdeci">DesktopEntry * desktop_entry_reload(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00359">desktop-entries.c:359</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_ac471a13e427cf40d26528e0c9df4d5ec"><div class="ttname"><a href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">desktop_entry_set_add_entry</a></div><div class="ttdeci">void desktop_entry_set_add_entry(DesktopEntrySet *set, DesktopEntry *entry, const char *file_id)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00706">desktop-entries.c:706</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_ac471a13e427cf40d26528e0c9df4d5ec"><div class="ttname"><a href="desktop-entries_8c.html#ac471a13e427cf40d26528e0c9df4d5ec">desktop_entry_set_add_entry</a></div><div class="ttdeci">void desktop_entry_set_add_entry(DesktopEntrySet *set, DesktopEntry *entry, const char *file_id)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00670">desktop-entries.c:670</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_ac510eee136767f0f54b6e14845105549"><div class="ttname"><a href="desktop-entries_8c.html#ac510eee136767f0f54b6e14845105549">desktop_entry_get_basename</a></div><div class="ttdeci">const char * desktop_entry_get_basename(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00520">desktop-entries.c:520</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_ac687c7fed8f495dd8f4e8ad19f9e4e7d"><div class="ttname"><a href="desktop-entries_8c.html#ac687c7fed8f495dd8f4e8ad19f9e4e7d">desktop_entry_get_name</a></div><div class="ttdeci">const char * desktop_entry_get_name(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00525">desktop-entries.c:525</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_ad4418c96946ceab53097875a5dcb88e2"><div class="ttname"><a href="desktop-entries_8c.html#ad4418c96946ceab53097875a5dcb88e2">desktop_entry_set_foreach</a></div><div class="ttdeci">void desktop_entry_set_foreach(DesktopEntrySet *set, DesktopEntrySetForeachFunc func, gpointer user_data)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00741">desktop-entries.c:741</a></div></div>
-<div class="ttc" id="adesktop-entries_8c_html_ad457baacd2f9bbd8f1893d038646d49c"><div class="ttname"><a href="desktop-entries_8c.html#ad457baacd2f9bbd8f1893d038646d49c">desktop_entry_set_ref</a></div><div class="ttdeci">DesktopEntrySet * desktop_entry_set_ref(DesktopEntrySet *set)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00678">desktop-entries.c:678</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_ad4418c96946ceab53097875a5dcb88e2"><div class="ttname"><a href="desktop-entries_8c.html#ad4418c96946ceab53097875a5dcb88e2">desktop_entry_set_foreach</a></div><div class="ttdeci">void desktop_entry_set_foreach(DesktopEntrySet *set, DesktopEntrySetForeachFunc func, gpointer user_data)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00705">desktop-entries.c:705</a></div></div>
+<div class="ttc" id="adesktop-entries_8c_html_ad457baacd2f9bbd8f1893d038646d49c"><div class="ttname"><a href="desktop-entries_8c.html#ad457baacd2f9bbd8f1893d038646d49c">desktop_entry_set_ref</a></div><div class="ttdeci">DesktopEntrySet * desktop_entry_set_ref(DesktopEntrySet *set)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00642">desktop-entries.c:642</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_aefc427b21fbbcdeea8b2bab7f4ecdedb"><div class="ttname"><a href="desktop-entries_8c.html#aefc427b21fbbcdeea8b2bab7f4ecdedb">desktop_entry_get_show_in</a></div><div class="ttdeci">gboolean desktop_entry_get_show_in(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00569">desktop-entries.c:569</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_af3e692ca7c8d30e641d583e396a7eea8"><div class="ttname"><a href="desktop-entries_8c.html#af3e692ca7c8d30e641d583e396a7eea8">desktop_entry_get_hidden</a></div><div class="ttdeci">gboolean desktop_entry_get_hidden(DesktopEntry *entry)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00561">desktop-entries.c:561</a></div></div>
 <div class="ttc" id="adesktop-entries_8c_html_affec4d770a340fd07b1d3507fae76827"><div class="ttname"><a href="desktop-entries_8c.html#affec4d770a340fd07b1d3507fae76827">desktop_entry_has_category</a></div><div class="ttdeci">gboolean desktop_entry_has_category(DesktopEntry *entry, const char *category)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8c_source.html#l00600">desktop-entries.c:600</a></div></div>
@@ -1077,8 +1038,8 @@ $(document).ready(function(){initNavTree('desktop-entries_8c_source.html',''); i
 <div class="ttc" id="adesktop-entries_8h_html_a46c0ab3fa1e8b5d14883513af79232a4"><div class="ttname"><a href="desktop-entries_8h.html#a46c0ab3fa1e8b5d14883513af79232a4">DesktopEntryType</a></div><div class="ttdeci">DesktopEntryType</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00028">desktop-entries.h:28</a></div></div>
 <div class="ttc" id="adesktop-entries_8h_html_a46c0ab3fa1e8b5d14883513af79232a4a1fbb25565160243f2c5b27507c563bfd"><div class="ttname"><a href="desktop-entries_8h.html#a46c0ab3fa1e8b5d14883513af79232a4a1fbb25565160243f2c5b27507c563bfd">DESKTOP_ENTRY_DIRECTORY</a></div><div class="ttdeci">@ DESKTOP_ENTRY_DIRECTORY</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00032">desktop-entries.h:31</a></div></div>
 <div class="ttc" id="adesktop-entries_8h_html_a46c0ab3fa1e8b5d14883513af79232a4a7bf9ee3ddb52832ac80a97ad5b55f271"><div class="ttname"><a href="desktop-entries_8h.html#a46c0ab3fa1e8b5d14883513af79232a4a7bf9ee3ddb52832ac80a97ad5b55f271">DESKTOP_ENTRY_DESKTOP</a></div><div class="ttdeci">@ DESKTOP_ENTRY_DESKTOP</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00030">desktop-entries.h:30</a></div></div>
-<div class="ttc" id="adesktop-entries_8h_html_a5bd92d555b46894ecdcb6e6d67d6cb56"><div class="ttname"><a href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a></div><div class="ttdeci">struct DesktopEntrySet DesktopEntrySet</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00062">desktop-entries.h:62</a></div></div>
-<div class="ttc" id="adesktop-entries_8h_html_a619861e76c28e82fb0aa411f07b9e9bc"><div class="ttname"><a href="desktop-entries_8h.html#a619861e76c28e82fb0aa411f07b9e9bc">DesktopEntrySetForeachFunc</a></div><div class="ttdeci">void(* DesktopEntrySetForeachFunc)(const char *file_id, DesktopEntry *entry, gpointer user_data)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00077">desktop-entries.h:77</a></div></div>
+<div class="ttc" id="adesktop-entries_8h_html_a5bd92d555b46894ecdcb6e6d67d6cb56"><div class="ttname"><a href="desktop-entries_8h.html#a5bd92d555b46894ecdcb6e6d67d6cb56">DesktopEntrySet</a></div><div class="ttdeci">struct DesktopEntrySet DesktopEntrySet</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00060">desktop-entries.h:60</a></div></div>
+<div class="ttc" id="adesktop-entries_8h_html_a619861e76c28e82fb0aa411f07b9e9bc"><div class="ttname"><a href="desktop-entries_8h.html#a619861e76c28e82fb0aa411f07b9e9bc">DesktopEntrySetForeachFunc</a></div><div class="ttdeci">void(* DesktopEntrySetForeachFunc)(const char *file_id, DesktopEntry *entry, gpointer user_data)</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00075">desktop-entries.h:75</a></div></div>
 <div class="ttc" id="adesktop-entries_8h_html_af9a0c268cfc649e8aa52f280359a8f9e"><div class="ttname"><a href="desktop-entries_8h.html#af9a0c268cfc649e8aa52f280359a8f9e">DesktopEntry</a></div><div class="ttdeci">struct DesktopEntry DesktopEntry</div><div class="ttdef"><b>Definition</b> <a href="desktop-entries_8h_source.html#l00034">desktop-entries.h:34</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>

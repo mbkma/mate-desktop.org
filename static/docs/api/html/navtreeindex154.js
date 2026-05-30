@@ -1,9 +1,5 @@
 var NAVTREEINDEX154 =
 {
-"pluma-message-bus_8c.html#a9bd0c4ab7b01375526de92a3797d4d4a":[36,0,0,34,1,49,8],
-"pluma-message-bus_8c.html#aa49e1678c5a342828a48e9b197bb78bc":[36,0,0,34,1,49,6],
-"pluma-message-bus_8c.html#aa5a366188ada9f4ea335dcd0dbeed449":[36,0,0,34,1,49,16],
-"pluma-message-bus_8c.html#ab7199a85f5c016bbb0c140df310bf456":[36,0,0,34,1,49,11],
 "pluma-message-bus_8c.html#ac61dd6e65c31499974859fa5d7a36f93":[36,0,0,34,1,49,4],
 "pluma-message-bus_8c.html#ad3b5737257a85c7460ba983326e72ed4":[36,0,0,34,1,49,9],
 "pluma-message-bus_8c.html#adc67c2b0adecf570e3f17c9cdcd667ba":[36,0,0,34,1,49,13],
@@ -249,5 +245,9 @@ var NAVTREEINDEX154 =
 "pluma-plugin_8h.html#a0a87998f4e8cee4888f2a89df3d5639b":[36,0,0,34,3,0,1,0],
 "pluma-plugin_8h.html#a181997ff72152d607a729cfb69f51b1b":[36,0,0,34,3,0,1,8],
 "pluma-plugin_8h.html#a3854c393868dc914375a7ddc982b7e6b":[36,0,0,34,3,0,1,7],
-"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,5]
+"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,5],
+"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,4],
+"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,3],
+"pluma-plugin_8h.html#a6928648f3a3267c1e8ed2fdc9251baed":[36,0,0,34,3,0,1,6],
+"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,2]
 };

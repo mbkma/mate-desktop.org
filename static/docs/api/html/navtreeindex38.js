@@ -1,7 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"dir_e66920869e83ac360515228cbfe38be6.html":[36,0,0,8],
-"dir_e723e9d42478a9082408566e2b933ee5.html":[36,0,0,24,0,1],
 "dir_e77e199c87a6d79f3e07ae345bc7abea.html":[36,0,0,8,0,1],
 "dir_e841945b15662b87c9f43dea2bbc6dff.html":[36,0,0,0,0,1],
 "dir_e996b60bbb6a1258268b75c3d9042f35.html":[36,0,0,12,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX38 =
 "djvu-links_8h.html#a990a708aec6eae0300a4455877616e28":[36,0,0,0,0,1,4,1],
 "djvu-links_8h.html#aaac87a96788d804a83bbf2007e9b4515":[36,0,0,0,0,1,4,0],
 "djvu-links_8h.html#ab24daa7bdff2364b7977703c428fe704":[36,0,0,0,0,1,4,2],
-"djvu-links_8h_source.html":[36,0,0,0,0,1,4]
+"djvu-links_8h_source.html":[36,0,0,0,0,1,4],
+"djvu-text-page_8c.html":[36,0,0,0,0,1,5],
+"djvu-text-page_8c.html#a5445b1cb85167a2c3a24637de0a9e41e":[36,0,0,0,0,1,5,0]
 };

@@ -1,9 +1,5 @@
 var NAVTREEINDEX204 =
 {
-"structapm__info.html#ac7475e7643ef28d8c280e2395ef67ffe":[35,0,1001,3],
-"structchan__data.html":[35,0,1194],
-"structchan__data.html#a054ee0d0c5fbbba4457311d0ff53b630":[35,0,1194,2],
-"structchan__data.html#a071df9347c2b3142a812bbf04199ad8d":[35,0,1194,1],
 "structchan__data.html#a5b2c9ec02a4c993dc2bb395413509c78":[35,0,1194,0],
 "structchan__data.html#a72e9141f6939daaddb287662eed24cf6":[35,0,1194,4],
 "structchan__data.html#a888f10f008abee8e9c6e53cd9fe9fc00":[35,0,1194,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX204 =
 "structunz__global__info64__s.html#a628f94ac445f2a6cd64c9e82d481e738":[35,0,1665,0],
 "structunz__global__info64__s.html#ad9440fb3b019cfdac9ba8b8d83026ffc":[35,0,1665,1],
 "structunz__global__info__s.html":[35,0,1666],
-"structunz__global__info__s.html#a10b58ab57b62301de813ecac0e974363":[35,0,1666,1]
+"structunz__global__info__s.html#a10b58ab57b62301de813ecac0e974363":[35,0,1666,1],
+"structunz__global__info__s.html#a827d1cd1d09f12acd6c2ee12494cb320":[35,0,1666,0],
+"structxPropIconSize.html":[35,0,1670],
+"structxPropIconSize.html#a2e4a1067641c537d14ed33b7ec8cab3e":[35,0,1670,0],
+"structxPropIconSize.html#a7b94bfb0908c29682cc2a9bbc8e64748":[35,0,1670,2]
 };

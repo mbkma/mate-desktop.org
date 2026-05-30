@@ -1,9 +1,5 @@
 var NAVTREEINDEX171 =
 {
-"structCajaDropboxHookserv.html#af8205dbd6ea442445a57cbd36a71dce2":[35,0,1106,9],
-"structCajaEmblemSidebar.html":[35,0,1107],
-"structCajaEmblemSidebar.html#ab0b8c447afa823dfef96dd86f9f31be6":[35,0,1107,0],
-"structCajaEmblemSidebar.html#aee4d61662813611e85f106b4ef62ea01":[35,0,1107,1],
 "structCajaEmblemSidebarClass.html":[35,0,1108],
 "structCajaEmblemSidebarClass.html#a6ec6907bd94b19261f654522d7f5993b":[35,0,1108,0],
 "structCajaEntry.html":[35,0,1109],
@@ -249,5 +245,9 @@ var NAVTREEINDEX171 =
 "structCajaLocationEntry.html#aa495dc27bb138ffb7507b4042656de62":[35,0,1134,1],
 "structCajaLocationEntryClass.html":[35,0,1135],
 "structCajaLocationEntryClass.html#a6b9e54fa07cdd666a8df89a41b760988":[35,0,1135,0],
-"structCajaNavigationWindowSlot.html":[35,0,1136]
+"structCajaNavigationWindowSlot.html":[35,0,1136],
+"structCajaNavigationWindowSlot.html#a014cc5725941d96892a320bb4f5a5fbb":[35,0,1136,0],
+"structCajaNavigationWindowSlot.html#a09e2ec417f75069a22dacf95bab0f530":[35,0,1136,6],
+"structCajaNavigationWindowSlot.html#a17483491c384c507163ab153253f7ca8":[35,0,1136,1],
+"structCajaNavigationWindowSlot.html#a704d3de483fe975f80902b3257459707":[35,0,1136,5]
 };
