@@ -1,5 +1,10 @@
 var NAVTREEINDEX193 =
 {
+"struct__InvestApplet.html#a7a802f09df8d5706bb481e8246d9c5f0":[35,0,537,15],
+"struct__InvestApplet.html#a8ef23f920f80dc90dea105807a59b384":[35,0,537,9],
+"struct__InvestApplet.html#a9216d6b352d3282dbdeb5e26b23e2fb2":[35,0,537,1],
+"struct__InvestApplet.html#a93d0f49578a8217841dab02c31af9e1b":[35,0,537,3],
+"struct__InvestApplet.html#abb886a150738caee4f1854c0778bfd21":[35,0,537,7],
 "struct__InvestApplet.html#abb8c071930da7031c0dad1cff043d6b3":[35,0,537,5],
 "struct__InvestApplet.html#ac1fcb72053dff8aa55f5d35317ea895d":[35,0,537,11],
 "struct__InvestApplet.html#ac2d6e331a20bc7f2c52c200246fbce70":[35,0,537,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX193 =
 "struct__MateDACapplet.html#ae2b42fcca44ba4394d260721619e39b4":[35,0,573,40],
 "struct__MateDateEdit.html":[35,0,574],
 "struct__MateDateEdit.html#a6be97e74b1811951e1b418b146fbdb36":[35,0,574,0],
-"struct__MateDateEdit.html#ae261225bc66ce9237ac3d649c31f4b6f":[35,0,574,1],
-"struct__MateDateEditClass.html":[35,0,575],
-"struct__MateDateEditClass.html#a60175a827967f89832485c5eae10a036":[35,0,575,1],
-"struct__MateDateEditClass.html#a9b1c00ebcbdbad5ec62b3df06edeff6b":[35,0,575,4],
-"struct__MateDateEditClass.html#abe671633829ae934df382c61cc1d1c1b":[35,0,575,3],
-"struct__MateDateEditClass.html#ac77d4f7a3472891e62e07af191dd8bc2":[35,0,575,2]
+"struct__MateDateEdit.html#ae261225bc66ce9237ac3d649c31f4b6f":[35,0,574,1]
 };

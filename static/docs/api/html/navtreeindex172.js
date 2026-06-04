@@ -1,5 +1,7 @@
 var NAVTREEINDEX172 =
 {
+"structCajaNavigationWindowSlot.html#a17483491c384c507163ab153253f7ca8":[35,0,1136,1],
+"structCajaNavigationWindowSlot.html#a704d3de483fe975f80902b3257459707":[35,0,1136,5],
 "structCajaNavigationWindowSlot.html#a78d5c8b737e4bb1236bbfb98ff04581e":[35,0,1136,4],
 "structCajaNavigationWindowSlot.html#aeb9f960196d61e276e945e4cc94fcf8b":[35,0,1136,2],
 "structCajaNavigationWindowSlot.html#afa494189bac27bf8389e8b2dd8b5923c":[35,0,1136,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX172 =
 "structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[35,0,1195,0],
 "structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[35,0,1195,2],
 "structClockLocation.html":[35,0,1196],
-"structClockLocation.html#a909b50dfb1c5eec33c820743f1919836":[35,0,1196,0],
-"structClockLocationClass.html":[35,0,1197],
-"structClockLocationClass.html#a4c9723b753e164f560179c8070e8bdf4":[35,0,1197,1]
+"structClockLocation.html#a909b50dfb1c5eec33c820743f1919836":[35,0,1196,0]
 };

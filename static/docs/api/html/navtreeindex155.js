@@ -1,6 +1,6 @@
 var NAVTREEINDEX155 =
 {
-"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,1],
+"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,2],
 "pluma-plugin_8h_source.html":[36,0,0,34,3,0,1],
 "pluma-plugins-engine_8c.html":[36,0,0,34,1,63],
 "pluma-plugins-engine_8c.html#a0c06287ef7d8e0b5c172f56bd5e129be":[36,0,0,34,1,63,0],
@@ -80,8 +80,8 @@ var NAVTREEINDEX155 =
 "pluma-print-job_8h_source.html":[36,0,0,34,1,66],
 "pluma-print-preview_8c.html":[36,0,0,34,1,67],
 "pluma-print-preview_8c.html#a0d31149bc38d6699ba30234877e682ec":[36,0,0,34,1,67,1],
-"pluma-print-preview_8c.html#a13d0ee4c17ef61bacd09debbea945c2a":[36,0,0,34,1,67,3],
 "pluma-print-preview_8c.html#a13d0ee4c17ef61bacd09debbea945c2a":[36,0,0,34,1,67,2],
+"pluma-print-preview_8c.html#a13d0ee4c17ef61bacd09debbea945c2a":[36,0,0,34,1,67,3],
 "pluma-print-preview_8c.html#a4990117f4f705839ea8163f5eb90c048":[36,0,0,34,1,67,6],
 "pluma-print-preview_8c.html#a6a20c666b64ce522e9b89a3892354c3b":[36,0,0,34,1,67,5],
 "pluma-print-preview_8c.html#a7836c79db85b4e3a9506e6a64f1cccab":[36,0,0,34,1,67,4],

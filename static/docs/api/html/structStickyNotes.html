@@ -125,6 +125,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8fa50047103de6e2378b01080062ebcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f62e1dbc132ce85733a01e4319c159c" id="r_a9f62e1dbc132ce85733a01e4319c159c"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStickyNotes.html#a9f62e1dbc132ce85733a01e4319c159c">w_prefs_desktop</a></td></tr>
 <tr class="separator:a9f62e1dbc132ce85733a01e4319c159c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a208186be27c5fee87aa8dae9e7f611de" id="r_a208186be27c5fee87aa8dae9e7f611de"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStickyNotes.html#a208186be27c5fee87aa8dae9e7f611de">w_prefs_fixed_size</a></td></tr>
+<tr class="separator:a208186be27c5fee87aa8dae9e7f611de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7a7e6655de354d9fb15d79c70c80c6a" id="r_af7a7e6655de354d9fb15d79c70c80c6a"><td class="memItemLeft" align="right" valign="top">GList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStickyNotes.html#af7a7e6655de354d9fb15d79c70c80c6a">notes</a></td></tr>
 <tr class="separator:af7a7e6655de354d9fb15d79c70c80c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52cd59235323fee41fbb4b69ceddcfbc" id="r_a52cd59235323fee41fbb4b69ceddcfbc"><td class="memItemLeft" align="right" valign="top">GList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStickyNotes.html#a52cd59235323fee41fbb4b69ceddcfbc">applets</a></td></tr>
@@ -141,6 +143,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a20a5de68ee6f7cf2133d566d328f246e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6cd11c9ea7ea78f1539ab3d368994b3" id="r_ab6cd11c9ea7ea78f1539ab3d368994b3"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStickyNotes.html#ab6cd11c9ea7ea78f1539ab3d368994b3">visible</a></td></tr>
 <tr class="separator:ab6cd11c9ea7ea78f1539ab3d368994b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efb673dd26a1d2b71f77cf7769ee193" id="r_a2efb673dd26a1d2b71f77cf7769ee193"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStickyNotes.html#a2efb673dd26a1d2b71f77cf7769ee193">force_fixed_size</a></td></tr>
+<tr class="separator:a2efb673dd26a1d2b71f77cf7769ee193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -158,9 +162,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00055">55</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00056">56</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00278">applet_destroy_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00654">stickynotes_applet_panel_icon_get_geometry()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00579">stickynotes_applet_update_menus()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00620">stickynotes_applet_update_tooltips()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00278">applet_destroy_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00666">stickynotes_applet_panel_icon_get_geometry()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00591">stickynotes_applet_update_menus()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00632">stickynotes_applet_update_tooltips()</a>.</p>
 
 </div>
 </div>
@@ -178,7 +182,25 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00040">40</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
+
+</div>
+</div>
+<a id="a2efb673dd26a1d2b71f77cf7769ee193" name="a2efb673dd26a1d2b71f77cf7769ee193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efb673dd26a1d2b71f77cf7769ee193">&#9670;&#160;</a></span>force_fixed_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean StickyNotes::force_fixed_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00067">67</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -194,9 +216,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00057">57</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00058">58</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00458">stickynotes_applet_update_icon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00465">stickynotes_applet_update_icon()</a>.</p>
 
 </div>
 </div>
@@ -212,9 +234,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00058">58</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00059">59</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00458">stickynotes_applet_update_icon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00465">stickynotes_applet_update_icon()</a>.</p>
 
 </div>
 </div>
@@ -230,7 +252,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00063">63</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00064">64</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>.</p>
 
@@ -248,9 +270,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00062">62</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00063">63</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes_8c_source.html#l00770">stickynote_set_fixed_size()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>.</p>
 
 </div>
 </div>
@@ -266,9 +288,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00054">54</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00055">55</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00278">applet_destroy_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00568">preferences_apply_cb()</a>, <a class="el" href="stickynotes_8c_source.html#l00768">stickynotes_add()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00579">stickynotes_applet_update_menus()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00620">stickynotes_applet_update_tooltips()</a>, <a class="el" href="stickynotes_8c_source.html#l00962">stickynotes_load()</a>, <a class="el" href="stickynotes_8c_source.html#l00782">stickynotes_remove()</a>, and <a class="el" href="stickynotes_8c_source.html#l00823">stickynotes_save_now()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00278">applet_destroy_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00574">preferences_apply_cb()</a>, <a class="el" href="stickynotes_8c_source.html#l00811">stickynotes_add()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00591">stickynotes_applet_update_menus()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00632">stickynotes_applet_update_tooltips()</a>, <a class="el" href="stickynotes_8c_source.html#l01005">stickynotes_load()</a>, <a class="el" href="stickynotes_8c_source.html#l00825">stickynotes_remove()</a>, and <a class="el" href="stickynotes_8c_source.html#l00866">stickynotes_save_now()</a>.</p>
 
 </div>
 </div>
@@ -284,9 +306,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00060">60</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00061">61</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00379">menu_toggle_lock_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00527">preferences_color_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00555">preferences_font_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes_8c_source.html#l00413">stickynote_change_properties()</a>, <a class="el" href="stickynotes_8c_source.html#l00517">stickynote_set_color()</a>, <a class="el" href="stickynotes_8c_source.html#l00648">stickynote_set_font()</a>, <a class="el" href="stickynotes_8c_source.html#l00486">stickynote_set_title()</a>, <a class="el" href="stickynotes_8c_source.html#l00729">stickynote_set_visible()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00579">stickynotes_applet_update_menus()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>, <a class="el" href="stickynotes_8c_source.html#l00782">stickynotes_remove()</a>, and <a class="el" href="stickynotes_8c_source.html#l00823">stickynotes_save_now()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00379">menu_toggle_lock_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00533">preferences_color_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00561">preferences_font_cb()</a>, <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes_8c_source.html#l00416">stickynote_change_properties()</a>, <a class="el" href="stickynotes_8c_source.html#l00520">stickynote_set_color()</a>, <a class="el" href="stickynotes_8c_source.html#l00770">stickynote_set_fixed_size()</a>, <a class="el" href="stickynotes_8c_source.html#l00651">stickynote_set_font()</a>, <a class="el" href="stickynotes_8c_source.html#l00489">stickynote_set_title()</a>, <a class="el" href="stickynotes_8c_source.html#l00732">stickynote_set_visible()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00591">stickynotes_applet_update_menus()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>, <a class="el" href="stickynotes_8c_source.html#l00825">stickynotes_remove()</a>, and <a class="el" href="stickynotes_8c_source.html#l00866">stickynotes_save_now()</a>.</p>
 
 </div>
 </div>
@@ -302,9 +324,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00065">65</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00066">66</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, and <a class="el" href="stickynotes_8c_source.html#l00962">stickynotes_load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00165">stickynotes_applet_init()</a>, and <a class="el" href="stickynotes_8c_source.html#l01005">stickynotes_load()</a>.</p>
 
 </div>
 </div>
@@ -340,7 +362,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00045">45</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00527">preferences_color_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00533">preferences_color_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -358,7 +380,25 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00052">52</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
+
+</div>
+</div>
+<a id="a208186be27c5fee87aa8dae9e7f611de" name="a208186be27c5fee87aa8dae9e7f611de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a208186be27c5fee87aa8dae9e7f611de">&#9670;&#160;</a></span>w_prefs_fixed_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GtkWidget* StickyNotes::w_prefs_fixed_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00053">53</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -376,7 +416,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00048">48</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -394,7 +434,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00046">46</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00527">preferences_color_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00533">preferences_color_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -412,7 +452,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00051">51</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -430,7 +470,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00044">44</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -448,7 +488,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00050">50</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -466,7 +506,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00047">47</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -484,7 +524,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00049">49</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>
@@ -502,7 +542,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="stickynotes__applet_8h_source.html#l00043">43</a> of file <a class="el" href="stickynotes__applet_8h_source.html">stickynotes_applet.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00489">stickynotes_applet_update_prefs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="stickynotes__applet__callbacks_8c_source.html#l00472">preferences_save_cb()</a>, <a class="el" href="stickynotes__applet_8c_source.html#l00243">stickynotes_applet_init_prefs()</a>, and <a class="el" href="stickynotes__applet_8c_source.html#l00496">stickynotes_applet_update_prefs()</a>.</p>
 
 </div>
 </div>

@@ -4,6 +4,7 @@ var structStickyNote =
     [ "color", "structStickyNote.html#a7b5f52326b770fabdc9a019c1babe235", null ],
     [ "font", "structStickyNote.html#a7397e35f08650a7ecf8c70983c0daf47", null ],
     [ "font_color", "structStickyNote.html#aa76c0a703e87f112627385936c9ee8eb", null ],
+    [ "force_fixed_size", "structStickyNote.html#a57954a3f349186329b3d6d3bff1e0b12", null ],
     [ "h", "structStickyNote.html#a0372ba523aee67c04083327283682d5d", null ],
     [ "img_close", "structStickyNote.html#afc4c676106567a8bbad441674b8c9b3a", null ],
     [ "img_lock", "structStickyNote.html#a79f6f8cb228406afcefd51a1fb52d813", null ],

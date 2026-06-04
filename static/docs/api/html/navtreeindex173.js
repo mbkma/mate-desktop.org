@@ -1,5 +1,7 @@
 var NAVTREEINDEX173 =
 {
+"structClockLocationClass.html":[35,0,1197],
+"structClockLocationClass.html#a4c9723b753e164f560179c8070e8bdf4":[35,0,1197,1],
 "structClockLocationClass.html#a4ce8a317c9eaddf762b7675c7a4dcc0c":[35,0,1197,0],
 "structClockLocationClass.html#a6eaacbb54f597aca9ad7f45b16646a7c":[35,0,1197,2],
 "structClockLocationTile.html":[35,0,1198],
@@ -247,7 +249,5 @@ var NAVTREEINDEX173 =
 "structEggConsoleKitClass.html":[35,0,1243],
 "structEggConsoleKitClass.html#a19b69ff552735555d1619998489dc337":[35,0,1243,1],
 "structEggConsoleKitClass.html#ae2e8bcf9b1203dc7332ded8bab7cf67c":[35,0,1243,0],
-"structEggIdletime.html":[35,0,1244],
-"structEggIdletime.html#a35419dadbd27ba448fbc6d487c1f5cc1":[35,0,1244,0],
-"structEggIdletime.html#a6ab9250df79103fa20e610fc2e23d76c":[35,0,1244,1]
+"structEggIdletime.html":[35,0,1244]
 };

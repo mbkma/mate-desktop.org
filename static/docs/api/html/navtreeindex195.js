@@ -1,5 +1,10 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMixerBackendClass.html":[35,0,630],
+"struct__MateMixerBackendClass.html#a22716a49b57e25ad0cccabcb72740aff":[35,0,630,11],
+"struct__MateMixerBackendClass.html#a39a39df3f3ca5adda3c4731649e178c6":[35,0,630,4],
+"struct__MateMixerBackendClass.html#a4286bc266eb273814719453ab22af3ca":[35,0,630,12],
+"struct__MateMixerBackendClass.html#a46259527ea12bffd897192b1e8d19543":[35,0,630,15],
 "struct__MateMixerBackendClass.html#a521861bc8c2b6383eade726744341dce":[35,0,630,6],
 "struct__MateMixerBackendClass.html#a6adee1de3322a69a4af7ce9140f957f3":[35,0,630,14],
 "struct__MateMixerBackendClass.html#a7bd06310635d72c1b2e32341166bff84":[35,0,630,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateThemeMetaInfo.html#af64bf878ec051461076debb9c35ebc78":[35,0,676,14],
 "struct__MateThumbnailFactory.html":[35,0,677],
 "struct__MateThumbnailFactory.html#aad5baf0c427fce0886072be157019d58":[35,0,677,0],
-"struct__MateThumbnailFactory.html#af13b53dacd99616b185bb9dc283aa8fd":[35,0,677,1],
-"struct__MateThumbnailFactoryClass.html":[35,0,678],
-"struct__MateThumbnailFactoryClass.html#a108405f23f74061376e9c096c464a3df":[35,0,678,0],
-"struct__MateUIBuilderData.html":[35,0,679],
-"struct__MateUIBuilderData.html#a0e7076238ae89bbd9b05f810c6f533b6":[35,0,679,2],
-"struct__MateUIBuilderData.html#a6bb605570bc0c75db3666228b3f661e7":[35,0,679,0]
+"struct__MateThumbnailFactory.html#af13b53dacd99616b185bb9dc283aa8fd":[35,0,677,1]
 };

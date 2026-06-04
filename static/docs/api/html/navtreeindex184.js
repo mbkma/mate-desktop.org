@@ -1,5 +1,10 @@
 var NAVTREEINDEX184 =
 {
+"struct__CajaNavigationWindowPane.html#a50cab1692b1b2593ae30cc6653c759b0":[35,0,83,1],
+"struct__CajaNavigationWindowPane.html#a645a5723f03c03af44ac61a9babbc2e5":[35,0,83,10],
+"struct__CajaNavigationWindowPane.html#a78284695542c3dbcc77a2b4dc8b49238":[35,0,83,8],
+"struct__CajaNavigationWindowPane.html#a79c1dc8da0bf9ae7a3628d8b4a020d2e":[35,0,83,7],
+"struct__CajaNavigationWindowPane.html#a8ac63762fd066a9f9b79b8320942852b":[35,0,83,2],
 "struct__CajaNavigationWindowPane.html#aa9698d53390d95aa0c382a7a4d41973f":[35,0,83,3],
 "struct__CajaNavigationWindowPane.html#ab9f3b531dd58de025ee43047db2339cd":[35,0,83,4],
 "struct__CajaNavigationWindowPane.html#ac0d6027a789d6081a22d8e1b7ae20d30":[35,0,83,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX184 =
 "struct__CajaWindowPaneClass.html#aed8efeacb11a095665d77156d5167767":[35,0,120,4],
 "struct__CajaWindowPrivate.html":[35,0,121],
 "struct__CajaWindowPrivate.html#a0d1fbae93bd70a1fdc3d0b08caa90f51":[35,0,121,8],
-"struct__CajaWindowPrivate.html#a0e525eb6029ae6ae2b8491ae61f3d856":[35,0,121,7],
-"struct__CajaWindowPrivate.html#a37b7449a76378629be1c8a0ccce38b41":[35,0,121,16],
-"struct__CajaWindowPrivate.html#a3eb29dfd67d9fda5f5336d47a8fa4465":[35,0,121,15],
-"struct__CajaWindowPrivate.html#a4e1346037c58e17f8c65cdb430219e83":[35,0,121,11],
-"struct__CajaWindowPrivate.html#a51cc1bd9fe646689ff2d51fca4a82405":[35,0,121,3],
-"struct__CajaWindowPrivate.html#a52114b17a40964031ad924e62480271d":[35,0,121,17]
+"struct__CajaWindowPrivate.html#a0e525eb6029ae6ae2b8491ae61f3d856":[35,0,121,7]
 };

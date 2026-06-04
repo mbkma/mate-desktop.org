@@ -8,6 +8,7 @@ var stickynotes_8c =
     [ "stickynote_get_empty", "stickynotes_8c.html#a41d33e4cde484e14c1a7044b81a9de6d", null ],
     [ "stickynote_new", "stickynotes_8c.html#a9d6482414454378885de5ba87dc18520", null ],
     [ "stickynote_set_color", "stickynotes_8c.html#ac4f622ec93c5b15ddc491cc26e7debaa", null ],
+    [ "stickynote_set_fixed_size", "stickynotes_8c.html#a89f98b571a2b63a1ea1f644cc8b79309", null ],
     [ "stickynote_set_font", "stickynotes_8c.html#aed087c9de962344d16a0034b97716642", null ],
     [ "stickynote_set_locked", "stickynotes_8c.html#a2dd7b365c095ea4cf73bbebd133ecd40", null ],
     [ "stickynote_set_title", "stickynotes_8c.html#aa0119c592831951ecd2bff59b79c84c8", null ],

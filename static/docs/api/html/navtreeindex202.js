@@ -1,5 +1,10 @@
 var NAVTREEINDEX202 =
 {
+"struct__PlumaWindowPrivate.html#a5efe3cd1d4acc09e82fa4fbfd69cc16e":[35,0,895,17],
+"struct__PlumaWindowPrivate.html#a5f0647556b75af9c14f7abd2bc76a6cf":[35,0,895,23],
+"struct__PlumaWindowPrivate.html#a5fc4d1f1a803a2a66aeda8a7d929c87a":[35,0,895,26],
+"struct__PlumaWindowPrivate.html#a5fcf7c4fdc2c5a2a9428a6d9634945eb":[35,0,895,11],
+"struct__PlumaWindowPrivate.html#a65dc1d26cdf6bc72d73ac940e19f7caf":[35,0,895,2],
 "struct__PlumaWindowPrivate.html#a666638c8f6e5a26869ed3a1927ee5c7e":[35,0,895,13],
 "struct__PlumaWindowPrivate.html#a66784ab71293d56c3c44f58b82d74a2f":[35,0,895,18],
 "struct__PlumaWindowPrivate.html#a6b05b11d3635810ff6531417a7ce1781":[35,0,895,39],
@@ -244,10 +249,5 @@ var NAVTREEINDEX202 =
 "struct__TFMChar.html#a2892913ded9ead3cbe77f71200e771db":[35,0,980,3],
 "struct__TFMChar.html#aa50a8b507cc0ae81bca1ef5d0a4de987":[35,0,980,5],
 "struct__TFMChar.html#abe921a6c71fcbdedb8c3124d94244f1c":[35,0,980,2],
-"struct__TFMChar.html#ae111a7427b95abbe6ff1946a46e2c84b":[35,0,980,4],
-"struct__TFMInfo.html":[35,0,981],
-"struct__TFMInfo.html#a1b4a58967227b7728583c02b1a6621ee":[35,0,981,7],
-"struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7":[35,0,981,0],
-"struct__TFMInfo.html#a278509b73d4b47186bcd76e688e12eb9":[35,0,981,6],
-"struct__TFMInfo.html#a6a2bd7508b7d858bac7dd2061634bdfa":[35,0,981,2]
+"struct__TFMChar.html#ae111a7427b95abbe6ff1946a46e2c84b":[35,0,980,4]
 };

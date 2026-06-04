@@ -1,5 +1,10 @@
 var NAVTREEINDEX190 =
 {
+"struct__EvSidebarAttachmentsClass.html":[35,0,401],
+"struct__EvSidebarAttachmentsClass.html#a5f29ed5a6557779e1ef852e1b8aaeb01":[35,0,401,1],
+"struct__EvSidebarAttachmentsClass.html#aa8ce301f3ebc5220aabc011749bfc80b":[35,0,401,0],
+"struct__EvSidebarBookmarks.html":[35,0,402],
+"struct__EvSidebarBookmarks.html#a4b2bce58ee14ed398810ef27bf79535d":[35,0,402,0],
 "struct__EvSidebarBookmarks.html#adeb2a19409d7bdb5a0f7764a3bb488a5":[35,0,402,1],
 "struct__EvSidebarBookmarksClass.html":[35,0,403],
 "struct__EvSidebarBookmarksClass.html#a977f330f9e1ee3135d549642e4252a63":[35,0,403,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX190 =
 "struct__FrCommandClass.html#a4b6b7639174d06031c6ac95955ece093":[35,0,438,9],
 "struct__FrCommandClass.html#a694be59646b8b24efe87b37e85364ee6":[35,0,438,14],
 "struct__FrCommandClass.html#a83ea506dfdf4917fc77058448bba8c13":[35,0,438,2],
-"struct__FrCommandClass.html#a879e7a002f54158be71df2f8a46f71a9":[35,0,438,10],
-"struct__FrCommandClass.html#a9960198d0abb623645f20a79ff4a1a77":[35,0,438,7],
-"struct__FrCommandClass.html#a9d150d485fcde24b95f5d384dbdb13cb":[35,0,438,8],
-"struct__FrCommandClass.html#ac4a081f05f50c10f39c3c14a838f0438":[35,0,438,17],
-"struct__FrCommandClass.html#ac9afe8a6d344b1c544c4593f15894c29":[35,0,438,13],
-"struct__FrCommandClass.html#acd7ad78a1c5b7f2333e5825d032b1a24":[35,0,438,16]
+"struct__FrCommandClass.html#a879e7a002f54158be71df2f8a46f71a9":[35,0,438,10]
 };
