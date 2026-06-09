@@ -498,7 +498,7 @@ $(document).ready(function(){initNavTree('mp-serializer_8c_source.html',''); ini
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="mp-serializer_8h.html#aee12fd68f480c2d40267087276043b68ab0926570b4480bc66b5c2081dbaf2ec8">MP_DISPLAY_FORMAT_AUTOMATIC</a>:</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>        s0 = mp_to_string(serializer, x, &amp;n_digits);</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        <span class="keywordflow">if</span> (n_digits &lt;= serializer-&gt;priv-&gt;leading_digits)</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>        <span class="keywordflow">if</span> (serializer-&gt;<a class="code hl_variable" href="structMpSerializer.html#a0dc4bb685ef6091adb209e87f1decfd5">priv</a>-&gt;base != 10 || n_digits &lt;= serializer-&gt;priv-&gt;leading_digits)</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>            <span class="keywordflow">return</span> s0;</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>        <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>            g_free (s0);</div>
