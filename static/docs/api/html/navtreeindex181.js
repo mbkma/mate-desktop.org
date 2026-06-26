@@ -1,5 +1,10 @@
 var NAVTREEINDEX181 =
 {
+"structStickyNotesApplet.html#ad4ac6c5bcf86515677ad82d6cd964e6a":[35,0,1631,1],
+"structStickyNotesApplet.html#ada54ae69b020af95e499bf547ea52c5b":[35,0,1631,0],
+"structStickyNotesApplet.html#afe7c1b882a28263102afeee29a3e9722":[35,0,1631,2],
+"structStretchState.html":[35,0,1632],
+"structStretchState.html#a1774f68447ede8385bb9a9d2b5a230a1":[35,0,1632,4],
 "structStretchState.html#a4fc96532a46c20f3d71777c26a7bca48":[35,0,1632,3],
 "structStretchState.html#a9ceebb9365bb2808ac622c1dc163ce73":[35,0,1632,2],
 "structStretchState.html#aa4657bd5a7b14dfcdd2f4dadfd1ce76e":[35,0,1632,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX181 =
 "struct__AppResizer.html":[35,0,24],
 "struct__AppResizer.html#a0ad26e8252f3b7006e7800bd21db0814":[35,0,24,3],
 "struct__AppResizer.html#a6282c64d69b61e2394a545cd99c2ac14":[35,0,24,9],
-"struct__AppResizer.html#a6ae0f078b464318fa8c68e6d06429424":[35,0,24,0],
-"struct__AppResizer.html#a825369a70348386880d2ec283f56ae9b":[35,0,24,5],
-"struct__AppResizer.html#aac82220200d4ecddecb9924608ade1cb":[35,0,24,7],
-"struct__AppResizer.html#abc10e5b3882b18a946684526f4cab0b1":[35,0,24,6],
-"struct__AppResizer.html#ac1d0c155b2b92635f8ec1ed20d833f39":[35,0,24,8],
-"struct__AppResizer.html#ac26618255d29697f039b7e8d003f3a3f":[35,0,24,4]
+"struct__AppResizer.html#a6ae0f078b464318fa8c68e6d06429424":[35,0,24,0]
 };

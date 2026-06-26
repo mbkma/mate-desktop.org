@@ -1,5 +1,10 @@
 var NAVTREEINDEX183 =
 {
+"struct__CajaColumnClass.html#a6448f8c2a018a547b96bd82648c12079":[35,0,50,0],
+"struct__CajaColumnProviderIface.html":[35,0,51],
+"struct__CajaColumnProviderIface.html#a065192b3ad3b9268f1fc0e588f9d5468":[35,0,51,1],
+"struct__CajaColumnProviderIface.html#a4c3777d3cdbf20e48c023e81ebb049b3":[35,0,51,0],
+"struct__CajaConfigurableIface.html":[35,0,52],
 "struct__CajaConfigurableIface.html#a89f2f1734040210d7d8f6b10a206dbb9":[35,0,52,0],
 "struct__CajaConfigurableIface.html#aaad468a1b52510224600c39e3b3ba099":[35,0,52,1],
 "struct__CajaConnectServerDialog.html":[35,0,53],
@@ -244,10 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaNavigationWindow.html#a255cc384daa94a3b2aaca4e6ebc78b1d":[35,0,81,1],
 "struct__CajaNavigationWindow.html#a47b5ca7b4e8eb5eed16d91935dd6443c":[35,0,81,2],
 "struct__CajaNavigationWindow.html#a977c18a346fae0378966c72fa895556c":[35,0,81,3],
-"struct__CajaNavigationWindow.html#ac1ac863899054944cafda9abc9ee0dbf":[35,0,81,0],
-"struct__CajaNavigationWindowClass.html":[35,0,82],
-"struct__CajaNavigationWindowClass.html#a1c1ef5c9032f4002fdba66da6095e1a1":[35,0,82,0],
-"struct__CajaNavigationWindowPane.html":[35,0,83],
-"struct__CajaNavigationWindowPane.html#a2272b60e14310223cb633b95e99f1e0e":[35,0,83,9],
-"struct__CajaNavigationWindowPane.html#a4dca4ec3a1a4adffb2c05c37938d6c2d":[35,0,83,11]
+"struct__CajaNavigationWindow.html#ac1ac863899054944cafda9abc9ee0dbf":[35,0,81,0]
 };

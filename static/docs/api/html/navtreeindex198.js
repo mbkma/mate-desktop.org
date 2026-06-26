@@ -1,5 +1,11 @@
 var NAVTREEINDEX198 =
 {
+"struct__MetaFrameStyleSet.html#a3f2e8fccf9e6f952b35833fc7afda465":[35,0,710,9],
+"struct__MetaFrameStyleSet.html#a413f2093822d5cd8feb8b29023bb45e3":[35,0,710,8],
+"struct__MetaFrameStyleSet.html#a5782d8a7c4cc722194558131d91e41c1":[35,0,710,6],
+"struct__MetaFrameStyleSet.html#a9d8d5be8c4bd48f95a4a8c14443ec9a5":[35,0,710,0],
+"struct__MetaFrameStyleSet.html#ab00174203ff87fca98415ab92ee83d57":[35,0,710,4],
+"struct__MetaFrames.html":[35,0,707],
 "struct__MetaFrames.html#a0d1699ee30040729c784f9e4b048695c":[35,0,707,8],
 "struct__MetaFrames.html#a257377fe7554ffa32411c34581e86856":[35,0,707,1],
 "struct__MetaFrames.html#a35a6056d347bcf276d692764f5b434fd":[35,0,707,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX198 =
 "struct__MetaWindow.html#a7aad7c38452a644de1b3fb87f06c588f":[35,0,724,31],
 "struct__MetaWindow.html#a7ad9eb214eb803eb9de73897b2d35b63":[35,0,724,34],
 "struct__MetaWindow.html#a7cd2db9df010be90d772155de6b22ef6":[35,0,724,23],
-"struct__MetaWindow.html#a7f324c6d6d8ef4385d3d07ab71ce09d2":[35,0,724,59],
-"struct__MetaWindow.html#a804172f38b06257042c6e002f7912bb6":[35,0,724,89],
-"struct__MetaWindow.html#a8070a078386ccec1f5eff52df2792991":[35,0,724,118],
-"struct__MetaWindow.html#a80d2bccd6d26a939a930f0365113128c":[35,0,724,86],
-"struct__MetaWindow.html#a81e84528ab7970f830815a05e5ebfe2f":[35,0,724,84],
-"struct__MetaWindow.html#a82b7ff0e46fb2b9fc2ebb81e17740f53":[35,0,724,1],
-"struct__MetaWindow.html#a8315d04b9a1403e51c0dd3811570f3b5":[35,0,724,40]
+"struct__MetaWindow.html#a7f324c6d6d8ef4385d3d07ab71ce09d2":[35,0,724,59]
 };

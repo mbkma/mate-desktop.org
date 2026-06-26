@@ -1,5 +1,11 @@
 var NAVTREEINDEX192 =
 {
+"struct__GdictContextIface.html#a8b07348477a582ce668f56103afe5556":[35,0,477,9],
+"struct__GdictContextIface.html#a8f6063c7e9527949d749a8d6fd7e6f87":[35,0,477,5],
+"struct__GdictContextIface.html#a999f52ceaca8bc75dcbc85f073bd1272":[35,0,477,8],
+"struct__GdictContextIface.html#a9ce1250585bde594dc2b449bb60837ee":[35,0,477,0],
+"struct__GdictContextIface.html#aa77e2e48d98d4d9d365ebf767074611f":[35,0,477,2],
+"struct__GdictContextIface.html#aab9bb0ac7459409e9458504633ab5f90":[35,0,477,3],
 "struct__GdictContextIface.html#abaa8c73a3dd32ac7e1cca55dcd7f0c21":[35,0,477,1],
 "struct__GdictContextIface.html#ac6fca78550e78219760fa5737125e9b1":[35,0,477,11],
 "struct__GdictContextIface.html#ace2641b30b0d241befa154d5af816685":[35,0,477,4],
@@ -243,11 +249,5 @@ var NAVTREEINDEX192 =
 "struct__GvcStreamStatusIcon.html#adace2786383e8cb06fa42c9ad6c90cd2":[35,0,535,1],
 "struct__GvcStreamStatusIconClass.html":[35,0,536],
 "struct__GvcStreamStatusIconClass.html#a56cd4fbddb18aa59cd7eb77c76cfd399":[35,0,536,0],
-"struct__InvestApplet.html":[35,0,537],
-"struct__InvestApplet.html#a066bee75f36f198a444066cb5cd0cbf7":[35,0,537,16],
-"struct__InvestApplet.html#a0c39e4e73ce5d7174dd857292d12f3d4":[35,0,537,10],
-"struct__InvestApplet.html#a2f25c039adc0711115af2955baa95ac7":[35,0,537,0],
-"struct__InvestApplet.html#a308e1eff8459453b20cb5bbc99aaa183":[35,0,537,18],
-"struct__InvestApplet.html#a70ecbc1fa18c4e392e27bf5eb2be9ab4":[35,0,537,12],
-"struct__InvestApplet.html#a79fa6fb0f1625640da4a8f41866b0c88":[35,0,537,4]
+"struct__InvestApplet.html":[35,0,537]
 };

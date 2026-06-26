@@ -1,5 +1,10 @@
 var NAVTREEINDEX170 =
 {
+"structCactClipboard.html":[35,0,1040],
+"structCactClipboard.html#a12909c5dbf310236c3cee270a3056af5":[35,0,1040,1],
+"structCactClipboard.html#ac6ba5640e198a080695ffe60fcba184a":[35,0,1040,0],
+"structCactClipboardClass.html":[35,0,1041],
+"structCactClipboardClass.html#ab7ac516ea7f9c7f675c3dab8fda92d7d":[35,0,1041,1],
 "structCactClipboardClass.html#ac13621e700211a357892fd002e45bc24":[35,0,1041,0],
 "structCactConfirmLogout.html":[35,0,1042],
 "structCactConfirmLogout.html#a6808fcb8069322a0581bf4e77a82b186":[35,0,1042,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX170 =
 "structCajaDropboxHookserv.html#a97a2acd9f0a8ae65b350c1f5f68991e5":[35,0,1106,3],
 "structCajaDropboxHookserv.html#a9e262fb98120eb336074f8d27fa9579b":[35,0,1106,6],
 "structCajaDropboxHookserv.html#ac90937e0ab772608ecbc07ba5b8620f4":[35,0,1106,1],
-"structCajaDropboxHookserv.html#acb782faa854718f32be2c796ce620752":[35,0,1106,11],
-"structCajaDropboxHookserv.html#ace62bc003da106db6eb32f73b666d227":[35,0,1106,8],
-"structCajaDropboxHookserv.html#acfdc49eb0ff0cd49e7a0b765176b0ca6":[35,0,1106,2],
-"structCajaDropboxHookserv.html#af07224fdac091368b0bbf12b23998c2a":[35,0,1106,10],
-"structCajaDropboxHookserv.html#af8205dbd6ea442445a57cbd36a71dce2":[35,0,1106,9],
-"structCajaEmblemSidebar.html":[35,0,1107]
+"structCajaDropboxHookserv.html#acb782faa854718f32be2c796ce620752":[35,0,1106,11]
 };

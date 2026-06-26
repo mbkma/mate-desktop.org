@@ -1,5 +1,11 @@
 var NAVTREEINDEX202 =
 {
+"struct__PlumaWindowPrivate.html#a433dbffa1cc808bf5f449afdb7ddee08":[35,0,895,0],
+"struct__PlumaWindowPrivate.html#a49cc6b88b92b6c8ca8a89916b9cd527f":[35,0,895,27],
+"struct__PlumaWindowPrivate.html#a51205629a5a4a2b17a015eeb80c37832":[35,0,895,15],
+"struct__PlumaWindowPrivate.html#a5821bbb442f0c8fe56fd2a3d8da1307c":[35,0,895,48],
+"struct__PlumaWindowPrivate.html#a5ae8bc3710f348e622b63b1fceedeac8":[35,0,895,29],
+"struct__PlumaWindowPrivate.html#a5b40b8e0825e7f1ccd10d2d5a178f2f8":[35,0,895,19],
 "struct__PlumaWindowPrivate.html#a5efe3cd1d4acc09e82fa4fbfd69cc16e":[35,0,895,17],
 "struct__PlumaWindowPrivate.html#a5f0647556b75af9c14f7abd2bc76a6cf":[35,0,895,23],
 "struct__PlumaWindowPrivate.html#a5fc4d1f1a803a2a66aeda8a7d929c87a":[35,0,895,26],
@@ -243,11 +249,5 @@ var NAVTREEINDEX202 =
 "struct__SushiFontWidget.html#af716a1afe5c9a0bad78b7c0d0b897283":[35,0,950,0],
 "struct__SushiFontWidgetClass.html":[35,0,951],
 "struct__SushiFontWidgetClass.html#a33fdbd74600ee6d504f28a040050d95c":[35,0,951,0],
-"struct__TFMChar.html":[35,0,980],
-"struct__TFMChar.html#a21eec4160d1d3e18aa833027e756ae9f":[35,0,980,1],
-"struct__TFMChar.html#a2300985c2ff8772bba1c0bc4dfef8d06":[35,0,980,0],
-"struct__TFMChar.html#a2892913ded9ead3cbe77f71200e771db":[35,0,980,3],
-"struct__TFMChar.html#aa50a8b507cc0ae81bca1ef5d0a4de987":[35,0,980,5],
-"struct__TFMChar.html#abe921a6c71fcbdedb8c3124d94244f1c":[35,0,980,2],
-"struct__TFMChar.html#ae111a7427b95abbe6ff1946a46e2c84b":[35,0,980,4]
+"struct__TFMChar.html":[35,0,980]
 };

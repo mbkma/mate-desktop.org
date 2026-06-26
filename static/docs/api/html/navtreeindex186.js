@@ -1,5 +1,10 @@
 var NAVTREEINDEX186 =
 {
+"struct__DviFontInfo.html":[35,0,176],
+"struct__DviFontInfo.html#a015b34903d42959b985def9c71fa4929":[35,0,176,7],
+"struct__DviFontInfo.html#a2e3fda20f12a24f1a68593c3fdaedd16":[35,0,176,5],
+"struct__DviFontInfo.html#a90a0c947b030fc589cb4ad3221e253fa":[35,0,176,2],
+"struct__DviFontInfo.html#abb0ab7f3ab357e50ac1c51457dbbe272":[35,0,176,3],
 "struct__DviFontInfo.html#ad4edb3eab12698cfb453f03f9b8b3c89":[35,0,176,10],
 "struct__DviFontInfo.html#adcb16a2cb97759e8e7881ab87c683482":[35,0,176,1],
 "struct__DviFontInfo.html#ae6c183b80ef7660efee8a065499340bc":[35,0,176,9],
@@ -244,10 +249,5 @@ var NAVTREEINDEX186 =
 "struct__EggFileFormatChooser.html#a11ec5b1bd63711567a2312737d162a0e":[35,0,207,0],
 "struct__EggFileFormatChooserClass.html":[35,0,208],
 "struct__EggFileFormatChooserClass.html#a27929d476b25b0257263bd790eb4c8c0":[35,0,208,0],
-"struct__EggFileFormatChooserClass.html#afbb33767d84a97f8d957b4298fffb584":[35,0,208,1],
-"struct__EggFindBar.html":[35,0,209],
-"struct__EggFindBar.html#a0913eba64f26b6aa95954ce242305603":[35,0,209,0],
-"struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d":[35,0,209,1],
-"struct__EggFindBarClass.html":[35,0,210],
-"struct__EggFindBarClass.html#a22bb3e8dc7e3ad53f87a369947fcb059":[35,0,210,7]
+"struct__EggFileFormatChooserClass.html#afbb33767d84a97f8d957b4298fffb584":[35,0,208,1]
 };

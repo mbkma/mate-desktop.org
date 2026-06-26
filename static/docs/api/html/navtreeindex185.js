@@ -1,5 +1,10 @@
 var NAVTREEINDEX185 =
 {
+"struct__CajaWindowPaneClass.html#ad3ee0c0bde667e9309233b8a77662e32":[35,0,120,0],
+"struct__CajaWindowPaneClass.html#aed8efeacb11a095665d77156d5167767":[35,0,120,4],
+"struct__CajaWindowPrivate.html":[35,0,121],
+"struct__CajaWindowPrivate.html#a0d1fbae93bd70a1fdc3d0b08caa90f51":[35,0,121,8],
+"struct__CajaWindowPrivate.html#a0e525eb6029ae6ae2b8491ae61f3d856":[35,0,121,7],
 "struct__CajaWindowPrivate.html#a37b7449a76378629be1c8a0ccce38b41":[35,0,121,16],
 "struct__CajaWindowPrivate.html#a3eb29dfd67d9fda5f5336d47a8fa4465":[35,0,121,15],
 "struct__CajaWindowPrivate.html#a4e1346037c58e17f8c65cdb430219e83":[35,0,121,11],
@@ -244,10 +249,5 @@ var NAVTREEINDEX185 =
 "struct__DviFontChar.html#ac6114e5936bcd7a01a4813d9be5def75":[35,0,175,2],
 "struct__DviFontChar.html#ac79e872ae0cd7ebacac2a59c5fa106b1":[35,0,175,15],
 "struct__DviFontChar.html#adcaaa96292c1115adc34797ee36b272f":[35,0,175,0],
-"struct__DviFontChar.html#afd4df703ad4a184c9e109c098f74a6fd":[35,0,175,14],
-"struct__DviFontInfo.html":[35,0,176],
-"struct__DviFontInfo.html#a015b34903d42959b985def9c71fa4929":[35,0,176,7],
-"struct__DviFontInfo.html#a2e3fda20f12a24f1a68593c3fdaedd16":[35,0,176,5],
-"struct__DviFontInfo.html#a90a0c947b030fc589cb4ad3221e253fa":[35,0,176,2],
-"struct__DviFontInfo.html#abb0ab7f3ab357e50ac1c51457dbbe272":[35,0,176,3]
+"struct__DviFontChar.html#afd4df703ad4a184c9e109c098f74a6fd":[35,0,175,14]
 };

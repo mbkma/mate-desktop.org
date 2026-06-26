@@ -1,5 +1,11 @@
 var NAVTREEINDEX200 =
 {
+"struct__NullBackendClass.html":[35,0,757],
+"struct__NullBackendClass.html#aa301c06596d87c82e4907147aabf6c26":[35,0,757,0],
+"struct__OssBackend.html":[35,0,758],
+"struct__OssBackend.html#a6f566bc35fd0c883bb926d13cece6271":[35,0,758,0],
+"struct__OssBackend.html#ac30e8a8df296c6502db684e6677fcdf6":[35,0,758,1],
+"struct__OssBackendClass.html":[35,0,759],
 "struct__OssBackendClass.html#aa5c975f5cd08334f653b8d7744766165":[35,0,759,0],
 "struct__OssDevice.html":[35,0,760],
 "struct__OssDevice.html#a314c827c873ec6e71599c4cb672adf8e":[35,0,760,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX200 =
 "struct__PlumaFileBookmarksStoreClass.html#ad5d79f2fecaac9bed66d52f225cbaf9a":[35,0,824,0],
 "struct__PlumaFileBrowserPlugin.html":[35,0,825],
 "struct__PlumaFileBrowserPlugin.html#aaa84ded12eb22ccd22d79a6422f16e02":[35,0,825,1],
-"struct__PlumaFileBrowserPlugin.html#ac757559bf048ddbdfb461fe9a36c3f50":[35,0,825,0],
-"struct__PlumaFileBrowserPluginClass.html":[35,0,826],
-"struct__PlumaFileBrowserPluginClass.html#a0b03bd7d5e8b71815bcaf17bc31c3df4":[35,0,826,0],
-"struct__PlumaFileBrowserStore.html":[35,0,827],
-"struct__PlumaFileBrowserStore.html#a24f1c1582857e3003b5ce810d88b3ace":[35,0,827,0],
-"struct__PlumaFileBrowserStore.html#a835f48fc9ac262cd86ca6b9412418e13":[35,0,827,1],
-"struct__PlumaFileBrowserStoreClass.html":[35,0,828]
+"struct__PlumaFileBrowserPlugin.html#ac757559bf048ddbdfb461fe9a36c3f50":[35,0,825,0]
 };

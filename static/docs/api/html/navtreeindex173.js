@@ -1,5 +1,10 @@
 var NAVTREEINDEX173 =
 {
+"structCharMetricInfo.html#adb8e4767e585371e2f929149d7c223c7":[35,0,1195,1],
+"structCharMetricInfo.html#ae4510ed299356e805c66dbfe5dd86202":[35,0,1195,0],
+"structCharMetricInfo.html#af80521649706b11528a0614168d0d32f":[35,0,1195,2],
+"structClockLocation.html":[35,0,1196],
+"structClockLocation.html#a909b50dfb1c5eec33c820743f1919836":[35,0,1196,0],
 "structClockLocationClass.html":[35,0,1197],
 "structClockLocationClass.html#a4c9723b753e164f560179c8070e8bdf4":[35,0,1197,1],
 "structClockLocationClass.html#a4ce8a317c9eaddf762b7675c7a4dcc0c":[35,0,1197,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX173 =
 "structEelWrapTableClass.html":[35,0,1241],
 "structEelWrapTableClass.html#aa49202620c7cfc86a4e32e5fddb8560b":[35,0,1241,0],
 "structEggConsoleKit.html":[35,0,1242],
-"structEggConsoleKit.html#a6d48acd1e89644c7e5e8c595dee06ce6":[35,0,1242,0],
-"structEggConsoleKit.html#afcca6ee225f29d73f239f3f5698d5322":[35,0,1242,1],
-"structEggConsoleKitClass.html":[35,0,1243],
-"structEggConsoleKitClass.html#a19b69ff552735555d1619998489dc337":[35,0,1243,1],
-"structEggConsoleKitClass.html#ae2e8bcf9b1203dc7332ded8bab7cf67c":[35,0,1243,0],
-"structEggIdletime.html":[35,0,1244]
+"structEggConsoleKit.html#a6d48acd1e89644c7e5e8c595dee06ce6":[35,0,1242,0]
 };

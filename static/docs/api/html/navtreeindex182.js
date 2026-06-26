@@ -1,5 +1,10 @@
 var NAVTREEINDEX182 =
 {
+"struct__AppResizer.html#a825369a70348386880d2ec283f56ae9b":[35,0,24,5],
+"struct__AppResizer.html#aac82220200d4ecddecb9924608ade1cb":[35,0,24,7],
+"struct__AppResizer.html#abc10e5b3882b18a946684526f4cab0b1":[35,0,24,6],
+"struct__AppResizer.html#ac1d0c155b2b92635f8ec1ed20d833f39":[35,0,24,8],
+"struct__AppResizer.html#ac26618255d29697f039b7e8d003f3a3f":[35,0,24,4],
 "struct__AppResizer.html#acf40126ede641d99b5cfb8052739742c":[35,0,24,1],
 "struct__AppResizer.html#aebdb00fe010cb9ea705b44358b98b968":[35,0,24,2],
 "struct__AppResizerClass.html":[35,0,25],
@@ -244,10 +249,5 @@ var NAVTREEINDEX182 =
 "struct__CajaColumn.html":[35,0,49],
 "struct__CajaColumn.html#a97259737ee0fac9fd6fc783f9a9e633e":[35,0,49,0],
 "struct__CajaColumn.html#aaa1311a4619ba536248d4853f847c932":[35,0,49,1],
-"struct__CajaColumnClass.html":[35,0,50],
-"struct__CajaColumnClass.html#a6448f8c2a018a547b96bd82648c12079":[35,0,50,0],
-"struct__CajaColumnProviderIface.html":[35,0,51],
-"struct__CajaColumnProviderIface.html#a065192b3ad3b9268f1fc0e588f9d5468":[35,0,51,1],
-"struct__CajaColumnProviderIface.html#a4c3777d3cdbf20e48c023e81ebb049b3":[35,0,51,0],
-"struct__CajaConfigurableIface.html":[35,0,52]
+"struct__CajaColumnClass.html":[35,0,50]
 };

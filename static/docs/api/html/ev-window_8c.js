@@ -12,6 +12,7 @@ var ev_window_8c =
     [ "EV_PRINT_SETTINGS_GROUP", "ev-window_8c.html#a8895f83f7e2318bdcf5c1a150db2548b", null ],
     [ "EV_WINDOW_IS_PRESENTATION", "ev-window_8c.html#a2d1d292e9ac2d3671d712e492f79adbc", null ],
     [ "g_file_info_get_modification_date_time", "ev-window_8c.html#a06cf4bf9e589bfc4db1c0fd0cc38d3b6", null ],
+    [ "GS_ALLOW_LINKS_CHANGE_ZOOM", "ev-window_8c.html#af3d5dcd68c5a32952952b37faa6b8600", null ],
     [ "GS_AUTO_RELOAD", "ev-window_8c.html#aa6ae215009a4a6f1fd746c813db8d0f5", null ],
     [ "GS_LAST_DOCUMENT_DIRECTORY", "ev-window_8c.html#a91691a60b7413762c506408d4b100d34", null ],
     [ "GS_LAST_PICTURES_DIRECTORY", "ev-window_8c.html#a09a47d00964af8178941b621cbe18e62", null ],

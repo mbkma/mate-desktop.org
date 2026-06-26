@@ -1,5 +1,10 @@
 var NAVTREEINDEX169 =
 {
+"structAccessxStatusApplet.html#a43792a3f907874d1a6f8504454806b33":[35,0,995,1],
+"structAccessxStatusApplet.html#a5745d1a34d16d57fb76653f5079e069d":[35,0,995,17],
+"structAccessxStatusApplet.html#a68022f5dda834e281b0a4c89fabda209":[35,0,995,6],
+"structAccessxStatusApplet.html#a6ccb664ecb7ac3f7c5ed0a7e981e3cec":[35,0,995,13],
+"structAccessxStatusApplet.html#a7a5082bd7bb62e2a651f3a36b4a19749":[35,0,995,2],
 "structAccessxStatusApplet.html#a97a6499795ec5d35f2295cd146ba9baf":[35,0,995,18],
 "structAccessxStatusApplet.html#a9fb2cf313b1dd8caec2ea736dc5f0056":[35,0,995,8],
 "structAccessxStatusApplet.html#aa19881be2c47bf7d1b92890d0816bacb":[35,0,995,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX169 =
 "structCactAssistantImport.html#adf4a7d6cd35e6c7bc784e913bae07fca":[35,0,1038,1],
 "structCactAssistantImportClass.html":[35,0,1039],
 "structCactAssistantImportClass.html#a0bd8aebee38647306d975171ffd540f0":[35,0,1039,0],
-"structCactAssistantImportClass.html#a6a842fa80e019e37ffac953e4f1afc2c":[35,0,1039,1],
-"structCactClipboard.html":[35,0,1040],
-"structCactClipboard.html#a12909c5dbf310236c3cee270a3056af5":[35,0,1040,1],
-"structCactClipboard.html#ac6ba5640e198a080695ffe60fcba184a":[35,0,1040,0],
-"structCactClipboardClass.html":[35,0,1041],
-"structCactClipboardClass.html#ab7ac516ea7f9c7f675c3dab8fda92d7d":[35,0,1041,1]
+"structCactAssistantImportClass.html#a6a842fa80e019e37ffac953e4f1afc2c":[35,0,1039,1]
 };

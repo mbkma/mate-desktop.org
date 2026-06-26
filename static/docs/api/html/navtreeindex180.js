@@ -1,5 +1,10 @@
 var NAVTREEINDEX180 =
 {
+"structNotificationHistoryItem.html#ac83287a11ce85cd518ed4d41fd389990":[35,0,1604,0],
+"structNotificationHistoryItem.html#ac9c6aa3ec760b687afea4b51230fff4d":[35,0,1604,2],
+"structNotificationHistoryItem.html#ae8738016d12bb9b3a4fed0a951101fe6":[35,0,1604,1],
+"structOpenFile.html":[35,0,1605],
+"structOpenFile.html#a070b2040163a4657e82e75e3fa970ba7":[35,0,1605,1],
 "structOpenFile.html#a52c03c97433090134cc2d4959022b399":[35,0,1605,3],
 "structOpenFile.html#a74cc5e0f776029ef68774c12ec8c8391":[35,0,1605,2],
 "structOpenFile.html#a9194b16e31d5ba43989ca4b8eb8951e4":[35,0,1605,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX180 =
 "structStickyNotesApplet.html#a5073e743a006e4b859d4f383648da9f6":[35,0,1631,5],
 "structStickyNotesApplet.html#a6f4133dc43b140e1575fd7a26e067e0f":[35,0,1631,3],
 "structStickyNotesApplet.html#ab0977c4e8eb54bce1e02828ef2f34819":[35,0,1631,4],
-"structStickyNotesApplet.html#ad305269ca75ac6bcea3a29979916b8c2":[35,0,1631,7],
-"structStickyNotesApplet.html#ad4ac6c5bcf86515677ad82d6cd964e6a":[35,0,1631,1],
-"structStickyNotesApplet.html#ada54ae69b020af95e499bf547ea52c5b":[35,0,1631,0],
-"structStickyNotesApplet.html#afe7c1b882a28263102afeee29a3e9722":[35,0,1631,2],
-"structStretchState.html":[35,0,1632],
-"structStretchState.html#a1774f68447ede8385bb9a9d2b5a230a1":[35,0,1632,4]
+"structStickyNotesApplet.html#ad305269ca75ac6bcea3a29979916b8c2":[35,0,1631,7]
 };

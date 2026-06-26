@@ -1,5 +1,10 @@
 var NAVTREEINDEX174 =
 {
+"structEggConsoleKit.html#afcca6ee225f29d73f239f3f5698d5322":[35,0,1242,1],
+"structEggConsoleKitClass.html":[35,0,1243],
+"structEggConsoleKitClass.html#a19b69ff552735555d1619998489dc337":[35,0,1243,1],
+"structEggConsoleKitClass.html#ae2e8bcf9b1203dc7332ded8bab7cf67c":[35,0,1243,0],
+"structEggIdletime.html":[35,0,1244],
 "structEggIdletime.html#a35419dadbd27ba448fbc6d487c1f5cc1":[35,0,1244,0],
 "structEggIdletime.html#a6ab9250df79103fa20e610fc2e23d76c":[35,0,1244,1],
 "structEggIdletimeClass.html":[35,0,1245],
@@ -244,10 +249,5 @@ var NAVTREEINDEX174 =
 "structFMTreeViewClass.html":[35,0,1287],
 "structFMTreeViewClass.html#a469dfe4c6f45fafbdd41a2bcf1bfd294":[35,0,1287,0],
 "structFRListModel.html":[35,0,1296],
-"structFRListModel.html#a4b4519c3b7dafdf4b0670de0d167ba7c":[35,0,1296,0],
-"structFRListModelClass.html":[35,0,1297],
-"structFRListModelClass.html#aa203a96c2affc5c097621987f5c7dd57":[35,0,1297,0],
-"structFileData.html":[35,0,1266],
-"structFileData.html#a10f61b0a7440ea03ab2240c1e17e665b":[35,0,1266,6],
-"structFileData.html#a17760ae9796e100719e15cb848b66d8b":[35,0,1266,1]
+"structFRListModel.html#a4b4519c3b7dafdf4b0670de0d167ba7c":[35,0,1296,0]
 };

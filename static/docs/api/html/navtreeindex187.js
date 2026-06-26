@@ -1,5 +1,10 @@
 var NAVTREEINDEX187 =
 {
+"struct__EggFindBar.html":[35,0,209],
+"struct__EggFindBar.html#a0913eba64f26b6aa95954ce242305603":[35,0,209,0],
+"struct__EggFindBar.html#a877a0a6a37c175bc0f78e1bac03ef39d":[35,0,209,1],
+"struct__EggFindBarClass.html":[35,0,210],
+"struct__EggFindBarClass.html#a22bb3e8dc7e3ad53f87a369947fcb059":[35,0,210,7],
 "struct__EggFindBarClass.html#a3ccff5bb6e81495b1d4be6314f65061d":[35,0,210,4],
 "struct__EggFindBarClass.html#a448ddfb56c4c5ede8c0666c6784ef3bd":[35,0,210,5],
 "struct__EggFindBarClass.html#a456ba6350e5dc1ec079fe47e1cae8a51":[35,0,210,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EomScrollView.html":[35,0,272],
 "struct__EomScrollView.html#a825c72a1be70d27cc1503116b1a04556":[35,0,272,1],
 "struct__EomScrollView.html#a8d9c8bf4c71f6a98eacd3fad616e0f56":[35,0,272,0],
-"struct__EomScrollViewClass.html":[35,0,273],
-"struct__EomScrollViewClass.html#a283801ed37503902418e89c112b4b88d":[35,0,273,0],
-"struct__EomScrollViewClass.html#a4e045010b2bd74ed3616e6738d4519a3":[35,0,273,1],
-"struct__EomSidebar.html":[35,0,274],
-"struct__EomSidebar.html#a0d5e8c506da1a4bc6d24355d39d9ee47":[35,0,274,0],
-"struct__EomSidebar.html#af0ec259bbde78c8e5d35ca2a1d98a166":[35,0,274,1]
+"struct__EomScrollViewClass.html":[35,0,273]
 };
