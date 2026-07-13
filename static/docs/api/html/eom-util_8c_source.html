@@ -316,19 +316,19 @@ $(document).ready(function(){initNavTree('eom-util_8c_source.html',''); initResi
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="eom-util_8c.html#a1c18eaed59de0e739bda91ba6f549590">  203</a></span><a class="code hl_function" href="eom-util_8c.html#a1c18eaed59de0e739bda91ba6f549590">eom_util_string_array_make_absolute</a> (gchar **files)</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>{</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    gchar **abs_files;</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    GFile *file;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keywordflow">if</span> (files == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_strv_length (files);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    size = g_strv_length (files);</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="comment">/* Ensure new list is NULL-terminated */</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    abs_files = g_new0 (gchar *, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>+1);</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    abs_files = g_new0 (gchar *, size+1);</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>; i++) {</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <span class="keywordflow">for</span> (i = 0; i &lt; size; i++) {</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        file = g_file_new_for_commandline_arg (files[i]);</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        abs_files[i] = g_file_get_uri (file);</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
@@ -388,27 +388,27 @@ $(document).ready(function(){initNavTree('eom-util_8c_source.html',''); initResi
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="keywordtype">char</span> *</div>
 <div class="foldopen" id="foldopen00282" data-start="{" data-end="}">
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="eom-util_8c.html#a209d29eb8e74fe92940f441855fb0f55">  282</a></span><a class="code hl_function" href="eom-util_8c.html#a209d29eb8e74fe92940f441855fb0f55">eom_util_filename_get_extension</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="eom-util_8c.html#a209d29eb8e74fe92940f441855fb0f55">  282</a></span><a class="code hl_function" href="eom-util_8c.html#a209d29eb8e74fe92940f441855fb0f55">eom_util_filename_get_extension</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> * filename)</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>{</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordtype">char</span> *begin, *begin2;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    }</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    begin = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ab9fe116113ed7294c4cb842c31e3cc12">strrchr</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="charliteral">&#39;.&#39;</span>);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    begin = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ab9fe116113ed7294c4cb842c31e3cc12">strrchr</a> (filename, <span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">if</span> (begin &amp;&amp; begin != <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) {</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordflow">if</span> (begin &amp;&amp; begin != filename) {</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <span class="keywordflow">if</span> (strcmp (begin, <span class="stringliteral">&quot;.gz&quot;</span>) == 0 ||</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            strcmp (begin, <span class="stringliteral">&quot;.bz2&quot;</span>) == 0 ||</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            strcmp (begin, <span class="stringliteral">&quot;.sit&quot;</span>) == 0 ||</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            strcmp (begin, <span class="stringliteral">&quot;.Z&quot;</span>) == 0) {</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>            begin2 = begin - 1;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="keywordflow">while</span> (begin2 &gt; <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="keywordflow">while</span> (begin2 &gt; filename &amp;&amp;</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                   *begin2 != <span class="charliteral">&#39;.&#39;</span>) {</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                begin2--;</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            }</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            <span class="keywordflow">if</span> (begin2 != <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            <span class="keywordflow">if</span> (begin2 != filename) {</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                begin = begin2;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            }</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        }</div>
@@ -630,8 +630,6 @@ $(document).ready(function(){initNavTree('eom-util_8c_source.html',''); initResi
 <div class="ttc" id="aeom-util_8h_html"><div class="ttname"><a href="eom-util_8h.html">eom-util.h</a></div></div>
 <div class="ttc" id="afile-utils_8c_html_a38c488e045f3bae3d5bcd85df5d95b6c"><div class="ttname"><a href="file-utils_8c.html#a38c488e045f3bae3d5bcd85df5d95b6c">ensure_dir_exists</a></div><div class="ttdeci">gboolean ensure_dir_exists(const char *uri, mode_t mode, GError **error)</div><div class="ttdef"><b>Definition</b> <a href="file-utils_8c_source.html#l00469">file-utils.c:469</a></div></div>
 <div class="ttc" id="agajim_8c_html_a3946a46b523c2da59c3afb306c4b3ed8"><div class="ttname"><a href="gajim_8c.html#a3946a46b523c2da59c3afb306c4b3ed8">proxy</a></div><div class="ttdeci">DBusGProxy * proxy</div><div class="ttdef"><b>Definition</b> <a href="gajim_8c_source.html#l00044">gajim.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

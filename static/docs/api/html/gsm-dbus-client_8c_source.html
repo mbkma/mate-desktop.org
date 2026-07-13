@@ -226,15 +226,15 @@ $(document).ready(function(){initNavTree('gsm-dbus-client_8c_source.html',''); i
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>             <span class="keyword">const</span> <span class="keywordtype">char</span>     *error_name,</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>             <span class="keywordtype">char</span>           *format, ...)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordtype">char</span>         <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[512];</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordtype">char</span>         buf[512];</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        DBusMessage *reply;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        va_list args;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        va_start (args, format);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        vsnprintf (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="keyword">sizeof</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>), format, args);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        vsnprintf (buf, <span class="keyword">sizeof</span> (buf), format, args);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        va_end (args);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        reply = dbus_message_new_error (in_reply_to, error_name, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        reply = dbus_message_new_error (in_reply_to, error_name, buf);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">if</span> (reply == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                g_error (<span class="stringliteral">&quot;No memory&quot;</span>);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        }</div>
@@ -825,7 +825,6 @@ $(document).ready(function(){initNavTree('gsm-dbus-client_8c_source.html',''); i
 <div class="ttc" id="agsm-manager_8h_html"><div class="ttname"><a href="gsm-manager_8h.html">gsm-manager.h</a></div></div>
 <div class="ttc" id="agsm-util_8h_html"><div class="ttname"><a href="gsm-util_8h.html">gsm-util.h</a></div></div>
 <div class="ttc" id="agsm-util_8h_html_a08da4fbd124a95bdb53e197ecffceeaf"><div class="ttname"><a href="gsm-util_8h.html#a08da4fbd124a95bdb53e197ecffceeaf">IS_STRING_EMPTY</a></div><div class="ttdeci">#define IS_STRING_EMPTY(x)</div><div class="ttdef"><b>Definition</b> <a href="gsm-util_8h_source.html#l00031">gsm-util.h:31</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="audisks2-plugin_8c_html_a3e5a6f8e2b8c8c0715849bec8800c8c3"><div class="ttname"><a href="udisks2-plugin_8c.html#a3e5a6f8e2b8c8c0715849bec8800c8c3">connection</a></div><div class="ttdeci">GDBusConnection * connection</div><div class="ttdef"><b>Definition</b> <a href="udisks2-plugin_8c_source.html#l00072">udisks2-plugin.c:72</a></div></div>

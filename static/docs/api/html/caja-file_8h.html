@@ -163,9 +163,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:a45be7476b501c5619be12cf149630276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67954f5a613fd838dee5fea7a49db979" id="r_a67954f5a613fd838dee5fea7a49db979"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a67954f5a613fd838dee5fea7a49db979">CajaFileOperationCallback</a>) (<a class="el" href="structCajaFile.html">CajaFile</a> *file, GFile *result_location, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, gpointer callback_data)</td></tr>
 <tr class="separator:a67954f5a613fd838dee5fea7a49db979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ddad7e3f6214e05b9975399db1fbd16" id="r_a5ddad7e3f6214e05b9975399db1fbd16"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a5ddad7e3f6214e05b9975399db1fbd16">CajaWidthMeasureCallback</a>) (const char *string, void *context)</td></tr>
+<tr class="memitem:a5ddad7e3f6214e05b9975399db1fbd16" id="r_a5ddad7e3f6214e05b9975399db1fbd16"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a5ddad7e3f6214e05b9975399db1fbd16">CajaWidthMeasureCallback</a>) (const char *string, void *context)</td></tr>
 <tr class="separator:a5ddad7e3f6214e05b9975399db1fbd16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdf96f37a5c3294cd7d36dd8c5ad1d77" id="r_afdf96f37a5c3294cd7d36dd8c5ad1d77"><td class="memItemLeft" align="right" valign="top">typedef char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#afdf96f37a5c3294cd7d36dd8c5ad1d77">CajaTruncateCallback</a>) (const char *string, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> width, void *context)</td></tr>
+<tr class="memitem:afdf96f37a5c3294cd7d36dd8c5ad1d77" id="r_afdf96f37a5c3294cd7d36dd8c5ad1d77"><td class="memItemLeft" align="right" valign="top">typedef char *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#afdf96f37a5c3294cd7d36dd8c5ad1d77">CajaTruncateCallback</a>) (const char *string, int width, void *context)</td></tr>
 <tr class="separator:afdf96f37a5c3294cd7d36dd8c5ad1d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c7961bd3b7f34f849231338fb526c9" id="r_a88c7961bd3b7f34f849231338fb526c9"><td class="memItemLeft" align="right" valign="top">typedef void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a88c7961bd3b7f34f849231338fb526c9">CajaFileListHandle</a></td></tr>
 <tr class="separator:a88c7961bd3b7f34f849231338fb526c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,7 +352,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad3940a69948a68cf5741f13ae9d342e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10eb84e5319ae23faefb39faa13f50d" id="r_ad10eb84e5319ae23faefb39faa13f50d"><td class="memItemLeft" align="right" valign="top">GList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#ad10eb84e5319ae23faefb39faa13f50d">caja_file_get_emblem_icons</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, char **exclude)</td></tr>
 <tr class="separator:ad10eb84e5319ae23faefb39faa13f50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a812de7b4940e3eae9056a32d252b2252" id="r_a812de7b4940e3eae9056a32d252b2252"><td class="memItemLeft" align="right" valign="top">GList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a812de7b4940e3eae9056a32d252b2252">caja_file_get_emblem_pixbufs</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> <a class="el" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, gboolean force_size, char **exclude)</td></tr>
+<tr class="memitem:a812de7b4940e3eae9056a32d252b2252" id="r_a812de7b4940e3eae9056a32d252b2252"><td class="memItemLeft" align="right" valign="top">GList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a812de7b4940e3eae9056a32d252b2252">caja_file_get_emblem_pixbufs</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, int size, gboolean force_size, char **exclude)</td></tr>
 <tr class="separator:a812de7b4940e3eae9056a32d252b2252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb2ddd02df9d64beafafe348ccf4054a" id="r_aeb2ddd02df9d64beafafe348ccf4054a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aeb2ddd02df9d64beafafe348ccf4054a">caja_file_get_top_left_text</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file)</td></tr>
 <tr class="separator:aeb2ddd02df9d64beafafe348ccf4054a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,9 +462,9 @@ Functions</h2></td></tr>
 <tr class="separator:a543570b7bbf393f9255688034740b71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e993d45eaeb8f2c7bc330724224d2c3" id="r_a1e993d45eaeb8f2c7bc330724224d2c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a1e993d45eaeb8f2c7bc330724224d2c3">caja_file_set_boolean_metadata</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *<a class="el" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, gboolean default_metadata, gboolean metadata)</td></tr>
 <tr class="separator:a1e993d45eaeb8f2c7bc330724224d2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427165f560073e1010ac86ae48877c01" id="r_a427165f560073e1010ac86ae48877c01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a427165f560073e1010ac86ae48877c01">caja_file_get_integer_metadata</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *<a class="el" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> default_metadata)</td></tr>
+<tr class="memitem:a427165f560073e1010ac86ae48877c01" id="r_a427165f560073e1010ac86ae48877c01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a427165f560073e1010ac86ae48877c01">caja_file_get_integer_metadata</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *<a class="el" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, int default_metadata)</td></tr>
 <tr class="separator:a427165f560073e1010ac86ae48877c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4ce37af627b337c7cf46794b7c59fc7" id="r_aa4ce37af627b337c7cf46794b7c59fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aa4ce37af627b337c7cf46794b7c59fc7">caja_file_set_integer_metadata</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *<a class="el" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> default_metadata, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> metadata)</td></tr>
+<tr class="memitem:aa4ce37af627b337c7cf46794b7c59fc7" id="r_aa4ce37af627b337c7cf46794b7c59fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aa4ce37af627b337c7cf46794b7c59fc7">caja_file_set_integer_metadata</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *<a class="el" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, int default_metadata, int metadata)</td></tr>
 <tr class="separator:aa4ce37af627b337c7cf46794b7c59fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a688b1c8f6505b74c06f46247e074ec33" id="r_a688b1c8f6505b74c06f46247e074ec33"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a688b1c8f6505b74c06f46247e074ec33">caja_file_get_time_metadata</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *<a class="el" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>)</td></tr>
 <tr class="separator:a688b1c8f6505b74c06f46247e074ec33"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -478,7 +478,7 @@ Functions</h2></td></tr>
 <tr class="separator:a4a74677b519b63ed561ede8ac0695b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47b61d775de64e3511b2c10ebc12e6da" id="r_a47b61d775de64e3511b2c10ebc12e6da"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a47b61d775de64e3511b2c10ebc12e6da">caja_file_get_string_attribute_with_default_q</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, GQuark attribute_q)</td></tr>
 <tr class="separator:a47b61d775de64e3511b2c10ebc12e6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf4ec08e28f46144986bd4f1c02f1ea9" id="r_adf4ec08e28f46144986bd4f1c02f1ea9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#adf4ec08e28f46144986bd4f1c02f1ea9">caja_file_fit_modified_date_as_string</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> width, <a class="el" href="caja-file_8h.html#a5ddad7e3f6214e05b9975399db1fbd16">CajaWidthMeasureCallback</a> measure_callback, <a class="el" href="caja-file_8h.html#afdf96f37a5c3294cd7d36dd8c5ad1d77">CajaTruncateCallback</a> truncate_callback, void *measure_truncate_context)</td></tr>
+<tr class="memitem:adf4ec08e28f46144986bd4f1c02f1ea9" id="r_adf4ec08e28f46144986bd4f1c02f1ea9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#adf4ec08e28f46144986bd4f1c02f1ea9">caja_file_fit_modified_date_as_string</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, int width, <a class="el" href="caja-file_8h.html#a5ddad7e3f6214e05b9975399db1fbd16">CajaWidthMeasureCallback</a> measure_callback, <a class="el" href="caja-file_8h.html#afdf96f37a5c3294cd7d36dd8c5ad1d77">CajaTruncateCallback</a> truncate_callback, void *measure_truncate_context)</td></tr>
 <tr class="separator:adf4ec08e28f46144986bd4f1c02f1ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b3bc3d03159a891d63c58469dc870b0" id="r_a4b3bc3d03159a891d63c58469dc870b0"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a4b3bc3d03159a891d63c58469dc870b0">caja_file_matches_uri</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *uri)</td></tr>
 <tr class="separator:a4b3bc3d03159a891d63c58469dc870b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,17 +488,17 @@ Functions</h2></td></tr>
 <tr class="separator:ad4729ac89ecc67247cacb186fdae23d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341445c08f74483744e193558cfcdbd9" id="r_a341445c08f74483744e193558cfcdbd9"><td class="memItemLeft" align="right" valign="top">const gchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a341445c08f74483744e193558cfcdbd9">caja_file_get_default_sort_attribute</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, gboolean *reversed)</td></tr>
 <tr class="separator:a341445c08f74483744e193558cfcdbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a291feeb882a21ec999ca2586473e0788" id="r_a291feeb882a21ec999ca2586473e0788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a291feeb882a21ec999ca2586473e0788">caja_file_compare_for_sort</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2, <a class="el" href="caja-file_8h.html#a864ecc492ca33626a95e24da230e5810">CajaFileSortType</a> sort_type, gboolean directories_first, gboolean reversed)</td></tr>
+<tr class="memitem:a291feeb882a21ec999ca2586473e0788" id="r_a291feeb882a21ec999ca2586473e0788"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a291feeb882a21ec999ca2586473e0788">caja_file_compare_for_sort</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2, <a class="el" href="caja-file_8h.html#a864ecc492ca33626a95e24da230e5810">CajaFileSortType</a> sort_type, gboolean directories_first, gboolean reversed)</td></tr>
 <tr class="separator:a291feeb882a21ec999ca2586473e0788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac8a36b60979eda06166aa6c37a4b4a6" id="r_aac8a36b60979eda06166aa6c37a4b4a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aac8a36b60979eda06166aa6c37a4b4a6">caja_file_compare_for_sort_by_attribute</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2, const char *attribute, gboolean directories_first, gboolean reversed)</td></tr>
+<tr class="memitem:aac8a36b60979eda06166aa6c37a4b4a6" id="r_aac8a36b60979eda06166aa6c37a4b4a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aac8a36b60979eda06166aa6c37a4b4a6">caja_file_compare_for_sort_by_attribute</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2, const char *attribute, gboolean directories_first, gboolean reversed)</td></tr>
 <tr class="separator:aac8a36b60979eda06166aa6c37a4b4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeb3a71896dea68c3f0a08a78e949f0d" id="r_adeb3a71896dea68c3f0a08a78e949f0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#adeb3a71896dea68c3f0a08a78e949f0d">caja_file_compare_for_sort_by_attribute_q</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2, GQuark attribute, gboolean directories_first, gboolean reversed)</td></tr>
+<tr class="memitem:adeb3a71896dea68c3f0a08a78e949f0d" id="r_adeb3a71896dea68c3f0a08a78e949f0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#adeb3a71896dea68c3f0a08a78e949f0d">caja_file_compare_for_sort_by_attribute_q</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2, GQuark attribute, gboolean directories_first, gboolean reversed)</td></tr>
 <tr class="separator:adeb3a71896dea68c3f0a08a78e949f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade631ed8fdd61de53f0524b63f83d65e" id="r_ade631ed8fdd61de53f0524b63f83d65e"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#ade631ed8fdd61de53f0524b63f83d65e">caja_file_is_date_sort_attribute_q</a> (GQuark attribute)</td></tr>
 <tr class="separator:ade631ed8fdd61de53f0524b63f83d65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6923afc3f947bf0f88edd5a7b8e734" id="r_a6a6923afc3f947bf0f88edd5a7b8e734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a6a6923afc3f947bf0f88edd5a7b8e734">caja_file_compare_display_name</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, const char *pattern)</td></tr>
+<tr class="memitem:a6a6923afc3f947bf0f88edd5a7b8e734" id="r_a6a6923afc3f947bf0f88edd5a7b8e734"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a6a6923afc3f947bf0f88edd5a7b8e734">caja_file_compare_display_name</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, const char *pattern)</td></tr>
 <tr class="separator:a6a6923afc3f947bf0f88edd5a7b8e734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa4bcdce0d5875416c3b4bc9b5f71179" id="r_aaa4bcdce0d5875416c3b4bc9b5f71179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aaa4bcdce0d5875416c3b4bc9b5f71179">caja_file_compare_location</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2)</td></tr>
+<tr class="memitem:aaa4bcdce0d5875416c3b4bc9b5f71179" id="r_aaa4bcdce0d5875416c3b4bc9b5f71179"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#aaa4bcdce0d5875416c3b4bc9b5f71179">caja_file_compare_location</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file_1, <a class="el" href="structCajaFile.html">CajaFile</a> *file_2)</td></tr>
 <tr class="separator:aaa4bcdce0d5875416c3b4bc9b5f71179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a58f96c7db77b5f5b8fb2f0b037425a" id="r_a8a58f96c7db77b5f5b8fb2f0b037425a"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a8a58f96c7db77b5f5b8fb2f0b037425a">caja_file_is_hidden_file</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file)</td></tr>
 <tr class="separator:a8a58f96c7db77b5f5b8fb2f0b037425a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -524,9 +524,9 @@ Functions</h2></td></tr>
 <tr class="separator:ae2826860a1175faa85b7e855ecb8d940"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2823c277d64cc7edb7980f1373a2810b" id="r_a2823c277d64cc7edb7980f1373a2810b"><td class="memItemLeft" align="right" valign="top">GIcon *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a2823c277d64cc7edb7980f1373a2810b">caja_file_get_gicon</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, <a class="el" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</td></tr>
 <tr class="separator:a2823c277d64cc7edb7980f1373a2810b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ff8abdaf36caabc59d037b27b8bfd7" id="r_a37ff8abdaf36caabc59d037b27b8bfd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="caja-icon-info_8h.html#ab67fe532670f0003221e5f4ae6e39258">CajaIconInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a37ff8abdaf36caabc59d037b27b8bfd7">caja_file_get_icon</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> <a class="el" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> scale, <a class="el" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</td></tr>
+<tr class="memitem:a37ff8abdaf36caabc59d037b27b8bfd7" id="r_a37ff8abdaf36caabc59d037b27b8bfd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="caja-icon-info_8h.html#ab67fe532670f0003221e5f4ae6e39258">CajaIconInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a37ff8abdaf36caabc59d037b27b8bfd7">caja_file_get_icon</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, int size, int scale, <a class="el" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</td></tr>
 <tr class="separator:a37ff8abdaf36caabc59d037b27b8bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c3e51e9c820a7639c9535bd4c190a4" id="r_ab1c3e51e9c820a7639c9535bd4c190a4"><td class="memItemLeft" align="right" valign="top">cairo_surface_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#ab1c3e51e9c820a7639c9535bd4c190a4">caja_file_get_icon_surface</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> <a class="el" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, gboolean force_size, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> scale, <a class="el" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</td></tr>
+<tr class="memitem:ab1c3e51e9c820a7639c9535bd4c190a4" id="r_ab1c3e51e9c820a7639c9535bd4c190a4"><td class="memItemLeft" align="right" valign="top">cairo_surface_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#ab1c3e51e9c820a7639c9535bd4c190a4">caja_file_get_icon_surface</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, int size, gboolean force_size, int scale, <a class="el" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</td></tr>
 <tr class="separator:ab1c3e51e9c820a7639c9535bd4c190a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b3113ee2a310814a0670a73db41a27a" id="r_a7b3113ee2a310814a0670a73db41a27a"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="caja-file_8h.html#a7b3113ee2a310814a0670a73db41a27a">caja_file_has_open_window</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file)</td></tr>
 <tr class="separator:a7b3113ee2a310814a0670a73db41a27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -932,7 +932,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef char *(* CajaTruncateCallback) (const char *string, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> width, void *context)</td>
+          <td class="memname">typedef char *(* CajaTruncateCallback) (const char *string, int width, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -948,7 +948,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>(* CajaWidthMeasureCallback) (const char *string, void *context)</td>
+          <td class="memname">typedef int(* CajaWidthMeasureCallback) (const char *string, void *context)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1708,7 +1708,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> caja_file_compare_display_name </td>
+          <td class="memname">int caja_file_compare_display_name </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *&#160;</td>
           <td class="paramname"><em>file_1</em>, </td>
@@ -1740,7 +1740,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> caja_file_compare_for_sort </td>
+          <td class="memname">int caja_file_compare_for_sort </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *&#160;</td>
           <td class="paramname"><em>file_1</em>, </td>
@@ -1794,7 +1794,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> caja_file_compare_for_sort_by_attribute </td>
+          <td class="memname">int caja_file_compare_for_sort_by_attribute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *&#160;</td>
           <td class="paramname"><em>file_1</em>, </td>
@@ -1844,7 +1844,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> caja_file_compare_for_sort_by_attribute_q </td>
+          <td class="memname">int caja_file_compare_for_sort_by_attribute_q </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *&#160;</td>
           <td class="paramname"><em>file_1</em>, </td>
@@ -1896,7 +1896,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> caja_file_compare_location </td>
+          <td class="memname">int caja_file_compare_location </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *&#160;</td>
           <td class="paramname"><em>file_1</em>, </td>
@@ -2032,7 +2032,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
@@ -2528,7 +2528,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -2772,13 +2772,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>scale</em>, </td>
         </tr>
         <tr>
@@ -2818,7 +2818,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -2830,7 +2830,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>scale</em>, </td>
         </tr>
         <tr>
@@ -2862,7 +2862,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> caja_file_get_integer_metadata </td>
+          <td class="memname">int caja_file_get_integer_metadata </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *&#160;</td>
           <td class="paramname"><em>file</em>, </td>
@@ -2876,7 +2876,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>default_metadata</em>&#160;</td>
         </tr>
         <tr>
@@ -5188,13 +5188,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>default_metadata</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>metadata</em>&#160;</td>
         </tr>
         <tr>

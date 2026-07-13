@@ -149,20 +149,20 @@ $(document).ready(function(){initNavTree('caja-wallpaper-extension_8c_source.htm
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    GSettings *settings;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_struct" href="structCajaFile.html">CajaFileInfo</a> *file;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    gchar *uri;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    gchar *filename;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    files = g_object_get_data (G_OBJECT (<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>), <span class="stringliteral">&quot;files&quot;</span>);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    file = files-&gt;data;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    uri = <a class="code hl_function" href="caja-file-info_8c.html#a56f4d3fb71fdefe04d1db69f91921d8b">caja_file_info_get_uri</a> (file);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_filename_from_uri(uri, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    filename = g_filename_from_uri(uri, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    settings = g_settings_new (<a class="code hl_define" href="caja-wallpaper-extension_8c.html#a9e8f1b1104b289d4f8fd36d59e5aee73">WP_SCHEMA</a>);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    g_settings_set_string (settings, <a class="code hl_define" href="caja-wallpaper-extension_8c.html#ae5792cbab0d0e9de424909fe33fc03a4">WP_FILE_KEY</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    g_settings_set_string (settings, <a class="code hl_define" href="caja-wallpaper-extension_8c.html#ae5792cbab0d0e9de424909fe33fc03a4">WP_FILE_KEY</a>, filename);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    g_object_unref (settings);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    g_free (filename);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    g_free (uri);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
@@ -192,13 +192,13 @@ $(document).ready(function(){initNavTree('caja-wallpaper-extension_8c_source.htm
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">for</span> (scan = files; scan; scan = scan-&gt;next) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <a class="code hl_struct" href="structCajaFile.html">CajaFileInfo</a> *file = scan-&gt;data;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        gchar            *scheme;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        gboolean          <a class="code hl_define" href="unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        gboolean          local;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        scheme = <a class="code hl_function" href="caja-file-info_8c.html#ac509d891c4f8940f49c778ac351bd1c7">caja_file_info_get_uri_scheme</a> (file);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_define" href="unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a> = strncmp (scheme, <span class="stringliteral">&quot;file&quot;</span>, 4) == 0;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        local = strncmp (scheme, <span class="stringliteral">&quot;file&quot;</span>, 4) == 0;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        g_free (scheme);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span> (!<a class="code hl_define" href="unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a>)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span> (!local)</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
@@ -306,7 +306,6 @@ $(document).ready(function(){initNavTree('caja-wallpaper-extension_8c_source.htm
 <div class="ttc" id="acaja-wallpaper-extension_8h_html_ae601a8a4fd776b6d56b98e453da6801d"><div class="ttname"><a href="caja-wallpaper-extension_8h.html#ae601a8a4fd776b6d56b98e453da6801d">CajaCweClass</a></div><div class="ttdeci">struct _CajaCweClass CajaCweClass</div><div class="ttdef"><b>Definition</b> <a href="caja-wallpaper-extension_8h_source.html#l00038">caja-wallpaper-extension.h:38</a></div></div>
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="astructCajaFile_html"><div class="ttname"><a href="structCajaFile.html">CajaFile</a></div><div class="ttdef"><b>Definition</b> <a href="caja-file_8h_source.html#l00499">caja-file.h:500</a></div></div>
 <div class="ttc" id="astruct__CajaCweClass_html"><div class="ttname"><a href="struct__CajaCweClass.html">_CajaCweClass</a></div><div class="ttdef"><b>Definition</b> <a href="caja-wallpaper-extension_8h_source.html#l00044">caja-wallpaper-extension.h:44</a></div></div>
@@ -314,7 +313,6 @@ $(document).ready(function(){initNavTree('caja-wallpaper-extension_8c_source.htm
 <div class="ttc" id="astruct__CajaMenuItem_html"><div class="ttname"><a href="struct__CajaMenuItem.html">_CajaMenuItem</a></div><div class="ttdef"><b>Definition</b> <a href="caja-menu_8h_source.html#l00069">caja-menu.h:69</a></div></div>
 <div class="ttc" id="astruct__CajaMenuProviderIface_html"><div class="ttname"><a href="struct__CajaMenuProviderIface.html">_CajaMenuProviderIface</a></div><div class="ttdef"><b>Definition</b> <a href="caja-menu-provider_8h_source.html#l00062">caja-menu-provider.h:62</a></div></div>
 <div class="ttc" id="astruct__CajaMenuProviderIface_html_a62a925f9487a9c4a4ad704c8b74d6534"><div class="ttname"><a href="struct__CajaMenuProviderIface.html#a62a925f9487a9c4a4ad704c8b74d6534">_CajaMenuProviderIface::get_file_items</a></div><div class="ttdeci">GList *(* get_file_items)(CajaMenuProvider *provider, GtkWidget *window, GList *files)</div><div class="ttdef"><b>Definition</b> <a href="caja-menu-provider_8h_source.html#l00065">caja-menu-provider.h:65</a></div></div>
-<div class="ttc" id="aunzip_8c_html_a08023ea6765c99d60a6a3840cd07156e"><div class="ttname"><a href="unzip_8c.html#a08023ea6765c99d60a6a3840cd07156e">local</a></div><div class="ttdeci">#define local</div><div class="ttdef"><b>Definition</b> <a href="unzip_8c_source.html#l00087">unzip.c:87</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

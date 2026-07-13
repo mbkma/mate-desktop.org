@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('gtkrc-utils_8c_source.html',''); initR
 </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="gtkrc-utils_8c.html#a10f49599f6e0f93af0deeb2afcb2e82c">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="gtkrc-utils_8c.html#a10f49599f6e0f93af0deeb2afcb2e82c">gtkrc_get_details</a>(gchar* <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, GSList** engines, GSList** symbolic_colors)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="gtkrc-utils_8c.html#a10f49599f6e0f93af0deeb2afcb2e82c">   84</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="gtkrc-utils_8c.html#a10f49599f6e0f93af0deeb2afcb2e82c">gtkrc_get_details</a>(gchar* filename, GSList** engines, GSList** symbolic_colors)</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    gint file = -1;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    GSList* files = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -199,29 +199,29 @@ $(document).ready(function(){initNavTree('gtkrc-utils_8c_source.html',''); initR
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        g_scanner_scope_add_symbol (scanner, 0, <span class="stringliteral">&quot;engine&quot;</span>, <a class="code hl_define" href="gtkrc-utils_8c.html#ab112e88f7a43ed9dbacd59382e15e14c">ENGINE_SYMBOL</a>);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    files = g_slist_prepend (files, g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    files = g_slist_prepend (files, g_strdup (filename));</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">while</span> (files != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = files-&gt;data;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        filename = files-&gt;data;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        files = g_slist_delete_link (files, files);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (g_slist_find_custom (read_files, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, (GCompareFunc) strcmp))</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (g_slist_find_custom (read_files, filename, (GCompareFunc) strcmp))</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        {</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            g_warning (<span class="stringliteral">&quot;Recursion in the gtkrc detected!&quot;</span>);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            g_free (filename);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keywordflow">continue</span>; <span class="comment">/* skip this file since we&#39;ve done it before... */</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        read_files = g_slist_prepend (read_files, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        read_files = g_slist_prepend (read_files, filename);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        file = g_open (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, O_RDONLY);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        file = g_open (filename, O_RDONLY);</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">if</span> (file == -1)</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            g_warning (<span class="stringliteral">&quot;Could not open file \&quot;%s\&quot;&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            g_warning (<span class="stringliteral">&quot;Could not open file \&quot;%s\&quot;&quot;</span>, filename);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        {</div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('gtkrc-utils_8c_source.html',''); initR
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                    }</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                    {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                        gchar *basedir = g_path_get_dirname (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                        gchar *basedir = g_path_get_dirname (filename);</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                        files = g_slist_prepend (files, g_build_path (G_DIR_SEPARATOR_S, basedir, scanner-&gt;value.v_string, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>));</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                        g_free (basedir);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                    }</div>
@@ -343,25 +343,25 @@ $(document).ready(function(){initNavTree('gtkrc-utils_8c_source.html',''); initR
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    files = g_slist_prepend (files, g_strdup (gtkrc_file));</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordflow">while</span> (files != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    {</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = files-&gt;data;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        gchar *filename = files-&gt;data;</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        files = g_slist_delete_link (files, files);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span> (g_slist_find_custom (read_files, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, (GCompareFunc) strcmp))</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">if</span> (g_slist_find_custom (read_files, filename, (GCompareFunc) strcmp))</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        {</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            g_warning (<span class="stringliteral">&quot;Recursion in the gtkrc detected!&quot;</span>);</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>            g_free (filename);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>            <span class="keywordflow">continue</span>; <span class="comment">/* skip this file since we&#39;ve done it before... */</span></div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        }</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        read_files = g_slist_prepend (read_files, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        read_files = g_slist_prepend (read_files, filename);</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        file = g_open (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, O_RDONLY);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        file = g_open (filename, O_RDONLY);</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <span class="keywordflow">if</span> (file == -1)</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            g_warning (<span class="stringliteral">&quot;Could not open file \&quot;%s\&quot;&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            g_warning (<span class="stringliteral">&quot;Could not open file \&quot;%s\&quot;&quot;</span>, filename);</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        {</div>
@@ -422,7 +422,6 @@ $(document).ready(function(){initNavTree('gtkrc-utils_8c_source.html',''); initR
 <div class="ttc" id="agtkrc-utils_8c_html_aad7b985e0524d3adba7687a26b2dd21f"><div class="ttname"><a href="gtkrc-utils_8c.html#aad7b985e0524d3adba7687a26b2dd21f">gtkrc_get_color_scheme</a></div><div class="ttdeci">gchar * gtkrc_get_color_scheme(const gchar *gtkrc_file)</div><div class="ttdef"><b>Definition</b> <a href="gtkrc-utils_8c_source.html#l00225">gtkrc-utils.c:225</a></div></div>
 <div class="ttc" id="agtkrc-utils_8c_html_ab112e88f7a43ed9dbacd59382e15e14c"><div class="ttname"><a href="gtkrc-utils_8c.html#ab112e88f7a43ed9dbacd59382e15e14c">ENGINE_SYMBOL</a></div><div class="ttdeci">#define ENGINE_SYMBOL</div><div class="ttdef"><b>Definition</b> <a href="gtkrc-utils_8c_source.html#l00036">gtkrc-utils.c:36</a></div></div>
 <div class="ttc" id="agtkrc-utils_8h_html"><div class="ttname"><a href="gtkrc-utils_8h.html">gtkrc-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

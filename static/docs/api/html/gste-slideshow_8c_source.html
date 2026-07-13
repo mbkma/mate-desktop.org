@@ -586,8 +586,8 @@ $(document).ready(function(){initNavTree('gste-slideshow_8c_source.html',''); in
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>        <span class="keywordtype">int</span> scale_x;</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>        <span class="keywordtype">int</span> scale_y;</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        scale_x = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) (pw * scale_factor);</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>        scale_y = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) (ph * scale_factor);</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        scale_x = (int) (pw * scale_factor);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>        scale_y = (int) (ph * scale_factor);</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>        <span class="keywordflow">return</span> gdk_pixbuf_scale_simple (pixbuf,</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                                        scale_x,</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>                                        scale_y,</div>
@@ -660,7 +660,7 @@ $(document).ready(function(){initNavTree('gste-slideshow_8c_source.html',''); in
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                           <span class="keyword">const</span> <span class="keywordtype">char</span>    *location)</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>{</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    GdkPixbuf *pixbuf, *transformed_pixbuf;</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="keywordtype">char</span>      *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    <span class="keywordtype">char</span>      *filename;</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keywordtype">int</span>        i;</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    GSList    *l;</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
@@ -692,9 +692,9 @@ $(document).ready(function(){initNavTree('gste-slideshow_8c_source.html',''); in
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    {</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        l = show-&gt;<a class="code hl_variable" href="structGSTESlideshow.html#acf1bab05d0bbb8769d65dd5105ae4feb">priv</a>-&gt;filename_list;</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = l-&gt;data;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    filename = l-&gt;data;</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    pixbuf = gdk_pixbuf_new_from_file (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    pixbuf = gdk_pixbuf_new_from_file (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    <span class="keywordflow">if</span> (pixbuf != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    {</div>
@@ -706,7 +706,7 @@ $(document).ready(function(){initNavTree('gste-slideshow_8c_source.html',''); in
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        transformed_pixbuf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    }</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    g_free (filename);</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    show-&gt;<a class="code hl_variable" href="structGSTESlideshow.html#acf1bab05d0bbb8769d65dd5105ae4feb">priv</a>-&gt;filename_list = g_slist_delete_link (show-&gt;<a class="code hl_variable" href="structGSTESlideshow.html#acf1bab05d0bbb8769d65dd5105ae4feb">priv</a>-&gt;filename_list, l);</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    <span class="keywordflow">return</span> transformed_pixbuf;</div>
@@ -1184,8 +1184,6 @@ $(document).ready(function(){initNavTree('gste-slideshow_8c_source.html',''); in
 <div class="ttc" id="agste-slideshow_8h_html_a6cede83db05abc8bd20b8005b8c5069e"><div class="ttname"><a href="gste-slideshow_8h.html#a6cede83db05abc8bd20b8005b8c5069e">GSTE_IS_SLIDESHOW</a></div><div class="ttdeci">#define GSTE_IS_SLIDESHOW(o)</div><div class="ttdef"><b>Definition</b> <a href="gste-slideshow_8h_source.html#l00036">gste-slideshow.h:36</a></div></div>
 <div class="ttc" id="agste-slideshow_8h_html_a8af73066d15a07d4e33a9dc3aa52efdd"><div class="ttname"><a href="gste-slideshow_8h.html#a8af73066d15a07d4e33a9dc3aa52efdd">GSTE_SLIDESHOW</a></div><div class="ttdeci">#define GSTE_SLIDESHOW(o)</div><div class="ttdef"><b>Definition</b> <a href="gste-slideshow_8h_source.html#l00034">gste-slideshow.h:34</a></div></div>
 <div class="ttc" id="agste-slideshow_8h_html_aa5ebd2b4eed7df620380cf1f644bb98f"><div class="ttname"><a href="gste-slideshow_8h.html#aa5ebd2b4eed7df620380cf1f644bb98f">GSTESlideshowPrivate</a></div><div class="ttdeci">struct GSTESlideshowPrivate GSTESlideshowPrivate</div><div class="ttdef"><b>Definition</b> <a href="gste-slideshow_8h_source.html#l00040">gste-slideshow.h:40</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="arfkill_8h_html_aac7608e2446d8055d4b71df44dc2ec4e"><div class="ttname"><a href="rfkill_8h.html#aac7608e2446d8055d4b71df44dc2ec4e">op</a></div><div class="ttdeci">__u8 op</div><div class="ttdef"><b>Definition</b> <a href="rfkill_8h_source.html#l00002">rfkill.h:2</a></div></div>
 <div class="ttc" id="astructGSTESlideshowClass_html"><div class="ttname"><a href="structGSTESlideshowClass.html">GSTESlideshowClass</a></div><div class="ttdef"><b>Definition</b> <a href="gste-slideshow_8h_source.html#l00048">gste-slideshow.h:49</a></div></div>

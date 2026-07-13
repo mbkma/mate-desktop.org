@@ -343,11 +343,11 @@ $(document).ready(function(){initNavTree('ev-properties-view_8c_source.html','')
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>}</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">static</span> gdouble</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>get_tolerance (gdouble <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>get_tolerance (gdouble size)</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; 150.0f)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordflow">if</span> (size &lt; 150.0f)</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <span class="keywordflow">return</span> 1.5f;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &gt;= 150.0f &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt;= 600.0f)</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (size &gt;= 150.0f &amp;&amp; size &lt;= 600.0f)</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">return</span> 2.0f;</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">return</span> 3.0f;</div>
@@ -376,14 +376,14 @@ $(document).ready(function(){initNavTree('ev-properties-view_8c_source.html','')
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    paper_sizes = gtk_paper_size_get_paper_sizes (<a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">for</span> (l = paper_sizes; l &amp;&amp; l-&gt;data; l = g_list_next (l)) {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        GtkPaperSize *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = (GtkPaperSize *) l-&gt;data;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        GtkPaperSize *size = (GtkPaperSize *) l-&gt;data;</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        gdouble paper_width;</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        gdouble paper_height;</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        gdouble width_tolerance;</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        gdouble height_tolerance;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        paper_width = gtk_paper_size_get_width (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, GTK_UNIT_MM);</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        paper_height = gtk_paper_size_get_height (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, GTK_UNIT_MM);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        paper_width = gtk_paper_size_get_width (size, GTK_UNIT_MM);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        paper_height = gtk_paper_size_get_height (size, GTK_UNIT_MM);</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        width_tolerance = get_tolerance (paper_width);</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        height_tolerance = get_tolerance (paper_height);</div>
@@ -393,14 +393,14 @@ $(document).ready(function(){initNavTree('ev-properties-view_8c_source.html','')
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <span class="comment">/* Note to translators: first placeholder is the paper name (eg.</span></div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">             * A4), second placeholder is the paper size (eg. 297x210 mm) */</span></div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            str = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s, Portrait (%s)&quot;</span>),</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                           gtk_paper_size_get_display_name (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>),</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                           gtk_paper_size_get_display_name (size),</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                           exact_size);</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ABS (info-&gt;<a class="code hl_variable" href="struct__EvDocumentInfo.html#ab1028387055a58ed2175db68708cc86e">paper_width</a>  - paper_height) &lt;= height_tolerance &amp;&amp;</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>               ABS (info-&gt;<a class="code hl_variable" href="struct__EvDocumentInfo.html#a52e9b79e9ecfd66457ffa7111c7e73a9">paper_height</a> - paper_width) &lt;= width_tolerance) {</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>            <span class="comment">/* Note to translators: first placeholder is the paper name (eg.</span></div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">             * A4), second placeholder is the paper size (eg. 297x210 mm) */</span></div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            str = g_strdup_printf ( <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s, Landscape (%s)&quot;</span>),</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                        gtk_paper_size_get_display_name (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>),</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                        gtk_paper_size_get_display_name (size),</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                        exact_size);</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        }</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
@@ -553,7 +553,6 @@ $(document).ready(function(){initNavTree('ev-properties-view_8c_source.html','')
 <div class="ttc" id="aev-properties-view_8h_html_a8402b6e2ac0e2b07067e3f82d96f0ad5"><div class="ttname"><a href="ev-properties-view_8h.html#a8402b6e2ac0e2b07067e3f82d96f0ad5">EV_TYPE_PROPERTIES</a></div><div class="ttdeci">#define EV_TYPE_PROPERTIES</div><div class="ttdef"><b>Definition</b> <a href="ev-properties-view_8h_source.html#l00034">ev-properties-view.h:34</a></div></div>
 <div class="ttc" id="aev-properties-view_8h_html_ab81eb07cb164265c2822f2d5fadf872e"><div class="ttname"><a href="ev-properties-view_8h.html#ab81eb07cb164265c2822f2d5fadf872e">ev_properties_view_get_type</a></div><div class="ttdeci">GType ev_properties_view_get_type(void)</div></div>
 <div class="ttc" id="aev-properties-view_8h_html_ada78ff295e4fcf9b0cb2bbe7d0d890da"><div class="ttname"><a href="ev-properties-view_8h.html#ada78ff295e4fcf9b0cb2bbe7d0d890da">EvPropertiesView</a></div><div class="ttdeci">struct _EvPropertiesView EvPropertiesView</div><div class="ttdef"><b>Definition</b> <a href="ev-properties-view_8h_source.html#l00030">ev-properties-view.h:30</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="aspecial_8c_html_acf60de4c64d60c1b9449c056bc6bfcf7"><div class="ttname"><a href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a></div><div class="ttdeci">char * label</div><div class="ttdef"><b>Definition</b> <a href="special_8c_source.html#l00053">special.c:53</a></div></div>

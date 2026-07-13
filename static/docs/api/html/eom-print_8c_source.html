@@ -480,31 +480,31 @@ $(document).ready(function(){initNavTree('eom-print_8c_source.html',''); initRes
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>{</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    GKeyFile *key_file;</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    gchar *filename;</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    GFile *file;</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keyword">const</span> gchar *dot_dir = <a class="code hl_function" href="eom-util_8c.html#a797d8e094746dc24c3c2816e9375b8cf">eom_util_dot_dir</a> ();</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dot_dir, <a class="code hl_define" href="eom-print_8c.html#a958620b7f8a81bf2e616d39a3ee537a4">EOM_PRINT_SETTINGS_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    filename = g_build_filename (dot_dir, <a class="code hl_define" href="eom-print_8c.html#a958620b7f8a81bf2e616d39a3ee537a4">EOM_PRINT_SETTINGS_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    file = g_file_new_for_path (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    file = g_file_new_for_path (filename);</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    key_file = g_key_file_new ();</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">if</span> (g_file_query_exists (file, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)) {</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        g_key_file_load_from_file (key_file, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        g_key_file_load_from_file (key_file, filename,</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                       G_KEY_FILE_KEEP_COMMENTS | G_KEY_FILE_KEEP_TRANSLATIONS,</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                       &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>) {</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            g_warning (<span class="stringliteral">&quot;Error loading print settings file: %s&quot;</span>, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>            g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>            g_object_unref (file);</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>            g_free (filename);</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>            g_key_file_free (key_file);</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>        }</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    }</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>    g_object_unref (file);</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    g_free (filename);</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    <span class="keywordflow">return</span> key_file;</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>}</div>
@@ -542,23 +542,23 @@ $(document).ready(function(){initNavTree('eom-print_8c_source.html',''); initRes
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>eom_print_save_key_file (GKeyFile *key_file)</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>{</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    gchar *filename;</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    gchar *<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    <span class="keyword">const</span> gchar *dot_dir = <a class="code hl_function" href="eom-util_8c.html#a797d8e094746dc24c3c2816e9375b8cf">eom_util_dot_dir</a> ();</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> </div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dot_dir, <a class="code hl_define" href="eom-print_8c.html#a958620b7f8a81bf2e616d39a3ee537a4">EOM_PRINT_SETTINGS_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    filename = g_build_filename (dot_dir, <a class="code hl_define" href="eom-print_8c.html#a958620b7f8a81bf2e616d39a3ee537a4">EOM_PRINT_SETTINGS_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span> </div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a> = g_key_file_to_data (key_file, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
-<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    g_file_set_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>, -1, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    g_file_set_contents (filename, <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>, -1, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span> </div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>) {</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>        g_warning (<span class="stringliteral">&quot;Error saving print settings file: %s&quot;</span>, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    }</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span> </div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    g_free (filename);</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    g_free (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>}</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
@@ -674,7 +674,6 @@ $(document).ready(function(){initNavTree('eom-print_8c_source.html',''); initRes
 <div class="ttc" id="aeom-util_8c_html_a797d8e094746dc24c3c2816e9375b8cf"><div class="ttname"><a href="eom-util_8c.html#a797d8e094746dc24c3c2816e9375b8cf">eom_util_dot_dir</a></div><div class="ttdeci">const gchar * eom_util_dot_dir(void)</div><div class="ttdef"><b>Definition</b> <a href="eom-util_8c_source.html#l00247">eom-util.c:247</a></div></div>
 <div class="ttc" id="aeom-util_8h_html"><div class="ttname"><a href="eom-util_8h.html">eom-util.h</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

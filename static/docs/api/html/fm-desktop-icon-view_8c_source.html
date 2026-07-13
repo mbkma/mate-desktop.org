@@ -606,7 +606,7 @@ $(document).ready(function(){initNavTree('fm-desktop-icon-view_8c_source.html','
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>do_desktop_rescan (gpointer <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>{</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    <a class="code hl_struct" href="structFMDesktopIconView.html">FMDesktopIconView</a> *desktop_icon_view;</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="keyword">struct </span>stat <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="keyword">struct </span>stat buf;</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    desktop_icon_view = <a class="code hl_define" href="fm-desktop-icon-view_8h.html#aa6fdc4043637078e4e450e32374e831e">FM_DESKTOP_ICON_VIEW</a> (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    <span class="keywordflow">if</span> (desktop_icon_view-&gt;<a class="code hl_variable" href="structFMDesktopIconView.html#a7506f8831aa95c0114070d51d7c1c228">priv</a>-&gt;pending_rescan)</div>
@@ -614,12 +614,12 @@ $(document).ready(function(){initNavTree('fm-desktop-icon-view_8c_source.html','
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    }</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="keywordflow">if</span> (stat (desktop_directory, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) == -1)</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="keywordflow">if</span> (stat (desktop_directory, &amp;buf) == -1)</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    {</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>    }</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>.st_ctime == desktop_dir_modify_time)</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    <span class="keywordflow">if</span> (buf.st_ctime == desktop_dir_modify_time)</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    {</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    }</div>
@@ -636,15 +636,15 @@ $(document).ready(function(){initNavTree('fm-desktop-icon-view_8c_source.html','
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>done_loading (<a class="code hl_struct" href="structCajaDirectory.html">CajaDirectory</a> *model,</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>          <a class="code hl_struct" href="structFMDesktopIconView.html">FMDesktopIconView</a> *desktop_icon_view)</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>{</div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="keyword">struct </span>stat <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="keyword">struct </span>stat buf;</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    desktop_icon_view-&gt;<a class="code hl_variable" href="structFMDesktopIconView.html#a7506f8831aa95c0114070d51d7c1c228">priv</a>-&gt;pending_rescan = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <span class="keywordflow">if</span> (stat (desktop_directory, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) == -1)</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <span class="keywordflow">if</span> (stat (desktop_directory, &amp;buf) == -1)</div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    {</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    }</div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span> </div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    desktop_dir_modify_time = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>.st_ctime;</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    desktop_dir_modify_time = buf.st_ctime;</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>}</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
 <div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="comment">/* This function is used because the CajaDirectory model does not</span></div>
@@ -1180,7 +1180,6 @@ $(document).ready(function(){initNavTree('fm-desktop-icon-view_8c_source.html','
 <div class="ttc" id="afm-icon-view_8h_html_a1ca301a44fc466fd868b4702547a7b8c"><div class="ttname"><a href="fm-icon-view_8h.html#a1ca301a44fc466fd868b4702547a7b8c">FM_ICON_VIEW</a></div><div class="ttdeci">#define FM_ICON_VIEW(obj)</div><div class="ttdef"><b>Definition</b> <a href="fm-icon-view_8h_source.html#l00034">fm-icon-view.h:34</a></div></div>
 <div class="ttc" id="afm-icon-view_8h_html_adf64752df44551551691e66904f0ddea"><div class="ttname"><a href="fm-icon-view_8h.html#adf64752df44551551691e66904f0ddea">FM_TYPE_ICON_VIEW</a></div><div class="ttdeci">#define FM_TYPE_ICON_VIEW</div><div class="ttdef"><b>Definition</b> <a href="fm-icon-view_8h_source.html#l00033">fm-icon-view.h:33</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

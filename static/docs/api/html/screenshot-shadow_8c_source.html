@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('screenshot-shadow_8c_source.html','');
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="screenshot-shadow_8c.html#a052d48b3c776edeb3d09fcf3ee20997b">   35</a></span><span class="preprocessor">#define dist(x0, y0, x1, y1) sqrt(((x0) - (x1))*((x0) - (x1)) + ((y0) - (y1))*((y0) - (y1)))</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">double</span> *<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>} ConvFilter;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('screenshot-shadow_8c_source.html','');
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>create_effect (GdkPixbuf *src,</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>               ConvFilter <span class="keyword">const</span> *filter,</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               <span class="keywordtype">int</span> radius,</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               <span class="keywordtype">int</span> offset,</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>               <span class="keywordtype">double</span> opacity)</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  GdkPixbuf *<a class="code hl_variable" href="time-zone_8c.html#ad447182ef5af9e4ff1446dbe2507f630">dest</a>;</div>
@@ -223,8 +223,8 @@ $(document).ready(function(){initNavTree('screenshot-shadow_8c_source.html','');
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  src_width = gdk_pixbuf_get_width (src);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  src_height = gdk_pixbuf_get_height (src);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  dest_width = src_width + 2 * radius + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  dest_height = src_height + 2 * radius + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  dest_width = src_width + 2 * radius + offset;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  dest_height = src_height + 2 * radius + offset;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <a class="code hl_variable" href="time-zone_8c.html#ad447182ef5af9e4ff1446dbe2507f630">dest</a> = gdk_pixbuf_new (gdk_pixbuf_get_colorspace (src),</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>             <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>,</div>
@@ -260,8 +260,8 @@ $(document).ready(function(){initNavTree('screenshot-shadow_8c_source.html','');
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          <span class="keywordflow">for</span> (j = 0; j &lt; filter-&gt;size; j++)</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          src_y = -(radius + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) + y - (filter-&gt;size &gt;&gt; 1) + i;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          src_x = -(radius + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) + x - (filter-&gt;size &gt;&gt; 1) + j;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>          src_y = -(radius + offset) + y - (filter-&gt;size &gt;&gt; 1) + i;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          src_x = -(radius + offset) + x - (filter-&gt;size &gt;&gt; 1) + j;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>          <span class="keywordflow">if</span> (src_y &lt; 0 || src_y &gt;= src_height ||</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>              src_x &lt; 0 || src_x &gt;= src_width)</div>
@@ -337,8 +337,6 @@ $(document).ready(function(){initNavTree('screenshot-shadow_8c_source.html','');
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="ascreenshot-shadow_8c_html_a05cb3095f9157338c8f497d92e4fd24d"><div class="ttname"><a href="screenshot-shadow_8c.html#a05cb3095f9157338c8f497d92e4fd24d">OUTLINE_OFFSET</a></div><div class="ttdeci">#define OUTLINE_OFFSET</div><div class="ttdef"><b>Definition</b> <a href="screenshot-shadow_8c_source.html#l00032">screenshot-shadow.c:32</a></div></div>
 <div class="ttc" id="ascreenshot-shadow_8c_html_a1dc17bac6e93b57adc60ed528aa0e969"><div class="ttname"><a href="screenshot-shadow_8c.html#a1dc17bac6e93b57adc60ed528aa0e969">SHADOW_OFFSET</a></div><div class="ttdeci">#define SHADOW_OFFSET</div><div class="ttdef"><b>Definition</b> <a href="screenshot-shadow_8c_source.html#l00028">screenshot-shadow.c:28</a></div></div>

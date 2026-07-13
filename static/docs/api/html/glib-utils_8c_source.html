@@ -304,12 +304,12 @@ $(document).ready(function(){initNavTree('glib-utils_8c_source.html',''); initRe
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        gsize delimiter_size = strlen (delimiter);</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        <span class="keywordflow">while</span> (--max_tokens &amp;&amp; (s != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)) {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            gsize  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = s - remainder;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            gsize  size = s - remainder;</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            <span class="keywordtype">char</span>  *new_string;</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            new_string = g_new (<span class="keywordtype">char</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + 1);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            strncpy (new_string, remainder, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            new_string[<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>] = 0;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            new_string = g_new (<span class="keywordtype">char</span>, size + 1);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            strncpy (new_string, remainder, size);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            new_string[size] = 0;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            string_list = g_slist_prepend (string_list, new_string);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            n++;</div>
@@ -686,7 +686,6 @@ $(document).ready(function(){initNavTree('glib-utils_8c_source.html',''); initRe
 <div class="ttc" id="aglib-utils_8c_html_ac74da2bbb421f6d58d9769ef1ee69c32"><div class="ttname"><a href="glib-utils_8c.html#ac74da2bbb421f6d58d9769ef1ee69c32">split_line</a></div><div class="ttdeci">char ** split_line(const char *line, int n_fields)</div><div class="ttdef"><b>Definition</b> <a href="glib-utils_8c_source.html#l00372">glib-utils.c:372</a></div></div>
 <div class="ttc" id="aglib-utils_8c_html_ae77d86cacb1e413634e0e50330e5ac8c"><div class="ttname"><a href="glib-utils_8c.html#ae77d86cacb1e413634e0e50330e5ac8c">search_util_get_regexps</a></div><div class="ttdeci">GRegex ** search_util_get_regexps(const char *pattern_string, GRegexCompileFlags compile_options)</div><div class="ttdef"><b>Definition</b> <a href="glib-utils_8c_source.html#l00339">glib-utils.c:339</a></div></div>
 <div class="ttc" id="aglib-utils_8h_html"><div class="ttname"><a href="glib-utils_8h.html">glib-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="aspecial_8c_html_ad2849cf781a4db22cc1b31eaaee50a4f"><div class="ttname"><a href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a></div><div class="ttdeci">char * prefix</div><div class="ttdef"><b>Definition</b> <a href="special_8c_source.html#l00054">special.c:54</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

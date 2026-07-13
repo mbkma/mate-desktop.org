@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('mate-system-info_8c_source.html',''); 
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    GDBusObjectManager *manager;</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    g_autolist(GDBusObject) objects = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>    GList *l;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    gchar *size;</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    guint64 total_size;</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    g_autoptr(GError) <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
@@ -512,14 +512,14 @@ $(document).ready(function(){initNavTree('mate-system-info_8c_source.html',''); 
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    }</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="keywordflow">if</span> (total_size &gt; 0)</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    {</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_format_size (total_size);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        size = g_format_size (total_size);</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    }</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    {</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_strdup (<span class="stringliteral">&quot;Unknown&quot;</span>);</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        size = g_strdup (<span class="stringliteral">&quot;Unknown&quot;</span>);</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    }</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">return</span> size;</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>}</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
@@ -887,7 +887,6 @@ $(document).ready(function(){initNavTree('mate-system-info_8c_source.html',''); 
 <div class="ttc" id="aev-archive_8c_html_ac307ccd36e0808058f998a8048673a49"><div class="ttname"><a href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(EvArchive, ev_archive, G_TYPE_OBJECT)</div></div>
 <div class="ttc" id="ainfo-cleanup_8c_html_a4f21146314873328eb20980ae5a7926c"><div class="ttname"><a href="info-cleanup_8c.html#a4f21146314873328eb20980ae5a7926c">info_cleanup</a></div><div class="ttdeci">char * info_cleanup(const char *input)</div><div class="ttdef"><b>Definition</b> <a href="info-cleanup_8c_source.html#l00127">info-cleanup.c:127</a></div></div>
 <div class="ttc" id="ainfo-cleanup_8h_html"><div class="ttname"><a href="info-cleanup_8h.html">info-cleanup.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-system-info_8c_html_a62fffbb4e9303123400980c9bbd210a6"><div class="ttname"><a href="mate-system-info_8c.html#a62fffbb4e9303123400980c9bbd210a6">mate_system_info_new</a></div><div class="ttdeci">GtkWidget * mate_system_info_new(void)</div><div class="ttdef"><b>Definition</b> <a href="mate-system-info_8c_source.html#l00751">mate-system-info.c:751</a></div></div>

@@ -917,7 +917,7 @@ $(document).ready(function(){initNavTree('eom-uri-converter_8c_source.html','');
 <div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *s;</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    gunichar c;</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    gboolean token_next;</div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    g_return_val_if_fail (format_str != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -987,7 +987,7 @@ $(document).ready(function(){initNavTree('eom-uri-converter_8c_source.html','');
 <div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        }</div>
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>    }</div>
 <div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span> </div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>    filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>    repl_str = replace_remove_chars (str, convert_spaces, space_char);</div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span> </div>
 <div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    <span class="keywordflow">if</span> (repl_str-&gt;len &gt; 0) {</div>
@@ -1018,13 +1018,13 @@ $(document).ready(function(){initNavTree('eom-uri-converter_8c_source.html','');
 <div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>            g_free (suffix);</div>
 <div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        }</div>
 <div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span> </div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = repl_str-&gt;str;</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        filename = repl_str-&gt;str;</div>
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    }</div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span> </div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    g_string_free (repl_str, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    g_string_free (str, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="keywordflow">return</span> filename;</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>}</div>
 </div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
@@ -1134,7 +1134,6 @@ $(document).ready(function(){initNavTree('eom-uri-converter_8c_source.html','');
 <div class="ttc" id="aeom-uri-converter_8h_html_a8912bd65bed5d1ab28eba0d4173b8075af74e1d649bcec2d47455d43612f644c8"><div class="ttname"><a href="eom-uri-converter_8h.html#a8912bd65bed5d1ab28eba0d4173b8075af74e1d649bcec2d47455d43612f644c8">EOM_UC_MONTH</a></div><div class="ttdeci">@ EOM_UC_MONTH</div><div class="ttdef"><b>Definition</b> <a href="eom-uri-converter_8h_source.html#l00032">eom-uri-converter.h:32</a></div></div>
 <div class="ttc" id="aeom-uri-converter_8h_html_af03ce4d9441c47a1c2b875b981611963"><div class="ttname"><a href="eom-uri-converter_8h.html#af03ce4d9441c47a1c2b875b981611963">EomURIConverterPrivate</a></div><div class="ttdeci">struct _EomURIConverterPrivate EomURIConverterPrivate</div><div class="ttdef"><b>Definition</b> <a href="eom-uri-converter_8h_source.html#l00022">eom-uri-converter.h:22</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>

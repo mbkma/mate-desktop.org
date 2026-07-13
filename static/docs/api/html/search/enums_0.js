@@ -12,6 +12,5 @@ var searchData=
   ['_5fweatherconditionqualifier_9',['_WeatherConditionQualifier',['../weather_8h.html#a49d70217b747d45cebff63dad62fd747',1,'weather.h']]],
   ['_5fweatherforecasttype_10',['_WeatherForecastType',['../weather_8h.html#ad0cf95d10e704798bc821269f1dad53e',1,'weather.h']]],
   ['_5fweathersky_11',['_WeatherSky',['../weather_8h.html#a086916c6c2d8f4a16dd5f18e5874c843',1,'weather.h']]],
-  ['_5fweatherwinddirection_12',['_WeatherWindDirection',['../weather_8h.html#a96f8e3618bab34fc2a46aed796b6e015',1,'weather.h']]],
-  ['_5fxmlparsereturntype_13',['_xmlParseReturnType',['../epub-document_8c.html#ae3425df646809818d3aae214e9d662b0',1,'epub-document.c']]]
+  ['_5fweatherwinddirection_12',['_WeatherWindDirection',['../weather_8h.html#a96f8e3618bab34fc2a46aed796b6e015',1,'weather.h']]]
 ];

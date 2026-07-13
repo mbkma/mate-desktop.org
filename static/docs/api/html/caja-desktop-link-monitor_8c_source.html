@@ -220,17 +220,17 @@ $(document).ready(function(){initNavTree('caja-desktop-link-monitor_8c_source.ht
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">char</span> *</div>
 <div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="caja-desktop-link-monitor_8c.html#aac733316378cbc7322a020a622b3bab0">  117</a></span><a class="code hl_function" href="caja-desktop-link-monitor_8c.html#aac733316378cbc7322a020a622b3bab0">caja_desktop_link_monitor_make_filename_unique</a> (<a class="code hl_struct" href="structCajaDesktopLinkMonitor.html">CajaDesktopLinkMonitor</a> *monitor,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">char</span> *unique_name;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    i = 2;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    unique_name = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    unique_name = g_strdup (filename);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">while</span> (volume_file_name_used (monitor, unique_name))</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        g_free (unique_name);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        unique_name = g_strdup_printf (<span class="stringliteral">&quot;%s.%d&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, i++);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        unique_name = g_strdup_printf (<span class="stringliteral">&quot;%s.%d&quot;</span>, filename, i++);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    }</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> unique_name;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}</div>
@@ -664,7 +664,6 @@ $(document).ready(function(){initNavTree('caja-desktop-link-monitor_8c_source.ht
 <div class="ttc" id="aeel-vfs-extensions_8h_html"><div class="ttname"><a href="eel-vfs-extensions_8h.html">eel-vfs-extensions.h</a></div></div>
 <div class="ttc" id="aeel-vfs-extensions_8h_html_ad86ed50ea254bd01cff030fce1617c3b"><div class="ttname"><a href="eel-vfs-extensions_8h.html#ad86ed50ea254bd01cff030fce1617c3b">EEL_DESKTOP_URI</a></div><div class="ttdeci">#define EEL_DESKTOP_URI</div><div class="ttdef"><b>Definition</b> <a href="eel-vfs-extensions_8h_source.html#l00039">eel-vfs-extensions.h:39</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="astructCajaDesktopLinkMonitor_html"><div class="ttname"><a href="structCajaDesktopLinkMonitor.html">CajaDesktopLinkMonitor</a></div><div class="ttdef"><b>Definition</b> <a href="caja-desktop-link-monitor_8h_source.html#l00046">caja-desktop-link-monitor.h:47</a></div></div>
 <div class="ttc" id="astructCajaDesktopLinkMonitor_html_aea46fe4f6f5d7a9dbe05d6383f23480a"><div class="ttname"><a href="structCajaDesktopLinkMonitor.html#aea46fe4f6f5d7a9dbe05d6383f23480a">CajaDesktopLinkMonitor::details</a></div><div class="ttdeci">CajaDesktopLinkMonitorDetails * details</div><div class="ttdef"><b>Definition</b> <a href="caja-desktop-link-monitor_8h_source.html#l00049">caja-desktop-link-monitor.h:49</a></div></div>

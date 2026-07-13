@@ -180,15 +180,15 @@ $(document).ready(function(){initNavTree('baobab-utils_8c_source.html',''); init
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                gpointer <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">if</span> (response == GTK_RESPONSE_OK) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        gchar *filename;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        GFile   *file;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_file_chooser_get_uri (GTK_FILE_CHOOSER (chooser));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        filename = gtk_file_chooser_get_uri (GTK_FILE_CHOOSER (chooser));</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        gtk_widget_hide (chooser);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        file = g_file_new_for_uri (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        file = g_file_new_for_uri (filename);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <a class="code hl_function" href="baobab_8c.html#a4c022bc1ec55a60b695cc72f76818473">baobab_scan_location</a> (file);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        g_free (filename);</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        g_object_unref (file);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">else</span> {</div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('baobab-utils_8c_source.html',''); init
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    GtkTreeIter parent;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    gdouble perc;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    gint readelements, size_col;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    guint64 refsize, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    guint64 refsize, size;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordtype">char</span> *sizecstr = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="baobab_8c.html#a0eb72a5576e75c63670f0726c1f20848">baobab</a>.<a class="code hl_variable" href="struct__BaobabApplication.html#a24ad1ad5e96716f473ba2f4aa0ce435c">show_allocated</a>)</div>
@@ -284,9 +284,9 @@ $(document).ready(function(){initNavTree('baobab-utils_8c_source.html',''); init
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        gtk_tree_model_get (mdl, &amp;parent, <a class="code hl_enumvalue" href="baobab-treeview_8h.html#a7ceb1019b37672d06b12bfe7dd02819ea91392999d7b232973abf926e65f58c24">COL_H_ELEMENTS</a>,</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    &amp;readelements, -1);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                gtk_tree_model_get (mdl, iter, size_col, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, -1);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                gtk_tree_model_get (mdl, iter, size_col, &amp;size, -1);</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            sizecstr = g_format_size (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            sizecstr = g_format_size (size);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keywordflow">if</span> (readelements == -1) {</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            gtk_tree_store_set (GTK_TREE_STORE (mdl), iter,</div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('baobab-utils_8c_source.html',''); init
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        }</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        gtk_tree_model_get (mdl, &amp;parent, size_col, &amp;refsize, -1);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        perc = (refsize != 0) ? ((gdouble) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * 100) / (gdouble) refsize : 0.0;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        perc = (refsize != 0) ? ((gdouble) size * 100) / (gdouble) refsize : 0.0;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        gtk_tree_store_set (GTK_TREE_STORE (mdl), iter,</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                    <a class="code hl_enumvalue" href="baobab-treeview_8h.html#a7ceb1019b37672d06b12bfe7dd02819ea68e5e13863b9bc2d9cc757106db05f56">COL_DIR_SIZE</a>, sizecstr,</div>
@@ -309,10 +309,10 @@ $(document).ready(function(){initNavTree('baobab-utils_8c_source.html',''); init
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                    &amp;readelements, -1);</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <span class="keywordflow">if</span> (readelements != -1) {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            gtk_tree_model_get (mdl, iter, size_col, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            gtk_tree_model_get (mdl, iter, size_col, &amp;size,</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                        -1);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                sizecstr = g_format_size (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                sizecstr = g_format_size (size);</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            gtk_tree_store_set (GTK_TREE_STORE (mdl), iter,</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                        <a class="code hl_enumvalue" href="baobab-treeview_8h.html#a7ceb1019b37672d06b12bfe7dd02819ea589b5ec17bf9b32c789cd357d2df4eef">COL_H_PERC</a>, 100.0,</div>
@@ -689,8 +689,6 @@ $(document).ready(function(){initNavTree('baobab-utils_8c_source.html',''); init
 <div class="ttc" id="acallbacks_8c_html_ac79cea7174b2519bbcf6317f855bb297"><div class="ttname"><a href="callbacks_8c.html#ac79cea7174b2519bbcf6317f855bb297">open_file_cb</a></div><div class="ttdeci">void open_file_cb(GtkMenuItem *pmenu, gpointer dummy)</div><div class="ttdef"><b>Definition</b> <a href="callbacks_8c_source.html#l00200">callbacks.c:200</a></div></div>
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-image-menu-item_8c_html_a0034527a19e913af2e2fa9152de8f6a1"><div class="ttname"><a href="mate-image-menu-item_8c.html#a0034527a19e913af2e2fa9152de8f6a1">mate_image_menu_item_set_image</a></div><div class="ttdeci">void mate_image_menu_item_set_image(MateImageMenuItem *image_menu_item, GtkWidget *image)</div><div class="ttdef"><b>Definition</b> <a href="mate-image-menu-item_8c_source.html#l00482">mate-image-menu-item.c:482</a></div></div>

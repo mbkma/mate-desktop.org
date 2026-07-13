@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('fm-ditem-page_8c_source.html',''); ini
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *description;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">char</span> *current_value;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    gboolean localized;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    gboolean <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    gboolean filename;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="fm-ditem-page_8c.html#a3226314f7d7af5b33cd5b652dad1ac9e">   48</a></span>} <a class="code hl_typedef" href="fm-ditem-page_8c.html#a3226314f7d7af5b33cd5b652dad1ac9e">ItemEntry</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">enum</span></div>
@@ -243,7 +243,7 @@ $(document).ready(function(){initNavTree('fm-ditem-page_8c_source.html',''); ini
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>item_entry_new (<span class="keyword">const</span> <span class="keywordtype">char</span> *field,</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                <span class="keyword">const</span> <span class="keywordtype">char</span> *description,</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                gboolean localized,</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                gboolean <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                gboolean filename)</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_typedef" href="fm-ditem-page_8c.html#a3226314f7d7af5b33cd5b652dad1ac9e">ItemEntry</a> *entry;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
@@ -251,7 +251,7 @@ $(document).ready(function(){initNavTree('fm-ditem-page_8c_source.html',''); ini
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    entry-&gt;field = field;</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    entry-&gt;description = description;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    entry-&gt;localized = localized;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    entry-&gt;filename = <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    entry-&gt;filename = filename;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">return</span> entry;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
@@ -687,7 +687,6 @@ $(document).ready(function(){initNavTree('fm-ditem-page_8c_source.html',''); ini
 <div class="ttc" id="afm-ditem-page_8c_html_ae8c40c22eb71db12fef480921527ef0b"><div class="ttname"><a href="fm-ditem-page_8c.html#ae8c40c22eb71db12fef480921527ef0b">fm_ditem_page_make_box</a></div><div class="ttdeci">GtkWidget * fm_ditem_page_make_box(GtkSizeGroup *label_size_group, GList *files)</div><div class="ttdef"><b>Definition</b> <a href="fm-ditem-page_8c_source.html#l00522">fm-ditem-page.c:522</a></div></div>
 <div class="ttc" id="afm-ditem-page_8h_html"><div class="ttname"><a href="fm-ditem-page_8h.html">fm-ditem-page.h</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-netbook_2maximus_2main_8c_html_a76565232f25302e8cb99c60a629034cc"><div class="ttname"><a href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a></div><div class="ttdeci">GOptionEntry entries[]</div><div class="ttdef"><b>Definition</b> <a href="mate-netbook_2maximus_2main_8c_source.html#l00043">mate-netbook/maximus/main.c:43</a></div></div>

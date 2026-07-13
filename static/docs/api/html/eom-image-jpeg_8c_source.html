@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">struct </span>jpeg_error_mgr pub;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    sigjmp_buf setjmp_buffer;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        GError **<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -448,7 +448,7 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <a class="code hl_struct" href="struct__EomImagePrivate.html">EomImagePrivate</a> *priv;</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keyword">struct </span>jpeg_compress_struct cinfo;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    guchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    guchar *buf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    guchar *ptr;</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    guchar *pixels = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    JSAMPROW *jbuf;</div>
@@ -485,8 +485,8 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    }</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="comment">/* allocate a small buffer to convert image data */</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_try_malloc (w * 3 * <span class="keyword">sizeof</span> (guchar));</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) {</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    buf = g_try_malloc (w * 3 * <span class="keyword">sizeof</span> (guchar));</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="keywordflow">if</span> (!buf) {</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>        g_set_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>,</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                 GDK_PIXBUF_ERROR,</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                 GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY,</div>
@@ -512,7 +512,7 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="comment">/* error exit routine */</span></div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordflow">if</span> (sigsetjmp (jerr.setjmp_buffer, 1)) {</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>        g_free (buf);</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        fclose (outfile);</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        jpeg_destroy_compress (&amp;cinfo);</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    <span class="comment">/* set desired jpeg quality if available */</span></div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">if</span> (target != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; target-&gt;<a class="code hl_variable" href="struct__EomImageSaveInfo.html#af9175d5581cfac923fe75056f9e3bec6">jpeg_quality</a> &gt;= 0.0) {</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        quality = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (target-&gt;<a class="code hl_variable" href="struct__EomImageSaveInfo.html#af9175d5581cfac923fe75056f9e3bec6">jpeg_quality</a>, 1.0) * 100;</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>        quality = (int) <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (target-&gt;<a class="code hl_variable" href="struct__EomImageSaveInfo.html#af9175d5581cfac923fe75056f9e3bec6">jpeg_quality</a>, 1.0) * 100;</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    }</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>    <span class="comment">/* set up jepg compression parameters */</span></div>
@@ -555,10 +555,10 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>    <span class="keywordflow">while</span> (cinfo.next_scanline &lt; cinfo.image_height) {</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        <span class="comment">/* convert scanline from ARGB to RGB packed */</span></div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>        <span class="keywordflow">for</span> (j = 0; j &lt; w; j++)</div>
-<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>            <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> (&amp;(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[j*3]), &amp;(ptr[i*rowstride + j*(rowstride/w)]), 3);</div>
+<div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>            <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> (&amp;(buf[j*3]), &amp;(ptr[i*rowstride + j*(rowstride/w)]), 3);</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span> </div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>        <span class="comment">/* write scanline */</span></div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        jbuf = (JSAMPROW *)(&amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        jbuf = (JSAMPROW *)(&amp;buf);</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>        jpeg_write_scanlines (&amp;cinfo, jbuf, 1);</div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        i++;</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        y++;</div>
@@ -568,7 +568,7 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="comment">/* finish off */</span></div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    jpeg_finish_compress (&amp;cinfo);</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    jpeg_destroy_compress(&amp;cinfo);</div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    g_free (buf);</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span> </div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span>    fclose (outfile);</div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span> </div>
@@ -646,9 +646,6 @@ $(document).ready(function(){initNavTree('eom-image-jpeg_8c_source.html',''); in
 <div class="ttc" id="aeom-transform_8h_html_a799cb137f37f2ee988cd336454b0f450abb73f1e350ba5b24a961e3bc54b6086e"><div class="ttname"><a href="eom-transform_8h.html#a799cb137f37f2ee988cd336454b0f450abb73f1e350ba5b24a961e3bc54b6086e">EOM_TRANSFORM_FLIP_VERTICAL</a></div><div class="ttdeci">@ EOM_TRANSFORM_FLIP_VERTICAL</div><div class="ttdef"><b>Definition</b> <a href="eom-transform_8h_source.html#l00020">eom-transform.h:20</a></div></div>
 <div class="ttc" id="aeom-transform_8h_html_a799cb137f37f2ee988cd336454b0f450aea993bcb7b58b656724ab5de4c35308e"><div class="ttname"><a href="eom-transform_8h.html#a799cb137f37f2ee988cd336454b0f450aea993bcb7b58b656724ab5de4c35308e">EOM_TRANSFORM_ROT_270</a></div><div class="ttdeci">@ EOM_TRANSFORM_ROT_270</div><div class="ttdef"><b>Definition</b> <a href="eom-transform_8h_source.html#l00018">eom-transform.h:18</a></div></div>
 <div class="ttc" id="aeom-transform_8h_html_a799cb137f37f2ee988cd336454b0f450aebc0f0b944d579ff439ab3fd4ba9a4a6"><div class="ttname"><a href="eom-transform_8h.html#a799cb137f37f2ee988cd336454b0f450aebc0f0b944d579ff439ab3fd4ba9a4a6">EOM_TRANSFORM_FLIP_HORIZONTAL</a></div><div class="ttdeci">@ EOM_TRANSFORM_FLIP_HORIZONTAL</div><div class="ttdef"><b>Definition</b> <a href="eom-transform_8h_source.html#l00019">eom-transform.h:19</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

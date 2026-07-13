@@ -637,7 +637,7 @@ $(document).ready(function(){initNavTree('fr-command_8c_source.html',''); initRe
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>fr_command_set_filename (<a class="code hl_struct" href="struct__FrCommand.html">FrCommand</a>  *comm,</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>             <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>             <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>{</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    g_return_if_fail (<a class="code hl_define" href="fr-command_8h.html#a01f36f8e5e01fde82b0e6c6d7d92e3c6">FR_IS_COMMAND</a> (comm));</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span> </div>
@@ -651,19 +651,19 @@ $(document).ready(function(){initNavTree('fr-command_8c_source.html',''); initRe
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ab1a24e9217cc6a766f14a9e567c30859">e_filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    }</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        <span class="keywordflow">if</span> (! g_path_is_absolute (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)) {</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordflow">if</span> (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        <span class="keywordflow">if</span> (! g_path_is_absolute (filename)) {</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>            <span class="keywordtype">char</span> *current_dir;</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>            current_dir = g_get_current_dir ();</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>            comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ae9687d165e3d894b96b398b77b9d6d9a">filename</a> = g_strconcat (current_dir,</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>                              <span class="stringliteral">&quot;/&quot;</span>,</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                              <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                              filename,</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>                              <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>            g_free (current_dir);</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        }</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>            comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ae9687d165e3d894b96b398b77b9d6d9a">filename</a> = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>            comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ae9687d165e3d894b96b398b77b9d6d9a">filename</a> = g_strdup (filename);</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>        comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ab1a24e9217cc6a766f14a9e567c30859">e_filename</a> = g_shell_quote (comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ae9687d165e3d894b96b398b77b9d6d9a">filename</a>);</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
@@ -679,12 +679,12 @@ $(document).ready(function(){initNavTree('fr-command_8c_source.html',''); initRe
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno"><a class="line" href="fr-command_8c.html#af909e19f1c0b5e34d2bc4d76368ace74">  574</a></span><a class="code hl_function" href="fr-command_8c.html#af909e19f1c0b5e34d2bc4d76368ace74">fr_command_set_file</a> (<a class="code hl_struct" href="struct__FrCommand.html">FrCommand</a> *comm,</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>             GFile     *file)</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>{</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span> </div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (file);</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    fr_command_set_filename (comm, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    filename = g_file_get_path (file);</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    fr_command_set_filename (comm, filename);</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    g_free (filename);</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>}</div>
 </div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
@@ -1032,7 +1032,6 @@ $(document).ready(function(){initNavTree('fr-command_8c_source.html',''); initRe
 <div class="ttc" id="aglib-utils_8c_html_abeecaf9d168b1feeaebed7a0b778da35"><div class="ttname"><a href="glib-utils_8c.html#abeecaf9d168b1feeaebed7a0b778da35">get_static_string</a></div><div class="ttdeci">const char * get_static_string(const char *s)</div><div class="ttdef"><b>Definition</b> <a href="glib-utils_8c_source.html#l00450">glib-utils.c:450</a></div></div>
 <div class="ttc" id="aglib-utils_8h_html"><div class="ttname"><a href="glib-utils_8h.html">glib-utils.h</a></div></div>
 <div class="ttc" id="aglib-utils_8h_html_a4407b4d6eae3ba7fe9538b1242a7e165"><div class="ttname"><a href="glib-utils_8h.html#a4407b4d6eae3ba7fe9538b1242a7e165">DEBUG_INFO</a></div><div class="ttdeci">#define DEBUG_INFO</div><div class="ttdef"><b>Definition</b> <a href="glib-utils_8h_source.html#l00073">glib-utils.h:73</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>

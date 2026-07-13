@@ -112,7 +112,7 @@ Include dependency graph for md4.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a2b4a8791145616dd3add6ae6db3494e3" id="r_a2b4a8791145616dd3add6ae6db3494e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(<a class="el" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,  len)&#160;&#160;&#160;/* Nothing */</td></tr>
+<tr class="memitem:a2b4a8791145616dd3add6ae6db3494e3" id="r_a2b4a8791145616dd3add6ae6db3494e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(buf,  len)&#160;&#160;&#160;/* Nothing */</td></tr>
 <tr class="separator:a2b4a8791145616dd3add6ae6db3494e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9187080df465eee5b8e06dd238ca9960" id="r_a9187080df465eee5b8e06dd238ca9960"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#a9187080df465eee5b8e06dd238ca9960">rotl32</a>(x,  n)&#160;&#160;&#160;(((x) &lt;&lt; ((guint32)(n))) | ((x) &gt;&gt; (32 - (guint32)(n))))</td></tr>
 <tr class="separator:a9187080df465eee5b8e06dd238ca9960"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,13 +133,13 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ad832a9c89492245656b302cccc6cb8ff" id="r_ad832a9c89492245656b302cccc6cb8ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#ad832a9c89492245656b302cccc6cb8ff">MD4Init</a> (<a class="el" href="structMD4__CTX.html">MD4_CTX</a> *ctx)</td></tr>
 <tr class="separator:ad832a9c89492245656b302cccc6cb8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee0d8dd4406aab9caea9dcd646961b1a" id="r_aee0d8dd4406aab9caea9dcd646961b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">MD4Update</a> (<a class="el" href="structMD4__CTX.html">MD4_CTX</a> *ctx, unsigned char const *<a class="el" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, unsigned len)</td></tr>
+<tr class="memitem:aee0d8dd4406aab9caea9dcd646961b1a" id="r_aee0d8dd4406aab9caea9dcd646961b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">MD4Update</a> (<a class="el" href="structMD4__CTX.html">MD4_CTX</a> *ctx, unsigned char const *buf, unsigned len)</td></tr>
 <tr class="separator:aee0d8dd4406aab9caea9dcd646961b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad7b7217754b64be6120fcfae32461e" id="r_a3ad7b7217754b64be6120fcfae32461e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#a3ad7b7217754b64be6120fcfae32461e">MD4Final</a> (unsigned char *digest, <a class="el" href="structMD4__CTX.html">MD4_CTX</a> *ctx)</td></tr>
 <tr class="separator:a3ad7b7217754b64be6120fcfae32461e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad394a5b3cea90b6580b213cd5bd8a66" id="r_aad394a5b3cea90b6580b213cd5bd8a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">MD4Transform</a> (guint32 <a class="el" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[4], guint32 const in[16])</td></tr>
+<tr class="memitem:aad394a5b3cea90b6580b213cd5bd8a66" id="r_aad394a5b3cea90b6580b213cd5bd8a66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">MD4Transform</a> (guint32 buf[4], guint32 const in[16])</td></tr>
 <tr class="separator:aad394a5b3cea90b6580b213cd5bd8a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a6319de9ffde2163739a7e4fe0126d" id="r_ab4a6319de9ffde2163739a7e4fe0126d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#ab4a6319de9ffde2163739a7e4fe0126d">MD4Keycrunch</a> (char *result, const char *seed, const char *passphrase)</td></tr>
+<tr class="memitem:ab4a6319de9ffde2163739a7e4fe0126d" id="r_ab4a6319de9ffde2163739a7e4fe0126d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#ab4a6319de9ffde2163739a7e4fe0126d">MD4Keycrunch</a> (char *result, const char *seed, const char *passphrase)</td></tr>
 <tr class="separator:ab4a6319de9ffde2163739a7e4fe0126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14e58c5c71008e86e99cbff92f527b85" id="r_a14e58c5c71008e86e99cbff92f527b85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="md4_8c.html#a14e58c5c71008e86e99cbff92f527b85">MD4SKey</a> (char *x)</td></tr>
 <tr class="separator:a14e58c5c71008e86e99cbff92f527b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
           <td class="memname">#define byteReverse</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, </td>
+          <td class="paramname">buf, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -558,7 +558,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> MD4Keycrunch </td>
+          <td class="memname">int MD4Keycrunch </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
           <td class="paramname"><em>result</em>, </td>

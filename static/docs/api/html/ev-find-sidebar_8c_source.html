@@ -444,7 +444,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                             gboolean      case_sensitive,</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                             PangoLogAttr *log_attrs,</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                             gint          log_attrs_length,</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                             gint          <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                             gint          offset)</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>{</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        gint   iter;</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        gchar *prec = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -453,18 +453,18 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        gchar *markup;</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        gint   max_chars;</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        iter = <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (0, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> - 1);</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        iter = <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (0, offset - 1);</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        <span class="keywordflow">while</span> (!log_attrs[iter].is_word_start &amp;&amp; iter &gt; 0)</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                iter--;</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        prec = sanitized_substring (text, iter, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        prec = sanitized_substring (text, iter, offset);</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        iter = <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> += g_utf8_strlen (find_text, -1);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        iter = offset;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        offset += g_utf8_strlen (find_text, -1);</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        <span class="keywordflow">if</span> (!case_sensitive)</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                match = g_utf8_substring (text, iter, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                match = g_utf8_substring (text, iter, offset);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        iter = <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (log_attrs_length, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> + 1);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        iter = <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (log_attrs_length, offset + 1);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        max_chars = <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (log_attrs_length - 1, iter + 100);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        <span class="keywordflow">while</span> (<a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                gint word = iter;</div>
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                iter = word + 1;</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>        }</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        succ = sanitized_substring (text, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, iter);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>        succ = sanitized_substring (text, offset, iter);</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        markup = g_markup_printf_escaped (<span class="stringliteral">&quot;%s&lt;span weight=\&quot;bold\&quot;&gt;%s&lt;/span&gt;%s&quot;</span>,</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                                          prec ? prec : <span class="stringliteral">&quot;&quot;</span>, match ? match : find_text, succ ? succ : <span class="stringliteral">&quot;&quot;</span>);</div>
@@ -515,7 +515,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>get_match_offset (<a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *areas,</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                  guint        n_areas,</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                  <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *match,</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>                  gint         <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>                  gint         offset)</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>{</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        gdouble x, y;</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        gint i;</div>
@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        x = match-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>        y = (match-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> + match-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) / 2;</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        i = <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        i = offset;</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        <span class="keywordflow">do</span> {</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>                <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *area = areas + i;</div>
@@ -534,7 +534,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>                }</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>                i = (i + 1) % n_areas;</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>        } <span class="keywordflow">while</span> (i != <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>        } <span class="keywordflow">while</span> (i != offset);</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>}</div>
@@ -568,7 +568,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>                guint         n_areas;</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>                PangoLogAttr *text_log_attrs;</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>                gulong        text_log_attrs_length;</div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>                gint          <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>                gint          offset;</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>                current_page = priv-&gt;current_page;</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>                priv-&gt;current_page = (priv-&gt;current_page + 1) % priv-&gt;job-&gt;n_pages;</div>
@@ -591,7 +591,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                <span class="keywordflow">if</span> (priv-&gt;first_match_page == -1)</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                        priv-&gt;first_match_page = current_page;</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = 0;</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                offset = 0;</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span> </div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>                <span class="keywordflow">for</span> (l = matches, result = 0; l; l = g_list_next (l), result++) {</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>                        <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *match = (<a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *)l-&gt;data;</div>
@@ -599,7 +599,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>                        GtkTreeIter  iter;</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                        gint         new_offset;</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                        new_offset = get_match_offset (areas, n_areas, match, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                        new_offset = get_match_offset (areas, n_areas, match, offset);</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                        <span class="keywordflow">if</span> (new_offset == -1) {</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                                g_warning (<span class="stringliteral">&quot;No offset found for match \&quot;%s\&quot; at page %d after processing %d results\n&quot;</span>,</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>                                           priv-&gt;job-&gt;text, current_page, result);</div>
@@ -607,7 +607,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="comment">                                 * that but keep iterating to show any other matches in page (issue #1545) */</span></div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>                        }</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = new_offset;</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>                        offset = new_offset;</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span> </div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>                        <span class="keywordflow">if</span> (current_page &gt;= priv-&gt;job-&gt;start_page) {</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>                                gtk_list_store_append (GTK_LIST_STORE (model), &amp;iter);</div>
@@ -622,7 +622,7 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>                                                              priv-&gt;job-&gt;case_sensitive,</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>                                                              text_log_attrs,</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>                                                              text_log_attrs_length,</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                                                              <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>                                                              offset);</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                        gtk_list_store_set (GTK_LIST_STORE (model), &amp;iter,</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>                                            <a class="code hl_enumvalue" href="ev-find-sidebar_8c.html#a56a0f36da7f9eaaf54bd05cc2bf49173a658268753d26e20db642708403b7e96c">TEXT_COLUMN</a>, markup,</div>
@@ -827,7 +827,6 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="ttc" id="aev-jobs_8c_html_afa0577827a8cdea4d8b2f364d55d679a"><div class="ttname"><a href="ev-jobs_8c.html#afa0577827a8cdea4d8b2f364d55d679a">ev_job_find_get_n_results</a></div><div class="ttdeci">gint ev_job_find_get_n_results(EvJobFind *job, gint page)</div><div class="ttdef"><b>Definition</b> <a href="ev-jobs_8c_source.html#l01367">ev-jobs.c:1367</a></div></div>
 <div class="ttc" id="aev-jobs_8c_html_aff3360cc8da865f38ffd95de1b0db7d7"><div class="ttname"><a href="ev-jobs_8c.html#aff3360cc8da865f38ffd95de1b0db7d7">ev_job_find_has_results</a></div><div class="ttdeci">gboolean ev_job_find_has_results(EvJobFind *job)</div><div class="ttdef"><b>Definition</b> <a href="ev-jobs_8c_source.html#l01398">ev-jobs.c:1398</a></div></div>
 <div class="ttc" id="aev-jobs_8h_html_a8de86fd7bf500d1f0304e70cf6bbaecd"><div class="ttname"><a href="ev-jobs_8h.html#a8de86fd7bf500d1f0304e70cf6bbaecd">EV_JOB</a></div><div class="ttdeci">#define EV_JOB(object)</div><div class="ttdef"><b>Definition</b> <a href="ev-jobs_8h_source.html#l00082">ev-jobs.h:82</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
@@ -838,10 +837,10 @@ $(document).ready(function(){initNavTree('ev-find-sidebar_8c_source.html',''); i
 <div class="ttc" id="astruct__EvJobFind_html_af7f44a20e10bdce9d2ab4e5bb828c743"><div class="ttname"><a href="struct__EvJobFind.html#af7f44a20e10bdce9d2ab4e5bb828c743">_EvJobFind::start_page</a></div><div class="ttdeci">gint start_page</div><div class="ttdef"><b>Definition</b> <a href="ev-jobs_8h_source.html#l00354">ev-jobs.h:354</a></div></div>
 <div class="ttc" id="astruct__EvJob_html"><div class="ttname"><a href="struct__EvJob.html">_EvJob</a></div><div class="ttdef"><b>Definition</b> <a href="ev-jobs_8h_source.html#l00162">ev-jobs.h:163</a></div></div>
 <div class="ttc" id="astruct__EvPage_html"><div class="ttname"><a href="struct__EvPage.html">_EvPage</a></div><div class="ttdef"><b>Definition</b> <a href="ev-page_8h_source.html#l00044">ev-page.h:44</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html"><div class="ttname"><a href="struct__EvRectangle.html">_EvRectangle</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00191">ev-document.h:192</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_a3fcc5cdd0bcd1c1fa34b544417942b5a"><div class="ttname"><a href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">_EvRectangle::x1</a></div><div class="ttdeci">gdouble x1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00193">ev-document.h:193</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_a5d4921b956a59ec7105a7597323c15d8"><div class="ttname"><a href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">_EvRectangle::y1</a></div><div class="ttdeci">gdouble y1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00194">ev-document.h:194</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_aa2575705672dab5800cb6cad74bc70a3"><div class="ttname"><a href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">_EvRectangle::y2</a></div><div class="ttdeci">gdouble y2</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00196">ev-document.h:196</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html"><div class="ttname"><a href="struct__EvRectangle.html">_EvRectangle</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00197">ev-document.h:198</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_a3fcc5cdd0bcd1c1fa34b544417942b5a"><div class="ttname"><a href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">_EvRectangle::x1</a></div><div class="ttdeci">gdouble x1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00199">ev-document.h:199</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_a5d4921b956a59ec7105a7597323c15d8"><div class="ttname"><a href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">_EvRectangle::y1</a></div><div class="ttdeci">gdouble y1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00200">ev-document.h:200</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_aa2575705672dab5800cb6cad74bc70a3"><div class="ttname"><a href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">_EvRectangle::y2</a></div><div class="ttdeci">gdouble y2</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00202">ev-document.h:202</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

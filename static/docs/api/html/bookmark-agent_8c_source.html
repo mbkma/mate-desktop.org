@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                              GFileMonitorEvent, gpointer);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">static</span> <span class="keywordtype">void</span> weak_destroy_cb  (gpointer, GObject *);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">static</span> gchar *find_package_data_file (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">static</span> gchar *find_package_data_file (<span class="keyword">const</span> gchar *filename);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">static</span> gint BookmarkAgent_private_offset;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
@@ -1007,7 +1007,7 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    gchar **groups;</div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    gchar **bookmarks = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    gchar  *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>, *uri;</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>    gchar  *buf, *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>, *uri;</div>
 <div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span> </div>
 <div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>    gint i, j, bookmark_len;</div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
@@ -1031,11 +1031,11 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span> </div>
 <div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    g_strfreev (uris);</div>
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span> </div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>    g_file_get_contents (priv-&gt;gtk_store_path, &amp; <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>    g_file_get_contents (priv-&gt;gtk_store_path, &amp; buf, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) {</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        bookmarks = g_strsplit (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="stringliteral">&quot;\n&quot;</span>, -1);</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    <span class="keywordflow">if</span> (buf) {</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>        bookmarks = g_strsplit (buf, <span class="stringliteral">&quot;\n&quot;</span>, -1);</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        g_free (buf);</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    }</div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    <span class="keywordflow">for</span> (i = 0; bookmarks &amp;&amp; bookmarks [i]; ++i) {</div>
@@ -1061,7 +1061,7 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>}</div>
 <div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span> </div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span><span class="keyword">static</span> gchar *</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>find_package_data_file (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>find_package_data_file (<span class="keyword">const</span> gchar *filename)</div>
 <div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>{</div>
 <div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <span class="keyword">const</span> gchar * <span class="keyword">const</span> *dirs = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    gchar               *path = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -1070,7 +1070,7 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>    dirs = g_get_system_data_dirs ();</div>
 <div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span> </div>
 <div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    <span class="keywordflow">for</span> (i = 0; ! path &amp;&amp; dirs &amp;&amp; dirs [i]; ++i) {</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        path = g_build_filename (dirs [i], <a class="code hl_define" href="bookmark-agent_8c.html#aca8570fb706c81df371b7f9bc454ae03">PACKAGE</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        path = g_build_filename (dirs [i], <a class="code hl_define" href="bookmark-agent_8c.html#aca8570fb706c81df371b7f9bc454ae03">PACKAGE</a>, filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span> </div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>        <span class="keywordflow">if</span> (! g_file_test (path, G_FILE_TEST_EXISTS)) {</div>
 <div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>            g_free (path);</div>
@@ -1305,15 +1305,15 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        path = g_build_filename (g_get_user_data_dir (), <span class="stringliteral">&quot;caja&quot;</span>, <span class="stringliteral">&quot;searches&quot;</span>, &amp; uri [21], <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span> </div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>        <span class="keywordflow">if</span> (g_file_test (path, G_FILE_TEST_EXISTS)) {</div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>            gchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>            g_file_get_contents (path, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>            gchar *buf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>            g_file_get_contents (path, &amp;buf, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span> </div>
 <div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>            gchar *tag_open_ptr  = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>            gchar *tag_close_ptr = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span> </div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>            <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) {</div>
-<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>                tag_open_ptr  = strstr (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="stringliteral">&quot;&lt;text&gt;&quot;</span>);</div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>                tag_close_ptr = strstr (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="stringliteral">&quot;&lt;/text&gt;&quot;</span>);</div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>            <span class="keywordflow">if</span> (buf) {</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>                tag_open_ptr  = strstr (buf, <span class="stringliteral">&quot;&lt;text&gt;&quot;</span>);</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>                tag_close_ptr = strstr (buf, <span class="stringliteral">&quot;&lt;/text&gt;&quot;</span>);</div>
 <div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>            }</div>
 <div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span> </div>
 <div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>            <span class="keywordflow">if</span> (tag_open_ptr &amp;&amp; tag_close_ptr) {</div>
@@ -1322,7 +1322,7 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>                search_string = g_strdup_printf (<span class="stringliteral">&quot;\&quot;%s\&quot;&quot;</span>, &amp;tag_open_ptr[6]);</div>
 <div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>            }</div>
 <div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span> </div>
-<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>            g_free (buf);</div>
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>        }</div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span> </div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>        <span class="keywordflow">if</span> (search_string) {</div>
@@ -1409,8 +1409,6 @@ $(document).ready(function(){initNavTree('bookmark-agent_8c_source.html',''); in
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="alibslab-utils_8c_html_a76acc4ec7f7ec369945b4c0bf54c4250"><div class="ttname"><a href="libslab-utils_8c.html#a76acc4ec7f7ec369945b4c0bf54c4250">libslab_mate_desktop_item_new_from_unknown_id</a></div><div class="ttdeci">MateDesktopItem * libslab_mate_desktop_item_new_from_unknown_id(const gchar *id)</div><div class="ttdef"><b>Definition</b> <a href="libslab-utils_8c_source.html#l00017">libslab-utils.c:17</a></div></div>
 <div class="ttc" id="alibslab-utils_8h_html"><div class="ttname"><a href="libslab-utils_8h.html">libslab-utils.h</a></div></div>

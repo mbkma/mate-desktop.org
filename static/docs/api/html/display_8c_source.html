@@ -2060,7 +2060,7 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span>              <span class="comment">/* This is from our synchronous grab since</span></div>
 <div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span><span class="comment">               * it has no modifiers and was on the client window</span></div>
 <div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span><span class="comment">               */</span></div>
-<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>              <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>              <span class="keywordtype">int</span> mode;</div>
 <div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span> </div>
 <div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span>              <span class="comment">/* When clicking a different app in click-to-focus</span></div>
 <div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span><span class="comment">               * in application-based mode, and the different</span></div>
@@ -2074,16 +2074,16 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l02036" name="l02036"></a><span class="lineno"> 2036</span>                  (display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#a9ba04f6c6aa5a622c64da437301f6e76">focus_window</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ||</div>
 <div class="line"><a id="l02037" name="l02037"></a><span class="lineno"> 2037</span>                   !<a class="code hl_function" href="window-private_8h.html#a7fa37997b6d6f50243522eb8d20a6cab">meta_window_same_application</a> (window,</div>
 <div class="line"><a id="l02038" name="l02038"></a><span class="lineno"> 2038</span>                                                  display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#a9ba04f6c6aa5a622c64da437301f6e76">focus_window</a>)))</div>
-<div class="line"><a id="l02039" name="l02039"></a><span class="lineno"> 2039</span>                <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = AsyncPointer; <span class="comment">/* eat focus click */</span></div>
+<div class="line"><a id="l02039" name="l02039"></a><span class="lineno"> 2039</span>                mode = AsyncPointer; <span class="comment">/* eat focus click */</span></div>
 <div class="line"><a id="l02040" name="l02040"></a><span class="lineno"> 2040</span>              <span class="keywordflow">else</span></div>
-<div class="line"><a id="l02041" name="l02041"></a><span class="lineno"> 2041</span>                <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = ReplayPointer; <span class="comment">/* give event back */</span></div>
+<div class="line"><a id="l02041" name="l02041"></a><span class="lineno"> 2041</span>                mode = ReplayPointer; <span class="comment">/* give event back */</span></div>
 <div class="line"><a id="l02042" name="l02042"></a><span class="lineno"> 2042</span> </div>
 <div class="line"><a id="l02043" name="l02043"></a><span class="lineno"> 2043</span>              meta_verbose (<span class="stringliteral">&quot;Allowing events mode %s time %u\n&quot;</span>,</div>
-<div class="line"><a id="l02044" name="l02044"></a><span class="lineno"> 2044</span>                            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> == AsyncPointer ? <span class="stringliteral">&quot;AsyncPointer&quot;</span> : <span class="stringliteral">&quot;ReplayPointer&quot;</span>,</div>
-<div class="line"><a id="l02045" name="l02045"></a><span class="lineno"> 2045</span>                            (unsigned <a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)event-&gt;xbutton.time);</div>
+<div class="line"><a id="l02044" name="l02044"></a><span class="lineno"> 2044</span>                            mode == AsyncPointer ? <span class="stringliteral">&quot;AsyncPointer&quot;</span> : <span class="stringliteral">&quot;ReplayPointer&quot;</span>,</div>
+<div class="line"><a id="l02045" name="l02045"></a><span class="lineno"> 2045</span>                            (unsigned int)event-&gt;xbutton.time);</div>
 <div class="line"><a id="l02046" name="l02046"></a><span class="lineno"> 2046</span> </div>
 <div class="line"><a id="l02047" name="l02047"></a><span class="lineno"> 2047</span>              XAllowEvents (display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#af077ec2b20a84a52c1ae61df243fbfed">xdisplay</a>,</div>
-<div class="line"><a id="l02048" name="l02048"></a><span class="lineno"> 2048</span>                            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, event-&gt;xbutton.time);</div>
+<div class="line"><a id="l02048" name="l02048"></a><span class="lineno"> 2048</span>                            mode, event-&gt;xbutton.time);</div>
 <div class="line"><a id="l02049" name="l02049"></a><span class="lineno"> 2049</span>            }</div>
 <div class="line"><a id="l02050" name="l02050"></a><span class="lineno"> 2050</span> </div>
 <div class="line"><a id="l02051" name="l02051"></a><span class="lineno"> 2051</span>          <span class="keywordflow">if</span> (begin_move &amp;&amp; window-&gt;<a class="code hl_variable" href="struct__MetaWindow.html#aaa53ff53e1c45053d49cbe5aa01c9621">has_move_func</a>)</div>
@@ -2249,7 +2249,7 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l02211" name="l02211"></a><span class="lineno"> 2211</span>                      event-&gt;<a class="code hl_variable" href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a> == FocusOut ? <span class="stringliteral">&quot;out&quot;</span> :</div>
 <div class="line"><a id="l02212" name="l02212"></a><span class="lineno"> 2212</span>                      <span class="stringliteral">&quot;???&quot;</span>,</div>
 <div class="line"><a id="l02213" name="l02213"></a><span class="lineno"> 2213</span>                      event-&gt;xany.window,</div>
-<div class="line"><a id="l02214" name="l02214"></a><span class="lineno"> 2214</span>                      <a class="code hl_function" href="display-private_8h.html#af3e28f063d3f0618af7ab1c0631aaada">meta_event_mode_to_string</a> (event-&gt;xfocus.<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>),</div>
+<div class="line"><a id="l02214" name="l02214"></a><span class="lineno"> 2214</span>                      <a class="code hl_function" href="display-private_8h.html#af3e28f063d3f0618af7ab1c0631aaada">meta_event_mode_to_string</a> (event-&gt;xfocus.mode),</div>
 <div class="line"><a id="l02215" name="l02215"></a><span class="lineno"> 2215</span>                      <a class="code hl_function" href="display-private_8h.html#a9cbe6577c54ef0071a8a3a45cea02b65">meta_event_detail_to_string</a> (event-&gt;xfocus.detail));</div>
 <div class="line"><a id="l02216" name="l02216"></a><span class="lineno"> 2216</span>        }</div>
 <div class="line"><a id="l02217" name="l02217"></a><span class="lineno"> 2217</span>      <span class="keywordflow">else</span></div>
@@ -2267,7 +2267,7 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l02229" name="l02229"></a><span class="lineno"> 2229</span>                      event-&gt;<a class="code hl_variable" href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a> == FocusOut ? <span class="stringliteral">&quot;out&quot;</span> :</div>
 <div class="line"><a id="l02230" name="l02230"></a><span class="lineno"> 2230</span>                      <span class="stringliteral">&quot;???&quot;</span>,</div>
 <div class="line"><a id="l02231" name="l02231"></a><span class="lineno"> 2231</span>                      event-&gt;xany.window,</div>
-<div class="line"><a id="l02232" name="l02232"></a><span class="lineno"> 2232</span>                      <a class="code hl_function" href="display-private_8h.html#af3e28f063d3f0618af7ab1c0631aaada">meta_event_mode_to_string</a> (event-&gt;xfocus.<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>),</div>
+<div class="line"><a id="l02232" name="l02232"></a><span class="lineno"> 2232</span>                      <a class="code hl_function" href="display-private_8h.html#af3e28f063d3f0618af7ab1c0631aaada">meta_event_mode_to_string</a> (event-&gt;xfocus.mode),</div>
 <div class="line"><a id="l02233" name="l02233"></a><span class="lineno"> 2233</span>                      <a class="code hl_function" href="display-private_8h.html#a9cbe6577c54ef0071a8a3a45cea02b65">meta_event_detail_to_string</a> (event-&gt;xfocus.detail));</div>
 <div class="line"><a id="l02234" name="l02234"></a><span class="lineno"> 2234</span> </div>
 <div class="line"><a id="l02235" name="l02235"></a><span class="lineno"> 2235</span>          <span class="keywordflow">if</span> (event-&gt;type == FocusIn &amp;&amp;</div>
@@ -2940,37 +2940,37 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l02902" name="l02902"></a><span class="lineno"> 2902</span><span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
 <div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span><a class="code hl_function" href="display-private_8h.html#af3e28f063d3f0618af7ab1c0631aaada">meta_event_mode_to_string</a> (<span class="keywordtype">int</span> m)</div>
 <div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span>{</div>
-<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span>  <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <span class="stringliteral">&quot;???&quot;</span>;</div>
+<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span>  <span class="keyword">const</span> <span class="keywordtype">char</span> *mode = <span class="stringliteral">&quot;???&quot;</span>;</div>
 <div class="line"><a id="l02906" name="l02906"></a><span class="lineno"> 2906</span>  <span class="keywordflow">switch</span> (m)</div>
 <div class="line"><a id="l02907" name="l02907"></a><span class="lineno"> 2907</span>    {</div>
 <div class="line"><a id="l02908" name="l02908"></a><span class="lineno"> 2908</span>    <span class="keywordflow">case</span> NotifyNormal:</div>
-<div class="line"><a id="l02909" name="l02909"></a><span class="lineno"> 2909</span>      <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <span class="stringliteral">&quot;NotifyNormal&quot;</span>;</div>
+<div class="line"><a id="l02909" name="l02909"></a><span class="lineno"> 2909</span>      mode = <span class="stringliteral">&quot;NotifyNormal&quot;</span>;</div>
 <div class="line"><a id="l02910" name="l02910"></a><span class="lineno"> 2910</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02911" name="l02911"></a><span class="lineno"> 2911</span>    <span class="keywordflow">case</span> NotifyGrab:</div>
-<div class="line"><a id="l02912" name="l02912"></a><span class="lineno"> 2912</span>      <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <span class="stringliteral">&quot;NotifyGrab&quot;</span>;</div>
+<div class="line"><a id="l02912" name="l02912"></a><span class="lineno"> 2912</span>      mode = <span class="stringliteral">&quot;NotifyGrab&quot;</span>;</div>
 <div class="line"><a id="l02913" name="l02913"></a><span class="lineno"> 2913</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02914" name="l02914"></a><span class="lineno"> 2914</span>    <span class="keywordflow">case</span> NotifyUngrab:</div>
-<div class="line"><a id="l02915" name="l02915"></a><span class="lineno"> 2915</span>      <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <span class="stringliteral">&quot;NotifyUngrab&quot;</span>;</div>
+<div class="line"><a id="l02915" name="l02915"></a><span class="lineno"> 2915</span>      mode = <span class="stringliteral">&quot;NotifyUngrab&quot;</span>;</div>
 <div class="line"><a id="l02916" name="l02916"></a><span class="lineno"> 2916</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02917" name="l02917"></a><span class="lineno"> 2917</span>      <span class="comment">/* not sure any X implementations are missing this, but</span></div>
 <div class="line"><a id="l02918" name="l02918"></a><span class="lineno"> 2918</span><span class="comment">       * it seems to be absent from some docs.</span></div>
 <div class="line"><a id="l02919" name="l02919"></a><span class="lineno"> 2919</span><span class="comment">       */</span></div>
 <div class="line"><a id="l02920" name="l02920"></a><span class="lineno"> 2920</span><span class="preprocessor">#ifdef NotifyWhileGrabbed</span></div>
 <div class="line"><a id="l02921" name="l02921"></a><span class="lineno"> 2921</span>    <span class="keywordflow">case</span> NotifyWhileGrabbed:</div>
-<div class="line"><a id="l02922" name="l02922"></a><span class="lineno"> 2922</span>      <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <span class="stringliteral">&quot;NotifyWhileGrabbed&quot;</span>;</div>
+<div class="line"><a id="l02922" name="l02922"></a><span class="lineno"> 2922</span>      mode = <span class="stringliteral">&quot;NotifyWhileGrabbed&quot;</span>;</div>
 <div class="line"><a id="l02923" name="l02923"></a><span class="lineno"> 2923</span>      <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l02924" name="l02924"></a><span class="lineno"> 2924</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l02925" name="l02925"></a><span class="lineno"> 2925</span>    }</div>
 <div class="line"><a id="l02926" name="l02926"></a><span class="lineno"> 2926</span> </div>
-<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span>  <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l02927" name="l02927"></a><span class="lineno"> 2927</span>  <span class="keywordflow">return</span> mode;</div>
 <div class="line"><a id="l02928" name="l02928"></a><span class="lineno"> 2928</span>}</div>
 <div class="line"><a id="l02929" name="l02929"></a><span class="lineno"> 2929</span><span class="preprocessor">#endif </span><span class="comment">/* WITH_VERBOSE_MODE */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l02930" name="l02930"></a><span class="lineno"> 2930</span> </div>
 <div class="line"><a id="l02931" name="l02931"></a><span class="lineno"> 2931</span><span class="preprocessor">#ifdef WITH_VERBOSE_MODE</span></div>
 <div class="line"><a id="l02932" name="l02932"></a><span class="lineno"> 2932</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*</div>
-<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span>stack_mode_to_string (<span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02933" name="l02933"></a><span class="lineno"> 2933</span>stack_mode_to_string (<span class="keywordtype">int</span> mode)</div>
 <div class="line"><a id="l02934" name="l02934"></a><span class="lineno"> 2934</span>{</div>
-<div class="line"><a id="l02935" name="l02935"></a><span class="lineno"> 2935</span>  <span class="keywordflow">switch</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02935" name="l02935"></a><span class="lineno"> 2935</span>  <span class="keywordflow">switch</span> (mode)</div>
 <div class="line"><a id="l02936" name="l02936"></a><span class="lineno"> 2936</span>    {</div>
 <div class="line"><a id="l02937" name="l02937"></a><span class="lineno"> 2937</span>    <span class="keywordflow">case</span> Above:</div>
 <div class="line"><a id="l02938" name="l02938"></a><span class="lineno"> 2938</span>      <span class="keywordflow">return</span> <span class="stringliteral">&quot;Above&quot;</span>;</div>
@@ -4373,7 +4373,7 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l04301" name="l04301"></a><span class="lineno"> 4301</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen04302" data-start="{" data-end="}">
 <div class="line"><a id="l04302" name="l04302"></a><span class="lineno"><a class="line" href="display-private_8h.html#ac5885bbed477f8df0ff9df18e01b9fcb"> 4302</a></span><a class="code hl_function" href="display_8c.html#ac5885bbed477f8df0ff9df18e01b9fcb">meta_display_set_cursor_theme</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *theme,</div>
-<div class="line"><a id="l04303" name="l04303"></a><span class="lineno"> 4303</span>                   <span class="keywordtype">int</span>         <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l04303" name="l04303"></a><span class="lineno"> 4303</span>                   <span class="keywordtype">int</span>         size)</div>
 <div class="line"><a id="l04304" name="l04304"></a><span class="lineno"> 4304</span>{</div>
 <div class="line"><a id="l04305" name="l04305"></a><span class="lineno"> 4305</span><span class="preprocessor">#ifdef HAVE_XCURSOR</span></div>
 <div class="line"><a id="l04306" name="l04306"></a><span class="lineno"> 4306</span>  GSList *tmp;</div>
@@ -4381,7 +4381,7 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="line"><a id="l04308" name="l04308"></a><span class="lineno"> 4308</span>  <a class="code hl_struct" href="struct__MetaDisplay.html">MetaDisplay</a> *display = <a class="code hl_function" href="display_8c.html#aa84f35c2c0c13d304c1e460800f65525">meta_get_display</a> ();</div>
 <div class="line"><a id="l04309" name="l04309"></a><span class="lineno"> 4309</span> </div>
 <div class="line"><a id="l04310" name="l04310"></a><span class="lineno"> 4310</span>  XcursorSetTheme (display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#af077ec2b20a84a52c1ae61df243fbfed">xdisplay</a>, theme);</div>
-<div class="line"><a id="l04311" name="l04311"></a><span class="lineno"> 4311</span>  XcursorSetDefaultSize (display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#af077ec2b20a84a52c1ae61df243fbfed">xdisplay</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l04311" name="l04311"></a><span class="lineno"> 4311</span>  XcursorSetDefaultSize (display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#af077ec2b20a84a52c1ae61df243fbfed">xdisplay</a>, size);</div>
 <div class="line"><a id="l04312" name="l04312"></a><span class="lineno"> 4312</span> </div>
 <div class="line"><a id="l04313" name="l04313"></a><span class="lineno"> 4313</span>  tmp = display-&gt;<a class="code hl_variable" href="struct__MetaDisplay.html#a3c9361faac6299e7941837fc19594075">screens</a>;</div>
 <div class="line"><a id="l04314" name="l04314"></a><span class="lineno"> 4314</span>  <span class="keywordflow">while</span> (tmp != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -5746,9 +5746,6 @@ $(document).ready(function(){initNavTree('display_8c_source.html',''); initResiz
 <div class="ttc" id="agroup__pings_html_ga36f7113e35ecad2d4e8cf1539b1163b1"><div class="ttname"><a href="group__pings.html#ga36f7113e35ecad2d4e8cf1539b1163b1">meta_display_window_has_pending_pings</a></div><div class="ttdeci">gboolean meta_display_window_has_pending_pings(MetaDisplay *display, MetaWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="display_8c_source.html#l04612">display.c:4612</a></div></div>
 <div class="ttc" id="agroup__pings_html_ga41c028a8e6bb7628677f0a55c45e8dd9"><div class="ttname"><a href="group__pings.html#ga41c028a8e6bb7628677f0a55c45e8dd9">meta_display_ping_window</a></div><div class="ttdeci">void meta_display_ping_window(MetaDisplay *display, MetaWindow *window, guint32 timestamp, MetaWindowPingFunc ping_reply_func, MetaWindowPingFunc ping_timeout_func, gpointer user_data)</div><div class="ttdef"><b>Definition</b> <a href="display_8c_source.html#l04436">display.c:4436</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="akeybindings_8c_html_a025805f7782e3c8ae7abf75414416ad9"><div class="ttname"><a href="keybindings_8c.html#a025805f7782e3c8ae7abf75414416ad9">meta_display_process_key_event</a></div><div class="ttdeci">void meta_display_process_key_event(MetaDisplay *display, MetaWindow *window, XEvent *event)</div><div class="ttdef"><b>Definition</b> <a href="keybindings_8c_source.html#l01280">keybindings.c:1280</a></div></div>
 <div class="ttc" id="akeybindings_8c_html_a1f14f292234ae86902da70d966f29628"><div class="ttname"><a href="keybindings_8c.html#a1f14f292234ae86902da70d966f29628">meta_display_process_mapping_event</a></div><div class="ttdeci">void meta_display_process_mapping_event(MetaDisplay *display, XEvent *event)</div><div class="ttdef"><b>Definition</b> <a href="keybindings_8c_source.html#l00513">keybindings.c:513</a></div></div>

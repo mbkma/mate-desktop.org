@@ -188,14 +188,14 @@ $(document).ready(function(){initNavTree('caja-python_8c_source.html',''); initR
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>caja_python_load_file(GTypeModule *type_module,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                          <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                          <span class="keyword">const</span> gchar *filename)</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    PyObject *main_module, *main_locals, *locals, *<a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, *value;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    PyObject *<span class="keyword">module</span>;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    GType gtype;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    Py_ssize_t pos = 0;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_define" href="caja-python_8h.html#a28e8496bab796a80b262758de3ff619d">debug_enter_args</a>(<span class="stringliteral">&quot;filename=%s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_define" href="caja-python_8h.html#a28e8496bab796a80b262758de3ff619d">debug_enter_args</a>(<span class="stringliteral">&quot;filename=%s&quot;</span>, filename);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    main_module = PyImport_AddModule(<span class="stringliteral">&quot;__main__&quot;</span>);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">if</span> (main_module == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('caja-python_8c_source.html',''); initR
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            gtype = <a class="code hl_function" href="caja-python-object_8c.html#a8b41a236dbbb2caf5963d2022e4d1188">caja_python_object_get_type</a>(type_module, value);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            g_array_append_val(all_types, gtype);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            all_pyfiles = g_list_append(all_pyfiles, g_strdup(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            all_pyfiles = g_list_append(all_pyfiles, g_strdup(filename));</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        }</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
@@ -442,7 +442,7 @@ $(document).ready(function(){initNavTree('caja-python_8c_source.html',''); initR
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <a class="code hl_define" href="g-util_8h.html#aea0b35e2bab70c558277914e9e9202dd">debug_enter</a>();</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    *types = (GType*)all_types-&gt;data;</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    *num_types = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) all_types-&gt;len;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    *num_types = (int) all_types-&gt;len;</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>}</div>
 </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
@@ -482,8 +482,6 @@ $(document).ready(function(){initNavTree('caja-python_8c_source.html',''); initR
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ag-util_8h_html_a6fe2f4f6fcc916c9f89b3e1c876f5432"><div class="ttname"><a href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a></div><div class="ttdeci">#define debug(format,...)</div><div class="ttdef"><b>Definition</b> <a href="g-util_8h_source.html#l00042">g-util.h:42</a></div></div>
 <div class="ttc" id="ag-util_8h_html_aea0b35e2bab70c558277914e9e9202dd"><div class="ttname"><a href="g-util_8h.html#aea0b35e2bab70c558277914e9e9202dd">debug_enter</a></div><div class="ttdeci">#define debug_enter()</div><div class="ttdef"><b>Definition</b> <a href="g-util_8h_source.html#l00041">g-util.h:41</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="amarco_2src_2ui_2menu_8c_html_a86110d458a0d28dcf43f2e8177b03144"><div class="ttname"><a href="marco_2src_2ui_2menu_8c.html#a86110d458a0d28dcf43f2e8177b03144">MenuItem</a></div><div class="ttdeci">struct _MenuItem MenuItem</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2ui_2menu_8c_source.html#l00039">marco/src/ui/menu.c:39</a></div></div>
 <div class="ttc" id="amate-panel-applet-factory_8h_html_a85c0dd1e627a093510e3859bf0a88aff"><div class="ttname"><a href="mate-panel-applet-factory_8h.html#a85c0dd1e627a093510e3859bf0a88aff">closure</a></div><div class="ttdeci">gboolean GType GClosure * closure</div><div class="ttdef"><b>Definition</b> <a href="mate-panel-applet-factory_8h_source.html#l00038">mate-panel-applet-factory.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

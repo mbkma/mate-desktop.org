@@ -394,13 +394,13 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>accept_filename (gchar       *extensions,</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                 <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                 <span class="keyword">const</span> gchar *filename)</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>{</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  gchar *saveptr;</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  gchar *token;</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  gsize length;</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  length = strlen (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  length = strlen (filename);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="keywordflow">for</span> (token = strtok_r (extensions, <span class="stringliteral">&quot;,&quot;</span>, &amp;saveptr); <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != token;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>       token = strtok_r (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <span class="stringliteral">&quot;,&quot;</span>, &amp;saveptr))</div>
@@ -408,9 +408,9 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>      <span class="keyword">const</span> gchar *extptr;</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>      token = g_strstrip (token);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      extptr = <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> + length - strlen (token) - 1;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      extptr = filename + length - strlen (token) - 1;</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      <span class="keywordflow">if</span> (extptr &gt; <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp; <span class="charliteral">&#39;.&#39;</span> == *extptr &amp;&amp;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      <span class="keywordflow">if</span> (extptr &gt; filename &amp;&amp; <span class="charliteral">&#39;.&#39;</span> == *extptr &amp;&amp;</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>          !strcmp (extptr + 1, token))</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>          <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    }</div>
@@ -740,12 +740,12 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  <span class="keywordflow">if</span> (<a class="code hl_define" href="egg-macros_8h.html#a46cceeae1d42e60e244027c59a120471">EGG_IS_POSITIVE_RESPONSE</a> (response_id))</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    {</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>      gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, *basename;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>      gchar *filename, *basename;</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      guint format;</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_file_chooser_get_filename (self-&gt;<a class="code hl_variable" href="struct__EggFileFormatChooser.html#a0d8f8c41b5766af93605938833eb0df6">priv</a>-&gt;chooser);</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>      basename = g_filename_display_basename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>      g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      filename = gtk_file_chooser_get_filename (self-&gt;<a class="code hl_variable" href="struct__EggFileFormatChooser.html#a0d8f8c41b5766af93605938833eb0df6">priv</a>-&gt;chooser);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>      basename = g_filename_display_basename (filename);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>      g_free (filename);</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      format = <a class="code hl_function" href="eggfileformatchooser_8c.html#a9e26cdb66566f90d701675feb983dd7e">egg_file_format_chooser_get_format</a> (self, basename);</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      g_print (<span class="stringliteral">&quot;%s: %s - %d\n&quot;</span>, G_STRFUNC, basename, format);</div>
@@ -771,15 +771,15 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        }</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        {</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>          <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_function" href="eggfileformatchooser_8c.html#ada93086bdbf6bf6b31266031cf402d7e">egg_file_format_chooser_append_extension</a> (self, basename, format);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>          filename = <a class="code hl_function" href="eggfileformatchooser_8c.html#ada93086bdbf6bf6b31266031cf402d7e">egg_file_format_chooser_append_extension</a> (self, basename, format);</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>          <span class="keywordflow">if</span> (strcmp (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, basename))</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>          <span class="keywordflow">if</span> (strcmp (filename, basename))</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            {</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>              gtk_file_chooser_set_current_name (self-&gt;<a class="code hl_variable" href="struct__EggFileFormatChooser.html#a0d8f8c41b5766af93605938833eb0df6">priv</a>-&gt;chooser, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>              gtk_file_chooser_set_current_name (self-&gt;<a class="code hl_variable" href="struct__EggFileFormatChooser.html#a0d8f8c41b5766af93605938833eb0df6">priv</a>-&gt;chooser, filename);</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>              g_signal_stop_emission_by_name (dialog, <span class="stringliteral">&quot;response&quot;</span>);</div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            }</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>          g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>          g_free (filename);</div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>        }</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>      g_free (basename);</div>
@@ -1170,7 +1170,7 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>guint</div>
 <div class="foldopen" id="foldopen01061" data-start="{" data-end="}">
 <div class="line"><a id="l01061" name="l01061"></a><span class="lineno"><a class="line" href="eggfileformatchooser_8c.html#a9e26cdb66566f90d701675feb983dd7e"> 1061</a></span><a class="code hl_function" href="eggfileformatchooser_8c.html#a9e26cdb66566f90d701675feb983dd7e">egg_file_format_chooser_get_format</a> (<a class="code hl_struct" href="struct__EggFileFormatChooser.html">EggFileFormatChooser</a> *self,</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                                    <span class="keyword">const</span> gchar          *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                                    <span class="keyword">const</span> gchar          *filename)</div>
 <div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>{</div>
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>  GtkTreeModel *model;</div>
 <div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>  GtkTreeIter iter;</div>
@@ -1181,11 +1181,11 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>  <span class="keywordflow">if</span> (gtk_tree_selection_get_selected (self-&gt;<a class="code hl_variable" href="struct__EggFileFormatChooser.html#a0d8f8c41b5766af93605938833eb0df6">priv</a>-&gt;selection, &amp;model, &amp;iter))</div>
 <div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    gtk_tree_model_get (model, &amp;iter, <a class="code hl_enumvalue" href="eggfileformatchooser_8c.html#aa9908284c0827729f14cf9b2489e1479a4c1c60507b27c3020c5696526c4594af">MODEL_COLUMN_ID</a>, &amp;format, -1);</div>
 <div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>  <span class="keywordflow">if</span> (0 == format &amp;&amp; <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>  <span class="keywordflow">if</span> (0 == format &amp;&amp; <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != filename)</div>
 <div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    {</div>
 <div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>      <a class="code hl_typedef" href="eggfileformatchooser_8c.html#aec218fcdc9da3a513e582c76c703fb55">EggFileFormatSearch</a> search;</div>
 <div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span> </div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>      search.extension = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ab9fe116113ed7294c4cb842c31e3cc12">strrchr</a>(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="charliteral">&#39;.&#39;</span>);</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>      search.extension = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ab9fe116113ed7294c4cb842c31e3cc12">strrchr</a>(filename, <span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>      search.success = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span> </div>
 <div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>      <span class="keywordflow">if</span> (search.extension++)</div>
@@ -1253,7 +1253,7 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>gchar*</div>
 <div class="foldopen" id="foldopen01138" data-start="{" data-end="}">
 <div class="line"><a id="l01138" name="l01138"></a><span class="lineno"><a class="line" href="eggfileformatchooser_8c.html#ada93086bdbf6bf6b31266031cf402d7e"> 1138</a></span><a class="code hl_function" href="eggfileformatchooser_8c.html#ada93086bdbf6bf6b31266031cf402d7e">egg_file_format_chooser_append_extension</a> (<a class="code hl_struct" href="struct__EggFileFormatChooser.html">EggFileFormatChooser</a> *self,</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>                                          <span class="keyword">const</span> gchar          *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>                                          <span class="keyword">const</span> gchar          *filename,</div>
 <div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>                                          guint                 format)</div>
 <div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>{</div>
 <div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>  <a class="code hl_typedef" href="eggfileformatchooser_8c.html#aec218fcdc9da3a513e582c76c703fb55">EggFileFormatSearch</a> search;</div>
@@ -1264,7 +1264,7 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>  gchar *result;</div>
 <div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span> </div>
 <div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>  g_return_val_if_fail (<a class="code hl_define" href="eggfileformatchooser_8h.html#a48bcd64572a7fb36f7978dec9889cdd3">EGG_IS_FILE_FORMAT_CHOOSER</a> (self), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>  g_return_val_if_fail (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>  g_return_val_if_fail (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> != filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span> </div>
 <div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>  <span class="keywordflow">if</span> (0 == format)</div>
 <div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>    format = <a class="code hl_function" href="eggfileformatchooser_8c.html#a9e26cdb66566f90d701675feb983dd7e">egg_file_format_chooser_get_format</a> (self, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -1302,10 +1302,10 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>    }</div>
 <div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span> </div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>  <span class="keywordflow">if</span> (accept_filename (extensions, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>))</div>
-<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>    result = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>  <span class="keywordflow">if</span> (accept_filename (extensions, filename))</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>    result = g_strdup (filename);</div>
 <div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>    result = g_strconcat (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;.&quot;</span>, extensions, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>    result = g_strconcat (filename, <span class="stringliteral">&quot;.&quot;</span>, extensions, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span> </div>
 <div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>  g_assert (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> == <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a907b5e1042ad1a6bb4914ecc7d12f55c">strchr</a>(extensions, <span class="charliteral">&#39;,&#39;</span>));</div>
 <div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>  g_free (extensions);</div>
@@ -1363,7 +1363,6 @@ $(document).ready(function(){initNavTree('eggfileformatchooser_8c_source.html','
 <div class="ttc" id="aeggfileformatchooser_8h_html_ac3e14a268174fc0677ba349b630a9ba0"><div class="ttname"><a href="eggfileformatchooser_8h.html#ac3e14a268174fc0677ba349b630a9ba0">EGG_TYPE_FILE_FORMAT_CHOOSER</a></div><div class="ttdeci">#define EGG_TYPE_FILE_FORMAT_CHOOSER</div><div class="ttdef"><b>Definition</b> <a href="eggfileformatchooser_8h_source.html#l00026">eggfileformatchooser.h:26</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>

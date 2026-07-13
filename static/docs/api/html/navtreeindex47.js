@@ -1,6 +1,5 @@
 var NAVTREEINDEX47 =
 {
-"eggcellrendererkeys_8h_source.html":[36,0,0,14,0,6,3],
 "eggfileformatchooser_8c.html":[36,0,0,5,1,27],
 "eggfileformatchooser_8c.html#a09670425e2a793165e88150947235b51":[36,0,0,5,1,27,0],
 "eggfileformatchooser_8c.html#a0f3032d442152ee006c4bb5b1a9c0472":[36,0,0,5,1,27,11],
@@ -249,5 +248,6 @@ var NAVTREEINDEX47 =
 "eom-clipboard-handler_8c.html#a1945c7fc6fb6f6446aa611252a166f46":[36,0,0,6,3,5,0],
 "eom-clipboard-handler_8c.html#a4c545c717d21752e6d95a6b5920e1f85":[36,0,0,6,3,5,1],
 "eom-clipboard-handler_8c_source.html":[36,0,0,6,3,5],
-"eom-clipboard-handler_8h.html":[36,0,0,6,3,6]
+"eom-clipboard-handler_8h.html":[36,0,0,6,3,6],
+"eom-clipboard-handler_8h.html#a1945c7fc6fb6f6446aa611252a166f46":[36,0,0,6,3,6,11]
 };

@@ -203,12 +203,12 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    gint64                    old_mtime;</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    goffset                   <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    goffset                   size;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    goffset                   bytes_written;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    GFile                    *gfile;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    GCancellable             *cancellable;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    GOutputStream            *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    GOutputStream            *stream;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    GInputStream             *input;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    GError                   *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>;</div>
@@ -506,13 +506,13 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment"> * https://bugzilla.gnome.org/show_bug.cgi?id=602412</span></div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>cancel_output_stream_ready_cb (GOutputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>,</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>cancel_output_stream_ready_cb (GOutputStream *stream,</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                               GAsyncResult  *result,</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                               AsyncData     *async)</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>{</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>;</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    g_output_stream_close_finish (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>, result, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    g_output_stream_close_finish (stream, result, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    <span class="comment">/* check cancelled state manually */</span></div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    <span class="keywordflow">if</span> (g_cancellable_is_cancelled (async-&gt;cancellable) || async-&gt;error == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -601,7 +601,7 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>}</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span> </div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>close_async_ready_get_info_cb (GOutputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>,</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>close_async_ready_get_info_cb (GOutputStream *stream,</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>                               GAsyncResult  *res,</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                               AsyncData     *async)</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>{</div>
@@ -618,7 +618,7 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    <a class="code hl_function" href="pluma-debug_8c.html#ade758ae30d0239a96198f27292882d88">pluma_debug_message</a> (<a class="code hl_define" href="pluma-debug_8h.html#a318a21f9a352cff9e6e0bd0c89057bcc">DEBUG_SAVER</a>, <span class="stringliteral">&quot;Finished closing stream&quot;</span>);</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="keywordflow">if</span> (!g_output_stream_close_finish (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>, res, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>))</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    <span class="keywordflow">if</span> (!g_output_stream_close_finish (stream, res, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>))</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    {</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        <a class="code hl_function" href="pluma-debug_8c.html#ade758ae30d0239a96198f27292882d88">pluma_debug_message</a> (<a class="code hl_define" href="pluma-debug_8h.html#a318a21f9a352cff9e6e0bd0c89057bcc">DEBUG_SAVER</a>, <span class="stringliteral">&quot;Closing stream error: %s&quot;</span>, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
@@ -671,7 +671,7 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="keyword">static</span> <span class="keywordtype">void</span> write_file_chunk (AsyncData *async);</div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>async_write_cb (GOutputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>,</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>async_write_cb (GOutputStream *stream,</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                GAsyncResult  *res,</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                AsyncData     *async)</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>{</div>
@@ -688,7 +688,7 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    }</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    bytes_written = g_output_stream_write_finish (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>, res, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    bytes_written = g_output_stream_write_finish (stream, res, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    <a class="code hl_function" href="pluma-debug_8c.html#ade758ae30d0239a96198f27292882d88">pluma_debug_message</a> (<a class="code hl_define" href="pluma-debug_8h.html#a318a21f9a352cff9e6e0bd0c89057bcc">DEBUG_SAVER</a>, <span class="stringliteral">&quot;Written: %&quot;</span> G_GSSIZE_FORMAT, bytes_written);</div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
@@ -1150,8 +1150,6 @@ $(document).ready(function(){initNavTree('pluma-document-saver_8c_source.html','
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aatril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c_html_a74cc204963f2c81c15b53827c2c77e32"><div class="ttname"><a href="atril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c.html#a74cc204963f2c81c15b53827c2c77e32">G_DEFINE_TYPE_WITH_PRIVATE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_PRIVATE(EggEditableToolbar, egg_editable_toolbar, GTK_TYPE_BOX)</div></div>
 <div class="ttc" id="acopy-theme-dialog_8c_html_acbbbdb297b944212a55f3e759d074439"><div class="ttname"><a href="copy-theme-dialog_8c.html#acbbbdb297b944212a55f3e759d074439">signals</a></div><div class="ttdeci">guint signals[SIGNAL_COUNT]</div><div class="ttdef"><b>Definition</b> <a href="copy-theme-dialog_8c_source.html#l00085">copy-theme-dialog.c:85</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a4ed0a20697a8c37f8af699a8ec6d76a8"><div class="ttname"><a href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a></div><div class="ttdeci">voidpf stream</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="apluma-debug_8c_html_a49d7a93b5a97526e9a77e60ae4ce22db"><div class="ttname"><a href="pluma-debug_8c.html#a49d7a93b5a97526e9a77e60ae4ce22db">pluma_debug</a></div><div class="ttdeci">void pluma_debug(PlumaDebugSection section, const gchar *file, gint line, const gchar *function)</div><div class="ttdef"><b>Definition</b> <a href="pluma-debug_8c_source.html#l00138">pluma-debug.c:138</a></div></div>
 <div class="ttc" id="apluma-debug_8c_html_ade758ae30d0239a96198f27292882d88"><div class="ttname"><a href="pluma-debug_8c.html#ade758ae30d0239a96198f27292882d88">pluma_debug_message</a></div><div class="ttdeci">void pluma_debug_message(PlumaDebugSection section, const gchar *file, gint line, const gchar *function, const gchar *format,...)</div><div class="ttdef"><b>Definition</b> <a href="pluma-debug_8c_source.html#l00101">pluma-debug.c:101</a></div></div>

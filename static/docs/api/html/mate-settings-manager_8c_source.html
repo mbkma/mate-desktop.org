@@ -301,16 +301,16 @@ $(document).ready(function(){initNavTree('mate-settings-manager_8c_source.html',
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>_load_file (<a class="code hl_struct" href="structMateSettingsManager.html">MateSettingsManager</a> *manager,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>           *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            <span class="keyword">const</span> <span class="keywordtype">char</span>           *filename)</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>{</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <a class="code hl_struct" href="structMateSettingsPluginInfo.html">MateSettingsPluginInfo</a>  *info;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordtype">char</span>                    *schema;</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        GSList                  *l;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        g_debug (<span class="stringliteral">&quot;Loading plugin: %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <a class="code hl_define" href="mate-settings-profile_8h.html#acc07af3cb341464026d2bb6f9a12ef04">mate_settings_profile_start</a> (<span class="stringliteral">&quot;%s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        g_debug (<span class="stringliteral">&quot;Loading plugin: %s&quot;</span>, filename);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <a class="code hl_define" href="mate-settings-profile_8h.html#acc07af3cb341464026d2bb6f9a12ef04">mate_settings_profile_start</a> (<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        info = <a class="code hl_function" href="mate-settings-plugin-info_8c.html#aa95af162dede88a287400a68acab3409">mate_settings_plugin_info_new_from_file</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        info = <a class="code hl_function" href="mate-settings-plugin-info_8c.html#aa95af162dede88a287400a68acab3409">mate_settings_plugin_info_new_from_file</a> (filename);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">if</span> (info == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        }</div>
@@ -349,7 +349,7 @@ $(document).ready(function(){initNavTree('mate-settings-manager_8c_source.html',
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                g_object_unref (info);</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        }</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <a class="code hl_define" href="mate-settings-profile_8h.html#a92bde843dac8db7f3e30ea562f0b9c4e">mate_settings_profile_end</a> (<span class="stringliteral">&quot;%s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        <a class="code hl_define" href="mate-settings-profile_8h.html#a92bde843dac8db7f3e30ea562f0b9c4e">mate_settings_profile_end</a> (<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>}</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -372,17 +372,17 @@ $(document).ready(function(){initNavTree('mate-settings-manager_8c_source.html',
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        }</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordflow">while</span> ((<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a> = g_dir_read_name (d))) {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                <span class="keywordflow">if</span> (!g_str_has_suffix (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_define" href="mate-settings-manager_8c.html#a35a8a8490296aaab573191e17924ae82">PLUGIN_EXT</a>)) {</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                        <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                }</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (path, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                <span class="keywordflow">if</span> (g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR)) {</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                        _load_file (manager, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                filename = g_build_filename (path, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                <span class="keywordflow">if</span> (g_file_test (filename, G_FILE_TEST_IS_REGULAR)) {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                        _load_file (manager, filename);</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                }</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                g_free (filename);</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        g_dir_close (d);</div>
@@ -657,7 +657,6 @@ $(document).ready(function(){initNavTree('mate-settings-manager_8c_source.html',
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-settings-manager_8c_html_a09bf853df29159aa6dda2caff64b018f"><div class="ttname"><a href="mate-settings-manager_8c.html#a09bf853df29159aa6dda2caff64b018f">DEFAULT_SETTINGS_PREFIX</a></div><div class="ttdeci">#define DEFAULT_SETTINGS_PREFIX</div><div class="ttdef"><b>Definition</b> <a href="mate-settings-manager_8c_source.html#l00040">mate-settings-manager.c:40</a></div></div>

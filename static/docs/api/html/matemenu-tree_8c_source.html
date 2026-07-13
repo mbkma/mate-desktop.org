@@ -1943,7 +1943,7 @@ $(document).ready(function(){initNavTree('matemenu-tree_8c_source.html',''); ini
 <div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span>load_merge_file (<a class="code hl_typedef" href="matemenu-tree_8h.html#abef6a286ae458af2a6e6452403bfc80d">MateMenuTree</a>      *tree,</div>
 <div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>         GHashTable     *loaded_menu_files,</div>
-<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>                 <span class="keyword">const</span> <span class="keywordtype">char</span>     *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>                 <span class="keyword">const</span> <span class="keywordtype">char</span>     *filename,</div>
 <div class="line"><a id="l02002" name="l02002"></a><span class="lineno"> 2002</span>                 gboolean        is_canonical,</div>
 <div class="line"><a id="l02003" name="l02003"></a><span class="lineno"> 2003</span>         gboolean        add_monitor,</div>
 <div class="line"><a id="l02004" name="l02004"></a><span class="lineno"> 2004</span>                 MenuLayoutNode *where)</div>
@@ -1958,22 +1958,22 @@ $(document).ready(function(){initNavTree('matemenu-tree_8c_source.html',''); ini
 <div class="line"><a id="l02013" name="l02013"></a><span class="lineno"> 2013</span> </div>
 <div class="line"><a id="l02014" name="l02014"></a><span class="lineno"> 2014</span>  <span class="keywordflow">if</span> (!is_canonical)</div>
 <div class="line"><a id="l02015" name="l02015"></a><span class="lineno"> 2015</span>    {</div>
-<div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>      canonical = freeme = realpath (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l02016" name="l02016"></a><span class="lineno"> 2016</span>      canonical = freeme = realpath (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02017" name="l02017"></a><span class="lineno"> 2017</span>      <span class="keywordflow">if</span> (canonical == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l02018" name="l02018"></a><span class="lineno"> 2018</span>        {</div>
 <div class="line"><a id="l02019" name="l02019"></a><span class="lineno"> 2019</span>      <span class="keywordflow">if</span> (add_monitor)</div>
 <div class="line"><a id="l02020" name="l02020"></a><span class="lineno"> 2020</span>        matemenu_tree_add_menu_file_monitor (tree,</div>
-<div class="line"><a id="l02021" name="l02021"></a><span class="lineno"> 2021</span>                         <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l02021" name="l02021"></a><span class="lineno"> 2021</span>                         filename,</div>
 <div class="line"><a id="l02022" name="l02022"></a><span class="lineno"> 2022</span>                         <a class="code hl_enumvalue" href="matemenu-tree_8c.html#a33c64045106f4b3b3a3b483dfcc634e7a4fbe1d78a26a4e17b4096912e0c6a415">MENU_FILE_MONITOR_NONEXISTENT_FILE</a>);</div>
 <div class="line"><a id="l02023" name="l02023"></a><span class="lineno"> 2023</span> </div>
 <div class="line"><a id="l02024" name="l02024"></a><span class="lineno"> 2024</span>          menu_verbose (<span class="stringliteral">&quot;Failed to canonicalize merge file path \&quot;%s\&quot;: %s\n&quot;</span>,</div>
-<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, g_strerror (errno));</div>
+<div class="line"><a id="l02025" name="l02025"></a><span class="lineno"> 2025</span>                        filename, g_strerror (errno));</div>
 <div class="line"><a id="l02026" name="l02026"></a><span class="lineno"> 2026</span>      <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a id="l02027" name="l02027"></a><span class="lineno"> 2027</span>        }</div>
 <div class="line"><a id="l02028" name="l02028"></a><span class="lineno"> 2028</span>    }</div>
 <div class="line"><a id="l02029" name="l02029"></a><span class="lineno"> 2029</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l02030" name="l02030"></a><span class="lineno"> 2030</span>    {</div>
-<div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>      canonical = <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l02031" name="l02031"></a><span class="lineno"> 2031</span>      canonical = filename;</div>
 <div class="line"><a id="l02032" name="l02032"></a><span class="lineno"> 2032</span>    }</div>
 <div class="line"><a id="l02033" name="l02033"></a><span class="lineno"> 2033</span> </div>
 <div class="line"><a id="l02034" name="l02034"></a><span class="lineno"> 2034</span>  <span class="keywordflow">if</span> (g_hash_table_lookup (loaded_menu_files, canonical) != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -2213,7 +2213,7 @@ $(document).ready(function(){initNavTree('matemenu-tree_8c_source.html',''); ini
 <div class="line"><a id="l02268" name="l02268"></a><span class="lineno"> 2268</span>            GHashTable     *loaded_menu_files,</div>
 <div class="line"><a id="l02269" name="l02269"></a><span class="lineno"> 2269</span>                    MenuLayoutNode *layout)</div>
 <div class="line"><a id="l02270" name="l02270"></a><span class="lineno"> 2270</span>{</div>
-<div class="line"><a id="l02271" name="l02271"></a><span class="lineno"> 2271</span>  <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l02271" name="l02271"></a><span class="lineno"> 2271</span>  <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l02272" name="l02272"></a><span class="lineno"> 2272</span> </div>
 <div class="line"><a id="l02273" name="l02273"></a><span class="lineno"> 2273</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="menu-layout_8c.html#a0ae494d6965ead90174bb8bb90242ab5">menu_layout_node_merge_file_get_type</a> (layout) == <a class="code hl_enumvalue" href="menu-layout_8h.html#af31882bb64e19fa358398ed64a0e8812aa1ce55dd8dc01605f1ea91ef201821d4">MENU_MERGE_FILE_TYPE_PARENT</a>)</div>
 <div class="line"><a id="l02274" name="l02274"></a><span class="lineno"> 2274</span>    {</div>
@@ -2221,16 +2221,16 @@ $(document).ready(function(){initNavTree('matemenu-tree_8c_source.html',''); ini
 <div class="line"><a id="l02276" name="l02276"></a><span class="lineno"> 2276</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l02277" name="l02277"></a><span class="lineno"> 2277</span>    }</div>
 <div class="line"><a id="l02278" name="l02278"></a><span class="lineno"> 2278</span> </div>
-<div class="line"><a id="l02279" name="l02279"></a><span class="lineno"> 2279</span>  <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_function" href="menu-layout_8c.html#a6accc1b6b604a023973edfc1de42ec80">menu_layout_node_get_content_as_path</a> (layout);</div>
-<div class="line"><a id="l02280" name="l02280"></a><span class="lineno"> 2280</span>  <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l02279" name="l02279"></a><span class="lineno"> 2279</span>  filename = <a class="code hl_function" href="menu-layout_8c.html#a6accc1b6b604a023973edfc1de42ec80">menu_layout_node_get_content_as_path</a> (layout);</div>
+<div class="line"><a id="l02280" name="l02280"></a><span class="lineno"> 2280</span>  <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l02281" name="l02281"></a><span class="lineno"> 2281</span>    {</div>
 <div class="line"><a id="l02282" name="l02282"></a><span class="lineno"> 2282</span>      menu_verbose (<span class="stringliteral">&quot;didn&#39;t get node content as a path, not merging file\n&quot;</span>);</div>
 <div class="line"><a id="l02283" name="l02283"></a><span class="lineno"> 2283</span>    }</div>
 <div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span>    {</div>
-<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>      load_merge_file (tree, loaded_menu_files, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, layout);</div>
+<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>      load_merge_file (tree, loaded_menu_files, filename, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, layout);</div>
 <div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span> </div>
-<div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>      g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>      g_free (filename);</div>
 <div class="line"><a id="l02289" name="l02289"></a><span class="lineno"> 2289</span>    }</div>
 <div class="line"><a id="l02290" name="l02290"></a><span class="lineno"> 2290</span> </div>
 <div class="line"><a id="l02291" name="l02291"></a><span class="lineno"> 2291</span>  <span class="comment">/* remove the now-replaced node */</span></div>
@@ -3961,16 +3961,16 @@ $(document).ready(function(){initNavTree('matemenu-tree_8c_source.html',''); ini
 <div class="line"><a id="l04016" name="l04016"></a><span class="lineno"> 4016</span>            {</div>
 <div class="line"><a id="l04017" name="l04017"></a><span class="lineno"> 4017</span>              <span class="comment">/* we need to recompute last_subdir since we&#39;ll remove it from</span></div>
 <div class="line"><a id="l04018" name="l04018"></a><span class="lineno"> 4018</span><span class="comment">               * the list */</span></div>
-<div class="line"><a id="l04019" name="l04019"></a><span class="lineno"> 4019</span>              GSList *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l04019" name="l04019"></a><span class="lineno"> 4019</span>              GSList *buf;</div>
 <div class="line"><a id="l04020" name="l04020"></a><span class="lineno"> 4020</span> </div>
 <div class="line"><a id="l04021" name="l04021"></a><span class="lineno"> 4021</span>              <span class="keywordflow">if</span> (subdir_l == directory-&gt;subdirs)</div>
 <div class="line"><a id="l04022" name="l04022"></a><span class="lineno"> 4022</span>                last_subdir = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l04023" name="l04023"></a><span class="lineno"> 4023</span>              <span class="keywordflow">else</span></div>
 <div class="line"><a id="l04024" name="l04024"></a><span class="lineno"> 4024</span>                {</div>
-<div class="line"><a id="l04025" name="l04025"></a><span class="lineno"> 4025</span>                  <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = directory-&gt;subdirs;</div>
-<div class="line"><a id="l04026" name="l04026"></a><span class="lineno"> 4026</span>                  <span class="keywordflow">while</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;next != subdir_l)</div>
-<div class="line"><a id="l04027" name="l04027"></a><span class="lineno"> 4027</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;next;</div>
-<div class="line"><a id="l04028" name="l04028"></a><span class="lineno"> 4028</span>                  last_subdir = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l04025" name="l04025"></a><span class="lineno"> 4025</span>                  buf = directory-&gt;subdirs;</div>
+<div class="line"><a id="l04026" name="l04026"></a><span class="lineno"> 4026</span>                  <span class="keywordflow">while</span> (buf != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; buf-&gt;next != subdir_l)</div>
+<div class="line"><a id="l04027" name="l04027"></a><span class="lineno"> 4027</span>                    buf = buf-&gt;next;</div>
+<div class="line"><a id="l04028" name="l04028"></a><span class="lineno"> 4028</span>                  last_subdir = buf;</div>
 <div class="line"><a id="l04029" name="l04029"></a><span class="lineno"> 4029</span>                }</div>
 <div class="line"><a id="l04030" name="l04030"></a><span class="lineno"> 4030</span>            }</div>
 <div class="line"><a id="l04031" name="l04031"></a><span class="lineno"> 4031</span> </div>
@@ -4850,8 +4850,6 @@ $(document).ready(function(){initNavTree('matemenu-tree_8c_source.html',''); ini
 <div class="ttc" id="aentry-directories_8c_html_a89270f360b41070bc947996aebf03760"><div class="ttname"><a href="entry-directories_8c.html#a89270f360b41070bc947996aebf03760">entry_directory_list_get_directory</a></div><div class="ttdeci">DesktopEntry * entry_directory_list_get_directory(EntryDirectoryList *list, const char *relative_path)</div><div class="ttdef"><b>Definition</b> <a href="entry-directories_8c_source.html#l01047">entry-directories.c:1047</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="aev-archive_8c_html_ac307ccd36e0808058f998a8048673a49"><div class="ttname"><a href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(EvArchive, ev_archive, G_TYPE_OBJECT)</div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-netbook_2maximus_2main_8c_html_a76565232f25302e8cb99c60a629034cc"><div class="ttname"><a href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a></div><div class="ttdeci">GOptionEntry entries[]</div><div class="ttdef"><b>Definition</b> <a href="mate-netbook_2maximus_2main_8c_source.html#l00043">mate-netbook/maximus/main.c:43</a></div></div>

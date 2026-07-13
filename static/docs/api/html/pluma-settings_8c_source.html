@@ -1107,11 +1107,11 @@ $(document).ready(function(){initNavTree('pluma-settings_8c_source.html',''); in
 </div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span> </div>
 <div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span><span class="keyword">static</span> gchar *</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>get_wrap_str (guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>get_wrap_str (guint mode)</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>{</div>
 <div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    gchar *str;</div>
 <div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span> </div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>    <span class="keywordflow">switch</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>    <span class="keywordflow">switch</span> (mode)</div>
 <div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    {</div>
 <div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>        <span class="keywordflow">case</span> GTK_WRAP_NONE:</div>
 <div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>            str = g_strdup (<span class="stringliteral">&quot;GTK_WRAP_NONE&quot;</span>);</div>
@@ -1163,14 +1163,14 @@ $(document).ready(function(){initNavTree('pluma-settings_8c_source.html',''); in
 <div class="foldopen" id="foldopen01049" data-start="{" data-end="}">
 <div class="line"><a id="l01049" name="l01049"></a><span class="lineno"><a class="line" href="pluma-settings_8c.html#a2f75bdcd6a14bce3ab0aa418d515e65b"> 1049</a></span><a class="code hl_function" href="pluma-settings_8c.html#a2f75bdcd6a14bce3ab0aa418d515e65b">pluma_settings_set_wrap_mode</a> (GSettings   *settings,</div>
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>                              <span class="keyword">const</span> gchar *<a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>,</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>                              GtkWrapMode  <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>                              GtkWrapMode  mode)</div>
 <div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>{</div>
 <div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>    gchar *str;</div>
 <div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span> </div>
 <div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>    g_return_if_fail (G_IS_SETTINGS (settings));</div>
 <div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>    g_return_if_fail (<a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span> </div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    str = get_wrap_str (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    str = get_wrap_str (mode);</div>
 <div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span> </div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    g_settings_set_string (settings, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, str);</div>
 <div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>}</div>
@@ -1237,7 +1237,6 @@ $(document).ready(function(){initNavTree('pluma-settings_8c_source.html',''); in
 <div class="ttc" id="aatril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c_html_a74cc204963f2c81c15b53827c2c77e32"><div class="ttname"><a href="atril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c.html#a74cc204963f2c81c15b53827c2c77e32">G_DEFINE_TYPE_WITH_PRIVATE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_PRIVATE(EggEditableToolbar, egg_editable_toolbar, GTK_TYPE_BOX)</div></div>
 <div class="ttc" id="aephy-zoom_8h_html_a450c3ab9b94a4663caad892b7193b547"><div class="ttname"><a href="ephy-zoom_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a></div><div class="ttdeci">float level</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00044">ephy-zoom.h:44</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="apluma-app_8c_html_a097a1532e3f2844bed45d5007476a0dd"><div class="ttname"><a href="pluma-app_8c.html#a097a1532e3f2844bed45d5007476a0dd">pluma_app_get_default</a></div><div class="ttdeci">PlumaApp * pluma_app_get_default(void)</div><div class="ttdef"><b>Definition</b> <a href="pluma-app_8c_source.html#l00407">pluma-app.c:407</a></div></div>
 <div class="ttc" id="apluma-app_8c_html_a33e038f3e87d145b46a31cb88da884bd"><div class="ttname"><a href="pluma-app_8c.html#a33e038f3e87d145b46a31cb88da884bd">pluma_app_get_documents</a></div><div class="ttdeci">GList * pluma_app_get_documents(PlumaApp *app)</div><div class="ttdef"><b>Definition</b> <a href="pluma-app_8c_source.html#l00781">pluma-app.c:781</a></div></div>
 <div class="ttc" id="apluma-app_8c_html_aba178837f1ae6ba1f1650b7da9f3a4a6"><div class="ttname"><a href="pluma-app_8c.html#aba178837f1ae6ba1f1650b7da9f3a4a6">pluma_app_get_windows</a></div><div class="ttdeci">const GList * pluma_app_get_windows(PlumaApp *app)</div><div class="ttdef"><b>Definition</b> <a href="pluma-app_8c_source.html#l00647">pluma-app.c:647</a></div></div>

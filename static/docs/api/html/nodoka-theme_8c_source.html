@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    GdkPoint point_middle;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    GdkPoint point_end;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> offset;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    GdkPoint position;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} ArrowParameters;</div>
@@ -447,12 +447,12 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    cairo_rectangle_int_t rect;</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    rect.x = 0;</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    rect.width = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)w;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    rect.width = (int)w;</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keywordflow">if</span> (arrow_up)</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        rect.y = 0 + <a class="code hl_define" href="nodoka-theme_8c.html#a48d243e772922253e881265c5bb25f65">DEFAULT_ARROW_HEIGHT</a>;</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        rect.y = 0;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    rect.height = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(h - <a class="code hl_define" href="nodoka-theme_8c.html#a48d243e772922253e881265c5bb25f65">DEFAULT_ARROW_HEIGHT</a>);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    rect.height = (int)(h - <a class="code hl_define" href="nodoka-theme_8c.html#a48d243e772922253e881265c5bb25f65">DEFAULT_ARROW_HEIGHT</a>);</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    cairo_move_to (cr, rect.x + radius, rect.y);</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
@@ -1065,26 +1065,26 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        xmlXPathObjectPtr  xpathObj;</div>
 <div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        xmlNodeSetPtr      nodes;</div>
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>        *body_label_text;</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>        <span class="keywordtype">int</span> i, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>        <span class="keywordtype">int</span> i, size;</div>
 <div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span> </div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>        <span class="comment">/* filterout img nodes */</span></div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>        xpathCtx = xmlXPathNewContext(doc);</div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>        xpathObj = xmlXPathEvalExpression((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)<span class="stringliteral">&quot;//img&quot;</span>, xpathCtx);</div>
 <div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        nodes = xpathObj-&gt;nodesetval;</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = (nodes) ? nodes-&gt;nodeNr : 0;</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        <span class="keywordflow">for</span>(i = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> - 1; i &gt;= 0; i--) {</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        size = (nodes) ? nodes-&gt;nodeNr : 0;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        <span class="keywordflow">for</span>(i = size - 1; i &gt;= 0; i--) {</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>            xmlUnlinkNode (nodes-&gt;nodeTab[i]);</div>
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>            xmlFreeNode (nodes-&gt;nodeTab[i]);</div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        }</div>
 <div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span> </div>
 <div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>        <span class="comment">/* write doc to string */</span></div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>        xmlBufferPtr <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = xmlBufferCreate();</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>        (void) xmlNodeDump(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, doc, xmlDocGetRootElement (doc), 0, 0);</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>        str = (<span class="keywordtype">char</span> *)<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;content;</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>        xmlBufferPtr buf = xmlBufferCreate();</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>        (void) xmlNodeDump(buf, doc, xmlDocGetRootElement (doc), 0, 0);</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>        str = (<span class="keywordtype">char</span> *)buf-&gt;content;</div>
 <div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>        gtk_label_set_markup (GTK_LABEL (windata-&gt;body_label), str);</div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
 <div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>        <span class="comment">/* cleanup */</span></div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>        xmlBufferFree (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>        xmlBufferFree (buf);</div>
 <div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>        xmlXPathFreeObject (xpathObj);</div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>        xmlXPathFreeContext (xpathCtx);</div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>        xmlFreeDoc (doc);</div>
@@ -1178,7 +1178,7 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    GtkWidget *button;</div>
 <div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>    GtkWidget *hbox;</div>
 <div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    GdkPixbuf *pixbuf;</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    <span class="keywordtype">char</span> *buf;</div>
 <div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span> </div>
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>    g_assert(windata != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span> </div>
@@ -1201,12 +1201,12 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    gtk_container_add(GTK_CONTAINER(button), hbox);</div>
 <div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span> </div>
 <div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    <span class="comment">/* Try to be smart and find a suitable icon. */</span></div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_strdup_printf(<span class="stringliteral">&quot;stock_%s&quot;</span>, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>);</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    buf = g_strdup_printf(<span class="stringliteral">&quot;stock_%s&quot;</span>, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>);</div>
 <div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    pixbuf = gtk_icon_theme_load_icon(</div>
 <div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>        gtk_icon_theme_get_for_screen(</div>
 <div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>            gdk_window_get_screen(gtk_widget_get_window(GTK_WIDGET(nw)))),</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 16, GTK_ICON_LOOKUP_USE_BUILTIN, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>        buf, 16, GTK_ICON_LOOKUP_USE_BUILTIN, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    g_free(buf);</div>
 <div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span> </div>
 <div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>    <span class="keywordflow">if</span> (pixbuf != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    {</div>
@@ -1222,9 +1222,9 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>    gtk_box_pack_start(GTK_BOX(hbox), <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
 <div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    gtk_label_set_xalign (GTK_LABEL (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), 0.0);</div>
 <div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>    gtk_label_set_yalign (GTK_LABEL (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), 0.5);</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_strdup_printf(<span class="stringliteral">&quot;&lt;small&gt;%s&lt;/small&gt;&quot;</span>, text);</div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    gtk_label_set_markup(GTK_LABEL(<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    buf = g_strdup_printf(<span class="stringliteral">&quot;&lt;small&gt;%s&lt;/small&gt;&quot;</span>, text);</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>    gtk_label_set_markup(GTK_LABEL(<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), buf);</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    g_free(buf);</div>
 <div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span> </div>
 <div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>add_button:</div>
 <div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    gtk_widget_show(button);</div>
@@ -1379,10 +1379,6 @@ $(document).ready(function(){initNavTree('nodoka-theme_8c_source.html',''); init
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="anodoka-theme_8c_html_a013f13d7d5f8d932be650cfc69c3f525"><div class="ttname"><a href="nodoka-theme_8c.html#a013f13d7d5f8d932be650cfc69c3f525">DEFAULT_ARROW_WIDTH</a></div><div class="ttdeci">#define DEFAULT_ARROW_WIDTH</div><div class="ttdef"><b>Definition</b> <a href="nodoka-theme_8c_source.html#l00117">nodoka-theme.c:117</a></div></div>

@@ -732,13 +732,13 @@ $(document).ready(function(){initNavTree('iconcache_8c_source.html',''); initRes
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span> </div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>replace_cache (<a class="code hl_struct" href="struct__MetaIconCache.html">MetaIconCache</a> *icon_cache,</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>               <a class="code hl_enumeration" href="iconcache_8h.html#a630eae79077964b6f87afb5ff1e022af">IconOrigin</a>     <a class="code hl_typedef" href="ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade">origin</a>,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>               <a class="code hl_enumeration" href="iconcache_8h.html#a630eae79077964b6f87afb5ff1e022af">IconOrigin</a>     origin,</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>               GdkPixbuf     *new_icon,</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>               GdkPixbuf     *new_mini_icon)</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>{</div>
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  clear_icon_cache (icon_cache, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>  icon_cache-&gt;<a class="code hl_variable" href="struct__MetaIconCache.html#ac35f4f2e2b76fe206f1874aedf039a73">origin</a> = <a class="code hl_typedef" href="ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade">origin</a>;</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>  icon_cache-&gt;<a class="code hl_variable" href="struct__MetaIconCache.html#ac35f4f2e2b76fe206f1874aedf039a73">origin</a> = origin;</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="preprocessor">#if 0</span></div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  <span class="keywordflow">if</span> (new_icon)</div>
@@ -777,18 +777,18 @@ $(document).ready(function(){initNavTree('iconcache_8c_source.html',''); initRes
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  <span class="keywordflow">if</span> (w != h)</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    {</div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      GdkPixbuf *tmp;</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (w, h);</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      size = <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (w, h);</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      tmp = gdk_pixbuf_new (GDK_COLORSPACE_RGB, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 8, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      tmp = gdk_pixbuf_new (GDK_COLORSPACE_RGB, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 8, size, size);</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>      <span class="keywordflow">if</span> (tmp)</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>    {</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>      gdk_pixbuf_fill (tmp, 0);</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>      gdk_pixbuf_copy_area (src, 0, 0, w, h,</div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>                tmp,</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>                (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> - w) / 2, (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> - h) / 2);</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>                (size - w) / 2, (size - h) / 2);</div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>      g_object_unref (src);</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>      src = tmp;</div>
@@ -1045,8 +1045,6 @@ $(document).ready(function(){initNavTree('iconcache_8c_source.html',''); initRes
 <div class="ttc" id="aiconcache_8h_html_a630eae79077964b6f87afb5ff1e022afa5ee066052170fb70c6de94119e6e6588"><div class="ttname"><a href="iconcache_8h.html#a630eae79077964b6f87afb5ff1e022afa5ee066052170fb70c6de94119e6e6588">USING_KWM_WIN_ICON</a></div><div class="ttdeci">@ USING_KWM_WIN_ICON</div><div class="ttdef"><b>Definition</b> <a href="iconcache_8h_source.html#l00039">iconcache.h:39</a></div></div>
 <div class="ttc" id="aiconcache_8h_html_a630eae79077964b6f87afb5ff1e022afae33c553bab3325f5d3d32d02f397c1a6"><div class="ttname"><a href="iconcache_8h.html#a630eae79077964b6f87afb5ff1e022afae33c553bab3325f5d3d32d02f397c1a6">USING_WM_HINTS</a></div><div class="ttdeci">@ USING_WM_HINTS</div><div class="ttdef"><b>Definition</b> <a href="iconcache_8h_source.html#l00040">iconcache.h:40</a></div></div>
 <div class="ttc" id="aiconcache_8h_html_a630eae79077964b6f87afb5ff1e022afae892868c58a726ce39a25971367c92b6"><div class="ttname"><a href="iconcache_8h.html#a630eae79077964b6f87afb5ff1e022afae892868c58a726ce39a25971367c92b6">USING_G_DESKTOP_APP</a></div><div class="ttdeci">@ USING_G_DESKTOP_APP</div><div class="ttdef"><b>Definition</b> <a href="iconcache_8h_source.html#l00043">iconcache.h:42</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a5f189a59b66f135978bce54f9d0fcade"><div class="ttname"><a href="ioapi_8h.html#a5f189a59b66f135978bce54f9d0fcade">origin</a></div><div class="ttdeci">voidpf uLong int origin</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amarco_2src_2include_2ui_8h_html_a16a94524ac9961b05269675afd52dbfe"><div class="ttname"><a href="marco_2src_2include_2ui_8h.html#a16a94524ac9961b05269675afd52dbfe">meta_ui_get_default_window_icon</a></div><div class="ttdeci">GdkPixbuf * meta_ui_get_default_window_icon(MetaUI *ui)</div><div class="ttdef"><b>Definition</b> <a href="ui_8c_source.html#l00614">ui.c:614</a></div></div>

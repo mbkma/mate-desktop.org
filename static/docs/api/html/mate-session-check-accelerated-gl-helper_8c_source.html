@@ -501,7 +501,7 @@ $(document).ready(function(){initNavTree('mate-session-check-accelerated-gl-help
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>}</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>_set_max_screen_size_property (Display *display, <span class="keywordtype">int</span> screen, <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>_set_max_screen_size_property (Display *display, <span class="keywordtype">int</span> screen, <span class="keywordtype">int</span> size)</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>{</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        Atom max_screen_size_atom;</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
@@ -514,7 +514,7 @@ $(document).ready(function(){initNavTree('mate-session-check-accelerated-gl-help
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        XChangeProperty (display, RootWindow(display, screen),</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>                         max_screen_size_atom,</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>                         XA_CARDINAL, 32, PropModeReplace,</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>                         (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)&amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, 1);</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>                         (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)&amp;size, 1);</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        XSync(display, False);</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>}</div>
@@ -522,15 +522,15 @@ $(document).ready(function(){initNavTree('mate-session-check-accelerated-gl-help
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>_is_max_texture_size_big_enough (Display *display)</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>{</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        <span class="keywordtype">int</span> screen, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>        <span class="keywordtype">int</span> screen, size;</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>        screen = DefaultScreen (display);</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(max_renderbuffer_size, max_texture_size);</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; DisplayWidth (display, screen) ||</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; DisplayHeight (display, screen))</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        size = <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a>(max_renderbuffer_size, max_texture_size);</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        <span class="keywordflow">if</span> (size &lt; DisplayWidth (display, screen) ||</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>            size &lt; DisplayHeight (display, screen))</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>                <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span> </div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        _set_max_screen_size_property (display, screen, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        _set_max_screen_size_property (display, screen, size);</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>}</div>
@@ -620,7 +620,6 @@ $(document).ready(function(){initNavTree('mate-session-check-accelerated-gl-help
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-netbook_2maximus_2main_8c_html_a76565232f25302e8cb99c60a629034cc"><div class="ttname"><a href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a></div><div class="ttdeci">GOptionEntry entries[]</div><div class="ttdef"><b>Definition</b> <a href="mate-netbook_2maximus_2main_8c_source.html#l00043">mate-netbook/maximus/main.c:43</a></div></div>

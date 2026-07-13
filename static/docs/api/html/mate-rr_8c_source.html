@@ -254,12 +254,12 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                     <a class="code hl_typedef" href="mate-rr_8c.html#a81c3ce793ea2cd973c95a9ff89ff8e58">RRMode</a>              <span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="preprocessor">#ifdef HAVE_RANDR</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">static</span> <span class="keywordtype">void</span>           mode_initialize   (MateRRMode        *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">static</span> <span class="keywordtype">void</span>           mode_initialize   (MateRRMode        *mode,</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                     XRRModeInfo        *info);</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *  mode_copy         (<span class="keyword">const</span> MateRRMode  *from);</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="keyword">static</span> <span class="keywordtype">void</span>           mode_free         (MateRRMode        *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="keyword">static</span> <span class="keywordtype">void</span>           mode_free         (MateRRMode        *mode);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">static</span> <span class="keywordtype">void</span> mate_rr_screen_finalize (GObject*);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">static</span> <span class="keywordtype">void</span> mate_rr_screen_set_property (GObject*, guint, <span class="keyword">const</span> GValue*, GParamSpec*);</div>
@@ -322,14 +322,14 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>mode_by_id (<a class="code hl_struct" href="structScreenInfo.html">ScreenInfo</a> *info, <a class="code hl_typedef" href="mate-rr_8c.html#a81c3ce793ea2cd973c95a9ff89ff8e58">RRMode</a> <span class="keywordtype">id</span>)</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>{</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **mode;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    g_assert (info != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a>; *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>; ++<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">for</span> (mode = info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a>; *mode; ++mode)</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">if</span> ((*mode)-&gt;id == <span class="keywordtype">id</span>)</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">return</span> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">return</span> *mode;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    }</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -340,7 +340,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>{</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <a class="code hl_typedef" href="mate-rr_8h.html#a48e4f78b7049d7c54425e5b1193349b8">MateRROutput</a> **output;</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aca85f754f15b46ffd7f1b20f8fe9f8ea">MateRRCrtc</a> **crtc;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **mode;</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    g_assert (info != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
@@ -369,8 +369,8 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordflow">if</span> (info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a>)</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">for</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a>; *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>; ++<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        mode_free (*<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">for</span> (mode = info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a>; *mode; ++mode)</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        mode_free (*mode);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    g_free (info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a>);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
@@ -384,12 +384,12 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>}</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>has_similar_mode (MateRROutput *output, MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>has_similar_mode (MateRROutput *output, MateRRMode *mode)</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>{</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **modes = <a class="code hl_function" href="mate-rr_8c.html#abec259a5f9c9d05be0207b7bc80b05f5">mate_rr_output_list_modes</a> (output);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    guint width = <a class="code hl_function" href="mate-rr_8c.html#a6372e9b929cd90ff93bf552fd9be59a1">mate_rr_mode_get_width</a> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    guint height = <a class="code hl_function" href="mate-rr_8c.html#a68005f42044aa396914e7063408013f1">mate_rr_mode_get_height</a> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    guint width = <a class="code hl_function" href="mate-rr_8c.html#a6372e9b929cd90ff93bf552fd9be59a1">mate_rr_mode_get_width</a> (mode);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    guint height = <a class="code hl_function" href="mate-rr_8c.html#a68005f42044aa396914e7063408013f1">mate_rr_mode_get_height</a> (mode);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">for</span> (i = 0; modes[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; ++i)</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    {</div>
@@ -423,7 +423,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keywordflow">for</span> (j = 0; output1-&gt;modes[j] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; ++j)</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    {</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = output1-&gt;modes[j];</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>        <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *mode = output1-&gt;modes[j];</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        gboolean valid;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>        <span class="keywordtype">int</span> k;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
@@ -435,7 +435,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">if</span> (!output2-&gt;connected)</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordflow">if</span> (!has_similar_mode (output2, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>))</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>        <span class="keywordflow">if</span> (!has_similar_mode (output2, mode))</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>        {</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            valid = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>            <span class="keywordflow">break</span>;</div>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        }</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="keywordflow">if</span> (valid)</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        g_ptr_array_add (result, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        g_ptr_array_add (result, mode);</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    }</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    }</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
@@ -487,9 +487,9 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    a = g_ptr_array_new ();</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">for</span> (i = 0;  i &lt; resources-&gt;nmode; ++i)</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    {</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = mode_new (info, resources-&gt;modes[i].id);</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *mode = mode_new (info, resources-&gt;modes[i].id);</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    g_ptr_array_add (a, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    g_ptr_array_add (a, mode);</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    }</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    g_ptr_array_add (a, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad9bf7f1ffbf49251c5b852a9f462f413">modes</a> = (<a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **)g_ptr_array_free (a, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
@@ -509,9 +509,9 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keywordflow">for</span> (i = 0; i &lt; resources-&gt;nmode; ++i)</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    {</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = mode_by_id (info, resources-&gt;modes[i].id);</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *mode = mode_by_id (info, resources-&gt;modes[i].id);</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    mode_initialize (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, &amp;(resources-&gt;modes[i]));</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    mode_initialize (mode, &amp;(resources-&gt;modes[i]));</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    }</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    gather_clone_modes (info);</div>
@@ -1368,10 +1368,10 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span>    a = g_ptr_array_new ();</div>
 <div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>    <span class="keywordflow">for</span> (i = 0; i &lt; info-&gt;nmode; ++i)</div>
 <div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>    {</div>
-<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = mode_by_id (output-&gt;info, info-&gt;modes[i]);</div>
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *mode = mode_by_id (output-&gt;info, info-&gt;modes[i]);</div>
 <div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span> </div>
-<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
-<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>        g_ptr_array_add (a, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>    <span class="keywordflow">if</span> (mode)</div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span>        g_ptr_array_add (a, mode);</div>
 <div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>    }</div>
 <div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span>    g_ptr_array_add (a, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span>    output-&gt;modes = (<a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> **)g_ptr_array_free (a, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
@@ -1657,16 +1657,16 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>gboolean</div>
 <div class="foldopen" id="foldopen01633" data-start="{" data-end="}">
 <div class="line"><a id="l01633" name="l01633"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a28f97203b4fe8dcc6dabc0fd8b3e0650"> 1633</a></span><a class="code hl_function" href="mate-rr_8c.html#a28f97203b4fe8dcc6dabc0fd8b3e0650">mate_rr_output_supports_mode</a> (MateRROutput *output,</div>
-<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>                   MateRRMode   *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>                   MateRRMode   *mode)</div>
 <div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span>{</div>
 <div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span> </div>
 <div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>    g_return_val_if_fail (output != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>    g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>    g_return_val_if_fail (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span> </div>
 <div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>    <span class="keywordflow">for</span> (i = 0; output-&gt;modes[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; ++i)</div>
 <div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>    {</div>
-<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>    <span class="keywordflow">if</span> (output-&gt;modes[i] == <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>    <span class="keywordflow">if</span> (output-&gt;modes[i] == mode)</div>
 <div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span>    }</div>
 <div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span> </div>
@@ -1783,13 +1783,13 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01749" name="l01749"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a87f3269362522517b8c3cb01ef4ba731"> 1749</a></span><a class="code hl_function" href="mate-rr_8c.html#a87f3269362522517b8c3cb01ef4ba731">mate_rr_crtc_set_config</a> (MateRRCrtc      *crtc,</div>
 <div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>              <span class="keywordtype">int</span>               x,</div>
 <div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>              <span class="keywordtype">int</span>               y,</div>
-<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>              MateRRMode      *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>,</div>
+<div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>              MateRRMode      *mode,</div>
 <div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>              <a class="code hl_enumeration" href="mate-rr_8h.html#a8db13b09e1b4ce5363f89cfde473a491">MateRRRotation</a>   rotation,</div>
 <div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>              MateRROutput   **outputs,</div>
 <div class="line"><a id="l01755" name="l01755"></a><span class="lineno"> 1755</span>              <span class="keywordtype">int</span>               n_outputs,</div>
 <div class="line"><a id="l01756" name="l01756"></a><span class="lineno"> 1756</span>              GError          **<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
 <div class="line"><a id="l01757" name="l01757"></a><span class="lineno"> 1757</span>{</div>
-<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="mate-rr_8c.html#ab5ec8bc89fcfcfd1b65c5c450cfe01cb">mate_rr_crtc_set_config_with_time</a> (crtc, GDK_CURRENT_TIME, x, y, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, rotation, outputs, n_outputs, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l01758" name="l01758"></a><span class="lineno"> 1758</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="mate-rr_8c.html#ab5ec8bc89fcfcfd1b65c5c450cfe01cb">mate_rr_crtc_set_config_with_time</a> (crtc, GDK_CURRENT_TIME, x, y, mode, rotation, outputs, n_outputs, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l01759" name="l01759"></a><span class="lineno"> 1759</span>}</div>
 </div>
 <div class="line"><a id="l01760" name="l01760"></a><span class="lineno"> 1760</span><span class="preprocessor">#endif</span></div>
@@ -1800,7 +1800,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01764" name="l01764"></a><span class="lineno"> 1764</span>                    guint32           timestamp,</div>
 <div class="line"><a id="l01765" name="l01765"></a><span class="lineno"> 1765</span>                    <span class="keywordtype">int</span>               x,</div>
 <div class="line"><a id="l01766" name="l01766"></a><span class="lineno"> 1766</span>                    <span class="keywordtype">int</span>               y,</div>
-<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>                    MateRRMode      *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>,</div>
+<div class="line"><a id="l01767" name="l01767"></a><span class="lineno"> 1767</span>                    MateRRMode      *mode,</div>
 <div class="line"><a id="l01768" name="l01768"></a><span class="lineno"> 1768</span>                    <a class="code hl_enumeration" href="mate-rr_8h.html#a8db13b09e1b4ce5363f89cfde473a491">MateRRRotation</a>   rotation,</div>
 <div class="line"><a id="l01769" name="l01769"></a><span class="lineno"> 1769</span>                    MateRROutput   **outputs,</div>
 <div class="line"><a id="l01770" name="l01770"></a><span class="lineno"> 1770</span>                    <span class="keywordtype">int</span>               n_outputs,</div>
@@ -1815,15 +1815,15 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01779" name="l01779"></a><span class="lineno"> 1779</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l01780" name="l01780"></a><span class="lineno"> 1780</span> </div>
 <div class="line"><a id="l01781" name="l01781"></a><span class="lineno"> 1781</span>    g_return_val_if_fail (crtc != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>    g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || outputs == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || n_outputs == 0, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l01782" name="l01782"></a><span class="lineno"> 1782</span>    g_return_val_if_fail (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || outputs == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || n_outputs == 0, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l01783" name="l01783"></a><span class="lineno"> 1783</span>    g_return_val_if_fail (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l01784" name="l01784"></a><span class="lineno"> 1784</span> </div>
 <div class="line"><a id="l01785" name="l01785"></a><span class="lineno"> 1785</span>    info = crtc-&gt;info;</div>
 <div class="line"><a id="l01786" name="l01786"></a><span class="lineno"> 1786</span> </div>
-<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span>    <span class="keywordflow">if</span> (mode)</div>
 <div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>    {</div>
-<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>    <span class="keywordflow">if</span> (x + <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;width &gt; info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad3c9ac9339e4b73a61317d55339e3cf6">max_width</a></div>
-<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>        || y + <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;height &gt; info-&gt;<a class="code hl_variable" href="structScreenInfo.html#a21b90aaa10174160d01c362406f67754">max_height</a>)</div>
+<div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>    <span class="keywordflow">if</span> (x + mode-&gt;width &gt; info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad3c9ac9339e4b73a61317d55339e3cf6">max_width</a></div>
+<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>        || y + mode-&gt;height &gt; info-&gt;<a class="code hl_variable" href="structScreenInfo.html#a21b90aaa10174160d01c362406f67754">max_height</a>)</div>
 <div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>    {</div>
 <div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>        g_set_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, <a class="code hl_define" href="mate-rr_8h.html#a5f0e0a8db3b59eb876c5a5eb2c47e54d">MATE_RR_ERROR</a>, <a class="code hl_enumvalue" href="mate-rr_8h.html#a85dd381d29120d584c84432bba6c0422a6f93d6baf88965043375f1767b4826cb">MATE_RR_ERROR_BOUNDS_ERROR</a>,</div>
 <div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>             <span class="comment">/* Translators: the &quot;position&quot;, &quot;size&quot;, and &quot;maximum&quot;</span></div>
@@ -1833,7 +1833,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01797" name="l01797"></a><span class="lineno"> 1797</span>               <span class="stringliteral">&quot;position=(%d, %d), size=(%d, %d), maximum=(%d, %d)&quot;</span>),</div>
 <div class="line"><a id="l01798" name="l01798"></a><span class="lineno"> 1798</span>             (<span class="keywordtype">int</span>) crtc-&gt;id,</div>
 <div class="line"><a id="l01799" name="l01799"></a><span class="lineno"> 1799</span>             x, y,</div>
-<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>             <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;width, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;height,</div>
+<div class="line"><a id="l01800" name="l01800"></a><span class="lineno"> 1800</span>             mode-&gt;width, mode-&gt;height,</div>
 <div class="line"><a id="l01801" name="l01801"></a><span class="lineno"> 1801</span>             info-&gt;<a class="code hl_variable" href="structScreenInfo.html#ad3c9ac9339e4b73a61317d55339e3cf6">max_width</a>, info-&gt;<a class="code hl_variable" href="structScreenInfo.html#a21b90aaa10174160d01c362406f67754">max_height</a>);</div>
 <div class="line"><a id="l01802" name="l01802"></a><span class="lineno"> 1802</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l01803" name="l01803"></a><span class="lineno"> 1803</span>    }</div>
@@ -1852,7 +1852,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span>    status = XRRSetCrtcConfig (<a class="code hl_define" href="mate-rr_8c.html#a4e4992a8755f4387cca3391bb80941b5">DISPLAY</a> (crtc), info-&gt;resources, crtc-&gt;id,</div>
 <div class="line"><a id="l01817" name="l01817"></a><span class="lineno"> 1817</span>                   timestamp,</div>
 <div class="line"><a id="l01818" name="l01818"></a><span class="lineno"> 1818</span>                   x, y,</div>
-<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>                   <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> ? <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;id : None,</div>
+<div class="line"><a id="l01819" name="l01819"></a><span class="lineno"> 1819</span>                   mode ? mode-&gt;id : None,</div>
 <div class="line"><a id="l01820" name="l01820"></a><span class="lineno"> 1820</span>                   xrotation_from_rotation (rotation),</div>
 <div class="line"><a id="l01821" name="l01821"></a><span class="lineno"> 1821</span>                   (<a class="code hl_typedef" href="mate-rr_8c.html#acde06c286d5bdd20d5d3943f606f2e3c">RROutput</a> *)output_ids-&gt;data,</div>
 <div class="line"><a id="l01822" name="l01822"></a><span class="lineno"> 1822</span>                   output_ids-&gt;len);</div>
@@ -2092,61 +2092,61 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l02052" name="l02052"></a><span class="lineno"> 2052</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *</div>
 <div class="line"><a id="l02053" name="l02053"></a><span class="lineno"> 2053</span>mode_new (<a class="code hl_struct" href="structScreenInfo.html">ScreenInfo</a> *info, <a class="code hl_typedef" href="mate-rr_8c.html#a81c3ce793ea2cd973c95a9ff89ff8e58">RRMode</a> <span class="keywordtype">id</span>)</div>
 <div class="line"><a id="l02054" name="l02054"></a><span class="lineno"> 2054</span>{</div>
-<div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = g_slice_new0 (MateRRMode);</div>
+<div class="line"><a id="l02055" name="l02055"></a><span class="lineno"> 2055</span>    <a class="code hl_typedef" href="mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987">MateRRMode</a> *mode = g_slice_new0 (MateRRMode);</div>
 <div class="line"><a id="l02056" name="l02056"></a><span class="lineno"> 2056</span> </div>
-<div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;id = <a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>;</div>
-<div class="line"><a id="l02058" name="l02058"></a><span class="lineno"> 2058</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;info = info;</div>
+<div class="line"><a id="l02057" name="l02057"></a><span class="lineno"> 2057</span>    mode-&gt;id = <a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>;</div>
+<div class="line"><a id="l02058" name="l02058"></a><span class="lineno"> 2058</span>    mode-&gt;info = info;</div>
 <div class="line"><a id="l02059" name="l02059"></a><span class="lineno"> 2059</span> </div>
-<div class="line"><a id="l02060" name="l02060"></a><span class="lineno"> 2060</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l02060" name="l02060"></a><span class="lineno"> 2060</span>    <span class="keywordflow">return</span> mode;</div>
 <div class="line"><a id="l02061" name="l02061"></a><span class="lineno"> 2061</span>}</div>
 <div class="line"><a id="l02062" name="l02062"></a><span class="lineno"> 2062</span> </div>
 <div class="line"><a id="l02063" name="l02063"></a><span class="lineno"> 2063</span>guint32</div>
 <div class="foldopen" id="foldopen02064" data-start="{" data-end="}">
-<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a3449aac74bb57300852110cd1e1ff18e"> 2064</a></span><a class="code hl_function" href="mate-rr_8c.html#a3449aac74bb57300852110cd1e1ff18e">mate_rr_mode_get_id</a> (MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a3449aac74bb57300852110cd1e1ff18e"> 2064</a></span><a class="code hl_function" href="mate-rr_8c.html#a3449aac74bb57300852110cd1e1ff18e">mate_rr_mode_get_id</a> (MateRRMode *mode)</div>
 <div class="line"><a id="l02065" name="l02065"></a><span class="lineno"> 2065</span>{</div>
-<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span>    g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
-<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;id;</div>
+<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span>    g_return_val_if_fail (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
+<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span>    <span class="keywordflow">return</span> mode-&gt;id;</div>
 <div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span>}</div>
 </div>
 <div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span> </div>
 <div class="line"><a id="l02070" name="l02070"></a><span class="lineno"> 2070</span>guint</div>
 <div class="foldopen" id="foldopen02071" data-start="{" data-end="}">
-<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a6372e9b929cd90ff93bf552fd9be59a1"> 2071</a></span><a class="code hl_function" href="mate-rr_8c.html#a6372e9b929cd90ff93bf552fd9be59a1">mate_rr_mode_get_width</a> (MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02071" name="l02071"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a6372e9b929cd90ff93bf552fd9be59a1"> 2071</a></span><a class="code hl_function" href="mate-rr_8c.html#a6372e9b929cd90ff93bf552fd9be59a1">mate_rr_mode_get_width</a> (MateRRMode *mode)</div>
 <div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span>{</div>
-<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>    g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
-<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;width;</div>
+<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>    g_return_val_if_fail (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
+<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>    <span class="keywordflow">return</span> mode-&gt;width;</div>
 <div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>}</div>
 </div>
 <div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span> </div>
 <div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span><span class="keywordtype">int</span></div>
 <div class="foldopen" id="foldopen02078" data-start="{" data-end="}">
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#abda04ad87ba8b05865bf7ceb6fdea673"> 2078</a></span><a class="code hl_function" href="mate-rr_8c.html#abda04ad87ba8b05865bf7ceb6fdea673">mate_rr_mode_get_freq</a> (MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#abda04ad87ba8b05865bf7ceb6fdea673"> 2078</a></span><a class="code hl_function" href="mate-rr_8c.html#abda04ad87ba8b05865bf7ceb6fdea673">mate_rr_mode_get_freq</a> (MateRRMode *mode)</div>
 <div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>{</div>
-<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span>    g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
-<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span>    <span class="keywordflow">return</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;freq) / 1000;</div>
+<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span>    g_return_val_if_fail (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
+<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span>    <span class="keywordflow">return</span> (mode-&gt;freq) / 1000;</div>
 <div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span>}</div>
 </div>
 <div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span> </div>
 <div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span>guint</div>
 <div class="foldopen" id="foldopen02085" data-start="{" data-end="}">
-<div class="line"><a id="l02085" name="l02085"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a68005f42044aa396914e7063408013f1"> 2085</a></span><a class="code hl_function" href="mate-rr_8c.html#a68005f42044aa396914e7063408013f1">mate_rr_mode_get_height</a> (MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02085" name="l02085"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a68005f42044aa396914e7063408013f1"> 2085</a></span><a class="code hl_function" href="mate-rr_8c.html#a68005f42044aa396914e7063408013f1">mate_rr_mode_get_height</a> (MateRRMode *mode)</div>
 <div class="line"><a id="l02086" name="l02086"></a><span class="lineno"> 2086</span>{</div>
-<div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span>    g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
-<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;height;</div>
+<div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span>    g_return_val_if_fail (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
+<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span>    <span class="keywordflow">return</span> mode-&gt;height;</div>
 <div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span>}</div>
 </div>
 <div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span> </div>
 <div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span><span class="preprocessor">#ifdef HAVE_RANDR</span></div>
 <div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>mode_initialize (MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, XRRModeInfo *info)</div>
+<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>mode_initialize (MateRRMode *mode, XRRModeInfo *info)</div>
 <div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>{</div>
-<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span>    g_assert (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span>    g_assert (mode != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span>    g_assert (info != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02097" name="l02097"></a><span class="lineno"> 2097</span> </div>
-<div class="line"><a id="l02098" name="l02098"></a><span class="lineno"> 2098</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;name = g_strdup (info-&gt;name);</div>
-<div class="line"><a id="l02099" name="l02099"></a><span class="lineno"> 2099</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;width = info-&gt;width;</div>
-<div class="line"><a id="l02100" name="l02100"></a><span class="lineno"> 2100</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;height = info-&gt;height;</div>
-<div class="line"><a id="l02101" name="l02101"></a><span class="lineno"> 2101</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;freq = ((info-&gt;dotClock / (double)info-&gt;hTotal) / info-&gt;vTotal + 0.5) * 1000;</div>
+<div class="line"><a id="l02098" name="l02098"></a><span class="lineno"> 2098</span>    mode-&gt;name = g_strdup (info-&gt;name);</div>
+<div class="line"><a id="l02099" name="l02099"></a><span class="lineno"> 2099</span>    mode-&gt;width = info-&gt;width;</div>
+<div class="line"><a id="l02100" name="l02100"></a><span class="lineno"> 2100</span>    mode-&gt;height = info-&gt;height;</div>
+<div class="line"><a id="l02101" name="l02101"></a><span class="lineno"> 2101</span>    mode-&gt;freq = ((info-&gt;dotClock / (double)info-&gt;hTotal) / info-&gt;vTotal + 0.5) * 1000;</div>
 <div class="line"><a id="l02102" name="l02102"></a><span class="lineno"> 2102</span>}</div>
 <div class="line"><a id="l02103" name="l02103"></a><span class="lineno"> 2103</span><span class="preprocessor">#endif </span><span class="comment">/* HAVE_RANDR */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l02104" name="l02104"></a><span class="lineno"> 2104</span> </div>
@@ -2166,15 +2166,15 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l02118" name="l02118"></a><span class="lineno"> 2118</span>}</div>
 <div class="line"><a id="l02119" name="l02119"></a><span class="lineno"> 2119</span> </div>
 <div class="line"><a id="l02120" name="l02120"></a><span class="lineno"> 2120</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l02121" name="l02121"></a><span class="lineno"> 2121</span>mode_free (MateRRMode *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l02121" name="l02121"></a><span class="lineno"> 2121</span>mode_free (MateRRMode *mode)</div>
 <div class="line"><a id="l02122" name="l02122"></a><span class="lineno"> 2122</span>{</div>
-<div class="line"><a id="l02123" name="l02123"></a><span class="lineno"> 2123</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>-&gt;name);</div>
-<div class="line"><a id="l02124" name="l02124"></a><span class="lineno"> 2124</span>    g_slice_free (MateRRMode, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l02123" name="l02123"></a><span class="lineno"> 2123</span>    g_free (mode-&gt;name);</div>
+<div class="line"><a id="l02124" name="l02124"></a><span class="lineno"> 2124</span>    g_slice_free (MateRRMode, mode);</div>
 <div class="line"><a id="l02125" name="l02125"></a><span class="lineno"> 2125</span>}</div>
 <div class="line"><a id="l02126" name="l02126"></a><span class="lineno"> 2126</span> </div>
 <div class="line"><a id="l02127" name="l02127"></a><span class="lineno"> 2127</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen02128" data-start="{" data-end="}">
-<div class="line"><a id="l02128" name="l02128"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#adab3fbab440d6b9943f0ba205780eb39"> 2128</a></span><a class="code hl_function" href="mate-rr_8c.html#adab3fbab440d6b9943f0ba205780eb39">mate_rr_crtc_set_gamma</a> (MateRRCrtc *crtc, <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l02128" name="l02128"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#adab3fbab440d6b9943f0ba205780eb39"> 2128</a></span><a class="code hl_function" href="mate-rr_8c.html#adab3fbab440d6b9943f0ba205780eb39">mate_rr_crtc_set_gamma</a> (MateRRCrtc *crtc, <span class="keywordtype">int</span> size,</div>
 <div class="line"><a id="l02129" name="l02129"></a><span class="lineno"> 2129</span>             <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *red,</div>
 <div class="line"><a id="l02130" name="l02130"></a><span class="lineno"> 2130</span>             <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *green,</div>
 <div class="line"><a id="l02131" name="l02131"></a><span class="lineno"> 2131</span>             <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> *blue)</div>
@@ -2188,7 +2188,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l02139" name="l02139"></a><span class="lineno"> 2139</span>    g_return_if_fail (green != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02140" name="l02140"></a><span class="lineno"> 2140</span>    g_return_if_fail (blue != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02141" name="l02141"></a><span class="lineno"> 2141</span> </div>
-<div class="line"><a id="l02142" name="l02142"></a><span class="lineno"> 2142</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> != crtc-&gt;gamma_size)</div>
+<div class="line"><a id="l02142" name="l02142"></a><span class="lineno"> 2142</span>    <span class="keywordflow">if</span> (size != crtc-&gt;gamma_size)</div>
 <div class="line"><a id="l02143" name="l02143"></a><span class="lineno"> 2143</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l02144" name="l02144"></a><span class="lineno"> 2144</span> </div>
 <div class="line"><a id="l02145" name="l02145"></a><span class="lineno"> 2145</span>    gamma = XRRAllocGamma (crtc-&gt;gamma_size);</div>
@@ -2206,7 +2206,7 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l02156" name="l02156"></a><span class="lineno"> 2156</span> </div>
 <div class="line"><a id="l02167" name="l02167"></a><span class="lineno"> 2167</span>gboolean</div>
 <div class="foldopen" id="foldopen02168" data-start="{" data-end="}">
-<div class="line"><a id="l02168" name="l02168"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a08933005943bd498e9371fe337f5b26c"> 2168</a></span><a class="code hl_function" href="mate-rr_8c.html#a08933005943bd498e9371fe337f5b26c">mate_rr_crtc_get_gamma</a> (MateRRCrtc *crtc, <span class="keywordtype">int</span> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l02168" name="l02168"></a><span class="lineno"><a class="line" href="mate-rr_8c.html#a08933005943bd498e9371fe337f5b26c"> 2168</a></span><a class="code hl_function" href="mate-rr_8c.html#a08933005943bd498e9371fe337f5b26c">mate_rr_crtc_get_gamma</a> (MateRRCrtc *crtc, <span class="keywordtype">int</span> *size,</div>
 <div class="line"><a id="l02169" name="l02169"></a><span class="lineno"> 2169</span>             <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> **red, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> **green,</div>
 <div class="line"><a id="l02170" name="l02170"></a><span class="lineno"> 2170</span>             <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> **blue)</div>
 <div class="line"><a id="l02171" name="l02171"></a><span class="lineno"> 2171</span>{</div>
@@ -2243,8 +2243,8 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="line"><a id="l02202" name="l02202"></a><span class="lineno"> 2202</span> </div>
 <div class="line"><a id="l02203" name="l02203"></a><span class="lineno"> 2203</span>    XRRFreeGamma (gamma);</div>
 <div class="line"><a id="l02204" name="l02204"></a><span class="lineno"> 2204</span> </div>
-<div class="line"><a id="l02205" name="l02205"></a><span class="lineno"> 2205</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
-<div class="line"><a id="l02206" name="l02206"></a><span class="lineno"> 2206</span>    *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = crtc-&gt;gamma_size;</div>
+<div class="line"><a id="l02205" name="l02205"></a><span class="lineno"> 2205</span>    <span class="keywordflow">if</span> (size)</div>
+<div class="line"><a id="l02206" name="l02206"></a><span class="lineno"> 2206</span>    *size = crtc-&gt;gamma_size;</div>
 <div class="line"><a id="l02207" name="l02207"></a><span class="lineno"> 2207</span> </div>
 <div class="line"><a id="l02208" name="l02208"></a><span class="lineno"> 2208</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02209" name="l02209"></a><span class="lineno"> 2209</span><span class="preprocessor">#else</span></div>
@@ -2259,8 +2259,6 @@ $(document).ready(function(){initNavTree('mate-rr_8c_source.html',''); initResiz
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2common_8h_html_a2164c55e96d86275e2e14da6685ec3b9"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a></div><div class="ttdeci">#define memcpy(a, b, n)</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2common_8h_source.html#l00037">atril/backend/dvi/mdvi-lib/common.h:37</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

@@ -13,11 +13,10 @@ var searchData=
   ['timezonemap_10',['TimezoneMap',['../structTimezoneMap.html',1,'']]],
   ['timezonemapclass_11',['TimezoneMapClass',['../structTimezoneMapClass.html',1,'']]],
   ['timing_12',['Timing',['../structTiming.html',1,'']]],
-  ['tm_5funz_5fs_13',['tm_unz_s',['../structtm__unz__s.html',1,'']]],
-  ['totempropertiesview_14',['TotemPropertiesView',['../structTotemPropertiesView.html',1,'']]],
-  ['totempropertiesviewclass_15',['TotemPropertiesViewClass',['../structTotemPropertiesViewClass.html',1,'']]],
-  ['trackkerndata_16',['TrackKernData',['../structTrackKernData.html',1,'']]],
-  ['tzdb_17',['TzDB',['../structTzDB.html',1,'']]],
-  ['tzinfo_18',['TzInfo',['../structTzInfo.html',1,'']]],
-  ['tzlocation_19',['TzLocation',['../structTzLocation.html',1,'']]]
+  ['totempropertiesview_13',['TotemPropertiesView',['../structTotemPropertiesView.html',1,'']]],
+  ['totempropertiesviewclass_14',['TotemPropertiesViewClass',['../structTotemPropertiesViewClass.html',1,'']]],
+  ['trackkerndata_15',['TrackKernData',['../structTrackKernData.html',1,'']]],
+  ['tzdb_16',['TzDB',['../structTzDB.html',1,'']]],
+  ['tzinfo_17',['TzInfo',['../structTzInfo.html',1,'']]],
+  ['tzlocation_18',['TzLocation',['../structTzLocation.html',1,'']]]
 ];

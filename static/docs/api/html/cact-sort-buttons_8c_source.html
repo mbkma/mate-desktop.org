@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('cact-sort-buttons_8c_source.html','');
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keyword">static</span> <span class="keywordtype">void</span>  on_tree_view_count_changed( <a class="code hl_struct" href="structBaseWindow.html">BaseWindow</a> *window, gboolean reset, gint menus_count, gint actions_count, gint profiles_count, gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a> );</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">static</span> <span class="keywordtype">void</span>  enable_buttons( <span class="keyword">const</span> <a class="code hl_struct" href="structCactSortButtons.html">CactSortButtons</a> *sort_buttons, gboolean enabled );</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">static</span> gint  toggle_group_get_from_mode( guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> );</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">static</span> gint  toggle_group_get_from_mode( guint mode );</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">static</span> gint  toggle_group_get_from_button( GtkToggleButton *toggled_button );</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>GType</div>
@@ -509,12 +509,12 @@ $(document).ready(function(){initNavTree('cact-sort-buttons_8c_source.html','');
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span><span class="comment"> * or -1 if not found</span></div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="keyword">static</span> gint</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>toggle_group_get_from_mode( guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> )</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>toggle_group_get_from_mode( guint mode )</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>{</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    guint i;</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    <span class="keywordflow">for</span>( i = 0 ; st_toggle_group[i].btn_name ; ++ i ){</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        <span class="keywordflow">if</span>( st_toggle_group[i].order_mode == <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> ){</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>        <span class="keywordflow">if</span>( st_toggle_group[i].order_mode == mode ){</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            <span class="keywordflow">return</span>( i );</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>        }</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    }</div>
@@ -562,7 +562,6 @@ $(document).ready(function(){initNavTree('cact-sort-buttons_8c_source.html','');
 <div class="ttc" id="acact-tree-view_8h_html"><div class="ttname"><a href="cact-tree-view_8h.html">cact-tree-view.h</a></div></div>
 <div class="ttc" id="acact-tree-view_8h_html_a52c2d367b9e6f8d79be10ee0b3a500d3"><div class="ttname"><a href="cact-tree-view_8h.html#a52c2d367b9e6f8d79be10ee0b3a500d3">TREE_SIGNAL_COUNT_CHANGED</a></div><div class="ttdeci">#define TREE_SIGNAL_COUNT_CHANGED</div><div class="ttdef"><b>Definition</b> <a href="cact-tree-view_8h_source.html#l00100">cact-tree-view.h:100</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ana-iprefs_8c_html_ab43175c62c69475a0cb2d401ba645a53"><div class="ttname"><a href="na-iprefs_8c.html#ab43175c62c69475a0cb2d401ba645a53">na_iprefs_get_order_mode_by_label</a></div><div class="ttdeci">guint na_iprefs_get_order_mode_by_label(const gchar *label)</div><div class="ttdef"><b>Definition</b> <a href="na-iprefs_8c_source.html#l00104">na-iprefs.c:104</a></div></div>
 <div class="ttc" id="ana-iprefs_8c_html_ad72b4045eaa8def11d83e69aaeb0bbc6"><div class="ttname"><a href="na-iprefs_8c.html#ad72b4045eaa8def11d83e69aaeb0bbc6">na_iprefs_set_order_mode</a></div><div class="ttdeci">void na_iprefs_set_order_mode(guint mode)</div><div class="ttdef"><b>Definition</b> <a href="na-iprefs_8c_source.html#l00121">na-iprefs.c:121</a></div></div>
 <div class="ttc" id="ana-iprefs_8c_html_af715efeb84e7343ee02d5181cd5d5943"><div class="ttname"><a href="na-iprefs_8c.html#af715efeb84e7343ee02d5181cd5d5943">na_iprefs_get_order_mode</a></div><div class="ttdeci">guint na_iprefs_get_order_mode(gboolean *mandatory)</div><div class="ttdef"><b>Definition</b> <a href="na-iprefs_8c_source.html#l00081">na-iprefs.c:81</a></div></div>

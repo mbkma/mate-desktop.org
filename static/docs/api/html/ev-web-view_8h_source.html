@@ -162,34 +162,29 @@ $(document).ready(function(){initNavTree('ev-web-view_8h_source.html',''); initR
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span>       ev_web_view_handle_link (EvWebView *webview, <a class="code hl_typedef" href="ev-link_8h.html#aab90df3f656965eb9bd1728b8e0cdd58">EvLink</a>* link);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/* Searching */</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span>     ev_web_view_find_next                 (EvWebView *webview);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keywordtype">void</span>     ev_web_view_find_previous             (EvWebView *webview);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span>     ev_web_view_find_changed              (EvWebView *webview,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                                                guint *results,</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                                gchar *text,</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                                                gboolean case_sensitive);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keywordtype">void</span>     ev_web_view_find_search_changed       (EvWebView *webview);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span>     ev_web_view_find_cancel               (EvWebView *webview);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">void</span>     ev_web_view_find_set_highlight_search (EvWebView *webview,gboolean visible);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keywordtype">void</span>     ev_web_view_set_handler               (EvWebView *webview,gboolean visible);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">/* Selection */</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>gboolean    ev_web_view_get_has_selection      (EvWebView *webview);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keywordtype">void</span>        ev_web_view_select_all             (EvWebView  *webview);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">void</span>        ev_web_view_copy                   (EvWebView  *webview);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keywordtype">void</span>     ev_web_view_find_changed              (EvWebView   *webview,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                                                <span class="keyword">const</span> gchar *text,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                gboolean     case_sensitive);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span>     ev_web_view_find_next                 (EvWebView *webview);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">void</span>     ev_web_view_find_previous             (EvWebView *webview);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span>     ev_web_view_find_search_changed       (EvWebView *webview);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span>     ev_web_view_find_cancel               (EvWebView *webview);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">/* Selection */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>gboolean    ev_web_view_get_has_selection      (EvWebView *webview);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keywordtype">void</span>        ev_web_view_select_all             (EvWebView  *webview);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">void</span>        ev_web_view_copy                   (EvWebView  *webview);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">/* Zoom control */</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>gboolean     ev_web_view_zoom_in               (EvWebView *webview);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>gboolean     ev_web_view_zoom_out              (EvWebView *webview);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>gboolean     ev_web_view_zoom_reset            (EvWebView *webview);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/* Zoom control */</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>gboolean     ev_web_view_zoom_in               (EvWebView *webview);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>gboolean     ev_web_view_zoom_out              (EvWebView *webview);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>gboolean     ev_web_view_zoom_reset            (EvWebView *webview);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">/*For safe replacement by an EvView*/</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">void</span>       ev_web_view_disconnect_handlers    (EvWebView  *webview);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>G_END_DECLS</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#endif </span><span class="comment">/* __EV_WEB_VIEW_H__ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_EPUB */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/*For safe replacement by an EvView*/</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span>       ev_web_view_disconnect_handlers    (EvWebView  *webview);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>G_END_DECLS</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#endif </span><span class="comment">/* __EV_WEB_VIEW_H__ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_EPUB */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aatril-document_8h_html"><div class="ttname"><a href="atril-document_8h.html">atril-document.h</a></div></div>
 <div class="ttc" id="aev-document-model_8h_html"><div class="ttname"><a href="ev-document-model_8h.html">ev-document-model.h</a></div></div>
 <div class="ttc" id="aev-document-model_8h_html_a4b843ee9c7ca85985ad44582d4fb836d"><div class="ttname"><a href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a></div><div class="ttdeci">struct _EvDocumentModel EvDocumentModel</div><div class="ttdef"><b>Definition</b> <a href="ev-document-model_8h_source.html#l00050">ev-document-model.h:50</a></div></div>

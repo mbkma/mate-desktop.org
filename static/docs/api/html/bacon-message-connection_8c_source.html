@@ -231,24 +231,24 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>server_cb (GIOChannel *source, GIOCondition <a class="code hl_variable" href="gs-idle-monitor_8h.html#aa92cea053a410afe0deffd2c7ed8715b">condition</a>, gpointer <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>{</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_typedef" href="bacon-message-connection_8h.html#a8afc074607b78bfe0764415259f6a4bb">BaconMessageConnection</a> *conn = (<a class="code hl_typedef" href="bacon-message-connection_8h.html#a8afc074607b78bfe0764415259f6a4bb">BaconMessageConnection</a> *)<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">char</span> *<a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, *subs, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">int</span> cd, rc, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">char</span> *<a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, *subs, buf;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">int</span> cd, rc, offset;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    gboolean finished;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = 0;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    offset = 0;</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    <span class="keywordflow">if</span> (conn-&gt;is_server &amp;&amp; conn-&gt;fd == g_io_channel_unix_get_fd (source)) {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        accept_new_connection (conn);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> = g_malloc (1);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    cd = conn-&gt;fd;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    rc = read (cd, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 1);</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">while</span> (rc &gt; 0 &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> != <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    rc = read (cd, &amp;buf, 1);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">while</span> (rc &gt; 0 &amp;&amp; buf != <span class="charliteral">&#39;\n&#39;</span>)</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> = g_realloc (<a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, rc + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> + 1);</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>[<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>] = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> + rc;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        rc = read (cd, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 1);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> = g_realloc (<a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, rc + offset + 1);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>[offset] = buf;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        offset = offset + rc;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        rc = read (cd, &amp;buf, 1);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordflow">if</span> (rc &lt;= 0) {</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        g_io_channel_shutdown (conn-&gt;chan, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    }</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>[<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>[offset] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    subs = <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    finished = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            (*conn-&gt;func) (subs, conn-&gt;data);</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        subs += strlen (subs) + 1;</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">if</span> (subs - <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> &gt;= <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">if</span> (subs - <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> &gt;= offset)</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            finished = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    }</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    GDir *filedir;</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordtype">char</span> *found_filename;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    GPatternSpec *<a class="code hl_variable" href="nl80211_8h.html#a62bd3ba8f7a8eaddb5f28c05950e0e73">pat</a>;</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    filedir = g_dir_open (dir, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -302,13 +302,13 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    found_filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">while</span> ((<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_dir_read_name (filedir)))</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keywordflow">while</span> ((filename = g_dir_read_name (filedir)))</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span> (g_pattern_match_string (<a class="code hl_variable" href="nl80211_8h.html#a62bd3ba8f7a8eaddb5f28c05950e0e73">pat</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>))</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">if</span> (g_pattern_match_string (<a class="code hl_variable" href="nl80211_8h.html#a62bd3ba8f7a8eaddb5f28c05950e0e73">pat</a>, filename))</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        {</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="keywordtype">char</span> *tmp = g_build_filename (dir, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            <span class="keywordtype">char</span> *tmp = g_build_filename (dir, filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>            <span class="keywordflow">if</span> (is_owned_by_user_and_socket (tmp))</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                found_filename = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                found_filename = g_strdup (filename);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            g_free (tmp);</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        }</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
@@ -325,21 +325,21 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>socket_filename (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a>)</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>{</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordtype">char</span> *pattern, *newfile, *path, *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordtype">char</span> *pattern, *newfile, *path, *filename;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *tmpdir;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    pattern = g_strdup_printf (<span class="stringliteral">&quot;%s.%s.*&quot;</span>, <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a>, g_get_user_name ());</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    tmpdir = g_get_tmp_dir ();</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = find_file_with_pattern (tmpdir, pattern);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    filename = find_file_with_pattern (tmpdir, pattern);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    {</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        newfile = g_strdup_printf (<span class="stringliteral">&quot;%s.%s.%u&quot;</span>, <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a>,</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>                g_get_user_name (), g_random_int ());</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        path = g_build_filename (tmpdir, newfile, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        g_free (newfile);</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        path = g_build_filename (tmpdir, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        path = g_build_filename (tmpdir, filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        g_free (filename);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    g_free (pattern);</div>
@@ -520,9 +520,6 @@ $(document).ready(function(){initNavTree('bacon-message-connection_8c_source.htm
 <div class="ttc" id="abaobab-utils_8c_html_a56d03d3e20ba3f5875dfaf98f41c80ad"><div class="ttname"><a href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a></div><div class="ttdeci">void message(const gchar *primary_msg, const gchar *secondary_msg, GtkMessageType type, GtkWidget *parent)</div><div class="ttdef"><b>Definition</b> <a href="baobab-utils_8c_source.html#l00227">baobab-utils.c:227</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_aa92cea053a410afe0deffd2c7ed8715b"><div class="ttname"><a href="gs-idle-monitor_8h.html#aa92cea053a410afe0deffd2c7ed8715b">condition</a></div><div class="ttdeci">guint gboolean condition</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00036">gs-idle-monitor.h:36</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="anl80211_8h_html_a62bd3ba8f7a8eaddb5f28c05950e0e73"><div class="ttname"><a href="nl80211_8h.html#a62bd3ba8f7a8eaddb5f28c05950e0e73">pat</a></div><div class="ttdeci">struct nl80211_pattern_support pat</div><div class="ttdef"><b>Definition</b> <a href="nl80211_8h_source.html#l00001">nl80211.h:1</a></div></div>

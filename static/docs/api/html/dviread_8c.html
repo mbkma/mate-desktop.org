@@ -119,7 +119,7 @@ Include dependency graph for dviread.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a8f18c83e23b6cdda816b3b1b013fee28" id="r_a8f18c83e23b6cdda816b3b1b013fee28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a8f18c83e23b6cdda816b3b1b013fee28">DVICMDDEF</a>(x)&#160;&#160;&#160;static <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> x <a class="el" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>))</td></tr>
+<tr class="memitem:a8f18c83e23b6cdda816b3b1b013fee28" id="r_a8f18c83e23b6cdda816b3b1b013fee28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a8f18c83e23b6cdda816b3b1b013fee28">DVICMDDEF</a>(x)&#160;&#160;&#160;static int x <a class="el" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *, int))</td></tr>
 <tr class="separator:a8f18c83e23b6cdda816b3b1b013fee28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4e368753d583ee5cce97f28b199c4c" id="r_abf4e368753d583ee5cce97f28b199c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#abf4e368753d583ee5cce97f28b199c4c">DVI_BUFLEN</a>&#160;&#160;&#160;4096</td></tr>
 <tr class="separator:abf4e368753d583ee5cce97f28b199c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,7 +138,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a58e3e36dff39f84dc2bd66965cdc8436" id="r_a58e3e36dff39f84dc2bd66965cdc8436"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> DviCommand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a58e3e36dff39f84dc2bd66965cdc8436">__PROTO</a>((<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>))</td></tr>
+<tr class="memitem:a58e3e36dff39f84dc2bd66965cdc8436" id="r_a58e3e36dff39f84dc2bd66965cdc8436"><td class="memItemLeft" align="right" valign="top">typedef int DviCommand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a58e3e36dff39f84dc2bd66965cdc8436">__PROTO</a>((<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *, int))</td></tr>
 <tr class="separator:a58e3e36dff39f84dc2bd66965cdc8436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -177,55 +177,55 @@ Functions</h2></td></tr>
 <tr class="separator:aa380960a4f32af66448659a3b09c68e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ce3ecf87116b69fa6e2c6263cef9c6" id="r_a50ce3ecf87116b69fa6e2c6263cef9c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a50ce3ecf87116b69fa6e2c6263cef9c6">DVICMDDEF</a> (<a class="el" href="dviread_8c.html#aeb4107464df9175e77f627bb062ffe14">unexpected</a>)</td></tr>
 <tr class="separator:a50ce3ecf87116b69fa6e2c6263cef9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41d481bbe56dbfe7626d91d0c315e495" id="r_a41d481bbe56dbfe7626d91d0c315e495"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a41d481bbe56dbfe7626d91d0c315e495">mdvi_find_tex_page</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> tex_page)</td></tr>
+<tr class="memitem:a41d481bbe56dbfe7626d91d0c315e495" id="r_a41d481bbe56dbfe7626d91d0c315e495"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a41d481bbe56dbfe7626d91d0c315e495">mdvi_find_tex_page</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int tex_page)</td></tr>
 <tr class="separator:a41d481bbe56dbfe7626d91d0c315e495"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879a92b786a4af4bfa395533cd176f76" id="r_a879a92b786a4af4bfa395533cd176f76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a879a92b786a4af4bfa395533cd176f76">mdvi_sort_pages</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="mdvi_8h.html#a2c590e79816002b2a6156227d00b1535">DviPageSort</a> type)</td></tr>
 <tr class="separator:a879a92b786a4af4bfa395533cd176f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34210163f07cd578e650310b6a811366" id="r_a34210163f07cd578e650310b6a811366"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a34210163f07cd578e650310b6a811366">mdvi_reload</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="mdvi_8h.html#a3990f59d2e42a5fdd1ee1f009d754f99">DviParams</a> *np)</td></tr>
+<tr class="memitem:a34210163f07cd578e650310b6a811366" id="r_a34210163f07cd578e650310b6a811366"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a34210163f07cd578e650310b6a811366">mdvi_reload</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="mdvi_8h.html#a3990f59d2e42a5fdd1ee1f009d754f99">DviParams</a> *np)</td></tr>
 <tr class="separator:a34210163f07cd578e650310b6a811366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae67357f5748442a788a090f495add264" id="r_ae67357f5748442a788a090f495add264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#ae67357f5748442a788a090f495add264">mdvi_configure</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="mdvi_8h.html#adc5dfd76171ff74783558521f315d1ed">DviParamCode</a> <a class="el" href="caja-sendto-command_8c.html#a7ec797c6cfae1ab6cd0f04b20180267d">option</a>,...)</td></tr>
+<tr class="memitem:ae67357f5748442a788a090f495add264" id="r_ae67357f5748442a788a090f495add264"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#ae67357f5748442a788a090f495add264">mdvi_configure</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="mdvi_8h.html#adc5dfd76171ff74783558521f315d1ed">DviParamCode</a> <a class="el" href="caja-sendto-command_8c.html#a7ec797c6cfae1ab6cd0f04b20180267d">option</a>,...)</td></tr>
 <tr class="separator:ae67357f5748442a788a090f495add264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88d5db7b186d96decf3d9f7821b094ac" id="r_a88d5db7b186d96decf3d9f7821b094ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a88d5db7b186d96decf3d9f7821b094ac">mdvi_init_context</a> (<a class="el" href="mdvi_8h.html#a3990f59d2e42a5fdd1ee1f009d754f99">DviParams</a> *par, <a class="el" href="mdvi_8h.html#a71c048adf0fa022d23ca5409cf483379">DviPageSpec</a> *spec, const char *file)</td></tr>
 <tr class="separator:a88d5db7b186d96decf3d9f7821b094ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea69836a88120327172b05162ab6a985" id="r_aea69836a88120327172b05162ab6a985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#aea69836a88120327172b05162ab6a985">mdvi_destroy_context</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi)</td></tr>
 <tr class="separator:aea69836a88120327172b05162ab6a985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a871b2bfb3ec2da9338853f4e5c0123de" id="r_a871b2bfb3ec2da9338853f4e5c0123de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a871b2bfb3ec2da9338853f4e5c0123de">mdvi_setpage</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> pageno)</td></tr>
+<tr class="memitem:a871b2bfb3ec2da9338853f4e5c0123de" id="r_a871b2bfb3ec2da9338853f4e5c0123de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a871b2bfb3ec2da9338853f4e5c0123de">mdvi_setpage</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int pageno)</td></tr>
 <tr class="separator:a871b2bfb3ec2da9338853f4e5c0123de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78c85f895aa3cba4a992cd451ae8e07c" id="r_a78c85f895aa3cba4a992cd451ae8e07c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a78c85f895aa3cba4a992cd451ae8e07c">mdvi_dopage</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> pageno)</td></tr>
+<tr class="memitem:a78c85f895aa3cba4a992cd451ae8e07c" id="r_a78c85f895aa3cba4a992cd451ae8e07c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a78c85f895aa3cba4a992cd451ae8e07c">mdvi_dopage</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int pageno)</td></tr>
 <tr class="separator:a78c85f895aa3cba4a992cd451ae8e07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86cc0ebbe5e1f848610594a466108741" id="r_a86cc0ebbe5e1f848610594a466108741"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a86cc0ebbe5e1f848610594a466108741">set_char</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a86cc0ebbe5e1f848610594a466108741" id="r_a86cc0ebbe5e1f848610594a466108741"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a86cc0ebbe5e1f848610594a466108741">set_char</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a86cc0ebbe5e1f848610594a466108741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a708166ca0bbb91d553e73c8361d5bb46" id="r_a708166ca0bbb91d553e73c8361d5bb46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a708166ca0bbb91d553e73c8361d5bb46">set_rule</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a708166ca0bbb91d553e73c8361d5bb46" id="r_a708166ca0bbb91d553e73c8361d5bb46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a708166ca0bbb91d553e73c8361d5bb46">set_rule</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a708166ca0bbb91d553e73c8361d5bb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acde70860e30a57a7019914605e16c843" id="r_acde70860e30a57a7019914605e16c843"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#acde70860e30a57a7019914605e16c843">no_op</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:acde70860e30a57a7019914605e16c843" id="r_acde70860e30a57a7019914605e16c843"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#acde70860e30a57a7019914605e16c843">no_op</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:acde70860e30a57a7019914605e16c843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e16a5cd11eb301374376a3149f60675" id="r_a6e16a5cd11eb301374376a3149f60675"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a6e16a5cd11eb301374376a3149f60675">push</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a6e16a5cd11eb301374376a3149f60675" id="r_a6e16a5cd11eb301374376a3149f60675"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a6e16a5cd11eb301374376a3149f60675">push</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a6e16a5cd11eb301374376a3149f60675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67ceff58c440f9cb9ed375b6dbb67bd" id="r_af67ceff58c440f9cb9ed375b6dbb67bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#af67ceff58c440f9cb9ed375b6dbb67bd">pop</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:af67ceff58c440f9cb9ed375b6dbb67bd" id="r_af67ceff58c440f9cb9ed375b6dbb67bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#af67ceff58c440f9cb9ed375b6dbb67bd">pop</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:af67ceff58c440f9cb9ed375b6dbb67bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47bb0e20139a100bbbef73a065865633" id="r_a47bb0e20139a100bbbef73a065865633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a47bb0e20139a100bbbef73a065865633">move_right</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a47bb0e20139a100bbbef73a065865633" id="r_a47bb0e20139a100bbbef73a065865633"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a47bb0e20139a100bbbef73a065865633">move_right</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a47bb0e20139a100bbbef73a065865633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e58133614fd972ab64675879b892be" id="r_ab5e58133614fd972ab64675879b892be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#ab5e58133614fd972ab64675879b892be">move_down</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:ab5e58133614fd972ab64675879b892be" id="r_ab5e58133614fd972ab64675879b892be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#ab5e58133614fd972ab64675879b892be">move_down</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:ab5e58133614fd972ab64675879b892be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc29908d7d8db9bd76f66ae5ee71c7fd" id="r_acc29908d7d8db9bd76f66ae5ee71c7fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#acc29908d7d8db9bd76f66ae5ee71c7fd">move_w</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:acc29908d7d8db9bd76f66ae5ee71c7fd" id="r_acc29908d7d8db9bd76f66ae5ee71c7fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#acc29908d7d8db9bd76f66ae5ee71c7fd">move_w</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:acc29908d7d8db9bd76f66ae5ee71c7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c4e7134cbd4d1a84cd99920a25fedd" id="r_a99c4e7134cbd4d1a84cd99920a25fedd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a99c4e7134cbd4d1a84cd99920a25fedd">move_x</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a99c4e7134cbd4d1a84cd99920a25fedd" id="r_a99c4e7134cbd4d1a84cd99920a25fedd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a99c4e7134cbd4d1a84cd99920a25fedd">move_x</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a99c4e7134cbd4d1a84cd99920a25fedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29f4997ac89ea58dfb27c3c6b612342c" id="r_a29f4997ac89ea58dfb27c3c6b612342c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a29f4997ac89ea58dfb27c3c6b612342c">move_y</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a29f4997ac89ea58dfb27c3c6b612342c" id="r_a29f4997ac89ea58dfb27c3c6b612342c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a29f4997ac89ea58dfb27c3c6b612342c">move_y</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a29f4997ac89ea58dfb27c3c6b612342c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb98ada90c16cab1fdb22ce14604e9a" id="r_a3cb98ada90c16cab1fdb22ce14604e9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a3cb98ada90c16cab1fdb22ce14604e9a">move_z</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a3cb98ada90c16cab1fdb22ce14604e9a" id="r_a3cb98ada90c16cab1fdb22ce14604e9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a3cb98ada90c16cab1fdb22ce14604e9a">move_z</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a3cb98ada90c16cab1fdb22ce14604e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf2bbe5cf78bd20346770e49be8f1b3" id="r_aaaf2bbe5cf78bd20346770e49be8f1b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#aaaf2bbe5cf78bd20346770e49be8f1b3">sel_font</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:aaaf2bbe5cf78bd20346770e49be8f1b3" id="r_aaaf2bbe5cf78bd20346770e49be8f1b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#aaaf2bbe5cf78bd20346770e49be8f1b3">sel_font</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:aaaf2bbe5cf78bd20346770e49be8f1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a4e84de632580974ff33ad472f850d7" id="r_a3a4e84de632580974ff33ad472f850d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a3a4e84de632580974ff33ad472f850d7">sel_fontn</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a3a4e84de632580974ff33ad472f850d7" id="r_a3a4e84de632580974ff33ad472f850d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a3a4e84de632580974ff33ad472f850d7">sel_fontn</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a3a4e84de632580974ff33ad472f850d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b4dbdd322ed0f98559b5a0745a9f150" id="r_a2b4dbdd322ed0f98559b5a0745a9f150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150">special</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a2b4dbdd322ed0f98559b5a0745a9f150" id="r_a2b4dbdd322ed0f98559b5a0745a9f150"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150">special</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a2b4dbdd322ed0f98559b5a0745a9f150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44c4eb36bd7620b12f522acf610fd465" id="r_a44c4eb36bd7620b12f522acf610fd465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a44c4eb36bd7620b12f522acf610fd465">def_font</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:a44c4eb36bd7620b12f522acf610fd465" id="r_a44c4eb36bd7620b12f522acf610fd465"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#a44c4eb36bd7620b12f522acf610fd465">def_font</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:a44c4eb36bd7620b12f522acf610fd465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb4107464df9175e77f627bb062ffe14" id="r_aeb4107464df9175e77f627bb062ffe14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#aeb4107464df9175e77f627bb062ffe14">unexpected</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:aeb4107464df9175e77f627bb062ffe14" id="r_aeb4107464df9175e77f627bb062ffe14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#aeb4107464df9175e77f627bb062ffe14">unexpected</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:aeb4107464df9175e77f627bb062ffe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2def108e6646106fe32200a4015f695" id="r_ab2def108e6646106fe32200a4015f695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#ab2def108e6646106fe32200a4015f695">undefined</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> opcode)</td></tr>
+<tr class="memitem:ab2def108e6646106fe32200a4015f695" id="r_ab2def108e6646106fe32200a4015f695"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dviread_8c.html#ab2def108e6646106fe32200a4015f695">undefined</a> (<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *dvi, int opcode)</td></tr>
 <tr class="separator:ab2def108e6646106fe32200a4015f695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -355,7 +355,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;static <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> x <a class="el" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>))</td>
+          <td>&#160;&#160;&#160;static int x <a class="el" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>((<a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *, int))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -439,7 +439,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> def_font </td>
+          <td class="memname">int def_font </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -447,7 +447,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -777,7 +777,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> mdvi_configure </td>
+          <td class="memname">int mdvi_configure </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -839,7 +839,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> mdvi_dopage </td>
+          <td class="memname">int mdvi_dopage </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -847,7 +847,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pageno</em>&#160;</td>
         </tr>
         <tr>
@@ -873,7 +873,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> mdvi_find_tex_page </td>
+          <td class="memname">int mdvi_find_tex_page </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -881,7 +881,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>tex_page</em>&#160;</td>
         </tr>
         <tr>
@@ -945,7 +945,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> mdvi_reload </td>
+          <td class="memname">int mdvi_reload </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -987,7 +987,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pageno</em>&#160;</td>
         </tr>
         <tr>
@@ -1032,7 +1032,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="dviread_8c_source.html#l00368">368</a> of file <a class="el" href="dviread_8c_source.html">dviread.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int()</a>, <a class="el" href="mdvi_8h_source.html#l00287">MDVI_PAGE_SORT_DOWN</a>, <a class="el" href="mdvi_8h_source.html#l00290">MDVI_PAGE_SORT_DVI_DOWN</a>, <a class="el" href="mdvi_8h_source.html#l00289">MDVI_PAGE_SORT_DVI_UP</a>, <a class="el" href="mdvi_8h_source.html#l00291">MDVI_PAGE_SORT_NONE</a>, <a class="el" href="mdvi_8h_source.html#l00288">MDVI_PAGE_SORT_RANDOM</a>, <a class="el" href="mdvi_8h_source.html#l00286">MDVI_PAGE_SORT_UP</a>, <a class="el" href="mdvi_8h_source.html#l00366">_DviContext::npages</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="mdvi_8h_source.html#l00384">_DviContext::pagemap</a>, and <a class="el" href="rfkill_8h_source.html#l00001">type</a>.</p>
+<p class="reference">References <a class="el" href="mdvi_8h_source.html#l00287">MDVI_PAGE_SORT_DOWN</a>, <a class="el" href="mdvi_8h_source.html#l00290">MDVI_PAGE_SORT_DVI_DOWN</a>, <a class="el" href="mdvi_8h_source.html#l00289">MDVI_PAGE_SORT_DVI_UP</a>, <a class="el" href="mdvi_8h_source.html#l00291">MDVI_PAGE_SORT_NONE</a>, <a class="el" href="mdvi_8h_source.html#l00288">MDVI_PAGE_SORT_RANDOM</a>, <a class="el" href="mdvi_8h_source.html#l00286">MDVI_PAGE_SORT_UP</a>, <a class="el" href="mdvi_8h_source.html#l00366">_DviContext::npages</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="mdvi_8h_source.html#l00384">_DviContext::pagemap</a>, and <a class="el" href="rfkill_8h_source.html#l00001">type</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1043,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> move_down </td>
+          <td class="memname">int move_down </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1051,7 +1051,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1075,7 +1075,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> move_right </td>
+          <td class="memname">int move_right </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1083,7 +1083,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1107,7 +1107,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> move_w </td>
+          <td class="memname">int move_w </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1115,7 +1115,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1139,7 +1139,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> move_x </td>
+          <td class="memname">int move_x </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1147,7 +1147,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1171,7 +1171,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> move_y </td>
+          <td class="memname">int move_y </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1179,7 +1179,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1203,7 +1203,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> move_z </td>
+          <td class="memname">int move_z </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1211,7 +1211,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1235,7 +1235,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> no_op </td>
+          <td class="memname">int no_op </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1243,7 +1243,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1267,7 +1267,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> pop </td>
+          <td class="memname">int pop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1275,7 +1275,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1299,7 +1299,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> push </td>
+          <td class="memname">int push </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1307,7 +1307,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1331,7 +1331,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> sel_font </td>
+          <td class="memname">int sel_font </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1339,7 +1339,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1363,7 +1363,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> sel_fontn </td>
+          <td class="memname">int sel_fontn </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1371,7 +1371,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1395,7 +1395,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> set_char </td>
+          <td class="memname">int set_char </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1403,7 +1403,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1427,7 +1427,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> set_rule </td>
+          <td class="memname">int set_rule </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1435,7 +1435,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1459,7 +1459,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> special </td>
+          <td class="memname">int special </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1467,7 +1467,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1493,7 +1493,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> undefined </td>
+          <td class="memname">int undefined </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1501,7 +1501,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>
@@ -1525,7 +1525,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> unexpected </td>
+          <td class="memname">int unexpected </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="mdvi_8h.html#a56a8dd0200d28d2919ffdc095cf4a9c6">DviContext</a> *&#160;</td>
           <td class="paramname"><em>dvi</em>, </td>
@@ -1533,7 +1533,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>opcode</em>&#160;</td>
         </tr>
         <tr>

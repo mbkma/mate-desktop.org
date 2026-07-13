@@ -938,7 +938,7 @@ $(document).ready(function(){initNavTree('mate-entry_8c_source.html',''); initRe
 <div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>        gint        *position)</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>{</div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>    GtkEntry *entry = GTK_ENTRY (<a class="code hl_function" href="mate-entry_8c.html#ad587fb5747186afab26a9bbd8a925a0d">mate_entry_gtk_entry</a> (<a class="code hl_define" href="mate-entry_8h.html#af3291b81eac962d5d650331d527bed20">MATE_ENTRY</a> (editable)));</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    gchar <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[64];</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>    gchar buf[64];</div>
 <div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>    gchar *text;</div>
 <div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span> </div>
 <div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>    <span class="keywordflow">if</span> (*position &lt; 0 || *position &gt; entry-&gt;text_length)</div>
@@ -947,7 +947,7 @@ $(document).ready(function(){initNavTree('mate-entry_8c_source.html',''); initRe
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    g_object_ref (G_OBJECT (editable));</div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span> </div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>    <span class="keywordflow">if</span> (new_text_length &lt;= 63)</div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        text = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>        text = buf;</div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>        text = g_new (gchar, new_text_length + 1);</div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span> </div>
@@ -1006,7 +1006,6 @@ $(document).ready(function(){initNavTree('mate-entry_8c_source.html',''); initRe
 <div class="ttc" id="acaja-desktop-directory_8c_html_a9acb5cadd331d9e9960736182a1a1a67"><div class="ttname"><a href="caja-desktop-directory_8c.html#a9acb5cadd331d9e9960736182a1a1a67">parent_class</a></div><div class="ttdeci">#define parent_class</div><div class="ttdef"><b>Definition</b> <a href="caja-desktop-directory_8c_source.html#l00072">caja-desktop-directory.c:72</a></div></div>
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-entry_8c_html_a173f779f69e2d7919bf3820d1e045f0d"><div class="ttname"><a href="mate-entry_8c.html#a173f779f69e2d7919bf3820d1e045f0d">mate_entry_get_history_id</a></div><div class="ttdeci">const gchar * mate_entry_get_history_id(MateEntry *gentry)</div><div class="ttdef"><b>Definition</b> <a href="mate-entry_8c_source.html#l00498">mate-entry.c:498</a></div></div>
 <div class="ttc" id="amate-entry_8c_html_a212bfee64ec72056832febf49c2872d7"><div class="ttname"><a href="mate-entry_8c.html#a212bfee64ec72056832febf49c2872d7">DEFAULT_MAX_HISTORY_SAVED</a></div><div class="ttdeci">#define DEFAULT_MAX_HISTORY_SAVED</div><div class="ttdef"><b>Definition</b> <a href="mate-entry_8c_source.html#l00056">mate-entry.c:56</a></div></div>

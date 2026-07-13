@@ -723,10 +723,10 @@ $(document).ready(function(){initNavTree('matekbd-keyboard-drawing_8c_source.htm
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    txt = strcmp (<span class="stringliteral">&quot;&lt;&quot;</span>, txt) ? txt : <span class="stringliteral">&quot;&amp;lt;&quot;</span>;</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    txt = strcmp (<span class="stringliteral">&quot;&amp;&quot;</span>, txt) ? txt : <span class="stringliteral">&quot;&amp;amp;&quot;</span>;</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keywordflow">if</span> (g_utf8_strlen (txt, -1) &gt; 1) {</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        gchar* <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> =</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        gchar* buf =</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>            g_strdup_printf (<span class="stringliteral">&quot;&lt;span size=\&quot;xx-small\&quot;&gt;%s&lt;/span&gt;&quot;</span>, txt);</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        pango_layout_set_markup (layout, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, -1);</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        pango_layout_set_markup (layout, buf, -1);</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        g_free (buf);</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        pango_layout_set_markup (layout, txt, -1);</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    }</div>
@@ -736,7 +736,7 @@ $(document).ready(function(){initNavTree('matekbd-keyboard-drawing_8c_source.htm
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>set_key_label_in_layout (<a class="code hl_struct" href="struct__MatekbdKeyboardDrawingRenderContext.html">MatekbdKeyboardDrawingRenderContext</a> * context,</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>             guint <a class="code hl_variable" href="caja-navigation-window_8c.html#a2d8b11d76edaa7e4972610c0aeb8226f">keyval</a>)</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>{</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    gchar <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[5];</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    gchar buf[5];</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    gunichar uc;</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="caja-navigation-window_8c.html#a2d8b11d76edaa7e4972610c0aeb8226f">keyval</a>) {</div>
@@ -1077,8 +1077,8 @@ $(document).ready(function(){initNavTree('matekbd-keyboard-drawing_8c_source.htm
 <div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>        uc = gdk_keyval_to_unicode (<a class="code hl_variable" href="caja-navigation-window_8c.html#a2d8b11d76edaa7e4972610c0aeb8226f">keyval</a>);</div>
 <div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>        <span class="keywordflow">if</span> (uc != 0 &amp;&amp; g_unichar_isgraph (uc)) {</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[g_unichar_to_utf8 (uc, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>            set_markup (context, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>            buf[g_unichar_to_utf8 (uc, buf)] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>            set_markup (context, buf);</div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>            gchar *<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a> = gdk_keyval_name (<a class="code hl_variable" href="caja-navigation-window_8c.html#a2d8b11d76edaa7e4972610c0aeb8226f">keyval</a>);</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>) {</div>
@@ -3014,7 +3014,6 @@ $(document).ready(function(){initNavTree('matekbd-keyboard-drawing_8c_source.htm
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="agste-starfield_8c_html_a37e9de632d1eb76ff7dcd3d8172add7d"><div class="ttname"><a href="gste-starfield_8c.html#a37e9de632d1eb76ff7dcd3d8172add7d">point</a></div><div class="ttdeci">struct _point point</div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>

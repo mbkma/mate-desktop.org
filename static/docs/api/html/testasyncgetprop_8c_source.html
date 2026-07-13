@@ -188,16 +188,16 @@ $(document).ready(function(){initNavTree('testasyncgetprop_8c_source.html',''); 
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>x_error_handler (Display     *xdisplay,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                 XErrorEvent *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[64];</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">char</span> buf[64];</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  XGetErrorText (xdisplay, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;error_code, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 63);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  XGetErrorText (xdisplay, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;error_code, buf, 63);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordflow">if</span> (error_trap_depth == 0)</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    {</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      print_backtrace ();</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      fprintf (stderr, <span class="stringliteral">&quot;Unexpected X error: %s serial %ld error_code %d request_code %d minor_code %d)\n&quot;</span>,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>               <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>               buf,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>               <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;serial,</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>               <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;error_code,</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>               <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;request_code,</div>
@@ -607,7 +607,6 @@ $(document).ready(function(){initNavTree('testasyncgetprop_8c_source.html',''); 
 <div class="ttc" id="aasync-getprop_8h_html"><div class="ttname"><a href="async-getprop_8h.html">async-getprop.h</a></div></div>
 <div class="ttc" id="aasync-getprop_8h_html_a53dac0c2f90386c389677bb6912f304b"><div class="ttname"><a href="async-getprop_8h.html#a53dac0c2f90386c389677bb6912f304b">AgGetPropertyTask</a></div><div class="ttdeci">struct _AgGetPropertyTask AgGetPropertyTask</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8h_source.html#l00036">async-getprop.h:36</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="anl80211_8h_html_a5e2946f7aeeaf2cd604f4fb6fcf659e7"><div class="ttname"><a href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a></div><div class="ttdeci">__u32 set</div><div class="ttdef"><b>Definition</b> <a href="nl80211_8h_source.html#l00001">nl80211.h:1</a></div></div>

@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('eel-debug_8c_source.html',''); initRes
 <div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="eel-debug_8c.html#ae0890921bbe31f5c8cb46347c843bc8a">   45</a></span><a class="code hl_function" href="eel-debug_8c.html#ae0890921bbe31f5c8cb46347c843bc8a">eel_stop_in_debugger</a> (<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    void (* saved_handler) (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    void (* saved_handler) (int);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    saved_handler = signal (SIGINT, SIG_IGN);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    raise (SIGINT);</div>
@@ -225,7 +225,6 @@ $(document).ready(function(){initNavTree('eel-debug_8c_source.html',''); initRes
 <div class="ttc" id="aeel-debug_8h_html"><div class="ttname"><a href="eel-debug_8h.html">eel-debug.h</a></div></div>
 <div class="ttc" id="aeel-debug_8h_html_aafd50c526f1662e4692afb8b12e55b3a"><div class="ttname"><a href="eel-debug_8h.html#aafd50c526f1662e4692afb8b12e55b3a">EelFunction</a></div><div class="ttdeci">void(* EelFunction)(void)</div><div class="ttdef"><b>Definition</b> <a href="eel-debug_8h_source.html#l00034">eel-debug.h:34</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_a450c3ab9b94a4663caad892b7193b547"><div class="ttname"><a href="ephy-zoom_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a></div><div class="ttdeci">float level</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00044">ephy-zoom.h:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('apmlib_8c_source.html',''); initResiza
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>{</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    FILE *str;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> cached = -1;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[80];</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keywordtype">char</span> buf[80];</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordtype">char</span> *pt;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_struct" href="structapm__info.html">apm_info</a> i;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
@@ -290,10 +290,10 @@ $(document).ready(function(){initNavTree('apmlib_8c_source.html',''); initResiza
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keywordflow">if</span> (!(str = fopen (<a class="code hl_define" href="apm_8h.html#addfc4e392d4ba5a6c88950d281325b78">APM_DEV</a>, <span class="stringliteral">&quot;r&quot;</span>)))</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">while</span> (fgets (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="keyword">sizeof</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) - 1, str))</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">while</span> (fgets (buf, <span class="keyword">sizeof</span> (buf) - 1, str))</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    {</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[<span class="keyword">sizeof</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">for</span> (pt = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>; *pt &amp;&amp; isspace (*pt); ++pt);    <span class="comment">/* skip leading spaces */</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        buf[<span class="keyword">sizeof</span> (buf) - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        <span class="keywordflow">for</span> (pt = buf; *pt &amp;&amp; isspace (*pt); ++pt);    <span class="comment">/* skip leading spaces */</span></div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keywordflow">for</span> (; *pt &amp;&amp; !isspace (*pt); ++pt);    <span class="comment">/* find next space */</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <span class="keywordflow">if</span> (isspace (*pt))</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        {</div>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('apmlib_8c_source.html',''); initResiza
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            <span class="keywordflow">if</span> (!strcmp (pt, <a class="code hl_define" href="apm_8h.html#a7fd96a6cb30a1a1400fc006a19e8af2e">APM_NAME</a>))</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            {</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                fclose (str);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="keywordflow">return</span> cached = makedev (atoi (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>), 0);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                <span class="keywordflow">return</span> cached = makedev (atoi (buf), 0);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            }</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        }</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
@@ -482,10 +482,10 @@ $(document).ready(function(){initNavTree('apmlib_8c_source.html',''); initResiza
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="preprocessor">#ifdef APM_IOC_IGNORE   </span><span class="comment">/* detect kernel support of IGNORE/NOIGNORE functions */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="keywordtype">int</span></div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><a class="code hl_function" href="apm_8h.html#a1693a8c502fa9fa586da698974bb9b8c">apm_set_ignore</a> (<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><a class="code hl_function" href="apm_8h.html#a1693a8c502fa9fa586da698974bb9b8c">apm_set_ignore</a> (<span class="keywordtype">int</span> fd, <span class="keywordtype">int</span> mode)</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">/* Ignore Standby. */</span></div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>{</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> == <a class="code hl_define" href="apm_8h.html#aabed7f7d1400564ec843acd4dfb72e59">IGNORE</a>)</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keywordflow">if</span> (mode == <a class="code hl_define" href="apm_8h.html#aabed7f7d1400564ec843acd4dfb72e59">IGNORE</a>)</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    {</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        printf (<span class="stringliteral">&quot;Telling kernel to ignore system standby/suspend mode\n&quot;</span>);</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        <span class="keywordflow">return</span> ioctl (fd, APM_IOC_IGNORE, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -647,8 +647,6 @@ $(document).ready(function(){initNavTree('apmlib_8c_source.html',''); initResiza
 <div class="ttc" id="aapmlib_8c_html_af4e710d5eb61b92fcc28660d5d085d14"><div class="ttname"><a href="apmlib_8c.html#af4e710d5eb61b92fcc28660d5d085d14">lookup_t</a></div><div class="ttdeci">struct lookup_t lookup_t</div></div>
 <div class="ttc" id="aapmlib_8c_html_af5498c590d6b14af0d1311fa3ecbc190"><div class="ttname"><a href="apmlib_8c.html#af5498c590d6b14af0d1311fa3ecbc190">apm_error_name</a></div><div class="ttdeci">const char * apm_error_name(unsigned int err)</div><div class="ttdef"><b>Definition</b> <a href="apmlib_8c_source.html#l00340">apmlib.c:340</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="astructapm__info_html"><div class="ttname"><a href="structapm__info.html">apm_info</a></div><div class="ttdef"><b>Definition</b> <a href="apm_8h_source.html#l00039">apm.h:40</a></div></div>
 <div class="ttc" id="astructapm__info_html_a0a8c646ad222d8d38331b378c37522f6"><div class="ttname"><a href="structapm__info.html#a0a8c646ad222d8d38331b378c37522f6">apm_info::apm_version_major</a></div><div class="ttdeci">int apm_version_major</div><div class="ttdef"><b>Definition</b> <a href="apm_8h_source.html#l00042">apm.h:42</a></div></div>
 <div class="ttc" id="astructapm__info_html_a11028770ef4463f726e1b32d91d8a1fe"><div class="ttname"><a href="structapm__info.html#a11028770ef4463f726e1b32d91d8a1fe">apm_info::battery_time</a></div><div class="ttdeci">int battery_time</div><div class="ttdef"><b>Definition</b> <a href="apm_8h_source.html#l00049">apm.h:49</a></div></div>

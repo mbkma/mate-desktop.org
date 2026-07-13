@@ -137,24 +137,24 @@ $(document).ready(function(){initNavTree('i2c-proc-plugin_8c_source.html',''); i
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="i2c-proc-plugin_8c.html#aa91808171edab519dad6cbe8119f5d9ba840788bbe5850e8c7ef89fed94872f8a">   37</a></span>};</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> <span class="keywordtype">void</span> i2c_proc_plugin_add_sensor(GList **sensors, <span class="keyword">const</span> gchar *path) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    gchar *filename;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    gchar *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    gboolean enable;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_enumeration" href="sensors-applet-sensor_8h.html#a213c434cb928c4ca22513e2302632435">SensorType</a> sensor_type;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_enumeration" href="sensors-applet-sensor_8h.html#a0ad09eae84a6167ac8765174aca532f7">IconType</a> icon_type = <a class="code hl_enumvalue" href="sensors-applet-sensor_8h.html#a0ad09eae84a6167ac8765174aca532f7a073863d477c8297310c49442c2598ba9">GENERIC_ICON</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_path_get_basename(path);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    filename = g_path_get_basename(path);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">/* setup temp2 as CPU sensor and enable it */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (g_ascii_strcasecmp(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;temp2&quot;</span>) == 0) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (g_ascii_strcasecmp(filename, <span class="stringliteral">&quot;temp2&quot;</span>) == 0) {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        sensor_type = <a class="code hl_enumvalue" href="sensors-applet-sensor_8h.html#a213c434cb928c4ca22513e2302632435a6e8e48c684fce9dc33f1c72cbaf1e316">TEMP_SENSOR</a>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = g_strdup(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;CPU&quot;</span>));</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        enable = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        icon_type = <a class="code hl_enumvalue" href="sensors-applet-sensor_8h.html#a0ad09eae84a6167ac8765174aca532f7a5f19b592052b8819341c2fef77a395c0">CPU_ICON</a>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = g_strdup(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = g_strdup(filename);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">switch</span>(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>[0]) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">switch</span>(filename[0]) {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:     <span class="comment">/* currents are &quot;curr?&quot; */</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            sensor_type = <a class="code hl_enumvalue" href="sensors-applet-sensor_8h.html#a213c434cb928c4ca22513e2302632435a33217e9fe6c7e9bf0c1cc0c5862205aa">CURRENT_SENSOR</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keywordflow">break</span>;</div>
@@ -173,8 +173,8 @@ $(document).ready(function(){initNavTree('i2c-proc-plugin_8c_source.html',''); i
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="comment">/* SHOULDN&#39;T BE ABLE TO GET HERE!! */</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            g_debug(<span class="stringliteral">&quot;error in i2c-proc sensor detection code - unhandled sensor filename %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            g_free(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            g_debug(<span class="stringliteral">&quot;error in i2c-proc sensor detection code - unhandled sensor filename %s&quot;</span>, filename);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            g_free(filename);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            g_free(<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
@@ -184,32 +184,32 @@ $(document).ready(function(){initNavTree('i2c-proc-plugin_8c_source.html',''); i
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_function" href="sensors-applet-plugin_8c.html#ac798d30df2fe6de6fd875433aa2deac6">sensors_applet_plugin_add_sensor</a>(sensors,</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                                         path,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                         <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                                         filename,</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                                         <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                         sensor_type,</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                                         enable,</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                         icon_type,</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                                         <a class="code hl_define" href="sensors-applet-sensor_8h.html#a73cfe4cf583be0c283747f4e73bd7f12">DEFAULT_GRAPH_COLOR</a>);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    g_free(filename);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    g_free(<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>);</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">static</span> <span class="keywordtype">void</span> i2c_proc_plugin_test_sensor(GList **sensors, <span class="keyword">const</span> gchar *path) {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    gchar *filename;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_path_get_basename(path);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    filename = g_path_get_basename(path);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">/* see if filename starts with any of the sensor prefixes */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span> (g_str_has_prefix(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;curr&quot;</span>) ||</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        (g_str_has_prefix(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;fan&quot;</span>) &amp;&amp;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        !g_str_has_prefix(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;fan_div&quot;</span>)) ||</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        g_str_has_prefix(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;in&quot;</span>) ||</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        g_str_has_prefix(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;temp&quot;</span>) ||</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        g_str_has_prefix(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;vid&quot;</span>)) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordflow">if</span> (g_str_has_prefix(filename, <span class="stringliteral">&quot;curr&quot;</span>) ||</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        (g_str_has_prefix(filename, <span class="stringliteral">&quot;fan&quot;</span>) &amp;&amp;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        !g_str_has_prefix(filename, <span class="stringliteral">&quot;fan_div&quot;</span>)) ||</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        g_str_has_prefix(filename, <span class="stringliteral">&quot;in&quot;</span>) ||</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        g_str_has_prefix(filename, <span class="stringliteral">&quot;temp&quot;</span>) ||</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        g_str_has_prefix(filename, <span class="stringliteral">&quot;vid&quot;</span>)) {</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        i2c_proc_plugin_add_sensor(sensors, path);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    g_free(filename);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
@@ -339,7 +339,6 @@ $(document).ready(function(){initNavTree('i2c-proc-plugin_8c_source.html',''); i
 <div class="ttc" id="ai2c-proc-plugin_8c_html_ad556b67a590a4e204059882c2d0740d0"><div class="ttname"><a href="i2c-proc-plugin_8c.html#ad556b67a590a4e204059882c2d0740d0">sensors_applet_plugin_get_sensor_value</a></div><div class="ttdeci">gdouble sensors_applet_plugin_get_sensor_value(const gchar *path, const gchar *id, SensorType type, GError **error)</div><div class="ttdef"><b>Definition</b> <a href="i2c-proc-plugin_8c_source.html#l00218">i2c-proc-plugin.c:218</a></div></div>
 <div class="ttc" id="ai2c-proc-plugin_8c_html_aefa8ceb2641ed83750d21bcf8d70de9f"><div class="ttname"><a href="i2c-proc-plugin_8c.html#aefa8ceb2641ed83750d21bcf8d70de9f">I2C_PROC_BASE_DIR</a></div><div class="ttdeci">#define I2C_PROC_BASE_DIR</div><div class="ttdef"><b>Definition</b> <a href="i2c-proc-plugin_8c_source.html#l00032">i2c-proc-plugin.c:32</a></div></div>
 <div class="ttc" id="ai2c-proc-plugin_8h_html"><div class="ttname"><a href="i2c-proc-plugin_8h.html">i2c-proc-plugin.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="arfkill_8h_html_aa05eefca31ad6bd4617aac0176b8366e"><div class="ttname"><a href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a></div><div class="ttdeci">__u8 type</div><div class="ttdef"><b>Definition</b> <a href="rfkill_8h_source.html#l00001">rfkill.h:1</a></div></div>

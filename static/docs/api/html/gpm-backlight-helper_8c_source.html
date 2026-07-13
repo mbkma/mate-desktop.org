@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">static</span> gchar *</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>gcm_backlight_helper_get_best_backlight (<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    gchar *filename;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    guint i;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    gboolean ret;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    GDir *dir = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -170,16 +170,16 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">/* search each one */</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">for</span> (i=0; backlight_interfaces[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (<a class="code hl_define" href="gpm-backlight-helper_8c.html#a57ce714f33298261c889d609565fa835">GCM_BACKLIGHT_HELPER_SYSFS_LOCATION</a>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        filename = g_build_filename (<a class="code hl_define" href="gpm-backlight-helper_8c.html#a57ce714f33298261c889d609565fa835">GCM_BACKLIGHT_HELPER_SYSFS_LOCATION</a>,</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                         backlight_interfaces[i], <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        ret = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_EXISTS);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        ret = g_file_test (filename, G_FILE_TEST_EXISTS);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">if</span> (ret)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">goto</span> out;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        g_free (filename);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    }</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="comment">/* nothing found in the ordered list */</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">/* find any random ones */</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    dir = g_dir_open (<a class="code hl_define" href="gpm-backlight-helper_8c.html#a57ce714f33298261c889d609565fa835">GCM_BACKLIGHT_HELPER_SYSFS_LOCATION</a>, 0, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
@@ -192,17 +192,17 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">/* get first device if any */</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    first_device = g_dir_read_name (dir);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">if</span> (first_device != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (<a class="code hl_define" href="gpm-backlight-helper_8c.html#a57ce714f33298261c889d609565fa835">GCM_BACKLIGHT_HELPER_SYSFS_LOCATION</a>,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        filename = g_build_filename (<a class="code hl_define" href="gpm-backlight-helper_8c.html#a57ce714f33298261c889d609565fa835">GCM_BACKLIGHT_HELPER_SYSFS_LOCATION</a>,</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                         first_device, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>out:</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">if</span> (dir != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        g_dir_close (dir);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">return</span> filename;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>gcm_backlight_helper_write (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, gint value, GError **<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>gcm_backlight_helper_write (<span class="keyword">const</span> gchar *filename, gint value, GError **<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    gchar *text = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    gint retval;</div>
@@ -210,10 +210,10 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    gint fd = -1;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    gboolean ret = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    fd = open (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, O_WRONLY);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    fd = open (filename, O_WRONLY);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">if</span> (fd &lt; 0) {</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        ret = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        g_set_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, 1, 0, <span class="stringliteral">&quot;failed to open filename: %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        g_set_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, 1, 0, <span class="stringliteral">&quot;failed to open filename: %s&quot;</span>, filename);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    retval = write (fd, text, length);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">if</span> (retval != length) {</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        ret = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        g_set_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, 1, 0, <span class="stringliteral">&quot;writing &#39;%s&#39; to %s failed&quot;</span>, text, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        g_set_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, 1, 0, <span class="stringliteral">&quot;writing &#39;%s&#39; to %s failed&quot;</span>, text, filename);</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>out:</div>
@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    gint set_brightness = -1;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    gboolean get_brightness = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    gboolean get_max_brightness = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    gchar *filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    gchar *filename_file = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    gchar *contents = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
@@ -288,8 +288,8 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="comment">/* find device */</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gcm_backlight_helper_get_best_backlight ();</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    filename = gcm_backlight_helper_get_best_backlight ();</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="comment">/* TRANSLATORS: no backlights found */</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        g_print (<span class="stringliteral">&quot;%s\n&quot;</span>, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;No backlights were found on your system&quot;</span>));</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        retval = <a class="code hl_define" href="gpm-backlight-helper_8c.html#ae8c7ed328d703a06e17ebae4827c186a">GCM_BACKLIGHT_HELPER_EXIT_CODE_INVALID_USER</a>;</div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="comment">/* GetBrightness */</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keywordflow">if</span> (get_brightness) {</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        filename_file = g_build_filename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;brightness&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        filename_file = g_build_filename (filename, <span class="stringliteral">&quot;brightness&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        ret = g_file_get_contents (filename_file, &amp;contents, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">if</span> (!ret) {</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            <span class="comment">/* TRANSLATORS: failed to access backlight file */</span></div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <span class="comment">/* GetSteps */</span></div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">if</span> (get_max_brightness) {</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        filename_file = g_build_filename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;max_brightness&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        filename_file = g_build_filename (filename, <span class="stringliteral">&quot;max_brightness&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        ret = g_file_get_contents (filename_file, &amp;contents, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="keywordflow">if</span> (!ret) {</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <span class="comment">/* TRANSLATORS: failed to access backlight file */</span></div>
@@ -353,7 +353,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="comment">/* SetBrightness */</span></div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordflow">if</span> (set_brightness != -1) {</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        filename_file = g_build_filename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;brightness&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        filename_file = g_build_filename (filename, <span class="stringliteral">&quot;brightness&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        ret = gcm_backlight_helper_write (filename_file, set_brightness, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">if</span> (!ret) {</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            <span class="comment">/* TRANSLATORS: failed to access backlight file */</span></div>
@@ -367,7 +367,7 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="comment">/* success */</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    retval = <a class="code hl_define" href="gpm-backlight-helper_8c.html#ac061bb9747a48328065a05a421110e35">GCM_BACKLIGHT_HELPER_EXIT_CODE_SUCCESS</a>;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>out:</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    g_free (filename);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    g_free (filename_file);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    g_free (contents);</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordflow">return</span> retval;</div>
@@ -381,7 +381,6 @@ $(document).ready(function(){initNavTree('gpm-backlight-helper_8c_source.html','
 <div class="ttc" id="agpm-backlight-helper_8c_html_a784ecba66ecc9bb51087de94d688e7b6"><div class="ttname"><a href="gpm-backlight-helper_8c.html#a784ecba66ecc9bb51087de94d688e7b6">GCM_BACKLIGHT_HELPER_EXIT_CODE_ARGUMENTS_INVALID</a></div><div class="ttdeci">#define GCM_BACKLIGHT_HELPER_EXIT_CODE_ARGUMENTS_INVALID</div><div class="ttdef"><b>Definition</b> <a href="gpm-backlight-helper_8c_source.html#l00035">gpm-backlight-helper.c:35</a></div></div>
 <div class="ttc" id="agpm-backlight-helper_8c_html_ac061bb9747a48328065a05a421110e35"><div class="ttname"><a href="gpm-backlight-helper_8c.html#ac061bb9747a48328065a05a421110e35">GCM_BACKLIGHT_HELPER_EXIT_CODE_SUCCESS</a></div><div class="ttdeci">#define GCM_BACKLIGHT_HELPER_EXIT_CODE_SUCCESS</div><div class="ttdef"><b>Definition</b> <a href="gpm-backlight-helper_8c_source.html#l00033">gpm-backlight-helper.c:33</a></div></div>
 <div class="ttc" id="agpm-backlight-helper_8c_html_ae8c7ed328d703a06e17ebae4827c186a"><div class="ttname"><a href="gpm-backlight-helper_8c.html#ae8c7ed328d703a06e17ebae4827c186a">GCM_BACKLIGHT_HELPER_EXIT_CODE_INVALID_USER</a></div><div class="ttdeci">#define GCM_BACKLIGHT_HELPER_EXIT_CODE_INVALID_USER</div><div class="ttdef"><b>Definition</b> <a href="gpm-backlight-helper_8c_source.html#l00036">gpm-backlight-helper.c:36</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="atestboxes_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="testboxes_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition</b> <a href="testboxes_8c_source.html#l01402">testboxes.c:1402</a></div></div>

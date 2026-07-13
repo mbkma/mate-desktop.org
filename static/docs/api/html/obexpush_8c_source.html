@@ -219,20 +219,20 @@ $(document).ready(function(){initNavTree('obexpush_8c_source.html',''); initResi
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>show_notification (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>show_notification (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>{</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">char</span> *file_uri, *notification_text, *display, *<a class="code hl_variable" href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    NotifyNotification *notification;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    ca_context *ctx;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    GAppInfo *app;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    file_uri = g_filename_to_uri (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    file_uri = g_filename_to_uri (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">if</span> (file_uri == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        g_warning (<span class="stringliteral">&quot;Could not make a filename from &#39;%s&#39;&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        g_warning (<span class="stringliteral">&quot;Could not make a filename from &#39;%s&#39;&quot;</span>, filename);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    display = g_filename_display_basename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    display = g_filename_display_basename (filename);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="comment">/* Translators: %s is the name of the filename received */</span></div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    notification_text = g_strdup_printf(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;You received \&quot;%s\&quot; via Bluetooth&quot;</span>), display);</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    g_free (display);</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('obexpush_8c_source.html',''); initResi
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    notify_notification_set_timeout (notification, NOTIFY_EXPIRES_DEFAULT);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_variable" href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a> = g_content_type_guess (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <a class="code hl_variable" href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a> = g_content_type_guess (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    app = g_app_info_get_default_for_type (<a class="code hl_variable" href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">if</span> (app != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        g_object_unref (app);</div>
@@ -361,9 +361,9 @@ $(document).ready(function(){initNavTree('obexpush_8c_source.html',''); initResi
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>transfer_started_cb (DBusGProxy *session,</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>             <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>             <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>             <span class="keyword">const</span> <span class="keywordtype">char</span> *local_path,</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>             guint64 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>             guint64 size,</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>             gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>{</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    GHashTable *dict;</div>
@@ -446,13 +446,13 @@ $(document).ready(function(){initNavTree('obexpush_8c_source.html',''); initResi
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>{</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    GSettings *settings;</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    gboolean display_notify;</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = (<span class="keyword">const</span> <span class="keywordtype">char</span> *) g_object_get_data (G_OBJECT (session), <span class="stringliteral">&quot;filename&quot;</span>);</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    filename = (<span class="keyword">const</span> <span class="keywordtype">char</span> *) g_object_get_data (G_OBJECT (session), <span class="stringliteral">&quot;filename&quot;</span>);</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    g_message (<span class="stringliteral">&quot;file finish transfer: %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    g_message (<span class="stringliteral">&quot;file finish transfer: %s&quot;</span>, filename);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    settings = g_settings_new (<a class="code hl_define" href="obexpush_8c.html#acde76ac69087f7ded054eff95d6df043">GSETTINGS_SCHEMA</a>);</div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('obexpush_8c_source.html',''); initResi
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    g_object_unref (settings);</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keywordflow">if</span> (display_notify) {</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        show_notification (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        show_notification (filename);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        hide_statusicon ();</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    }</div>
@@ -676,8 +676,6 @@ $(document).ready(function(){initNavTree('obexpush_8c_source.html',''); initResi
 <div class="ttc" id="acaja-engrampa_8c_html_a12139285594e136f3f40ec07d2fdc5c5"><div class="ttname"><a href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a></div><div class="ttdeci">const char * mime_type</div><div class="ttdef"><b>Definition</b> <a href="caja-engrampa_8c_source.html#l00140">caja-engrampa.c:140</a></div></div>
 <div class="ttc" id="acaja-navigation-window_8c_html_ab1db9bdb9ca2c111e4aef51de082553e"><div class="ttname"><a href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a></div><div class="ttdeci">const char * action</div><div class="ttdef"><b>Definition</b> <a href="caja-navigation-window_8c_source.html#l00100">caja-navigation-window.c:100</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="aobexpush_8c_html_a0ba9ed40cbec988116b9f92edbb62e5c"><div class="ttname"><a href="obexpush_8c.html#a0ba9ed40cbec988116b9f92edbb62e5c">obexpush_init</a></div><div class="ttdeci">gboolean obexpush_init(void)</div><div class="ttdef"><b>Definition</b> <a href="obexpush_8c_source.html#l00525">obexpush.c:525</a></div></div>

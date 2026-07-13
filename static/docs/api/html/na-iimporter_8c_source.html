@@ -269,14 +269,14 @@ $(document).ready(function(){initNavTree('na-iimporter_8c_source.html',''); init
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">static</span> <span class="keyword">const</span> gchar *thisfn = <span class="stringliteral">&quot;na_iimporter_manage_import_mode&quot;</span>;</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    guint code;</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    <a class="code hl_struct" href="structNAObjectItem.html">NAObjectItem</a> *exists;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    guint mode;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    gchar *<a class="code hl_variable" href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a>;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    g_return_val_if_fail( parms-&gt;imported != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_enumvalue" href="na-iimporter_8h.html#a6f2789a1e7a32d1f592bda854152d33bae9c68fe355e7234998e81b9655064454">IMPORTER_CODE_CANCELLED</a> );</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    code = <a class="code hl_enumvalue" href="na-iimporter_8h.html#a6f2789a1e7a32d1f592bda854152d33ba54567ed9e2cac5a3331714bccf7e5929">IMPORTER_CODE_OK</a>;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    exists = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = 0;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    mode = 0;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    parms-&gt;exist = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    parms-&gt;import_mode = parms-&gt;asked_mode;</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('na-iimporter_8c_source.html',''); init
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keywordflow">if</span>( parms-&gt;asked_mode == <a class="code hl_enumvalue" href="na-importer_8h.html#a6fefb90f9cdd99239a81d2fb748e86aaa8fc120aac97f892155c9df599d75f684">IMPORTER_MODE_ASK</a> ){</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordflow">if</span>( parms-&gt;ask_fn ){</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = ( *parms-&gt;ask_fn )( parms-&gt;imported, exists, parms-&gt;ask_fn_data );</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                mode = ( *parms-&gt;ask_fn )( parms-&gt;imported, exists, parms-&gt;ask_fn_data );</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                renumber_label_item( parms );</div>
@@ -305,17 +305,17 @@ $(document).ready(function(){initNavTree('na-iimporter_8c_source.html',''); init
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            }</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = parms-&gt;asked_mode;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            mode = parms-&gt;asked_mode;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        }</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    }</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="comment">/* mode is only set if asked mode is ask user and an ask function was provided</span></div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">     * or if asked mode was not ask user</span></div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordflow">if</span>( <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> ){</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        parms-&gt;import_mode = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keywordflow">if</span>( mode ){</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        parms-&gt;import_mode = mode;</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">switch</span>( <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> ){</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordflow">switch</span>( mode ){</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="na-importer_8h.html#a6fefb90f9cdd99239a81d2fb748e86aaabc56311a5bb647d270b909534f60e93e">IMPORTER_MODE_RENUMBER</a>:</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                renumber_label_item( parms );</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                <span class="keywordflow">if</span>( parms-&gt;asked_mode == <a class="code hl_enumvalue" href="na-importer_8h.html#a6fefb90f9cdd99239a81d2fb748e86aaa8fc120aac97f892155c9df599d75f684">IMPORTER_MODE_ASK</a> ){</div>
@@ -369,7 +369,6 @@ $(document).ready(function(){initNavTree('na-iimporter_8c_source.html',''); init
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="ana-core-utils_8h_html"><div class="ttname"><a href="na-core-utils_8h.html">na-core-utils.h</a></div></div>
 <div class="ttc" id="ana-core-utils_8h_html_a5d9f16d34e73c8e3f78ac840ddcbdf1f"><div class="ttname"><a href="na-core-utils_8h.html#a5d9f16d34e73c8e3f78ac840ddcbdf1f">na_core_utils_slist_add_message</a></div><div class="ttdeci">void na_core_utils_slist_add_message(GSList **list, const gchar *format,...)</div><div class="ttdef"><b>Definition</b> <a href="na-core-utils_8c_source.html#l00329">na-core-utils.c:329</a></div></div>

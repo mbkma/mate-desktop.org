@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    GList *mountables;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    GList *start_mountables;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    GList *not_mounted;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> mode;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_enumeration" href="caja-window-info_8h.html#a4c28e199780a1cc6801c5b5a0555d739">CajaWindowOpenFlags</a> flags;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">char</span> *timed_wait_prompt;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    gboolean timed_wait_active;</div>
@@ -1312,7 +1312,7 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>    GtkWindow *parent_window;</div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>    <a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file;</div>
 <div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    GList *files;</div>
-<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> mode;</div>
 <div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    <a class="code hl_enumeration" href="caja-window-info_8h.html#a4c28e199780a1cc6801c5b5a0555d739">CajaWindowOpenFlags</a> flags;</div>
 <div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>    <span class="keywordtype">char</span> *activation_directory;</div>
 <div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>    gboolean user_confirmation;</div>
@@ -2576,7 +2576,7 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="line"><a id="l02478" name="l02478"></a><span class="lineno"> 2478</span>                          <a class="code hl_struct" href="structCajaWindowSlot.html">CajaWindowSlotInfo</a> *slot_info,</div>
 <div class="line"><a id="l02479" name="l02479"></a><span class="lineno"> 2479</span>                          GList *files,</div>
 <div class="line"><a id="l02480" name="l02480"></a><span class="lineno"> 2480</span>                          <span class="keyword">const</span> <span class="keywordtype">char</span> *launch_directory,</div>
-<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>                          <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>,</div>
+<div class="line"><a id="l02481" name="l02481"></a><span class="lineno"> 2481</span>                          <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> mode,</div>
 <div class="line"><a id="l02482" name="l02482"></a><span class="lineno"> 2482</span>                          <a class="code hl_enumeration" href="caja-window-info_8h.html#a4c28e199780a1cc6801c5b5a0555d739">CajaWindowOpenFlags</a> flags,</div>
 <div class="line"><a id="l02483" name="l02483"></a><span class="lineno"> 2483</span>                          gboolean user_confirmation)</div>
 <div class="line"><a id="l02484" name="l02484"></a><span class="lineno"> 2484</span>{</div>
@@ -2606,7 +2606,7 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="line"><a id="l02508" name="l02508"></a><span class="lineno"> 2508</span>    parameters-&gt;cancellable = g_cancellable_new ();</div>
 <div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span>    parameters-&gt;activation_directory = g_strdup (launch_directory);</div>
 <div class="line"><a id="l02510" name="l02510"></a><span class="lineno"> 2510</span>    parameters-&gt;locations = launch_locations_from_file_list (files);</div>
-<div class="line"><a id="l02511" name="l02511"></a><span class="lineno"> 2511</span>    parameters-&gt;mode = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l02511" name="l02511"></a><span class="lineno"> 2511</span>    parameters-&gt;mode = mode;</div>
 <div class="line"><a id="l02512" name="l02512"></a><span class="lineno"> 2512</span>    parameters-&gt;flags = flags;</div>
 <div class="line"><a id="l02513" name="l02513"></a><span class="lineno"> 2513</span>    parameters-&gt;user_confirmation = user_confirmation;</div>
 <div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span> </div>
@@ -2662,7 +2662,7 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="line"><a id="l02573" name="l02573"></a><span class="lineno"> 2573</span>                         <a class="code hl_struct" href="structCajaWindowSlot.html">CajaWindowSlotInfo</a> *slot_info,</div>
 <div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span>                         <a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file,</div>
 <div class="line"><a id="l02575" name="l02575"></a><span class="lineno"> 2575</span>                         <span class="keyword">const</span> <span class="keywordtype">char</span> *launch_directory,</div>
-<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span>                         <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>,</div>
+<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span>                         <a class="code hl_enumeration" href="caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec">CajaWindowOpenMode</a> mode,</div>
 <div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span>                         <a class="code hl_enumeration" href="caja-window-info_8h.html#a4c28e199780a1cc6801c5b5a0555d739">CajaWindowOpenFlags</a> flags)</div>
 <div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span>{</div>
 <div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span>    GList *files;</div>
@@ -2670,7 +2670,7 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span>    g_return_if_fail (<a class="code hl_define" href="caja-file_8h.html#a18e3f8a5b183ea00a922a62a24f6783d">CAJA_IS_FILE</a> (file));</div>
 <div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span> </div>
 <div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span>    files = g_list_prepend (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, file);</div>
-<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    <a class="code hl_function" href="caja-mime-actions_8c.html#ac3ecf61abf6ff7f11ea1fa0bef59ccf8">caja_mime_activate_files</a> (parent_window, slot_info, files, launch_directory, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, flags, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    <a class="code hl_function" href="caja-mime-actions_8c.html#ac3ecf61abf6ff7f11ea1fa0bef59ccf8">caja_mime_activate_files</a> (parent_window, slot_info, files, launch_directory, mode, flags, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>    g_list_free (files);</div>
 <div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>}</div>
 </div>
@@ -2802,7 +2802,6 @@ $(document).ready(function(){initNavTree('caja-mime-actions_8c_source.html','');
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="agajim_8c_html_a3946a46b523c2da59c3afb306c4b3ed8"><div class="ttname"><a href="gajim_8c.html#a3946a46b523c2da59c3afb306c4b3ed8">proxy</a></div><div class="ttdeci">DBusGProxy * proxy</div><div class="ttdef"><b>Definition</b> <a href="gajim_8c_source.html#l00044">gajim.c:44</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

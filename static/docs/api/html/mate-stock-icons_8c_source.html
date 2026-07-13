@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('mate-stock-icons_8c_source.html',''); 
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> <span class="keywordtype">void</span> G_GNUC_UNUSED</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>add_sized (GtkIconFactory *factory,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>           <span class="keyword">const</span> guchar   *inline_data,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>           GtkIconSize     <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>           GtkIconSize     size,</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>           <span class="keyword">const</span> gchar    *stock_id)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    GtkIconSet *<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>;</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('mate-stock-icons_8c_source.html',''); 
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    source = gtk_icon_source_new ();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    gtk_icon_source_set_pixbuf (source, pixbuf);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    gtk_icon_source_set_size (source, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    gtk_icon_source_set_size (source, size);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a> = gtk_icon_set_new ();                </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    gtk_icon_set_add_source (<a class="code hl_variable" href="nl80211_8h.html#a5e2946f7aeeaf2cd604f4fb6fcf659e7">set</a>, source);</div>
@@ -269,7 +269,6 @@ $(document).ready(function(){initNavTree('mate-stock-icons_8c_source.html',''); 
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-stock-icons_8c_html_a81d495e998ff3a2a477b8cfb269ce23b"><div class="ttname"><a href="mate-stock-icons_8c.html#a81d495e998ff3a2a477b8cfb269ce23b">_mate_stock_icons_init</a></div><div class="ttdeci">G_GNUC_INTERNAL void _mate_stock_icons_init(void)</div><div class="ttdef"><b>Definition</b> <a href="mate-stock-icons_8c_source.html#l00149">mate-stock-icons.c:149</a></div></div>
 <div class="ttc" id="amate-stock-icons_8h_html"><div class="ttname"><a href="mate-stock-icons_8h.html">mate-stock-icons.h</a></div></div>
 <div class="ttc" id="amate-stock-icons_8h_html_a0677f5da62a11a3243070c24f3a40764"><div class="ttname"><a href="mate-stock-icons_8h.html#a0677f5da62a11a3243070c24f3a40764">MATE_STOCK_BOOK_OPEN</a></div><div class="ttdeci">#define MATE_STOCK_BOOK_OPEN</div><div class="ttdef"><b>Definition</b> <a href="mate-stock-icons_8h_source.html#l00062">mate-stock-icons.h:62</a></div></div>

@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">static</span> gboolean eel_editable_label_retrieve_surrounding_cb (GtkIMContext          *context,</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a>      *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">static</span> gboolean eel_editable_label_delete_surrounding_cb   (GtkIMContext          *slave,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        gint                   <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        gint                   offset,</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        gint                   n_chars,</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a>      *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>);</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keyword">static</span> <span class="keywordtype">void</span>     eel_editable_label_recompute               (<a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a>      *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>);</div>
@@ -676,7 +676,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                                 GParamSpec  *pspec)</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>{</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a> *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>;</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    gint offset;</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span> </div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = <a class="code hl_define" href="eel-editable-label_8h.html#ac27870cf43624d4da79c7cebfa4a114f">EEL_EDITABLE_LABEL</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
@@ -692,14 +692,14 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        g_value_set_boolean (value, <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;wrap);</div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eel-editable-label_8c.html#aea33efd5e2c69d615faad5c5965510aaa2b0c582364ff3eec97ffa92be2de7d72">PROP_CURSOR_POSITION</a>:</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        offset = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                                           <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text + <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;selection_end);</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        g_value_set_int (value, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>        g_value_set_int (value, offset);</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eel-editable-label_8c.html#aea33efd5e2c69d615faad5c5965510aaa23be98a6e4fac89c840bfd9f10d44c73">PROP_SELECTION_BOUND</a>:</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        offset = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                                           <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text + <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;selection_anchor);</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        g_value_set_int (value, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>        g_value_set_int (value, offset);</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    <span class="keywordflow">default</span>:</div>
@@ -856,13 +856,13 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00800" data-start="{" data-end="}">
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno"><a class="line" href="eel-editable-label_8c.html#aa35b1dcb895554a49c7aa35ddac614e8">  800</a></span><a class="code hl_function" href="eel-editable-label_8c.html#aa35b1dcb895554a49c7aa35ddac614e8">eel_editable_label_set_line_wrap_mode</a> (<a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a> *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>,</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>                                       PangoWrapMode     <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>                                       PangoWrapMode     mode)</div>
 <div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>{</div>
 <div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    g_return_if_fail (<a class="code hl_define" href="eel-editable-label_8h.html#af5c224a32df3b16dce54602032900669">EEL_IS_EDITABLE_LABEL</a> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>));</div>
 <div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;wrap_mode != <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;wrap_mode != mode)</div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    {</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;wrap_mode = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>        <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;wrap_mode = mode;</div>
 <div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span> </div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>        gtk_widget_queue_resize (GTK_WIDGET (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>));</div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    }</div>
@@ -2409,7 +2409,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l02397" name="l02397"></a><span class="lineno"> 2397</span> </div>
 <div class="line"><a id="l02398" name="l02398"></a><span class="lineno"> 2398</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l02399" name="l02399"></a><span class="lineno"> 2399</span>eel_editable_label_delete_surrounding_cb (GtkIMContext *slave,</div>
-<div class="line"><a id="l02400" name="l02400"></a><span class="lineno"> 2400</span>        gint          <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l02400" name="l02400"></a><span class="lineno"> 2400</span>        gint          offset,</div>
 <div class="line"><a id="l02401" name="l02401"></a><span class="lineno"> 2401</span>        gint          n_chars,</div>
 <div class="line"><a id="l02402" name="l02402"></a><span class="lineno"> 2402</span>        <a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a>  *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>)</div>
 <div class="line"><a id="l02403" name="l02403"></a><span class="lineno"> 2403</span>{</div>
@@ -2417,8 +2417,8 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l02405" name="l02405"></a><span class="lineno"> 2405</span> </div>
 <div class="line"><a id="l02406" name="l02406"></a><span class="lineno"> 2406</span>    current_pos = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text, <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text + <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;selection_anchor);</div>
 <div class="line"><a id="l02407" name="l02407"></a><span class="lineno"> 2407</span>    gtk_editable_delete_text (GTK_EDITABLE (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>),</div>
-<div class="line"><a id="l02408" name="l02408"></a><span class="lineno"> 2408</span>                              current_pos + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
-<div class="line"><a id="l02409" name="l02409"></a><span class="lineno"> 2409</span>                              current_pos + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> + n_chars);</div>
+<div class="line"><a id="l02408" name="l02408"></a><span class="lineno"> 2408</span>                              current_pos + offset,</div>
+<div class="line"><a id="l02409" name="l02409"></a><span class="lineno"> 2409</span>                              current_pos + offset + n_chars);</div>
 <div class="line"><a id="l02410" name="l02410"></a><span class="lineno"> 2410</span> </div>
 <div class="line"><a id="l02411" name="l02411"></a><span class="lineno"> 2411</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02412" name="l02412"></a><span class="lineno"> 2412</span>}</div>
@@ -2480,7 +2480,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l02468" name="l02468"></a><span class="lineno"> 2468</span>                                   gint      start,</div>
 <div class="line"><a id="l02469" name="l02469"></a><span class="lineno"> 2469</span>                                   gint      count)</div>
 <div class="line"><a id="l02470" name="l02470"></a><span class="lineno"> 2470</span>{</div>
-<div class="line"><a id="l02471" name="l02471"></a><span class="lineno"> 2471</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
+<div class="line"><a id="l02471" name="l02471"></a><span class="lineno"> 2471</span>    gint offset = g_utf8_pointer_to_offset (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
 <div class="line"><a id="l02472" name="l02472"></a><span class="lineno"> 2472</span>                                            <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text + start);</div>
 <div class="line"><a id="l02473" name="l02473"></a><span class="lineno"> 2473</span> </div>
 <div class="line"><a id="l02474" name="l02474"></a><span class="lineno"> 2474</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text)</div>
@@ -2495,19 +2495,19 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l02483" name="l02483"></a><span class="lineno"> 2483</span> </div>
 <div class="line"><a id="l02484" name="l02484"></a><span class="lineno"> 2484</span>        pango_layout_get_log_attrs (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;layout, &amp;log_attrs, &amp;n_attrs);</div>
 <div class="line"><a id="l02485" name="l02485"></a><span class="lineno"> 2485</span> </div>
-<div class="line"><a id="l02486" name="l02486"></a><span class="lineno"> 2486</span>        <span class="keywordflow">while</span> (count &gt; 0 &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &lt; length)</div>
+<div class="line"><a id="l02486" name="l02486"></a><span class="lineno"> 2486</span>        <span class="keywordflow">while</span> (count &gt; 0 &amp;&amp; offset &lt; length)</div>
 <div class="line"><a id="l02487" name="l02487"></a><span class="lineno"> 2487</span>        {</div>
 <div class="line"><a id="l02488" name="l02488"></a><span class="lineno"> 2488</span>            <span class="keywordflow">do</span></div>
-<div class="line"><a id="l02489" name="l02489"></a><span class="lineno"> 2489</span>                <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>++;</div>
-<div class="line"><a id="l02490" name="l02490"></a><span class="lineno"> 2490</span>            <span class="keywordflow">while</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &lt; length &amp;&amp; !log_attrs[<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>].is_cursor_position);</div>
+<div class="line"><a id="l02489" name="l02489"></a><span class="lineno"> 2489</span>                offset++;</div>
+<div class="line"><a id="l02490" name="l02490"></a><span class="lineno"> 2490</span>            <span class="keywordflow">while</span> (offset &lt; length &amp;&amp; !log_attrs[offset].is_cursor_position);</div>
 <div class="line"><a id="l02491" name="l02491"></a><span class="lineno"> 2491</span> </div>
 <div class="line"><a id="l02492" name="l02492"></a><span class="lineno"> 2492</span>            count--;</div>
 <div class="line"><a id="l02493" name="l02493"></a><span class="lineno"> 2493</span>        }</div>
 <div class="line"><a id="l02494" name="l02494"></a><span class="lineno"> 2494</span>        <span class="keywordflow">while</span> (count &lt; 0 &amp;&amp; offset &gt; 0)</div>
 <div class="line"><a id="l02495" name="l02495"></a><span class="lineno"> 2495</span>        {</div>
 <div class="line"><a id="l02496" name="l02496"></a><span class="lineno"> 2496</span>            <span class="keywordflow">do</span></div>
-<div class="line"><a id="l02497" name="l02497"></a><span class="lineno"> 2497</span>                <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>--;</div>
-<div class="line"><a id="l02498" name="l02498"></a><span class="lineno"> 2498</span>            <span class="keywordflow">while</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt; 0 &amp;&amp; !log_attrs[<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>].is_cursor_position);</div>
+<div class="line"><a id="l02497" name="l02497"></a><span class="lineno"> 2497</span>                offset--;</div>
+<div class="line"><a id="l02498" name="l02498"></a><span class="lineno"> 2498</span>            <span class="keywordflow">while</span> (offset &gt; 0 &amp;&amp; !log_attrs[offset].is_cursor_position);</div>
 <div class="line"><a id="l02499" name="l02499"></a><span class="lineno"> 2499</span> </div>
 <div class="line"><a id="l02500" name="l02500"></a><span class="lineno"> 2500</span>            count++;</div>
 <div class="line"><a id="l02501" name="l02501"></a><span class="lineno"> 2501</span>        }</div>
@@ -2515,7 +2515,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l02503" name="l02503"></a><span class="lineno"> 2503</span>        g_free (log_attrs);</div>
 <div class="line"><a id="l02504" name="l02504"></a><span class="lineno"> 2504</span>    }</div>
 <div class="line"><a id="l02505" name="l02505"></a><span class="lineno"> 2505</span> </div>
-<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span>    <span class="keywordflow">return</span> g_utf8_offset_to_pointer (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) - <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text;</div>
+<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span>    <span class="keywordflow">return</span> g_utf8_offset_to_pointer (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text, offset) - <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text;</div>
 <div class="line"><a id="l02507" name="l02507"></a><span class="lineno"> 2507</span>}</div>
 <div class="line"><a id="l02508" name="l02508"></a><span class="lineno"> 2508</span> </div>
 <div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span><span class="keyword">static</span> gint</div>
@@ -3127,7 +3127,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03115" name="l03115"></a><span class="lineno"> 3115</span>                            gint        *position)</div>
 <div class="line"><a id="l03116" name="l03116"></a><span class="lineno"> 3116</span>{</div>
 <div class="line"><a id="l03117" name="l03117"></a><span class="lineno"> 3117</span>    <a class="code hl_struct" href="struct__EelEditableLabel.html">EelEditableLabel</a> *<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = <a class="code hl_define" href="eel-editable-label_8h.html#ac27870cf43624d4da79c7cebfa4a114f">EEL_EDITABLE_LABEL</a> (editable);</div>
-<div class="line"><a id="l03118" name="l03118"></a><span class="lineno"> 3118</span>    gchar <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[64];</div>
+<div class="line"><a id="l03118" name="l03118"></a><span class="lineno"> 3118</span>    gchar buf[64];</div>
 <div class="line"><a id="l03119" name="l03119"></a><span class="lineno"> 3119</span>    gchar *text;</div>
 <div class="line"><a id="l03120" name="l03120"></a><span class="lineno"> 3120</span>    <span class="keywordtype">int</span> text_length;</div>
 <div class="line"><a id="l03121" name="l03121"></a><span class="lineno"> 3121</span> </div>
@@ -3139,7 +3139,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03127" name="l03127"></a><span class="lineno"> 3127</span>    g_object_ref (G_OBJECT (editable));</div>
 <div class="line"><a id="l03128" name="l03128"></a><span class="lineno"> 3128</span> </div>
 <div class="line"><a id="l03129" name="l03129"></a><span class="lineno"> 3129</span>    <span class="keywordflow">if</span> (new_text_length &lt;= 63)</div>
-<div class="line"><a id="l03130" name="l03130"></a><span class="lineno"> 3130</span>        text = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l03130" name="l03130"></a><span class="lineno"> 3130</span>        text = buf;</div>
 <div class="line"><a id="l03131" name="l03131"></a><span class="lineno"> 3131</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l03132" name="l03132"></a><span class="lineno"> 3132</span>        text = g_new (gchar, new_text_length + 1);</div>
 <div class="line"><a id="l03133" name="l03133"></a><span class="lineno"> 3133</span> </div>
@@ -3371,7 +3371,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03359" name="l03359"></a><span class="lineno"> 3359</span> </div>
 <div class="line"><a id="l03360" name="l03360"></a><span class="lineno"> 3360</span><span class="keyword">static</span> gunichar</div>
 <div class="line"><a id="l03361" name="l03361"></a><span class="lineno"> 3361</span>eel_editable_label_accessible_get_character_at_offset (AtkText *text,</div>
-<div class="line"><a id="l03362" name="l03362"></a><span class="lineno"> 3362</span>        gint     <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l03362" name="l03362"></a><span class="lineno"> 3362</span>        gint     offset)</div>
 <div class="line"><a id="l03363" name="l03363"></a><span class="lineno"> 3363</span>{</div>
 <div class="line"><a id="l03364" name="l03364"></a><span class="lineno"> 3364</span>    GtkWidget *widget;</div>
 <div class="line"><a id="l03365" name="l03365"></a><span class="lineno"> 3365</span>    EelEditableLabelAccessiblePrivate *priv;</div>
@@ -3385,7 +3385,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03373" name="l03373"></a><span class="lineno"> 3373</span> </div>
 <div class="line"><a id="l03374" name="l03374"></a><span class="lineno"> 3374</span>    priv = g_object_get_data (G_OBJECT (text), eel_editable_label_accessible_data);</div>
 <div class="line"><a id="l03375" name="l03375"></a><span class="lineno"> 3375</span>    <span class="keywordtype">string</span> = gail_text_util_get_substring (priv-&gt;textutil, 0, -1);</div>
-<div class="line"><a id="l03376" name="l03376"></a><span class="lineno"> 3376</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt;= g_utf8_strlen (<span class="keywordtype">string</span>, -1))</div>
+<div class="line"><a id="l03376" name="l03376"></a><span class="lineno"> 3376</span>    <span class="keywordflow">if</span> (offset &gt;= g_utf8_strlen (<span class="keywordtype">string</span>, -1))</div>
 <div class="line"><a id="l03377" name="l03377"></a><span class="lineno"> 3377</span>    {</div>
 <div class="line"><a id="l03378" name="l03378"></a><span class="lineno"> 3378</span>        unichar = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l03379" name="l03379"></a><span class="lineno"> 3379</span>    }</div>
@@ -3393,7 +3393,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03381" name="l03381"></a><span class="lineno"> 3381</span>    {</div>
 <div class="line"><a id="l03382" name="l03382"></a><span class="lineno"> 3382</span>        gchar *index;</div>
 <div class="line"><a id="l03383" name="l03383"></a><span class="lineno"> 3383</span> </div>
-<div class="line"><a id="l03384" name="l03384"></a><span class="lineno"> 3384</span>        index = g_utf8_offset_to_pointer (<span class="keywordtype">string</span>, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l03384" name="l03384"></a><span class="lineno"> 3384</span>        index = g_utf8_offset_to_pointer (<span class="keywordtype">string</span>, offset);</div>
 <div class="line"><a id="l03385" name="l03385"></a><span class="lineno"> 3385</span> </div>
 <div class="line"><a id="l03386" name="l03386"></a><span class="lineno"> 3386</span>        unichar = g_utf8_get_char(index);</div>
 <div class="line"><a id="l03387" name="l03387"></a><span class="lineno"> 3387</span>    }</div>
@@ -3404,7 +3404,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03392" name="l03392"></a><span class="lineno"> 3392</span> </div>
 <div class="line"><a id="l03393" name="l03393"></a><span class="lineno"> 3393</span><span class="keyword">static</span> gchar*</div>
 <div class="line"><a id="l03394" name="l03394"></a><span class="lineno"> 3394</span>eel_editable_label_accessible_get_text_before_offset (AtkText         *text,</div>
-<div class="line"><a id="l03395" name="l03395"></a><span class="lineno"> 3395</span>        gint            <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03395" name="l03395"></a><span class="lineno"> 3395</span>        gint            offset,</div>
 <div class="line"><a id="l03396" name="l03396"></a><span class="lineno"> 3396</span>        AtkTextBoundary boundary_type,</div>
 <div class="line"><a id="l03397" name="l03397"></a><span class="lineno"> 3397</span>        gint            *start_offset,</div>
 <div class="line"><a id="l03398" name="l03398"></a><span class="lineno"> 3398</span>        gint            *end_offset)</div>
@@ -3424,13 +3424,13 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03412" name="l03412"></a><span class="lineno"> 3412</span>    <span class="keywordflow">return</span> gail_text_util_get_text (priv-&gt;textutil,</div>
 <div class="line"><a id="l03413" name="l03413"></a><span class="lineno"> 3413</span>                                    <a class="code hl_function" href="eel-editable-label_8c.html#a84694266189cbd6d5a620dd740811e13">eel_editable_label_get_layout</a> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>),</div>
 <div class="line"><a id="l03414" name="l03414"></a><span class="lineno"> 3414</span>                                    GAIL_BEFORE_OFFSET,</div>
-<div class="line"><a id="l03415" name="l03415"></a><span class="lineno"> 3415</span>                                    boundary_type, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03415" name="l03415"></a><span class="lineno"> 3415</span>                                    boundary_type, offset,</div>
 <div class="line"><a id="l03416" name="l03416"></a><span class="lineno"> 3416</span>                                    start_offset, end_offset);</div>
 <div class="line"><a id="l03417" name="l03417"></a><span class="lineno"> 3417</span>}</div>
 <div class="line"><a id="l03418" name="l03418"></a><span class="lineno"> 3418</span> </div>
 <div class="line"><a id="l03419" name="l03419"></a><span class="lineno"> 3419</span><span class="keyword">static</span> gchar*</div>
 <div class="line"><a id="l03420" name="l03420"></a><span class="lineno"> 3420</span>eel_editable_label_accessible_get_text_at_offset (AtkText          *text,</div>
-<div class="line"><a id="l03421" name="l03421"></a><span class="lineno"> 3421</span>        gint             <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03421" name="l03421"></a><span class="lineno"> 3421</span>        gint             offset,</div>
 <div class="line"><a id="l03422" name="l03422"></a><span class="lineno"> 3422</span>        AtkTextBoundary  boundary_type,</div>
 <div class="line"><a id="l03423" name="l03423"></a><span class="lineno"> 3423</span>        gint             *start_offset,</div>
 <div class="line"><a id="l03424" name="l03424"></a><span class="lineno"> 3424</span>        gint             *end_offset)</div>
@@ -3449,13 +3449,13 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03437" name="l03437"></a><span class="lineno"> 3437</span>    <span class="keywordflow">return</span> gail_text_util_get_text (priv-&gt;textutil,</div>
 <div class="line"><a id="l03438" name="l03438"></a><span class="lineno"> 3438</span>                                    <a class="code hl_function" href="eel-editable-label_8c.html#a84694266189cbd6d5a620dd740811e13">eel_editable_label_get_layout</a> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>),</div>
 <div class="line"><a id="l03439" name="l03439"></a><span class="lineno"> 3439</span>                                    GAIL_AT_OFFSET,</div>
-<div class="line"><a id="l03440" name="l03440"></a><span class="lineno"> 3440</span>                                    boundary_type, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03440" name="l03440"></a><span class="lineno"> 3440</span>                                    boundary_type, offset,</div>
 <div class="line"><a id="l03441" name="l03441"></a><span class="lineno"> 3441</span>                                    start_offset, end_offset);</div>
 <div class="line"><a id="l03442" name="l03442"></a><span class="lineno"> 3442</span>}</div>
 <div class="line"><a id="l03443" name="l03443"></a><span class="lineno"> 3443</span> </div>
 <div class="line"><a id="l03444" name="l03444"></a><span class="lineno"> 3444</span><span class="keyword">static</span> gchar*</div>
 <div class="line"><a id="l03445" name="l03445"></a><span class="lineno"> 3445</span>eel_editable_label_accessible_get_text_after_offset  (AtkText          *text,</div>
-<div class="line"><a id="l03446" name="l03446"></a><span class="lineno"> 3446</span>        gint             <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03446" name="l03446"></a><span class="lineno"> 3446</span>        gint             offset,</div>
 <div class="line"><a id="l03447" name="l03447"></a><span class="lineno"> 3447</span>        AtkTextBoundary  boundary_type,</div>
 <div class="line"><a id="l03448" name="l03448"></a><span class="lineno"> 3448</span>        gint             *start_offset,</div>
 <div class="line"><a id="l03449" name="l03449"></a><span class="lineno"> 3449</span>        gint             *end_offset)</div>
@@ -3474,7 +3474,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03462" name="l03462"></a><span class="lineno"> 3462</span>    <span class="keywordflow">return</span> gail_text_util_get_text (priv-&gt;textutil,</div>
 <div class="line"><a id="l03463" name="l03463"></a><span class="lineno"> 3463</span>                                    <a class="code hl_function" href="eel-editable-label_8c.html#a84694266189cbd6d5a620dd740811e13">eel_editable_label_get_layout</a> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>),</div>
 <div class="line"><a id="l03464" name="l03464"></a><span class="lineno"> 3464</span>                                    GAIL_AFTER_OFFSET,</div>
-<div class="line"><a id="l03465" name="l03465"></a><span class="lineno"> 3465</span>                                    boundary_type, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03465" name="l03465"></a><span class="lineno"> 3465</span>                                    boundary_type, offset,</div>
 <div class="line"><a id="l03466" name="l03466"></a><span class="lineno"> 3466</span>                                    start_offset, end_offset);</div>
 <div class="line"><a id="l03467" name="l03467"></a><span class="lineno"> 3467</span>}</div>
 <div class="line"><a id="l03468" name="l03468"></a><span class="lineno"> 3468</span> </div>
@@ -3492,7 +3492,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03480" name="l03480"></a><span class="lineno"> 3480</span>}</div>
 <div class="line"><a id="l03481" name="l03481"></a><span class="lineno"> 3481</span> </div>
 <div class="line"><a id="l03482" name="l03482"></a><span class="lineno"> 3482</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l03483" name="l03483"></a><span class="lineno"> 3483</span>eel_editable_label_accessible_set_caret_offset (AtkText *text, gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l03483" name="l03483"></a><span class="lineno"> 3483</span>eel_editable_label_accessible_set_caret_offset (AtkText *text, gint offset)</div>
 <div class="line"><a id="l03484" name="l03484"></a><span class="lineno"> 3484</span>{</div>
 <div class="line"><a id="l03485" name="l03485"></a><span class="lineno"> 3485</span>    GtkWidget *widget;</div>
 <div class="line"><a id="l03486" name="l03486"></a><span class="lineno"> 3486</span> </div>
@@ -3501,7 +3501,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03489" name="l03489"></a><span class="lineno"> 3489</span>        <span class="comment">/* State is defunct */</span></div>
 <div class="line"><a id="l03490" name="l03490"></a><span class="lineno"> 3490</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l03491" name="l03491"></a><span class="lineno"> 3491</span> </div>
-<div class="line"><a id="l03492" name="l03492"></a><span class="lineno"> 3492</span>    gtk_editable_set_position (GTK_EDITABLE (widget), <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l03492" name="l03492"></a><span class="lineno"> 3492</span>    gtk_editable_set_position (GTK_EDITABLE (widget), offset);</div>
 <div class="line"><a id="l03493" name="l03493"></a><span class="lineno"> 3493</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l03494" name="l03494"></a><span class="lineno"> 3494</span>}</div>
 <div class="line"><a id="l03495" name="l03495"></a><span class="lineno"> 3495</span> </div>
@@ -3670,7 +3670,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03658" name="l03658"></a><span class="lineno"> 3658</span> </div>
 <div class="line"><a id="l03659" name="l03659"></a><span class="lineno"> 3659</span><span class="keyword">static</span> AtkAttributeSet*</div>
 <div class="line"><a id="l03660" name="l03660"></a><span class="lineno"> 3660</span>eel_editable_label_accessible_get_run_attributes (AtkText *text,</div>
-<div class="line"><a id="l03661" name="l03661"></a><span class="lineno"> 3661</span>        gint    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03661" name="l03661"></a><span class="lineno"> 3661</span>        gint    offset,</div>
 <div class="line"><a id="l03662" name="l03662"></a><span class="lineno"> 3662</span>        gint    *start_offset,</div>
 <div class="line"><a id="l03663" name="l03663"></a><span class="lineno"> 3663</span>        gint    *end_offset)</div>
 <div class="line"><a id="l03664" name="l03664"></a><span class="lineno"> 3664</span>{</div>
@@ -3697,7 +3697,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03685" name="l03685"></a><span class="lineno"> 3685</span>    at_set = gail_misc_layout_get_run_attributes (at_set,</div>
 <div class="line"><a id="l03686" name="l03686"></a><span class="lineno"> 3686</span>             <a class="code hl_function" href="eel-editable-label_8c.html#a84694266189cbd6d5a620dd740811e13">eel_editable_label_get_layout</a> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>),</div>
 <div class="line"><a id="l03687" name="l03687"></a><span class="lineno"> 3687</span>             <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text,</div>
-<div class="line"><a id="l03688" name="l03688"></a><span class="lineno"> 3688</span>             <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03688" name="l03688"></a><span class="lineno"> 3688</span>             offset,</div>
 <div class="line"><a id="l03689" name="l03689"></a><span class="lineno"> 3689</span>             start_offset,</div>
 <div class="line"><a id="l03690" name="l03690"></a><span class="lineno"> 3690</span>             end_offset);</div>
 <div class="line"><a id="l03691" name="l03691"></a><span class="lineno"> 3691</span>    <span class="keywordflow">return</span> at_set;</div>
@@ -3725,7 +3725,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03713" name="l03713"></a><span class="lineno"> 3713</span> </div>
 <div class="line"><a id="l03714" name="l03714"></a><span class="lineno"> 3714</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l03715" name="l03715"></a><span class="lineno"> 3715</span>eel_editable_label_accessible_get_character_extents (AtkText      *text,</div>
-<div class="line"><a id="l03716" name="l03716"></a><span class="lineno"> 3716</span>        gint         <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03716" name="l03716"></a><span class="lineno"> 3716</span>        gint         offset,</div>
 <div class="line"><a id="l03717" name="l03717"></a><span class="lineno"> 3717</span>        gint         *x,</div>
 <div class="line"><a id="l03718" name="l03718"></a><span class="lineno"> 3718</span>        gint         *y,</div>
 <div class="line"><a id="l03719" name="l03719"></a><span class="lineno"> 3719</span>        gint         *width,</div>
@@ -3744,7 +3744,7 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="line"><a id="l03732" name="l03732"></a><span class="lineno"> 3732</span> </div>
 <div class="line"><a id="l03733" name="l03733"></a><span class="lineno"> 3733</span>    <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = <a class="code hl_define" href="eel-editable-label_8h.html#ac27870cf43624d4da79c7cebfa4a114f">EEL_EDITABLE_LABEL</a> (widget);</div>
 <div class="line"><a id="l03734" name="l03734"></a><span class="lineno"> 3734</span>    <a class="code hl_function" href="eel-editable-label_8c.html#ac652f87dd0656107fa12b7cc13224bbe">eel_editable_label_get_layout_offsets</a> (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>, &amp;x_layout, &amp;y_layout);</div>
-<div class="line"><a id="l03735" name="l03735"></a><span class="lineno"> 3735</span>    index = g_utf8_offset_to_pointer (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) - <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text;</div>
+<div class="line"><a id="l03735" name="l03735"></a><span class="lineno"> 3735</span>    index = g_utf8_offset_to_pointer (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text, offset) - <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;text;</div>
 <div class="line"><a id="l03736" name="l03736"></a><span class="lineno"> 3736</span>    cursor_index = <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;selection_anchor;</div>
 <div class="line"><a id="l03737" name="l03737"></a><span class="lineno"> 3737</span>    <span class="keywordflow">if</span> (index &gt; cursor_index)</div>
 <div class="line"><a id="l03738" name="l03738"></a><span class="lineno"> 3738</span>        index += <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>-&gt;preedit_length;</div>
@@ -4277,9 +4277,6 @@ $(document).ready(function(){initNavTree('eel-editable-label_8c_source.html','')
 <div class="ttc" id="aeel-gtk-extensions_8c_html_ac32706b4c6d2f38cd87d5af46cd0fafa"><div class="ttname"><a href="eel-gtk-extensions_8c.html#ac32706b4c6d2f38cd87d5af46cd0fafa">eel_image_menu_item_new_from_icon</a></div><div class="ttdeci">GtkWidget * eel_image_menu_item_new_from_icon(const gchar *icon_name, const gchar *label_name)</div><div class="ttdef"><b>Definition</b> <a href="eel-gtk-extensions_8c_source.html#l00439">eel-gtk-extensions.c:439</a></div></div>
 <div class="ttc" id="aeel-gtk-extensions_8h_html"><div class="ttname"><a href="eel-gtk-extensions_8h.html">eel-gtk-extensions.h</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

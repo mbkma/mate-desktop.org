@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('mate-theme-info_8c_source.html',''); i
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    str = <a class="code hl_function" href="mate-desktop-item_8c.html#a39d62e6b31f185deb1fca34332fed170">mate_desktop_item_get_string</a> (meta_theme_ditem,</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>                                        <a class="code hl_define" href="mate-theme-info_8c.html#a95c64d0a41f6651ca9c1bc8ceb32bf99">CURSOR_SIZE_KEY</a>);</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">if</span> (str != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>      meta_theme_info-&gt;<a class="code hl_variable" href="struct__MateThemeMetaInfo.html#a0fef06152373b3d9a639f3128e2b447d">cursor_size</a> = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) g_ascii_strtoll (str, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 10);</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>      meta_theme_info-&gt;<a class="code hl_variable" href="struct__MateThemeMetaInfo.html#a0fef06152373b3d9a639f3128e2b447d">cursor_size</a> = (int) g_ascii_strtoll (str, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 10);</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>      meta_theme_info-&gt;<a class="code hl_variable" href="struct__MateThemeMetaInfo.html#a0fef06152373b3d9a639f3128e2b447d">cursor_size</a> = 24;</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  } <span class="keywordflow">else</span> {</div>
@@ -619,26 +619,26 @@ $(document).ready(function(){initNavTree('mate-theme-info_8c_source.html',''); i
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>{</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>  GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="preprocessor">#define BUF_SIZE sizeof(guint32) * cursor-&gt;width * cursor-&gt;height</span></div>
-<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  guchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_malloc0 (<a class="code hl_define" href="mate-theme-info_8c.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>);</div>
+<div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  guchar *buf = g_malloc0 (<a class="code hl_define" href="mate-theme-info_8c.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>);</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>  guchar *it;</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  <span class="keywordflow">for</span> (it = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>; it &lt; (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + <a class="code hl_define" href="mate-theme-info_8c.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>); it += 4) {</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  <span class="keywordflow">for</span> (it = buf; it &lt; (buf + <a class="code hl_define" href="mate-theme-info_8c.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>); it += 4) {</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="preprocessor">#if G_BYTE_ORDER == G_LITTLE_ENDIAN</span></div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    <span class="comment">/* on little endianess it&#39;s BGRA to RGBA */</span></div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    it[0] = ((guchar *) (cursor-&gt;pixels))[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 2];</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    it[1] = ((guchar *) (cursor-&gt;pixels))[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 1];</div>
-<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    it[2] = ((guchar *) (cursor-&gt;pixels))[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 0];</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    it[3] = ((guchar *) (cursor-&gt;pixels))[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 3];</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    it[0] = ((guchar *) (cursor-&gt;pixels))[it - buf + 2];</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    it[1] = ((guchar *) (cursor-&gt;pixels))[it - buf + 1];</div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    it[2] = ((guchar *) (cursor-&gt;pixels))[it - buf + 0];</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>    it[3] = ((guchar *) (cursor-&gt;pixels))[it - buf + 3];</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>    <span class="comment">/* on big endianess it&#39;s ARGB to RGBA */</span></div>
-<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    it[0] = ((guchar *) cursor-&gt;pixels)[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 1];</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    it[1] = ((guchar *) cursor-&gt;pixels)[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 2];</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    it[2] = ((guchar *) cursor-&gt;pixels)[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 3];</div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    it[3] = ((guchar *) cursor-&gt;pixels)[it - <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> + 0];</div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    it[0] = ((guchar *) cursor-&gt;pixels)[it - buf + 1];</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    it[1] = ((guchar *) cursor-&gt;pixels)[it - buf + 2];</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    it[2] = ((guchar *) cursor-&gt;pixels)[it - buf + 3];</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    it[3] = ((guchar *) cursor-&gt;pixels)[it - buf + 0];</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>  }</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>  pixbuf = gdk_pixbuf_new_from_data ((<span class="keyword">const</span> guchar *) <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>  pixbuf = gdk_pixbuf_new_from_data ((<span class="keyword">const</span> guchar *) buf,</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>                                     GDK_COLORSPACE_RGB, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 8,</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                                     cursor-&gt;width, cursor-&gt;height,</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                                     cursor-&gt;width * 4,</div>
@@ -646,7 +646,7 @@ $(document).ready(function(){initNavTree('mate-theme-info_8c_source.html',''); i
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>                                     <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>  <span class="keywordflow">if</span> (!pixbuf)</div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    g_free (buf);</div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span> </div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>  <span class="keywordflow">return</span> pixbuf;</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>}</div>
@@ -2031,8 +2031,6 @@ $(document).ready(function(){initNavTree('mate-theme-info_8c_source.html',''); i
 <div class="ttc" id="agtkrc-utils_8c_html_a5928149a92c6481f55791be7e69f4c32"><div class="ttname"><a href="gtkrc-utils_8c.html#a5928149a92c6481f55791be7e69f4c32">gtkrc_get_color_scheme_for_theme</a></div><div class="ttdeci">gchar * gtkrc_get_color_scheme_for_theme(const gchar *theme_name)</div><div class="ttdef"><b>Definition</b> <a href="gtkrc-utils_8c_source.html#l00289">gtkrc-utils.c:289</a></div></div>
 <div class="ttc" id="agtkrc-utils_8c_html_a5ba051456e4a3879696e9bf809de9ec7"><div class="ttname"><a href="gtkrc-utils_8c.html#a5ba051456e4a3879696e9bf809de9ec7">gtkrc_find_named</a></div><div class="ttdeci">gchar * gtkrc_find_named(const gchar *name)</div><div class="ttdef"><b>Definition</b> <a href="gtkrc-utils_8c_source.html#l00039">gtkrc-utils.c:39</a></div></div>
 <div class="ttc" id="agtkrc-utils_8h_html"><div class="ttname"><a href="gtkrc-utils_8h.html">gtkrc-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="alibsensors-plugin_8c_html_a8b923377fd8e81833671103a346806eb"><div class="ttname"><a href="libsensors-plugin_8c.html#a8b923377fd8e81833671103a346806eb">hash_table</a></div><div class="ttdeci">GHashTable * hash_table</div><div class="ttdef"><b>Definition</b> <a href="libsensors-plugin_8c_source.html#l00044">libsensors-plugin.c:44</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>

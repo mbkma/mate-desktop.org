@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('mate-utils_2mate-disk-image-mounter_2s
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordflow">for</span> (l = uris; l != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; l = l-&gt;next)</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    {</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      <span class="keyword">const</span> gchar *uri;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      gchar *filename;</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      GUnixFDList *fd_list = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      GVariantBuilder options_builder;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      gint fd;</div>
@@ -329,19 +329,19 @@ $(document).ready(function(){initNavTree('mate-utils_2mate-disk-image-mounter_2s
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>      uri = l-&gt;data;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      file = g_file_new_for_commandline_arg (uri);</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (file);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      filename = g_file_get_path (file);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      g_object_unref (file);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        {</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>          show_error (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot open `%s&#39; - maybe the volume isn&#39;t mounted?&quot;</span>), uri);</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>          <span class="keywordflow">goto</span> done_with_image;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        }</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      fd = open (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, opt_writable ? O_RDWR : O_RDONLY);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      fd = open (filename, opt_writable ? O_RDWR : O_RDONLY);</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      <span class="keywordflow">if</span> (fd == -1)</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>          show_error (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Error opening `%s&#39;: %m&quot;</span>), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>          show_error (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Error opening `%s&#39;: %m&quot;</span>), filename);</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>          <span class="keywordflow">goto</span> done_with_image;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        }</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
@@ -375,7 +375,7 @@ $(document).ready(function(){initNavTree('mate-utils_2mate-disk-image-mounter_2s
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    done_with_image:</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      g_clear_object (&amp;fd_list);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      g_free (filename);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>      g_free (loop_object_path);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    } <span class="comment">/* for each image */</span></div>
@@ -393,7 +393,6 @@ $(document).ready(function(){initNavTree('mate-utils_2mate-disk-image-mounter_2s
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="atestboxes_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="testboxes_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition</b> <a href="testboxes_8c_source.html#l01402">testboxes.c:1402</a></div></div>

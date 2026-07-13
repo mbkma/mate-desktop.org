@@ -681,7 +681,7 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>               MateComponentDockPlacement placement,</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>               gint band_num,</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>               gint band_position,</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>               gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>               gint offset)</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>{</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    GtkWidget *dock_item;</div>
@@ -702,14 +702,14 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>                        placement,</div>
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>                        band_num,</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>                        band_position,</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>                        offset);</div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        matecomponent_dock_add_item (MATECOMPONENT_DOCK(app-&gt;<a class="code hl_variable" href="struct__MateApp.html#a50476f62819c56f907ba598e80623262">dock</a>),</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>                     MATECOMPONENT_DOCK_ITEM (dock_item),</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>                     placement,</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>                     band_num,</div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>                     band_position,</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>                     offset,</div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>                     <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
@@ -755,7 +755,7 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>             MateComponentDockPlacement placement,</div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>             gint band_num,</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>             gint band_position,</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>             gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>             gint offset)</div>
 <div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>{</div>
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    <span class="keywordflow">if</span> (app-&gt;<a class="code hl_variable" href="struct__MateApp.html#acced988586efaabee49afb1b8004a557">layout</a>)</div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        matecomponent_dock_layout_add_item (app-&gt;<a class="code hl_variable" href="struct__MateApp.html#acced988586efaabee49afb1b8004a557">layout</a>,</div>
@@ -763,14 +763,14 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>                        placement,</div>
 <div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>                        band_num,</div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>                        band_position,</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>                        offset);</div>
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>        matecomponent_dock_add_item (MATECOMPONENT_DOCK(app-&gt;<a class="code hl_variable" href="struct__MateApp.html#a50476f62819c56f907ba598e80623262">dock</a>),</div>
 <div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>                     MATECOMPONENT_DOCK_ITEM( <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>),</div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>                     placement,</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>                     band_num,</div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>                     band_position,</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>                     offset,</div>
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>                     <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    g_signal_emit_by_name (app-&gt;<a class="code hl_variable" href="struct__MateApp.html#a50476f62819c56f907ba598e80623262">dock</a>, <span class="stringliteral">&quot;layout_changed&quot;</span>, app);</div>
@@ -786,7 +786,7 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>              MateComponentDockPlacement placement,</div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>              gint band_num,</div>
 <div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>              gint band_position,</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>              gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>              gint offset)</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>{</div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    GtkWidget *<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>;</div>
 <div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
@@ -794,7 +794,7 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    setup_notification_for_dock_item (MATECOMPONENT_DOCK_ITEM (<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>), <span class="stringliteral">&quot;/desktop/mate/interface/toolbar_detachable&quot;</span>);</div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    gtk_container_add (GTK_CONTAINER (<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>), widget);</div>
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <a class="code hl_function" href="mate-app_8c.html#ad48910532d840f9f75630085c672440b">mate_app_add_dock_item</a> (app, MATECOMPONENT_DOCK_ITEM (<a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>),</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>                 placement, band_num, band_position, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>                 placement, band_num, band_position, offset);</div>
 <div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
 <div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a>;</div>
 <div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>}</div>
@@ -846,7 +846,6 @@ $(document).ready(function(){initNavTree('mate-app_8c_source.html',''); initResi
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_a303e09e45979a61ba7021748e1fc3138"><div class="ttname"><a href="mate-app-helper_8c.html#a303e09e45979a61ba7021748e1fc3138">mate_app_setup_toolbar</a></div><div class="ttdeci">void mate_app_setup_toolbar(GtkToolbar *toolbar, MateComponentDockItem *dock_item)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02666">mate-app-helper.c:2666</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-app-helper_8h_html"><div class="ttname"><a href="mate-app-helper_8h.html">mate-app-helper.h</a></div></div>

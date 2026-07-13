@@ -139,9 +139,9 @@ Functions</h2></td></tr>
 <tr class="separator:a3e3533b2f7410e7b2f1803a94f65216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d07ca7ecb25465f06302a04fa8db7fc" id="r_a7d07ca7ecb25465f06302a04fa8db7fc"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#a7d07ca7ecb25465f06302a04fa8db7fc">eat_spaces</a> (const char *line)</td></tr>
 <tr class="separator:a7d07ca7ecb25465f06302a04fa8db7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac74da2bbb421f6d58d9769ef1ee69c32" id="r_ac74da2bbb421f6d58d9769ef1ee69c32"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#ac74da2bbb421f6d58d9769ef1ee69c32">split_line</a> (const char *line, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> n_fields)</td></tr>
+<tr class="memitem:ac74da2bbb421f6d58d9769ef1ee69c32" id="r_ac74da2bbb421f6d58d9769ef1ee69c32"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#ac74da2bbb421f6d58d9769ef1ee69c32">split_line</a> (const char *line, int n_fields)</td></tr>
 <tr class="separator:ac74da2bbb421f6d58d9769ef1ee69c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa93b451ed33cab2277a4a1ce32d30869" id="r_aa93b451ed33cab2277a4a1ce32d30869"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#aa93b451ed33cab2277a4a1ce32d30869">get_last_field</a> (const char *line, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> last_field)</td></tr>
+<tr class="memitem:aa93b451ed33cab2277a4a1ce32d30869" id="r_aa93b451ed33cab2277a4a1ce32d30869"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#aa93b451ed33cab2277a4a1ce32d30869">get_last_field</a> (const char *line, int last_field)</td></tr>
 <tr class="separator:aa93b451ed33cab2277a4a1ce32d30869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeecaf9d168b1feeaebed7a0b778da35" id="r_abeecaf9d168b1feeaebed7a0b778da35"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#abeecaf9d168b1feeaebed7a0b778da35">get_static_string</a> (const char *s)</td></tr>
 <tr class="separator:abeecaf9d168b1feeaebed7a0b778da35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
 <tr class="separator:ace5498f3f774f219386c74cdc19ad30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59aafb61527d7788101d24b910973e79" id="r_a59aafb61527d7788101d24b910973e79"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#a59aafb61527d7788101d24b910973e79">_g_path_get_base_name</a> (const char *path, const char *base_dir, gboolean junk_paths)</td></tr>
 <tr class="separator:a59aafb61527d7788101d24b910973e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465e0553f1a92d6748c22cb95bf18179" id="r_a465e0553f1a92d6748c22cb95bf18179"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#a465e0553f1a92d6748c22cb95bf18179">debug</a> (const char *file, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> line, const char *function, const char *format,...)</td></tr>
+<tr class="memitem:a465e0553f1a92d6748c22cb95bf18179" id="r_a465e0553f1a92d6748c22cb95bf18179"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="glib-utils_8h.html#a465e0553f1a92d6748c22cb95bf18179">debug</a> (const char *file, int line, const char *function, const char *format,...)</td></tr>
 <tr class="separator:a465e0553f1a92d6748c22cb95bf18179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
@@ -467,7 +467,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>last_field</em>&#160;</td>
         </tr>
         <tr>
@@ -621,7 +621,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n_fields</em>&#160;</td>
         </tr>
         <tr>

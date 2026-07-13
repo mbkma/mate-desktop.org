@@ -586,7 +586,7 @@ $(document).ready(function(){initNavTree('prop-editor_8c_source.html',''); initR
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>  gunichar new_val;</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  gunichar old_val = unichar_get_value (entry);</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  GValue val = { 0, };</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  gchar <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[7];</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  gchar buf[7];</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>  gint len;</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>  </div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>  g_value_init (&amp;val, pspec-&gt;value_type);</div>
@@ -598,12 +598,12 @@ $(document).ready(function(){initNavTree('prop-editor_8c_source.html',''); initR
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>      <span class="keywordflow">if</span> (!new_val)</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>    len = 0;</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    len = g_unichar_to_utf8 (new_val, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>    len = g_unichar_to_utf8 (new_val, buf);</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>      </div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>      <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>      buf[len] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>      </div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>      block_controller (G_OBJECT (entry));</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>      gtk_entry_set_text (entry, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>      gtk_entry_set_text (entry, buf);</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>      unblock_controller (G_OBJECT (entry));</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    }</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>}</div>
@@ -1177,7 +1177,6 @@ $(document).ready(function(){initNavTree('prop-editor_8c_source.html',''); initR
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amate-panel-applet-factory_8h_html_a85c0dd1e627a093510e3859bf0a88aff"><div class="ttname"><a href="mate-panel-applet-factory_8h.html#a85c0dd1e627a093510e3859bf0a88aff">closure</a></div><div class="ttdeci">gboolean GType GClosure * closure</div><div class="ttdef"><b>Definition</b> <a href="mate-panel-applet-factory_8h_source.html#l00038">mate-panel-applet-factory.h:38</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

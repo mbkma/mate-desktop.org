@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    guint xmp_len;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">/* management fields */</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">int</span>      <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">int</span>      size;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordtype">int</span>      last_marker;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">int</span>      bytes_read;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
@@ -261,19 +261,19 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>}</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">static</span> <a class="code hl_enumeration" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9f">EomJpegApp1Type</a></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>eom_metadata_identify_app1 (gchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, guint len)</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>eom_metadata_identify_app1 (gchar *buf, guint len)</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>{</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">if</span> (len &lt; 5) {</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa22ec3592a292e00028e6400b85f27419">EJA_OTHER</a>;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">if</span> (len &lt; 29) {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> (strncmp (<span class="stringliteral">&quot;Exif&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 5) == 0 ? <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa6fab556458588935983d99c1add324ff">EJA_EXIF</a> : <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa22ec3592a292e00028e6400b85f27419">EJA_OTHER</a>);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> (strncmp (<span class="stringliteral">&quot;Exif&quot;</span>, buf, 5) == 0 ? <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa6fab556458588935983d99c1add324ff">EJA_EXIF</a> : <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa22ec3592a292e00028e6400b85f27419">EJA_OTHER</a>);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">if</span> (strncmp (<span class="stringliteral">&quot;Exif&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 5) == 0) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">if</span> (strncmp (<span class="stringliteral">&quot;Exif&quot;</span>, buf, 5) == 0) {</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa6fab556458588935983d99c1add324ff">EJA_EXIF</a>;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strncmp (<span class="stringliteral">&quot;http://ns.adobe.com/xap/1.0/&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 29) == 0) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strncmp (<span class="stringliteral">&quot;http://ns.adobe.com/xap/1.0/&quot;</span>, buf, 29) == 0) {</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fae9aa9820fc8c4de18bbb49027d3f2e30">EJA_XMP</a>;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
@@ -284,18 +284,18 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>eom_metadata_reader_get_next_block (<a class="code hl_typedef" href="eom-metadata-reader-jpg_8h.html#a004b8de0b3135eb4f8fd82c2497aedd4">EomMetadataReaderJpgPrivate</a>* priv,</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    guchar *chunk,</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>                    <span class="keywordtype">int</span>* i,</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keyword">const</span> guchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keyword">const</span> guchar *buf,</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                    <span class="keywordtype">int</span> len,</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                    <a class="code hl_enumeration" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231">EomMetadataReaderState</a> state)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>{</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">if</span> (*i + priv-&gt;size &lt; len) {</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="comment">/* read data in one block */</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> ((guchar*) (chunk) + priv-&gt;bytes_read, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[*i], priv-&gt;size);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> ((guchar*) (chunk) + priv-&gt;bytes_read, &amp;buf[*i], priv-&gt;size);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        priv-&gt;state = <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a6f5ff3d28e6cacff5d115bccdc22b482">EMR_READ</a>;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        *i = *i + priv-&gt;size - 1; <span class="comment">/* the for-loop consumes the other byte */</span></div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordtype">int</span> chunk_len = len - *i;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> ((guchar*) (chunk) + priv-&gt;bytes_read, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[*i], chunk_len);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> ((guchar*) (chunk) + priv-&gt;bytes_read, &amp;buf[*i], chunk_len);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>        priv-&gt;bytes_read += chunk_len; <span class="comment">/* bytes already read */</span></div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        priv-&gt;size = (*i + priv-&gt;size) - len; <span class="comment">/* remaining data to read */</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        *i = len - 1;</div>
@@ -304,7 +304,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>eom_metadata_reader_jpg_consume (<a class="code hl_struct" href="struct__EomMetadataReaderJpg.html">EomMetadataReaderJpg</a> *emr, <span class="keyword">const</span> guchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, guint len)</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>eom_metadata_reader_jpg_consume (<a class="code hl_struct" href="struct__EomMetadataReaderJpg.html">EomMetadataReaderJpg</a> *emr, <span class="keyword">const</span> guchar *buf, guint len)</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>{</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_typedef" href="eom-metadata-reader-jpg_8h.html#a004b8de0b3135eb4f8fd82c2497aedd4">EomMetadataReaderJpgPrivate</a> *priv;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_enumeration" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9f">EomJpegApp1Type</a> app1_type;</div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="keywordflow">switch</span> (priv-&gt;state) {</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a6f5ff3d28e6cacff5d115bccdc22b482">EMR_READ</a>:</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[i] == <a class="code hl_define" href="eom-metadata-reader-jpg_8c.html#a1b9f2670cc051d3c498641110fd62ec1">EOM_JPEG_MARKER_START</a>) {</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>            <span class="keywordflow">if</span> (buf[i] == <a class="code hl_define" href="eom-metadata-reader-jpg_8c.html#a1b9f2670cc051d3c498641110fd62ec1">EOM_JPEG_MARKER_START</a>) {</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                priv-&gt;state = <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a7c6000486676ebf6cd119033076647d3">EMR_READ_MARKER</a>;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            }</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>            <span class="keywordflow">else</span> {</div>
@@ -331,10 +331,10 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a7c6000486676ebf6cd119033076647d3">EMR_READ_MARKER</a>:</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keywordflow">if</span> ((<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> [i] &amp; 0xF0) == 0xE0 || <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[i] == 0xFE) {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>            <span class="keywordflow">if</span> ((buf [i] &amp; 0xF0) == 0xE0 || buf[i] == 0xFE) {</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="comment">/* we are reading some sort of APPxx or COM marker */</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                <span class="comment">/* these are always followed by 2 bytes of size information */</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                priv-&gt;last_marker = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> [i];</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                priv-&gt;last_marker = buf [i];</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                priv-&gt;size = 0;</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                priv-&gt;state = <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a8268d8a2bbfc021b3bd44ad99fca7be6">EMR_READ_SIZE_HIGH_BYTE</a>;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
@@ -347,12 +347,12 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a8268d8a2bbfc021b3bd44ad99fca7be6">EMR_READ_SIZE_HIGH_BYTE</a>:</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            priv-&gt;size = (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> [i] &amp; 0xff) &lt;&lt; 8;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            priv-&gt;size = (buf [i] &amp; 0xff) &lt;&lt; 8;</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>            priv-&gt;state = <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231aa58f8e07b48cf74e94af2f3fcdd7ea50">EMR_READ_SIZE_LOW_BYTE</a>;</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231aa58f8e07b48cf74e94af2f3fcdd7ea50">EMR_READ_SIZE_LOW_BYTE</a>:</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            priv-&gt;size |= (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> [i] &amp; 0xff);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            priv-&gt;size |= (buf [i] &amp; 0xff);</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            <span class="keywordflow">if</span> (priv-&gt;size &gt; 2)  <span class="comment">/* ignore the two size-bytes */</span></div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                priv-&gt;size -= 2;</div>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a88b476ad5121099d4e7b4c57e37b38fc">EMR_READ_APP1</a>:</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>            <a class="code hl_function" href="eom-debug_8c.html#a9c31e51bf3223be2d869e5e3ef74e70c">eom_debug_message</a> (<a class="code hl_define" href="eom-debug_8h.html#ae797fffb2ca4a95123655f9f157353dc">DEBUG_IMAGE_DATA</a>, <span class="stringliteral">&quot;Read APP1 data, Length: %i&quot;</span>, priv-&gt;size);</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            app1_type = eom_metadata_identify_app1 ((gchar*) &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[i], priv-&gt;size);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            app1_type = eom_metadata_identify_app1 ((gchar*) &amp;buf[i], priv-&gt;size);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            <span class="keywordflow">switch</span> (app1_type) {</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a352eb28798ca76d18584136c52f0fb9fa6fab556458588935983d99c1add324ff">EJA_EXIF</a>:</div>
@@ -435,7 +435,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            <span class="keywordflow">if</span> (chunk) {</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                eom_metadata_reader_get_next_block (priv, chunk,</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                                    &amp;i, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                                    &amp;i, buf,</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                                    len,</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                                    next_state);</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>            }</div>
@@ -448,7 +448,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>            <a class="code hl_function" href="eom-debug_8c.html#a9c31e51bf3223be2d869e5e3ef74e70c">eom_debug_message</a> (<a class="code hl_define" href="eom-debug_8h.html#ae797fffb2ca4a95123655f9f157353dc">DEBUG_IMAGE_DATA</a>, <span class="stringliteral">&quot;Read continuation of EXIF data, length: %i&quot;</span>, priv-&gt;size);</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>            {</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                eom_metadata_reader_get_next_block (priv, priv-&gt;exif_chunk,</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                                    &amp;i, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len, <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a4e7a59e2beeb046263d7113e687309f7">EMR_READ_EXIF</a>);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                                    &amp;i, buf, len, <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a4e7a59e2beeb046263d7113e687309f7">EMR_READ_EXIF</a>);</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>            }</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>            <span class="keywordflow">if</span> (<a class="code hl_define" href="eom-metadata-reader-jpg_8c.html#a975ae25c1a47a304196617bde26d46b5">IS_FINISHED</a>(priv))</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                priv-&gt;state = <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231ae6d1c734d6ddfd65841a4392ae84ad38">EMR_FINISHED</a>;</div>
@@ -458,7 +458,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>            <a class="code hl_function" href="eom-debug_8c.html#a9c31e51bf3223be2d869e5e3ef74e70c">eom_debug_message</a> (<a class="code hl_define" href="eom-debug_8h.html#ae797fffb2ca4a95123655f9f157353dc">DEBUG_IMAGE_DATA</a>, <span class="stringliteral">&quot;Read continuation of XMP data, length: %i&quot;</span>, priv-&gt;size);</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>            {</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                eom_metadata_reader_get_next_block (priv, priv-&gt;xmp_chunk,</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                                    &amp;i, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len, <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a0fd81ce71a538bde57a30f6e0c636bea">EMR_READ_XMP</a>);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                                    &amp;i, buf, len, <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a0fd81ce71a538bde57a30f6e0c636bea">EMR_READ_XMP</a>);</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            }</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            <span class="keywordflow">if</span> (<a class="code hl_define" href="eom-metadata-reader-jpg_8c.html#a975ae25c1a47a304196617bde26d46b5">IS_FINISHED</a> (priv))</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                priv-&gt;state = <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231ae6d1c734d6ddfd65841a4392ae84ad38">EMR_FINISHED</a>;</div>
@@ -477,7 +477,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            eom_metadata_reader_get_next_block (priv,</div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                                priv-&gt;icc_chunk,</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                &amp;i, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len,</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                                &amp;i, buf, len,</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                                <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a07fb4f71b6b22e1729c379c4ea461361">EMR_READ_ICC</a>);</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            <span class="comment">/* Test that the chunk actually contains ICC data. */</span></div>
@@ -522,7 +522,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            eom_metadata_reader_get_next_block (priv,</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>                                priv-&gt;iptc_chunk,</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>                                &amp;i, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len,</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>                                &amp;i, buf, len,</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>                                <a class="code hl_enumvalue" href="eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a3647636090748e8200bffc9ca3614e79">EMR_READ_IPTC</a>);</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span> </div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            <span class="keywordflow">if</span> (<a class="code hl_define" href="eom-metadata-reader-jpg_8c.html#a975ae25c1a47a304196617bde26d46b5">IS_FINISHED</a>(priv))</div>
@@ -665,7 +665,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>            <span class="keywordtype">double</span> gammaValue;</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>            ExifRational r;</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = exif_format_get_size (EXIF_FORMAT_RATIONAL);</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>            <span class="keyword">const</span> <span class="keywordtype">int</span> offset = exif_format_get_size (EXIF_FORMAT_RATIONAL);</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>            entry = exif_data_get_entry (exif, EXIF_TAG_WHITE_POINT);</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span> </div>
@@ -673,7 +673,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                r = exif_get_rational (entry-&gt;data, o);</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>                whitepoint.x = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                r = exif_get_rational (entry-&gt;data + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                r = exif_get_rational (entry-&gt;data + offset, o);</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                whitepoint.y = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                whitepoint.Y = 1.0;</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>            } <span class="keywordflow">else</span> {</div>
@@ -684,22 +684,22 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>            entry = exif_data_get_entry (exif, EXIF_TAG_PRIMARY_CHROMATICITIES);</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>            <span class="keywordflow">if</span> (entry &amp;&amp; entry-&gt;components == 6) {</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                r = exif_get_rational (entry-&gt;data + 0 * <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>                r = exif_get_rational (entry-&gt;data + 0 * offset, o);</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                primaries.Red.x = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                r = exif_get_rational (entry-&gt;data + 1 * <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                r = exif_get_rational (entry-&gt;data + 1 * offset, o);</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                primaries.Red.y = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                r = exif_get_rational (entry-&gt;data + 2 * <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                r = exif_get_rational (entry-&gt;data + 2 * offset, o);</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                primaries.Green.x = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                r = exif_get_rational (entry-&gt;data + 3 * <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>                r = exif_get_rational (entry-&gt;data + 3 * offset, o);</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>                primaries.Green.y = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>                r = exif_get_rational (entry-&gt;data + 4 * <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>                r = exif_get_rational (entry-&gt;data + 4 * offset, o);</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>                primaries.Blue.x = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                r = exif_get_rational (entry-&gt;data + 5 * <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, o);</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                r = exif_get_rational (entry-&gt;data + 5 * offset, o);</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>                primaries.Blue.y = (double) r.numerator / r.denominator;</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>                primaries.Red.Y = primaries.Green.Y = primaries.Blue.Y = 1.0;</div>
@@ -745,7 +745,7 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    iface = (<a class="code hl_struct" href="struct__EomMetadataReaderInterface.html">EomMetadataReaderInterface</a>*)g_iface;</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    iface-&gt;<a class="code hl_variable" href="struct__EomMetadataReaderInterface.html#aa3d3f1ef18372f4a33d024895af1813f">consume</a> =</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        (void (*) (<a class="code hl_typedef" href="eom-metadata-reader_8h.html#ad4d61def56bb55397517f00e8400c2bc">EomMetadataReader</a> *self, <span class="keyword">const</span> guchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, guint len))</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        (void (*) (<a class="code hl_typedef" href="eom-metadata-reader_8h.html#ad4d61def56bb55397517f00e8400c2bc">EomMetadataReader</a> *self, <span class="keyword">const</span> guchar *buf, guint len))</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>            eom_metadata_reader_jpg_consume;</div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    iface-&gt;<a class="code hl_variable" href="struct__EomMetadataReaderInterface.html#a9ca0ff6123c64cf1fb0c9bd4e40e06b3">finished</a> =</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        (gboolean (*) (<a class="code hl_typedef" href="eom-metadata-reader_8h.html#ad4d61def56bb55397517f00e8400c2bc">EomMetadataReader</a> *self))</div>
@@ -808,9 +808,6 @@ $(document).ready(function(){initNavTree('eom-metadata-reader-jpg_8c_source.html
 <div class="ttc" id="aeom-metadata-reader_8h_html_a2ff2ad2cfbe490b28524681271c88478"><div class="ttname"><a href="eom-metadata-reader_8h.html#a2ff2ad2cfbe490b28524681271c88478">EOM_IS_METADATA_READER</a></div><div class="ttdeci">#define EOM_IS_METADATA_READER(o)</div><div class="ttdef"><b>Definition</b> <a href="eom-metadata-reader_8h_source.html#l00040">eom-metadata-reader.h:40</a></div></div>
 <div class="ttc" id="aeom-metadata-reader_8h_html_a590dad87aa5efad47b59bf3adf7bdfd8"><div class="ttname"><a href="eom-metadata-reader_8h.html#a590dad87aa5efad47b59bf3adf7bdfd8">EOM_TYPE_METADATA_READER</a></div><div class="ttdeci">#define EOM_TYPE_METADATA_READER</div><div class="ttdef"><b>Definition</b> <a href="eom-metadata-reader_8h_source.html#l00038">eom-metadata-reader.h:38</a></div></div>
 <div class="ttc" id="aeom-metadata-reader_8h_html_ad4d61def56bb55397517f00e8400c2bc"><div class="ttname"><a href="eom-metadata-reader_8h.html#ad4d61def56bb55397517f00e8400c2bc">EomMetadataReader</a></div><div class="ttdeci">struct _EomMetadataReader EomMetadataReader</div><div class="ttdef"><b>Definition</b> <a href="eom-metadata-reader_8h_source.html#l00043">eom-metadata-reader.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="astruct__EomMetadataReaderInterface_html"><div class="ttname"><a href="struct__EomMetadataReaderInterface.html">_EomMetadataReaderInterface</a></div><div class="ttdef"><b>Definition</b> <a href="eom-metadata-reader_8h_source.html#l00046">eom-metadata-reader.h:46</a></div></div>

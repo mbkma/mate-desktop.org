@@ -232,7 +232,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_struct" href="struct__EomListStore.html">EomListStore</a>        *store;</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <a class="code hl_struct" href="struct__EomImage.html">EomImage</a>            *image;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_enumeration" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58">EomWindowMode</a>        <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_enumeration" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58">EomWindowMode</a>        mode;</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_enumeration" href="eom-window_8c.html#a0592ac55067f9d3888ef44ed5298e005">EomWindowStatus</a>      status;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    GtkUIManager        *ui_mgr;</div>
@@ -319,7 +319,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="keyword">static</span> <span class="keywordtype">void</span> eom_window_list_store_image_removed (GtkTreeModel *tree_model,</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                                 GtkTreePath  *path,</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>                         gpointer      <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>);</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">static</span> <span class="keywordtype">void</span> eom_window_set_wallpaper (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="keyword">const</span> gchar *visible_filename);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">static</span> <span class="keywordtype">void</span> eom_window_set_wallpaper (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, <span class="keyword">const</span> gchar *filename, <span class="keyword">const</span> gchar *visible_filename);</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">static</span> gboolean eom_window_save_images (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, GList *images);</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="keyword">static</span> <span class="keywordtype">void</span> disconnect_proxy_cb (GtkUIManager *manager,</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                                 GtkAction *<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>,</div>
@@ -344,7 +344,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>{</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <a class="code hl_typedef" href="eom-window_8h.html#ad71ff7a825b04674fb3de7f742bd375c">EomWindowPrivate</a> *priv;</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    GtkWidget *hpaned;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <a class="code hl_enumeration" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129">EomThumbNavMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129aba8334a2fa9df55c122f25c75f1dd89f">EOM_THUMB_NAV_MODE_ONE_ROW</a>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <a class="code hl_enumeration" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129">EomThumbNavMode</a> mode = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129aba8334a2fa9df55c122f25c75f1dd89f">EOM_THUMB_NAV_MODE_ONE_ROW</a>;</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <a class="code hl_function" href="eom-debug_8c.html#a2da0ce44f5233ba27246a5637b5781b7">eom_debug</a> (<a class="code hl_define" href="eom-debug_8h.html#a8a8d7960a360c5234c4741feb873fae1">DEBUG_PREFERENCES</a>);</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4babe3b04915bfbf70f939d798a0ff433ae">EOM_WINDOW_COLLECTION_POS_BOTTOM</a>:</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4baf6998dbc635574b85beddd498f53d099">EOM_WINDOW_COLLECTION_POS_TOP</a>:</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keywordflow">if</span> (resizable) {</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129a40691dabe8a01cbf781331a51abda6df">EOM_THUMB_NAV_MODE_MULTIPLE_ROWS</a>;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            mode = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129a40691dabe8a01cbf781331a51abda6df">EOM_THUMB_NAV_MODE_MULTIPLE_ROWS</a>;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            priv-&gt;layout = gtk_paned_new (GTK_ORIENTATION_VERTICAL);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
@@ -385,7 +385,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                gtk_paned_pack2 (GTK_PANED (priv-&gt;layout), hpaned, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129aba8334a2fa9df55c122f25c75f1dd89f">EOM_THUMB_NAV_MODE_ONE_ROW</a>;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>            mode = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129aba8334a2fa9df55c122f25c75f1dd89f">EOM_THUMB_NAV_MODE_ONE_ROW</a>;</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            priv-&gt;layout = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
@@ -402,7 +402,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4ba871a157d5d81c6572a1894b8e7d129aa">EOM_WINDOW_COLLECTION_POS_LEFT</a>:</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4bab336fd2e14cb16dcf8215e62f0092884">EOM_WINDOW_COLLECTION_POS_RIGHT</a>:</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        <span class="keywordflow">if</span> (resizable) {</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129ada91aa075adf712ba40ae9b88973b94d">EOM_THUMB_NAV_MODE_MULTIPLE_COLUMNS</a>;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            mode = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129ada91aa075adf712ba40ae9b88973b94d">EOM_THUMB_NAV_MODE_MULTIPLE_COLUMNS</a>;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            priv-&gt;layout = gtk_paned_new (GTK_ORIENTATION_HORIZONTAL);</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
@@ -414,7 +414,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                gtk_paned_pack2 (GTK_PANED (priv-&gt;layout), priv-&gt;nav, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            }</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129af4750e41473bfc7a184ecebf8e1d1821">EOM_THUMB_NAV_MODE_ONE_COLUMN</a>;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            mode = <a class="code hl_enumvalue" href="eom-thumb-nav_8h.html#ab56fc96f09f5e56bf8441a819856a129af4750e41473bfc7a184ecebf8e1d1821">EOM_THUMB_NAV_MODE_ONE_COLUMN</a>;</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            priv-&gt;layout = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
@@ -432,7 +432,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    gtk_box_pack_end (GTK_BOX (priv-&gt;cbox), priv-&gt;layout, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 0);</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <a class="code hl_function" href="eom-thumb-nav_8c.html#ad667ab064cfd892ec60af21b41e5f6c2">eom_thumb_nav_set_mode</a> (<a class="code hl_define" href="eom-thumb-nav_8h.html#a485cd3885125ae21adfe1371abd64cab">EOM_THUMB_NAV</a> (priv-&gt;nav), <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <a class="code hl_function" href="eom-thumb-nav_8c.html#ad667ab064cfd892ec60af21b41e5f6c2">eom_thumb_nav_set_mode</a> (<a class="code hl_define" href="eom-thumb-nav_8h.html#a485cd3885125ae21adfe1371abd64cab">EOM_THUMB_NAV</a> (priv-&gt;nav), mode);</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <span class="keywordflow">if</span> (priv-&gt;mode != <a class="code hl_enumvalue" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58a8a9d5ea1167d2d6ec872ebb26f8fea2b">EOM_WINDOW_MODE_UNKNOWN</a>) {</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        update_action_groups_state (window);</div>
@@ -535,7 +535,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>                length = <span class="keyword">sizeof</span>(short) * nitems;</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>            <span class="keywordflow">case</span> 32:</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>                length = <span class="keyword">sizeof</span>(<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) * nitems;</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>                length = <span class="keyword">sizeof</span>(long) * nitems;</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>            <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>                <a class="code hl_function" href="eom-debug_8c.html#a9c31e51bf3223be2d869e5e3ef74e70c">eom_debug_message</a> (<a class="code hl_define" href="eom-debug_8h.html#aeb8432d11074d2b250525f0788b2a9e8">DEBUG_LCMS</a>, <span class="stringliteral">&quot;Unable to read profile, not correcting&quot;</span>);</div>
@@ -2875,7 +2875,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span>}</div>
 <div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span> </div>
 <div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span>eom_window_set_wallpaper (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="keyword">const</span> gchar *visible_filename)</div>
+<div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span>eom_window_set_wallpaper (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, <span class="keyword">const</span> gchar *filename, <span class="keyword">const</span> gchar *visible_filename)</div>
 <div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span>{</div>
 <div class="line"><a id="l02778" name="l02778"></a><span class="lineno"> 2778</span>    GtkWidget *info_bar;</div>
 <div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span>    GtkWidget *image;</div>
@@ -2889,7 +2889,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span>    wallpaper_settings = g_settings_new (<a class="code hl_define" href="eom-config-keys_8h.html#a27374256a2adbc9550dada81480d376d">EOM_CONF_BACKGROUND_SCHEMA</a>);</div>
 <div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span>    g_settings_set_string (wallpaper_settings,</div>
 <div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span>                 <a class="code hl_define" href="eom-config-keys_8h.html#a883ab00ff2a48a05129ead7c802f3a73">EOM_CONF_BACKGROUND_FILE</a>,</div>
-<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span>                 <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span>                 filename);</div>
 <div class="line"><a id="l02791" name="l02791"></a><span class="lineno"> 2791</span>    g_object_unref (wallpaper_settings);</div>
 <div class="line"><a id="l02792" name="l02792"></a><span class="lineno"> 2792</span> </div>
 <div class="line"><a id="l02793" name="l02793"></a><span class="lineno"> 2793</span>    <span class="comment">/* I18N: When setting mnemonics for these strings, watch out to not</span></div>
@@ -2906,7 +2906,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span>    <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a> = gtk_label_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span> </div>
 <div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>    <span class="keywordflow">if</span> (!visible_filename)</div>
-<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>        basename = g_path_get_basename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>        basename = g_path_get_basename (filename);</div>
 <div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span> </div>
 <div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>    <span class="comment">/* The newline character is currently necessary due to a problem</span></div>
 <div class="line"><a id="l02810" name="l02810"></a><span class="lineno"> 2810</span><span class="comment">     * with the automatic line break. */</span></div>
@@ -2967,7 +2967,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>eom_job_copy_cb (<a class="code hl_struct" href="struct__EomJobCopy.html">EomJobCopy</a> *job, gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
 <div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>{</div>
 <div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span>    <a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window = <a class="code hl_define" href="eom-window_8h.html#af1545d50c0f496aed22908e468eea140">EOM_WINDOW</a> (<a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>);</div>
-<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span>    gchar *filepath, *basename, *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, *extension;</div>
+<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span>    gchar *filepath, *basename, *filename, *extension;</div>
 <div class="line"><a id="l02869" name="l02869"></a><span class="lineno"> 2869</span>    GtkAction *<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>;</div>
 <div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>    GFile *<a class="code hl_variable" href="schema-bindings_8c.html#a567843b78ee22398b28db448f4ef1880">source_file</a>, *dest_file;</div>
 <div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span> </div>
@@ -2979,10 +2979,10 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l02877" name="l02877"></a><span class="lineno"> 2877</span> </div>
 <div class="line"><a id="l02878" name="l02878"></a><span class="lineno"> 2878</span>    <span class="comment">/* Create destination GFile */</span></div>
 <div class="line"><a id="l02879" name="l02879"></a><span class="lineno"> 2879</span>    extension = <a class="code hl_function" href="eom-util_8c.html#a209d29eb8e74fe92940f441855fb0f55">eom_util_filename_get_extension</a> (basename);</div>
-<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_strdup_printf  (<span class="stringliteral">&quot;%s.%s&quot;</span>, <a class="code hl_define" href="eom-window_8c.html#aaf88ab9fb1860ee262cf695db194024d">EOM_WALLPAPER_FILENAME</a>, extension);</div>
-<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span>    filepath = g_build_filename (job-&gt;<a class="code hl_variable" href="struct__EomJobCopy.html#a032a68beaa6eb9a0f33b401a214260a1">dest</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>    filename = g_strdup_printf  (<span class="stringliteral">&quot;%s.%s&quot;</span>, <a class="code hl_define" href="eom-window_8c.html#aaf88ab9fb1860ee262cf695db194024d">EOM_WALLPAPER_FILENAME</a>, extension);</div>
+<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span>    filepath = g_build_filename (job-&gt;<a class="code hl_variable" href="struct__EomJobCopy.html#a032a68beaa6eb9a0f33b401a214260a1">dest</a>, filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02882" name="l02882"></a><span class="lineno"> 2882</span>    dest_file = g_file_new_for_path (filepath);</div>
-<div class="line"><a id="l02883" name="l02883"></a><span class="lineno"> 2883</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02883" name="l02883"></a><span class="lineno"> 2883</span>    g_free (filename);</div>
 <div class="line"><a id="l02884" name="l02884"></a><span class="lineno"> 2884</span>    g_free (extension);</div>
 <div class="line"><a id="l02885" name="l02885"></a><span class="lineno"> 2885</span> </div>
 <div class="line"><a id="l02886" name="l02886"></a><span class="lineno"> 2886</span>    <span class="comment">/* Move the file */</span></div>
@@ -3305,7 +3305,7 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l03210" name="l03210"></a><span class="lineno"> 3210</span>    <a class="code hl_typedef" href="eom-window_8h.html#ad71ff7a825b04674fb3de7f742bd375c">EomWindowPrivate</a> *priv;</div>
 <div class="line"><a id="l03211" name="l03211"></a><span class="lineno"> 3211</span>    <a class="code hl_struct" href="struct__EomImage.html">EomImage</a> *image;</div>
 <div class="line"><a id="l03212" name="l03212"></a><span class="lineno"> 3212</span>    GFile *file;</div>
-<div class="line"><a id="l03213" name="l03213"></a><span class="lineno"> 3213</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l03213" name="l03213"></a><span class="lineno"> 3213</span>    <span class="keywordtype">char</span> *filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03214" name="l03214"></a><span class="lineno"> 3214</span> </div>
 <div class="line"><a id="l03215" name="l03215"></a><span class="lineno"> 3215</span>    g_return_if_fail (<a class="code hl_define" href="eom-window_8h.html#adf0a8ff31f1389077fff8c93fa27d94f">EOM_IS_WINDOW</a> (<a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>));</div>
 <div class="line"><a id="l03216" name="l03216"></a><span class="lineno"> 3216</span> </div>
@@ -3322,10 +3322,10 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l03227" name="l03227"></a><span class="lineno"> 3227</span> </div>
 <div class="line"><a id="l03228" name="l03228"></a><span class="lineno"> 3228</span>    file = <a class="code hl_function" href="eom-image_8c.html#a4b7ee1c5b01c54a302e1a2ec412c935f">eom_image_get_file</a> (image);</div>
 <div class="line"><a id="l03229" name="l03229"></a><span class="lineno"> 3229</span> </div>
-<div class="line"><a id="l03230" name="l03230"></a><span class="lineno"> 3230</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (file);</div>
+<div class="line"><a id="l03230" name="l03230"></a><span class="lineno"> 3230</span>    filename = g_file_get_path (file);</div>
 <div class="line"><a id="l03231" name="l03231"></a><span class="lineno"> 3231</span> </div>
 <div class="line"><a id="l03232" name="l03232"></a><span class="lineno"> 3232</span>    <span class="comment">/* Currently only local files can be set as wallpaper */</span></div>
-<div class="line"><a id="l03233" name="l03233"></a><span class="lineno"> 3233</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || !<a class="code hl_function" href="eom-util_8c.html#a5428d329e558865b4ebf55b039b7e385">eom_util_file_is_persistent</a> (file))</div>
+<div class="line"><a id="l03233" name="l03233"></a><span class="lineno"> 3233</span>    <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || !<a class="code hl_function" href="eom-util_8c.html#a5428d329e558865b4ebf55b039b7e385">eom_util_file_is_persistent</a> (file))</div>
 <div class="line"><a id="l03234" name="l03234"></a><span class="lineno"> 3234</span>    {</div>
 <div class="line"><a id="l03235" name="l03235"></a><span class="lineno"> 3235</span>        GList *files = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03236" name="l03236"></a><span class="lineno"> 3236</span>        GtkAction *action_set_as_wp;</div>
@@ -3353,15 +3353,15 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l03258" name="l03258"></a><span class="lineno"> 3258</span>        <a class="code hl_function" href="eom-job-queue_8c.html#a82a86e98a3625e436b7bb757369cf96b">eom_job_queue_add_job</a> (priv-&gt;copy_job);</div>
 <div class="line"><a id="l03259" name="l03259"></a><span class="lineno"> 3259</span> </div>
 <div class="line"><a id="l03260" name="l03260"></a><span class="lineno"> 3260</span>        g_object_unref (file);</div>
-<div class="line"><a id="l03261" name="l03261"></a><span class="lineno"> 3261</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l03261" name="l03261"></a><span class="lineno"> 3261</span>        g_free (filename);</div>
 <div class="line"><a id="l03262" name="l03262"></a><span class="lineno"> 3262</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l03263" name="l03263"></a><span class="lineno"> 3263</span>    }</div>
 <div class="line"><a id="l03264" name="l03264"></a><span class="lineno"> 3264</span> </div>
 <div class="line"><a id="l03265" name="l03265"></a><span class="lineno"> 3265</span>    g_object_unref (file);</div>
 <div class="line"><a id="l03266" name="l03266"></a><span class="lineno"> 3266</span> </div>
-<div class="line"><a id="l03267" name="l03267"></a><span class="lineno"> 3267</span>    eom_window_set_wallpaper (window, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l03267" name="l03267"></a><span class="lineno"> 3267</span>    eom_window_set_wallpaper (window, filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l03268" name="l03268"></a><span class="lineno"> 3268</span> </div>
-<div class="line"><a id="l03269" name="l03269"></a><span class="lineno"> 3269</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l03269" name="l03269"></a><span class="lineno"> 3269</span>    g_free (filename);</div>
 <div class="line"><a id="l03270" name="l03270"></a><span class="lineno"> 3270</span>}</div>
 <div class="line"><a id="l03271" name="l03271"></a><span class="lineno"> 3271</span> </div>
 <div class="line"><a id="l03272" name="l03272"></a><span class="lineno"> 3272</span><span class="keyword">static</span> gboolean</div>
@@ -5573,14 +5573,14 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="line"><a id="l05532" name="l05532"></a><span class="lineno"> 5532</span> </div>
 <div class="line"><a id="l05541" name="l05541"></a><span class="lineno"> 5541</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen05542" data-start="{" data-end="}">
-<div class="line"><a id="l05542" name="l05542"></a><span class="lineno"><a class="line" href="eom-window_8c.html#a3cb29ecc825cddfe37dc41399523230d"> 5542</a></span><a class="code hl_function" href="eom-window_8c.html#a3cb29ecc825cddfe37dc41399523230d">eom_window_set_mode</a> (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, <a class="code hl_enumeration" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58">EomWindowMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l05542" name="l05542"></a><span class="lineno"><a class="line" href="eom-window_8c.html#a3cb29ecc825cddfe37dc41399523230d"> 5542</a></span><a class="code hl_function" href="eom-window_8c.html#a3cb29ecc825cddfe37dc41399523230d">eom_window_set_mode</a> (<a class="code hl_struct" href="struct__EomWindow.html">EomWindow</a> *window, <a class="code hl_enumeration" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58">EomWindowMode</a> mode)</div>
 <div class="line"><a id="l05543" name="l05543"></a><span class="lineno"> 5543</span>{</div>
 <div class="line"><a id="l05544" name="l05544"></a><span class="lineno"> 5544</span>    g_return_if_fail (<a class="code hl_define" href="eom-window_8h.html#adf0a8ff31f1389077fff8c93fa27d94f">EOM_IS_WINDOW</a> (window));</div>
 <div class="line"><a id="l05545" name="l05545"></a><span class="lineno"> 5545</span> </div>
-<div class="line"><a id="l05546" name="l05546"></a><span class="lineno"> 5546</span>    <span class="keywordflow">if</span> (window-&gt;<a class="code hl_variable" href="struct__EomWindow.html#ae94067321a430ac628acde29ca31ef89">priv</a>-&gt;mode == <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l05546" name="l05546"></a><span class="lineno"> 5546</span>    <span class="keywordflow">if</span> (window-&gt;<a class="code hl_variable" href="struct__EomWindow.html#ae94067321a430ac628acde29ca31ef89">priv</a>-&gt;mode == mode)</div>
 <div class="line"><a id="l05547" name="l05547"></a><span class="lineno"> 5547</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l05548" name="l05548"></a><span class="lineno"> 5548</span> </div>
-<div class="line"><a id="l05549" name="l05549"></a><span class="lineno"> 5549</span>    <span class="keywordflow">switch</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>) {</div>
+<div class="line"><a id="l05549" name="l05549"></a><span class="lineno"> 5549</span>    <span class="keywordflow">switch</span> (mode) {</div>
 <div class="line"><a id="l05550" name="l05550"></a><span class="lineno"> 5550</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58aceb3641fd26fb4c37b584c7091d6a1d3">EOM_WINDOW_MODE_NORMAL</a>:</div>
 <div class="line"><a id="l05551" name="l05551"></a><span class="lineno"> 5551</span>        eom_window_stop_fullscreen (window,</div>
 <div class="line"><a id="l05552" name="l05552"></a><span class="lineno"> 5552</span>                        window-&gt;<a class="code hl_variable" href="struct__EomWindow.html#ae94067321a430ac628acde29ca31ef89">priv</a>-&gt;mode == <a class="code hl_enumvalue" href="eom-window_8h.html#ab4adb22fd6e2b3671ec6ac51d328fb58ac501ab80288e9cbea0fff72ad4864be0">EOM_WINDOW_MODE_SLIDESHOW</a>);</div>
@@ -5967,9 +5967,6 @@ $(document).ready(function(){initNavTree('eom-window_8c_source.html',''); initRe
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="agajim_8c_html_a3946a46b523c2da59c3afb306c4b3ed8"><div class="ttname"><a href="gajim_8c.html#a3946a46b523c2da59c3afb306c4b3ed8">proxy</a></div><div class="ttdeci">DBusGProxy * proxy</div><div class="ttdef"><b>Definition</b> <a href="gajim_8c_source.html#l00044">gajim.c:44</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a3c7b35ad9dab18b8310343c201f7b27e"><div class="ttname"><a href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a></div><div class="ttdeci">typedef long(ZCALLBACK *tell_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>

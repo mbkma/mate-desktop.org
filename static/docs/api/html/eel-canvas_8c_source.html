@@ -2305,13 +2305,13 @@ $(document).ready(function(){initNavTree('eel-canvas_8c_source.html',''); initRe
 <div class="line"><a id="l02378" name="l02378"></a><span class="lineno"> 2378</span>    vadjustment = gtk_scrollable_get_vadjustment (GTK_SCROLLABLE (canvas));</div>
 <div class="line"><a id="l02379" name="l02379"></a><span class="lineno"> 2379</span> </div>
 <div class="line"><a id="l02380" name="l02380"></a><span class="lineno"> 2380</span>    adjustment_value = gtk_adjustment_get_value (hadjustment);</div>
-<div class="line"><a id="l02381" name="l02381"></a><span class="lineno"> 2381</span>    changed_x = ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) adjustment_value) != cx;</div>
+<div class="line"><a id="l02381" name="l02381"></a><span class="lineno"> 2381</span>    changed_x = ((int) adjustment_value) != cx;</div>
 <div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span>    <span class="keywordflow">if</span> (changed_x)</div>
 <div class="line"><a id="l02383" name="l02383"></a><span class="lineno"> 2383</span>        gtk_adjustment_set_value (hadjustment,</div>
 <div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span>                                  (gdouble) cx);</div>
 <div class="line"><a id="l02385" name="l02385"></a><span class="lineno"> 2385</span> </div>
 <div class="line"><a id="l02386" name="l02386"></a><span class="lineno"> 2386</span>    adjustment_value = gtk_adjustment_get_value (vadjustment);</div>
-<div class="line"><a id="l02387" name="l02387"></a><span class="lineno"> 2387</span>    changed_y = ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) adjustment_value) != cy;</div>
+<div class="line"><a id="l02387" name="l02387"></a><span class="lineno"> 2387</span>    changed_y = ((int) adjustment_value) != cy;</div>
 <div class="line"><a id="l02388" name="l02388"></a><span class="lineno"> 2388</span>    <span class="keywordflow">if</span> (changed_y)</div>
 <div class="line"><a id="l02389" name="l02389"></a><span class="lineno"> 2389</span>        gtk_adjustment_set_value (vadjustment,</div>
 <div class="line"><a id="l02390" name="l02390"></a><span class="lineno"> 2390</span>                                  (gdouble) cy);</div>
@@ -2587,8 +2587,8 @@ $(document).ready(function(){initNavTree('eel-canvas_8c_source.html',''); initRe
 <div class="line"><a id="l02660" name="l02660"></a><span class="lineno"> 2660</span>        <span class="comment">/* canvas pixel coords */</span></div>
 <div class="line"><a id="l02661" name="l02661"></a><span class="lineno"> 2661</span>        <span class="keywordtype">int</span> cx, cy;</div>
 <div class="line"><a id="l02662" name="l02662"></a><span class="lineno"> 2662</span> </div>
-<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span>        cx = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) (x + 0.5);</div>
-<div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span>        cy = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) (y + 0.5);</div>
+<div class="line"><a id="l02663" name="l02663"></a><span class="lineno"> 2663</span>        cx = (int) (x + 0.5);</div>
+<div class="line"><a id="l02664" name="l02664"></a><span class="lineno"> 2664</span>        cy = (int) (y + 0.5);</div>
 <div class="line"><a id="l02665" name="l02665"></a><span class="lineno"> 2665</span> </div>
 <div class="line"><a id="l02666" name="l02666"></a><span class="lineno"> 2666</span>        <span class="comment">/* world coords */</span></div>
 <div class="line"><a id="l02667" name="l02667"></a><span class="lineno"> 2667</span>        <a class="code hl_function" href="eel-canvas_8c.html#a23bbc9bd8c278332c8090b199c6f7193">eel_canvas_c2w</a> (canvas, cx, cy, &amp;x, &amp;y);</div>
@@ -3918,7 +3918,6 @@ $(document).ready(function(){initNavTree('eel-canvas_8c_source.html',''); initRe
 <div class="ttc" id="aeel-canvas_8h_html_af9f68e28eae4ce43c87a9ed84614eb3d"><div class="ttname"><a href="eel-canvas_8h.html#af9f68e28eae4ce43c87a9ed84614eb3d">EelCanvasGroupClass</a></div><div class="ttdeci">struct _EelCanvasGroupClass EelCanvasGroupClass</div><div class="ttdef"><b>Definition</b> <a href="eel-canvas_8h_source.html#l00071">eel-canvas.h:71</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="agste-starfield_8c_html_a37e9de632d1eb76ff7dcd3d8172add7d"><div class="ttname"><a href="gste-starfield_8c.html#a37e9de632d1eb76ff7dcd3d8172add7d">point</a></div><div class="ttdeci">struct _point point</div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

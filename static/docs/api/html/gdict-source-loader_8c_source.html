@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('gdict-source-loader_8c_source.html',''
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordflow">for</span> (d = loader-&gt;<a class="code hl_variable" href="struct__GdictSourceLoader.html#ad9239386a7847e947f5cd1a702c767db">priv</a>-&gt;paths; d != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; d = d-&gt;next)</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    {</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      gchar *path = (gchar *) d-&gt;data;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      <span class="keyword">const</span> gchar *filename;</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      GDir *dir;</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>      dir = g_dir_open (path, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -359,22 +359,22 @@ $(document).ready(function(){initNavTree('gdict-source-loader_8c_source.html',''
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        {</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>          <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_dir_read_name (dir);</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>          <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>          filename = g_dir_read_name (dir);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>          <span class="keywordflow">if</span> (filename)</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            {</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>              gchar *full_path;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>              <span class="keywordflow">if</span> (!g_str_has_suffix (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="gdict-source-loader_8c.html#a804f4924e18bbc15d116c74f3d7bbd5b">GDICT_SOURCE_FILE_SUFFIX</a>))</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>              <span class="keywordflow">if</span> (!g_str_has_suffix (filename, <a class="code hl_define" href="gdict-source-loader_8c.html#a804f4924e18bbc15d116c74f3d7bbd5b">GDICT_SOURCE_FILE_SUFFIX</a>))</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>              full_path = g_build_filename (path, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>              full_path = g_build_filename (path, filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>              <span class="keywordflow">if</span> (g_file_test (full_path, G_FILE_TEST_IS_REGULAR))</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                {</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>          retval = g_slist_prepend (retval, full_path);</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>        }</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            }</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        }</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      <span class="keywordflow">while</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      <span class="keywordflow">while</span> (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>      g_dir_close (dir);</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    }</div>
@@ -520,15 +520,15 @@ $(document).ready(function(){initNavTree('gdict-source-loader_8c_source.html',''
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>      <span class="keywordflow">if</span> (strcmp (<a class="code hl_function" href="gdict-source_8c.html#a6a9e5c2dd479d19c39b5d6b7400787d8">gdict_source_get_name</a> (s), <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>) == 0)</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>        {</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>          gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>          gchar *filename;</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span> </div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>          g_object_get (G_OBJECT (s), <span class="stringliteral">&quot;filename&quot;</span>, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>          g_object_get (G_OBJECT (s), <span class="stringliteral">&quot;filename&quot;</span>, &amp;filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span> </div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>          <span class="keywordflow">if</span> (g_unlink (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) == -1)</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>          <span class="keywordflow">if</span> (g_unlink (filename) == -1)</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>            {</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>              g_warning (<span class="stringliteral">&quot;Unable to remove filename &#39;%s&#39; for the &quot;</span></div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>                         <span class="stringliteral">&quot;dictionary source &#39;%s&#39;\n&quot;</span>,</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                         <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>                         filename,</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>                         <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>);</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>              <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
@@ -595,7 +595,6 @@ $(document).ready(function(){initNavTree('gdict-source-loader_8c_source.html',''
 <div class="ttc" id="agdict-source_8h_html_a84315d92f85c0a71350954541aea0769"><div class="ttname"><a href="gdict-source_8h.html#a84315d92f85c0a71350954541aea0769">GDICT_SOURCE</a></div><div class="ttdeci">#define GDICT_SOURCE(obj)</div><div class="ttdef"><b>Definition</b> <a href="gdict-source_8h_source.html#l00030">gdict-source.h:30</a></div></div>
 <div class="ttc" id="agdict-source_8h_html_abca8ea6369645f77bd34ff595b4d5c4c"><div class="ttname"><a href="gdict-source_8h.html#abca8ea6369645f77bd34ff595b4d5c4c">GDICT_TYPE_SOURCE</a></div><div class="ttdeci">#define GDICT_TYPE_SOURCE</div><div class="ttdef"><b>Definition</b> <a href="gdict-source_8h_source.html#l00029">gdict-source.h:29</a></div></div>
 <div class="ttc" id="agdict-utils_8h_html"><div class="ttname"><a href="gdict-utils_8h.html">gdict-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="astruct__GdictSourceLoaderClass_html"><div class="ttname"><a href="struct__GdictSourceLoaderClass.html">_GdictSourceLoaderClass</a></div><div class="ttdef"><b>Definition</b> <a href="gdict-source-loader_8h_source.html#l00048">gdict-source-loader.h:49</a></div></div>

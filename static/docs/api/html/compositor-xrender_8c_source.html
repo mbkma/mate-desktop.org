@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">typedef</span> <span class="keyword">struct </span>_conv</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>{</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">double</span> *<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>} conv;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">     for the _get_window_pixmap function */</span></div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  Pixmap shaded_back_pixmap;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keywordtype">int</span> mode;</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  gboolean damaged;</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  gboolean shaped;</div>
@@ -355,32 +355,32 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>make_gaussian_map (<span class="keywordtype">double</span> r)</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>{</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  conv *c;</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, centre;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keywordtype">int</span> size, centre;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordtype">int</span> x, y;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keywordtype">double</span> t, g;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) ceil ((r * 3)) + 1) &amp; ~1;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  centre = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> / 2;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  c = g_malloc (<span class="keyword">sizeof</span> (conv) + <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * <span class="keyword">sizeof</span> (<span class="keywordtype">double</span>));</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  c-&gt;size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  size = ((int) ceil ((r * 3)) + 1) &amp; ~1;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  centre = size / 2;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  c = g_malloc (<span class="keyword">sizeof</span> (conv) + size * size * <span class="keyword">sizeof</span> (<span class="keywordtype">double</span>));</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  c-&gt;size = size;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  c-&gt;data = (<span class="keywordtype">double</span> *) (c + 1);</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  t = 0.0;</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">for</span> (y = 0; y &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>; y++)</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">for</span> (y = 0; y &lt; size; y++)</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    {</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="keywordflow">for</span> (x = 0; x &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>; x++)</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="keywordflow">for</span> (x = 0; x &lt; size; x++)</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        {</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>          g = gaussian (r, (<span class="keywordtype">double</span>) (x - centre), (<span class="keywordtype">double</span>) (y - centre));</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>          t += g;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>          c-&gt;data[y * <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + x] = g;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>          c-&gt;data[y * size + x] = g;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        }</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    }</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keywordflow">for</span> (y = 0; y &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>; y++)</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keywordflow">for</span> (y = 0; y &lt; size; y++)</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    {</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>      <span class="keywordflow">for</span> (x = 0; x &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>; x++)</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>      <span class="keywordflow">for</span> (x = 0; x &lt; size; x++)</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        {</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>          c-&gt;data[y * <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + x] /= t;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>          c-&gt;data[y * size + x] /= t;</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
@@ -584,7 +584,7 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>  <span class="keywordtype">int</span> x, y;</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>  guchar d;</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>  <span class="keywordtype">int</span> x_diff;</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  <span class="keywordtype">int</span> opacity_int = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(opacity * 25);</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>  <span class="keywordtype">int</span> opacity_int = (int)(opacity * 25);</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  <span class="keywordtype">int</span> screen_number = <a class="code hl_function" href="screen_8c.html#a77c81ebb13738a1ab8f693e19c6f4642">meta_screen_get_screen_number</a> (screen);</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span> </div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>  <span class="keywordflow">if</span> (info==<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -756,8 +756,8 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  <span class="keywordflow">if</span> (visible_region == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  shadow_dx = -1 * (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) shadow_offsets_x [cw-&gt;shadow_type] - borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.left;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>  shadow_dy = -1 * (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) shadow_offsets_y [cw-&gt;shadow_type] - borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.top;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  shadow_dx = -1 * (int) shadow_offsets_x [cw-&gt;shadow_type] - borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.left;</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>  shadow_dy = -1 * (int) shadow_offsets_y [cw-&gt;shadow_type] - borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.top;</div>
 <div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
 <div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>  rect.x = 0;</div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>  rect.y = 0;</div>
@@ -1215,8 +1215,8 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>            <a class="code hl_function" href="frame_8c.html#a3e1b9f7941c11d5b72fcdf7739af87a4">meta_frame_calc_borders</a> (frame, &amp;borders);</div>
 <div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>        }</div>
 <div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span> </div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>      cw-&gt;shadow_dx = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) shadow_offsets_x [cw-&gt;shadow_type] + borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.left;</div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>      cw-&gt;shadow_dy = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) shadow_offsets_y [cw-&gt;shadow_type] + borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.top;</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>      cw-&gt;shadow_dx = (int) shadow_offsets_x [cw-&gt;shadow_type] + borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.left;</div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>      cw-&gt;shadow_dy = (int) shadow_offsets_y [cw-&gt;shadow_type] + borders.<a class="code hl_variable" href="struct__MetaFrameBorders.html#ac4297b4b3325744c16472523aa655f63">invisible</a>.top;</div>
 <div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span> </div>
 <div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>      <span class="keywordflow">if</span> (!cw-&gt;shadow)</div>
 <div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>        {</div>
@@ -3694,9 +3694,6 @@ $(document).ready(function(){initNavTree('compositor-xrender_8c_source.html','')
 <div class="ttc" id="aframe_8c_html_a84c5bdf9092542d9a844d272fd7e053b"><div class="ttname"><a href="frame_8c.html#a84c5bdf9092542d9a844d272fd7e053b">meta_frame_borders_clear</a></div><div class="ttdeci">void meta_frame_borders_clear(MetaFrameBorders *borders)</div><div class="ttdef"><b>Definition</b> <a href="frame_8c_source.html#l00335">frame.c:335</a></div></div>
 <div class="ttc" id="aframe_8h_html"><div class="ttname"><a href="frame_8h.html">frame.h</a></div></div>
 <div class="ttc" id="ag-util_8h_html_a6fe2f4f6fcc916c9f89b3e1c876f5432"><div class="ttname"><a href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a></div><div class="ttdeci">#define debug(format,...)</div><div class="ttdef"><b>Definition</b> <a href="g-util_8h_source.html#l00042">g-util.h:42</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="arfkill_8h_html_aa05eefca31ad6bd4617aac0176b8366e"><div class="ttname"><a href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a></div><div class="ttdeci">__u8 type</div><div class="ttdef"><b>Definition</b> <a href="rfkill_8h_source.html#l00001">rfkill.h:1</a></div></div>

@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">static</span> GdkPixbuf*</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>blank_pixbuf (<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  guchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  guchar *buf;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">int</span> rowstride;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  g_return_val_if_fail (width &gt; 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -147,11 +147,11 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="comment">/* Always align rows to 32-bit boundaries */</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  rowstride = 4 * ((4 * width + 4) / 4);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_try_malloc (height * rowstride);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  buf = g_try_malloc (height * rowstride);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">if</span> (!buf)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> gdk_pixbuf_new_from_data (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, GDK_COLORSPACE_RGB,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordflow">return</span> gdk_pixbuf_new_from_data (buf, GDK_COLORSPACE_RGB,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                   <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 8,</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                                   width, height, rowstride,</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                   free_buffer, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -206,10 +206,10 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = b0 &lt;&lt; 16;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  a = a0 &lt;&lt; 16;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  dr = ((rf-r0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)width;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  dg = ((gf-g0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)width;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  db = ((bf-b0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)width;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  da = ((af-a0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)width;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  dr = ((rf-r0)&lt;&lt;16)/(int)width;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  dg = ((gf-g0)&lt;&lt;16)/(int)width;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  db = ((bf-b0)&lt;&lt;16)/(int)width;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  da = ((af-a0)&lt;&lt;16)/(int)width;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="comment">/* render the first line */</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordflow">for</span> (i=0; i&lt;width; i++)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    {</div>
@@ -279,10 +279,10 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = b0&lt;&lt;16;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  a = a0&lt;&lt;16;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  dr = ((rf-r0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)height;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  dg = ((gf-g0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)height;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  db = ((bf-b0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)height;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  da = ((af-a0)&lt;&lt;16)/(<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)height;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  dr = ((rf-r0)&lt;&lt;16)/(int)height;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  dg = ((gf-g0)&lt;&lt;16)/(int)height;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  db = ((bf-b0)&lt;&lt;16)/(int)height;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  da = ((af-a0)&lt;&lt;16)/(int)height;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordflow">for</span> (i=0; i&lt;height; i++)</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>{</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  GdkPixbuf *pixbuf, *tmp;</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordtype">int</span> j;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">float</span> a, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">float</span> a, offset;</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ptr;</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pixels;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordtype">int</span> rowstride;</div>
@@ -356,10 +356,10 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  width = width * 4;</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="comment">/* copy the first line to the other lines with corresponding offset */</span></div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordflow">for</span> (j=0, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>=0.0; j&lt;rowstride*height; j += rowstride)</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordflow">for</span> (j=0, offset=0.0; j&lt;rowstride*height; j += rowstride)</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> (&amp;(pixels[j]), &amp;ptr[4*(<span class="keywordtype">int</span>)<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>], width);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> += a;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> (&amp;(pixels[j]), &amp;ptr[4*(<span class="keywordtype">int</span>)offset], width);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      offset += a;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    }</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  g_object_unref (G_OBJECT (tmp));</div>
@@ -399,18 +399,18 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  k = 0;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  r = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].red * 0xffffff);</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  g = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].green * 0xffffff);</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].blue * 0xffffff);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  a = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].alpha * 0xffffff);</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  r = (long)(colors[0].red * 0xffffff);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  g = (long)(colors[0].green * 0xffffff);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (long)(colors[0].blue * 0xffffff);</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  a = (long)(colors[0].alpha * 0xffffff);</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="comment">/* render the first line */</span></div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordflow">for</span> (i=1; i&lt;count; i++)</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      dr = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].red   - colors[i-1].red)  *0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      dg = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].green - colors[i-1].green)*0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      db = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].blue  - colors[i-1].blue) *0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>      da = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].alpha  - colors[i-1].alpha) *0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      dr = (int)((colors[i].red   - colors[i-1].red)  *0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      dg = (int)((colors[i].green - colors[i-1].green)*0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      db = (int)((colors[i].blue  - colors[i-1].blue) *0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>      da = (int)((colors[i].alpha  - colors[i-1].alpha) *0xffffff)/(<span class="keywordtype">int</span>)width2;</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>      <span class="keywordflow">for</span> (j=0; j&lt;width2; j++)</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        {</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>          *ptr++ = (<span class="keywordtype">unsigned</span> char)(r&gt;&gt;16);</div>
@@ -423,10 +423,10 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>          a += da;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>          k++;</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    }</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      r = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].red   * 0xffffff);</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      g = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].green * 0xffffff);</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].blue  * 0xffffff);</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      a = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].alpha  * 0xffffff);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      r = (long)(colors[i].red   * 0xffffff);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      g = (long)(colors[i].green * 0xffffff);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (long)(colors[i].blue  * 0xffffff);</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      a = (long)(colors[i].alpha  * 0xffffff);</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    }</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keywordflow">for</span> (j=k; j&lt;width; j++)</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    {</div>
@@ -477,17 +477,17 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  k = 0;</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  r = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].red * 0xffffff);</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  g = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].green * 0xffffff);</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].blue * 0xffffff);</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  a = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[0].alpha * 0xffffff);</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  r = (long)(colors[0].red * 0xffffff);</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  g = (long)(colors[0].green * 0xffffff);</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (long)(colors[0].blue * 0xffffff);</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  a = (long)(colors[0].alpha * 0xffffff);</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  <span class="keywordflow">for</span> (i=1; i&lt;count; i++)</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    {</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>      dr = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].red   - colors[i-1].red)  *0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>      dg = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].green - colors[i-1].green)*0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>      db = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].blue  - colors[i-1].blue) *0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>      da = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((colors[i].alpha  - colors[i-1].alpha) *0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>      dr = (int)((colors[i].red   - colors[i-1].red)  *0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>      dg = (int)((colors[i].green - colors[i-1].green)*0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>      db = (int)((colors[i].blue  - colors[i-1].blue) *0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>      da = (int)((colors[i].alpha  - colors[i-1].alpha) *0xffffff)/(<span class="keywordtype">int</span>)height2;</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>      <span class="keywordflow">for</span> (j=0; j&lt;height2; j++)</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>        {</div>
@@ -508,10 +508,10 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>          a += da;</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>          k++;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    }</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>      r = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].red   * 0xffffff);</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      g = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].green * 0xffffff);</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].blue  * 0xffffff);</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      a = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>)(colors[i].alpha  * 0xffffff);</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>      r = (long)(colors[i].red   * 0xffffff);</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      g = (long)(colors[i].green * 0xffffff);</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>      <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = (long)(colors[i].blue  * 0xffffff);</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>      a = (long)(colors[i].alpha  * 0xffffff);</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    }</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>  <span class="keywordflow">if</span> (k&lt;height)</div>
@@ -545,7 +545,7 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>                                     <span class="keywordtype">int</span> count)</div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span>{</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>  GdkPixbuf *pixbuf, *tmp;</div>
-<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>  <span class="keywordtype">float</span> a, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>  <span class="keywordtype">float</span> a, offset;</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>  <span class="keywordtype">int</span> j;</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ptr;</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pixels;</div>
@@ -592,10 +592,10 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>  width = width * 3;</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span> </div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>  <span class="comment">/* copy the first line to the other lines with corresponding offset */</span></div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>  <span class="keywordflow">for</span> (j=0, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>=0; j&lt;rowstride*height; j += rowstride)</div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>  <span class="keywordflow">for</span> (j=0, offset=0; j&lt;rowstride*height; j += rowstride)</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    {</div>
-<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>      <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> (&amp;(pixels[j]), &amp;ptr[3*(<span class="keywordtype">int</span>)<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>], width);</div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>      <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> += a;</div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>      <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a> (&amp;(pixels[j]), &amp;ptr[3*(<span class="keywordtype">int</span>)offset], width);</div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>      offset += a;</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    }</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>  g_object_unref (G_OBJECT (tmp));</div>
@@ -641,7 +641,7 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="comment">           * pixbuf contains 0, it should remain 0.</span></div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment">           */</span></div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>          <span class="comment">/* ((*p / 255.0) * (alpha / 255.0)) * 255; */</span></div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>          *p = (guchar) (((<span class="keywordtype">int</span>) *p * (<span class="keywordtype">int</span>) alpha) / (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) 255);</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>          *p = (guchar) (((<span class="keywordtype">int</span>) *p * (<span class="keywordtype">int</span>) alpha) / (int) 255);</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>          ++p; <span class="comment">/* skip A */</span></div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        }</div>
@@ -695,7 +695,7 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  <span class="comment">/* render the gradient into an array */</span></div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  <span class="keywordflow">for</span> (i = 1; i &lt; n_alphas; i++)</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    {</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>      da = (((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)(alphas[i] - (<span class="keywordtype">int</span>) alphas[i-1])) &lt;&lt; 8) / (<span class="keywordtype">int</span>) width2;</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>      da = (((int)(alphas[i] - (<span class="keywordtype">int</span>) alphas[i-1])) &lt;&lt; 8) / (<span class="keywordtype">int</span>) width2;</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>      <span class="keywordflow">for</span> (j = 0; j &lt; width2; j++)</div>
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        {</div>
@@ -733,7 +733,7 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="comment">           * pixbuf contains 0, it should remain 0.</span></div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="comment">           */</span></div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>          <span class="comment">/* ((*p / 255.0) * (alpha / 255.0)) * 255; */</span></div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>          *p = (guchar) (((<span class="keywordtype">int</span>) *p * (<span class="keywordtype">int</span>) *gradient_p) / (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) 255);</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>          *p = (guchar) (((<span class="keywordtype">int</span>) *p * (<span class="keywordtype">int</span>) *gradient_p) / (int) 255);</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>          p += 4;</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>          ++gradient_p;</div>
@@ -846,27 +846,27 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>  rowstride = gdk_pixbuf_get_rowstride (pixbuf);</div>
 <div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
 <div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="preprocessor">#define RGBA_SCALING 16777215.0 </span><span class="comment">/* 0xffffff */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  r1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[0].red   * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  g1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[0].green * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  b1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[0].blue  * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  a1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[0].alpha * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  r1 = (long) (colors1[0].red   * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  g1 = (long) (colors1[0].green * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  b1 = (long) (colors1[0].blue  * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  a1 = (long) (colors1[0].alpha * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  r2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[0].red   * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>  g2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[0].green * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  b2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[0].blue  * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  a2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[0].alpha * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  r2 = (long) (colors2[0].red   * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>  g2 = (long) (colors2[0].green * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>  b2 = (long) (colors2[0].blue  * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>  a2 = (long) (colors2[0].alpha * <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a>);</div>
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>  height_scaling = <a class="code hl_define" href="gradient_8c.html#a0586eedaf7f3cd1ba3b690e9bc3c0cc6">RGBA_SCALING</a> / (gdouble) height;</div>
 <div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span> </div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  dr1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[1].red-colors1[0].red     * height_scaling);</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  dg1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[1].green-colors1[0].green * height_scaling);</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>  db1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[1].blue-colors1[0].blue   * height_scaling);</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  da1 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors1[1].alpha-colors1[0].alpha * height_scaling);</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  dr1 = (long) (colors1[1].red-colors1[0].red     * height_scaling);</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  dg1 = (long) (colors1[1].green-colors1[0].green * height_scaling);</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>  db1 = (long) (colors1[1].blue-colors1[0].blue   * height_scaling);</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  da1 = (long) (colors1[1].alpha-colors1[0].alpha * height_scaling);</div>
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span> </div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>  dr2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[1].red-colors2[0].red     * height_scaling);</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>  dg2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[1].green-colors2[0].green * height_scaling);</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>  db2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[1].blue-colors2[0].blue   * height_scaling);</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  da2 = (<a class="code hl_function" href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a>) (colors2[1].alpha-colors2[0].alpha * height_scaling);</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>  dr2 = (long) (colors2[1].red-colors2[0].red     * height_scaling);</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>  dg2 = (long) (colors2[1].green-colors2[0].green * height_scaling);</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>  db2 = (long) (colors2[1].blue-colors2[0].blue   * height_scaling);</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>  da2 = (long) (colors2[1].alpha-colors2[0].alpha * height_scaling);</div>
 <div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span><span class="preprocessor">#undef RGBA_SCALING</span></div>
 <div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span> </div>
 <div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>  <span class="keywordflow">for</span> (i=0,k=0,l=0,ll=thickness1; i&lt;height; i++)</div>
@@ -971,10 +971,6 @@ $(document).ready(function(){initNavTree('gradient_8c_source.html',''); initResi
 <div class="ttc" id="agradient_8h_html_af912293d213dc0ea62a1a7a039491991a31e1c19713f5603b4610ac774706f713"><div class="ttname"><a href="gradient_8h.html#af912293d213dc0ea62a1a7a039491991a31e1c19713f5603b4610ac774706f713">META_GRADIENT_DIAGONAL</a></div><div class="ttdeci">@ META_GRADIENT_DIAGONAL</div><div class="ttdef"><b>Definition</b> <a href="gradient_8h_source.html#l00042">gradient.h:42</a></div></div>
 <div class="ttc" id="agradient_8h_html_af912293d213dc0ea62a1a7a039491991a7da482c5655d4b73cfbdc045699591f1"><div class="ttname"><a href="gradient_8h.html#af912293d213dc0ea62a1a7a039491991a7da482c5655d4b73cfbdc045699591f1">META_GRADIENT_HORIZONTAL</a></div><div class="ttdeci">@ META_GRADIENT_HORIZONTAL</div><div class="ttdef"><b>Definition</b> <a href="gradient_8h_source.html#l00041">gradient.h:41</a></div></div>
 <div class="ttc" id="agradient_8h_html_af912293d213dc0ea62a1a7a039491991a9c24acf0b1214da40936bd41fb9812d5"><div class="ttname"><a href="gradient_8h.html#af912293d213dc0ea62a1a7a039491991a9c24acf0b1214da40936bd41fb9812d5">META_GRADIENT_LAST</a></div><div class="ttdeci">@ META_GRADIENT_LAST</div><div class="ttdef"><b>Definition</b> <a href="gradient_8h_source.html#l00044">gradient.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a3c7b35ad9dab18b8310343c201f7b27e"><div class="ttname"><a href="ioapi_8h.html#a3c7b35ad9dab18b8310343c201f7b27e">long</a></div><div class="ttdeci">typedef long(ZCALLBACK *tell_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="arfkill_8h_html_aa05eefca31ad6bd4617aac0176b8366e"><div class="ttname"><a href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a></div><div class="ttdeci">__u8 type</div><div class="ttdef"><b>Definition</b> <a href="rfkill_8h_source.html#l00001">rfkill.h:1</a></div></div>

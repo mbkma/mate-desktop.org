@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    GList *l;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    GString *common_part = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    gboolean matches = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    guint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = 0;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    guint offset = 0;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *encoding;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    gboolean use_utf8 = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
@@ -236,14 +236,14 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            }</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt;= g_utf8_strlen (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, -1)) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">if</span> (offset &gt;= g_utf8_strlen (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, -1)) {</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                g_free(<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                g_free(path);</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                matches = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            }</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            offset_name = g_utf8_offset_to_pointer (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            offset_name = g_utf8_offset_to_pointer (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, offset);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keywordflow">if</span> (offset_name == g_utf8_strrchr (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, -1, <span class="charliteral">&#39;.&#39;</span>)) {</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                g_free (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>);</div>
@@ -263,7 +263,7 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            g_free (path);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">if</span> (matches == <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a> &amp;&amp; cur_char != <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>++;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            offset++;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>            common_part = g_string_append_unichar (common_part,</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                    cur_char);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        } <span class="keywordflow">else</span> {</div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>pack_files (<a class="code hl_typedef" href="caja-sendto-command_8c.html#af6986e83d8ccaeadb0232b7bf63d1ca3">NS_ui</a> *ui)</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>{</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordtype">char</span> *engrampa_cmd;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    GList *l;</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    GString *cmd;</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordtype">char</span> *pack_type, *tmp_dir, *tmp_work_dir;</div>
@@ -291,9 +291,9 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    GFile *fp;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    engrampa_cmd = g_find_program_in_path (<span class="stringliteral">&quot;engrampa&quot;</span>);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_entry_get_text(GTK_ENTRY(ui-&gt;pack_entry));</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    filename = gtk_entry_get_text(GTK_ENTRY(ui-&gt;pack_entry));</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    g_assert (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    g_assert (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; *filename != <span class="charliteral">&#39;\0&#39;</span>);</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    tmp_dir = g_strdup_printf (<span class="stringliteral">&quot;%s/caja-sendto-%s&quot;</span>,</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                   g_get_tmp_dir(), g_get_user_name());</div>
@@ -315,7 +315,7 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                <a class="code hl_define" href="caja-sendto-command_8c.html#a6a6b1af0e83506412a21e3e7f64573d9">CAJA_SENDTO_LAST_COMPRESS</a>,</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                gtk_combo_box_get_active(GTK_COMBO_BOX(ui-&gt;pack_combobox)));</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    packed_file = g_strconcat (tmp_work_dir, <span class="stringliteral">&quot;/&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, pack_type, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    packed_file = g_strconcat (tmp_work_dir, <span class="stringliteral">&quot;/&quot;</span>, filename, pack_type, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    g_free (pack_type);</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    g_free (tmp_work_dir);</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
@@ -468,10 +468,10 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    send_enabled = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">if</span> (enabled) {</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_entry_get_text(GTK_ENTRY(ui-&gt;pack_entry));</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <span class="charliteral">&#39;\0&#39;</span>)</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>        filename = gtk_entry_get_text(GTK_ENTRY(ui-&gt;pack_entry));</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || *filename == <span class="charliteral">&#39;\0&#39;</span>)</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>            send_enabled = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    }</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
@@ -614,10 +614,10 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>    send_enabled = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span> </div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    <span class="keywordflow">if</span> (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (ui-&gt;pack_checkbutton))) {</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span> </div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_entry_get_text(GTK_ENTRY(ui-&gt;pack_entry));</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <span class="charliteral">&#39;\0&#39;</span>)</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>        filename = gtk_entry_get_text(GTK_ENTRY(ui-&gt;pack_entry));</div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || *filename == <span class="charliteral">&#39;\0&#39;</span>)</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>            send_enabled = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>    }</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span> </div>
@@ -688,25 +688,25 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    gtk_entry_set_text (GTK_ENTRY (ui-&gt;pack_entry), <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Files&quot;</span>));</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keywordflow">if</span> (one_file) {</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <span class="keywordtype">char</span> *filepath = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <span class="keywordtype">char</span> *filepath = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, *filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        filepath = g_filename_from_uri ((<span class="keywordtype">char</span> *)<a class="code hl_variable" href="caja-sendto-command_8c.html#a2ed872085743770f9b132fe2f8a2615f">file_list</a>-&gt;data,</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>                <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>        <span class="keywordflow">if</span> (filepath != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_path_get_basename (filepath);</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>[0] != <span class="charliteral">&#39;\0&#39;</span>)</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            gtk_entry_set_text (GTK_ENTRY (ui-&gt;pack_entry), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>            filename = g_path_get_basename (filepath);</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <span class="keywordflow">if</span> (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; filename[0] != <span class="charliteral">&#39;\0&#39;</span>)</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>            gtk_entry_set_text (GTK_ENTRY (ui-&gt;pack_entry), filename);</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>        g_free (filename);</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        g_free (filepath);</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = get_filename_from_list ();</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>[0] != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>        <span class="keywordtype">char</span> *filename = get_filename_from_list ();</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>        <span class="keywordflow">if</span> (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; filename[0] != <span class="charliteral">&#39;\0&#39;</span>) {</div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>            gtk_entry_set_text (GTK_ENTRY (ui-&gt;pack_entry),</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>                    filename);</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>        }</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        g_free (filename);</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    }</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    set_contact_widgets (ui);</div>
@@ -909,24 +909,24 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span> </div>
 <div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>    <span class="keywordflow">for</span> (i = 0; filenames != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; filenames[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) {</div>
 <div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>        GFile *file;</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, *escaped, *uri;</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        <span class="keywordtype">char</span> *filename, *escaped, *uri;</div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span> </div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>        file = g_file_new_for_commandline_arg (filenames[i]);</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (file);</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = get_target_filename (file);  <span class="comment">// to handle recent:// and trash://</span></div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>        filename = g_file_get_path (file);</div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>        <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>            filename = get_target_filename (file);  <span class="comment">// to handle recent:// and trash://</span></div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>            <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                g_object_unref (file);</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>            }</div>
 <div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>        }</div>
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>        g_object_unref (file);</div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span> </div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>        <span class="keywordflow">if</span> (g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_DIR) != <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>        <span class="keywordflow">if</span> (g_file_test (filename, G_FILE_TEST_IS_DIR) != <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
 <div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>            <a class="code hl_variable" href="caja-sendto-command_8c.html#aa9aea93214581baa2133b4b5a5d0f21a">has_dirs</a> = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>        uri = g_filename_to_uri (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>        uri = g_filename_to_uri (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        g_free (filename);</div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>        escaped = escape_ampersands_and_commas (uri);</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span> </div>
 <div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>        <span class="keywordflow">if</span> (escaped == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
@@ -1021,8 +1021,6 @@ $(document).ready(function(){initNavTree('caja-sendto-command_8c_source.html',''
 <div class="ttc" id="acaja-sendto-plugin_8h_html_ab72f7855a20b6d13e4e8f011c476c477a066e84fe21cb4054be137544cfa24bc9"><div class="ttname"><a href="caja-sendto-plugin_8h.html#ab72f7855a20b6d13e4e8f011c476c477a066e84fe21cb4054be137544cfa24bc9">CAJA_CAPS_SEND_DIRECTORIES</a></div><div class="ttdeci">@ CAJA_CAPS_SEND_DIRECTORIES</div><div class="ttdef"><b>Definition</b> <a href="caja-sendto-plugin_8h_source.html#l00054">caja-sendto-plugin.h:54</a></div></div>
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

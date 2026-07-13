@@ -420,12 +420,12 @@ $(document).ready(function(){initNavTree('panel-run-dialog_8c_source.html',''); 
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    g_clear_object(&amp;(dialog-&gt;icon));</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">if</span> (icon) {</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordtype">int</span>          <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        <span class="keywordtype">int</span>          size;</div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        gtk_icon_size_lookup (GTK_ICON_SIZE_DIALOG, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        gtk_icon_size_lookup (GTK_ICON_SIZE_DIALOG, &amp;size, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        GtkIconInfo *icon_info = gtk_icon_theme_lookup_by_gicon (icon_theme, icon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, GTK_ICON_LOOKUP_FORCE_SIZE);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        GtkIconInfo *icon_info = gtk_icon_theme_lookup_by_gicon (icon_theme, icon, size, GTK_ICON_LOOKUP_FORCE_SIZE);</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        pixbuf = gtk_icon_info_load_icon (icon_info, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        g_object_unref (icon_info);</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
@@ -1545,15 +1545,15 @@ $(document).ready(function(){initNavTree('panel-run-dialog_8c_source.html',''); 
 <div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>    list = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span> </div>
 <div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>    <span class="keywordflow">for</span> (l = possible_executables; l; l = l-&gt;next) {</div>
-<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>        <span class="keywordtype">char</span>       *basename;</div>
 <div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span> </div>
-<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = l-&gt;data;</div>
-<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>        basename = g_path_get_basename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>        filename = l-&gt;data;</div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>        basename = g_path_get_basename (filename);</div>
 <div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span> </div>
 <div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>        <span class="keywordflow">if</span> (basename [0] == <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a> &amp;&amp;</div>
-<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>            g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR) &amp;&amp;</div>
-<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>            g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_EXECUTABLE)) {</div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>            g_file_test (filename, G_FILE_TEST_IS_REGULAR) &amp;&amp;</div>
+<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>            g_file_test (filename, G_FILE_TEST_IS_EXECUTABLE)) {</div>
 <div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span> </div>
 <div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>            <span class="keywordflow">if</span> (g_list_find_custom (existing_items, basename,</div>
 <div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>                        (GCompareFunc) strcmp)) {</div>
@@ -1604,7 +1604,7 @@ $(document).ready(function(){initNavTree('panel-run-dialog_8c_source.html',''); 
 <div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>    GList *list;</div>
 <div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>    GList *executables;</div>
 <div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>    <span class="keywordtype">char</span>   <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a>;</div>
-<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>    <span class="keywordtype">char</span>  *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>    <span class="keywordtype">char</span>  *buf;</div>
 <div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>    <span class="keywordtype">char</span>  *dirname;</div>
 <div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>    <span class="keywordtype">char</span>  *dirprefix;</div>
 <div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>    <span class="keywordtype">char</span>  *<a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>;</div>
@@ -1614,9 +1614,9 @@ $(document).ready(function(){initNavTree('panel-run-dialog_8c_source.html',''); 
 <div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>    list = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>    executables = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span> </div>
-<div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_path_get_basename (text);</div>
-<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>    <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a> = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0];</div>
-<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>    buf = g_path_get_basename (text);</div>
+<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>    <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a> = buf[0];</div>
+<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>    g_free (buf);</div>
 <div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a> == <span class="charliteral">&#39;/&#39;</span> || <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a> == <span class="charliteral">&#39;.&#39;</span>)</div>
 <div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span> </div>
@@ -2279,9 +2279,6 @@ $(document).ready(function(){initNavTree('panel-run-dialog_8c_source.html',''); 
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="agsm-app-dialog_8h_html_aca58d81a114743e9cc23ed3d23387007"><div class="ttname"><a href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a></div><div class="ttdeci">const char const char * comment</div><div class="ttdef"><b>Definition</b> <a href="gsm-app-dialog_8h_source.html#l00035">gsm-app-dialog.h:35</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

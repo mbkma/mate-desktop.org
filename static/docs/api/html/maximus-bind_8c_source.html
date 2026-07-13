@@ -441,7 +441,7 @@ $(document).ready(function(){initNavTree('maximus-bind_8c_source.html',''); init
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment">/* GObject stuff */</span></div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>create_rule (<a class="code hl_struct" href="struct__MaximusBind.html">MaximusBind</a> *bind, <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>create_rule (<a class="code hl_struct" href="struct__MaximusBind.html">MaximusBind</a> *bind, <span class="keyword">const</span> gchar *filename)</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>{</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#define RULE_GROUP &quot;Fullscreening&quot;</span></div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="preprocessor">#define RULE_WMCLASS &quot;WMClass&quot;</span></div>
@@ -455,10 +455,10 @@ $(document).ready(function(){initNavTree('maximus-bind_8c_source.html',''); init
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  priv = bind-&gt;<a class="code hl_variable" href="struct__MaximusBind.html#ad94fd36e8595540e3f247a5eddf3d74b">priv</a>;</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  file = g_key_file_new ();</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  g_key_file_load_from_file (file, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, 0, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  g_key_file_load_from_file (file, filename, 0, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  {</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    g_warning (<span class="stringliteral">&quot;Unable to load %s: %s\n&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    g_warning (<span class="stringliteral">&quot;Unable to load %s: %s\n&quot;</span>, filename, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    g_key_file_free (file);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">return</span>;</div>
@@ -482,7 +482,7 @@ $(document).ready(function(){initNavTree('maximus-bind_8c_source.html',''); init
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    g_free (rule-&gt;unfullscreen);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    g_slice_free (MaximusRule, rule);</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    g_warning (<span class="stringliteral">&quot;Unable to load %s, missing strings&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    g_warning (<span class="stringliteral">&quot;Unable to load %s, missing strings&quot;</span>, filename);</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  }</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    priv-&gt;rules = g_list_append (priv-&gt;rules, rule);</div>
@@ -506,13 +506,13 @@ $(document).ready(function(){initNavTree('maximus-bind_8c_source.html',''); init
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>  <span class="keywordflow">while</span> ((<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a> = g_dir_read_name (dir)))</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>  {</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    gchar *filename;</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>= g_build_filename (path, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    filename= g_build_filename (path, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    create_rule (bind, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>    create_rule (bind, filename);</div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    g_free (filename);</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  }</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  g_dir_close (dir);</div>
@@ -599,7 +599,6 @@ $(document).ready(function(){initNavTree('maximus-bind_8c_source.html',''); init
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-control-center_2capplets_2keybindings_2eggaccelerators_8c_html_a226ffd5a91dfabac225884714cdfe8af"><div class="ttname"><a href="mate-control-center_2capplets_2keybindings_2eggaccelerators_8c.html#a226ffd5a91dfabac225884714cdfe8af">egg_accelerator_parse_virtual</a></div><div class="ttdeci">gboolean egg_accelerator_parse_virtual(const gchar *accelerator, guint *accelerator_key, guint *keycode, EggVirtualModifierType *accelerator_mods)</div><div class="ttdef"><b>Definition</b> <a href="mate-control-center_2capplets_2keybindings_2eggaccelerators_8c_source.html#l00211">mate-control-center/capplets/keybindings/eggaccelerators.c:211</a></div></div>
 <div class="ttc" id="amate-control-center_2capplets_2keybindings_2eggaccelerators_8h_html_a94da4777c4befa64192ea0bbeaa83747"><div class="ttname"><a href="mate-control-center_2capplets_2keybindings_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747">EggVirtualModifierType</a></div><div class="ttdeci">EggVirtualModifierType</div><div class="ttdef"><b>Definition</b> <a href="mate-control-center_2capplets_2keybindings_2eggaccelerators_8h_source.html#l00033">mate-control-center/capplets/keybindings/eggaccelerators.h:34</a></div></div>

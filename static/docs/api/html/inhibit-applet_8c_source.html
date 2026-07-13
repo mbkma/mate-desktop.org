@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('inhibit-applet_8c_source.html',''); in
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    guint bus_watch_id;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    guint <a class="code hl_variable" href="ephy-zoom_8h.html#a450c3ab9b94a4663caad892b7193b547">level</a>;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">/* a cache for panel size */</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    gint size;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} GpmInhibitApplet;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
@@ -279,17 +279,17 @@ $(document).ready(function(){initNavTree('inhibit-applet_8c_source.html',''); in
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                             GdkRectangle *allocation)</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>{</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    GpmInhibitApplet *applet = <a class="code hl_define" href="inhibit-applet_8c.html#ae3ee58c863f373bf206574284d8a05f3">GPM_INHIBIT_APPLET</a> (widget);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">int</span>               <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">int</span>               size = 0;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">switch</span> (<a class="code hl_function" href="mate-panel-applet_8c.html#a560a18ee1b8f6757df188c752b786d51">mate_panel_applet_get_orient</a> (MATE_PANEL_APPLET (applet))) {</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_LEFT:</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_RIGHT:</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = allocation-&gt;width;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            size = allocation-&gt;width;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_UP:</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_DOWN:</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = allocation-&gt;height;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            size = allocation-&gt;height;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            <span class="keywordflow">break</span>;</div>
@@ -297,23 +297,23 @@ $(document).ready(function(){initNavTree('inhibit-applet_8c_source.html',''); in
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="comment">/* Scale to the actual size of the applet, don&#39;t quantize to original icon size */</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="comment">/* GtkImage already contains a check to do nothing if it&#39;s the same */</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    gtk_image_set_pixel_size (GTK_IMAGE(applet-&gt;image), <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    gtk_image_set_pixel_size (GTK_IMAGE(applet-&gt;image), size);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>}</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>gpm_applet_update_tooltip (GpmInhibitApplet *applet)</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>{</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    <span class="keyword">const</span> gchar *buf;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <span class="keywordflow">if</span> (applet-&gt;proxy == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot connect to mate-power-manager&quot;</span>);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot connect to mate-power-manager&quot;</span>);</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <span class="keywordflow">if</span> (applet-&gt;cookie &gt; 0) {</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Automatic sleep inhibited&quot;</span>);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Automatic sleep inhibited&quot;</span>);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Automatic sleep enabled&quot;</span>);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Automatic sleep enabled&quot;</span>);</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        }</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    }</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    gtk_widget_set_tooltip_text (GTK_WIDGET(applet), <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    gtk_widget_set_tooltip_text (GTK_WIDGET(applet), buf);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>}</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">static</span> gboolean</div>
@@ -605,8 +605,6 @@ $(document).ready(function(){initNavTree('inhibit-applet_8c_source.html',''); in
 <div class="ttc" id="ainhibit-applet_8c_html_a9f579d318c282467fd73ad9abc8b3f91"><div class="ttname"><a href="inhibit-applet_8c.html#a9f579d318c282467fd73ad9abc8b3f91">GPM_INHIBIT_APPLET_ICON_INVALID</a></div><div class="ttdeci">#define GPM_INHIBIT_APPLET_ICON_INVALID</div><div class="ttdef"><b>Definition</b> <a href="inhibit-applet_8c_source.html#l00085">inhibit-applet.c:85</a></div></div>
 <div class="ttc" id="ainhibit-applet_8c_html_aa22555ca0b2809c69b2fea5ef5388083"><div class="ttname"><a href="inhibit-applet_8c.html#aa22555ca0b2809c69b2fea5ef5388083">gpm_inhibit_applet_get_type</a></div><div class="ttdeci">GType gpm_inhibit_applet_get_type(void)</div></div>
 <div class="ttc" id="ainhibit-applet_8c_html_ae3ee58c863f373bf206574284d8a05f3"><div class="ttname"><a href="inhibit-applet_8c.html#ae3ee58c863f373bf206574284d8a05f3">GPM_INHIBIT_APPLET</a></div><div class="ttdeci">#define GPM_INHIBIT_APPLET(o)</div><div class="ttdef"><b>Definition</b> <a href="inhibit-applet_8c_source.html#l00041">inhibit-applet.c:41</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-panel-applet_8c_html_a086a89c91d47b0417ff81f5e17141c77"><div class="ttname"><a href="mate-panel-applet_8c.html#a086a89c91d47b0417ff81f5e17141c77">mate_panel_applet_set_flags</a></div><div class="ttdeci">void mate_panel_applet_set_flags(MatePanelApplet *applet, MatePanelAppletFlags flags)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel-applet_8c_source.html#l00212">mate-panel-applet.c:212</a></div></div>

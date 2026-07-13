@@ -130,12 +130,12 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">static</span> gboolean finished = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">static</span> gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_define" href="atril-thumbnailer_8c.html#a724ddb07c287f1d4371e997101fce2b7">THUMBNAIL_SIZE</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">static</span> gint size = <a class="code hl_define" href="atril-thumbnailer_8c.html#a724ddb07c287f1d4371e997101fce2b7">THUMBNAIL_SIZE</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">static</span> gboolean time_limit = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">static</span> <span class="keywordtype">char</span> **file_arguments = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">static</span> <span class="keyword">const</span> GOptionEntry goption_options[] = {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    { <span class="stringliteral">&quot;size&quot;</span>, <span class="charliteral">&#39;s&#39;</span>, 0, G_OPTION_ARG_INT, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <span class="stringliteral">&quot;SIZE&quot;</span> },</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    { <span class="stringliteral">&quot;size&quot;</span>, <span class="charliteral">&#39;s&#39;</span>, 0, G_OPTION_ARG_INT, &amp;size, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <span class="stringliteral">&quot;SIZE&quot;</span> },</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        { <span class="stringliteral">&quot;no-limit&quot;</span>, <span class="charliteral">&#39;l&#39;</span>, G_OPTION_FLAG_REVERSE, G_OPTION_ARG_NONE, &amp;time_limit, <span class="stringliteral">&quot;Don&#39;t limit the thumbnailing time to 15 seconds&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> },</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    { G_OPTION_REMAINING, 0, 0, G_OPTION_ARG_FILENAME_ARRAY, &amp;file_arguments, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <span class="stringliteral">&quot;&lt;input&gt; &lt;output&gt;&quot;</span> },</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    { <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> }</div>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">struct </span><a class="code hl_typedef" href="pluma-file-browser-store_8c.html#aaaaac747f3018cb621906106e980f62a">AsyncData</a> {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="struct__EvDocument.html">EvDocument</a>  *document;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> gchar *output;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    gint         <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    gint         size;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    gboolean     success;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>atril_thumbnail_pngenc_get (<a class="code hl_struct" href="struct__EvDocument.html">EvDocument</a> *document, <span class="keyword">const</span> <span class="keywordtype">char</span> *thumbnail, <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>atril_thumbnail_pngenc_get (<a class="code hl_struct" href="struct__EvDocument.html">EvDocument</a> *document, <span class="keyword">const</span> <span class="keywordtype">char</span> *thumbnail, <span class="keywordtype">int</span> size)</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_struct" href="struct__EvRenderContext.html">EvRenderContext</a> *rc;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordtype">double</span> width, height;</div>
@@ -267,7 +267,7 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <a class="code hl_function" href="ev-document_8c.html#a5a01bc5acbf69d30bed5717ad796b3d8">ev_document_get_page_size</a> (document, 0, &amp;width, &amp;height);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    rc = <a class="code hl_function" href="ev-render-context_8c.html#a5a5f77ddedb7a8541a1199d8e4a99dec">ev_render_context_new</a> (page, 0, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> / width);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    rc = <a class="code hl_function" href="ev-render-context_8c.html#a5a5f77ddedb7a8541a1199d8e4a99dec">ev_render_context_new</a> (page, 0, size / width);</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    pixbuf = <a class="code hl_function" href="ev-document-thumbnails_8c.html#af4b5767f645aa00965b35fb5fb5df343">ev_document_thumbnails_get_thumbnail</a> (<a class="code hl_define" href="ev-document-thumbnails_8h.html#a08b0ec9eb2a5819170389f5c3bb3f04c">EV_DOCUMENT_THUMBNAILS</a> (document),</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                               rc, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    g_object_unref (rc);</div>
@@ -345,7 +345,7 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    g_option_context_free (context);</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; 1) {</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">if</span> (size &lt; 1) {</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        g_printerr (<span class="stringliteral">&quot;Size cannot be smaller than 1 pixel\n&quot;</span>);</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        g_strfreev (file_arguments);</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
@@ -389,7 +389,7 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>.document = document;</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>.output = output;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>.size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>.size = size;</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        g_thread_new (<span class="stringliteral">&quot;EvThumbnailerAsyncRenderer&quot;</span>,</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                (GThreadFunc) atril_thumbnail_pngenc_get_async,</div>
@@ -404,7 +404,7 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>.success ? 0 : -2;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    }</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">if</span> (!atril_thumbnail_pngenc_get (document, output, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)) {</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">if</span> (!atril_thumbnail_pngenc_get (document, output, size)) {</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        g_object_unref (document);</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>        <a class="code hl_function" href="ev-init_8c.html#a10db453f3cac55224b42458ed0c5ea83">ev_shutdown</a> ();</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>        g_strfreev (file_arguments);</div>
@@ -442,7 +442,6 @@ $(document).ready(function(){initNavTree('atril-thumbnailer_8c_source.html','');
 <div class="ttc" id="aev-init_8c_html_a10db453f3cac55224b42458ed0c5ea83"><div class="ttname"><a href="ev-init_8c.html#a10db453f3cac55224b42458ed0c5ea83">ev_shutdown</a></div><div class="ttdeci">void ev_shutdown(void)</div><div class="ttdef"><b>Definition</b> <a href="ev-init_8c_source.html#l00069">ev-init.c:69</a></div></div>
 <div class="ttc" id="aev-init_8c_html_ab2afbda257866b06281ff86e3cf87242"><div class="ttname"><a href="ev-init_8c.html#ab2afbda257866b06281ff86e3cf87242">ev_init</a></div><div class="ttdeci">gboolean ev_init(void)</div><div class="ttdef"><b>Definition</b> <a href="ev-init_8c_source.html#l00049">ev-init.c:49</a></div></div>
 <div class="ttc" id="aev-render-context_8c_html_a5a5f77ddedb7a8541a1199d8e4a99dec"><div class="ttname"><a href="ev-render-context_8c.html#a5a5f77ddedb7a8541a1199d8e4a99dec">ev_render_context_new</a></div><div class="ttdeci">EvRenderContext * ev_render_context_new(EvPage *page, gint rotation, gdouble scale)</div><div class="ttdef"><b>Definition</b> <a href="ev-render-context_8c_source.html#l00053">ev-render-context.c:53</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-file-browser-store_8c_html_aaaaac747f3018cb621906106e980f62a"><div class="ttname"><a href="pluma-file-browser-store_8c.html#aaaaac747f3018cb621906106e980f62a">AsyncData</a></div><div class="ttdeci">struct _AsyncData AsyncData</div><div class="ttdef"><b>Definition</b> <a href="pluma-file-browser-store_8c_source.html#l00055">pluma-file-browser-store.c:55</a></div></div>

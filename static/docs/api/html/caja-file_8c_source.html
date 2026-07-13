@@ -611,14 +611,14 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span> </div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="keyword">static</span> <a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>caja_file_new_from_filename (<a class="code hl_struct" href="structCajaDirectory.html">CajaDirectory</a> *directory,</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                 <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>                 <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>                 gboolean self_owned)</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>{</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file;</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>    g_assert (<a class="code hl_define" href="caja-directory_8h.html#a98edcc64a4688aa0c6934ebdff2fdbcb">CAJA_IS_DIRECTORY</a> (directory));</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    g_assert (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>    g_assert (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>[0] != <span class="charliteral">&#39;\0&#39;</span>);</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>    g_assert (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>    g_assert (filename[0] != <span class="charliteral">&#39;\0&#39;</span>);</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span> </div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>    <span class="keywordflow">if</span> (<a class="code hl_define" href="caja-desktop-directory_8h.html#a745f93861706e3672130d245ad97602c">CAJA_IS_DESKTOP_DIRECTORY</a> (directory)) {</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>        <span class="keywordflow">if</span> (self_owned) {</div>
@@ -636,7 +636,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment">             * that references a file like this. (See #349840) */</span></div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>            file = <a class="code hl_define" href="caja-file_8h.html#a390156bdce578266c47ba30a4b579004">CAJA_FILE</a> (g_object_new (<a class="code hl_define" href="caja-vfs-file_8h.html#a670b94f52cfd94d6fb7746cf10a3e70a">CAJA_TYPE_VFS_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>));</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>        }</div>
-<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_str_has_suffix (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="caja-file-utilities_8h.html#a3b6b26506f6aeba6f6cec1d5f2bf3a42">CAJA_SAVED_SEARCH_EXTENSION</a>)) {</div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_str_has_suffix (filename, <a class="code hl_define" href="caja-file-utilities_8h.html#a3b6b26506f6aeba6f6cec1d5f2bf3a42">CAJA_SAVED_SEARCH_EXTENSION</a>)) {</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        file = <a class="code hl_define" href="caja-file_8h.html#a390156bdce578266c47ba30a4b579004">CAJA_FILE</a> (g_object_new (<a class="code hl_define" href="caja-saved-search-file_8h.html#aae08d2d96eae75c23a20aee33aa1c41c">CAJA_TYPE_SAVED_SEARCH_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>));</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>        file = <a class="code hl_define" href="caja-file_8h.html#a390156bdce578266c47ba30a4b579004">CAJA_FILE</a> (g_object_new (<a class="code hl_define" href="caja-vfs-file_8h.html#a670b94f52cfd94d6fb7746cf10a3e70a">CAJA_TYPE_VFS_FILE</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>));</div>
@@ -644,7 +644,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a6f6293f968a474329b29538e4dc98f46">directory</a> = <a class="code hl_function" href="caja-directory_8c.html#a474828a878c56eb65bf6f9774e9d7256">caja_directory_ref</a> (directory);</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a599c9b6b62d1755af3247da1e067337d">name</a> = g_ref_string_new (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a599c9b6b62d1755af3247da1e067337d">name</a> = g_ref_string_new (filename);</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="preprocessor">#ifdef CAJA_FILE_DEBUG_REF</span></div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <a class="code hl_define" href="caja-file_8c.html#ac54bf7fa500a9671c93da826da3ee4c1">DEBUG_REF_PRINTF</a>(<span class="stringliteral">&quot;%10p ref&#39;d&quot;</span>, file);</div>
@@ -2229,7 +2229,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l02107" name="l02107"></a><span class="lineno"> 2107</span>    GDriveStartStopType start_stop_type;</div>
 <div class="line"><a id="l02108" name="l02108"></a><span class="lineno"> 2108</span>    gboolean thumbnailing_failed;</div>
 <div class="line"><a id="l02109" name="l02109"></a><span class="lineno"> 2109</span>    <span class="keywordtype">int</span> uid, gid;</div>
-<div class="line"><a id="l02110" name="l02110"></a><span class="lineno"> 2110</span>    goffset <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l02110" name="l02110"></a><span class="lineno"> 2110</span>    goffset size;</div>
 <div class="line"><a id="l02111" name="l02111"></a><span class="lineno"> 2111</span>    goffset size_on_disk;</div>
 <div class="line"><a id="l02112" name="l02112"></a><span class="lineno"> 2112</span>    <span class="keywordtype">int</span> sort_order;</div>
 <div class="line"><a id="l02113" name="l02113"></a><span class="lineno"> 2113</span>    time_t atime, mtime, ctime, btime;</div>
@@ -2501,14 +2501,14 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l02379" name="l02379"></a><span class="lineno"> 2379</span>        g_free ((<span class="keywordtype">char</span> *)group);</div>
 <div class="line"><a id="l02380" name="l02380"></a><span class="lineno"> 2380</span>    }</div>
 <div class="line"><a id="l02381" name="l02381"></a><span class="lineno"> 2381</span> </div>
-<div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = -1;</div>
+<div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span>    size = -1;</div>
 <div class="line"><a id="l02383" name="l02383"></a><span class="lineno"> 2383</span>    <span class="keywordflow">if</span> (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_STANDARD_SIZE)) {</div>
-<div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_file_info_get_size (info);</div>
+<div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span>        size = g_file_info_get_size (info);</div>
 <div class="line"><a id="l02385" name="l02385"></a><span class="lineno"> 2385</span>    }</div>
-<div class="line"><a id="l02386" name="l02386"></a><span class="lineno"> 2386</span>    <span class="keywordflow">if</span> (file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a> != <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>) {</div>
+<div class="line"><a id="l02386" name="l02386"></a><span class="lineno"> 2386</span>    <span class="keywordflow">if</span> (file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a> != size) {</div>
 <div class="line"><a id="l02387" name="l02387"></a><span class="lineno"> 2387</span>        changed = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02388" name="l02388"></a><span class="lineno"> 2388</span>    }</div>
-<div class="line"><a id="l02389" name="l02389"></a><span class="lineno"> 2389</span>    file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a> = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l02389" name="l02389"></a><span class="lineno"> 2389</span>    file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a> = size;</div>
 <div class="line"><a id="l02390" name="l02390"></a><span class="lineno"> 2390</span> </div>
 <div class="line"><a id="l02391" name="l02391"></a><span class="lineno"> 2391</span>    size_on_disk = -1;</div>
 <div class="line"><a id="l02392" name="l02392"></a><span class="lineno"> 2392</span>    <span class="keywordflow">if</span> (g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_STANDARD_ALLOCATED_SIZE)) {</div>
@@ -2863,7 +2863,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l02731" name="l02731"></a><span class="lineno"> 2731</span> </div>
 <div class="line"><a id="l02732" name="l02732"></a><span class="lineno"> 2732</span><span class="keyword">static</span> <a class="code hl_enumeration" href="caja-file-private_8h.html#a420efb63b76819aa6d332ee73835ba94">Knowledge</a></div>
 <div class="line"><a id="l02733" name="l02733"></a><span class="lineno"> 2733</span>get_size (<a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file,</div>
-<div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span>      goffset *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span>      goffset *size,</div>
 <div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span>      gboolean size_on_disk)</div>
 <div class="line"><a id="l02736" name="l02736"></a><span class="lineno"> 2736</span>{</div>
 <div class="line"><a id="l02737" name="l02737"></a><span class="lineno"> 2737</span>    <span class="comment">/* If we tried and failed, then treat it like there is no size</span></div>
@@ -2894,9 +2894,9 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span> </div>
 <div class="line"><a id="l02763" name="l02763"></a><span class="lineno"> 2763</span>    <span class="comment">/* We have a size! */</span></div>
 <div class="line"><a id="l02764" name="l02764"></a><span class="lineno"> 2764</span>    <span class="keywordflow">if</span> (size_on_disk) {</div>
-<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span>        *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a1d1dbdad99209a167a7c42c7985036e6">size_on_disk</a>;</div>
+<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span>        *size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a1d1dbdad99209a167a7c42c7985036e6">size_on_disk</a>;</div>
 <div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span>        *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a>;</div>
+<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span>        *size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a>;</div>
 <div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>    }</div>
 <div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span> </div>
 <div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="caja-file-private_8h.html#a420efb63b76819aa6d332ee73835ba94ab2bfa5bb129d3f664288464618f317cb">KNOWN</a>;</div>
@@ -4723,7 +4723,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04565" name="l04565"></a><span class="lineno"> 4565</span><a class="code hl_typedef" href="caja-icon-info_8h.html#ab67fe532670f0003221e5f4ae6e39258">CajaIconInfo</a> *</div>
 <div class="foldopen" id="foldopen04566" data-start="{" data-end="}">
 <div class="line"><a id="l04566" name="l04566"></a><span class="lineno"><a class="line" href="caja-file_8c.html#a37ff8abdaf36caabc59d037b27b8bfd7"> 4566</a></span><a class="code hl_function" href="caja-file_8c.html#a37ff8abdaf36caabc59d037b27b8bfd7">caja_file_get_icon</a> (<a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file,</div>
-<div class="line"><a id="l04567" name="l04567"></a><span class="lineno"> 4567</span>            <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l04567" name="l04567"></a><span class="lineno"> 4567</span>            <span class="keywordtype">int</span> size,</div>
 <div class="line"><a id="l04568" name="l04568"></a><span class="lineno"> 4568</span>            <span class="keywordtype">int</span> scale,</div>
 <div class="line"><a id="l04569" name="l04569"></a><span class="lineno"> 4569</span>            <a class="code hl_enumeration" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</div>
 <div class="line"><a id="l04570" name="l04570"></a><span class="lineno"> 4570</span>{</div>
@@ -4739,7 +4739,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04580" name="l04580"></a><span class="lineno"> 4580</span>    <span class="keywordflow">if</span> (gicon) {</div>
 <div class="line"><a id="l04581" name="l04581"></a><span class="lineno"> 4581</span>        GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l04582" name="l04582"></a><span class="lineno"> 4582</span> </div>
-<div class="line"><a id="l04583" name="l04583"></a><span class="lineno"> 4583</span>        icon = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (gicon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l04583" name="l04583"></a><span class="lineno"> 4583</span>        icon = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (gicon, size, scale);</div>
 <div class="line"><a id="l04584" name="l04584"></a><span class="lineno"> 4584</span>        g_object_unref (gicon);</div>
 <div class="line"><a id="l04585" name="l04585"></a><span class="lineno"> 4585</span> </div>
 <div class="line"><a id="l04586" name="l04586"></a><span class="lineno"> 4586</span>        pixbuf = <a class="code hl_function" href="caja-icon-info_8c.html#a202f1ee944e7dc0a79677ff8865495e9">caja_icon_info_get_pixbuf</a> (icon);</div>
@@ -4761,9 +4761,9 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04602" name="l04602"></a><span class="lineno"> 4602</span>        <span class="keywordtype">int</span> modified_size;</div>
 <div class="line"><a id="l04603" name="l04603"></a><span class="lineno"> 4603</span> </div>
 <div class="line"><a id="l04604" name="l04604"></a><span class="lineno"> 4604</span>        <span class="keywordflow">if</span> (flags &amp; <a class="code hl_enumvalue" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969aab521be1e10be47b52805f0483733ec0">CAJA_FILE_ICON_FLAGS_FORCE_THUMBNAIL_SIZE</a>) {</div>
-<div class="line"><a id="l04605" name="l04605"></a><span class="lineno"> 4605</span>            modified_size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * scale;</div>
+<div class="line"><a id="l04605" name="l04605"></a><span class="lineno"> 4605</span>            modified_size = size * scale;</div>
 <div class="line"><a id="l04606" name="l04606"></a><span class="lineno"> 4606</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l04607" name="l04607"></a><span class="lineno"> 4607</span>            modified_size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * scale * <a class="code hl_variable" href="caja-file_8c.html#a21b87ac6cd08a08c21c0ce74f53d7120">cached_thumbnail_size</a> / <a class="code hl_define" href="caja-icon-info_8h.html#ac1f868e3316feb412c48d58c253d5a72">CAJA_ICON_SIZE_STANDARD</a>;</div>
+<div class="line"><a id="l04607" name="l04607"></a><span class="lineno"> 4607</span>            modified_size = size * scale * <a class="code hl_variable" href="caja-file_8c.html#a21b87ac6cd08a08c21c0ce74f53d7120">cached_thumbnail_size</a> / <a class="code hl_define" href="caja-icon-info_8h.html#ac1f868e3316feb412c48d58c253d5a72">CAJA_ICON_SIZE_STANDARD</a>;</div>
 <div class="line"><a id="l04608" name="l04608"></a><span class="lineno"> 4608</span>        }</div>
 <div class="line"><a id="l04609" name="l04609"></a><span class="lineno"> 4609</span> </div>
 <div class="line"><a id="l04610" name="l04610"></a><span class="lineno"> 4610</span>        <span class="keywordflow">if</span> (file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a94ddc8a08dad1431ee62dfeaf179e209">thumbnail</a>) {</div>
@@ -4831,11 +4831,11 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04672" name="l04672"></a><span class="lineno"> 4672</span>        gicon = <a class="code hl_function" href="caja-file_8c.html#a2823c277d64cc7edb7980f1373a2810b">caja_file_get_gicon</a> (file, flags);</div>
 <div class="line"><a id="l04673" name="l04673"></a><span class="lineno"> 4673</span> </div>
 <div class="line"><a id="l04674" name="l04674"></a><span class="lineno"> 4674</span>    <span class="keywordflow">if</span> (gicon) {</div>
-<div class="line"><a id="l04675" name="l04675"></a><span class="lineno"> 4675</span>        icon = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (gicon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l04675" name="l04675"></a><span class="lineno"> 4675</span>        icon = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (gicon, size, scale);</div>
 <div class="line"><a id="l04676" name="l04676"></a><span class="lineno"> 4676</span>        g_object_unref (gicon);</div>
 <div class="line"><a id="l04677" name="l04677"></a><span class="lineno"> 4677</span>        <span class="keywordflow">return</span> icon;</div>
 <div class="line"><a id="l04678" name="l04678"></a><span class="lineno"> 4678</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l04679" name="l04679"></a><span class="lineno"> 4679</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (get_default_file_icon (flags), <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l04679" name="l04679"></a><span class="lineno"> 4679</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (get_default_file_icon (flags), size, scale);</div>
 <div class="line"><a id="l04680" name="l04680"></a><span class="lineno"> 4680</span>    }</div>
 <div class="line"><a id="l04681" name="l04681"></a><span class="lineno"> 4681</span>}</div>
 </div>
@@ -4843,7 +4843,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04683" name="l04683"></a><span class="lineno"> 4683</span>cairo_surface_t *</div>
 <div class="foldopen" id="foldopen04684" data-start="{" data-end="}">
 <div class="line"><a id="l04684" name="l04684"></a><span class="lineno"><a class="line" href="caja-file_8c.html#ab1c3e51e9c820a7639c9535bd4c190a4"> 4684</a></span><a class="code hl_function" href="caja-file_8c.html#ab1c3e51e9c820a7639c9535bd4c190a4">caja_file_get_icon_surface</a> (<a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file,</div>
-<div class="line"><a id="l04685" name="l04685"></a><span class="lineno"> 4685</span>                            <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l04685" name="l04685"></a><span class="lineno"> 4685</span>                            <span class="keywordtype">int</span> size,</div>
 <div class="line"><a id="l04686" name="l04686"></a><span class="lineno"> 4686</span>                            gboolean force_size,</div>
 <div class="line"><a id="l04687" name="l04687"></a><span class="lineno"> 4687</span>                            <span class="keywordtype">int</span> scale,</div>
 <div class="line"><a id="l04688" name="l04688"></a><span class="lineno"> 4688</span>                            <a class="code hl_enumeration" href="caja-file_8h.html#a2ff990799d2a3c25740d0adb8ba17969">CajaFileIconFlags</a> flags)</div>
@@ -4851,9 +4851,9 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04690" name="l04690"></a><span class="lineno"> 4690</span>    <a class="code hl_typedef" href="caja-icon-info_8h.html#ab67fe532670f0003221e5f4ae6e39258">CajaIconInfo</a> *info;</div>
 <div class="line"><a id="l04691" name="l04691"></a><span class="lineno"> 4691</span>    cairo_surface_t *surface;</div>
 <div class="line"><a id="l04692" name="l04692"></a><span class="lineno"> 4692</span> </div>
-<div class="line"><a id="l04693" name="l04693"></a><span class="lineno"> 4693</span>    info = <a class="code hl_function" href="caja-file_8c.html#a37ff8abdaf36caabc59d037b27b8bfd7">caja_file_get_icon</a> (file, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale, flags);</div>
+<div class="line"><a id="l04693" name="l04693"></a><span class="lineno"> 4693</span>    info = <a class="code hl_function" href="caja-file_8c.html#a37ff8abdaf36caabc59d037b27b8bfd7">caja_file_get_icon</a> (file, size, scale, flags);</div>
 <div class="line"><a id="l04694" name="l04694"></a><span class="lineno"> 4694</span>    <span class="keywordflow">if</span> (force_size) {</div>
-<div class="line"><a id="l04695" name="l04695"></a><span class="lineno"> 4695</span>        surface =  <a class="code hl_function" href="caja-icon-info_8c.html#a9e13017857c093ae4a03adda2ad3e93a">caja_icon_info_get_surface_at_size</a> (info, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l04695" name="l04695"></a><span class="lineno"> 4695</span>        surface =  <a class="code hl_function" href="caja-icon-info_8c.html#a9e13017857c093ae4a03adda2ad3e93a">caja_icon_info_get_surface_at_size</a> (info, size);</div>
 <div class="line"><a id="l04696" name="l04696"></a><span class="lineno"> 4696</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l04697" name="l04697"></a><span class="lineno"> 4697</span>        surface = <a class="code hl_function" href="caja-icon-info_8c.html#a865cdde0afb5307066b4d0a3ca0c27d1">caja_icon_info_get_surface</a> (info);</div>
 <div class="line"><a id="l04698" name="l04698"></a><span class="lineno"> 4698</span>    }</div>
@@ -5136,19 +5136,19 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l04982" name="l04982"></a><span class="lineno"> 4982</span>    <span class="keywordflow">if</span> (file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa02771e263f01a432e13c9c2cea1d07d">trash_orig_path</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l04983" name="l04983"></a><span class="lineno"> 4983</span>        <a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *orig_file, *parent;</div>
 <div class="line"><a id="l04984" name="l04984"></a><span class="lineno"> 4984</span>        GFile *location;</div>
-<div class="line"><a id="l04985" name="l04985"></a><span class="lineno"> 4985</span>        <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l04985" name="l04985"></a><span class="lineno"> 4985</span>        <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l04986" name="l04986"></a><span class="lineno"> 4986</span> </div>
 <div class="line"><a id="l04987" name="l04987"></a><span class="lineno"> 4987</span>        orig_file = <a class="code hl_function" href="caja-file_8c.html#a937b8babafc64ec10f0519fffee30395">caja_file_get_trash_original_file</a> (file);</div>
 <div class="line"><a id="l04988" name="l04988"></a><span class="lineno"> 4988</span>        parent = <a class="code hl_function" href="caja-file_8c.html#abd0d66eaf2db12f0bf03d40091221702">caja_file_get_parent</a> (orig_file);</div>
 <div class="line"><a id="l04989" name="l04989"></a><span class="lineno"> 4989</span>        location = <a class="code hl_function" href="caja-file_8c.html#ab14995c4b4ab599548c36c5275b36a34">caja_file_get_location</a> (parent);</div>
 <div class="line"><a id="l04990" name="l04990"></a><span class="lineno"> 4990</span> </div>
-<div class="line"><a id="l04991" name="l04991"></a><span class="lineno"> 4991</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_parse_name (location);</div>
+<div class="line"><a id="l04991" name="l04991"></a><span class="lineno"> 4991</span>        filename = g_file_get_parse_name (location);</div>
 <div class="line"><a id="l04992" name="l04992"></a><span class="lineno"> 4992</span> </div>
 <div class="line"><a id="l04993" name="l04993"></a><span class="lineno"> 4993</span>        g_object_unref (location);</div>
 <div class="line"><a id="l04994" name="l04994"></a><span class="lineno"> 4994</span>        <a class="code hl_function" href="caja-file_8c.html#aa441a4ff38b5fd671b5e3c048d5c3ac9">caja_file_unref</a> (parent);</div>
 <div class="line"><a id="l04995" name="l04995"></a><span class="lineno"> 4995</span>        <a class="code hl_function" href="caja-file_8c.html#aa441a4ff38b5fd671b5e3c048d5c3ac9">caja_file_unref</a> (orig_file);</div>
 <div class="line"><a id="l04996" name="l04996"></a><span class="lineno"> 4996</span> </div>
-<div class="line"><a id="l04997" name="l04997"></a><span class="lineno"> 4997</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l04997" name="l04997"></a><span class="lineno"> 4997</span>        <span class="keywordflow">return</span> filename;</div>
 <div class="line"><a id="l04998" name="l04998"></a><span class="lineno"> 4998</span>    }</div>
 <div class="line"><a id="l04999" name="l04999"></a><span class="lineno"> 4999</span> </div>
 <div class="line"><a id="l05000" name="l05000"></a><span class="lineno"> 5000</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -6177,7 +6177,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l06241" name="l06241"></a><span class="lineno"> 6241</span>{</div>
 <div class="line"><a id="l06242" name="l06242"></a><span class="lineno"> 6242</span>    guint item_count;</div>
 <div class="line"><a id="l06243" name="l06243"></a><span class="lineno"> 6243</span>    gboolean count_unreadable;</div>
-<div class="line"><a id="l06244" name="l06244"></a><span class="lineno"> 6244</span>    goffset <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l06244" name="l06244"></a><span class="lineno"> 6244</span>    goffset size;</div>
 <div class="line"><a id="l06245" name="l06245"></a><span class="lineno"> 6245</span> </div>
 <div class="line"><a id="l06246" name="l06246"></a><span class="lineno"> 6246</span>    <span class="keywordflow">if</span> (file == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l06247" name="l06247"></a><span class="lineno"> 6247</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -6193,19 +6193,19 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l06257" name="l06257"></a><span class="lineno"> 6257</span>    }</div>
 <div class="line"><a id="l06258" name="l06258"></a><span class="lineno"> 6258</span> </div>
 <div class="line"><a id="l06259" name="l06259"></a><span class="lineno"> 6259</span>    <span class="keywordflow">if</span> (size_on_disk) {</div>
-<div class="line"><a id="l06260" name="l06260"></a><span class="lineno"> 6260</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a1d1dbdad99209a167a7c42c7985036e6">size_on_disk</a>;</div>
+<div class="line"><a id="l06260" name="l06260"></a><span class="lineno"> 6260</span>        size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a1d1dbdad99209a167a7c42c7985036e6">size_on_disk</a>;</div>
 <div class="line"><a id="l06261" name="l06261"></a><span class="lineno"> 6261</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l06262" name="l06262"></a><span class="lineno"> 6262</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a>;</div>
+<div class="line"><a id="l06262" name="l06262"></a><span class="lineno"> 6262</span>        size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a>;</div>
 <div class="line"><a id="l06263" name="l06263"></a><span class="lineno"> 6263</span>    }</div>
 <div class="line"><a id="l06264" name="l06264"></a><span class="lineno"> 6264</span> </div>
-<div class="line"><a id="l06265" name="l06265"></a><span class="lineno"> 6265</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> == -1) {</div>
+<div class="line"><a id="l06265" name="l06265"></a><span class="lineno"> 6265</span>    <span class="keywordflow">if</span> (size == -1) {</div>
 <div class="line"><a id="l06266" name="l06266"></a><span class="lineno"> 6266</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l06267" name="l06267"></a><span class="lineno"> 6267</span>    }</div>
 <div class="line"><a id="l06268" name="l06268"></a><span class="lineno"> 6268</span> </div>
 <div class="line"><a id="l06269" name="l06269"></a><span class="lineno"> 6269</span>    <span class="keywordflow">if</span> (g_settings_get_boolean (<a class="code hl_variable" href="caja-global-preferences_8c.html#a8bfaad33430b60ec266e7145cf5e1382">caja_preferences</a>, <a class="code hl_define" href="caja-global-preferences_8h.html#a2fa47ed4ee232c4536f134770fe961a9">CAJA_PREFERENCES_USE_IEC_UNITS</a>))</div>
-<div class="line"><a id="l06270" name="l06270"></a><span class="lineno"> 6270</span>        <span class="keywordflow">return</span> g_format_size_full ((guint64) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, G_FORMAT_SIZE_IEC_UNITS);</div>
+<div class="line"><a id="l06270" name="l06270"></a><span class="lineno"> 6270</span>        <span class="keywordflow">return</span> g_format_size_full ((guint64) size, G_FORMAT_SIZE_IEC_UNITS);</div>
 <div class="line"><a id="l06271" name="l06271"></a><span class="lineno"> 6271</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l06272" name="l06272"></a><span class="lineno"> 6272</span>        <span class="keywordflow">return</span> g_format_size ((guint64) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l06272" name="l06272"></a><span class="lineno"> 6272</span>        <span class="keywordflow">return</span> g_format_size ((guint64) size);</div>
 <div class="line"><a id="l06273" name="l06273"></a><span class="lineno"> 6273</span>}</div>
 <div class="line"><a id="l06274" name="l06274"></a><span class="lineno"> 6274</span> </div>
 <div class="line"><a id="l06287" name="l06287"></a><span class="lineno"> 6287</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
@@ -6214,7 +6214,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l06290" name="l06290"></a><span class="lineno"> 6290</span>{</div>
 <div class="line"><a id="l06291" name="l06291"></a><span class="lineno"> 6291</span>    guint item_count;</div>
 <div class="line"><a id="l06292" name="l06292"></a><span class="lineno"> 6292</span>    gboolean count_unreadable;</div>
-<div class="line"><a id="l06293" name="l06293"></a><span class="lineno"> 6293</span>    goffset <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l06293" name="l06293"></a><span class="lineno"> 6293</span>    goffset size;</div>
 <div class="line"><a id="l06294" name="l06294"></a><span class="lineno"> 6294</span>    <span class="keywordtype">char</span> * formatted;</div>
 <div class="line"><a id="l06295" name="l06295"></a><span class="lineno"> 6295</span>    <span class="keywordtype">char</span> * formatted_plus_real;</div>
 <div class="line"><a id="l06296" name="l06296"></a><span class="lineno"> 6296</span>    <span class="keywordtype">char</span> * real_size;</div>
@@ -6233,22 +6233,22 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l06309" name="l06309"></a><span class="lineno"> 6309</span>    }</div>
 <div class="line"><a id="l06310" name="l06310"></a><span class="lineno"> 6310</span> </div>
 <div class="line"><a id="l06311" name="l06311"></a><span class="lineno"> 6311</span>    <span class="keywordflow">if</span> (size_on_disk) {</div>
-<div class="line"><a id="l06312" name="l06312"></a><span class="lineno"> 6312</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a1d1dbdad99209a167a7c42c7985036e6">size_on_disk</a>;</div>
+<div class="line"><a id="l06312" name="l06312"></a><span class="lineno"> 6312</span>        size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a1d1dbdad99209a167a7c42c7985036e6">size_on_disk</a>;</div>
 <div class="line"><a id="l06313" name="l06313"></a><span class="lineno"> 6313</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l06314" name="l06314"></a><span class="lineno"> 6314</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a>;</div>
+<div class="line"><a id="l06314" name="l06314"></a><span class="lineno"> 6314</span>        size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aa3ddf2d22509bcb006e291406cefa8c5">size</a>;</div>
 <div class="line"><a id="l06315" name="l06315"></a><span class="lineno"> 6315</span>    }</div>
 <div class="line"><a id="l06316" name="l06316"></a><span class="lineno"> 6316</span> </div>
-<div class="line"><a id="l06317" name="l06317"></a><span class="lineno"> 6317</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> == -1) {</div>
+<div class="line"><a id="l06317" name="l06317"></a><span class="lineno"> 6317</span>    <span class="keywordflow">if</span> (size == -1) {</div>
 <div class="line"><a id="l06318" name="l06318"></a><span class="lineno"> 6318</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l06319" name="l06319"></a><span class="lineno"> 6319</span>    }</div>
 <div class="line"><a id="l06320" name="l06320"></a><span class="lineno"> 6320</span> </div>
 <div class="line"><a id="l06321" name="l06321"></a><span class="lineno"> 6321</span>    <span class="keywordflow">if</span> (g_settings_get_boolean (<a class="code hl_variable" href="caja-global-preferences_8c.html#a8bfaad33430b60ec266e7145cf5e1382">caja_preferences</a>, <a class="code hl_define" href="caja-global-preferences_8h.html#a2fa47ed4ee232c4536f134770fe961a9">CAJA_PREFERENCES_USE_IEC_UNITS</a>))</div>
-<div class="line"><a id="l06322" name="l06322"></a><span class="lineno"> 6322</span>        formatted = g_format_size_full (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, G_FORMAT_SIZE_IEC_UNITS);</div>
+<div class="line"><a id="l06322" name="l06322"></a><span class="lineno"> 6322</span>        formatted = g_format_size_full (size, G_FORMAT_SIZE_IEC_UNITS);</div>
 <div class="line"><a id="l06323" name="l06323"></a><span class="lineno"> 6323</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l06324" name="l06324"></a><span class="lineno"> 6324</span>        formatted = g_format_size(<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l06324" name="l06324"></a><span class="lineno"> 6324</span>        formatted = g_format_size(size);</div>
 <div class="line"><a id="l06325" name="l06325"></a><span class="lineno"> 6325</span> </div>
 <div class="line"><a id="l06326" name="l06326"></a><span class="lineno"> 6326</span>    <span class="comment">/* Do this in a separate stage so that we don&#39;t have to put G_GUINT64_FORMAT in the translated string */</span></div>
-<div class="line"><a id="l06327" name="l06327"></a><span class="lineno"> 6327</span>    real_size = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%&quot;</span>G_GUINT64_FORMAT), (guint64) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l06327" name="l06327"></a><span class="lineno"> 6327</span>    real_size = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%&quot;</span>G_GUINT64_FORMAT), (guint64) size);</div>
 <div class="line"><a id="l06328" name="l06328"></a><span class="lineno"> 6328</span>    formatted_plus_real = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s (%s bytes)&quot;</span>), formatted, real_size);</div>
 <div class="line"><a id="l06329" name="l06329"></a><span class="lineno"> 6329</span>    g_free (real_size);</div>
 <div class="line"><a id="l06330" name="l06330"></a><span class="lineno"> 6330</span>    g_free (formatted);</div>
@@ -6795,7 +6795,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l06984" name="l06984"></a><span class="lineno"> 6984</span>GList *</div>
 <div class="foldopen" id="foldopen06985" data-start="{" data-end="}">
 <div class="line"><a id="l06985" name="l06985"></a><span class="lineno"><a class="line" href="caja-file_8c.html#a812de7b4940e3eae9056a32d252b2252"> 6985</a></span><a class="code hl_function" href="caja-file_8c.html#a812de7b4940e3eae9056a32d252b2252">caja_file_get_emblem_pixbufs</a> (<a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file,</div>
-<div class="line"><a id="l06986" name="l06986"></a><span class="lineno"> 6986</span>                  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l06986" name="l06986"></a><span class="lineno"> 6986</span>                  <span class="keywordtype">int</span> size,</div>
 <div class="line"><a id="l06987" name="l06987"></a><span class="lineno"> 6987</span>                  gboolean force_size,</div>
 <div class="line"><a id="l06988" name="l06988"></a><span class="lineno"> 6988</span>                  <span class="keywordtype">char</span> **exclude)</div>
 <div class="line"><a id="l06989" name="l06989"></a><span class="lineno"> 6989</span>{</div>
@@ -6811,9 +6811,9 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l06999" name="l06999"></a><span class="lineno"> 6999</span>    <span class="keywordflow">for</span> (l = icons; l != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; l = l-&gt;next) {</div>
 <div class="line"><a id="l07000" name="l07000"></a><span class="lineno"> 7000</span>        icon = l-&gt;data;</div>
 <div class="line"><a id="l07001" name="l07001"></a><span class="lineno"> 7001</span> </div>
-<div class="line"><a id="l07002" name="l07002"></a><span class="lineno"> 7002</span>        icon_info = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (icon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, 1);</div>
+<div class="line"><a id="l07002" name="l07002"></a><span class="lineno"> 7002</span>        icon_info = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (icon, size, 1);</div>
 <div class="line"><a id="l07003" name="l07003"></a><span class="lineno"> 7003</span>        <span class="keywordflow">if</span> (force_size) {</div>
-<div class="line"><a id="l07004" name="l07004"></a><span class="lineno"> 7004</span>            pixbuf = <a class="code hl_function" href="caja-icon-info_8c.html#abb7a4405529076ac93f4ead838240df8">caja_icon_info_get_pixbuf_nodefault_at_size</a> (icon_info, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l07004" name="l07004"></a><span class="lineno"> 7004</span>            pixbuf = <a class="code hl_function" href="caja-icon-info_8c.html#abb7a4405529076ac93f4ead838240df8">caja_icon_info_get_pixbuf_nodefault_at_size</a> (icon_info, size);</div>
 <div class="line"><a id="l07005" name="l07005"></a><span class="lineno"> 7005</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l07006" name="l07006"></a><span class="lineno"> 7006</span>            pixbuf = <a class="code hl_function" href="caja-icon-info_8c.html#aa2ce66198e66e98bb5e475dd8c22a8bd">caja_icon_info_get_pixbuf_nodefault</a> (icon_info);</div>
 <div class="line"><a id="l07007" name="l07007"></a><span class="lineno"> 7007</span>        }</div>
@@ -7760,7 +7760,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="foldopen" id="foldopen08087" data-start="{" data-end="}">
 <div class="line"><a id="l08087" name="l08087"></a><span class="lineno"><a class="line" href="caja-file_8c.html#ab9158f39bb51bb744cc69c605a4a9202"> 8087</a></span><a class="code hl_function" href="caja-file_8c.html#ab9158f39bb51bb744cc69c605a4a9202">caja_file_dump</a> (<a class="code hl_struct" href="structCajaFile.html">CajaFile</a> *file)</div>
 <div class="line"><a id="l08088" name="l08088"></a><span class="lineno"> 8088</span>{</div>
-<div class="line"><a id="l08089" name="l08089"></a><span class="lineno"> 8089</span>    <span class="keywordtype">long</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a40fb18da68badbe69b9c3f8a345cf76f">deep_size</a>;</div>
+<div class="line"><a id="l08089" name="l08089"></a><span class="lineno"> 8089</span>    <span class="keywordtype">long</span> size = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a40fb18da68badbe69b9c3f8a345cf76f">deep_size</a>;</div>
 <div class="line"><a id="l08090" name="l08090"></a><span class="lineno"> 8090</span>    <span class="keywordtype">long</span> size_on_disk = file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a0bad88216d77d07968dfeb17efdedb46">deep_size_on_disk</a>;</div>
 <div class="line"><a id="l08091" name="l08091"></a><span class="lineno"> 8091</span>    <span class="keywordtype">char</span> *uri;</div>
 <div class="line"><a id="l08092" name="l08092"></a><span class="lineno"> 8092</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *file_kind;</div>
@@ -7772,7 +7772,7 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="line"><a id="l08098" name="l08098"></a><span class="lineno"> 8098</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#a8734b320a1d2da1b55ceb70c68cdb360">get_info_failed</a>) {</div>
 <div class="line"><a id="l08099" name="l08099"></a><span class="lineno"> 8099</span>        g_print (<span class="stringliteral">&quot;failed to get file info \n&quot;</span>);</div>
 <div class="line"><a id="l08100" name="l08100"></a><span class="lineno"> 8100</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l08101" name="l08101"></a><span class="lineno"> 8101</span>        g_print (<span class="stringliteral">&quot;size: %ld \n&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l08101" name="l08101"></a><span class="lineno"> 8101</span>        g_print (<span class="stringliteral">&quot;size: %ld \n&quot;</span>, size);</div>
 <div class="line"><a id="l08102" name="l08102"></a><span class="lineno"> 8102</span>        g_print (<span class="stringliteral">&quot;disk size: %ld \n&quot;</span>, size_on_disk);</div>
 <div class="line"><a id="l08103" name="l08103"></a><span class="lineno"> 8103</span>        <span class="keywordflow">switch</span> (file-&gt;<a class="code hl_variable" href="structCajaFile.html#a1d81f5034db800df078140e43f0f4a05">details</a>-&gt;<a class="code hl_variable" href="struct__CajaFilePrivate.html#aab429cfd5a51f6b649a532d0e270c8d7">type</a>) {</div>
 <div class="line"><a id="l08104" name="l08104"></a><span class="lineno"> 8104</span>        <span class="keywordflow">case</span> G_FILE_TYPE_REGULAR:</div>
@@ -9006,8 +9006,6 @@ $(document).ready(function(){initNavTree('caja-file_8c_source.html',''); initRes
 <div class="ttc" id="aeel-vfs-extensions_8h_html_a0590914335b422fe0386ae4441d0d6ed"><div class="ttname"><a href="eel-vfs-extensions_8h.html#a0590914335b422fe0386ae4441d0d6ed">EEL_TRASH_URI</a></div><div class="ttdeci">#define EEL_TRASH_URI</div><div class="ttdef"><b>Definition</b> <a href="eel-vfs-extensions_8h_source.html#l00038">eel-vfs-extensions.h:38</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>

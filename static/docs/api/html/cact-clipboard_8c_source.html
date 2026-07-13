@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    GList *items;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    gint   <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    gint   mode;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    guint  nb_actions;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    guint  nb_profiles;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    guint  nb_menus;</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">static</span> <span class="keywordtype">void</span>   clear_primary_clipboard_callback( GtkClipboard *gtk_clipboard, <a class="code hl_struct" href="structCactClipboard.html">CactClipboard</a> *clipboard );</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="keyword">static</span> <span class="keywordtype">void</span>   dump_primary_clipboard( <a class="code hl_struct" href="structCactClipboard.html">CactClipboard</a> *clipboard );</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">static</span> gchar *clipboard_mode_to_string( gint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> );</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="keyword">static</span> gchar *clipboard_mode_to_string( gint mode );</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>GType</div>
 <div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
@@ -722,14 +722,14 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00670" data-start="{" data-end="}">
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno"><a class="line" href="cact-clipboard_8c.html#aef9be5d951c40808c4c297fb945f1760">  670</a></span><a class="code hl_function" href="cact-clipboard_8c.html#aef9be5d951c40808c4c297fb945f1760">cact_clipboard_primary_set</a>( <a class="code hl_struct" href="structCactClipboard.html">CactClipboard</a> *clipboard, GList *items, gint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> )</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno"><a class="line" href="cact-clipboard_8c.html#aef9be5d951c40808c4c297fb945f1760">  670</a></span><a class="code hl_function" href="cact-clipboard_8c.html#aef9be5d951c40808c4c297fb945f1760">cact_clipboard_primary_set</a>( <a class="code hl_struct" href="structCactClipboard.html">CactClipboard</a> *clipboard, GList *items, gint mode )</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>{</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <span class="keyword">static</span> <span class="keyword">const</span> gchar *thisfn = <span class="stringliteral">&quot;cact_clipboard_primary_set&quot;</span>;</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    PrimaryData *<a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    GList *it;</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>    g_debug( <span class="stringliteral">&quot;%s: clipboard=%p, items=%p (count=%d), mode=%d&quot;</span>,</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            thisfn, ( <span class="keywordtype">void</span> * ) clipboard, ( <span class="keywordtype">void</span> * ) items, g_list_length( items ), <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> );</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            thisfn, ( <span class="keywordtype">void</span> * ) clipboard, ( <span class="keywordtype">void</span> * ) items, g_list_length( items ), mode );</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    g_return_if_fail( <a class="code hl_define" href="cact-clipboard_8h.html#ab98e7605453c1d5294891b8ce5a7befd">CACT_IS_CLIPBOARD</a>( clipboard ));</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    <span class="keywordflow">if</span>( !clipboard-&gt;<a class="code hl_variable" href="structCactClipboard.html#a12909c5dbf310236c3cee270a3056af5">private</a>-&gt;dispose_has_run ){</div>
@@ -757,7 +757,7 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        }</div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>        <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;items = g_list_reverse( <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;items );</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;mode = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;mode = mode;</div>
 <div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
 <div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>        gtk_clipboard_set_with_data( clipboard-&gt;<a class="code hl_variable" href="structCactClipboard.html#a12909c5dbf310236c3cee270a3056af5">private</a>-&gt;primary,</div>
 <div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>                clipboard_formats, G_N_ELEMENTS( clipboard_formats ),</div>
@@ -922,7 +922,7 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>{</div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>    <span class="keyword">static</span> <span class="keyword">const</span> gchar *thisfn = <span class="stringliteral">&quot;cact_clipboard_dump_primary&quot;</span>;</div>
 <div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    PrimaryData *<a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>;</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    gchar *mode;</div>
 <div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>    GList *it;</div>
 <div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span> </div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    g_return_if_fail( <a class="code hl_define" href="cact-clipboard_8h.html#ab98e7605453c1d5294891b8ce5a7befd">CACT_IS_CLIPBOARD</a>( clipboard ));</div>
@@ -939,9 +939,9 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>                    thisfn,</div>
 <div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>                    ( <span class="keywordtype">void</span> * ) <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;items,</div>
 <div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>                    <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;items ? g_list_length( <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;items ) : 0 );</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>            <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = clipboard_mode_to_string( <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;mode );</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>            g_debug( <span class="stringliteral">&quot;%s:                 user_data-&gt;mode=%d (%s)&quot;</span>, thisfn, <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;mode, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> );</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>            g_free( <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> );</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>            mode = clipboard_mode_to_string( <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;mode );</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>            g_debug( <span class="stringliteral">&quot;%s:                 user_data-&gt;mode=%d (%s)&quot;</span>, thisfn, <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;mode, mode );</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>            g_free( mode );</div>
 <div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>            <span class="keywordflow">for</span>( it = <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>-&gt;items ; it ; it = it-&gt;next ){</div>
 <div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>                <a class="code hl_function" href="na-object_8h.html#a24d49788fd0ca3e0405100db3fac3b71">na_object_object_dump</a>( <a class="code hl_define" href="na-object_8h.html#a8d0be22bce66fdcda242b7fe1bb38411">NA_OBJECT</a>( it-&gt;data ));</div>
 <div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>            }</div>
@@ -952,11 +952,11 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>}</div>
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span> </div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span><span class="keyword">static</span> gchar *</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>clipboard_mode_to_string( gint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> )</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>clipboard_mode_to_string( gint mode )</div>
 <div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>{</div>
 <div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>    gchar *mode_str;</div>
 <div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    <span class="keywordflow">switch</span>( <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> ){</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    <span class="keywordflow">switch</span>( mode ){</div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="cact-clipboard_8h.html#a38436632403fcee6aacb5b18c6602643a4f587fa49992b7b417e6cd27a69a1122">CLIPBOARD_MODE_CUT</a>:</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>            mode_str = g_strdup( <span class="stringliteral">&quot;CutMode&quot;</span> );</div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>            <span class="keywordflow">break</span>;</div>
@@ -1012,7 +1012,6 @@ $(document).ready(function(){initNavTree('cact-clipboard_8c_source.html',''); in
 <div class="ttc" id="acact-tree-model_8h_html_afb9b21dcb0b6eb4e9e0c9cb090e774bea9ea435987dc96831d3dac43e031f7243"><div class="ttname"><a href="cact-tree-model_8h.html#afb9b21dcb0b6eb4e9e0c9cb090e774bea9ea435987dc96831d3dac43e031f7243">TREE_COLUMN_NAOBJECT</a></div><div class="ttdeci">@ TREE_COLUMN_NAOBJECT</div><div class="ttdef"><b>Definition</b> <a href="cact-tree-model_8h_source.html#l00084">cact-tree-model.h:84</a></div></div>
 <div class="ttc" id="adisplay-private_8h_html_a4864b000560ca9435333ad770150222b"><div class="ttname"><a href="display-private_8h.html#a4864b000560ca9435333ad770150222b">item</a></div><div class="ttdeci">#define item(x)</div><div class="ttdef"><b>Definition</b> <a href="display-private_8h_source.html#l00091">display-private.h:91</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="ana-export-format_8h_html"><div class="ttname"><a href="na-export-format_8h.html">na-export-format.h</a></div></div>
 <div class="ttc" id="ana-exporter_8c_html_a877a9b3424f1d3612a9fa8859a50858e"><div class="ttname"><a href="na-exporter_8c.html#a877a9b3424f1d3612a9fa8859a50858e">na_exporter_to_buffer</a></div><div class="ttdeci">gchar * na_exporter_to_buffer(const NAPivot *pivot, const NAObjectItem *item, const gchar *format, GSList **messages)</div><div class="ttdef"><b>Definition</b> <a href="na-exporter_8c_source.html#l00262">na-exporter.c:262</a></div></div>

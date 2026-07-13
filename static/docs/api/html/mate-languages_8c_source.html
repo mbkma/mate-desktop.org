@@ -544,11 +544,11 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>        <span class="keywordtype">int</span> result = 0;</div>
 <div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span> </div>
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>        <span class="keywordflow">if</span> (strcmp (dirent-&gt;d_name, <span class="stringliteral">&quot;.&quot;</span>) != 0 &amp;&amp; strcmp (dirent-&gt;d_name, <span class="stringliteral">&quot;..&quot;</span>) != 0) {</div>
-<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>                mode_t <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = 0;</div>
+<div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>                mode_t mode = 0;</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span><span class="preprocessor">#ifdef _DIRENT_HAVE_D_TYPE</span></div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>                <span class="keywordflow">if</span> (dirent-&gt;d_type != DT_UNKNOWN &amp;&amp; dirent-&gt;d_type != DT_LNK) {</div>
-<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = DTTOIF (dirent-&gt;d_type);</div>
+<div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                        mode = DTTOIF (dirent-&gt;d_type);</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                } <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                        {</div>
@@ -557,11 +557,11 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span> </div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>                                path = g_build_filename (MATELOCALEDIR, dirent-&gt;d_name, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>                                <span class="keywordflow">if</span> (g_stat (path, &amp;st) == 0) {</div>
-<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                                        <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = st.st_mode;</div>
+<div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                                        mode = st.st_mode;</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>                                }</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>                        }</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
-<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                result = S_ISDIR (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>                result = S_ISDIR (mode);</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>        }</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>        <span class="keywordflow">return</span> result;</div>
@@ -1056,17 +1056,17 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>{</div>
 <div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>        gboolean res;</div>
 <div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>        gsize    buf_len;</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        g_autofree <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        g_autofree <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        g_autofree <span class="keywordtype">char</span> *buf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        g_autofree <span class="keywordtype">char</span> *filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>        g_autoptr (GError) <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span> </div>
 <div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>        bindtextdomain (variant, <a class="code hl_define" href="mate-languages_8c.html#a604621065f68658eec4e47c8328b1464">ISO_CODES_LOCALESDIR</a>);</div>
 <div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>        bind_textdomain_codeset (variant, <span class="stringliteral">&quot;UTF-8&quot;</span>);</div>
 <div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span> </div>
 <div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>        <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_strdup_printf (<a class="code hl_define" href="mate-languages_8c.html#a55d2803bb7b25d69a6b1359dbb6e1067">ISO_CODES_DATADIR</a> <span class="stringliteral">&quot;/%s.xml&quot;</span>, variant);</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>        res = g_file_get_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>                                   &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>        filename = g_strdup_printf (<a class="code hl_define" href="mate-languages_8c.html#a55d2803bb7b25d69a6b1359dbb6e1067">ISO_CODES_DATADIR</a> <span class="stringliteral">&quot;/%s.xml&quot;</span>, variant);</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>        res = g_file_get_contents (filename,</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>                                   &amp;buf,</div>
 <div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>                                   &amp;buf_len,</div>
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>                                   &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>        <span class="keywordflow">if</span> (res) {</div>
@@ -1076,16 +1076,16 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>                ctx = g_markup_parse_context_new (&amp;parser, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span> </div>
 <div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>                <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>                res = g_markup_parse_context_parse (ctx, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, buf_len, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>                res = g_markup_parse_context_parse (ctx, buf, buf_len, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>                <span class="keywordflow">if</span> (! res) {</div>
 <div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>                        g_warning (<span class="stringliteral">&quot;Failed to parse &#39;%s&#39;: %s\n&quot;</span>,</div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>                                   <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>                                   filename,</div>
 <div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>                                   <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>                }</div>
 <div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>                g_warning (<span class="stringliteral">&quot;Failed to load &#39;%s&#39;: %s\n&quot;</span>,</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>                           <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>                           filename,</div>
 <div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>                           <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message);</div>
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>        }</div>
 <div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>}</div>
@@ -1107,7 +1107,7 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>{</div>
 <div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>        gboolean res;</div>
 <div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>        gsize    buf_len;</div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        g_autofree <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        g_autofree <span class="keywordtype">char</span> *buf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        g_autoptr (GError) <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
 <div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>        <span class="keywordflow">if</span> (mate_territories_map)</div>
@@ -1120,7 +1120,7 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span> </div>
 <div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>        <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>        res = g_file_get_contents (<a class="code hl_define" href="mate-languages_8c.html#a55d2803bb7b25d69a6b1359dbb6e1067">ISO_CODES_DATADIR</a> <span class="stringliteral">&quot;/iso_3166.xml&quot;</span>,</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>                                   &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>                                   &amp;buf,</div>
 <div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>                                   &amp;buf_len,</div>
 <div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>                                   &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>        <span class="keywordflow">if</span> (res) {</div>
@@ -1130,7 +1130,7 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>                ctx = g_markup_parse_context_new (&amp;parser, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span> </div>
 <div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>                <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                res = g_markup_parse_context_parse (ctx, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, buf_len, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>                res = g_markup_parse_context_parse (ctx, buf, buf_len, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
 <div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>                <span class="keywordflow">if</span> (! res) {</div>
 <div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>                        g_warning (<span class="stringliteral">&quot;Failed to parse &#39;%s&#39;: %s\n&quot;</span>,</div>
@@ -1340,9 +1340,6 @@ $(document).ready(function(){initNavTree('mate-languages_8c_source.html',''); in
 <div class="ttc" id="aengrampa_2src_2ui_8h_html_a8164253c43e605419c284398c0d12861"><div class="ttname"><a href="engrampa_2src_2ui_8h.html#a8164253c43e605419c284398c0d12861">modifier</a></div><div class="ttdeci">GdkModifierType modifier</div><div class="ttdef"><b>Definition</b> <a href="engrampa_2src_2ui_8h_source.html#l00073">engrampa/src/ui.h:73</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-languages_8c_html_a28e43eecd5c4c36b97343cf2f5e588b7"><div class="ttname"><a href="mate-languages_8c.html#a28e43eecd5c4c36b97343cf2f5e588b7">mate_normalize_locale</a></div><div class="ttdeci">char * mate_normalize_locale(const char *locale)</div><div class="ttdef"><b>Definition</b> <a href="mate-languages_8c_source.html#l00260">mate-languages.c:260</a></div></div>

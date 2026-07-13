@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">static</span> <span class="keywordtype">void</span> load_backward_tz (<a class="code hl_struct" href="structTzDB.html">TzDB</a> *tz_db)</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>{</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    FILE  *fp;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[128] = { 0 };</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordtype">char</span> buf[128] = { 0 };</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    tz_db-&gt;<a class="code hl_variable" href="structTzDB.html#af3a4be64eca27db19764cf8699b00066">backward</a> = g_hash_table_new_full (g_str_hash, g_str_equal, g_free, g_free);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
@@ -214,16 +214,16 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        g_error(<span class="stringliteral">&quot;%s does not exist\r\n&quot;</span>,<a class="code hl_define" href="time-zone_8c.html#a944213af31dca477e835fa4f28e572fc">BACKFILE</a>);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">while</span>(fgets(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,128,fp))</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">while</span>(fgets(buf,128,fp))</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    {</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        g_auto(GStrv) items = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        guint j;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordtype">char</span> *real, *alias;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">if</span> (g_ascii_strncasecmp (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="stringliteral">&quot;Link\t&quot;</span>, 5) != 0)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">if</span> (g_ascii_strncasecmp (buf, <span class="stringliteral">&quot;Link\t&quot;</span>, 5) != 0)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        items = g_strsplit (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="stringliteral">&quot;\t&quot;</span>, -1);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        items = g_strsplit (buf, <span class="stringliteral">&quot;\t&quot;</span>, -1);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        real = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        alias = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">for</span> (j = 1; items[j] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; j++)</div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">if</span> (real == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || alias == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            g_warning (<span class="stringliteral">&quot;Could not parse line: %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            g_warning (<span class="stringliteral">&quot;Could not parse line: %s&quot;</span>, buf);</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">/* We don&#39;t need more than one name for it */</span></div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">if</span> (g_str_equal (real, <span class="stringliteral">&quot;Etc/UTC&quot;</span>) ||</div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    g_autofree gchar *tz_data_file = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_struct" href="structTzDB.html">TzDB</a> *tz_db;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    FILE *tzfile;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[4096];</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">char</span> buf[4096];</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    tz_data_file = tz_data_file_get ();</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">if</span> (!tz_data_file)</div>
@@ -276,7 +276,7 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    tz_db = g_new0 (<a class="code hl_struct" href="structTzDB.html">TzDB</a>, 1);</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    tz_db-&gt;<a class="code hl_variable" href="structTzDB.html#a1435eb5115380348dff1f133abb85ca3">locations</a> = g_ptr_array_new ();</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">while</span> (fgets (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>), tzfile))</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">while</span> (fgets (buf, <span class="keyword">sizeof</span>(buf), tzfile))</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    {</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        g_auto(GStrv) tmpstrarr = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        g_autofree gchar *latstr = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -284,11 +284,11 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        gchar *p;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <a class="code hl_struct" href="structTzLocation.html">TzLocation</a> *loc;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">if</span> (*<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> == <span class="charliteral">&#39;#&#39;</span>)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">if</span> (*buf == <span class="charliteral">&#39;#&#39;</span>)</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        g_strchomp(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        tmpstrarr = g_strsplit(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,<span class="stringliteral">&quot;\t&quot;</span>, 6);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        g_strchomp(buf);</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        tmpstrarr = g_strsplit(buf,<span class="stringliteral">&quot;\t&quot;</span>, 6);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        latstr = g_strdup (tmpstrarr[1]);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        p = latstr + 1;</div>
@@ -788,13 +788,13 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno"><a class="line" href="time-zone_8c.html#a052aa36c1710ee8f06277d14ef9afe74">  677</a></span>glong <a class="code hl_function" href="time-zone_8c.html#a052aa36c1710ee8f06277d14ef9afe74">tz_location_get_utc_offset</a> (<a class="code hl_struct" href="structTzLocation.html">TzLocation</a> *loc)</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>{</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <a class="code hl_struct" href="structTzInfo.html">TzInfo</a> *tz_info;</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    glong <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    glong offset;</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    tz_info = <a class="code hl_function" href="time-zone_8c.html#a685d12337a510b59af1b9572a09324a3">tz_info_from_location</a> (loc);</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = tz_info-&gt;<a class="code hl_variable" href="structTzInfo.html#a845d91ab553e02eff81518ccd59031ce">utc_offset</a>;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    offset = tz_info-&gt;<a class="code hl_variable" href="structTzInfo.html#a845d91ab553e02eff81518ccd59031ce">utc_offset</a>;</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    <a class="code hl_function" href="time-zone_8c.html#a8f4d37147d93d023215ee8aef10cff05">tz_info_free</a> (tz_info);</div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="keywordflow">return</span> offset;</div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>}</div>
 </div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
@@ -838,8 +838,6 @@ $(document).ready(function(){initNavTree('time-zone_8c_source.html',''); initRes
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2common_8h_html_a907b5e1042ad1a6bb4914ecc7d12f55c"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a907b5e1042ad1a6bb4914ecc7d12f55c">strchr</a></div><div class="ttdeci">#define strchr</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2common_8h_source.html#l00033">atril/backend/dvi/mdvi-lib/common.h:33</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-languages_8h_html"><div class="ttname"><a href="mate-languages_8h.html">mate-languages.h</a></div></div>

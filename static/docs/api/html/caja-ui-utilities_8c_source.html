@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('caja-ui-utilities_8c_source.html','');
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">const</span> <span class="keywordtype">char</span> *</div>
 <div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="caja-ui-utilities_8c.html#ae9ace845cbadd51772b40ef8350d2c2d">   95</a></span><a class="code hl_function" href="caja-ui-utilities_8c.html#ae9ace845cbadd51772b40ef8350d2c2d">caja_ui_string_get</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="caja-ui-utilities_8c.html#ae9ace845cbadd51772b40ef8350d2c2d">   95</a></span><a class="code hl_function" href="caja-ui-utilities_8c.html#ae9ace845cbadd51772b40ef8350d2c2d">caja_ui_string_get</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>{</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">static</span> GHashTable *ui_cache = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">char</span> *ui;</div>
@@ -212,19 +212,19 @@ $(document).ready(function(){initNavTree('caja-ui-utilities_8c_source.html','');
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_function" href="eel-debug_8c.html#a4b2e05768fada0a0b1f01f979d8d64da">eel_debug_call_at_shutdown_with_data</a> ((GFreeFunc)g_hash_table_destroy, ui_cache);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    ui = g_hash_table_lookup (ui_cache, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    ui = g_hash_table_lookup (ui_cache, filename);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keywordflow">if</span> (ui == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordtype">char</span> *path;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        path = <a class="code hl_function" href="caja-ui-utilities_8c.html#a15c2ea42be931160258207265b4303e7">caja_ui_file</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        path = <a class="code hl_function" href="caja-ui-utilities_8c.html#a15c2ea42be931160258207265b4303e7">caja_ui_file</a> (filename);</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="keywordflow">if</span> (path == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || !g_file_get_contents (path, &amp;ui, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            g_warning (<span class="stringliteral">&quot;Unable to load ui file %s\n&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            g_warning (<span class="stringliteral">&quot;Unable to load ui file %s\n&quot;</span>, filename);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        }</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        g_free (path);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        g_hash_table_insert (ui_cache,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                             g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>),</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                             g_strdup (filename),</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                             ui);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('caja-ui-utilities_8c_source.html','');
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="keyword">static</span> cairo_surface_t *</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>get_action_icon (<span class="keyword">const</span> <span class="keywordtype">char</span> *icon_name,</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                 <span class="keywordtype">int</span>         <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                 <span class="keywordtype">int</span>         size,</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                 GtkWidget  *parent_widget)</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>{</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_typedef" href="caja-icon-info_8h.html#ab67fe532670f0003221e5f4ae6e39258">CajaIconInfo</a> *info;</div>
@@ -268,13 +268,13 @@ $(document).ready(function(){initNavTree('caja-ui-utilities_8c_source.html','');
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span> (g_path_is_absolute (icon_name))</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    {</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        info = <a class="code hl_function" href="caja-icon-info_8c.html#aa0d38adf9ff5cd72eb4a9e7f0be1e7fd">caja_icon_info_lookup_from_path</a> (icon_name, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        info = <a class="code hl_function" href="caja-icon-info_8c.html#aa0d38adf9ff5cd72eb4a9e7f0be1e7fd">caja_icon_info_lookup_from_path</a> (icon_name, size, scale);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    }</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        info = <a class="code hl_function" href="caja-icon-info_8c.html#ac1613bf950cc37347e57e0e3b172f3e6">caja_icon_info_lookup_from_name</a> (icon_name, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        info = <a class="code hl_function" href="caja-icon-info_8c.html#ac1613bf950cc37347e57e0e3b172f3e6">caja_icon_info_lookup_from_name</a> (icon_name, size, scale);</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    }</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    surface = <a class="code hl_function" href="caja-icon-info_8c.html#a5c3019fd8503a1583212d9343a7b18f6">caja_icon_info_get_surface_nodefault_at_size</a> (info, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    surface = <a class="code hl_function" href="caja-icon-info_8c.html#a5c3019fd8503a1583212d9343a7b18f6">caja_icon_info_get_surface_nodefault_at_size</a> (info, size);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    g_object_unref (info);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordflow">return</span> surface;</div>
@@ -482,8 +482,6 @@ $(document).ready(function(){initNavTree('caja-ui-utilities_8c_source.html','');
 <div class="ttc" id="aephy-zoom-action_8c_html_a79a8106a4c714682bda992995a1bf2e9"><div class="ttname"><a href="ephy-zoom-action_8c.html#a79a8106a4c714682bda992995a1bf2e9">G_GNUC_END_IGNORE_DEPRECATIONS</a></div><div class="ttdeci">G_GNUC_END_IGNORE_DEPRECATIONS</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom-action_8c_source.html#l00059">ephy-zoom-action.c:59</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="aspecial_8c_html_acf60de4c64d60c1b9449c056bc6bfcf7"><div class="ttname"><a href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a></div><div class="ttdeci">char * label</div><div class="ttdef"><b>Definition</b> <a href="special_8c_source.html#l00053">special.c:53</a></div></div>
 <div class="ttc" id="astruct__CajaMenuItem_html"><div class="ttname"><a href="struct__CajaMenuItem.html">_CajaMenuItem</a></div><div class="ttdef"><b>Definition</b> <a href="caja-menu_8h_source.html#l00069">caja-menu.h:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

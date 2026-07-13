@@ -659,26 +659,26 @@ $(document).ready(function(){initNavTree('coco-theme_8c_source.html',''); initRe
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        xmlXPathObjectPtr  xpathObj;</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        xmlNodeSetPtr      nodes;</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        <span class="keyword">const</span> <span class="keywordtype">char</span>        *body_label_text;</div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        <span class="keywordtype">int</span> i, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>        <span class="keywordtype">int</span> i, size;</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        <span class="comment">/* filterout img nodes */</span></div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>        xpathCtx = xmlXPathNewContext(doc);</div>
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        xpathObj = xmlXPathEvalExpression((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)<span class="stringliteral">&quot;//img&quot;</span>, xpathCtx);</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>        nodes = xpathObj-&gt;nodesetval;</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = (nodes) ? nodes-&gt;nodeNr : 0;</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        <span class="keywordflow">for</span>(i = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> - 1; i &gt;= 0; i--) {</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>        size = (nodes) ? nodes-&gt;nodeNr : 0;</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        <span class="keywordflow">for</span>(i = size - 1; i &gt;= 0; i--) {</div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>            xmlUnlinkNode (nodes-&gt;nodeTab[i]);</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>            xmlFreeNode (nodes-&gt;nodeTab[i]);</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>        }</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        <span class="comment">/* write doc to string */</span></div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        xmlBufferPtr <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = xmlBufferCreate();</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>        (void) xmlNodeDump(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, doc, xmlDocGetRootElement (doc), 0, 0);</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        str = (<span class="keywordtype">char</span> *)<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;content;</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        xmlBufferPtr buf = xmlBufferCreate();</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>        (void) xmlNodeDump(buf, doc, xmlDocGetRootElement (doc), 0, 0);</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        str = (<span class="keywordtype">char</span> *)buf-&gt;content;</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>        gtk_label_set_markup (GTK_LABEL (windata-&gt;body_label), str);</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>        <span class="comment">/* cleanup */</span></div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>        xmlBufferFree (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>        xmlBufferFree (buf);</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        xmlXPathFreeObject (xpathObj);</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        xmlXPathFreeContext (xpathCtx);</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        xmlFreeDoc (doc);</div>
@@ -761,7 +761,7 @@ $(document).ready(function(){initNavTree('coco-theme_8c_source.html',''); initRe
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    GtkWidget *button;</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    GtkWidget *hbox;</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    GdkPixbuf *pixbuf;</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="keywordtype">char</span> *buf;</div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    g_assert(windata != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
@@ -783,12 +783,12 @@ $(document).ready(function(){initNavTree('coco-theme_8c_source.html',''); initRe
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>    gtk_container_add(GTK_CONTAINER(button), hbox);</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <span class="comment">/* Try to be smart and find a suitable icon. */</span></div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_strdup_printf(<span class="stringliteral">&quot;stock_%s&quot;</span>, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>);</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    buf = g_strdup_printf(<span class="stringliteral">&quot;stock_%s&quot;</span>, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>);</div>
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    pixbuf = gtk_icon_theme_load_icon(</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        gtk_icon_theme_get_for_screen(</div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            gdk_window_get_screen(gtk_widget_get_window(GTK_WIDGET(nw)))),</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 16, GTK_ICON_LOOKUP_USE_BUILTIN, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        buf, 16, GTK_ICON_LOOKUP_USE_BUILTIN, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    g_free(buf);</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    <span class="keywordflow">if</span> (pixbuf != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    {</div>
@@ -804,9 +804,9 @@ $(document).ready(function(){initNavTree('coco-theme_8c_source.html',''); initRe
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    gtk_box_pack_start(GTK_BOX(hbox), <a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, 0);</div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    gtk_label_set_xalign (GTK_LABEL (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), 0.0);</div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    gtk_label_set_yalign (GTK_LABEL (<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), 0.5);</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_strdup_printf(<span class="stringliteral">&quot;&lt;small&gt;%s&lt;/small&gt;&quot;</span>, text);</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    gtk_label_set_markup(GTK_LABEL(<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    buf = g_strdup_printf(<span class="stringliteral">&quot;&lt;small&gt;%s&lt;/small&gt;&quot;</span>, text);</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    gtk_label_set_markup(GTK_LABEL(<a class="code hl_variable" href="special_8c.html#acf60de4c64d60c1b9449c056bc6bfcf7">label</a>), buf);</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    g_free(buf);</div>
 <div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
 <div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>add_button:</div>
 <div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>    gtk_widget_show(button);</div>
@@ -979,8 +979,6 @@ $(document).ready(function(){initNavTree('coco-theme_8c_source.html',''); initRe
 <div class="ttc" id="acoco-theme_8c_html_ad3b450d56ef42b0146e0e1275401e602"><div class="ttname"><a href="coco-theme_8c.html#ad3b450d56ef42b0146e0e1275401e602">set_notification_icon</a></div><div class="ttdeci">void set_notification_icon(GtkWindow *nw, GdkPixbuf *pixbuf)</div><div class="ttdef"><b>Definition</b> <a href="coco-theme_8c_source.html#l00612">coco-theme.c:612</a></div></div>
 <div class="ttc" id="acoco-theme_8c_html_ae3e16f17918eb3cb344a522b2368752a"><div class="ttname"><a href="coco-theme_8c.html#ae3e16f17918eb3cb344a522b2368752a">move_notification</a></div><div class="ttdeci">void move_notification(GtkWidget *nw, int x, int y)</div><div class="ttdef"><b>Definition</b> <a href="coco-theme_8c_source.html#l00726">coco-theme.c:726</a></div></div>
 <div class="ttc" id="acoco-theme_8c_html_af0cf23c574b974051df4b1853a5368e3"><div class="ttname"><a href="coco-theme_8c.html#af0cf23c574b974051df4b1853a5368e3">BODY_X_OFFSET</a></div><div class="ttdeci">#define BODY_X_OFFSET</div><div class="ttdef"><b>Definition</b> <a href="coco-theme_8c_source.html#l00099">coco-theme.c:99</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="aremovable-devices_8c_html_ad2898ff66799fc9110bfc91d4924a4f9"><div class="ttname"><a href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a></div><div class="ttdeci">GtkWidget * cb</div><div class="ttdef"><b>Definition</b> <a href="removable-devices_8c_source.html#l00041">removable-devices.c:41</a></div></div>

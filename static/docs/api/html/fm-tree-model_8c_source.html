@@ -360,13 +360,13 @@ $(document).ready(function(){initNavTree('fm-tree-model_8c_source.html',''); ini
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>{</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <a class="code hl_typedef" href="caja-icon-info_8h.html#ab67fe532670f0003221e5f4ae6e39258">CajaIconInfo</a> *info;</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    cairo_surface_t *surface;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordtype">int</span> size, scale;</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_function" href="caja-icon-info_8c.html#a311766e31a6d1bf250d135d71c669c61">caja_get_icon_size_for_stock_size</a> (GTK_ICON_SIZE_MENU);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    size = <a class="code hl_function" href="caja-icon-info_8c.html#a311766e31a6d1bf250d135d71c669c61">caja_get_icon_size_for_stock_size</a> (GTK_ICON_SIZE_MENU);</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    scale = gdk_window_get_scale_factor (gdk_get_default_root_window ());</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    info = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (icon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    surface = <a class="code hl_function" href="caja-icon-info_8c.html#a5c3019fd8503a1583212d9343a7b18f6">caja_icon_info_get_surface_nodefault_at_size</a> (info, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    info = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (icon, size, scale);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    surface = <a class="code hl_function" href="caja-icon-info_8c.html#a5c3019fd8503a1583212d9343a7b18f6">caja_icon_info_get_surface_nodefault_at_size</a> (info, size);</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    g_object_unref (info);</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    <span class="keywordflow">return</span> surface;</div>
@@ -381,7 +381,7 @@ $(document).ready(function(){initNavTree('fm-tree-model_8c_source.html',''); ini
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    GEmblem *emblem;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    cairo_surface_t *surface, *retval;</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    gboolean highlight;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordtype">int</span> size, scale;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <a class="code hl_struct" href="structFMTreeModel.html">FMTreeModel</a> *model;</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    GList *emblem_icons, *l;</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordtype">char</span> *emblems_to_ignore[3];</div>
@@ -389,7 +389,7 @@ $(document).ready(function(){initNavTree('fm-tree-model_8c_source.html',''); ini
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    GIcon *gicon, *emblemed_icon;</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    GIcon *emblem_icon = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_function" href="caja-icon-info_8c.html#a311766e31a6d1bf250d135d71c669c61">caja_get_icon_size_for_stock_size</a> (GTK_ICON_SIZE_MENU);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    size = <a class="code hl_function" href="caja-icon-info_8c.html#a311766e31a6d1bf250d135d71c669c61">caja_get_icon_size_for_stock_size</a> (GTK_ICON_SIZE_MENU);</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    scale = gdk_window_get_scale_factor (gdk_get_default_root_window ());</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    gicon = <a class="code hl_function" href="caja-file_8c.html#a2823c277d64cc7edb7980f1373a2810b">caja_file_get_gicon</a> (file, flags);</div>
@@ -426,8 +426,8 @@ $(document).ready(function(){initNavTree('fm-tree-model_8c_source.html',''); ini
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    g_list_free_full (emblem_icons, g_object_unref);</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    info = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (gicon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    retval = <a class="code hl_function" href="caja-icon-info_8c.html#a5c3019fd8503a1583212d9343a7b18f6">caja_icon_info_get_surface_nodefault_at_size</a> (info, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    info = <a class="code hl_function" href="caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609">caja_icon_info_lookup</a> (gicon, size, scale);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    retval = <a class="code hl_function" href="caja-icon-info_8c.html#a5c3019fd8503a1583212d9343a7b18f6">caja_icon_info_get_surface_nodefault_at_size</a> (info, size);</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    model = node-&gt;root-&gt;model;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    g_object_unref (gicon);</div>
@@ -2304,7 +2304,6 @@ $(document).ready(function(){initNavTree('fm-tree-model_8c_source.html',''); ini
 <div class="ttc" id="afm-tree-model_8h_html_a871a83db4e53fc6c6872b5ac7cc94f39aa31f7d831d30e6e777604e0a41dd8713"><div class="ttname"><a href="fm-tree-model_8h.html#a871a83db4e53fc6c6872b5ac7cc94f39aa31f7d831d30e6e777604e0a41dd8713">FM_TREE_MODEL_CLOSED_SURFACE_COLUMN</a></div><div class="ttdeci">@ FM_TREE_MODEL_CLOSED_SURFACE_COLUMN</div><div class="ttdef"><b>Definition</b> <a href="fm-tree-model_8h_source.html#l00052">fm-tree-model.h:52</a></div></div>
 <div class="ttc" id="afm-tree-model_8h_html_acf4a8389dbcaf5a3ddb7769f166a3bda"><div class="ttname"><a href="fm-tree-model_8h.html#acf4a8389dbcaf5a3ddb7769f166a3bda">FM_TREE_MODEL</a></div><div class="ttdeci">#define FM_TREE_MODEL(obj)</div><div class="ttdef"><b>Definition</b> <a href="fm-tree-model_8h_source.html#l00038">fm-tree-model.h:38</a></div></div>
 <div class="ttc" id="afm-tree-model_8h_html_ae8b275ce20076f52ab051bc36b5db4e2"><div class="ttname"><a href="fm-tree-model_8h.html#ae8b275ce20076f52ab051bc36b5db4e2">FMTreeModelDetails</a></div><div class="ttdeci">struct FMTreeModelDetails FMTreeModelDetails</div><div class="ttdef"><b>Definition</b> <a href="fm-tree-model_8h_source.html#l00058">fm-tree-model.h:58</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="anamespaceprocman_1_1settings_html_ad226b0934e21ef626c36052f0c4f147a"><div class="ttname"><a href="namespaceprocman_1_1settings.html#ad226b0934e21ef626c36052f0c4f147a">procman::settings::root</a></div><div class="ttdeci">const std::string root</div></div>

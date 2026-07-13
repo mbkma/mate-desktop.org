@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    };</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#define NKEYS   (sizeof(keys) / sizeof(keys[0]))</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">char</span>    *ptr;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">char</span>    *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">char</span>    *filename;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">double</span>  value[<a class="code hl_define" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>];</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   present[<a class="code hl_define" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>];</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <a class="code hl_struct" href="structBuffer.html">Buffer</a>  buffer;</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">if</span>(ptr == <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>)</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    *ptr++ = 0;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    filename = <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">/* reset values to defaults */</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">for</span>(i = 0; i &lt; <a class="code hl_define" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>; i++) {</div>
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                <span class="keywordflow">if</span>(*p != <span class="charliteral">&#39;&quot;&#39;</span>)</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                    <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                    <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: malformed value for key `%s&#39;\n&quot;</span>),</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, keyname);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        filename, keyname);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            } <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                val = p;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
@@ -259,16 +259,16 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">if</span>(i == <a class="code hl_define" href="sp-epsf_8c.html#aee3c099580c48d099307b9493696fd23">NKEYS</a>) {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: unknown key `%s&#39; ignored\n&quot;</span>),</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, keyname);</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                     filename, keyname);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <span class="keywordflow">if</span>(keys[i].has_arg &amp;&amp; val == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>            <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: no argument for key `%s&#39;, using defaults\n&quot;</span>),</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, keyname);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                     filename, keyname);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            val = keys[i].value;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(!keys[i].has_arg &amp;&amp; val) {</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: argument `%s&#39; ignored for key `%s&#39;\n&quot;</span>),</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, val, keyname);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                     filename, val, keyname);</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            val = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        }</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">if</span>(val)</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    *ret = buffer.<a class="code hl_variable" href="structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8">data</a>;</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keywordflow">return</span> filename;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
 <div class="foldopen" id="foldopen00234" data-start="{" data-end="}">
@@ -342,7 +342,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordtype">int</span> x, y;</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    <span class="keywordtype">int</span> w, h;</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">double</span>  xf, vf;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keyword">struct </span>stat <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keyword">struct </span>stat buf;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    file = parse_epsf_special(&amp;box, &amp;<a class="code hl_function" href="dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150">special</a>, <a class="code hl_variable" href="special_8c.html#ad2849cf781a4db22cc1b31eaaee50a4f">prefix</a>, arg);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordflow">if</span> (file != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -361,7 +361,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    }</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keywordflow">if</span> (file[0] == <span class="charliteral">&#39;/&#39;</span>) { <span class="comment">/* Absolute path */</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">if</span> (stat (file, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) == 0)</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keywordflow">if</span> (stat (file, &amp;buf) == 0)</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>            dvi-&gt;<a class="code hl_variable" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code hl_variable" href="struct__DviDevice.html#ac28972a8a7036cfb8c7eae6c5e7bbcbc">draw_ps</a> (dvi, file, x, y, w, h);</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            dvi-&gt;<a class="code hl_variable" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code hl_variable" href="struct__DviDevice.html#a632cd8adca4ac14962cadcfb880b0180">draw_rule</a> (dvi, x, y, w, h, 0);</div>
@@ -378,7 +378,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        strncat (psfile, dvi-&gt;<a class="code hl_variable" href="struct__DviContext.html#ab4f9515b62acec430c55dddf1744243f">filename</a>, path_len);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        strncat (psfile, file, file_len);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span> (stat (psfile, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) == 0) {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        <span class="keywordflow">if</span> (stat (psfile, &amp;buf) == 0) {</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            dvi-&gt;<a class="code hl_variable" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code hl_variable" href="struct__DviDevice.html#ac28972a8a7036cfb8c7eae6c5e7bbcbc">draw_ps</a> (dvi, psfile, x, y, w, h);</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>            <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a> (psfile);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
@@ -389,7 +389,7 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    }</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    psfile = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4afa71757544586745c2b82467324403">mdvi_build_path_from_cwd</a> (file);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">if</span> (stat (psfile, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>) == 0) { <span class="comment">/* Current working dir */</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">if</span> (stat (psfile, &amp;buf) == 0) { <span class="comment">/* Current working dir */</span></div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        dvi-&gt;<a class="code hl_variable" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code hl_variable" href="struct__DviDevice.html#ac28972a8a7036cfb8c7eae6c5e7bbcbc">draw_ps</a> (dvi, psfile, x, y, w, h);</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a> (psfile);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
@@ -421,8 +421,6 @@ $(document).ready(function(){initNavTree('sp-epsf_8c_source.html',''); initResiz
 <div class="ttc" id="acommon_8c_html_a7c9d8f5974add4c981a8261294e95e5a"><div class="ttname"><a href="common_8c.html#a7c9d8f5974add4c981a8261294e95e5a">buff_init</a></div><div class="ttdeci">void buff_init(Buffer *buf)</div><div class="ttdef"><b>Definition</b> <a href="common_8c_source.html#l00127">common.c:127</a></div></div>
 <div class="ttc" id="adviread_8c_html_a2b4dbdd322ed0f98559b5a0745a9f150"><div class="ttname"><a href="dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150">special</a></div><div class="ttdeci">int special(DviContext *dvi, int opcode)</div><div class="ttdef"><b>Definition</b> <a href="dviread_8c_source.html#l01497">dviread.c:1497</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-desktop_2libmate-desktop_2private_8h_html"><div class="ttname"><a href="mate-desktop_2libmate-desktop_2private_8h.html">private.h</a></div></div>
 <div class="ttc" id="amdvi_8h_html"><div class="ttname"><a href="mdvi_8h.html">mdvi.h</a></div></div>

@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">struct </span>_MateBG {</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    GObject      parent_instance;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">char</span>        *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">char</span>        *filename;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <a class="code hl_enumeration" href="mate-bg_8h.html#a047e62a3fc0a3af98ab76c3c9d0713e0">MateBGPlacement</a>  placement;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_enumeration" href="mate-bg_8h.html#a2280a0883e300c5b0147b8940a6967aa">MateBGColorType</a>  color_type;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    GdkRGBA      primary;</div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">/* Thumbnail utilities */</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">static</span> GdkPixbuf *create_thumbnail_for_filename (<a class="code hl_struct" href="struct__MateDesktopThumbnailFactory.html">MateDesktopThumbnailFactory</a> *factory,</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                         <span class="keyword">const</span> <span class="keywordtype">char</span>            *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                         <span class="keyword">const</span> <span class="keywordtype">char</span>            *filename);</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">static</span> gboolean   get_thumb_annotations (GdkPixbuf             *thumb,</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                     <span class="keywordtype">int</span>                   *orig_width,</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                     <span class="keywordtype">int</span>                   *orig_height);</div>
@@ -267,8 +267,8 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                    <span class="keywordtype">int</span>                   height);</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">static</span> <span class="keywordtype">void</span>       clear_cache          (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>               *bg);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="keyword">static</span> gboolean   is_different         (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>               *bg,</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span>            *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">static</span> gint64     <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a>            (<span class="keyword">const</span> <span class="keywordtype">char</span>            *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span>            *filename);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">static</span> gint64     <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a>            (<span class="keyword">const</span> <span class="keywordtype">char</span>            *filename);</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">static</span> GdkPixbuf *create_img_thumbnail (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>               *bg,</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                    <a class="code hl_struct" href="struct__MateDesktopThumbnailFactory.html">MateDesktopThumbnailFactory</a> *factory,</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    GdkScreen             *screen,</div>
@@ -276,12 +276,12 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                    <span class="keywordtype">int</span>                    dest_height,</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>                    <span class="keywordtype">int</span>            frame_num);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> * get_as_slideshow    (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>               *bg,</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span>        *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>                    <span class="keyword">const</span> <span class="keywordtype">char</span>        *filename);</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#a5411080cad4b24d79dd63f2cece15071">Slide</a> *     get_current_slide   (<a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a>         *show,</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                    <span class="keywordtype">double</span>            *alpha);</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keyword">static</span> gboolean    slideshow_has_multiple_sizes (<a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *show);</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *read_slideshow_file (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *read_slideshow_file (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                       GError     **err);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *slideshow_ref       (<a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a>  *show);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keyword">static</span> <span class="keywordtype">void</span>       slideshow_unref     (<a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a>  *show);</div>
@@ -436,7 +436,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                 GSettings *settings)</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>{</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordtype">char</span>    *tmp;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordtype">char</span>    *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordtype">char</span>    *filename;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    <a class="code hl_enumeration" href="mate-bg_8h.html#a2280a0883e300c5b0147b8940a6967aa">MateBGColorType</a> ctype;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    GdkRGBA c1, c2;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <a class="code hl_enumeration" href="mate-bg_8h.html#a047e62a3fc0a3af98ab76c3c9d0713e0">MateBGPlacement</a> placement;</div>
@@ -447,7 +447,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    bg-&gt;is_enabled = g_settings_get_boolean (settings, <a class="code hl_define" href="mate-bg_8h.html#a4d09162616591c5d548bdcee6fd5a860">MATE_BG_KEY_DRAW_BACKGROUND</a>);</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="comment">/* Filename */</span></div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    tmp = g_settings_get_string (settings, <a class="code hl_define" href="mate-bg_8h.html#a60cd08f3c7831b755ec5a058e335f530">MATE_BG_KEY_PICTURE_FILENAME</a>);</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">if</span> (tmp &amp;&amp; *tmp != <span class="charliteral">&#39;\0&#39;</span>) {</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>        <span class="comment">/* FIXME: UTF-8 checks should go away.</span></div>
@@ -459,25 +459,25 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">         */</span></div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        <span class="keywordflow">if</span> (g_utf8_validate (tmp, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) &amp;&amp;</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>            g_file_test (tmp, G_FILE_TEST_EXISTS)) {</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_strdup (tmp);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>            filename = g_strdup (tmp);</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_filename_from_utf8 (tmp, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>            filename = g_filename_from_utf8 (tmp, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        }</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="comment">/* Fallback to default BG if the filename set is non-existent */</span></div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; !g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_EXISTS)) {</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        <span class="keywordflow">if</span> (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; !g_file_test (filename, G_FILE_TEST_EXISTS)) {</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>            g_free (filename);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            g_settings_delay (settings);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>            g_settings_reset (settings, <a class="code hl_define" href="mate-bg_8h.html#a60cd08f3c7831b755ec5a058e335f530">MATE_BG_KEY_PICTURE_FILENAME</a>);</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_settings_get_string (settings, <a class="code hl_define" href="mate-bg_8h.html#a60cd08f3c7831b755ec5a058e335f530">MATE_BG_KEY_PICTURE_FILENAME</a>);</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>            filename = g_settings_get_string (settings, <a class="code hl_define" href="mate-bg_8h.html#a60cd08f3c7831b755ec5a058e335f530">MATE_BG_KEY_PICTURE_FILENAME</a>);</div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>            g_settings_revert (settings);</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <span class="comment">//* Check if default background exists, also */</span></div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; !g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_EXISTS)) {</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>            <span class="keywordflow">if</span> (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; !g_file_test (filename, G_FILE_TEST_EXISTS)) {</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                g_free (filename);</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>            }</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>        }</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    }</div>
@@ -500,9 +500,9 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span> </div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    <a class="code hl_function" href="mate-bg_8c.html#a37942125c1cbe9a6dc5b89e09c95ba22">mate_bg_set_color</a> (bg, ctype, &amp;c1, &amp;c2);</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <a class="code hl_function" href="mate-bg_8c.html#af9f5d79562191422b2494a733ad440ca">mate_bg_set_placement</a> (bg, placement);</div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <a class="code hl_function" href="mate-bg_8c.html#a8a91a8612a9a3acfc2767d2582d0a435">mate_bg_set_filename</a> (bg, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <a class="code hl_function" href="mate-bg_8c.html#a8a91a8612a9a3acfc2767d2582d0a435">mate_bg_set_filename</a> (bg, filename);</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    g_free (filename);</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>}</div>
 </div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span> </div>
@@ -748,7 +748,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>}</div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>get_wallpaper_cache_filename (<span class="keyword">const</span> <span class="keywordtype">char</span>              *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>get_wallpaper_cache_filename (<span class="keyword">const</span> <span class="keywordtype">char</span>              *filename,</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>                  gint                     num_monitor,</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>                  <a class="code hl_enumeration" href="mate-bg_8h.html#a047e62a3fc0a3af98ab76c3c9d0713e0">MateBGPlacement</a>          placement,</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>                  gint                     width,</div>
@@ -760,8 +760,8 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    gchar *cache_basename;</div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    gchar *cache_dir;</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    md5_filename = g_compute_checksum_for_data (G_CHECKSUM_MD5, (<span class="keyword">const</span> guchar *) <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                            strlen (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    md5_filename = g_compute_checksum_for_data (G_CHECKSUM_MD5, (<span class="keyword">const</span> guchar *) filename,</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                            strlen (filename));</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    cache_prefix_name = get_wallpaper_cache_prefix_name (num_monitor, placement, width, height);</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    cache_basename = g_strdup_printf (<span class="stringliteral">&quot;%s_%s&quot;</span>, cache_prefix_name, md5_filename);</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    cache_dir = get_wallpaper_cache_dir ();</div>
@@ -805,13 +805,13 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>}</div>
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>cache_file_is_valid (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>cache_file_is_valid (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>             <span class="keyword">const</span> <span class="keywordtype">char</span> *cache_filename)</div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>{</div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    <span class="keywordflow">if</span> (!g_file_test (cache_filename, G_FILE_TEST_IS_REGULAR))</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="keywordflow">return</span> (get_mtime (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) &lt; get_mtime (cache_filename));</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="keywordflow">return</span> (get_mtime (filename) &lt; get_mtime (cache_filename));</div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>}</div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -877,14 +877,14 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00750" data-start="{" data-end="}">
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno"><a class="line" href="mate-bg_8c.html#a8a91a8612a9a3acfc2767d2582d0a435">  750</a></span><a class="code hl_function" href="mate-bg_8c.html#a8a91a8612a9a3acfc2767d2582d0a435">mate_bg_set_filename</a> (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>     *bg,</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>{</div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    g_return_if_fail (bg != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="keywordflow">if</span> (is_different (bg, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)) {</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="keywordflow">if</span> (is_different (bg, filename)) {</div>
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        g_free (bg-&gt;filename);</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        bg-&gt;filename = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>        bg-&gt;filename = g_strdup (filename);</div>
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>        bg-&gt;file_mtime = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a> (bg-&gt;filename);</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span> </div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="keywordflow">if</span> (bg-&gt;file_monitor) {</div>
@@ -1412,13 +1412,13 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>}</div>
 <div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span> </div>
 <div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>get_original_size (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>get_original_size (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>           <span class="keywordtype">int</span>        *orig_width,</div>
 <div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>           <span class="keywordtype">int</span>        *orig_height)</div>
 <div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>{</div>
 <div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>    gboolean result;</div>
 <div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span> </div>
-<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>        <span class="keywordflow">if</span> (gdk_pixbuf_get_file_info (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, orig_width, orig_height))</div>
+<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>        <span class="keywordflow">if</span> (gdk_pixbuf_get_file_info (filename, orig_width, orig_height))</div>
 <div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>        result = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>        result = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
@@ -1431,7 +1431,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>{</div>
 <div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>    <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *show;</div>
 <div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span>    <a class="code hl_typedef" href="mate-bg_8c.html#a5411080cad4b24d79dd63f2cece15071">Slide</a> *slide;</div>
-<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size;</div>
 <div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span> </div>
 <div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>    <span class="keywordflow">if</span> (!bg-&gt;filename)</div>
 <div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -1443,8 +1443,8 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span> </div>
 <div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span>    slide = get_current_slide (show, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span>    slideshow_unref (show);</div>
-<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = find_best_size (slide-&gt;file1, best_width, best_height);</div>
-<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file;</div>
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span>    size = find_best_size (slide-&gt;file1, best_width, best_height);</div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span>    <span class="keywordflow">return</span> size-&gt;file;</div>
 <div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span>}</div>
 <div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span> </div>
 <div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span>gboolean</div>
@@ -1458,7 +1458,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span>{</div>
 <div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span>    GdkPixbuf *thumb;</div>
 <div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span>    gboolean result = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>    <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span>    <span class="keyword">const</span> gchar *filename;</div>
 <div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span> </div>
 <div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span>    g_return_val_if_fail (bg != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span>    g_return_val_if_fail (factory != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
@@ -1466,8 +1466,8 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span>    <span class="keywordflow">if</span> (!bg-&gt;filename)</div>
 <div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span> </div>
-<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = get_filename_for_size (bg, best_width, best_height);</div>
-<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>    thumb = create_thumbnail_for_filename (factory, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span>    filename = get_filename_for_size (bg, best_width, best_height);</div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span>    thumb = create_thumbnail_for_filename (factory, filename);</div>
 <div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span>    <span class="keywordflow">if</span> (thumb) {</div>
 <div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span>        <span class="keywordflow">if</span> (get_thumb_annotations (thumb, width, height))</div>
 <div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span>            result = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -1476,7 +1476,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span>    }</div>
 <div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span> </div>
 <div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>    <span class="keywordflow">if</span> (!result) {</div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>        <span class="keywordflow">if</span> (get_original_size (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, width, height))</div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>        <span class="keywordflow">if</span> (get_original_size (filename, width, height))</div>
 <div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>            result = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>    }</div>
 <div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span> </div>
@@ -1870,7 +1870,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01787" name="l01787"></a><span class="lineno"> 1787</span><span class="keyword">struct </span><a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a></div>
 <div class="line"><a id="l01788" name="l01788"></a><span class="lineno"> 1788</span>{</div>
 <div class="line"><a id="l01789" name="l01789"></a><span class="lineno"> 1789</span>    <a class="code hl_enumeration" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3">FileType</a> <a class="code hl_variable" href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a>;</div>
-<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l01790" name="l01790"></a><span class="lineno"> 1790</span>    <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l01791" name="l01791"></a><span class="lineno"> 1791</span>    <span class="keyword">union </span>{</div>
 <div class="line"><a id="l01792" name="l01792"></a><span class="lineno"> 1792</span>        GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l01793" name="l01793"></a><span class="lineno"> 1793</span>        <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *slideshow;</div>
@@ -1912,7 +1912,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01829" name="l01829"></a><span class="lineno"> 1829</span>}</div>
 <div class="line"><a id="l01830" name="l01830"></a><span class="lineno"> 1830</span> </div>
 <div class="line"><a id="l01831" name="l01831"></a><span class="lineno"> 1831</span><span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *</div>
-<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>file_cache_lookup (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg, <a class="code hl_enumeration" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3">FileType</a> type, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l01832" name="l01832"></a><span class="lineno"> 1832</span>file_cache_lookup (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg, <a class="code hl_enumeration" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3">FileType</a> type, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l01833" name="l01833"></a><span class="lineno"> 1833</span>{</div>
 <div class="line"><a id="l01834" name="l01834"></a><span class="lineno"> 1834</span>    GList *list;</div>
 <div class="line"><a id="l01835" name="l01835"></a><span class="lineno"> 1835</span> </div>
@@ -1920,7 +1920,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01837" name="l01837"></a><span class="lineno"> 1837</span>        <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = list-&gt;data;</div>
 <div class="line"><a id="l01838" name="l01838"></a><span class="lineno"> 1838</span> </div>
 <div class="line"><a id="l01839" name="l01839"></a><span class="lineno"> 1839</span>        <span class="keywordflow">if</span> (ent &amp;&amp; ent-&gt;type == type &amp;&amp;</div>
-<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>            strcmp (ent-&gt;filename, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) == 0) {</div>
+<div class="line"><a id="l01840" name="l01840"></a><span class="lineno"> 1840</span>            strcmp (ent-&gt;filename, filename) == 0) {</div>
 <div class="line"><a id="l01841" name="l01841"></a><span class="lineno"> 1841</span>            <span class="keywordflow">return</span> ent;</div>
 <div class="line"><a id="l01842" name="l01842"></a><span class="lineno"> 1842</span>        }</div>
 <div class="line"><a id="l01843" name="l01843"></a><span class="lineno"> 1843</span>    }</div>
@@ -1931,14 +1931,14 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01848" name="l01848"></a><span class="lineno"> 1848</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *</div>
 <div class="line"><a id="l01849" name="l01849"></a><span class="lineno"> 1849</span>file_cache_entry_new (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg,</div>
 <div class="line"><a id="l01850" name="l01850"></a><span class="lineno"> 1850</span>              <a class="code hl_enumeration" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3">FileType</a> type,</div>
-<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l01851" name="l01851"></a><span class="lineno"> 1851</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l01852" name="l01852"></a><span class="lineno"> 1852</span>{</div>
 <div class="line"><a id="l01853" name="l01853"></a><span class="lineno"> 1853</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = g_new0 (FileCacheEntry, 1);</div>
 <div class="line"><a id="l01854" name="l01854"></a><span class="lineno"> 1854</span> </div>
-<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span>    g_assert (!file_cache_lookup (bg, type, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l01855" name="l01855"></a><span class="lineno"> 1855</span>    g_assert (!file_cache_lookup (bg, type, filename));</div>
 <div class="line"><a id="l01856" name="l01856"></a><span class="lineno"> 1856</span> </div>
 <div class="line"><a id="l01857" name="l01857"></a><span class="lineno"> 1857</span>    ent-&gt;type = <a class="code hl_variable" href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a>;</div>
-<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>    ent-&gt;filename = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01858" name="l01858"></a><span class="lineno"> 1858</span>    ent-&gt;filename = g_strdup (filename);</div>
 <div class="line"><a id="l01859" name="l01859"></a><span class="lineno"> 1859</span> </div>
 <div class="line"><a id="l01860" name="l01860"></a><span class="lineno"> 1860</span>    bg-&gt;file_cache = g_list_prepend (bg-&gt;file_cache, ent);</div>
 <div class="line"><a id="l01861" name="l01861"></a><span class="lineno"> 1861</span> </div>
@@ -1949,34 +1949,34 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01866" name="l01866"></a><span class="lineno"> 1866</span> </div>
 <div class="line"><a id="l01867" name="l01867"></a><span class="lineno"> 1867</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l01868" name="l01868"></a><span class="lineno"> 1868</span>file_cache_add_pixbuf (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg,</div>
-<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>               <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01869" name="l01869"></a><span class="lineno"> 1869</span>               <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l01870" name="l01870"></a><span class="lineno"> 1870</span>               GdkPixbuf *pixbuf)</div>
 <div class="line"><a id="l01871" name="l01871"></a><span class="lineno"> 1871</span>{</div>
-<div class="line"><a id="l01872" name="l01872"></a><span class="lineno"> 1872</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = file_cache_entry_new (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a761b6b1e4d4c08f1ba4ff7cb233c57a6">PIXBUF</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01872" name="l01872"></a><span class="lineno"> 1872</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = file_cache_entry_new (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a761b6b1e4d4c08f1ba4ff7cb233c57a6">PIXBUF</a>, filename);</div>
 <div class="line"><a id="l01873" name="l01873"></a><span class="lineno"> 1873</span>    ent-&gt;u.pixbuf = g_object_ref (pixbuf);</div>
 <div class="line"><a id="l01874" name="l01874"></a><span class="lineno"> 1874</span>}</div>
 <div class="line"><a id="l01875" name="l01875"></a><span class="lineno"> 1875</span> </div>
 <div class="line"><a id="l01876" name="l01876"></a><span class="lineno"> 1876</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l01877" name="l01877"></a><span class="lineno"> 1877</span>file_cache_add_thumbnail (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg,</div>
-<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01878" name="l01878"></a><span class="lineno"> 1878</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l01879" name="l01879"></a><span class="lineno"> 1879</span>              GdkPixbuf *pixbuf)</div>
 <div class="line"><a id="l01880" name="l01880"></a><span class="lineno"> 1880</span>{</div>
-<div class="line"><a id="l01881" name="l01881"></a><span class="lineno"> 1881</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = file_cache_entry_new (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3ae454c93a5d855d58c0da6943003ed2e1">THUMBNAIL</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01881" name="l01881"></a><span class="lineno"> 1881</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = file_cache_entry_new (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3ae454c93a5d855d58c0da6943003ed2e1">THUMBNAIL</a>, filename);</div>
 <div class="line"><a id="l01882" name="l01882"></a><span class="lineno"> 1882</span>    ent-&gt;u.thumbnail = g_object_ref (pixbuf);</div>
 <div class="line"><a id="l01883" name="l01883"></a><span class="lineno"> 1883</span>}</div>
 <div class="line"><a id="l01884" name="l01884"></a><span class="lineno"> 1884</span> </div>
 <div class="line"><a id="l01885" name="l01885"></a><span class="lineno"> 1885</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l01886" name="l01886"></a><span class="lineno"> 1886</span>file_cache_add_slide_show (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg,</div>
-<div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span>               <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01887" name="l01887"></a><span class="lineno"> 1887</span>               <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l01888" name="l01888"></a><span class="lineno"> 1888</span>               <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *show)</div>
 <div class="line"><a id="l01889" name="l01889"></a><span class="lineno"> 1889</span>{</div>
-<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = file_cache_entry_new (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a78859b6ccbd77c4dd4657e637a9e2666">SLIDESHOW</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01890" name="l01890"></a><span class="lineno"> 1890</span>    <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent = file_cache_entry_new (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a78859b6ccbd77c4dd4657e637a9e2666">SLIDESHOW</a>, filename);</div>
 <div class="line"><a id="l01891" name="l01891"></a><span class="lineno"> 1891</span>    ent-&gt;u.slideshow = slideshow_ref (show);</div>
 <div class="line"><a id="l01892" name="l01892"></a><span class="lineno"> 1892</span>}</div>
 <div class="line"><a id="l01893" name="l01893"></a><span class="lineno"> 1893</span> </div>
 <div class="line"><a id="l01894" name="l01894"></a><span class="lineno"> 1894</span><span class="keyword">static</span> GdkPixbuf *</div>
 <div class="line"><a id="l01895" name="l01895"></a><span class="lineno"> 1895</span>load_from_cache_file (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>     *bg,</div>
-<div class="line"><a id="l01896" name="l01896"></a><span class="lineno"> 1896</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01896" name="l01896"></a><span class="lineno"> 1896</span>              <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l01897" name="l01897"></a><span class="lineno"> 1897</span>              gint        num_monitor,</div>
 <div class="line"><a id="l01898" name="l01898"></a><span class="lineno"> 1898</span>              gint        best_width,</div>
 <div class="line"><a id="l01899" name="l01899"></a><span class="lineno"> 1899</span>              gint        best_height)</div>
@@ -1984,10 +1984,10 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01901" name="l01901"></a><span class="lineno"> 1901</span>    GdkPixbuf *pixbuf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l01902" name="l01902"></a><span class="lineno"> 1902</span>    gchar *cache_filename;</div>
 <div class="line"><a id="l01903" name="l01903"></a><span class="lineno"> 1903</span> </div>
-<div class="line"><a id="l01904" name="l01904"></a><span class="lineno"> 1904</span>    cache_filename = get_wallpaper_cache_filename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, num_monitor, bg-&gt;placement,</div>
+<div class="line"><a id="l01904" name="l01904"></a><span class="lineno"> 1904</span>    cache_filename = get_wallpaper_cache_filename (filename, num_monitor, bg-&gt;placement,</div>
 <div class="line"><a id="l01905" name="l01905"></a><span class="lineno"> 1905</span>                            best_width, best_height);</div>
 <div class="line"><a id="l01906" name="l01906"></a><span class="lineno"> 1906</span> </div>
-<div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span>    <span class="keywordflow">if</span> (cache_file_is_valid (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, cache_filename))</div>
+<div class="line"><a id="l01907" name="l01907"></a><span class="lineno"> 1907</span>    <span class="keywordflow">if</span> (cache_file_is_valid (filename, cache_filename))</div>
 <div class="line"><a id="l01908" name="l01908"></a><span class="lineno"> 1908</span>        pixbuf = gdk_pixbuf_new_from_file (cache_filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01909" name="l01909"></a><span class="lineno"> 1909</span> </div>
 <div class="line"><a id="l01910" name="l01910"></a><span class="lineno"> 1910</span>    g_free (cache_filename);</div>
@@ -1997,13 +1997,13 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01914" name="l01914"></a><span class="lineno"> 1914</span> </div>
 <div class="line"><a id="l01915" name="l01915"></a><span class="lineno"> 1915</span><span class="keyword">static</span> GdkPixbuf *</div>
 <div class="line"><a id="l01916" name="l01916"></a><span class="lineno"> 1916</span>get_as_pixbuf_for_size (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>    *bg,</div>
-<div class="line"><a id="l01917" name="l01917"></a><span class="lineno"> 1917</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01917" name="l01917"></a><span class="lineno"> 1917</span>            <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l01918" name="l01918"></a><span class="lineno"> 1918</span>            gint         monitor,</div>
 <div class="line"><a id="l01919" name="l01919"></a><span class="lineno"> 1919</span>            gint         best_width,</div>
 <div class="line"><a id="l01920" name="l01920"></a><span class="lineno"> 1920</span>            gint         best_height)</div>
 <div class="line"><a id="l01921" name="l01921"></a><span class="lineno"> 1921</span>{</div>
 <div class="line"><a id="l01922" name="l01922"></a><span class="lineno"> 1922</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent;</div>
-<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>    <span class="keywordflow">if</span> ((ent = file_cache_lookup (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a761b6b1e4d4c08f1ba4ff7cb233c57a6">PIXBUF</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>))) {</div>
+<div class="line"><a id="l01923" name="l01923"></a><span class="lineno"> 1923</span>    <span class="keywordflow">if</span> ((ent = file_cache_lookup (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a761b6b1e4d4c08f1ba4ff7cb233c57a6">PIXBUF</a>, filename))) {</div>
 <div class="line"><a id="l01924" name="l01924"></a><span class="lineno"> 1924</span>        <span class="keywordflow">return</span> g_object_ref (ent-&gt;u.pixbuf);</div>
 <div class="line"><a id="l01925" name="l01925"></a><span class="lineno"> 1925</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>        GdkPixbufFormat *format;</div>
@@ -2013,12 +2013,12 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span> </div>
 <div class="line"><a id="l01931" name="l01931"></a><span class="lineno"> 1931</span>        <span class="comment">/* Try to hit local cache first if relevant */</span></div>
 <div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>        <span class="keywordflow">if</span> (monitor != -1)</div>
-<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>            pixbuf = load_from_cache_file (bg, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, monitor,</div>
+<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>            pixbuf = load_from_cache_file (bg, filename, monitor,</div>
 <div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>                            best_width, best_height);</div>
 <div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span> </div>
 <div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>        <span class="keywordflow">if</span> (!pixbuf) {</div>
 <div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>            <span class="comment">/* If scalable choose maximum size */</span></div>
-<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>            format = gdk_pixbuf_get_file_info (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>            format = gdk_pixbuf_get_file_info (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>            <span class="keywordflow">if</span> (format != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>                tmp = gdk_pixbuf_format_get_name (format);</div>
 <div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span> </div>
@@ -2028,11 +2028,11 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01945" name="l01945"></a><span class="lineno"> 1945</span>                 bg-&gt;placement == <a class="code hl_enumvalue" href="mate-bg_8h.html#a047e62a3fc0a3af98ab76c3c9d0713e0a71654fbda231bd13c953ff3db7ea8b79">MATE_BG_PLACEMENT_SCALED</a> ||</div>
 <div class="line"><a id="l01946" name="l01946"></a><span class="lineno"> 1946</span>                 bg-&gt;placement == <a class="code hl_enumvalue" href="mate-bg_8h.html#a047e62a3fc0a3af98ab76c3c9d0713e0abaab24f453e182ec6bc13ff4e7c52000">MATE_BG_PLACEMENT_ZOOMED</a>))</div>
 <div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>            {</div>
-<div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>                pixbuf = gdk_pixbuf_new_from_file_at_size (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>                pixbuf = gdk_pixbuf_new_from_file_at_size (filename,</div>
 <div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>                                       best_width,</div>
 <div class="line"><a id="l01950" name="l01950"></a><span class="lineno"> 1950</span>                                       best_height, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01951" name="l01951"></a><span class="lineno"> 1951</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01952" name="l01952"></a><span class="lineno"> 1952</span>                pixbuf = gdk_pixbuf_new_from_file (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01952" name="l01952"></a><span class="lineno"> 1952</span>                pixbuf = gdk_pixbuf_new_from_file (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01953" name="l01953"></a><span class="lineno"> 1953</span>            }</div>
 <div class="line"><a id="l01954" name="l01954"></a><span class="lineno"> 1954</span> </div>
 <div class="line"><a id="l01955" name="l01955"></a><span class="lineno"> 1955</span>            <span class="keywordflow">if</span> (tmp != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -2043,7 +2043,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01960" name="l01960"></a><span class="lineno"> 1960</span>            tmp_pixbuf = gdk_pixbuf_apply_embedded_orientation (pixbuf);</div>
 <div class="line"><a id="l01961" name="l01961"></a><span class="lineno"> 1961</span>            g_object_unref (pixbuf);</div>
 <div class="line"><a id="l01962" name="l01962"></a><span class="lineno"> 1962</span>            pixbuf = tmp_pixbuf;</div>
-<div class="line"><a id="l01963" name="l01963"></a><span class="lineno"> 1963</span>            file_cache_add_pixbuf (bg, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, pixbuf);</div>
+<div class="line"><a id="l01963" name="l01963"></a><span class="lineno"> 1963</span>            file_cache_add_pixbuf (bg, filename, pixbuf);</div>
 <div class="line"><a id="l01964" name="l01964"></a><span class="lineno"> 1964</span>        }</div>
 <div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span> </div>
 <div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span>        <span class="keywordflow">return</span> pixbuf;</div>
@@ -2051,34 +2051,34 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>}</div>
 <div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span> </div>
 <div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *</div>
-<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>get_as_slideshow (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>get_as_slideshow (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>{</div>
 <div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent;</div>
-<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>    <span class="keywordflow">if</span> ((ent = file_cache_lookup (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a78859b6ccbd77c4dd4657e637a9e2666">SLIDESHOW</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>))) {</div>
+<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>    <span class="keywordflow">if</span> ((ent = file_cache_lookup (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a78859b6ccbd77c4dd4657e637a9e2666">SLIDESHOW</a>, filename))) {</div>
 <div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span>        <span class="keywordflow">return</span> slideshow_ref (ent-&gt;u.slideshow);</div>
 <div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>    }</div>
 <div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>        <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *show = read_slideshow_file (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>        <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *show = read_slideshow_file (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span> </div>
 <div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>        <span class="keywordflow">if</span> (show)</div>
-<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>            file_cache_add_slide_show (bg, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, show);</div>
+<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>            file_cache_add_slide_show (bg, filename, show);</div>
 <div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span> </div>
 <div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>        <span class="keywordflow">return</span> show;</div>
 <div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span>    }</div>
 <div class="line"><a id="l01985" name="l01985"></a><span class="lineno"> 1985</span>}</div>
 <div class="line"><a id="l01986" name="l01986"></a><span class="lineno"> 1986</span> </div>
 <div class="line"><a id="l01987" name="l01987"></a><span class="lineno"> 1987</span><span class="keyword">static</span> GdkPixbuf *</div>
-<div class="line"><a id="l01988" name="l01988"></a><span class="lineno"> 1988</span>get_as_thumbnail (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg, <a class="code hl_struct" href="struct__MateDesktopThumbnailFactory.html">MateDesktopThumbnailFactory</a> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l01988" name="l01988"></a><span class="lineno"> 1988</span>get_as_thumbnail (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a> *bg, <a class="code hl_struct" href="struct__MateDesktopThumbnailFactory.html">MateDesktopThumbnailFactory</a> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l01989" name="l01989"></a><span class="lineno"> 1989</span>{</div>
 <div class="line"><a id="l01990" name="l01990"></a><span class="lineno"> 1990</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="mate-bg_8c.html#abe77162d3c34194b428f2ccf21515d8e">FileCacheEntry</a> *ent;</div>
-<div class="line"><a id="l01991" name="l01991"></a><span class="lineno"> 1991</span>    <span class="keywordflow">if</span> ((ent = file_cache_lookup (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3ae454c93a5d855d58c0da6943003ed2e1">THUMBNAIL</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>))) {</div>
+<div class="line"><a id="l01991" name="l01991"></a><span class="lineno"> 1991</span>    <span class="keywordflow">if</span> ((ent = file_cache_lookup (bg, <a class="code hl_enumvalue" href="mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3ae454c93a5d855d58c0da6943003ed2e1">THUMBNAIL</a>, filename))) {</div>
 <div class="line"><a id="l01992" name="l01992"></a><span class="lineno"> 1992</span>        <span class="keywordflow">return</span> g_object_ref (ent-&gt;u.thumbnail);</div>
 <div class="line"><a id="l01993" name="l01993"></a><span class="lineno"> 1993</span>    }</div>
 <div class="line"><a id="l01994" name="l01994"></a><span class="lineno"> 1994</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01995" name="l01995"></a><span class="lineno"> 1995</span>        GdkPixbuf *thumb = create_thumbnail_for_filename (factory, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l01995" name="l01995"></a><span class="lineno"> 1995</span>        GdkPixbuf *thumb = create_thumbnail_for_filename (factory, filename);</div>
 <div class="line"><a id="l01996" name="l01996"></a><span class="lineno"> 1996</span> </div>
 <div class="line"><a id="l01997" name="l01997"></a><span class="lineno"> 1997</span>        <span class="keywordflow">if</span> (thumb)</div>
-<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>            file_cache_add_thumbnail (bg, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, thumb);</div>
+<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>            file_cache_add_thumbnail (bg, filename, thumb);</div>
 <div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span> </div>
 <div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>        <span class="keywordflow">return</span> thumb;</div>
 <div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>    }</div>
@@ -2175,14 +2175,14 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>}</div>
 <div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span> </div>
 <div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span><span class="keyword">static</span> gint64</div>
-<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span><a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l02095" name="l02095"></a><span class="lineno"> 2095</span><a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l02096" name="l02096"></a><span class="lineno"> 2096</span>{</div>
 <div class="line"><a id="l02097" name="l02097"></a><span class="lineno"> 2097</span>    GFile     *file;</div>
 <div class="line"><a id="l02098" name="l02098"></a><span class="lineno"> 2098</span>    GFileInfo *info;</div>
 <div class="line"><a id="l02099" name="l02099"></a><span class="lineno"> 2099</span>    gint64     mtime = (gint64)-1;</div>
 <div class="line"><a id="l02100" name="l02100"></a><span class="lineno"> 2100</span> </div>
-<div class="line"><a id="l02101" name="l02101"></a><span class="lineno"> 2101</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) {</div>
-<div class="line"><a id="l02102" name="l02102"></a><span class="lineno"> 2102</span>        file = g_file_new_for_path (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02101" name="l02101"></a><span class="lineno"> 2101</span>    <span class="keywordflow">if</span> (filename) {</div>
+<div class="line"><a id="l02102" name="l02102"></a><span class="lineno"> 2102</span>        file = g_file_new_for_path (filename);</div>
 <div class="line"><a id="l02103" name="l02103"></a><span class="lineno"> 2103</span>        info = g_file_query_info (file, G_FILE_ATTRIBUTE_TIME_MODIFIED,</div>
 <div class="line"><a id="l02104" name="l02104"></a><span class="lineno"> 2104</span>                      G_FILE_QUERY_INFO_NONE, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02105" name="l02105"></a><span class="lineno"> 2105</span>        <span class="keywordflow">if</span> (info) {</div>
@@ -2198,7 +2198,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02115" name="l02115"></a><span class="lineno"> 2115</span> </div>
 <div class="line"><a id="l02116" name="l02116"></a><span class="lineno"> 2116</span><span class="keyword">static</span> GdkPixbuf *</div>
 <div class="line"><a id="l02117" name="l02117"></a><span class="lineno"> 2117</span>scale_thumbnail (<a class="code hl_enumeration" href="mate-bg_8h.html#a047e62a3fc0a3af98ab76c3c9d0713e0">MateBGPlacement</a> placement,</div>
-<div class="line"><a id="l02118" name="l02118"></a><span class="lineno"> 2118</span>         <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l02118" name="l02118"></a><span class="lineno"> 2118</span>         <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l02119" name="l02119"></a><span class="lineno"> 2119</span>         GdkPixbuf *thumb,</div>
 <div class="line"><a id="l02120" name="l02120"></a><span class="lineno"> 2120</span>         GdkScreen *screen,</div>
 <div class="line"><a id="l02121" name="l02121"></a><span class="lineno"> 2121</span>         <span class="keywordtype">int</span>        dest_width,</div>
@@ -2217,7 +2217,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02134" name="l02134"></a><span class="lineno"> 2134</span>    }</div>
 <div class="line"><a id="l02135" name="l02135"></a><span class="lineno"> 2135</span> </div>
 <div class="line"><a id="l02136" name="l02136"></a><span class="lineno"> 2136</span>    <span class="keywordflow">if</span> (get_thumb_annotations (thumb, &amp;o_width, &amp;o_height)      ||</div>
-<div class="line"><a id="l02137" name="l02137"></a><span class="lineno"> 2137</span>        (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp; get_original_size (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, &amp;o_width, &amp;o_height))) {</div>
+<div class="line"><a id="l02137" name="l02137"></a><span class="lineno"> 2137</span>        (filename &amp;&amp; get_original_size (filename, &amp;o_width, &amp;o_height))) {</div>
 <div class="line"><a id="l02138" name="l02138"></a><span class="lineno"> 2138</span>        GdkDisplay *display;</div>
 <div class="line"><a id="l02139" name="l02139"></a><span class="lineno"> 2139</span>        <span class="keywordtype">int</span> scr_height;</div>
 <div class="line"><a id="l02140" name="l02140"></a><span class="lineno"> 2140</span>        <span class="keywordtype">int</span> scr_width;</div>
@@ -2400,19 +2400,19 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02317" name="l02317"></a><span class="lineno"> 2317</span> </div>
 <div class="line"><a id="l02318" name="l02318"></a><span class="lineno"> 2318</span>    <span class="keywordflow">for</span> (pass = 0; pass &lt; 2; pass++) {</div>
 <div class="line"><a id="l02319" name="l02319"></a><span class="lineno"> 2319</span>        <span class="keywordflow">for</span> (s = sizes; s; s = s-&gt;next) {</div>
-<div class="line"><a id="l02320" name="l02320"></a><span class="lineno"> 2320</span>            <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = s-&gt;data;</div>
+<div class="line"><a id="l02320" name="l02320"></a><span class="lineno"> 2320</span>            <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size = s-&gt;data;</div>
 <div class="line"><a id="l02321" name="l02321"></a><span class="lineno"> 2321</span> </div>
-<div class="line"><a id="l02322" name="l02322"></a><span class="lineno"> 2322</span>            <span class="keywordflow">if</span> (pass == 0 &amp;&amp; (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;width &lt; width || <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;height &lt; height))</div>
+<div class="line"><a id="l02322" name="l02322"></a><span class="lineno"> 2322</span>            <span class="keywordflow">if</span> (pass == 0 &amp;&amp; (size-&gt;width &lt; width || size-&gt;height &lt; height))</div>
 <div class="line"><a id="l02323" name="l02323"></a><span class="lineno"> 2323</span>                <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l02324" name="l02324"></a><span class="lineno"> 2324</span> </div>
-<div class="line"><a id="l02325" name="l02325"></a><span class="lineno"> 2325</span>            d = fabs (a - <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;width/(gdouble)<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;height);</div>
+<div class="line"><a id="l02325" name="l02325"></a><span class="lineno"> 2325</span>            d = fabs (a - size-&gt;width/(gdouble)size-&gt;height);</div>
 <div class="line"><a id="l02326" name="l02326"></a><span class="lineno"> 2326</span>            <span class="keywordflow">if</span> (d &lt; distance) {</div>
 <div class="line"><a id="l02327" name="l02327"></a><span class="lineno"> 2327</span>                distance = d;</div>
-<div class="line"><a id="l02328" name="l02328"></a><span class="lineno"> 2328</span>                best = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l02328" name="l02328"></a><span class="lineno"> 2328</span>                best = size;</div>
 <div class="line"><a id="l02329" name="l02329"></a><span class="lineno"> 2329</span>            }</div>
 <div class="line"><a id="l02330" name="l02330"></a><span class="lineno"> 2330</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (d == distance) {</div>
-<div class="line"><a id="l02331" name="l02331"></a><span class="lineno"> 2331</span>                <span class="keywordflow">if</span> (best &amp;&amp; (abs (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;width - width) &lt; abs (best-&gt;width - width))) {</div>
-<div class="line"><a id="l02332" name="l02332"></a><span class="lineno"> 2332</span>                    best = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l02331" name="l02331"></a><span class="lineno"> 2331</span>                <span class="keywordflow">if</span> (best &amp;&amp; (abs (size-&gt;width - width) &lt; abs (best-&gt;width - width))) {</div>
+<div class="line"><a id="l02332" name="l02332"></a><span class="lineno"> 2332</span>                    best = size;</div>
 <div class="line"><a id="l02333" name="l02333"></a><span class="lineno"> 2333</span>                }</div>
 <div class="line"><a id="l02334" name="l02334"></a><span class="lineno"> 2334</span>            }</div>
 <div class="line"><a id="l02335" name="l02335"></a><span class="lineno"> 2335</span>        }</div>
@@ -2465,23 +2465,23 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02382" name="l02382"></a><span class="lineno"> 2382</span>                timeout = get_slide_timeout (slide);</div>
 <div class="line"><a id="l02383" name="l02383"></a><span class="lineno"> 2383</span>                time_until_next_change = (guint) timeout;</div>
 <div class="line"><a id="l02384" name="l02384"></a><span class="lineno"> 2384</span>                <span class="keywordflow">if</span> (slide-&gt;fixed) {</div>
-<div class="line"><a id="l02385" name="l02385"></a><span class="lineno"> 2385</span>                    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = find_best_size (slide-&gt;file1,</div>
+<div class="line"><a id="l02385" name="l02385"></a><span class="lineno"> 2385</span>                    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size = find_best_size (slide-&gt;file1,</div>
 <div class="line"><a id="l02386" name="l02386"></a><span class="lineno"> 2386</span>                                     best_width, best_height);</div>
 <div class="line"><a id="l02387" name="l02387"></a><span class="lineno"> 2387</span>                    bg-&gt;pixbuf_cache =</div>
-<div class="line"><a id="l02388" name="l02388"></a><span class="lineno"> 2388</span>                        get_as_pixbuf_for_size (bg, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file, monitor,</div>
+<div class="line"><a id="l02388" name="l02388"></a><span class="lineno"> 2388</span>                        get_as_pixbuf_for_size (bg, size-&gt;file, monitor,</div>
 <div class="line"><a id="l02389" name="l02389"></a><span class="lineno"> 2389</span>                                    best_width, best_height);</div>
 <div class="line"><a id="l02390" name="l02390"></a><span class="lineno"> 2390</span>                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02391" name="l02391"></a><span class="lineno"> 2391</span>                    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l02391" name="l02391"></a><span class="lineno"> 2391</span>                    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size;</div>
 <div class="line"><a id="l02392" name="l02392"></a><span class="lineno"> 2392</span>                    GdkPixbuf *p1, *p2;</div>
 <div class="line"><a id="l02393" name="l02393"></a><span class="lineno"> 2393</span> </div>
-<div class="line"><a id="l02394" name="l02394"></a><span class="lineno"> 2394</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = find_best_size (slide-&gt;file1,</div>
+<div class="line"><a id="l02394" name="l02394"></a><span class="lineno"> 2394</span>                    size = find_best_size (slide-&gt;file1,</div>
 <div class="line"><a id="l02395" name="l02395"></a><span class="lineno"> 2395</span>                                best_width, best_height);</div>
-<div class="line"><a id="l02396" name="l02396"></a><span class="lineno"> 2396</span>                    p1 = get_as_pixbuf_for_size (bg, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file, monitor,</div>
+<div class="line"><a id="l02396" name="l02396"></a><span class="lineno"> 2396</span>                    p1 = get_as_pixbuf_for_size (bg, size-&gt;file, monitor,</div>
 <div class="line"><a id="l02397" name="l02397"></a><span class="lineno"> 2397</span>                                     best_width, best_height);</div>
 <div class="line"><a id="l02398" name="l02398"></a><span class="lineno"> 2398</span> </div>
-<div class="line"><a id="l02399" name="l02399"></a><span class="lineno"> 2399</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = find_best_size (slide-&gt;file2,</div>
+<div class="line"><a id="l02399" name="l02399"></a><span class="lineno"> 2399</span>                    size = find_best_size (slide-&gt;file2,</div>
 <div class="line"><a id="l02400" name="l02400"></a><span class="lineno"> 2400</span>                                best_width, best_height);</div>
-<div class="line"><a id="l02401" name="l02401"></a><span class="lineno"> 2401</span>                    p2 = get_as_pixbuf_for_size (bg, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file, monitor,</div>
+<div class="line"><a id="l02401" name="l02401"></a><span class="lineno"> 2401</span>                    p2 = get_as_pixbuf_for_size (bg, size-&gt;file, monitor,</div>
 <div class="line"><a id="l02402" name="l02402"></a><span class="lineno"> 2402</span>                                     best_width, best_height);</div>
 <div class="line"><a id="l02403" name="l02403"></a><span class="lineno"> 2403</span> </div>
 <div class="line"><a id="l02404" name="l02404"></a><span class="lineno"> 2404</span>                    <span class="keywordflow">if</span> (p1 &amp;&amp; p2)</div>
@@ -2513,22 +2513,22 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02430" name="l02430"></a><span class="lineno"> 2430</span> </div>
 <div class="line"><a id="l02431" name="l02431"></a><span class="lineno"> 2431</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l02432" name="l02432"></a><span class="lineno"> 2432</span>is_different (<a class="code hl_typedef" href="mate-bg_8h.html#a3ce79e4a49faf3876eff045b4b27e87a">MateBG</a>    *bg,</div>
-<div class="line"><a id="l02433" name="l02433"></a><span class="lineno"> 2433</span>          <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l02433" name="l02433"></a><span class="lineno"> 2433</span>          <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l02434" name="l02434"></a><span class="lineno"> 2434</span>{</div>
-<div class="line"><a id="l02435" name="l02435"></a><span class="lineno"> 2435</span>    <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp; bg-&gt;filename) {</div>
+<div class="line"><a id="l02435" name="l02435"></a><span class="lineno"> 2435</span>    <span class="keywordflow">if</span> (!filename &amp;&amp; bg-&gt;filename) {</div>
 <div class="line"><a id="l02436" name="l02436"></a><span class="lineno"> 2436</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02437" name="l02437"></a><span class="lineno"> 2437</span>    }</div>
-<div class="line"><a id="l02438" name="l02438"></a><span class="lineno"> 2438</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp; !bg-&gt;filename) {</div>
+<div class="line"><a id="l02438" name="l02438"></a><span class="lineno"> 2438</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (filename &amp;&amp; !bg-&gt;filename) {</div>
 <div class="line"><a id="l02439" name="l02439"></a><span class="lineno"> 2439</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02440" name="l02440"></a><span class="lineno"> 2440</span>    }</div>
-<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp; !bg-&gt;filename) {</div>
+<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!filename &amp;&amp; !bg-&gt;filename) {</div>
 <div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span>    }</div>
 <div class="line"><a id="l02444" name="l02444"></a><span class="lineno"> 2444</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>        <span class="keywordflow">if</span> (get_mtime (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) != bg-&gt;file_mtime)</div>
+<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>        <span class="keywordflow">if</span> (get_mtime (filename) != bg-&gt;file_mtime)</div>
 <div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span> </div>
-<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>        <span class="keywordflow">if</span> (strcmp (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, bg-&gt;filename) != 0)</div>
+<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span>        <span class="keywordflow">if</span> (strcmp (filename, bg-&gt;filename) != 0)</div>
 <div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span>            <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span> </div>
 <div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
@@ -2840,24 +2840,24 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span>    }</div>
 <div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <span class="stringliteral">&quot;size&quot;</span>) == 0) {</div>
 <div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span>        <a class="code hl_typedef" href="mate-bg_8c.html#a5411080cad4b24d79dd63f2cece15071">Slide</a> *slide = parser-&gt;slides-&gt;tail-&gt;data;</div>
-<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span>        <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_new0 (<a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a>, 1);</div>
+<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span>        <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size = g_new0 (<a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a>, 1);</div>
 <div class="line"><a id="l02761" name="l02761"></a><span class="lineno"> 2761</span>        <span class="keywordflow">for</span> (i = 0; attr_names[i]; i++) {</div>
 <div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span>            <span class="keywordflow">if</span> (strcmp (attr_names[i], <span class="stringliteral">&quot;width&quot;</span>) == 0)</div>
-<div class="line"><a id="l02763" name="l02763"></a><span class="lineno"> 2763</span>                <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;width = atoi (attr_values[i]);</div>
+<div class="line"><a id="l02763" name="l02763"></a><span class="lineno"> 2763</span>                size-&gt;width = atoi (attr_values[i]);</div>
 <div class="line"><a id="l02764" name="l02764"></a><span class="lineno"> 2764</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp (attr_names[i], <span class="stringliteral">&quot;height&quot;</span>) == 0)</div>
-<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span>                <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;height = atoi (attr_values[i]);</div>
+<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span>                size-&gt;height = atoi (attr_values[i]);</div>
 <div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span>        }</div>
 <div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span>        <span class="keywordflow">if</span> (parser-&gt;stack-&gt;tail &amp;&amp;</div>
 <div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>            (strcmp (parser-&gt;stack-&gt;tail-&gt;data, <span class="stringliteral">&quot;file&quot;</span>) == 0 ||</div>
 <div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span>             strcmp (parser-&gt;stack-&gt;tail-&gt;data, <span class="stringliteral">&quot;from&quot;</span>) == 0)) {</div>
-<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>            slide-&gt;file1 = g_slist_prepend (slide-&gt;file1, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>            slide-&gt;file1 = g_slist_prepend (slide-&gt;file1, size);</div>
 <div class="line"><a id="l02771" name="l02771"></a><span class="lineno"> 2771</span>        }</div>
 <div class="line"><a id="l02772" name="l02772"></a><span class="lineno"> 2772</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (parser-&gt;stack-&gt;tail &amp;&amp;</div>
 <div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span>             strcmp (parser-&gt;stack-&gt;tail-&gt;data, <span class="stringliteral">&quot;to&quot;</span>) == 0) {</div>
-<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span>            slide-&gt;file2 = g_slist_prepend (slide-&gt;file2, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span>            slide-&gt;file2 = g_slist_prepend (slide-&gt;file2, size);</div>
 <div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span>        }</div>
 <div class="line"><a id="l02776" name="l02776"></a><span class="lineno"> 2776</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span>            g_free (size);</div>
 <div class="line"><a id="l02778" name="l02778"></a><span class="lineno"> 2778</span>    }</div>
 <div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span>    g_queue_push_tail (parser-&gt;stack, g_strdup (<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>));</div>
 <div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span>}</div>
@@ -3026,7 +3026,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02943" name="l02943"></a><span class="lineno"> 2943</span>{</div>
 <div class="line"><a id="l02944" name="l02944"></a><span class="lineno"> 2944</span>    GList *list;</div>
 <div class="line"><a id="l02945" name="l02945"></a><span class="lineno"> 2945</span>    GSList *slist;</div>
-<div class="line"><a id="l02946" name="l02946"></a><span class="lineno"> 2946</span>    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l02946" name="l02946"></a><span class="lineno"> 2946</span>    <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size;</div>
 <div class="line"><a id="l02947" name="l02947"></a><span class="lineno"> 2947</span> </div>
 <div class="line"><a id="l02948" name="l02948"></a><span class="lineno"> 2948</span>    show-&gt;ref_count--;</div>
 <div class="line"><a id="l02949" name="l02949"></a><span class="lineno"> 2949</span>    <span class="keywordflow">if</span> (show-&gt;ref_count &gt; 0)</div>
@@ -3036,16 +3036,16 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02953" name="l02953"></a><span class="lineno"> 2953</span>        <a class="code hl_typedef" href="mate-bg_8c.html#a5411080cad4b24d79dd63f2cece15071">Slide</a> *slide = list-&gt;data;</div>
 <div class="line"><a id="l02954" name="l02954"></a><span class="lineno"> 2954</span> </div>
 <div class="line"><a id="l02955" name="l02955"></a><span class="lineno"> 2955</span>        <span class="keywordflow">for</span> (slist = slide-&gt;file1; slist != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; slist = slist-&gt;next) {</div>
-<div class="line"><a id="l02956" name="l02956"></a><span class="lineno"> 2956</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = slist-&gt;data;</div>
-<div class="line"><a id="l02957" name="l02957"></a><span class="lineno"> 2957</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file);</div>
-<div class="line"><a id="l02958" name="l02958"></a><span class="lineno"> 2958</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l02956" name="l02956"></a><span class="lineno"> 2956</span>            size = slist-&gt;data;</div>
+<div class="line"><a id="l02957" name="l02957"></a><span class="lineno"> 2957</span>            g_free (size-&gt;file);</div>
+<div class="line"><a id="l02958" name="l02958"></a><span class="lineno"> 2958</span>            g_free (size);</div>
 <div class="line"><a id="l02959" name="l02959"></a><span class="lineno"> 2959</span>        }</div>
 <div class="line"><a id="l02960" name="l02960"></a><span class="lineno"> 2960</span>        g_slist_free (slide-&gt;file1);</div>
 <div class="line"><a id="l02961" name="l02961"></a><span class="lineno"> 2961</span> </div>
 <div class="line"><a id="l02962" name="l02962"></a><span class="lineno"> 2962</span>        <span class="keywordflow">for</span> (slist = slide-&gt;file2; slist != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; slist = slist-&gt;next) {</div>
-<div class="line"><a id="l02963" name="l02963"></a><span class="lineno"> 2963</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = slist-&gt;data;</div>
-<div class="line"><a id="l02964" name="l02964"></a><span class="lineno"> 2964</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file);</div>
-<div class="line"><a id="l02965" name="l02965"></a><span class="lineno"> 2965</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l02963" name="l02963"></a><span class="lineno"> 2963</span>            size = slist-&gt;data;</div>
+<div class="line"><a id="l02964" name="l02964"></a><span class="lineno"> 2964</span>            g_free (size-&gt;file);</div>
+<div class="line"><a id="l02965" name="l02965"></a><span class="lineno"> 2965</span>            g_free (size);</div>
 <div class="line"><a id="l02966" name="l02966"></a><span class="lineno"> 2966</span>        }</div>
 <div class="line"><a id="l02967" name="l02967"></a><span class="lineno"> 2967</span>        g_slist_free (slide-&gt;file2);</div>
 <div class="line"><a id="l02968" name="l02968"></a><span class="lineno"> 2968</span> </div>
@@ -3072,15 +3072,15 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l02989" name="l02989"></a><span class="lineno"> 2989</span>        g_print (<span class="stringliteral">&quot;duration: %f\n&quot;</span>, slide-&gt;duration);</div>
 <div class="line"><a id="l02990" name="l02990"></a><span class="lineno"> 2990</span>        g_print (<span class="stringliteral">&quot;File1:\n&quot;</span>);</div>
 <div class="line"><a id="l02991" name="l02991"></a><span class="lineno"> 2991</span>        <span class="keywordflow">for</span> (slist = slide-&gt;file1; slist != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; slist = slist-&gt;next) {</div>
-<div class="line"><a id="l02992" name="l02992"></a><span class="lineno"> 2992</span>            <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = slist-&gt;data;</div>
+<div class="line"><a id="l02992" name="l02992"></a><span class="lineno"> 2992</span>            <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size = slist-&gt;data;</div>
 <div class="line"><a id="l02993" name="l02993"></a><span class="lineno"> 2993</span>            g_print (<span class="stringliteral">&quot;\t%s (%dx%d)\n&quot;</span>,</div>
-<div class="line"><a id="l02994" name="l02994"></a><span class="lineno"> 2994</span>                 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;width, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;height);</div>
+<div class="line"><a id="l02994" name="l02994"></a><span class="lineno"> 2994</span>                 size-&gt;file, size-&gt;width, size-&gt;height);</div>
 <div class="line"><a id="l02995" name="l02995"></a><span class="lineno"> 2995</span>        }</div>
 <div class="line"><a id="l02996" name="l02996"></a><span class="lineno"> 2996</span>        g_print (<span class="stringliteral">&quot;File2:\n&quot;</span>);</div>
 <div class="line"><a id="l02997" name="l02997"></a><span class="lineno"> 2997</span>        <span class="keywordflow">for</span> (slist = slide-&gt;file2; slist != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; slist = slist-&gt;next) {</div>
-<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span>            <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = slist-&gt;data;</div>
+<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span>            <a class="code hl_typedef" href="mate-bg_8c.html#a333a8a772e75e3a2e1c25939ecd629ca">FileSize</a> *size = slist-&gt;data;</div>
 <div class="line"><a id="l02999" name="l02999"></a><span class="lineno"> 2999</span>            g_print (<span class="stringliteral">&quot;\t%s (%dx%d)\n&quot;</span>,</div>
-<div class="line"><a id="l03000" name="l03000"></a><span class="lineno"> 3000</span>                 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;file, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;width, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>-&gt;height);</div>
+<div class="line"><a id="l03000" name="l03000"></a><span class="lineno"> 3000</span>                 size-&gt;file, size-&gt;width, size-&gt;height);</div>
 <div class="line"><a id="l03001" name="l03001"></a><span class="lineno"> 3001</span>        }</div>
 <div class="line"><a id="l03002" name="l03002"></a><span class="lineno"> 3002</span>    }</div>
 <div class="line"><a id="l03003" name="l03003"></a><span class="lineno"> 3003</span><span class="preprocessor">#endif</span></div>
@@ -3104,7 +3104,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>}</div>
 <div class="line"><a id="l03022" name="l03022"></a><span class="lineno"> 3022</span> </div>
 <div class="line"><a id="l03023" name="l03023"></a><span class="lineno"> 3023</span><span class="keyword">static</span> <a class="code hl_typedef" href="mate-bg_8c.html#afac613a409ad770e8f36f735705828ee">SlideShow</a> *</div>
-<div class="line"><a id="l03024" name="l03024"></a><span class="lineno"> 3024</span>read_slideshow_file (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l03024" name="l03024"></a><span class="lineno"> 3024</span>read_slideshow_file (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l03025" name="l03025"></a><span class="lineno"> 3025</span>             GError     **err)</div>
 <div class="line"><a id="l03026" name="l03026"></a><span class="lineno"> 3026</span>{</div>
 <div class="line"><a id="l03027" name="l03027"></a><span class="lineno"> 3027</span>    GMarkupParser parser = {</div>
@@ -3122,10 +3122,10 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l03039" name="l03039"></a><span class="lineno"> 3039</span>    GMarkupParseContext *context = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03040" name="l03040"></a><span class="lineno"> 3040</span>    time_t t;</div>
 <div class="line"><a id="l03041" name="l03041"></a><span class="lineno"> 3041</span> </div>
-<div class="line"><a id="l03042" name="l03042"></a><span class="lineno"> 3042</span>    <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l03042" name="l03042"></a><span class="lineno"> 3042</span>    <span class="keywordflow">if</span> (!filename)</div>
 <div class="line"><a id="l03043" name="l03043"></a><span class="lineno"> 3043</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03044" name="l03044"></a><span class="lineno"> 3044</span> </div>
-<div class="line"><a id="l03045" name="l03045"></a><span class="lineno"> 3045</span>    file = g_file_new_for_path (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l03045" name="l03045"></a><span class="lineno"> 3045</span>    file = g_file_new_for_path (filename);</div>
 <div class="line"><a id="l03046" name="l03046"></a><span class="lineno"> 3046</span>    <span class="keywordflow">if</span> (!g_file_load_contents (file, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;contents, &amp;len, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)) {</div>
 <div class="line"><a id="l03047" name="l03047"></a><span class="lineno"> 3047</span>        g_object_unref (file);</div>
 <div class="line"><a id="l03048" name="l03048"></a><span class="lineno"> 3048</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -3184,18 +3184,18 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l03101" name="l03101"></a><span class="lineno"> 3101</span><span class="comment">/* Thumbnail utilities */</span></div>
 <div class="line"><a id="l03102" name="l03102"></a><span class="lineno"> 3102</span><span class="keyword">static</span> GdkPixbuf *</div>
 <div class="line"><a id="l03103" name="l03103"></a><span class="lineno"> 3103</span>create_thumbnail_for_filename (<a class="code hl_struct" href="struct__MateDesktopThumbnailFactory.html">MateDesktopThumbnailFactory</a> *factory,</div>
-<div class="line"><a id="l03104" name="l03104"></a><span class="lineno"> 3104</span>                   <span class="keyword">const</span> <span class="keywordtype">char</span>            *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l03104" name="l03104"></a><span class="lineno"> 3104</span>                   <span class="keyword">const</span> <span class="keywordtype">char</span>            *filename)</div>
 <div class="line"><a id="l03105" name="l03105"></a><span class="lineno"> 3105</span>{</div>
 <div class="line"><a id="l03106" name="l03106"></a><span class="lineno"> 3106</span>    <span class="keywordtype">char</span> *thumb;</div>
 <div class="line"><a id="l03107" name="l03107"></a><span class="lineno"> 3107</span>    gint64 mtime;</div>
 <div class="line"><a id="l03108" name="l03108"></a><span class="lineno"> 3108</span>    GdkPixbuf *<a class="code hl_variable" href="time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2">orig</a>, *result = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03109" name="l03109"></a><span class="lineno"> 3109</span>    <span class="keywordtype">char</span> *uri;</div>
 <div class="line"><a id="l03110" name="l03110"></a><span class="lineno"> 3110</span> </div>
-<div class="line"><a id="l03111" name="l03111"></a><span class="lineno"> 3111</span>    mtime = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l03111" name="l03111"></a><span class="lineno"> 3111</span>    mtime = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ac91ac5286a5b3a676905335425ead897">get_mtime</a> (filename);</div>
 <div class="line"><a id="l03112" name="l03112"></a><span class="lineno"> 3112</span>    <span class="keywordflow">if</span> (mtime == (gint64)-1)</div>
 <div class="line"><a id="l03113" name="l03113"></a><span class="lineno"> 3113</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l03114" name="l03114"></a><span class="lineno"> 3114</span> </div>
-<div class="line"><a id="l03115" name="l03115"></a><span class="lineno"> 3115</span>    uri = g_filename_to_uri (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l03115" name="l03115"></a><span class="lineno"> 3115</span>    uri = g_filename_to_uri (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l03116" name="l03116"></a><span class="lineno"> 3116</span> </div>
 <div class="line"><a id="l03117" name="l03117"></a><span class="lineno"> 3117</span>    <span class="keywordflow">if</span> (uri == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l03118" name="l03118"></a><span class="lineno"> 3118</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -3207,7 +3207,7 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="line"><a id="l03124" name="l03124"></a><span class="lineno"> 3124</span>        g_free (thumb);</div>
 <div class="line"><a id="l03125" name="l03125"></a><span class="lineno"> 3125</span>    }</div>
 <div class="line"><a id="l03126" name="l03126"></a><span class="lineno"> 3126</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03127" name="l03127"></a><span class="lineno"> 3127</span>        <a class="code hl_variable" href="time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2">orig</a> = gdk_pixbuf_new_from_file (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l03127" name="l03127"></a><span class="lineno"> 3127</span>        <a class="code hl_variable" href="time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2">orig</a> = gdk_pixbuf_new_from_file (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l03128" name="l03128"></a><span class="lineno"> 3128</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2">orig</a>) {</div>
 <div class="line"><a id="l03129" name="l03129"></a><span class="lineno"> 3129</span>            <span class="keywordtype">int</span> orig_width = gdk_pixbuf_get_width (<a class="code hl_variable" href="time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2">orig</a>);</div>
 <div class="line"><a id="l03130" name="l03130"></a><span class="lineno"> 3130</span>            <span class="keywordtype">int</span> orig_height = gdk_pixbuf_get_height (<a class="code hl_variable" href="time-zone_8c.html#a1006fb45d70cbb9161cf31f2248b83e2">orig</a>);</div>
@@ -3365,8 +3365,6 @@ $(document).ready(function(){initNavTree('mate-bg_8c_source.html',''); initResiz
 <div class="ttc" id="aev-archive_8c_html_ac307ccd36e0808058f998a8048673a49"><div class="ttname"><a href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(EvArchive, ev_archive, G_TYPE_OBJECT)</div></div>
 <div class="ttc" id="aev-job-scheduler_8c_html_aac3a90d517d9a65f99df2d1981294c02"><div class="ttname"><a href="ev-job-scheduler_8c.html#aac3a90d517d9a65f99df2d1981294c02">G_LOCK_DEFINE_STATIC</a></div><div class="ttdeci">G_LOCK_DEFINE_STATIC(job_list)</div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>

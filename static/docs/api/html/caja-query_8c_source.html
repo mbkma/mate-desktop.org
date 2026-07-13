@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('caja-query_8c_source.html',''); initRe
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    GList *mime_types;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    GList *tags;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    gint64 timestamp;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    gint64 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    gint64 size;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">char</span> *contained_text;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
@@ -596,9 +596,9 @@ $(document).ready(function(){initNavTree('caja-query_8c_source.html',''); initRe
 </div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
 <div class="foldopen" id="foldopen00466" data-start="{" data-end="}">
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno"><a class="line" href="caja-query_8c.html#a0c64ee77b6bf6dc61937eb020033b427">  466</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="caja-query_8c.html#a0c64ee77b6bf6dc61937eb020033b427">caja_query_set_size</a>(<a class="code hl_struct" href="structCajaQuery.html">CajaQuery</a> *query, gint64 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno"><a class="line" href="caja-query_8c.html#a0c64ee77b6bf6dc61937eb020033b427">  466</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="caja-query_8c.html#a0c64ee77b6bf6dc61937eb020033b427">caja_query_set_size</a>(<a class="code hl_struct" href="structCajaQuery.html">CajaQuery</a> *query, gint64 size)</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>{</div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    query-&gt;<a class="code hl_variable" href="structCajaQuery.html#a520bd97ad39c50a7831f5511ca324731">details</a>-&gt;size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    query-&gt;<a class="code hl_variable" href="structCajaQuery.html#a520bd97ad39c50a7831f5511ca324731">details</a>-&gt;size = size;</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>}</div>
 </div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
@@ -659,7 +659,6 @@ $(document).ready(function(){initNavTree('caja-query_8c_source.html',''); initRe
 <div class="ttc" id="aeel-gtk-macros_8h_html"><div class="ttname"><a href="eel-gtk-macros_8h.html">eel-gtk-macros.h</a></div></div>
 <div class="ttc" id="aeel-gtk-macros_8h_html_ab94bc19ca744496d2c22f79a100b55c6"><div class="ttname"><a href="eel-gtk-macros_8h.html#ab94bc19ca744496d2c22f79a100b55c6">EEL_CALL_PARENT</a></div><div class="ttdeci">#define EEL_CALL_PARENT(parent_class_cast_macro, signal, parameters)</div><div class="ttdef"><b>Definition</b> <a href="eel-gtk-macros_8h_source.html#l00083">eel-gtk-macros.h:83</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="astructCajaQueryClass_html"><div class="ttname"><a href="structCajaQueryClass.html">CajaQueryClass</a></div><div class="ttdef"><b>Definition</b> <a href="caja-query_8h_source.html#l00044">caja-query.h:45</a></div></div>

@@ -3474,7 +3474,7 @@ $(document).ready(function(){initNavTree('gsm-manager_8c_source.html',''); initR
 <div class="line"><a id="l03367" name="l03367"></a><span class="lineno"> 3367</span> </div>
 <div class="line"><a id="l03368" name="l03368"></a><span class="lineno"> 3368</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l03369" name="l03369"></a><span class="lineno"> 3369</span>request_logout (GsmManager            *manager,</div>
-<div class="line"><a id="l03370" name="l03370"></a><span class="lineno"> 3370</span>                <a class="code hl_enumeration" href="gsm-manager_8h.html#ace8daad793f10084a365bc46bcf0b2da">GsmManagerLogoutMode</a>  <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l03370" name="l03370"></a><span class="lineno"> 3370</span>                <a class="code hl_enumeration" href="gsm-manager_8h.html#ace8daad793f10084a365bc46bcf0b2da">GsmManagerLogoutMode</a>  mode)</div>
 <div class="line"><a id="l03371" name="l03371"></a><span class="lineno"> 3371</span>{</div>
 <div class="line"><a id="l03372" name="l03372"></a><span class="lineno"> 3372</span>        GsmManagerPrivate *priv;</div>
 <div class="line"><a id="l03373" name="l03373"></a><span class="lineno"> 3373</span> </div>
@@ -3482,7 +3482,7 @@ $(document).ready(function(){initNavTree('gsm-manager_8c_source.html',''); initR
 <div class="line"><a id="l03375" name="l03375"></a><span class="lineno"> 3375</span> </div>
 <div class="line"><a id="l03376" name="l03376"></a><span class="lineno"> 3376</span>        priv = gsm_manager_get_instance_private (manager);</div>
 <div class="line"><a id="l03377" name="l03377"></a><span class="lineno"> 3377</span> </div>
-<div class="line"><a id="l03378" name="l03378"></a><span class="lineno"> 3378</span>        priv-&gt;logout_mode = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l03378" name="l03378"></a><span class="lineno"> 3378</span>        priv-&gt;logout_mode = mode;</div>
 <div class="line"><a id="l03379" name="l03379"></a><span class="lineno"> 3379</span>        priv-&gt;logout_type = <a class="code hl_enumvalue" href="gsm-manager_8c.html#a80d07a09a703e174c04ef3b4d0a91b5cafbdf313e0199344abc584499af46e2b1">GSM_MANAGER_LOGOUT_LOGOUT</a>;</div>
 <div class="line"><a id="l03380" name="l03380"></a><span class="lineno"> 3380</span> </div>
 <div class="line"><a id="l03381" name="l03381"></a><span class="lineno"> 3381</span>        end_phase (manager);</div>
@@ -3635,7 +3635,7 @@ $(document).ready(function(){initNavTree('gsm-manager_8c_source.html',''); initR
 <div class="line"><a id="l03528" name="l03528"></a><span class="lineno"> 3528</span> </div>
 <div class="line"><a id="l03529" name="l03529"></a><span class="lineno"> 3529</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l03530" name="l03530"></a><span class="lineno"> 3530</span>user_logout (GsmManager           *manager,</div>
-<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span>             <a class="code hl_enumeration" href="gsm-manager_8h.html#ace8daad793f10084a365bc46bcf0b2da">GsmManagerLogoutMode</a>  <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span>             <a class="code hl_enumeration" href="gsm-manager_8h.html#ace8daad793f10084a365bc46bcf0b2da">GsmManagerLogoutMode</a>  mode)</div>
 <div class="line"><a id="l03532" name="l03532"></a><span class="lineno"> 3532</span>{</div>
 <div class="line"><a id="l03533" name="l03533"></a><span class="lineno"> 3533</span>        gboolean logout_prompt;</div>
 <div class="line"><a id="l03534" name="l03534"></a><span class="lineno"> 3534</span>        GsmManagerPrivate *priv;</div>
@@ -3655,10 +3655,10 @@ $(document).ready(function(){initNavTree('gsm-manager_8c_source.html',''); initR
 <div class="line"><a id="l03548" name="l03548"></a><span class="lineno"> 3548</span><span class="comment">         * and the user has their settings configured to show a confirmation dialog for</span></div>
 <div class="line"><a id="l03549" name="l03549"></a><span class="lineno"> 3549</span><span class="comment">         * logout, then go ahead and show the confirmation dialog now.</span></div>
 <div class="line"><a id="l03550" name="l03550"></a><span class="lineno"> 3550</span><span class="comment">         */</span></div>
-<div class="line"><a id="l03551" name="l03551"></a><span class="lineno"> 3551</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> == <a class="code hl_enumvalue" href="gsm-manager_8h.html#ace8daad793f10084a365bc46bcf0b2daa239be5150990b540c9feabe56cd8dfa8">GSM_MANAGER_LOGOUT_MODE_NORMAL</a> &amp;&amp; logout_prompt) {</div>
+<div class="line"><a id="l03551" name="l03551"></a><span class="lineno"> 3551</span>        <span class="keywordflow">if</span> (mode == <a class="code hl_enumvalue" href="gsm-manager_8h.html#ace8daad793f10084a365bc46bcf0b2daa239be5150990b540c9feabe56cd8dfa8">GSM_MANAGER_LOGOUT_MODE_NORMAL</a> &amp;&amp; logout_prompt) {</div>
 <div class="line"><a id="l03552" name="l03552"></a><span class="lineno"> 3552</span>                show_logout_dialog (manager);</div>
 <div class="line"><a id="l03553" name="l03553"></a><span class="lineno"> 3553</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03554" name="l03554"></a><span class="lineno"> 3554</span>                request_logout (manager, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l03554" name="l03554"></a><span class="lineno"> 3554</span>                request_logout (manager, mode);</div>
 <div class="line"><a id="l03555" name="l03555"></a><span class="lineno"> 3555</span>        }</div>
 <div class="line"><a id="l03556" name="l03556"></a><span class="lineno"> 3556</span>}</div>
 <div class="line"><a id="l03557" name="l03557"></a><span class="lineno"> 3557</span> </div>
@@ -4689,7 +4689,6 @@ $(document).ready(function(){initNavTree('gsm-manager_8c_source.html',''); initR
 <div class="ttc" id="agsm-util_8h_html"><div class="ttname"><a href="gsm-util_8h.html">gsm-util.h</a></div></div>
 <div class="ttc" id="agsm-util_8h_html_a08da4fbd124a95bdb53e197ecffceeaf"><div class="ttname"><a href="gsm-util_8h.html#a08da4fbd124a95bdb53e197ecffceeaf">IS_STRING_EMPTY</a></div><div class="ttdeci">#define IS_STRING_EMPTY(x)</div><div class="ttdef"><b>Definition</b> <a href="gsm-util_8h_source.html#l00031">gsm-util.h:31</a></div></div>
 <div class="ttc" id="agsm-xsmp-client_8h_html"><div class="ttname"><a href="gsm-xsmp-client_8h.html">gsm-xsmp-client.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-session-inhibit_8c_html_af6c5d36e5110d2051bfc34209ba67b91abb8a77c49f34dee0bed9bb298c56149d"><div class="ttname"><a href="mate-session-inhibit_8c.html#af6c5d36e5110d2051bfc34209ba67b91abb8a77c49f34dee0bed9bb298c56149d">GSM_INHIBITOR_FLAG_IDLE</a></div><div class="ttdeci">@ GSM_INHIBITOR_FLAG_IDLE</div><div class="ttdef"><b>Definition</b> <a href="mate-session-inhibit_8c_source.html#l00040">mate-session-inhibit.c:40</a></div></div>

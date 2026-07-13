@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('gdict-source_8c_source.html',''); init
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">struct </span>_GdictSourcePrivate</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  gchar *filename;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  GKeyFile *keyfile;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  gchar *<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>;</div>
@@ -620,7 +620,7 @@ $(document).ready(function(){initNavTree('gdict-source_8c_source.html',''); init
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>gboolean</div>
 <div class="foldopen" id="foldopen00598" data-start="{" data-end="}">
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno"><a class="line" href="gdict-source_8c.html#a8d5e27a7a7d5ba1248592333c1433253">  598</a></span><a class="code hl_function" href="gdict-source_8c.html#a8d5e27a7a7d5ba1248592333c1433253">gdict_source_load_from_file</a> (<a class="code hl_struct" href="struct__GdictSource.html">GdictSource</a>  *source,</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                 <span class="keyword">const</span> gchar  *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>                 <span class="keyword">const</span> gchar  *filename,</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>                 GError      **<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>{</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  <a class="code hl_typedef" href="gdict-source_8h.html#a092adde7e2f77d6d8741a208efdf6d70">GdictSourcePrivate</a> *priv;</div>
@@ -628,7 +628,7 @@ $(document).ready(function(){initNavTree('gdict-source_8c_source.html',''); init
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  GError *parse_error;</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span> </div>
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>  g_return_val_if_fail (<a class="code hl_define" href="gdict-source_8h.html#a03bfb8fa268d981aece0f77ac493d044">GDICT_IS_SOURCE</a> (source), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  g_return_val_if_fail (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  g_return_val_if_fail (filename != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  priv = source-&gt;<a class="code hl_variable" href="struct__GdictSource.html#a9a29172fbcf27e164fcfe60fbd877f0a">priv</a>;</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
@@ -637,7 +637,7 @@ $(document).ready(function(){initNavTree('gdict-source_8c_source.html',''); init
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  read_error = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  g_key_file_load_from_file (priv-&gt;keyfile,</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                             <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>                             filename,</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>                             G_KEY_FILE_KEEP_TRANSLATIONS,</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>                             &amp;read_error);</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <span class="keywordflow">if</span> (read_error)</div>
@@ -658,7 +658,7 @@ $(document).ready(function(){initNavTree('gdict-source_8c_source.html',''); init
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
 <div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  g_assert (priv-&gt;context != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  priv-&gt;filename = g_strdup (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  priv-&gt;filename = g_strdup (filename);</div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span> </div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>}</div>
@@ -1116,7 +1116,6 @@ $(document).ready(function(){initNavTree('gdict-source_8c_source.html',''); init
 <div class="ttc" id="agdict-source_8h_html_a84315d92f85c0a71350954541aea0769"><div class="ttname"><a href="gdict-source_8h.html#a84315d92f85c0a71350954541aea0769">GDICT_SOURCE</a></div><div class="ttdeci">#define GDICT_SOURCE(obj)</div><div class="ttdef"><b>Definition</b> <a href="gdict-source_8h_source.html#l00030">gdict-source.h:30</a></div></div>
 <div class="ttc" id="agdict-source_8h_html_abca8ea6369645f77bd34ff595b4d5c4c"><div class="ttname"><a href="gdict-source_8h.html#abca8ea6369645f77bd34ff595b4d5c4c">GDICT_TYPE_SOURCE</a></div><div class="ttdeci">#define GDICT_TYPE_SOURCE</div><div class="ttdef"><b>Definition</b> <a href="gdict-source_8h_source.html#l00029">gdict-source.h:29</a></div></div>
 <div class="ttc" id="agdict-utils_8h_html"><div class="ttname"><a href="gdict-utils_8h.html">gdict-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

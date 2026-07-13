@@ -493,16 +493,16 @@ $(document).ready(function(){initNavTree('matekbd-status_8c_source.html',''); in
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>matekbd_status_update_tooltips (<a class="code hl_struct" href="struct__MatekbdStatus.html">MatekbdStatus</a> * gki)</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>{</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    XklState *state = xkl_engine_get_current_state (globals.engine);</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    gchar *buf;</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">if</span> (state == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || state-&gt;group &lt; 0</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        || state-&gt;group &gt;= g_strv_length (globals.full_group_names))</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span> </div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_strdup_printf (globals.tooltips_format,</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    buf = g_strdup_printf (globals.tooltips_format,</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                   globals.full_group_names[state-&gt;group]);</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    matekbd_status_set_tooltips (gki, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    matekbd_status_set_tooltips (gki, buf);</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    g_free (buf);</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>}</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keywordtype">void</span></div>
@@ -716,11 +716,11 @@ $(document).ready(function(){initNavTree('matekbd-status_8c_source.html',''); in
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>}</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>matekbd_status_size_changed (<a class="code hl_struct" href="struct__MatekbdStatus.html">MatekbdStatus</a> * gki, gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>matekbd_status_size_changed (<a class="code hl_struct" href="struct__MatekbdStatus.html">MatekbdStatus</a> * gki, gint size)</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>{</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    <span class="keywordflow">if</span> (globals.current_height != <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>) {</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        globals.current_height = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        globals.current_width = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * 3 / 2;</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    <span class="keywordflow">if</span> (globals.current_height != size) {</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>        globals.current_height = size;</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>        globals.current_width = size * 3 / 2;</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>        <a class="code hl_function" href="matekbd-status_8c.html#ab4c2fee79ee9a8299543f4ebee9161aa">matekbd_status_reinit_ui</a> (gki);</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    }</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>}</div>
@@ -988,8 +988,6 @@ $(document).ready(function(){initNavTree('matekbd-status_8c_source.html',''); in
 <div class="ttc" id="abaobab-utils_8c_html_a56d03d3e20ba3f5875dfaf98f41c80ad"><div class="ttname"><a href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a></div><div class="ttdeci">void message(const gchar *primary_msg, const gchar *secondary_msg, GtkMessageType type, GtkWidget *parent)</div><div class="ttdef"><b>Definition</b> <a href="baobab-utils_8c_source.html#l00227">baobab-utils.c:227</a></div></div>
 <div class="ttc" id="aev-archive_8c_html_ac307ccd36e0808058f998a8048673a49"><div class="ttname"><a href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(EvArchive, ev_archive, G_TYPE_OBJECT)</div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-keyboard-properties-xkb_8c_html_aba339fbb18221a542735d919a4df9a68"><div class="ttname"><a href="mate-keyboard-properties-xkb_8c.html#aba339fbb18221a542735d919a4df9a68">engine</a></div><div class="ttdeci">XklEngine * engine</div><div class="ttdef"><b>Definition</b> <a href="mate-keyboard-properties-xkb_8c_source.html#l00042">mate-keyboard-properties-xkb.c:42</a></div></div>

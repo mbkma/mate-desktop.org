@@ -185,13 +185,13 @@ Functions</h2></td></tr>
 <tr class="separator:a4d98fc7b6ff778041bafd07010c31f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878c29f8431c1366247af06917de3e51" id="r_a878c29f8431c1366247af06917de3e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#a878c29f8431c1366247af06917de3e51">meta_print_backtrace</a> (void)</td></tr>
 <tr class="separator:a878c29f8431c1366247af06917de3e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af194408dc65004eabf73399894f300ff" id="r_af194408dc65004eabf73399894f300ff"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#af194408dc65004eabf73399894f300ff">meta_gravity_to_string</a> (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> gravity)</td></tr>
+<tr class="memitem:af194408dc65004eabf73399894f300ff" id="r_af194408dc65004eabf73399894f300ff"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#af194408dc65004eabf73399894f300ff">meta_gravity_to_string</a> (int gravity)</td></tr>
 <tr class="separator:af194408dc65004eabf73399894f300ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf8a059a70ddb5e7c09a7ed04bc85f18" id="r_adf8a059a70ddb5e7c09a7ed04bc85f18"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#adf8a059a70ddb5e7c09a7ed04bc85f18">meta_g_utf8_strndup</a> (const gchar *src, gsize n)</td></tr>
 <tr class="separator:adf8a059a70ddb5e7c09a7ed04bc85f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a471adc703dd7d4de6e769e404db9196d" id="r_a471adc703dd7d4de6e769e404db9196d"><td class="memItemLeft" align="right" valign="top">GPid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#a471adc703dd7d4de6e769e404db9196d">meta_show_dialog</a> (const char *type, const char *<a class="el" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, const char *timeout, const char *display, const char *ok_text, const char *cancel_text, const <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> transient_for, GSList *columns, GSList *entries)</td></tr>
+<tr class="memitem:a471adc703dd7d4de6e769e404db9196d" id="r_a471adc703dd7d4de6e769e404db9196d"><td class="memItemLeft" align="right" valign="top">GPid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#a471adc703dd7d4de6e769e404db9196d">meta_show_dialog</a> (const char *type, const char *<a class="el" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, const char *timeout, const char *display, const char *ok_text, const char *cancel_text, const int transient_for, GSList *columns, GSList *entries)</td></tr>
 <tr class="separator:a471adc703dd7d4de6e769e404db9196d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac655242ae7bd6d754d0e8c51d790d959" id="r_ac655242ae7bd6d754d0e8c51d790d959"><td class="memItemLeft" align="right" valign="top">GPid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#ac655242ae7bd6d754d0e8c51d790d959">meta_show_entry_dialog</a> (const char *<a class="el" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, gint *active_workspace_id, const char *entry_text, const char *display, const char *ok_text, const char *cancel_text, const <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> transient_for, const GIOFunc stdio_func_cb)</td></tr>
+<tr class="memitem:ac655242ae7bd6d754d0e8c51d790d959" id="r_ac655242ae7bd6d754d0e8c51d790d959"><td class="memItemLeft" align="right" valign="top">GPid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2include_2util_8h.html#ac655242ae7bd6d754d0e8c51d790d959">meta_show_entry_dialog</a> (const char *<a class="el" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>, gint *active_workspace_id, const char *entry_text, const char *display, const char *ok_text, const char *cancel_text, const int transient_for, const GIOFunc stdio_func_cb)</td></tr>
 <tr class="separator:ac655242ae7bd6d754d0e8c51d790d959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -393,7 +393,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">const char * meta_gravity_to_string </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>gravity</em></td><td>)</td>
           <td></td>
         </tr>
@@ -676,7 +676,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>transient_for</em>, </td>
         </tr>
         <tr>
@@ -750,7 +750,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>transient_for</em>, </td>
         </tr>
         <tr>

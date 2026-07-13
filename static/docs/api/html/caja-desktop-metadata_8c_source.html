@@ -158,17 +158,17 @@ $(document).ready(function(){initNavTree('caja-desktop-metadata_8c_source.html',
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>save_in_idle_cb (gpointer <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    GKeyFile *keyfile = <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    gchar *contents, *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    gchar *contents, *filename;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    gsize length;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    save_in_idle_source_id = 0;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    contents = g_key_file_to_data (keyfile, &amp;length, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = get_keyfile_path ();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    filename = get_keyfile_path ();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span> (contents != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        g_file_set_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        g_file_set_contents (filename,</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                     contents, length,</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                     &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        g_free (contents);</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('caja-desktop-metadata_8c_source.html',
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    g_free (filename);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
@@ -200,13 +200,13 @@ $(document).ready(function(){initNavTree('caja-desktop-metadata_8c_source.html',
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>{</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      GKeyFile *retval;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    gchar *filename;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    retval = g_key_file_new ();</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = get_keyfile_path ();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    filename = get_keyfile_path ();</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    g_key_file_load_from_file (retval,</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                   <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                   filename,</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                   G_KEY_FILE_NONE,</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                   &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('caja-desktop-metadata_8c_source.html',
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        g_error_free (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    g_free (filename);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">return</span> retval;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
@@ -435,7 +435,6 @@ $(document).ready(function(){initNavTree('caja-desktop-metadata_8c_source.html',
 <div class="ttc" id="acaja-file-utilities_8c_html_a8a7553ea7d5af31d22fcb7d4b171018f"><div class="ttname"><a href="caja-file-utilities_8c.html#a8a7553ea7d5af31d22fcb7d4b171018f">caja_get_user_directory</a></div><div class="ttdeci">char * caja_get_user_directory(void)</div><div class="ttdef"><b>Definition</b> <a href="caja-file-utilities_8c_source.html#l00092">caja-file-utilities.c:92</a></div></div>
 <div class="ttc" id="acaja-file-utilities_8h_html"><div class="ttname"><a href="caja-file-utilities_8h.html">caja-file-utilities.h</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="arfkill_8h_html_a35a5caec924fa74eec9572ffb7922b23"><div class="ttname"><a href="rfkill_8h.html#a35a5caec924fa74eec9572ffb7922b23">idx</a></div><div class="ttdeci">__u32 idx</div><div class="ttdef"><b>Definition</b> <a href="rfkill_8h_source.html#l00000">rfkill.h:0</a></div></div>

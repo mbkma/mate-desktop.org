@@ -431,7 +431,7 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  GError *tmp_gerr = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <a class="code hl_struct" href="structDropboxFileInfoCommandResponse.html">DropboxFileInfoCommandResponse</a> *dficr;</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  GHashTable *file_status_response = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, *args, *folder_tag_response = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, *emblems_response = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  gchar *filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  {</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    gchar *filename_un, *uri;</div>
@@ -439,16 +439,16 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>    filename_un = uri ? g_filename_from_uri(uri, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>): <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    g_free(uri);</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keywordflow">if</span> (filename_un) {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>      <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_filename_to_utf8(filename_un, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>      filename = g_filename_to_utf8(filename_un, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>      g_free(filename_un);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>      <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        <span class="comment">/* oooh, filename wasn&#39;t correctly encoded. mark as  */</span></div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    <a class="code hl_define" href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a>(<span class="stringliteral">&quot;file wasn&#39;t correctly encoded %s&quot;</span>, filename_un);</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      }</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    }</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  }</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    <span class="comment">/* We couldn&#39;t get the filename.  Just return empty. */</span></div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">goto</span> exit;</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  }</div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  {</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    gchar **path_arg;</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    path_arg = g_new(gchar *, 2);</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    path_arg[0] = g_strdup(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    path_arg[0] = g_strdup(filename);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    path_arg[1] = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    g_hash_table_insert(args, g_strdup(<span class="stringliteral">&quot;path&quot;</span>), path_arg);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  }</div>
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  g_hash_table_unref(args);</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  args = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  <span class="keywordflow">if</span> (tmp_gerr != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    g_free(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    g_free(filename);</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    g_assert(file_status_response == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    g_propagate_error(gerr, tmp_gerr);</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordflow">return</span>;</div>
@@ -492,7 +492,7 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    {</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>      gchar **paths_arg;</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>      paths_arg = g_new(gchar *, 2);</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>      paths_arg[0] = g_strdup(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>      paths_arg[0] = g_strdup(filename);</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>      paths_arg[1] = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>      g_hash_table_insert(args, g_strdup(<span class="stringliteral">&quot;path&quot;</span>), paths_arg);</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    }</div>
@@ -521,7 +521,7 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>  dficr-&gt;<a class="code hl_variable" href="structDropboxFileInfoCommandResponse.html#a1d42bb3414c26556430458c3f6581534">emblems_response</a> = emblems_response;</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  g_idle_add((GSourceFunc) <a class="code hl_function" href="dropbox-command-client_8c.html#af4acfa708b8696cbaa4d19f2aaa2210a">caja_dropbox_finish_file_info_command</a>, dficr);</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  g_free(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  g_free(filename);</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>  <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>}</div>
@@ -1023,7 +1023,6 @@ $(document).ready(function(){initNavTree('dropbox-command-client_8c_source.html'
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
 <div class="ttc" id="ag-util_8h_html"><div class="ttname"><a href="g-util_8h.html">g-util.h</a></div></div>
 <div class="ttc" id="ag-util_8h_html_a6fe2f4f6fcc916c9f89b3e1c876f5432"><div class="ttname"><a href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a></div><div class="ttdeci">#define debug(format,...)</div><div class="ttdef"><b>Definition</b> <a href="g-util_8h_source.html#l00042">g-util.h:42</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="astructDropboxCommandClient_html"><div class="ttname"><a href="structDropboxCommandClient.html">DropboxCommandClient</a></div><div class="ttdef"><b>Definition</b> <a href="dropbox-command-client_8h_source.html#l00067">dropbox-command-client.h:67</a></div></div>
 <div class="ttc" id="astructDropboxCommandClient_html_a29c41adc924c8e98c06f68b14cf95278"><div class="ttname"><a href="structDropboxCommandClient.html#a29c41adc924c8e98c06f68b14cf95278">DropboxCommandClient::ca_hooklist</a></div><div class="ttdeci">GList * ca_hooklist</div><div class="ttdef"><b>Definition</b> <a href="dropbox-command-client_8h_source.html#l00071">dropbox-command-client.h:71</a></div></div>

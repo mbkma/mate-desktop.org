@@ -211,7 +211,7 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">struct </span>_TIFF2PSContext</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;     <span class="comment">/* input filename */</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">char</span> *filename;     <span class="comment">/* input filename */</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    FILE *fd;       <span class="comment">/* output file stream */</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">int</span> ascii85;        <span class="comment">/* use ASCII85 encoding */</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">int</span> interpolate;    <span class="comment">/* interpolate level2 image */</span></div>
@@ -270,11 +270,11 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="tiff2ps_8c.html#a7a4ff90fc95f80c6383aa5df21ba98ab">  170</a></span><span class="preprocessor">#define IMAGEOP(ctx) ((ctx)-&gt;useImagemask &amp;&amp; ((ctx)-&gt;bitspersample == 1)) ? &quot;imagemask&quot; : &quot;image&quot;</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="foldopen" id="foldopen00172" data-start="{" data-end="}">
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="tiff2ps_8c.html#a188730183d3452dd3dbb19c99b47f291">  172</a></span><a class="code hl_typedef" href="tiff2ps_8h.html#ac6c963ff4b32e3cbb34d1b6626eb9fef">TIFF2PSContext</a>* <a class="code hl_function" href="tiff2ps_8c.html#a188730183d3452dd3dbb19c99b47f291">tiff2ps_context_new</a>(<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>) {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="tiff2ps_8c.html#a188730183d3452dd3dbb19c99b47f291">  172</a></span><a class="code hl_typedef" href="tiff2ps_8h.html#ac6c963ff4b32e3cbb34d1b6626eb9fef">TIFF2PSContext</a>* <a class="code hl_function" href="tiff2ps_8c.html#a188730183d3452dd3dbb19c99b47f291">tiff2ps_context_new</a>(<span class="keyword">const</span> gchar *filename) {</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_typedef" href="tiff2ps_8h.html#ac6c963ff4b32e3cbb34d1b6626eb9fef">TIFF2PSContext</a>* ctx;</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    ctx = g_new0(<a class="code hl_typedef" href="tiff2ps_8h.html#ac6c963ff4b32e3cbb34d1b6626eb9fef">TIFF2PSContext</a>, 1);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    ctx-&gt;filename = g_strdup(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    ctx-&gt;filename = g_strdup(filename);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    ctx-&gt;fd = g_fopen(ctx-&gt;filename, <span class="stringliteral">&quot;w&quot;</span>);</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">if</span> (ctx-&gt;fd == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        g_free (ctx-&gt;filename);</div>
@@ -488,7 +488,7 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordtype">double</span> splitheight;</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    <span class="keywordtype">double</span> overlap;</div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="comment">/* buffers for locale-insitive number formatting */</span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    gchar <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[2][G_ASCII_DTOSTR_BUF_SIZE];</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    gchar buf[2][G_ASCII_DTOSTR_BUF_SIZE];</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    pagewidth *= <a class="code hl_define" href="tiff2ps_8c.html#ab83b07acf2028deeb624061de2b81150">PS_UNIT_SIZE</a>;</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    pageheight *= <a class="code hl_define" href="tiff2ps_8c.html#ab83b07acf2028deeb624061de2b81150">PS_UNIT_SIZE</a>;</div>
@@ -542,11 +542,11 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        left_offset += xtran / 2;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    fprintf(ctx-&gt;fd, <span class="stringliteral">&quot;%s %s translate\n&quot;</span>,</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]), left_offset),</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1]), bottom_offset));</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        g_ascii_dtostr(buf[0], <span class="keyword">sizeof</span>(buf[0]), left_offset),</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        g_ascii_dtostr(buf[1], <span class="keyword">sizeof</span>(buf[1]), bottom_offset));</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    fprintf(ctx-&gt;fd, <span class="stringliteral">&quot;%s %s scale\n&quot;</span>,</div>
-<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]), xscale),</div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1]), yscale));</div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        g_ascii_dtostr(buf[0], <span class="keyword">sizeof</span>(buf[0]), xscale),</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        g_ascii_dtostr(buf[1], <span class="keyword">sizeof</span>(buf[1]), yscale));</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    <span class="keywordflow">if</span> (ctx-&gt;rotate)</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>        fputs (<span class="stringliteral">&quot;1 1 translate 180 ctx-&gt;rotate\n&quot;</span>, ctx-&gt;fd);</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
@@ -567,7 +567,7 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>    uint16* sampleinfo;</div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>    <span class="keywordtype">int</span> split;</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>    <span class="comment">/* buffers for locale-insitive number formatting */</span></div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    gchar <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[2][G_ASCII_DTOSTR_BUF_SIZE];</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    gchar buf[2][G_ASCII_DTOSTR_BUF_SIZE];</div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span> </div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    <span class="keywordflow">if</span> (!TIFFGetField(tif, TIFFTAG_XPOSITION, &amp;ox))</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        ox = 0;</div>
@@ -629,8 +629,8 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                psh=ctx-&gt;rotate ? prw:prh;</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>            fprintf(ctx-&gt;fd,</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>                <span class="stringliteral">&quot;1 dict begin /PageSize [ %s %s ] def currentdict end setpagedevice\n&quot;</span>,</div>
-<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>                g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]), psw),</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>                g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1]), psh));</div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>                g_ascii_dtostr(buf[0], <span class="keyword">sizeof</span>(buf[0]), psw),</div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>                g_ascii_dtostr(buf[1], <span class="keyword">sizeof</span>(buf[1]), psh));</div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>            fputs(</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>                  <span class="stringliteral">&quot;&lt;&lt;\n  /Policies &lt;&lt;\n    /PageSize 3\n  &gt;&gt;\n&gt;&gt; setpagedevice\n&quot;</span>,</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>                  ctx-&gt;fd);</div>
@@ -674,18 +674,18 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                        (pw - prw * scale) / 2;</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                }</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                fprintf(ctx-&gt;fd, <span class="stringliteral">&quot;%s %s translate\n&quot;</span>,</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                    g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]), left_offset),</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1]), bottom_offset));</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                    g_ascii_dtostr(buf[0], <span class="keyword">sizeof</span>(buf[0]), left_offset),</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                    g_ascii_dtostr(buf[1], <span class="keyword">sizeof</span>(buf[1]), bottom_offset));</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                fprintf(ctx-&gt;fd, <span class="stringliteral">&quot;%s %s scale\n&quot;</span>,</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                    g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]), prw * scale),</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                    g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1]), prh * scale));</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>                    g_ascii_dtostr(buf[0], <span class="keyword">sizeof</span>(buf[0]), prw * scale),</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                    g_ascii_dtostr(buf[1], <span class="keyword">sizeof</span>(buf[1]), prh * scale));</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                <span class="keywordflow">if</span> (ctx-&gt;rotate)</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                    fputs (<span class="stringliteral">&quot;1 1 translate 180 ctx-&gt;rotate\n&quot;</span>, ctx-&gt;fd);</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            }</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>            fprintf(ctx-&gt;fd, <span class="stringliteral">&quot;%s %s scale\n&quot;</span>,</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]), prw),</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                g_ascii_dtostr(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1], <span class="keyword">sizeof</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1]), prh));</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                g_ascii_dtostr(buf[0], <span class="keyword">sizeof</span>(buf[0]), prw),</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                g_ascii_dtostr(buf[1], <span class="keyword">sizeof</span>(buf[1]), prh));</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            <span class="keywordflow">if</span> (ctx-&gt;rotate)</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                fputs (<span class="stringliteral">&quot;1 1 translate 180 ctx-&gt;rotate\n&quot;</span>, ctx-&gt;fd);</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        }</div>
@@ -1766,7 +1766,7 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l01656" name="l01656"></a><span class="lineno"> 1656</span>}</div>
 <div class="line"><a id="l01657" name="l01657"></a><span class="lineno"> 1657</span> </div>
 <div class="line"><a id="l01658" name="l01658"></a><span class="lineno"> 1658</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01659" name="l01659"></a><span class="lineno"> 1659</span>Ascii85Encode(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* raw, <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)</div>
+<div class="line"><a id="l01659" name="l01659"></a><span class="lineno"> 1659</span>Ascii85Encode(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* raw, <span class="keywordtype">char</span> *buf)</div>
 <div class="line"><a id="l01660" name="l01660"></a><span class="lineno"> 1660</span>{</div>
 <div class="line"><a id="l01661" name="l01661"></a><span class="lineno"> 1661</span>    uint32 word;</div>
 <div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span> </div>
@@ -1776,20 +1776,20 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l01666" name="l01666"></a><span class="lineno"> 1666</span>        uint16 w1;</div>
 <div class="line"><a id="l01667" name="l01667"></a><span class="lineno"> 1667</span> </div>
 <div class="line"><a id="l01668" name="l01668"></a><span class="lineno"> 1668</span>        q = word / (85L*85*85*85);  <span class="comment">/* actually only a byte */</span></div>
-<div class="line"><a id="l01669" name="l01669"></a><span class="lineno"> 1669</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0] = (char) (q + <span class="charliteral">&#39;!&#39;</span>);</div>
+<div class="line"><a id="l01669" name="l01669"></a><span class="lineno"> 1669</span>        buf[0] = (char) (q + <span class="charliteral">&#39;!&#39;</span>);</div>
 <div class="line"><a id="l01670" name="l01670"></a><span class="lineno"> 1670</span> </div>
 <div class="line"><a id="l01671" name="l01671"></a><span class="lineno"> 1671</span>        word -= q * (85L*85*85*85); q = word / (85L*85*85);</div>
-<div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1] = (char) (q + <span class="charliteral">&#39;!&#39;</span>);</div>
+<div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span>        buf[1] = (char) (q + <span class="charliteral">&#39;!&#39;</span>);</div>
 <div class="line"><a id="l01673" name="l01673"></a><span class="lineno"> 1673</span> </div>
 <div class="line"><a id="l01674" name="l01674"></a><span class="lineno"> 1674</span>        word -= q * (85L*85*85); q = word / (85*85);</div>
-<div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[2] = (char) (q + <span class="charliteral">&#39;!&#39;</span>);</div>
+<div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span>        buf[2] = (char) (q + <span class="charliteral">&#39;!&#39;</span>);</div>
 <div class="line"><a id="l01676" name="l01676"></a><span class="lineno"> 1676</span> </div>
 <div class="line"><a id="l01677" name="l01677"></a><span class="lineno"> 1677</span>        w1 = (uint16) (word - q*(85L*85));</div>
-<div class="line"><a id="l01678" name="l01678"></a><span class="lineno"> 1678</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[3] = (char) ((w1 / 85) + <span class="charliteral">&#39;!&#39;</span>);</div>
-<div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[4] = (char) ((w1 % 85) + <span class="charliteral">&#39;!&#39;</span>);</div>
-<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[5] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l01678" name="l01678"></a><span class="lineno"> 1678</span>        buf[3] = (char) ((w1 / 85) + <span class="charliteral">&#39;!&#39;</span>);</div>
+<div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span>        buf[4] = (char) ((w1 % 85) + <span class="charliteral">&#39;!&#39;</span>);</div>
+<div class="line"><a id="l01680" name="l01680"></a><span class="lineno"> 1680</span>        buf[5] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l01681" name="l01681"></a><span class="lineno"> 1681</span>    } <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0] = <span class="charliteral">&#39;z&#39;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><a id="l01682" name="l01682"></a><span class="lineno"> 1682</span>        buf[0] = <span class="charliteral">&#39;z&#39;</span>, buf[1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l01683" name="l01683"></a><span class="lineno"> 1683</span>}</div>
 <div class="line"><a id="l01684" name="l01684"></a><span class="lineno"> 1684</span> </div>
 <div class="line"><a id="l01685" name="l01685"></a><span class="lineno"> 1685</span><span class="keywordtype">void</span></div>
@@ -1799,13 +1799,13 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="line"><a id="l01689" name="l01689"></a><span class="lineno"> 1689</span>    <span class="keywordflow">if</span> (ctx-&gt;ascii85count &gt;= 4) {</div>
 <div class="line"><a id="l01690" name="l01690"></a><span class="lineno"> 1690</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* p;</div>
 <div class="line"><a id="l01691" name="l01691"></a><span class="lineno"> 1691</span>        <span class="keywordtype">int</span> n;</div>
-<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span>        <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[6];</div>
+<div class="line"><a id="l01692" name="l01692"></a><span class="lineno"> 1692</span>        <span class="keywordtype">char</span> buf[6];</div>
 <div class="line"><a id="l01693" name="l01693"></a><span class="lineno"> 1693</span> </div>
 <div class="line"><a id="l01694" name="l01694"></a><span class="lineno"> 1694</span>        <span class="keywordflow">for</span> (n = ctx-&gt;ascii85count, p = ctx-&gt;ascii85buf;</div>
 <div class="line"><a id="l01695" name="l01695"></a><span class="lineno"> 1695</span>             n &gt;= 4; n -= 4, p += 4) {</div>
 <div class="line"><a id="l01696" name="l01696"></a><span class="lineno"> 1696</span>            <span class="keywordtype">char</span>* cp;</div>
-<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>            Ascii85Encode(p, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>            <span class="keywordflow">for</span> (cp = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>; *cp; cp++) {</div>
+<div class="line"><a id="l01697" name="l01697"></a><span class="lineno"> 1697</span>            Ascii85Encode(p, buf);</div>
+<div class="line"><a id="l01698" name="l01698"></a><span class="lineno"> 1698</span>            <span class="keywordflow">for</span> (cp = buf; *cp; cp++) {</div>
 <div class="line"><a id="l01699" name="l01699"></a><span class="lineno"> 1699</span>                putc(*cp, ctx-&gt;fd);</div>
 <div class="line"><a id="l01700" name="l01700"></a><span class="lineno"> 1700</span>                <span class="keywordflow">if</span> (--ctx-&gt;ascii85breaklen == 0) {</div>
 <div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>                    putc(<span class="charliteral">&#39;\n&#39;</span>, ctx-&gt;fd);</div>
@@ -1980,8 +1980,6 @@ $(document).ready(function(){initNavTree('tiff2ps_8c_source.html',''); initResiz
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="atiff2ps_8c_html_a188730183d3452dd3dbb19c99b47f291"><div class="ttname"><a href="tiff2ps_8c.html#a188730183d3452dd3dbb19c99b47f291">tiff2ps_context_new</a></div><div class="ttdeci">TIFF2PSContext * tiff2ps_context_new(const gchar *filename)</div><div class="ttdef"><b>Definition</b> <a href="tiff2ps_8c_source.html#l00172">tiff2ps.c:172</a></div></div>
 <div class="ttc" id="atiff2ps_8c_html_a3d01198c7e6bda67bf87fdc12b862065"><div class="ttname"><a href="tiff2ps_8c.html#a3d01198c7e6bda67bf87fdc12b862065">PSUNITS</a></div><div class="ttdeci">#define PSUNITS(npix, res)</div><div class="ttdef"><b>Definition</b> <a href="tiff2ps_8c_source.html#l00269">tiff2ps.c:269</a></div></div>

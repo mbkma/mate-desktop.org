@@ -1567,7 +1567,7 @@ $(document).ready(function(){initNavTree('eom-image_8c_source.html',''); initRes
 <div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>    GFileInfo *file_info;</div>
 <div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span>    guint      uid;</div>
 <div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span>    guint      gid;</div>
-<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>    guint      <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>    guint      mode;</div>
 <div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span>    guint      mode_mask = 00600;</div>
 <div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span> </div>
 <div class="line"><a id="l01475" name="l01475"></a><span class="lineno"> 1475</span>    GError    *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -1608,11 +1608,11 @@ $(document).ready(function(){initNavTree('eom-image_8c_source.html',''); initRes
 <div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span>    gid = g_file_info_get_attribute_uint32 (file_info,</div>
 <div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>                        G_FILE_ATTRIBUTE_UNIX_GID);</div>
 <div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span> </div>
-<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = g_file_info_get_attribute_uint32 (file_info,</div>
+<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>    mode = g_file_info_get_attribute_uint32 (file_info,</div>
 <div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>                         G_FILE_ATTRIBUTE_UNIX_MODE);</div>
 <div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span> </div>
 <div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>    <span class="comment">/* apply default mode mask to file mode */</span></div>
-<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> |= mode_mask;</div>
+<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>    mode |= mode_mask;</div>
 <div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span> </div>
 <div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span>    <span class="comment">/* restore original UID, GID, and MODE into the temporal file */</span></div>
 <div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span>    g_file_set_attribute_uint32 (temp_file,</div>
@@ -1647,7 +1647,7 @@ $(document).ready(function(){initNavTree('eom-image_8c_source.html',''); initRes
 <div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span> </div>
 <div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>    g_file_set_attribute_uint32 (temp_file,</div>
 <div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>                     G_FILE_ATTRIBUTE_UNIX_MODE,</div>
-<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>,</div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>                     mode,</div>
 <div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span>                     G_FILE_QUERY_INFO_NONE,</div>
 <div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>                     <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>                     &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
@@ -2630,7 +2630,6 @@ $(document).ready(function(){initNavTree('eom-image_8c_source.html',''); initRes
 <div class="ttc" id="aeom-util_8h_html"><div class="ttname"><a href="eom-util_8h.html">eom-util.h</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

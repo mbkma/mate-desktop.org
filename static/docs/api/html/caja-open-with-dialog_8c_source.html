@@ -521,21 +521,21 @@ $(document).ready(function(){initNavTree('caja-open-with-dialog_8c_source.html',
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">if</span> (response == GTK_RESPONSE_OK)</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    {</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_file_chooser_get_filename (chooser);</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>        filename = gtk_file_chooser_get_filename (chooser);</div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        <span class="keywordflow">if</span> (filename)</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>        {</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>            <span class="keywordtype">char</span> *quoted_text;</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            quoted_text = g_shell_quote (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>            quoted_text = g_shell_quote (filename);</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>            gtk_entry_set_text (GTK_ENTRY (dialog-&gt;<a class="code hl_variable" href="struct__CajaOpenWithDialog.html#a8430ab2023d303c499871f200719636f">details</a>-&gt;entry),</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>                                quoted_text);</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            gtk_editable_set_position (GTK_EDITABLE (dialog-&gt;<a class="code hl_variable" href="struct__CajaOpenWithDialog.html#a8430ab2023d303c499871f200719636f">details</a>-&gt;entry), -1);</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>            g_free (quoted_text);</div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>            g_free (filename);</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        }</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    }</div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
@@ -606,20 +606,20 @@ $(document).ready(function(){initNavTree('caja-open-with-dialog_8c_source.html',
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    <span class="keywordflow">if</span> (G_IS_FILE_ICON (icon))</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>    {</div>
-<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
-<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (g_file_icon_get_file (G_FILE_ICON (icon)));</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>        filename = g_file_get_path (g_file_icon_get_file (G_FILE_ICON (icon)));</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>        <span class="keywordflow">if</span> (filename)</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>        {</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>            GdkPixbuf *pixbuf;</div>
-<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            pixbuf = gdk_pixbuf_new_from_file_at_size (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>            pixbuf = gdk_pixbuf_new_from_file_at_size (filename,</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>                                                       <a class="code hl_define" href="caja-open-with-dialog_8c.html#a830fbed64cdbd822e90810e8176e5b4d">CAJA_OPEN_WITH_DIALOG_ICON_SIZE</a> * icon_scale,</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>                                                       <a class="code hl_define" href="caja-open-with-dialog_8c.html#a830fbed64cdbd822e90810e8176e5b4d">CAJA_OPEN_WITH_DIALOG_ICON_SIZE</a> * icon_scale,</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>                                                       <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>            surface = gdk_cairo_surface_create_from_pixbuf (pixbuf, icon_scale, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>            g_object_unref (pixbuf);</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        }</div>
-<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>        g_free (filename);</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    }</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (G_IS_THEMED_ICON (icon))</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    {</div>
@@ -1330,7 +1330,6 @@ $(document).ready(function(){initNavTree('caja-open-with-dialog_8c_source.html',
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

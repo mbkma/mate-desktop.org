@@ -164,12 +164,12 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#ifdef WITH_AFM_FILES</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code hl_define" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>(ofm_load_file(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info));</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">static</span> <span class="keywordtype">int</span>  <a class="code hl_define" href="sysdeps_8h.html#ab8297ea21a5ea45278e14c35fe0cafcf">__PROTO</a>(ofm_load_file(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info));</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">/* reading of AFM files */</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/* macro to convert between AFM and TFM units */</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="preprocessor">#define AFM2TFM(x)  FROUND((double)(x) * 0x100000 / 1000)</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">int</span> afm_load_file(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keywordtype">int</span> afm_load_file(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info)</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">/* the information we want is:</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">     *   - tfmwidth</span></div>
@@ -181,14 +181,14 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_struct" href="structCharMetricInfo.html">CharMetricInfo</a> *cm;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    FILE    *in;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    in = fopen(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    in = fopen(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span>(in == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    status = afm_parse_file(in, &amp;fi, <a class="code hl_define" href="afmparse_8h.html#a5fb8f86b07734d9a7a596b884cd14765">P_GM</a>);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    fclose(in);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">if</span>(status != <a class="code hl_define" href="afmparse_8h.html#ad6ab145d5e3b6aea160603e7178369b0">ok</a>) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: Error reading AFM data\n&quot;</span>), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: Error reading AFM data\n&quot;</span>), filename);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
@@ -247,14 +247,14 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif </span><span class="comment">/* WITH_AFM_FILES */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
 <div class="foldopen" id="foldopen00149" data-start="{" data-end="}">
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="tfmfile_8c.html#a6bf1d499fc3af1fd92bf6f4161f0e8ef">  149</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="tfmfile_8c.html#a6bf1d499fc3af1fd92bf6f4161f0e8ef">tfm_load_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="tfmfile_8c.html#a6bf1d499fc3af1fd92bf6f4161f0e8ef">  149</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="tfmfile_8c.html#a6bf1d499fc3af1fd92bf6f4161f0e8ef">tfm_load_file</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info)</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>{</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordtype">int</span> lf, lh, bc, ec, nw, nh, nd, ne;</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keywordtype">int</span> i, n;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   *tfm;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   *ptr;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">struct </span>stat st;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    FILE    *in;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    Int32   *<a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    Int32   *charinfo;</div>
@@ -263,13 +263,13 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    Int32   *depths;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    Uint32  checksum;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    in = fopen(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    in = fopen(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">if</span>(in == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    tfm = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a718ee717dc0298e3e2c58509ca8f1684">DBG_FONTS</a>, <span class="stringliteral">&quot;(mt) reading TFM file `%s&#39;\n&quot;</span>,</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        filename));</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="comment">/* We read the entire TFM file into core */</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keywordflow">if</span>(fstat(fileno(in), &amp;st) &lt; 0)</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">return</span> -1;</div>
@@ -278,11 +278,11 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordflow">goto</span> bad_tfm;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">/* allocate a word-aligned buffer to hold the file */</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 4 * <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a40383559ec63c966285f8c983e039eeb">ROUND</a>(st.st_size, 4);</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> != st.st_size)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    size = 4 * <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a40383559ec63c966285f8c983e039eeb">ROUND</a>(st.st_size, 4);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span>(size != st.st_size)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Warning: TFM file `%s&#39; has suspicious size\n&quot;</span>),</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                 <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    tfm = (<a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a> *)<a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a48b74212c64a8825f6dbc66a7a8ce7f2">mdvi_malloc</a>(<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                 filename);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    tfm = (<a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a> *)<a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a48b74212c64a8825f6dbc66a7a8ce7f2">mdvi_malloc</a>(size);</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">if</span>(fread(tfm, st.st_size, 1, in) != 1)</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        <span class="keywordflow">goto</span> <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">/* we don&#39;t need this anymore */</span></div>
@@ -307,9 +307,9 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    ne = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#afee99e09c70493cf413b3c4829560868">muget2</a>(ptr); checksum += ne;</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    checksum += <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#afee99e09c70493cf413b3c4829560868">muget2</a>(ptr); <span class="comment">/* skip # of font parameters */</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = ec - bc + 1;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    size = ec - bc + 1;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> = (Int32 *)tfm; <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> += 6 + lh;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    charinfo    = <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;  <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> += <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    charinfo    = <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;  <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> += size;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    widths      = <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;  <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> += nw;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    heights     = <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;  <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> += nh;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    depths      = <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;</div>
@@ -331,7 +331,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        i = n = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ac488f8ffb58218b4e15897f4ffc2cb41">msget1</a>(ptr);</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="keywordflow">if</span>(n &lt; 0 || n &gt; 39) {</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: font coding scheme truncated to 40 bytes\n&quot;</span>),</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                     filename);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            n = 39;</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        }</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a6a2bd7508b7d858bac7dd2061634bdfa">coding</a>, ptr, n);</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a1b4a58967227b7728583c02b1a6621ee">type</a> = <a class="code hl_enumvalue" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3351aa6080e0acb46a944af7d5782f7c">DviFontTFM</a>;</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="comment">/* allocate characters */</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a>, size);</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#ifdef WORD_LITTLE_ENDIAN</span></div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="comment">/* byte-swap the three arrays at once (they are consecutive in memory) */</span></div>
@@ -369,7 +369,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">for</span>(i = bc; i &lt;= ec; ptr += 3, i++) {</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        <span class="keywordtype">int</span> ndx;</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        ndx = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)*ptr; ptr++;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        ndx = (int)*ptr; ptr++;</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a>[i-bc].<a class="code hl_variable" href="struct__TFMChar.html#a2300985c2ff8772bba1c0bc4dfef8d06">advance</a> = widths[ndx];</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="comment">/* TFM files lack this information */</span></div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a>[i-bc].<a class="code hl_variable" href="struct__TFMChar.html#a2892913ded9ead3cbe77f71200e771db">left</a> = 0;</div>
@@ -389,7 +389,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>bad_tfm:</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: File corrupted, or not a TFM file\n&quot;</span>), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: File corrupted, or not a TFM file\n&quot;</span>), filename);</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>:</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordflow">if</span>(tfm) <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(tfm);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">if</span>(in)  fclose(in);</div>
@@ -403,7 +403,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <span class="keywordtype">int</span> nco, ncw, npc;</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordtype">int</span> n;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    Int32   *tfm;</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    Int32   *widths;</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    Int32   *heights;</div>
@@ -456,11 +456,11 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="comment">/* jump to the beginning of the char-info table */</span></div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    fseek(in, 4L*nco, SEEK_SET);</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = ec - bc + 1;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    size = ec - bc + 1;</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a278509b73d4b47186bcd76e688e12eb9">loc</a> = bc;</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a6e9bad25b54b04253298b0f1931d9d35">hic</a> = ec;</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    end = info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> + <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a>, size);</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    end = info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> + size;</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    <span class="keywordflow">for</span>(tch = info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a>, i = 0; i &lt; ncw; i++) {</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a> ch;</div>
@@ -489,17 +489,17 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    <span class="comment">/* I wish we were done, but we aren&#39;t */</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <span class="comment">/* get the widths, heights and depths */</span></div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = nw + nh + nd;</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    tfm = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(Int32, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    size = nw + nh + nd;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    tfm = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(Int32, size);</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    <span class="comment">/* read them in one sweep */</span></div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">if</span>(fread(tfm, 4, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, in) != <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>) {</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keywordflow">if</span>(fread(tfm, 4, size, in) != size) {</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(tfm);</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>        <span class="keywordflow">goto</span> bad_tfm;</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    }</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>    <span class="comment">/* byte-swap things if necessary */</span></div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="preprocessor">#ifdef WORD_LITTLE_ENDIAN</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    swap_array((Uint32 *)tfm, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>    swap_array((Uint32 *)tfm, size);</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>    widths  = tfm;</div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    heights = widths + nw;</div>
@@ -509,7 +509,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        <span class="keywordflow">goto</span> bad_tfm;</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="comment">/* now fix the characters */</span></div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = ec - bc + 1;</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    size = ec - bc + 1;</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <span class="keywordflow">for</span>(tch = info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a>; tch &lt; end; tch++) {</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        tch-&gt;<a class="code hl_variable" href="struct__TFMChar.html#ae111a7427b95abbe6ff1946a46e2c84b">present</a> = (tch-&gt;<a class="code hl_variable" href="struct__TFMChar.html#a2300985c2ff8772bba1c0bc4dfef8d06">advance</a> != 0);</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>        tch-&gt;<a class="code hl_variable" href="struct__TFMChar.html#a2300985c2ff8772bba1c0bc4dfef8d06">advance</a> = widths[tch-&gt;<a class="code hl_variable" href="struct__TFMChar.html#a2300985c2ff8772bba1c0bc4dfef8d06">advance</a>];</div>
@@ -529,13 +529,13 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>}</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span> </div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">/* we don&#39;t read OFM files into memory, because they can potentially be large */</span></div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span><span class="keyword">static</span> <span class="keywordtype">int</span>  ofm_load_file(<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info)</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span><span class="keyword">static</span> <span class="keywordtype">int</span>  ofm_load_file(<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *info)</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>{</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="keywordtype">int</span> lf, lh, bc, ec, nw, nh, nd;</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="keywordtype">int</span> i, n;</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    Int32   *tfm;</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a>   *ptr;</div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    FILE    *in;</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    Int32   *<a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    Int32   *charinfo;</div>
@@ -546,7 +546,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    <span class="keywordtype">int</span> olevel;</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    <span class="keywordtype">int</span> nwords;</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    in = fopen(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;rb&quot;</span>);</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    in = fopen(filename, <span class="stringliteral">&quot;rb&quot;</span>);</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    <span class="keywordflow">if</span>(in == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span> </div>
@@ -561,14 +561,14 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    olevel = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4a7e4cc2e1a5eb4968583fb79019d7ea">fsget2</a>(in);</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>    <span class="keywordflow">if</span>(olevel != 0) {</div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a718ee717dc0298e3e2c58509ca8f1684">DBG_FONTS</a>, <span class="stringliteral">&quot;(mt) reading Level-1 OFM file `%s&#39;\n&quot;</span>,</div>
-<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>            filename));</div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        <span class="comment">/* we handle level-1 files separately */</span></div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        <span class="keywordflow">if</span>(ofm1_load_file(in, info) &lt; 0)</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>            <span class="keywordflow">goto</span> bad_tfm;</div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>    }</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
-<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a718ee717dc0298e3e2c58509ca8f1684">DBG_FONTS</a>, <span class="stringliteral">&quot;(mt) reading Level-0 OFM file `%s&#39;\n&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a718ee717dc0298e3e2c58509ca8f1684">DBG_FONTS</a>, <span class="stringliteral">&quot;(mt) reading Level-0 OFM file `%s&#39;\n&quot;</span>, filename));</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    nwords = 14;</div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span>    lf = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(in); checksum  = nwords;</div>
 <div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>    lh = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#ac335e9a52a7646b773dcbf85de274043">fuget4</a>(in); checksum += lh;</div>
@@ -587,7 +587,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span><span class="comment">     * font-direction word missing, so we try to detect that here */</span></div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <span class="keywordflow">if</span>(checksum == lf + 1) {</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a3dfa58b1c5c2943dd49d8aa1981d377d">DEBUG</a>((<a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a718ee717dc0298e3e2c58509ca8f1684">DBG_FONTS</a>, <span class="stringliteral">&quot;(mt) font direction missing in `%s&#39;\n&quot;</span>,</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>));</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>            filename));</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>        checksum--;</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>        nwords--;</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    } <span class="keywordflow">else</span> {</div>
@@ -611,7 +611,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>        i = n = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a6d959f8c282f3618ebbef8d902caf340">fsget1</a>(in);</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>        <span class="keywordflow">if</span>(n &lt; 0 || n &gt; 39) {</div>
 <div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span>            <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a4506f6dcd530218719701b6766f4801e">mdvi_warning</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: font coding scheme truncated to 40 bytes\n&quot;</span>),</div>
-<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>                     <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span>                     filename);</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span>            n = 39;</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>        }</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>        fread(info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a6a2bd7508b7d858bac7dd2061634bdfa">coding</a>, 39, 1, in);</div>
@@ -632,15 +632,15 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>    <span class="comment">/* now skip anything else in the header */</span></div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    fseek(in, 4L*(nwords + lh), SEEK_SET);</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>    <span class="comment">/* and read everything at once */</span></div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 2*(ec - bc + 1) + nw + nh + nd;</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    tfm = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(Int32, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * <span class="keyword">sizeof</span>(Int32));</div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keywordflow">if</span>(fread(tfm, 4, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, in) != <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>) {</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    size = 2*(ec - bc + 1) + nw + nh + nd;</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    tfm = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(Int32, size * <span class="keyword">sizeof</span>(Int32));</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    <span class="keywordflow">if</span>(fread(tfm, 4, size, in) != size) {</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(tfm);</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        <span class="keywordflow">goto</span> bad_tfm;</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    }</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    <span class="comment">/* byte-swap all the tables at once */</span></div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="preprocessor">#ifdef WORD_LITTLE_ENDIAN</span></div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    swap_array((Uint32 *)tfm, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    swap_array((Uint32 *)tfm, size);</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> = tfm;</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    charinfo = <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a>; <a class="code hl_variable" href="removable-devices_8c.html#ad2898ff66799fc9110bfc91d4924a4f9">cb</a> += 2*(ec - bc + 1);</div>
@@ -665,7 +665,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a1b4a58967227b7728583c02b1a6621ee">type</a> = <a class="code hl_enumvalue" href="mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3351aa6080e0acb46a944af7d5782f7c">DviFontTFM</a>;</div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    <span class="comment">/* allocate characters */</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    info-&gt;<a class="code hl_variable" href="struct__TFMInfo.html#a21c7a2cc01d76d48aaf8a0a244ec0ad7">chars</a> = <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4f3e63120887a4a70b2e0b597eea395a">xnalloc</a>(<a class="code hl_struct" href="struct__TFMChar.html">TFMChar</a>, size);</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="comment">/* get the relevant data */</span></div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    ptr = (<a class="code hl_typedef" href="sysdeps_8h.html#a5c3641e5dfe71f67a3c3a72026a24af2">Uchar</a> *)charinfo;</div>
@@ -688,7 +688,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>bad_tfm:</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: File corrupted, or not a TFM file\n&quot;</span>), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a>(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;%s: File corrupted, or not a TFM file\n&quot;</span>), filename);</div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    fclose(in);</div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>}</div>
@@ -751,7 +751,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="comment"> *    return an error.</span></div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00649" data-start="{" data-end="}">
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno"><a class="line" href="tfmfile_8c.html#a280ed47ca45f20262c46861c8f6ecab4">  649</a></span><a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *<a class="code hl_function" href="tfmfile_8c.html#a280ed47ca45f20262c46861c8f6ecab4">get_font_metrics</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *short_name, <span class="keywordtype">int</span> type, <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno"><a class="line" href="tfmfile_8c.html#a280ed47ca45f20262c46861c8f6ecab4">  649</a></span><a class="code hl_struct" href="struct__TFMInfo.html">TFMInfo</a> *<a class="code hl_function" href="tfmfile_8c.html#a280ed47ca45f20262c46861c8f6ecab4">get_font_metrics</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *short_name, <span class="keywordtype">int</span> type, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>{</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <a class="code hl_typedef" href="tfmfile_8c.html#a7c67ae7dba8e5cd104a382b733ae63af">TFMPool</a> *tfm = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <span class="keywordtype">int</span> status;</div>
@@ -768,7 +768,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        }</div>
 <div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    }</div>
 <div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    file = <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> ? (<span class="keywordtype">char</span> *)<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> : <a class="code hl_function" href="tfmfile_8c.html#a1e3edce6885706c22e48a2b194e96a36">lookup_font_metrics</a>(short_name, &amp;<a class="code hl_variable" href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a>);</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    file = filename ? (<span class="keywordtype">char</span> *)filename : <a class="code hl_function" href="tfmfile_8c.html#a1e3edce6885706c22e48a2b194e96a36">lookup_font_metrics</a>(short_name, &amp;<a class="code hl_variable" href="rfkill_8h.html#aa05eefca31ad6bd4617aac0176b8366e">type</a>);</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    <span class="keywordflow">if</span>(file == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
@@ -790,7 +790,7 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        status = -1;</div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    }</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    <span class="keywordflow">if</span>(file != <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    <span class="keywordflow">if</span>(file != filename)</div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(file);</div>
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    <span class="keywordflow">if</span>(status &lt; 0) {</div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(tfm);</div>
@@ -895,9 +895,6 @@ $(document).ready(function(){initNavTree('tfmfile_8c_source.html',''); initResiz
 <div class="ttc" id="ahash_8c_html_ac97349f720f27e6f15ecd3ae7f59ee2b"><div class="ttname"><a href="hash_8c.html#ac97349f720f27e6f15ecd3ae7f59ee2b">mdvi_hash_reset</a></div><div class="ttdeci">void mdvi_hash_reset(DviHashTable *hash, int reuse)</div><div class="ttdef"><b>Definition</b> <a href="hash_8c_source.html#l00203">hash.c:203</a></div></div>
 <div class="ttc" id="ahash_8h_html_a05bd946c3a35bcba7a6774c53668354c"><div class="ttname"><a href="hash_8h.html#a05bd946c3a35bcba7a6774c53668354c">MDVI_KEY</a></div><div class="ttdeci">#define MDVI_KEY(x)</div><div class="ttdef"><b>Definition</b> <a href="hash_8h_source.html#l00014">hash.h:14</a></div></div>
 <div class="ttc" id="ahash_8h_html_a85228b68eb0b23cd08b4555057a50366"><div class="ttname"><a href="hash_8h.html#a85228b68eb0b23cd08b4555057a50366">MDVI_HASH_UNCHECKED</a></div><div class="ttdeci">#define MDVI_HASH_UNCHECKED</div><div class="ttdef"><b>Definition</b> <a href="hash_8h_source.html#l00032">hash.h:32</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-desktop_2libmate-desktop_2private_8h_html"><div class="ttname"><a href="mate-desktop_2libmate-desktop_2private_8h.html">private.h</a></div></div>

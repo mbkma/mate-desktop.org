@@ -137,17 +137,17 @@ $(document).ready(function(){initNavTree('document-loader_8c_source.html',''); i
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} LoaderTestData;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">static</span> GFile *</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>create_document (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>create_document (<span class="keyword">const</span> gchar *filename,</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                 <span class="keyword">const</span> gchar *contents)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (!g_file_set_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, contents, -1, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>))</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">if</span> (!g_file_set_contents (filename, contents, -1, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>))</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        g_assert_no_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> g_file_new_for_path (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> g_file_new_for_path (filename);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('document-loader_8c_source.html',''); i
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>test_loader (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>test_loader (<span class="keyword">const</span> gchar *filename,</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>             <span class="keyword">const</span> gchar *contents,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>             <span class="keyword">const</span> gchar *in_buffer,</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>             gint         newline_type)</div>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('document-loader_8c_source.html',''); i
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    gchar *uri;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_struct" href="struct__PlumaDocument.html">PlumaDocument</a> *document;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    file = create_document (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, contents);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    file = create_document (filename, contents);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    document = <a class="code hl_function" href="pluma-document_8c.html#a3d90955f8e82e1d1a32bbb7dbb45db77">pluma_document_new</a> ();</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
@@ -350,7 +350,6 @@ $(document).ready(function(){initNavTree('document-loader_8c_source.html',''); i
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-document-loader_8h_html"><div class="ttname"><a href="pluma-document-loader_8h.html">pluma-document-loader.h</a></div></div>

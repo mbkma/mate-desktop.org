@@ -324,14 +324,14 @@ $(document).ready(function(){initNavTree('pluma-taglist-plugin-panel_8c_source.h
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">         * cursor between the pair, otherwise move it at the end */</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="keywordflow">if</span> (!sel)</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            gint offset;</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = gtk_text_iter_get_offset (&amp;end) -</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            offset = gtk_text_iter_get_offset (&amp;end) -</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>                 g_utf8_strlen ((gchar *)tag-&gt;<a class="code hl_variable" href="struct__Tag.html#aa3475f5ee61a714002c7c999997ebd64">end</a>, -1);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            gtk_text_buffer_get_iter_at_offset (buffer,</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                                &amp;end,</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                                <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                                offset);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        }</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        cursor = end;</div>
@@ -907,7 +907,6 @@ $(document).ready(function(){initNavTree('pluma-taglist-plugin-panel_8c_source.h
 <div class="ttc" id="aeom-debug_8h_html_afc17d52ae6172b7d4c8814acc56301f9"><div class="ttname"><a href="eom-debug_8h.html#afc17d52ae6172b7d4c8814acc56301f9">DEBUG_PLUGINS</a></div><div class="ttdeci">#define DEBUG_PLUGINS</div><div class="ttdef"><b>Definition</b> <a href="eom-debug_8h_source.html#l00060">eom-debug.h:60</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-debug_8c_html_a49d7a93b5a97526e9a77e60ae4ce22db"><div class="ttname"><a href="pluma-debug_8c.html#a49d7a93b5a97526e9a77e60ae4ce22db">pluma_debug</a></div><div class="ttdeci">void pluma_debug(PlumaDebugSection section, const gchar *file, gint line, const gchar *function)</div><div class="ttdef"><b>Definition</b> <a href="pluma-debug_8c_source.html#l00138">pluma-debug.c:138</a></div></div>

@@ -207,18 +207,18 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">static</span> gchar buffer[4096];</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    gsize read;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    GInputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a> = G_INPUT_STREAM (g_file_read (file, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    GInputStream *stream = G_INPUT_STREAM (g_file_read (file, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>));</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    g_assert_no_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    g_input_stream_read_all (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>, buffer, <span class="keyword">sizeof</span> (buffer) - 1, &amp;read, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    g_input_stream_read_all (stream, buffer, <span class="keyword">sizeof</span> (buffer) - 1, &amp;read, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    g_assert_no_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    buffer[read] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    g_input_stream_close (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    g_input_stream_close (stream, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    g_object_unref (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    g_object_unref (stream);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    g_object_unref (file);</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> buffer;</div>
@@ -383,7 +383,7 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>};</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>test_new_line (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_enumeration" href="pluma-document_8h.html#aaae56d7de2bd5e0d53f53058d737f9ee">PlumaDocumentSaveFlags</a> save_flags)</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>test_new_line (<span class="keyword">const</span> gchar *filename, <a class="code hl_enumeration" href="pluma-document_8h.html#aaae56d7de2bd5e0d53f53058d737f9ee">PlumaDocumentSaveFlags</a> save_flags)</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>{</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    gint i;</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    gint num = <span class="keyword">sizeof</span> (newline_test_data) / <span class="keyword">sizeof</span> (NewLineTestData);</div>
@@ -392,12 +392,12 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    {</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        NewLineTestData *nt = &amp;(newline_test_data[i]);</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        test_saver (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        test_saver (filename,</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                    nt-&gt;text,</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                    nt-&gt;type,</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    save_flags,</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                    <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    saver_test_data_new (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, nt-&gt;result, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>));</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    saver_test_data_new (filename, nt-&gt;result, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>));</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    }</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>}</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
@@ -504,17 +504,17 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>{</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    GError *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>    GFile *file = g_file_new_for_commandline_arg (uri);</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    GFileOutputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>;</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>    GFileOutputStream *stream;</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    GFileInfo *info;</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    guint mode;</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    g_file_delete (file, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a> = g_file_create (file, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    stream = g_file_create (file, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    g_assert_no_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    g_output_stream_close (G_OUTPUT_STREAM (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    g_object_unref (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>);</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    g_output_stream_close (G_OUTPUT_STREAM (stream), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    g_object_unref (stream);</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    info = g_file_query_info (file,</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>                              G_FILE_ATTRIBUTE_UNIX_MODE,</div>
@@ -524,12 +524,12 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    g_assert_no_error (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = g_file_info_get_attribute_uint32 (info, G_FILE_ATTRIBUTE_UNIX_MODE);</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    mode = g_file_info_get_attribute_uint32 (info, G_FILE_ATTRIBUTE_UNIX_MODE);</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>    g_object_unref (info);</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    g_file_set_attribute_uint32 (file,</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>                                 G_FILE_ATTRIBUTE_UNIX_MODE,</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>                                 (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> &amp; ~<a class="code hl_define" href="document-saver_8c.html#a7f5274f84a4e65724a8fcccc89ca288e">ACCESSPERMS</a>) | permissions,</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>                                 (mode &amp; ~<a class="code hl_define" href="document-saver_8c.html#a7f5274f84a4e65724a8fcccc89ca288e">ACCESSPERMS</a>) | permissions,</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>                                 G_FILE_QUERY_INFO_NONE,</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>                                 <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>                                 &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
@@ -602,7 +602,7 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>    GFile *file = g_file_new_for_commandline_arg (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>-&gt;uri);</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    GError *err = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>    <span class="keyword">const</span> gchar *group;</div>
-<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    guint32 <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    guint32 mode;</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span> </div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    GFileInfo *info = g_file_query_info (file,</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>                                         G_FILE_ATTRIBUTE_OWNER_GROUP <span class="stringliteral">&quot;,&quot;</span></div>
@@ -616,9 +616,9 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    group = g_file_info_get_attribute_string (info, G_FILE_ATTRIBUTE_OWNER_GROUP);</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    g_assert_cmpstr (group, ==, <span class="stringliteral">&quot;root&quot;</span>);</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span> </div>
-<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = g_file_info_get_attribute_uint32 (info, G_FILE_ATTRIBUTE_UNIX_MODE);</div>
+<div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>    mode = g_file_info_get_attribute_uint32 (info, G_FILE_ATTRIBUTE_UNIX_MODE);</div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    g_assert_cmpint (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> &amp; <a class="code hl_define" href="document-saver_8c.html#a7f5274f84a4e65724a8fcccc89ca288e">ACCESSPERMS</a>, ==, 0660);</div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>    g_assert_cmpint (mode &amp; <a class="code hl_define" href="document-saver_8c.html#a7f5274f84a4e65724a8fcccc89ca288e">ACCESSPERMS</a>, ==, 0660);</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>    g_object_unref (file);</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    g_object_unref (info);</div>
@@ -843,9 +843,6 @@ $(document).ready(function(){initNavTree('document-saver_8c_source.html',''); in
 <div class="ttc" id="adocument-saver_8c_html_ae569cfa709304deaf263af36ed6dd8f7"><div class="ttname"><a href="document-saver_8c.html#ae569cfa709304deaf263af36ed6dd8f7">DEFAULT_REMOTE_URI</a></div><div class="ttdeci">#define DEFAULT_REMOTE_URI</div><div class="ttdef"><b>Definition</b> <a href="document-saver_8c_source.html#l00038">document-saver.c:38</a></div></div>
 <div class="ttc" id="adocument-saver_8c_html_af0752d4fe172891550a9016ec3e52922"><div class="ttname"><a href="document-saver_8c.html#af0752d4fe172891550a9016ec3e52922">DEFAULT_CONTENT_RESULT</a></div><div class="ttdeci">#define DEFAULT_CONTENT_RESULT</div><div class="ttdef"><b>Definition</b> <a href="document-saver_8c_source.html#l00040">document-saver.c:40</a></div></div>
 <div class="ttc" id="afile-utils_8c_html_aaa9dd3c28adb800b8a3d596836f917fc"><div class="ttname"><a href="file-utils_8c.html#aaa9dd3c28adb800b8a3d596836f917fc">check_permissions</a></div><div class="ttdeci">gboolean check_permissions(const char *uri, int mode)</div><div class="ttdef"><b>Definition</b> <a href="file-utils_8c_source.html#l00920">file-utils.c:920</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a4ed0a20697a8c37f8af699a8ec6d76a8"><div class="ttname"><a href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a></div><div class="ttdeci">voidpf stream</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-document-loader_8h_html"><div class="ttname"><a href="pluma-document-loader_8h.html">pluma-document-loader.h</a></div></div>

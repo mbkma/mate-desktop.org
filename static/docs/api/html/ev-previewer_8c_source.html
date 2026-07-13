@@ -139,11 +139,11 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>ev_previewer_unlink_tempfile (<span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>ev_previewer_unlink_tempfile (<span class="keyword">const</span> gchar *filename)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    GFile *file, *tempdir;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    file = g_file_new_for_path (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    file = g_file_new_for_path (filename);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    tempdir = g_file_new_for_path (g_get_tmp_dir ());</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> (g_file_has_prefix (file, tempdir)) {</div>
@@ -169,14 +169,14 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>ev_previewer_load_document (<span class="keyword">const</span> gchar     *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>ev_previewer_load_document (<span class="keyword">const</span> gchar     *filename,</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <a class="code hl_typedef" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *model)</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_struct" href="struct__EvJob.html">EvJob</a> *job;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    gchar *uri;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    GFile  *file;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    file = g_file_new_for_commandline_arg (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    file = g_file_new_for_commandline_arg (filename);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    uri = g_file_get_uri (file);</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    g_object_unref (file);</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    GtkWidget       *window;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    GOptionContext  *context;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">const</span> gchar     *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">const</span> gchar     *filename;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_typedef" href="ev-document-model_8h.html#a4b843ee9c7ca85985ad44582d4fb836d">EvDocumentModel</a> *model;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    GError          *<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
@@ -228,10 +228,10 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = filenames[0];</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    filename = filenames[0];</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">if</span> (!g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR)) {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        g_warning (<span class="stringliteral">&quot;Filename \&quot;%s\&quot; does not exist or is not a regular file&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">if</span> (!g_file_test (filename, G_FILE_TEST_IS_REGULAR)) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        g_warning (<span class="stringliteral">&quot;Filename \&quot;%s\&quot; does not exist or is not a regular file&quot;</span>, filename);</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    model = <a class="code hl_function" href="ev-document-model_8c.html#ad35a009caf0784a54d9f36df0bc4e253">ev_document_model_new</a> ();</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    window = <a class="code hl_function" href="ev-previewer-window_8c.html#a175277063c2d3070b8dc52cd68f9e190">ev_previewer_window_new</a> (model);</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_function" href="ev-previewer-window_8c.html#a7248f7719f61c76216b354ae0210dcdd">ev_previewer_window_set_source_file</a> (<a class="code hl_define" href="ev-previewer-window_8h.html#adfef2d964a89284c7973a1b7da0bb978">EV_PREVIEWER_WINDOW</a> (window), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_function" href="ev-previewer-window_8c.html#a7248f7719f61c76216b354ae0210dcdd">ev_previewer_window_set_source_file</a> (<a class="code hl_define" href="ev-previewer-window_8h.html#adfef2d964a89284c7973a1b7da0bb978">EV_PREVIEWER_WINDOW</a> (window), filename);</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_function" href="ev-previewer-window_8c.html#aafb56d72f829f8a203d49e54cc7c7e98">ev_previewer_window_set_print_settings</a> (<a class="code hl_define" href="ev-previewer-window_8h.html#adfef2d964a89284c7973a1b7da0bb978">EV_PREVIEWER_WINDOW</a> (window), print_settings);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    g_signal_connect (window, <span class="stringliteral">&quot;delete-event&quot;</span>,</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>              G_CALLBACK (gtk_main_quit), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -254,12 +254,12 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>              G_CALLBACK (gtk_main_quit), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    gtk_widget_show (window);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    ev_previewer_load_document (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, model);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    ev_previewer_load_document (filename, model);</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    gtk_main ();</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordflow">if</span> (unlink_temp_file)</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        ev_previewer_unlink_tempfile (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        ev_previewer_unlink_tempfile (filename);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">if</span> (print_settings)</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        ev_previewer_unlink_tempfile (print_settings);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
@@ -290,7 +290,6 @@ $(document).ready(function(){initNavTree('ev-previewer_8c_source.html',''); init
 <div class="ttc" id="aev-previewer-window_8h_html"><div class="ttname"><a href="ev-previewer-window_8h.html">ev-previewer-window.h</a></div></div>
 <div class="ttc" id="aev-previewer-window_8h_html_adfef2d964a89284c7973a1b7da0bb978"><div class="ttname"><a href="ev-previewer-window_8h.html#adfef2d964a89284c7973a1b7da0bb978">EV_PREVIEWER_WINDOW</a></div><div class="ttdeci">#define EV_PREVIEWER_WINDOW(object)</div><div class="ttdef"><b>Definition</b> <a href="ev-previewer-window_8h_source.html#l00032">ev-previewer-window.h:32</a></div></div>
 <div class="ttc" id="aev-stock-icons_8c_html_a1237b1e91409c3f34b38f6ea52f43f1e"><div class="ttname"><a href="ev-stock-icons_8c.html#a1237b1e91409c3f34b38f6ea52f43f1e">ev_stock_icons_init</a></div><div class="ttdeci">void ev_stock_icons_init(void)</div><div class="ttdef"><b>Definition</b> <a href="ev-stock-icons_8c_source.html#l00090">ev-stock-icons.c:90</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="astruct__EvJob_html"><div class="ttname"><a href="struct__EvJob.html">_EvJob</a></div><div class="ttdef"><b>Definition</b> <a href="ev-jobs_8h_source.html#l00162">ev-jobs.h:163</a></div></div>

@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('cairo-device_8c_source.html',''); init
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="preprocessor">#ifdef HAVE_SPECTRE</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>dvi_cairo_draw_ps (<a class="code hl_struct" href="struct__DviContext.html">DviContext</a> *dvi,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>           <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>           <span class="keyword">const</span> <span class="keywordtype">char</span> *filename,</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>           <span class="keywordtype">int</span>         x,</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>           <span class="keywordtype">int</span>         y,</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>           <a class="code hl_typedef" href="sysdeps_8h.html#a4840c4503b7d10cea5e08416eb3716f1">Uint</a>        width,</div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('cairo-device_8c_source.html',''); init
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    cairo_device = (DviCairoDevice *) dvi-&gt;<a class="code hl_variable" href="struct__DviContext.html#a55d51e4b4a517ae54214f71ed56a0363">device</a>.<a class="code hl_variable" href="struct__DviDevice.html#a9563d65ee5b16cb52916a2dab3675fcb">device_data</a>;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    psdoc = spectre_document_new ();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    spectre_document_load (psdoc, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    spectre_document_load (psdoc, filename);</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">if</span> (spectre_document_status (psdoc)) {</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        spectre_document_free (psdoc);</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <span class="keywordflow">return</span>;</div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('cairo-device_8c_source.html',''); init
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keywordflow">if</span> (status) {</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        g_warning (<span class="stringliteral">&quot;Error rendering PS document %s: %s\n&quot;</span>,</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>               <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, spectre_status_to_string (status));</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>               filename, spectre_status_to_string (status));</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        free (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">return</span>;</div>
@@ -491,7 +491,6 @@ $(document).ready(function(){initNavTree('cairo-device_8c_source.html',''); init
 <div class="ttc" id="acairo-device_8c_html_afcd09c711e0262daa218a8a96945f04d"><div class="ttname"><a href="cairo-device_8c.html#afcd09c711e0262daa218a8a96945f04d">mdvi_cairo_device_get_surface</a></div><div class="ttdeci">cairo_surface_t * mdvi_cairo_device_get_surface(DviDevice *device)</div><div class="ttdef"><b>Definition</b> <a href="cairo-device_8c_source.html#l00313">cairo-device.c:313</a></div></div>
 <div class="ttc" id="acairo-device_8h_html"><div class="ttname"><a href="cairo-device_8h.html">cairo-device.h</a></div></div>
 <div class="ttc" id="adviread_8c_html_a78c85f895aa3cba4a992cd451ae8e07c"><div class="ttname"><a href="dviread_8c.html#a78c85f895aa3cba4a992cd451ae8e07c">mdvi_dopage</a></div><div class="ttdeci">int mdvi_dopage(DviContext *dvi, int pageno)</div><div class="ttdef"><b>Definition</b> <a href="dviread_8c_source.html#l00995">dviread.c:995</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="amdvi_8h_html_ac4e78878afe4e5f63d9b4ad4f381d097"><div class="ttname"><a href="mdvi_8h.html#ac4e78878afe4e5f63d9b4ad4f381d097">MDVI_GLYPH_ISEMPTY</a></div><div class="ttdeci">#define MDVI_GLYPH_ISEMPTY(x)</div><div class="ttdef"><b>Definition</b> <a href="mdvi_8h_source.html#l00455">mdvi.h:455</a></div></div>
 <div class="ttc" id="amdvi_8h_html_ad6b6ec9785fe5f9add019f3c54ad2528"><div class="ttname"><a href="mdvi_8h.html#ad6b6ec9785fe5f9add019f3c54ad2528">MDVI_PARAM_CHARBOXES</a></div><div class="ttdeci">#define MDVI_PARAM_CHARBOXES</div><div class="ttdef"><b>Definition</b> <a href="mdvi_8h_source.html#l00431">mdvi.h:431</a></div></div>

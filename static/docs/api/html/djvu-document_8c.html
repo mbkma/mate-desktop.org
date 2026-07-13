@@ -145,9 +145,9 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a3da6754204140354c7cc46972803a930" id="r_a3da6754204140354c7cc46972803a930"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a3da6754204140354c7cc46972803a930">EV_BACKEND_REGISTER_WITH_CODE</a> (<a class="el" href="djvu-document_8h.html#a3c80af7c1d84564e9420fe851a367085">DjvuDocument</a>, djvu_document, { <a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-thumbnails_8h.html#a1daca9dd45000cd0a0da637838cbbe56">EV_TYPE_DOCUMENT_THUMBNAILS</a>, djvu_document_document_thumbnails_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-file-exporter_8h.html#acfdad5d48f5fd4eef16229ecba1bfff1">EV_TYPE_FILE_EXPORTER</a>, djvu_document_file_exporter_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-find_8h.html#aebf3e715ac7030ff64806c376656f4e1">EV_TYPE_DOCUMENT_FIND</a>, djvu_document_find_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-links_8h.html#a8226b2f0495b23504db742c03c7577f0">EV_TYPE_DOCUMENT_LINKS</a>, djvu_document_document_links_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-selection_8h.html#ade1ba76bbc428b822c527f092778b147">EV_TYPE_SELECTION</a>, djvu_selection_iface_init);})</td></tr>
 <tr class="separator:a3da6754204140354c7cc46972803a930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aece81d987f8a10511c8206746cdb5e1a" id="r_aece81d987f8a10511c8206746cdb5e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#aece81d987f8a10511c8206746cdb5e1a">djvu_handle_events</a> (<a class="el" href="djvu-document_8h.html#a3c80af7c1d84564e9420fe851a367085">DjvuDocument</a> *djvu_document, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> wait, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
+<tr class="memitem:aece81d987f8a10511c8206746cdb5e1a" id="r_aece81d987f8a10511c8206746cdb5e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#aece81d987f8a10511c8206746cdb5e1a">djvu_handle_events</a> (<a class="el" href="djvu-document_8h.html#a3c80af7c1d84564e9420fe851a367085">DjvuDocument</a> *djvu_document, int wait, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:aece81d987f8a10511c8206746cdb5e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff7e86b59b9fe7a2f12899dba1e07d4" id="r_a1ff7e86b59b9fe7a2f12899dba1e07d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a1ff7e86b59b9fe7a2f12899dba1e07d4">djvu_document_get_n_pages</a> (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
+<tr class="memitem:a1ff7e86b59b9fe7a2f12899dba1e07d4" id="r_a1ff7e86b59b9fe7a2f12899dba1e07d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="djvu-document_8c.html#a1ff7e86b59b9fe7a2f12899dba1e07d4">djvu_document_get_n_pages</a> (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
 <tr class="separator:a1ff7e86b59b9fe7a2f12899dba1e07d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> djvu_document_get_n_pages </td>
+          <td class="memname">int djvu_document_get_n_pages </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *&#160;</td>
           <td class="paramname"><em>document</em></td><td>)</td>
@@ -259,7 +259,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>wait</em>, </td>
         </tr>
         <tr>
@@ -316,7 +316,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="ev-document_8h_source.html#l00232">EV_BACKEND_IMPLEMENT_INTERFACE</a>, <a class="el" href="ev-document-find_8h_source.html#l00036">EV_TYPE_DOCUMENT_FIND</a>, <a class="el" href="ev-document-links_8h_source.html#l00041">EV_TYPE_DOCUMENT_LINKS</a>, <a class="el" href="ev-document-thumbnails_8h_source.html#l00033">EV_TYPE_DOCUMENT_THUMBNAILS</a>, <a class="el" href="ev-file-exporter_8h_source.html#l00065">EV_TYPE_FILE_EXPORTER</a>, and <a class="el" href="ev-selection_8h_source.html#l00035">EV_TYPE_SELECTION</a>.</p>
+<p class="reference">References <a class="el" href="ev-document_8h_source.html#l00238">EV_BACKEND_IMPLEMENT_INTERFACE</a>, <a class="el" href="ev-document-find_8h_source.html#l00036">EV_TYPE_DOCUMENT_FIND</a>, <a class="el" href="ev-document-links_8h_source.html#l00041">EV_TYPE_DOCUMENT_LINKS</a>, <a class="el" href="ev-document-thumbnails_8h_source.html#l00033">EV_TYPE_DOCUMENT_THUMBNAILS</a>, <a class="el" href="ev-file-exporter_8h_source.html#l00065">EV_TYPE_FILE_EXPORTER</a>, and <a class="el" href="ev-selection_8h_source.html#l00035">EV_TYPE_SELECTION</a>.</p>
 
 </div>
 </div>

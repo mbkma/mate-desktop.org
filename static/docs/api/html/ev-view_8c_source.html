@@ -1263,7 +1263,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>get_page_y_offset (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view, <span class="keywordtype">int</span> page, <span class="keywordtype">int</span> *y_offset)</div>
 <div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>{</div>
-<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = 0;</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    <span class="keywordtype">int</span> offset = 0;</div>
 <div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    GtkBorder border;</div>
 <div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>    gboolean odd_left;</div>
 <div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span> </div>
@@ -1272,15 +1272,15 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>    compute_border (view, &amp;border);</div>
 <div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span> </div>
 <div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>    <span class="keywordflow">if</span> (is_dual_page (view, &amp;odd_left)) {</div>
-<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>        ev_view_get_height_to_page (view, page, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
-<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> += ((page + !odd_left) / 2 + 1) * view-&gt;<a class="code hl_variable" href="struct__EvView.html#a22fe8c7b137add961f615b5170e669a9">spacing</a> +</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>        ev_view_get_height_to_page (view, page, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;offset);</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>        offset += ((page + !odd_left) / 2 + 1) * view-&gt;<a class="code hl_variable" href="struct__EvView.html#a22fe8c7b137add961f615b5170e669a9">spacing</a> +</div>
 <div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>            ((page + !odd_left) / 2 ) * (border.top + border.bottom);</div>
 <div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>        ev_view_get_height_to_page (view, page, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> += (page + 1) * view-&gt;<a class="code hl_variable" href="struct__EvView.html#a22fe8c7b137add961f615b5170e669a9">spacing</a> + page * (border.top + border.bottom);</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>        ev_view_get_height_to_page (view, page, &amp;offset, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>        offset += (page + 1) * view-&gt;<a class="code hl_variable" href="struct__EvView.html#a22fe8c7b137add961f615b5170e669a9">spacing</a> + page * (border.top + border.bottom);</div>
 <div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    }</div>
 <div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span> </div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    *y_offset = <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    *y_offset = offset;</div>
 <div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>}</div>
 <div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span> </div>
@@ -3459,7 +3459,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l03327" name="l03327"></a><span class="lineno"> 3327</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l03328" name="l03328"></a><span class="lineno"> 3328</span>get_caret_cursor_area (<a class="code hl_struct" href="struct__EvView.html">EvView</a>       *view,</div>
 <div class="line"><a id="l03329" name="l03329"></a><span class="lineno"> 3329</span>               gint          page,</div>
-<div class="line"><a id="l03330" name="l03330"></a><span class="lineno"> 3330</span>               gint          <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l03330" name="l03330"></a><span class="lineno"> 3330</span>               gint          offset,</div>
 <div class="line"><a id="l03331" name="l03331"></a><span class="lineno"> 3331</span>               GdkRectangle *area)</div>
 <div class="line"><a id="l03332" name="l03332"></a><span class="lineno"> 3332</span>{</div>
 <div class="line"><a id="l03333" name="l03333"></a><span class="lineno"> 3333</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *areas = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -3478,12 +3478,12 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l03346" name="l03346"></a><span class="lineno"> 3346</span>    <span class="keywordflow">if</span> (!areas)</div>
 <div class="line"><a id="l03347" name="l03347"></a><span class="lineno"> 3347</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l03348" name="l03348"></a><span class="lineno"> 3348</span> </div>
-<div class="line"><a id="l03349" name="l03349"></a><span class="lineno"> 3349</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt; n_areas)</div>
+<div class="line"><a id="l03349" name="l03349"></a><span class="lineno"> 3349</span>    <span class="keywordflow">if</span> (offset &gt; n_areas)</div>
 <div class="line"><a id="l03350" name="l03350"></a><span class="lineno"> 3350</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l03351" name="l03351"></a><span class="lineno"> 3351</span> </div>
-<div class="line"><a id="l03352" name="l03352"></a><span class="lineno"> 3352</span>    doc_rect = areas + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
-<div class="line"><a id="l03353" name="l03353"></a><span class="lineno"> 3353</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> == n_areas ||</div>
-<div class="line"><a id="l03354" name="l03354"></a><span class="lineno"> 3354</span>        ((doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> == doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> || doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> == doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt; 0)) {</div>
+<div class="line"><a id="l03352" name="l03352"></a><span class="lineno"> 3352</span>    doc_rect = areas + offset;</div>
+<div class="line"><a id="l03353" name="l03353"></a><span class="lineno"> 3353</span>    <span class="keywordflow">if</span> (offset == n_areas ||</div>
+<div class="line"><a id="l03354" name="l03354"></a><span class="lineno"> 3354</span>        ((doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> == doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> || doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> == doc_rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a>) &amp;&amp; offset &gt; 0)) {</div>
 <div class="line"><a id="l03355" name="l03355"></a><span class="lineno"> 3355</span>        <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *prev;</div>
 <div class="line"><a id="l03356" name="l03356"></a><span class="lineno"> 3356</span>        <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a>  last_rect;</div>
 <div class="line"><a id="l03357" name="l03357"></a><span class="lineno"> 3357</span> </div>
@@ -3491,7 +3491,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l03359" name="l03359"></a><span class="lineno"> 3359</span><span class="comment">         * and the end of a page doesn&#39;t have any bounding box,</span></div>
 <div class="line"><a id="l03360" name="l03360"></a><span class="lineno"> 3360</span><span class="comment">         * use the size of the previous area.</span></div>
 <div class="line"><a id="l03361" name="l03361"></a><span class="lineno"> 3361</span><span class="comment">         */</span></div>
-<div class="line"><a id="l03362" name="l03362"></a><span class="lineno"> 3362</span>        prev = areas + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> - 1;</div>
+<div class="line"><a id="l03362" name="l03362"></a><span class="lineno"> 3362</span>        prev = areas + offset - 1;</div>
 <div class="line"><a id="l03363" name="l03363"></a><span class="lineno"> 3363</span>        last_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = prev-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a>;</div>
 <div class="line"><a id="l03364" name="l03364"></a><span class="lineno"> 3364</span>        last_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = prev-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
 <div class="line"><a id="l03365" name="l03365"></a><span class="lineno"> 3365</span>        last_rect.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = prev-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> + (prev-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - prev-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>);</div>
@@ -3667,15 +3667,15 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="foldopen" id="foldopen03529" data-start="{" data-end="}">
 <div class="line"><a id="l03529" name="l03529"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70"> 3529</a></span><a class="code hl_function" href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev_view_set_caret_cursor_position</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view,</div>
 <div class="line"><a id="l03530" name="l03530"></a><span class="lineno"> 3530</span>                                   guint   page,</div>
-<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span>                                   guint   <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l03531" name="l03531"></a><span class="lineno"> 3531</span>                                   guint   offset)</div>
 <div class="line"><a id="l03532" name="l03532"></a><span class="lineno"> 3532</span>{</div>
 <div class="line"><a id="l03533" name="l03533"></a><span class="lineno"> 3533</span>    g_return_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view));</div>
 <div class="line"><a id="l03534" name="l03534"></a><span class="lineno"> 3534</span>    g_return_if_fail (<a class="code hl_define" href="ev-document_8h.html#aef7fe6234f550a283a083897e9dec705">EV_IS_DOCUMENT</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>));</div>
 <div class="line"><a id="l03535" name="l03535"></a><span class="lineno"> 3535</span>    g_return_if_fail (page &lt; <a class="code hl_function" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>));</div>
 <div class="line"><a id="l03536" name="l03536"></a><span class="lineno"> 3536</span> </div>
-<div class="line"><a id="l03537" name="l03537"></a><span class="lineno"> 3537</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> != page || view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> != <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>) {</div>
+<div class="line"><a id="l03537" name="l03537"></a><span class="lineno"> 3537</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> != page || view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> != offset) {</div>
 <div class="line"><a id="l03538" name="l03538"></a><span class="lineno"> 3538</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> = page;</div>
-<div class="line"><a id="l03539" name="l03539"></a><span class="lineno"> 3539</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> = <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l03539" name="l03539"></a><span class="lineno"> 3539</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> = offset;</div>
 <div class="line"><a id="l03540" name="l03540"></a><span class="lineno"> 3540</span> </div>
 <div class="line"><a id="l03541" name="l03541"></a><span class="lineno"> 3541</span>        g_signal_emit (view, signals[<a class="code hl_enumvalue" href="ev-view_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a88d4855ce571ef6301476468ea72a974">SIGNAL_CURSOR_MOVED</a>], 0,</div>
 <div class="line"><a id="l03542" name="l03542"></a><span class="lineno"> 3542</span>                   view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a>, view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a>);</div>
@@ -4456,7 +4456,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l04315" name="l04315"></a><span class="lineno"> 4315</span>{</div>
 <div class="line"><a id="l04316" name="l04316"></a><span class="lineno"> 4316</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *areas = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l04317" name="l04317"></a><span class="lineno"> 4317</span>    guint        n_areas = 0;</div>
-<div class="line"><a id="l04318" name="l04318"></a><span class="lineno"> 4318</span>    gint         <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = -1;</div>
+<div class="line"><a id="l04318" name="l04318"></a><span class="lineno"> 4318</span>    gint         offset = -1;</div>
 <div class="line"><a id="l04319" name="l04319"></a><span class="lineno"> 4319</span>    gint         first_line_offset;</div>
 <div class="line"><a id="l04320" name="l04320"></a><span class="lineno"> 4320</span>    gint         last_line_offset = -1;</div>
 <div class="line"><a id="l04321" name="l04321"></a><span class="lineno"> 4321</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *rect;</div>
@@ -4467,7 +4467,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l04326" name="l04326"></a><span class="lineno"> 4326</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l04327" name="l04327"></a><span class="lineno"> 4327</span> </div>
 <div class="line"><a id="l04328" name="l04328"></a><span class="lineno"> 4328</span>    i = 0;</div>
-<div class="line"><a id="l04329" name="l04329"></a><span class="lineno"> 4329</span>    <span class="keywordflow">while</span> (i &lt; n_areas &amp;&amp; <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> == -1) {</div>
+<div class="line"><a id="l04329" name="l04329"></a><span class="lineno"> 4329</span>    <span class="keywordflow">while</span> (i &lt; n_areas &amp;&amp; offset == -1) {</div>
 <div class="line"><a id="l04330" name="l04330"></a><span class="lineno"> 4330</span>        rect = areas + i;</div>
 <div class="line"><a id="l04331" name="l04331"></a><span class="lineno"> 4331</span> </div>
 <div class="line"><a id="l04332" name="l04332"></a><span class="lineno"> 4332</span>        first_line_offset = -1;</div>
@@ -4485,11 +4485,11 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l04344" name="l04344"></a><span class="lineno"> 4344</span>                        dx2 = rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> - doc_x;</div>
 <div class="line"><a id="l04345" name="l04345"></a><span class="lineno"> 4345</span> </div>
 <div class="line"><a id="l04346" name="l04346"></a><span class="lineno"> 4346</span>                        <span class="keywordflow">if</span> (dx1 &lt; dx2)</div>
-<div class="line"><a id="l04347" name="l04347"></a><span class="lineno"> 4347</span>                            <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = last_line_offset;</div>
+<div class="line"><a id="l04347" name="l04347"></a><span class="lineno"> 4347</span>                            offset = last_line_offset;</div>
 <div class="line"><a id="l04348" name="l04348"></a><span class="lineno"> 4348</span>                        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l04349" name="l04349"></a><span class="lineno"> 4349</span>                            <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = i;</div>
+<div class="line"><a id="l04349" name="l04349"></a><span class="lineno"> 4349</span>                            offset = i;</div>
 <div class="line"><a id="l04350" name="l04350"></a><span class="lineno"> 4350</span>                    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l04351" name="l04351"></a><span class="lineno"> 4351</span>                        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = i;</div>
+<div class="line"><a id="l04351" name="l04351"></a><span class="lineno"> 4351</span>                        offset = i;</div>
 <div class="line"><a id="l04352" name="l04352"></a><span class="lineno"> 4352</span>                    }</div>
 <div class="line"><a id="l04353" name="l04353"></a><span class="lineno"> 4353</span> </div>
 <div class="line"><a id="l04354" name="l04354"></a><span class="lineno"> 4354</span>                    last_line_offset = i + 1;</div>
@@ -4505,9 +4505,9 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l04364" name="l04364"></a><span class="lineno"> 4364</span><span class="comment">                 * falls within the left or right half of the bounding box.</span></div>
 <div class="line"><a id="l04365" name="l04365"></a><span class="lineno"> 4365</span><span class="comment">                 */</span></div>
 <div class="line"><a id="l04366" name="l04366"></a><span class="lineno"> 4366</span>                <span class="keywordflow">if</span> (doc_x &lt;= rect-&gt;x1 + (rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - rect-&gt;<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>) / 2)</div>
-<div class="line"><a id="l04367" name="l04367"></a><span class="lineno"> 4367</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = i;</div>
+<div class="line"><a id="l04367" name="l04367"></a><span class="lineno"> 4367</span>                    offset = i;</div>
 <div class="line"><a id="l04368" name="l04368"></a><span class="lineno"> 4368</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l04369" name="l04369"></a><span class="lineno"> 4369</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = i + 1;</div>
+<div class="line"><a id="l04369" name="l04369"></a><span class="lineno"> 4369</span>                    offset = i + 1;</div>
 <div class="line"><a id="l04370" name="l04370"></a><span class="lineno"> 4370</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l04371" name="l04371"></a><span class="lineno"> 4371</span>            }</div>
 <div class="line"><a id="l04372" name="l04372"></a><span class="lineno"> 4372</span> </div>
@@ -4522,10 +4522,10 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l04381" name="l04381"></a><span class="lineno"> 4381</span>    <span class="keywordflow">if</span> (last_line_offset == -1)</div>
 <div class="line"><a id="l04382" name="l04382"></a><span class="lineno"> 4382</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l04383" name="l04383"></a><span class="lineno"> 4383</span> </div>
-<div class="line"><a id="l04384" name="l04384"></a><span class="lineno"> 4384</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> == -1)</div>
-<div class="line"><a id="l04385" name="l04385"></a><span class="lineno"> 4385</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = last_line_offset;</div>
+<div class="line"><a id="l04384" name="l04384"></a><span class="lineno"> 4384</span>    <span class="keywordflow">if</span> (offset == -1)</div>
+<div class="line"><a id="l04385" name="l04385"></a><span class="lineno"> 4385</span>        offset = last_line_offset;</div>
 <div class="line"><a id="l04386" name="l04386"></a><span class="lineno"> 4386</span> </div>
-<div class="line"><a id="l04387" name="l04387"></a><span class="lineno"> 4387</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l04387" name="l04387"></a><span class="lineno"> 4387</span>    <span class="keywordflow">return</span> offset;</div>
 <div class="line"><a id="l04388" name="l04388"></a><span class="lineno"> 4388</span>}</div>
 </div>
 <div class="line"><a id="l04389" name="l04389"></a><span class="lineno"> 4389</span> </div>
@@ -4535,14 +4535,14 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l04393" name="l04393"></a><span class="lineno"> 4393</span>                                    gdouble doc_x,</div>
 <div class="line"><a id="l04394" name="l04394"></a><span class="lineno"> 4394</span>                                    gdouble doc_y)</div>
 <div class="line"><a id="l04395" name="l04395"></a><span class="lineno"> 4395</span>{</div>
-<div class="line"><a id="l04396" name="l04396"></a><span class="lineno"> 4396</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l04396" name="l04396"></a><span class="lineno"> 4396</span>    gint offset;</div>
 <div class="line"><a id="l04397" name="l04397"></a><span class="lineno"> 4397</span> </div>
-<div class="line"><a id="l04398" name="l04398"></a><span class="lineno"> 4398</span>    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = <a class="code hl_function" href="ev-view_8c.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (view, page, doc_x, doc_y);</div>
-<div class="line"><a id="l04399" name="l04399"></a><span class="lineno"> 4399</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> == -1)</div>
+<div class="line"><a id="l04398" name="l04398"></a><span class="lineno"> 4398</span>    offset = <a class="code hl_function" href="ev-view_8c.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a> (view, page, doc_x, doc_y);</div>
+<div class="line"><a id="l04399" name="l04399"></a><span class="lineno"> 4399</span>    <span class="keywordflow">if</span> (offset == -1)</div>
 <div class="line"><a id="l04400" name="l04400"></a><span class="lineno"> 4400</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l04401" name="l04401"></a><span class="lineno"> 4401</span> </div>
-<div class="line"><a id="l04402" name="l04402"></a><span class="lineno"> 4402</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> != <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> || view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> != page) {</div>
-<div class="line"><a id="l04403" name="l04403"></a><span class="lineno"> 4403</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> = <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l04402" name="l04402"></a><span class="lineno"> 4402</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> != offset || view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> != page) {</div>
+<div class="line"><a id="l04403" name="l04403"></a><span class="lineno"> 4403</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#a674071b2fb11ae2c6027e53524318b19">cursor_offset</a> = offset;</div>
 <div class="line"><a id="l04404" name="l04404"></a><span class="lineno"> 4404</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#abfb7d6f72112a4c45bb5650d478b97ec">cursor_page</a> = page;</div>
 <div class="line"><a id="l04405" name="l04405"></a><span class="lineno"> 4405</span> </div>
 <div class="line"><a id="l04406" name="l04406"></a><span class="lineno"> 4406</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -6278,7 +6278,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l06134" name="l06134"></a><span class="lineno"> 6134</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l06135" name="l06135"></a><span class="lineno"> 6135</span>pan_gesture_pan_cb (GtkGesturePan   *gesture,</div>
 <div class="line"><a id="l06136" name="l06136"></a><span class="lineno"> 6136</span>            GtkPanDirection  direction,</div>
-<div class="line"><a id="l06137" name="l06137"></a><span class="lineno"> 6137</span>            gdouble          <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>,</div>
+<div class="line"><a id="l06137" name="l06137"></a><span class="lineno"> 6137</span>            gdouble          offset,</div>
 <div class="line"><a id="l06138" name="l06138"></a><span class="lineno"> 6138</span>            <a class="code hl_struct" href="struct__EvView.html">EvView</a>          *view)</div>
 <div class="line"><a id="l06139" name="l06139"></a><span class="lineno"> 6139</span>{</div>
 <div class="line"><a id="l06140" name="l06140"></a><span class="lineno"> 6140</span>    GtkAllocation allocation;</div>
@@ -6297,7 +6297,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l06153" name="l06153"></a><span class="lineno"> 6153</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#a407b1ff1a500bd9d008fc2e4723461c9">pan_action</a> = <a class="code hl_enumvalue" href="ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bdae450d1fa192e92dbb3bfa3460f00e7ae">EV_PAN_ACTION_NONE</a>;</div>
 <div class="line"><a id="l06154" name="l06154"></a><span class="lineno"> 6154</span>    gtk_gesture_set_state (GTK_GESTURE (gesture), GTK_EVENT_SEQUENCE_CLAIMED);</div>
 <div class="line"><a id="l06155" name="l06155"></a><span class="lineno"> 6155</span> </div>
-<div class="line"><a id="l06156" name="l06156"></a><span class="lineno"> 6156</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt; <a class="code hl_define" href="ev-view_8c.html#aba4f1bc3056c843ac92f788813ebeeb9">PAN_ACTION_DISTANCE</a>) {</div>
+<div class="line"><a id="l06156" name="l06156"></a><span class="lineno"> 6156</span>    <span class="keywordflow">if</span> (offset &gt; <a class="code hl_define" href="ev-view_8c.html#aba4f1bc3056c843ac92f788813ebeeb9">PAN_ACTION_DISTANCE</a>) {</div>
 <div class="line"><a id="l06157" name="l06157"></a><span class="lineno"> 6157</span>        <span class="keywordflow">if</span> (direction == GTK_PAN_DIRECTION_LEFT ||</div>
 <div class="line"><a id="l06158" name="l06158"></a><span class="lineno"> 6158</span>            gtk_widget_get_direction (GTK_WIDGET (view)) == GTK_TEXT_DIR_RTL)</div>
 <div class="line"><a id="l06159" name="l06159"></a><span class="lineno"> 6159</span>            view-&gt;<a class="code hl_variable" href="struct__EvView.html#a407b1ff1a500bd9d008fc2e4723461c9">pan_action</a> = <a class="code hl_enumvalue" href="ev-view-private_8h.html#aceb8f0bd74548a7a35915de2a57db5bdabb08b9d4142857f8088961b099a2bff6">EV_PAN_ACTION_NEXT</a>;</div>
@@ -7059,10 +7059,10 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l06916" name="l06916"></a><span class="lineno"> 6916</span>                GParamSpec      *pspec,</div>
 <div class="line"><a id="l06917" name="l06917"></a><span class="lineno"> 6917</span>                <a class="code hl_struct" href="struct__EvView.html">EvView</a>          *view)</div>
 <div class="line"><a id="l06918" name="l06918"></a><span class="lineno"> 6918</span>{</div>
-<div class="line"><a id="l06919" name="l06919"></a><span class="lineno"> 6919</span>    <a class="code hl_enumeration" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5">EvSizingMode</a> <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = <a class="code hl_function" href="ev-document-model_8c.html#ab4f5792774a6cfdfad3771d40b0e8ab0">ev_document_model_get_sizing_mode</a> (model);</div>
+<div class="line"><a id="l06919" name="l06919"></a><span class="lineno"> 6919</span>    <a class="code hl_enumeration" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5">EvSizingMode</a> mode = <a class="code hl_function" href="ev-document-model_8c.html#ab4f5792774a6cfdfad3771d40b0e8ab0">ev_document_model_get_sizing_mode</a> (model);</div>
 <div class="line"><a id="l06920" name="l06920"></a><span class="lineno"> 6920</span> </div>
-<div class="line"><a id="l06921" name="l06921"></a><span class="lineno"> 6921</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#ad83f29e7d9247a66a1ce58aaae7c8764">sizing_mode</a> = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
-<div class="line"><a id="l06922" name="l06922"></a><span class="lineno"> 6922</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != <a class="code hl_enumvalue" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">EV_SIZING_FREE</a>)</div>
+<div class="line"><a id="l06921" name="l06921"></a><span class="lineno"> 6921</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#ad83f29e7d9247a66a1ce58aaae7c8764">sizing_mode</a> = mode;</div>
+<div class="line"><a id="l06922" name="l06922"></a><span class="lineno"> 6922</span>    <span class="keywordflow">if</span> (mode != <a class="code hl_enumvalue" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a10449bcf74b94d588f876734f2c00565">EV_SIZING_FREE</a>)</div>
 <div class="line"><a id="l06923" name="l06923"></a><span class="lineno"> 6923</span>        gtk_widget_queue_resize (GTK_WIDGET (view));</div>
 <div class="line"><a id="l06924" name="l06924"></a><span class="lineno"> 6924</span>}</div>
 <div class="line"><a id="l06925" name="l06925"></a><span class="lineno"> 6925</span> </div>
@@ -7647,7 +7647,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l07488" name="l07488"></a><span class="lineno"> 7488</span>{</div>
 <div class="line"><a id="l07489" name="l07489"></a><span class="lineno"> 7489</span>    GtkRequisition requisition;</div>
 <div class="line"><a id="l07490" name="l07490"></a><span class="lineno"> 7490</span>    GtkAllocation  allocation;</div>
-<div class="line"><a id="l07491" name="l07491"></a><span class="lineno"> 7491</span>    <span class="keywordtype">double</span>         <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l07491" name="l07491"></a><span class="lineno"> 7491</span>    <span class="keywordtype">double</span>         size;</div>
 <div class="line"><a id="l07492" name="l07492"></a><span class="lineno"> 7492</span> </div>
 <div class="line"><a id="l07493" name="l07493"></a><span class="lineno"> 7493</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#ad83f29e7d9247a66a1ce58aaae7c8764">sizing_mode</a> == <a class="code hl_enumvalue" href="ev-document-model_8h.html#a28f091eee72cf9f553679aa413b850a5a8e95315100c606ec6ee143a0b56fdd77">EV_SIZING_FIT_PAGE</a>)</div>
 <div class="line"><a id="l07494" name="l07494"></a><span class="lineno"> 7494</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
@@ -7661,25 +7661,25 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l07502" name="l07502"></a><span class="lineno"> 7502</span> </div>
 <div class="line"><a id="l07503" name="l07503"></a><span class="lineno"> 7503</span>    <span class="keywordflow">if</span> (orientation == GTK_ORIENTATION_HORIZONTAL) {</div>
 <div class="line"><a id="l07504" name="l07504"></a><span class="lineno"> 7504</span>        <span class="keywordflow">if</span> (requisition.width == 1) {</div>
-<div class="line"><a id="l07505" name="l07505"></a><span class="lineno"> 7505</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 1.0;</div>
+<div class="line"><a id="l07505" name="l07505"></a><span class="lineno"> 7505</span>            size = 1.0;</div>
 <div class="line"><a id="l07506" name="l07506"></a><span class="lineno"> 7506</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l07507" name="l07507"></a><span class="lineno"> 7507</span>            <span class="keywordflow">if</span> (allocation.width &gt; 0.0)</div>
-<div class="line"><a id="l07508" name="l07508"></a><span class="lineno"> 7508</span>                <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = (double) requisition.width / allocation.width;</div>
+<div class="line"><a id="l07508" name="l07508"></a><span class="lineno"> 7508</span>                size = (double) requisition.width / allocation.width;</div>
 <div class="line"><a id="l07509" name="l07509"></a><span class="lineno"> 7509</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l07510" name="l07510"></a><span class="lineno"> 7510</span>                <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 1.0;</div>
+<div class="line"><a id="l07510" name="l07510"></a><span class="lineno"> 7510</span>                size = 1.0;</div>
 <div class="line"><a id="l07511" name="l07511"></a><span class="lineno"> 7511</span>        }</div>
 <div class="line"><a id="l07512" name="l07512"></a><span class="lineno"> 7512</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l07513" name="l07513"></a><span class="lineno"> 7513</span>        <span class="keywordflow">if</span> (requisition.height == 1) {</div>
-<div class="line"><a id="l07514" name="l07514"></a><span class="lineno"> 7514</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 1.0;</div>
+<div class="line"><a id="l07514" name="l07514"></a><span class="lineno"> 7514</span>            size = 1.0;</div>
 <div class="line"><a id="l07515" name="l07515"></a><span class="lineno"> 7515</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l07516" name="l07516"></a><span class="lineno"> 7516</span>            <span class="keywordflow">if</span> (allocation.height &gt; 0.0)</div>
-<div class="line"><a id="l07517" name="l07517"></a><span class="lineno"> 7517</span>                <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = (double) requisition.height / allocation.height;</div>
+<div class="line"><a id="l07517" name="l07517"></a><span class="lineno"> 7517</span>                size = (double) requisition.height / allocation.height;</div>
 <div class="line"><a id="l07518" name="l07518"></a><span class="lineno"> 7518</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l07519" name="l07519"></a><span class="lineno"> 7519</span>                <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 1.0;</div>
+<div class="line"><a id="l07519" name="l07519"></a><span class="lineno"> 7519</span>                size = 1.0;</div>
 <div class="line"><a id="l07520" name="l07520"></a><span class="lineno"> 7520</span>        }</div>
 <div class="line"><a id="l07521" name="l07521"></a><span class="lineno"> 7521</span>    }</div>
 <div class="line"><a id="l07522" name="l07522"></a><span class="lineno"> 7522</span> </div>
-<div class="line"><a id="l07523" name="l07523"></a><span class="lineno"> 7523</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt;= 1.0;</div>
+<div class="line"><a id="l07523" name="l07523"></a><span class="lineno"> 7523</span>    <span class="keywordflow">return</span> size &lt;= 1.0;</div>
 <div class="line"><a id="l07524" name="l07524"></a><span class="lineno"> 7524</span>}</div>
 <div class="line"><a id="l07525" name="l07525"></a><span class="lineno"> 7525</span> </div>
 <div class="line"><a id="l07526" name="l07526"></a><span class="lineno"> 7526</span><span class="comment">/*** Find ***/</span></div>
@@ -8846,9 +8846,6 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-view_8h_html_a7fa4cb7985ad3611123c994e07e28865"><div class="ttname"><a href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a></div><div class="ttdeci">#define EV_IS_VIEW(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8h_source.html#l00038">ev-view.h:38</a></div></div>
 <div class="ttc" id="aev-view_8h_html_ae0f841ff23098797bd55cde4b71fe285"><div class="ttname"><a href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a></div><div class="ttdeci">#define EV_VIEW(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8h_source.html#l00037">ev-view.h:37</a></div></div>
 <div class="ttc" id="agste-starfield_8c_html_a37e9de632d1eb76ff7dcd3d8172add7d"><div class="ttname"><a href="gste-starfield_8c.html#a37e9de632d1eb76ff7dcd3d8172add7d">point</a></div><div class="ttdeci">struct _point point</div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
@@ -8928,18 +8925,18 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="astruct__EvHeightToPageCache_html_af2cbb054634f37ca982ceeed1741ee18"><div class="ttname"><a href="struct__EvHeightToPageCache.html#af2cbb054634f37ca982ceeed1741ee18">_EvHeightToPageCache::rotation</a></div><div class="ttdeci">gint rotation</div><div class="ttdef"><b>Definition</b> <a href="ev-view-private_8h_source.html#l00110">ev-view-private.h:110</a></div></div>
 <div class="ttc" id="astruct__EvImage_html"><div class="ttname"><a href="struct__EvImage.html">_EvImage</a></div><div class="ttdef"><b>Definition</b> <a href="ev-image_8h_source.html#l00043">ev-image.h:43</a></div></div>
 <div class="ttc" id="astruct__EvLayer_html"><div class="ttname"><a href="struct__EvLayer.html">_EvLayer</a></div><div class="ttdef"><b>Definition</b> <a href="ev-layer_8h_source.html#l00042">ev-layer.h:42</a></div></div>
-<div class="ttc" id="astruct__EvMapping_html"><div class="ttname"><a href="struct__EvMapping.html">_EvMapping</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00204">ev-document.h:204</a></div></div>
-<div class="ttc" id="astruct__EvMapping_html_a4270c5be97a75ee92f3ee6e856dcaee3"><div class="ttname"><a href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">_EvMapping::data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00206">ev-document.h:206</a></div></div>
-<div class="ttc" id="astruct__EvMapping_html_a7c527d40d067f4e58f6b0dce7a2e1bf2"><div class="ttname"><a href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">_EvMapping::area</a></div><div class="ttdeci">EvRectangle area</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00205">ev-document.h:205</a></div></div>
+<div class="ttc" id="astruct__EvMapping_html"><div class="ttname"><a href="struct__EvMapping.html">_EvMapping</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00210">ev-document.h:210</a></div></div>
+<div class="ttc" id="astruct__EvMapping_html_a4270c5be97a75ee92f3ee6e856dcaee3"><div class="ttname"><a href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">_EvMapping::data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00212">ev-document.h:212</a></div></div>
+<div class="ttc" id="astruct__EvMapping_html_a7c527d40d067f4e58f6b0dce7a2e1bf2"><div class="ttname"><a href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">_EvMapping::area</a></div><div class="ttdeci">EvRectangle area</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00211">ev-document.h:211</a></div></div>
 <div class="ttc" id="astruct__EvPage_html"><div class="ttname"><a href="struct__EvPage.html">_EvPage</a></div><div class="ttdef"><b>Definition</b> <a href="ev-page_8h_source.html#l00044">ev-page.h:44</a></div></div>
 <div class="ttc" id="astruct__EvPage_html_ad5e133fba72d1ad1a4eeca9989a09a31"><div class="ttname"><a href="struct__EvPage.html#ad5e133fba72d1ad1a4eeca9989a09a31">_EvPage::index</a></div><div class="ttdeci">gint index</div><div class="ttdef"><b>Definition</b> <a href="ev-page_8h_source.html#l00047">ev-page.h:47</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html"><div class="ttname"><a href="struct__EvRectangle.html">_EvRectangle</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00191">ev-document.h:192</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_a3fcc5cdd0bcd1c1fa34b544417942b5a"><div class="ttname"><a href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">_EvRectangle::x1</a></div><div class="ttdeci">gdouble x1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00193">ev-document.h:193</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_a5d4921b956a59ec7105a7597323c15d8"><div class="ttname"><a href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">_EvRectangle::y1</a></div><div class="ttdeci">gdouble y1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00194">ev-document.h:194</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_aa2575705672dab5800cb6cad74bc70a3"><div class="ttname"><a href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">_EvRectangle::y2</a></div><div class="ttdeci">gdouble y2</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00196">ev-document.h:196</a></div></div>
-<div class="ttc" id="astruct__EvRectangle_html_acbbaea457fdd1f981191f97f8a26f500"><div class="ttname"><a href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">_EvRectangle::x2</a></div><div class="ttdeci">gdouble x2</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00195">ev-document.h:195</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html"><div class="ttname"><a href="struct__EvRectangle.html">_EvRectangle</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00197">ev-document.h:198</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_a3fcc5cdd0bcd1c1fa34b544417942b5a"><div class="ttname"><a href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">_EvRectangle::x1</a></div><div class="ttdeci">gdouble x1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00199">ev-document.h:199</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_a5d4921b956a59ec7105a7597323c15d8"><div class="ttname"><a href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">_EvRectangle::y1</a></div><div class="ttdeci">gdouble y1</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00200">ev-document.h:200</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_aa2575705672dab5800cb6cad74bc70a3"><div class="ttname"><a href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">_EvRectangle::y2</a></div><div class="ttdeci">gdouble y2</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00202">ev-document.h:202</a></div></div>
+<div class="ttc" id="astruct__EvRectangle_html_acbbaea457fdd1f981191f97f8a26f500"><div class="ttname"><a href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">_EvRectangle::x2</a></div><div class="ttdeci">gdouble x2</div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00201">ev-document.h:201</a></div></div>
 <div class="ttc" id="astruct__EvRenderContext_html"><div class="ttname"><a href="struct__EvRenderContext.html">_EvRenderContext</a></div><div class="ttdef"><b>Definition</b> <a href="ev-render-context_8h_source.html#l00046">ev-render-context.h:47</a></div></div>
-<div class="ttc" id="astruct__EvSourceLink_html"><div class="ttname"><a href="struct__EvSourceLink.html">_EvSourceLink</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00210">ev-document.h:211</a></div></div>
+<div class="ttc" id="astruct__EvSourceLink_html"><div class="ttname"><a href="struct__EvSourceLink.html">_EvSourceLink</a></div><div class="ttdef"><b>Definition</b> <a href="ev-document_8h_source.html#l00216">ev-document.h:217</a></div></div>
 <div class="ttc" id="astruct__EvViewClass_html"><div class="ttname"><a href="struct__EvViewClass.html">_EvViewClass</a></div><div class="ttdef"><b>Definition</b> <a href="ev-view-private_8h_source.html#l00240">ev-view-private.h:240</a></div></div>
 <div class="ttc" id="astruct__EvView_html"><div class="ttname"><a href="struct__EvView.html">_EvView</a></div><div class="ttdef"><b>Definition</b> <a href="ev-view-private_8h_source.html#l00116">ev-view-private.h:116</a></div></div>
 <div class="ttc" id="astruct__EvView_html_a0370c47abe01a07c23239c5796997308"><div class="ttname"><a href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">_EvView::page_cache</a></div><div class="ttdeci">EvPageCache * page_cache</div><div class="ttdef"><b>Definition</b> <a href="ev-view-private_8h_source.html#l00132">ev-view-private.h:132</a></div></div>

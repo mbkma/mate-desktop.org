@@ -566,7 +566,7 @@ $(document).ready(function(){initNavTree('gtk-utils_8c_source.html',''); initRes
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="keyword">static</span> GdkPixbuf *</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>get_themed_icon_pixbuf (GThemedIcon  *icon,</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                <span class="keywordtype">int</span>           <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span>                <span class="keywordtype">int</span>           size,</div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>                GtkIconTheme *icon_theme)</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>{</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    <span class="keywordtype">char</span>        **icon_names;</div>
@@ -576,9 +576,9 @@ $(document).ready(function(){initNavTree('gtk-utils_8c_source.html',''); initRes
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span> </div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>    g_object_get (icon, <span class="stringliteral">&quot;names&quot;</span>, &amp;icon_names, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span> </div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    icon_info = gtk_icon_theme_choose_icon (icon_theme, (<span class="keyword">const</span> <span class="keywordtype">char</span> **)icon_names, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, 0);</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    icon_info = gtk_icon_theme_choose_icon (icon_theme, (<span class="keyword">const</span> <span class="keywordtype">char</span> **)icon_names, size, 0);</div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    <span class="keywordflow">if</span> (icon_info == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        icon_info = gtk_icon_theme_lookup_icon (icon_theme, <span class="stringliteral">&quot;text-x-generic&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, GTK_ICON_LOOKUP_USE_BUILTIN);</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        icon_info = gtk_icon_theme_lookup_icon (icon_theme, <span class="stringliteral">&quot;text-x-generic&quot;</span>, size, GTK_ICON_LOOKUP_USE_BUILTIN);</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span> </div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    pixbuf = gtk_icon_info_load_icon (icon_info, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    <span class="keywordflow">if</span> (pixbuf == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
@@ -594,16 +594,16 @@ $(document).ready(function(){initNavTree('gtk-utils_8c_source.html',''); initRes
 <div class="line"><a id="l00480" name="l00480"></a><span class="lineno">  480</span> </div>
 <div class="line"><a id="l00481" name="l00481"></a><span class="lineno">  481</span><span class="keyword">static</span> GdkPixbuf *</div>
 <div class="line"><a id="l00482" name="l00482"></a><span class="lineno">  482</span>get_file_icon_pixbuf (GFileIcon *icon,</div>
-<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>              <span class="keywordtype">int</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>              <span class="keywordtype">int</span>        size)</div>
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>{</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    GFile     *file;</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <span class="keywordtype">char</span>      *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>    <span class="keywordtype">char</span>      *filename;</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span> </div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>    file = g_file_icon_get_file (icon);</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (file);</div>
-<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    pixbuf = gdk_pixbuf_new_from_file_at_size (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>    filename = g_file_get_path (file);</div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>    pixbuf = gdk_pixbuf_new_from_file_at_size (filename, size, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>    g_free (filename);</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>    g_object_unref (file);</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span> </div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>    <span class="keywordflow">return</span> pixbuf;</div>
@@ -612,15 +612,15 @@ $(document).ready(function(){initNavTree('gtk-utils_8c_source.html',''); initRes
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>GdkPixbuf *</div>
 <div class="foldopen" id="foldopen00499" data-start="{" data-end="}">
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno"><a class="line" href="gtk-utils_8c.html#a5d31d761a016e5bc70aaebdbd8b7265c">  499</a></span><a class="code hl_function" href="gtk-utils_8c.html#a5d31d761a016e5bc70aaebdbd8b7265c">get_icon_pixbuf</a> (GIcon        *icon,</div>
-<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>         <span class="keywordtype">int</span>           <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>         <span class="keywordtype">int</span>           size,</div>
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>         GtkIconTheme *theme)</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span>{</div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span>    <span class="keywordflow">if</span> (icon == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span>    <span class="keywordflow">if</span> (G_IS_THEMED_ICON (icon))</div>
-<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>        <span class="keywordflow">return</span> get_themed_icon_pixbuf (G_THEMED_ICON (icon), <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, theme);</div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>        <span class="keywordflow">return</span> get_themed_icon_pixbuf (G_THEMED_ICON (icon), size, theme);</div>
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>    <span class="keywordflow">if</span> (G_IS_FILE_ICON (icon))</div>
-<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>        <span class="keywordflow">return</span> get_file_icon_pixbuf (G_FILE_ICON (icon), <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>        <span class="keywordflow">return</span> get_file_icon_pixbuf (G_FILE_ICON (icon), size);</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span>}</div>
 </div>
@@ -708,8 +708,6 @@ $(document).ready(function(){initNavTree('gtk-utils_8c_source.html',''); initRes
 <div class="ttc" id="agtk-utils_8c_html_af1d9cc4aaa73c08130cde7bba09d2eac"><div class="ttname"><a href="gtk-utils_8c.html#af1d9cc4aaa73c08130cde7bba09d2eac">show_help_dialog</a></div><div class="ttdeci">void show_help_dialog(GtkWindow *parent, const char *section)</div><div class="ttdef"><b>Definition</b> <a href="gtk-utils_8c_source.html#l00531">gtk-utils.c:531</a></div></div>
 <div class="ttc" id="agtk-utils_8c_html_aff987ac48b8089ec72e8ae181387e53e"><div class="ttname"><a href="gtk-utils_8c.html#aff987ac48b8089ec72e8ae181387e53e">get_mime_type_pixbuf</a></div><div class="ttdeci">GdkPixbuf * get_mime_type_pixbuf(const char *mime_type, int icon_size, GtkIconTheme *icon_theme)</div><div class="ttdef"><b>Definition</b> <a href="gtk-utils_8c_source.html#l00513">gtk-utils.c:513</a></div></div>
 <div class="ttc" id="agtk-utils_8h_html"><div class="ttname"><a href="gtk-utils_8h.html">gtk-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

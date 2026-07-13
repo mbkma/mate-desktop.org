@@ -150,13 +150,13 @@ $(document).ready(function(){initNavTree('procproperties_8cpp_source.html',''); 
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>get_process_memory_writable (<a class="code hl_class" href="classProcInfo.html">ProcInfo</a> *info)</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    glibtop_proc_map <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    glibtop_proc_map buf;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    glibtop_map_entry *maps;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    maps = glibtop_get_proc_map(&amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, info-&gt;<a class="code hl_variable" href="classProcInfo.html#a582e3bcae5fa4517267b242bc8f7c992">pid</a>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    maps = glibtop_get_proc_map(&amp;buf, info-&gt;<a class="code hl_variable" href="classProcInfo.html#a582e3bcae5fa4517267b242bc8f7c992">pid</a>);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    gulong memwritable = 0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> number = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>.number;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> number = buf.number;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; number; ++i) {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#ifdef __linux__</span></div>
@@ -208,21 +208,21 @@ $(document).ready(function(){initNavTree('procproperties_8cpp_source.html',''); 
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">static</span> gchar*</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>format_memsize(guint64 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>format_memsize(guint64 size)</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> == 0)</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">if</span> (size == 0)</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keywordflow">return</span> g_strdup(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;N/A&quot;</span>));</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">return</span> g_format_size_full(<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, G_FORMAT_SIZE_IEC_UNITS);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">return</span> g_format_size_full(size, G_FORMAT_SIZE_IEC_UNITS);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">static</span> gchar*</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>format_size(guint64 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>format_size(guint64 size)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> == 0)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">if</span> (size == 0)</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">return</span> g_strdup(<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;N/A&quot;</span>));</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> g_format_size(<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> g_format_size(size);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -437,8 +437,6 @@ $(document).ready(function(){initNavTree('procproperties_8cpp_source.html',''); 
 <div class="ttc" id="aclassProcInfo_html_abd86f1ae7c521b4eefb0d83391c05f8d"><div class="ttname"><a href="classProcInfo.html#abd86f1ae7c521b4eefb0d83391c05f8d">ProcInfo::arguments</a></div><div class="ttdeci">gchar * arguments</div><div class="ttdef"><b>Definition</b> <a href="procman_8h_source.html#l00184">procman.h:184</a></div></div>
 <div class="ttc" id="aclassProcInfo_html_ae0947fea7929af98caa2a9be18080df0"><div class="ttname"><a href="classProcInfo.html#ae0947fea7929af98caa2a9be18080df0">ProcInfo::name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="procman_8h_source.html#l00183">procman.h:183</a></div></div>
 <div class="ttc" id="aclock_8c_html_a59ad01704f8b88ba9fac520818f2b921"><div class="ttname"><a href="clock_8c.html#a59ad01704f8b88ba9fac520818f2b921">GDK_IS_X11_DISPLAY</a></div><div class="ttdeci">#define GDK_IS_X11_DISPLAY(object)</div><div class="ttdef"><b>Definition</b> <a href="clock_8c_source.html#l00065">clock.c:65</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-system-monitor_2src_2util_8h_html"><div class="ttname"><a href="mate-system-monitor_2src_2util_8h.html">util.h</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

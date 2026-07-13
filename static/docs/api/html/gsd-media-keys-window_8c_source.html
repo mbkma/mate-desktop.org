@@ -399,13 +399,13 @@ $(document).ready(function(){initNavTree('gsd-media-keys-window_8c_source.html',
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>draw_cross (cairo_t *cr,</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>            <span class="keywordtype">double</span>   cx,</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            <span class="keywordtype">double</span>   cy,</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="keywordtype">double</span>   <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>            <span class="keywordtype">double</span>   size)</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>{</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        cairo_move_to (cr, cx, cy - <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>/2.0);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        cairo_rel_line_to (cr, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        cairo_move_to (cr, cx, cy - size/2.0);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        cairo_rel_line_to (cr, size, size);</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        cairo_move_to (cr, cx, cy + <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>/2.0);</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        cairo_rel_line_to (cr, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, -<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        cairo_move_to (cr, cx, cy + size/2.0);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        cairo_rel_line_to (cr, size, -size);</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        cairo_set_source_rgba (cr, 0.6, 0.6, 0.6, <a class="code hl_define" href="mate-power-manager_2src_2msd-osd-window_8h.html#a0bac5917ea290a52cef400ba8421a5cc">MSD_OSD_WINDOW_FG_ALPHA</a> / 2);</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        cairo_set_line_width (cr, 14);</div>
@@ -485,7 +485,7 @@ $(document).ready(function(){initNavTree('gsd-media-keys-window_8c_source.html',
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                }</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>        }</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        icon_size = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)width;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>        icon_size = (int)width;</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>        pixbuf = load_pixbuf (window, icon_names[n], icon_size);</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
@@ -640,7 +640,7 @@ $(document).ready(function(){initNavTree('gsd-media-keys-window_8c_source.html',
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span>        GdkPixbuf         *pixbuf;</div>
 <div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>        <span class="keywordtype">int</span>                icon_size;</div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        icon_size = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)width;</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>        icon_size = (int)width;</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>        pixbuf = load_pixbuf (window, window-&gt;<a class="code hl_variable" href="structMsdMediaKeysWindow.html#a9adc6f607374d8903ab4c02a93e14602">priv</a>-&gt;icon_name, icon_size);</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
@@ -812,8 +812,6 @@ $(document).ready(function(){initNavTree('gsd-media-keys-window_8c_source.html',
 <div class="ttc" id="agsd-media-keys-window_8h_html_ac2e0d4950f7b1f0c9b0239a3b942ede8"><div class="ttname"><a href="gsd-media-keys-window_8h.html#ac2e0d4950f7b1f0c9b0239a3b942ede8">MSD_IS_MEDIA_KEYS_WINDOW</a></div><div class="ttdeci">#define MSD_IS_MEDIA_KEYS_WINDOW(obj)</div><div class="ttdef"><b>Definition</b> <a href="gsd-media-keys-window_8h_source.html#l00039">gsd-media-keys-window.h:39</a></div></div>
 <div class="ttc" id="agsd-media-keys-window_8h_html_ac6ee862f7f80376d84c9ba1f306e409e"><div class="ttname"><a href="gsd-media-keys-window_8h.html#ac6ee862f7f80376d84c9ba1f306e409e">MSD_TYPE_MEDIA_KEYS_WINDOW</a></div><div class="ttdeci">#define MSD_TYPE_MEDIA_KEYS_WINDOW</div><div class="ttdef"><b>Definition</b> <a href="gsd-media-keys-window_8h_source.html#l00036">gsd-media-keys-window.h:36</a></div></div>
 <div class="ttc" id="agsd-media-keys-window_8h_html_afa99b376248ae30495b2d65512823e4c"><div class="ttname"><a href="gsd-media-keys-window_8h.html#afa99b376248ae30495b2d65512823e4c">MSD_MEDIA_KEYS_WINDOW</a></div><div class="ttdeci">#define MSD_MEDIA_KEYS_WINDOW(obj)</div><div class="ttdef"><b>Definition</b> <a href="gsd-media-keys-window_8h_source.html#l00037">gsd-media-keys-window.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="amate-power-manager_2src_2msd-osd-window_8c_html_a47fee350a83c755441e534fcf945b4e0"><div class="ttname"><a href="mate-power-manager_2src_2msd-osd-window_8c.html#a47fee350a83c755441e534fcf945b4e0">msd_osd_window_is_composited</a></div><div class="ttdeci">gboolean msd_osd_window_is_composited(MsdOsdWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="mate-power-manager_2src_2msd-osd-window_8c_source.html#l00415">mate-power-manager/src/msd-osd-window.c:415</a></div></div>
 <div class="ttc" id="amate-power-manager_2src_2msd-osd-window_8c_html_aa78ee0d4c5a8806a87fb21a43aa90af1"><div class="ttname"><a href="mate-power-manager_2src_2msd-osd-window_8c.html#aa78ee0d4c5a8806a87fb21a43aa90af1">msd_osd_window_update_and_hide</a></div><div class="ttdeci">void msd_osd_window_update_and_hide(MsdOsdWindow *window)</div><div class="ttdef"><b>Definition</b> <a href="mate-power-manager_2src_2msd-osd-window_8c_source.html#l00487">mate-power-manager/src/msd-osd-window.c:487</a></div></div>
 <div class="ttc" id="amate-power-manager_2src_2msd-osd-window_8h_html_a0bac5917ea290a52cef400ba8421a5cc"><div class="ttname"><a href="mate-power-manager_2src_2msd-osd-window_8h.html#a0bac5917ea290a52cef400ba8421a5cc">MSD_OSD_WINDOW_FG_ALPHA</a></div><div class="ttdeci">#define MSD_OSD_WINDOW_FG_ALPHA</div><div class="ttdef"><b>Definition</b> <a href="mate-power-manager_2src_2msd-osd-window_8h_source.html#l00052">mate-power-manager/src/msd-osd-window.h:52</a></div></div>

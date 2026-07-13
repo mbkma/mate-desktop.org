@@ -488,8 +488,8 @@ $(document).ready(function(){initNavTree('theme-thumbnail_8c_source.html',''); i
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>  gtk_widget_get_preferred_size (window, &amp;requisition, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  allocation.x = 0;</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  allocation.y = 0;</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  allocation.width = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) <a class="code hl_define" href="theme-thumbnail_8c.html#a83e94dd66c4183fc17e133dc39a2f2fe">MARCO_THUMBNAIL_WIDTH</a> * 1.2;</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  allocation.height = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) <a class="code hl_define" href="theme-thumbnail_8c.html#a43b8f33946713cb0e428103386462b42">MARCO_THUMBNAIL_HEIGHT</a> * 1.2;</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  allocation.width = (int) <a class="code hl_define" href="theme-thumbnail_8c.html#a83e94dd66c4183fc17e133dc39a2f2fe">MARCO_THUMBNAIL_WIDTH</a> * 1.2;</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  allocation.height = (int) <a class="code hl_define" href="theme-thumbnail_8c.html#a43b8f33946713cb0e428103386462b42">MARCO_THUMBNAIL_HEIGHT</a> * 1.2;</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  gtk_widget_size_allocate (window, &amp;allocation);</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  gtk_widget_get_preferred_size (window, &amp;requisition, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
@@ -929,34 +929,34 @@ $(document).ready(function(){initNavTree('theme-thumbnail_8c_source.html',''); i
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>read_pixbuf (<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>{</div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  gint bytes_read, i, j = 0;</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[2];</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  gint size[2];</div>
 <div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>  GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>  gint rowstride;</div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  guchar *pixels;</div>
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span> </div>
 <div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>  <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>  {</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    bytes_read = read (pipe_from_factory_fd[0], ((guint8*) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>) + j, 2 * <span class="keyword">sizeof</span> (gint));</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>    bytes_read = read (pipe_from_factory_fd[0], ((guint8*) size) + j, 2 * <span class="keyword">sizeof</span> (gint));</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>    <span class="keywordflow">if</span> (bytes_read == 0)</div>
 <div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>      <span class="keywordflow">goto</span> eof;</div>
 <div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>    j += bytes_read;</div>
 <div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>  }</div>
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>  <span class="keywordflow">while</span> (j &lt; 2 * <span class="keyword">sizeof</span> (gint));</div>
 <div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>  <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[0] &lt;= 0 || <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[1] &lt;= 0)</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>  <span class="keywordflow">if</span> (size[0] &lt;= 0 || size[1] &lt;= 0)</div>
 <div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>  pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 8, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[0], <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[1]);</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>  pixbuf = gdk_pixbuf_new (GDK_COLORSPACE_RGB, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, 8, size[0], size[1]);</div>
 <div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>  rowstride = gdk_pixbuf_get_rowstride (pixbuf);</div>
 <div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>  pixels = gdk_pixbuf_get_pixels (pixbuf);</div>
 <div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span> </div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>  <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[1]; i++)</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>  <span class="keywordflow">for</span> (i = 0; i &lt; size[1]; i++)</div>
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>  {</div>
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    j = 0;</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span> </div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    {</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>      bytes_read = read (pipe_from_factory_fd[0], pixels + rowstride * i + j, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[0] * gdk_pixbuf_get_n_channels (pixbuf) - j);</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>      bytes_read = read (pipe_from_factory_fd[0], pixels + rowstride * i + j, size[0] * gdk_pixbuf_get_n_channels (pixbuf) - j);</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>      <span class="keywordflow">if</span> (bytes_read &gt; 0)</div>
 <div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>        j += bytes_read;</div>
@@ -966,7 +966,7 @@ $(document).ready(function(){initNavTree('theme-thumbnail_8c_source.html',''); i
 <div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>        <span class="keywordflow">goto</span> eof;</div>
 <div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>      }</div>
 <div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    }</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    <span class="keywordflow">while</span> (j &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>[0] * gdk_pixbuf_get_n_channels (pixbuf));</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    <span class="keywordflow">while</span> (j &lt; size[0] * gdk_pixbuf_get_n_channels (pixbuf));</div>
 <div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>  }</div>
 <div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span> </div>
 <div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>  <span class="keywordflow">return</span> pixbuf;</div>
@@ -1242,8 +1242,6 @@ $(document).ready(function(){initNavTree('theme-thumbnail_8c_source.html',''); i
 <div class="ttc" id="ags-idle-monitor_8h_html_aa92cea053a410afe0deffd2c7ed8715b"><div class="ttname"><a href="gs-idle-monitor_8h.html#aa92cea053a410afe0deffd2c7ed8715b">condition</a></div><div class="ttdeci">guint gboolean condition</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00036">gs-idle-monitor.h:36</a></div></div>
 <div class="ttc" id="agtkrc-utils_8c_html_a5928149a92c6481f55791be7e69f4c32"><div class="ttname"><a href="gtkrc-utils_8c.html#a5928149a92c6481f55791be7e69f4c32">gtkrc_get_color_scheme_for_theme</a></div><div class="ttdeci">gchar * gtkrc_get_color_scheme_for_theme(const gchar *theme_name)</div><div class="ttdef"><b>Definition</b> <a href="gtkrc-utils_8c_source.html#l00289">gtkrc-utils.c:289</a></div></div>
 <div class="ttc" id="agtkrc-utils_8h_html"><div class="ttname"><a href="gtkrc-utils_8h.html">gtkrc-utils.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="amarco_2src_2include_2common_8h_html_a32ccb5a68ce987155f4a5561e4f21e69"><div class="ttname"><a href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a></div><div class="ttdeci">MetaFrameFlags</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2include_2common_8h_source.html#l00035">marco/src/include/common.h:36</a></div></div>
 <div class="ttc" id="amarco_2src_2include_2common_8h_html_a32ccb5a68ce987155f4a5561e4f21e69a428ea0b85e1935d9b1f459cfcdebbc09"><div class="ttname"><a href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a428ea0b85e1935d9b1f459cfcdebbc09">META_FRAME_ALLOWS_MAXIMIZE</a></div><div class="ttdeci">@ META_FRAME_ALLOWS_MAXIMIZE</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2include_2common_8h_source.html#l00041">marco/src/include/common.h:41</a></div></div>
 <div class="ttc" id="amarco_2src_2include_2common_8h_html_a32ccb5a68ce987155f4a5561e4f21e69a52e39920c4f29a1764a968b2572918d2"><div class="ttname"><a href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69a52e39920c4f29a1764a968b2572918d2">META_FRAME_ALLOWS_MINIMIZE</a></div><div class="ttdeci">@ META_FRAME_ALLOWS_MINIMIZE</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2include_2common_8h_source.html#l00040">marco/src/include/common.h:40</a></div></div>

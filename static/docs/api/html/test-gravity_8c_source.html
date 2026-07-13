@@ -183,8 +183,8 @@ $(document).ready(function(){initNavTree('test-gravity_8c_source.html',''); init
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          yoff *= 2;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        }</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      *x = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) (screen_x_fraction[i % 3] * (<span class="keywordtype">double</span>) screen_width) + xoff;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      *y = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>) (screen_y_fraction[i / 3] * (<span class="keywordtype">double</span>) screen_height) + yoff;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      *x = (int) (screen_x_fraction[i % 3] * (<span class="keywordtype">double</span>) screen_width) + xoff;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      *y = (int) (screen_y_fraction[i / 3] * (<span class="keywordtype">double</span>) screen_height) + yoff;</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
@@ -335,28 +335,28 @@ $(document).ready(function(){initNavTree('test-gravity_8c_source.html',''); init
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>            {</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>              GC gc;</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>              XGCValues values;</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>              <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[256];</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>              <span class="keywordtype">char</span> buf[256];</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>              values.foreground = BlackPixel (d, screen);</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>              gc = XCreateGC (d, windows[i],</div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>                              GCForeground, &amp;values);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>              sprintf (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>              sprintf (buf,</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>                       <span class="stringliteral">&quot;%d,%d&quot;</span>,</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>                       window_rects[i].x,</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>                       window_rects[i].y);</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>              XDrawString (d, windows[i], gc, 10, 15,</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                           <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, strlen (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>));</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>                           buf, strlen (buf));</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>              sprintf (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>              sprintf (buf,</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>                       <span class="stringliteral">&quot;%dx%d&quot;</span>,</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>                       window_rects[i].width,</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>                       window_rects[i].height);</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>              XDrawString (d, windows[i], gc, 10, 35,</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                           <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, strlen (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>));</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>                           buf, strlen (buf));</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>              XFreeGC (d, gc);</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            }</div>
@@ -410,8 +410,6 @@ $(document).ready(function(){initNavTree('test-gravity_8c_source.html',''); init
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="afloaters_8c_html_a1023cbbeacb63a0dbce6b57ec8f2a8ba"><div class="ttname"><a href="floaters_8c.html#a1023cbbeacb63a0dbce6b57ec8f2a8ba">Rectangle</a></div><div class="ttdeci">struct _Rectangle Rectangle</div><div class="ttdef"><b>Definition</b> <a href="floaters_8c_source.html#l00080">floaters.c:80</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="astructMotifWmHints_html"><div class="ttname"><a href="structMotifWmHints.html">MotifWmHints</a></div><div class="ttdef"><b>Definition</b> <a href="xprops_8h_source.html#l00039">xprops.h:39</a></div></div>
 <div class="ttc" id="astructMotifWmHints_html_a1816c671983b4014b0a81834c3ebc326"><div class="ttname"><a href="structMotifWmHints.html#a1816c671983b4014b0a81834c3ebc326">MotifWmHints::flags</a></div><div class="ttdeci">unsigned long flags</div><div class="ttdef"><b>Definition</b> <a href="xprops_8h_source.html#l00040">xprops.h:40</a></div></div>
 <div class="ttc" id="astructMotifWmHints_html_ab025314cfb3c618c4008b2d713bc97a8"><div class="ttname"><a href="structMotifWmHints.html#ab025314cfb3c618c4008b2d713bc97a8">MotifWmHints::decorations</a></div><div class="ttdeci">unsigned long decorations</div><div class="ttdef"><b>Definition</b> <a href="xprops_8h_source.html#l00042">xprops.h:42</a></div></div>

@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">struct </span>_MateThumbnailFactoryPrivate {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">char</span> *application;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_enumeration" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6">MateThumbnailSize</a> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_enumeration" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6">MateThumbnailSize</a> size;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  GMutex *lock;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
@@ -400,13 +400,13 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><a class="code hl_struct" href="struct__MateThumbnailFactory.html">MateThumbnailFactory</a> *</div>
 <div class="foldopen" id="foldopen00312" data-start="{" data-end="}">
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="mate-thumbnail_8c.html#a477cd1854eb3b221463f381b763cbc67">  312</a></span><a class="code hl_function" href="mate-thumbnail_8c.html#a477cd1854eb3b221463f381b763cbc67">mate_thumbnail_factory_new</a> (<a class="code hl_enumeration" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6">MateThumbnailSize</a> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno"><a class="line" href="mate-thumbnail_8c.html#a477cd1854eb3b221463f381b763cbc67">  312</a></span><a class="code hl_function" href="mate-thumbnail_8c.html#a477cd1854eb3b221463f381b763cbc67">mate_thumbnail_factory_new</a> (<a class="code hl_enumeration" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6">MateThumbnailSize</a> size)</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>{</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <a class="code hl_struct" href="struct__MateThumbnailFactory.html">MateThumbnailFactory</a> *factory;</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  </div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  factory = g_object_new (<a class="code hl_define" href="mate-thumbnail_8h.html#a853beaf80882840e6e0f50fcf77a1af5">MATE_TYPE_THUMBNAIL_FACTORY</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  factory-&gt;<a class="code hl_variable" href="struct__MateThumbnailFactory.html#af13b53dacd99616b185bb9dc283aa8fd">priv</a>-&gt;size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  factory-&gt;<a class="code hl_variable" href="struct__MateThumbnailFactory.html#af13b53dacd99616b185bb9dc283aa8fd">priv</a>-&gt;size = size;</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  </div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordflow">return</span> factory;</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>}</div>
@@ -573,7 +573,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>expand_thumbnailing_script (<span class="keyword">const</span> <span class="keywordtype">char</span> *script,</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                <span class="keyword">const</span> <span class="keywordtype">int</span>   <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, </div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>                <span class="keyword">const</span> <span class="keywordtype">int</span>   size, </div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                <span class="keyword">const</span> <span class="keywordtype">char</span> *inuri,</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>                <span class="keyword">const</span> <span class="keywordtype">char</span> *outfile)</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>{</div>
@@ -621,7 +621,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    p++;</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    g_string_append_printf (str, <span class="stringliteral">&quot;%d&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    g_string_append_printf (str, <span class="stringliteral">&quot;%d&quot;</span>, size);</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    p++;</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>      <span class="keywordflow">case</span> <span class="charliteral">&#39;%&#39;</span>:</div>
@@ -801,7 +801,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>{</div>
 <div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>  GdkPixbuf *pixbuf, *scaled, *tmp_pixbuf;</div>
 <div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>  <span class="keywordtype">char</span> *script, *expanded_script;</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  <span class="keywordtype">int</span> width, height, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  <span class="keywordtype">int</span> width, height, size;</div>
 <div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>  <span class="keywordtype">int</span> original_width = 0;</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  <span class="keywordtype">int</span> original_height = 0;</div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  <span class="keywordtype">char</span> dimension[12];</div>
@@ -814,9 +814,9 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
 <div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>  <span class="comment">/* Doesn&#39;t access any volatile fields in factory, so it&#39;s threadsafe */</span></div>
 <div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>  </div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 128;</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>  size = 128;</div>
 <div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>  <span class="keywordflow">if</span> (factory-&gt;<a class="code hl_variable" href="struct__MateThumbnailFactory.html#af13b53dacd99616b185bb9dc283aa8fd">priv</a>-&gt;size == <a class="code hl_enumvalue" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6a0686365469ef9fc81ce98c917b0b6e83">MATE_THUMBNAIL_SIZE_LARGE</a>)</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 256;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    size = 256;</div>
 <div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
 <div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>  pixbuf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span> </div>
@@ -834,7 +834,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>    {</div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>      close (fd);</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span> </div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>      expanded_script = expand_thumbnailing_script (script, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, uri, tmpname);</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>      expanded_script = expand_thumbnailing_script (script, size, uri, tmpname);</div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>      <span class="keywordflow">if</span> (expanded_script != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp;</div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>          g_spawn_command_line_sync (expanded_script,</div>
 <div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>                     <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;exit_status, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) &amp;&amp;</div>
@@ -852,7 +852,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>  <span class="comment">/* Fall back to gdk-pixbuf */</span></div>
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  <span class="keywordflow">if</span> (pixbuf == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>    {</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>      pixbuf = <a class="code hl_function" href="mate-thumbnail_8c.html#a4e892282ccd6b10d87dfcbe21fbe4f81">mate_gdk_pixbuf_new_from_uri_at_scale</a> (uri, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>      pixbuf = <a class="code hl_function" href="mate-thumbnail_8c.html#a4e892282ccd6b10d87dfcbe21fbe4f81">mate_gdk_pixbuf_new_from_uri_at_scale</a> (uri, size, size, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>      <span class="keywordflow">if</span> (pixbuf != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>        {</div>
@@ -876,10 +876,10 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>  width = gdk_pixbuf_get_width (pixbuf);</div>
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>  height = gdk_pixbuf_get_height (pixbuf);</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  </div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>  <span class="keywordflow">if</span> (width &gt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> || height &gt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>  <span class="keywordflow">if</span> (width &gt; size || height &gt; size)</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    {</div>
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>      <span class="keyword">const</span> gchar *orig_width, *orig_height;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>      scale = (double)<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> / <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (width, height);</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>      scale = (double)size / <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (width, height);</div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> </div>
 <div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>      scaled = <a class="code hl_function" href="mate-thumbnail-pixbuf-utils_8c.html#a0df255bd6fddff3140b7decd60b52517">mate_thumbnail_scale_down_pixbuf</a> (pixbuf,</div>
 <div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>                          floor (width * scale + 0.5),</div>
@@ -1180,7 +1180,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span><span class="keywordtype">char</span> *</div>
 <div class="foldopen" id="foldopen01203" data-start="{" data-end="}">
 <div class="line"><a id="l01203" name="l01203"></a><span class="lineno"><a class="line" href="mate-thumbnail_8c.html#ade59bc78e687b7c978488bc5abb54254"> 1203</a></span><a class="code hl_function" href="mate-thumbnail_8c.html#ade59bc78e687b7c978488bc5abb54254">mate_thumbnail_path_for_uri</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>         *uri,</div>
-<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>                  <a class="code hl_enumeration" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6">MateThumbnailSize</a>  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>                  <a class="code hl_enumeration" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6">MateThumbnailSize</a>  size)</div>
 <div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>{</div>
 <div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>  <span class="keywordtype">char</span> *md5;</div>
 <div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>  <span class="keywordtype">char</span> *file;</div>
@@ -1192,7 +1192,7 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>  </div>
 <div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>  path = g_build_filename (g_get_home_dir (),</div>
 <div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>               <span class="stringliteral">&quot;.thumbnails&quot;</span>,</div>
-<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>               (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> == <a class="code hl_enumvalue" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6a0f4b6a5120668daa22960e554f51fa05">MATE_THUMBNAIL_SIZE_NORMAL</a>)?<span class="stringliteral">&quot;normal&quot;</span>:<span class="stringliteral">&quot;large&quot;</span>,</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>               (size == <a class="code hl_enumvalue" href="mate-thumbnail_8h.html#ad5d2c42781c8b06834787decb78f2bd6a0f4b6a5120668daa22960e554f51fa05">MATE_THUMBNAIL_SIZE_NORMAL</a>)?<span class="stringliteral">&quot;normal&quot;</span>:<span class="stringliteral">&quot;large&quot;</span>,</div>
 <div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>               file,</div>
 <div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>               <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>    </div>
@@ -1250,7 +1250,6 @@ $(document).ready(function(){initNavTree('mate-thumbnail_8c_source.html',''); in
 <div class="ttc" id="acaja-engrampa_8c_html_a12139285594e136f3f40ec07d2fdc5c5"><div class="ttname"><a href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a></div><div class="ttdeci">const char * mime_type</div><div class="ttdef"><b>Definition</b> <a href="caja-engrampa_8c_source.html#l00140">caja-engrampa.c:140</a></div></div>
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="amate-mateconf-ui_8h_html"><div class="ttname"><a href="mate-mateconf-ui_8h.html">mate-mateconf-ui.h</a></div></div>
 <div class="ttc" id="amate-thumbnail-pixbuf-utils_8c_html_a0df255bd6fddff3140b7decd60b52517"><div class="ttname"><a href="mate-thumbnail-pixbuf-utils_8c.html#a0df255bd6fddff3140b7decd60b52517">mate_thumbnail_scale_down_pixbuf</a></div><div class="ttdeci">GdkPixbuf * mate_thumbnail_scale_down_pixbuf(GdkPixbuf *pixbuf, int dest_width, int dest_height)</div><div class="ttdef"><b>Definition</b> <a href="mate-thumbnail-pixbuf-utils_8c_source.html#l00050">mate-thumbnail-pixbuf-utils.c:50</a></div></div>

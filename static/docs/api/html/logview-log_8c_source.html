@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('logview-log_8c_source.html',''); initR
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  guint lines_no;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">/* stream poiting to the log */</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  GDataInputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  GDataInputStream *stream;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  gboolean has_new_lines;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
@@ -471,7 +471,7 @@ $(document).ready(function(){initNavTree('logview-log_8c_source.html',''); initR
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>{</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    guchar buffer[GZIP_HEADER_SIZE];</div>
 <div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    gssize bytes, to_skip;</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    guint mode;</div>
 <div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    guint flags;</div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span> </div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    bytes = g_input_stream_read (is, buffer, GZIP_HEADER_SIZE,</div>
@@ -486,8 +486,8 @@ $(document).ready(function(){initNavTree('logview-log_8c_source.html',''); initR
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>    <span class="keywordflow">if</span> (buffer[0] != GZIP_MAGIC_1 || buffer[1] != GZIP_MAGIC_2)</div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = buffer[2];</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != 8) <span class="comment">/* Mode: deflate */</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>    mode = buffer[2];</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">if</span> (mode != 8) <span class="comment">/* Mode: deflate */</span></div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    flags = buffer[3];</div>
@@ -921,12 +921,12 @@ $(document).ready(function(){initNavTree('logview-log_8c_source.html',''); initR
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span> </div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00821" data-start="{" data-end="}">
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno"><a class="line" href="logview-log_8c.html#a197e7a98acfdf257d965d22c3fc10463">  821</a></span><a class="code hl_function" href="logview-log_8c.html#a197e7a98acfdf257d965d22c3fc10463">logview_log_create</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_typedef" href="logview-log_8h.html#a692675b0161bdc7f515ffd5a8344d7b9">LogviewCreateCallback</a> callback,</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno"><a class="line" href="logview-log_8c.html#a197e7a98acfdf257d965d22c3fc10463">  821</a></span><a class="code hl_function" href="logview-log_8c.html#a197e7a98acfdf257d965d22c3fc10463">logview_log_create</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, <a class="code hl_typedef" href="logview-log_8h.html#a692675b0161bdc7f515ffd5a8344d7b9">LogviewCreateCallback</a> callback,</div>
 <div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                    gpointer <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>)</div>
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>{</div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>  <a class="code hl_struct" href="struct__LogviewLog.html">LogviewLog</a> *log = g_object_new (<a class="code hl_define" href="logview-log_8h.html#a0420a1fe2baa1b869039f52542537f96">LOGVIEW_TYPE_LOG</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>  log-&gt;<a class="code hl_variable" href="struct__LogviewLog.html#ad3e6bd5a4cc658c51714fa86a972e620">priv</a>-&gt;file = g_file_new_for_path (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>  log-&gt;<a class="code hl_variable" href="struct__LogviewLog.html#ad3e6bd5a4cc658c51714fa86a972e620">priv</a>-&gt;file = g_file_new_for_path (filename);</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
 <div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>  log_setup_load (log, callback, <a class="code hl_variable" href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a>);</div>
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>}</div>
@@ -1057,9 +1057,6 @@ $(document).ready(function(){initNavTree('logview-log_8c_source.html',''); initR
 <div class="ttc" id="acopy-theme-dialog_8c_html_acbbbdb297b944212a55f3e759d074439"><div class="ttname"><a href="copy-theme-dialog_8c.html#acbbbdb297b944212a55f3e759d074439">signals</a></div><div class="ttdeci">guint signals[SIGNAL_COUNT]</div><div class="ttdef"><b>Definition</b> <a href="copy-theme-dialog_8c_source.html#l00085">copy-theme-dialog.c:85</a></div></div>
 <div class="ttc" id="aev-window_8c_html_a06cf4bf9e589bfc4db1c0fd0cc38d3b6"><div class="ttname"><a href="ev-window_8c.html#a06cf4bf9e589bfc4db1c0fd0cc38d3b6">g_file_info_get_modification_date_time</a></div><div class="ttdeci">#define g_file_info_get_modification_date_time</div><div class="ttdef"><b>Definition</b> <a href="ev-window_8c_source.html#l02205">ev-window.c:2205</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a4ed0a20697a8c37f8af699a8ec6d76a8"><div class="ttname"><a href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a></div><div class="ttdeci">voidpf stream</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="alogview-log_8c_html_a05b93a39a5fa3862988977ea60cdb65d"><div class="ttname"><a href="logview-log_8c.html#a05b93a39a5fa3862988977ea60cdb65d">logview_log_get_gfile</a></div><div class="ttdeci">GFile * logview_log_get_gfile(LogviewLog *log)</div><div class="ttdef"><b>Definition</b> <a href="logview-log_8c_source.html#l00913">logview-log.c:913</a></div></div>
 <div class="ttc" id="alogview-log_8c_html_a1117d343e97ddf8865f23ba05df0f4cb"><div class="ttname"><a href="logview-log_8c.html#a1117d343e97ddf8865f23ba05df0f4cb">logview_log_get_display_name</a></div><div class="ttdeci">const char * logview_log_get_display_name(LogviewLog *log)</div><div class="ttdef"><b>Definition</b> <a href="logview-log_8c_source.html#l00843">logview-log.c:843</a></div></div>
 <div class="ttc" id="alogview-log_8c_html_a11d413724cd656735b113848002cf9d0"><div class="ttname"><a href="logview-log_8c.html#a11d413724cd656735b113848002cf9d0">logview_log_get_file_size</a></div><div class="ttdeci">goffset logview_log_get_file_size(LogviewLog *log)</div><div class="ttdef"><b>Definition</b> <a href="logview-log_8c_source.html#l00859">logview-log.c:859</a></div></div>

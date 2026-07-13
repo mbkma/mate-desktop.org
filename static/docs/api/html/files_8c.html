@@ -112,13 +112,13 @@ Include dependency graph for files.c:</div>
 Functions</h2></td></tr>
 <tr class="memitem:ad7143b05be6c559ec91ecc5910589731" id="r_ad7143b05be6c559ec91ecc5910589731"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#ad7143b05be6c559ec91ecc5910589731">dgets</a> (<a class="el" href="structDstring.html">Dstring</a> *dstr, FILE *in)</td></tr>
 <tr class="separator:ad7143b05be6c559ec91ecc5910589731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dafce3942aec0837333dd995690eb8c" id="r_a5dafce3942aec0837333dd995690eb8c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a5dafce3942aec0837333dd995690eb8c">file_basename</a> (const char *<a class="el" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</td></tr>
+<tr class="memitem:a5dafce3942aec0837333dd995690eb8c" id="r_a5dafce3942aec0837333dd995690eb8c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a5dafce3942aec0837333dd995690eb8c">file_basename</a> (const char *filename)</td></tr>
 <tr class="separator:a5dafce3942aec0837333dd995690eb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a138df1fa93eeb6d94bddcc18b5eb547f" id="r_a138df1fa93eeb6d94bddcc18b5eb547f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a138df1fa93eeb6d94bddcc18b5eb547f">file_extension</a> (const char *<a class="el" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</td></tr>
+<tr class="memitem:a138df1fa93eeb6d94bddcc18b5eb547f" id="r_a138df1fa93eeb6d94bddcc18b5eb547f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a138df1fa93eeb6d94bddcc18b5eb547f">file_extension</a> (const char *filename)</td></tr>
 <tr class="separator:a138df1fa93eeb6d94bddcc18b5eb547f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a734cd0d66586099c5acbb071f6c28eae" id="r_a734cd0d66586099c5acbb071f6c28eae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a734cd0d66586099c5acbb071f6c28eae">file_readable</a> (const char *<a class="el" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</td></tr>
+<tr class="memitem:a734cd0d66586099c5acbb071f6c28eae" id="r_a734cd0d66586099c5acbb071f6c28eae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a734cd0d66586099c5acbb071f6c28eae">file_readable</a> (const char *filename)</td></tr>
 <tr class="separator:a734cd0d66586099c5acbb071f6c28eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a465f5441ca7fc78824e4e834b46a747f" id="r_a465f5441ca7fc78824e4e834b46a747f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a465f5441ca7fc78824e4e834b46a747f">file_exists</a> (const char *<a class="el" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</td></tr>
+<tr class="memitem:a465f5441ca7fc78824e4e834b46a747f" id="r_a465f5441ca7fc78824e4e834b46a747f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="files_8c.html#a465f5441ca7fc78824e4e834b46a747f">file_exists</a> (const char *filename)</td></tr>
 <tr class="separator:a465f5441ca7fc78824e4e834b46a747f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> file_exists </td>
+          <td class="memname">int file_exists </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>
@@ -235,7 +235,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> file_readable </td>
+          <td class="memname">int file_readable </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>filename</em></td><td>)</td>

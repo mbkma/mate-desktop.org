@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">static</span> cairo_surface_t *</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>scale_surface (SnIconPixmap   *pixmap,</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>               GtkOrientation  orientation,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>               gint            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>               gint            size)</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  gdouble ratio;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  gdouble new_width;</div>
@@ -209,12 +209,12 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  ratio = pixmap-&gt;width / (gdouble) pixmap-&gt;height;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordflow">if</span> (orientation == GTK_ORIENTATION_HORIZONTAL)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      new_height = (gdouble) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      new_height = (gdouble) size;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      new_width = new_height * ratio;</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      new_width = (gdouble) <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      new_width = (gdouble) size;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      new_height = new_width * ratio;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">static</span> cairo_surface_t *</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>get_surface (SnIconPixmap  **icon_pixmap,</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>             GtkOrientation  orientation,</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>             gint            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>             gint            size)</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  gint i;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  GList *pixmaps = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    {</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      SnIconPixmap *p = (SnIconPixmap *) l-&gt;data;</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <span class="keywordflow">if</span> (p-&gt;height &gt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &amp;&amp; p-&gt;width &gt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <span class="keywordflow">if</span> (p-&gt;height &gt; size &amp;&amp; p-&gt;width &gt; size)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        {</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>          <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        }</div>
@@ -289,8 +289,8 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordflow">if</span> (pixmap == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || pixmap-&gt;surface == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pixmap-&gt;height &gt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> || pixmap-&gt;width &gt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> scale_surface (pixmap, orientation, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pixmap-&gt;height &gt; size || pixmap-&gt;width &gt; size)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> scale_surface (pixmap, orientation, size);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">return</span> cairo_surface_reference (pixmap-&gt;surface);</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
@@ -1616,11 +1616,11 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen01509" data-start="{" data-end="}">
 <div class="line"><a id="l01509" name="l01509"></a><span class="lineno"><a class="line" href="sn-item-v0_8c.html#a0cfc4a56d8c63700a356cfdfec5d3a3b"> 1509</a></span><a class="code hl_function" href="sn-item-v0_8c.html#a0cfc4a56d8c63700a356cfdfec5d3a3b">sn_item_v0_set_icon_size</a> (<a class="code hl_typedef" href="sn-item-v0_8h.html#ae0c675e952f1962b996af7ae3e390d68">SnItemV0</a> *v0,</div>
-<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span>                          gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span>                          gint size)</div>
 <div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>{</div>
-<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>  <span class="keywordflow">if</span> (v0-&gt;icon_size != <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>  <span class="keywordflow">if</span> (v0-&gt;icon_size != size)</div>
 <div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>    {</div>
-<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>      v0-&gt;icon_size = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>      v0-&gt;icon_size = size;</div>
 <div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>      g_object_notify_by_pspec (G_OBJECT (v0), obj_properties[<a class="code hl_enumvalue" href="sn-item-v0_8c.html#a33739709592ddddaea78816bcba3081fa0718b1b014ccfe54a6ed8554bee7abdf">PROP_ICON_SIZE</a>]);</div>
 <div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span> </div>
 <div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>      <span class="keywordflow">if</span> (v0-&gt;id != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
@@ -1638,7 +1638,6 @@ $(document).ready(function(){initNavTree('sn-item-v0_8c_source.html',''); initRe
 <div class="ttc" id="ag-util_8h_html_a6fe2f4f6fcc916c9f89b3e1c876f5432"><div class="ttname"><a href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a></div><div class="ttdeci">#define debug(format,...)</div><div class="ttdef"><b>Definition</b> <a href="g-util_8h_source.html#l00042">g-util.h:42</a></div></div>
 <div class="ttc" id="agajim_8c_html_a3946a46b523c2da59c3afb306c4b3ed8"><div class="ttname"><a href="gajim_8c.html#a3946a46b523c2da59c3afb306c4b3ed8">proxy</a></div><div class="ttdeci">DBusGProxy * proxy</div><div class="ttdef"><b>Definition</b> <a href="gajim_8c_source.html#l00044">gajim.c:44</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>

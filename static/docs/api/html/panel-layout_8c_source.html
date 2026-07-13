@@ -204,24 +204,24 @@ $(document).ready(function(){initNavTree('panel-layout_8c_source.html',''); init
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>{</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    GSettings *settings;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    gchar *layout;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    gchar *filename;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    settings = g_settings_new (<a class="code hl_define" href="trashapplet_8c.html#a4c08a6b4fe770fb1ebb65beb8367fa4a">PANEL_SCHEMA</a>);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    layout = g_settings_get_string (settings, <a class="code hl_define" href="panel-schemas_8h.html#ad1162705b66f9bdc401a98bec1427df0">PANEL_DEFAULT_LAYOUT</a>);</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">if</span> (g_str_has_prefix (layout, <span class="stringliteral">&quot;/&quot;</span>)) {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_strdup (layout);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        filename = g_strdup (layout);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_strdup_printf (<a class="code hl_define" href="panel-layout_8c.html#a130ffe8cd144bd45a9120d184ea13877">PANEL_LAYOUTS_DIR</a> <span class="stringliteral">&quot;%s.layout&quot;</span>, layout);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        filename = g_strdup_printf (<a class="code hl_define" href="panel-layout_8c.html#a130ffe8cd144bd45a9120d184ea13877">PANEL_LAYOUTS_DIR</a> <span class="stringliteral">&quot;%s.layout&quot;</span>, layout);</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    }</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    g_free (layout);</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    g_object_unref (settings);</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">if</span> (g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR)) {</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">if</span> (g_file_test (filename, G_FILE_TEST_IS_REGULAR)) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keywordflow">return</span> filename;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    }</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        g_free (filename);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
@@ -526,7 +526,6 @@ $(document).ready(function(){initNavTree('panel-layout_8c_source.html',''); init
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-dconf_8c_html_af6b33fc9bc31848a0142568d223513f0"><div class="ttname"><a href="mate-dconf_8c.html#af6b33fc9bc31848a0142568d223513f0">mate_dconf_list_subdirs</a></div><div class="ttdeci">gchar ** mate_dconf_list_subdirs(const gchar *dir, gboolean remove_trailing_slash)</div><div class="ttdef"><b>Definition</b> <a href="mate-dconf_8c_source.html#l00105">mate-dconf.c:105</a></div></div>
 <div class="ttc" id="amate-dconf_8h_html"><div class="ttname"><a href="mate-dconf_8h.html">mate-dconf.h</a></div></div>

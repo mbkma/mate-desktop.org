@@ -223,11 +223,11 @@ $(document).ready(function(){initNavTree('na-iprefs_8c_source.html',''); initRes
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="na-iprefs_8c.html#ad72b4045eaa8def11d83e69aaeb0bbc6">  121</a></span><a class="code hl_function" href="na-iprefs_8c.html#ad72b4045eaa8def11d83e69aaeb0bbc6">na_iprefs_set_order_mode</a>( guint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> )</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="na-iprefs_8c.html#ad72b4045eaa8def11d83e69aaeb0bbc6">  121</a></span><a class="code hl_function" href="na-iprefs_8c.html#ad72b4045eaa8def11d83e69aaeb0bbc6">na_iprefs_set_order_mode</a>( guint mode )</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">const</span> gchar *order_str;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    order_str = enum_map_string_from_id( st_order_mode, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> );</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    order_str = enum_map_string_from_id( st_order_mode, mode );</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_function" href="na-settings_8c.html#aaf8097ff05954341d95b447e29020704">na_settings_set_string</a>( <a class="code hl_define" href="na-settings_8h.html#a646db07211050e3555ea9e18f269995b">NA_IPREFS_ITEMS_LIST_ORDER_MODE</a>, order_str );</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 </div>
@@ -346,7 +346,6 @@ $(document).ready(function(){initNavTree('na-iprefs_8c_source.html',''); initRes
 <div class="ttc" id="aactions_8c_html_aeffa2f0815ce90fecbda9aac199143db"><div class="ttname"><a href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a></div><div class="ttdeci">const char * id</div><div class="ttdef"><b>Definition</b> <a href="actions_8c_source.html#l00051">actions.c:51</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ana-core-utils_8h_html"><div class="ttname"><a href="na-core-utils_8h.html">na-core-utils.h</a></div></div>
 <div class="ttc" id="ana-core-utils_8h_html_a649a217d2ef3308772bc913d0edd4c39"><div class="ttname"><a href="na-core-utils_8h.html#a649a217d2ef3308772bc913d0edd4c39">na_core_utils_slist_free</a></div><div class="ttdeci">void na_core_utils_slist_free(GSList *slist)</div><div class="ttdef"><b>Definition</b> <a href="na-core-utils_8c_source.html#l00738">na-core-utils.c:738</a></div></div>
 <div class="ttc" id="ana-importer_8h_html"><div class="ttname"><a href="na-importer_8h.html">na-importer.h</a></div></div>

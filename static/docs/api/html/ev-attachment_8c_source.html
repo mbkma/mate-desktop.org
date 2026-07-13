@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('ev-attachment_8c_source.html',''); ini
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    gchar                   *description;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    gint64                   mtime;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    gint64                   ctime;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    gsize                    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    gsize                    size;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    gchar                   *<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    gchar                   *<a class="code hl_variable" href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('ev-attachment_8c_source.html',''); ini
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>           <span class="keyword">const</span> gchar *description,</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>           gint64       mtime,</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>           gint64       ctime,</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>           gsize        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>           gsize        size,</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>           gpointer     <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    <a class="code hl_struct" href="struct__EvAttachment.html">EvAttachment</a> *attachment;</div>
@@ -332,7 +332,7 @@ $(document).ready(function(){initNavTree('ev-attachment_8c_source.html',''); ini
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>                   <span class="stringliteral">&quot;description&quot;</span>, description,</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                   <span class="stringliteral">&quot;mtime&quot;</span>, mtime,</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                   <span class="stringliteral">&quot;ctime&quot;</span>, ctime,</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                   <span class="stringliteral">&quot;size&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                   <span class="stringliteral">&quot;size&quot;</span>, size,</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                   <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>,</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                   <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
@@ -584,7 +584,6 @@ $(document).ready(function(){initNavTree('ev-attachment_8c_source.html',''); ini
 <div class="ttc" id="aev-file-helpers_8c_html_ab6821220c2c239c9d30e2c509c44cfe8"><div class="ttname"><a href="ev-file-helpers_8c.html#ab6821220c2c239c9d30e2c509c44cfe8">ev_mkstemp_file</a></div><div class="ttdeci">GFile * ev_mkstemp_file(const char *template, GError **error)</div><div class="ttdef"><b>Definition</b> <a href="ev-file-helpers_8c_source.html#l00179">ev-file-helpers.c:179</a></div></div>
 <div class="ttc" id="aev-file-helpers_8c_html_ae4b8565bc90f11e0cd20b834d56aecae"><div class="ttname"><a href="ev-file-helpers_8c.html#ae4b8565bc90f11e0cd20b834d56aecae">ev_tmp_file_unlink</a></div><div class="ttdeci">void ev_tmp_file_unlink(GFile *file)</div><div class="ttdef"><b>Definition</b> <a href="ev-file-helpers_8c_source.html#l00250">ev-file-helpers.c:250</a></div></div>
 <div class="ttc" id="aev-file-helpers_8h_html"><div class="ttname"><a href="ev-file-helpers_8h.html">ev-file-helpers.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

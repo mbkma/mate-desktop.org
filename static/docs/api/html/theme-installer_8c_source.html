@@ -173,14 +173,14 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">static</span> <span class="keywordtype">int</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>file_theme_type (<span class="keyword">const</span> gchar *dir)</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    gchar *filename = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    gboolean exists;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">if</span> (!dir)</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745a66fc23d50aba9ec4d3b0767b148ff678">THEME_INVALID</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;index.theme&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    filename = g_build_filename (dir, <span class="stringliteral">&quot;index.theme&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    exists = g_file_test (filename, G_FILE_TEST_IS_REGULAR);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span> (exists) {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        GPatternSpec *pattern;</div>
@@ -188,8 +188,8 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        gsize file_size;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        gboolean match;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        g_file_get_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, &amp;file_contents, &amp;file_size, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        g_file_get_contents (filename, &amp;file_contents, &amp;file_size, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        g_free (filename);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        pattern = g_pattern_spec_new (<span class="stringliteral">&quot;*[Icon Theme]*&quot;</span>);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        match = <a class="code hl_define" href="theme-installer_8c.html#a96282a8617998c14631aadcd4428c6b3">g_pattern_spec_match_string</a> (pattern, file_contents);</div>
@@ -203,9 +203,9 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">if</span> (match) {</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                <span class="comment">/* check if we have a cursor, too */</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;cursors&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_DIR);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                filename = g_build_filename (dir, <span class="stringliteral">&quot;cursors&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                exists = g_file_test (filename, G_FILE_TEST_IS_DIR);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                g_free (filename);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                <span class="keywordflow">if</span> (exists)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745aacc13ff5e2e9542d32ec3a9b8739f3a7">THEME_ICON_CURSOR</a>;</div>
@@ -223,41 +223,41 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">if</span> (match)</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745a8486ee7b2f10af4c33bb6088cef51312">THEME_MATE</a>;</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        g_free (filename);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;gtk-2.0&quot;</span>, <span class="stringliteral">&quot;gtkrc&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR);</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    filename = g_build_filename (dir, <span class="stringliteral">&quot;gtk-2.0&quot;</span>, <span class="stringliteral">&quot;gtkrc&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    exists = g_file_test (filename, G_FILE_TEST_IS_REGULAR);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    g_free (filename);</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">if</span> (exists)</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745ace6ad4f56a90800102c444e854f9d898">THEME_GTK</a>;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;metacity-1&quot;</span>, <span class="stringliteral">&quot;metacity-theme-2.xml&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    filename = g_build_filename (dir, <span class="stringliteral">&quot;metacity-1&quot;</span>, <span class="stringliteral">&quot;metacity-theme-2.xml&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    exists = g_file_test (filename, G_FILE_TEST_IS_REGULAR);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    g_free (filename);</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    <span class="keywordflow">if</span> (exists)</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745a1c36ec4fd38acc75ff2c57fd85060d3b">THEME_MARCO</a>;</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;metacity-1&quot;</span>, <span class="stringliteral">&quot;metacity-theme-1.xml&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_REGULAR);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    filename = g_build_filename (dir, <span class="stringliteral">&quot;metacity-1&quot;</span>, <span class="stringliteral">&quot;metacity-theme-1.xml&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    exists = g_file_test (filename, G_FILE_TEST_IS_REGULAR);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    g_free (filename);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">if</span> (exists)</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745a1c36ec4fd38acc75ff2c57fd85060d3b">THEME_MARCO</a>;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="comment">/* cursor themes don&#39;t necessarily have an index.theme */</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;cursors&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_DIR);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    filename = g_build_filename (dir, <span class="stringliteral">&quot;cursors&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    exists = g_file_test (filename, G_FILE_TEST_IS_DIR);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    g_free (filename);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span> (exists)</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745ac03b707bd33a98d7b10f6d1fb5abb19f">THEME_CURSOR</a>;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (dir, <span class="stringliteral">&quot;configure&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    exists = g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_IS_EXECUTABLE);</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    filename = g_build_filename (dir, <span class="stringliteral">&quot;configure&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    exists = g_file_test (filename, G_FILE_TEST_IS_EXECUTABLE);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    g_free (filename);</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keywordflow">if</span> (exists)</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="theme-installer_8c.html#aba4f231c4925479386aca2034fb0d745a2c2728ae3dc0c79224a9045253d85aff">THEME_ENGINE</a>;</div>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>{</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    gboolean rc;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordtype">int</span> status;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    gchar *<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>, *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, *zip, *tar;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    gchar *<a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a>, *filename, *zip, *tar;</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <span class="keywordflow">if</span> (!(zip = g_find_program_in_path (util))) {</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        missing_utility_message_dialog (parent, util);</div>
@@ -324,14 +324,14 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    }</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_shell_quote (archive);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    filename = g_shell_quote (archive);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">/* this should be something more clever and nonblocking */</span></div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <a class="code hl_variable" href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a> = g_strdup_printf (<span class="stringliteral">&quot;sh -c &#39;cd \&quot;%s\&quot;; %s -d -c &lt; \&quot;%s\&quot; | %s xf - &#39;&quot;</span>,</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                   tmp_dir, zip, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, tar);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                   tmp_dir, zip, filename, tar);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    g_free (zip);</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    g_free (tar);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    g_free (filename);</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    rc = (g_spawn_command_line_sync (command, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;status, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) &amp;&amp; status == 0);</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    g_free (command);</div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>invalid_theme_dialog (GtkWindow *parent,</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>              <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>              <span class="keyword">const</span> gchar *filename,</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>              gboolean maybe_theme_engine)</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>{</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    GtkWidget *dialog;</div>
@@ -385,9 +385,9 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                     GTK_BUTTONS_OK,</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>                     <span class="stringliteral">&quot;%s&quot;</span>, primary);</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordflow">if</span> (maybe_theme_engine)</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), <a class="code hl_variable" href="mate-keyboard-properties-xkb_8c.html#aba339fbb18221a542735d919a4df9a68">engine</a>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), <a class="code hl_variable" href="mate-keyboard-properties-xkb_8c.html#aba339fbb18221a542735d919a4df9a68">engine</a>, filename);</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), secondary, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), secondary, filename);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    gtk_dialog_run (GTK_DIALOG (dialog));</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    gtk_widget_destroy (dialog);</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>}</div>
@@ -681,10 +681,10 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_file_test (path, G_FILE_TEST_IS_DIR)) {</div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        filetype = <a class="code hl_enumvalue" href="theme-installer_8c.html#a8b7655aaaf5998fab474a94c6d75de69a9d09f58160b1161920aad19080f568cc">DIRECTORY</a>;</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_path_get_basename (path);</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        invalid_theme_dialog (parent, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>        gchar *filename;</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>        filename = g_path_get_basename (path);</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        invalid_theme_dialog (parent, filename, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        g_free (filename);</div>
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    }</div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
@@ -997,7 +997,6 @@ $(document).ready(function(){initNavTree('theme-installer_8c_source.html',''); i
 <div class="ttc" id="afile-transfer-dialog_8h_html_a1d384b81b722dba154ac5c11c104f513"><div class="ttname"><a href="file-transfer-dialog_8h.html#a1d384b81b722dba154ac5c11c104f513">FILE_TRANSFER_DIALOG</a></div><div class="ttdeci">#define FILE_TRANSFER_DIALOG(obj)</div><div class="ttdef"><b>Definition</b> <a href="file-transfer-dialog_8h_source.html#l00032">file-transfer-dialog.h:32</a></div></div>
 <div class="ttc" id="afile-transfer-dialog_8h_html_a84d3e308bc85deeaa69f6ff252cb52b6a313faea631e48663c4bb023cef15a6cd"><div class="ttname"><a href="file-transfer-dialog_8h.html#a84d3e308bc85deeaa69f6ff252cb52b6a313faea631e48663c4bb023cef15a6cd">FILE_TRANSFER_DIALOG_DEFAULT</a></div><div class="ttdeci">@ FILE_TRANSFER_DIALOG_DEFAULT</div><div class="ttdef"><b>Definition</b> <a href="file-transfer-dialog_8h_source.html#l00041">file-transfer-dialog.h:41</a></div></div>
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-keyboard-properties-xkb_8c_html_aba339fbb18221a542735d919a4df9a68"><div class="ttname"><a href="mate-keyboard-properties-xkb_8c.html#aba339fbb18221a542735d919a4df9a68">engine</a></div><div class="ttdeci">XklEngine * engine</div><div class="ttdef"><b>Definition</b> <a href="mate-keyboard-properties-xkb_8c_source.html#l00042">mate-keyboard-properties-xkb.c:42</a></div></div>

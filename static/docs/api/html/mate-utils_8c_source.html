@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('mate-utils_8c_source.html',''); initRe
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>gboolean</div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="mate-utils_8c.html#ad4db938286bfb35f38006db3da90e57c">    6</a></span><a class="code hl_function" href="mate-utils_8c.html#ad4db938286bfb35f38006db3da90e57c">load_image_by_id</a> (GtkImage *image, GtkIconSize <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keyword">const</span> gchar *image_id)</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="mate-utils_8c.html#ad4db938286bfb35f38006db3da90e57c">    6</a></span><a class="code hl_function" href="mate-utils_8c.html#ad4db938286bfb35f38006db3da90e57c">load_image_by_id</a> (GtkImage *image, GtkIconSize size, <span class="keyword">const</span> gchar *image_id)</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    cairo_surface_t *surface;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    gint width;</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('mate-utils_8c_source.html',''); initRe
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">id</span> = g_strdup (image_id);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    scale_factor = gtk_widget_get_scale_factor (GTK_WIDGET (image));</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    gtk_icon_size_lookup (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, &amp;width, &amp;height);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    gtk_icon_size_lookup (size, &amp;width, &amp;height);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    gtk_image_set_pixel_size (image, width);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> (g_path_is_absolute (<span class="keywordtype">id</span>))</div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('mate-utils_8c_source.html',''); initRe
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            g_object_unref (pixbuf);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            gtk_image_set_from_icon_name (image, <span class="stringliteral">&quot;image-missing&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            gtk_image_set_from_icon_name (image, <span class="stringliteral">&quot;image-missing&quot;</span>, size);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
@@ -173,7 +173,7 @@ $(document).ready(function(){initNavTree('mate-utils_8c_source.html',''); initRe
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            cairo_surface_destroy (surface);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            gtk_image_set_from_icon_name (image, <span class="stringliteral">&quot;image-missing&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            gtk_image_set_from_icon_name (image, <span class="stringliteral">&quot;image-missing&quot;</span>, size);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
@@ -185,7 +185,6 @@ $(document).ready(function(){initNavTree('mate-utils_8c_source.html',''); initRe
 <div class="ttc" id="aactions_8c_html_aeffa2f0815ce90fecbda9aac199143db"><div class="ttname"><a href="actions_8c.html#aeffa2f0815ce90fecbda9aac199143db">id</a></div><div class="ttdeci">const char * id</div><div class="ttdef"><b>Definition</b> <a href="actions_8c_source.html#l00051">actions.c:51</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-utils_8c_html_ad4db938286bfb35f38006db3da90e57c"><div class="ttname"><a href="mate-utils_8c.html#ad4db938286bfb35f38006db3da90e57c">load_image_by_id</a></div><div class="ttdeci">gboolean load_image_by_id(GtkImage *image, GtkIconSize size, const gchar *image_id)</div><div class="ttdef"><b>Definition</b> <a href="mate-utils_8c_source.html#l00006">mate-utils.c:6</a></div></div>
 <div class="ttc" id="amate-utils_8h_html"><div class="ttname"><a href="mate-utils_8h.html">mate-utils.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

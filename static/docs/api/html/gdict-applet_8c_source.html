@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('gdict-applet_8c_source.html',''); init
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">struct </span>_GdictAppletPrivate</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  guint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  guint size;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  GtkOrientation orient;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  GSettings *settings;</div>
@@ -318,16 +318,16 @@ $(document).ready(function(){initNavTree('gdict-applet_8c_source.html',''); init
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordflow">if</span> (gtk_dialog_run (GTK_DIALOG (dialog)) == GTK_RESPONSE_ACCEPT)</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      gchar *filename;</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      gchar *text;</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      gsize len;</div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      GError *write_error = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (dialog));</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      filename = gtk_file_chooser_get_filename (GTK_FILE_CHOOSER (dialog));</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      text = <a class="code hl_function" href="gdict-defbox_8c.html#afce71f69d75c742af89baed9988fcebd">gdict_defbox_get_text</a> (<a class="code hl_define" href="gdict-defbox_8h.html#a67e575e485e38815535e36a185022d36">GDICT_DEFBOX</a> (priv-&gt;defbox), &amp;len);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      g_file_set_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      g_file_set_contents (filename,</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                   text,</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                   len,</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                   &amp;write_error);</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('gdict-applet_8c_source.html',''); init
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        {</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>          gchar *<a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>;</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>          <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Error while writing to &#39;%s&#39;&quot;</span>), <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>          <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a> = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Error while writing to &#39;%s&#39;&quot;</span>), filename);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>          <a class="code hl_function" href="gdict-common_8c.html#a72cfd8335eec02788a24675010f4d465">gdict_show_error_dialog</a> (GTK_WINDOW (priv-&gt;window),</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>                       <a class="code hl_function" href="baobab-utils_8c.html#a56d03d3e20ba3f5875dfaf98f41c80ad">message</a>,</div>
@@ -346,7 +346,7 @@ $(document).ready(function(){initNavTree('gdict-applet_8c_source.html',''); init
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        }</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      g_free (text);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      g_free (filename);</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    }</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  gtk_widget_destroy (dialog);</div>
@@ -1438,8 +1438,6 @@ $(document).ready(function(){initNavTree('gdict-applet_8c_source.html',''); init
 <div class="ttc" id="agdict-source_8c_html_a8d0a5878b1087d14c08715a36953f4a2"><div class="ttname"><a href="gdict-source_8c.html#a8d0a5878b1087d14c08715a36953f4a2">gdict_source_get_strategy</a></div><div class="ttdeci">const gchar * gdict_source_get_strategy(GdictSource *source)</div><div class="ttdef"><b>Definition</b> <a href="gdict-source_8c_source.html#l00988">gdict-source.c:988</a></div></div>
 <div class="ttc" id="agdict-source_8c_html_ad0318117769da17de3e3887549a8e661"><div class="ttname"><a href="gdict-source_8c.html#ad0318117769da17de3e3887549a8e661">gdict_source_get_context</a></div><div class="ttdeci">GdictContext * gdict_source_get_context(GdictSource *source)</div><div class="ttdef"><b>Definition</b> <a href="gdict-source_8c_source.html#l01150">gdict-source.c:1150</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_a3acffbd305ee72dcd4593c0d8af64a4f"><div class="ttname"><a href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a></div><div class="ttdeci">#define MIN(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00264">jpegint-8a.h:264</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>

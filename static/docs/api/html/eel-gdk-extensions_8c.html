@@ -122,7 +122,7 @@ Functions</h2></td></tr>
 <tr class="separator:afb51b044baa98e841472f20ede0e1d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61a80386c6832d662b4bfc41dd9fff8c" id="r_a61a80386c6832d662b4bfc41dd9fff8c"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#a61a80386c6832d662b4bfc41dd9fff8c">eel_gradient_is_horizontal</a> (const char *gradient_spec)</td></tr>
 <tr class="separator:a61a80386c6832d662b4bfc41dd9fff8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774cf0b87e9864ba4123741f050e2053" id="r_a774cf0b87e9864ba4123741f050e2053"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#a774cf0b87e9864ba4123741f050e2053">eel_gradient_parse_one_color_spec</a> (const char *spec, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *percent, const char **next_spec)</td></tr>
+<tr class="memitem:a774cf0b87e9864ba4123741f050e2053" id="r_a774cf0b87e9864ba4123741f050e2053"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#a774cf0b87e9864ba4123741f050e2053">eel_gradient_parse_one_color_spec</a> (const char *spec, int *percent, const char **next_spec)</td></tr>
 <tr class="separator:a774cf0b87e9864ba4123741f050e2053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1fb1452746845e5473a06e114e2c4f1" id="r_af1fb1452746845e5473a06e114e2c4f1"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#af1fb1452746845e5473a06e114e2c4f1">eel_gradient_get_start_color_spec</a> (const char *gradient_spec)</td></tr>
 <tr class="separator:af1fb1452746845e5473a06e114e2c4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +148,7 @@ Functions</h2></td></tr>
 <tr class="separator:a3b0a74b52f14447b5635c24175fb5a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6234f499d9ff621d685db0825e1cd3c" id="r_ac6234f499d9ff621d685db0825e1cd3c"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#ac6234f499d9ff621d685db0825e1cd3c">eel_gdk_rgba_is_dark</a> (const GdkRGBA *color)</td></tr>
 <tr class="separator:ac6234f499d9ff621d685db0825e1cd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fedf8ef322c0ccea9a253025716a087" id="r_a0fedf8ef322c0ccea9a253025716a087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="eel-gdk-extensions_8h.html#a399bb7bd54248e1e25b989b5e8f1a021">EelGdkGeometryFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#a0fedf8ef322c0ccea9a253025716a087">eel_gdk_parse_geometry</a> (const char *string, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *x_return, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *y_return, guint *width_return, guint *height_return)</td></tr>
+<tr class="memitem:a0fedf8ef322c0ccea9a253025716a087" id="r_a0fedf8ef322c0ccea9a253025716a087"><td class="memItemLeft" align="right" valign="top"><a class="el" href="eel-gdk-extensions_8h.html#a399bb7bd54248e1e25b989b5e8f1a021">EelGdkGeometryFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#a0fedf8ef322c0ccea9a253025716a087">eel_gdk_parse_geometry</a> (const char *string, int *x_return, int *y_return, guint *width_return, guint *height_return)</td></tr>
 <tr class="separator:a0fedf8ef322c0ccea9a253025716a087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818f85f74a52e8365a785d097b2535b0" id="r_a818f85f74a52e8365a785d097b2535b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eel-gdk-extensions_8c.html#a818f85f74a52e8365a785d097b2535b0">eel_self_check_gdk_extensions</a> (void)</td></tr>
 <tr class="separator:a818f85f74a52e8365a785d097b2535b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,13 +169,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>x_return</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>y_return</em>, </td>
         </tr>
         <tr>
@@ -497,7 +497,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>percent</em>, </td>
         </tr>
         <tr>
@@ -516,7 +516,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="eel-gdk-extensions_8c_source.html#l00119">119</a> of file <a class="el" href="eel-gdk-extensions_8c_source.html">eel-gdk-extensions.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-string_8c_source.html#l00045">eel_strchr()</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="eel-string_8c_source.html#l00045">eel_strchr()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="eel-gdk-extensions_8c_source.html#l00195">eel_gradient_get_end_color_spec()</a>, and <a class="el" href="eel-gdk-extensions_8c_source.html#l00182">eel_gradient_get_start_color_spec()</a>.</p>
 

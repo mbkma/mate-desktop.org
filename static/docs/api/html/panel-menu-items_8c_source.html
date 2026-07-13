@@ -451,7 +451,7 @@ $(document).ready(function(){initNavTree('panel-menu-items_8c_source.html',''); 
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    } PanelBookmark;</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    GtkWidget   *add_menu;</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keywordtype">char</span>        *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keywordtype">char</span>        *filename;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    GIOChannel  *io_channel;</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    GHashTable  *table;</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    <span class="keywordtype">int</span>          i;</div>
@@ -459,11 +459,11 @@ $(document).ready(function(){initNavTree('panel-menu-items_8c_source.html',''); 
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    GSList      *add_bookmarks, *l;</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    PanelBookmark *bookmark;</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (g_get_user_config_dir (),</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    filename = g_build_filename (g_get_user_config_dir (),</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                     <span class="stringliteral">&quot;gtk-3.0&quot;</span>, <span class="stringliteral">&quot;bookmarks&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    io_channel = g_io_channel_new_file (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;r&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    io_channel = g_io_channel_new_file (filename, <span class="stringliteral">&quot;r&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    g_free (filename);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="keywordflow">if</span> (!io_channel)</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>        <span class="keywordflow">return</span>;</div>
@@ -1743,7 +1743,6 @@ $(document).ready(function(){initNavTree('panel-menu-items_8c_source.html',''); 
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="agsm-app-dialog_8h_html_aca58d81a114743e9cc23ed3d23387007"><div class="ttname"><a href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a></div><div class="ttdeci">const char const char * comment</div><div class="ttdef"><b>Definition</b> <a href="gsm-app-dialog_8h_source.html#l00035">gsm-app-dialog.h:35</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-gsettings_8c_html_abcb90ed7a1316d68cbf2f1223c6425ae"><div class="ttname"><a href="mate-gsettings_8c.html#abcb90ed7a1316d68cbf2f1223c6425ae">mate_gsettings_schema_exists</a></div><div class="ttdeci">gboolean mate_gsettings_schema_exists(const gchar *schema)</div><div class="ttdef"><b>Definition</b> <a href="mate-gsettings_8c_source.html#l00039">mate-gsettings.c:39</a></div></div>

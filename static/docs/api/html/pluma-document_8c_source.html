@@ -1501,16 +1501,16 @@ $(document).ready(function(){initNavTree('pluma-document_8c_source.html',''); in
 <div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (restore_cursor)</div>
 <div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span>        {</div>
 <div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>            gchar *pos;</div>
-<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>            gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>            gint offset;</div>
 <div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span> </div>
 <div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>            pos = <a class="code hl_function" href="pluma-document_8c.html#a242dc0f31c003c88fa2c18249bb8422e">pluma_document_get_metadata</a> (doc, <a class="code hl_define" href="pluma-document_8h.html#a9bc5071b264631f20de98438ba338941">PLUMA_METADATA_ATTRIBUTE_POSITION</a>);</div>
 <div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span> </div>
-<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>            <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = pos ? atoi (pos) : 0;</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>            offset = pos ? atoi (pos) : 0;</div>
 <div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>            g_free (pos);</div>
 <div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span> </div>
 <div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>            gtk_text_buffer_get_iter_at_offset (GTK_TEXT_BUFFER (doc),</div>
 <div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>                                &amp;iter,</div>
-<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>                                <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, 0));</div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>                                <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (offset, 0));</div>
 <div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span> </div>
 <div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>            <span class="comment">/* make sure it&#39;s a valid position, if the file</span></div>
 <div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span><span class="comment">             * changed we may have ended up in the middle of</span></div>
@@ -1566,14 +1566,14 @@ $(document).ready(function(){initNavTree('pluma-document_8c_source.html',''); in
 <div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>    }</div>
 <div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>    {</div>
-<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>        goffset <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>        goffset size = 0;</div>
 <div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>        goffset read;</div>
 <div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>        GFileInfo *info;</div>
 <div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span> </div>
 <div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span>        info = <a class="code hl_function" href="pluma-document-loader_8c.html#a8eb6029a8cefbeaa7b7130b25e4ed4e6">pluma_document_loader_get_info</a> (loader);</div>
 <div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span> </div>
 <div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>        <span class="keywordflow">if</span> (info &amp;&amp; g_file_info_has_attribute (info, G_FILE_ATTRIBUTE_STANDARD_SIZE))</div>
-<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_file_info_get_attribute_uint64 (info,</div>
+<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>            size = g_file_info_get_attribute_uint64 (info,</div>
 <div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>                                 G_FILE_ATTRIBUTE_STANDARD_SIZE);</div>
 <div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span> </div>
 <div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>        read = <a class="code hl_function" href="pluma-document-loader_8c.html#a8bd54bfdd0c3d5a71e6cdb165ee5dd13">pluma_document_loader_get_bytes_read</a> (loader);</div>
@@ -1582,7 +1582,7 @@ $(document).ready(function(){initNavTree('pluma-document_8c_source.html',''); in
 <div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span>                   document_signals[<a class="code hl_enumvalue" href="pluma-document_8c.html#ac5037ec1c2399480a45382696d6f6963a3a147bbbb7cd01dc067e6306c965769a">LOADING</a>],</div>
 <div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span>                   0,</div>
 <div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span>                   read,</div>
-<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>                   <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>                   size);</div>
 <div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span>    }</div>
 <div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>}</div>
 <div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span> </div>
@@ -1713,19 +1713,19 @@ $(document).ready(function(){initNavTree('pluma-document_8c_source.html',''); in
 <div class="line"><a id="l01661" name="l01661"></a><span class="lineno"> 1661</span>    }</div>
 <div class="line"><a id="l01662" name="l01662"></a><span class="lineno"> 1662</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l01663" name="l01663"></a><span class="lineno"> 1663</span>    {</div>
-<div class="line"><a id="l01664" name="l01664"></a><span class="lineno"> 1664</span>        goffset <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a id="l01664" name="l01664"></a><span class="lineno"> 1664</span>        goffset size = 0;</div>
 <div class="line"><a id="l01665" name="l01665"></a><span class="lineno"> 1665</span>        goffset written = 0;</div>
 <div class="line"><a id="l01666" name="l01666"></a><span class="lineno"> 1666</span> </div>
-<div class="line"><a id="l01667" name="l01667"></a><span class="lineno"> 1667</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_function" href="pluma-document-saver_8c.html#a607269fbf19696bafb5815f933b911bd">pluma_document_saver_get_file_size</a> (saver);</div>
+<div class="line"><a id="l01667" name="l01667"></a><span class="lineno"> 1667</span>        size = <a class="code hl_function" href="pluma-document-saver_8c.html#a607269fbf19696bafb5815f933b911bd">pluma_document_saver_get_file_size</a> (saver);</div>
 <div class="line"><a id="l01668" name="l01668"></a><span class="lineno"> 1668</span>        written = <a class="code hl_function" href="pluma-document-saver_8c.html#ad0c3488cd29145bf4d05d2630fe7cf25">pluma_document_saver_get_bytes_written</a> (saver);</div>
 <div class="line"><a id="l01669" name="l01669"></a><span class="lineno"> 1669</span> </div>
-<div class="line"><a id="l01670" name="l01670"></a><span class="lineno"> 1670</span>        <a class="code hl_function" href="pluma-debug_8c.html#ade758ae30d0239a96198f27292882d88">pluma_debug_message</a> (<a class="code hl_define" href="pluma-debug_8h.html#ad90740827396d960ff3a473b3b3b8893">DEBUG_DOCUMENT</a>, <span class="stringliteral">&quot;save progress: %&quot;</span> G_GINT64_FORMAT <span class="stringliteral">&quot; of %&quot;</span> G_GINT64_FORMAT, written, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l01670" name="l01670"></a><span class="lineno"> 1670</span>        <a class="code hl_function" href="pluma-debug_8c.html#ade758ae30d0239a96198f27292882d88">pluma_debug_message</a> (<a class="code hl_define" href="pluma-debug_8h.html#ad90740827396d960ff3a473b3b3b8893">DEBUG_DOCUMENT</a>, <span class="stringliteral">&quot;save progress: %&quot;</span> G_GINT64_FORMAT <span class="stringliteral">&quot; of %&quot;</span> G_GINT64_FORMAT, written, size);</div>
 <div class="line"><a id="l01671" name="l01671"></a><span class="lineno"> 1671</span> </div>
 <div class="line"><a id="l01672" name="l01672"></a><span class="lineno"> 1672</span>        g_signal_emit (doc,</div>
 <div class="line"><a id="l01673" name="l01673"></a><span class="lineno"> 1673</span>                   document_signals[<a class="code hl_enumvalue" href="pluma-document_8c.html#ac5037ec1c2399480a45382696d6f6963ab843537c297252ffb57d9b2dac8af451">SAVING</a>],</div>
 <div class="line"><a id="l01674" name="l01674"></a><span class="lineno"> 1674</span>                   0,</div>
 <div class="line"><a id="l01675" name="l01675"></a><span class="lineno"> 1675</span>                   written,</div>
-<div class="line"><a id="l01676" name="l01676"></a><span class="lineno"> 1676</span>                   <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l01676" name="l01676"></a><span class="lineno"> 1676</span>                   size);</div>
 <div class="line"><a id="l01677" name="l01677"></a><span class="lineno"> 1677</span>    }</div>
 <div class="line"><a id="l01678" name="l01678"></a><span class="lineno"> 1678</span>}</div>
 <div class="line"><a id="l01679" name="l01679"></a><span class="lineno"> 1679</span> </div>
@@ -3028,8 +3028,6 @@ $(document).ready(function(){initNavTree('pluma-document_8c_source.html',''); in
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aatril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c_html_a74cc204963f2c81c15b53827c2c77e32"><div class="ttname"><a href="atril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c.html#a74cc204963f2c81c15b53827c2c77e32">G_DEFINE_TYPE_WITH_PRIVATE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_PRIVATE(EggEditableToolbar, egg_editable_toolbar, GTK_TYPE_BOX)</div></div>
 <div class="ttc" id="acaja-engrampa_8c_html_a12139285594e136f3f40ec07d2fdc5c5"><div class="ttname"><a href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a></div><div class="ttdeci">const char * mime_type</div><div class="ttdef"><b>Definition</b> <a href="caja-engrampa_8c_source.html#l00140">caja-engrampa.c:140</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

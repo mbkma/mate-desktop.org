@@ -116,13 +116,13 @@ Include dependency graph for subprocs.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7ad5531850cb1035e8f33f4d2f5b36e6" id="r_a7ad5531850cb1035e8f33f4d2f5b36e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#a7ad5531850cb1035e8f33f4d2f5b36e6">block_sigchld</a> (void)</td></tr>
+<tr class="memitem:a7ad5531850cb1035e8f33f4d2f5b36e6" id="r_a7ad5531850cb1035e8f33f4d2f5b36e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#a7ad5531850cb1035e8f33f4d2f5b36e6">block_sigchld</a> (void)</td></tr>
 <tr class="separator:a7ad5531850cb1035e8f33f4d2f5b36e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fb316208ae75badd2516d3c57032214" id="r_a4fb316208ae75badd2516d3c57032214"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#a4fb316208ae75badd2516d3c57032214">unblock_sigchld</a> (void)</td></tr>
 <tr class="separator:a4fb316208ae75badd2516d3c57032214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef8090628d65a3e6f472157e08c30a56" id="r_aef8090628d65a3e6f472157e08c30a56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#aef8090628d65a3e6f472157e08c30a56">signal_pid</a> (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> pid, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> signal)</td></tr>
+<tr class="memitem:aef8090628d65a3e6f472157e08c30a56" id="r_aef8090628d65a3e6f472157e08c30a56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#aef8090628d65a3e6f472157e08c30a56">signal_pid</a> (int pid, int signal)</td></tr>
 <tr class="separator:aef8090628d65a3e6f472157e08c30a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa422fef75eb4768ea55119ed802c05d7" id="r_aa422fef75eb4768ea55119ed802c05d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#aa422fef75eb4768ea55119ed802c05d7">await_dying_children</a> (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> pid, gboolean <a class="el" href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a>)</td></tr>
+<tr class="memitem:aa422fef75eb4768ea55119ed802c05d7" id="r_aa422fef75eb4768ea55119ed802c05d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="subprocs_8c.html#aa422fef75eb4768ea55119ed802c05d7">await_dying_children</a> (int pid, gboolean <a class="el" href="g-util_8h.html#a6fe2f4f6fcc916c9f89b3e1c876f5432">debug</a>)</td></tr>
 <tr class="separator:aa422fef75eb4768ea55119ed802c05d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -135,7 +135,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void await_dying_children </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
         </tr>
         <tr>
@@ -165,7 +165,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> block_sigchld </td>
+          <td class="memname">int block_sigchld </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -187,15 +187,15 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> signal_pid </td>
+          <td class="memname">int signal_pid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>signal</em>&#160;</td>
         </tr>
         <tr>

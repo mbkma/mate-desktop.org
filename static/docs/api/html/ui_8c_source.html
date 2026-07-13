@@ -747,7 +747,7 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 </div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="keyword">static</span> GdkPixbuf *</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>load_default_window_icon (<span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keywordtype">int</span> scale)</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>load_default_window_icon (<span class="keywordtype">int</span> size, <span class="keywordtype">int</span> scale)</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>{</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  GtkIconTheme *theme = gtk_icon_theme_get_default ();</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  <span class="keyword">const</span> <span class="keywordtype">char</span> *icon_name;</div>
@@ -757,7 +757,7 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    icon_name = <span class="stringliteral">&quot;image-missing&quot;</span>;</div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  <span class="keywordflow">return</span> gtk_icon_theme_load_icon_for_scale (theme, icon_name, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  <span class="keywordflow">return</span> gtk_icon_theme_load_icon_for_scale (theme, icon_name, size, scale, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>}</div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span> </div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>GdkPixbuf*</div>
@@ -804,7 +804,7 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 </div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="keyword">static</span> GdkPixbuf *</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>load_window_icon_from_desktop_id (<span class="keywordtype">char</span> *desktop_id, <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <span class="keywordtype">int</span> scale)</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>load_window_icon_from_desktop_id (<span class="keywordtype">char</span> *desktop_id, <span class="keywordtype">int</span> size, <span class="keywordtype">int</span> scale)</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>{</div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  GtkIconTheme *theme = gtk_icon_theme_get_default ();</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  GdkPixbuf *pixbuf = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -821,7 +821,7 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>  gicon = g_app_info_get_icon (G_APP_INFO (info));</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (theme, gicon, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale, GTK_ICON_LOOKUP_FORCE_SIZE);</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (theme, gicon, size, scale, GTK_ICON_LOOKUP_FORCE_SIZE);</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>  <span class="keywordflow">if</span> (icon_info)</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    {</div>
 <div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      pixbuf = gtk_icon_info_load_icon (icon_info, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
@@ -836,12 +836,12 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno"><a class="line" href="marco_2src_2include_2ui_8h.html#a295ceaf3ca56c7aba0196a9dc9f70f75">  681</a></span><a class="code hl_function" href="ui_8c.html#a295ceaf3ca56c7aba0196a9dc9f70f75">meta_ui_get_window_icon_from_desktop_id</a> (<a class="code hl_typedef" href="marco_2src_2include_2ui_8h.html#a7528194d0afc020eff06875ef3c22ab3">MetaUI</a> *ui, <span class="keywordtype">char</span> *desktop_id)</div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>{</div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  <span class="keywordtype">int</span> scale;</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>  scale = gtk_widget_get_scale_factor (GTK_WIDGET (ui-&gt;frames));</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_function" href="prefs_8c.html#a192237fde5004c3019614a82d8438d02">meta_prefs_get_icon_size</a>() / scale;</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>  size = <a class="code hl_function" href="prefs_8c.html#a192237fde5004c3019614a82d8438d02">meta_prefs_get_icon_size</a>() / scale;</div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  <span class="keywordflow">return</span> load_window_icon_from_desktop_id (desktop_id, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  <span class="keywordflow">return</span> load_window_icon_from_desktop_id (desktop_id, size, scale);</div>
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>}</div>
 </div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
@@ -850,12 +850,12 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno"><a class="line" href="marco_2src_2include_2ui_8h.html#a729140d007a35dd5e734b87be5c57967">  693</a></span><a class="code hl_function" href="ui_8c.html#a729140d007a35dd5e734b87be5c57967">meta_ui_get_mini_icon_from_desktop_id</a> (<a class="code hl_typedef" href="marco_2src_2include_2ui_8h.html#a7528194d0afc020eff06875ef3c22ab3">MetaUI</a> *ui, <span class="keywordtype">char</span> *desktop_id)</div>
 <div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>{</div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>  <span class="keywordtype">int</span> scale;</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
 <div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  scale = gtk_widget_get_scale_factor (GTK_WIDGET (ui-&gt;frames));</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_define" href="marco_2src_2include_2common_8h.html#a49f5f267e2ec7278962bfd8b03b11dac">META_MINI_ICON_WIDTH</a> / scale;</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  size = <a class="code hl_define" href="marco_2src_2include_2common_8h.html#a49f5f267e2ec7278962bfd8b03b11dac">META_MINI_ICON_WIDTH</a> / scale;</div>
 <div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span> </div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  <span class="keywordflow">return</span> load_window_icon_from_desktop_id (desktop_id, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale);</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  <span class="keywordflow">return</span> load_window_icon_from_desktop_id (desktop_id, size, scale);</div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>}</div>
 </div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
@@ -1209,7 +1209,6 @@ $(document).ready(function(){initNavTree('ui_8c_source.html',''); initResizable(
 <div class="ttc" id="aframes_8c_html_af58838f08f9c7294d803fc60b991dad3"><div class="ttname"><a href="frames_8c.html#af58838f08f9c7294d803fc60b991dad3">meta_frames_move_resize_frame</a></div><div class="ttdeci">void meta_frames_move_resize_frame(MetaFrames *frames, Window xwindow, int x, int y, int width, int height)</div><div class="ttdef"><b>Definition</b> <a href="frames_8c_source.html#l01234">frames.c:1234</a></div></div>
 <div class="ttc" id="aframes_8h_html"><div class="ttname"><a href="frames_8h.html">frames.h</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amarco_2src_2core_2util_8c_html_ad112b22411c373fb2252617d9531ea80"><div class="ttname"><a href="marco_2src_2core_2util_8c.html#ad112b22411c373fb2252617d9531ea80">meta_fatal</a></div><div class="ttdeci">void meta_fatal(const char *format,...)</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2core_2util_8c_source.html#l00423">marco/src/core/util.c:423</a></div></div>
 <div class="ttc" id="amarco_2src_2include_2common_8h_html_a20c352f9fc7f20b9faf5f488aee879dc"><div class="ttname"><a href="marco_2src_2include_2common_8h.html#a20c352f9fc7f20b9faf5f488aee879dc">META_DEFAULT_ICON_NAME</a></div><div class="ttdeci">#define META_DEFAULT_ICON_NAME</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2include_2common_8h_source.html#l00344">marco/src/include/common.h:344</a></div></div>
 <div class="ttc" id="amarco_2src_2include_2common_8h_html_a28fd99543654f523d42d6aa5abc14d28"><div class="ttname"><a href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a></div><div class="ttdeci">MetaFrameType</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2include_2common_8h_source.html#l00225">marco/src/include/common.h:226</a></div></div>

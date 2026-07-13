@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="pagesel_8c.html#a4cf47a5c0ffda361c1600bd4d710b17b">   36</a></span><a class="code hl_struct" href="struct__DviRange.html">DviRange</a> *<a class="code hl_function" href="pagesel_8c.html#a4cf47a5c0ffda361c1600bd4d710b17b">mdvi_parse_range</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *format, <a class="code hl_struct" href="struct__DviRange.html">DviRange</a> *limit, <span class="keywordtype">int</span> *nitems, <span class="keywordtype">char</span> **endptr)</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">int</span> quoted;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">int</span> curr;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> done;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">int</span> lower;</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    quoted = (*format == <span class="charliteral">&#39;{&#39;</span>);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">if</span>(quoted) format++;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>  = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    size  = 0;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    curr  = 0;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    range = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    copy  = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a2683a6b1d84af756aa456df1b7e13eef">mdvi_strdup</a>(format);</div>
@@ -267,9 +267,9 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        one.<a class="code hl_variable" href="struct__DviRange.html#a099dbfb073172ade4fad0ecb057036db">from</a> = f;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        one.<a class="code hl_variable" href="struct__DviRange.html#a17042775bf41dee1228bf4a4b8fa0399">step</a> = s;</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">if</span>(curr == <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>) {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> += 8;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            range = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ab488b8e0f267e307fa850f74dbe0cbc3">mdvi_realloc</a>(range, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> * <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct__DviRange.html">DviRange</a>));</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="keywordflow">if</span>(curr == size) {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            size += 8;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            range = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ab488b8e0f267e307fa850f74dbe0cbc3">mdvi_realloc</a>(range, size * <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct__DviRange.html">DviRange</a>));</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        }</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(&amp;range[curr++], &amp;one, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct__DviRange.html">DviRange</a>));</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        *cp = ch;</div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        cp++;</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span>(endptr)</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        *endptr = (<span class="keywordtype">char</span> *)format + (cp - copy);</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">if</span>(curr &amp;&amp; curr &lt; <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">if</span>(curr &amp;&amp; curr &lt; size)</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        range = <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ab488b8e0f267e307fa850f74dbe0cbc3">mdvi_realloc</a>(range, curr * <span class="keyword">sizeof</span>(<a class="code hl_struct" href="struct__DviRange.html">DviRange</a>));</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    *nitems = curr;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_function" href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a>(copy);</div>
@@ -505,7 +505,7 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="keywordtype">int</span> <a class="code hl_function" href="testboxes_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>()</div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>{</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="keywordtype">char</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[256];</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>    <span class="keywordtype">char</span>    buf[256];</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    <a class="code hl_struct" href="struct__DviRange.html">DviRange</a> limit;</div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    limit.<a class="code hl_variable" href="struct__DviRange.html#a099dbfb073172ade4fad0ecb057036db">from</a> = 0;</div>
@@ -519,14 +519,14 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>        <span class="keywordtype">int</span> i;</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        printf(<span class="stringliteral">&quot;Range&gt; &quot;</span>); fflush(stdout);</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keywordflow">if</span>(fgets(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 256, stdin) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>        <span class="keywordflow">if</span>(fgets(buf, 256, stdin) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[strlen(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)-1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[strlen(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)-1] = 0;</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0] == 0)</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>        <span class="keywordflow">if</span>(buf[strlen(buf)-1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            buf[strlen(buf)-1] = 0;</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>        <span class="keywordflow">if</span>(buf[0] == 0)</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>            <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        end = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        range = <a class="code hl_function" href="pagesel_8c.html#a4cf47a5c0ffda361c1600bd4d710b17b">mdvi_parse_range</a>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, &amp;limit, &amp;count, &amp;end);</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>        range = <a class="code hl_function" href="pagesel_8c.html#a4cf47a5c0ffda361c1600bd4d710b17b">mdvi_parse_range</a>(buf, &amp;limit, &amp;count, &amp;end);</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">if</span>(range == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>            printf(<span class="stringliteral">&quot;range is empty\n&quot;</span>);</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>            <span class="keywordflow">continue</span>;</div>
@@ -546,13 +546,13 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>            <span class="keywordtype">int</span> v;</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span> </div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>            printf(<span class="stringliteral">&quot;Value: &quot;</span>); fflush(stdout);</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>            <span class="keywordflow">if</span>(fgets(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 256, stdin) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>            <span class="keywordflow">if</span>(fgets(buf, 256, stdin) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>            <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[strlen(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)-1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>                <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[strlen(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)-1] = 0;</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>            <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0] == 0)</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>            <span class="keywordflow">if</span>(buf[strlen(buf)-1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>                buf[strlen(buf)-1] = 0;</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>            <span class="keywordflow">if</span>(buf[0] == 0)</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>            v = atoi(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>            v = atoi(buf);</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>            i = <a class="code hl_function" href="pagesel_8c.html#a592fb6e3c2c9cfd1cca3c009ceae7ef0">mdvi_in_range</a>(range, count, v);</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>            <span class="keywordflow">if</span>(i == -1)</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>                printf(<span class="stringliteral">&quot;%d not in range\n&quot;</span>, v);</div>
@@ -566,17 +566,17 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    }</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>    <a class="code hl_typedef" href="mdvi_8h.html#a71c048adf0fa022d23ca5409cf483379">DviPageSpec</a> *spec;</div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="keywordtype">char</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[256];</div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    <span class="keywordtype">char</span>    buf[256];</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span> </div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>    <span class="keywordflow">while</span>(1) {</div>
 <div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span>        printf(<span class="stringliteral">&quot;Spec&gt; &quot;</span>); fflush(stdout);</div>
-<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        <span class="keywordflow">if</span>(fgets(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 256, stdin) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>        <span class="keywordflow">if</span>(fgets(buf, 256, stdin) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[strlen(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)-1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[strlen(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>)-1] = 0;</div>
-<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        <span class="keywordflow">if</span>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0] == 0)</div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>        <span class="keywordflow">if</span>(buf[strlen(buf)-1] == <span class="charliteral">&#39;\n&#39;</span>)</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>            buf[strlen(buf)-1] = 0;</div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>        <span class="keywordflow">if</span>(buf[0] == 0)</div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        spec = <a class="code hl_function" href="pagesel_8c.html#a92209eb9f30848972ce31245bd25679c">mdvi_parse_page_spec</a>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span>        spec = <a class="code hl_function" href="pagesel_8c.html#a92209eb9f30848972ce31245bd25679c">mdvi_parse_page_spec</a>(buf);</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <span class="keywordflow">if</span>(spec == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>            printf(<span class="stringliteral">&quot;no spec parsed\n&quot;</span>);</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>        <span class="keywordflow">else</span> {</div>
@@ -611,8 +611,6 @@ $(document).ready(function(){initNavTree('pagesel_8c_source.html',''); initResiz
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2util_8c_html_a779779ff0cd26a5275ba544e6fde5dad"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#a779779ff0cd26a5275ba544e6fde5dad">mdvi_error</a></div><div class="ttdeci">void mdvi_error(const char *format,...)</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2util_8c_source.html#l00156">atril/backend/dvi/mdvi-lib/util.c:156</a></div></div>
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2util_8c_html_aa128d6d3ece0a71b91d3ee7b9157c2a9"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#aa128d6d3ece0a71b91d3ee7b9157c2a9">mdvi_free</a></div><div class="ttdeci">void mdvi_free(void *ptr)</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2util_8c_source.html#l00247">atril/backend/dvi/mdvi-lib/util.c:247</a></div></div>
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2util_8c_html_ab488b8e0f267e307fa850f74dbe0cbc3"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2util_8c.html#ab488b8e0f267e307fa850f74dbe0cbc3">mdvi_realloc</a></div><div class="ttdeci">void * mdvi_realloc(void *data, size_t newsize)</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2util_8c_source.html#l00219">atril/backend/dvi/mdvi-lib/util.c:219</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-desktop_2libmate-desktop_2private_8h_html"><div class="ttname"><a href="mate-desktop_2libmate-desktop_2private_8h.html">private.h</a></div></div>
 <div class="ttc" id="amdvi_8h_html"><div class="ttname"><a href="mdvi_8h.html">mdvi.h</a></div></div>

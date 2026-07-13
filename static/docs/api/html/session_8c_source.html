@@ -340,7 +340,7 @@ $(document).ready(function(){initNavTree('session_8c_source.html',''); initResiz
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>                   <span class="keyword">const</span> <span class="keywordtype">char</span> *previous_save_file)</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="comment">/* Some code here from twm */</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[256];</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">char</span> buf[256];</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_variable" href="nl80211_8h.html#a12b1ee8c5efcba4a2341cc1d49f58b71">mask</a>;</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  SmcCallbacks callbacks;</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordtype">char</span> *saved_client_id;</div>
@@ -390,13 +390,13 @@ $(document).ready(function(){initNavTree('session_8c_source.html',''); initResiz
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                       &amp;callbacks,</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                       (<span class="keywordtype">char</span>*) previous_client_id,</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                       &amp;client_id,</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                       255, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>                       255, buf);</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="keywordflow">if</span> (session_connection == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    {</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      meta_topic (<a class="code hl_enumvalue" href="marco_2src_2include_2util_8h.html#a04df75d0436c300a0e1b5fbbc1915725a7391ab955ce9f53303c6f3e165a60078">META_DEBUG_SM</a>,</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                  <span class="stringliteral">&quot;Failed to a open connection to a session manager, so window positions will not be saved: %s\n&quot;</span>,</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                  <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                  buf);</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>      <span class="keywordflow">goto</span> out;</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    }</div>
@@ -1937,7 +1937,6 @@ $(document).ready(function(){initNavTree('session_8c_source.html',''); initResiz
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_aa92cea053a410afe0deffd2c7ed8715b"><div class="ttname"><a href="gs-idle-monitor_8h.html#aa92cea053a410afe0deffd2c7ed8715b">condition</a></div><div class="ttdeci">guint gboolean condition</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00036">gs-idle-monitor.h:36</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amarco_2src_2core_2main_8c_html_a20d248b2c6fc2dd66f6c7d9ac40940cc"><div class="ttname"><a href="marco_2src_2core_2main_8c.html#a20d248b2c6fc2dd66f6c7d9ac40940cc">meta_quit</a></div><div class="ttdeci">void meta_quit(MetaExitCode code)</div><div class="ttdef"><b>Definition</b> <a href="marco_2src_2core_2main_8c_source.html#l00605">marco/src/core/main.c:605</a></div></div>

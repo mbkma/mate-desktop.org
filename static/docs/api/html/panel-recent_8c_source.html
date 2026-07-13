@@ -209,11 +209,11 @@ $(document).ready(function(){initNavTree('panel-recent_8c_source.html',''); init
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>panel_recent_manager_changed_cb (GtkRecentManager *manager,</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                 GtkWidget        *menu_item)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    g_object_get (manager, <span class="stringliteral">&quot;size&quot;</span>, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    g_object_get (manager, <span class="stringliteral">&quot;size&quot;</span>, &amp;size, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    gtk_widget_set_sensitive (menu_item, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &gt; 0);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    gtk_widget_set_sensitive (menu_item, size &gt; 0);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">static</span> GtkWidget *clear_recent_dialog = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('panel-recent_8c_source.html',''); init
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    GtkWidget      *recent_menu;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    GtkWidget      *menu_item;</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordtype">int</span>             <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordtype">int</span>             size;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    menu_item = <a class="code hl_function" href="mate-image-menu-item_8c.html#adaf1bf584bdabacde1b3245fb3b34e8d">mate_image_menu_item_new</a> ();</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <a class="code hl_function" href="mate-panel_2mate-panel_2menu_8c.html#a058caec9121be12c3d4ca830dd63cb64">setup_menuitem_with_icon</a> (menu_item,</div>
@@ -331,9 +331,9 @@ $(document).ready(function(){initNavTree('panel-recent_8c_source.html',''); init
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>                 G_CALLBACK (panel_recent_manager_changed_cb),</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                 menu_item, 0);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    g_object_get (manager, <span class="stringliteral">&quot;size&quot;</span>, &amp;<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    gtk_widget_set_sensitive (menu_item, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &gt; 0);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    size = 0;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    g_object_get (manager, <span class="stringliteral">&quot;size&quot;</span>, &amp;size, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    gtk_widget_set_sensitive (menu_item, size &gt; 0);</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <a class="code hl_function" href="mate-panel_2mate-panel_2menu_8c.html#a6cc4b2f51d5dcbd93ba98b232f29ef6e">add_menu_separator</a> (recent_menu);</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
@@ -356,7 +356,6 @@ $(document).ready(function(){initNavTree('panel-recent_8c_source.html',''); init
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="acaja-engrampa_8c_html_a12139285594e136f3f40ec07d2fdc5c5"><div class="ttname"><a href="caja-engrampa_8c.html#a12139285594e136f3f40ec07d2fdc5c5">mime_type</a></div><div class="ttdeci">const char * mime_type</div><div class="ttdef"><b>Definition</b> <a href="caja-engrampa_8c_source.html#l00140">caja-engrampa.c:140</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-image-menu-item_8c_html_adaf1bf584bdabacde1b3245fb3b34e8d"><div class="ttname"><a href="mate-image-menu-item_8c.html#adaf1bf584bdabacde1b3245fb3b34e8d">mate_image_menu_item_new</a></div><div class="ttdeci">GtkWidget * mate_image_menu_item_new(void)</div><div class="ttdef"><b>Definition</b> <a href="mate-image-menu-item_8c_source.html#l00428">mate-image-menu-item.c:428</a></div></div>

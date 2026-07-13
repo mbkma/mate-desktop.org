@@ -300,12 +300,12 @@ $(document).ready(function(){initNavTree('gsm-util_8c_source.html',''); initResi
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <span class="comment">/* make sure it&#39;s empty */</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                GDir       *dir;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>                dir = g_dir_open (tmp, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                <span class="keywordflow">if</span> (dir) {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                        <span class="keywordflow">while</span> ((<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_dir_read_name (dir))) {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                gchar *path = g_build_filename (tmp, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                        <span class="keywordflow">while</span> ((filename = g_dir_read_name (dir))) {</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                gchar *path = g_build_filename (tmp, filename,</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                                                               <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                                g_unlink (path);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                                g_free (path);</div>
@@ -422,33 +422,33 @@ $(document).ready(function(){initNavTree('gsm-util_8c_source.html',''); initResi
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordtype">char</span> **apps;</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordtype">char</span> **autostart;</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>    <span class="keywordtype">char</span> **result;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <span class="keywordtype">int</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <span class="keywordtype">int</span>    size;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    <span class="keywordtype">int</span>    i;</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    apps = <a class="code hl_function" href="gsm-util_8c.html#a22bcfb67f48bb398f9ce1016fb8dc52c">gsm_util_get_app_dirs</a> ();</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    autostart = <a class="code hl_function" href="gsm-util_8c.html#ab4c58ad5d525b460e7df39ad1a326001">gsm_util_get_autostart_dirs</a> ();</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordflow">for</span> (i = 0; apps[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) { <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>++; }</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">for</span> (i = 0; autostart[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) { <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>++; }</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> += 2; <span class="comment">/* saved session + last NULL */</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    size = 0;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keywordflow">for</span> (i = 0; apps[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) { size++; }</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keywordflow">for</span> (i = 0; autostart[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) { size++; }</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    size += 2; <span class="comment">/* saved session + last NULL */</span></div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    result = g_new (<span class="keywordtype">char</span> *, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + 1);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    result = g_new (<span class="keywordtype">char</span> *, size + 1);</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    <span class="keywordflow">for</span> (i = 0; apps[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) {</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        result[i] = apps[i];</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    }</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    g_free (apps);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = i;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    size = i;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <span class="keywordflow">for</span> (i = 0; autostart[i] != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; i++) {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        result[<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + i] = autostart[i];</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>        result[size + i] = autostart[i];</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    }</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    g_free (autostart);</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + i;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>    size = size + i;</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    result[<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>] = g_strdup (<a class="code hl_function" href="gsm-util_8c.html#a2802f1e4d8a38b8250a9a25a6a60f45e">gsm_util_get_saved_session_dir</a> ());</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    result[<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> + 1] = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    result[size] = g_strdup (<a class="code hl_function" href="gsm-util_8c.html#a2802f1e4d8a38b8250a9a25a6a60f45e">gsm_util_get_saved_session_dir</a> ());</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    result[size + 1] = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>}</div>
@@ -886,8 +886,6 @@ $(document).ready(function(){initNavTree('gsm-util_8c_source.html',''); initResi
 <div class="ttc" id="agsm-util_8c_html_ac2129acb7d49b5483e2674278adc7070"><div class="ttname"><a href="gsm-util_8c.html#ac2129acb7d49b5483e2674278adc7070">gsm_get_screen_locker_command</a></div><div class="ttdeci">gchar ** gsm_get_screen_locker_command(void)</div><div class="ttdef"><b>Definition</b> <a href="gsm-util_8c_source.html#l00051">gsm-util.c:51</a></div></div>
 <div class="ttc" id="agsm-util_8c_html_adf37aaf6a19efc0c344d161b5ca4f810"><div class="ttname"><a href="gsm-util_8c.html#adf37aaf6a19efc0c344d161b5ca4f810">ENV_NAME_PATTERN</a></div><div class="ttdeci">#define ENV_NAME_PATTERN</div><div class="ttdef"><b>Definition</b> <a href="gsm-util_8c_source.html#l00512">gsm-util.c:512</a></div></div>
 <div class="ttc" id="agsm-util_8h_html"><div class="ttname"><a href="gsm-util_8h.html">gsm-util.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-netbook_2maximus_2main_8c_html_a76565232f25302e8cb99c60a629034cc"><div class="ttname"><a href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a></div><div class="ttdeci">GOptionEntry entries[]</div><div class="ttdef"><b>Definition</b> <a href="mate-netbook_2maximus_2main_8c_source.html#l00043">mate-netbook/maximus/main.c:43</a></div></div>

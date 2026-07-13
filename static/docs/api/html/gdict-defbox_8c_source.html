@@ -438,18 +438,18 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment"> * offset.  So it&#39;s useful when the offset was calculated for the normalized</span></div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment"> * version of str, but we need a pointer to str itself. */</span></div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="keyword">static</span> <span class="keyword">const</span> gchar *</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>pointer_from_offset_skipping_decomp (<span class="keyword">const</span> gchar *str, gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>pointer_from_offset_skipping_decomp (<span class="keyword">const</span> gchar *str, gint offset)</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>{</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    gchar *casefold, *normal;</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keyword">const</span> gchar *p, *q;</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    p = str;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">while</span> (<a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> &gt; 0)</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">while</span> (offset &gt; 0)</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    {</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>        q = g_utf8_next_char (p);</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>        casefold = g_utf8_casefold (p, q - p);</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        normal = g_utf8_normalize (casefold, -1, G_NORMALIZE_NFD);</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> -= g_utf8_strlen (normal, -1);</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        offset -= g_utf8_strlen (normal, -1);</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        g_free (casefold);</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>        g_free (normal);</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>        p = q;</div>
@@ -712,7 +712,7 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    GtkTextIter next;</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    gchar *line_text;</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keyword">const</span> gchar *found;</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    gint offset;</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    <span class="keywordflow">if</span> (*lines == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || **lines == <span class="charliteral">&#39;\0&#39;</span>)</div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    {</div>
@@ -768,14 +768,14 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    }</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span> </div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    <span class="comment">/* Get offset to start of search string */</span></div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = g_utf8_strlen (line_text, found - line_text);</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    offset = g_utf8_strlen (line_text, found - line_text);</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    next = *start;</div>
 <div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span> </div>
 <div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    <span class="comment">/* If match start needs to be returned, set it to the</span></div>
 <div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span><span class="comment">     * start of the search string.</span></div>
 <div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    forward_chars_with_skipping (&amp;next, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, visible_only, !slice, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    forward_chars_with_skipping (&amp;next, offset, visible_only, !slice, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    <span class="keywordflow">if</span> (match_start)</div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    {</div>
 <div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        *match_start = next;</div>
@@ -808,7 +808,7 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    GtkTextIter line, next;</div>
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    gchar *line_text;</div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    <span class="keyword">const</span> gchar *found;</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    gint offset;</div>
 <div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
 <div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    <span class="keywordflow">if</span> (*lines == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || **lines == <span class="charliteral">&#39;\0&#39;</span>)</div>
 <div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    {</div>
@@ -866,9 +866,9 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    }</div>
 <div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span> </div>
 <div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="comment">/* Get offset to start of search string */</span></div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = g_utf8_strlen (line_text, found - line_text);</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    offset = g_utf8_strlen (line_text, found - line_text);</div>
 <div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    forward_chars_with_skipping (&amp;next, <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>, visible_only, !slice, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    forward_chars_with_skipping (&amp;next, offset, visible_only, !slice, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
 <div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>    <span class="comment">/* If match start needs to be returned, set it to the</span></div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="comment">     * start of the search string.</span></div>
@@ -2266,24 +2266,24 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span>          <span class="keywordflow">else</span></div>
 <div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>            {</div>
 <div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span>              <span class="comment">/* uh-oh: the link ends in another word */</span></div>
-<div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>              GString *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>              GString *buf;</div>
 <div class="line"><a id="l02289" name="l02289"></a><span class="lineno"> 2289</span>              gchar *next;</div>
 <div class="line"><a id="l02290" name="l02290"></a><span class="lineno"> 2290</span>              gint cur = i;</div>
 <div class="line"><a id="l02291" name="l02291"></a><span class="lineno"> 2291</span> </div>
-<div class="line"><a id="l02292" name="l02292"></a><span class="lineno"> 2292</span>              <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_string_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l02292" name="l02292"></a><span class="lineno"> 2292</span>              buf = g_string_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l02293" name="l02293"></a><span class="lineno"> 2293</span>              next = words[cur++];</div>
 <div class="line"><a id="l02294" name="l02294"></a><span class="lineno"> 2294</span> </div>
 <div class="line"><a id="l02295" name="l02295"></a><span class="lineno"> 2295</span>              <span class="keywordflow">while</span> (next &amp;&amp; (end = g_utf8_strrchr (next, -1, <span class="charliteral">&#39;}&#39;</span>)) == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l02296" name="l02296"></a><span class="lineno"> 2296</span>                {</div>
-<div class="line"><a id="l02297" name="l02297"></a><span class="lineno"> 2297</span>                  <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_string_append (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, next);</div>
-<div class="line"><a id="l02298" name="l02298"></a><span class="lineno"> 2298</span>                  <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_string_append_c (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="charliteral">&#39; &#39;</span>);</div>
+<div class="line"><a id="l02297" name="l02297"></a><span class="lineno"> 2297</span>                  buf = g_string_append (buf, next);</div>
+<div class="line"><a id="l02298" name="l02298"></a><span class="lineno"> 2298</span>                  buf = g_string_append_c (buf, <span class="charliteral">&#39; &#39;</span>);</div>
 <div class="line"><a id="l02299" name="l02299"></a><span class="lineno"> 2299</span> </div>
 <div class="line"><a id="l02300" name="l02300"></a><span class="lineno"> 2300</span>                  next = words[cur++];</div>
 <div class="line"><a id="l02301" name="l02301"></a><span class="lineno"> 2301</span>                }</div>
 <div class="line"><a id="l02302" name="l02302"></a><span class="lineno"> 2302</span> </div>
-<div class="line"><a id="l02303" name="l02303"></a><span class="lineno"> 2303</span>              <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_string_append (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, next);</div>
+<div class="line"><a id="l02303" name="l02303"></a><span class="lineno"> 2303</span>              buf = g_string_append (buf, next);</div>
 <div class="line"><a id="l02304" name="l02304"></a><span class="lineno"> 2304</span> </div>
-<div class="line"><a id="l02305" name="l02305"></a><span class="lineno"> 2305</span>              next = g_string_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l02305" name="l02305"></a><span class="lineno"> 2305</span>              next = g_string_free (buf, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l02306" name="l02306"></a><span class="lineno"> 2306</span> </div>
 <div class="line"><a id="l02307" name="l02307"></a><span class="lineno"> 2307</span>              <span class="keywordflow">if</span> (end &amp;&amp; *end == <span class="charliteral">&#39;}&#39;</span>)</div>
 <div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span>                {</div>
@@ -2831,8 +2831,6 @@ $(document).ready(function(){initNavTree('gdict-defbox_8c_source.html',''); init
 <div class="ttc" id="agdict-utils_8h_html_a47023e98ce93b011772a50104fa284ec"><div class="ttname"><a href="gdict-utils_8h.html#a47023e98ce93b011772a50104fa284ec">GDICT_DEFAULT_FONT_NAME</a></div><div class="ttdeci">#define GDICT_DEFAULT_FONT_NAME</div><div class="ttdef"><b>Definition</b> <a href="gdict-utils_8h_source.html#l00031">gdict-utils.h:31</a></div></div>
 <div class="ttc" id="agdict-utils_8h_html_a61bcbaf7ee256a3393a3d695316590f5"><div class="ttname"><a href="gdict-utils_8h.html#a61bcbaf7ee256a3393a3d695316590f5">GDICT_DEFAULT_DATABASE</a></div><div class="ttdeci">#define GDICT_DEFAULT_DATABASE</div><div class="ttdef"><b>Definition</b> <a href="gdict-utils_8h_source.html#l00028">gdict-utils.h:28</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

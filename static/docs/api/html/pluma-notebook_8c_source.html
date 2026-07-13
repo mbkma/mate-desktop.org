@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('pluma-notebook_8c_source.html',''); in
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><a class="code hl_function" href="atril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c.html#a74cc204963f2c81c15b53827c2c77e32">G_DEFINE_TYPE_WITH_PRIVATE</a> (<a class="code hl_struct" href="struct__PlumaNotebook.html">PlumaNotebook</a>, pluma_notebook, GTK_TYPE_NOTEBOOK)</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">static</span> gboolean pluma_notebook_change_current_page (GtkNotebook *notebook,</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                            gint         <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                            gint         offset);</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">static</span> <span class="keywordtype">void</span> move_current_tab_to_another_notebook  (<a class="code hl_struct" href="struct__PlumaNotebook.html">PlumaNotebook</a>  *src,</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                           <a class="code hl_struct" href="struct__PlumaNotebook.html">PlumaNotebook</a>  *<a class="code hl_variable" href="time-zone_8c.html#ad447182ef5af9e4ff1446dbe2507f630">dest</a>,</div>
@@ -934,7 +934,7 @@ $(document).ready(function(){initNavTree('pluma-notebook_8c_source.html',''); in
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>pluma_notebook_change_current_page (GtkNotebook *notebook,</div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>                    gint         <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>)</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>                    gint         offset)</div>
 <div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>{</div>
 <div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    gboolean wrap_around;</div>
 <div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    gint current;</div>
@@ -943,7 +943,7 @@ $(document).ready(function(){initNavTree('pluma-notebook_8c_source.html',''); in
 <div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span> </div>
 <div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>    <span class="keywordflow">if</span> (current != -1)</div>
 <div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>    {</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        current = current + <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>        current = current + offset;</div>
 <div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span> </div>
 <div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>        g_object_get (gtk_widget_get_settings (GTK_WIDGET (notebook)),</div>
 <div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>                  <span class="stringliteral">&quot;gtk-keynav-wrap-around&quot;</span>, &amp;wrap_around,</div>
@@ -1229,7 +1229,6 @@ $(document).ready(function(){initNavTree('pluma-notebook_8c_source.html',''); in
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aatril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c_html_a74cc204963f2c81c15b53827c2c77e32"><div class="ttname"><a href="atril_2cut-n-paste_2toolbar-editor_2egg-editable-toolbar_8c.html#a74cc204963f2c81c15b53827c2c77e32">G_DEFINE_TYPE_WITH_PRIVATE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_PRIVATE(EggEditableToolbar, egg_editable_toolbar, GTK_TYPE_BOX)</div></div>
 <div class="ttc" id="acopy-theme-dialog_8c_html_acbbbdb297b944212a55f3e759d074439"><div class="ttname"><a href="copy-theme-dialog_8c.html#acbbbdb297b944212a55f3e759d074439">signals</a></div><div class="ttdeci">guint signals[SIGNAL_COUNT]</div><div class="ttdef"><b>Definition</b> <a href="copy-theme-dialog_8c_source.html#l00085">copy-theme-dialog.c:85</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-notebook_8c_html_a123483f403763d92540b8afc2f9edd33"><div class="ttname"><a href="pluma-notebook_8c.html#a123483f403763d92540b8afc2f9edd33">AFTER_ALL_TABS</a></div><div class="ttdeci">#define AFTER_ALL_TABS</div><div class="ttdef"><b>Definition</b> <a href="pluma-notebook_8c_source.html#l00053">pluma-notebook.c:53</a></div></div>
 <div class="ttc" id="apluma-notebook_8c_html_a13e23dd2258f026f2dbada1041d31556a0c34d85df8279641afad9e3c9b3a54ce"><div class="ttname"><a href="pluma-notebook_8c.html#a13e23dd2258f026f2dbada1041d31556a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div><div class="ttdeci">@ LAST_SIGNAL</div><div class="ttdef"><b>Definition</b> <a href="pluma-notebook_8c_source.html#l00095">pluma-notebook.c:94</a></div></div>

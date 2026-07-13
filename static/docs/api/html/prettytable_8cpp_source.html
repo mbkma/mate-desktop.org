@@ -364,10 +364,10 @@ $(document).ready(function(){initNavTree('prettytable_8cpp_source.html',''); ini
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>{</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="keywordtype">bool</span> has_kthreadd()</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    {</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        glibtop_proc_state <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        glibtop_get_proc_state(&amp;<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 2);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        glibtop_proc_state buf;</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        glibtop_get_proc_state(&amp;buf, 2);</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>.cmd == string(<span class="stringliteral">&quot;kthreadd&quot;</span>);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">return</span> buf.cmd == string(<span class="stringliteral">&quot;kthreadd&quot;</span>);</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    }</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="comment">// @pre: has_kthreadd</span></div>
@@ -452,7 +452,6 @@ $(document).ready(function(){initNavTree('prettytable_8cpp_source.html',''); ini
 <div class="ttc" id="adefaulttable_8h_html"><div class="ttname"><a href="defaulttable_8h.html">defaulttable.h</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-system-monitor_2src_2util_8h_html"><div class="ttname"><a href="mate-system-monitor_2src_2util_8h.html">util.h</a></div></div>
 <div class="ttc" id="amate-system-monitor_2src_2util_8h_html_ac981300fff11ff964fd4181411a70d76"><div class="ttname"><a href="mate-system-monitor_2src_2util_8h.html#ac981300fff11ff964fd4181411a70d76">procman_debug</a></div><div class="ttdeci">#define procman_debug(FMT,...)</div><div class="ttdef"><b>Definition</b> <a href="mate-system-monitor_2src_2util_8h_source.html#l00034">mate-system-monitor/src/util.h:34</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

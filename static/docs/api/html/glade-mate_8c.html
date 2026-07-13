@@ -243,11 +243,11 @@ Functions</h2></td></tr>
 <div class="line">                   <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <span class="keyword">const</span> <span class="keywordtype">char</span> *value) \</div>
 <div class="line">{                                   \</div>
 <div class="line">    GdkPixbuf *image;                           \</div>
-<div class="line">    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;                         \</div>
+<div class="line">    <span class="keywordtype">char</span> *filename;                         \</div>
 <div class="line">                                    \</div>
-<div class="line">    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = glade_xml_relative_file (xml, value);            \</div>
-<div class="line">    image = gdk_pixbuf_new_from_file (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);          \</div>
-<div class="line">    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);                          \</div>
+<div class="line">    filename = glade_xml_relative_file (xml, value);            \</div>
+<div class="line">    image = gdk_pixbuf_new_from_file (filename, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);          \</div>
+<div class="line">    g_free (filename);                          \</div>
 <div class="line">                                    \</div>
 <div class="line">    mate_druid_page_##pos##_set_##image(MATE_DRUID_PAGE_##POS(w),   \</div>
 <div class="line">                                         image);            \</div>
@@ -255,7 +255,6 @@ Functions</h2></td></tr>
 <div class="line">    g_object_unref (G_OBJECT (image));                  \</div>
 <div class="line">}</div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="glade-mate_8c_source.html#l00429">429</a> of file <a class="el" href="glade-mate_8c_source.html">glade-mate.c</a>.</p>
 

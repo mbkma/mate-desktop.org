@@ -277,7 +277,7 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>save_key_file (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, GKeyFile *key_file)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>save_key_file (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename, GKeyFile *key_file)</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>{</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keywordtype">char</span> *contents;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  gsize length;</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="comment">/* NULL GError */</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  g_file_set_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, contents, length, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  g_file_set_contents (filename, contents, length, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  g_free (contents);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
@@ -382,10 +382,10 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>      <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        {</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>          <span class="keywordtype">char</span> <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[50];</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>          <span class="keywordtype">char</span> buf[50];</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>          g_snprintf (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="keyword">sizeof</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>), <span class="stringliteral">&quot;%o&quot;</span>, (guint) need_mask); <span class="comment">/* octal */</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>          g_key_file_set_string (key_file, path, <span class="stringliteral">&quot;need_mask&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>          g_snprintf (buf, <span class="keyword">sizeof</span> (buf), <span class="stringliteral">&quot;%o&quot;</span>, (guint) need_mask); <span class="comment">/* octal */</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>          g_key_file_set_string (key_file, path, <span class="stringliteral">&quot;need_mask&quot;</span>, buf);</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        }</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>      save_key_file (key_file_path, key_file);</div>
@@ -419,7 +419,7 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>confirm_sharing_permissions (GtkWidget *widget, <span class="keyword">const</span> <span class="keywordtype">char</span> *path, gboolean is_shared, gboolean guest_ok, gboolean is_writable)</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>{</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keyword">struct </span>stat st;</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  mode_t <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>, new_mode, need_mask;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  mode_t mode, new_mode, need_mask;</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordflow">if</span> (!is_shared)</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="caja-share_8c.html#aa55e16ea03fe5d94b416afac7e6462ecaf6e3980bbcfdc2b77317cfda653474bd">CONFIRM_NO_MODIFICATIONS</a>;</div>
@@ -427,18 +427,18 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="keywordflow">if</span> (stat (path, &amp;st) != 0)</div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="caja-share_8c.html#aa55e16ea03fe5d94b416afac7e6462ecaf6e3980bbcfdc2b77317cfda653474bd">CONFIRM_NO_MODIFICATIONS</a>; <span class="comment">/* We&#39;ll just let &quot;net usershare&quot; give back an error if the file disappears */</span></div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  new_mode = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = st.st_mode;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  new_mode = mode = st.st_mode;</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordflow">if</span> (guest_ok)</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    new_mode |= <a class="code hl_define" href="caja-share_8c.html#ad52e58b0f408af01f4bf2bf62d92071d">NEED_IF_GUESTOK_MASK</a>;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <span class="keywordflow">if</span> (is_writable)</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    new_mode |= <a class="code hl_define" href="caja-share_8c.html#add4f7d50e12b59c5ad4af7d414b4f7f2">NEED_IF_WRITABLE_MASK</a>;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  need_mask = new_mode &amp; <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">~mode</a>;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  need_mask = new_mode &amp; ~mode;</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keywordflow">if</span> (need_mask != 0)</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    {</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      g_assert (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> != new_mode);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      g_assert (mode != new_mode);</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      <span class="keywordflow">if</span> (!message_confirm_missing_permissions (widget, path, need_mask))</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="caja-share_8c.html#aa55e16ea03fe5d94b416afac7e6462ecada1881ad8dbdebc7ff985ffabb13f46b">CONFIRM_CANCEL_OR_ERROR</a>;</div>
@@ -455,7 +455,7 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    }</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    {</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>      g_assert (<a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> == new_mode);</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>      g_assert (mode == new_mode);</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>      <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="caja-share_8c.html#aa55e16ea03fe5d94b416afac7e6462ecaf6e3980bbcfdc2b77317cfda653474bd">CONFIRM_NO_MODIFICATIONS</a>;</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
@@ -1443,9 +1443,6 @@ $(document).ready(function(){initNavTree('caja-share_8c_source.html',''); initRe
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="agsm-app-dialog_8h_html_aca58d81a114743e9cc23ed3d23387007"><div class="ttname"><a href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a></div><div class="ttdeci">const char const char * comment</div><div class="ttdef"><b>Definition</b> <a href="gsm-app-dialog_8h_source.html#l00035">gsm-app-dialog.h:35</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

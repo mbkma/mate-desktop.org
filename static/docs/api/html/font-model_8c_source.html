@@ -360,7 +360,7 @@ $(document).ready(function(){initNavTree('font-model_8c_source.html',''); initRe
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            gchar *file_uri;</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            gchar *checksum;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            gchar *filename;</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>            file_uri = g_file_get_uri (thumb_info-&gt;font_file);</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            thumb_info-&gt;uri = g_strdup_printf (<span class="stringliteral">&quot;%s#0x%08X&quot;</span>, file_uri, thumb_info-&gt;face_index);</div>
@@ -369,15 +369,15 @@ $(document).ready(function(){initNavTree('font-model_8c_source.html',''); initRe
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>            checksum = g_compute_checksum_for_data (G_CHECKSUM_MD5,</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                                                    (<span class="keyword">const</span> guchar *) thumb_info-&gt;uri,</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                                                    strlen (thumb_info-&gt;uri));</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_strdup_printf (<span class="stringliteral">&quot;%s.png&quot;</span>, checksum);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>            filename = g_strdup_printf (<span class="stringliteral">&quot;%s.png&quot;</span>, checksum);</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>            g_free (checksum);</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            thumb_path = g_build_filename (g_get_user_cache_dir (),</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                                           <span class="stringliteral">&quot;thumbnails&quot;</span>,</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                                           <span class="stringliteral">&quot;large&quot;</span>,</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                                           <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                                           filename,</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                                           <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            g_free (filename);</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>            <span class="keywordflow">if</span> (!g_file_test (thumb_path, G_FILE_TEST_IS_REGULAR)) {</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                g_clear_pointer (&amp;thumb_path, g_free);</div>
@@ -773,7 +773,6 @@ $(document).ready(function(){initNavTree('font-model_8c_source.html',''); initRe
 <div class="ttc" id="afont-utils_8h_html"><div class="ttname"><a href="font-utils_8h.html">font-utils.h</a></div></div>
 <div class="ttc" id="afr-window_8h_html_a905301dc85f7361d62f56f9dea55cf2ca685b61c6c0976f7b87328a7344da1271"><div class="ttname"><a href="fr-window_8h.html#a905301dc85f7361d62f56f9dea55cf2ca685b61c6c0976f7b87328a7344da1271">COLUMN_PATH</a></div><div class="ttdeci">@ COLUMN_PATH</div><div class="ttdef"><b>Definition</b> <a href="fr-window_8h_source.html#l00039">fr-window.h:39</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-desktop-thumbnail_8c_html_a3748c10ae1d8bbfbebb5bf346502a14d"><div class="ttname"><a href="mate-desktop-thumbnail_8c.html#a3748c10ae1d8bbfbebb5bf346502a14d">mate_desktop_thumbnail_factory_save_thumbnail</a></div><div class="ttdeci">void mate_desktop_thumbnail_factory_save_thumbnail(MateDesktopThumbnailFactory *factory, GdkPixbuf *thumbnail, const char *uri, time_t original_mtime)</div><div class="ttdef"><b>Definition</b> <a href="mate-desktop-thumbnail_8c_source.html#l01231">mate-desktop-thumbnail.c:1231</a></div></div>

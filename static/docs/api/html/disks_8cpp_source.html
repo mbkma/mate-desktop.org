@@ -147,11 +147,11 @@ $(document).ready(function(){initNavTree('disks_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>fsusage_stats(<span class="keyword">const</span> glibtop_fsusage *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>fsusage_stats(<span class="keyword">const</span> glibtop_fsusage *buf,</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>              guint64 *bused, guint64 *bfree, guint64 *bavail, guint64 *btotal,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>              gint *percentage)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    guint64 total = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;blocks * <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;block_size;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    guint64 total = buf-&gt;blocks * buf-&gt;block_size;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!total) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="comment">/* not a real device */</span></div>
@@ -160,8 +160,8 @@ $(document).ready(function(){initNavTree('disks_8cpp_source.html',''); initResiz
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordtype">int</span> percent;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        *btotal = total;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        *bfree = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;bfree * <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;block_size;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        *bavail = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;bavail * <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>-&gt;block_size;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        *bfree = buf-&gt;bfree * buf-&gt;block_size;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        *bavail = buf-&gt;bavail * buf-&gt;block_size;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        *bused = *btotal - *bfree;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">/* percent = 100.0f * *bused / *btotal; */</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        percent = 100 * *bused / (*bused + *bavail);</div>
@@ -650,7 +650,6 @@ $(document).ready(function(){initNavTree('disks_8cpp_source.html',''); initResiz
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
 <div class="ttc" id="aiconthemewrapper_8h_html"><div class="ttname"><a href="iconthemewrapper_8h.html">iconthemewrapper.h</a></div></div>
 <div class="ttc" id="ainterface_8h_html"><div class="ttname"><a href="interface_8h.html">interface.h</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-netbook_2maximus_2main_8c_html_a76565232f25302e8cb99c60a629034cc"><div class="ttname"><a href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a></div><div class="ttdeci">GOptionEntry entries[]</div><div class="ttdef"><b>Definition</b> <a href="mate-netbook_2maximus_2main_8c_source.html#l00043">mate-netbook/maximus/main.c:43</a></div></div>

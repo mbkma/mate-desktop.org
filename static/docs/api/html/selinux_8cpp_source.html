@@ -107,9 +107,9 @@ $(document).ready(function(){initNavTree('selinux_8cpp_source.html',''); initRes
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="mate-system-monitor_2src_2util_8h.html">util.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">static</span> <a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> (*getpidcon)(pid_t, <span class="keywordtype">char</span>**);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">static</span> int (*getpidcon)(pid_t, <span class="keywordtype">char</span>**);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">static</span> void (*freecon)(<span class="keywordtype">char</span>*);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">static</span> <a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> (*is_selinux_enabled)(void);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">static</span> int (*is_selinux_enabled)(void);</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">static</span> gboolean has_selinux;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
@@ -176,7 +176,6 @@ $(document).ready(function(){initNavTree('selinux_8cpp_source.html',''); initRes
 <div class="ttc" id="aclassProcInfo_html"><div class="ttname"><a href="classProcInfo.html">ProcInfo</a></div><div class="ttdef"><b>Definition</b> <a href="procman_8h_source.html#l00148">procman.h:150</a></div></div>
 <div class="ttc" id="aclassProcInfo_html_a06cd298e06a495752614cd047903b458"><div class="ttname"><a href="classProcInfo.html#a06cd298e06a495752614cd047903b458">ProcInfo::security_context</a></div><div class="ttdeci">gchar * security_context</div><div class="ttdef"><b>Definition</b> <a href="procman_8h_source.html#l00185">procman.h:185</a></div></div>
 <div class="ttc" id="aclassProcInfo_html_a582e3bcae5fa4517267b242bc8f7c992"><div class="ttname"><a href="classProcInfo.html#a582e3bcae5fa4517267b242bc8f7c992">ProcInfo::pid</a></div><div class="ttdeci">const pid_t pid</div><div class="ttdef"><b>Definition</b> <a href="procman_8h_source.html#l00187">procman.h:187</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="amate-system-monitor_2src_2util_8h_html"><div class="ttname"><a href="mate-system-monitor_2src_2util_8h.html">util.h</a></div></div>
 <div class="ttc" id="aprocman_8h_html"><div class="ttname"><a href="procman_8h.html">procman.h</a></div></div>
 <div class="ttc" id="aselinux_8cpp_html_a2b09946d02a9cfc4cf70f69b877a046f"><div class="ttname"><a href="selinux_8cpp.html#a2b09946d02a9cfc4cf70f69b877a046f">can_show_security_context_column</a></div><div class="ttdeci">gboolean can_show_security_context_column(void)</div><div class="ttdef"><b>Definition</b> <a href="selinux_8cpp_source.html#l00044">selinux.cpp:44</a></div></div>

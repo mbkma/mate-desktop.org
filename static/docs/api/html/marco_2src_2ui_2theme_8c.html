@@ -126,7 +126,7 @@ Macros</h2></td></tr>
 <tr class="separator:ac2593fd0507bba6da89438fb52ac20ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c22239f19be929ad9b128ca3144838e" id="r_a6c22239f19be929ad9b128ca3144838e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a6c22239f19be929ad9b128ca3144838e">DEBUG_FILL_STRUCT</a>(s)&#160;&#160;&#160;memset ((s), 0xef, sizeof (*(s)))</td></tr>
 <tr class="separator:a6c22239f19be929ad9b128ca3144838e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1915c0afb4957a43220785138e925da4" id="r_a1915c0afb4957a43220785138e925da4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a1915c0afb4957a43220785138e925da4">CLAMP_UCHAR</a>(v)&#160;&#160;&#160;((guchar) (CLAMP (((<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)v), (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)0, (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)255)))</td></tr>
+<tr class="memitem:a1915c0afb4957a43220785138e925da4" id="r_a1915c0afb4957a43220785138e925da4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a1915c0afb4957a43220785138e925da4">CLAMP_UCHAR</a>(v)&#160;&#160;&#160;((guchar) (CLAMP (((int)v), (int)0, (int)255)))</td></tr>
 <tr class="separator:a1915c0afb4957a43220785138e925da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb466686c5ff0bc37b942ec4a854fa9" id="r_adeb466686c5ff0bc37b942ec4a854fa9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#adeb466686c5ff0bc37b942ec4a854fa9">INTENSITY</a>(r,  g,  <a class="el" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>)&#160;&#160;&#160;((r) * 0.30 + (g) * 0.59 + (<a class="el" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>) * 0.11)</td></tr>
 <tr class="separator:adeb466686c5ff0bc37b942ec4a854fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,9 +163,9 @@ Functions</h2></td></tr>
 <tr class="separator:a999d939d9fa648dc064db7f1046f79d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae457c181e39d97021b348cb5a7ff692c" id="r_ae457c181e39d97021b348cb5a7ff692c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#ae457c181e39d97021b348cb5a7ff692c">meta_frame_layout_unref</a> (<a class="el" href="theme_8h.html#a7789f99a707fc45f32037c22ab5a6e27">MetaFrameLayout</a> *layout)</td></tr>
 <tr class="separator:ae457c181e39d97021b348cb5a7ff692c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a058ef735e80f0dccce9e67ff94f2d7f9" id="r_a058ef735e80f0dccce9e67ff94f2d7f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a058ef735e80f0dccce9e67ff94f2d7f9">meta_frame_layout_get_borders</a> (const <a class="el" href="theme_8h.html#a7789f99a707fc45f32037c22ab5a6e27">MetaFrameLayout</a> *layout, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="marco_2src_2include_2common_8h.html#a3c73f4c1a6e322d226be740916639d5b">MetaFrameBorders</a> *borders)</td></tr>
+<tr class="memitem:a058ef735e80f0dccce9e67ff94f2d7f9" id="r_a058ef735e80f0dccce9e67ff94f2d7f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a058ef735e80f0dccce9e67ff94f2d7f9">meta_frame_layout_get_borders</a> (const <a class="el" href="theme_8h.html#a7789f99a707fc45f32037c22ab5a6e27">MetaFrameLayout</a> *layout, int text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="marco_2src_2include_2common_8h.html#a3c73f4c1a6e322d226be740916639d5b">MetaFrameBorders</a> *borders)</td></tr>
 <tr class="separator:a058ef735e80f0dccce9e67ff94f2d7f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b570efe98c16c32b86f8b22521b63ec" id="r_a4b570efe98c16c32b86f8b22521b63ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a4b570efe98c16c32b86f8b22521b63ec">meta_frame_layout_calc_geometry</a> (const <a class="el" href="theme_8h.html#a7789f99a707fc45f32037c22ab5a6e27">MetaFrameLayout</a> *layout, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_width, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom, <a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme)</td></tr>
+<tr class="memitem:a4b570efe98c16c32b86f8b22521b63ec" id="r_a4b570efe98c16c32b86f8b22521b63ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a4b570efe98c16c32b86f8b22521b63ec">meta_frame_layout_calc_geometry</a> (const <a class="el" href="theme_8h.html#a7789f99a707fc45f32037c22ab5a6e27">MetaFrameLayout</a> *layout, int text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, int client_width, int client_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom, <a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme)</td></tr>
 <tr class="separator:a4b570efe98c16c32b86f8b22521b63ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca6c1b68fe938e81f0fc4a203bcde238" id="r_aca6c1b68fe938e81f0fc4a203bcde238"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#a4dc6ac0ed04153642e8dd8e185bd9a8d">MetaGradientSpec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#aca6c1b68fe938e81f0fc4a203bcde238">meta_gradient_spec_new</a> (<a class="el" href="gradient_8h.html#af912293d213dc0ea62a1a7a039491991">MetaGradientType</a> type)</td></tr>
 <tr class="separator:aca6c1b68fe938e81f0fc4a203bcde238"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
 <tr class="separator:a3e03d93c6d70c4ee17eb1581864bb277"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325228bf9d81a54ccf697a2e8d9ecfda" id="r_a325228bf9d81a54ccf697a2e8d9ecfda"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a325228bf9d81a54ccf697a2e8d9ecfda">meta_gradient_spec_validate</a> (<a class="el" href="theme_8h.html#a4dc6ac0ed04153642e8dd8e185bd9a8d">MetaGradientSpec</a> *spec, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:a325228bf9d81a54ccf697a2e8d9ecfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3b33971c87e883200707818998bf8de" id="r_ab3b33971c87e883200707818998bf8de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#a250cd041d4d063602fdadc6667dd05d6">MetaAlphaGradientSpec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#ab3b33971c87e883200707818998bf8de">meta_alpha_gradient_spec_new</a> (<a class="el" href="gradient_8h.html#af912293d213dc0ea62a1a7a039491991">MetaGradientType</a> type, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> n_alphas)</td></tr>
+<tr class="memitem:ab3b33971c87e883200707818998bf8de" id="r_ab3b33971c87e883200707818998bf8de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#a250cd041d4d063602fdadc6667dd05d6">MetaAlphaGradientSpec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#ab3b33971c87e883200707818998bf8de">meta_alpha_gradient_spec_new</a> (<a class="el" href="gradient_8h.html#af912293d213dc0ea62a1a7a039491991">MetaGradientType</a> type, int n_alphas)</td></tr>
 <tr class="separator:ab3b33971c87e883200707818998bf8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d829d43b9d7aa6c41bb30f470fd75d2" id="r_a9d829d43b9d7aa6c41bb30f470fd75d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a9d829d43b9d7aa6c41bb30f470fd75d2">meta_alpha_gradient_spec_free</a> (<a class="el" href="theme_8h.html#a250cd041d4d063602fdadc6667dd05d6">MetaAlphaGradientSpec</a> *spec)</td></tr>
 <tr class="separator:a9d829d43b9d7aa6c41bb30f470fd75d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,11 +195,11 @@ Functions</h2></td></tr>
 <tr class="separator:a9a1442a189f36f68e8394d189c64b9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec3068c0a3f64dd10887f153f7957e5" id="r_abec3068c0a3f64dd10887f153f7957e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#abec3068c0a3f64dd10887f153f7957e5">meta_color_spec_render</a> (<a class="el" href="theme_8h.html#a6f2c4cdeb50c5e266159acf73ab583d4">MetaColorSpec</a> *spec, GtkStyleContext *style, GdkRGBA *color)</td></tr>
 <tr class="separator:abec3068c0a3f64dd10887f153f7957e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6fadbc4a0810dab21278c1bafa2dfd" id="r_a7c6fadbc4a0810dab21278c1bafa2dfd"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a7c6fadbc4a0810dab21278c1bafa2dfd">meta_parse_position_expression</a> (<a class="el" href="group__parser.html#ga66c09b54bbbe5af39236c6073e2c0a44">MetaDrawSpec</a> *spec, const <a class="el" href="theme_8h.html#accb3f8d465eb8f48d40691d5c44aee60">MetaPositionExprEnv</a> *env, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *x_return, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *y_return, GError **err)</td></tr>
+<tr class="memitem:a7c6fadbc4a0810dab21278c1bafa2dfd" id="r_a7c6fadbc4a0810dab21278c1bafa2dfd"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a7c6fadbc4a0810dab21278c1bafa2dfd">meta_parse_position_expression</a> (<a class="el" href="group__parser.html#ga66c09b54bbbe5af39236c6073e2c0a44">MetaDrawSpec</a> *spec, const <a class="el" href="theme_8h.html#accb3f8d465eb8f48d40691d5c44aee60">MetaPositionExprEnv</a> *env, int *x_return, int *y_return, GError **err)</td></tr>
 <tr class="separator:a7c6fadbc4a0810dab21278c1bafa2dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082421ba12379fe699c83777a7e21d26" id="r_a082421ba12379fe699c83777a7e21d26"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a082421ba12379fe699c83777a7e21d26">meta_parse_size_expression</a> (<a class="el" href="group__parser.html#ga66c09b54bbbe5af39236c6073e2c0a44">MetaDrawSpec</a> *spec, const <a class="el" href="theme_8h.html#accb3f8d465eb8f48d40691d5c44aee60">MetaPositionExprEnv</a> *env, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *val_return, GError **err)</td></tr>
+<tr class="memitem:a082421ba12379fe699c83777a7e21d26" id="r_a082421ba12379fe699c83777a7e21d26"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a082421ba12379fe699c83777a7e21d26">meta_parse_size_expression</a> (<a class="el" href="group__parser.html#ga66c09b54bbbe5af39236c6073e2c0a44">MetaDrawSpec</a> *spec, const <a class="el" href="theme_8h.html#accb3f8d465eb8f48d40691d5c44aee60">MetaPositionExprEnv</a> *env, int *val_return, GError **err)</td></tr>
 <tr class="separator:a082421ba12379fe699c83777a7e21d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99f81084cfb22b0c5f829cad3a6e6817" id="r_a99f81084cfb22b0c5f829cad3a6e6817"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a99f81084cfb22b0c5f829cad3a6e6817">meta_theme_replace_constants</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="structPosToken.html">PosToken</a> *tokens, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> n_tokens, GError **err)</td></tr>
+<tr class="memitem:a99f81084cfb22b0c5f829cad3a6e6817" id="r_a99f81084cfb22b0c5f829cad3a6e6817"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a99f81084cfb22b0c5f829cad3a6e6817">meta_theme_replace_constants</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="structPosToken.html">PosToken</a> *tokens, int n_tokens, GError **err)</td></tr>
 <tr class="separator:a99f81084cfb22b0c5f829cad3a6e6817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd1070402ffd491f5a19993d019b9bd" id="r_aafd1070402ffd491f5a19993d019b9bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#aafd1070402ffd491f5a19993d019b9bd">meta_draw_spec_free</a> (<a class="el" href="group__parser.html#ga66c09b54bbbe5af39236c6073e2c0a44">MetaDrawSpec</a> *spec)</td></tr>
 <tr class="separator:aafd1070402ffd491f5a19993d019b9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
 <tr class="separator:aa1efea9d5ec775938f4d586c5cf6f491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c9697a778630ad20b954324f2ff7e4" id="r_a74c9697a778630ad20b954324f2ff7e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a74c9697a778630ad20b954324f2ff7e4">meta_draw_op_draw</a> (const <a class="el" href="theme_8h.html#a08d5ca055fe8252cda8c07ca13a479a1">MetaDrawOp</a> *<a class="el" href="rfkill_8h.html#aac7608e2446d8055d4b71df44dc2ec4e">op</a>, GtkWidget *widget, cairo_t *cr, const <a class="el" href="theme_8h.html#af26de4cc05c51d374f19ee678d78c146">MetaDrawInfo</a> *info, <a class="el" href="boxes_8h.html#a4bcf1d5340d86324fbab7856a88722d3">MetaRectangle</a> logical_region)</td></tr>
 <tr class="separator:a74c9697a778630ad20b954324f2ff7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54557d1bb56f76d225b7783e6200fc65" id="r_a54557d1bb56f76d225b7783e6200fc65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#ad45dda0da4751daa84f39be614113ce9">MetaDrawOpList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a54557d1bb56f76d225b7783e6200fc65">meta_draw_op_list_new</a> (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> n_preallocs)</td></tr>
+<tr class="memitem:a54557d1bb56f76d225b7783e6200fc65" id="r_a54557d1bb56f76d225b7783e6200fc65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#ad45dda0da4751daa84f39be614113ce9">MetaDrawOpList</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a54557d1bb56f76d225b7783e6200fc65">meta_draw_op_list_new</a> (int n_preallocs)</td></tr>
 <tr class="separator:a54557d1bb56f76d225b7783e6200fc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16be24b2d3263b44fc757c7e9dee2f9a" id="r_a16be24b2d3263b44fc757c7e9dee2f9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a16be24b2d3263b44fc757c7e9dee2f9a">meta_draw_op_list_ref</a> (<a class="el" href="theme_8h.html#ad45dda0da4751daa84f39be614113ce9">MetaDrawOpList</a> *op_list)</td></tr>
 <tr class="separator:a16be24b2d3263b44fc757c7e9dee2f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +237,9 @@ Functions</h2></td></tr>
 <tr class="separator:a6abef63d911c28af4225cce761cb4cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4895b22ae5019a76446a209f20265f3f" id="r_a4895b22ae5019a76446a209f20265f3f"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a4895b22ae5019a76446a209f20265f3f">meta_frame_style_validate</a> (<a class="el" href="theme_8h.html#a10fe0e90ab69de84d4042443850dda03">MetaFrameStyle</a> *style, guint current_theme_version, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:a4895b22ae5019a76446a209f20265f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f7439177872d69322b91de15a60e9d5" id="r_a6f7439177872d69322b91de15a60e9d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a6f7439177872d69322b91de15a60e9d5">meta_frame_style_draw_with_style</a> (<a class="el" href="theme_8h.html#a10fe0e90ab69de84d4042443850dda03">MetaFrameStyle</a> *style, GtkStyleContext *style_gtk, cairo_t *cr, const <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_width, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_height, PangoLayout *title_layout, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
+<tr class="memitem:a6f7439177872d69322b91de15a60e9d5" id="r_a6f7439177872d69322b91de15a60e9d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a6f7439177872d69322b91de15a60e9d5">meta_frame_style_draw_with_style</a> (<a class="el" href="theme_8h.html#a10fe0e90ab69de84d4042443850dda03">MetaFrameStyle</a> *style, GtkStyleContext *style_gtk, cairo_t *cr, const <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom, int client_width, int client_height, PangoLayout *title_layout, int text_height, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
 <tr class="separator:a6f7439177872d69322b91de15a60e9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a576419462cacc621bc4dbb0483292583" id="r_a576419462cacc621bc4dbb0483292583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a576419462cacc621bc4dbb0483292583">meta_frame_style_draw</a> (<a class="el" href="theme_8h.html#a10fe0e90ab69de84d4042443850dda03">MetaFrameStyle</a> *style, GtkWidget *widget, cairo_t *cr, const <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_width, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_height, PangoLayout *title_layout, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
+<tr class="memitem:a576419462cacc621bc4dbb0483292583" id="r_a576419462cacc621bc4dbb0483292583"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a576419462cacc621bc4dbb0483292583">meta_frame_style_draw</a> (<a class="el" href="theme_8h.html#a10fe0e90ab69de84d4042443850dda03">MetaFrameStyle</a> *style, GtkWidget *widget, cairo_t *cr, const <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom, int client_width, int client_height, PangoLayout *title_layout, int text_height, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
 <tr class="separator:a576419462cacc621bc4dbb0483292583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccfa77c3b66acbc9e62a21b983d03ef" id="r_adccfa77c3b66acbc9e62a21b983d03ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#a4caf145cb183bc41d1ae07e15105d6e6">MetaFrameStyleSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#adccfa77c3b66acbc9e62a21b983d03ef">meta_frame_style_set_new</a> (<a class="el" href="theme_8h.html#a4caf145cb183bc41d1ae07e15105d6e6">MetaFrameStyleSet</a> *parent)</td></tr>
 <tr class="separator:adccfa77c3b66acbc9e62a21b983d03ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,19 +259,19 @@ Functions</h2></td></tr>
 <tr class="separator:a84f9cc45fc4bbcb4f0619825aef669a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f20d039948bdb0eb5f3ceeb99c6a29" id="r_a91f20d039948bdb0eb5f3ceeb99c6a29"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a91f20d039948bdb0eb5f3ceeb99c6a29">meta_theme_validate</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:a91f20d039948bdb0eb5f3ceeb99c6a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69eeb8a9debc4136ab0a1e0335d7c3e" id="r_ad69eeb8a9debc4136ab0a1e0335d7c3e"><td class="memItemLeft" align="right" valign="top">GdkPixbuf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#ad69eeb8a9debc4136ab0a1e0335d7c3e">meta_theme_load_image</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, guint size_of_theme_icons, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
+<tr class="memitem:ad69eeb8a9debc4136ab0a1e0335d7c3e" id="r_ad69eeb8a9debc4136ab0a1e0335d7c3e"><td class="memItemLeft" align="right" valign="top">GdkPixbuf *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#ad69eeb8a9debc4136ab0a1e0335d7c3e">meta_theme_load_image</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *filename, guint size_of_theme_icons, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:ad69eeb8a9debc4136ab0a1e0335d7c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df304795ff19c8f0d0b98ba2bcf6370" id="r_a4df304795ff19c8f0d0b98ba2bcf6370"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#a10fe0e90ab69de84d4042443850dda03">MetaFrameStyle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a4df304795ff19c8f0d0b98ba2bcf6370">meta_theme_get_frame_style</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags)</td></tr>
 <tr class="separator:a4df304795ff19c8f0d0b98ba2bcf6370"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17289f3a9d514a316c2336101ac67819" id="r_a17289f3a9d514a316c2336101ac67819"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a17289f3a9d514a316c2336101ac67819">meta_theme_get_title_scale</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags)</td></tr>
 <tr class="separator:a17289f3a9d514a316c2336101ac67819"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43838ea620137bc68f77d5dc45267c4b" id="r_a43838ea620137bc68f77d5dc45267c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a43838ea620137bc68f77d5dc45267c4b">meta_theme_draw_frame</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, GtkStyleContext *style_gtk, cairo_t *cr, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_width, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_height, PangoLayout *title_layout, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
+<tr class="memitem:a43838ea620137bc68f77d5dc45267c4b" id="r_a43838ea620137bc68f77d5dc45267c4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a43838ea620137bc68f77d5dc45267c4b">meta_theme_draw_frame</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, GtkStyleContext *style_gtk, cairo_t *cr, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, int client_width, int client_height, PangoLayout *title_layout, int text_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
 <tr class="separator:a43838ea620137bc68f77d5dc45267c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63467c69ae7b133107340c77efeb1a6e" id="r_a63467c69ae7b133107340c77efeb1a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a63467c69ae7b133107340c77efeb1a6e">meta_theme_draw_frame_by_name</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, GtkWidget *widget, cairo_t *cr, const gchar *style_name, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_width, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_height, PangoLayout *title_layout, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
+<tr class="memitem:a63467c69ae7b133107340c77efeb1a6e" id="r_a63467c69ae7b133107340c77efeb1a6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a63467c69ae7b133107340c77efeb1a6e">meta_theme_draw_frame_by_name</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, GtkWidget *widget, cairo_t *cr, const gchar *style_name, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, int client_width, int client_height, PangoLayout *title_layout, int text_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#ab7bf293a31b5e114f022ed21df574ade">MetaButtonState</a> button_states[<a class="el" href="theme_8h.html#afa57d41e90e297e909b8945d3cd6b661ae0ec3089c459905963962e0269c078fc">META_BUTTON_TYPE_LAST</a>], GdkPixbuf *mini_icon, GdkPixbuf *icon)</td></tr>
 <tr class="separator:a63467c69ae7b133107340c77efeb1a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dbc1174cd0cfafb3cef14a975fc82bd" id="r_a2dbc1174cd0cfafb3cef14a975fc82bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a2dbc1174cd0cfafb3cef14a975fc82bd">meta_theme_get_frame_borders</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="marco_2src_2include_2common_8h.html#a3c73f4c1a6e322d226be740916639d5b">MetaFrameBorders</a> *borders)</td></tr>
+<tr class="memitem:a2dbc1174cd0cfafb3cef14a975fc82bd" id="r_a2dbc1174cd0cfafb3cef14a975fc82bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a2dbc1174cd0cfafb3cef14a975fc82bd">meta_theme_get_frame_borders</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, int text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="marco_2src_2include_2common_8h.html#a3c73f4c1a6e322d226be740916639d5b">MetaFrameBorders</a> *borders)</td></tr>
 <tr class="separator:a2dbc1174cd0cfafb3cef14a975fc82bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50bcf8c3bf1dde999cb3ce8df7d26fd4" id="r_a50bcf8c3bf1dde999cb3ce8df7d26fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a50bcf8c3bf1dde999cb3ce8df7d26fd4">meta_theme_calc_geometry</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_width, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> client_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom)</td></tr>
+<tr class="memitem:a50bcf8c3bf1dde999cb3ce8df7d26fd4" id="r_a50bcf8c3bf1dde999cb3ce8df7d26fd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a50bcf8c3bf1dde999cb3ce8df7d26fd4">meta_theme_calc_geometry</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, <a class="el" href="marco_2src_2include_2common_8h.html#a28fd99543654f523d42d6aa5abc14d28">MetaFrameType</a> type, int text_height, <a class="el" href="marco_2src_2include_2common_8h.html#a32ccb5a68ce987155f4a5561e4f21e69">MetaFrameFlags</a> flags, int client_width, int client_height, const <a class="el" href="marco_2src_2include_2common_8h.html#adfeb469e493e7a7ea6b4a72abe559556">MetaButtonLayout</a> *button_layout, <a class="el" href="theme_8h.html#acc27890cc82e2a2f336fae303a87696e">MetaFrameGeometry</a> *fgeom)</td></tr>
 <tr class="separator:a50bcf8c3bf1dde999cb3ce8df7d26fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f91868c7a0b4b893f3bc5febbd21a6d" id="r_a1f91868c7a0b4b893f3bc5febbd21a6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#a7789f99a707fc45f32037c22ab5a6e27">MetaFrameLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a1f91868c7a0b4b893f3bc5febbd21a6d">meta_theme_lookup_layout</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>)</td></tr>
 <tr class="separator:a1f91868c7a0b4b893f3bc5febbd21a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,9 +289,9 @@ Functions</h2></td></tr>
 <tr class="separator:a7a1f76c7312caec2574878d900ac39ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ddf19430cfca7098ecfdccff9d90c3c" id="r_a6ddf19430cfca7098ecfdccff9d90c3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a6ddf19430cfca7098ecfdccff9d90c3c">meta_theme_insert_style_set</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="el" href="theme_8h.html#a4caf145cb183bc41d1ae07e15105d6e6">MetaFrameStyleSet</a> *style_set)</td></tr>
 <tr class="separator:a6ddf19430cfca7098ecfdccff9d90c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a958b5481ac92a397e0fe7e784f82b9f5" id="r_a958b5481ac92a397e0fe7e784f82b9f5"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a958b5481ac92a397e0fe7e784f82b9f5">meta_theme_define_int_constant</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> value, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
+<tr class="memitem:a958b5481ac92a397e0fe7e784f82b9f5" id="r_a958b5481ac92a397e0fe7e784f82b9f5"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a958b5481ac92a397e0fe7e784f82b9f5">meta_theme_define_int_constant</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, int value, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:a958b5481ac92a397e0fe7e784f82b9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa566300a718964360beafef60d9809df" id="r_aa566300a718964360beafef60d9809df"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#aa566300a718964360beafef60d9809df">meta_theme_lookup_int_constant</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *value)</td></tr>
+<tr class="memitem:aa566300a718964360beafef60d9809df" id="r_aa566300a718964360beafef60d9809df"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#aa566300a718964360beafef60d9809df">meta_theme_lookup_int_constant</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, int *value)</td></tr>
 <tr class="separator:aa566300a718964360beafef60d9809df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b5386689da3118119bbfa645d45893" id="r_a50b5386689da3118119bbfa645d45893"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a50b5386689da3118119bbfa645d45893">meta_theme_define_float_constant</a> (<a class="el" href="theme_8h.html#a23841d61cfd32451225bb3e2ac5a7224">MetaTheme</a> *theme, const char *<a class="el" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, double value, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="separator:a50b5386689da3118119bbfa645d45893"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +303,7 @@ Functions</h2></td></tr>
 <tr class="separator:ad821496c660138a6c2549fa4d0322c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d8ad12ba36ffde55b65cbd871b6b95" id="r_a97d8ad12ba36ffde55b65cbd871b6b95"><td class="memItemLeft" align="right" valign="top">PangoFontDescription *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a97d8ad12ba36ffde55b65cbd871b6b95">meta_gtk_widget_get_font_desc</a> (GtkWidget *widget, double scale, const PangoFontDescription *override)</td></tr>
 <tr class="separator:a97d8ad12ba36ffde55b65cbd871b6b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6fd2f6f25a70de1df2930f26222970" id="r_aac6fd2f6f25a70de1df2930f26222970"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#aac6fd2f6f25a70de1df2930f26222970">meta_pango_font_desc_get_text_height</a> (const PangoFontDescription *font_desc, PangoContext *context)</td></tr>
+<tr class="memitem:aac6fd2f6f25a70de1df2930f26222970" id="r_aac6fd2f6f25a70de1df2930f26222970"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#aac6fd2f6f25a70de1df2930f26222970">meta_pango_font_desc_get_text_height</a> (const PangoFontDescription *font_desc, PangoContext *context)</td></tr>
 <tr class="separator:aac6fd2f6f25a70de1df2930f26222970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c906a67a33ab93d0e7df799b6b32c7" id="r_a39c906a67a33ab93d0e7df799b6b32c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="theme_8h.html#acd716b74b5b4c2fbc05e5865c499eb70">MetaGtkColorComponent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="marco_2src_2ui_2theme_8c.html#a39c906a67a33ab93d0e7df799b6b32c7">meta_color_component_from_string</a> (const char *str)</td></tr>
 <tr class="separator:a39c906a67a33ab93d0e7df799b6b32c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -427,7 +427,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">v</td><td>)</td>
-          <td>&#160;&#160;&#160;((guchar) (CLAMP (((<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)v), (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)0, (<a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)255)))</td>
+          <td>&#160;&#160;&#160;((guchar) (CLAMP (((int)v), (int)0, (int)255)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -488,9 +488,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                         ((guint32) (((<span class="keywordtype">int</span>)((color).red * 255) &lt;&lt; 16)   |    \</div>
-<div class="line">                                     ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((color).green * 255) &lt;&lt; 8)  |    \</div>
-<div class="line">                                     ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((color).blue * 255))))</div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
+<div class="line">                                     ((int)((color).green * 255) &lt;&lt; 8)  |    \</div>
+<div class="line">                                     ((int)((color).blue * 255))))</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l00075">75</a> of file <a class="el" href="marco_2src_2ui_2theme_8c_source.html">marco/src/ui/theme.c</a>.</p>
 
@@ -513,8 +512,8 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">                         ((guint32) (0xff                         |     \</div>
 <div class="line">                                     ((<span class="keywordtype">int</span>)((color).red * 255) &lt;&lt; 24)   |    \</div>
-<div class="line">                                     ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((color).green * 255) &lt;&lt; 16) |    \</div>
-<div class="line">                                     ((<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)((color).blue * 255) &lt;&lt; 8)))</div>
+<div class="line">                                     ((int)((color).green * 255) &lt;&lt; 16) |    \</div>
+<div class="line">                                     ((int)((color).blue * 255) &lt;&lt; 8)))</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l00069">69</a> of file <a class="el" href="marco_2src_2ui_2theme_8c_source.html">marco/src/ui/theme.c</a>.</p>
 
@@ -669,7 +668,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n_alphas</em>&#160;</td>
         </tr>
         <tr>
@@ -1291,7 +1290,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="theme_8h.html#ad45dda0da4751daa84f39be614113ce9">MetaDrawOpList</a> * meta_draw_op_list_new </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n_preallocs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1529,7 +1528,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -1541,13 +1540,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_height</em>, </td>
         </tr>
         <tr>
@@ -1578,7 +1577,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l00758">758</a> of file <a class="el" href="marco_2src_2ui_2theme_8c_source.html">marco/src/ui/theme.c</a>.</p>
 
-<p class="reference">References <a class="el" href="theme_8h_source.html#l00196">_MetaFrameGeometry::above_rect</a>, <a class="el" href="theme_8h_source.html#l00186">ADDRESS_OF_BUTTON_RECTS</a>, <a class="el" href="theme_8h_source.html#l00194">_MetaFrameGeometry::appmenu_rect</a>, <a class="el" href="theme_8h_source.html#l00173">_MetaFrameGeometry::borders</a>, <a class="el" href="theme_8h_source.html#l00149">_MetaFrameLayout::bottom_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00221">_MetaFrameGeometry::bottom_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00151">_MetaFrameLayout::bottom_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00222">_MetaFrameGeometry::bottom_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00183">_MetaFrameGeometry::bottom_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00124">_MetaFrameLayout::button_aspect</a>, <a class="el" href="theme_8h_source.html#l00133">_MetaFrameLayout::button_border</a>, <a class="el" href="theme_8h_source.html#l00130">_MetaFrameLayout::button_height</a>, <a class="el" href="theme_8h_source.html#l00214">_MetaFrameGeometry::button_layout</a>, <a class="el" href="theme_8h_source.html#l00117">_MetaFrameLayout::button_sizing</a>, <a class="el" href="theme_8h_source.html#l00127">_MetaFrameLayout::button_width</a>, <a class="el" href="theme_8h_source.html#l00165">_MetaButtonSpace::clickable</a>, <a class="el" href="theme_8h_source.html#l00190">_MetaFrameGeometry::close_rect</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="theme_8h_source.html#l00176">_MetaFrameGeometry::height</a>, <a class="el" href="theme_8h_source.html#l00142">_MetaFrameLayout::hide_buttons</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int()</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00329">_MetaFrameBorders::invisible</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00315">_MetaButtonLayout::left_buttons</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00316">_MetaButtonLayout::left_buttons_has_spacer</a>, <a class="el" href="theme_8h_source.html#l00203">_MetaFrameGeometry::left_left_background</a>, <a class="el" href="theme_8h_source.html#l00204">_MetaFrameGeometry::left_middle_backgrounds</a>, <a class="el" href="theme_8h_source.html#l00205">_MetaFrameGeometry::left_right_background</a>, <a class="el" href="theme_8h_source.html#l00206">_MetaFrameGeometry::left_single_background</a>, <a class="el" href="theme_8h_source.html#l00108">_MetaFrameLayout::left_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00180">_MetaFrameGeometry::left_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00089">_MetaFrameLayout::left_width</a>, <a class="el" href="theme_8h_source.html#l00187">LENGTH_OF_BUTTON_RECTS</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00309">MAX_BUTTONS_PER_CORNER</a>, <a class="el" href="theme_8h_source.html#l00191">_MetaFrameGeometry::max_rect</a>, <a class="el" href="atril_2backend_2dvi_2mdvi-lib_2common_8h_source.html#l00038">memmove</a>, <a class="el" href="theme_8h_source.html#l00193">_MetaFrameGeometry::menu_rect</a>, <a class="el" href="marco_2src_2core_2util_8c_source.html#l00362">meta_bug()</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00306">META_BUTTON_FUNCTION_LAST</a>, <a class="el" href="theme_8h_source.html#l00068">META_BUTTON_SIZING_ASPECT</a>, <a class="el" href="theme_8h_source.html#l00069">META_BUTTON_SIZING_FIXED</a>, <a class="el" href="theme_8h_source.html#l00070">META_BUTTON_SIZING_LAST</a>, <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l00514">meta_frame_layout_get_borders()</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00047">META_FRAME_MAXIMIZED</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00045">META_FRAME_SHADED</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00053">META_FRAME_TILED_LEFT</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00054">META_FRAME_TILED_RIGHT</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00227">META_FRAME_TYPE_NORMAL</a>, <a class="el" href="theme_8h_source.html#l00192">_MetaFrameGeometry::min_rect</a>, <a class="el" href="theme_8h_source.html#l00215">_MetaFrameGeometry::n_left_buttons</a>, <a class="el" href="theme_8h_source.html#l00216">_MetaFrameGeometry::n_right_buttons</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00319">_MetaButtonLayout::right_buttons</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00320">_MetaButtonLayout::right_buttons_has_spacer</a>, <a class="el" href="theme_8h_source.html#l00207">_MetaFrameGeometry::right_left_background</a>, <a class="el" href="theme_8h_source.html#l00208">_MetaFrameGeometry::right_middle_backgrounds</a>, <a class="el" href="theme_8h_source.html#l00209">_MetaFrameGeometry::right_right_background</a>, <a class="el" href="theme_8h_source.html#l00210">_MetaFrameGeometry::right_single_background</a>, <a class="el" href="theme_8h_source.html#l00106">_MetaFrameLayout::right_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00181">_MetaFrameGeometry::right_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00091">_MetaFrameLayout::right_width</a>, <a class="el" href="theme_8h_source.html#l00195">_MetaFrameGeometry::shade_rect</a>, <a class="el" href="theme_8h_source.html#l00197">_MetaFrameGeometry::stick_rect</a>, <a class="el" href="theme_8h_source.html#l00100">_MetaFrameLayout::title_border</a>, <a class="el" href="theme_8h_source.html#l00178">_MetaFrameGeometry::title_rect</a>, <a class="el" href="theme_8h_source.html#l00145">_MetaFrameLayout::top_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00219">_MetaFrameGeometry::top_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00147">_MetaFrameLayout::top_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00220">_MetaFrameGeometry::top_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00182">_MetaFrameGeometry::top_titlebar_edge</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00330">_MetaFrameBorders::total</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00326">_MetaFrameBorders::visible</a>, <a class="el" href="theme_8h_source.html#l00163">_MetaButtonSpace::visible</a>, and <a class="el" href="theme_8h_source.html#l00175">_MetaFrameGeometry::width</a>.</p>
+<p class="reference">References <a class="el" href="theme_8h_source.html#l00196">_MetaFrameGeometry::above_rect</a>, <a class="el" href="theme_8h_source.html#l00186">ADDRESS_OF_BUTTON_RECTS</a>, <a class="el" href="theme_8h_source.html#l00194">_MetaFrameGeometry::appmenu_rect</a>, <a class="el" href="theme_8h_source.html#l00173">_MetaFrameGeometry::borders</a>, <a class="el" href="theme_8h_source.html#l00149">_MetaFrameLayout::bottom_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00221">_MetaFrameGeometry::bottom_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00151">_MetaFrameLayout::bottom_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00222">_MetaFrameGeometry::bottom_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00183">_MetaFrameGeometry::bottom_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00124">_MetaFrameLayout::button_aspect</a>, <a class="el" href="theme_8h_source.html#l00133">_MetaFrameLayout::button_border</a>, <a class="el" href="theme_8h_source.html#l00130">_MetaFrameLayout::button_height</a>, <a class="el" href="theme_8h_source.html#l00214">_MetaFrameGeometry::button_layout</a>, <a class="el" href="theme_8h_source.html#l00117">_MetaFrameLayout::button_sizing</a>, <a class="el" href="theme_8h_source.html#l00127">_MetaFrameLayout::button_width</a>, <a class="el" href="theme_8h_source.html#l00165">_MetaButtonSpace::clickable</a>, <a class="el" href="theme_8h_source.html#l00190">_MetaFrameGeometry::close_rect</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="theme_8h_source.html#l00176">_MetaFrameGeometry::height</a>, <a class="el" href="theme_8h_source.html#l00142">_MetaFrameLayout::hide_buttons</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00329">_MetaFrameBorders::invisible</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00315">_MetaButtonLayout::left_buttons</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00316">_MetaButtonLayout::left_buttons_has_spacer</a>, <a class="el" href="theme_8h_source.html#l00203">_MetaFrameGeometry::left_left_background</a>, <a class="el" href="theme_8h_source.html#l00204">_MetaFrameGeometry::left_middle_backgrounds</a>, <a class="el" href="theme_8h_source.html#l00205">_MetaFrameGeometry::left_right_background</a>, <a class="el" href="theme_8h_source.html#l00206">_MetaFrameGeometry::left_single_background</a>, <a class="el" href="theme_8h_source.html#l00108">_MetaFrameLayout::left_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00180">_MetaFrameGeometry::left_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00089">_MetaFrameLayout::left_width</a>, <a class="el" href="theme_8h_source.html#l00187">LENGTH_OF_BUTTON_RECTS</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00309">MAX_BUTTONS_PER_CORNER</a>, <a class="el" href="theme_8h_source.html#l00191">_MetaFrameGeometry::max_rect</a>, <a class="el" href="atril_2backend_2dvi_2mdvi-lib_2common_8h_source.html#l00038">memmove</a>, <a class="el" href="theme_8h_source.html#l00193">_MetaFrameGeometry::menu_rect</a>, <a class="el" href="marco_2src_2core_2util_8c_source.html#l00362">meta_bug()</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00306">META_BUTTON_FUNCTION_LAST</a>, <a class="el" href="theme_8h_source.html#l00068">META_BUTTON_SIZING_ASPECT</a>, <a class="el" href="theme_8h_source.html#l00069">META_BUTTON_SIZING_FIXED</a>, <a class="el" href="theme_8h_source.html#l00070">META_BUTTON_SIZING_LAST</a>, <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l00514">meta_frame_layout_get_borders()</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00047">META_FRAME_MAXIMIZED</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00045">META_FRAME_SHADED</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00053">META_FRAME_TILED_LEFT</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00054">META_FRAME_TILED_RIGHT</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00227">META_FRAME_TYPE_NORMAL</a>, <a class="el" href="theme_8h_source.html#l00192">_MetaFrameGeometry::min_rect</a>, <a class="el" href="theme_8h_source.html#l00215">_MetaFrameGeometry::n_left_buttons</a>, <a class="el" href="theme_8h_source.html#l00216">_MetaFrameGeometry::n_right_buttons</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00319">_MetaButtonLayout::right_buttons</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00320">_MetaButtonLayout::right_buttons_has_spacer</a>, <a class="el" href="theme_8h_source.html#l00207">_MetaFrameGeometry::right_left_background</a>, <a class="el" href="theme_8h_source.html#l00208">_MetaFrameGeometry::right_middle_backgrounds</a>, <a class="el" href="theme_8h_source.html#l00209">_MetaFrameGeometry::right_right_background</a>, <a class="el" href="theme_8h_source.html#l00210">_MetaFrameGeometry::right_single_background</a>, <a class="el" href="theme_8h_source.html#l00106">_MetaFrameLayout::right_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00181">_MetaFrameGeometry::right_titlebar_edge</a>, <a class="el" href="theme_8h_source.html#l00091">_MetaFrameLayout::right_width</a>, <a class="el" href="theme_8h_source.html#l00195">_MetaFrameGeometry::shade_rect</a>, <a class="el" href="theme_8h_source.html#l00197">_MetaFrameGeometry::stick_rect</a>, <a class="el" href="theme_8h_source.html#l00100">_MetaFrameLayout::title_border</a>, <a class="el" href="theme_8h_source.html#l00178">_MetaFrameGeometry::title_rect</a>, <a class="el" href="theme_8h_source.html#l00145">_MetaFrameLayout::top_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00219">_MetaFrameGeometry::top_left_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00147">_MetaFrameLayout::top_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00220">_MetaFrameGeometry::top_right_corner_rounded_radius</a>, <a class="el" href="theme_8h_source.html#l00182">_MetaFrameGeometry::top_titlebar_edge</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00330">_MetaFrameBorders::total</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00326">_MetaFrameBorders::visible</a>, <a class="el" href="theme_8h_source.html#l00163">_MetaButtonSpace::visible</a>, and <a class="el" href="theme_8h_source.html#l00175">_MetaFrameGeometry::width</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l05984">meta_theme_calc_geometry()</a>, <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l05870">meta_theme_draw_frame()</a>, and <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l05915">meta_theme_draw_frame_by_name()</a>.</p>
 
@@ -1621,7 +1620,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -1931,13 +1930,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_height</em>, </td>
         </tr>
         <tr>
@@ -1949,7 +1948,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -2019,13 +2018,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_height</em>, </td>
         </tr>
         <tr>
@@ -2037,7 +2036,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -2820,7 +2819,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> meta_pango_font_desc_get_text_height </td>
+          <td class="memname">int meta_pango_font_desc_get_text_height </td>
           <td>(</td>
           <td class="paramtype">const PangoFontDescription *&#160;</td>
           <td class="paramname"><em>font_desc</em>, </td>
@@ -2875,13 +2874,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>x_return</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>y_return</em>, </td>
         </tr>
         <tr>
@@ -2925,7 +2924,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>val_return</em>, </td>
         </tr>
         <tr>
@@ -2969,7 +2968,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -2981,13 +2980,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_height</em>, </td>
         </tr>
         <tr>
@@ -3125,7 +3124,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>value</em>, </td>
         </tr>
         <tr>
@@ -3187,13 +3186,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_height</em>, </td>
         </tr>
         <tr>
@@ -3205,7 +3204,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -3285,13 +3284,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>client_height</em>, </td>
         </tr>
         <tr>
@@ -3303,7 +3302,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -3443,7 +3442,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>text_height</em>, </td>
         </tr>
         <tr>
@@ -3889,7 +3888,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> *&#160;</td>
+          <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -4049,7 +4048,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>n_tokens</em>, </td>
         </tr>
         <tr>
@@ -4136,7 +4135,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l05615">5615</a> of file <a class="el" href="marco_2src_2ui_2theme_8c_source.html">marco/src/ui/theme.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="theme_8h_source.html#l00799">_MetaTheme::author</a>, <a class="el" href="theme_8h_source.html#l00801">_MetaTheme::copyright</a>, <a class="el" href="theme_8h_source.html#l00803">_MetaTheme::date</a>, <a class="el" href="theme_8h_source.html#l00805">_MetaTheme::description</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int()</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00233">META_FRAME_TYPE_ATTACHED</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00234">META_FRAME_TYPE_LAST</a>, <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l06712">meta_frame_type_to_string()</a>, <a class="el" href="theme_8h_source.html#l00046">META_THEME_ERROR</a>, <a class="el" href="theme_8h_source.html#l00056">META_THEME_ERROR_FAILED</a>, <a class="el" href="theme_8h_source.html#l00788">_MetaTheme::name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="theme_8h_source.html#l00797">_MetaTheme::readable_name</a>, <a class="el" href="theme_8h_source.html#l00826">_MetaTheme::style_sets_by_type</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="theme_8h_source.html#l00799">_MetaTheme::author</a>, <a class="el" href="theme_8h_source.html#l00801">_MetaTheme::copyright</a>, <a class="el" href="theme_8h_source.html#l00803">_MetaTheme::date</a>, <a class="el" href="theme_8h_source.html#l00805">_MetaTheme::description</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00233">META_FRAME_TYPE_ATTACHED</a>, <a class="el" href="marco_2src_2include_2common_8h_source.html#l00234">META_FRAME_TYPE_LAST</a>, <a class="el" href="marco_2src_2ui_2theme_8c_source.html#l06712">meta_frame_type_to_string()</a>, <a class="el" href="theme_8h_source.html#l00046">META_THEME_ERROR</a>, <a class="el" href="theme_8h_source.html#l00056">META_THEME_ERROR_FAILED</a>, <a class="el" href="theme_8h_source.html#l00788">_MetaTheme::name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="theme_8h_source.html#l00797">_MetaTheme::readable_name</a>, <a class="el" href="theme_8h_source.html#l00826">_MetaTheme::style_sets_by_type</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>

@@ -521,7 +521,7 @@ $(document).ready(function(){initNavTree('panel_8c_source.html',''); initResizab
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="keyword">static</span> gboolean</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>can_set_background_image (<a class="code hl_struct" href="struct__PanelToplevel.html">PanelToplevel</a> *toplevel,</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>                          <span class="keyword">const</span> gchar   *uri,</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>                          gchar        **<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>                          gchar        **filename)</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>{</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>    gchar *image;</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
@@ -533,8 +533,8 @@ $(document).ready(function(){initNavTree('panel_8c_source.html',''); initResizab
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <span class="keywordflow">if</span> (! image)</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>        *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = image;</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keywordflow">if</span> (filename)</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>        *filename = image;</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        g_free (image);</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
@@ -653,7 +653,7 @@ $(document).ready(function(){initNavTree('panel_8c_source.html',''); initResizab
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>{</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    <span class="keywordtype">char</span>  *<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>;</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    <span class="keywordtype">char</span>  *<a class="code hl_variable" href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a>;</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordtype">char</span>  *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    <span class="keywordtype">char</span>  *buf;</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    <span class="keywordtype">char</span>  *icon;</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    GFile *file;</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
@@ -673,11 +673,11 @@ $(document).ready(function(){initNavTree('panel_8c_source.html',''); initResizab
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="comment">     * go to hicolor. */</span></div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    file = g_file_new_for_uri (uri);</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = g_file_get_parse_name (file);</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    buf = g_file_get_parse_name (file);</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    g_object_unref (file);</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    <span class="comment">/* Translators: %s is a URI */</span></div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <a class="code hl_variable" href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a> = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Open &#39;%s&#39;&quot;</span>), <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <a class="code hl_variable" href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a> = g_strdup_printf (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Open &#39;%s&#39;&quot;</span>), buf);</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    g_free (buf);</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <a class="code hl_function" href="launcher_8c.html#aaef075dc4903821e694fdf3fecaded46">panel_launcher_create_from_info</a> (panel-&gt;<a class="code hl_variable" href="struct__PanelWidget.html#ade71259ed0c2bfa8d01126569c9ef6ba">toplevel</a>, position, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                     uri, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>, <a class="code hl_variable" href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a>, icon);</div>
@@ -918,18 +918,18 @@ $(document).ready(function(){initNavTree('panel_8c_source.html',''); initResizab
 <div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>                <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>                    success = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type != G_FILE_TYPE_DIRECTORY &amp;&amp; can_exec) {</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>                <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>                <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span> </div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>                <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (file);</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>                filename = g_file_get_path (file);</div>
 <div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span> </div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>                <span class="keywordflow">if</span> (<a class="code hl_function" href="panel-profile_8c.html#ab1afb83b4fe70fab3e6c26c2ca8ac494">panel_profile_id_lists_are_writable</a> ())</div>
 <div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>                    <span class="comment">/* executable and local, so add a</span></div>
 <div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="comment">                     * launcher with it */</span></div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                    <a class="code hl_function" href="launcher_8c.html#aec1c979f3579fa173ab7daae15168d3a">ask_about_launcher</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, panel,</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>                    <a class="code hl_function" href="launcher_8c.html#aec1c979f3579fa173ab7daae15168d3a">ask_about_launcher</a> (filename, panel,</div>
 <div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                                pos, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>                <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>                    success = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>                g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>                g_free (filename);</div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>            } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>                <span class="keywordflow">if</span> (!drop_uri (panel, pos, uri,</div>
 <div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>                           <a class="code hl_define" href="panel-icon-names_8h.html#a26c6c2d92cb8d7406b3f12aad60ad1d9">PANEL_ICON_UNKNOWN</a>))</div>
@@ -1692,8 +1692,6 @@ $(document).ready(function(){initNavTree('panel_8c_source.html',''); initResizab
 <div class="ttc" id="adrawer_8h_html"><div class="ttname"><a href="drawer_8h.html">drawer.h</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="agsm-app-dialog_8h_html_aca58d81a114743e9cc23ed3d23387007"><div class="ttname"><a href="gsm-app-dialog_8h.html#aca58d81a114743e9cc23ed3d23387007">comment</a></div><div class="ttdeci">const char const char * comment</div><div class="ttdef"><b>Definition</b> <a href="gsm-app-dialog_8h_source.html#l00035">gsm-app-dialog.h:35</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="alauncher_8c_html_a1607faab10d60a674995dc656a50f437"><div class="ttname"><a href="launcher_8c.html#a1607faab10d60a674995dc656a50f437">panel_launcher_create_with_id</a></div><div class="ttdeci">void panel_launcher_create_with_id(const char *toplevel_id, int position, const char *location)</div><div class="ttdef"><b>Definition</b> <a href="launcher_8c_source.html#l01082">launcher.c:1082</a></div></div>
 <div class="ttc" id="alauncher_8c_html_a23043085ee196c0830095fec91af56db"><div class="ttname"><a href="launcher_8c.html#a23043085ee196c0830095fec91af56db">panel_launcher_create_copy</a></div><div class="ttdeci">gboolean panel_launcher_create_copy(PanelToplevel *toplevel, int position, const char *location)</div><div class="ttdef"><b>Definition</b> <a href="launcher_8c_source.html#l01136">launcher.c:1136</a></div></div>
 <div class="ttc" id="alauncher_8c_html_a2ab7657221086e457d487581ec31f78b"><div class="ttname"><a href="launcher_8c.html#a2ab7657221086e457d487581ec31f78b">launcher_properties_destroy</a></div><div class="ttdeci">void launcher_properties_destroy(Launcher *launcher)</div><div class="ttdef"><b>Definition</b> <a href="launcher_8c_source.html#l00236">launcher.c:236</a></div></div>

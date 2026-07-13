@@ -248,22 +248,22 @@ $(document).ready(function(){initNavTree('trashapplet_8c_source.html',''); initR
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>trash_applet_set_icon_size (TrashApplet *applet,</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                            gint         <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>)</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                            gint         size)</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>{</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="comment">/* copied from button-widget.c in the panel */</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; 22)</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 16;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; 24)</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 22;</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; 32)</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 24;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> &lt; 48)</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 32;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keywordflow">if</span> (size &lt; 22)</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    size = 16;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (size &lt; 24)</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    size = 22;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (size &lt; 32)</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    size = 24;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (size &lt; 48)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    size = 32;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 48;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    size = 48;</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="comment">/* GtkImage already contains a check to do nothing if it&#39;s the same */</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  gtk_image_set_pixel_size (applet-&gt;image, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  gtk_image_set_pixel_size (applet-&gt;image, size);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -770,7 +770,6 @@ $(document).ready(function(){initNavTree('trashapplet_8c_source.html',''); initR
 <div class="ttc" id="aclock_8c_html_a59ad01704f8b88ba9fac520818f2b921"><div class="ttname"><a href="clock_8c.html#a59ad01704f8b88ba9fac520818f2b921">GDK_IS_X11_DISPLAY</a></div><div class="ttdeci">#define GDK_IS_X11_DISPLAY(object)</div><div class="ttdef"><b>Definition</b> <a href="clock_8c_source.html#l00065">clock.c:65</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="afm-directory-view_8c_html_ac8dc960ed0e83a06356ee2589564f7a9acb254cab21516d4f350516a83e7e77a1"><div class="ttname"><a href="fm-directory-view_8c.html#ac8dc960ed0e83a06356ee2589564f7a9acb254cab21516d4f350516a83e7e77a1">TRASH</a></div><div class="ttdeci">@ TRASH</div><div class="ttdef"><b>Definition</b> <a href="fm-directory-view_8c_source.html#l00145">fm-directory-view.c:145</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-panel-applet_8c_html_a086a89c91d47b0417ff81f5e17141c77"><div class="ttname"><a href="mate-panel-applet_8c.html#a086a89c91d47b0417ff81f5e17141c77">mate_panel_applet_set_flags</a></div><div class="ttdeci">void mate_panel_applet_set_flags(MatePanelApplet *applet, MatePanelAppletFlags flags)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel-applet_8c_source.html#l00212">mate-panel-applet.c:212</a></div></div>

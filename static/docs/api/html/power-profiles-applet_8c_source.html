@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('power-profiles-applet_8c_source.html',
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    GDBusConnection *<a class="code hl_variable" href="udisks2-plugin_8c.html#a3e5a6f8e2b8c8c0715849bec8800c8c3">connection</a>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    guint bus_watch_id;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">/* a cache for panel size */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    gint size;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} GpmPowerProfilesApplet;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
@@ -305,21 +305,21 @@ $(document).ready(function(){initNavTree('power-profiles-applet_8c_source.html',
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>gpm_applet_update_tooltip (GpmPowerProfilesApplet *applet)</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>{</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">const</span> gchar *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <span class="keyword">const</span> gchar *buf;</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">if</span> (applet-&gt;connection == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot connect to DBUS daemon&quot;</span>);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot connect to DBUS daemon&quot;</span>);</div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (applet-&gt;proxy == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot connect to mate-power-manager&quot;</span>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Cannot connect to mate-power-manager&quot;</span>);</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="keywordflow">if</span> (g_strcmp0 (applet-&gt;power_profile, <span class="stringliteral">&quot;performance&quot;</span>) == 0) {</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Active Profile: Performance&quot;</span>);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>            buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Active Profile: Performance&quot;</span>);</div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_strcmp0 (applet-&gt;power_profile, <span class="stringliteral">&quot;power-saver&quot;</span>) == 0) {</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Active Profile: Power Saver&quot;</span>);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>            buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Active Profile: Power Saver&quot;</span>);</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Active Profile: Balanced&quot;</span>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>            buf = <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Active Profile: Balanced&quot;</span>);</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        }</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    }</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    gtk_widget_set_tooltip_text (GTK_WIDGET(applet), <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    gtk_widget_set_tooltip_text (GTK_WIDGET(applet), buf);</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>}</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">static</span> GtkMenu *</div>
@@ -590,17 +590,17 @@ $(document).ready(function(){initNavTree('power-profiles-applet_8c_source.html',
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                             GdkRectangle *allocation)</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>{</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    GpmPowerProfilesApplet *applet = <a class="code hl_define" href="power-profiles-applet_8c.html#aadc94a78642a6230ddec73d8a32e1e07">GPM_POWER_PROFILES_APPLET</a> (widget);</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keywordtype">int</span>               <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = 0;</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    <span class="keywordtype">int</span>               size = 0;</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    <span class="keywordflow">switch</span> (<a class="code hl_function" href="mate-panel-applet_8c.html#a560a18ee1b8f6757df188c752b786d51">mate_panel_applet_get_orient</a> (MATE_PANEL_APPLET (applet))) {</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_LEFT:</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_RIGHT:</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = allocation-&gt;width;</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>            size = allocation-&gt;width;</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_UP:</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_DOWN:</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = allocation-&gt;height;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>            size = allocation-&gt;height;</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>        <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>            <span class="keywordflow">break</span>;</div>
@@ -608,7 +608,7 @@ $(document).ready(function(){initNavTree('power-profiles-applet_8c_source.html',
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="comment">/* Scale to the actual size of the applet, don&#39;t quantize to original icon size */</span></div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    <span class="comment">/* GtkImage already contains a check to do nothing if it&#39;s the same */</span></div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    gtk_image_set_pixel_size (GTK_IMAGE(applet-&gt;image), <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    gtk_image_set_pixel_size (GTK_IMAGE(applet-&gt;image), size);</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>}</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -719,8 +719,6 @@ $(document).ready(function(){initNavTree('power-profiles-applet_8c_source.html',
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="aev-archive_8c_html_ac307ccd36e0808058f998a8048673a49"><div class="ttname"><a href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(EvArchive, ev_archive, G_TYPE_OBJECT)</div></div>
 <div class="ttc" id="agajim_8c_html_a3946a46b523c2da59c3afb306c4b3ed8"><div class="ttname"><a href="gajim_8c.html#a3946a46b523c2da59c3afb306c4b3ed8">proxy</a></div><div class="ttdeci">DBusGProxy * proxy</div><div class="ttdef"><b>Definition</b> <a href="gajim_8c_source.html#l00044">gajim.c:44</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-panel-applet_8c_html_a086a89c91d47b0417ff81f5e17141c77"><div class="ttname"><a href="mate-panel-applet_8c.html#a086a89c91d47b0417ff81f5e17141c77">mate_panel_applet_set_flags</a></div><div class="ttdeci">void mate_panel_applet_set_flags(MatePanelApplet *applet, MatePanelAppletFlags flags)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel-applet_8c_source.html#l00212">mate-panel-applet.c:212</a></div></div>

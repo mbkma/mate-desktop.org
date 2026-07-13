@@ -307,7 +307,7 @@ $(document).ready(function(){initNavTree('mate-notification-applet_8c_source.htm
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                  gboolean                history_enabled)</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>{</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keyword">const</span> <span class="keywordtype">char</span> *icon_name;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  gint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  gint size, scale;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  cairo_surface_t *surface;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keywordflow">if</span> (dnd_active &amp;&amp; history_enabled) {</div>
@@ -320,12 +320,12 @@ $(document).ready(function(){initNavTree('mate-notification-applet_8c_source.htm
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    icon_name = <span class="stringliteral">&quot;user-available&quot;</span>;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  }</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = (gint) <a class="code hl_function" href="mate-panel-applet_8c.html#a7ec126479c23fa7a6caf15da2bf3bdaa">mate_panel_applet_get_size</a> (applet-&gt;applet);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  size = (gint) <a class="code hl_function" href="mate-panel-applet_8c.html#a7ec126479c23fa7a6caf15da2bf3bdaa">mate_panel_applet_get_size</a> (applet-&gt;applet);</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  scale = gtk_widget_get_scale_factor (GTK_WIDGET (applet-&gt;applet));</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  surface = gtk_icon_theme_load_surface (gtk_icon_theme_get_default (),</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                                         icon_name,</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                                         <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, scale,</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                                         size, scale,</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>                                         <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keywordflow">if</span> (surface) {</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    gtk_image_set_from_surface (GTK_IMAGE (applet-&gt;status_image), surface);</div>
@@ -667,7 +667,6 @@ $(document).ready(function(){initNavTree('mate-notification-applet_8c_source.htm
 <div class="ttc" id="aconstants_8h_html_a4a8354f5c2436d851dae148bba83b877"><div class="ttname"><a href="constants_8h.html#a4a8354f5c2436d851dae148bba83b877">GSETTINGS_KEY_HISTORY_ENABLED</a></div><div class="ttdeci">#define GSETTINGS_KEY_HISTORY_ENABLED</div><div class="ttdef"><b>Definition</b> <a href="constants_8h_source.html#l00034">constants.h:34</a></div></div>
 <div class="ttc" id="aconstants_8h_html_a95d9d1efd90c5ad0a1b7a7a1b74941b9"><div class="ttname"><a href="constants_8h.html#a95d9d1efd90c5ad0a1b7a7a1b74941b9">GSETTINGS_KEY_DO_NOT_DISTURB</a></div><div class="ttdeci">#define GSETTINGS_KEY_DO_NOT_DISTURB</div><div class="ttdef"><b>Definition</b> <a href="constants_8h_source.html#l00026">constants.h:26</a></div></div>
 <div class="ttc" id="aconstants_8h_html_acde76ac69087f7ded054eff95d6df043"><div class="ttname"><a href="constants_8h.html#acde76ac69087f7ded054eff95d6df043">GSETTINGS_SCHEMA</a></div><div class="ttdeci">#define GSETTINGS_SCHEMA</div><div class="ttdef"><b>Definition</b> <a href="constants_8h_source.html#l00024">constants.h:24</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-desktop-utils_8c_html_a7a81b839d6202d1b6a166e3504c2e5d0"><div class="ttname"><a href="mate-desktop-utils_8c.html#a7a81b839d6202d1b6a166e3504c2e5d0">mate_gdk_spawn_command_line_on_screen</a></div><div class="ttdeci">gboolean mate_gdk_spawn_command_line_on_screen(GdkScreen *screen, const gchar *command, GError **error)</div><div class="ttdef"><b>Definition</b> <a href="mate-desktop-utils_8c_source.html#l00201">mate-desktop-utils.c:201</a></div></div>
 <div class="ttc" id="amate-desktop-utils_8h_html"><div class="ttname"><a href="mate-desktop-utils_8h.html">mate-desktop-utils.h</a></div></div>

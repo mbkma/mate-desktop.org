@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_enumeration" href="panel-menu-button_8c.html#a32b2fdd83d533c7173421e537435014e">MenuPathRoot</a> root_id;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">char</span>* scheme;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">char</span>* <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">char</span>* filename;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>} MenuPathRootItem;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">static</span> MenuPathRootItem root_items[] = {</div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>panel_menu_filename_to_scheme (<span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>panel_menu_filename_to_scheme (<span class="keyword">const</span> <span class="keywordtype">char</span> *filename)</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>{</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">const</span> <span class="keywordtype">char</span> *retval;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    gsize       i;</div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    retval = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">if</span> (!filename)</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keywordflow">return</span> retval;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="comment">/* Note:</span></div>
@@ -241,16 +241,16 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">     * if filename passed is absolute path, this function will return NULL.</span></div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">     * so here use the basename for compare.</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">     */</span></div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">if</span> (g_path_is_absolute (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>)) {</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        basename = g_path_get_basename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordflow">if</span> (g_path_is_absolute (filename)) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        basename = g_path_get_basename (filename);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        basename = g_strdup(<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        basename = g_strdup(filename);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">for</span> (i = 0; i &lt; G_N_ELEMENTS (root_items); i++) {</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">if</span> (root_items [i].<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            !strncmp (basename, root_items [i].<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                  strlen (root_items [i].<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>))) {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <span class="keywordflow">if</span> (root_items [i].filename &amp;&amp;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            !strncmp (basename, root_items [i].filename,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                  strlen (root_items [i].filename))) {</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            retval = root_items [i].scheme;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        }</div>
@@ -505,10 +505,10 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>    <span class="keywordflow">if</span> (button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;use_menu_path          &amp;&amp;</div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>        button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;path_root &gt; <a class="code hl_enumvalue" href="panel-menu-button_8c.html#a32b2fdd83d533c7173421e537435014ea2ee94297a08be27236c8be9e7e9ffb73">FIRST_MENU</a> &amp;&amp;</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>        button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;path_root &lt; <a class="code hl_enumvalue" href="panel-menu-button_8c.html#a32b2fdd83d533c7173421e537435014eaeacfb0ca53a97e9b3e1dce178d0468c8">LAST_MENU</a>) {</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *filename;</div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = panel_menu_path_root_to_filename (button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;path_root);</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;menu = <a class="code hl_function" href="mate-panel_2mate-panel_2menu_8c.html#a6aa03047078ec798c37e57080510b6b0">create_applications_menu</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>        filename = panel_menu_path_root_to_filename (button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;path_root);</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>        button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;menu = <a class="code hl_function" href="mate-panel_2mate-panel_2menu_8c.html#a6aa03047078ec798c37e57080510b6b0">create_applications_menu</a> (filename,</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                                   button-&gt;<a class="code hl_variable" href="struct__PanelMenuButton.html#aa82435e2e77c0b78e7e338eb09c6afe4">priv</a>-&gt;menu_path,</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                                   <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    } <span class="keywordflow">else</span></div>
@@ -1080,7 +1080,7 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="foldopen" id="foldopen00960" data-start="{" data-end="}">
 <div class="line"><a id="l00960" name="l00960"></a><span class="lineno"><a class="line" href="panel-menu-button_8c.html#a9ee3a9088c1ecfac4f0328433242fdca">  960</a></span><a class="code hl_function" href="panel-menu-button_8c.html#a9ee3a9088c1ecfac4f0328433242fdca">panel_menu_button_create</a> (<a class="code hl_struct" href="struct__PanelToplevel.html">PanelToplevel</a> *toplevel,</div>
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>              <span class="keywordtype">int</span>            position,</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>              <span class="keyword">const</span> <span class="keywordtype">char</span>    *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>              <span class="keyword">const</span> <span class="keywordtype">char</span>    *filename,</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>              <span class="keyword">const</span> <span class="keywordtype">char</span>    *menu_path,</div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>              gboolean       use_menu_path,</div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>              <span class="keyword">const</span> <span class="keywordtype">char</span>    *tooltip)</div>
@@ -1097,10 +1097,10 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span> </div>
 <div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    g_settings_set_boolean (settings, <a class="code hl_define" href="panel-schemas_8h.html#a784bc0cd15136f56fe7a9a7a15087c7d">PANEL_OBJECT_USE_MENU_PATH_KEY</a>, use_menu_path);</div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    scheme = panel_menu_filename_to_scheme (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>    scheme = panel_menu_filename_to_scheme (filename);</div>
 <div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span> </div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> &amp;&amp; !scheme) {</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>        g_warning (<span class="stringliteral">&quot;Failed to find menu scheme for %s\n&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <span class="keywordflow">if</span> (filename &amp;&amp; !scheme) {</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>        g_warning (<span class="stringliteral">&quot;Failed to find menu scheme for %s\n&quot;</span>, filename);</div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>        g_free (<span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>        g_free (path);</div>
 <div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>        g_object_unref (settings);</div>
@@ -1364,7 +1364,6 @@ $(document).ready(function(){initNavTree('panel-menu-button_8c_source.html','');
 <div class="ttc" id="abutton-widget_8h_html_a6269de4576034b140e6b69c3ec272e8d"><div class="ttname"><a href="button-widget_8h.html#a6269de4576034b140e6b69c3ec272e8d">BUTTON_WIDGET</a></div><div class="ttdeci">#define BUTTON_WIDGET(object)</div><div class="ttdef"><b>Definition</b> <a href="button-widget_8h_source.html#l00012">button-widget.h:12</a></div></div>
 <div class="ttc" id="abutton-widget_8h_html_a902b998689da28f42f6a391ffa262fd8"><div class="ttname"><a href="button-widget_8h.html#a902b998689da28f42f6a391ffa262fd8">BUTTON_TYPE_WIDGET</a></div><div class="ttdeci">#define BUTTON_TYPE_WIDGET</div><div class="ttdef"><b>Definition</b> <a href="button-widget_8h_source.html#l00011">button-widget.h:11</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-panel_2mate-panel_2applet_8c_html_a01ca5b4dc775ed06903317dd3778c683"><div class="ttname"><a href="mate-panel_2mate-panel_2applet_8c.html#a01ca5b4dc775ed06903317dd3778c683">mate_panel_applet_register</a></div><div class="ttdeci">AppletInfo * mate_panel_applet_register(GtkWidget *applet, gpointer data, GDestroyNotify data_destroy, PanelWidget *panel, gboolean locked, gint pos, gboolean exactpos, PanelObjectType type, const char *id)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel_2mate-panel_2applet_8c_source.html#l01223">mate-panel/mate-panel/applet.c:1223</a></div></div>
 <div class="ttc" id="amate-panel_2mate-panel_2applet_8c_html_a0c283b2c7425551a360a8237580da05f"><div class="ttname"><a href="mate-panel_2mate-panel_2applet_8c.html#a0c283b2c7425551a360a8237580da05f">mate_panel_applet_menu_set_recurse</a></div><div class="ttdeci">void mate_panel_applet_menu_set_recurse(GtkMenu *menu, const gchar *key, gpointer data)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel_2mate-panel_2applet_8c_source.html#l00614">mate-panel/mate-panel/applet.c:614</a></div></div>

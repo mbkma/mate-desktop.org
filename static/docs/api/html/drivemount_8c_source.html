@@ -160,19 +160,19 @@ $(document).ready(function(){initNavTree('drivemount_8c_source.html',''); initRe
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>               GdkRectangle    *allocation,</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>               <a class="code hl_struct" href="struct__DriveList.html">DriveList</a>       *drive_list)</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">switch</span> (<a class="code hl_function" href="mate-panel-applet_8c.html#a560a18ee1b8f6757df188c752b786d51">mate_panel_applet_get_orient</a> (applet)) {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_LEFT:</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_RIGHT:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = allocation-&gt;width;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            size = allocation-&gt;width;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_UP:</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">case</span> MATE_PANEL_APPLET_ORIENT_DOWN:</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = allocation-&gt;height;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            size = allocation-&gt;height;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="drive-list_8c.html#a1a7bd64e1bdaca4da039a9ed8650a17b">drive_list_set_panel_size</a> (drive_list, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="drive-list_8c.html#a1a7bd64e1bdaca4da039a9ed8650a17b">drive_list_set_panel_size</a> (drive_list, size);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -340,7 +340,6 @@ $(document).ready(function(){initNavTree('drivemount_8c_source.html',''); initRe
 <div class="ttc" id="adrive-list_8h_html"><div class="ttname"><a href="drive-list_8h.html">drive-list.h</a></div></div>
 <div class="ttc" id="adrive-list_8h_html_a0ceb028187d20c386b6f9bb33350052f"><div class="ttname"><a href="drive-list_8h.html#a0ceb028187d20c386b6f9bb33350052f">DRIVE_LIST</a></div><div class="ttdeci">#define DRIVE_LIST(o)</div><div class="ttdef"><b>Definition</b> <a href="drive-list_8h_source.html#l00031">drive-list.h:31</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-panel-applet_8c_html_a086a89c91d47b0417ff81f5e17141c77"><div class="ttname"><a href="mate-panel-applet_8c.html#a086a89c91d47b0417ff81f5e17141c77">mate_panel_applet_set_flags</a></div><div class="ttdeci">void mate_panel_applet_set_flags(MatePanelApplet *applet, MatePanelAppletFlags flags)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel-applet_8c_source.html#l00212">mate-panel-applet.c:212</a></div></div>

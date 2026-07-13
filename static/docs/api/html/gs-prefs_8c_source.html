@@ -299,9 +299,9 @@ $(document).ready(function(){initNavTree('gs-prefs_8c_source.html',''); initResi
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>_gs_prefs_set_mode (<a class="code hl_struct" href="structGSPrefs.html">GSPrefs</a>    *prefs,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                    gint         <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                    gint         mode)</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>{</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#ad3c563166c71137576aeefd2a06df541">mode</a> = <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#ad3c563166c71137576aeefd2a06df541">mode</a> = mode;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
@@ -372,7 +372,7 @@ $(document).ready(function(){initNavTree('gs-prefs_8c_source.html',''); initResi
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    gboolean   bvalue;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordtype">char</span>      *string;</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    gchar    **strv;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    gint       <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    gint       mode;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    bvalue = g_settings_get_boolean (prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#a14cf6accb3aaf153ed96394c019993aa">priv</a>-&gt;settings, <a class="code hl_define" href="gs-prefs_8c.html#a316b4ef681fcd6be79ca5ff6c97a645a">KEY_IDLE_ACTIVATION_ENABLED</a>);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <a class="code hl_define" href="gs-prefs_8c.html#a6087ab24735b2197a1705603eeca1ac2">_gs_prefs_set_idle_activation_enabled</a> (prefs, bvalue);</div>
@@ -398,8 +398,8 @@ $(document).ready(function(){initNavTree('gs-prefs_8c_source.html',''); initResi
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    value = g_settings_get_int (prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#a14cf6accb3aaf153ed96394c019993aa">priv</a>-&gt;settings, <a class="code hl_define" href="gs-prefs_8c.html#a9fdd95f9c1c6e7482169be3456d47826">KEY_CYCLE_DELAY</a>);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    _gs_prefs_set_cycle_timeout (prefs, value);</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = g_settings_get_enum (prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#a14cf6accb3aaf153ed96394c019993aa">priv</a>-&gt;settings, <a class="code hl_define" href="gs-prefs_8c.html#a0c7b1e0e2efeace41cf379c147ec8edf">KEY_MODE</a>);</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    _gs_prefs_set_mode (prefs, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    mode = g_settings_get_enum (prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#a14cf6accb3aaf153ed96394c019993aa">priv</a>-&gt;settings, <a class="code hl_define" href="gs-prefs_8c.html#a0c7b1e0e2efeace41cf379c147ec8edf">KEY_MODE</a>);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    _gs_prefs_set_mode (prefs, mode);</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    strv = g_settings_get_strv (prefs-&gt;<a class="code hl_variable" href="structGSPrefs.html#a14cf6accb3aaf153ed96394c019993aa">priv</a>-&gt;settings, <a class="code hl_define" href="gs-prefs_8c.html#adc2e24a86276d50ca61985b94461def5">KEY_THEMES</a>);</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    _gs_prefs_set_themes (prefs, strv);</div>
@@ -442,10 +442,10 @@ $(document).ready(function(){initNavTree('gs-prefs_8c_source.html',''); initResi
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>{</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">if</span> (strcmp (<a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, <a class="code hl_define" href="gs-prefs_8c.html#a0c7b1e0e2efeace41cf379c147ec8edf">KEY_MODE</a>) == 0)</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    {</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        gint <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>        gint mode;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a> = g_settings_get_enum (settings, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>);</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        _gs_prefs_set_mode (prefs, <a class="code hl_typedef" href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a>);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        mode = g_settings_get_enum (settings, <a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>        _gs_prefs_set_mode (prefs, mode);</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span> </div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    }</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strcmp (<a class="code hl_variable" href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a>, <a class="code hl_define" href="gs-prefs_8c.html#adc2e24a86276d50ca61985b94461def5">KEY_THEMES</a>) == 0)</div>
@@ -723,7 +723,6 @@ $(document).ready(function(){initNavTree('gs-prefs_8c_source.html',''); initResi
 <div class="ttc" id="ags-prefs_8h_html_ab26e9a100d4bc9987baf0ca5064eb4e8"><div class="ttname"><a href="gs-prefs_8h.html#ab26e9a100d4bc9987baf0ca5064eb4e8">GS_PREFS</a></div><div class="ttdeci">#define GS_PREFS(o)</div><div class="ttdef"><b>Definition</b> <a href="gs-prefs_8h_source.html#l00032">gs-prefs.h:32</a></div></div>
 <div class="ttc" id="ags-prefs_8h_html_aeb97d98331a444cf7e905d76a1da261e"><div class="ttname"><a href="gs-prefs_8h.html#aeb97d98331a444cf7e905d76a1da261e">GS_TYPE_PREFS</a></div><div class="ttdeci">#define GS_TYPE_PREFS</div><div class="ttdef"><b>Definition</b> <a href="gs-prefs_8h_source.html#l00031">gs-prefs.h:31</a></div></div>
 <div class="ttc" id="agsm-app-dialog_8h_html_a68ec35cdaac0a0e923b79bf4857c569e"><div class="ttname"><a href="gsm-app-dialog_8h.html#a68ec35cdaac0a0e923b79bf4857c569e">delay</a></div><div class="ttdeci">const char const char guint delay</div><div class="ttdef"><b>Definition</b> <a href="gsm-app-dialog_8h_source.html#l00036">gsm-app-dialog.h:36</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a7e43d41c2fe013a373b540cba02505cf"><div class="ttname"><a href="ioapi_8h.html#a7e43d41c2fe013a373b540cba02505cf">mode</a></div><div class="ttdeci">const char int mode</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>
 <div class="ttc" id="astructGSPrefsClass_html"><div class="ttname"><a href="structGSPrefsClass.html">GSPrefsClass</a></div><div class="ttdef"><b>Definition</b> <a href="gs-prefs_8h_source.html#l00075">gs-prefs.h:76</a></div></div>
 <div class="ttc" id="astructGSPrefs_html"><div class="ttname"><a href="structGSPrefs.html">GSPrefs</a></div><div class="ttdef"><b>Definition</b> <a href="gs-prefs_8h_source.html#l00047">gs-prefs.h:48</a></div></div>

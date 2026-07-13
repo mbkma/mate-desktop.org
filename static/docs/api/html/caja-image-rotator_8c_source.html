@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('caja-image-rotator_8c_source.html','')
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <a class="code hl_struct" href="structCajaFile.html">CajaFileInfo</a> *file = <a class="code hl_define" href="caja-file-info_8h.html#adca6d2f54cc9503ef29c87c3a5ab250f">CAJA_FILE_INFO</a> (rotator-&gt;files-&gt;data);</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    GFile *orig_location = <a class="code hl_function" href="caja-file-info_8c.html#a282c278e92e9fd4d8a7ba9f6e4ff90d7">caja_file_info_get_location</a> (file);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_file_get_path (orig_location);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">char</span> *filename = g_file_get_path (orig_location);</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    GFile *new_location = caja_image_rotator_transform_filename (rotator, orig_location);</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordtype">char</span> *new_filename = g_file_get_path (new_location);</div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    g_object_unref (orig_location);</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('caja-image-rotator_8c_source.html','')
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    gchar *argv[8];</div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    argv[0] = <span class="stringliteral">&quot;convert&quot;</span>;</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    argv[1] = <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    argv[1] = filename;</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    argv[2] = <span class="stringliteral">&quot;-rotate&quot;</span>;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    argv[3] = rotator-&gt;angle;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    argv[4] = <span class="stringliteral">&quot;-orient&quot;</span>;</div>
@@ -367,15 +367,15 @@ $(document).ready(function(){initNavTree('caja-image-rotator_8c_source.html','')
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    pid_t pid;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || new_filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ||</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">if</span> (filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> || new_filename == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> ||</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        !g_spawn_async (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, argv, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, G_SPAWN_DO_NOT_REAP_CHILD | G_SPAWN_SEARCH_PATH, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, &amp;pid, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)) {</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="comment">// FIXME: error handling</span></div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        g_free (filename);</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        g_free (new_filename);</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    g_free (filename);</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    g_free (new_filename);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    g_child_watch_add (pid, op_finished, rotator);</div>
@@ -508,7 +508,6 @@ $(document).ready(function(){initNavTree('caja-image-rotator_8c_source.html','')
 <div class="ttc" id="acaja-image-rotator_8h_html_a32f0a9462bed91a106bbc21a76fae60a"><div class="ttname"><a href="caja-image-rotator_8h.html#a32f0a9462bed91a106bbc21a76fae60a">CAJA_TYPE_IMAGE_ROTATOR</a></div><div class="ttdeci">#define CAJA_TYPE_IMAGE_ROTATOR</div><div class="ttdef"><b>Definition</b> <a href="caja-image-rotator_8h_source.html#l00031">caja-image-rotator.h:31</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="aev-archive_8c_html_ac307ccd36e0808058f998a8048673a49"><div class="ttname"><a href="ev-archive_8c.html#ac307ccd36e0808058f998a8048673a49">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(EvArchive, ev_archive, G_TYPE_OBJECT)</div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
 <div class="ttc" id="apluma-plugin_8c_html_aef4541645ed074255d452114efa6882a"><div class="ttname"><a href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a></div><div class="ttdeci">G_OBJECT_CLASS(##(PLUGIN_ID.lower) _plugin_parent_class) -&gt; final ize(object)</div></div>

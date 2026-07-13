@@ -531,7 +531,7 @@ $(document).ready(function(){initNavTree('gsm-xsmp-server_8c_source.html',''); i
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>update_iceauthority (GsmXsmpServer *server,</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>                     gboolean       adding)</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>{</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>        <span class="keywordtype">char</span>             *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>        <span class="keywordtype">char</span>             *filename;</div>
 <div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>        <span class="keywordtype">char</span>            **our_network_ids;</div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>        FILE             *fp;</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>        IceAuthFileEntry *auth_entry;</div>
@@ -540,8 +540,8 @@ $(document).ready(function(){initNavTree('gsm-xsmp-server_8c_source.html',''); i
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>        <span class="keywordtype">int</span>               i;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        gboolean          <a class="code hl_define" href="afmparse_8h.html#ad6ab145d5e3b6aea160603e7178369b0">ok</a> = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = IceAuthFileName ();</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        <span class="keywordflow">if</span> (IceLockAuthFile (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        filename = IceAuthFileName ();</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        <span class="keywordflow">if</span> (IceLockAuthFile (filename,</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>                             <a class="code hl_define" href="gsm-xsmp-server_8c.html#ad466efb23caa5ec7eb82b448d12b8cd2">GSM_ICE_AUTH_RETRIES</a>,</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>                             <a class="code hl_define" href="gsm-xsmp-server_8c.html#aa10cb619a565615eb06f075182393d3c">GSM_ICE_AUTH_INTERVAL</a>,</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>                             <a class="code hl_define" href="gsm-xsmp-server_8c.html#a855272a01f446e48fd943cfe42f9640b">GSM_ICE_AUTH_LOCK_TIMEOUT</a>) != IceAuthLockSuccess) {</div>
@@ -555,7 +555,7 @@ $(document).ready(function(){initNavTree('gsm-xsmp-server_8c_source.html',''); i
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span> </div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>        <a class="code hl_variable" href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
-<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        fp = fopen (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, <span class="stringliteral">&quot;r+&quot;</span>);</div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span>        fp = fopen (filename, <span class="stringliteral">&quot;r+&quot;</span>);</div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>        <span class="keywordflow">if</span> (fp != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>                <span class="keywordflow">while</span> ((auth_entry = IceReadAuthFileEntry (fp)) != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>                        <span class="comment">/* Skip/delete entries with no network ID (invalid), or with</span></div>
@@ -586,15 +586,15 @@ $(document).ready(function(){initNavTree('gsm-xsmp-server_8c_source.html',''); i
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>        } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>                <span class="keywordtype">int</span> fd;</div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span> </div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>                <span class="keywordflow">if</span> (g_file_test (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, G_FILE_TEST_EXISTS)) {</div>
-<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>                        g_warning (<span class="stringliteral">&quot;Unable to read ICE authority file: %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>                <span class="keywordflow">if</span> (g_file_test (filename, G_FILE_TEST_EXISTS)) {</div>
+<div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>                        g_warning (<span class="stringliteral">&quot;Unable to read ICE authority file: %s&quot;</span>, filename);</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>                        <span class="keywordflow">goto</span> cleanup;</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>                }</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
-<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                fd = open (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>, O_CREAT | O_WRONLY, 0600);</div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span>                fd = open (filename, O_CREAT | O_WRONLY, 0600);</div>
 <div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span>                fp = fdopen (fd, <span class="stringliteral">&quot;w&quot;</span>);</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>                <span class="keywordflow">if</span> (!fp) {</div>
-<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>                        g_warning (<span class="stringliteral">&quot;Unable to write to ICE authority file: %s&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>                        g_warning (<span class="stringliteral">&quot;Unable to write to ICE authority file: %s&quot;</span>, filename);</div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>                        <span class="keywordflow">if</span> (fd != -1) {</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>                                close (fd);</div>
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>                        }</div>
@@ -622,7 +622,7 @@ $(document).ready(function(){initNavTree('gsm-xsmp-server_8c_source.html',''); i
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        <a class="code hl_define" href="afmparse_8h.html#ad6ab145d5e3b6aea160603e7178369b0">ok</a> = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span> </div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> cleanup:</div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        IceUnlockAuthFile (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        IceUnlockAuthFile (filename);</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        <span class="keywordflow">for</span> (i = 0; i &lt; server-&gt;num_local_xsmp_sockets; i++) {</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>                free (our_network_ids[i]);</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>        }</div>
@@ -852,7 +852,6 @@ $(document).ready(function(){initNavTree('gsm-xsmp-server_8c_source.html',''); i
 <div class="ttc" id="agsm-xsmp-server_8c_html_ae2ced435e5697b808d703fad2e34a175"><div class="ttname"><a href="gsm-xsmp-server_8c.html#ae2ced435e5697b808d703fad2e34a175">GSM_ICE_MAGIC_COOKIE_AUTH_NAME</a></div><div class="ttdeci">#define GSM_ICE_MAGIC_COOKIE_AUTH_NAME</div><div class="ttdef"><b>Definition</b> <a href="gsm-xsmp-server_8c_source.html#l00062">gsm-xsmp-server.c:62</a></div></div>
 <div class="ttc" id="agsm-xsmp-server_8h_html"><div class="ttname"><a href="gsm-xsmp-server_8h.html">gsm-xsmp-server.h</a></div></div>
 <div class="ttc" id="agsm-xsmp-server_8h_html_a205bc88d12358c24d296f1f7600482b7"><div class="ttname"><a href="gsm-xsmp-server_8h.html#a205bc88d12358c24d296f1f7600482b7">GSM_TYPE_XSMP_SERVER</a></div><div class="ttdeci">#define GSM_TYPE_XSMP_SERVER</div><div class="ttdef"><b>Definition</b> <a href="gsm-xsmp-server_8h_source.html#l00031">gsm-xsmp-server.h:31</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amate-netbook_2maximus_2main_8c_html_a76565232f25302e8cb99c60a629034cc"><div class="ttname"><a href="mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc">entries</a></div><div class="ttdeci">GOptionEntry entries[]</div><div class="ttdef"><b>Definition</b> <a href="mate-netbook_2maximus_2main_8c_source.html#l00043">mate-netbook/maximus/main.c:43</a></div></div>

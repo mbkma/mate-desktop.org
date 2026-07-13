@@ -128,10 +128,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:afea4ed57a677e001c5c56b707607c42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5314084e548aca1184b49d7c2b463d" id="r_a8a5314084e548aca1184b49d7c2b463d"><td class="memItemLeft" align="right" valign="top">gboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvDocumentClass.html#a8a5314084e548aca1184b49d7c2b463d">support_synctex</a> )(<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
 <tr class="separator:a8a5314084e548aca1184b49d7c2b463d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1651ca9bcecd6d2f41217a0bccdc6c99" id="r_a1651ca9bcecd6d2f41217a0bccdc6c99"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvDocumentClass.html#a1651ca9bcecd6d2f41217a0bccdc6c99">toggle_night_mode</a> )(<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document, gboolean night)</td></tr>
-<tr class="separator:a1651ca9bcecd6d2f41217a0bccdc6c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaec509eb32599eb27313737af076415" id="r_aaaec509eb32599eb27313737af076415"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvDocumentClass.html#aaaec509eb32599eb27313737af076415">check_add_night_sheet</a> )(<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
-<tr class="separator:aaaec509eb32599eb27313737af076415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b9a2a6deed5819c4d6d3461c931024" id="r_ae7b9a2a6deed5819c4d6d3461c931024"><td class="memItemLeft" align="right" valign="top">GBytes *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvDocumentClass.html#ae7b9a2a6deed5819c4d6d3461c931024">get_resource</a> )(<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document, const gchar *path)</td></tr>
+<tr class="separator:ae7b9a2a6deed5819c4d6d3461c931024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7f40b80e51e65618d367e1de516800" id="r_ade7f40b80e51e65618d367e1de516800"><td class="memItemLeft" align="right" valign="top">gchar *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvDocumentClass.html#ade7f40b80e51e65618d367e1de516800">get_resource_mime</a> )(<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document, const gchar *path)</td></tr>
+<tr class="separator:ade7f40b80e51e65618d367e1de516800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b610b0d4ac832446afed5760789da2" id="r_ab0b610b0d4ac832446afed5760789da2"><td class="memItemLeft" align="right" valign="top">gpointer(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__EvDocumentClass.html#ab0b610b0d4ac832446afed5760789da2">get_doc_handle</a> )(<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td></tr>
+<tr class="separator:ab0b610b0d4ac832446afed5760789da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -153,24 +155,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aaaec509eb32599eb27313737af076415" name="aaaec509eb32599eb27313737af076415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaec509eb32599eb27313737af076415">&#9670;&#160;</a></span>check_add_night_sheet</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* _EvDocumentClass::check_add_night_sheet) (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00120">120</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ev-document_8c_source.html#l00953">ev_document_check_add_night_sheet()</a>.</p>
-
-</div>
-</div>
 <a id="afea4ed57a677e001c5c56b707607c42f" name="afea4ed57a677e001c5c56b707607c42f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afea4ed57a677e001c5c56b707607c42f">&#9670;&#160;</a></span>get_backend_info</h2>
 
@@ -186,6 +170,24 @@ Public Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00115">115</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ev-document_8c_source.html#l00597">ev_document_get_backend_info()</a>.</p>
+
+</div>
+</div>
+<a id="ab0b610b0d4ac832446afed5760789da2" name="ab0b610b0d4ac832446afed5760789da2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0b610b0d4ac832446afed5760789da2">&#9670;&#160;</a></span>get_doc_handle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gpointer(* _EvDocumentClass::get_doc_handle) (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00123">123</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ev-document_8c_source.html#l00970">ev_document_get_doc_handle()</a>.</p>
 
 </div>
 </div>
@@ -271,6 +273,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae7b9a2a6deed5819c4d6d3461c931024" name="ae7b9a2a6deed5819c4d6d3461c931024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b9a2a6deed5819c4d6d3461c931024">&#9670;&#160;</a></span>get_resource</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GBytes *(* _EvDocumentClass::get_resource) (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document, const gchar *path)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00119">119</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ev-document_8c_source.html#l00946">ev_document_get_resource()</a>.</p>
+
+</div>
+</div>
+<a id="ade7f40b80e51e65618d367e1de516800" name="ade7f40b80e51e65618d367e1de516800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7f40b80e51e65618d367e1de516800">&#9670;&#160;</a></span>get_resource_mime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gchar *(* _EvDocumentClass::get_resource_mime) (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document, const gchar *path)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00121">121</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ev-document_8c_source.html#l00958">ev_document_get_resource_mime()</a>.</p>
+
+</div>
+</div>
 <a id="a049d08b9442945c33e852814c90bfbb4" name="a049d08b9442945c33e852814c90bfbb4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a049d08b9442945c33e852814c90bfbb4">&#9670;&#160;</a></span>load</h2>
 
@@ -338,24 +376,6 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00117">117</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
-
-</div>
-</div>
-<a id="a1651ca9bcecd6d2f41217a0bccdc6c99" name="a1651ca9bcecd6d2f41217a0bccdc6c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1651ca9bcecd6d2f41217a0bccdc6c99">&#9670;&#160;</a></span>toggle_night_mode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void(* _EvDocumentClass::toggle_night_mode) (<a class="el" href="ev-document_8h.html#ad6f38591510690f4a57bcd6d38b94e59">EvDocument</a> *document, gboolean night)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ev-document_8h_source.html#l00119">119</a> of file <a class="el" href="ev-document_8h_source.html">ev-document.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ev-document_8c_source.html#l00946">ev_document_toggle_night_mode()</a>.</p>
 
 </div>
 </div>

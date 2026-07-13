@@ -22,7 +22,5 @@ var searchData=
   ['invest_2dapplet_2dchart_2ec_19',['invest-applet-chart.c',['../invest-applet-chart_8c.html',1,'']]],
   ['invest_2dapplet_2dchart_2eh_20',['invest-applet-chart.h',['../invest-applet-chart_8h.html',1,'']]],
   ['invest_2dapplet_2ec_21',['invest-applet.c',['../invest-applet_8c.html',1,'']]],
-  ['invest_2dapplet_2eh_22',['invest-applet.h',['../invest-applet_8h.html',1,'']]],
-  ['ioapi_2ec_23',['ioapi.c',['../ioapi_8c.html',1,'']]],
-  ['ioapi_2eh_24',['ioapi.h',['../ioapi_8h.html',1,'']]]
+  ['invest_2dapplet_2eh_22',['invest-applet.h',['../invest-applet_8h.html',1,'']]]
 ];

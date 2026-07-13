@@ -133,20 +133,20 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#ifndef WORDS_BIGENDIAN</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">   34</a></span><span class="preprocessor">#define byteReverse(buf, len)   </span><span class="comment">/* Nothing */</span><span class="preprocessor"></span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_define" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="keywordtype">unsigned</span> longs);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_define" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buf, <span class="keywordtype">unsigned</span> longs);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">/*</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * Note: this code is harmless on little-endian machines.</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_define" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, <span class="keywordtype">unsigned</span> longs)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_define" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buf, <span class="keywordtype">unsigned</span> longs)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    guint32 t;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">do</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        t = (guint32) ((<span class="keywordtype">unsigned</span>) <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[3] &lt;&lt; 8 | <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[2]) &lt;&lt; 16 |</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            ((<span class="keywordtype">unsigned</span>) <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1] &lt;&lt; 8 | <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0]);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        *(guint32 *) <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = t;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> += 4;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        t = (guint32) ((<span class="keywordtype">unsigned</span>) buf[3] &lt;&lt; 8 | buf[2]) &lt;&lt; 16 |</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            ((<span class="keywordtype">unsigned</span>) buf[1] &lt;&lt; 8 | buf[0]);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        *(guint32 *) buf = t;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        buf += 4;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">while</span> (--longs);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * of bytes.</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">   76</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">MD4Update</a>(<a class="code hl_struct" href="structMD4__CTX.html">MD4_CTX</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keyword">const</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">   76</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">MD4Update</a>(<a class="code hl_struct" href="structMD4__CTX.html">MD4_CTX</a> *ctx, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <span class="keyword">const</span> *buf,</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>               <span class="keywordtype">unsigned</span> len)</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">register</span> guint32 t;</div>
@@ -199,29 +199,29 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        t = 64 - t;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">if</span> (len &lt; t)</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        {</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(p, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(p, buf, len);</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(p, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, t);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(p, buf, t);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_define" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>, 16);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <a class="code hl_function" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">MD4Transform</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a629b773056cf6d8577c238fbb4bd7a30">buf</a>, (guint32 *) ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> += t;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        buf += t;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        len -= t;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    }</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">/* Process data in 64-byte chunks */</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">while</span> (len &gt;= 64)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, 64);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>, buf, 64);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <a class="code hl_define" href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>, 16);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <a class="code hl_function" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">MD4Transform</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a629b773056cf6d8577c238fbb4bd7a30">buf</a>, (guint32 *) ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> += 64;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        buf += 64;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        len -= 64;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">/* Handle any remaining bytes of data. */</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>, <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <a class="code hl_define" href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a>(ctx-&gt;<a class="code hl_variable" href="structMD4__CTX.html#a96b24a6630a4d64f18ad302d427d949a">in</a>, buf, len);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
 </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
@@ -306,14 +306,14 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"> * The core of the MD4 algorithm</span></div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">  196</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">MD4Transform</a>(guint32 <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[4], guint32 <span class="keyword">const</span> in[16])</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">  196</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="md4_8c.html#aad394a5b3cea90b6580b213cd5bd8a66">MD4Transform</a>(guint32 buf[4], guint32 <span class="keyword">const</span> in[16])</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>{</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">register</span> guint32 a, <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>, c, d;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    a = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0];</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1];</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    c = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[2];</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    d = <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[3];</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    a = buf[0];</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a> = buf[1];</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    c = buf[2];</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    d = buf[3];</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_define" href="md4_8c.html#ac8846e6b450b9fd8ff8699b9d7656feb">FF</a>(a, <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>, c, d, in[0], 3);   <span class="comment">/* 1 */</span></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_define" href="md4_8c.html#ac8846e6b450b9fd8ff8699b9d7656feb">FF</a>(d, a, <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>, c, in[1], 7);   <span class="comment">/* 2 */</span></div>
@@ -366,10 +366,10 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <a class="code hl_define" href="md4_8c.html#a34a9d762b33890e7285161614e71a20c">HH</a>(c, d, a, <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>, in[7], 11);  <span class="comment">/* 47 */</span></div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_define" href="md4_8c.html#a34a9d762b33890e7285161614e71a20c">HH</a>(<a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>, c, d, a, in[15], 15); <span class="comment">/* 48 */</span></div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[0] += a;</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[1] += <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>;</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[2] += c;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>[3] += d;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    buf[0] += a;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    buf[1] += <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    buf[2] += c;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    buf[3] += d;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
 </div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
@@ -377,24 +377,24 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="md4_8c.html#ab4a6319de9ffde2163739a7e4fe0126d">  262</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="md4_8c.html#ab4a6319de9ffde2163739a7e4fe0126d">MD4Keycrunch</a>( <span class="keywordtype">char</span> *result, <span class="keyword">const</span> <span class="keywordtype">char</span> *seed, <span class="keyword">const</span> <span class="keywordtype">char</span> *passphrase)</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>{</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keywordtype">int</span> len;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordtype">char</span> *<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordtype">char</span> *buf;</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <a class="code hl_struct" href="structMD4__CTX.html">MD4_CTX</a> md;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    guint32 results[4];</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    len = strlen(seed) + strlen(passphrase);</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    <a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> = (<span class="keywordtype">char</span> *)malloc(len+1);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a> == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    buf = (<span class="keywordtype">char</span> *)malloc(len+1);</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordflow">if</span> (buf == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    strcpy(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, seed);</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <a class="code hl_function" href="skeyutil_8c.html#a4ddd8293217445bd62ac31057dcb2510">skey_lowcase</a>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    strcat(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, passphrase);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <a class="code hl_function" href="skeyutil_8c.html#a66da17140e5c53f76d3907f6d874e86b">skey_sevenbit</a>(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    strcpy(buf, seed);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <a class="code hl_function" href="skeyutil_8c.html#a4ddd8293217445bd62ac31057dcb2510">skey_lowcase</a>(buf);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    strcat(buf, passphrase);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <a class="code hl_function" href="skeyutil_8c.html#a66da17140e5c53f76d3907f6d874e86b">skey_sevenbit</a>(buf);</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <a class="code hl_function" href="md4_8c.html#ad832a9c89492245656b302cccc6cb8ff">MD4Init</a>(&amp;md);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_function" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">MD4Update</a>(&amp;md, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>, len);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <a class="code hl_function" href="md4_8c.html#aee0d8dd4406aab9caea9dcd646961b1a">MD4Update</a>(&amp;md, (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)buf, len);</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <a class="code hl_function" href="md4_8c.html#a3ad7b7217754b64be6120fcfae32461e">MD4Final</a>((<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)results, &amp;md);</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    free(<a class="code hl_typedef" href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a>);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    free(buf);</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    results[0] ^= results[2];</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    results[1] ^= results[3];</div>
@@ -459,7 +459,6 @@ $(document).ready(function(){initNavTree('md4_8c_source.html',''); initResizable
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aatril_2backend_2dvi_2mdvi-lib_2common_8h_html_a2164c55e96d86275e2e14da6685ec3b9"><div class="ttname"><a href="atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a2164c55e96d86275e2e14da6685ec3b9">memcpy</a></div><div class="ttdeci">#define memcpy(a, b, n)</div><div class="ttdef"><b>Definition</b> <a href="atril_2backend_2dvi_2mdvi-lib_2common_8h_source.html#l00037">atril/backend/dvi/mdvi-lib/common.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a8ad8a13c88886b9f623034ff88570adb"><div class="ttname"><a href="ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb">buf</a></div><div class="ttdeci">voidpf void * buf</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="amd4_8c_html_a14e58c5c71008e86e99cbff92f527b85"><div class="ttname"><a href="md4_8c.html#a14e58c5c71008e86e99cbff92f527b85">MD4SKey</a></div><div class="ttdeci">void MD4SKey(char *x)</div><div class="ttdef"><b>Definition</b> <a href="md4_8c_source.html#l00291">md4.c:291</a></div></div>
 <div class="ttc" id="amd4_8c_html_a2b4a8791145616dd3add6ae6db3494e3"><div class="ttname"><a href="md4_8c.html#a2b4a8791145616dd3add6ae6db3494e3">byteReverse</a></div><div class="ttdeci">#define byteReverse(buf, len)</div><div class="ttdef"><b>Definition</b> <a href="md4_8c_source.html#l00034">md4.c:34</a></div></div>

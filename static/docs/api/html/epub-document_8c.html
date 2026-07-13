@@ -92,27 +92,17 @@ $(document).ready(function(){initNavTree('epub-document_8c.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">epub-document.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="epub-document_8h_source.html">epub-document.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ev-file-helpers_8h_source.html">ev-file-helpers.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="unzip_8h_source.html">unzip.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ev-document-thumbnails_8h_source.html">ev-document-thumbnails.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ev-document-find_8h_source.html">ev-document-find.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ev-backends-manager_8h_source.html">ev-backends-manager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ev-document-links_8h_source.html">ev-document-links.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ev-document-misc_8h_source.html">ev-document-misc.h</a>&quot;</code><br />
-<code>#include &lt;libxml/parser.h&gt;</code><br />
-<code>#include &lt;libxml/xmlmemory.h&gt;</code><br />
-<code>#include &lt;libxml/HTMLparser.h&gt;</code><br />
+<code>#include &lt;gepub.h&gt;</code><br />
 <code>#include &lt;config.h&gt;</code><br />
 <code>#include &lt;glib/gi18n-lib.h&gt;</code><br />
-<code>#include &lt;glib/gstdio.h&gt;</code><br />
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for epub-document.c:</div>
 <div class="dyncontent">
@@ -123,44 +113,17 @@ Include dependency graph for epub-document.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0b8bd04d87309f334d225b1792fbb8a7" id="r_a0b8bd04d87309f334d225b1792fbb8a7"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="epub-document_8c.html#ae3425df646809818d3aae214e9d662b0">_xmlParseReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#a0b8bd04d87309f334d225b1792fbb8a7">xmlParseReturnType</a></td></tr>
-<tr class="separator:a0b8bd04d87309f334d225b1792fbb8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad631eb0bce22e9eaac5719ed6aad4010" id="r_ad631eb0bce22e9eaac5719ed6aad4010"><td class="memItemLeft" align="right" valign="top">typedef struct _contentListNode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#ad631eb0bce22e9eaac5719ed6aad4010">contentListNode</a></td></tr>
-<tr class="separator:ad631eb0bce22e9eaac5719ed6aad4010"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeddf28149f11f572b2c536da2eeb4fd8" id="r_aeddf28149f11f572b2c536da2eeb4fd8"><td class="memItemLeft" align="right" valign="top">typedef struct _linknode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#aeddf28149f11f572b2c536da2eeb4fd8">linknode</a></td></tr>
 <tr class="separator:aeddf28149f11f572b2c536da2eeb4fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacb2313ec0c5e56a3bd0f44f4da55f8b" id="r_aacb2313ec0c5e56a3bd0f44f4da55f8b"><td class="memItemLeft" align="right" valign="top">typedef struct _EpubDocumentClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#aacb2313ec0c5e56a3bd0f44f4da55f8b">EpubDocumentClass</a></td></tr>
 <tr class="separator:aacb2313ec0c5e56a3bd0f44f4da55f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292cafd8c50cdba1b8056f243a9f3834" id="r_a292cafd8c50cdba1b8056f243a9f3834"><td class="memItemLeft" align="right" valign="top">typedef struct _LinksCBStruct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#a292cafd8c50cdba1b8056f243a9f3834">LinksCBStruct</a></td></tr>
-<tr class="separator:a292cafd8c50cdba1b8056f243a9f3834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ae3425df646809818d3aae214e9d662b0" id="r_ae3425df646809818d3aae214e9d662b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#ae3425df646809818d3aae214e9d662b0">_xmlParseReturnType</a> { <a class="el" href="epub-document_8c.html#ae3425df646809818d3aae214e9d662b0ab9f76b8e78f34714cff0acfdd5f411f0">XML_ATTRIBUTE</a>
-, <a class="el" href="epub-document_8c.html#ae3425df646809818d3aae214e9d662b0ab0c17d4381e0f503642f8dee92fbb79d">XML_KEYWORD</a>
- }</td></tr>
-<tr class="separator:ae3425df646809818d3aae214e9d662b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adbbeb509be6eb82d68da8f4d11a161bc" id="r_adbbeb509be6eb82d68da8f4d11a161bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#adbbeb509be6eb82d68da8f4d11a161bc">EV_BACKEND_REGISTER_WITH_CODE</a> (<a class="el" href="epub-document_8h.html#a078f234755aad2cd518838513b069028">EpubDocument</a>, epub_document, { <a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-thumbnails_8h.html#a1daca9dd45000cd0a0da637838cbbe56">EV_TYPE_DOCUMENT_THUMBNAILS</a>, epub_document_document_thumbnails_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-find_8h.html#aebf3e715ac7030ff64806c376656f4e1">EV_TYPE_DOCUMENT_FIND</a>, epub_document_document_find_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-links_8h.html#a8226b2f0495b23504db742c03c7577f0">EV_TYPE_DOCUMENT_LINKS</a>, epub_document_document_links_iface_init);})</td></tr>
-<tr class="separator:adbbeb509be6eb82d68da8f4d11a161bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac05c1fa5bc8bf6f6b7320e46e1c7008" id="r_aac05c1fa5bc8bf6f6b7320e46e1c7008"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epub-document_8c.html#aac05c1fa5bc8bf6f6b7320e46e1c7008">EV_BACKEND_REGISTER_WITH_CODE</a> (<a class="el" href="epub-document_8h.html#a078f234755aad2cd518838513b069028">EpubDocument</a>, epub_document, { <a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-links_8h.html#a8226b2f0495b23504db742c03c7577f0">EV_TYPE_DOCUMENT_LINKS</a>, epub_document_document_links_iface_init);})</td></tr>
+<tr class="separator:aac05c1fa5bc8bf6f6b7320e46e1c7008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ad631eb0bce22e9eaac5719ed6aad4010" name="ad631eb0bce22e9eaac5719ed6aad4010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad631eb0bce22e9eaac5719ed6aad4010">&#9670;&#160;</a></span>contentListNode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct _contentListNode <a class="el" href="epub-document_8c.html#ad631eb0bce22e9eaac5719ed6aad4010">contentListNode</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aacb2313ec0c5e56a3bd0f44f4da55f8b" name="aacb2313ec0c5e56a3bd0f44f4da55f8b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacb2313ec0c5e56a3bd0f44f4da55f8b">&#9670;&#160;</a></span>EpubDocumentClass</h2>
 
@@ -173,7 +136,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="epub-document_8c_source.html#l00063">63</a> of file <a class="el" href="epub-document_8c_source.html">epub-document.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="epub-document_8c_source.html#l00041">41</a> of file <a class="el" href="epub-document_8c_source.html">epub-document.c</a>.</p>
 
 </div>
 </div>
@@ -191,58 +154,9 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a292cafd8c50cdba1b8056f243a9f3834" name="a292cafd8c50cdba1b8056f243a9f3834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a292cafd8c50cdba1b8056f243a9f3834">&#9670;&#160;</a></span>LinksCBStruct</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct _LinksCBStruct <a class="el" href="epub-document_8c.html#a292cafd8c50cdba1b8056f243a9f3834">LinksCBStruct</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0b8bd04d87309f334d225b1792fbb8a7" name="a0b8bd04d87309f334d225b1792fbb8a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b8bd04d87309f334d225b1792fbb8a7">&#9670;&#160;</a></span>xmlParseReturnType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef enum <a class="el" href="epub-document_8c.html#ae3425df646809818d3aae214e9d662b0">_xmlParseReturnType</a> <a class="el" href="epub-document_8c.html#a0b8bd04d87309f334d225b1792fbb8a7">xmlParseReturnType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ae3425df646809818d3aae214e9d662b0" name="ae3425df646809818d3aae214e9d662b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3425df646809818d3aae214e9d662b0">&#9670;&#160;</a></span>_xmlParseReturnType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="epub-document_8c.html#ae3425df646809818d3aae214e9d662b0">_xmlParseReturnType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae3425df646809818d3aae214e9d662b0ab9f76b8e78f34714cff0acfdd5f411f0" name="ae3425df646809818d3aae214e9d662b0ab9f76b8e78f34714cff0acfdd5f411f0"></a>XML_ATTRIBUTE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae3425df646809818d3aae214e9d662b0ab0c17d4381e0f503642f8dee92fbb79d" name="ae3425df646809818d3aae214e9d662b0ab0c17d4381e0f503642f8dee92fbb79d"></a>XML_KEYWORD&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="epub-document_8c_source.html#l00044">44</a> of file <a class="el" href="epub-document_8c_source.html">epub-document.c</a>.</p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="adbbeb509be6eb82d68da8f4d11a161bc" name="adbbeb509be6eb82d68da8f4d11a161bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbbeb509be6eb82d68da8f4d11a161bc">&#9670;&#160;</a></span>EV_BACKEND_REGISTER_WITH_CODE()</h2>
+<a id="aac05c1fa5bc8bf6f6b7320e46e1c7008" name="aac05c1fa5bc8bf6f6b7320e46e1c7008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac05c1fa5bc8bf6f6b7320e46e1c7008">&#9670;&#160;</a></span>EV_BACKEND_REGISTER_WITH_CODE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +176,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">{ <a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-thumbnails_8h.html#a1daca9dd45000cd0a0da637838cbbe56">EV_TYPE_DOCUMENT_THUMBNAILS</a>, epub_document_document_thumbnails_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-find_8h.html#aebf3e715ac7030ff64806c376656f4e1">EV_TYPE_DOCUMENT_FIND</a>, epub_document_document_find_iface_init);<a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-links_8h.html#a8226b2f0495b23504db742c03c7577f0">EV_TYPE_DOCUMENT_LINKS</a>, epub_document_document_links_iface_init);}&#160;</td>
+          <td class="paramtype">{ <a class="el" href="ev-document_8h.html#ac950b2f5d3c3d492ececb8b55784e452">EV_BACKEND_IMPLEMENT_INTERFACE</a>(<a class="el" href="ev-document-links_8h.html#a8226b2f0495b23504db742c03c7577f0">EV_TYPE_DOCUMENT_LINKS</a>, epub_document_document_links_iface_init);}&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -273,7 +187,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="ev-document_8h_source.html#l00232">EV_BACKEND_IMPLEMENT_INTERFACE</a>, <a class="el" href="ev-document-find_8h_source.html#l00036">EV_TYPE_DOCUMENT_FIND</a>, <a class="el" href="ev-document-links_8h_source.html#l00041">EV_TYPE_DOCUMENT_LINKS</a>, and <a class="el" href="ev-document-thumbnails_8h_source.html#l00033">EV_TYPE_DOCUMENT_THUMBNAILS</a>.</p>
+<p class="reference">References <a class="el" href="ev-document_8h_source.html#l00238">EV_BACKEND_IMPLEMENT_INTERFACE</a>, and <a class="el" href="ev-document-links_8h_source.html#l00041">EV_TYPE_DOCUMENT_LINKS</a>.</p>
 
 </div>
 </div>

@@ -181,7 +181,7 @@ $(document).ready(function(){initNavTree('test-ev-archive_8c_source.html',''); i
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">while</span> (1) {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        gboolean is_encrypted;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        gint64 <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        gint64 size;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> (!<a class="code hl_function" href="ev-archive_8c.html#a40c235823210fa15c9bbc3bf06a7e1f6">ev_archive_read_next_header</a> (ar, &amp;<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)) {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('test-ev-archive_8c_source.html',''); i
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a> = <a class="code hl_function" href="ev-archive_8c.html#a601fc7d04a2c373ebfb2a6a252d56634">ev_archive_get_entry_pathname</a> (ar);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        is_encrypted = <a class="code hl_function" href="ev-archive_8c.html#aba3bd860fc07b112400a8f504d7b9a98">ev_archive_get_entry_is_encrypted</a> (ar);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = <a class="code hl_function" href="ev-archive_8c.html#a0f7da4ed11a7ea381e27a526e88a4c30">ev_archive_get_entry_size</a> (ar);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        size = <a class="code hl_function" href="ev-archive_8c.html#a0f7da4ed11a7ea381e27a526e88a4c30">ev_archive_get_entry_size</a> (ar);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">if</span> (!printed_header) {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            g_print (<span class="stringliteral">&quot;P\tSIZE\tNAME\n&quot;</span>);</div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('test-ev-archive_8c_source.html',''); i
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        g_print (<span class="stringliteral">&quot;%c\t%&quot;</span>G_GINT64_FORMAT<span class="stringliteral">&quot;\t%s\n&quot;</span>,</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>             is_encrypted ? <span class="charliteral">&#39;P&#39;</span> : <span class="charliteral">&#39; &#39;</span>,</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>             <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>             size, <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>);</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_function" href="ev-archive_8c.html#a92b02ca5d81d79c9a98e8b3316182f3e">ev_archive_reset</a> (ar);</div>
@@ -230,7 +230,6 @@ $(document).ready(function(){initNavTree('test-ev-archive_8c_source.html',''); i
 <div class="ttc" id="aev-archive_8c_html_aee8cff562977cbb36886578e71b7b80f"><div class="ttname"><a href="ev-archive_8c.html#aee8cff562977cbb36886578e71b7b80f">ev_archive_new</a></div><div class="ttdeci">EvArchive * ev_archive_new(void)</div><div class="ttdef"><b>Definition</b> <a href="ev-archive_8c_source.html#l00068">ev-archive.c:68</a></div></div>
 <div class="ttc" id="aev-archive_8h_html"><div class="ttname"><a href="ev-archive_8h.html">ev-archive.h</a></div></div>
 <div class="ttc" id="aev-archive_8h_html_a91d4702afa755d52fcac7862cfca6314"><div class="ttname"><a href="ev-archive_8h.html#a91d4702afa755d52fcac7862cfca6314">EvArchiveType</a></div><div class="ttdeci">EvArchiveType</div><div class="ttdef"><b>Definition</b> <a href="ev-archive_8h_source.html#l00035">ev-archive.h:35</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="atestboxes_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="testboxes_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition</b> <a href="testboxes_8c_source.html#l01402">testboxes.c:1402</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

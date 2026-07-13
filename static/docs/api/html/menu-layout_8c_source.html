@@ -2430,7 +2430,7 @@ $(document).ready(function(){initNavTree('menu-layout_8c_source.html',''); initR
 <div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span> </div>
 <div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span><a class="code hl_typedef" href="menu-layout_8h.html#a499eecb0a377bbbf2aa604675788ecbc">MenuLayoutNode</a> *</div>
 <div class="foldopen" id="foldopen02262" data-start="{" data-end="}">
-<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"><a class="line" href="menu-layout_8c.html#aa0082492027d9ca9db3a29d49c019af0"> 2262</a></span><a class="code hl_function" href="menu-layout_8c.html#aa0082492027d9ca9db3a29d49c019af0">menu_layout_load</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>  *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"><a class="line" href="menu-layout_8c.html#aa0082492027d9ca9db3a29d49c019af0"> 2262</a></span><a class="code hl_function" href="menu-layout_8c.html#aa0082492027d9ca9db3a29d49c019af0">menu_layout_load</a> (<span class="keyword">const</span> <span class="keywordtype">char</span>  *filename,</div>
 <div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span>                  <span class="keyword">const</span> <span class="keywordtype">char</span>  *non_prefixed_basename,</div>
 <div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>                  GError     **err)</div>
 <div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span>{</div>
@@ -2452,15 +2452,15 @@ $(document).ready(function(){initNavTree('menu-layout_8c_source.html',''); initR
 <div class="line"><a id="l02281" name="l02281"></a><span class="lineno"> 2281</span> </div>
 <div class="line"><a id="l02282" name="l02282"></a><span class="lineno"> 2282</span>  main_context = g_main_context_get_thread_default ();</div>
 <div class="line"><a id="l02283" name="l02283"></a><span class="lineno"> 2283</span> </div>
-<div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span>  menu_verbose (<span class="stringliteral">&quot;Loading \&quot;%s\&quot; from disk\n&quot;</span>, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02284" name="l02284"></a><span class="lineno"> 2284</span>  menu_verbose (<span class="stringliteral">&quot;Loading \&quot;%s\&quot; from disk\n&quot;</span>, filename);</div>
 <div class="line"><a id="l02285" name="l02285"></a><span class="lineno"> 2285</span> </div>
-<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>  <span class="keywordflow">if</span> (!g_file_get_contents (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l02286" name="l02286"></a><span class="lineno"> 2286</span>  <span class="keywordflow">if</span> (!g_file_get_contents (filename,</div>
 <div class="line"><a id="l02287" name="l02287"></a><span class="lineno"> 2287</span>                            &amp;text,</div>
 <div class="line"><a id="l02288" name="l02288"></a><span class="lineno"> 2288</span>                            &amp;length,</div>
 <div class="line"><a id="l02289" name="l02289"></a><span class="lineno"> 2289</span>                            err))</div>
 <div class="line"><a id="l02290" name="l02290"></a><span class="lineno"> 2290</span>    {</div>
 <div class="line"><a id="l02291" name="l02291"></a><span class="lineno"> 2291</span>      menu_verbose (<span class="stringliteral">&quot;Failed to load \&quot;%s\&quot;\n&quot;</span>,</div>
-<div class="line"><a id="l02292" name="l02292"></a><span class="lineno"> 2292</span>                    <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02292" name="l02292"></a><span class="lineno"> 2292</span>                    filename);</div>
 <div class="line"><a id="l02293" name="l02293"></a><span class="lineno"> 2293</span>      <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l02294" name="l02294"></a><span class="lineno"> 2294</span>    }</div>
 <div class="line"><a id="l02295" name="l02295"></a><span class="lineno"> 2295</span> </div>
@@ -2470,13 +2470,13 @@ $(document).ready(function(){initNavTree('menu-layout_8c_source.html',''); initR
 <div class="line"><a id="l02299" name="l02299"></a><span class="lineno"> 2299</span> </div>
 <div class="line"><a id="l02300" name="l02300"></a><span class="lineno"> 2300</span>  root = (<a class="code hl_typedef" href="menu-layout_8c.html#a47b3081f169f8fcc557143766f478a6f">MenuLayoutNodeRoot</a> *) parser.root;</div>
 <div class="line"><a id="l02301" name="l02301"></a><span class="lineno"> 2301</span> </div>
-<div class="line"><a id="l02302" name="l02302"></a><span class="lineno"> 2302</span>  root-&gt;basedir = g_path_get_dirname (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02302" name="l02302"></a><span class="lineno"> 2302</span>  root-&gt;basedir = g_path_get_dirname (filename);</div>
 <div class="line"><a id="l02303" name="l02303"></a><span class="lineno"> 2303</span>  menu_verbose (<span class="stringliteral">&quot;Set basedir \&quot;%s\&quot;\n&quot;</span>, root-&gt;basedir);</div>
 <div class="line"><a id="l02304" name="l02304"></a><span class="lineno"> 2304</span> </div>
 <div class="line"><a id="l02305" name="l02305"></a><span class="lineno"> 2305</span>  <span class="keywordflow">if</span> (non_prefixed_basename)</div>
 <div class="line"><a id="l02306" name="l02306"></a><span class="lineno"> 2306</span>    s = g_strdup (non_prefixed_basename);</div>
 <div class="line"><a id="l02307" name="l02307"></a><span class="lineno"> 2307</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span>    s = g_path_get_basename (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span>    s = g_path_get_basename (filename);</div>
 <div class="line"><a id="l02309" name="l02309"></a><span class="lineno"> 2309</span>  str = g_string_new (s);</div>
 <div class="line"><a id="l02310" name="l02310"></a><span class="lineno"> 2310</span>  <span class="keywordflow">if</span> (g_str_has_suffix (str-&gt;str, <span class="stringliteral">&quot;.menu&quot;</span>))</div>
 <div class="line"><a id="l02311" name="l02311"></a><span class="lineno"> 2311</span>    g_string_truncate (str, str-&gt;len - strlen (<span class="stringliteral">&quot;.menu&quot;</span>));</div>
@@ -2509,7 +2509,7 @@ $(document).ready(function(){initNavTree('menu-layout_8c_source.html',''); initR
 <div class="line"><a id="l02338" name="l02338"></a><span class="lineno"> 2338</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</div>
 <div class="line"><a id="l02339" name="l02339"></a><span class="lineno"> 2339</span>    {</div>
 <div class="line"><a id="l02340" name="l02340"></a><span class="lineno"> 2340</span>      menu_verbose (<span class="stringliteral">&quot;Error \&quot;%s\&quot; loading \&quot;%s\&quot;\n&quot;</span>,</div>
-<div class="line"><a id="l02341" name="l02341"></a><span class="lineno"> 2341</span>                    <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message, <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02341" name="l02341"></a><span class="lineno"> 2341</span>                    <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>-&gt;message, filename);</div>
 <div class="line"><a id="l02342" name="l02342"></a><span class="lineno"> 2342</span>      g_propagate_error (err, <a class="code hl_variable" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>);</div>
 <div class="line"><a id="l02343" name="l02343"></a><span class="lineno"> 2343</span>    }</div>
 <div class="line"><a id="l02344" name="l02344"></a><span class="lineno"> 2344</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (has_child_of_type (parser.root, <a class="code hl_enumvalue" href="menu-layout_8h.html#a3afbdb00f02af46c3784c041cc291a03a82ad7536dce093d9790fc2e1ce6b4fa9">MENU_LAYOUT_NODE_MENU</a>))</div>
@@ -2523,7 +2523,7 @@ $(document).ready(function(){initNavTree('menu-layout_8c_source.html',''); initR
 <div class="line"><a id="l02352" name="l02352"></a><span class="lineno"> 2352</span>      menu_verbose (<span class="stringliteral">&quot;Did not have a root element in file\n&quot;</span>);</div>
 <div class="line"><a id="l02353" name="l02353"></a><span class="lineno"> 2353</span>      g_set_error (err, G_MARKUP_ERROR, G_MARKUP_ERROR_PARSE,</div>
 <div class="line"><a id="l02354" name="l02354"></a><span class="lineno"> 2354</span>                   <span class="stringliteral">&quot;Menu file %s did not contain a root &lt;Menu&gt; element&quot;</span>,</div>
-<div class="line"><a id="l02355" name="l02355"></a><span class="lineno"> 2355</span>                   <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l02355" name="l02355"></a><span class="lineno"> 2355</span>                   filename);</div>
 <div class="line"><a id="l02356" name="l02356"></a><span class="lineno"> 2356</span>    }</div>
 <div class="line"><a id="l02357" name="l02357"></a><span class="lineno"> 2357</span> </div>
 <div class="line"><a id="l02358" name="l02358"></a><span class="lineno"> 2358</span>  menu_parser_free (&amp;parser);</div>
@@ -2551,7 +2551,6 @@ $(document).ready(function(){initNavTree('menu-layout_8c_source.html',''); initR
 <div class="ttc" id="aentry-directories_8h_html_aa9f0d45c1511e2b1a110d8d4b96923e8"><div class="ttname"><a href="entry-directories_8h.html#aa9f0d45c1511e2b1a110d8d4b96923e8">EntryDirectory</a></div><div class="ttdeci">struct EntryDirectory EntryDirectory</div><div class="ttdef"><b>Definition</b> <a href="entry-directories_8h_source.html#l00029">entry-directories.h:29</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amenu-layout_8c_html_a0a3286cecd266bd086f2d8bee2ba5101"><div class="ttname"><a href="menu-layout_8c.html#a0a3286cecd266bd086f2d8bee2ba5101">RETURN_IF_HAS_ENTRY_DIRS</a></div><div class="ttdeci">#define RETURN_IF_HAS_ENTRY_DIRS(node)</div><div class="ttdef"><b>Definition</b> <a href="menu-layout_8c_source.html#l00395">menu-layout.c:395</a></div></div>
 <div class="ttc" id="amenu-layout_8c_html_a0ae494d6965ead90174bb8bb90242ab5"><div class="ttname"><a href="menu-layout_8c.html#a0ae494d6965ead90174bb8bb90242ab5">menu_layout_node_merge_file_get_type</a></div><div class="ttdeci">MenuMergeFileType menu_layout_node_merge_file_get_type(MenuLayoutNode *node)</div><div class="ttdef"><b>Definition</b> <a href="menu-layout_8c_source.html#l00847">menu-layout.c:847</a></div></div>

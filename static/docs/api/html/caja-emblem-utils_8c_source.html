@@ -283,17 +283,17 @@ $(document).ready(function(){initNavTree('caja-emblem-utils_8c_source.html','');
 <div class="foldopen" id="foldopen00173" data-start="{" data-end="}">
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno"><a class="line" href="caja-emblem-utils_8c.html#aa35554350c8c11ea818f7189417f2934">  173</a></span><a class="code hl_function" href="caja-emblem-utils_8c.html#aa35554350c8c11ea818f7189417f2934">caja_emblem_load_pixbuf_for_emblem</a> (GFile *emblem)</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    GInputStream *<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    GInputStream *stream;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    GdkPixbuf *pixbuf;</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    GdkPixbuf *scaled;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a> = (GInputStream *) g_file_read (emblem, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">if</span> (!<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    stream = (GInputStream *) g_file_read (emblem, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordflow">if</span> (!stream)</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    {</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    pixbuf = <a class="code hl_function" href="eel-gdk-pixbuf-extensions_8c.html#a91875b7ebf58d5e59bb907d93423657f">eel_gdk_pixbuf_load_from_stream</a> (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    pixbuf = <a class="code hl_function" href="eel-gdk-pixbuf-extensions_8c.html#a91875b7ebf58d5e59bb907d93423657f">eel_gdk_pixbuf_load_from_stream</a> (stream);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    g_return_val_if_fail (pixbuf != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    scaled = <a class="code hl_function" href="eel-gdk-pixbuf-extensions_8c.html#a198a43c875cac573de04f20e47b4cfaa">eel_gdk_pixbuf_scale_down_to_fit</a> (pixbuf,</div>
@@ -301,7 +301,7 @@ $(document).ready(function(){initNavTree('caja-emblem-utils_8c_source.html','');
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>             <a class="code hl_define" href="caja-icon-info_8h.html#ac1f868e3316feb412c48d58c253d5a72">CAJA_ICON_SIZE_STANDARD</a>);</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    g_object_unref (pixbuf);</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    g_object_unref (<a class="code hl_typedef" href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a>);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    g_object_unref (stream);</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">return</span> scaled;</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}</div>
@@ -672,7 +672,6 @@ $(document).ready(function(){initNavTree('caja-emblem-utils_8c_source.html','');
 <div class="ttc" id="aeel-stock-dialogs_8c_html_a4402e4fdac19aacdb83dec0ff3f036d0"><div class="ttname"><a href="eel-stock-dialogs_8c.html#a4402e4fdac19aacdb83dec0ff3f036d0">eel_show_error_dialog</a></div><div class="ttdeci">GtkDialog * eel_show_error_dialog(const char *primary_text, const char *secondary_text, GtkWindow *parent)</div><div class="ttdef"><b>Definition</b> <a href="eel-stock-dialogs_8c_source.html#l00578">eel-stock-dialogs.c:578</a></div></div>
 <div class="ttc" id="aeel-stock-dialogs_8h_html"><div class="ttname"><a href="eel-stock-dialogs_8h.html">eel-stock-dialogs.h</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a4ed0a20697a8c37f8af699a8ec6d76a8"><div class="ttname"><a href="ioapi_8h.html#a4ed0a20697a8c37f8af699a8ec6d76a8">stream</a></div><div class="ttdeci">voidpf stream</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

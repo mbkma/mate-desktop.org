@@ -56,9 +56,8 @@ var searchData=
   ['binding_53',['binding',['../mate-indicator-applet_2src_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e',1,'Binding:&#160;tomboykeybinder.c'],['../mate-netbook_2maximus_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e',1,'Binding:&#160;tomboykeybinder.c']]],
   ['bmunit_54',['BmUnit',['../bitmap_8h.html#a1ffa76a2f167a079c19e47d7fdf05802',1,'bitmap.h']]],
   ['border_5foutline_5ft_55',['border_outline_t',['../tabpopup_8h.html#a80b6913fba9e0d59e0697b5d2a9278c1',1,'tabpopup.h']]],
-  ['buf_56',['buf',['../ioapi_8h.html#a8ad8a13c88886b9f623034ff88570adb',1,'ioapi.h']]],
-  ['buttondata_57',['ButtonData',['../caja-pathbar_8c.html#a32b792f783a807c608cf98f0ff6a33ab',1,'caja-pathbar.c']]],
-  ['buttonwidget_58',['ButtonWidget',['../button-widget_8h.html#ab194f61d99ee3fae3bdffe0175fdf27b',1,'button-widget.h']]],
-  ['buttonwidgetclass_59',['ButtonWidgetClass',['../button-widget_8h.html#adac7826a361127d0aadaee798528159f',1,'button-widget.h']]],
-  ['buttonwidgetprivate_60',['ButtonWidgetPrivate',['../button-widget_8h.html#aa99e549e3b0bb6c2f61ad9981feca7a5',1,'button-widget.h']]]
+  ['buttondata_56',['ButtonData',['../caja-pathbar_8c.html#a32b792f783a807c608cf98f0ff6a33ab',1,'caja-pathbar.c']]],
+  ['buttonwidget_57',['ButtonWidget',['../button-widget_8h.html#ab194f61d99ee3fae3bdffe0175fdf27b',1,'button-widget.h']]],
+  ['buttonwidgetclass_58',['ButtonWidgetClass',['../button-widget_8h.html#adac7826a361127d0aadaee798528159f',1,'button-widget.h']]],
+  ['buttonwidgetprivate_59',['ButtonWidgetPrivate',['../button-widget_8h.html#aa99e549e3b0bb6c2f61ad9981feca7a5',1,'button-widget.h']]]
 ];

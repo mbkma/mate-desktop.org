@@ -570,7 +570,7 @@ $(document).ready(function(){initNavTree('clock-location_8c_source.html',''); in
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>{</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        ClockLocationPrivate *priv = clock_location_get_instance_private (loc);</div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>        glong sys_timezone, local_timezone;</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        glong <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>        glong offset;</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>        time_t t;</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        <span class="keyword">struct </span>tm *tm;</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span> </div>
@@ -592,11 +592,11 @@ $(document).ready(function(){initNavTree('clock-location_8c_source.html',''); in
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span>                local_timezone -= 3600;</div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span>        }</div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span> </div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a> = local_timezone - sys_timezone;</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>        offset = local_timezone - sys_timezone;</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>        clock_location_unset_tz (loc);</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
-<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <span class="keywordflow">return</span> <a class="code hl_typedef" href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a>;</div>
+<div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>        <span class="keywordflow">return</span> offset;</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>}</div>
 </div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span> </div>
@@ -647,7 +647,7 @@ $(document).ready(function(){initNavTree('clock-location_8c_source.html',''); in
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>                             GDestroyNotify destroy)</div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>{</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>        ClockLocationPrivate *priv = clock_location_get_instance_private (loc);</div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        gchar *<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>;</div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>        gchar *filename;</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>        MakeCurrentData *mcdata;</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span> </div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>        <span class="keywordflow">if</span> (loc == current_location) {</div>
@@ -679,12 +679,12 @@ $(document).ready(function(){initNavTree('clock-location_8c_source.html',''); in
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>        mcdata-&gt;data = <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>;</div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        mcdata-&gt;destroy = destroy;</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span> </div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        <a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a> = g_build_filename (<a class="code hl_define" href="mate-panel_2applets_2clock_2system-timezone_8h.html#ae731ee880a50bae04196bd8ca81af249">SYSTEM_ZONEINFODIR</a>, priv-&gt;timezone, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        <a class="code hl_function" href="set-timezone_8c.html#afbde81debf8715e62919c25ea7cb63c4">set_system_timezone_async</a> (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>,</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        filename = g_build_filename (<a class="code hl_define" href="mate-panel_2applets_2clock_2system-timezone_8h.html#ae731ee880a50bae04196bd8ca81af249">SYSTEM_ZONEINFODIR</a>, priv-&gt;timezone, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        <a class="code hl_function" href="set-timezone_8c.html#afbde81debf8715e62919c25ea7cb63c4">set_system_timezone_async</a> (filename,</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>                                   (GFunc)make_current_cb,</div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>                                   mcdata,</div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>                                   free_make_current_data);</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        g_free (<a class="code hl_typedef" href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a>);</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        g_free (filename);</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>}</div>
 </div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
@@ -915,8 +915,6 @@ $(document).ready(function(){initNavTree('clock-location_8c_source.html',''); in
 <div class="ttc" id="aclock-location_8h_html_a88200e6ae34d364a1bbd297f1439547d"><div class="ttname"><a href="clock-location_8h.html#a88200e6ae34d364a1bbd297f1439547d">CLOCK_LOCATION_TYPE</a></div><div class="ttdeci">#define CLOCK_LOCATION_TYPE</div><div class="ttdef"><b>Definition</b> <a href="clock-location_8h_source.html#l00013">clock-location.h:13</a></div></div>
 <div class="ttc" id="aclock-location_8h_html_afdc78b103689d8347cf000caa8119980"><div class="ttname"><a href="clock-location_8h.html#afdc78b103689d8347cf000caa8119980">CLOCK_LOCATION</a></div><div class="ttdeci">#define CLOCK_LOCATION(o)</div><div class="ttdef"><b>Definition</b> <a href="clock-location_8h_source.html#l00014">clock-location.h:14</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a2c8e3f833d9ea6f106973ebe4391bf0f"><div class="ttname"><a href="ioapi_8h.html#a2c8e3f833d9ea6f106973ebe4391bf0f">filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00132">ioapi.h:132</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a601c4660e8a1a14a1b87fe387e934d19"><div class="ttname"><a href="ioapi_8h.html#a601c4660e8a1a14a1b87fe387e934d19">offset</a></div><div class="ttdeci">voidpf uLong offset</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00139">ioapi.h:139</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amate-panel_2applets_2clock_2system-timezone_8c_html_a1b6e0bca1e3d87f0fe2a2e128a967452"><div class="ttname"><a href="mate-panel_2applets_2clock_2system-timezone_8c.html#a1b6e0bca1e3d87f0fe2a2e128a967452">system_timezone_get_env</a></div><div class="ttdeci">const char * system_timezone_get_env(SystemTimezone *systz)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel_2applets_2clock_2system-timezone_8c_source.html#l00124">mate-panel/applets/clock/system-timezone.c:124</a></div></div>
 <div class="ttc" id="amate-panel_2applets_2clock_2system-timezone_8c_html_aca64b7c9e0a1d170eee4529eb53bed27"><div class="ttname"><a href="mate-panel_2applets_2clock_2system-timezone_8c.html#aca64b7c9e0a1d170eee4529eb53bed27">system_timezone_new</a></div><div class="ttdeci">SystemTimezone * system_timezone_new(void)</div><div class="ttdef"><b>Definition</b> <a href="mate-panel_2applets_2clock_2system-timezone_8c_source.html#l00107">mate-panel/applets/clock/system-timezone.c:107</a></div></div>

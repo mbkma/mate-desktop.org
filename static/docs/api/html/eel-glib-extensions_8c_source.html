@@ -384,15 +384,15 @@ $(document).ready(function(){initNavTree('eel-glib-extensions_8c_source.html',''
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>free_hash_tables_at_exit (<span class="keywordtype">void</span>)</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>{</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    GList *p;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    guint <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    guint size;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    HashTableToFree *hash_table_to_free = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span> </div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">for</span> (p = hash_tables_to_free_at_exit; p != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; p = p-&gt;next)</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    {</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>        hash_table_to_free = p-&gt;data;</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_hash_table_size (hash_table_to_free-&gt;hash_table);</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="keywordflow">if</span> (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> != 0)</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>        size = g_hash_table_size (hash_table_to_free-&gt;hash_table);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>        <span class="keywordflow">if</span> (size != 0)</div>
 <div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        {</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <span class="keywordflow">if</span> (hash_table_to_free-&gt;keys_known_to_be_strings)</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>            {</div>
@@ -402,8 +402,8 @@ $(document).ready(function(){initNavTree('eel-glib-extensions_8c_source.html',''
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                                      <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>            }</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>            g_warning (<span class="stringliteral">&quot;\&quot;%s\&quot; hash table still has %u element%s at quit time%s&quot;</span>,</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                       hash_table_to_free-&gt;display_name, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>,</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                       <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> == 1 ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;s&quot;</span>,</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                       hash_table_to_free-&gt;display_name, size,</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                       size == 1 ? <span class="stringliteral">&quot;&quot;</span> : <span class="stringliteral">&quot;s&quot;</span>,</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                       hash_table_to_free-&gt;keys_known_to_be_strings</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                       ? <span class="stringliteral">&quot; (keys above)&quot;</span> : <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>        }</div>
@@ -864,7 +864,6 @@ $(document).ready(function(){initNavTree('eel-glib-extensions_8c_source.html',''
 <div class="ttc" id="aeel-string_8c_html_a9f6649e0ec02ebca28fb8bcc353d10e7"><div class="ttname"><a href="eel-string_8c.html#a9f6649e0ec02ebca28fb8bcc353d10e7">eel_strcmp</a></div><div class="ttdeci">int eel_strcmp(const char *string_a, const char *string_b)</div><div class="ttdef"><b>Definition</b> <a href="eel-string_8c_source.html#l00051">eel-string.c:51</a></div></div>
 <div class="ttc" id="aeel-string_8h_html"><div class="ttname"><a href="eel-string_8h.html">eel-string.h</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>
 <div class="ttc" id="alibsensors-plugin_8c_html_a8b923377fd8e81833671103a346806eb"><div class="ttname"><a href="libsensors-plugin_8c.html#a8b923377fd8e81833671103a346806eb">hash_table</a></div><div class="ttdeci">GHashTable * hash_table</div><div class="ttdef"><b>Definition</b> <a href="libsensors-plugin_8c_source.html#l00044">libsensors-plugin.c:44</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>

@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('mateweather-dialog_8c_source.html','')
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    gchar          *family;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    gchar          *weight;</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keyword">const</span> gchar    *style;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    gchar          *<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    gchar          *size;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    family = g_strdup_printf (<span class="stringliteral">&quot;font-family: %s;&quot;</span>, pango_font_description_get_family (font));</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
@@ -255,14 +255,14 @@ $(document).ready(function(){initNavTree('mateweather-dialog_8c_source.html','')
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        style = <span class="stringliteral">&quot;font-style: oblique;&quot;</span>;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a> = g_strdup_printf (<span class="stringliteral">&quot;font-size: %d%s;&quot;</span>,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    size = g_strdup_printf (<span class="stringliteral">&quot;font-size: %d%s;&quot;</span>,</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                            pango_font_description_get_size (font) / PANGO_SCALE,</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                            pango_font_description_get_size_is_absolute (font) ? <span class="stringliteral">&quot;px&quot;</span> : <span class="stringliteral">&quot;pt&quot;</span>);</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">if</span> (!provider_added)</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        provider = gtk_css_provider_new ();</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    gtk_widget_set_name(GTK_WIDGET(widget), <span class="stringliteral">&quot;MateWeatherAppletTextView&quot;</span>);</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    css = g_strdup_printf (<span class="stringliteral">&quot;#MateWeatherAppletTextView { %s %s %s %s }&quot;</span>, family, weight, style, <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    css = g_strdup_printf (<span class="stringliteral">&quot;#MateWeatherAppletTextView { %s %s %s %s }&quot;</span>, family, weight, style, size);</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    gtk_css_provider_load_from_data (provider, css, -1, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keywordflow">if</span> (!provider_added) {</div>
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('mateweather-dialog_8c_source.html','')
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    g_free (css);</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    g_free (family);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    g_free (weight);</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    g_free (<a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    g_free (size);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>}</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keywordtype">void</span></div>
@@ -474,7 +474,6 @@ $(document).ready(function(){initNavTree('mateweather-dialog_8c_source.html','')
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>
 <div class="ttc" id="amateweather-applet_8c_html_a7278891b8dcdfb2aff896cc896674ce1"><div class="ttname"><a href="mateweather-applet_8c.html#a7278891b8dcdfb2aff896cc896674ce1">mateweather_update</a></div><div class="ttdeci">void mateweather_update(MateWeatherApplet *gw_applet)</div><div class="ttdef"><b>Definition</b> <a href="mateweather-applet_8c_source.html#l00527">mateweather-applet.c:527</a></div></div>
 <div class="ttc" id="amateweather-applet_8h_html"><div class="ttname"><a href="mateweather-applet_8h.html">mateweather-applet.h</a></div></div>

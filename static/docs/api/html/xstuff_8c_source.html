@@ -132,8 +132,8 @@ $(document).ready(function(){initNavTree('xstuff_8c_source.html',''); initResiza
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="panel-enums_8h.html">panel-enums.h</a>&quot;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="xstuff_8h.html">xstuff.h</a>&quot;</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">static</span> <a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> (* xstuff_old_xio_error_handler) (Display *) = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">static</span> <a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a> (* xstuff_old_x_error_handler)   (Display *, XErrorEvent *);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">static</span> int (* xstuff_old_xio_error_handler) (Display *) = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">static</span> int (* xstuff_old_x_error_handler)   (Display *, XErrorEvent *);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">static</span> gboolean xstuff_display_is_dead = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">/* Zoom animation */</span></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('xstuff_8c_source.html',''); initResiza
 </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">int</span> <a class="code hl_typedef" href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">int</span> size;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">int</span> size_start;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> size_end;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_enumeration" href="panel-enums-gsettings_8h.html#ad2d5314f884b12b1e18000ef8e96c1ea">PanelOrientation</a> orientation;</div>
@@ -377,10 +377,10 @@ $(document).ready(function(){initNavTree('xstuff_8c_source.html',''); initResiza
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        cy[j] = (float)y;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        cw[j] = (float)w;</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        ch[j] = (float)h;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        cxi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)cx[j];</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        cyi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)cy[j];</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        cwi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)cw[j];</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        chi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)ch[j];</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        cxi[j] = (int)cx[j];</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        cyi[j] = (int)cy[j];</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        cwi[j] = (int)cw[j];</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        chi[j] = (int)ch[j];</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    }</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    XGrabServer(dpy);</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordflow">for</span> (i=0; i&lt;steps; i++) {</div>
@@ -413,10 +413,10 @@ $(document).ready(function(){initNavTree('xstuff_8c_source.html',''); initResiza
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                cw[j]+=wstep;</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                ch[j]+=hstep;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                cxi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)cx[j];</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                cyi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)cy[j];</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                cwi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)cw[j];</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                chi[j] = (<a class="code hl_function" href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a>)ch[j];</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                cxi[j] = (int)cx[j];</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                cyi[j] = (int)cy[j];</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                cwi[j] = (int)cw[j];</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                chi[j] = (int)ch[j];</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            }</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        }</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
@@ -540,8 +540,6 @@ $(document).ready(function(){initNavTree('xstuff_8c_source.html',''); initResiza
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="aclock_8c_html_a59ad01704f8b88ba9fac520818f2b921"><div class="ttname"><a href="clock_8c.html#a59ad01704f8b88ba9fac520818f2b921">GDK_IS_X11_DISPLAY</a></div><div class="ttdeci">#define GDK_IS_X11_DISPLAY(object)</div><div class="ttdef"><b>Definition</b> <a href="clock_8c_source.html#l00065">clock.c:65</a></div></div>
 <div class="ttc" id="ags-idle-monitor_8h_html_a5da1a635c01e05e1d7ecd668f58c7ac0"><div class="ttname"><a href="gs-idle-monitor_8h.html#a5da1a635c01e05e1d7ecd668f58c7ac0">user_data</a></div><div class="ttdeci">guint gboolean gpointer user_data</div><div class="ttdef"><b>Definition</b> <a href="gs-idle-monitor_8h_source.html#l00037">gs-idle-monitor.h:37</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a014d89bd76f74ef3a29c8f04b473eb76"><div class="ttname"><a href="ioapi_8h.html#a014d89bd76f74ef3a29c8f04b473eb76">size</a></div><div class="ttdeci">voidpf void uLong size</div><div class="ttdef"><b>Definition</b> <a href="ioapi_8h_source.html#l00133">ioapi.h:133</a></div></div>
-<div class="ttc" id="aioapi_8h_html_a787fa3cf048117ba7123753c1e74fcd6"><div class="ttname"><a href="ioapi_8h.html#a787fa3cf048117ba7123753c1e74fcd6">int</a></div><div class="ttdeci">typedef int(ZCALLBACK *close_file_func) OF((voidpf opaque</div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00262">jpegint-8a.h:262</a></div></div>
 <div class="ttc" id="ama-command_8h_html_ac36b8f6de2d241028f9813d37e59e11d"><div class="ttname"><a href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a></div><div class="ttdeci">GError ** error</div><div class="ttdef"><b>Definition</b> <a href="ma-command_8h_source.html#l00030">ma-command.h:30</a></div></div>
 <div class="ttc" id="amdm-signal-handler_8h_html_a10fb496e4431487bd53ab5a192614a0e"><div class="ttname"><a href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a></div><div class="ttdeci">gpointer data</div><div class="ttdef"><b>Definition</b> <a href="mdm-signal-handler_8h_source.html#l00032">mdm-signal-handler.h:32</a></div></div>
