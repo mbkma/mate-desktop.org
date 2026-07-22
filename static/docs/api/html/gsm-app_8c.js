@@ -1,5 +1,6 @@
 var gsm_app_8c =
 [
+    [ "_GSM_APP_RESPAWN_RATELIMIT_SECONDS", "gsm-app_8c.html#a1000336e875e2a5c80ccadc4dddacf68", null ],
     [ "gsm_app_died", "gsm-app_8c.html#ae93b95c9b50f2c6255e8feadde73e06c", null ],
     [ "gsm_app_error_quark", "gsm-app_8c.html#a19ba8bf0054c4cd382d487a8383dbece", null ],
     [ "gsm_app_exited", "gsm-app_8c.html#aeb69313883f60f762e030720a37c6d52", null ],

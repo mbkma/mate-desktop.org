@@ -1,5 +1,6 @@
 var NAVTREEINDEX128 =
 {
+"msd-xrandr-manager_8h.html#a34f18937209dd6d23de6e5f245138af5":[36,0,0,28,1,17,1,2],
 "msd-xrandr-manager_8h.html#a55c43da5b7311f52d9b0758f651a8356":[36,0,0,28,1,17,1,5],
 "msd-xrandr-manager_8h.html#a772a64a6ac61329f31cd51b522319cc8":[36,0,0,28,1,17,1,7],
 "msd-xrandr-manager_8h.html#a800e260c2004ef865341952308cf1871":[36,0,0,28,1,17,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX128 =
 "na-core-utils_8c.html#af21a4445d85be2d71a7ee86cde5676b2":[36,0,0,2,0,2,3,31],
 "na-core-utils_8c_source.html":[36,0,0,2,0,2,3],
 "na-core-utils_8h.html":[36,0,0,2,0,0,1],
-"na-core-utils_8h.html#a047385eb6e5b9fc71fc2d06265b185be":[36,0,0,2,0,0,1,23],
-"na-core-utils_8h.html#a04d7f361f6d9133de37687c148092bec":[36,0,0,2,0,0,1,32]
+"na-core-utils_8h.html#a047385eb6e5b9fc71fc2d06265b185be":[36,0,0,2,0,0,1,23]
 };

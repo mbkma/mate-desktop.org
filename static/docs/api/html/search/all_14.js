@@ -76,7 +76,7 @@ var searchData=
   ['tag_20list_20plugin_73',['Tag List Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2taglist_2README.html',1,'']]],
   ['tag_5fgroups_74',['tag_groups',['../struct__TagList.html#a004aa6ecd05c11f091dd2b949c07d3e6',1,'_TagList']]],
   ['taggroup_75',['TagGroup',['../pluma-taglist-plugin-parser_8h.html#a1199d06819f6fbd870df8567412f3f78',1,'pluma-taglist-plugin-parser.h']]],
-  ['taglist_76',['taglist',['../pluma-taglist-plugin-parser_8c.html#ad9fcb402066e643e239acf648174b5ce',1,'taglist:&#160;pluma-taglist-plugin-parser.c'],['../pluma-taglist-plugin-parser_8h.html#ad9fcb402066e643e239acf648174b5ce',1,'taglist:&#160;pluma-taglist-plugin-parser.c'],['../pluma-taglist-plugin-parser_8h.html#a3079e6c154995483aaf8d491206df95a',1,'TagList:&#160;pluma-taglist-plugin-parser.h']]],
+  ['taglist_76',['taglist',['../pluma-taglist-plugin-parser_8h.html#a3079e6c154995483aaf8d491206df95a',1,'TagList:&#160;pluma-taglist-plugin-parser.h'],['../pluma-taglist-plugin-parser_8c.html#ad9fcb402066e643e239acf648174b5ce',1,'taglist:&#160;pluma-taglist-plugin-parser.c'],['../pluma-taglist-plugin-parser_8h.html#ad9fcb402066e643e239acf648174b5ce',1,'taglist:&#160;pluma-taglist-plugin-parser.c']]],
   ['tags_77',['tags',['../struct__TagGroup.html#ac177e12ea0c8b12c76ef9d4864260a28',1,'_TagGroup']]],
   ['tail_78',['tail',['../structListHead.html#aadb5dcd590c6543d1c665684751bde74',1,'ListHead']]],
   ['take_5ffocus_79',['take_focus',['../struct__MetaWindow.html#ade77159b816868f3f8b7d34c84231482',1,'_MetaWindow']]],

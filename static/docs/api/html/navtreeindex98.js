@@ -1,5 +1,6 @@
 var NAVTREEINDEX98 =
 {
+"mate-calc_8c_source.html":[36,0,0,13,0,11],
 "mate-client_8c.html":[36,0,0,9,2,12],
 "mate-client_8c.html#a006e5364b8cd44c8cdbcc053c1a9afd6":[36,0,0,9,2,12,25],
 "mate-client_8c.html#a02d382f08864efabf1d800d418118f67":[36,0,0,9,2,12,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX98 =
 "mate-colorseldialog_8c.html#a4307cbac915cca27eb56c67dfde4c878":[36,0,0,15,0,9,1],
 "mate-colorseldialog_8c.html#ac5d7c83f9a5d29ce1180f9e99cb6a3c5":[36,0,0,15,0,9,2],
 "mate-colorseldialog_8c_source.html":[36,0,0,15,0,9],
-"mate-colorseldialog_8h.html":[36,0,0,15,0,10],
-"mate-colorseldialog_8h.html#a185bd9bfb60f93b8069e1e7d43a1686a":[36,0,0,15,0,10,4]
+"mate-colorseldialog_8h.html":[36,0,0,15,0,10]
 };

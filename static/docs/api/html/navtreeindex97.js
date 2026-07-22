@@ -1,5 +1,6 @@
 var NAVTREEINDEX97 =
 {
+"mate-applets_2accessx-status_2src_2applet_8h.html#a0650e31627b058b93da6b4645352a338":[36,0,0,12,0,0,1,40],
 "mate-applets_2accessx-status_2src_2applet_8h.html#a0650e31627b058b93da6b4645352a338a3ffe0535b1943b76df9116369025935d":[36,0,0,12,0,0,1,40,1],
 "mate-applets_2accessx-status_2src_2applet_8h.html#a0650e31627b058b93da6b4645352a338a9fc04dfbe283f0b5b3c31f7bee3e9459":[36,0,0,12,0,0,1,40,0],
 "mate-applets_2accessx-status_2src_2applet_8h.html#a0650e31627b058b93da6b4645352a338ac99bd8765da38c93923ba525e599b4f0":[36,0,0,12,0,0,1,40,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX97 =
 "mate-calc_2src_2parser_8h.html#ae1883c43ead94e245aea106c87ddeea6a6c875721051183e6be86f93cabbc41fb":[36,0,0,13,0,43,4,1],
 "mate-calc_2src_2parser_8h_source.html":[36,0,0,13,0,43],
 "mate-calc_8c.html":[36,0,0,13,0,11],
-"mate-calc_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[36,0,0,13,0,11,0],
-"mate-calc_8c_source.html":[36,0,0,13,0,11]
+"mate-calc_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[36,0,0,13,0,11,0]
 };

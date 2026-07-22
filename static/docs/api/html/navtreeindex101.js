@@ -1,5 +1,6 @@
 var NAVTREEINDEX101 =
 {
+"mate-dialog_8h.html#a4f14608707bab8bbff26edfa0574d480":[36,0,0,9,2,21,26],
 "mate-dialog_8h.html#a57a34bdf5d46a27c48543e355525e02f":[36,0,0,9,2,21,36],
 "mate-dialog_8h.html#a65c5016f9400215a02f750631c83edd9":[36,0,0,9,2,21,34],
 "mate-dialog_8h.html#a681e28f7bde4748115144696b452419c":[36,0,0,9,2,21,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX101 =
 "mate-font-picker_8h.html#a1c81fadaaad647f110fbd8a8b821c583":[36,0,0,9,2,33,2],
 "mate-font-picker_8h.html#a227157e22c65936ca2d4d07cc1c1fb82":[36,0,0,9,2,33,5],
 "mate-font-picker_8h.html#a2ff0198c378e6c5e9947608990d5a808":[36,0,0,9,2,33,20],
-"mate-font-picker_8h.html#a4033834a7f346313a57c75f670df025d":[36,0,0,9,2,33,15],
-"mate-font-picker_8h.html#a4066053d1c5cb8167887fc18c6359345":[36,0,0,9,2,33,23]
+"mate-font-picker_8h.html#a4033834a7f346313a57c75f670df025d":[36,0,0,9,2,33,15]
 };

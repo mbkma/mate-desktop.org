@@ -1,5 +1,6 @@
 var NAVTREEINDEX96 =
 {
+"mate-app-helper_8h.html#a73bb87e8d5d2d4eb746b9fe6f41c9df0a23550c5b3facd3af3efc31d237450e56":[36,0,0,9,2,5,82,9],
 "mate-app-helper_8h.html#a73bb87e8d5d2d4eb746b9fe6f41c9df0a2d2c32febba49b08db11a06e4a9f3f51":[36,0,0,9,2,5,82,2],
 "mate-app-helper_8h.html#a73bb87e8d5d2d4eb746b9fe6f41c9df0a46cfb35dc9acb01ffc9c39d3f9aab800":[36,0,0,9,2,5,82,20],
 "mate-app-helper_8h.html#a73bb87e8d5d2d4eb746b9fe6f41c9df0a47cdbd5c9425e14d2521637a918dce20":[36,0,0,9,2,5,82,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX96 =
 "mate-applets_2accessx-status_2src_2applet_8c_source.html":[36,0,0,12,0,0,0],
 "mate-applets_2accessx-status_2src_2applet_8h.html":[36,0,0,12,0,0,1],
 "mate-applets_2accessx-status_2src_2applet_8h.html#a0081e65fca004b6f90f0a3c1972000b7":[36,0,0,12,0,0,1,39],
-"mate-applets_2accessx-status_2src_2applet_8h.html#a0111d6f6e884d8d44df073aaae778ab3":[36,0,0,12,0,0,1,18],
-"mate-applets_2accessx-status_2src_2applet_8h.html#a0650e31627b058b93da6b4645352a338":[36,0,0,12,0,0,1,40]
+"mate-applets_2accessx-status_2src_2applet_8h.html#a0111d6f6e884d8d44df073aaae778ab3":[36,0,0,12,0,0,1,18]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX144 =
 {
+"panel-ditem-editor_8h.html#a88b0c801354994c3fbb25991a4d0a93e":[36,0,0,22,2,38,20],
 "panel-ditem-editor_8h.html#a97fbd97cbfc10250f57a04cc11fb78a6":[36,0,0,22,2,38,13],
 "panel-ditem-editor_8h.html#ab704dacb1c67b4b15e123eb8aa331f95":[36,0,0,22,2,38,10],
 "panel-ditem-editor_8h.html#adb29690b704f9a3f0070405fd6411b02":[36,0,0,22,2,38,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX144 =
 "panel-list_8c_source.html":[36,0,0,22,2,1,16],
 "panel-list_8h.html":[36,0,0,22,2,1,17],
 "panel-list_8h.html#a24a97d51f619b902470abd8318b1f9a5":[36,0,0,22,2,1,17,4],
-"panel-list_8h.html#a2b6a755cae506ef0c6ba44198278371a":[36,0,0,22,2,1,17,2],
-"panel-list_8h.html#a7f9027ef3c3a2b810c010b0bf65212f3":[36,0,0,22,2,1,17,0]
+"panel-list_8h.html#a2b6a755cae506ef0c6ba44198278371a":[36,0,0,22,2,1,17,2]
 };

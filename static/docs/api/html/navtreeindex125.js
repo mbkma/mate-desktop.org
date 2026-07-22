@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"msd-clipboard-manager_8h.html#a4eb595ea02108410d4d1231138366dc4":[36,0,0,28,1,3,3,6],
 "msd-clipboard-manager_8h.html#a6337d81c9f5b256f0337553f3fb4fc8f":[36,0,0,28,1,3,3,3],
 "msd-clipboard-manager_8h.html#a719dd12d06edd5c7ed87c9b7faecb8cc":[36,0,0,28,1,3,3,4],
 "msd-clipboard-manager_8h.html#a73b185009922e159dc01cf3f40a26a62":[36,0,0,28,1,3,3,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "msd-ldsm-dialog_8h.html#a93dcdf10c0b282b9e8446a2998fe2bb6":[36,0,0,28,1,7,7,2],
 "msd-ldsm-dialog_8h.html#aabbcd60b53c8e67b49fed4cab5a78b06":[36,0,0,28,1,7,7,4],
 "msd-ldsm-dialog_8h.html#ab7f1802233758524f06ebfeb8f33cea9":[36,0,0,28,1,7,7,3],
-"msd-ldsm-dialog_8h.html#abdb639458199a9a97a2e5cbc542fe4c9":[36,0,0,28,1,7,7,11],
-"msd-ldsm-dialog_8h.html#abe3fab717ecc30422560521356439deb":[36,0,0,28,1,7,7,8]
+"msd-ldsm-dialog_8h.html#abdb639458199a9a97a2e5cbc542fe4c9":[36,0,0,28,1,7,7,11]
 };

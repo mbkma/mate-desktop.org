@@ -1,5 +1,6 @@
 var NAVTREEINDEX202 =
 {
+"struct__ProgressData.html#a75ddb39185b0db3abe4633191b4a837f":[35,0,900,27],
 "struct__ProgressData.html#a7a2b816a1d1f4ae3451f0ac6a289d833":[35,0,900,22],
 "struct__ProgressData.html#a7f0e4a631340d8c7a740285b79d95370":[35,0,900,15],
 "struct__ProgressData.html#a8175e1c9eb71007be0126b239b77c38e":[35,0,900,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX202 =
 "struct__TerminalScreen.html":[35,0,968],
 "struct__TerminalScreen.html#a4272b4969263112966cb4c2da4241e06":[35,0,968,0],
 "struct__TerminalScreen.html#ac2b48d760d440b9af013eaab45e55d82":[35,0,968,1],
-"struct__TerminalScreenClass.html":[35,0,969],
-"struct__TerminalScreenClass.html#a193a1bddedbde7b72bebfe22e100ac84":[35,0,969,1]
+"struct__TerminalScreenClass.html":[35,0,969]
 };

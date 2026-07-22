@@ -1,5 +1,6 @@
 var NAVTREEINDEX105 =
 {
+"mate-mdi_8h.html#abcace28ce65d71af4446b24eaa514b23":[36,0,0,9,2,58,33],
 "mate-mdi_8h.html#ac05e01a1ae46f8d924b78a222aeeb979":[36,0,0,9,2,58,19],
 "mate-mdi_8h.html#ac6195a21cffe5c09c6288514d2e88fed":[36,0,0,9,2,58,9],
 "mate-mdi_8h.html#ac695257d8bfa3428a5bea1719fd10ee0":[36,0,0,9,2,58,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX105 =
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a3999d374ce03b4d6ecb2ac1ab880999a":[36,0,0,21,0,3,2,0,25],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a3d795103f9690a19cee2e2a0d131febc":[36,0,0,21,0,3,2,0,16],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a4fc401f5fefa61ac5bb5dcf87652e182":[36,0,0,21,0,3,2,0,17],
-"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a6b68069ebc439cba13634885a5189f06":[36,0,0,21,0,3,2,0,12],
-"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a6e4c8444d13d03a0de24581d4bcca15d":[36,0,0,21,0,3,2,0,15]
+"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a6b68069ebc439cba13634885a5189f06":[36,0,0,21,0,3,2,0,12]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX112 =
 {
+"mate-system-monitor_2src_2util_8h.html#a0bef195148ada1ef955a832a69e795f9":[36,0,0,29,0,52,24],
 "mate-system-monitor_2src_2util_8h.html#a1aab589261c61e7a108f077927788bf5":[36,0,0,29,0,52,0],
 "mate-system-monitor_2src_2util_8h.html#a2304262d3532803428bf93ea0abf103e":[36,0,0,29,0,52,10],
 "mate-system-monitor_2src_2util_8h.html#a2579d15cfa2b93939fc0f10b32d3eb49":[36,0,0,29,0,52,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX112 =
 "mate-ui-init_8c_source.html":[36,0,0,9,2,80],
 "mate-ui-init_8h.html":[36,0,0,9,2,81],
 "mate-ui-init_8h.html#a273e233531ce8074b2dee7951a43e042":[36,0,0,9,2,81,2],
-"mate-ui-init_8h.html#a2e44ff0744d4c1c19c886eb8f08fea17":[36,0,0,9,2,81,5],
-"mate-ui-init_8h.html#a3f5a54e0874b4560fbe695f0da2fa6de":[36,0,0,9,2,81,3]
+"mate-ui-init_8h.html#a2e44ff0744d4c1c19c886eb8f08fea17":[36,0,0,9,2,81,5]
 };

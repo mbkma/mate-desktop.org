@@ -1,5 +1,6 @@
 var NAVTREEINDEX109 =
 {
+"mate-rr_8h.html#ab700826c6515a59d90c95f7698049e4d":[36,0,0,15,0,34,9],
 "mate-rr_8h.html#aba200153cde427f00fc948445597326e":[36,0,0,15,0,34,62],
 "mate-rr_8h.html#abda04ad87ba8b05865bf7ceb6fdea673":[36,0,0,15,0,34,32],
 "mate-rr_8h.html#abe150f64d714426d7d5f74fc7bd390b1":[36,0,0,15,0,34,61],
@@ -248,6 +249,5 @@ var NAVTREEINDEX109 =
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aab10f6459deae3e8f4c043a710671a5b":[36,0,0,28,1,3,7,5],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aabd5af7e12fea78d173cd1897511eb46":[36,0,0,28,1,3,7,9],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aba99e6b3aa1ee7e1ec9fd5d51e9561e7":[36,0,0,28,1,3,7,10],
-"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#ad5f277a89f93a2d7d6b457f73c93bc33":[36,0,0,28,1,3,7,0],
-"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aefec4990e620c78df098ae87e5b7a4b0":[36,0,0,28,1,3,7,2]
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#ad5f277a89f93a2d7d6b457f73c93bc33":[36,0,0,28,1,3,7,0]
 };

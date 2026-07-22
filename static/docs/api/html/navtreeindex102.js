@@ -1,5 +1,6 @@
 var NAVTREEINDEX102 =
 {
+"mate-font-picker_8h.html#a4066053d1c5cb8167887fc18c6359345":[36,0,0,9,2,33,23],
 "mate-font-picker_8h.html#a46af8c1a6d08bf7a4e7a1bdf6183477a":[36,0,0,9,2,33,8],
 "mate-font-picker_8h.html#a5033e417a354c51e475240b7ebf021e4":[36,0,0,9,2,33,11],
 "mate-font-picker_8h.html#a5033e417a354c51e475240b7ebf021e4a0d6699bafa3e6f5948922ae458cf3acb":[36,0,0,9,2,33,11,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX102 =
 "mate-icon-list_8h.html#acc3ce8f1a89bc2b373dc09de79392d79":[36,0,0,9,2,41,39],
 "mate-icon-list_8h.html#ad0be3fd8b12ce9e72392d5e84dbbe80c":[36,0,0,9,2,41,40],
 "mate-icon-list_8h.html#ad4ff02184c8cd7e9ceb357a93270bf1e":[36,0,0,9,2,41,11],
-"mate-icon-list_8h.html#ad4ff02184c8cd7e9ceb357a93270bf1ea3ff4dee1453d49815363921659e4aa69":[36,0,0,9,2,41,11,2],
-"mate-icon-list_8h.html#ad4ff02184c8cd7e9ceb357a93270bf1ea4c277e04cf715a249b36357f54d9ee33":[36,0,0,9,2,41,11,0]
+"mate-icon-list_8h.html#ad4ff02184c8cd7e9ceb357a93270bf1ea3ff4dee1453d49815363921659e4aa69":[36,0,0,9,2,41,11,2]
 };

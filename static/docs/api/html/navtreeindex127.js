@@ -1,5 +1,6 @@
 var NAVTREEINDEX127 =
 {
+"msd-smartcard-manager_8c.html#ac50639f182d46fe38b3c49ed1e3ee31a":[36,0,0,28,1,14,0,3],
 "msd-smartcard-manager_8c.html#ae872e0503f5d68435b8105c27b84d709":[36,0,0,28,1,14,0,11],
 "msd-smartcard-manager_8c_source.html":[36,0,0,28,1,14,0],
 "msd-smartcard-manager_8h.html":[36,0,0,28,1,14,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX127 =
 "msd-xrandr-manager_8h.html":[36,0,0,28,1,17,1],
 "msd-xrandr-manager_8h.html#a0cbe0afe9d76b0cebf9c9589676152a6":[36,0,0,28,1,17,1,10],
 "msd-xrandr-manager_8h.html#a0d40cba482661bc30de006963995933f":[36,0,0,28,1,17,1,8],
-"msd-xrandr-manager_8h.html#a17ac596025b43e39615dd767621d42d1":[36,0,0,28,1,17,1,4],
-"msd-xrandr-manager_8h.html#a34f18937209dd6d23de6e5f245138af5":[36,0,0,28,1,17,1,2]
+"msd-xrandr-manager_8h.html#a17ac596025b43e39615dd767621d42d1":[36,0,0,28,1,17,1,4]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX108 =
 {
+"mate-rr-config_8c.html#a2067cb9347e72c0f2838c8065c228ad3":[36,0,0,15,0,27,18],
 "mate-rr-config_8c.html#a32c6aca8cceda7984a398188caca4d3a":[36,0,0,15,0,27,6],
 "mate-rr-config_8c.html#a3d7d05242dd02e304a0de5dfba598490":[36,0,0,15,0,27,12],
 "mate-rr-config_8c.html#a43c7c6788a385935f698a188bd5b05fc":[36,0,0,15,0,27,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX108 =
 "mate-rr_8h.html#aac1d05b5c734041e957e1de9bbcfa987":[36,0,0,15,0,34,14],
 "mate-rr_8h.html#aaf71720d3968e5d5c44c5bf8f8f48e68":[36,0,0,15,0,34,20],
 "mate-rr_8h.html#ab1c8d0b9141c8077e75998bb90825ad7":[36,0,0,15,0,34,52],
-"mate-rr_8h.html#ab5ec8bc89fcfcfd1b65c5c450cfe01cb":[36,0,0,15,0,34,28],
-"mate-rr_8h.html#ab700826c6515a59d90c95f7698049e4d":[36,0,0,15,0,34,9]
+"mate-rr_8h.html#ab5ec8bc89fcfcfd1b65c5c450cfe01cb":[36,0,0,15,0,34,28]
 };

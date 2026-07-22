@@ -1,5 +1,6 @@
 var NAVTREEINDEX107 =
 {
+"mate-panel_2mate-panel_2applet_8h.html#a31f91ac4618fe62f2b5de5e09a480ceb":[36,0,0,22,2,3,19],
 "mate-panel_2mate-panel_2applet_8h.html#a3b169688acd9636efd9c24343f007ff2":[36,0,0,22,2,3,14],
 "mate-panel_2mate-panel_2applet_8h.html#a40b28182af14a7c8ca12d98abb46f47b":[36,0,0,22,2,3,2],
 "mate-panel_2mate-panel_2applet_8h.html#a472ea678b2b16c2dc1ca754ff99f9c49":[36,0,0,22,2,3,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX107 =
 "mate-rr-config_8c.html#a031c3dbd49919ddd5eecafcfed880669":[36,0,0,15,0,27,19],
 "mate-rr-config_8c.html#a0b5d323032a384ac7a745a571fe32765":[36,0,0,15,0,27,14],
 "mate-rr-config_8c.html#a11e5fb6a71a056d714a7896b46416ee6":[36,0,0,15,0,27,21],
-"mate-rr-config_8c.html#a1b0aa1130bbda3d930ba3377552b7c69":[36,0,0,15,0,27,9],
-"mate-rr-config_8c.html#a2067cb9347e72c0f2838c8065c228ad3":[36,0,0,15,0,27,18]
+"mate-rr-config_8c.html#a1b0aa1130bbda3d930ba3377552b7c69":[36,0,0,15,0,27,9]
 };

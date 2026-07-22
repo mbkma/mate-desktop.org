@@ -1,5 +1,6 @@
 var NAVTREEINDEX156 =
 {
+"pluma-settings_8h.html#af8aa0f51293d762a21f14d1dc477768a":[36,0,0,34,1,74,33],
 "pluma-settings_8h.html#af9bef280ca97b25a759750063a3d0d98":[36,0,0,34,1,74,43],
 "pluma-settings_8h.html#afb848a86d9476afc06d5341f1a006fd3":[36,0,0,34,1,74,18],
 "pluma-settings_8h.html#afb8f791ba23032ab542131a6a02c562a":[36,0,0,34,1,74,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX156 =
 "pluma-style-scheme-manager_8h.html#a0a6e1c5a4635a163911c7c107460ee40":[36,0,0,34,1,82,1],
 "pluma-style-scheme-manager_8h.html#a58c997163382d66e932fb97df982bbcd":[36,0,0,34,1,82,0],
 "pluma-style-scheme-manager_8h.html#a6f5a83b1d8c9e1fbf6fe904b5c2bf088":[36,0,0,34,1,82,4],
-"pluma-style-scheme-manager_8h.html#a8dab3986dbd7557099027271f8cbaa46":[36,0,0,34,1,82,3],
-"pluma-style-scheme-manager_8h_source.html":[36,0,0,34,1,82]
+"pluma-style-scheme-manager_8h.html#a8dab3986dbd7557099027271f8cbaa46":[36,0,0,34,1,82,3]
 };

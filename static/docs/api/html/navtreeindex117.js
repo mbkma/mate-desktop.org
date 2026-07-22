@@ -1,5 +1,6 @@
 var NAVTREEINDEX117 =
 {
+"matemixer-enums_8h.html#afdb70b86ada401f14172e6957fc64830a4876625a526880c3fa877627903642d5":[36,0,0,8,2,15,0,0],
 "matemixer-enums_8h.html#afdb70b86ada401f14172e6957fc64830a5975fef417819bc9b9a30717f1d12f1a":[36,0,0,8,2,15,0,4],
 "matemixer-enums_8h.html#afdb70b86ada401f14172e6957fc64830a67c1c3bf70e120037fdc29a82f1fd929":[36,0,0,8,2,15,0,1],
 "matemixer-enums_8h_source.html":[36,0,0,8,2,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX117 =
 "matemixer-switch_8h.html#af151a492e1c8ea8f7edaf0213dede53c":[36,0,0,8,2,34,6],
 "matemixer-switch_8h.html#af2c0afc7271577de2ac7c9122b9555ae":[36,0,0,8,2,34,8],
 "matemixer-switch_8h_source.html":[36,0,0,8,2,34],
-"matemixer-types_8h.html":[36,0,0,8,2,35],
-"matemixer-types_8h.html#a01a2abce643d1aa5d9ea3c239c1bc9ec":[36,0,0,8,2,35,0]
+"matemixer-types_8h.html":[36,0,0,8,2,35]
 };

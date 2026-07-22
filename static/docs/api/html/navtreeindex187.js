@@ -1,5 +1,6 @@
 var NAVTREEINDEX187 =
 {
+"struct__EomFileChooserClass.html":[35,0,225],
 "struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[35,0,225,0],
 "struct__EomFullscreenPlugin.html":[35,0,226],
 "struct__EomFullscreenPlugin.html#a37cfd70cb238e5fe1b2b6bfe0623b35c":[35,0,226,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EphyZoomControl.html#a09e9064e173dcc9b6d3ca2645336d0bd":[35,0,293,1],
 "struct__EphyZoomControl.html#a57cee29b06bf855c021adbb9b1eb5e33":[35,0,293,0],
 "struct__EphyZoomControlClass.html":[35,0,294],
-"struct__EphyZoomControlClass.html#aa55cb2d4e16e82a11fdaf881e23df0c8":[35,0,294,0],
-"struct__EphyZoomControlClass.html#ad695e4e7d97ab33168fe15f4e04e63dc":[35,0,294,1]
+"struct__EphyZoomControlClass.html#aa55cb2d4e16e82a11fdaf881e23df0c8":[35,0,294,0]
 };

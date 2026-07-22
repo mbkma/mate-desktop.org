@@ -1,5 +1,6 @@
 var NAVTREEINDEX115 =
 {
+"matekbd-util_8c.html#af6fc3279080ec6630c13607ac5f744ea":[36,0,0,7,0,13,6],
 "matekbd-util_8c_source.html":[36,0,0,7,0,13],
 "matekbd-util_8h.html":[36,0,0,7,0,14],
 "matekbd-util_8h.html#a0d1180c1d3050b681d1bc0bd7552b1dc":[36,0,0,7,0,14,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX115 =
 "matemixer-backend_8h.html#a3763480fce744728b5549c6ff5b61e9d":[36,0,0,8,2,6,27],
 "matemixer-backend_8h.html#a44893bad9dcb1fb91e44db8b9711c68b":[36,0,0,8,2,6,25],
 "matemixer-backend_8h.html#a474ecf6e5c70a56868873dcae27ec926":[36,0,0,8,2,6,24],
-"matemixer-backend_8h.html#a487a08d4a01a7593f2fa37209a3be7c9":[36,0,0,8,2,6,15],
-"matemixer-backend_8h.html#a4b975c6a0bfee651b0fb3f1200bfc692":[36,0,0,8,2,6,2]
+"matemixer-backend_8h.html#a487a08d4a01a7593f2fa37209a3be7c9":[36,0,0,8,2,6,15]
 };

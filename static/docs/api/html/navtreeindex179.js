@@ -1,5 +1,6 @@
 var NAVTREEINDEX179 =
 {
+"structNAIFactoryProviderInterface.html#a7c556ec05a4b6b3808359a216975fe36":[35,0,1549,3],
 "structNAIFactoryProviderInterface.html#acec4c3e631a94b15a4a3b3b53529fdee":[35,0,1549,7],
 "structNAIIOProviderInterface.html":[35,0,1552],
 "structNAIIOProviderInterface.html#a00f08e19597e2bbe4dd5ed0831b55bd5":[35,0,1552,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX179 =
 "structPrefsDialog.html#a99913cc28d1812ef79fb38890f20b8af":[35,0,1611,21],
 "structPrefsDialog.html#a9c9ddf7d621ce26f7c344e1cf4134193":[35,0,1611,34],
 "structPrefsDialog.html#aa3ada475ffe4b0d7c7a750fbbfdd468f":[35,0,1611,20],
-"structPrefsDialog.html#aa5405d98e4498fdf80e8319a36979156":[35,0,1611,7],
-"structPrefsDialog.html#aa7f11102f1f4d400d1b90914ad6f930d":[35,0,1611,33]
+"structPrefsDialog.html#aa5405d98e4498fdf80e8319a36979156":[35,0,1611,7]
 };

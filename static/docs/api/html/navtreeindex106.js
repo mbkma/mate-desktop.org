@@ -1,5 +1,6 @@
 var NAVTREEINDEX106 =
 {
+"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a6e4c8444d13d03a0de24581d4bcca15d":[36,0,0,21,0,3,2,0,15],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a772dbef8dbe671b070d1f2b55da281d5":[36,0,0,21,0,3,2,0,7],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a7c96d9d7e659314bfe849a156d8e1d2e":[36,0,0,21,0,3,2,0,3],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a970e3f71276cf2b205341a1e2007f229":[36,0,0,21,0,3,2,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX106 =
 "mate-panel_2mate-panel_2applet_8h.html":[36,0,0,22,2,3],
 "mate-panel_2mate-panel_2applet_8h.html#a01ca5b4dc775ed06903317dd3778c683":[36,0,0,22,2,3,21],
 "mate-panel_2mate-panel_2applet_8h.html#a0c283b2c7425551a360a8237580da05f":[36,0,0,22,2,3,18],
-"mate-panel_2mate-panel_2applet_8h.html#a2d7a3aeb55da4d39d00a0f11e1305d3d":[36,0,0,22,2,3,9],
-"mate-panel_2mate-panel_2applet_8h.html#a31f91ac4618fe62f2b5de5e09a480ceb":[36,0,0,22,2,3,19]
+"mate-panel_2mate-panel_2applet_8h.html#a2d7a3aeb55da4d39d00a0f11e1305d3d":[36,0,0,22,2,3,9]
 };
