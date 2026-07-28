@@ -1,5 +1,11 @@
 var NAVTREEINDEX194 =
 {
+"struct__MateDruidPageClass.html#aefffad57a510628a82d749c78a78ea8e":[35,0,583,2],
+"struct__MateDruidPageClass.html#af40df4821ee5ca588a24561d206c4ccc":[35,0,583,8],
+"struct__MateDruidPageEdge.html":[35,0,584],
+"struct__MateDruidPageEdge.html#a0d0fb6c838621360821fbf19af880b03":[35,0,584,1],
+"struct__MateDruidPageEdge.html#a0e7d1f31274b9e7c4a1dc3c3612692b8":[35,0,584,7],
+"struct__MateDruidPageEdge.html#a1e3073b09689be2764ec44f95d03f71f":[35,0,584,8],
 "struct__MateDruidPageEdge.html#a1e67c08bafeeab2ac5fe59d6cca1b6ea":[35,0,584,6],
 "struct__MateDruidPageEdge.html#a848506b963dcf5c4deecb0bc13eb658f":[35,0,584,11],
 "struct__MateDruidPageEdge.html#a8d313f986955a8b922f7e9a393b6cef1":[35,0,584,9],
@@ -243,11 +249,5 @@ var NAVTREEINDEX194 =
 "struct__MateMixerDeviceClass.html#a5b6df693162e84f96a4d8bdf8bc62dc0":[35,0,637,6],
 "struct__MateMixerDeviceClass.html#a72ac9fab4f39cfdb1b53d1030236bf67":[35,0,637,4],
 "struct__MateMixerDeviceClass.html#a8611b0b7f4ee55415d48b1661a05fefb":[35,0,637,7],
-"struct__MateMixerDeviceClass.html#a88ac6d41212effa2b5ed691419f77437":[35,0,637,1],
-"struct__MateMixerDeviceClass.html#a8e170528bc5a537e757a1b0226dd5f98":[35,0,637,2],
-"struct__MateMixerDeviceClass.html#abd6aaca855af0bc2a26605122a51e93e":[35,0,637,0],
-"struct__MateMixerDeviceClass.html#ac74615602c9350aaf0a1961f3319af66":[35,0,637,8],
-"struct__MateMixerDeviceSwitch.html":[35,0,638],
-"struct__MateMixerDeviceSwitch.html#a39a3700094aaac5f9a7d28232c492766":[35,0,638,1],
-"struct__MateMixerDeviceSwitch.html#adc3ec956d31bc0dee58b7ba2b16a394c":[35,0,638,0]
+"struct__MateMixerDeviceClass.html#a88ac6d41212effa2b5ed691419f77437":[35,0,637,1]
 };

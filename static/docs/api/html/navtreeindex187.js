@@ -1,5 +1,11 @@
 var NAVTREEINDEX187 =
 {
+"struct__EomCloseConfirmationDialog.html#a4d452ecb2d64ccc68a4805cd4b613f82":[35,0,222,1],
+"struct__EomCloseConfirmationDialogClass.html":[35,0,223],
+"struct__EomCloseConfirmationDialogClass.html#a0c8d0260585636207f835b1dcb726b45":[35,0,223,0],
+"struct__EomFileChooser.html":[35,0,224],
+"struct__EomFileChooser.html#a27cce09e3a4e6f72fa77317ebb60017b":[35,0,224,0],
+"struct__EomFileChooser.html#af3068697a28e815931b795483c99a0ee":[35,0,224,1],
 "struct__EomFileChooserClass.html":[35,0,225],
 "struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[35,0,225,0],
 "struct__EomFullscreenPlugin.html":[35,0,226],
@@ -243,11 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EphyZoomAction.html#aa22062c79140b272cbe0d18c74beaeea":[35,0,291,1],
 "struct__EphyZoomAction.html#ae348b099c237e92eaf428d330d9cf3e4":[35,0,291,0],
 "struct__EphyZoomActionClass.html":[35,0,292],
-"struct__EphyZoomActionClass.html#a983fc862f837f9e3985640dde8118853":[35,0,292,0],
-"struct__EphyZoomActionClass.html#aa4069f6ff27a18c9d01d6b91db186933":[35,0,292,1],
-"struct__EphyZoomControl.html":[35,0,293],
-"struct__EphyZoomControl.html#a09e9064e173dcc9b6d3ca2645336d0bd":[35,0,293,1],
-"struct__EphyZoomControl.html#a57cee29b06bf855c021adbb9b1eb5e33":[35,0,293,0],
-"struct__EphyZoomControlClass.html":[35,0,294],
-"struct__EphyZoomControlClass.html#aa55cb2d4e16e82a11fdaf881e23df0c8":[35,0,294,0]
+"struct__EphyZoomActionClass.html#a983fc862f837f9e3985640dde8118853":[35,0,292,0]
 };

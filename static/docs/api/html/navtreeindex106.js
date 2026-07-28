@@ -223,7 +223,6 @@ var NAVTREEINDEX106 =
 "mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8h.html#afaa1592722ce703381733f49c65639e0":[36,0,0,22,0,2,2,1,14],
 "mate-panel_2applets_2notification__area_2system-tray_2fixedtip_8h_source.html":[36,0,0,22,0,2,2,1],
 "mate-panel_2mate-panel_2applet_8c.html":[36,0,0,22,2,2],
-"mate-panel_2mate-panel_2applet_8c.html#a01ca5b4dc775ed06903317dd3778c683":[36,0,0,22,2,2,18],
 "mate-panel_2mate-panel_2applet_8c.html#a0c283b2c7425551a360a8237580da05f":[36,0,0,22,2,2,15],
 "mate-panel_2mate-panel_2applet_8c.html#a20030ba160ab7557a708fb83778bb5ac":[36,0,0,22,2,2,8],
 "mate-panel_2mate-panel_2applet_8c.html#a2d7a3aeb55da4d39d00a0f11e1305d3d":[36,0,0,22,2,2,6],
@@ -234,11 +233,12 @@ var NAVTREEINDEX106 =
 "mate-panel_2mate-panel_2applet_8c.html#a5b1bd83815291328c1943302baaaf3fe":[36,0,0,22,2,2,3],
 "mate-panel_2mate-panel_2applet_8c.html#a5bc1cf76f5c482356f4af33f3c4d44bc":[36,0,0,22,2,2,0],
 "mate-panel_2mate-panel_2applet_8c.html#a6b064999d78014c8456a0b1d592372e6":[36,0,0,22,2,2,10],
-"mate-panel_2mate-panel_2applet_8c.html#a6d25b39619a11e78f86a2e06d6f62f3c":[36,0,0,22,2,2,17],
+"mate-panel_2mate-panel_2applet_8c.html#a78db206d585126a71e7b0cf438274079":[36,0,0,22,2,2,18],
 "mate-panel_2mate-panel_2applet_8c.html#a80d7b5e5082d9f840a2f4e930c81cdd9":[36,0,0,22,2,2,13],
 "mate-panel_2mate-panel_2applet_8c.html#a9269755b7a9b1eed5df401d3bb8bbab0":[36,0,0,22,2,2,5],
 "mate-panel_2mate-panel_2applet_8c.html#ac316779203e3fad21cb97a018a14030b":[36,0,0,22,2,2,1],
 "mate-panel_2mate-panel_2applet_8c.html#ac7b900ec64ca6f6b643a0a0bebea12c3":[36,0,0,22,2,2,2],
+"mate-panel_2mate-panel_2applet_8c.html#acc43096ddb9975515737c14d4d41dd20":[36,0,0,22,2,2,17],
 "mate-panel_2mate-panel_2applet_8c.html#acef43fb89a54d1a7141b50d93ebd0eb2":[36,0,0,22,2,2,9],
 "mate-panel_2mate-panel_2applet_8c.html#adbd874f52ec28ba557729d3c45e1ee60":[36,0,0,22,2,2,12],
 "mate-panel_2mate-panel_2applet_8c.html#ae12cdc04aa9177fc94d31d7c8e34d96c":[36,0,0,22,2,2,20],
@@ -247,7 +247,7 @@ var NAVTREEINDEX106 =
 "mate-panel_2mate-panel_2applet_8c.html#af1c28443c5372796b5dc46d5ef54aac2":[36,0,0,22,2,2,19],
 "mate-panel_2mate-panel_2applet_8c_source.html":[36,0,0,22,2,2],
 "mate-panel_2mate-panel_2applet_8h.html":[36,0,0,22,2,3],
-"mate-panel_2mate-panel_2applet_8h.html#a01ca5b4dc775ed06903317dd3778c683":[36,0,0,22,2,3,21],
 "mate-panel_2mate-panel_2applet_8h.html#a0c283b2c7425551a360a8237580da05f":[36,0,0,22,2,3,18],
-"mate-panel_2mate-panel_2applet_8h.html#a2d7a3aeb55da4d39d00a0f11e1305d3d":[36,0,0,22,2,3,9]
+"mate-panel_2mate-panel_2applet_8h.html#a2d7a3aeb55da4d39d00a0f11e1305d3d":[36,0,0,22,2,3,9],
+"mate-panel_2mate-panel_2applet_8h.html#a31f91ac4618fe62f2b5de5e09a480ceb":[36,0,0,22,2,3,19]
 };

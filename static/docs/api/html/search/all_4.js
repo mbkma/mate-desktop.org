@@ -783,7 +783,7 @@ var searchData=
   ['drawer_2dprivate_2eh_780',['drawer-private.h',['../drawer-private_8h.html',1,'']]],
   ['drawer_2ec_781',['drawer.c',['../drawer_8c.html',1,'']]],
   ['drawer_2eh_782',['drawer.h',['../drawer_8h.html',1,'']]],
-  ['drawer_5fload_5ffrom_5fgsettings_783',['drawer_load_from_gsettings',['../drawer_8c.html#a2b5a85c67c92a9fc29968a4778291760',1,'drawer_load_from_gsettings(PanelWidget *panel_widget, gboolean locked, gint position, const char *id):&#160;drawer.c'],['../drawer_8h.html#a2b5a85c67c92a9fc29968a4778291760',1,'drawer_load_from_gsettings(PanelWidget *panel_widget, gboolean locked, gint position, const char *id):&#160;drawer.c']]],
+  ['drawer_5fload_5ffrom_5fgsettings_783',['drawer_load_from_gsettings',['../drawer_8c.html#a69fccf68f78bc3b294904ea28a3c84ce',1,'drawer_load_from_gsettings(PanelWidget *panel_widget, gboolean locked, gint position, PanelObjectPackType pack_type, int pack_index, const char *id):&#160;drawer.c'],['../drawer_8h.html#a69fccf68f78bc3b294904ea28a3c84ce',1,'drawer_load_from_gsettings(PanelWidget *panel_widget, gboolean locked, gint position, PanelObjectPackType pack_type, int pack_index, const char *id):&#160;drawer.c']]],
   ['drawer_5fquery_5fdeletion_784',['drawer_query_deletion',['../drawer_8c.html#a123e4fcdb7b832c427be0b92efb317b0',1,'drawer_query_deletion(Drawer *drawer):&#160;drawer.c'],['../drawer_8h.html#a123e4fcdb7b832c427be0b92efb317b0',1,'drawer_query_deletion(Drawer *drawer):&#160;drawer.c']]],
   ['drawspacessettings_785',['DrawSpacesSettings',['../pluma-preferences-dialog_8c.html#a3e561d0eed01c68368e4c1f8a266ca24',1,'pluma-preferences-dialog.c']]],
   ['drive_2dbutton_2ec_786',['drive-button.c',['../drive-button_8c.html',1,'']]],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX203 =
 {
+"struct__TerminalProfileClass.html#ae700d98b66c3d7cbd67677ef3d4c7bdb":[35,0,967,0],
+"struct__TerminalScreen.html":[35,0,968],
+"struct__TerminalScreen.html#a4272b4969263112966cb4c2da4241e06":[35,0,968,0],
+"struct__TerminalScreen.html#ac2b48d760d440b9af013eaab45e55d82":[35,0,968,1],
+"struct__TerminalScreenClass.html":[35,0,969],
 "struct__TerminalScreenClass.html#a193a1bddedbde7b72bebfe22e100ac84":[35,0,969,1],
 "struct__TerminalScreenClass.html#a1b0d0824c64dbaef96b953537e979fe3":[35,0,969,3],
 "struct__TerminalScreenClass.html#a70bdd9eba9471eaa1465f3110716a36d":[35,0,969,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX203 =
 "structjpeg__color__quantizer.html#a3296d9d04a267c50808154ce6bdcef1b":[35,0,1383,3],
 "structjpeg__color__quantizer.html#a9531395d8c6f914f57bea01ff2b2c5b4":[35,0,1383,2],
 "structjpeg__color__quantizer.html#abb5268c27447bc9ae1876c5fffa94081":[35,0,1383,1],
-"structjpeg__color__quantizer.html#ac11184c8e0fdc9c0ec200c0fab197b5f":[35,0,1383,0],
-"structjpeg__comp__master.html":[35,0,1384],
-"structjpeg__comp__master.html#a72c70556604030b6b10d798f6c193e6f":[35,0,1384,3],
-"structjpeg__comp__master.html#a81648a22581acb403aa707a5e56bf993":[35,0,1384,0],
-"structjpeg__comp__master.html#aac35b3d9e718376d1aacdde9df32e75d":[35,0,1384,4],
-"structjpeg__comp__master.html#ac7e4391d1afe92c685cb4ffea5383d2c":[35,0,1384,1]
+"structjpeg__color__quantizer.html#ac11184c8e0fdc9c0ec200c0fab197b5f":[35,0,1383,0]
 };

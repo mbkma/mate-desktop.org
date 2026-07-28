@@ -1,5 +1,11 @@
 var NAVTREEINDEX193 =
 {
+"struct__LogviewAppClass.html#ad6bda50a63df30a9a88265369690970b":[35,0,542,0],
+"struct__LogviewFilter.html":[35,0,543],
+"struct__LogviewFilter.html#a0f08e70b2f32631230862fc8ad61a090":[35,0,543,1],
+"struct__LogviewFilter.html#ab275e05bed17028e7bd8e08fe065744b":[35,0,543,0],
+"struct__LogviewFilterClass.html":[35,0,544],
+"struct__LogviewFilterClass.html#a318487e26009e7f098ed5a79099b2ad1":[35,0,544,0],
 "struct__LogviewFilterManager.html":[35,0,545],
 "struct__LogviewFilterManager.html#a93ca7e4cb3676a8f90cf5be001d6f2d8":[35,0,545,0],
 "struct__LogviewFilterManager.html#afe706959d48d423f467e726a6010cbbd":[35,0,545,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX193 =
 "struct__MateDruidPageClass.html#a5237029ecbb80a8d6efffa2961106fae":[35,0,583,7],
 "struct__MateDruidPageClass.html#a8e12c7b45de766dc948a8a0cfda90ea1":[35,0,583,1],
 "struct__MateDruidPageClass.html#a9cc55d836696da7b496b4715efba29fc":[35,0,583,3],
-"struct__MateDruidPageClass.html#ab170d21962415deb7ba99e3da5bc1b9d":[35,0,583,0],
-"struct__MateDruidPageClass.html#aefffad57a510628a82d749c78a78ea8e":[35,0,583,2],
-"struct__MateDruidPageClass.html#af40df4821ee5ca588a24561d206c4ccc":[35,0,583,8],
-"struct__MateDruidPageEdge.html":[35,0,584],
-"struct__MateDruidPageEdge.html#a0d0fb6c838621360821fbf19af880b03":[35,0,584,1],
-"struct__MateDruidPageEdge.html#a0e7d1f31274b9e7c4a1dc3c3612692b8":[35,0,584,7],
-"struct__MateDruidPageEdge.html#a1e3073b09689be2764ec44f95d03f71f":[35,0,584,8]
+"struct__MateDruidPageClass.html#ab170d21962415deb7ba99e3da5bc1b9d":[35,0,583,0]
 };

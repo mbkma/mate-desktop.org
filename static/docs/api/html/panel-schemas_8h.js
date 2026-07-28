@@ -44,6 +44,8 @@ var panel_schemas_8h =
     [ "PANEL_OBJECT_LAUNCHER_LOCATION_KEY", "panel-schemas_8h.html#a006149a11f1345d72b66f31655513732", null ],
     [ "PANEL_OBJECT_LOCKED_KEY", "panel-schemas_8h.html#a830180a317021f91ba00eb504395c46c", null ],
     [ "PANEL_OBJECT_MENU_PATH_KEY", "panel-schemas_8h.html#ab24012b6d026fa88fa55ce6d70b2496e", null ],
+    [ "PANEL_OBJECT_PACK_INDEX_KEY", "panel-schemas_8h.html#a3126e8ef88ad91674e79d843a64455a2", null ],
+    [ "PANEL_OBJECT_PACK_TYPE_KEY", "panel-schemas_8h.html#a7d6c63f7238367e2db041bd568ebe798", null ],
     [ "PANEL_OBJECT_PANEL_RIGHT_STICK_KEY", "panel-schemas_8h.html#a9ab3e0e50cdcbe729464a80357a4f137", null ],
     [ "PANEL_OBJECT_PATH", "panel-schemas_8h.html#a516df2979b25d3e87de750b34e1e8717", null ],
     [ "PANEL_OBJECT_POSITION_KEY", "panel-schemas_8h.html#a4db95a1b9e63dd389e6e92be65a861b8", null ],

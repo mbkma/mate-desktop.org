@@ -1,5 +1,9 @@
 var NAVTREEINDEX177 =
 {
+"structMateSettingsPluginClass.html#a63a205aa6ca40766d545f8146fef07fd":[35,0,1424,2],
+"structMateSettingsPluginClass.html#a7e1ac836c59beb1e052b708a60ab9104":[35,0,1424,1],
+"structMateSettingsPluginClass.html#ae1762026ddc82338a90c85a320d51b4a":[35,0,1424,0],
+"structMateSettingsPluginInfo.html":[35,0,1425],
 "structMateSettingsPluginInfo.html#a70156a48cb77dbdc8ce65d8f4b8018a5":[35,0,1425,1],
 "structMateSettingsPluginInfo.html#ab7e0c013816a056410925eba6b1601f8":[35,0,1425,0],
 "structMateSettingsPluginInfoClass.html":[35,0,1426],
@@ -245,9 +249,5 @@ var NAVTREEINDEX177 =
 "structMsdClipboardPlugin.html":[35,0,1484],
 "structMsdClipboardPlugin.html#a3b32ec3d095d488a8bde61f57c8638b9":[35,0,1484,0],
 "structMsdClipboardPlugin.html#a54f73424a458d14fe4ad3b3473c3a8b9":[35,0,1484,1],
-"structMsdClipboardPluginClass.html":[35,0,1485],
-"structMsdClipboardPluginClass.html#a36c81c70021d55b237d598fc1ce2198b":[35,0,1485,0],
-"structMsdDatetimeMechanism.html":[35,0,1486],
-"structMsdDatetimeMechanism.html#a20c2d6cc296dc15487fe7c635db5549c":[35,0,1486,1],
-"structMsdDatetimeMechanism.html#abdc616907ac6e8dc55faef8608dd441a":[35,0,1486,0]
+"structMsdClipboardPluginClass.html":[35,0,1485]
 };

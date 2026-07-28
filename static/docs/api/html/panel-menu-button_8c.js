@@ -11,7 +11,7 @@ var panel_menu_button_8c =
     [ "panel_menu_button_create", "panel-menu-button_8c.html#a9ee3a9088c1ecfac4f0328433242fdca", null ],
     [ "panel_menu_button_get_use_menu_path", "panel-menu-button_8c.html#a12a3516ce8aff4ea312e67d9ea72688a", null ],
     [ "panel_menu_button_invoke_menu", "panel-menu-button_8c.html#a463da53ffb21ff88071867d1e8d47fa7", null ],
-    [ "panel_menu_button_load_from_gsettings", "panel-menu-button_8c.html#aac3e2790769a30cc3b26ad78da568816", null ],
+    [ "panel_menu_button_load_from_gsettings", "panel-menu-button_8c.html#ac6511d6eb5731912d0765fb3a092e3ec", null ],
     [ "panel_menu_button_popup_menu", "panel-menu-button_8c.html#a837bc38465d4324514087438a8d94173", null ],
     [ "panel_menu_button_set_custom_icon", "panel-menu-button_8c.html#a29a05b528a7057d17e0001aa91dcad46", null ],
     [ "panel_menu_button_set_dnd_enabled", "panel-menu-button_8c.html#aadc1f46ad45f0f0c5de602f05d258b1b", null ],

@@ -14,6 +14,6 @@ var panel_separator_8h =
     [ "panel_separator_change_background", "panel-separator_8h.html#ad577f4210c0e18a39dc23863379a9700", null ],
     [ "panel_separator_create", "panel-separator_8h.html#ad3a2f94f4a867ff2c0d77665cd336392", null ],
     [ "panel_separator_get_type", "panel-separator_8h.html#ad19c83bd6ad4ff13a0d4e2d3973ef8ef", null ],
-    [ "panel_separator_load_from_gsettings", "panel-separator_8h.html#a66944be9ccf8509f006be0ea7f299d8a", null ],
+    [ "panel_separator_load_from_gsettings", "panel-separator_8h.html#a94b98b1adc62bfeee1b2a36550daef32", null ],
     [ "panel_separator_set_orientation", "panel-separator_8h.html#af44c72a83049195b04fb704fe318d462", null ]
 ];

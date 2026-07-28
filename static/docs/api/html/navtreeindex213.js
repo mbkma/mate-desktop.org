@@ -1,5 +1,10 @@
 var NAVTREEINDEX213 =
 {
+"time-zones_8h.html#a2897da9c19e0bb96323a739a8b2b1a0e":[36,0,0,14,0,11,0,9,75],
+"time-zones_8h.html#a2909eccb2e6a4b85e927cffa08a74fa1":[36,0,0,14,0,11,0,9,421],
+"time-zones_8h.html#a2b33b9f80243b301accac42320a131c5":[36,0,0,14,0,11,0,9,293],
+"time-zones_8h.html#a2baef9386961aee8cb4187bbff2255ec":[36,0,0,14,0,11,0,9,393],
+"time-zones_8h.html#a2c8b461f5cdd2c1c41fa45d726c327eb":[36,0,0,14,0,11,0,9,24],
 "time-zones_8h.html#a2d61c9dbf55d49c367288caf99399cc9":[36,0,0,14,0,11,0,9,137],
 "time-zones_8h.html#a2e457db96f718f6e8d58a123bac8bf92":[36,0,0,14,0,11,0,9,18],
 "time-zones_8h.html#a2e7eeed3b2bf97b69a73ebbc5ef228fa":[36,0,0,14,0,11,0,9,174],
@@ -244,10 +249,5 @@ var NAVTREEINDEX213 =
 "time-zones_8h.html#abd14352ab14c7b2f6ba6b1c30c55c90e":[36,0,0,14,0,11,0,9,363],
 "time-zones_8h.html#abd65a3efa16fd595a4045dbbe5d5199e":[36,0,0,14,0,11,0,9,21],
 "time-zones_8h.html#abd9fb1799e774af5ef24a46361cdd55a":[36,0,0,14,0,11,0,9,146],
-"time-zones_8h.html#abe8344c9ed82a96feb4e72560e2413cd":[36,0,0,14,0,11,0,9,214],
-"time-zones_8h.html#abea315ba7cc1577b4553725d67534bf6":[36,0,0,14,0,11,0,9,61],
-"time-zones_8h.html#abf06741db9b373974a0ce24fb722c924":[36,0,0,14,0,11,0,9,141],
-"time-zones_8h.html#abf97ce2542b549ae76e011da51ffb33e":[36,0,0,14,0,11,0,9,86],
-"time-zones_8h.html#abf9a0faf74959348306a03a3a6b85a65":[36,0,0,14,0,11,0,9,372],
-"time-zones_8h.html#abfbce711009412c2a3760859d8b83726":[36,0,0,14,0,11,0,9,71]
+"time-zones_8h.html#abe8344c9ed82a96feb4e72560e2413cd":[36,0,0,14,0,11,0,9,214]
 };

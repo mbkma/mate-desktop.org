@@ -22,7 +22,7 @@ var panel_applet_frame_8c =
     [ "mate_panel_applet_frame_change_orientation", "panel-applet-frame_8c.html#aba6d9b8ff98cc78ee4be9f5f06deaf51", null ],
     [ "mate_panel_applet_frame_change_size", "panel-applet-frame_8c.html#a1498075aab7d6a9e0826bfefbe554600", null ],
     [ "mate_panel_applet_frame_create", "panel-applet-frame_8c.html#a70146db647034ccc2e7966f298da3fb3", null ],
-    [ "mate_panel_applet_frame_load_from_gsettings", "panel-applet-frame_8c.html#aa973dbdbb3344a997354e95e2c174265", null ],
+    [ "mate_panel_applet_frame_load_from_gsettings", "panel-applet-frame_8c.html#a7e666fe1076a6edb7a8d7f1a9c7c48b5", null ],
     [ "mate_panel_applet_frame_set_panel", "panel-applet-frame_8c.html#abdcbce201412094c86a241b98aa61044", null ],
     [ "mate_panel_applet_frame_sync_menu_state", "panel-applet-frame_8c.html#ab8d86a94445e31427cc9f5e03476bced", null ],
     [ "panel_applet_frame_activating_get_screen", "panel-applet-frame_8c.html#a4ea6b45a050957ab5045b173d8ff4d89", null ]

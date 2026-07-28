@@ -16,7 +16,7 @@ var panel_menu_bar_8h =
     [ "panel_menu_bar_get_orientation", "panel-menu-bar_8h.html#afa80344d32c9247cda882b4121563c68", null ],
     [ "panel_menu_bar_get_type", "panel-menu-bar_8h.html#a8284b0207f41a66b2ea4fbd225a10fa0", null ],
     [ "panel_menu_bar_invoke_menu", "panel-menu-bar_8h.html#a056aaa24324d17ef26b0e2b5bc0ad8a8", null ],
-    [ "panel_menu_bar_load_from_gsettings", "panel-menu-bar_8h.html#adc4a447d44bbc527af4684fd781c50ec", null ],
+    [ "panel_menu_bar_load_from_gsettings", "panel-menu-bar_8h.html#a12c1afc726ea691b318f44df467193fb", null ],
     [ "panel_menu_bar_popup_menu", "panel-menu-bar_8h.html#aa13dfd84b8358aa3dd2b84a5819aeae4", null ],
     [ "panel_menu_bar_set_orientation", "panel-menu-bar_8h.html#a54f81f3394e7f1dce6f0d1e8a45c671a", null ]
 ];

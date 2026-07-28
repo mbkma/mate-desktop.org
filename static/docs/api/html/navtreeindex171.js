@@ -1,5 +1,9 @@
 var NAVTREEINDEX171 =
 {
+"structCajaHistorySidebar.html#a1ed8f1a758f25b21e9f9ab41df818409":[35,0,1116,2],
+"structCajaHistorySidebar.html#a3739c15b2e725762fbab1bf6556e16c5":[35,0,1116,1],
+"structCajaHistorySidebar.html#a83b810b04954199017b05702894b0a67":[35,0,1116,0],
+"structCajaIcon.html":[35,0,1117],
 "structCajaIcon.html#a1d039e821a5b2543d5012ca9adbed16e":[35,0,1117,0],
 "structCajaIcon.html#a3ad468effb72f70ec9ead60e3f95a000":[35,0,1117,4],
 "structCajaIcon.html#a4d58fba97395706ac5171e9cb184c2b8":[35,0,1117,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX171 =
 "structCajaSearchEngine.html#ae2dc8e1624291b88cb8dba042ed150f4":[35,0,1153,0],
 "structCajaSearchEngineBeagle.html":[35,0,1154],
 "structCajaSearchEngineBeagle.html#a257c8145fa89b1673c0bc77b1d420d93":[35,0,1154,0],
-"structCajaSearchEngineBeagle.html#a55f99c4a2124490926a20d910bf777b6":[35,0,1154,1],
-"structCajaSearchEngineBeagleClass.html":[35,0,1155],
-"structCajaSearchEngineBeagleClass.html#ab0447550611cf6504410dcc6040a692a":[35,0,1155,0],
-"structCajaSearchEngineClass.html":[35,0,1156],
-"structCajaSearchEngineClass.html#a07e1d58292b9fee2f96309031d39ef18":[35,0,1156,1]
+"structCajaSearchEngineBeagle.html#a55f99c4a2124490926a20d910bf777b6":[35,0,1154,1]
 };

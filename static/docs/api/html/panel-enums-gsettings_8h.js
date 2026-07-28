@@ -21,6 +21,11 @@ var panel_enums_gsettings_8h =
       [ "PANEL_BACK_COLOR", "panel-enums-gsettings_8h.html#aae2516015698672bd1407f49735dc354af30073bb656270aaa37c9d4ac6d2813b", null ],
       [ "PANEL_BACK_IMAGE", "panel-enums-gsettings_8h.html#aae2516015698672bd1407f49735dc354a88f3c809ee1de9bb92b2b5bedd57f09a", null ]
     ] ],
+    [ "PanelObjectPackType", "panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44", [
+      [ "PANEL_OBJECT_PACK_START", "panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44acb0d3416ed4a2eb2886cf79e1034188b", null ],
+      [ "PANEL_OBJECT_PACK_CENTER", "panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44a1c413f3d95c09aee2a9c5df9369763c2", null ],
+      [ "PANEL_OBJECT_PACK_END", "panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44a00a24a83894a7fac7a955968d0a9e92d", null ]
+    ] ],
     [ "PanelObjectType", "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4", [
       [ "PANEL_OBJECT_DRAWER", "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4a4671d0ff46f6fea91131f0c9d3117dc4", null ],
       [ "PANEL_OBJECT_MENU", "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4ac5db22c75824df80e5810f1f7cd62f32", null ],

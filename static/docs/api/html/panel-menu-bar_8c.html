@@ -134,8 +134,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:adc4a447d44bbc527af4684fd781c50ec" id="r_adc4a447d44bbc527af4684fd781c50ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="panel-menu-bar_8c.html#adc4a447d44bbc527af4684fd781c50ec">panel_menu_bar_load_from_gsettings</a> (<a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel, gboolean locked, int position, gboolean exactpos, const char *id)</td></tr>
-<tr class="separator:adc4a447d44bbc527af4684fd781c50ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c1afc726ea691b318f44df467193fb" id="r_a12c1afc726ea691b318f44df467193fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="panel-menu-bar_8c.html#a12c1afc726ea691b318f44df467193fb">panel_menu_bar_load_from_gsettings</a> (<a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel, gboolean locked, int position, <a class="el" href="panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44">PanelObjectPackType</a> pack_type, int pack_index, gboolean exactpos, const char *id)</td></tr>
+<tr class="separator:a12c1afc726ea691b318f44df467193fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8016555ab1011a213a9ff6f66d9521a" id="r_ac8016555ab1011a213a9ff6f66d9521a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="panel-menu-bar_8c.html#ac8016555ab1011a213a9ff6f66d9521a">panel_menu_bar_create</a> (<a class="el" href="panel-toplevel_8h.html#a289f28f00c990ae21ff5ee59a3982ce1">PanelToplevel</a> *toplevel, int position)</td></tr>
 <tr class="separator:ac8016555ab1011a213a9ff6f66d9521a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056aaa24324d17ef26b0e2b5bc0ad8a8" id="r_a056aaa24324d17ef26b0e2b5bc0ad8a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="panel-menu-bar_8c.html#a056aaa24324d17ef26b0e2b5bc0ad8a8">panel_menu_bar_invoke_menu</a> (<a class="el" href="panel-menu-bar_8h.html#a4a7976dad6cf3c283b7a5e511016fe2d">PanelMenuBar</a> *menubar, const char *callback_name)</td></tr>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00438">438</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00444">444</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
 
 <p class="reference">References <a class="el" href="panel-background_8c_source.html#l00045">panel_background_apply_css()</a>, and <a class="el" href="panel-menu-bar_8h_source.html#l00050">_PanelMenuBar::priv</a>.</p>
 
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00385">385</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00059">PANEL_OBJECT_MENU_BAR</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, and <a class="el" href="panel-profile_8c_source.html#l01285">panel_profile_prepare_object()</a>.</p>
+<p class="reference">References <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00065">PANEL_OBJECT_MENU_BAR</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00035">PANEL_OBJECT_PACK_START</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, <a class="el" href="panel-profile_8c_source.html#l01287">panel_profile_prepare_object()</a>, <a class="el" href="panel-toplevel_8c_source.html#l04898">panel_toplevel_get_panel_widget()</a>, and <a class="el" href="panel-widget_8c_source.html#l01087">panel_widget_get_insert_at_pos()</a>.</p>
 
 </div>
 </div>
@@ -243,7 +243,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00532">532</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00538">538</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
 
 <p class="reference">References <a class="el" href="panel-menu-bar_8h_source.html#l00039">PANEL_IS_MENU_BAR</a>, and <a class="el" href="panel-menu-bar_8h_source.html#l00050">_PanelMenuBar::priv</a>.</p>
 
@@ -275,14 +275,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00394">394</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00400">400</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-menu-bar_8h_source.html#l00039">PANEL_IS_MENU_BAR</a>, <a class="el" href="panel-util_8c_source.html#l00155">panel_is_program_in_path()</a>, <a class="el" href="panel-launch_8c_source.html#l00241">panel_launch_desktop_file_with_fallback()</a>, and <a class="el" href="panel-show_8c_source.html#l00270">panel_show_help()</a>.</p>
 
 </div>
 </div>
-<a id="adc4a447d44bbc527af4684fd781c50ec" name="adc4a447d44bbc527af4684fd781c50ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc4a447d44bbc527af4684fd781c50ec">&#9670;&#160;</a></span>panel_menu_bar_load_from_gsettings()</h2>
+<a id="a12c1afc726ea691b318f44df467193fb" name="a12c1afc726ea691b318f44df467193fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c1afc726ea691b318f44df467193fb">&#9670;&#160;</a></span>panel_menu_bar_load_from_gsettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,6 +304,18 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44">PanelObjectPackType</a>&#160;</td>
+          <td class="paramname"><em>pack_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pack_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -355,7 +367,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00417">417</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00423">423</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
 
 <p class="reference">References <a class="el" href="panel-menu-bar_8h_source.html#l00039">PANEL_IS_MENU_BAR</a>, and <a class="el" href="panel-menu-bar_8h_source.html#l00050">_PanelMenuBar::priv</a>.</p>
 
@@ -387,7 +399,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00516">516</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-menu-bar_8c_source.html#l00522">522</a> of file <a class="el" href="panel-menu-bar_8c_source.html">panel-menu-bar.c</a>.</p>
 
 <p class="reference">References <a class="el" href="panel-menu-bar_8h_source.html#l00039">PANEL_IS_MENU_BAR</a>, and <a class="el" href="panel-menu-bar_8h_source.html#l00050">_PanelMenuBar::priv</a>.</p>
 

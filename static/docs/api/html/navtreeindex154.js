@@ -1,5 +1,9 @@
 var NAVTREEINDEX154 =
 {
+"pluma-message-type_8c.html#a7a7349823dd38b837a5996902b4a52ff":[36,0,0,34,1,51,3],
+"pluma-message-type_8c.html#a9f7d77a6e6d135555989a9ccdb123982":[36,0,0,34,1,51,2],
+"pluma-message-type_8c.html#aa879915702b3516586497811f2b1f747":[36,0,0,34,1,51,15],
+"pluma-message-type_8c.html#ab2492808d0d419db7308a6210a1f41f3":[36,0,0,34,1,51,12],
 "pluma-message-type_8c.html#ae8ce5180a535cc759275dfb8ae2ecdd4":[36,0,0,34,1,51,9],
 "pluma-message-type_8c.html#aeb7a604ebd66d7a115f727810f9e477b":[36,0,0,34,1,51,5],
 "pluma-message-type_8c_source.html":[36,0,0,34,1,51],
@@ -188,12 +192,12 @@ var NAVTREEINDEX154 =
 "pluma-plugin_8h.html#a0a87998f4e8cee4888f2a89df3d5639b":[36,0,0,34,3,0,1,0],
 "pluma-plugin_8h.html#a181997ff72152d607a729cfb69f51b1b":[36,0,0,34,3,0,1,8],
 "pluma-plugin_8h.html#a3854c393868dc914375a7ddc982b7e6b":[36,0,0,34,3,0,1,7],
-"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,5],
-"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,4],
 "pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,3],
+"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,4],
+"pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,5],
 "pluma-plugin_8h.html#a6928648f3a3267c1e8ed2fdc9251baed":[36,0,0,34,3,0,1,6],
-"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,2],
 "pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,1],
+"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,2],
 "pluma-plugin_8h_source.html":[36,0,0,34,3,0,1],
 "pluma-plugins-engine_8c.html":[36,0,0,34,1,63],
 "pluma-plugins-engine_8c.html#a0c06287ef7d8e0b5c172f56bd5e129be":[36,0,0,34,1,63,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX154 =
 "pluma-print-job_8h.html":[36,0,0,34,1,66],
 "pluma-print-job_8h.html#a15ef9bbcd92ca0fc09c09d5710c0add6":[36,0,0,34,1,66,3],
 "pluma-print-job_8h.html#a18675e872f051e01e9583b004ebe6e7a":[36,0,0,34,1,66,6],
-"pluma-print-job_8h.html#a394e6b467a92a451c470771e5fe0c390":[36,0,0,34,1,66,13],
-"pluma-print-job_8h.html#a400c9f9db84cf3dcef09300fe6cc9fd2":[36,0,0,34,1,66,21],
-"pluma-print-job_8h.html#a4a9c08137520c4761a5d3bd6bb051ac9":[36,0,0,34,1,66,14],
-"pluma-print-job_8h.html#a4b60970c08b2784365817f15b940457d":[36,0,0,34,1,66,19],
-"pluma-print-job_8h.html#a50ba2de7e6c99fa0cc60e14f780f8891":[36,0,0,34,1,66,20]
+"pluma-print-job_8h.html#a394e6b467a92a451c470771e5fe0c390":[36,0,0,34,1,66,13]
 };

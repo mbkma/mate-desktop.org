@@ -1,5 +1,9 @@
 var NAVTREEINDEX170 =
 {
+"structCactMainWindowClass.html#a713d2e25e2a71b21c3ce2eb6c2f042af":[35,0,1059,1],
+"structCactMainWindowClass.html#a9cab07b752578a91d3d065d4ac283246":[35,0,1059,0],
+"structCactMenubar.html":[35,0,1060],
+"structCactMenubar.html#a41f7d9a33bcde4a4e0b2847d25dbe752":[35,0,1060,1],
 "structCactMenubar.html#aad690befb74c1ec7d606b10c6fb4a900":[35,0,1060,0],
 "structCactMenubarClass.html":[35,0,1061],
 "structCactMenubarClass.html#a6cd26c7a714659acdecb49e6a41fb4e7":[35,0,1061,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX170 =
 "structCajaFileOperation.html#ae3d0602696f8d9d473da3942f2d64d72":[35,0,1114,5],
 "structCajaFileSortByEmblemCache.html":[35,0,1115],
 "structCajaFileSortByEmblemCache.html#a1905f5feaa97832b2cebd11eddaea3f2":[35,0,1115,0],
-"structCajaHistorySidebar.html":[35,0,1116],
-"structCajaHistorySidebar.html#a1ed8f1a758f25b21e9f9ab41df818409":[35,0,1116,2],
-"structCajaHistorySidebar.html#a3739c15b2e725762fbab1bf6556e16c5":[35,0,1116,1],
-"structCajaHistorySidebar.html#a83b810b04954199017b05702894b0a67":[35,0,1116,0],
-"structCajaIcon.html":[35,0,1117]
+"structCajaHistorySidebar.html":[35,0,1116]
 };

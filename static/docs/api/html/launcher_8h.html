@@ -130,8 +130,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7e2262fb805c804f8e3ed6fea37d3930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45beaf26f48af8dfccbe02925996440" id="r_ac45beaf26f48af8dfccbe02925996440"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="launcher_8h.html#ac45beaf26f48af8dfccbe02925996440">launcher_properties</a> (<a class="el" href="structLauncher.html">Launcher</a> *launcher)</td></tr>
 <tr class="separator:ac45beaf26f48af8dfccbe02925996440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5502e39195783d1990a80b9fa6203bdf" id="r_a5502e39195783d1990a80b9fa6203bdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="launcher_8h.html#a5502e39195783d1990a80b9fa6203bdf">launcher_load_from_gsettings</a> (<a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel_widget, gboolean locked, gint position, const char *id)</td></tr>
-<tr class="separator:a5502e39195783d1990a80b9fa6203bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef93d3976ee9511cc632f11c8732ecd" id="r_a5ef93d3976ee9511cc632f11c8732ecd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="launcher_8h.html#a5ef93d3976ee9511cc632f11c8732ecd">launcher_load_from_gsettings</a> (<a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel_widget, gboolean locked, gint position, <a class="el" href="panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44">PanelObjectPackType</a> pack_type, int pack_index, const char *id)</td></tr>
+<tr class="separator:a5ef93d3976ee9511cc632f11c8732ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d649c25073f18515379c8071c7dcc4b" id="r_a2d649c25073f18515379c8071c7dcc4b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="launcher_8h.html#a2d649c25073f18515379c8071c7dcc4b">panel_launcher_delete</a> (<a class="el" href="structLauncher.html">Launcher</a> *launcher)</td></tr>
 <tr class="separator:a2d649c25073f18515379c8071c7dcc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec1c979f3579fa173ab7daae15168d3a" id="r_aec1c979f3579fa173ab7daae15168d3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="launcher_8h.html#aec1c979f3579fa173ab7daae15168d3a">ask_about_launcher</a> (const char *file, <a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel, int pos, gboolean exactpos)</td></tr>
@@ -182,9 +182,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l00989">989</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l00995">995</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-ditem-editor_8h_source.html#l00036">PANEL_DITEM_EDITOR</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01579">panel_ditem_editor_get_key_file()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01507">panel_ditem_editor_new()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01069">panel_ditem_editor_sync_display()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01610">panel_ditem_register_save_uri_func()</a>, <a class="el" href="panel-keyfile_8h_source.html#l00060">panel_key_file_set_string</a>, <a class="el" href="panel-lockdown_8c_source.html#l00238">panel_lockdown_get_disable_command_line()</a>, and <a class="el" href="panel-widget_8c_source.html#l02924">panel_widget_register_open_dialog()</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-ditem-editor_8h_source.html#l00036">PANEL_DITEM_EDITOR</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01579">panel_ditem_editor_get_key_file()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01507">panel_ditem_editor_new()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01069">panel_ditem_editor_sync_display()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01610">panel_ditem_register_save_uri_func()</a>, <a class="el" href="panel-keyfile_8h_source.html#l00060">panel_key_file_set_string</a>, <a class="el" href="panel-lockdown_8c_source.html#l00238">panel_lockdown_get_disable_command_line()</a>, and <a class="el" href="panel-widget_8c_source.html#l03026">panel_widget_register_open_dialog()</a>.</p>
 
 </div>
 </div>
@@ -204,9 +204,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01169">1169</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01183">1183</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-panel_2mate-panel_2applet_8h_source.html#l00026">AppletInfo::data</a>, <a class="el" href="launcher_8h_source.html#l00027">Launcher::key_file</a>, <a class="el" href="launcher_8h_source.html#l00026">Launcher::location</a>, <a class="el" href="mate-panel_2mate-panel_2applet_8c_source.html#l01197">mate_panel_applet_list_applets()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00056">PANEL_OBJECT_LAUNCHER</a>, and <a class="el" href="mate-panel_2mate-panel_2applet_8h_source.html#l00019">AppletInfo::type</a>.</p>
+<p class="reference">References <a class="el" href="mate-panel_2mate-panel_2applet_8h_source.html#l00026">AppletInfo::data</a>, <a class="el" href="launcher_8h_source.html#l00027">Launcher::key_file</a>, <a class="el" href="launcher_8h_source.html#l00026">Launcher::location</a>, <a class="el" href="mate-panel_2mate-panel_2applet_8c_source.html#l01201">mate_panel_applet_list_applets()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00062">PANEL_OBJECT_LAUNCHER</a>, and <a class="el" href="mate-panel_2mate-panel_2applet_8h_source.html#l00019">AppletInfo::type</a>.</p>
 
 </div>
 </div>
@@ -242,8 +242,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5502e39195783d1990a80b9fa6203bdf" name="a5502e39195783d1990a80b9fa6203bdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5502e39195783d1990a80b9fa6203bdf">&#9670;&#160;</a></span>launcher_load_from_gsettings()</h2>
+<a id="a5ef93d3976ee9511cc632f11c8732ecd" name="a5ef93d3976ee9511cc632f11c8732ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef93d3976ee9511cc632f11c8732ecd">&#9670;&#160;</a></span>launcher_load_from_gsettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,6 +265,18 @@ Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">gint&#160;</td>
           <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44">PanelObjectPackType</a>&#160;</td>
+          <td class="paramname"><em>pack_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pack_index</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -300,7 +312,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l00799">799</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="launcher_8h_source.html#l00024">Launcher::button</a>, <a class="el" href="launcher_8h_source.html#l00023">Launcher::info</a>, <a class="el" href="launcher_8h_source.html#l00027">Launcher::key_file</a>, <a class="el" href="launcher_8h_source.html#l00026">Launcher::location</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-ditem-editor_8h_source.html#l00036">PANEL_DITEM_EDITOR</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01507">panel_ditem_editor_new()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01610">panel_ditem_register_save_uri_func()</a>, <a class="el" href="panel-widget_8h_source.html#l00027">PANEL_WIDGET</a>, <a class="el" href="panel-widget_8c_source.html#l02924">panel_widget_register_open_dialog()</a>, <a class="el" href="launcher_8h_source.html#l00030">Launcher::prop_dialog</a>, and <a class="el" href="mate-panel_2mate-panel_2applet_8h_source.html#l00020">AppletInfo::widget</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="launcher_8h_source.html#l00024">Launcher::button</a>, <a class="el" href="launcher_8h_source.html#l00023">Launcher::info</a>, <a class="el" href="launcher_8h_source.html#l00027">Launcher::key_file</a>, <a class="el" href="launcher_8h_source.html#l00026">Launcher::location</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-ditem-editor_8h_source.html#l00036">PANEL_DITEM_EDITOR</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01507">panel_ditem_editor_new()</a>, <a class="el" href="panel-ditem-editor_8c_source.html#l01610">panel_ditem_register_save_uri_func()</a>, <a class="el" href="panel-widget_8h_source.html#l00028">PANEL_WIDGET</a>, <a class="el" href="panel-widget_8c_source.html#l03026">panel_widget_register_open_dialog()</a>, <a class="el" href="launcher_8h_source.html#l00030">Launcher::prop_dialog</a>, and <a class="el" href="mate-panel_2mate-panel_2applet_8h_source.html#l00020">AppletInfo::widget</a>.</p>
 
 </div>
 </div>
@@ -358,11 +370,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01126">1126</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01140">1140</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="launcher_8c_source.html#l01082">panel_launcher_create_with_id()</a>, and <a class="el" href="panel-profile_8c_source.html#l00111">panel_profile_get_toplevel_id()</a>.</p>
+<p class="reference">References <a class="el" href="launcher_8c_source.html#l01088">panel_launcher_create_with_id()</a>, and <a class="el" href="panel-profile_8c_source.html#l00111">panel_profile_get_toplevel_id()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="launcher_8c_source.html#l01136">panel_launcher_create_copy()</a>, and <a class="el" href="launcher_8c_source.html#l01032">panel_launcher_create_from_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="launcher_8c_source.html#l01150">panel_launcher_create_copy()</a>, and <a class="el" href="launcher_8c_source.html#l01038">panel_launcher_create_from_info()</a>.</p>
 
 </div>
 </div>
@@ -398,9 +410,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01136">1136</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01150">1150</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="time-zone_8c_source.html#l00544">dest</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="launcher_8c_source.html#l01126">panel_launcher_create()</a>, <a class="el" href="panel-util_8c_source.html#l00559">panel_launcher_get_filename()</a>, <a class="el" href="panel-util_8c_source.html#l00520">panel_launcher_get_gfile()</a>, and <a class="el" href="panel-util_8c_source.html#l00661">panel_make_unique_desktop_uri()</a>.</p>
+<p class="reference">References <a class="el" href="time-zone_8c_source.html#l00544">dest</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="launcher_8c_source.html#l01140">panel_launcher_create()</a>, <a class="el" href="panel-util_8c_source.html#l00559">panel_launcher_get_filename()</a>, <a class="el" href="panel-util_8c_source.html#l00520">panel_launcher_get_gfile()</a>, and <a class="el" href="panel-util_8c_source.html#l00661">panel_make_unique_desktop_uri()</a>.</p>
 
 </div>
 </div>
@@ -460,9 +472,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01032">1032</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01038">1038</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="gsm-app-dialog_8h_source.html#l00035">comment</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-error_8c_source.html#l00041">panel_error_dialog()</a>, <a class="el" href="panel-keyfile_8c_source.html#l00039">panel_key_file_new_desktop()</a>, <a class="el" href="panel-keyfile_8c_source.html#l00252">panel_key_file_set_locale_string()</a>, <a class="el" href="panel-keyfile_8h_source.html#l00060">panel_key_file_set_string</a>, <a class="el" href="panel-keyfile_8c_source.html#l00094">panel_key_file_to_file()</a>, <a class="el" href="launcher_8c_source.html#l01126">panel_launcher_create()</a>, <a class="el" href="panel-util_8c_source.html#l00661">panel_make_unique_desktop_uri()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="gsm-app-dialog_8h_source.html#l00035">comment</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-error_8c_source.html#l00041">panel_error_dialog()</a>, <a class="el" href="panel-keyfile_8c_source.html#l00039">panel_key_file_new_desktop()</a>, <a class="el" href="panel-keyfile_8c_source.html#l00252">panel_key_file_set_locale_string()</a>, <a class="el" href="panel-keyfile_8h_source.html#l00060">panel_key_file_set_string</a>, <a class="el" href="panel-keyfile_8c_source.html#l00094">panel_key_file_to_file()</a>, <a class="el" href="launcher_8c_source.html#l01140">panel_launcher_create()</a>, <a class="el" href="panel-util_8c_source.html#l00661">panel_make_unique_desktop_uri()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -498,11 +510,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01082">1082</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01088">1088</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-util_8c_source.html#l00559">panel_launcher_get_filename()</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00056">PANEL_OBJECT_LAUNCHER</a>, <a class="el" href="panel-schemas_8h_source.html#l00059">PANEL_OBJECT_LAUNCHER_LOCATION_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00009">PANEL_OBJECT_PATH</a>, <a class="el" href="panel-schemas_8h_source.html#l00045">PANEL_OBJECT_SCHEMA</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, and <a class="el" href="panel-profile_8c_source.html#l01251">panel_profile_prepare_object_with_id()</a>.</p>
+<p class="reference">References <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-util_8c_source.html#l00559">panel_launcher_get_filename()</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00062">PANEL_OBJECT_LAUNCHER</a>, <a class="el" href="panel-schemas_8h_source.html#l00061">PANEL_OBJECT_LAUNCHER_LOCATION_KEY</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00035">PANEL_OBJECT_PACK_START</a>, <a class="el" href="panel-schemas_8h_source.html#l00009">PANEL_OBJECT_PATH</a>, <a class="el" href="panel-schemas_8h_source.html#l00045">PANEL_OBJECT_SCHEMA</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, <a class="el" href="panel-profile_8c_source.html#l00120">panel_profile_get_toplevel_by_id()</a>, <a class="el" href="panel-profile_8c_source.html#l01251">panel_profile_prepare_object_with_id()</a>, <a class="el" href="panel-toplevel_8c_source.html#l04898">panel_toplevel_get_panel_widget()</a>, and <a class="el" href="panel-widget_8c_source.html#l01087">panel_widget_get_insert_at_pos()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="launcher_8c_source.html#l01126">panel_launcher_create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="launcher_8c_source.html#l01140">panel_launcher_create()</a>.</p>
 
 </div>
 </div>
@@ -556,7 +568,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01196">1196</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="launcher_8c_source.html#l01210">1210</a> of file <a class="el" href="launcher_8c_source.html">launcher.c</a>.</p>
 
 <p class="reference">References <a class="el" href="launcher_8h_source.html#l00024">Launcher::button</a>, <a class="el" href="button-widget_8h_source.html#l00012">BUTTON_WIDGET</a>, <a class="el" href="button-widget_8c_source.html#l00954">button_widget_get_surface()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="launcher_8c_source.html#l00367">TARGET_ICON_INTERNAL</a>, <a class="el" href="launcher_8c_source.html#l00368">TARGET_URI_LIST</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 

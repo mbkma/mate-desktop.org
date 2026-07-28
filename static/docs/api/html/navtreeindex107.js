@@ -1,12 +1,11 @@
 var NAVTREEINDEX107 =
 {
-"mate-panel_2mate-panel_2applet_8h.html#a31f91ac4618fe62f2b5de5e09a480ceb":[36,0,0,22,2,3,19],
 "mate-panel_2mate-panel_2applet_8h.html#a3b169688acd9636efd9c24343f007ff2":[36,0,0,22,2,3,14],
 "mate-panel_2mate-panel_2applet_8h.html#a40b28182af14a7c8ca12d98abb46f47b":[36,0,0,22,2,3,2],
 "mate-panel_2mate-panel_2applet_8h.html#a472ea678b2b16c2dc1ca754ff99f9c49":[36,0,0,22,2,3,10],
 "mate-panel_2mate-panel_2applet_8h.html#a4ab7d01601d41559d8c5e5edcef64af1":[36,0,0,22,2,3,7],
 "mate-panel_2mate-panel_2applet_8h.html#a5b1bd83815291328c1943302baaaf3fe":[36,0,0,22,2,3,6],
-"mate-panel_2mate-panel_2applet_8h.html#a6d25b39619a11e78f86a2e06d6f62f3c":[36,0,0,22,2,3,20],
+"mate-panel_2mate-panel_2applet_8h.html#a78db206d585126a71e7b0cf438274079":[36,0,0,22,2,3,21],
 "mate-panel_2mate-panel_2applet_8h.html#a809a9a7a012b5bbba0c8c5e04905f944":[36,0,0,22,2,3,4],
 "mate-panel_2mate-panel_2applet_8h.html#a80d7b5e5082d9f840a2f4e930c81cdd9":[36,0,0,22,2,3,16],
 "mate-panel_2mate-panel_2applet_8h.html#a831e9980a52edfde0fd3bffe3e36db32":[36,0,0,22,2,3,13],
@@ -14,6 +13,7 @@ var NAVTREEINDEX107 =
 "mate-panel_2mate-panel_2applet_8h.html#a9269755b7a9b1eed5df401d3bb8bbab0":[36,0,0,22,2,3,8],
 "mate-panel_2mate-panel_2applet_8h.html#ab949fc4f9765b456a662a7590c7f90e9":[36,0,0,22,2,3,11],
 "mate-panel_2mate-panel_2applet_8h.html#ac7b900ec64ca6f6b643a0a0bebea12c3":[36,0,0,22,2,3,5],
+"mate-panel_2mate-panel_2applet_8h.html#acc43096ddb9975515737c14d4d41dd20":[36,0,0,22,2,3,20],
 "mate-panel_2mate-panel_2applet_8h.html#acef43fb89a54d1a7141b50d93ebd0eb2":[36,0,0,22,2,3,12],
 "mate-panel_2mate-panel_2applet_8h.html#adbd874f52ec28ba557729d3c45e1ee60":[36,0,0,22,2,3,15],
 "mate-panel_2mate-panel_2applet_8h.html#ae12cdc04aa9177fc94d31d7c8e34d96c":[36,0,0,22,2,3,23],

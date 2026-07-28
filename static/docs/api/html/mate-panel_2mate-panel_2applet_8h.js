@@ -20,8 +20,8 @@ var mate_panel_2mate_panel_2applet_8h =
     [ "mate_panel_applet_lockable", "mate-panel_2mate-panel_2applet_8h.html#aeadd8590874cfa8d3a4ad18af24c224e", null ],
     [ "mate_panel_applet_menu_set_recurse", "mate-panel_2mate-panel_2applet_8h.html#a0c283b2c7425551a360a8237580da05f", null ],
     [ "mate_panel_applet_on_load_queue", "mate-panel_2mate-panel_2applet_8h.html#a31f91ac4618fe62f2b5de5e09a480ceb", null ],
-    [ "mate_panel_applet_queue_applet_to_load", "mate-panel_2mate-panel_2applet_8h.html#a6d25b39619a11e78f86a2e06d6f62f3c", null ],
-    [ "mate_panel_applet_register", "mate-panel_2mate-panel_2applet_8h.html#a01ca5b4dc775ed06903317dd3778c683", null ],
+    [ "mate_panel_applet_queue_applet_to_load", "mate-panel_2mate-panel_2applet_8h.html#acc43096ddb9975515737c14d4d41dd20", null ],
+    [ "mate_panel_applet_register", "mate-panel_2mate-panel_2applet_8h.html#a78db206d585126a71e7b0cf438274079", null ],
     [ "mate_panel_applet_save_position", "mate-panel_2mate-panel_2applet_8h.html#af1c28443c5372796b5dc46d5ef54aac2", null ],
     [ "mate_panel_applet_stop_loading", "mate-panel_2mate-panel_2applet_8h.html#ae12cdc04aa9177fc94d31d7c8e34d96c", null ],
     [ "mate_panel_applet_toggle_locked", "mate-panel_2mate-panel_2applet_8h.html#ae34e1dd74bcb558f485220fa091bab8c", null ]

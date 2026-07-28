@@ -121,16 +121,16 @@ Functions</h2></td></tr>
 <tr class="separator:a283babb52337a99b2ab91443d652ae35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af066fd9ed566b80e36add2d3d6b7e212" id="r_af066fd9ed566b80e36add2d3d6b7e212"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drawer_8h.html#af066fd9ed566b80e36add2d3d6b7e212">panel_drawer_create_with_id</a> (const char *toplevel_id, int position, GIcon *custom_icon, gboolean use_custom_icon, const char *tooltip)</td></tr>
 <tr class="separator:af066fd9ed566b80e36add2d3d6b7e212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b5a85c67c92a9fc29968a4778291760" id="r_a2b5a85c67c92a9fc29968a4778291760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drawer_8h.html#a2b5a85c67c92a9fc29968a4778291760">drawer_load_from_gsettings</a> (<a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel_widget, gboolean locked, gint position, const char *id)</td></tr>
-<tr class="separator:a2b5a85c67c92a9fc29968a4778291760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fccf68f78bc3b294904ea28a3c84ce" id="r_a69fccf68f78bc3b294904ea28a3c84ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drawer_8h.html#a69fccf68f78bc3b294904ea28a3c84ce">drawer_load_from_gsettings</a> (<a class="el" href="panel-toplevel_8h.html#a739e566e17f3685b2fb8e7f0152fbaf4">PanelWidget</a> *panel_widget, gboolean locked, gint position, <a class="el" href="panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44">PanelObjectPackType</a> pack_type, int pack_index, const char *id)</td></tr>
+<tr class="separator:a69fccf68f78bc3b294904ea28a3c84ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fa28f2900254f6e490ef82724187b79" id="r_a7fa28f2900254f6e490ef82724187b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drawer_8h.html#a7fa28f2900254f6e490ef82724187b79">panel_drawer_set_dnd_enabled</a> (<a class="el" href="structDrawer.html">Drawer</a> *drawer, gboolean dnd_enabled)</td></tr>
 <tr class="separator:a7fa28f2900254f6e490ef82724187b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123e4fcdb7b832c427be0b92efb317b0" id="r_a123e4fcdb7b832c427be0b92efb317b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drawer_8h.html#a123e4fcdb7b832c427be0b92efb317b0">drawer_query_deletion</a> (<a class="el" href="structDrawer.html">Drawer</a> *drawer)</td></tr>
 <tr class="separator:a123e4fcdb7b832c427be0b92efb317b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2b5a85c67c92a9fc29968a4778291760" name="a2b5a85c67c92a9fc29968a4778291760"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b5a85c67c92a9fc29968a4778291760">&#9670;&#160;</a></span>drawer_load_from_gsettings()</h2>
+<a id="a69fccf68f78bc3b294904ea28a3c84ce" name="a69fccf68f78bc3b294904ea28a3c84ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69fccf68f78bc3b294904ea28a3c84ce">&#9670;&#160;</a></span>drawer_load_from_gsettings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +156,18 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="panel-enums-gsettings_8h.html#af8e5b89c01a4f95167090bb619ae3f44">PanelObjectPackType</a>&#160;</td>
+          <td class="paramname"><em>pack_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pack_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>id</em>&#160;</td>
         </tr>
@@ -167,9 +179,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00656">656</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00673">673</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-schemas_8h_source.html#l00052">PANEL_OBJECT_ATTACHED_TOPLEVEL_ID_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00055">PANEL_OBJECT_CUSTOM_ICON_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00009">PANEL_OBJECT_PATH</a>, <a class="el" href="panel-schemas_8h_source.html#l00045">PANEL_OBJECT_SCHEMA</a>, <a class="el" href="panel-schemas_8h_source.html#l00053">PANEL_OBJECT_TOOLTIP_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00054">PANEL_OBJECT_USE_CUSTOM_ICON_KEY</a>, <a class="el" href="panel-profile_8c_source.html#l01087">panel_profile_load_toplevel()</a>, <a class="el" href="panel-widget_8h_source.html#l00109">_PanelWidget::toplevel</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-schemas_8h_source.html#l00054">PANEL_OBJECT_ATTACHED_TOPLEVEL_ID_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00057">PANEL_OBJECT_CUSTOM_ICON_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00009">PANEL_OBJECT_PATH</a>, <a class="el" href="panel-schemas_8h_source.html#l00045">PANEL_OBJECT_SCHEMA</a>, <a class="el" href="panel-schemas_8h_source.html#l00055">PANEL_OBJECT_TOOLTIP_KEY</a>, <a class="el" href="panel-schemas_8h_source.html#l00056">PANEL_OBJECT_USE_CUSTOM_ICON_KEY</a>, <a class="el" href="panel-profile_8c_source.html#l01087">panel_profile_load_toplevel()</a>, <a class="el" href="panel-widget_8h_source.html#l00112">_PanelWidget::toplevel</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -189,9 +201,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00724">724</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00745">745</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="panel-widget_8h_source.html#l00090">_PanelWidget::applet_list</a>, <a class="el" href="drawer_8h_source.html#l00019">Drawer::info</a>, <a class="el" href="panel_8c_source.html#l01466">panel_deletion_dialog()</a>, <a class="el" href="panel-config-global_8c_source.html#l00082">panel_global_config_get_confirm_panel_remove()</a>, <a class="el" href="panel-profile_8c_source.html#l01297">panel_profile_delete_object()</a>, <a class="el" href="panel-toplevel_8c_source.html#l04898">panel_toplevel_get_panel_widget()</a>, and <a class="el" href="drawer_8h_source.html#l00013">Drawer::toplevel</a>.</p>
+<p class="reference">References <a class="el" href="panel-widget_8h_source.html#l00093">_PanelWidget::applet_list</a>, <a class="el" href="drawer_8h_source.html#l00019">Drawer::info</a>, <a class="el" href="panel_8c_source.html#l01446">panel_deletion_dialog()</a>, <a class="el" href="panel-config-global_8c_source.html#l00082">panel_global_config_get_confirm_panel_remove()</a>, <a class="el" href="panel-profile_8c_source.html#l01301">panel_profile_delete_object()</a>, <a class="el" href="panel-toplevel_8c_source.html#l04898">panel_toplevel_get_panel_widget()</a>, and <a class="el" href="drawer_8h_source.html#l00013">Drawer::toplevel</a>.</p>
 
 </div>
 </div>
@@ -239,9 +251,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00617">617</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00619">619</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00054">PANEL_OBJECT_DRAWER</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, and <a class="el" href="panel-profile_8c_source.html#l01285">panel_profile_prepare_object()</a>.</p>
+<p class="reference">References <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00060">PANEL_OBJECT_DRAWER</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00035">PANEL_OBJECT_PACK_START</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, <a class="el" href="panel-profile_8c_source.html#l01287">panel_profile_prepare_object()</a>, <a class="el" href="panel-toplevel_8c_source.html#l04898">panel_toplevel_get_panel_widget()</a>, and <a class="el" href="panel-widget_8c_source.html#l01087">panel_widget_get_insert_at_pos()</a>.</p>
 
 </div>
 </div>
@@ -289,9 +301,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00635">635</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00643">643</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00054">PANEL_OBJECT_DRAWER</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, and <a class="el" href="panel-profile_8c_source.html#l01251">panel_profile_prepare_object_with_id()</a>.</p>
+<p class="reference">References <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-enums_8h_source.html#l00056">PANEL_GSETTINGS_OBJECTS</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00060">PANEL_OBJECT_DRAWER</a>, <a class="el" href="panel-enums-gsettings_8h_source.html#l00035">PANEL_OBJECT_PACK_START</a>, <a class="el" href="panel-profile_8c_source.html#l00904">panel_profile_add_to_list()</a>, <a class="el" href="panel-profile_8c_source.html#l00120">panel_profile_get_toplevel_by_id()</a>, <a class="el" href="panel-profile_8c_source.html#l01251">panel_profile_prepare_object_with_id()</a>, <a class="el" href="panel-toplevel_8c_source.html#l04898">panel_toplevel_get_panel_widget()</a>, and <a class="el" href="panel-widget_8c_source.html#l01087">panel_widget_get_insert_at_pos()</a>.</p>
 
 </div>
 </div>
@@ -321,7 +333,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00701">701</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="drawer_8c_source.html#l00722">722</a> of file <a class="el" href="drawer_8c_source.html">drawer.c</a>.</p>
 
 <p class="reference">References <a class="el" href="drawer_8h_source.html#l00014">Drawer::button</a>, <a class="el" href="button-widget_8h_source.html#l00012">BUTTON_WIDGET</a>, <a class="el" href="button-widget_8c_source.html#l00833">button_widget_get_icon_name()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 

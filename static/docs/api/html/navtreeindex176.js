@@ -1,5 +1,9 @@
 var NAVTREEINDEX176 =
 {
+"structGpmPrefsClass.html":[35,0,1332],
+"structGpmPrefsClass.html#a6840f26221ed6ebe4ab27d8a98cf3a55":[35,0,1332,1],
+"structGpmPrefsClass.html#a8c5c3408eb7e26cc3703c1adefc88f85":[35,0,1332,2],
+"structGpmPrefsClass.html#ac2fdaadb315a8d6adc6f194e5b31d14b":[35,0,1332,0],
 "structGpmScreensaver.html":[35,0,1333],
 "structGpmScreensaver.html#aaba38eb5f8ae89b7cd0762937a26cf86":[35,0,1333,0],
 "structGpmScreensaver.html#ac431141525a194c3104bcaab09988b6b":[35,0,1333,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX176 =
 "structMateSettingsManagerClass.html#a836bdf410e01a39be9f2bf29cd137b56":[35,0,1422,1],
 "structMateSettingsPlugin.html":[35,0,1423],
 "structMateSettingsPlugin.html#abb3091cfba8a4b65d25fc041bc7f4e8a":[35,0,1423,0],
-"structMateSettingsPluginClass.html":[35,0,1424],
-"structMateSettingsPluginClass.html#a63a205aa6ca40766d545f8146fef07fd":[35,0,1424,2],
-"structMateSettingsPluginClass.html#a7e1ac836c59beb1e052b708a60ab9104":[35,0,1424,1],
-"structMateSettingsPluginClass.html#ae1762026ddc82338a90c85a320d51b4a":[35,0,1424,0],
-"structMateSettingsPluginInfo.html":[35,0,1425]
+"structMateSettingsPluginClass.html":[35,0,1424]
 };

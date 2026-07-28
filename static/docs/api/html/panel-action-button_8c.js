@@ -5,7 +5,7 @@ var panel_action_button_8c =
     [ "panel_action_button_create", "panel-action-button_8c.html#a7e76b35a64a13c148e870c581d4266df", null ],
     [ "panel_action_button_invoke_menu", "panel-action-button_8c.html#abdebe94136838bebb988366c35e03604", null ],
     [ "panel_action_button_load_from_drag", "panel-action-button_8c.html#afa3d6930638dee32793597e1d3fe342f", null ],
-    [ "panel_action_button_load_from_gsettings", "panel-action-button_8c.html#a30370ec8152fd403c2a5406251e2b8f6", null ],
+    [ "panel_action_button_load_from_gsettings", "panel-action-button_8c.html#ab8964a899c455e80fed082629ac20a71", null ],
     [ "panel_action_button_set_dnd_enabled", "panel-action-button_8c.html#a643426d2c0ff574f2ea68fd3c9ceb924", null ],
     [ "panel_action_button_set_type", "panel-action-button_8c.html#a6631efbc58fbb50842e6d319bfca0f4b", null ],
     [ "panel_action_get_drag_id", "panel-action-button_8c.html#ac5930e6ae510fef10d3ee0e3f11327c7", null ],
