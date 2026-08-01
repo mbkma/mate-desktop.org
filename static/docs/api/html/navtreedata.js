@@ -412,11 +412,11 @@ var NAVTREEINDEX =
 "time-zones_8h.html#a2897da9c19e0bb96323a739a8b2b1a0e",
 "time-zones_8h.html#abea315ba7cc1577b4553725d67534bf6",
 "typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaabdcf11dfe9a0e4d400f42d242a8665d",
-"weather-iwin_8c.html#ae448571c879024c5ef35354cc26e3f91",
-"weather_8h.html#a92050237dc88be9f5b72d5092495c3c0a78279182386c08f075598bb534761536",
-"window-private_8h.html#aec6e376ffd7383e4b66817ddd398b180",
-"workspace_8c.html#a67f6bac802e6dc8a75a70eaef5356690",
-"zoom_8c.html#aeafce2d3317297f8e5524a75bb93d114"
+"wayland-workspace_8h.html#a18dab37fa6b48ae41d50d4fa9b93f990",
+"weather_8h.html#a8333f6c5aee85543f07ba2dfe7cc2f92",
+"window-private_8h.html#aca35bb927542ee5c1273fdf92960a8beafe4f5afada51d8daf740122488daf6f6",
+"workspace-switcher_8c.html#a81df2dd74f3e94f795e8bc2487389954",
+"xsettings-manager_8h.html#ab6d264416f0a3a711fed8d0a2851e44c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

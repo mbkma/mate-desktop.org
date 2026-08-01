@@ -1035,7 +1035,7 @@ var searchData=
   ['spc_5fconfig_5fschema_1032',['SPC_CONFIG_SCHEMA',['../gsm-properties-dialog_8c.html#a62ce7f020ac6f73d656718d3808cce65',1,'gsm-properties-dialog.c']]],
   ['spc_5fshow_5fhidden_5fkey_1033',['SPC_SHOW_HIDDEN_KEY',['../gsm-properties-dialog_8c.html#a0fe0f6b6f7c58123ba2d91383fc3307a',1,'gsm-properties-dialog.c']]],
   ['speakers_5fcolumn_1034',['SPEAKERS_COLUMN',['../gvc-mixer-dialog_8c.html#ad21afe167e599f333430a387c2429f88a472f226de3d2357eecf99bc75ec333f0',1,'gvc-mixer-dialog.c']]],
-  ['special_1035',['special',['../special_8c.html#ada17be56b06f6b81a6d156588f718db0',1,'SPECIAL:&#160;special.c'],['../special_8c.html#a5ac513dc64a38d58e9ff983f4d3d56d7',1,'SPECIAL(epsf_special):&#160;special.c'],['../dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150',1,'special(DviContext *dvi, int opcode):&#160;dviread.c'],['../special_8c.html#ad8dbce681f366042dc41ecd8d26a621c',1,'SPECIAL(do_color_special):&#160;special.c']]],
+  ['special_1035',['special',['../dviread_8c.html#a2b4dbdd322ed0f98559b5a0745a9f150',1,'special(DviContext *dvi, int opcode):&#160;dviread.c'],['../special_8c.html#ada17be56b06f6b81a6d156588f718db0',1,'SPECIAL:&#160;special.c'],['../special_8c.html#ad8dbce681f366042dc41ecd8d26a621c',1,'SPECIAL(do_color_special):&#160;special.c'],['../special_8c.html#a5ac513dc64a38d58e9ff983f4d3d56d7',1,'SPECIAL(epsf_special):&#160;special.c']]],
   ['special_2ec_1036',['special.c',['../special_8c.html',1,'']]],
   ['special_5fdir_1037',['SPECIAL_DIR',['../file-utils_8c.html#af444aa351491c996fcea5789cf90b810',1,'file-utils.c']]],
   ['speed_1038',['speed',['../structLoadGraph.html#ae0112352b04fd0e1739313e27757d0fb',1,'LoadGraph::speed'],['../struct__LoadGraph.html#adc61a4ca594b518cab5af5a584147704',1,'_LoadGraph::speed']]],

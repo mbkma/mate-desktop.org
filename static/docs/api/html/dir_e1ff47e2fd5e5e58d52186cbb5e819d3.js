@@ -5,6 +5,8 @@ var dir_e1ff47e2fd5e5e58d52186cbb5e819d3 =
     [ "showdesktop.h", "showdesktop_8h.html", "showdesktop_8h" ],
     [ "wayland-backend.c", "applets_2wncklet_2wayland-backend_8c.html", "applets_2wncklet_2wayland-backend_8c" ],
     [ "wayland-backend.h", "applets_2wncklet_2wayland-backend_8h.html", "applets_2wncklet_2wayland-backend_8h" ],
+    [ "wayland-workspace.c", "wayland-workspace_8c.html", "wayland-workspace_8c" ],
+    [ "wayland-workspace.h", "wayland-workspace_8h.html", "wayland-workspace_8h" ],
     [ "window-list.c", "window-list_8c.html", "window-list_8c" ],
     [ "window-list.h", "window-list_8h.html", "window-list_8h" ],
     [ "window-menu.c", "window-menu_8c.html", "window-menu_8c" ],
