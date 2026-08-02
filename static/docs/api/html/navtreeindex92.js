@@ -1,14 +1,5 @@
 var NAVTREEINDEX92 =
 {
-"logview-app_8h.html#a4d0fb2a23bbb38b29885f3606966cbbb":[36,0,0,32,2,0,3,12],
-"logview-app_8h.html#a6bc953dd079b780a2ad43aa34e888baf":[36,0,0,32,2,0,3,6],
-"logview-app_8h.html#a91f78b888f2de957cd2769f4708b87b8":[36,0,0,32,2,0,3,7],
-"logview-app_8h.html#aaed3177ebdb65abec3b2cfe0dd7d3354":[36,0,0,32,2,0,3,13],
-"logview-app_8h.html#abe251e5ecea1e927909a1dfe01a39090":[36,0,0,32,2,0,3,9],
-"logview-app_8h.html#ac2738b02048cf203b9ab2be57435a42f":[36,0,0,32,2,0,3,15],
-"logview-app_8h.html#ac9eecd32703b1e0cab1ba60a3d5e66cc":[36,0,0,32,2,0,3,3],
-"logview-app_8h.html#adddd44b3be6c70b97ebfd6c1b3a225a2":[36,0,0,32,2,0,3,14],
-"logview-app_8h_source.html":[36,0,0,32,2,0,3],
 "logview-filter-manager_8c.html":[36,0,0,32,2,0,4],
 "logview-filter-manager_8c.html#a9318a0c25545a611b5f412f49965d611":[36,0,0,32,2,0,4,2],
 "logview-filter-manager_8c.html#aac256da2b4d348b566bb93f79242df9e":[36,0,0,32,2,0,4,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX92 =
 "logview-utils_8c.html#ac7b30cf7f83588cb6bc1c716be66f5a2":[36,0,0,32,2,0,19,1],
 "logview-utils_8c.html#adad66ec04d4ae3436e5b314cd2e48526":[36,0,0,32,2,0,19,6],
 "logview-utils_8c_source.html":[36,0,0,32,2,0,19],
-"logview-utils_8h.html":[36,0,0,32,2,0,20]
+"logview-utils_8h.html":[36,0,0,32,2,0,20],
+"logview-utils_8h.html#a3c405fa7c8009dd9039f8ccdbf243e88":[36,0,0,32,2,0,20,3],
+"logview-utils_8h.html#ab07460c599e0aae4fa713a5bf2bea82d":[36,0,0,32,2,0,20,2],
+"logview-utils_8h.html#ab1b2d4170991ec6bf6c525374883c633":[36,0,0,32,2,0,20,4],
+"logview-utils_8h.html#ab6595cad1278dfe6faac52f78f9a8b7d":[36,0,0,32,2,0,20,1],
+"logview-utils_8h.html#adad66ec04d4ae3436e5b314cd2e48526":[36,0,0,32,2,0,20,5],
+"logview-utils_8h_source.html":[36,0,0,32,2,0,20],
+"logview-window_8c.html":[36,0,0,32,2,0,21],
+"logview-window_8c.html#a161cfacdc0a0254a07f3251ad2b4ac2f":[36,0,0,32,2,0,21,6],
+"logview-window_8c.html#a1804d2c87e9111b804aeaf11b9c64b88":[36,0,0,32,2,0,21,8]
 };

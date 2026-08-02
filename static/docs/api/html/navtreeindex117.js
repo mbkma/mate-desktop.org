@@ -1,14 +1,5 @@
 var NAVTREEINDEX117 =
 {
-"matemixer-enums_8h.html#afdb70b86ada401f14172e6957fc64830a4876625a526880c3fa877627903642d5":[36,0,0,8,2,15,0,0],
-"matemixer-enums_8h.html#afdb70b86ada401f14172e6957fc64830a5975fef417819bc9b9a30717f1d12f1a":[36,0,0,8,2,15,0,4],
-"matemixer-enums_8h.html#afdb70b86ada401f14172e6957fc64830a67c1c3bf70e120037fdc29a82f1fd929":[36,0,0,8,2,15,0,1],
-"matemixer-enums_8h_source.html":[36,0,0,8,2,15],
-"matemixer-private_8h.html":[36,0,0,8,2,16],
-"matemixer-private_8h.html#a2ada4c1bdd67bb2f16e87879241d14db":[36,0,0,8,2,16,3],
-"matemixer-private_8h.html#a3287793116295f569ddeb7bbc59edf52":[36,0,0,8,2,16,11],
-"matemixer-private_8h.html#a4929fe644af4d1c5f849cf3fd9cceaee":[36,0,0,8,2,16,4],
-"matemixer-private_8h.html#a4b33f1aa52126fdf0233c318fc303623":[36,0,0,8,2,16,13],
 "matemixer-private_8h.html#a4bf98a93a85c6592fd0a005d2aaeb78e":[36,0,0,8,2,16,7],
 "matemixer-private_8h.html#a6e4b5e52b653428e1eb846c45996f05d":[36,0,0,8,2,16,9],
 "matemixer-private_8h.html#a742a339b843b6447ef381b360befac49":[36,0,0,8,2,16,14],
@@ -249,5 +240,14 @@ var NAVTREEINDEX117 =
 "matemixer-switch_8h.html#af151a492e1c8ea8f7edaf0213dede53c":[36,0,0,8,2,34,6],
 "matemixer-switch_8h.html#af2c0afc7271577de2ac7c9122b9555ae":[36,0,0,8,2,34,8],
 "matemixer-switch_8h_source.html":[36,0,0,8,2,34],
-"matemixer-types_8h.html":[36,0,0,8,2,35]
+"matemixer-types_8h.html":[36,0,0,8,2,35],
+"matemixer-types_8h.html#a01a2abce643d1aa5d9ea3c239c1bc9ec":[36,0,0,8,2,35,0],
+"matemixer-types_8h.html#a07255defc8901f637c59b4982cd0d692":[36,0,0,8,2,35,4],
+"matemixer-types_8h.html#a0946adb7931ce6a072d435de7b9616a1":[36,0,0,8,2,35,3],
+"matemixer-types_8h.html#a146f055bce5ac720ba604ca26a1e25d7":[36,0,0,8,2,35,6],
+"matemixer-types_8h.html#a7741965bb597b101800a50547d457edf":[36,0,0,8,2,35,2],
+"matemixer-types_8h.html#a810821a9819e173b5941aae3acdbe8d9":[36,0,0,8,2,35,9],
+"matemixer-types_8h.html#a9dfa693bf6e3b7e42a132cd63f9b2806":[36,0,0,8,2,35,8],
+"matemixer-types_8h.html#aac5d1367304aa0f5c4430726040f1ec1":[36,0,0,8,2,35,7],
+"matemixer-types_8h.html#ab064a9d160db6bfd49f536445d813539":[36,0,0,8,2,35,5]
 };

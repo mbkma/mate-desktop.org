@@ -1,14 +1,5 @@
 var NAVTREEINDEX83 =
 {
-"gs-prefs_8c.html#a9db8dc1536c2a3f254ba900990311c31":[36,0,0,25,2,24,22],
-"gs-prefs_8c.html#a9fdd95f9c1c6e7482169be3456d47826":[36,0,0,25,2,24,9],
-"gs-prefs_8c.html#aa9f214c35ba15ee2ee8b4cc566bfb0fd":[36,0,0,25,2,24,21],
-"gs-prefs_8c.html#ab4d90c31f3a9f5bab35fac527aed2e7f":[36,0,0,25,2,24,25],
-"gs-prefs_8c.html#ab549270ad34aa6fc98c461e16e4bec38":[36,0,0,25,2,24,15],
-"gs-prefs_8c.html#abb8bb72c7af0db648a5b1228c53336b1":[36,0,0,25,2,24,3],
-"gs-prefs_8c.html#ac4c1a1ae4b3019a7404b2a0d7f0f257d":[36,0,0,25,2,24,1],
-"gs-prefs_8c.html#acde76ac69087f7ded054eff95d6df043":[36,0,0,25,2,24,8],
-"gs-prefs_8c.html#ad7e29880491daab7a1d1d37a766dfcd5":[36,0,0,25,2,24,19],
 "gs-prefs_8c.html#adc2e24a86276d50ca61985b94461def5":[36,0,0,25,2,24,23],
 "gs-prefs_8c.html#ae99f31d31f73c55da1bf9a540af7754d":[36,0,0,25,2,24,17],
 "gs-prefs_8c.html#aebdada6286e06bf35bbe1b2208b88863":[36,0,0,25,2,24,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX83 =
 "gsearchtool-callbacks_8c.html#ac87a6a0f03855234cba55c5d79ba9504":[36,0,0,32,1,1,0,0],
 "gsearchtool-callbacks_8c.html#ad1998a111dd206b0124aabe6edd90c5e":[36,0,0,32,1,1,0,16],
 "gsearchtool-callbacks_8c.html#ada332af23c7f6a02ab92343015a4c181":[36,0,0,32,1,1,0,39],
-"gsearchtool-callbacks_8c.html#ae3148288b05681c5dc2287e783b37eae":[36,0,0,32,1,1,0,13]
+"gsearchtool-callbacks_8c.html#ae3148288b05681c5dc2287e783b37eae":[36,0,0,32,1,1,0,13],
+"gsearchtool-callbacks_8c.html#aead3b139853e2a78712986ed1d22d764":[36,0,0,32,1,1,0,8],
+"gsearchtool-callbacks_8c.html#aebcdecbc3035e5baec2066d7e0a344a2":[36,0,0,32,1,1,0,10],
+"gsearchtool-callbacks_8c.html#aec5476e67885f329ae3af847ec7dbc21":[36,0,0,32,1,1,0,11],
+"gsearchtool-callbacks_8c.html#af00165e42a58493cad78a68cb66111d6":[36,0,0,32,1,1,0,38],
+"gsearchtool-callbacks_8c.html#af1182f7470aeba48e3a9d261807015f7":[36,0,0,32,1,1,0,26],
+"gsearchtool-callbacks_8c_source.html":[36,0,0,32,1,1,0],
+"gsearchtool-callbacks_8h.html":[36,0,0,32,1,1,1],
+"gsearchtool-callbacks_8h.html#a00638f1b0e19a521238dff59e4bc0807":[36,0,0,32,1,1,1,2],
+"gsearchtool-callbacks_8h.html#a08f0e41408f859f73e687e998fc816ea":[36,0,0,32,1,1,1,8]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX181 =
 {
-"structTestDerivedClass.html#ae0e9713254d6ebf0a5763bdb2a7c4140":[35,0,1640,1],
-"structTestIFaceInterface.html":[35,0,1641],
-"structTestIFaceInterface.html#a4100b4ae46e5c84c76fddbec2e7b195a":[35,0,1641,1],
-"structTestIFaceInterface.html#ae33a2bf9dd53fe94e24ac876f44b0f24":[35,0,1641,0],
-"structTestIFaceInterface.html#af4cf6645c9313ca9e8d2281d3878e163":[35,0,1641,3],
-"structTestIFaceInterface.html#af56389c9d9dc2ccaa2c4d769fcb83916":[35,0,1641,2],
-"structThemedIcon.html":[35,0,1642],
-"structThemedIcon.html#a1caf8752dba08b431fe4a7b4c218a0e2":[35,0,1642,1],
-"structThemedIcon.html#ae351a4e68148a311a1f57109e0637a2c":[35,0,1642,0],
 "structThemedIcon.html#ae7a252a0a8fdb6d42bae667545a03f0b":[35,0,1642,2],
 "structThemedIconClass.html":[35,0,1643],
 "structThemedIconClass.html#a4ddb1118f51885d0d5fb39e509d24b27":[35,0,1643,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX181 =
 "struct__AppletData.html#af3e5f7ac012844775134f13622281210":[35,0,21,0],
 "struct__AppletSizeHints.html":[35,0,22],
 "struct__AppletSizeHints.html#a30f0b8f17dbebf9f576bd7bb59ee5e0e":[35,0,22,0],
-"struct__AppletSizeHints.html#ac76c91f73fbe05546c552d56754dce19":[35,0,22,1]
+"struct__AppletSizeHints.html#ac76c91f73fbe05546c552d56754dce19":[35,0,22,1],
+"struct__AppletSizeHintsAlloc.html":[35,0,23],
+"struct__AppletSizeHintsAlloc.html#a4843c1f35a91bda4e7ae451018294e38":[35,0,23,0],
+"struct__AppletSizeHintsAlloc.html#a954d175b663ba6d2d65103305dbe4c30":[35,0,23,1],
+"struct__AutoScaler.html":[35,0,27],
+"struct__AutoScaler.html#a085bc9052ba97e6d64398a2301d60231":[35,0,27,0],
+"struct__AutoScaler.html#a172a58929c370e8ea3102784d79c6e67":[35,0,27,6],
+"struct__AutoScaler.html#a348efa763ee92cdb25cf9e35afb3e101":[35,0,27,5],
+"struct__AutoScaler.html#a4a804caf8607e362c721ac6016bdf94f":[35,0,27,4],
+"struct__AutoScaler.html#a5892b39e6fc9e37293aa20b964db69a9":[35,0,27,3]
 };

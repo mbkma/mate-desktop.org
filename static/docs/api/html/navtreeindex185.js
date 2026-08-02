@@ -1,14 +1,5 @@
 var NAVTREEINDEX185 =
 {
-"struct__CalendarSources.html":[35,0,129],
-"struct__CalendarSources.html#a79d4ce6c826768ee9a8dd62d197f4f41":[35,0,129,0],
-"struct__CalendarSources.html#adb156dfa1d4207f788880082652b62eb":[35,0,129,1],
-"struct__CalendarSourcesClass.html":[35,0,130],
-"struct__CalendarSourcesClass.html#a49295352aa55e1c408fd1f84383fac72":[35,0,130,2],
-"struct__CalendarSourcesClass.html#ac5a101dea69938b580ebdd082d0a6ce0":[35,0,130,0],
-"struct__CalendarSourcesClass.html#afc4904ce9b1e29f14bdeb6290ee2ac2d":[35,0,130,1],
-"struct__CalendarWindow.html":[35,0,131],
-"struct__CalendarWindow.html#a099f6b619722471be350e52cebb2e1f9":[35,0,131,1],
 "struct__CalendarWindow.html#a209b2da2b6ba499287d0901f5a1dcda7":[35,0,131,0],
 "struct__CalendarWindowClass.html":[35,0,132],
 "struct__CalendarWindowClass.html#a9316fb4b8610910bb346a0f1b1343150":[35,0,132,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX185 =
 "struct__DviPaper.html#a3d4ee3ece1863cebbbe946ba788938be":[35,0,182,1],
 "struct__DviPaper.html#aa4264224e77b70e7945d55f4bb08ce1e":[35,0,182,2],
 "struct__DviPaper.html#ab345f8bd708ed32916254a487ef96141":[35,0,182,0],
-"struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[35,0,182,3]
+"struct__DviPaper.html#ac3dcf62381cb9080ce000879a02d08ea":[35,0,182,3],
+"struct__DviPaperSpec.html":[35,0,183],
+"struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579":[35,0,183,0],
+"struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[35,0,183,1],
+"struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871":[35,0,183,2],
+"struct__DviParams.html":[35,0,184],
+"struct__DviParams.html#a10621368dd69ad7c49e4504eae23d9dd":[35,0,184,14],
+"struct__DviParams.html#a11939157ccfa45bca746415cbf26a9a7":[35,0,184,4],
+"struct__DviParams.html#a22db50ac0d16ec9fdeb7b9a9aea87e78":[35,0,184,1],
+"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3":[35,0,184,20]
 };

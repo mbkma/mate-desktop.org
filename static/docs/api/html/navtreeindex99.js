@@ -1,14 +1,5 @@
 var NAVTREEINDEX99 =
 {
-"mate-colorseldialog_8h.html#a185bd9bfb60f93b8069e1e7d43a1686a":[36,0,0,15,0,10,4],
-"mate-colorseldialog_8h.html#a4307cbac915cca27eb56c67dfde4c878":[36,0,0,15,0,10,10],
-"mate-colorseldialog_8h.html#a5af229cd505748b8118ae84528a30836":[36,0,0,15,0,10,2],
-"mate-colorseldialog_8h.html#a99987306f1f800c2dc0381b655e2b9bd":[36,0,0,15,0,10,8],
-"mate-colorseldialog_8h.html#aa37673befcda30d3c41552c4f7294904":[36,0,0,15,0,10,6],
-"mate-colorseldialog_8h.html#ab1c43b4bde6652e46edf66be9a8da1cf":[36,0,0,15,0,10,3],
-"mate-colorseldialog_8h.html#ab1d078bb99d96f4b8ea7c481554294a3":[36,0,0,15,0,10,9],
-"mate-colorseldialog_8h.html#ac58444770a30adc58d97e14c50601ecd":[36,0,0,15,0,10,11],
-"mate-colorseldialog_8h.html#ac5d7c83f9a5d29ce1180f9e99cb6a3c5":[36,0,0,15,0,10,12],
 "mate-colorseldialog_8h.html#ad35e67c2fb4e61cee4807cb94160d902":[36,0,0,15,0,10,5],
 "mate-colorseldialog_8h.html#af9063443a313ee44ecdd137545811214":[36,0,0,15,0,10,7],
 "mate-colorseldialog_8h_source.html":[36,0,0,15,0,10],
@@ -249,5 +240,14 @@ var NAVTREEINDEX99 =
 "mate-desktop-item_8c_source.html":[36,0,0,15,0,13],
 "mate-desktop-item_8h.html":[36,0,0,15,0,14],
 "mate-desktop-item_8h.html#a02a4e43cae86f2dade66d9204936de8d":[36,0,0,15,0,14,26],
-"mate-desktop-item_8h.html#a033f0e5e2b7cde89492be29aaa73c0b9":[36,0,0,15,0,14,4]
+"mate-desktop-item_8h.html#a033f0e5e2b7cde89492be29aaa73c0b9":[36,0,0,15,0,14,4],
+"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00":[36,0,0,15,0,14,40],
+"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00a2a7470fa7d69767b20015081cefe1b2c":[36,0,0,15,0,14,40,1],
+"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00a3b1a05b6ca51be7f1488018cff97e7f4":[36,0,0,15,0,14,40,2],
+"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00ab7331872fa2cb9031ee5fe4007a38baa":[36,0,0,15,0,14,40,0],
+"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9":[36,0,0,15,0,14,38],
+"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a26de461e735cde139a31e9a4d54c22b9":[36,0,0,15,0,14,38,4],
+"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a532658d156c211beffe9c2ea4c4095c6":[36,0,0,15,0,14,38,1],
+"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a860c2bea950965e49ac328591ac96c82":[36,0,0,15,0,14,38,2],
+"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a8cfa6633090cf4bc172858078111572c":[36,0,0,15,0,14,38,0]
 };

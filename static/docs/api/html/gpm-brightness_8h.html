@@ -337,9 +337,9 @@ Functions</h2></td></tr>
 <p>gpm_brightness_down: @brightness: This brightness class instance @hw_changed: If the hardware was changed, i.e. the brightness changed Return value: TRUE if success, FALSE if there was an error</p>
 <p>If possible, put the brightness of the LCD down one unit. </p>
 
-<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00734">734</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00828">828</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gpm-brightness_8c_source.html#l00079">ACTION_BACKLIGHT_DEC</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>.</p>
 
 </div>
 </div>
@@ -371,9 +371,9 @@ Functions</h2></td></tr>
 <p>gpm_brightness_get: @brightness: This brightness class instance Return value: The percentage brightness, or -1 for no hardware or error</p>
 <p>Gets the current (or at least what this class thinks is current) percentage brightness. This is quick as no HAL inquiry is done. </p>
 
-<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00628">628</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00717">717</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gpm-brightness_8c_source.html#l00076">ACTION_BACKLIGHT_GET</a>, <a class="el" href="egg-discrete_8c_source.html#l00063">egg_discrete_to_percent()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="egg-discrete_8c_source.html#l00063">egg_discrete_to_percent()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gpm-backlight_8c_source.html#l00101">gpm_backlight_get_brightness()</a>.</p>
 
@@ -414,7 +414,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>gpm_brightness_has_hw: </p>
 
-<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00866">866</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00894">894</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -437,7 +437,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>gpm_brightness_new: Return value: A new brightness class instance. Can return NULL if no suitable hardware is found. </p>
 
-<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00973">973</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l01013">1013</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gpm-brightness_8h_source.html#l00031">GPM_BRIGHTNESS</a>, <a class="el" href="gpm-brightness_8h_source.html#l00030">GPM_TYPE_BRIGHTNESS</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -476,9 +476,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>gpm_brightness_set: @brightness: This brightness class instance @percentage: The percentage brightness @hw_changed: If the hardware was changed, i.e. the brightness changed Return value: TRUE if success, FALSE if there was an error </p>
 
-<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00579">579</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00663">663</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gpm-brightness_8c_source.html#l00077">ACTION_BACKLIGHT_SET</a>, <a class="el" href="egg-discrete_8c_source.html#l00041">egg_discrete_from_percent()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="egg-discrete_8c_source.html#l00041">egg_discrete_from_percent()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gpm-backlight_8c_source.html#l00133">gpm_backlight_set_brightness()</a>.</p>
 
@@ -512,9 +512,9 @@ Functions</h2></td></tr>
 <p>gpm_brightness_up: @brightness: This brightness class instance @hw_changed: If the hardware was changed, i.e. the brightness changed Return value: TRUE if success, FALSE if there was an error</p>
 <p>If possible, put the brightness of the LCD up one unit. </p>
 
-<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00683">683</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gpm-brightness_8c_source.html#l00774">774</a> of file <a class="el" href="gpm-brightness_8c_source.html">gpm-brightness.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gpm-brightness_8c_source.html#l00078">ACTION_BACKLIGHT_INC</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gpm-brightness_8h_source.html#l00033">GPM_IS_BRIGHTNESS</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gpm-brightness_8h_source.html#l00044">GpmBrightness::priv</a>.</p>
 
 </div>
 </div>

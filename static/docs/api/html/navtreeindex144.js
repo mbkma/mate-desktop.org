@@ -1,14 +1,5 @@
 var NAVTREEINDEX144 =
 {
-"panel-ditem-editor_8h.html#a88b0c801354994c3fbb25991a4d0a93e":[36,0,0,22,2,38,20],
-"panel-ditem-editor_8h.html#a97fbd97cbfc10250f57a04cc11fb78a6":[36,0,0,22,2,38,13],
-"panel-ditem-editor_8h.html#ab704dacb1c67b4b15e123eb8aa331f95":[36,0,0,22,2,38,10],
-"panel-ditem-editor_8h.html#adb29690b704f9a3f0070405fd6411b02":[36,0,0,22,2,38,15],
-"panel-ditem-editor_8h.html#aef1468e675c9e9670c3de89e9a6560ae":[36,0,0,22,2,38,2],
-"panel-ditem-editor_8h.html#afb5866b7cc6d7c5b1550300572e235b0":[36,0,0,22,2,38,12],
-"panel-ditem-editor_8h.html#afbc5330c8cb6b1efc55a9626a00ab15d":[36,0,0,22,2,38,18],
-"panel-ditem-editor_8h_source.html":[36,0,0,22,2,38],
-"panel-enums-gsettings_8h.html":[36,0,0,22,2,39],
 "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4":[36,0,0,22,2,39,4],
 "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4a17fcf1bed515b1958bdea35b90b16fe4":[36,0,0,22,2,39,4,6],
 "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4a22b2ba73051fd56836f1d6e46106ff1b":[36,0,0,22,2,39,4,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX144 =
 "panel-list_8c.html#a7f9027ef3c3a2b810c010b0bf65212f3":[36,0,0,22,2,1,16,0],
 "panel-list_8c.html#a97f71b3df161ee395670ac42293e8158":[36,0,0,22,2,1,16,5],
 "panel-list_8c.html#ab2ae6360893f8df1c05a2bb78da3befb":[36,0,0,22,2,1,16,3],
-"panel-list_8c.html#ac063536facc95c54d9bd4d8ba8cd89b7":[36,0,0,22,2,1,16,1]
+"panel-list_8c.html#ac063536facc95c54d9bd4d8ba8cd89b7":[36,0,0,22,2,1,16,1],
+"panel-list_8c_source.html":[36,0,0,22,2,1,16],
+"panel-list_8h.html":[36,0,0,22,2,1,17],
+"panel-list_8h.html#a24a97d51f619b902470abd8318b1f9a5":[36,0,0,22,2,1,17,4],
+"panel-list_8h.html#a2b6a755cae506ef0c6ba44198278371a":[36,0,0,22,2,1,17,2],
+"panel-list_8h.html#a7f9027ef3c3a2b810c010b0bf65212f3":[36,0,0,22,2,1,17,0],
+"panel-list_8h.html#a97f71b3df161ee395670ac42293e8158":[36,0,0,22,2,1,17,5],
+"panel-list_8h.html#ab2ae6360893f8df1c05a2bb78da3befb":[36,0,0,22,2,1,17,3],
+"panel-list_8h.html#ac063536facc95c54d9bd4d8ba8cd89b7":[36,0,0,22,2,1,17,1],
+"panel-list_8h_source.html":[36,0,0,22,2,1,17]
 };

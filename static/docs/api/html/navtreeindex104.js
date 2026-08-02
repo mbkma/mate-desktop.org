@@ -1,14 +1,5 @@
 var NAVTREEINDEX104 =
 {
-"mate-keyboard-properties-xkblt_8c.html#a7ce93d5c3b9bde998158dc744425219a":[36,0,0,14,0,7,4,10],
-"mate-keyboard-properties-xkblt_8c.html#a88bcdc95e3d252cfb24d43b758731588":[36,0,0,14,0,7,4,0],
-"mate-keyboard-properties-xkblt_8c.html#a8b09730c32ad68673671709f9feaac17":[36,0,0,14,0,7,4,11],
-"mate-keyboard-properties-xkblt_8c.html#a90a6c0d50f04d145101bc0a173c2e76c":[36,0,0,14,0,7,4,2],
-"mate-keyboard-properties-xkblt_8c.html#a93b155ba5529284e6964920f636f8e68":[36,0,0,14,0,7,4,6],
-"mate-keyboard-properties-xkblt_8c.html#a9f638dae6a59f05d48fd0b2dd847b19e":[36,0,0,14,0,7,4,1],
-"mate-keyboard-properties-xkblt_8c.html#aa0335cac0add9733e1b183f7e6f07371":[36,0,0,14,0,7,4,5],
-"mate-keyboard-properties-xkblt_8c.html#aa8299076d75ea49abf09463b6ad30475":[36,0,0,14,0,7,4,7],
-"mate-keyboard-properties-xkblt_8c.html#abf9e209d579e1f3b39d6fa5d44aba762":[36,0,0,14,0,7,4,3],
 "mate-keyboard-properties-xkblt_8c_source.html":[36,0,0,14,0,7,4],
 "mate-keyboard-properties-xkbltadd_8c.html":[36,0,0,14,0,7,5],
 "mate-keyboard-properties-xkbltadd_8c.html#a883793aeca19c27413621a51c2a177c9":[36,0,0,14,0,7,5,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX104 =
 "mate-mdi_8h.html#aac4a359ac03351d932fe366d5a529c7f":[36,0,0,9,2,58,16],
 "mate-mdi_8h.html#ab23f846fa11feb2b19e147c11d9f903d":[36,0,0,9,2,58,11],
 "mate-mdi_8h.html#ab6095ecd3f7768338981d225c1c40d58":[36,0,0,9,2,58,12],
-"mate-mdi_8h.html#abc7d30b925abeb30479f3c433713b409":[36,0,0,9,2,58,31]
+"mate-mdi_8h.html#abc7d30b925abeb30479f3c433713b409":[36,0,0,9,2,58,31],
+"mate-mdi_8h.html#abcace28ce65d71af4446b24eaa514b23":[36,0,0,9,2,58,33],
+"mate-mdi_8h.html#ac05e01a1ae46f8d924b78a222aeeb979":[36,0,0,9,2,58,19],
+"mate-mdi_8h.html#ac6195a21cffe5c09c6288514d2e88fed":[36,0,0,9,2,58,9],
+"mate-mdi_8h.html#ac695257d8bfa3428a5bea1719fd10ee0":[36,0,0,9,2,58,6],
+"mate-mdi_8h.html#ac9d334c799ed51c88089304c33cb8106":[36,0,0,9,2,58,21],
+"mate-mdi_8h.html#ad43be9bee4784a2d1ba8a96ae29982d8":[36,0,0,9,2,58,4],
+"mate-mdi_8h.html#adb4ab4a53b4a4232661afe1bb050b54c":[36,0,0,9,2,58,15],
+"mate-mdi_8h.html#aee2c90fea6da15147cff4d3c67745f5d":[36,0,0,9,2,58,10],
+"mate-mdi_8h.html#aee2c90fea6da15147cff4d3c67745f5da2f138e2f577def2723a0808f9a6d4df1":[36,0,0,9,2,58,10,2]
 };

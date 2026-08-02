@@ -1,14 +1,5 @@
 var NAVTREEINDEX169 =
 {
-"structAppearanceData.html#a4476dbe240721338f5167175857ef223":[35,0,1003,37],
-"structAppearanceData.html#a4b040e1e9db9db92fa3f92d2fbafb8d1":[35,0,1003,19],
-"structAppearanceData.html#a4c8703cbc8cc4b7ae507e752f817e17e":[35,0,1003,12],
-"structAppearanceData.html#a505df9498ee259533a0275267b978bcc":[35,0,1003,7],
-"structAppearanceData.html#a521e62901d11573b9d5bf4ddbb15aee3":[35,0,1003,39],
-"structAppearanceData.html#a544e18d1177599511029fded107662ed":[35,0,1003,21],
-"structAppearanceData.html#a5ca4635a30458e4b1d8dda2bd7254b0f":[35,0,1003,49],
-"structAppearanceData.html#a60ccb3def34d3933651344286003a9ef":[35,0,1003,23],
-"structAppearanceData.html#a63aee6a4eaa09bd020d5f3ebaf3c10d4":[35,0,1003,41],
 "structAppearanceData.html#a6876de5cbb0fd3844600842e27be1210":[35,0,1003,35],
 "structAppearanceData.html#a718390aa014befb67996d16eb5833371":[35,0,1003,50],
 "structAppearanceData.html#a75b58414899601d5eb7590564699a707":[35,0,1003,26],
@@ -249,5 +240,14 @@ var NAVTREEINDEX169 =
 "structCactMainWindow.html":[35,0,1058],
 "structCactMainWindow.html#a2feb3580932cbf1c86ec39ba6d14ddf8":[35,0,1058,0],
 "structCactMainWindow.html#a34cfc807f7740e9af5db801d7da97631":[35,0,1058,1],
-"structCactMainWindowClass.html":[35,0,1059]
+"structCactMainWindowClass.html":[35,0,1059],
+"structCactMainWindowClass.html#a713d2e25e2a71b21c3ce2eb6c2f042af":[35,0,1059,1],
+"structCactMainWindowClass.html#a9cab07b752578a91d3d065d4ac283246":[35,0,1059,0],
+"structCactMenubar.html":[35,0,1060],
+"structCactMenubar.html#a41f7d9a33bcde4a4e0b2847d25dbe752":[35,0,1060,1],
+"structCactMenubar.html#aad690befb74c1ec7d606b10c6fb4a900":[35,0,1060,0],
+"structCactMenubarClass.html":[35,0,1061],
+"structCactMenubarClass.html#a6cd26c7a714659acdecb49e6a41fb4e7":[35,0,1061,1],
+"structCactMenubarClass.html#a6e288a8167c1937e9526bd13200a01d1":[35,0,1061,0],
+"structCactPreferencesEditor.html":[35,0,1062]
 };

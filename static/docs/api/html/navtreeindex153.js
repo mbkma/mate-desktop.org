@@ -1,14 +1,5 @@
 var NAVTREEINDEX153 =
 {
-"pluma-file-browser-view_8c.html#ada06eee7ac5287b2edc2427846ef0098":[36,0,0,34,0,1,11,3],
-"pluma-file-browser-view_8c.html#aef20a76b695aefbdcc46d8de3d4ae27e":[36,0,0,34,0,1,11,5],
-"pluma-file-browser-view_8c_source.html":[36,0,0,34,0,1,11],
-"pluma-file-browser-view_8h.html":[36,0,0,34,0,1,12],
-"pluma-file-browser-view_8h.html#a195080bb74f4a36657073efaf08562ee":[36,0,0,34,0,1,12,19],
-"pluma-file-browser-view_8h.html#a1c14c5f8ed7b090ade0b66acc33e1751":[36,0,0,34,0,1,12,9],
-"pluma-file-browser-view_8h.html#a2e7112633cb63e78d8fe1a36410fc740":[36,0,0,34,0,1,12,14],
-"pluma-file-browser-view_8h.html#a37aebcf9109122f5821a0b25a0e0c154":[36,0,0,34,0,1,12,10],
-"pluma-file-browser-view_8h.html#a41f7cce2b93f3d2d34a6292423379c30":[36,0,0,34,0,1,12,6],
 "pluma-file-browser-view_8h.html#a45d658e169d531501b36bbbb728a1b36":[36,0,0,34,0,1,12,12],
 "pluma-file-browser-view_8h.html#a45d658e169d531501b36bbbb728a1b36a20d1099310eb8b5b4dff86d941f471eb":[36,0,0,34,0,1,12,12,0],
 "pluma-file-browser-view_8h.html#a45d658e169d531501b36bbbb728a1b36aeba88cdf67ce01afde1f57e624cdab53":[36,0,0,34,0,1,12,12,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX153 =
 "pluma-message-type_8c.html#a52f4a4486cfcfcb9217cee58e4137fa5":[36,0,0,34,1,51,13],
 "pluma-message-type_8c.html#a5379c6ccb1fd6f9f36c7f7875f9a6e87":[36,0,0,34,1,51,8],
 "pluma-message-type_8c.html#a6d36c59d8051ea9e4425b6919b110f4f":[36,0,0,34,1,51,0],
-"pluma-message-type_8c.html#a7548b230f31f4a6cc339839cf4e9098e":[36,0,0,34,1,51,1]
+"pluma-message-type_8c.html#a7548b230f31f4a6cc339839cf4e9098e":[36,0,0,34,1,51,1],
+"pluma-message-type_8c.html#a7a7349823dd38b837a5996902b4a52ff":[36,0,0,34,1,51,3],
+"pluma-message-type_8c.html#a9f7d77a6e6d135555989a9ccdb123982":[36,0,0,34,1,51,2],
+"pluma-message-type_8c.html#aa879915702b3516586497811f2b1f747":[36,0,0,34,1,51,15],
+"pluma-message-type_8c.html#ab2492808d0d419db7308a6210a1f41f3":[36,0,0,34,1,51,12],
+"pluma-message-type_8c.html#ae8ce5180a535cc759275dfb8ae2ecdd4":[36,0,0,34,1,51,9],
+"pluma-message-type_8c.html#aeb7a604ebd66d7a115f727810f9e477b":[36,0,0,34,1,51,5],
+"pluma-message-type_8c_source.html":[36,0,0,34,1,51],
+"pluma-message-type_8h.html":[36,0,0,34,1,52],
+"pluma-message-type_8h.html#a0553da307df64e04fdbe7e2ed6019c8e":[36,0,0,34,1,52,1]
 };

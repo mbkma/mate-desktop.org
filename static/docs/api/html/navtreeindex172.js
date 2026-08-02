@@ -1,14 +1,5 @@
 var NAVTREEINDEX172 =
 {
-"structCajaSearchEngineBeagleClass.html":[35,0,1155],
-"structCajaSearchEngineBeagleClass.html#ab0447550611cf6504410dcc6040a692a":[35,0,1155,0],
-"structCajaSearchEngineClass.html":[35,0,1156],
-"structCajaSearchEngineClass.html#a07e1d58292b9fee2f96309031d39ef18":[35,0,1156,1],
-"structCajaSearchEngineClass.html#a1e3476bafdc772ebb709add98e96e9e8":[35,0,1156,6],
-"structCajaSearchEngineClass.html#a80eb1be398b0f1816380c346f100a19f":[35,0,1156,9],
-"structCajaSearchEngineClass.html#a8b482eff80955063e73f28718a4f64e6":[35,0,1156,8],
-"structCajaSearchEngineClass.html#a9320af722031a2a3512c706806e8c1c9":[35,0,1156,5],
-"structCajaSearchEngineClass.html#a9997f7a414d6a839dc41ff57ce1255b7":[35,0,1156,4],
 "structCajaSearchEngineClass.html#a9ec05896d8d5b7cccd3d9ffdb2cb963e":[35,0,1156,0],
 "structCajaSearchEngineClass.html#aa63027e4f8caeef38dab8a4157170496":[35,0,1156,7],
 "structCajaSearchEngineClass.html#ac1c6ba2714d38e15264c02eb606d79f7":[35,0,1156,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX172 =
 "structDetailedTiming.html#a0b5aeb6a79d5ace9535896021834d2c6":[35,0,1209,22],
 "structDetailedTiming.html#a0bd43278c3e0b28253d33dc6f3c821ee":[35,0,1209,8],
 "structDetailedTiming.html#a27daa8f6f8dfb12a284941ed5e43aa4f":[35,0,1209,7],
-"structDetailedTiming.html#a31904a626b06702b9761fceb71ba2a89":[35,0,1209,4]
+"structDetailedTiming.html#a31904a626b06702b9761fceb71ba2a89":[35,0,1209,4],
+"structDetailedTiming.html#a3cedca2e48d82b3762ef9a3e5250c8dd":[35,0,1209,13],
+"structDetailedTiming.html#a56fd61d3a2736ca7b3b94d4d80a6c143":[35,0,1209,0],
+"structDetailedTiming.html#a5bf4188f80c526b06b07894d89e5f3ab":[35,0,1209,2],
+"structDetailedTiming.html#a607f0584a31d507eabb8f374409f3f12":[35,0,1209,19],
+"structDetailedTiming.html#a60d0525fe3c0c72215630305260bef8b":[35,0,1209,17],
+"structDetailedTiming.html#a64b7159458a1f5cf86883ad63d82e46e":[35,0,1209,18],
+"structDetailedTiming.html#a803871a4e74c68526f783f2590fcc04e":[35,0,1209,11],
+"structDetailedTiming.html#a85c0d36888c55c4ee71121b85cea61b9":[35,0,1209,6],
+"structDetailedTiming.html#a8e7063314d3391b34cfc06779bb16683":[35,0,1209,23]
 };

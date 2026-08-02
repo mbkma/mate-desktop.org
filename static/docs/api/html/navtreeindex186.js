@@ -1,14 +1,5 @@
 var NAVTREEINDEX186 =
 {
-"struct__DviPaperSpec.html":[35,0,183],
-"struct__DviPaperSpec.html#a676c8c87db4019f7130925f52a188579":[35,0,183,0],
-"struct__DviPaperSpec.html#aec57bbdbaf9236a8cef0ee83ddf5ea82":[35,0,183,1],
-"struct__DviPaperSpec.html#af4943d8ddd04377149af166bca763871":[35,0,183,2],
-"struct__DviParams.html":[35,0,184],
-"struct__DviParams.html#a10621368dd69ad7c49e4504eae23d9dd":[35,0,184,14],
-"struct__DviParams.html#a11939157ccfa45bca746415cbf26a9a7":[35,0,184,4],
-"struct__DviParams.html#a22db50ac0d16ec9fdeb7b9a9aea87e78":[35,0,184,1],
-"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3":[35,0,184,20],
 "struct__DviParams.html#a2dc3028c00da865b30603cd34d9c3e38":[35,0,184,3],
 "struct__DviParams.html#a3bbe4ea2ce47dfb1aef292fa990f7729":[35,0,184,5],
 "struct__DviParams.html#a44ebb1e8950af2383eae7df5af488d3b":[35,0,184,7],
@@ -249,5 +240,14 @@ var NAVTREEINDEX186 =
 "struct__EomClipboardHandlerClass.html":[35,0,221],
 "struct__EomClipboardHandlerClass.html#ae3e0439c15186aa3723affbd8e37340e":[35,0,221,0],
 "struct__EomCloseConfirmationDialog.html":[35,0,222],
-"struct__EomCloseConfirmationDialog.html#a343aac877fa35e0c8022b49519b3d133":[35,0,222,0]
+"struct__EomCloseConfirmationDialog.html#a343aac877fa35e0c8022b49519b3d133":[35,0,222,0],
+"struct__EomCloseConfirmationDialog.html#a4d452ecb2d64ccc68a4805cd4b613f82":[35,0,222,1],
+"struct__EomCloseConfirmationDialogClass.html":[35,0,223],
+"struct__EomCloseConfirmationDialogClass.html#a0c8d0260585636207f835b1dcb726b45":[35,0,223,0],
+"struct__EomFileChooser.html":[35,0,224],
+"struct__EomFileChooser.html#a27cce09e3a4e6f72fa77317ebb60017b":[35,0,224,0],
+"struct__EomFileChooser.html#af3068697a28e815931b795483c99a0ee":[35,0,224,1],
+"struct__EomFileChooserClass.html":[35,0,225],
+"struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[35,0,225,0],
+"struct__EomFullscreenPlugin.html":[35,0,226]
 };

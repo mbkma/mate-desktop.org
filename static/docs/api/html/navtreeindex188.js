@@ -1,14 +1,5 @@
 var NAVTREEINDEX188 =
 {
-"struct__EphyZoomActionClass.html#aa4069f6ff27a18c9d01d6b91db186933":[35,0,292,1],
-"struct__EphyZoomControl.html":[35,0,293],
-"struct__EphyZoomControl.html#a09e9064e173dcc9b6d3ca2645336d0bd":[35,0,293,1],
-"struct__EphyZoomControl.html#a57cee29b06bf855c021adbb9b1eb5e33":[35,0,293,0],
-"struct__EphyZoomControlClass.html":[35,0,294],
-"struct__EphyZoomControlClass.html#aa55cb2d4e16e82a11fdaf881e23df0c8":[35,0,294,0],
-"struct__EphyZoomControlClass.html#ad695e4e7d97ab33168fe15f4e04e63dc":[35,0,294,1],
-"struct__EvAsyncRendererInterface.html":[35,0,295],
-"struct__EvAsyncRendererInterface.html#a742af09c16996574c8e380508ad268e4":[35,0,295,1],
 "struct__EvAsyncRendererInterface.html#aa6135cdc67da057f845f3175e1a757d0":[35,0,295,2],
 "struct__EvAsyncRendererInterface.html#ae5002a134a3e3f8b50fe298727e15ece":[35,0,295,0],
 "struct__EvAttachment.html":[35,0,296],
@@ -249,5 +240,14 @@ var NAVTREEINDEX188 =
 "struct__EvJobAttachments.html#a6dd85a26dcadceb56314c9617f33ef5a":[35,0,344,0],
 "struct__EvJobAttachments.html#aec16e336ee54fb2286bd7df1b506ad4e":[35,0,344,1],
 "struct__EvJobAttachmentsClass.html":[35,0,345],
-"struct__EvJobAttachmentsClass.html#acdcf7be777afa723c1675546c147462e":[35,0,345,0]
+"struct__EvJobAttachmentsClass.html#acdcf7be777afa723c1675546c147462e":[35,0,345,0],
+"struct__EvJobClass.html":[35,0,346],
+"struct__EvJobClass.html#a102060e2960f289a72a5d5d07b9c0e2d":[35,0,346,3],
+"struct__EvJobClass.html#a348d4140d36e2a9fe78ed306b7057472":[35,0,346,0],
+"struct__EvJobClass.html#a6e5887bc8039f8a46cb33d71851e00da":[35,0,346,1],
+"struct__EvJobClass.html#ac871c2e719039fadea04efb38d474379":[35,0,346,2],
+"struct__EvJobExport.html":[35,0,347],
+"struct__EvJobExport.html#a48e2abe13291d955fd2b566a4d1bd60c":[35,0,347,1],
+"struct__EvJobExport.html#ab91046a9efcdf677d654162d6540f78d":[35,0,347,0],
+"struct__EvJobExport.html#af4e36ff283247c57979acdfd503d54f9":[35,0,347,2]
 };

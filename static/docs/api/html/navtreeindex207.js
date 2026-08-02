@@ -1,14 +1,5 @@
 var NAVTREEINDEX207 =
 {
-"terminal-profile_8c.html#aaf799359d2cd00b2882dc26e7f911712":[36,0,0,30,0,23,89],
-"terminal-profile_8c.html#ab14d94319b3e20a507669aab7e50a71c":[36,0,0,30,0,23,33],
-"terminal-profile_8c.html#ab5b5016ef9fca4fbb18d90dcac4648cc":[36,0,0,30,0,23,28],
-"terminal-profile_8c.html#ab95d65550b1adc8548edb833fd6eb2d9":[36,0,0,30,0,23,15],
-"terminal-profile_8c.html#aba512fb65964df59eebd6704ed218116":[36,0,0,30,0,23,62],
-"terminal-profile_8c.html#abab87e4c9b1cea63570eda6d54bba8cc":[36,0,0,30,0,23,20],
-"terminal-profile_8c.html#abd7075bb063d875b0e7ac51fcca0620f":[36,0,0,30,0,23,71],
-"terminal-profile_8c.html#ac7aed11b03091cacfb50a25442c5f28f":[36,0,0,30,0,23,54],
-"terminal-profile_8c.html#ac8e96149c12b1607946893e546f5f631":[36,0,0,30,0,23,95],
 "terminal-profile_8c.html#acabd7ad178b45a05147d32bcb8c1f4d4":[36,0,0,30,0,23,88],
 "terminal-profile_8c.html#acb0e363b8a27d1129d00050773935e61":[36,0,0,30,0,23,73],
 "terminal-profile_8c.html#ace8e63bf900a1aff8f5a62b1c8f0973a":[36,0,0,30,0,23,31],
@@ -249,5 +240,14 @@ var NAVTREEINDEX207 =
 "terminal-screen_8h.html#af7121741f0e4a4dd2b1d89c50de2f445":[36,0,0,30,0,28,7],
 "terminal-screen_8h_source.html":[36,0,0,30,0,28],
 "terminal-search-dialog_8c.html":[36,0,0,30,0,29],
-"terminal-search-dialog_8c.html#a0b39a9ef58411b2998867a1f324a91a8":[36,0,0,30,0,29,10]
+"terminal-search-dialog_8c.html#a0b39a9ef58411b2998867a1f324a91a8":[36,0,0,30,0,29,10],
+"terminal-search-dialog_8c.html#a374303ca8a03ad1acb14d18870009d1b":[36,0,0,30,0,29,4],
+"terminal-search-dialog_8c.html#a4286d8d69f8739465bf1cb121b2f0e4f":[36,0,0,30,0,29,9],
+"terminal-search-dialog_8c.html#a4f20e57027120b7b00a75f4eb83f1cb5":[36,0,0,30,0,29,8],
+"terminal-search-dialog_8c.html#a56f2f2c32b0855c04e7ce93667a3325c":[36,0,0,30,0,29,2],
+"terminal-search-dialog_8c.html#a66790d24ed25062493e4769e169d92d0":[36,0,0,30,0,29,1],
+"terminal-search-dialog_8c.html#a78e9861ab4ed91d6036c2cd4ef4b44ab":[36,0,0,30,0,29,11],
+"terminal-search-dialog_8c.html#a9fee820ac9edefc61eb4ad26742a58dd":[36,0,0,30,0,29,5],
+"terminal-search-dialog_8c.html#ab39f6c400f11cd5f7c71c2b254854c3a":[36,0,0,30,0,29,0],
+"terminal-search-dialog_8c.html#acdfb69ab24abc9b4e09dfaa5e3e73094":[36,0,0,30,0,29,6]
 };

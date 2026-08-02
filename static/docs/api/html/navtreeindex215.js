@@ -1,14 +1,5 @@
 var NAVTREEINDEX215 =
 {
-"typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaabdcf11dfe9a0e4d400f42d242a8665d":[36,0,0,5,1,108,12,8],
-"typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcaaebcf0b4cfcd41d60629c7b5649d9ec1":[36,0,0,5,1,108,12,1],
-"typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcab58f4929e7a9bf426a8400b786b46bde":[36,0,0,5,1,108,12,9],
-"typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcace10a7e650f9ae1f6a7c89a6ef319422":[36,0,0,5,1,108,12,6],
-"typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcad8a3a90adfee52b69ac9284ae50bda31":[36,0,0,5,1,108,12,10],
-"typedefs_8h.html#a8a540db8a74f9ff6b915c1db3279eadcae12c7da87c6e9b3a3eea174302234820":[36,0,0,5,1,108,12,7],
-"typedefs_8h.html#a92b22720309846541a7bfc406212076f":[36,0,0,5,1,108,8],
-"typedefs_8h.html#aac4c691c8b49ae4a9b7ff66c9c4348e3":[36,0,0,5,1,108,10],
-"typedefs_8h.html#aac4c691c8b49ae4a9b7ff66c9c4348e3a6b5b6186b26320f15e386e8bef031636":[36,0,0,5,1,108,10,3],
 "typedefs_8h.html#aac4c691c8b49ae4a9b7ff66c9c4348e3a9e3dd3b5903c2a4c3cbf608bbb2754f1":[36,0,0,5,1,108,10,2],
 "typedefs_8h.html#aac4c691c8b49ae4a9b7ff66c9c4348e3ae33ac0e4435462041baa9eb52846ec73":[36,0,0,5,1,108,10,1],
 "typedefs_8h.html#aac4c691c8b49ae4a9b7ff66c9c4348e3aee40c395f298c130e0e0f80c9fd83b03":[36,0,0,5,1,108,10,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX215 =
 "wayland-workspace_8c.html#af1be6d5fb62866410a7135117b2b825e":[36,0,0,22,0,3,5,9],
 "wayland-workspace_8c_source.html":[36,0,0,22,0,3,5],
 "wayland-workspace_8h.html":[36,0,0,22,0,3,6],
-"wayland-workspace_8h.html#a0aaab50a723ce16b97addb80b1d20632":[36,0,0,22,0,3,6,3]
+"wayland-workspace_8h.html#a0aaab50a723ce16b97addb80b1d20632":[36,0,0,22,0,3,6,3],
+"wayland-workspace_8h.html#a18dab37fa6b48ae41d50d4fa9b93f990":[36,0,0,22,0,3,6,4],
+"wayland-workspace_8h.html#a5b07612aaff8db80199d532ac60ad469":[36,0,0,22,0,3,6,8],
+"wayland-workspace_8h.html#a5d1945f457d0a074c2a2e21974d62ec6":[36,0,0,22,0,3,6,1],
+"wayland-workspace_8h.html#a6ad9f027916b01b3970785f81d1b9f3a":[36,0,0,22,0,3,6,2],
+"wayland-workspace_8h.html#a8957f453511162e8ed186c38cdb83c99":[36,0,0,22,0,3,6,6],
+"wayland-workspace_8h.html#a8d2502bc433b75f00b71f848ad5a7fe0":[36,0,0,22,0,3,6,5],
+"wayland-workspace_8h.html#ac855e6bcbe3cf8658fd42301859d3c5a":[36,0,0,22,0,3,6,0],
+"wayland-workspace_8h.html#af1be6d5fb62866410a7135117b2b825e":[36,0,0,22,0,3,6,7],
+"wayland-workspace_8h_source.html":[36,0,0,22,0,3,6]
 };

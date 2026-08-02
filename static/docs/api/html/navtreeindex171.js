@@ -1,14 +1,5 @@
 var NAVTREEINDEX171 =
 {
-"structCajaHistorySidebar.html#a1ed8f1a758f25b21e9f9ab41df818409":[35,0,1116,2],
-"structCajaHistorySidebar.html#a3739c15b2e725762fbab1bf6556e16c5":[35,0,1116,1],
-"structCajaHistorySidebar.html#a83b810b04954199017b05702894b0a67":[35,0,1116,0],
-"structCajaIcon.html":[35,0,1117],
-"structCajaIcon.html#a1d039e821a5b2543d5012ca9adbed16e":[35,0,1117,0],
-"structCajaIcon.html#a3ad468effb72f70ec9ead60e3f95a000":[35,0,1117,4],
-"structCajaIcon.html#a4d58fba97395706ac5171e9cb184c2b8":[35,0,1117,1],
-"structCajaIcon.html#a57afa77672808670dc52936f1f76ce66":[35,0,1117,10],
-"structCajaIcon.html#a6d33cece43fb5a77d02f5da2ba7b8ad5":[35,0,1117,2],
 "structCajaIcon.html#a76527fa8071cad63f0ed454226311bfb":[35,0,1117,3],
 "structCajaIcon.html#a7667108c13bf3c9905e11e6dcd0dd0c9":[35,0,1117,9],
 "structCajaIcon.html#a8b5aca0204c12b9e172ea7417b7478af":[35,0,1117,7],
@@ -249,5 +240,14 @@ var NAVTREEINDEX171 =
 "structCajaSearchEngine.html#ae2dc8e1624291b88cb8dba042ed150f4":[35,0,1153,0],
 "structCajaSearchEngineBeagle.html":[35,0,1154],
 "structCajaSearchEngineBeagle.html#a257c8145fa89b1673c0bc77b1d420d93":[35,0,1154,0],
-"structCajaSearchEngineBeagle.html#a55f99c4a2124490926a20d910bf777b6":[35,0,1154,1]
+"structCajaSearchEngineBeagle.html#a55f99c4a2124490926a20d910bf777b6":[35,0,1154,1],
+"structCajaSearchEngineBeagleClass.html":[35,0,1155],
+"structCajaSearchEngineBeagleClass.html#ab0447550611cf6504410dcc6040a692a":[35,0,1155,0],
+"structCajaSearchEngineClass.html":[35,0,1156],
+"structCajaSearchEngineClass.html#a07e1d58292b9fee2f96309031d39ef18":[35,0,1156,1],
+"structCajaSearchEngineClass.html#a1e3476bafdc772ebb709add98e96e9e8":[35,0,1156,6],
+"structCajaSearchEngineClass.html#a80eb1be398b0f1816380c346f100a19f":[35,0,1156,9],
+"structCajaSearchEngineClass.html#a8b482eff80955063e73f28718a4f64e6":[35,0,1156,8],
+"structCajaSearchEngineClass.html#a9320af722031a2a3512c706806e8c1c9":[35,0,1156,5],
+"structCajaSearchEngineClass.html#a9997f7a414d6a839dc41ff57ce1255b7":[35,0,1156,4]
 };

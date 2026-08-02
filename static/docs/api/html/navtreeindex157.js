@@ -1,14 +1,5 @@
 var NAVTREEINDEX157 =
 {
-"pluma-style-scheme-manager_8h.html#a0a6e1c5a4635a163911c7c107460ee40":[36,0,0,34,1,82,1],
-"pluma-style-scheme-manager_8h.html#a58c997163382d66e932fb97df982bbcd":[36,0,0,34,1,82,0],
-"pluma-style-scheme-manager_8h.html#a6f5a83b1d8c9e1fbf6fe904b5c2bf088":[36,0,0,34,1,82,4],
-"pluma-style-scheme-manager_8h.html#a8dab3986dbd7557099027271f8cbaa46":[36,0,0,34,1,82,3],
-"pluma-style-scheme-manager_8h_source.html":[36,0,0,34,1,82],
-"pluma-tab-label_8c.html":[36,0,0,34,1,83],
-"pluma-tab-label_8c.html#a17b02275ff2949f9e37228e6972dcef5":[36,0,0,34,1,83,0],
-"pluma-tab-label_8c.html#a595674b0e57b8043bfebd987d5d045df":[36,0,0,34,1,83,2],
-"pluma-tab-label_8c.html#af1fe3373b8339d230cc863797de09360":[36,0,0,34,1,83,1],
 "pluma-tab-label_8c_source.html":[36,0,0,34,1,83],
 "pluma-tab-label_8h.html":[36,0,0,34,1,84],
 "pluma-tab-label_8h.html#a0e878e2818d259e6c631adbb60986369":[36,0,0,34,1,84,6],
@@ -249,5 +240,14 @@ var NAVTREEINDEX157 =
 "pluma-utils_8h.html#a1c7a6942b96470626c20f36c3871b7fb":[36,0,0,34,1,89,34],
 "pluma-utils_8h.html#a2714238f1b6d763c231cafadd187f624":[36,0,0,34,1,89,14],
 "pluma-utils_8h.html#a2abdef32f7f82ec8dc4507dcb6293552":[36,0,0,34,1,89,6],
-"pluma-utils_8h.html#a2d81faaf758efa8ac04846b9c7b1083a":[36,0,0,34,1,89,9]
+"pluma-utils_8h.html#a2d81faaf758efa8ac04846b9c7b1083a":[36,0,0,34,1,89,9],
+"pluma-utils_8h.html#a2f0f1fa5b1b19571cfe5275856558ed8":[36,0,0,34,1,89,16],
+"pluma-utils_8h.html#a3f52be22445a944b3493e02c02e5ea7c":[36,0,0,34,1,89,2],
+"pluma-utils_8h.html#a3f83744ef24142144fc36239f17619b9":[36,0,0,34,1,89,12],
+"pluma-utils_8h.html#a424606703a8771d73daa1c5ee476340d":[36,0,0,34,1,89,22],
+"pluma-utils_8h.html#a4264fcdbd0780460bd162222ad20cb8b":[36,0,0,34,1,89,23],
+"pluma-utils_8h.html#a447589781d9f7751cea183600b1a6811":[36,0,0,34,1,89,20],
+"pluma-utils_8h.html#a5cba3b1c6480bf53458a41afc8123459":[36,0,0,34,1,89,30],
+"pluma-utils_8h.html#a63cb256a0d6d042d27df7bc84b691467":[36,0,0,34,1,89,21],
+"pluma-utils_8h.html#a66545903f08d0c4ff0ccea13bd27a7c1":[36,0,0,34,1,89,15]
 };

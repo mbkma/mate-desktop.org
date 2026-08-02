@@ -1,14 +1,5 @@
 var NAVTREEINDEX143 =
 {
-"panel-applet-frame_8c.html#a46fe9c7d935c547744ccb4f5e07f6fc4":[36,0,0,22,2,23,11],
-"panel-applet-frame_8c.html#a49ffca5023b4e7ff29d68b97a9007643":[36,0,0,22,2,23,4],
-"panel-applet-frame_8c.html#a4b57f9da539e01936a253c27e34bb90a":[36,0,0,22,2,23,13],
-"panel-applet-frame_8c.html#a4ea6b45a050957ab5045b173d8ff4d89":[36,0,0,22,2,23,25],
-"panel-applet-frame_8c.html#a4fdeeccbefe6281d3f2c2717d87cae76":[36,0,0,22,2,23,10],
-"panel-applet-frame_8c.html#a64a44e5497680d1860f53cbffb95f8e8":[36,0,0,22,2,23,3],
-"panel-applet-frame_8c.html#a70146db647034ccc2e7966f298da3fb3":[36,0,0,22,2,23,21],
-"panel-applet-frame_8c.html#a7e666fe1076a6edb7a8d7f1a9c7c48b5":[36,0,0,22,2,23,22],
-"panel-applet-frame_8c.html#a83ba2673027b9494ea5385842c9a3970":[36,0,0,22,2,23,15],
 "panel-applet-frame_8c.html#aab9d5d4fdd40208ba85fd19353231f50":[36,0,0,22,2,23,16],
 "panel-applet-frame_8c.html#ab8d86a94445e31427cc9f5e03476bced":[36,0,0,22,2,23,24],
 "panel-applet-frame_8c.html#aba6d9b8ff98cc78ee4be9f5f06deaf51":[36,0,0,22,2,23,19],
@@ -249,5 +240,14 @@ var NAVTREEINDEX143 =
 "panel-ditem-editor_8h.html#a6e2bfe43e521cf6eac7026baa3dcb6e3":[36,0,0,22,2,38,19],
 "panel-ditem-editor_8h.html#a735d797608b41acb5a68dac053db39db":[36,0,0,22,2,38,3],
 "panel-ditem-editor_8h.html#a82e06c293144a3645945e7397c055c87":[36,0,0,22,2,38,6],
-"panel-ditem-editor_8h.html#a862a8a28276ddb926ea4c0b6d46ad54a":[36,0,0,22,2,38,7]
+"panel-ditem-editor_8h.html#a862a8a28276ddb926ea4c0b6d46ad54a":[36,0,0,22,2,38,7],
+"panel-ditem-editor_8h.html#a88b0c801354994c3fbb25991a4d0a93e":[36,0,0,22,2,38,20],
+"panel-ditem-editor_8h.html#a97fbd97cbfc10250f57a04cc11fb78a6":[36,0,0,22,2,38,13],
+"panel-ditem-editor_8h.html#ab704dacb1c67b4b15e123eb8aa331f95":[36,0,0,22,2,38,10],
+"panel-ditem-editor_8h.html#adb29690b704f9a3f0070405fd6411b02":[36,0,0,22,2,38,15],
+"panel-ditem-editor_8h.html#aef1468e675c9e9670c3de89e9a6560ae":[36,0,0,22,2,38,2],
+"panel-ditem-editor_8h.html#afb5866b7cc6d7c5b1550300572e235b0":[36,0,0,22,2,38,12],
+"panel-ditem-editor_8h.html#afbc5330c8cb6b1efc55a9626a00ab15d":[36,0,0,22,2,38,18],
+"panel-ditem-editor_8h_source.html":[36,0,0,22,2,38],
+"panel-enums-gsettings_8h.html":[36,0,0,22,2,39]
 };

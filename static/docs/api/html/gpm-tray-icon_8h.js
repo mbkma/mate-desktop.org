@@ -9,7 +9,7 @@ var gpm_tray_icon_8h =
     [ "GPM_TRAY_ICON_GET_CLASS", "gpm-tray-icon_8h.html#ae1e5387b399d4b082b90dcc1cdb3c398", null ],
     [ "GPM_TYPE_TRAY_ICON", "gpm-tray-icon_8h.html#af78846c2ee255268814d193e655a5ea5", null ],
     [ "GpmTrayIconPrivate", "gpm-tray-icon_8h.html#a79517ff43f7c4646f1652baf3c1e8fbf", null ],
-    [ "gpm_tray_icon_get_status_icon", "gpm-tray-icon_8h.html#a91d6fa3c029a52595e0324c068179a5b", null ],
+    [ "gpm_tray_icon_get_icon_name", "gpm-tray-icon_8h.html#af70a5bf084f4d46723d58c0dd0ad7049", null ],
     [ "gpm_tray_icon_get_type", "gpm-tray-icon_8h.html#a283b64d401ab65d9352ea695f499fa76", null ],
     [ "gpm_tray_icon_new", "gpm-tray-icon_8h.html#af5f6101ad390bb06898d1a678be85b34", null ],
     [ "gpm_tray_icon_set_icon", "gpm-tray-icon_8h.html#a8f42cac03dc8dd6f5e9eada3e2b8d350", null ],

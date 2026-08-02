@@ -1,14 +1,5 @@
 var NAVTREEINDEX184 =
 {
-"struct__CajaPathBar.html#a2d16e968700cae873fdbc8098876da69":[35,0,94,14],
-"struct__CajaPathBar.html#a38f814ca241652b037646161c83934d7":[35,0,94,4],
-"struct__CajaPathBar.html#a3e574d83f3e04b5174d26614e5378945":[35,0,94,20],
-"struct__CajaPathBar.html#a4acbb84b0719e70bcb63d4b4231d86cd":[35,0,94,10],
-"struct__CajaPathBar.html#a4ec20f70a7b161161d662906a1a6ab90":[35,0,94,9],
-"struct__CajaPathBar.html#a60b24c1a2bc9dd0a98df1aaa65044585":[35,0,94,18],
-"struct__CajaPathBar.html#a730a73a526f5086aaa628de93b088850":[35,0,94,17],
-"struct__CajaPathBar.html#a734cb1c3e063d0950a149a88037847e8":[35,0,94,8],
-"struct__CajaPathBar.html#a8b29b58f4e2f31cd4542a9d2bd804f5e":[35,0,94,11],
 "struct__CajaPathBar.html#a946f135d1b2b3740f1c6961998f29844":[35,0,94,5],
 "struct__CajaPathBar.html#aa59af64a11b8ab817297218cdd02da65":[35,0,94,19],
 "struct__CajaPathBar.html#ab1e9f9372f44fae91f4412e8409a6121":[35,0,94,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX184 =
 "struct__CalendarClientClass.html":[35,0,128],
 "struct__CalendarClientClass.html#a4c81bef2cdb58c72233bbe554e2cdf63":[35,0,128,1],
 "struct__CalendarClientClass.html#a6322579c52aca8167ae6495d2b48feb7":[35,0,128,0],
-"struct__CalendarClientClass.html#ab28b409c8060dbc4f6cb0fff4a43a781":[35,0,128,2]
+"struct__CalendarClientClass.html#ab28b409c8060dbc4f6cb0fff4a43a781":[35,0,128,2],
+"struct__CalendarSources.html":[35,0,129],
+"struct__CalendarSources.html#a79d4ce6c826768ee9a8dd62d197f4f41":[35,0,129,0],
+"struct__CalendarSources.html#adb156dfa1d4207f788880082652b62eb":[35,0,129,1],
+"struct__CalendarSourcesClass.html":[35,0,130],
+"struct__CalendarSourcesClass.html#a49295352aa55e1c408fd1f84383fac72":[35,0,130,2],
+"struct__CalendarSourcesClass.html#ac5a101dea69938b580ebdd082d0a6ce0":[35,0,130,0],
+"struct__CalendarSourcesClass.html#afc4904ce9b1e29f14bdeb6290ee2ac2d":[35,0,130,1],
+"struct__CalendarWindow.html":[35,0,131],
+"struct__CalendarWindow.html#a099f6b619722471be350e52cebb2e1f9":[35,0,131,1]
 };

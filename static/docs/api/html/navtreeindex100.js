@@ -1,14 +1,5 @@
 var NAVTREEINDEX100 =
 {
-"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00":[36,0,0,15,0,14,40],
-"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00a2a7470fa7d69767b20015081cefe1b2c":[36,0,0,15,0,14,40,1],
-"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00a3b1a05b6ca51be7f1488018cff97e7f4":[36,0,0,15,0,14,40,2],
-"mate-desktop-item_8h.html#a04753a02e1adac3d64c278752c5ecc00ab7331872fa2cb9031ee5fe4007a38baa":[36,0,0,15,0,14,40,0],
-"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9":[36,0,0,15,0,14,38],
-"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a26de461e735cde139a31e9a4d54c22b9":[36,0,0,15,0,14,38,4],
-"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a532658d156c211beffe9c2ea4c4095c6":[36,0,0,15,0,14,38,1],
-"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a860c2bea950965e49ac328591ac96c82":[36,0,0,15,0,14,38,2],
-"mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9a8cfa6633090cf4bc172858078111572c":[36,0,0,15,0,14,38,0],
 "mate-desktop-item_8h.html#a0c90ee9104516b927f39a2294b191bd9af78607d21c4e9786bd0edce021861e1d":[36,0,0,15,0,14,38,3],
 "mate-desktop-item_8h.html#a0cef1c0064aa7355fc0c771352eb12e2":[36,0,0,15,0,14,73],
 "mate-desktop-item_8h.html#a0cfe791b6000700ca172a5d8f64d80b8":[36,0,0,15,0,14,22],
@@ -249,5 +240,14 @@ var NAVTREEINDEX100 =
 "mate-dialog_8h.html#a34bb77366ba75493079b5e66268b1086":[36,0,0,9,2,21,27],
 "mate-dialog_8h.html#a3683a088c726f8abad3ad6dc6ec152c8":[36,0,0,9,2,21,24],
 "mate-dialog_8h.html#a48b5a4c4ca42bf16e0da3108901b670c":[36,0,0,9,2,21,40],
-"mate-dialog_8h.html#a49a6fe03675bcbadf50fffce136d87ba":[36,0,0,9,2,21,43]
+"mate-dialog_8h.html#a49a6fe03675bcbadf50fffce136d87ba":[36,0,0,9,2,21,43],
+"mate-dialog_8h.html#a4f14608707bab8bbff26edfa0574d480":[36,0,0,9,2,21,26],
+"mate-dialog_8h.html#a57a34bdf5d46a27c48543e355525e02f":[36,0,0,9,2,21,36],
+"mate-dialog_8h.html#a65c5016f9400215a02f750631c83edd9":[36,0,0,9,2,21,34],
+"mate-dialog_8h.html#a681e28f7bde4748115144696b452419c":[36,0,0,9,2,21,2],
+"mate-dialog_8h.html#a6b8bea3e000630534ef6cbad58b73f13":[36,0,0,9,2,21,25],
+"mate-dialog_8h.html#a6bfaee6816e8ebb58ea4427669ed3da8":[36,0,0,9,2,21,16],
+"mate-dialog_8h.html#a70c617f3f31b5ca3368eed659f18e2bd":[36,0,0,9,2,21,30],
+"mate-dialog_8h.html#a72438dbc121ccde5246edb4c3272e834":[36,0,0,9,2,21,6],
+"mate-dialog_8h.html#a733cefde7af81e8d31ce2cdb39c26ee2":[36,0,0,9,2,21,17]
 };

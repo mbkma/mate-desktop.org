@@ -1,14 +1,5 @@
 var NAVTREEINDEX125 =
 {
-"msd-clipboard-manager_8h.html#a4eb595ea02108410d4d1231138366dc4":[36,0,0,28,1,3,3,6],
-"msd-clipboard-manager_8h.html#a6337d81c9f5b256f0337553f3fb4fc8f":[36,0,0,28,1,3,3,3],
-"msd-clipboard-manager_8h.html#a719dd12d06edd5c7ed87c9b7faecb8cc":[36,0,0,28,1,3,3,4],
-"msd-clipboard-manager_8h.html#a73b185009922e159dc01cf3f40a26a62":[36,0,0,28,1,3,3,12],
-"msd-clipboard-manager_8h.html#a82f116efae454c887be11d0b1b457e1b":[36,0,0,28,1,3,3,11],
-"msd-clipboard-manager_8h.html#a83e332b2ae441cc1b44dc74fe93c702c":[36,0,0,28,1,3,3,8],
-"msd-clipboard-manager_8h.html#ac29ad682db0f61520b48ccf21f8bf4a8":[36,0,0,28,1,3,3,9],
-"msd-clipboard-manager_8h.html#adf632e2eb52a79598f5ffbe83250adad":[36,0,0,28,1,3,3,10],
-"msd-clipboard-manager_8h_source.html":[36,0,0,28,1,3,3],
 "msd-clipboard-plugin_8c.html":[36,0,0,28,1,3,4],
 "msd-clipboard-plugin_8c_source.html":[36,0,0,28,1,3,4],
 "msd-clipboard-plugin_8h.html":[36,0,0,28,1,3,5],
@@ -249,5 +240,14 @@ var NAVTREEINDEX125 =
 "msd-ldsm-dialog_8h.html#a93dcdf10c0b282b9e8446a2998fe2bb6":[36,0,0,28,1,7,7,2],
 "msd-ldsm-dialog_8h.html#aabbcd60b53c8e67b49fed4cab5a78b06":[36,0,0,28,1,7,7,4],
 "msd-ldsm-dialog_8h.html#ab7f1802233758524f06ebfeb8f33cea9":[36,0,0,28,1,7,7,3],
-"msd-ldsm-dialog_8h.html#abdb639458199a9a97a2e5cbc542fe4c9":[36,0,0,28,1,7,7,11]
+"msd-ldsm-dialog_8h.html#abdb639458199a9a97a2e5cbc542fe4c9":[36,0,0,28,1,7,7,11],
+"msd-ldsm-dialog_8h.html#abe3fab717ecc30422560521356439deb":[36,0,0,28,1,7,7,8],
+"msd-ldsm-dialog_8h.html#ae376852f3fd71d173d69f35249107b41":[36,0,0,28,1,7,7,7],
+"msd-ldsm-dialog_8h.html#aee24337f9fb3f72507c65690abb664bb":[36,0,0,28,1,7,7,6],
+"msd-ldsm-dialog_8h.html#afada3940f317647eba29e439c3dbc886":[36,0,0,28,1,7,7,5],
+"msd-ldsm-dialog_8h_source.html":[36,0,0,28,1,7,7],
+"msd-ldsm-trash-empty_8c.html":[36,0,0,28,1,7,8],
+"msd-ldsm-trash-empty_8c.html#a161a9a9d938b91098303b10f1aa5d244":[36,0,0,28,1,7,8,1],
+"msd-ldsm-trash-empty_8c.html#a744b86d3dd83a7fa20b26c11c9e76714":[36,0,0,28,1,7,8,0],
+"msd-ldsm-trash-empty_8c.html#ad1a7ecdfa7c871f55c4309e02060d9af":[36,0,0,28,1,7,8,2]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX216 =
 {
-"wayland-workspace_8h.html#a18dab37fa6b48ae41d50d4fa9b93f990":[36,0,0,22,0,3,6,4],
-"wayland-workspace_8h.html#a5b07612aaff8db80199d532ac60ad469":[36,0,0,22,0,3,6,8],
-"wayland-workspace_8h.html#a5d1945f457d0a074c2a2e21974d62ec6":[36,0,0,22,0,3,6,1],
-"wayland-workspace_8h.html#a6ad9f027916b01b3970785f81d1b9f3a":[36,0,0,22,0,3,6,2],
-"wayland-workspace_8h.html#a8957f453511162e8ed186c38cdb83c99":[36,0,0,22,0,3,6,6],
-"wayland-workspace_8h.html#a8d2502bc433b75f00b71f848ad5a7fe0":[36,0,0,22,0,3,6,5],
-"wayland-workspace_8h.html#ac855e6bcbe3cf8658fd42301859d3c5a":[36,0,0,22,0,3,6,0],
-"wayland-workspace_8h.html#af1be6d5fb62866410a7135117b2b825e":[36,0,0,22,0,3,6,7],
-"wayland-workspace_8h_source.html":[36,0,0,22,0,3,6],
 "wayland_8c.html":[36,0,0,21,0,2,9],
 "wayland_8c.html#a1c8d4e52096e1fc7143bd3a3c3bdc0dc":[36,0,0,21,0,2,9,1],
 "wayland_8c.html#a2bb36368fcf605366f92f1535aa5e5e7":[36,0,0,21,0,2,9,0],
@@ -249,5 +240,14 @@ var NAVTREEINDEX216 =
 "weather_8h.html#a6e9b208315e530876c3ed3f0016452ad":[36,0,0,10,0,27,26],
 "weather_8h.html#a733b8ed4f5384d4bf3c0908a8507b49f":[36,0,0,10,0,27,52],
 "weather_8h.html#a742f06309214db48494b2377e0e3a808":[36,0,0,10,0,27,51],
-"weather_8h.html#a7c7061c61bbcde561e1a7b4dd90a17c7":[36,0,0,10,0,27,2]
+"weather_8h.html#a7c7061c61bbcde561e1a7b4dd90a17c7":[36,0,0,10,0,27,2],
+"weather_8h.html#a8333f6c5aee85543f07ba2dfe7cc2f92":[36,0,0,10,0,27,4],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615":[36,0,0,10,0,27,22],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a00fe8676da362495dcccb420c71fa728":[36,0,0,10,0,27,22,2],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a3dffeb89bb4bd96f206d53775abb1460":[36,0,0,10,0,27,22,6],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a77c44cf170da896d9b74388ba34a0896":[36,0,0,10,0,27,22,1],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a8c0a89150bdb548b8c08c836d812a368":[36,0,0,10,0,27,22,4],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615ab0e1735b590234fa393555173d7708f0":[36,0,0,10,0,27,22,5],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615acfbd1c93fc536e9ab50f0c47b5cbc8a4":[36,0,0,10,0,27,22,3],
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615ae670aae33ac88bdf67671ae9fab0e339":[36,0,0,10,0,27,22,0]
 };

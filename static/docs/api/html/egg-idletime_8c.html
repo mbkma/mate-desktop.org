@@ -97,9 +97,6 @@ $(document).ready(function(){initNavTree('egg-idletime_8c.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;glib.h&gt;</code><br />
-<code>#include &lt;X11/Xlib.h&gt;</code><br />
-<code>#include &lt;X11/extensions/sync.h&gt;</code><br />
-<code>#include &lt;gdk/gdkx.h&gt;</code><br />
 <code>#include &lt;gdk/gdk.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
@@ -108,7 +105,7 @@ $(document).ready(function(){initNavTree('egg-idletime_8c.html',''); initResizab
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for egg-idletime.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="egg-idletime_8c__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="egg-idletime_8c__incl.svg" width="604" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="egg-idletime_8c_source.html">Go to the source code of this file.</a></p>
@@ -120,22 +117,17 @@ Enumerations</h2></td></tr>
 , <a class="el" href="egg-idletime_8c.html#a1341fee24c3343dda18ab340805de03aa0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a>
  }</td></tr>
 <tr class="separator:a1341fee24c3343dda18ab340805de03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc634cec393496788ce97f61a72383f8" id="r_afc634cec393496788ce97f61a72383f8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#afc634cec393496788ce97f61a72383f8">EggIdletimeAlarmType</a> { <a class="el" href="egg-idletime_8c.html#afc634cec393496788ce97f61a72383f8a7fb024dbcbe3ce2c42af65907131c3d7">EGG_IDLETIME_ALARM_TYPE_POSITIVE</a>
-, <a class="el" href="egg-idletime_8c.html#afc634cec393496788ce97f61a72383f8a0a6754a16e787ab7abcead079718642a">EGG_IDLETIME_ALARM_TYPE_NEGATIVE</a>
-, <a class="el" href="egg-idletime_8c.html#afc634cec393496788ce97f61a72383f8ac5f643af61a19c32f5b4a85f8904be28">EGG_IDLETIME_ALARM_TYPE_DISABLED</a>
- }</td></tr>
-<tr class="separator:afc634cec393496788ce97f61a72383f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae31929c83f960413e0cb098c025fbd2c" id="r_ae31929c83f960413e0cb098c025fbd2c"><td class="memItemLeft" align="right" valign="top">gint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#ae31929c83f960413e0cb098c025fbd2c">egg_idletime_get_time</a> (<a class="el" href="structEggIdletime.html">EggIdletime</a> *idletime)</td></tr>
 <tr class="separator:ae31929c83f960413e0cb098c025fbd2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d0c15ac191b24d76f503b9003eeb76d" id="r_a8d0c15ac191b24d76f503b9003eeb76d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#a8d0c15ac191b24d76f503b9003eeb76d">egg_idletime_alarm_reset_all</a> (<a class="el" href="structEggIdletime.html">EggIdletime</a> *idletime)</td></tr>
-<tr class="separator:a8d0c15ac191b24d76f503b9003eeb76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0390a047bb83d0665241373a70a52e" id="r_a2a0390a047bb83d0665241373a70a52e"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#a2a0390a047bb83d0665241373a70a52e">egg_idletime_alarm_set</a> (<a class="el" href="structEggIdletime.html">EggIdletime</a> *idletime, guint id, guint timeout)</td></tr>
 <tr class="separator:a2a0390a047bb83d0665241373a70a52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5bc5d89f160ab09a72e3d3f793c3931" id="r_ae5bc5d89f160ab09a72e3d3f793c3931"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#ae5bc5d89f160ab09a72e3d3f793c3931">egg_idletime_alarm_remove</a> (<a class="el" href="structEggIdletime.html">EggIdletime</a> *idletime, guint id)</td></tr>
 <tr class="separator:ae5bc5d89f160ab09a72e3d3f793c3931"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0c15ac191b24d76f503b9003eeb76d" id="r_a8d0c15ac191b24d76f503b9003eeb76d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#a8d0c15ac191b24d76f503b9003eeb76d">egg_idletime_alarm_reset_all</a> (<a class="el" href="structEggIdletime.html">EggIdletime</a> *idletime)</td></tr>
+<tr class="separator:a8d0c15ac191b24d76f503b9003eeb76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9a0ad655f02bdaabac6ec3c2267a60" id="r_a9f9a0ad655f02bdaabac6ec3c2267a60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEggIdletime.html">EggIdletime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="egg-idletime_8c.html#a9f9a0ad655f02bdaabac6ec3c2267a60">egg_idletime_new</a> (void)</td></tr>
 <tr class="separator:a9f9a0ad655f02bdaabac6ec3c2267a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -157,28 +149,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a1341fee24c3343dda18ab340805de03aa0c34d85df8279641afad9e3c9b3a54ce" name="a1341fee24c3343dda18ab340805de03aa0c34d85df8279641afad9e3c9b3a54ce"></a>LAST_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00058">58</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
-
-</div>
-</div>
-<a id="afc634cec393496788ce97f61a72383f8" name="afc634cec393496788ce97f61a72383f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc634cec393496788ce97f61a72383f8">&#9670;&#160;</a></span>EggIdletimeAlarmType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="egg-idletime_8c.html#afc634cec393496788ce97f61a72383f8">EggIdletimeAlarmType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afc634cec393496788ce97f61a72383f8a7fb024dbcbe3ce2c42af65907131c3d7" name="afc634cec393496788ce97f61a72383f8a7fb024dbcbe3ce2c42af65907131c3d7"></a>EGG_IDLETIME_ALARM_TYPE_POSITIVE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afc634cec393496788ce97f61a72383f8a0a6754a16e787ab7abcead079718642a" name="afc634cec393496788ce97f61a72383f8a0a6754a16e787ab7abcead079718642a"></a>EGG_IDLETIME_ALARM_TYPE_NEGATIVE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="afc634cec393496788ce97f61a72383f8ac5f643af61a19c32f5b4a85f8904be28" name="afc634cec393496788ce97f61a72383f8ac5f643af61a19c32f5b4a85f8904be28"></a>EGG_IDLETIME_ALARM_TYPE_DISABLED&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00064">64</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00088">88</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
 
 </div>
 </div>
@@ -208,11 +179,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>egg_idletime_alarm_free: </p>
+<p>egg_idletime_alarm_remove: </p>
 
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00343">343</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00628">628</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
 
-<p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gpm-idle_8c_source.html#l00287">gpm_idle_set_timeout_dim()</a>.</p>
 
@@ -235,9 +206,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>egg_idletime_alarm_reset_all: </p>
 
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00141">141</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00666">666</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
 
-<p class="reference">References <a class="el" href="egg-idletime_8c_source.html#l00067">EGG_IDLETIME_ALARM_TYPE_DISABLED</a>, <a class="el" href="egg-idletime_8c_source.html#l00065">EGG_IDLETIME_ALARM_TYPE_POSITIVE</a>, <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>, and <a class="el" href="egg-idletime_8c_source.html#l00060">SIGNAL_RESET</a>.</p>
+<p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>, and <a class="el" href="egg-idletime_8c_source.html#l00090">SIGNAL_RESET</a>.</p>
 
 </div>
 </div>
@@ -274,9 +245,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>egg_idletime_alarm_set: </p>
 
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00296">296</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00557">557</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
 
-<p class="reference">References <a class="el" href="egg-idletime_8c_source.html#l00065">EGG_IDLETIME_ALARM_TYPE_POSITIVE</a>, <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="actions_8c_source.html#l00051">id</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gpm-idle_8c_source.html#l00287">gpm_idle_set_timeout_dim()</a>.</p>
 
@@ -297,11 +268,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>egg_idletime_get_time: </p>
+<p>egg_idletime_get_time: Return value: current idle time in milliseconds </p>
 
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00088">88</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00397">397</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
 
-<p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>.</p>
+<p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00033">EGG_IS_IDLETIME</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="egg-idletime_8h_source.html#l00042">EggIdletime::priv</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="gpm-idle_8c_source.html#l00287">gpm_idle_set_timeout_dim()</a>.</p>
 
@@ -324,7 +295,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>egg_idletime_new: </p>
 
-<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00460">460</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="egg-idletime_8c_source.html#l00761">761</a> of file <a class="el" href="egg-idletime_8c_source.html">egg-idletime.c</a>.</p>
 
 <p class="reference">References <a class="el" href="egg-idletime_8h_source.html#l00031">EGG_IDLETIME</a>, <a class="el" href="egg-idletime_8h_source.html#l00030">EGG_IDLETIME_TYPE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 

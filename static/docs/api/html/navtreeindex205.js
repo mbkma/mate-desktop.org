@@ -1,14 +1,5 @@
 var NAVTREEINDEX205 =
 {
-"sushi-font-widget_8h.html#a63a4d9472674614b84e09cad33f99bd9":[36,0,0,14,1,11,5],
-"sushi-font-widget_8h.html#a6589d55f053c27e1560f0df68fc8af10":[36,0,0,14,1,11,2],
-"sushi-font-widget_8h.html#a68d89581da5962e061ab93872ca9e42c":[36,0,0,14,1,11,9],
-"sushi-font-widget_8h.html#a781ceb55736647ae19d4d8eda5f63a70":[36,0,0,14,1,11,10],
-"sushi-font-widget_8h.html#a84bd142bce9619b226cda7053e848685":[36,0,0,14,1,11,11],
-"sushi-font-widget_8h.html#a914e654c00019764a85ab441a7c3a5b8":[36,0,0,14,1,11,14],
-"sushi-font-widget_8h.html#aa78dfed9434a9ada614f4ab5c155f496":[36,0,0,14,1,11,15],
-"sushi-font-widget_8h.html#ad93b67d2e7288cedc7b331bd7364a1c6":[36,0,0,14,1,11,4],
-"sushi-font-widget_8h.html#af5452eb9d328db3a4fc38c143aab44a2":[36,0,0,14,1,11,8],
 "sushi-font-widget_8h_source.html":[36,0,0,14,1,11],
 "sysdeps_8h.html":[36,0,0,0,0,2,0,29],
 "sysdeps_8h.html#a2233272bd480c6e6091331d6557884c1":[36,0,0,0,0,2,0,29,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX205 =
 "terminal-app_8c.html#adc0a2ad0061a525fc86436fd38157284":[36,0,0,30,0,10,22],
 "terminal-app_8c.html#addf3f5b2f44c7c1aea5d070bfa9d1f95":[36,0,0,30,0,10,27],
 "terminal-app_8c.html#aeb98c4ac750d975d761b198a3f2a4f3e":[36,0,0,30,0,10,15],
-"terminal-app_8c.html#af33cc543597398c1911c44fd8a7ec383":[36,0,0,30,0,10,30]
+"terminal-app_8c.html#af33cc543597398c1911c44fd8a7ec383":[36,0,0,30,0,10,30],
+"terminal-app_8c.html#af9959e7157298f9d4b3997540a9db99f":[36,0,0,30,0,10,25],
+"terminal-app_8c.html#af9a93f907f7a7f483756579930cebcf0":[36,0,0,30,0,10,4],
+"terminal-app_8c.html#afe7e58aae967c99451b5101d7398e1e8":[36,0,0,30,0,10,11],
+"terminal-app_8c.html#afed94e5cb2b998d0a20c8ff717119b8b":[36,0,0,30,0,10,0],
+"terminal-app_8c.html#aff0ae209248161a1f747fb4207e746e6":[36,0,0,30,0,10,8],
+"terminal-app_8c_source.html":[36,0,0,30,0,10],
+"terminal-app_8h.html":[36,0,0,30,0,11],
+"terminal-app_8h.html#a0092ac6d6c51cda96a8acd6b8890031f":[36,0,0,30,0,11,39],
+"terminal-app_8h.html#a01179df3818c3ce6155a11279df98444":[36,0,0,30,0,11,59]
 };

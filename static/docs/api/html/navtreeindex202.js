@@ -1,14 +1,5 @@
 var NAVTREEINDEX202 =
 {
-"struct__ProgressData.html#a5085ed4968541716982cac7c423ef58e":[35,0,900,20],
-"struct__ProgressData.html#a694a9f0531e8b91b84d653b9b157a935":[35,0,900,7],
-"struct__ProgressData.html#a70cf77605d2d36dc46484b7e78e12da6":[35,0,900,4],
-"struct__ProgressData.html#a733f10b529df36599a51301f5e3580ac":[35,0,900,5],
-"struct__ProgressData.html#a736e25fd57979e6678ef518704fecafd":[35,0,900,26],
-"struct__ProgressData.html#a75ddb39185b0db3abe4633191b4a837f":[35,0,900,27],
-"struct__ProgressData.html#a7a2b816a1d1f4ae3451f0ac6a289d833":[35,0,900,22],
-"struct__ProgressData.html#a7f0e4a631340d8c7a740285b79d95370":[35,0,900,15],
-"struct__ProgressData.html#a8175e1c9eb71007be0126b239b77c38e":[35,0,900,10],
 "struct__ProgressData.html#a9d3830f4d0acb205b965391610eeb5bb":[35,0,900,21],
 "struct__ProgressData.html#a9fc63772017719bd3a1b06f56e22f1a5":[35,0,900,1],
 "struct__ProgressData.html#aad44ec070e2f31408378b19894a9a30c":[35,0,900,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX202 =
 "struct__TerminalProfile.html#acda7639711c39e310e3476bfcc1a3158":[35,0,966,1],
 "struct__TerminalProfileClass.html":[35,0,967],
 "struct__TerminalProfileClass.html#a095306e98a0a83d3e04c4c5c9cbfbd60":[35,0,967,2],
-"struct__TerminalProfileClass.html#aa81d585ecd37fbcd55bdc72c5c1c0751":[35,0,967,1]
+"struct__TerminalProfileClass.html#aa81d585ecd37fbcd55bdc72c5c1c0751":[35,0,967,1],
+"struct__TerminalProfileClass.html#ae700d98b66c3d7cbd67677ef3d4c7bdb":[35,0,967,0],
+"struct__TerminalScreen.html":[35,0,968],
+"struct__TerminalScreen.html#a4272b4969263112966cb4c2da4241e06":[35,0,968,0],
+"struct__TerminalScreen.html#ac2b48d760d440b9af013eaab45e55d82":[35,0,968,1],
+"struct__TerminalScreenClass.html":[35,0,969],
+"struct__TerminalScreenClass.html#a193a1bddedbde7b72bebfe22e100ac84":[35,0,969,1],
+"struct__TerminalScreenClass.html#a1b0d0824c64dbaef96b953537e979fe3":[35,0,969,3],
+"struct__TerminalScreenClass.html#a70bdd9eba9471eaa1465f3110716a36d":[35,0,969,0],
+"struct__TerminalScreenClass.html#aef804353f40eb7cdcf09078b047746b6":[35,0,969,2]
 };

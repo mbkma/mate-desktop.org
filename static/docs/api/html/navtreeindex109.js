@@ -1,14 +1,5 @@
 var NAVTREEINDEX109 =
 {
-"mate-rr_8h.html#ab700826c6515a59d90c95f7698049e4d":[36,0,0,15,0,34,9],
-"mate-rr_8h.html#aba200153cde427f00fc948445597326e":[36,0,0,15,0,34,62],
-"mate-rr_8h.html#abda04ad87ba8b05865bf7ceb6fdea673":[36,0,0,15,0,34,32],
-"mate-rr_8h.html#abe150f64d714426d7d5f74fc7bd390b1":[36,0,0,15,0,34,61],
-"mate-rr_8h.html#abec259a5f9c9d05be0207b7bc80b05f5":[36,0,0,15,0,34,55],
-"mate-rr_8h.html#ac2c1aa55b63cf59e3aef3fa643d90364":[36,0,0,15,0,34,51],
-"mate-rr_8h.html#ac2c7efec32b88f3bf6f11bfb05350887":[36,0,0,15,0,34,10],
-"mate-rr_8h.html#aca5d2afff326d05709d66e451427a8d4":[36,0,0,15,0,34,57],
-"mate-rr_8h.html#aca85f754f15b46ffd7f1b20f8fe9f8ea":[36,0,0,15,0,34,13],
 "mate-rr_8h.html#acc7e6bbb4906bcf501b9b08f74287bbe":[36,0,0,15,0,34,26],
 "mate-rr_8h.html#acec9ea675abe36816cd3e70ee145b117":[36,0,0,15,0,34,68],
 "mate-rr_8h.html#ad9e1cd0992a89172de49d8cb81dbba95":[36,0,0,15,0,34,58],
@@ -249,5 +240,14 @@ var NAVTREEINDEX109 =
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aab10f6459deae3e8f4c043a710671a5b":[36,0,0,28,1,3,7,5],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aabd5af7e12fea78d173cd1897511eb46":[36,0,0,28,1,3,7,9],
 "mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aba99e6b3aa1ee7e1ec9fd5d51e9561e7":[36,0,0,28,1,3,7,10],
-"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#ad5f277a89f93a2d7d6b457f73c93bc33":[36,0,0,28,1,3,7,0]
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#ad5f277a89f93a2d7d6b457f73c93bc33":[36,0,0,28,1,3,7,0],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#aefec4990e620c78df098ae87e5b7a4b0":[36,0,0,28,1,3,7,2],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#af30fe7214f3f9a7b2b9194cb91de33c3":[36,0,0,28,1,3,7,11],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h.html#af61c4c4b2b89568b72420a65c414ffed":[36,0,0,28,1,3,7,1],
+"mate-settings-daemon_2plugins_2clipboard_2xutils_8h_source.html":[36,0,0,28,1,3,7],
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html":[36,0,0,28,1,4,0],
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a0980c859664528ea369175d043ae4771":[36,0,0,28,1,4,0,6],
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a2ade0fd1a9f7c3f9431c791668ae1359":[36,0,0,28,1,4,0,0],
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a3e3bfe80e919a1a0828d6ab05efdd2ce":[36,0,0,28,1,4,0,1],
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a3ea9e23a699e27248095711cb262cc15":[36,0,0,28,1,4,0,2]
 };

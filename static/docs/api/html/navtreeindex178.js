@@ -1,14 +1,5 @@
 var NAVTREEINDEX178 =
 {
-"structMsdClipboardPluginClass.html#a36c81c70021d55b237d598fc1ce2198b":[35,0,1485,0],
-"structMsdDatetimeMechanism.html":[35,0,1486],
-"structMsdDatetimeMechanism.html#a20c2d6cc296dc15487fe7c635db5549c":[35,0,1486,1],
-"structMsdDatetimeMechanism.html#abdc616907ac6e8dc55faef8608dd441a":[35,0,1486,0],
-"structMsdDatetimeMechanismClass.html":[35,0,1487],
-"structMsdDatetimeMechanismClass.html#a5cc0690df1dbf3a6cd60fc1c5e633545":[35,0,1487,0],
-"structMsdDummyManager.html":[35,0,1488],
-"structMsdDummyManager.html#a3982bcaed8afa9b541d9297c456b9584":[35,0,1488,0],
-"structMsdDummyManager.html#ac130924253d306974df5d61ba34de046":[35,0,1488,1],
 "structMsdDummyManagerClass.html":[35,0,1489],
 "structMsdDummyManagerClass.html#ae64d9847b08a3e78e4b579850f26a751":[35,0,1489,0],
 "structMsdDummyPlugin.html":[35,0,1490],
@@ -249,5 +240,14 @@ var NAVTREEINDEX178 =
 "structNAIFactoryProviderInterface.html":[35,0,1549],
 "structNAIFactoryProviderInterface.html#a0d3131508e265aeca07ea88b92986e4c":[35,0,1549,4],
 "structNAIFactoryProviderInterface.html#a1db8f4db664e73cca9a8cafad5f9189e":[35,0,1549,6],
-"structNAIFactoryProviderInterface.html#a318877614cabd4c1424a83300f840757":[35,0,1549,2]
+"structNAIFactoryProviderInterface.html#a318877614cabd4c1424a83300f840757":[35,0,1549,2],
+"structNAIFactoryProviderInterface.html#a3c8f45e5994116c9352f736701cab852":[35,0,1549,1],
+"structNAIFactoryProviderInterface.html#a3e85ea3006ef98f420b6664c0d3f3b7d":[35,0,1549,5],
+"structNAIFactoryProviderInterface.html#a626aeeae72ec9f53838060dc291adb29":[35,0,1549,0],
+"structNAIFactoryProviderInterface.html#a6ba8211041688814ae5b892fa397e872":[35,0,1549,8],
+"structNAIFactoryProviderInterface.html#a7c556ec05a4b6b3808359a216975fe36":[35,0,1549,3],
+"structNAIFactoryProviderInterface.html#acec4c3e631a94b15a4a3b3b53529fdee":[35,0,1549,7],
+"structNAIIOProviderInterface.html":[35,0,1552],
+"structNAIIOProviderInterface.html#a00f08e19597e2bbe4dd5ed0831b55bd5":[35,0,1552,10],
+"structNAIIOProviderInterface.html#a01a964e07c80f373bbc94a6c6e40fd4d":[35,0,1552,7]
 };

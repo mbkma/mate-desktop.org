@@ -1,14 +1,5 @@
 var NAVTREEINDEX141 =
 {
-"nl80211_8h.html#af9458e602a02c740c7c3f1a6e583712fad6df24667ca7308124f4a52efa09317e":[36,0,0,12,10,0,7,190,1],
-"nl80211_8h.html#af9458e602a02c740c7c3f1a6e583712fad7ea1c25d3980bf627a7b3a7cbd83b3a":[36,0,0,12,10,0,7,190,11],
-"nl80211_8h.html#af9458e602a02c740c7c3f1a6e583712fadf1ce10932351858dc7d9ae3a3c9e18d":[36,0,0,12,10,0,7,190,5],
-"nl80211_8h.html#afa0043748d4613ace79b49c8ab80865b":[36,0,0,12,10,0,7,48],
-"nl80211_8h.html#afaa02ed019d4acbab71da738281d3adc":[36,0,0,12,10,0,7,75],
-"nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110":[36,0,0,12,10,0,7,209],
-"nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110a1b34bff1f95fb8e835987f5a2a89944d":[36,0,0,12,10,0,7,209,2],
-"nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110a491e369a002da013e651743f2d0f25b0":[36,0,0,12,10,0,7,209,0],
-"nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110a513d161c401388503072ce0f87b0be63":[36,0,0,12,10,0,7,209,6],
 "nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110ac08dd4c2d952d46584ab3aab09bbadc5":[36,0,0,12,10,0,7,209,1],
 "nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110ad14cc27fa969d31d299914c6a47a3579":[36,0,0,12,10,0,7,209,4],
 "nl80211_8h.html#afc4d521d6ac4d3a79c8a363c939ef110adfa5804cd6cc3699dd49fc0b5fa31f79":[36,0,0,12,10,0,7,209,5],
@@ -249,5 +240,14 @@ var NAVTREEINDEX141 =
 "oss-stream-control_8h.html#aeb48cbbf4e97607db24f98ec30dec52b":[36,0,0,8,0,2,6,6],
 "oss-stream-control_8h_source.html":[36,0,0,8,0,2,6],
 "oss-stream_8c.html":[36,0,0,8,0,2,7],
-"oss-stream_8c.html#a04d3d79cc14e68bdc2e69eba7db8df12":[36,0,0,8,0,2,7,6]
+"oss-stream_8c.html#a04d3d79cc14e68bdc2e69eba7db8df12":[36,0,0,8,0,2,7,6],
+"oss-stream_8c.html#a0ff426b86e0cbb22d77caab14f82828d":[36,0,0,8,0,2,7,7],
+"oss-stream_8c.html#a4abc71d5b01bd2247491cb7e0d3f6fe6":[36,0,0,8,0,2,7,8],
+"oss-stream_8c.html#a4aca535f4abd4252d7ac8cf51e313a76":[36,0,0,8,0,2,7,9],
+"oss-stream_8c.html#a9a0d789610b2bab581716bd60334ced5":[36,0,0,8,0,2,7,0],
+"oss-stream_8c.html#a9b10191adc9c45fd2d1289fb6be48785":[36,0,0,8,0,2,7,3],
+"oss-stream_8c.html#aa895a58bd8051eae90831e8c4ee4bce1":[36,0,0,8,0,2,7,4],
+"oss-stream_8c.html#aae843b87b849202152dc7b7ac127d97e":[36,0,0,8,0,2,7,1],
+"oss-stream_8c.html#ab5114b233556db56ad36f0be73a9503d":[36,0,0,8,0,2,7,2],
+"oss-stream_8c.html#ae30ced63b38c0d33662f45d6a6ffb9c6":[36,0,0,8,0,2,7,5]
 };

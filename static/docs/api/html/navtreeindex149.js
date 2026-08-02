@@ -1,14 +1,5 @@
 var NAVTREEINDEX149 =
 {
-"pk_8c.html#acf1cf2774b85afa5226d96b553b05eb6":[36,0,0,0,0,2,0,24,0],
-"pk_8c.html#aedd787cbe8e44bccd07c1b131dc73f10":[36,0,0,0,0,2,0,24,12],
-"pk_8c_source.html":[36,0,0,0,0,2,0,24],
-"place_8c.html":[36,0,0,11,0,1,32],
-"place_8c.html#a03715bf950ee869cda989a5ad0d13959":[36,0,0,11,0,1,32,3],
-"place_8c.html#a0abe69742b09744a5b089f1d44bce2fb":[36,0,0,11,0,1,32,4],
-"place_8c.html#a57618b998dabf6d5a58a6d04de8473c7":[36,0,0,11,0,1,32,0],
-"place_8c.html#a8c95dca02ba8332254771a20924e7a53":[36,0,0,11,0,1,32,2],
-"place_8c.html#a8c95dca02ba8332254771a20924e7a53a40c4c02ff8a52ec32002bb58c25da0ea":[36,0,0,11,0,1,32,2,2],
 "place_8c.html#a8c95dca02ba8332254771a20924e7a53a6cb99d535cddba4aaf4533f6e1c19385":[36,0,0,11,0,1,32,2,0],
 "place_8c.html#a8c95dca02ba8332254771a20924e7a53ad573420a5a5375e7120589359632530b":[36,0,0,11,0,1,32,2,1],
 "place_8c.html#a8c95dca02ba8332254771a20924e7a53aec4e0939593c38d97d5d7faacad525e3":[36,0,0,11,0,1,32,2,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX149 =
 "pluma-commands-search_8c.html#aae15a57359405fa67f39ff805c6eddd4":[36,0,0,34,1,16,0],
 "pluma-commands-search_8c.html#aca0867ef125aa631655c373a2d988c6e":[36,0,0,34,1,16,2],
 "pluma-commands-search_8c.html#af0917a1a5d27c4f4ff08e3fdb09b31e6":[36,0,0,34,1,16,6],
-"pluma-commands-search_8c_source.html":[36,0,0,34,1,16]
+"pluma-commands-search_8c_source.html":[36,0,0,34,1,16],
+"pluma-commands-view_8c.html":[36,0,0,34,1,17],
+"pluma-commands-view_8c.html#a044e0585f7ce75f4272fe63aea9736a7":[36,0,0,34,1,17,6],
+"pluma-commands-view_8c.html#a17f084a684a52f98f6fdc3c4482392fe":[36,0,0,34,1,17,5],
+"pluma-commands-view_8c.html#a755afb05fc3a9f2d41e333e6f027dc85":[36,0,0,34,1,17,3],
+"pluma-commands-view_8c.html#a79aafdb692c7ee4f5a2488817c52557d":[36,0,0,34,1,17,4],
+"pluma-commands-view_8c.html#abb330b83a29dda36d85aa76e0a5551d7":[36,0,0,34,1,17,1],
+"pluma-commands-view_8c.html#ae2014fbf18487a5d283d41d577b0c8d4":[36,0,0,34,1,17,2],
+"pluma-commands-view_8c.html#af41b782846c2aab32781281cb7b059a1":[36,0,0,34,1,17,0],
+"pluma-commands-view_8c_source.html":[36,0,0,34,1,17]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX218 =
 {
-"window-private_8h.html#aca35bb927542ee5c1273fdf92960a8beafe4f5afada51d8daf740122488daf6f6":[36,0,0,11,0,1,45,22,1],
-"window-private_8h.html#acd37a63e6b46edc4e5371a99a23b2f40":[36,0,0,11,0,1,45,68],
-"window-private_8h.html#acf81a6d4a9c80d1290e6f9fbce73a175":[36,0,0,11,0,1,45,79],
-"window-private_8h.html#ad3266e9bfb7072280252b769c6aa7437":[36,0,0,11,0,1,45,110],
-"window-private_8h.html#ad848919a6c1bcdf2bb05747f24f8bd5c":[36,0,0,11,0,1,45,87],
-"window-private_8h.html#adc005cbb31aba0a394608221a16055a6":[36,0,0,11,0,1,45,106],
-"window-private_8h.html#ae0158a62b69360cf1800e38eb1118686":[36,0,0,11,0,1,45,114],
-"window-private_8h.html#ae07a3443f806861ed02c09fbb22eb0da":[36,0,0,11,0,1,45,48],
-"window-private_8h.html#ae30442b893b224547f754931a67d8221":[36,0,0,11,0,1,45,75],
 "window-private_8h.html#ae4f8b0eab6c7420c09e92110bfb39925":[36,0,0,11,0,1,45,26],
 "window-private_8h.html#ae4f8b0eab6c7420c09e92110bfb39925a189eeda77f20787f08d85fd86168f7f9":[36,0,0,11,0,1,45,26,7],
 "window-private_8h.html#ae4f8b0eab6c7420c09e92110bfb39925a21bb67f787b61ea066a148ca2a5aa66b":[36,0,0,11,0,1,45,26,2],
@@ -249,5 +240,14 @@ var NAVTREEINDEX218 =
 "workspace-switcher_8c.html#a685932e468faac2d48e058b6d2563a81":[36,0,0,22,0,3,13,15],
 "workspace-switcher_8c.html#a6e1e2bdbe667bf66aed8bed16dd390b2":[36,0,0,22,0,3,13,11],
 "workspace-switcher_8c.html#a7ed7c989849bb05c71d617e73cd05311":[36,0,0,22,0,3,13,5],
-"workspace-switcher_8c.html#a7fa981eb8cd067ee00f8326375a93380":[36,0,0,22,0,3,13,8]
+"workspace-switcher_8c.html#a7fa981eb8cd067ee00f8326375a93380":[36,0,0,22,0,3,13,8],
+"workspace-switcher_8c.html#a81df2dd74f3e94f795e8bc2487389954":[36,0,0,22,0,3,13,13],
+"workspace-switcher_8c.html#a97953461d0882d98760206cab8ff80ae":[36,0,0,22,0,3,13,1],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0":[36,0,0,22,0,3,13,14],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0a128a4b24ef257804ac83b57078db2ce2":[36,0,0,22,0,3,13,14,5],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0a38db4c09807f92f85679b4b322b055a4":[36,0,0,22,0,3,13,14,1],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0a49b479c37592105bd5b5761abef6091f":[36,0,0,22,0,3,13,14,3],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0ac7792d2bd1b3959a7d95f8bd0c0c34c7":[36,0,0,22,0,3,13,14,4],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0ae969b19c2f8a19760796f6f81bab5cd7":[36,0,0,22,0,3,13,14,0],
+"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0af4d4ca1235a9957824e0baac9370c4ec":[36,0,0,22,0,3,13,14,2]
 };

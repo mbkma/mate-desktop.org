@@ -1,14 +1,5 @@
 var NAVTREEINDEX128 =
 {
-"msd-xrandr-manager_8h.html#a34f18937209dd6d23de6e5f245138af5":[36,0,0,28,1,17,1,2],
-"msd-xrandr-manager_8h.html#a55c43da5b7311f52d9b0758f651a8356":[36,0,0,28,1,17,1,5],
-"msd-xrandr-manager_8h.html#a772a64a6ac61329f31cd51b522319cc8":[36,0,0,28,1,17,1,7],
-"msd-xrandr-manager_8h.html#a800e260c2004ef865341952308cf1871":[36,0,0,28,1,17,1,3],
-"msd-xrandr-manager_8h.html#a82a472631e1a1cc300ffe026a42321ba":[36,0,0,28,1,17,1,12],
-"msd-xrandr-manager_8h.html#a93f1d6ca80a443b7fb363353f1b0bfd3":[36,0,0,28,1,17,1,9],
-"msd-xrandr-manager_8h.html#a9f626d5107741c3e53fe031fd1d8057a":[36,0,0,28,1,17,1,6],
-"msd-xrandr-manager_8h.html#acfe9b639ee9c676330e1cf208b07a28c":[36,0,0,28,1,17,1,11],
-"msd-xrandr-manager_8h_source.html":[36,0,0,28,1,17,1],
 "msd-xrandr-plugin_8c.html":[36,0,0,28,1,17,2],
 "msd-xrandr-plugin_8c_source.html":[36,0,0,28,1,17,2],
 "msd-xrandr-plugin_8h.html":[36,0,0,28,1,17,3],
@@ -249,5 +240,14 @@ var NAVTREEINDEX128 =
 "na-core-utils_8c.html#af21a4445d85be2d71a7ee86cde5676b2":[36,0,0,2,0,2,3,31],
 "na-core-utils_8c_source.html":[36,0,0,2,0,2,3],
 "na-core-utils_8h.html":[36,0,0,2,0,0,1],
-"na-core-utils_8h.html#a047385eb6e5b9fc71fc2d06265b185be":[36,0,0,2,0,0,1,23]
+"na-core-utils_8h.html#a047385eb6e5b9fc71fc2d06265b185be":[36,0,0,2,0,0,1,23],
+"na-core-utils_8h.html#a04d7f361f6d9133de37687c148092bec":[36,0,0,2,0,0,1,32],
+"na-core-utils_8h.html#a058a4848c662069f0feefb79d55f6be6":[36,0,0,2,0,0,1,5],
+"na-core-utils_8h.html#a143c109b71a11c323bca43db000431f2":[36,0,0,2,0,0,1,17],
+"na-core-utils_8h.html#a35ee3c7ccd3c7c400087558fc9710e9d":[36,0,0,2,0,0,1,11],
+"na-core-utils_8h.html#a4cc7aeebee39de754b2102f22ed54496":[36,0,0,2,0,0,1,22],
+"na-core-utils_8h.html#a5d45922c9375bbd7455c74e68d1a7d1f":[36,0,0,2,0,0,1,7],
+"na-core-utils_8h.html#a5d9f16d34e73c8e3f78ac840ddcbdf1f":[36,0,0,2,0,0,1,13],
+"na-core-utils_8h.html#a649a217d2ef3308772bc913d0edd4c39":[36,0,0,2,0,0,1,19],
+"na-core-utils_8h.html#a6752b471a079138be8b0e268ebdb5f93":[36,0,0,2,0,0,1,16]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX220 =
 {
-"xsettings-manager_8h.html#ab6d264416f0a3a711fed8d0a2851e44c":[36,0,0,28,1,19,11,13],
-"xsettings-manager_8h.html#ad051dc33a2ea99f340d169f034e72d54":[36,0,0,28,1,19,11,7],
-"xsettings-manager_8h_source.html":[36,0,0,28,1,19,11],
-"xstuff_8c.html":[36,0,0,22,2,96],
-"xstuff_8c.html#a06494d8e8c4aeb4ef3bbdf3cd0edc9da":[36,0,0,22,2,96,8],
-"xstuff_8c.html#a1ad06daf9bbafde3aeb2f52bf3a6e2e4":[36,0,0,22,2,96,9],
-"xstuff_8c.html#a1f06629187024721b4adc3f54e4bdcf1":[36,0,0,22,2,96,4],
-"xstuff_8c.html#a2a3b4f0d88b092d0f370a8ac7db93521":[36,0,0,22,2,96,5],
-"xstuff_8c.html#a51a51480d875f80355412fa95fd48c6c":[36,0,0,22,2,96,0],
 "xstuff_8c.html#a64b798c8fb3a6a74e3b5c59a24b513f9":[36,0,0,22,2,96,10],
 "xstuff_8c.html#a6f1958917d92aec37ad763b38c54cb20":[36,0,0,22,2,96,1],
 "xstuff_8c.html#a8e64ecf287d9715065650c5563dcfee0":[36,0,0,22,2,96,7],

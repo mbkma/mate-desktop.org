@@ -1,14 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"msd-smartcard-manager_8c.html#ac50639f182d46fe38b3c49ed1e3ee31a":[36,0,0,28,1,14,0,3],
-"msd-smartcard-manager_8c.html#ae872e0503f5d68435b8105c27b84d709":[36,0,0,28,1,14,0,11],
-"msd-smartcard-manager_8c_source.html":[36,0,0,28,1,14,0],
-"msd-smartcard-manager_8h.html":[36,0,0,28,1,14,1],
-"msd-smartcard-manager_8h.html#a201b4edadf002bb26cc0dc42d99de126":[36,0,0,28,1,14,1,19],
-"msd-smartcard-manager_8h.html#a2e248b382e73e0b307f53975e849a9a0":[36,0,0,28,1,14,1,14],
-"msd-smartcard-manager_8h.html#a2e248b382e73e0b307f53975e849a9a0a1047a6a272e9ab17117f33a2b516f688":[36,0,0,28,1,14,1,14,1],
-"msd-smartcard-manager_8h.html#a2e248b382e73e0b307f53975e849a9a0a5c7f899e1631f0ab64e3d1ba8a1cafe0":[36,0,0,28,1,14,1,14,4],
-"msd-smartcard-manager_8h.html#a2e248b382e73e0b307f53975e849a9a0a84416cdd3b155e7b3a40ff280cc79681":[36,0,0,28,1,14,1,14,3],
 "msd-smartcard-manager_8h.html#a2e248b382e73e0b307f53975e849a9a0ac8bcc92c61c661b54d1a54fa482afee9":[36,0,0,28,1,14,1,14,0],
 "msd-smartcard-manager_8h.html#a2e248b382e73e0b307f53975e849a9a0ad1fa547afbe788f3a397ae9adbc0990e":[36,0,0,28,1,14,1,14,2],
 "msd-smartcard-manager_8h.html#a3267bffe5f7099c5727a4c72e5845acc":[36,0,0,28,1,14,1,17],
@@ -249,5 +240,14 @@ var NAVTREEINDEX127 =
 "msd-xrandr-manager_8h.html":[36,0,0,28,1,17,1],
 "msd-xrandr-manager_8h.html#a0cbe0afe9d76b0cebf9c9589676152a6":[36,0,0,28,1,17,1,10],
 "msd-xrandr-manager_8h.html#a0d40cba482661bc30de006963995933f":[36,0,0,28,1,17,1,8],
-"msd-xrandr-manager_8h.html#a17ac596025b43e39615dd767621d42d1":[36,0,0,28,1,17,1,4]
+"msd-xrandr-manager_8h.html#a17ac596025b43e39615dd767621d42d1":[36,0,0,28,1,17,1,4],
+"msd-xrandr-manager_8h.html#a34f18937209dd6d23de6e5f245138af5":[36,0,0,28,1,17,1,2],
+"msd-xrandr-manager_8h.html#a55c43da5b7311f52d9b0758f651a8356":[36,0,0,28,1,17,1,5],
+"msd-xrandr-manager_8h.html#a772a64a6ac61329f31cd51b522319cc8":[36,0,0,28,1,17,1,7],
+"msd-xrandr-manager_8h.html#a800e260c2004ef865341952308cf1871":[36,0,0,28,1,17,1,3],
+"msd-xrandr-manager_8h.html#a82a472631e1a1cc300ffe026a42321ba":[36,0,0,28,1,17,1,12],
+"msd-xrandr-manager_8h.html#a93f1d6ca80a443b7fb363353f1b0bfd3":[36,0,0,28,1,17,1,9],
+"msd-xrandr-manager_8h.html#a9f626d5107741c3e53fe031fd1d8057a":[36,0,0,28,1,17,1,6],
+"msd-xrandr-manager_8h.html#acfe9b639ee9c676330e1cf208b07a28c":[36,0,0,28,1,17,1,11],
+"msd-xrandr-manager_8h_source.html":[36,0,0,28,1,17,1]
 };

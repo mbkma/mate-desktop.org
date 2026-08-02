@@ -1,14 +1,5 @@
 var NAVTREEINDEX142 =
 {
-"oss-stream_8c.html#a0ff426b86e0cbb22d77caab14f82828d":[36,0,0,8,0,2,7,7],
-"oss-stream_8c.html#a4abc71d5b01bd2247491cb7e0d3f6fe6":[36,0,0,8,0,2,7,8],
-"oss-stream_8c.html#a4aca535f4abd4252d7ac8cf51e313a76":[36,0,0,8,0,2,7,9],
-"oss-stream_8c.html#a9a0d789610b2bab581716bd60334ced5":[36,0,0,8,0,2,7,0],
-"oss-stream_8c.html#a9b10191adc9c45fd2d1289fb6be48785":[36,0,0,8,0,2,7,3],
-"oss-stream_8c.html#aa895a58bd8051eae90831e8c4ee4bce1":[36,0,0,8,0,2,7,4],
-"oss-stream_8c.html#aae843b87b849202152dc7b7ac127d97e":[36,0,0,8,0,2,7,1],
-"oss-stream_8c.html#ab5114b233556db56ad36f0be73a9503d":[36,0,0,8,0,2,7,2],
-"oss-stream_8c.html#ae30ced63b38c0d33662f45d6a6ffb9c6":[36,0,0,8,0,2,7,5],
 "oss-stream_8c_source.html":[36,0,0,8,0,2,7],
 "oss-stream_8h.html":[36,0,0,8,0,2,8],
 "oss-stream_8h.html#a04d3d79cc14e68bdc2e69eba7db8df12":[36,0,0,8,0,2,8,16],
@@ -249,5 +240,14 @@ var NAVTREEINDEX142 =
 "panel-applet-frame_8c.html#a1a52e95e0e6bc173c7d284a073e6440b":[36,0,0,22,2,23,8],
 "panel-applet-frame_8c.html#a3db8b9a8cf035360afd44721a131e4e4":[36,0,0,22,2,23,9],
 "panel-applet-frame_8c.html#a3dfb59395a7a3e9404babe8040af9aba":[36,0,0,22,2,23,14],
-"panel-applet-frame_8c.html#a4002882d8c2bcaab252237ef9c2999ec":[36,0,0,22,2,23,2]
+"panel-applet-frame_8c.html#a4002882d8c2bcaab252237ef9c2999ec":[36,0,0,22,2,23,2],
+"panel-applet-frame_8c.html#a46fe9c7d935c547744ccb4f5e07f6fc4":[36,0,0,22,2,23,11],
+"panel-applet-frame_8c.html#a49ffca5023b4e7ff29d68b97a9007643":[36,0,0,22,2,23,4],
+"panel-applet-frame_8c.html#a4b57f9da539e01936a253c27e34bb90a":[36,0,0,22,2,23,13],
+"panel-applet-frame_8c.html#a4ea6b45a050957ab5045b173d8ff4d89":[36,0,0,22,2,23,25],
+"panel-applet-frame_8c.html#a4fdeeccbefe6281d3f2c2717d87cae76":[36,0,0,22,2,23,10],
+"panel-applet-frame_8c.html#a64a44e5497680d1860f53cbffb95f8e8":[36,0,0,22,2,23,3],
+"panel-applet-frame_8c.html#a70146db647034ccc2e7966f298da3fb3":[36,0,0,22,2,23,21],
+"panel-applet-frame_8c.html#a7e666fe1076a6edb7a8d7f1a9c7c48b5":[36,0,0,22,2,23,22],
+"panel-applet-frame_8c.html#a83ba2673027b9494ea5385842c9a3970":[36,0,0,22,2,23,15]
 };

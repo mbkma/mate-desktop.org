@@ -1,14 +1,5 @@
 var NAVTREEINDEX113 =
 {
-"mate-ui-init_8h.html#a3f5a54e0874b4560fbe695f0da2fa6de":[36,0,0,9,2,81,3],
-"mate-ui-init_8h.html#a59421b3296f7af45f5123c762ac9efd1":[36,0,0,9,2,81,7],
-"mate-ui-init_8h.html#a637d6a1d298b1a170df8399112c69d32":[36,0,0,9,2,81,4],
-"mate-ui-init_8h.html#a80e3976db8f16870534426e5984292d4":[36,0,0,9,2,81,6],
-"mate-ui-init_8h.html#a9479f2222dadf77948278bc6c4a7edf4":[36,0,0,9,2,81,0],
-"mate-ui-init_8h.html#ac2d92903d7f5ac4e73f72d22ed924bd5":[36,0,0,9,2,81,8],
-"mate-ui-init_8h.html#ae8f8b01f7b89c85a375d59de6211728a":[36,0,0,9,2,81,1],
-"mate-ui-init_8h_source.html":[36,0,0,9,2,81],
-"mate-ui-win32_8c.html":[36,0,0,9,2,82],
 "mate-ui-win32_8c.html#a1560675360585bc32ec79976e10ea208":[36,0,0,9,2,82,4],
 "mate-ui-win32_8c.html#a15aa1a78f5ae9f56bcd7f0b16b36854e":[36,0,0,9,2,82,2],
 "mate-ui-win32_8c.html#a1e3ce6217e29625c7be2efbe97cd9fa9":[36,0,0,9,2,82,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX113 =
 "matekbd-desktop-config_8c.html#ae7dde7f1770b73ba272fe6abb2041d1c":[36,0,0,7,0,1,3],
 "matekbd-desktop-config_8c_source.html":[36,0,0,7,0,1],
 "matekbd-desktop-config_8h.html":[36,0,0,7,0,2],
-"matekbd-desktop-config_8h.html#a01def53abf6f484e18ab5508f2b5437a":[36,0,0,7,0,2,15]
+"matekbd-desktop-config_8h.html#a01def53abf6f484e18ab5508f2b5437a":[36,0,0,7,0,2,15],
+"matekbd-desktop-config_8h.html#a0ff98cf3c3a26aff33c53dc438653697":[36,0,0,7,0,2,3],
+"matekbd-desktop-config_8h.html#a1391068dd70c9ffc02400a7947c3bc5c":[36,0,0,7,0,2,9],
+"matekbd-desktop-config_8h.html#a15fde6481829df9ba3636d52f86f8c39":[36,0,0,7,0,2,11],
+"matekbd-desktop-config_8h.html#a29572d3d6d217338f4fe5448216ace34":[36,0,0,7,0,2,1],
+"matekbd-desktop-config_8h.html#a2c724d7210b68441081f34a7d3b2713f":[36,0,0,7,0,2,10],
+"matekbd-desktop-config_8h.html#a2fafe32965b3a545c0a9a4803fe4638c":[36,0,0,7,0,2,6],
+"matekbd-desktop-config_8h.html#a41bd286e626c7e7193f6350d562f43bc":[36,0,0,7,0,2,7],
+"matekbd-desktop-config_8h.html#a46b71fa031dabe89bbe9f651436faeb1":[36,0,0,7,0,2,8],
+"matekbd-desktop-config_8h.html#a46d06f2cb6584feec9e32ec8dfa923fe":[36,0,0,7,0,2,2]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX158 =
 {
-"pluma-utils_8h.html#a2f0f1fa5b1b19571cfe5275856558ed8":[36,0,0,34,1,89,16],
-"pluma-utils_8h.html#a3f52be22445a944b3493e02c02e5ea7c":[36,0,0,34,1,89,2],
-"pluma-utils_8h.html#a3f83744ef24142144fc36239f17619b9":[36,0,0,34,1,89,12],
-"pluma-utils_8h.html#a424606703a8771d73daa1c5ee476340d":[36,0,0,34,1,89,22],
-"pluma-utils_8h.html#a4264fcdbd0780460bd162222ad20cb8b":[36,0,0,34,1,89,23],
-"pluma-utils_8h.html#a447589781d9f7751cea183600b1a6811":[36,0,0,34,1,89,20],
-"pluma-utils_8h.html#a5cba3b1c6480bf53458a41afc8123459":[36,0,0,34,1,89,30],
-"pluma-utils_8h.html#a63cb256a0d6d042d27df7bc84b691467":[36,0,0,34,1,89,21],
-"pluma-utils_8h.html#a66545903f08d0c4ff0ccea13bd27a7c1":[36,0,0,34,1,89,15],
 "pluma-utils_8h.html#a6d09ae96cba107f103c931db4200b110":[36,0,0,34,1,89,24],
 "pluma-utils_8h.html#a779ee3180db78b9fe0a0087375e345ea":[36,0,0,34,1,89,32],
 "pluma-utils_8h.html#a7cdac7c5d2883f1d951c6cf8578cd782":[36,0,0,34,1,89,8],
@@ -249,5 +240,14 @@ var NAVTREEINDEX158 =
 "plumatextregion_8h.html#a9b88f2d6c1f8d5937eff048fe41a25a2":[36,0,0,34,1,101,4],
 "plumatextregion_8h.html#ac760b57adc60706ca6b4310d3c4a514e":[36,0,0,34,1,101,10],
 "plumatextregion_8h.html#ad6262eb98227dedb4fd4f76bcbec7908":[36,0,0,34,1,101,1],
-"plumatextregion_8h.html#add086a884a26b7c122ccc73e88d67aa3":[36,0,0,34,1,101,12]
+"plumatextregion_8h.html#add086a884a26b7c122ccc73e88d67aa3":[36,0,0,34,1,101,12],
+"plumatextregion_8h.html#ae368e92174a0811005349fc7037ffbaf":[36,0,0,34,1,101,6],
+"plumatextregion_8h.html#ae691686d00e6fb94059370e117413d19":[36,0,0,34,1,101,8],
+"plumatextregion_8h_source.html":[36,0,0,34,1,101],
+"pmu-sys-plugin_8c.html":[36,0,0,26,1,12,0],
+"pmu-sys-plugin_8c.html#a39cb9803524b6f3b783344b2f89867b4":[36,0,0,26,1,12,0,3],
+"pmu-sys-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[36,0,0,26,1,12,0,10],
+"pmu-sys-plugin_8c.html#a4d8bf1b87b7c9e61b5dc93b6e2ff7972":[36,0,0,26,1,12,0,4],
+"pmu-sys-plugin_8c.html#a6c1a5e285f6759c18baa294ea1b35b2c":[36,0,0,26,1,12,0,5],
+"pmu-sys-plugin_8c.html#a82e45e3e257773335108c48e071867aa":[36,0,0,26,1,12,0,6]
 };
