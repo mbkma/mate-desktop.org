@@ -1,5 +1,7 @@
 var NAVTREEINDEX202 =
 {
+"struct__ProgressData.html#a7f0e4a631340d8c7a740285b79d95370":[35,0,900,15],
+"struct__ProgressData.html#a8175e1c9eb71007be0126b239b77c38e":[35,0,900,10],
 "struct__ProgressData.html#a9d3830f4d0acb205b965391610eeb5bb":[35,0,900,21],
 "struct__ProgressData.html#a9fc63772017719bd3a1b06f56e22f1a5":[35,0,900,1],
 "struct__ProgressData.html#aad44ec070e2f31408378b19894a9a30c":[35,0,900,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX202 =
 "struct__TerminalScreen.html#ac2b48d760d440b9af013eaab45e55d82":[35,0,968,1],
 "struct__TerminalScreenClass.html":[35,0,969],
 "struct__TerminalScreenClass.html#a193a1bddedbde7b72bebfe22e100ac84":[35,0,969,1],
-"struct__TerminalScreenClass.html#a1b0d0824c64dbaef96b953537e979fe3":[35,0,969,3],
-"struct__TerminalScreenClass.html#a70bdd9eba9471eaa1465f3110716a36d":[35,0,969,0],
-"struct__TerminalScreenClass.html#aef804353f40eb7cdcf09078b047746b6":[35,0,969,2]
+"struct__TerminalScreenClass.html#a1b0d0824c64dbaef96b953537e979fe3":[35,0,969,3]
 };

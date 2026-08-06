@@ -1,5 +1,6 @@
 var NAVTREEINDEX114 =
 {
+"matekbd-desktop-config_8h.html#a46d06f2cb6584feec9e32ec8dfa923fe":[36,0,0,7,0,2,2],
 "matekbd-desktop-config_8h.html#a8e84604ddb972252be5c0b24716c386e":[36,0,0,7,0,2,14],
 "matekbd-desktop-config_8h.html#aad93119944764b7894700f1e70e494bd":[36,0,0,7,0,2,12],
 "matekbd-desktop-config_8h.html#ab05841f2bfb4595c29b059a0a9ea7199":[36,0,0,7,0,2,13],
@@ -248,6 +249,5 @@ var NAVTREEINDEX114 =
 "matekbd-util_8h.html#a3b5a8449b1e741561668b5a964073fbe":[36,0,0,7,0,14,3],
 "matekbd-util_8h.html#a5cd3fcc0882a1866c79d2e3a9803427a":[36,0,0,7,0,14,2],
 "matekbd-util_8h.html#af1925c98c8c9a399f9e37351df52a32e":[36,0,0,7,0,14,0],
-"matekbd-util_8h_source.html":[36,0,0,7,0,14],
-"matemenu-tree_8c.html":[36,0,0,19,0,4]
+"matekbd-util_8h_source.html":[36,0,0,7,0,14]
 };

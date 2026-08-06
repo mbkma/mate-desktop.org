@@ -1,5 +1,6 @@
 var NAVTREEINDEX184 =
 {
+"struct__CajaPathBar.html#a8b29b58f4e2f31cd4542a9d2bd804f5e":[35,0,94,11],
 "struct__CajaPathBar.html#a946f135d1b2b3740f1c6961998f29844":[35,0,94,5],
 "struct__CajaPathBar.html#aa59af64a11b8ab817297218cdd02da65":[35,0,94,19],
 "struct__CajaPathBar.html#ab1e9f9372f44fae91f4412e8409a6121":[35,0,94,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX184 =
 "struct__CalendarSourcesClass.html#a49295352aa55e1c408fd1f84383fac72":[35,0,130,2],
 "struct__CalendarSourcesClass.html#ac5a101dea69938b580ebdd082d0a6ce0":[35,0,130,0],
 "struct__CalendarSourcesClass.html#afc4904ce9b1e29f14bdeb6290ee2ac2d":[35,0,130,1],
-"struct__CalendarWindow.html":[35,0,131],
-"struct__CalendarWindow.html#a099f6b619722471be350e52cebb2e1f9":[35,0,131,1]
+"struct__CalendarWindow.html":[35,0,131]
 };

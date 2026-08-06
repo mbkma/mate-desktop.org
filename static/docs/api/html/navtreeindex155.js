@@ -1,5 +1,6 @@
 var NAVTREEINDEX155 =
 {
+"pluma-print-job_8h.html#a6c3ae6d9899c58b2a2dea39b01395cbaa7fef0110d5a4d4b81b1fcf24c6fadfdf":[36,0,0,34,1,66,11,2],
 "pluma-print-job_8h.html#a6c3ae6d9899c58b2a2dea39b01395cbaa932d1a8349de22a3c35b3fb5b497bb4a":[36,0,0,34,1,66,11,1],
 "pluma-print-job_8h.html#a848132a434eb86a688100abd157e429a":[36,0,0,34,1,66,8],
 "pluma-print-job_8h.html#aab1935211b5f9a78dd87480f622a4355":[36,0,0,34,1,66,18],
@@ -216,8 +217,8 @@ var NAVTREEINDEX155 =
 "pluma-settings_8h.html#aa79a1496a4fb74f086ecb6fad0d377c4":[36,0,0,34,1,74,80],
 "pluma-settings_8h.html#aa930e28dde504aa7af638865f0955c31":[36,0,0,34,1,74,39],
 "pluma-settings_8h.html#ab1e695dc94fd49df7957c38304f19a0b":[36,0,0,34,1,74,68],
-"pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[36,0,0,34,1,74,64],
 "pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[36,0,0,34,1,74,65],
+"pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[36,0,0,34,1,74,64],
 "pluma-settings_8h.html#ab4a66042ef1149310a2aeb040a4fff1e":[36,0,0,34,1,74,4],
 "pluma-settings_8h.html#ab4dec487dc77cd2cf42b03bd1b89cfd3":[36,0,0,34,1,74,59],
 "pluma-settings_8h.html#ab69e32e557d2dbafe0886e423c18c0c0":[36,0,0,34,1,74,41],
@@ -248,6 +249,5 @@ var NAVTREEINDEX155 =
 "pluma-settings_8h.html#af8aa0f51293d762a21f14d1dc477768a":[36,0,0,34,1,74,33],
 "pluma-settings_8h.html#af9bef280ca97b25a759750063a3d0d98":[36,0,0,34,1,74,43],
 "pluma-settings_8h.html#afb848a86d9476afc06d5341f1a006fd3":[36,0,0,34,1,74,18],
-"pluma-settings_8h.html#afb8f791ba23032ab542131a6a02c562a":[36,0,0,34,1,74,14],
-"pluma-settings_8h.html#afbba95fc57c84c862eef42716692eb7d":[36,0,0,34,1,74,60]
+"pluma-settings_8h.html#afb8f791ba23032ab542131a6a02c562a":[36,0,0,34,1,74,14]
 };

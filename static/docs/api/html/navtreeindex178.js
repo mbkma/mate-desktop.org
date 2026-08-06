@@ -1,5 +1,6 @@
 var NAVTREEINDEX178 =
 {
+"structMsdDummyManager.html#ac130924253d306974df5d61ba34de046":[35,0,1488,1],
 "structMsdDummyManagerClass.html":[35,0,1489],
 "structMsdDummyManagerClass.html#ae64d9847b08a3e78e4b579850f26a751":[35,0,1489,0],
 "structMsdDummyPlugin.html":[35,0,1490],
@@ -248,6 +249,5 @@ var NAVTREEINDEX178 =
 "structNAIFactoryProviderInterface.html#a7c556ec05a4b6b3808359a216975fe36":[35,0,1549,3],
 "structNAIFactoryProviderInterface.html#acec4c3e631a94b15a4a3b3b53529fdee":[35,0,1549,7],
 "structNAIIOProviderInterface.html":[35,0,1552],
-"structNAIIOProviderInterface.html#a00f08e19597e2bbe4dd5ed0831b55bd5":[35,0,1552,10],
-"structNAIIOProviderInterface.html#a01a964e07c80f373bbc94a6c6e40fd4d":[35,0,1552,7]
+"structNAIIOProviderInterface.html#a00f08e19597e2bbe4dd5ed0831b55bd5":[35,0,1552,10]
 };

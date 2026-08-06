@@ -1,5 +1,7 @@
 var NAVTREEINDEX216 =
 {
+"wayland-workspace_8h.html#af1be6d5fb62866410a7135117b2b825e":[36,0,0,22,0,3,6,7],
+"wayland-workspace_8h_source.html":[36,0,0,22,0,3,6],
 "wayland_8c.html":[36,0,0,21,0,2,9],
 "wayland_8c.html#a1c8d4e52096e1fc7143bd3a3c3bdc0dc":[36,0,0,21,0,2,9,1],
 "wayland_8c.html#a2bb36368fcf605366f92f1535aa5e5e7":[36,0,0,21,0,2,9,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX216 =
 "weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a3dffeb89bb4bd96f206d53775abb1460":[36,0,0,10,0,27,22,6],
 "weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a77c44cf170da896d9b74388ba34a0896":[36,0,0,10,0,27,22,1],
 "weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615a8c0a89150bdb548b8c08c836d812a368":[36,0,0,10,0,27,22,4],
-"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615ab0e1735b590234fa393555173d7708f0":[36,0,0,10,0,27,22,5],
-"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615acfbd1c93fc536e9ab50f0c47b5cbc8a4":[36,0,0,10,0,27,22,3],
-"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615ae670aae33ac88bdf67671ae9fab0e339":[36,0,0,10,0,27,22,0]
+"weather_8h.html#a877e4fdbe9d3581dfa3431b6436b1615ab0e1735b590234fa393555173d7708f0":[36,0,0,10,0,27,22,5]
 };

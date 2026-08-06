@@ -1,5 +1,6 @@
 var NAVTREEINDEX154 =
 {
+"pluma-message-type_8h.html#a0553da307df64e04fdbe7e2ed6019c8e":[36,0,0,34,1,52,1],
 "pluma-message-type_8h.html#a1b0ce0b9b2bbd592e37de9bb5e2170ec":[36,0,0,34,1,52,10],
 "pluma-message-type_8h.html#a1f6d8a3fd252747951c7e8e3627f047b":[36,0,0,34,1,52,8],
 "pluma-message-type_8h.html#a25ed643e7111da62cc44b783425e5b4f":[36,0,0,34,1,52,14],
@@ -187,8 +188,8 @@ var NAVTREEINDEX154 =
 "pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,4],
 "pluma-plugin_8h.html#a59c02ee71cc1cc5155a9b77e312ff6cd":[36,0,0,34,3,0,1,5],
 "pluma-plugin_8h.html#a6928648f3a3267c1e8ed2fdc9251baed":[36,0,0,34,3,0,1,6],
-"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,2],
 "pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,1],
+"pluma-plugin_8h.html#a69b3ea4007c54db3f34b3c014eaefd10":[36,0,0,34,3,0,1,2],
 "pluma-plugin_8h_source.html":[36,0,0,34,3,0,1],
 "pluma-plugins-engine_8c.html":[36,0,0,34,1,63],
 "pluma-plugins-engine_8c.html#a0c06287ef7d8e0b5c172f56bd5e129be":[36,0,0,34,1,63,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX154 =
 "pluma-print-job_8h.html#a569fd185cf5c5dbe93becc7a62038c59":[36,0,0,34,1,66,16],
 "pluma-print-job_8h.html#a68a54cedd9a3d1f0718a349a1ac000d1":[36,0,0,34,1,66,5],
 "pluma-print-job_8h.html#a6c3ae6d9899c58b2a2dea39b01395cba":[36,0,0,34,1,66,11],
-"pluma-print-job_8h.html#a6c3ae6d9899c58b2a2dea39b01395cbaa0bcc3a7fd3c2ed1e1622cb80a5ef827a":[36,0,0,34,1,66,11,0],
-"pluma-print-job_8h.html#a6c3ae6d9899c58b2a2dea39b01395cbaa7fef0110d5a4d4b81b1fcf24c6fadfdf":[36,0,0,34,1,66,11,2]
+"pluma-print-job_8h.html#a6c3ae6d9899c58b2a2dea39b01395cbaa0bcc3a7fd3c2ed1e1622cb80a5ef827a":[36,0,0,34,1,66,11,0]
 };

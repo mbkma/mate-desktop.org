@@ -1,5 +1,6 @@
 var NAVTREEINDEX169 =
 {
+"structAppearanceData.html#a63aee6a4eaa09bd020d5f3ebaf3c10d4":[35,0,1003,41],
 "structAppearanceData.html#a6876de5cbb0fd3844600842e27be1210":[35,0,1003,35],
 "structAppearanceData.html#a718390aa014befb67996d16eb5833371":[35,0,1003,50],
 "structAppearanceData.html#a75b58414899601d5eb7590564699a707":[35,0,1003,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX169 =
 "structCactMenubar.html#aad690befb74c1ec7d606b10c6fb4a900":[35,0,1060,0],
 "structCactMenubarClass.html":[35,0,1061],
 "structCactMenubarClass.html#a6cd26c7a714659acdecb49e6a41fb4e7":[35,0,1061,1],
-"structCactMenubarClass.html#a6e288a8167c1937e9526bd13200a01d1":[35,0,1061,0],
-"structCactPreferencesEditor.html":[35,0,1062]
+"structCactMenubarClass.html#a6e288a8167c1937e9526bd13200a01d1":[35,0,1061,0]
 };

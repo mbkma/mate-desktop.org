@@ -1,5 +1,6 @@
 var NAVTREEINDEX125 =
 {
+"msd-clipboard-manager_8h_source.html":[36,0,0,28,1,3,3],
 "msd-clipboard-plugin_8c.html":[36,0,0,28,1,3,4],
 "msd-clipboard-plugin_8c_source.html":[36,0,0,28,1,3,4],
 "msd-clipboard-plugin_8h.html":[36,0,0,28,1,3,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX125 =
 "msd-ldsm-dialog_8h_source.html":[36,0,0,28,1,7,7],
 "msd-ldsm-trash-empty_8c.html":[36,0,0,28,1,7,8],
 "msd-ldsm-trash-empty_8c.html#a161a9a9d938b91098303b10f1aa5d244":[36,0,0,28,1,7,8,1],
-"msd-ldsm-trash-empty_8c.html#a744b86d3dd83a7fa20b26c11c9e76714":[36,0,0,28,1,7,8,0],
-"msd-ldsm-trash-empty_8c.html#ad1a7ecdfa7c871f55c4309e02060d9af":[36,0,0,28,1,7,8,2]
+"msd-ldsm-trash-empty_8c.html#a744b86d3dd83a7fa20b26c11c9e76714":[36,0,0,28,1,7,8,0]
 };

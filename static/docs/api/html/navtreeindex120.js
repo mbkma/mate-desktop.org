@@ -1,5 +1,6 @@
 var NAVTREEINDEX120 =
 {
+"math-history-entry_8c.html":[36,0,0,13,0,20],
 "math-history-entry_8c.html#a223269b82e353fe3e05f0a1d0762fe3e":[36,0,0,13,0,20,1],
 "math-history-entry_8c.html#a38cff8e1fa49a7ca61ce34bff0014425":[36,0,0,13,0,20,5],
 "math-history-entry_8c.html#a44f76ef52c75f14dfe3e533b9443a316":[36,0,0,13,0,20,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX120 =
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md27":[8,3],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md28":[8,3,0],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md29":[8,3,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md30":[8,4],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md31":[8,5]
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md30":[8,4]
 };

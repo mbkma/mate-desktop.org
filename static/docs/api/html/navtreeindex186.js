@@ -1,5 +1,6 @@
 var NAVTREEINDEX186 =
 {
+"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3":[35,0,184,20],
 "struct__DviParams.html#a2dc3028c00da865b30603cd34d9c3e38":[35,0,184,3],
 "struct__DviParams.html#a3bbe4ea2ce47dfb1aef292fa990f7729":[35,0,184,5],
 "struct__DviParams.html#a44ebb1e8950af2383eae7df5af488d3b":[35,0,184,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX186 =
 "struct__EomFileChooser.html#a27cce09e3a4e6f72fa77317ebb60017b":[35,0,224,0],
 "struct__EomFileChooser.html#af3068697a28e815931b795483c99a0ee":[35,0,224,1],
 "struct__EomFileChooserClass.html":[35,0,225],
-"struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[35,0,225,0],
-"struct__EomFullscreenPlugin.html":[35,0,226]
+"struct__EomFileChooserClass.html#ad205c4d645a146a68745d14757cd6e95":[35,0,225,0]
 };

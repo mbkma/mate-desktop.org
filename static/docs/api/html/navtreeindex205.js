@@ -1,5 +1,7 @@
 var NAVTREEINDEX205 =
 {
+"sushi-font-widget_8h.html#ad93b67d2e7288cedc7b331bd7364a1c6":[36,0,0,14,1,11,4],
+"sushi-font-widget_8h.html#af5452eb9d328db3a4fc38c143aab44a2":[36,0,0,14,1,11,8],
 "sushi-font-widget_8h_source.html":[36,0,0,14,1,11],
 "sysdeps_8h.html":[36,0,0,0,0,2,0,29],
 "sysdeps_8h.html#a2233272bd480c6e6091331d6557884c1":[36,0,0,0,0,2,0,29,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX205 =
 "terminal-app_8c.html#afed94e5cb2b998d0a20c8ff717119b8b":[36,0,0,30,0,10,0],
 "terminal-app_8c.html#aff0ae209248161a1f747fb4207e746e6":[36,0,0,30,0,10,8],
 "terminal-app_8c_source.html":[36,0,0,30,0,10],
-"terminal-app_8h.html":[36,0,0,30,0,11],
-"terminal-app_8h.html#a0092ac6d6c51cda96a8acd6b8890031f":[36,0,0,30,0,11,39],
-"terminal-app_8h.html#a01179df3818c3ce6155a11279df98444":[36,0,0,30,0,11,59]
+"terminal-app_8h.html":[36,0,0,30,0,11]
 };

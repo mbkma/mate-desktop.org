@@ -1,5 +1,6 @@
 var NAVTREEINDEX185 =
 {
+"struct__CalendarWindow.html#a099f6b619722471be350e52cebb2e1f9":[35,0,131,1],
 "struct__CalendarWindow.html#a209b2da2b6ba499287d0901f5a1dcda7":[35,0,131,0],
 "struct__CalendarWindowClass.html":[35,0,132],
 "struct__CalendarWindowClass.html#a9316fb4b8610910bb346a0f1b1343150":[35,0,132,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX185 =
 "struct__DviParams.html":[35,0,184],
 "struct__DviParams.html#a10621368dd69ad7c49e4504eae23d9dd":[35,0,184,14],
 "struct__DviParams.html#a11939157ccfa45bca746415cbf26a9a7":[35,0,184,4],
-"struct__DviParams.html#a22db50ac0d16ec9fdeb7b9a9aea87e78":[35,0,184,1],
-"struct__DviParams.html#a2a4123133a0f22ca5e1ed88d3d32a2d3":[35,0,184,20]
+"struct__DviParams.html#a22db50ac0d16ec9fdeb7b9a9aea87e78":[35,0,184,1]
 };

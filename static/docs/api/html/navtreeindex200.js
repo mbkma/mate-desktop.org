@@ -1,5 +1,7 @@
 var NAVTREEINDEX200 =
 {
+"struct__PanelDItemEditorClass.html":[35,0,777],
+"struct__PanelDItemEditorClass.html#a05bbeed8aaa8a2becddc91afc7745f75":[35,0,777,4],
 "struct__PanelDItemEditorClass.html#a5cf31a0de26085716c06962e452011ea":[35,0,777,0],
 "struct__PanelDItemEditorClass.html#a6aff4d169c3489b9db73ec335b8f714c":[35,0,777,1],
 "struct__PanelDItemEditorClass.html#a83618cc42909ca7b8abf1e5ab92b0e06":[35,0,777,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX200 =
 "struct__PlumaModelinePluginClass.html":[35,0,842],
 "struct__PlumaModelinePluginClass.html#a521e917a5132ae10d3abc6c780809870":[35,0,842,0],
 "struct__PlumaNotebook.html":[35,0,843],
-"struct__PlumaNotebook.html#a5f4db77423aea1531174b411773702f8":[35,0,843,0],
-"struct__PlumaNotebook.html#ae6468f2e07be063b0c465ce86050bbe4":[35,0,843,1],
-"struct__PlumaNotebookClass.html":[35,0,844]
+"struct__PlumaNotebook.html#a5f4db77423aea1531174b411773702f8":[35,0,843,0]
 };

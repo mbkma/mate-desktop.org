@@ -1,5 +1,7 @@
 var NAVTREEINDEX220 =
 {
+"xstuff_8c.html#a2a3b4f0d88b092d0f370a8ac7db93521":[36,0,0,22,2,96,5],
+"xstuff_8c.html#a51a51480d875f80355412fa95fd48c6c":[36,0,0,22,2,96,0],
 "xstuff_8c.html#a64b798c8fb3a6a74e3b5c59a24b513f9":[36,0,0,22,2,96,10],
 "xstuff_8c.html#a6f1958917d92aec37ad763b38c54cb20":[36,0,0,22,2,96,1],
 "xstuff_8c.html#a8e64ecf287d9715065650c5563dcfee0":[36,0,0,22,2,96,7],

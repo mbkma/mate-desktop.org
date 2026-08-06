@@ -1,5 +1,6 @@
 var NAVTREEINDEX163 =
 {
+"pulse-sink-switch_8h.html#a1051619b864622907beb4a33ad9854d4":[36,0,0,8,0,3,28,6],
 "pulse-sink-switch_8h.html#a164e08005186c461a96b07943b09e2a0":[36,0,0,8,0,3,28,4],
 "pulse-sink-switch_8h.html#a2e72310afb8c42fb229b627943c05ccf":[36,0,0,8,0,3,28,3],
 "pulse-sink-switch_8h.html#a4d703ece346a08d99a8d4df32c91fe04":[36,0,0,8,0,3,28,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX163 =
 "rfkill_8h.html#aa3ba7f385a92765ef103ad3432eedb28ad8009819015492eadb95fc28c75d2a11":[36,0,0,28,1,13,6,9,7],
 "rfkill_8h.html#aa3ba7f385a92765ef103ad3432eedb28aea410d00e6e7f94a970c2cf1fb3ed2d2":[36,0,0,28,1,13,6,9,2],
 "rfkill_8h.html#aa3ba7f385a92765ef103ad3432eedb28aee41b5478aad20868c2fa898c1b3f748":[36,0,0,28,1,13,6,9,8],
-"rfkill_8h.html#aac7608e2446d8055d4b71df44dc2ec4e":[36,0,0,28,1,13,6,13],
-"rfkill_8h.html#aad611c68858d97f62f0fff703a5643a5":[36,0,0,28,1,13,6,8]
+"rfkill_8h.html#aac7608e2446d8055d4b71df44dc2ec4e":[36,0,0,28,1,13,6,13]
 };

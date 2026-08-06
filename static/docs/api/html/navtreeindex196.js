@@ -1,5 +1,7 @@
 var NAVTREEINDEX196 =
 {
+"struct__MateWeatherPrefs.html#a7d9dd2c1f2985314b8835479ee704d9e":[35,0,683,6],
+"struct__MateWeatherPrefs.html#a8a4d66cfe93766bb72892b067c9dbd19":[35,0,683,1],
 "struct__MateWeatherPrefs.html#a8a5bd2cc327955c1ef105ed6f45e28e6":[35,0,683,9],
 "struct__MateWeatherPrefs.html#aab2dd000028ca90b222da46649f3b0bb":[35,0,683,11],
 "struct__MateWeatherPrefs.html#ab8aa6952e2bdc215a812081b6be20234":[35,0,683,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX196 =
 "struct__MetaDisplay.html#aa291faa4a41e812792bc5a6b1ea41175":[35,0,697,2],
 "struct__MetaDisplay.html#aa6a79d102b7991313de0a7fcb7e764a8":[35,0,697,67],
 "struct__MetaDisplay.html#aa7b115117ef7fb655c02fa0594674b2d":[35,0,697,30],
-"struct__MetaDisplay.html#aafc63fd6815c92ca4f076aad1dc069a8":[35,0,697,48],
-"struct__MetaDisplay.html#ab2964631ec728caaee18b203006f401e":[35,0,697,7],
-"struct__MetaDisplay.html#ab52fb0f9df4c934fd7a9c36dab653795":[35,0,697,29]
+"struct__MetaDisplay.html#aafc63fd6815c92ca4f076aad1dc069a8":[35,0,697,48]
 };

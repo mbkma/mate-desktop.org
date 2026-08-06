@@ -1,5 +1,6 @@
 var NAVTREEINDEX113 =
 {
+"mate-ui-win32_8c.html":[36,0,0,9,2,82],
 "mate-ui-win32_8c.html#a1560675360585bc32ec79976e10ea208":[36,0,0,9,2,82,4],
 "mate-ui-win32_8c.html#a15aa1a78f5ae9f56bcd7f0b16b36854e":[36,0,0,9,2,82,2],
 "mate-ui-win32_8c.html#a1e3ce6217e29625c7be2efbe97cd9fa9":[36,0,0,9,2,82,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX113 =
 "matekbd-desktop-config_8h.html#a2c724d7210b68441081f34a7d3b2713f":[36,0,0,7,0,2,10],
 "matekbd-desktop-config_8h.html#a2fafe32965b3a545c0a9a4803fe4638c":[36,0,0,7,0,2,6],
 "matekbd-desktop-config_8h.html#a41bd286e626c7e7193f6350d562f43bc":[36,0,0,7,0,2,7],
-"matekbd-desktop-config_8h.html#a46b71fa031dabe89bbe9f651436faeb1":[36,0,0,7,0,2,8],
-"matekbd-desktop-config_8h.html#a46d06f2cb6584feec9e32ec8dfa923fe":[36,0,0,7,0,2,2]
+"matekbd-desktop-config_8h.html#a46b71fa031dabe89bbe9f651436faeb1":[36,0,0,7,0,2,8]
 };

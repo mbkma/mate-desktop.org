@@ -1,6 +1,7 @@
 var struct__MateThemeInfo =
 [
-    [ "has_gtk", "struct__MateThemeInfo.html#ab9e7f0e9d2c29cea2925e9736f909c2f", null ],
+    [ "has_gtk2", "struct__MateThemeInfo.html#a2be7b699fecf638bec221655cac8a372", null ],
+    [ "has_gtk3", "struct__MateThemeInfo.html#a0cadbd23d4480cd3c0fee583a9e17bc8", null ],
     [ "has_keybinding", "struct__MateThemeInfo.html#a4c13ea13e67b98a32b6e47442edecd69", null ],
     [ "has_marco", "struct__MateThemeInfo.html#aa2d0d02e524615e52e81c906f98bb933", null ],
     [ "hidden", "struct__MateThemeInfo.html#a436ca01ded341d98834293a6342e2fcb", null ],

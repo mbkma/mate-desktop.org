@@ -114,6 +114,7 @@ var NAVTREEINDEX112 =
 "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45a247d4ad99ee7ccf697a47c63c2c6e7d4":[36,0,0,14,0,3,13,12,0],
 "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45a66b892295c772c4f392b1f1e45a0c3c0":[36,0,0,14,0,3,13,12,1],
 "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45aab5399288b8de88633e3592bf7e94fb8":[36,0,0,14,0,3,13,12,2],
+"mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45ac65022025a48174b5984668ee815eb2a":[36,0,0,14,0,3,13,12,3],
 "mate-theme-info_8h.html#a9a67577ab2dd66e345844e440b7d74a2":[36,0,0,14,0,3,13,11],
 "mate-theme-info_8h.html#a9a67577ab2dd66e345844e440b7d74a2a0595299b296c9d42728031750ce2f8ee":[36,0,0,14,0,3,13,11,2],
 "mate-theme-info_8h.html#a9a67577ab2dd66e345844e440b7d74a2a2a8d7701c53caa212cf4b1c64054e218":[36,0,0,14,0,3,13,11,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX112 =
 "mate-ui-init_8h.html#a9479f2222dadf77948278bc6c4a7edf4":[36,0,0,9,2,81,0],
 "mate-ui-init_8h.html#ac2d92903d7f5ac4e73f72d22ed924bd5":[36,0,0,9,2,81,8],
 "mate-ui-init_8h.html#ae8f8b01f7b89c85a375d59de6211728a":[36,0,0,9,2,81,1],
-"mate-ui-init_8h_source.html":[36,0,0,9,2,81],
-"mate-ui-win32_8c.html":[36,0,0,9,2,82]
+"mate-ui-init_8h_source.html":[36,0,0,9,2,81]
 };

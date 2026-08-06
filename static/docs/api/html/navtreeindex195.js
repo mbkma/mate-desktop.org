@@ -1,5 +1,6 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMixerStoredControl.html":[35,0,640],
 "struct__MateMixerStoredControl.html#a7bc94f7d69aa0002a1466657e266bd19":[35,0,640,1],
 "struct__MateMixerStoredControl.html#a88961bca9af710866687bcc4da2e05f8":[35,0,640,0],
 "struct__MateMixerStoredControlClass.html":[35,0,641],
@@ -157,15 +158,16 @@ var NAVTREEINDEX195 =
 "struct__MateThemeCursorInfo.html#aded8acadb5c1849e12c993e597d26126":[35,0,674,2],
 "struct__MateThemeCursorInfo.html#afee0c96078586efe930026f64a047cb6":[35,0,674,4],
 "struct__MateThemeInfo.html":[35,0,675],
-"struct__MateThemeInfo.html#a3ed92da9124a5453a8a730da70ab0b37":[35,0,675,7],
-"struct__MateThemeInfo.html#a436ca01ded341d98834293a6342e2fcb":[35,0,675,3],
-"struct__MateThemeInfo.html#a4c13ea13e67b98a32b6e47442edecd69":[35,0,675,1],
-"struct__MateThemeInfo.html#aa2d0d02e524615e52e81c906f98bb933":[35,0,675,2],
-"struct__MateThemeInfo.html#aa6a8dc4fc010ba806ef9382b12089fc6":[35,0,675,5],
-"struct__MateThemeInfo.html#aaa929adc9de6c0f7c63e1751ef1ab8e5":[35,0,675,4],
-"struct__MateThemeInfo.html#ab9e7f0e9d2c29cea2925e9736f909c2f":[35,0,675,0],
-"struct__MateThemeInfo.html#acd9052a9ab85d7e9f078b533e6996fdb":[35,0,675,8],
-"struct__MateThemeInfo.html#af6418bba19d66887055a7fcc3e488270":[35,0,675,6],
+"struct__MateThemeInfo.html#a0cadbd23d4480cd3c0fee583a9e17bc8":[35,0,675,1],
+"struct__MateThemeInfo.html#a2be7b699fecf638bec221655cac8a372":[35,0,675,0],
+"struct__MateThemeInfo.html#a3ed92da9124a5453a8a730da70ab0b37":[35,0,675,8],
+"struct__MateThemeInfo.html#a436ca01ded341d98834293a6342e2fcb":[35,0,675,4],
+"struct__MateThemeInfo.html#a4c13ea13e67b98a32b6e47442edecd69":[35,0,675,2],
+"struct__MateThemeInfo.html#aa2d0d02e524615e52e81c906f98bb933":[35,0,675,3],
+"struct__MateThemeInfo.html#aa6a8dc4fc010ba806ef9382b12089fc6":[35,0,675,6],
+"struct__MateThemeInfo.html#aaa929adc9de6c0f7c63e1751ef1ab8e5":[35,0,675,5],
+"struct__MateThemeInfo.html#acd9052a9ab85d7e9f078b533e6996fdb":[35,0,675,9],
+"struct__MateThemeInfo.html#af6418bba19d66887055a7fcc3e488270":[35,0,675,7],
 "struct__MateThemeMetaInfo.html":[35,0,676],
 "struct__MateThemeMetaInfo.html#a082b2ed386ecd67bb8a8545e10b44e6e":[35,0,676,16],
 "struct__MateThemeMetaInfo.html#a0fef06152373b3d9a639f3128e2b447d":[35,0,676,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateWeatherPrefs.html#a186aa5228d7e5c596804bff1459987e8":[35,0,683,0],
 "struct__MateWeatherPrefs.html#a451c7d572fe93111c5c3ca2f8762a678":[35,0,683,5],
 "struct__MateWeatherPrefs.html#a7bdf90b111323204cb08141d5d4b2163":[35,0,683,7],
-"struct__MateWeatherPrefs.html#a7ce0f2cd895bfff3f1e90713233ea1b2":[35,0,683,4],
-"struct__MateWeatherPrefs.html#a7d9dd2c1f2985314b8835479ee704d9e":[35,0,683,6],
-"struct__MateWeatherPrefs.html#a8a4d66cfe93766bb72892b067c9dbd19":[35,0,683,1]
+"struct__MateWeatherPrefs.html#a7ce0f2cd895bfff3f1e90713233ea1b2":[35,0,683,4]
 };

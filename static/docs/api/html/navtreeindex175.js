@@ -1,5 +1,6 @@
 var NAVTREEINDEX175 =
 {
+"structFrMimeTypePackages.html#a8e49e9fcf5d5ee37f19b299fda734bc0":[35,0,1300,0],
 "structFrMimeTypePackages.html#ab0c7fa9e72ff50d238aa6cf249b01e15":[35,0,1300,1],
 "structFrProcError.html":[35,0,1301],
 "structFrProcError.html#a50d3bde7f13c25236575168f5fcc7309":[35,0,1301,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX175 =
 "structGpmScreensaver.html":[35,0,1333],
 "structGpmScreensaver.html#aaba38eb5f8ae89b7cd0762937a26cf86":[35,0,1333,0],
 "structGpmScreensaver.html#ac431141525a194c3104bcaab09988b6b":[35,0,1333,1],
-"structGpmScreensaverClass.html":[35,0,1334],
-"structGpmScreensaverClass.html#a393c87c826034ed3d5e54cd98c9712c9":[35,0,1334,0]
+"structGpmScreensaverClass.html":[35,0,1334]
 };

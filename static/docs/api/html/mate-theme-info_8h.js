@@ -19,7 +19,8 @@ var mate_theme_info_8h =
     [ "MateThemeElement", "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45", [
       [ "MATE_THEME_MARCO", "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45a247d4ad99ee7ccf697a47c63c2c6e7d4", null ],
       [ "MATE_THEME_GTK_2", "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45a66b892295c772c4f392b1f1e45a0c3c0", null ],
-      [ "MATE_THEME_GTK_2_KEYBINDING", "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45aab5399288b8de88633e3592bf7e94fb8", null ]
+      [ "MATE_THEME_GTK_2_KEYBINDING", "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45aab5399288b8de88633e3592bf7e94fb8", null ],
+      [ "MATE_THEME_GTK_3", "mate-theme-info_8h.html#a94bd149e623f90ef2d885c4016e6fd45ac65022025a48174b5984668ee815eb2a", null ]
     ] ],
     [ "MateThemeType", "mate-theme-info_8h.html#a071a44abb5ef07baa1bd0d97661d3927", [
       [ "MATE_THEME_TYPE_METATHEME", "mate-theme-info_8h.html#a071a44abb5ef07baa1bd0d97661d3927a582a4903d9860661a63aed15bd6ca0dc", null ],

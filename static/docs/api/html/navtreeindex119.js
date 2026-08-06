@@ -1,5 +1,6 @@
 var NAVTREEINDEX119 =
 {
+"mateweather-timezone_8h.html":[36,0,0,10,0,7],
 "mateweather-timezone_8h.html#a02edb451f4b2a96d9c9b86dbc53171ed":[36,0,0,10,0,7,10],
 "mateweather-timezone_8h.html#a073e2b120191c41bec75e30a3be6d346":[36,0,0,10,0,7,3],
 "mateweather-timezone_8h.html#a208baab8c5b8a4f510de5a99b0b58d77":[36,0,0,10,0,7,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX119 =
 "math-equation_8h.html#af0cb661bc1197149ffeff23712205fa4":[36,0,0,13,0,19,35],
 "math-equation_8h.html#affaa20df49fbbfddfdbdb37a60f80e46":[36,0,0,13,0,19,9],
 "math-equation_8h.html#affee0790339bf34bb6759a157f085c55":[36,0,0,13,0,19,34],
-"math-equation_8h_source.html":[36,0,0,13,0,19],
-"math-history-entry_8c.html":[36,0,0,13,0,20]
+"math-equation_8h_source.html":[36,0,0,13,0,19]
 };
