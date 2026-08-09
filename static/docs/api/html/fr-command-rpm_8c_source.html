@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('fr-command-rpm_8c_source.html',''); in
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    cmd = g_string_new (<span class="stringliteral">&quot;rpm2cpio &lt; &quot;</span>);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    g_string_append (cmd, comm-&gt;<a class="code hl_variable" href="struct__FrCommand.html#ab1a24e9217cc6a766f14a9e567c30859">e_filename</a>);</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    g_string_append (cmd, <span class="stringliteral">&quot; | cpio -idu&quot;</span>);</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    g_string_append (cmd, <span class="stringliteral">&quot; | cpio -idu --no-absolute-filenames&quot;</span>);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keywordflow">for</span> (scan = <a class="code hl_variable" href="caja-sendto-command_8c.html#a2ed872085743770f9b132fe2f8a2615f">file_list</a>; scan; scan = scan-&gt;next) {</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        g_string_append (cmd, <span class="stringliteral">&quot; &quot;</span>);</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        <span class="keywordtype">char</span> *filename = g_shell_quote (scan-&gt;data);</div>
