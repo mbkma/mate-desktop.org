@@ -1,5 +1,7 @@
 var NAVTREEINDEX183 =
 {
+"struct__CajaDropbox.html#aa9484e12444f4dd8685c04578015e481":[35,0,58,2],
+"struct__CajaDropbox.html#adf2c2c1d65594ddd191cf6f385cabee1":[35,0,58,5],
 "struct__CajaDropbox.html#ae66768c70f7572dc9e2d34a609b574b8":[35,0,58,3],
 "struct__CajaDropbox.html#ae967314b6505050997ab125989bdc18c":[35,0,58,4],
 "struct__CajaDropboxClass.html":[35,0,59],
@@ -247,7 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaPathBar.html#a3e574d83f3e04b5174d26614e5378945":[35,0,94,20],
 "struct__CajaPathBar.html#a4acbb84b0719e70bcb63d4b4231d86cd":[35,0,94,10],
 "struct__CajaPathBar.html#a4ec20f70a7b161161d662906a1a6ab90":[35,0,94,9],
-"struct__CajaPathBar.html#a60b24c1a2bc9dd0a98df1aaa65044585":[35,0,94,18],
-"struct__CajaPathBar.html#a730a73a526f5086aaa628de93b088850":[35,0,94,17],
-"struct__CajaPathBar.html#a734cb1c3e063d0950a149a88037847e8":[35,0,94,8]
+"struct__CajaPathBar.html#a60b24c1a2bc9dd0a98df1aaa65044585":[35,0,94,18]
 };

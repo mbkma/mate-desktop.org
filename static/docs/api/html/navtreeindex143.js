@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"panel-applet-frame_8c.html#a70146db647034ccc2e7966f298da3fb3":[36,0,0,22,2,23,21],
+"panel-applet-frame_8c.html#a7e666fe1076a6edb7a8d7f1a9c7c48b5":[36,0,0,22,2,23,22],
 "panel-applet-frame_8c.html#a83ba2673027b9494ea5385842c9a3970":[36,0,0,22,2,23,15],
 "panel-applet-frame_8c.html#aab9d5d4fdd40208ba85fd19353231f50":[36,0,0,22,2,23,16],
 "panel-applet-frame_8c.html#ab8d86a94445e31427cc9f5e03476bced":[36,0,0,22,2,23,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "panel-ditem-editor_8h.html#ab704dacb1c67b4b15e123eb8aa331f95":[36,0,0,22,2,38,10],
 "panel-ditem-editor_8h.html#adb29690b704f9a3f0070405fd6411b02":[36,0,0,22,2,38,15],
 "panel-ditem-editor_8h.html#aef1468e675c9e9670c3de89e9a6560ae":[36,0,0,22,2,38,2],
-"panel-ditem-editor_8h.html#afb5866b7cc6d7c5b1550300572e235b0":[36,0,0,22,2,38,12],
-"panel-ditem-editor_8h.html#afbc5330c8cb6b1efc55a9626a00ab15d":[36,0,0,22,2,38,18],
-"panel-ditem-editor_8h_source.html":[36,0,0,22,2,38]
+"panel-ditem-editor_8h.html#afb5866b7cc6d7c5b1550300572e235b0":[36,0,0,22,2,38,12]
 };

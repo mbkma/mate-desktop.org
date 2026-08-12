@@ -1,5 +1,7 @@
 var NAVTREEINDEX172 =
 {
+"structCajaSearchEngineClass.html#a8b482eff80955063e73f28718a4f64e6":[35,0,1156,8],
+"structCajaSearchEngineClass.html#a9320af722031a2a3512c706806e8c1c9":[35,0,1156,5],
 "structCajaSearchEngineClass.html#a9997f7a414d6a839dc41ff57ce1255b7":[35,0,1156,4],
 "structCajaSearchEngineClass.html#a9ec05896d8d5b7cccd3d9ffdb2cb963e":[35,0,1156,0],
 "structCajaSearchEngineClass.html#aa63027e4f8caeef38dab8a4157170496":[35,0,1156,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX172 =
 "structDetailedTiming.html#a5bf4188f80c526b06b07894d89e5f3ab":[35,0,1209,2],
 "structDetailedTiming.html#a607f0584a31d507eabb8f374409f3f12":[35,0,1209,19],
 "structDetailedTiming.html#a60d0525fe3c0c72215630305260bef8b":[35,0,1209,17],
-"structDetailedTiming.html#a64b7159458a1f5cf86883ad63d82e46e":[35,0,1209,18],
-"structDetailedTiming.html#a803871a4e74c68526f783f2590fcc04e":[35,0,1209,11],
-"structDetailedTiming.html#a85c0d36888c55c4ee71121b85cea61b9":[35,0,1209,6]
+"structDetailedTiming.html#a64b7159458a1f5cf86883ad63d82e46e":[35,0,1209,18]
 };

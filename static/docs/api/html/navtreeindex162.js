@@ -1,5 +1,7 @@
 var NAVTREEINDEX162 =
 {
+"pulse-connection_8h.html#a0d036c072d7aaf422b6a3ffcd293db81":[36,0,0,8,0,3,3,30],
+"pulse-connection_8h.html#a0eae04623724bf579f58a66b90ba836d":[36,0,0,8,0,3,3,38],
 "pulse-connection_8h.html#a107aba07aa914799aaf2af05e701ed94":[36,0,0,8,0,3,3,5],
 "pulse-connection_8h.html#a1db921ac412ffe22738cdacea8024487":[36,0,0,8,0,3,3,24],
 "pulse-connection_8h.html#a23e0ac86a8f0736cb5e1e8f4888d4c99":[36,0,0,8,0,3,3,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX162 =
 "pulse-sink-input_8h_source.html":[36,0,0,8,0,3,26],
 "pulse-sink-switch_8c.html":[36,0,0,8,0,3,27],
 "pulse-sink-switch_8c.html#a96c69da6cebe9ca5b02e5bab83f4e9b8":[36,0,0,8,0,3,27,0],
-"pulse-sink-switch_8c_source.html":[36,0,0,8,0,3,27],
-"pulse-sink-switch_8h.html":[36,0,0,8,0,3,28],
-"pulse-sink-switch_8h.html#a0f5a0600698d20d82ed9662b73e18564":[36,0,0,8,0,3,28,2]
+"pulse-sink-switch_8c_source.html":[36,0,0,8,0,3,27]
 };

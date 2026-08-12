@@ -294,8 +294,10 @@ Functions</h2></td></tr>
 <tr class="separator:a47539db7d40303d49e68db231d19a548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a451bb8751ffbcc07e73f7d82f7d106ef" id="r_a451bb8751ffbcc07e73f7d82f7d106ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view)</td></tr>
 <tr class="separator:a451bb8751ffbcc07e73f7d82f7d106ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e08a3b11353d7b0baa0fa57af59327" id="r_a58e08a3b11353d7b0baa0fa57af59327"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view_8c.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, GdkPoint *start_point, GdkPoint *end_point)</td></tr>
-<tr class="separator:a58e08a3b11353d7b0baa0fa57af59327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebdc61a3deea9ab02f4d4df14286f17" id="r_a0ebdc61a3deea9ab02f4d4df14286f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view_8c.html#a0ebdc61a3deea9ab02f4d4df14286f17">_ev_view_add_selection</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, GdkPoint *start_point, GdkPoint *end_point)</td></tr>
+<tr class="separator:a0ebdc61a3deea9ab02f4d4df14286f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d042ab1bd6fede307f94e7cf56ec30" id="r_a38d042ab1bd6fede307f94e7cf56ec30"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view_8c.html#a38d042ab1bd6fede307f94e7cf56ec30">_ev_view_remove_page_selection</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, gint page)</td></tr>
+<tr class="separator:a38d042ab1bd6fede307f94e7cf56ec30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eca4b102321f5dde4a2ebe8f8868fe5" id="r_a0eca4b102321f5dde4a2ebe8f8868fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5">ev_view_copy</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *ev_view)</td></tr>
 <tr class="separator:a0eca4b102321f5dde4a2ebe8f8868fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a554cbcf8dd2c8d45ee3d5c28e334e799" id="r_a554cbcf8dd2c8d45ee3d5c28e334e799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev_view_copy_link_address</a> (<a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *view, <a class="el" href="ev-link-action_8h.html#a5b0f2d0f559fe200150cbdcddb3f8ad9">EvLinkAction</a> *<a class="el" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>)</td></tr>
@@ -619,6 +621,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0ebdc61a3deea9ab02f4d4df14286f17" name="a0ebdc61a3deea9ab02f4d4df14286f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebdc61a3deea9ab02f4d4df14286f17">&#9670;&#160;</a></span>_ev_view_add_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _ev_view_add_selection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkPoint *&#160;</td>
+          <td class="paramname"><em>start_point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkPoint *&#160;</td>
+          <td class="paramname"><em>end_point</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08114">8114</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+
+<p class="reference">References <a class="el" href="ev-selection_8h_source.html#l00043">EV_SELECTION_STYLE_GLYPH</a>, <a class="el" href="jpegint-8a_8h_source.html#l00262">MAX</a>, <a class="el" href="jpegint-8a_8h_source.html#l00264">MIN</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="ev-pixbuf-cache_8h_source.html#l00046">EvViewSelection::page</a>, <a class="el" href="ev-view-private_8h_source.html#l00196">_EvView::selection_info</a>, and <a class="el" href="ev-view-private_8h_source.html#l00064">SelectionInfo::selections</a>.</p>
+
+</div>
+</div>
 <a id="a451bb8751ffbcc07e73f7d82f7d106ef" name="a451bb8751ffbcc07e73f7d82f7d106ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a451bb8751ffbcc07e73f7d82f7d106ef">&#9670;&#160;</a></span>_ev_view_clear_selection()</h2>
 
@@ -635,7 +675,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08052">8052</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08103">8103</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 </div>
 </div>
@@ -751,6 +791,38 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a38d042ab1bd6fede307f94e7cf56ec30" name="a38d042ab1bd6fede307f94e7cf56ec30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d042ab1bd6fede307f94e7cf56ec30">&#9670;&#160;</a></span>_ev_view_remove_page_selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean _ev_view_remove_page_selection </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gint&#160;</td>
+          <td class="paramname"><em>page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08145">8145</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ev-view-private_8h_source.html#l00196">_EvView::selection_info</a>, <a class="el" href="ev-view-private_8h_source.html#l00064">SelectionInfo::selections</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+</div>
+</div>
 <a id="a2e6c9f7e0c8bedfc59263b8bfdaee158" name="a2e6c9f7e0c8bedfc59263b8bfdaee158"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2e6c9f7e0c8bedfc59263b8bfdaee158">&#9670;&#160;</a></span>_ev_view_set_focused_element()</h2>
 
@@ -788,44 +860,6 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="ev-document-model_8c_source.html#l00358">ev_document_model_set_page()</a>, <a class="el" href="ev-view-private_8h_source.html#l00211">_EvView::focused_element</a>, <a class="el" href="ev-view-private_8h_source.html#l00212">_EvView::focused_element_page</a>, <a class="el" href="ev-view-private_8h_source.html#l00129">_EvView::model</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="ev-view-private_8h_source.html#l00148">_EvView::scroll_x</a>, <a class="el" href="ev-view-private_8h_source.html#l00149">_EvView::scroll_y</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="ev-view_8c_source.html#l02619">_ev_view_focus_form_field()</a>, <a class="el" href="ev-view_8c_source.html#l03164">ev_view_focus_annotation()</a>, and <a class="el" href="ev-view_8c_source.html#l03204">ev_view_remove_annotation()</a>.</p>
-
-</div>
-</div>
-<a id="a58e08a3b11353d7b0baa0fa57af59327" name="a58e08a3b11353d7b0baa0fa57af59327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58e08a3b11353d7b0baa0fa57af59327">&#9670;&#160;</a></span>_ev_view_set_selection()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void _ev_view_set_selection </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> *&#160;</td>
-          <td class="paramname"><em>view</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GdkPoint *&#160;</td>
-          <td class="paramname"><em>start_point</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">GdkPoint *&#160;</td>
-          <td class="paramname"><em>end_point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08058">8058</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
-
-<p class="reference">References <a class="el" href="ev-selection_8h_source.html#l00043">EV_SELECTION_STYLE_GLYPH</a>.</p>
 
 </div>
 </div>
@@ -915,7 +949,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="ev-view_8c_source.html#l01180">ev_view_get_page_extents()</a>, <a class="el" href="ev-view-private_8h_source.html#l00163">_EvView::rotation</a>, <a class="el" href="ev-view-private_8h_source.html#l00164">_EvView::scale</a>, <a class="el" href="ev-document_8h_source.html#l00199">_EvRectangle::x1</a>, <a class="el" href="ev-document_8h_source.html#l00201">_EvRectangle::x2</a>, <a class="el" href="ev-document_8h_source.html#l00200">_EvRectangle::y1</a>, and <a class="el" href="ev-document_8h_source.html#l00202">_EvRectangle::y2</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ev-view-accessible_8c_source.html#l00505">_transform_doc_rect_to_atk_rect()</a>, and <a class="el" href="ev-view-accessible_8c_source.html#l00541">ev_view_accessible_is_doc_rect_showing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ev-view-accessible_8c_source.html#l00589">_transform_doc_rect_to_atk_rect()</a>, and <a class="el" href="ev-view-accessible_8c_source.html#l00625">ev_view_accessible_is_doc_rect_showing()</a>.</p>
 
 </div>
 </div>
@@ -1229,7 +1263,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08109">8109</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08208">8208</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00122">_EvView::document</a>, and <a class="el" href="ev-selection_8h_source.html#l00038">EV_IS_SELECTION</a>.</p>
 
@@ -1261,7 +1295,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08197">8197</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08296">8296</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="ev-link-action_8c_source.html#l00079">ev_link_action_get_uri()</a>, and <a class="el" href="ev-view-private_8h_source.html#l00199">_EvView::link_selected</a>.</p>
 
@@ -1285,7 +1319,7 @@ Functions</h2></td></tr>
 <p>ev_view_disconnect_handlers @view: <a class="el" href="ev-view_8h.html#af69d2f0212fe733110c7e82c11ab2a18">EvView</a> instance</p>
 <p>Disconnect all signal handlers from the model, to ensure error free operation of the webview, we have an equivalent function for the webview. </p>
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08285">8285</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08384">8384</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00129">_EvView::model</a>.</p>
 
@@ -1535,7 +1569,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08325">8325</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08424">8424</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00177">_EvView::allow_links_change_zoom</a>, <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
@@ -1557,7 +1591,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08046">8046</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08097">8097</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="ev-view-private_8h_source.html#l00196">_EvView::selection_info</a>, and <a class="el" href="ev-view-private_8h_source.html#l00064">SelectionInfo::selections</a>.</p>
 
@@ -1659,7 +1693,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08234">8234</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08333">8333</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-cursor_8h_source.html#l00036">EV_VIEW_CURSOR_HIDDEN</a>.</p>
 
@@ -1685,7 +1719,7 @@ Functions</h2></td></tr>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00221">_EvView::caret_enabled</a>, <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ev-view-accessible_8c_source.html#l00070">G_DEFINE_TYPE_WITH_CODE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ev-view-accessible_8c_source.html#l00074">G_DEFINE_TYPE_WITH_CODE()</a>.</p>
 
 </div>
 </div>
@@ -1749,7 +1783,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08246">8246</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08345">8345</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00161">_EvView::current_page</a>, <a class="el" href="ev-document-model_8c_source.html#l00358">ev_document_model_set_page()</a>, <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ev-view-private_8h_source.html#l00129">_EvView::model</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1773,7 +1807,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08262">8262</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08361">8361</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00161">_EvView::current_page</a>, <a class="el" href="ev-document-model_8c_source.html#l00358">ev_document_model_set_page()</a>, <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ev-view-private_8h_source.html#l00129">_EvView::model</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1869,7 +1903,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l00939">939</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00161">_EvView::current_page</a>, <a class="el" href="ev-view-private_8h_source.html#l00122">_EvView::document</a>, <a class="el" href="ev-document_8c_source.html#l00515">ev_document_get_n_pages()</a>, <a class="el" href="ev-view_8c_source.html#l08246">ev_view_next_page()</a>, <a class="el" href="ev-view_8c_source.html#l08262">ev_view_previous_page()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ev-view-private_8h_source.html#l00141">_EvView::hadjustment</a>, <a class="el" href="ev-view-private_8h_source.html#l00127">_EvView::jump_to_find_result</a>, <a class="el" href="ev-view-private_8h_source.html#l00183">_EvView::key_binding_handled</a>, <a class="el" href="jpegint-8a_8h_source.html#l00262">MAX</a>, <a class="el" href="jpegint-8a_8h_source.html#l00264">MIN</a>, <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>, and <a class="el" href="ev-view-private_8h_source.html#l00142">_EvView::vadjustment</a>.</p>
+<p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00161">_EvView::current_page</a>, <a class="el" href="ev-view-private_8h_source.html#l00122">_EvView::document</a>, <a class="el" href="ev-document_8c_source.html#l00515">ev_document_get_n_pages()</a>, <a class="el" href="ev-view_8c_source.html#l08345">ev_view_next_page()</a>, <a class="el" href="ev-view_8c_source.html#l08361">ev_view_previous_page()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="ev-view-private_8h_source.html#l00141">_EvView::hadjustment</a>, <a class="el" href="ev-view-private_8h_source.html#l00127">_EvView::jump_to_find_result</a>, <a class="el" href="ev-view-private_8h_source.html#l00183">_EvView::key_binding_handled</a>, <a class="el" href="jpegint-8a_8h_source.html#l00262">MAX</a>, <a class="el" href="jpegint-8a_8h_source.html#l00264">MIN</a>, <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>, and <a class="el" href="ev-view-private_8h_source.html#l00142">_EvView::vadjustment</a>.</p>
 
 </div>
 </div>
@@ -1889,7 +1923,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08016">8016</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08067">8067</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00122">_EvView::document</a>, <a class="el" href="ev-document_8c_source.html#l00515">ev_document_get_n_pages()</a>, <a class="el" href="ev-selection_8h_source.html#l00043">EV_SELECTION_STYLE_GLYPH</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="ev-pixbuf-cache_8h_source.html#l00046">EvViewSelection::page</a>, <a class="el" href="ev-pixbuf-cache_8h_source.html#l00047">EvViewSelection::rect</a>, <a class="el" href="ev-view-private_8h_source.html#l00163">_EvView::rotation</a>, <a class="el" href="ev-pixbuf-cache_8h_source.html#l00049">EvViewSelection::style</a>, <a class="el" href="ev-document_8h_source.html#l00199">_EvRectangle::x1</a>, <a class="el" href="ev-document_8h_source.html#l00201">_EvRectangle::x2</a>, <a class="el" href="ev-document_8h_source.html#l00200">_EvRectangle::y1</a>, and <a class="el" href="ev-document_8h_source.html#l00202">_EvRectangle::y2</a>.</p>
 
@@ -1921,7 +1955,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08317">8317</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08416">8416</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00177">_EvView::allow_links_change_zoom</a>, and <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>.</p>
 
@@ -2057,7 +2091,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l07038">7038</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00218">_EvView::accessible</a>, <a class="el" href="ev-view-private_8h_source.html#l00170">_EvView::continuous</a>, <a class="el" href="ev-document-model_8c_source.html#l00599">ev_document_model_get_continuous()</a>, <a class="el" href="ev-document-model_8c_source.html#l00667">ev_document_model_get_fullscreen()</a>, <a class="el" href="ev-document-model_8c_source.html#l00526">ev_document_model_get_page_layout()</a>, <a class="el" href="ev-document-model_8c_source.html#l00553">ev_document_model_get_rotation()</a>, <a class="el" href="ev-document-model_8c_source.html#l00417">ev_document_model_get_scale()</a>, <a class="el" href="ev-document-model_8c_source.html#l00485">ev_document_model_get_sizing_mode()</a>, <a class="el" href="ev-document-model_8h_source.html#l00034">EV_IS_DOCUMENT_MODEL</a>, <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>, <a class="el" href="ev-view-accessible_8h_source.html#l00032">EV_VIEW_ACCESSIBLE</a>, <a class="el" href="ev-view-accessible_8c_source.html#l00415">ev_view_accessible_set_model()</a>, <a class="el" href="ev-view-private_8h_source.html#l00172">_EvView::fullscreen</a>, <a class="el" href="ev-view-private_8h_source.html#l00129">_EvView::model</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="ev-view-private_8h_source.html#l00174">_EvView::page_layout</a>, <a class="el" href="ev-view-private_8h_source.html#l00163">_EvView::rotation</a>, <a class="el" href="ev-view-private_8h_source.html#l00164">_EvView::scale</a>, and <a class="el" href="ev-view-private_8h_source.html#l00173">_EvView::sizing_mode</a>.</p>
+<p class="reference">References <a class="el" href="ev-view-private_8h_source.html#l00218">_EvView::accessible</a>, <a class="el" href="ev-view-private_8h_source.html#l00170">_EvView::continuous</a>, <a class="el" href="ev-document-model_8c_source.html#l00599">ev_document_model_get_continuous()</a>, <a class="el" href="ev-document-model_8c_source.html#l00667">ev_document_model_get_fullscreen()</a>, <a class="el" href="ev-document-model_8c_source.html#l00526">ev_document_model_get_page_layout()</a>, <a class="el" href="ev-document-model_8c_source.html#l00553">ev_document_model_get_rotation()</a>, <a class="el" href="ev-document-model_8c_source.html#l00417">ev_document_model_get_scale()</a>, <a class="el" href="ev-document-model_8c_source.html#l00485">ev_document_model_get_sizing_mode()</a>, <a class="el" href="ev-document-model_8h_source.html#l00034">EV_IS_DOCUMENT_MODEL</a>, <a class="el" href="ev-view_8h_source.html#l00038">EV_IS_VIEW</a>, <a class="el" href="ev-view-accessible_8h_source.html#l00032">EV_VIEW_ACCESSIBLE</a>, <a class="el" href="ev-view-accessible_8c_source.html#l00499">ev_view_accessible_set_model()</a>, <a class="el" href="ev-view-private_8h_source.html#l00172">_EvView::fullscreen</a>, <a class="el" href="ev-view-private_8h_source.html#l00129">_EvView::model</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="ev-view-private_8h_source.html#l00174">_EvView::page_layout</a>, <a class="el" href="ev-view-private_8h_source.html#l00163">_EvView::rotation</a>, <a class="el" href="ev-view-private_8h_source.html#l00164">_EvView::scale</a>, and <a class="el" href="ev-view-private_8h_source.html#l00173">_EvView::sizing_mode</a>.</p>
 
 </div>
 </div>
@@ -2112,7 +2146,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08240">8240</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ev-view_8c_source.html#l08339">8339</a> of file <a class="el" href="ev-view_8c_source.html">ev-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ev-view-cursor_8h_source.html#l00032">EV_VIEW_CURSOR_NORMAL</a>.</p>
 

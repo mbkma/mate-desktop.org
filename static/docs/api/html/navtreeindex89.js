@@ -1,5 +1,7 @@
 var NAVTREEINDEX89 =
 {
+"gvc-level-bar_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[36,0,0,18,0,10,1],
+"gvc-level-bar_8c.html#adc940eab127cf802ab7838e10743aa76":[36,0,0,18,0,10,6],
 "gvc-level-bar_8c.html#ae60312c439afe39ee61a5a2c23cd6c16":[36,0,0,18,0,10,4],
 "gvc-level-bar_8c.html#aef4c1eb8c703310a5e99ca840229cab2":[36,0,0,18,0,10,11],
 "gvc-level-bar_8c.html#affd1302df98f066800fc89b7ca073b59":[36,0,0,18,0,10,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX89 =
 "http_8h.html#a809e3d7e0b77095e561699fda48ccbc8":[36,0,0,31,0,4,1],
 "http_8h.html#a9b15d8e77f4c9579e668b37ea20a3d2d":[36,0,0,31,0,4,0],
 "http_8h.html#acda8ae2dc9b7fa822d17da9e066e7c48":[36,0,0,31,0,4,2],
-"http_8h_source.html":[36,0,0,31,0,4],
-"i2c-proc-plugin_8c.html":[36,0,0,26,1,3,0],
-"i2c-proc-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[36,0,0,26,1,3,0,2]
+"http_8h_source.html":[36,0,0,31,0,4]
 };

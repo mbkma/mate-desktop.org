@@ -1103,233 +1103,257 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (text);</div>
 <div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
 <div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span> </div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev_view_get_has_selection</a> (view)) {</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>        <a class="code hl_function" href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a> (view);</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    }</div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span> </div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>}</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span> </div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>ev_page_accessible_set_selection (AtkText *text,</div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>                  gint     selection_num,</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>                  gint     start_pos,</div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>                  gint     end_pos)</div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>{</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (text);</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *areas = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>    guint n_areas = 0;</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>    GdkRectangle start_rect, end_rect;</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    GdkPoint start_point, end_point;</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span> </div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>    <a class="code hl_function" href="ev-page-cache_8c.html#a98caf2933580b49cdc02e62761021156">ev_page_cache_get_text_layout</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, &amp;areas, &amp;n_areas);</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    <span class="keywordflow">if</span> (start_pos &lt; 0 || end_pos &gt;= n_areas)</div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    <a class="code hl_function" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, areas + start_pos, &amp;start_rect);</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    <a class="code hl_function" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, areas + end_pos - 1, &amp;end_rect);</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    start_point.x = start_rect.x;</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>    start_point.y = start_rect.y;</div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>    end_point.x = end_rect.x + end_rect.width;</div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    end_point.y = end_rect.y + end_rect.height;</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>    <a class="code hl_function" href="ev-view-private_8h.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a> (view, &amp;start_point, &amp;end_point);</div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span> </div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>}</div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span><span class="keyword">static</span> gboolean</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>ev_page_accessible_add_selection (AtkText *text,</div>
-<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span>                  gint     start_pos,</div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>                  gint     end_pos)</div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>{</div>
-<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>    <span class="keywordflow">return</span> ev_page_accessible_set_selection (text, 0, start_pos, end_pos);</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span> </div>
-<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>}</div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span> </div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>ev_page_accessible_init (<a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page)</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>{</div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>    atk_object_set_role (ATK_OBJECT (page), ATK_ROLE_PAGE);</div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span> </div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>        page-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a> = ev_page_accessible_get_instance_private (page);</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>}</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span> </div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>ev_page_accessible_text_iface_init (AtkTextIface *iface)</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="ev-view-private_8h.html#a38d042ab1bd6fede307f94e7cf56ec30">_ev_view_remove_page_selection</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page);</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>}</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span><span class="keyword">static</span> gboolean</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>ev_page_accessible_get_selection_points (<a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self,</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>                     <a class="code hl_struct" href="struct__EvView.html">EvView</a>           *view,</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>                     gint              start_pos,</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>                     gint              end_pos,</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>                     GdkPoint         *start_point,</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>                     GdkPoint         *end_point)</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>{</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> *areas = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>    guint n_areas = 0;</div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>    GdkRectangle start_rect, end_rect;</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span> </div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    <a class="code hl_function" href="ev-page-cache_8c.html#a98caf2933580b49cdc02e62761021156">ev_page_cache_get_text_layout</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, &amp;areas, &amp;n_areas);</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    <span class="keywordflow">if</span> (start_pos &lt; 0 || end_pos &gt; n_areas)</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    <a class="code hl_function" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, areas + start_pos, &amp;start_rect);</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    <a class="code hl_function" href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, areas + end_pos - 1, &amp;end_rect);</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>    start_point-&gt;x = start_rect.x;</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    start_point-&gt;y = start_rect.y + start_rect.height / 2;</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    end_point-&gt;x = end_rect.x + end_rect.width;</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>    end_point-&gt;y = end_rect.y + end_rect.height / 2;</div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span> </div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>}</div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span> </div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span><span class="keyword">static</span> gboolean</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>ev_page_accessible_set_selection (AtkText *text,</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>                  gint     selection_num,</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>                  gint     start_pos,</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>                  gint     end_pos)</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>{</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (text);</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    GdkPoint start_point, end_point;</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span> </div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    <span class="keywordflow">if</span> (!ev_page_accessible_get_selection_points (self, view, start_pos, end_pos, &amp;start_point, &amp;end_point))</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span> </div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>    <span class="comment">/* AT-SPI clients call set_selection() to update a selection this page</span></div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span><span class="comment">     * already has (get_n_selections() == 1), and add_selection() to start</span></div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span><span class="comment">     * one where it currently has none. Both cases must only touch this</span></div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span><span class="comment">     * page&#39;s own selection, leaving selections on other pages alone. */</span></div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>    <a class="code hl_function" href="ev-view-private_8h.html#a0ebdc61a3deea9ab02f4d4df14286f17">_ev_view_add_selection</a> (view, &amp;start_point, &amp;end_point);</div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span> </div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>}</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span><span class="keyword">static</span> gboolean</div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>ev_page_accessible_add_selection (AtkText *text,</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>                  gint     start_pos,</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>                  gint     end_pos)</div>
 <div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>{</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>    iface-&gt;get_text = ev_page_accessible_get_text;</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    iface-&gt;get_text_at_offset = ev_page_accessible_get_text_at_offset;</div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    iface-&gt;get_character_at_offset = ev_page_accessible_get_character_at_offset;</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>    iface-&gt;get_caret_offset = ev_page_accessible_get_caret_offset;</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    iface-&gt;set_caret_offset = ev_page_accessible_set_caret_offset;</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>    iface-&gt;get_character_count = ev_page_accessible_get_character_count;</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>    iface-&gt;get_n_selections = ev_page_accessible_get_n_selections;</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    iface-&gt;get_selection = ev_page_accessible_get_selection;</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>    iface-&gt;remove_selection = ev_page_accessible_remove_selection;</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    iface-&gt;add_selection = ev_page_accessible_add_selection;</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>    iface-&gt;get_run_attributes = ev_page_accessible_get_run_attributes;</div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    iface-&gt;get_default_attributes = ev_page_accessible_get_default_attributes;</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    iface-&gt;get_character_extents = ev_page_accessible_get_character_extents;</div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    iface-&gt;get_offset_at_point = ev_page_accessible_get_offset_at_point;</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>}</div>
-<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span> </div>
-<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span><span class="keyword">static</span> GHashTable *</div>
-<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>ev_page_accessible_get_links (<a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *accessible)</div>
-<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>{</div>
-<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>    <a class="code hl_typedef" href="ev-page-accessible_8h.html#a0e692312956840b71b4e43daae77c1cd">EvPageAccessiblePrivate</a>* priv = accessible-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>;</div>
-<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span> </div>
-<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>    <span class="keywordflow">if</span> (priv-&gt;links)</div>
-<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>        <span class="keywordflow">return</span> priv-&gt;links;</div>
-<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span> </div>
-<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    priv-&gt;links = g_hash_table_new_full (g_direct_hash,</div>
-<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>                         g_direct_equal,</div>
-<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>                         <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
-<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>                         (GDestroyNotify)g_object_unref);</div>
-<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>    <span class="keywordflow">return</span> priv-&gt;links;</div>
-<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>}</div>
-<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span> </div>
-<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span><span class="keyword">static</span> AtkHyperlink *</div>
-<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>ev_page_accessible_get_link (AtkHypertext *hypertext,</div>
-<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>                 gint          link_index)</div>
-<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>{</div>
-<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    GHashTable       *links;</div>
-<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    <a class="code hl_typedef" href="ev-mapping-list_8h.html#a2c78bebfd6a6321926d22e1c869d0ade">EvMappingList</a>    *link_mapping;</div>
-<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>    gint              n_links;</div>
-<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>    <a class="code hl_struct" href="struct__EvMapping.html">EvMapping</a>        *mapping;</div>
-<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>    <a class="code hl_struct" href="struct__EvLinkAccessible.html">EvLinkAccessible</a> *atk_link;</div>
-<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext);</div>
-<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
-<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span> </div>
-<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    <span class="keywordflow">if</span> (link_index &lt; 0)</div>
-<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span> </div>
-<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>    <span class="keywordflow">if</span> (!<a class="code hl_define" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
-<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span> </div>
-<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>    links = ev_page_accessible_get_links (<a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext));</div>
-<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span> </div>
-<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>    atk_link = g_hash_table_lookup (links, GINT_TO_POINTER (link_index));</div>
-<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>    <span class="keywordflow">if</span> (atk_link)</div>
-<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>        <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (text);</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    GdkPoint start_point, end_point;</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span> </div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    <span class="keywordflow">if</span> (!ev_page_accessible_get_selection_points (self, view, start_pos, end_pos, &amp;start_point, &amp;end_point))</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span> </div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    <a class="code hl_function" href="ev-view-private_8h.html#a0ebdc61a3deea9ab02f4d4df14286f17">_ev_view_add_selection</a> (view, &amp;start_point, &amp;end_point);</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span> </div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>}</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span> </div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>ev_page_accessible_init (<a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *page)</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>{</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    atk_object_set_role (ATK_OBJECT (page), ATK_ROLE_PAGE);</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>        page-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a> = ev_page_accessible_get_instance_private (page);</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>}</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span> </div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>ev_page_accessible_text_iface_init (AtkTextIface *iface)</div>
+<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>{</div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    iface-&gt;get_text = ev_page_accessible_get_text;</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    iface-&gt;get_text_at_offset = ev_page_accessible_get_text_at_offset;</div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>    iface-&gt;get_character_at_offset = ev_page_accessible_get_character_at_offset;</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span>    iface-&gt;get_caret_offset = ev_page_accessible_get_caret_offset;</div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>    iface-&gt;set_caret_offset = ev_page_accessible_set_caret_offset;</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>    iface-&gt;get_character_count = ev_page_accessible_get_character_count;</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>    iface-&gt;get_n_selections = ev_page_accessible_get_n_selections;</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>    iface-&gt;get_selection = ev_page_accessible_get_selection;</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>    iface-&gt;remove_selection = ev_page_accessible_remove_selection;</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    iface-&gt;add_selection = ev_page_accessible_add_selection;</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>    iface-&gt;set_selection = ev_page_accessible_set_selection;</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    iface-&gt;get_run_attributes = ev_page_accessible_get_run_attributes;</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    iface-&gt;get_default_attributes = ev_page_accessible_get_default_attributes;</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>    iface-&gt;get_character_extents = ev_page_accessible_get_character_extents;</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span>    iface-&gt;get_offset_at_point = ev_page_accessible_get_offset_at_point;</div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>}</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span> </div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span><span class="keyword">static</span> GHashTable *</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>ev_page_accessible_get_links (<a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *accessible)</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>{</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>    <a class="code hl_typedef" href="ev-page-accessible_8h.html#a0e692312956840b71b4e43daae77c1cd">EvPageAccessiblePrivate</a>* priv = accessible-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>;</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span> </div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>    <span class="keywordflow">if</span> (priv-&gt;links)</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>        <span class="keywordflow">return</span> priv-&gt;links;</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span> </div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>    priv-&gt;links = g_hash_table_new_full (g_direct_hash,</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>                         g_direct_equal,</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>                         <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>                         (GDestroyNotify)g_object_unref);</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>    <span class="keywordflow">return</span> priv-&gt;links;</div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>}</div>
 <div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span> </div>
-<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>    link_mapping = <a class="code hl_function" href="ev-page-cache_8c.html#ad4113b6618d004a575c74d193e81f166">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page);</div>
-<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>    <span class="keywordflow">if</span> (!link_mapping)</div>
-<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span> </div>
-<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>    n_links = <a class="code hl_function" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping);</div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    <span class="keywordflow">if</span> (link_index &gt; n_links - 1)</div>
-<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span> </div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    mapping = <a class="code hl_function" href="ev-mapping-list_8c.html#a00c1a0a77a19b62e397add786bb41a3a">ev_mapping_list_nth</a> (link_mapping, n_links - link_index - 1);</div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    atk_link = <a class="code hl_function" href="ev-link-accessible_8c.html#ad18af391610edbc13ee57b95b11286e9">ev_link_accessible_new</a> (<a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext),</div>
-<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>                       <a class="code hl_define" href="ev-link_8h.html#adb5e3be89ec30ae611d2e760f35f7bd7">EV_LINK</a> (mapping-&gt;<a class="code hl_variable" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>),</div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>                       &amp;mapping-&gt;<a class="code hl_variable" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
-<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>    g_hash_table_insert (links, GINT_TO_POINTER (link_index), atk_link);</div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span> </div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>    <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>}</div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span> </div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span><span class="keyword">static</span> gint</div>
-<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>ev_page_accessible_get_n_links (AtkHypertext *hypertext)</div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>{</div>
-<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    <a class="code hl_typedef" href="ev-mapping-list_8h.html#a2c78bebfd6a6321926d22e1c869d0ade">EvMappingList</a> *link_mapping;</div>
-<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext);</div>
-<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span><span class="keyword">static</span> AtkHyperlink *</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span>ev_page_accessible_get_link (AtkHypertext *hypertext,</div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>                 gint          link_index)</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>{</div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>    GHashTable       *links;</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>    <a class="code hl_typedef" href="ev-mapping-list_8h.html#a2c78bebfd6a6321926d22e1c869d0ade">EvMappingList</a>    *link_mapping;</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    gint              n_links;</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>    <a class="code hl_struct" href="struct__EvMapping.html">EvMapping</a>        *mapping;</div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    <a class="code hl_struct" href="struct__EvLinkAccessible.html">EvLinkAccessible</a> *atk_link;</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext);</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span> </div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>    <span class="keywordflow">if</span> (link_index &lt; 0)</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span> </div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    <span class="keywordflow">if</span> (!<a class="code hl_define" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span> </div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>    links = ev_page_accessible_get_links (<a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext));</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span> </div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>    atk_link = g_hash_table_lookup (links, GINT_TO_POINTER (link_index));</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    <span class="keywordflow">if</span> (atk_link)</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>        <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
 <div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span> </div>
-<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>    <span class="keywordflow">if</span> (!<a class="code hl_define" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
-<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span> </div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    link_mapping = <a class="code hl_function" href="ev-page-cache_8c.html#ad4113b6618d004a575c74d193e81f166">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>,</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>                               self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page);</div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span> </div>
-<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>    <span class="keywordflow">return</span> link_mapping ? <a class="code hl_function" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping) : 0;</div>
-<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>}</div>
-<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span> </div>
-<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span><span class="keyword">static</span> gint</div>
-<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>ev_page_accessible_get_link_index (AtkHypertext *hypertext,</div>
-<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>                   gint          offset)</div>
-<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>{</div>
-<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>    guint i;</div>
-<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>    gint n_links = ev_page_accessible_get_n_links (hypertext);</div>
-<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span> </div>
-<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n_links; i++) {</div>
-<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>        AtkHyperlink *hyperlink;</div>
-<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>        gint          start_index, end_index;</div>
-<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span> </div>
-<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>        hyperlink = ev_page_accessible_get_link (hypertext, i);</div>
-<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>        start_index = atk_hyperlink_get_start_index (hyperlink);</div>
-<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>        end_index = atk_hyperlink_get_end_index (hyperlink);</div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>    link_mapping = <a class="code hl_function" href="ev-page-cache_8c.html#ad4113b6618d004a575c74d193e81f166">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page);</div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>    <span class="keywordflow">if</span> (!link_mapping)</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span> </div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>    n_links = <a class="code hl_function" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping);</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>    <span class="keywordflow">if</span> (link_index &gt; n_links - 1)</div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span> </div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>    mapping = <a class="code hl_function" href="ev-mapping-list_8c.html#a00c1a0a77a19b62e397add786bb41a3a">ev_mapping_list_nth</a> (link_mapping, n_links - link_index - 1);</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>    atk_link = <a class="code hl_function" href="ev-link-accessible_8c.html#ad18af391610edbc13ee57b95b11286e9">ev_link_accessible_new</a> (<a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext),</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>                       <a class="code hl_define" href="ev-link_8h.html#adb5e3be89ec30ae611d2e760f35f7bd7">EV_LINK</a> (mapping-&gt;<a class="code hl_variable" href="struct__EvMapping.html#a4270c5be97a75ee92f3ee6e856dcaee3">data</a>),</div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>                       &amp;mapping-&gt;<a class="code hl_variable" href="struct__EvMapping.html#a7c527d40d067f4e58f6b0dce7a2e1bf2">area</a>);</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>    g_hash_table_insert (links, GINT_TO_POINTER (link_index), atk_link);</div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span> </div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>    <span class="keywordflow">return</span> atk_hyperlink_impl_get_hyperlink (ATK_HYPERLINK_IMPL (atk_link));</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>}</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span> </div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span><span class="keyword">static</span> gint</div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>ev_page_accessible_get_n_links (AtkHypertext *hypertext)</div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>{</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>    <a class="code hl_typedef" href="ev-mapping-list_8h.html#a2c78bebfd6a6321926d22e1c869d0ade">EvMappingList</a> *link_mapping;</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (hypertext);</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
 <div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span> </div>
-<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>        <span class="keywordflow">if</span> (start_index &lt;= offset &amp;&amp; end_index &gt;= offset)</div>
-<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>            <span class="keywordflow">return</span> i;</div>
-<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>    }</div>
-<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span> </div>
-<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>    <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>}</div>
-<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span> </div>
-<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>ev_page_accessible_hypertext_iface_init (AtkHypertextIface *iface)</div>
-<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>{</div>
-<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>    iface-&gt;get_link = ev_page_accessible_get_link;</div>
-<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    iface-&gt;get_n_links = ev_page_accessible_get_n_links;</div>
-<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>    iface-&gt;get_link_index = ev_page_accessible_get_link_index;</div>
-<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>}</div>
-<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span> </div>
-<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>ev_page_accessible_get_extents (AtkComponent *atk_component,</div>
-<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>                gint         *x,</div>
-<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>                gint         *y,</div>
-<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>                gint         *width,</div>
-<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>                gint         *height,</div>
-<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>                AtkCoordType coord_type)</div>
-<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>{</div>
-<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self;</div>
-<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view;</div>
-<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    GdkRectangle page_area;</div>
-<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>    GtkBorder border;</div>
-<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> doc_rect, atk_rect;</div>
-<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span> </div>
-<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>    self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_component);</div>
-<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>    view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
-<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>    <a class="code hl_function" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, &amp;page_area, &amp;border);</div>
-<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span> </div>
-<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = page_area.x;</div>
-<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = page_area.y;</div>
-<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = page_area.x + page_area.width;</div>
-<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = page_area.y + page_area.height;</div>
-<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>    <a class="code hl_function" href="ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82">_transform_doc_rect_to_atk_rect</a> (self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;view_accessible, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, &amp;doc_rect, &amp;atk_rect, coord_type);</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>    <span class="keywordflow">if</span> (!<a class="code hl_define" href="ev-document-links_8h.html#a19f2c3be58ac8fb001eae06ad6ff8e7d">EV_IS_DOCUMENT_LINKS</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span> </div>
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span>    link_mapping = <a class="code hl_function" href="ev-page-cache_8c.html#ad4113b6618d004a575c74d193e81f166">ev_page_cache_get_link_mapping</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0370c47abe01a07c23239c5796997308">page_cache</a>,</div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>                               self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page);</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span> </div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>    <span class="keywordflow">return</span> link_mapping ? <a class="code hl_function" href="ev-mapping-list_8c.html#ad6b3e8c0511cd70274fb5eff4d99473a">ev_mapping_list_length</a> (link_mapping) : 0;</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>}</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span> </div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span><span class="keyword">static</span> gint</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>ev_page_accessible_get_link_index (AtkHypertext *hypertext,</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>                   gint          offset)</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>{</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>    guint i;</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    gint n_links = ev_page_accessible_get_n_links (hypertext);</div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span> </div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n_links; i++) {</div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>        AtkHyperlink *hyperlink;</div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span>        gint          start_index, end_index;</div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span> </div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>        hyperlink = ev_page_accessible_get_link (hypertext, i);</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>        start_index = atk_hyperlink_get_start_index (hyperlink);</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>        end_index = atk_hyperlink_get_end_index (hyperlink);</div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span> </div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        <span class="keywordflow">if</span> (start_index &lt;= offset &amp;&amp; end_index &gt;= offset)</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>            <span class="keywordflow">return</span> i;</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>    }</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span> </div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>    <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span>}</div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span> </div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>ev_page_accessible_hypertext_iface_init (AtkHypertextIface *iface)</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>{</div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>    iface-&gt;get_link = ev_page_accessible_get_link;</div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>    iface-&gt;get_n_links = ev_page_accessible_get_n_links;</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>    iface-&gt;get_link_index = ev_page_accessible_get_link_index;</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>}</div>
 <div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span> </div>
-<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>    *x = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>    *y = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>    *width = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
-<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>    *height = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
-<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>}</div>
-<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span> </div>
-<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>ev_page_accessible_component_iface_init (AtkComponentIface *iface)</div>
-<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>{</div>
-<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>        iface-&gt;get_extents = ev_page_accessible_get_extents;</div>
-<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>}</div>
-<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span> </div>
-<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span><a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *</div>
-<div class="foldopen" id="foldopen01211" data-start="{" data-end="}">
-<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"><a class="line" href="ev-page-accessible_8c.html#ad4ebdbf62b4975ef2a596e46dedae982"> 1211</a></span><a class="code hl_function" href="ev-page-accessible_8c.html#ad4ebdbf62b4975ef2a596e46dedae982">ev_page_accessible_new</a> (<a class="code hl_struct" href="struct__EvViewAccessible.html">EvViewAccessible</a> *view_accessible,</div>
-<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>                        gint              page)</div>
-<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>{</div>
-<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>        <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *atk_page;</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>ev_page_accessible_get_extents (AtkComponent *atk_component,</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>                gint         *x,</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>                gint         *y,</div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>                gint         *width,</div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span>                gint         *height,</div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>                AtkCoordType coord_type)</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>{</div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>    <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *self;</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view;</div>
+<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    GdkRectangle page_area;</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>    GtkBorder border;</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    <a class="code hl_struct" href="struct__EvRectangle.html">EvRectangle</a> doc_rect, atk_rect;</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span> </div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>    self = <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_component);</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>    view = <a class="code hl_function" href="ev-page-accessible_8c.html#a2682fea192fb8d640d400344d308f04c">ev_page_accessible_get_view</a> (self);</div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span>    <a class="code hl_function" href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a> (view, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, &amp;page_area, &amp;border);</div>
 <div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span> </div>
-<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a> (view_accessible), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>    g_return_val_if_fail (page &gt;= 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span> </div>
-<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>        atk_page = g_object_new (<a class="code hl_define" href="ev-page-accessible_8h.html#affea0fb18bfdfed06a53e5d949ea8c98">EV_TYPE_PAGE_ACCESSIBLE</a>,</div>
-<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>                 <span class="stringliteral">&quot;view-accessible&quot;</span>, view_accessible,</div>
-<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>                 <span class="stringliteral">&quot;page&quot;</span>, page,</div>
-<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>                 <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span> </div>
-<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page);</div>
-<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>}</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = page_area.x;</div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = page_area.y;</div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = page_area.x + page_area.width;</div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>    doc_rect.<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = page_area.y + page_area.height;</div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>    <a class="code hl_function" href="ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82">_transform_doc_rect_to_atk_rect</a> (self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;view_accessible, self-&gt;<a class="code hl_variable" href="struct__EvPageAccessible.html#a5f219c151edd134e6baecc8a941dd8af">priv</a>-&gt;page, &amp;doc_rect, &amp;atk_rect, coord_type);</div>
+<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span> </div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>    *x = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>    *y = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>    *width = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> - atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a>;</div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>    *height = atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> - atk_rect.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a>;</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>}</div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span> </div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>ev_page_accessible_component_iface_init (AtkComponentIface *iface)</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>{</div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>        iface-&gt;get_extents = ev_page_accessible_get_extents;</div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>}</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span> </div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span><a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *</div>
+<div class="foldopen" id="foldopen01235" data-start="{" data-end="}">
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"><a class="line" href="ev-page-accessible_8c.html#ad4ebdbf62b4975ef2a596e46dedae982"> 1235</a></span><a class="code hl_function" href="ev-page-accessible_8c.html#ad4ebdbf62b4975ef2a596e46dedae982">ev_page_accessible_new</a> (<a class="code hl_struct" href="struct__EvViewAccessible.html">EvViewAccessible</a> *view_accessible,</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>                        gint              page)</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>{</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>        <a class="code hl_struct" href="struct__EvPageAccessible.html">EvPageAccessible</a> *atk_page;</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span> </div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a> (view_accessible), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>    g_return_val_if_fail (page &gt;= 0, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span> </div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>        atk_page = g_object_new (<a class="code hl_define" href="ev-page-accessible_8h.html#affea0fb18bfdfed06a53e5d949ea8c98">EV_TYPE_PAGE_ACCESSIBLE</a>,</div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>                 <span class="stringliteral">&quot;view-accessible&quot;</span>, view_accessible,</div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>                 <span class="stringliteral">&quot;page&quot;</span>, page,</div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>                 <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span> </div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="ev-page-accessible_8h.html#abd793107188fc1ddfdf1b2cd57fed869">EV_PAGE_ACCESSIBLE</a> (atk_page);</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -1358,7 +1382,7 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="ttc" id="aev-page-accessible_8c_html_a77867ab4129f63159b37bca3b652a798a1d885322a419db7ab3c5958dbb1d5a0f"><div class="ttname"><a href="ev-page-accessible_8c.html#a77867ab4129f63159b37bca3b652a798a1d885322a419db7ab3c5958dbb1d5a0f">PROP_VIEW_ACCESSIBLE</a></div><div class="ttdeci">@ PROP_VIEW_ACCESSIBLE</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8c_source.html#l00042">ev-page-accessible.c:42</a></div></div>
 <div class="ttc" id="aev-page-accessible_8c_html_a77867ab4129f63159b37bca3b652a798ac37dda0da1a44e10c0504afeeb863f3c"><div class="ttname"><a href="ev-page-accessible_8c.html#a77867ab4129f63159b37bca3b652a798ac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a></div><div class="ttdeci">@ PROP_0</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8c_source.html#l00041">ev-page-accessible.c:41</a></div></div>
 <div class="ttc" id="aev-page-accessible_8c_html_ab00e4fc51ac8f833595705069546491c"><div class="ttname"><a href="ev-page-accessible_8c.html#ab00e4fc51ac8f833595705069546491c">G_DEFINE_TYPE_WITH_CODE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_CODE(EvPageAccessible, ev_page_accessible, ATK_TYPE_OBJECT, G_IMPLEMENT_INTERFACE(ATK_TYPE_TEXT, ev_page_accessible_text_iface_init))</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8c_source.html#l00050">ev-page-accessible.c:50</a></div></div>
-<div class="ttc" id="aev-page-accessible_8c_html_ad4ebdbf62b4975ef2a596e46dedae982"><div class="ttname"><a href="ev-page-accessible_8c.html#ad4ebdbf62b4975ef2a596e46dedae982">ev_page_accessible_new</a></div><div class="ttdeci">EvPageAccessible * ev_page_accessible_new(EvViewAccessible *view_accessible, gint page)</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8c_source.html#l01211">ev-page-accessible.c:1211</a></div></div>
+<div class="ttc" id="aev-page-accessible_8c_html_ad4ebdbf62b4975ef2a596e46dedae982"><div class="ttname"><a href="ev-page-accessible_8c.html#ad4ebdbf62b4975ef2a596e46dedae982">ev_page_accessible_new</a></div><div class="ttdeci">EvPageAccessible * ev_page_accessible_new(EvViewAccessible *view_accessible, gint page)</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8c_source.html#l01235">ev-page-accessible.c:1235</a></div></div>
 <div class="ttc" id="aev-page-accessible_8h_html"><div class="ttname"><a href="ev-page-accessible_8h.html">ev-page-accessible.h</a></div></div>
 <div class="ttc" id="aev-page-accessible_8h_html_a0e692312956840b71b4e43daae77c1cd"><div class="ttname"><a href="ev-page-accessible_8h.html#a0e692312956840b71b4e43daae77c1cd">EvPageAccessiblePrivate</a></div><div class="ttdeci">struct _EvPageAccessiblePrivate EvPageAccessiblePrivate</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8h_source.html#l00036">ev-page-accessible.h:36</a></div></div>
 <div class="ttc" id="aev-page-accessible_8h_html_a38925d874ecdbebabe90485360ff56ed"><div class="ttname"><a href="ev-page-accessible_8h.html#a38925d874ecdbebabe90485360ff56ed">EV_IS_PAGE_ACCESSIBLE</a></div><div class="ttdeci">#define EV_IS_PAGE_ACCESSIBLE(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-page-accessible_8h_source.html#l00032">ev-page-accessible.h:32</a></div></div>
@@ -1376,20 +1400,19 @@ $(document).ready(function(){initNavTree('ev-page-accessible_8c_source.html','')
 <div class="ttc" id="aev-selection_8c_html_a0749686cbcb66fb546f72be4e89334b0"><div class="ttname"><a href="ev-selection_8c.html#a0749686cbcb66fb546f72be4e89334b0">ev_selection_get_selected_text</a></div><div class="ttdeci">gchar * ev_selection_get_selected_text(EvSelection *selection, EvPage *page, EvSelectionStyle style, EvRectangle *points)</div><div class="ttdef"><b>Definition</b> <a href="ev-selection_8c_source.html#l00055">ev-selection.c:55</a></div></div>
 <div class="ttc" id="aev-selection_8h_html_a131a86072b56c1912bd59ecf880d0f5a"><div class="ttname"><a href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a></div><div class="ttdeci">#define EV_SELECTION(o)</div><div class="ttdef"><b>Definition</b> <a href="ev-selection_8h_source.html#l00036">ev-selection.h:36</a></div></div>
 <div class="ttc" id="aev-selection_8h_html_af28e76c170f7f0cf713717c5e2cdd323"><div class="ttname"><a href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a></div><div class="ttdeci">#define EV_IS_SELECTION(o)</div><div class="ttdef"><b>Definition</b> <a href="ev-selection_8h_source.html#l00038">ev-selection.h:38</a></div></div>
-<div class="ttc" id="aev-view-accessible_8c_html_aad4098f74b6005b57e8bbf43642017a9"><div class="ttname"><a href="ev-view-accessible_8c.html#aad4098f74b6005b57e8bbf43642017a9">ev_view_accessible_get_n_pages</a></div><div class="ttdeci">gint ev_view_accessible_get_n_pages(EvViewAccessible *self)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00133">ev-view-accessible.c:133</a></div></div>
-<div class="ttc" id="aev-view-accessible_8c_html_acae8f9fc3d7f53632eaa50b249bec753"><div class="ttname"><a href="ev-view-accessible_8c.html#acae8f9fc3d7f53632eaa50b249bec753">ev_view_accessible_get_relevant_page</a></div><div class="ttdeci">gint ev_view_accessible_get_relevant_page(EvViewAccessible *accessible)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00493">ev-view-accessible.c:493</a></div></div>
-<div class="ttc" id="aev-view-accessible_8c_html_adf7a1febb1c508528289b7941c3e6d82"><div class="ttname"><a href="ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82">_transform_doc_rect_to_atk_rect</a></div><div class="ttdeci">void _transform_doc_rect_to_atk_rect(EvViewAccessible *accessible, gint page, EvRectangle *doc_rect, EvRectangle *atk_rect, AtkCoordType coord_type)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00505">ev-view-accessible.c:505</a></div></div>
+<div class="ttc" id="aev-view-accessible_8c_html_aad4098f74b6005b57e8bbf43642017a9"><div class="ttname"><a href="ev-view-accessible_8c.html#aad4098f74b6005b57e8bbf43642017a9">ev_view_accessible_get_n_pages</a></div><div class="ttdeci">gint ev_view_accessible_get_n_pages(EvViewAccessible *self)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00140">ev-view-accessible.c:140</a></div></div>
+<div class="ttc" id="aev-view-accessible_8c_html_acae8f9fc3d7f53632eaa50b249bec753"><div class="ttname"><a href="ev-view-accessible_8c.html#acae8f9fc3d7f53632eaa50b249bec753">ev_view_accessible_get_relevant_page</a></div><div class="ttdeci">gint ev_view_accessible_get_relevant_page(EvViewAccessible *accessible)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00577">ev-view-accessible.c:577</a></div></div>
+<div class="ttc" id="aev-view-accessible_8c_html_adf7a1febb1c508528289b7941c3e6d82"><div class="ttname"><a href="ev-view-accessible_8c.html#adf7a1febb1c508528289b7941c3e6d82">_transform_doc_rect_to_atk_rect</a></div><div class="ttdeci">void _transform_doc_rect_to_atk_rect(EvViewAccessible *accessible, gint page, EvRectangle *doc_rect, EvRectangle *atk_rect, AtkCoordType coord_type)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00589">ev-view-accessible.c:589</a></div></div>
 <div class="ttc" id="aev-view-accessible_8h_html_a1321f1b4805398289d0abaf81f82632c"><div class="ttname"><a href="ev-view-accessible_8h.html#a1321f1b4805398289d0abaf81f82632c">EV_IS_VIEW_ACCESSIBLE</a></div><div class="ttdeci">#define EV_IS_VIEW_ACCESSIBLE(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8h_source.html#l00033">ev-view-accessible.h:33</a></div></div>
 <div class="ttc" id="aev-view-accessible_8h_html_a6ead0f8fc5ac85a15d87b0257b101217"><div class="ttname"><a href="ev-view-accessible_8h.html#a6ead0f8fc5ac85a15d87b0257b101217">EV_TYPE_VIEW_ACCESSIBLE</a></div><div class="ttdeci">#define EV_TYPE_VIEW_ACCESSIBLE</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8h_source.html#l00031">ev-view-accessible.h:31</a></div></div>
 <div class="ttc" id="aev-view-accessible_8h_html_ac434b0bb6ac6ef44cbde83a830a200e1"><div class="ttname"><a href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a></div><div class="ttdeci">#define EV_VIEW_ACCESSIBLE(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8h_source.html#l00032">ev-view-accessible.h:32</a></div></div>
 <div class="ttc" id="aev-view-private_8h_html"><div class="ttname"><a href="ev-view-private_8h.html">ev-view-private.h</a></div></div>
-<div class="ttc" id="aev-view-private_8h_html_a451bb8751ffbcc07e73f7d82f7d106ef"><div class="ttname"><a href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a></div><div class="ttdeci">void _ev_view_clear_selection(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08052">ev-view.c:8052</a></div></div>
-<div class="ttc" id="aev-view-private_8h_html_a58e08a3b11353d7b0baa0fa57af59327"><div class="ttname"><a href="ev-view-private_8h.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a></div><div class="ttdeci">void _ev_view_set_selection(EvView *view, GdkPoint *start_point, GdkPoint *end_point)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08058">ev-view.c:8058</a></div></div>
+<div class="ttc" id="aev-view-private_8h_html_a0ebdc61a3deea9ab02f4d4df14286f17"><div class="ttname"><a href="ev-view-private_8h.html#a0ebdc61a3deea9ab02f4d4df14286f17">_ev_view_add_selection</a></div><div class="ttdeci">void _ev_view_add_selection(EvView *view, GdkPoint *start_point, GdkPoint *end_point)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08114">ev-view.c:8114</a></div></div>
+<div class="ttc" id="aev-view-private_8h_html_a38d042ab1bd6fede307f94e7cf56ec30"><div class="ttname"><a href="ev-view-private_8h.html#a38d042ab1bd6fede307f94e7cf56ec30">_ev_view_remove_page_selection</a></div><div class="ttdeci">gboolean _ev_view_remove_page_selection(EvView *view, gint page)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08145">ev-view.c:8145</a></div></div>
 <div class="ttc" id="aev-view-private_8h_html_a8c882e0b7ddf3bf5a611d981a155e4e6"><div class="ttname"><a href="ev-view-private_8h.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a></div><div class="ttdeci">void _ev_view_transform_doc_rect_to_view_rect(EvView *view, int page, EvRectangle *doc_rect, GdkRectangle *view_rect)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01356">ev-view.c:1356</a></div></div>
 <div class="ttc" id="aev-view-private_8h_html_ab0025a68ff63a643f533fe51249c9faf"><div class="ttname"><a href="ev-view-private_8h.html#ab0025a68ff63a643f533fe51249c9faf">_ev_view_get_caret_cursor_offset_at_doc_point</a></div><div class="ttdeci">gint _ev_view_get_caret_cursor_offset_at_doc_point(EvView *view, gint page, gdouble doc_x, gdouble doc_y)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l04311">ev-view.c:4311</a></div></div>
 <div class="ttc" id="aev-view-private_8h_html_ae0e760f53072cc44dc1b1757a49081b5"><div class="ttname"><a href="ev-view-private_8h.html#ae0e760f53072cc44dc1b1757a49081b5">_ev_view_transform_view_point_to_doc_point</a></div><div class="ttdeci">void _ev_view_transform_view_point_to_doc_point(EvView *view, GdkPoint *view_point, GdkRectangle *page_area, double *doc_point_x, double *doc_point_y)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01296">ev-view.c:1296</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a05b0ab1968466d2dd2a3cd7add43cfb9"><div class="ttname"><a href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a></div><div class="ttdeci">gboolean ev_view_get_page_extents(EvView *view, gint page, GdkRectangle *page_area, GtkBorder *border)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01180">ev-view.c:1180</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a47539db7d40303d49e68db231d19a548"><div class="ttname"><a href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev_view_get_has_selection</a></div><div class="ttdeci">gboolean ev_view_get_has_selection(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08046">ev-view.c:8046</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ad252527b78bb0905ab35216ca2ac3a70"><div class="ttname"><a href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev_view_set_caret_cursor_position</a></div><div class="ttdeci">void ev_view_set_caret_cursor_position(EvView *view, guint page, guint offset)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03529">ev-view.c:3529</a></div></div>
 <div class="ttc" id="aev-view_8h_html_ae0f841ff23098797bd55cde4b71fe285"><div class="ttname"><a href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a></div><div class="ttdeci">#define EV_VIEW(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8h_source.html#l00037">ev-view.h:37</a></div></div>
 <div class="ttc" id="ajpegint-8a_8h_html_af320905358fa78701e4cc60b6135601f"><div class="ttname"><a href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a></div><div class="ttdeci">long b</div><div class="ttdef"><b>Definition</b> <a href="jpegint-8a_8h_source.html#l00370">jpegint-8a.h:370</a></div></div>

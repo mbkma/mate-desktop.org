@@ -8163,346 +8163,447 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="line"><a id="l08006" name="l08006"></a><span class="lineno"> 8006</span>    g_slice_free (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a>, selection);</div>
 <div class="line"><a id="l08007" name="l08007"></a><span class="lineno"> 8007</span>}</div>
 <div class="line"><a id="l08008" name="l08008"></a><span class="lineno"> 8008</span> </div>
-<div class="line"><a id="l08009" name="l08009"></a><span class="lineno"> 8009</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08010" name="l08010"></a><span class="lineno"> 8010</span>clear_selection (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08009" name="l08009"></a><span class="lineno"> 8009</span><span class="keyword">static</span> <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *</div>
+<div class="line"><a id="l08010" name="l08010"></a><span class="lineno"> 8010</span>selection_dup (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection)</div>
 <div class="line"><a id="l08011" name="l08011"></a><span class="lineno"> 8011</span>{</div>
-<div class="line"><a id="l08012" name="l08012"></a><span class="lineno"> 8012</span>    merge_selection_region (view, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l08013" name="l08013"></a><span class="lineno"> 8013</span>}</div>
-<div class="line"><a id="l08014" name="l08014"></a><span class="lineno"> 8014</span> </div>
-<div class="line"><a id="l08015" name="l08015"></a><span class="lineno"> 8015</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08016" data-start="{" data-end="}">
-<div class="line"><a id="l08016" name="l08016"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a5117bfa1532fd619165ed0715a71b9b4"> 8016</a></span><a class="code hl_function" href="ev-view_8c.html#a5117bfa1532fd619165ed0715a71b9b4">ev_view_select_all</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08017" name="l08017"></a><span class="lineno"> 8017</span>{</div>
-<div class="line"><a id="l08018" name="l08018"></a><span class="lineno"> 8018</span>    GList *selections = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l08019" name="l08019"></a><span class="lineno"> 8019</span>    <span class="keywordtype">int</span> n_pages, i;</div>
+<div class="line"><a id="l08012" name="l08012"></a><span class="lineno"> 8012</span>    <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *new_selection = g_slice_new0 (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a>);</div>
+<div class="line"><a id="l08013" name="l08013"></a><span class="lineno"> 8013</span> </div>
+<div class="line"><a id="l08014" name="l08014"></a><span class="lineno"> 8014</span>    new_selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> = selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>;</div>
+<div class="line"><a id="l08015" name="l08015"></a><span class="lineno"> 8015</span>    new_selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a> = selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>;</div>
+<div class="line"><a id="l08016" name="l08016"></a><span class="lineno"> 8016</span>    new_selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a> = selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a>;</div>
+<div class="line"><a id="l08017" name="l08017"></a><span class="lineno"> 8017</span> </div>
+<div class="line"><a id="l08018" name="l08018"></a><span class="lineno"> 8018</span>    <span class="keywordflow">return</span> new_selection;</div>
+<div class="line"><a id="l08019" name="l08019"></a><span class="lineno"> 8019</span>}</div>
 <div class="line"><a id="l08020" name="l08020"></a><span class="lineno"> 8020</span> </div>
-<div class="line"><a id="l08021" name="l08021"></a><span class="lineno"> 8021</span>    <span class="comment">/* Disable selection on rotated pages for the 0.4.0 series */</span></div>
-<div class="line"><a id="l08022" name="l08022"></a><span class="lineno"> 8022</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a> != 0)</div>
-<div class="line"><a id="l08023" name="l08023"></a><span class="lineno"> 8023</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l08024" name="l08024"></a><span class="lineno"> 8024</span> </div>
-<div class="line"><a id="l08025" name="l08025"></a><span class="lineno"> 8025</span>    n_pages = <a class="code hl_function" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>);</div>
-<div class="line"><a id="l08026" name="l08026"></a><span class="lineno"> 8026</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n_pages; i++) {</div>
-<div class="line"><a id="l08027" name="l08027"></a><span class="lineno"> 8027</span>        gdouble width, height;</div>
-<div class="line"><a id="l08028" name="l08028"></a><span class="lineno"> 8028</span>        <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection;</div>
-<div class="line"><a id="l08029" name="l08029"></a><span class="lineno"> 8029</span> </div>
-<div class="line"><a id="l08030" name="l08030"></a><span class="lineno"> 8030</span>        get_doc_page_size (view, i, &amp;width, &amp;height);</div>
-<div class="line"><a id="l08031" name="l08031"></a><span class="lineno"> 8031</span> </div>
-<div class="line"><a id="l08032" name="l08032"></a><span class="lineno"> 8032</span>        selection = g_slice_new0 (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a>);</div>
-<div class="line"><a id="l08033" name="l08033"></a><span class="lineno"> 8033</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> = i;</div>
-<div class="line"><a id="l08034" name="l08034"></a><span class="lineno"> 8034</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a> = <a class="code hl_enumvalue" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>;</div>
-<div class="line"><a id="l08035" name="l08035"></a><span class="lineno"> 8035</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = 0;</div>
-<div class="line"><a id="l08036" name="l08036"></a><span class="lineno"> 8036</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = width;</div>
-<div class="line"><a id="l08037" name="l08037"></a><span class="lineno"> 8037</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = height;</div>
-<div class="line"><a id="l08038" name="l08038"></a><span class="lineno"> 8038</span> </div>
-<div class="line"><a id="l08039" name="l08039"></a><span class="lineno"> 8039</span>        selections = g_list_prepend (selections, selection);</div>
-<div class="line"><a id="l08040" name="l08040"></a><span class="lineno"> 8040</span>    }</div>
+<div class="line"><a id="l08021" name="l08021"></a><span class="lineno"> 8021</span><span class="keyword">static</span> gint</div>
+<div class="line"><a id="l08022" name="l08022"></a><span class="lineno"> 8022</span>selection_compare_pages (gconstpointer a,</div>
+<div class="line"><a id="l08023" name="l08023"></a><span class="lineno"> 8023</span>             gconstpointer <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>)</div>
+<div class="line"><a id="l08024" name="l08024"></a><span class="lineno"> 8024</span>{</div>
+<div class="line"><a id="l08025" name="l08025"></a><span class="lineno"> 8025</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *sel_a = a;</div>
+<div class="line"><a id="l08026" name="l08026"></a><span class="lineno"> 8026</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *sel_b = <a class="code hl_variable" href="jpegint-8a_8h.html#af320905358fa78701e4cc60b6135601f">b</a>;</div>
+<div class="line"><a id="l08027" name="l08027"></a><span class="lineno"> 8027</span> </div>
+<div class="line"><a id="l08028" name="l08028"></a><span class="lineno"> 8028</span>    <span class="keywordflow">return</span> sel_a-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> - sel_b-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>;</div>
+<div class="line"><a id="l08029" name="l08029"></a><span class="lineno"> 8029</span>}</div>
+<div class="line"><a id="l08030" name="l08030"></a><span class="lineno"> 8030</span> </div>
+<div class="line"><a id="l08031" name="l08031"></a><span class="lineno"> 8031</span><span class="comment">/* Duplicates every selection whose page falls outside [first, last],</span></div>
+<div class="line"><a id="l08032" name="l08032"></a><span class="lineno"> 8032</span><span class="comment"> * dropping (and optionally flagging) the ones inside that range. */</span></div>
+<div class="line"><a id="l08033" name="l08033"></a><span class="lineno"> 8033</span><span class="keyword">static</span> GList *</div>
+<div class="line"><a id="l08034" name="l08034"></a><span class="lineno"> 8034</span>dup_selections_outside_range (GList    *selections,</div>
+<div class="line"><a id="l08035" name="l08035"></a><span class="lineno"> 8035</span>                  gint      first,</div>
+<div class="line"><a id="l08036" name="l08036"></a><span class="lineno"> 8036</span>                  gint      last,</div>
+<div class="line"><a id="l08037" name="l08037"></a><span class="lineno"> 8037</span>                  gboolean *out_had_match)</div>
+<div class="line"><a id="l08038" name="l08038"></a><span class="lineno"> 8038</span>{</div>
+<div class="line"><a id="l08039" name="l08039"></a><span class="lineno"> 8039</span>    GList *l;</div>
+<div class="line"><a id="l08040" name="l08040"></a><span class="lineno"> 8040</span>    GList *result = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a id="l08041" name="l08041"></a><span class="lineno"> 8041</span> </div>
-<div class="line"><a id="l08042" name="l08042"></a><span class="lineno"> 8042</span>    merge_selection_region (view, g_list_reverse (selections));</div>
-<div class="line"><a id="l08043" name="l08043"></a><span class="lineno"> 8043</span>}</div>
-</div>
+<div class="line"><a id="l08042" name="l08042"></a><span class="lineno"> 8042</span>    <span class="keywordflow">if</span> (out_had_match)</div>
+<div class="line"><a id="l08043" name="l08043"></a><span class="lineno"> 8043</span>        *out_had_match = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a id="l08044" name="l08044"></a><span class="lineno"> 8044</span> </div>
-<div class="line"><a id="l08045" name="l08045"></a><span class="lineno"> 8045</span>gboolean</div>
-<div class="foldopen" id="foldopen08046" data-start="{" data-end="}">
-<div class="line"><a id="l08046" name="l08046"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548"> 8046</a></span><a class="code hl_function" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev_view_get_has_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08047" name="l08047"></a><span class="lineno"> 8047</span>{</div>
-<div class="line"><a id="l08048" name="l08048"></a><span class="lineno"> 8048</span>    <span class="keywordflow">return</span> view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l08049" name="l08049"></a><span class="lineno"> 8049</span>}</div>
-</div>
-<div class="line"><a id="l08050" name="l08050"></a><span class="lineno"> 8050</span> </div>
-<div class="line"><a id="l08051" name="l08051"></a><span class="lineno"> 8051</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08052" data-start="{" data-end="}">
-<div class="line"><a id="l08052" name="l08052"></a><span class="lineno"><a class="line" href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef"> 8052</a></span><a class="code hl_function" href="ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08053" name="l08053"></a><span class="lineno"> 8053</span>{</div>
-<div class="line"><a id="l08054" name="l08054"></a><span class="lineno"> 8054</span>    clear_selection (view);</div>
-<div class="line"><a id="l08055" name="l08055"></a><span class="lineno"> 8055</span>}</div>
-</div>
+<div class="line"><a id="l08045" name="l08045"></a><span class="lineno"> 8045</span>    <span class="keywordflow">for</span> (l = selections; l != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; l = l-&gt;next) {</div>
+<div class="line"><a id="l08046" name="l08046"></a><span class="lineno"> 8046</span>        <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection = l-&gt;data;</div>
+<div class="line"><a id="l08047" name="l08047"></a><span class="lineno"> 8047</span> </div>
+<div class="line"><a id="l08048" name="l08048"></a><span class="lineno"> 8048</span>        <span class="keywordflow">if</span> (selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> &gt;= first &amp;&amp; selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> &lt;= last) {</div>
+<div class="line"><a id="l08049" name="l08049"></a><span class="lineno"> 8049</span>            <span class="keywordflow">if</span> (out_had_match)</div>
+<div class="line"><a id="l08050" name="l08050"></a><span class="lineno"> 8050</span>                *out_had_match = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l08051" name="l08051"></a><span class="lineno"> 8051</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l08052" name="l08052"></a><span class="lineno"> 8052</span>        }</div>
+<div class="line"><a id="l08053" name="l08053"></a><span class="lineno"> 8053</span> </div>
+<div class="line"><a id="l08054" name="l08054"></a><span class="lineno"> 8054</span>        result = g_list_prepend (result, selection_dup (selection));</div>
+<div class="line"><a id="l08055" name="l08055"></a><span class="lineno"> 8055</span>    }</div>
 <div class="line"><a id="l08056" name="l08056"></a><span class="lineno"> 8056</span> </div>
-<div class="line"><a id="l08057" name="l08057"></a><span class="lineno"> 8057</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08058" data-start="{" data-end="}">
-<div class="line"><a id="l08058" name="l08058"></a><span class="lineno"><a class="line" href="ev-view-private_8h.html#a58e08a3b11353d7b0baa0fa57af59327"> 8058</a></span><a class="code hl_function" href="ev-view_8c.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a>   *view,</div>
-<div class="line"><a id="l08059" name="l08059"></a><span class="lineno"> 8059</span>                        GdkPoint *start_point,</div>
-<div class="line"><a id="l08060" name="l08060"></a><span class="lineno"> 8060</span>                        GdkPoint *end_point)</div>
-<div class="line"><a id="l08061" name="l08061"></a><span class="lineno"> 8061</span>{</div>
-<div class="line"><a id="l08062" name="l08062"></a><span class="lineno"> 8062</span>    compute_selections (view, <a class="code hl_enumvalue" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
-<div class="line"><a id="l08063" name="l08063"></a><span class="lineno"> 8063</span>}</div>
-</div>
-<div class="line"><a id="l08064" name="l08064"></a><span class="lineno"> 8064</span> </div>
-<div class="line"><a id="l08065" name="l08065"></a><span class="lineno"> 8065</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
-<div class="line"><a id="l08066" name="l08066"></a><span class="lineno"> 8066</span>get_selected_text (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08067" name="l08067"></a><span class="lineno"> 8067</span>{</div>
-<div class="line"><a id="l08068" name="l08068"></a><span class="lineno"> 8068</span>    GString *text;</div>
-<div class="line"><a id="l08069" name="l08069"></a><span class="lineno"> 8069</span>    GList *l;</div>
-<div class="line"><a id="l08070" name="l08070"></a><span class="lineno"> 8070</span>    gchar *normalized_text;</div>
+<div class="line"><a id="l08057" name="l08057"></a><span class="lineno"> 8057</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l08058" name="l08058"></a><span class="lineno"> 8058</span>}</div>
+<div class="line"><a id="l08059" name="l08059"></a><span class="lineno"> 8059</span> </div>
+<div class="line"><a id="l08060" name="l08060"></a><span class="lineno"> 8060</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08061" name="l08061"></a><span class="lineno"> 8061</span>clear_selection (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08062" name="l08062"></a><span class="lineno"> 8062</span>{</div>
+<div class="line"><a id="l08063" name="l08063"></a><span class="lineno"> 8063</span>    merge_selection_region (view, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l08064" name="l08064"></a><span class="lineno"> 8064</span>}</div>
+<div class="line"><a id="l08065" name="l08065"></a><span class="lineno"> 8065</span> </div>
+<div class="line"><a id="l08066" name="l08066"></a><span class="lineno"> 8066</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08067" data-start="{" data-end="}">
+<div class="line"><a id="l08067" name="l08067"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a5117bfa1532fd619165ed0715a71b9b4"> 8067</a></span><a class="code hl_function" href="ev-view_8c.html#a5117bfa1532fd619165ed0715a71b9b4">ev_view_select_all</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08068" name="l08068"></a><span class="lineno"> 8068</span>{</div>
+<div class="line"><a id="l08069" name="l08069"></a><span class="lineno"> 8069</span>    GList *selections = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l08070" name="l08070"></a><span class="lineno"> 8070</span>    <span class="keywordtype">int</span> n_pages, i;</div>
 <div class="line"><a id="l08071" name="l08071"></a><span class="lineno"> 8071</span> </div>
-<div class="line"><a id="l08072" name="l08072"></a><span class="lineno"> 8072</span>    text = g_string_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l08073" name="l08073"></a><span class="lineno"> 8073</span> </div>
-<div class="line"><a id="l08074" name="l08074"></a><span class="lineno"> 8074</span>    <a class="code hl_function" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
+<div class="line"><a id="l08072" name="l08072"></a><span class="lineno"> 8072</span>    <span class="comment">/* Disable selection on rotated pages for the 0.4.0 series */</span></div>
+<div class="line"><a id="l08073" name="l08073"></a><span class="lineno"> 8073</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a0662761f5097cf98e35aed1ce0038f83">rotation</a> != 0)</div>
+<div class="line"><a id="l08074" name="l08074"></a><span class="lineno"> 8074</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l08075" name="l08075"></a><span class="lineno"> 8075</span> </div>
-<div class="line"><a id="l08076" name="l08076"></a><span class="lineno"> 8076</span>    <span class="keywordflow">for</span> (l = view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>; l != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; l = l-&gt;next) {</div>
-<div class="line"><a id="l08077" name="l08077"></a><span class="lineno"> 8077</span>        <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection = (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *)l-&gt;data;</div>
-<div class="line"><a id="l08078" name="l08078"></a><span class="lineno"> 8078</span>        <a class="code hl_struct" href="struct__EvPage.html">EvPage</a> *page;</div>
-<div class="line"><a id="l08079" name="l08079"></a><span class="lineno"> 8079</span>        gchar *tmp;</div>
+<div class="line"><a id="l08076" name="l08076"></a><span class="lineno"> 8076</span>    n_pages = <a class="code hl_function" href="ev-document_8c.html#a33826c395a43cf5583ea3b5d046d3f63">ev_document_get_n_pages</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>);</div>
+<div class="line"><a id="l08077" name="l08077"></a><span class="lineno"> 8077</span>    <span class="keywordflow">for</span> (i = 0; i &lt; n_pages; i++) {</div>
+<div class="line"><a id="l08078" name="l08078"></a><span class="lineno"> 8078</span>        gdouble width, height;</div>
+<div class="line"><a id="l08079" name="l08079"></a><span class="lineno"> 8079</span>        <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection;</div>
 <div class="line"><a id="l08080" name="l08080"></a><span class="lineno"> 8080</span> </div>
-<div class="line"><a id="l08081" name="l08081"></a><span class="lineno"> 8081</span>        page = <a class="code hl_function" href="ev-document_8c.html#aae7e3de03c7a35d579ce6c5af6902a86">ev_document_get_page</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>, selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>);</div>
-<div class="line"><a id="l08082" name="l08082"></a><span class="lineno"> 8082</span>        tmp = <a class="code hl_function" href="ev-selection_8c.html#a0749686cbcb66fb546f72be4e89334b0">ev_selection_get_selected_text</a> (<a class="code hl_define" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>),</div>
-<div class="line"><a id="l08083" name="l08083"></a><span class="lineno"> 8083</span>                              page, selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a>,</div>
-<div class="line"><a id="l08084" name="l08084"></a><span class="lineno"> 8084</span>                              &amp;(selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>));</div>
-<div class="line"><a id="l08085" name="l08085"></a><span class="lineno"> 8085</span>        g_object_unref (page);</div>
-<div class="line"><a id="l08086" name="l08086"></a><span class="lineno"> 8086</span>        g_string_append (text, tmp);</div>
-<div class="line"><a id="l08087" name="l08087"></a><span class="lineno"> 8087</span>        g_free (tmp);</div>
-<div class="line"><a id="l08088" name="l08088"></a><span class="lineno"> 8088</span>    }</div>
+<div class="line"><a id="l08081" name="l08081"></a><span class="lineno"> 8081</span>        get_doc_page_size (view, i, &amp;width, &amp;height);</div>
+<div class="line"><a id="l08082" name="l08082"></a><span class="lineno"> 8082</span> </div>
+<div class="line"><a id="l08083" name="l08083"></a><span class="lineno"> 8083</span>        selection = g_slice_new0 (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a>);</div>
+<div class="line"><a id="l08084" name="l08084"></a><span class="lineno"> 8084</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a> = i;</div>
+<div class="line"><a id="l08085" name="l08085"></a><span class="lineno"> 8085</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a> = <a class="code hl_enumvalue" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>;</div>
+<div class="line"><a id="l08086" name="l08086"></a><span class="lineno"> 8086</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#a3fcc5cdd0bcd1c1fa34b544417942b5a">x1</a> = selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#a5d4921b956a59ec7105a7597323c15d8">y1</a> = 0;</div>
+<div class="line"><a id="l08087" name="l08087"></a><span class="lineno"> 8087</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#acbbaea457fdd1f981191f97f8a26f500">x2</a> = width;</div>
+<div class="line"><a id="l08088" name="l08088"></a><span class="lineno"> 8088</span>        selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>.<a class="code hl_variable" href="struct__EvRectangle.html#aa2575705672dab5800cb6cad74bc70a3">y2</a> = height;</div>
 <div class="line"><a id="l08089" name="l08089"></a><span class="lineno"> 8089</span> </div>
-<div class="line"><a id="l08090" name="l08090"></a><span class="lineno"> 8090</span>    <a class="code hl_function" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
-<div class="line"><a id="l08091" name="l08091"></a><span class="lineno"> 8091</span> </div>
-<div class="line"><a id="l08092" name="l08092"></a><span class="lineno"> 8092</span>    normalized_text = g_utf8_normalize (text-&gt;str, text-&gt;len, G_NORMALIZE_NFKC);</div>
-<div class="line"><a id="l08093" name="l08093"></a><span class="lineno"> 8093</span>    g_string_free (text, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
-<div class="line"><a id="l08094" name="l08094"></a><span class="lineno"> 8094</span>    <span class="keywordflow">return</span> normalized_text;</div>
-<div class="line"><a id="l08095" name="l08095"></a><span class="lineno"> 8095</span>}</div>
-<div class="line"><a id="l08096" name="l08096"></a><span class="lineno"> 8096</span> </div>
-<div class="line"><a id="l08097" name="l08097"></a><span class="lineno"> 8097</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08098" name="l08098"></a><span class="lineno"> 8098</span>ev_view_clipboard_copy (<a class="code hl_struct" href="struct__EvView.html">EvView</a>      *view,</div>
-<div class="line"><a id="l08099" name="l08099"></a><span class="lineno"> 8099</span>            <span class="keyword">const</span> gchar *text)</div>
-<div class="line"><a id="l08100" name="l08100"></a><span class="lineno"> 8100</span>{</div>
-<div class="line"><a id="l08101" name="l08101"></a><span class="lineno"> 8101</span>    GtkClipboard *clipboard;</div>
-<div class="line"><a id="l08102" name="l08102"></a><span class="lineno"> 8102</span> </div>
-<div class="line"><a id="l08103" name="l08103"></a><span class="lineno"> 8103</span>    clipboard = gtk_widget_get_clipboard (GTK_WIDGET (view),</div>
-<div class="line"><a id="l08104" name="l08104"></a><span class="lineno"> 8104</span>                          GDK_SELECTION_CLIPBOARD);</div>
-<div class="line"><a id="l08105" name="l08105"></a><span class="lineno"> 8105</span>    gtk_clipboard_set_text (clipboard, text, -1);</div>
-<div class="line"><a id="l08106" name="l08106"></a><span class="lineno"> 8106</span>}</div>
-<div class="line"><a id="l08107" name="l08107"></a><span class="lineno"> 8107</span> </div>
-<div class="line"><a id="l08108" name="l08108"></a><span class="lineno"> 8108</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08109" data-start="{" data-end="}">
-<div class="line"><a id="l08109" name="l08109"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5"> 8109</a></span><a class="code hl_function" href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5">ev_view_copy</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *ev_view)</div>
-<div class="line"><a id="l08110" name="l08110"></a><span class="lineno"> 8110</span>{</div>
-<div class="line"><a id="l08111" name="l08111"></a><span class="lineno"> 8111</span>    <span class="keywordtype">char</span> *text;</div>
-<div class="line"><a id="l08112" name="l08112"></a><span class="lineno"> 8112</span> </div>
-<div class="line"><a id="l08113" name="l08113"></a><span class="lineno"> 8113</span>    <span class="keywordflow">if</span> (!<a class="code hl_define" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
-<div class="line"><a id="l08114" name="l08114"></a><span class="lineno"> 8114</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l08115" name="l08115"></a><span class="lineno"> 8115</span> </div>
-<div class="line"><a id="l08116" name="l08116"></a><span class="lineno"> 8116</span>    text = get_selected_text (ev_view);</div>
-<div class="line"><a id="l08117" name="l08117"></a><span class="lineno"> 8117</span>    ev_view_clipboard_copy (ev_view, text);</div>
-<div class="line"><a id="l08118" name="l08118"></a><span class="lineno"> 8118</span>    g_free (text);</div>
-<div class="line"><a id="l08119" name="l08119"></a><span class="lineno"> 8119</span>}</div>
+<div class="line"><a id="l08090" name="l08090"></a><span class="lineno"> 8090</span>        selections = g_list_prepend (selections, selection);</div>
+<div class="line"><a id="l08091" name="l08091"></a><span class="lineno"> 8091</span>    }</div>
+<div class="line"><a id="l08092" name="l08092"></a><span class="lineno"> 8092</span> </div>
+<div class="line"><a id="l08093" name="l08093"></a><span class="lineno"> 8093</span>    merge_selection_region (view, g_list_reverse (selections));</div>
+<div class="line"><a id="l08094" name="l08094"></a><span class="lineno"> 8094</span>}</div>
 </div>
-<div class="line"><a id="l08120" name="l08120"></a><span class="lineno"> 8120</span> </div>
-<div class="line"><a id="l08121" name="l08121"></a><span class="lineno"> 8121</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08122" name="l08122"></a><span class="lineno"> 8122</span>ev_view_primary_get_cb (GtkClipboard     *clipboard,</div>
-<div class="line"><a id="l08123" name="l08123"></a><span class="lineno"> 8123</span>            GtkSelectionData *selection_data,</div>
-<div class="line"><a id="l08124" name="l08124"></a><span class="lineno"> 8124</span>            guint             info,</div>
-<div class="line"><a id="l08125" name="l08125"></a><span class="lineno"> 8125</span>            gpointer          <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
-<div class="line"><a id="l08126" name="l08126"></a><span class="lineno"> 8126</span>{</div>
-<div class="line"><a id="l08127" name="l08127"></a><span class="lineno"> 8127</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *ev_view = <a class="code hl_define" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
-<div class="line"><a id="l08128" name="l08128"></a><span class="lineno"> 8128</span> </div>
-<div class="line"><a id="l08129" name="l08129"></a><span class="lineno"> 8129</span>    <span class="keywordflow">if</span> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>) {</div>
-<div class="line"><a id="l08130" name="l08130"></a><span class="lineno"> 8130</span>        gtk_selection_data_set_text (selection_data,</div>
-<div class="line"><a id="l08131" name="l08131"></a><span class="lineno"> 8131</span>                         <a class="code hl_function" href="ev-link-action_8c.html#a47a443a3bee5b8a823e0455f389d6109">ev_link_action_get_uri</a> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>),</div>
-<div class="line"><a id="l08132" name="l08132"></a><span class="lineno"> 8132</span>                         -1);</div>
-<div class="line"><a id="l08133" name="l08133"></a><span class="lineno"> 8133</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>) &amp;&amp;</div>
-<div class="line"><a id="l08134" name="l08134"></a><span class="lineno"> 8134</span>           ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>) {</div>
-<div class="line"><a id="l08135" name="l08135"></a><span class="lineno"> 8135</span>        gchar *text;</div>
-<div class="line"><a id="l08136" name="l08136"></a><span class="lineno"> 8136</span> </div>
-<div class="line"><a id="l08137" name="l08137"></a><span class="lineno"> 8137</span>        text = get_selected_text (ev_view);</div>
-<div class="line"><a id="l08138" name="l08138"></a><span class="lineno"> 8138</span>        <span class="keywordflow">if</span> (text) {</div>
-<div class="line"><a id="l08139" name="l08139"></a><span class="lineno"> 8139</span>            gtk_selection_data_set_text (selection_data, text, -1);</div>
-<div class="line"><a id="l08140" name="l08140"></a><span class="lineno"> 8140</span>            g_free (text);</div>
-<div class="line"><a id="l08141" name="l08141"></a><span class="lineno"> 8141</span>        }</div>
-<div class="line"><a id="l08142" name="l08142"></a><span class="lineno"> 8142</span>    }</div>
-<div class="line"><a id="l08143" name="l08143"></a><span class="lineno"> 8143</span>}</div>
-<div class="line"><a id="l08144" name="l08144"></a><span class="lineno"> 8144</span> </div>
-<div class="line"><a id="l08145" name="l08145"></a><span class="lineno"> 8145</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08146" name="l08146"></a><span class="lineno"> 8146</span>ev_view_primary_clear_cb (GtkClipboard *clipboard,</div>
-<div class="line"><a id="l08147" name="l08147"></a><span class="lineno"> 8147</span>              gpointer      <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
-<div class="line"><a id="l08148" name="l08148"></a><span class="lineno"> 8148</span>{</div>
-<div class="line"><a id="l08149" name="l08149"></a><span class="lineno"> 8149</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_define" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
+<div class="line"><a id="l08095" name="l08095"></a><span class="lineno"> 8095</span> </div>
+<div class="line"><a id="l08096" name="l08096"></a><span class="lineno"> 8096</span>gboolean</div>
+<div class="foldopen" id="foldopen08097" data-start="{" data-end="}">
+<div class="line"><a id="l08097" name="l08097"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548"> 8097</a></span><a class="code hl_function" href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev_view_get_has_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08098" name="l08098"></a><span class="lineno"> 8098</span>{</div>
+<div class="line"><a id="l08099" name="l08099"></a><span class="lineno"> 8099</span>    <span class="keywordflow">return</span> view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l08100" name="l08100"></a><span class="lineno"> 8100</span>}</div>
+</div>
+<div class="line"><a id="l08101" name="l08101"></a><span class="lineno"> 8101</span> </div>
+<div class="line"><a id="l08102" name="l08102"></a><span class="lineno"> 8102</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08103" data-start="{" data-end="}">
+<div class="line"><a id="l08103" name="l08103"></a><span class="lineno"><a class="line" href="ev-view-private_8h.html#a451bb8751ffbcc07e73f7d82f7d106ef"> 8103</a></span><a class="code hl_function" href="ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08104" name="l08104"></a><span class="lineno"> 8104</span>{</div>
+<div class="line"><a id="l08105" name="l08105"></a><span class="lineno"> 8105</span>    clear_selection (view);</div>
+<div class="line"><a id="l08106" name="l08106"></a><span class="lineno"> 8106</span>}</div>
+</div>
+<div class="line"><a id="l08107" name="l08107"></a><span class="lineno"> 8107</span> </div>
+<div class="line"><a id="l08108" name="l08108"></a><span class="lineno"> 8108</span><span class="comment">/* Adds (or updates) the selection on whichever page(s) start_point/end_point</span></div>
+<div class="line"><a id="l08109" name="l08109"></a><span class="lineno"> 8109</span><span class="comment"> * fall on, keeping any existing selection on other pages instead of</span></div>
+<div class="line"><a id="l08110" name="l08110"></a><span class="lineno"> 8110</span><span class="comment"> * discarding it. Used for both AT-SPI set_selection (updating a page&#39;s own</span></div>
+<div class="line"><a id="l08111" name="l08111"></a><span class="lineno"> 8111</span><span class="comment"> * existing selection) and add_selection (starting a new one), since both</span></div>
+<div class="line"><a id="l08112" name="l08112"></a><span class="lineno"> 8112</span><span class="comment"> * must only affect the page(s) actually being selected. */</span></div>
+<div class="line"><a id="l08113" name="l08113"></a><span class="lineno"> 8113</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08114" data-start="{" data-end="}">
+<div class="line"><a id="l08114" name="l08114"></a><span class="lineno"><a class="line" href="ev-view-private_8h.html#a0ebdc61a3deea9ab02f4d4df14286f17"> 8114</a></span><a class="code hl_function" href="ev-view_8c.html#a0ebdc61a3deea9ab02f4d4df14286f17">_ev_view_add_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a>   *view,</div>
+<div class="line"><a id="l08115" name="l08115"></a><span class="lineno"> 8115</span>                        GdkPoint *start_point,</div>
+<div class="line"><a id="l08116" name="l08116"></a><span class="lineno"> 8116</span>                        GdkPoint *end_point)</div>
+<div class="line"><a id="l08117" name="l08117"></a><span class="lineno"> 8117</span>{</div>
+<div class="line"><a id="l08118" name="l08118"></a><span class="lineno"> 8118</span>    GList *new_range, *l;</div>
+<div class="line"><a id="l08119" name="l08119"></a><span class="lineno"> 8119</span>    GList *merged;</div>
+<div class="line"><a id="l08120" name="l08120"></a><span class="lineno"> 8120</span>    gint new_first = G_MAXINT;</div>
+<div class="line"><a id="l08121" name="l08121"></a><span class="lineno"> 8121</span>    gint new_last = G_MININT;</div>
+<div class="line"><a id="l08122" name="l08122"></a><span class="lineno"> 8122</span> </div>
+<div class="line"><a id="l08123" name="l08123"></a><span class="lineno"> 8123</span>    new_range = compute_new_selection (view, <a class="code hl_enumvalue" href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a>, start_point, end_point);</div>
+<div class="line"><a id="l08124" name="l08124"></a><span class="lineno"> 8124</span>    <span class="keywordflow">if</span> (new_range == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l08125" name="l08125"></a><span class="lineno"> 8125</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l08126" name="l08126"></a><span class="lineno"> 8126</span> </div>
+<div class="line"><a id="l08127" name="l08127"></a><span class="lineno"> 8127</span>    <span class="keywordflow">for</span> (l = new_range; l != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; l = l-&gt;next) {</div>
+<div class="line"><a id="l08128" name="l08128"></a><span class="lineno"> 8128</span>        <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection = l-&gt;data;</div>
+<div class="line"><a id="l08129" name="l08129"></a><span class="lineno"> 8129</span> </div>
+<div class="line"><a id="l08130" name="l08130"></a><span class="lineno"> 8130</span>        new_first = <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (new_first, selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>);</div>
+<div class="line"><a id="l08131" name="l08131"></a><span class="lineno"> 8131</span>        new_last = <a class="code hl_define" href="jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a> (new_last, selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>);</div>
+<div class="line"><a id="l08132" name="l08132"></a><span class="lineno"> 8132</span>    }</div>
+<div class="line"><a id="l08133" name="l08133"></a><span class="lineno"> 8133</span> </div>
+<div class="line"><a id="l08134" name="l08134"></a><span class="lineno"> 8134</span>    merged = dup_selections_outside_range (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>,</div>
+<div class="line"><a id="l08135" name="l08135"></a><span class="lineno"> 8135</span>                           new_first, new_last, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l08136" name="l08136"></a><span class="lineno"> 8136</span>    merged = g_list_concat (merged, new_range);</div>
+<div class="line"><a id="l08137" name="l08137"></a><span class="lineno"> 8137</span>    merged = g_list_sort (merged, selection_compare_pages);</div>
+<div class="line"><a id="l08138" name="l08138"></a><span class="lineno"> 8138</span> </div>
+<div class="line"><a id="l08139" name="l08139"></a><span class="lineno"> 8139</span>    merge_selection_region (view, merged);</div>
+<div class="line"><a id="l08140" name="l08140"></a><span class="lineno"> 8140</span>}</div>
+</div>
+<div class="line"><a id="l08141" name="l08141"></a><span class="lineno"> 8141</span> </div>
+<div class="line"><a id="l08142" name="l08142"></a><span class="lineno"> 8142</span><span class="comment">/* Removes the selection on a single page, leaving any selection on other</span></div>
+<div class="line"><a id="l08143" name="l08143"></a><span class="lineno"> 8143</span><span class="comment"> * pages untouched. Returns FALSE if the given page had no selection. */</span></div>
+<div class="line"><a id="l08144" name="l08144"></a><span class="lineno"> 8144</span>gboolean</div>
+<div class="foldopen" id="foldopen08145" data-start="{" data-end="}">
+<div class="line"><a id="l08145" name="l08145"></a><span class="lineno"><a class="line" href="ev-view-private_8h.html#a38d042ab1bd6fede307f94e7cf56ec30"> 8145</a></span><a class="code hl_function" href="ev-view_8c.html#a38d042ab1bd6fede307f94e7cf56ec30">_ev_view_remove_page_selection</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view,</div>
+<div class="line"><a id="l08146" name="l08146"></a><span class="lineno"> 8146</span>                                gint    page)</div>
+<div class="line"><a id="l08147" name="l08147"></a><span class="lineno"> 8147</span>{</div>
+<div class="line"><a id="l08148" name="l08148"></a><span class="lineno"> 8148</span>    GList *new_list;</div>
+<div class="line"><a id="l08149" name="l08149"></a><span class="lineno"> 8149</span>    gboolean had_selection;</div>
 <div class="line"><a id="l08150" name="l08150"></a><span class="lineno"> 8150</span> </div>
-<div class="line"><a id="l08151" name="l08151"></a><span class="lineno"> 8151</span>    clear_selection (view);</div>
-<div class="line"><a id="l08152" name="l08152"></a><span class="lineno"> 8152</span>    clear_link_selected (view);</div>
-<div class="line"><a id="l08153" name="l08153"></a><span class="lineno"> 8153</span>}</div>
-<div class="line"><a id="l08154" name="l08154"></a><span class="lineno"> 8154</span> </div>
-<div class="line"><a id="l08155" name="l08155"></a><span class="lineno"> 8155</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08156" name="l08156"></a><span class="lineno"> 8156</span>ev_view_update_primary_selection (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *ev_view)</div>
-<div class="line"><a id="l08157" name="l08157"></a><span class="lineno"> 8157</span>{</div>
-<div class="line"><a id="l08158" name="l08158"></a><span class="lineno"> 8158</span>    GtkClipboard *clipboard;</div>
-<div class="line"><a id="l08159" name="l08159"></a><span class="lineno"> 8159</span> </div>
-<div class="line"><a id="l08160" name="l08160"></a><span class="lineno"> 8160</span>    clipboard = gtk_widget_get_clipboard (GTK_WIDGET (ev_view),</div>
-<div class="line"><a id="l08161" name="l08161"></a><span class="lineno"> 8161</span>                                              GDK_SELECTION_PRIMARY);</div>
-<div class="line"><a id="l08162" name="l08162"></a><span class="lineno"> 8162</span> </div>
-<div class="line"><a id="l08163" name="l08163"></a><span class="lineno"> 8163</span>    <span class="keywordflow">if</span> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a> || ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>) {</div>
-<div class="line"><a id="l08164" name="l08164"></a><span class="lineno"> 8164</span>                GtkTargetList *target_list;</div>
-<div class="line"><a id="l08165" name="l08165"></a><span class="lineno"> 8165</span>                GtkTargetEntry *targets;</div>
-<div class="line"><a id="l08166" name="l08166"></a><span class="lineno"> 8166</span>                <span class="keywordtype">int</span> n_targets;</div>
-<div class="line"><a id="l08167" name="l08167"></a><span class="lineno"> 8167</span> </div>
-<div class="line"><a id="l08168" name="l08168"></a><span class="lineno"> 8168</span>                target_list = gtk_target_list_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
-<div class="line"><a id="l08169" name="l08169"></a><span class="lineno"> 8169</span>                gtk_target_list_add_text_targets (target_list, 0);</div>
-<div class="line"><a id="l08170" name="l08170"></a><span class="lineno"> 8170</span>                targets = gtk_target_table_new_from_list (target_list, &amp;n_targets);</div>
-<div class="line"><a id="l08171" name="l08171"></a><span class="lineno"> 8171</span>                gtk_target_list_unref (target_list);</div>
+<div class="line"><a id="l08151" name="l08151"></a><span class="lineno"> 8151</span>    new_list = dup_selections_outside_range (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>,</div>
+<div class="line"><a id="l08152" name="l08152"></a><span class="lineno"> 8152</span>                         page, page, &amp;had_selection);</div>
+<div class="line"><a id="l08153" name="l08153"></a><span class="lineno"> 8153</span> </div>
+<div class="line"><a id="l08154" name="l08154"></a><span class="lineno"> 8154</span>    <span class="keywordflow">if</span> (!had_selection) {</div>
+<div class="line"><a id="l08155" name="l08155"></a><span class="lineno"> 8155</span>        g_list_free_full (new_list, (GDestroyNotify) selection_free);</div>
+<div class="line"><a id="l08156" name="l08156"></a><span class="lineno"> 8156</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l08157" name="l08157"></a><span class="lineno"> 8157</span>    }</div>
+<div class="line"><a id="l08158" name="l08158"></a><span class="lineno"> 8158</span> </div>
+<div class="line"><a id="l08159" name="l08159"></a><span class="lineno"> 8159</span>    merge_selection_region (view, g_list_reverse (new_list));</div>
+<div class="line"><a id="l08160" name="l08160"></a><span class="lineno"> 8160</span> </div>
+<div class="line"><a id="l08161" name="l08161"></a><span class="lineno"> 8161</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l08162" name="l08162"></a><span class="lineno"> 8162</span>}</div>
+</div>
+<div class="line"><a id="l08163" name="l08163"></a><span class="lineno"> 8163</span> </div>
+<div class="line"><a id="l08164" name="l08164"></a><span class="lineno"> 8164</span><span class="keyword">static</span> <span class="keywordtype">char</span> *</div>
+<div class="line"><a id="l08165" name="l08165"></a><span class="lineno"> 8165</span>get_selected_text (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08166" name="l08166"></a><span class="lineno"> 8166</span>{</div>
+<div class="line"><a id="l08167" name="l08167"></a><span class="lineno"> 8167</span>    GString *text;</div>
+<div class="line"><a id="l08168" name="l08168"></a><span class="lineno"> 8168</span>    GList *l;</div>
+<div class="line"><a id="l08169" name="l08169"></a><span class="lineno"> 8169</span>    gchar *normalized_text;</div>
+<div class="line"><a id="l08170" name="l08170"></a><span class="lineno"> 8170</span> </div>
+<div class="line"><a id="l08171" name="l08171"></a><span class="lineno"> 8171</span>    text = g_string_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l08172" name="l08172"></a><span class="lineno"> 8172</span> </div>
-<div class="line"><a id="l08173" name="l08173"></a><span class="lineno"> 8173</span>        <span class="keywordflow">if</span> (!gtk_clipboard_set_with_owner (clipboard,</div>
-<div class="line"><a id="l08174" name="l08174"></a><span class="lineno"> 8174</span>                           targets, n_targets,</div>
-<div class="line"><a id="l08175" name="l08175"></a><span class="lineno"> 8175</span>                           ev_view_primary_get_cb,</div>
-<div class="line"><a id="l08176" name="l08176"></a><span class="lineno"> 8176</span>                           ev_view_primary_clear_cb,</div>
-<div class="line"><a id="l08177" name="l08177"></a><span class="lineno"> 8177</span>                           G_OBJECT (ev_view)))</div>
-<div class="line"><a id="l08178" name="l08178"></a><span class="lineno"> 8178</span>            ev_view_primary_clear_cb (clipboard, ev_view);</div>
+<div class="line"><a id="l08173" name="l08173"></a><span class="lineno"> 8173</span>    <a class="code hl_function" href="ev-document_8c.html#aa7e208ba39b3be4715c7538faac3f224">ev_document_doc_mutex_lock</a> ();</div>
+<div class="line"><a id="l08174" name="l08174"></a><span class="lineno"> 8174</span> </div>
+<div class="line"><a id="l08175" name="l08175"></a><span class="lineno"> 8175</span>    <span class="keywordflow">for</span> (l = view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>; l != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>; l = l-&gt;next) {</div>
+<div class="line"><a id="l08176" name="l08176"></a><span class="lineno"> 8176</span>        <a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *selection = (<a class="code hl_struct" href="structEvViewSelection.html">EvViewSelection</a> *)l-&gt;data;</div>
+<div class="line"><a id="l08177" name="l08177"></a><span class="lineno"> 8177</span>        <a class="code hl_struct" href="struct__EvPage.html">EvPage</a> *page;</div>
+<div class="line"><a id="l08178" name="l08178"></a><span class="lineno"> 8178</span>        gchar *tmp;</div>
 <div class="line"><a id="l08179" name="l08179"></a><span class="lineno"> 8179</span> </div>
-<div class="line"><a id="l08180" name="l08180"></a><span class="lineno"> 8180</span>                gtk_target_table_free (targets, n_targets);</div>
-<div class="line"><a id="l08181" name="l08181"></a><span class="lineno"> 8181</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l08182" name="l08182"></a><span class="lineno"> 8182</span>        <span class="keywordflow">if</span> (gtk_clipboard_get_owner (clipboard) == G_OBJECT (ev_view))</div>
-<div class="line"><a id="l08183" name="l08183"></a><span class="lineno"> 8183</span>            gtk_clipboard_clear (clipboard);</div>
-<div class="line"><a id="l08184" name="l08184"></a><span class="lineno"> 8184</span>    }</div>
-<div class="line"><a id="l08185" name="l08185"></a><span class="lineno"> 8185</span>}</div>
-<div class="line"><a id="l08186" name="l08186"></a><span class="lineno"> 8186</span> </div>
-<div class="line"><a id="l08187" name="l08187"></a><span class="lineno"> 8187</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08188" name="l08188"></a><span class="lineno"> 8188</span>clear_link_selected (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08189" name="l08189"></a><span class="lineno"> 8189</span>{</div>
-<div class="line"><a id="l08190" name="l08190"></a><span class="lineno"> 8190</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>) {</div>
-<div class="line"><a id="l08191" name="l08191"></a><span class="lineno"> 8191</span>        g_object_unref (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>);</div>
-<div class="line"><a id="l08192" name="l08192"></a><span class="lineno"> 8192</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l08193" name="l08193"></a><span class="lineno"> 8193</span>    }</div>
+<div class="line"><a id="l08180" name="l08180"></a><span class="lineno"> 8180</span>        page = <a class="code hl_function" href="ev-document_8c.html#aae7e3de03c7a35d579ce6c5af6902a86">ev_document_get_page</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>, selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a5322908913911ac00dacb78d5b326fe4">page</a>);</div>
+<div class="line"><a id="l08181" name="l08181"></a><span class="lineno"> 8181</span>        tmp = <a class="code hl_function" href="ev-selection_8c.html#a0749686cbcb66fb546f72be4e89334b0">ev_selection_get_selected_text</a> (<a class="code hl_define" href="ev-selection_8h.html#a131a86072b56c1912bd59ecf880d0f5a">EV_SELECTION</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>),</div>
+<div class="line"><a id="l08182" name="l08182"></a><span class="lineno"> 8182</span>                              page, selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a08554f383a484a050099cd904883f736">style</a>,</div>
+<div class="line"><a id="l08183" name="l08183"></a><span class="lineno"> 8183</span>                              &amp;(selection-&gt;<a class="code hl_variable" href="structEvViewSelection.html#a4ca5ec33ae7ee1ebee96a34e2674ee9f">rect</a>));</div>
+<div class="line"><a id="l08184" name="l08184"></a><span class="lineno"> 8184</span>        g_object_unref (page);</div>
+<div class="line"><a id="l08185" name="l08185"></a><span class="lineno"> 8185</span>        g_string_append (text, tmp);</div>
+<div class="line"><a id="l08186" name="l08186"></a><span class="lineno"> 8186</span>        g_free (tmp);</div>
+<div class="line"><a id="l08187" name="l08187"></a><span class="lineno"> 8187</span>    }</div>
+<div class="line"><a id="l08188" name="l08188"></a><span class="lineno"> 8188</span> </div>
+<div class="line"><a id="l08189" name="l08189"></a><span class="lineno"> 8189</span>    <a class="code hl_function" href="ev-document_8c.html#aae33adc478ec91a4569bee55327e9e5f">ev_document_doc_mutex_unlock</a> ();</div>
+<div class="line"><a id="l08190" name="l08190"></a><span class="lineno"> 8190</span> </div>
+<div class="line"><a id="l08191" name="l08191"></a><span class="lineno"> 8191</span>    normalized_text = g_utf8_normalize (text-&gt;str, text-&gt;len, G_NORMALIZE_NFKC);</div>
+<div class="line"><a id="l08192" name="l08192"></a><span class="lineno"> 8192</span>    g_string_free (text, <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a id="l08193" name="l08193"></a><span class="lineno"> 8193</span>    <span class="keywordflow">return</span> normalized_text;</div>
 <div class="line"><a id="l08194" name="l08194"></a><span class="lineno"> 8194</span>}</div>
 <div class="line"><a id="l08195" name="l08195"></a><span class="lineno"> 8195</span> </div>
-<div class="line"><a id="l08196" name="l08196"></a><span class="lineno"> 8196</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08197" data-start="{" data-end="}">
-<div class="line"><a id="l08197" name="l08197"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799"> 8197</a></span><a class="code hl_function" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev_view_copy_link_address</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a>       *view,</div>
-<div class="line"><a id="l08198" name="l08198"></a><span class="lineno"> 8198</span>               <a class="code hl_typedef" href="ev-link-action_8h.html#a5b0f2d0f559fe200150cbdcddb3f8ad9">EvLinkAction</a> *<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>)</div>
+<div class="line"><a id="l08196" name="l08196"></a><span class="lineno"> 8196</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08197" name="l08197"></a><span class="lineno"> 8197</span>ev_view_clipboard_copy (<a class="code hl_struct" href="struct__EvView.html">EvView</a>      *view,</div>
+<div class="line"><a id="l08198" name="l08198"></a><span class="lineno"> 8198</span>            <span class="keyword">const</span> gchar *text)</div>
 <div class="line"><a id="l08199" name="l08199"></a><span class="lineno"> 8199</span>{</div>
-<div class="line"><a id="l08200" name="l08200"></a><span class="lineno"> 8200</span>    clear_link_selected (view);</div>
+<div class="line"><a id="l08200" name="l08200"></a><span class="lineno"> 8200</span>    GtkClipboard *clipboard;</div>
 <div class="line"><a id="l08201" name="l08201"></a><span class="lineno"> 8201</span> </div>
-<div class="line"><a id="l08202" name="l08202"></a><span class="lineno"> 8202</span>    ev_view_clipboard_copy (view, <a class="code hl_function" href="ev-link-action_8c.html#a47a443a3bee5b8a823e0455f389d6109">ev_link_action_get_uri</a> (<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>));</div>
-<div class="line"><a id="l08203" name="l08203"></a><span class="lineno"> 8203</span> </div>
-<div class="line"><a id="l08204" name="l08204"></a><span class="lineno"> 8204</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a> = g_object_ref (<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>);</div>
-<div class="line"><a id="l08205" name="l08205"></a><span class="lineno"> 8205</span>    ev_view_update_primary_selection (view);</div>
-<div class="line"><a id="l08206" name="l08206"></a><span class="lineno"> 8206</span>}</div>
+<div class="line"><a id="l08202" name="l08202"></a><span class="lineno"> 8202</span>    clipboard = gtk_widget_get_clipboard (GTK_WIDGET (view),</div>
+<div class="line"><a id="l08203" name="l08203"></a><span class="lineno"> 8203</span>                          GDK_SELECTION_CLIPBOARD);</div>
+<div class="line"><a id="l08204" name="l08204"></a><span class="lineno"> 8204</span>    gtk_clipboard_set_text (clipboard, text, -1);</div>
+<div class="line"><a id="l08205" name="l08205"></a><span class="lineno"> 8205</span>}</div>
+<div class="line"><a id="l08206" name="l08206"></a><span class="lineno"> 8206</span> </div>
+<div class="line"><a id="l08207" name="l08207"></a><span class="lineno"> 8207</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08208" data-start="{" data-end="}">
+<div class="line"><a id="l08208" name="l08208"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5"> 8208</a></span><a class="code hl_function" href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5">ev_view_copy</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *ev_view)</div>
+<div class="line"><a id="l08209" name="l08209"></a><span class="lineno"> 8209</span>{</div>
+<div class="line"><a id="l08210" name="l08210"></a><span class="lineno"> 8210</span>    <span class="keywordtype">char</span> *text;</div>
+<div class="line"><a id="l08211" name="l08211"></a><span class="lineno"> 8211</span> </div>
+<div class="line"><a id="l08212" name="l08212"></a><span class="lineno"> 8212</span>    <span class="keywordflow">if</span> (!<a class="code hl_define" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>))</div>
+<div class="line"><a id="l08213" name="l08213"></a><span class="lineno"> 8213</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l08214" name="l08214"></a><span class="lineno"> 8214</span> </div>
+<div class="line"><a id="l08215" name="l08215"></a><span class="lineno"> 8215</span>    text = get_selected_text (ev_view);</div>
+<div class="line"><a id="l08216" name="l08216"></a><span class="lineno"> 8216</span>    ev_view_clipboard_copy (ev_view, text);</div>
+<div class="line"><a id="l08217" name="l08217"></a><span class="lineno"> 8217</span>    g_free (text);</div>
+<div class="line"><a id="l08218" name="l08218"></a><span class="lineno"> 8218</span>}</div>
 </div>
-<div class="line"><a id="l08207" name="l08207"></a><span class="lineno"> 8207</span> </div>
-<div class="line"><a id="l08208" name="l08208"></a><span class="lineno"> 8208</span><span class="comment">/*** Cursor operations ***/</span></div>
-<div class="line"><a id="l08209" name="l08209"></a><span class="lineno"> 8209</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l08210" name="l08210"></a><span class="lineno"> 8210</span>ev_view_set_cursor (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view, <a class="code hl_enumeration" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bf">EvViewCursor</a> new_cursor)</div>
-<div class="line"><a id="l08211" name="l08211"></a><span class="lineno"> 8211</span>{</div>
-<div class="line"><a id="l08212" name="l08212"></a><span class="lineno"> 8212</span>    GdkDisplay *display;</div>
-<div class="line"><a id="l08213" name="l08213"></a><span class="lineno"> 8213</span>    GdkCursor *cursor = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a id="l08214" name="l08214"></a><span class="lineno"> 8214</span>    GtkWidget *widget;</div>
-<div class="line"><a id="l08215" name="l08215"></a><span class="lineno"> 8215</span>    GdkWindow *bin_window;</div>
-<div class="line"><a id="l08216" name="l08216"></a><span class="lineno"> 8216</span> </div>
-<div class="line"><a id="l08217" name="l08217"></a><span class="lineno"> 8217</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a97ac215d3beaf1b6b5fc1fd74c4989c7">cursor</a> == new_cursor) {</div>
-<div class="line"><a id="l08218" name="l08218"></a><span class="lineno"> 8218</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l08219" name="l08219"></a><span class="lineno"> 8219</span>    }</div>
-<div class="line"><a id="l08220" name="l08220"></a><span class="lineno"> 8220</span> </div>
-<div class="line"><a id="l08221" name="l08221"></a><span class="lineno"> 8221</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#a97ac215d3beaf1b6b5fc1fd74c4989c7">cursor</a> = new_cursor;</div>
-<div class="line"><a id="l08222" name="l08222"></a><span class="lineno"> 8222</span> </div>
-<div class="line"><a id="l08223" name="l08223"></a><span class="lineno"> 8223</span>    bin_window = gtk_widget_get_window (GTK_WIDGET (view));</div>
-<div class="line"><a id="l08224" name="l08224"></a><span class="lineno"> 8224</span>    widget = gtk_widget_get_toplevel (GTK_WIDGET (view));</div>
-<div class="line"><a id="l08225" name="l08225"></a><span class="lineno"> 8225</span>    display = gtk_widget_get_display (widget);</div>
-<div class="line"><a id="l08226" name="l08226"></a><span class="lineno"> 8226</span>    cursor = <a class="code hl_function" href="ev-view-cursor_8c.html#a7975912778dd7e651079615e70691dfe">ev_view_cursor_new</a> (display, new_cursor);</div>
-<div class="line"><a id="l08227" name="l08227"></a><span class="lineno"> 8227</span>    gdk_window_set_cursor (bin_window, cursor);</div>
-<div class="line"><a id="l08228" name="l08228"></a><span class="lineno"> 8228</span>    gdk_display_flush (display);</div>
-<div class="line"><a id="l08229" name="l08229"></a><span class="lineno"> 8229</span>    <span class="keywordflow">if</span> (cursor)</div>
-<div class="line"><a id="l08230" name="l08230"></a><span class="lineno"> 8230</span>        g_object_unref (cursor);</div>
-<div class="line"><a id="l08231" name="l08231"></a><span class="lineno"> 8231</span>}</div>
-<div class="line"><a id="l08232" name="l08232"></a><span class="lineno"> 8232</span> </div>
-<div class="line"><a id="l08233" name="l08233"></a><span class="lineno"> 8233</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08234" data-start="{" data-end="}">
-<div class="line"><a id="l08234" name="l08234"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ac675e02944a882f358ca2d4cddc83959"> 8234</a></span><a class="code hl_function" href="ev-view_8c.html#ac675e02944a882f358ca2d4cddc83959">ev_view_hide_cursor</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08235" name="l08235"></a><span class="lineno"> 8235</span>{</div>
-<div class="line"><a id="l08236" name="l08236"></a><span class="lineno"> 8236</span>       ev_view_set_cursor (view, <a class="code hl_enumvalue" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bfa882a22269a10d4bb4176fc0d8ad72617">EV_VIEW_CURSOR_HIDDEN</a>);</div>
-<div class="line"><a id="l08237" name="l08237"></a><span class="lineno"> 8237</span>}</div>
-</div>
-<div class="line"><a id="l08238" name="l08238"></a><span class="lineno"> 8238</span> </div>
-<div class="line"><a id="l08239" name="l08239"></a><span class="lineno"> 8239</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08240" data-start="{" data-end="}">
-<div class="line"><a id="l08240" name="l08240"></a><span class="lineno"><a class="line" href="ev-view_8c.html#af091740db5de01330541f99414c1b1a2"> 8240</a></span><a class="code hl_function" href="ev-view_8c.html#af091740db5de01330541f99414c1b1a2">ev_view_show_cursor</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08241" name="l08241"></a><span class="lineno"> 8241</span>{</div>
-<div class="line"><a id="l08242" name="l08242"></a><span class="lineno"> 8242</span>       ev_view_set_cursor (view, <a class="code hl_enumvalue" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bfa96c7298304eb5aa1b86f197ce6279e32">EV_VIEW_CURSOR_NORMAL</a>);</div>
-<div class="line"><a id="l08243" name="l08243"></a><span class="lineno"> 8243</span>}</div>
-</div>
-<div class="line"><a id="l08244" name="l08244"></a><span class="lineno"> 8244</span> </div>
-<div class="line"><a id="l08245" name="l08245"></a><span class="lineno"> 8245</span>gboolean</div>
-<div class="foldopen" id="foldopen08246" data-start="{" data-end="}">
-<div class="line"><a id="l08246" name="l08246"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de"> 8246</a></span><a class="code hl_function" href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de">ev_view_next_page</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08219" name="l08219"></a><span class="lineno"> 8219</span> </div>
+<div class="line"><a id="l08220" name="l08220"></a><span class="lineno"> 8220</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08221" name="l08221"></a><span class="lineno"> 8221</span>ev_view_primary_get_cb (GtkClipboard     *clipboard,</div>
+<div class="line"><a id="l08222" name="l08222"></a><span class="lineno"> 8222</span>            GtkSelectionData *selection_data,</div>
+<div class="line"><a id="l08223" name="l08223"></a><span class="lineno"> 8223</span>            guint             info,</div>
+<div class="line"><a id="l08224" name="l08224"></a><span class="lineno"> 8224</span>            gpointer          <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
+<div class="line"><a id="l08225" name="l08225"></a><span class="lineno"> 8225</span>{</div>
+<div class="line"><a id="l08226" name="l08226"></a><span class="lineno"> 8226</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *ev_view = <a class="code hl_define" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
+<div class="line"><a id="l08227" name="l08227"></a><span class="lineno"> 8227</span> </div>
+<div class="line"><a id="l08228" name="l08228"></a><span class="lineno"> 8228</span>    <span class="keywordflow">if</span> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>) {</div>
+<div class="line"><a id="l08229" name="l08229"></a><span class="lineno"> 8229</span>        gtk_selection_data_set_text (selection_data,</div>
+<div class="line"><a id="l08230" name="l08230"></a><span class="lineno"> 8230</span>                         <a class="code hl_function" href="ev-link-action_8c.html#a47a443a3bee5b8a823e0455f389d6109">ev_link_action_get_uri</a> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>),</div>
+<div class="line"><a id="l08231" name="l08231"></a><span class="lineno"> 8231</span>                         -1);</div>
+<div class="line"><a id="l08232" name="l08232"></a><span class="lineno"> 8232</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_define" href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a860c034de5e2083433783d6d2a045aa8">document</a>) &amp;&amp;</div>
+<div class="line"><a id="l08233" name="l08233"></a><span class="lineno"> 8233</span>           ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a>) {</div>
+<div class="line"><a id="l08234" name="l08234"></a><span class="lineno"> 8234</span>        gchar *text;</div>
+<div class="line"><a id="l08235" name="l08235"></a><span class="lineno"> 8235</span> </div>
+<div class="line"><a id="l08236" name="l08236"></a><span class="lineno"> 8236</span>        text = get_selected_text (ev_view);</div>
+<div class="line"><a id="l08237" name="l08237"></a><span class="lineno"> 8237</span>        <span class="keywordflow">if</span> (text) {</div>
+<div class="line"><a id="l08238" name="l08238"></a><span class="lineno"> 8238</span>            gtk_selection_data_set_text (selection_data, text, -1);</div>
+<div class="line"><a id="l08239" name="l08239"></a><span class="lineno"> 8239</span>            g_free (text);</div>
+<div class="line"><a id="l08240" name="l08240"></a><span class="lineno"> 8240</span>        }</div>
+<div class="line"><a id="l08241" name="l08241"></a><span class="lineno"> 8241</span>    }</div>
+<div class="line"><a id="l08242" name="l08242"></a><span class="lineno"> 8242</span>}</div>
+<div class="line"><a id="l08243" name="l08243"></a><span class="lineno"> 8243</span> </div>
+<div class="line"><a id="l08244" name="l08244"></a><span class="lineno"> 8244</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08245" name="l08245"></a><span class="lineno"> 8245</span>ev_view_primary_clear_cb (GtkClipboard *clipboard,</div>
+<div class="line"><a id="l08246" name="l08246"></a><span class="lineno"> 8246</span>              gpointer      <a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>)</div>
 <div class="line"><a id="l08247" name="l08247"></a><span class="lineno"> 8247</span>{</div>
-<div class="line"><a id="l08248" name="l08248"></a><span class="lineno"> 8248</span>    gint next_page;</div>
+<div class="line"><a id="l08248" name="l08248"></a><span class="lineno"> 8248</span>    <a class="code hl_struct" href="struct__EvView.html">EvView</a> *view = <a class="code hl_define" href="ev-view_8h.html#ae0f841ff23098797bd55cde4b71fe285">EV_VIEW</a> (<a class="code hl_variable" href="mdm-signal-handler_8h.html#a10fb496e4431487bd53ab5a192614a0e">data</a>);</div>
 <div class="line"><a id="l08249" name="l08249"></a><span class="lineno"> 8249</span> </div>
-<div class="line"><a id="l08250" name="l08250"></a><span class="lineno"> 8250</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l08251" name="l08251"></a><span class="lineno"> 8251</span> </div>
-<div class="line"><a id="l08252" name="l08252"></a><span class="lineno"> 8252</span>    next_page = go_to_next_page (view, view-&gt;<a class="code hl_variable" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
-<div class="line"><a id="l08253" name="l08253"></a><span class="lineno"> 8253</span>    <span class="keywordflow">if</span> (next_page == -1)</div>
-<div class="line"><a id="l08254" name="l08254"></a><span class="lineno"> 8254</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l08255" name="l08255"></a><span class="lineno"> 8255</span> </div>
-<div class="line"><a id="l08256" name="l08256"></a><span class="lineno"> 8256</span>    <a class="code hl_function" href="ev-document-model_8c.html#aefb8a0c3006b87f15bbcfab2186c61e5">ev_document_model_set_page</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>, next_page);</div>
-<div class="line"><a id="l08257" name="l08257"></a><span class="lineno"> 8257</span> </div>
-<div class="line"><a id="l08258" name="l08258"></a><span class="lineno"> 8258</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l08259" name="l08259"></a><span class="lineno"> 8259</span>}</div>
-</div>
-<div class="line"><a id="l08260" name="l08260"></a><span class="lineno"> 8260</span> </div>
-<div class="line"><a id="l08261" name="l08261"></a><span class="lineno"> 8261</span>gboolean</div>
-<div class="foldopen" id="foldopen08262" data-start="{" data-end="}">
-<div class="line"><a id="l08262" name="l08262"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241"> 8262</a></span><a class="code hl_function" href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241">ev_view_previous_page</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08263" name="l08263"></a><span class="lineno"> 8263</span>{</div>
-<div class="line"><a id="l08264" name="l08264"></a><span class="lineno"> 8264</span>    gint prev_page;</div>
-<div class="line"><a id="l08265" name="l08265"></a><span class="lineno"> 8265</span> </div>
-<div class="line"><a id="l08266" name="l08266"></a><span class="lineno"> 8266</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l08267" name="l08267"></a><span class="lineno"> 8267</span> </div>
-<div class="line"><a id="l08268" name="l08268"></a><span class="lineno"> 8268</span>    prev_page = go_to_previous_page (view, view-&gt;<a class="code hl_variable" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
-<div class="line"><a id="l08269" name="l08269"></a><span class="lineno"> 8269</span>    <span class="keywordflow">if</span> (prev_page == -1)</div>
-<div class="line"><a id="l08270" name="l08270"></a><span class="lineno"> 8270</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l08250" name="l08250"></a><span class="lineno"> 8250</span>    clear_selection (view);</div>
+<div class="line"><a id="l08251" name="l08251"></a><span class="lineno"> 8251</span>    clear_link_selected (view);</div>
+<div class="line"><a id="l08252" name="l08252"></a><span class="lineno"> 8252</span>}</div>
+<div class="line"><a id="l08253" name="l08253"></a><span class="lineno"> 8253</span> </div>
+<div class="line"><a id="l08254" name="l08254"></a><span class="lineno"> 8254</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08255" name="l08255"></a><span class="lineno"> 8255</span>ev_view_update_primary_selection (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *ev_view)</div>
+<div class="line"><a id="l08256" name="l08256"></a><span class="lineno"> 8256</span>{</div>
+<div class="line"><a id="l08257" name="l08257"></a><span class="lineno"> 8257</span>    GtkClipboard *clipboard;</div>
+<div class="line"><a id="l08258" name="l08258"></a><span class="lineno"> 8258</span> </div>
+<div class="line"><a id="l08259" name="l08259"></a><span class="lineno"> 8259</span>    clipboard = gtk_widget_get_clipboard (GTK_WIDGET (ev_view),</div>
+<div class="line"><a id="l08260" name="l08260"></a><span class="lineno"> 8260</span>                                              GDK_SELECTION_PRIMARY);</div>
+<div class="line"><a id="l08261" name="l08261"></a><span class="lineno"> 8261</span> </div>
+<div class="line"><a id="l08262" name="l08262"></a><span class="lineno"> 8262</span>    <span class="keywordflow">if</span> (ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a9ced7c8944176b6a5bdf53758f6d7259">selection_info</a>.<a class="code hl_variable" href="structSelectionInfo.html#a2457bfb29b4f02dc3d4b7ccf50db7a81">selections</a> || ev_view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>) {</div>
+<div class="line"><a id="l08263" name="l08263"></a><span class="lineno"> 8263</span>                GtkTargetList *target_list;</div>
+<div class="line"><a id="l08264" name="l08264"></a><span class="lineno"> 8264</span>                GtkTargetEntry *targets;</div>
+<div class="line"><a id="l08265" name="l08265"></a><span class="lineno"> 8265</span>                <span class="keywordtype">int</span> n_targets;</div>
+<div class="line"><a id="l08266" name="l08266"></a><span class="lineno"> 8266</span> </div>
+<div class="line"><a id="l08267" name="l08267"></a><span class="lineno"> 8267</span>                target_list = gtk_target_list_new (<a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, 0);</div>
+<div class="line"><a id="l08268" name="l08268"></a><span class="lineno"> 8268</span>                gtk_target_list_add_text_targets (target_list, 0);</div>
+<div class="line"><a id="l08269" name="l08269"></a><span class="lineno"> 8269</span>                targets = gtk_target_table_new_from_list (target_list, &amp;n_targets);</div>
+<div class="line"><a id="l08270" name="l08270"></a><span class="lineno"> 8270</span>                gtk_target_list_unref (target_list);</div>
 <div class="line"><a id="l08271" name="l08271"></a><span class="lineno"> 8271</span> </div>
-<div class="line"><a id="l08272" name="l08272"></a><span class="lineno"> 8272</span>    <a class="code hl_function" href="ev-document-model_8c.html#aefb8a0c3006b87f15bbcfab2186c61e5">ev_document_model_set_page</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>, prev_page);</div>
-<div class="line"><a id="l08273" name="l08273"></a><span class="lineno"> 8273</span> </div>
-<div class="line"><a id="l08274" name="l08274"></a><span class="lineno"> 8274</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l08275" name="l08275"></a><span class="lineno"> 8275</span>}</div>
+<div class="line"><a id="l08272" name="l08272"></a><span class="lineno"> 8272</span>        <span class="keywordflow">if</span> (!gtk_clipboard_set_with_owner (clipboard,</div>
+<div class="line"><a id="l08273" name="l08273"></a><span class="lineno"> 8273</span>                           targets, n_targets,</div>
+<div class="line"><a id="l08274" name="l08274"></a><span class="lineno"> 8274</span>                           ev_view_primary_get_cb,</div>
+<div class="line"><a id="l08275" name="l08275"></a><span class="lineno"> 8275</span>                           ev_view_primary_clear_cb,</div>
+<div class="line"><a id="l08276" name="l08276"></a><span class="lineno"> 8276</span>                           G_OBJECT (ev_view)))</div>
+<div class="line"><a id="l08277" name="l08277"></a><span class="lineno"> 8277</span>            ev_view_primary_clear_cb (clipboard, ev_view);</div>
+<div class="line"><a id="l08278" name="l08278"></a><span class="lineno"> 8278</span> </div>
+<div class="line"><a id="l08279" name="l08279"></a><span class="lineno"> 8279</span>                gtk_target_table_free (targets, n_targets);</div>
+<div class="line"><a id="l08280" name="l08280"></a><span class="lineno"> 8280</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l08281" name="l08281"></a><span class="lineno"> 8281</span>        <span class="keywordflow">if</span> (gtk_clipboard_get_owner (clipboard) == G_OBJECT (ev_view))</div>
+<div class="line"><a id="l08282" name="l08282"></a><span class="lineno"> 8282</span>            gtk_clipboard_clear (clipboard);</div>
+<div class="line"><a id="l08283" name="l08283"></a><span class="lineno"> 8283</span>    }</div>
+<div class="line"><a id="l08284" name="l08284"></a><span class="lineno"> 8284</span>}</div>
+<div class="line"><a id="l08285" name="l08285"></a><span class="lineno"> 8285</span> </div>
+<div class="line"><a id="l08286" name="l08286"></a><span class="lineno"> 8286</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08287" name="l08287"></a><span class="lineno"> 8287</span>clear_link_selected (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08288" name="l08288"></a><span class="lineno"> 8288</span>{</div>
+<div class="line"><a id="l08289" name="l08289"></a><span class="lineno"> 8289</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>) {</div>
+<div class="line"><a id="l08290" name="l08290"></a><span class="lineno"> 8290</span>        g_object_unref (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a>);</div>
+<div class="line"><a id="l08291" name="l08291"></a><span class="lineno"> 8291</span>        view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a> = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l08292" name="l08292"></a><span class="lineno"> 8292</span>    }</div>
+<div class="line"><a id="l08293" name="l08293"></a><span class="lineno"> 8293</span>}</div>
+<div class="line"><a id="l08294" name="l08294"></a><span class="lineno"> 8294</span> </div>
+<div class="line"><a id="l08295" name="l08295"></a><span class="lineno"> 8295</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08296" data-start="{" data-end="}">
+<div class="line"><a id="l08296" name="l08296"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799"> 8296</a></span><a class="code hl_function" href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev_view_copy_link_address</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a>       *view,</div>
+<div class="line"><a id="l08297" name="l08297"></a><span class="lineno"> 8297</span>               <a class="code hl_typedef" href="ev-link-action_8h.html#a5b0f2d0f559fe200150cbdcddb3f8ad9">EvLinkAction</a> *<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>)</div>
+<div class="line"><a id="l08298" name="l08298"></a><span class="lineno"> 8298</span>{</div>
+<div class="line"><a id="l08299" name="l08299"></a><span class="lineno"> 8299</span>    clear_link_selected (view);</div>
+<div class="line"><a id="l08300" name="l08300"></a><span class="lineno"> 8300</span> </div>
+<div class="line"><a id="l08301" name="l08301"></a><span class="lineno"> 8301</span>    ev_view_clipboard_copy (view, <a class="code hl_function" href="ev-link-action_8c.html#a47a443a3bee5b8a823e0455f389d6109">ev_link_action_get_uri</a> (<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>));</div>
+<div class="line"><a id="l08302" name="l08302"></a><span class="lineno"> 8302</span> </div>
+<div class="line"><a id="l08303" name="l08303"></a><span class="lineno"> 8303</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#a2413470d5e984389e6e37f5affde8f90">link_selected</a> = g_object_ref (<a class="code hl_variable" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>);</div>
+<div class="line"><a id="l08304" name="l08304"></a><span class="lineno"> 8304</span>    ev_view_update_primary_selection (view);</div>
+<div class="line"><a id="l08305" name="l08305"></a><span class="lineno"> 8305</span>}</div>
 </div>
-<div class="line"><a id="l08276" name="l08276"></a><span class="lineno"> 8276</span> </div>
-<div class="line"><a id="l08284" name="l08284"></a><span class="lineno"> 8284</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08285" data-start="{" data-end="}">
-<div class="line"><a id="l08285" name="l08285"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ad94cb097e34ad25bde2ab1e05a57a3f3"> 8285</a></span><a class="code hl_function" href="ev-view_8c.html#ad94cb097e34ad25bde2ab1e05a57a3f3">ev_view_disconnect_handlers</a>(<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08286" name="l08286"></a><span class="lineno"> 8286</span>{</div>
-<div class="line"><a id="l08287" name="l08287"></a><span class="lineno"> 8287</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08288" name="l08288"></a><span class="lineno"> 8288</span>                         G_CALLBACK (ev_view_rotation_changed_cb),</div>
-<div class="line"><a id="l08289" name="l08289"></a><span class="lineno"> 8289</span>                         view);</div>
-<div class="line"><a id="l08290" name="l08290"></a><span class="lineno"> 8290</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08291" name="l08291"></a><span class="lineno"> 8291</span>                         G_CALLBACK (ev_view_inverted_colors_changed_cb),</div>
-<div class="line"><a id="l08292" name="l08292"></a><span class="lineno"> 8292</span>                         view);</div>
-<div class="line"><a id="l08293" name="l08293"></a><span class="lineno"> 8293</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08294" name="l08294"></a><span class="lineno"> 8294</span>                         G_CALLBACK (ev_view_sizing_mode_changed_cb),</div>
-<div class="line"><a id="l08295" name="l08295"></a><span class="lineno"> 8295</span>                         view);</div>
-<div class="line"><a id="l08296" name="l08296"></a><span class="lineno"> 8296</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08297" name="l08297"></a><span class="lineno"> 8297</span>                         G_CALLBACK (ev_view_page_layout_changed_cb),</div>
-<div class="line"><a id="l08298" name="l08298"></a><span class="lineno"> 8298</span>                         view);</div>
-<div class="line"><a id="l08299" name="l08299"></a><span class="lineno"> 8299</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08300" name="l08300"></a><span class="lineno"> 8300</span>                         G_CALLBACK (ev_view_scale_changed_cb),</div>
-<div class="line"><a id="l08301" name="l08301"></a><span class="lineno"> 8301</span>                         view);</div>
-<div class="line"><a id="l08302" name="l08302"></a><span class="lineno"> 8302</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08303" name="l08303"></a><span class="lineno"> 8303</span>                         G_CALLBACK (ev_view_continuous_changed_cb),</div>
-<div class="line"><a id="l08304" name="l08304"></a><span class="lineno"> 8304</span>                         view);</div>
-<div class="line"><a id="l08305" name="l08305"></a><span class="lineno"> 8305</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08306" name="l08306"></a><span class="lineno"> 8306</span>                         G_CALLBACK (ev_view_fullscreen_changed_cb),</div>
-<div class="line"><a id="l08307" name="l08307"></a><span class="lineno"> 8307</span>                         view);</div>
-<div class="line"><a id="l08308" name="l08308"></a><span class="lineno"> 8308</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08309" name="l08309"></a><span class="lineno"> 8309</span>                         G_CALLBACK (ev_view_page_changed_cb),</div>
-<div class="line"><a id="l08310" name="l08310"></a><span class="lineno"> 8310</span>                         view);</div>
-<div class="line"><a id="l08311" name="l08311"></a><span class="lineno"> 8311</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
-<div class="line"><a id="l08312" name="l08312"></a><span class="lineno"> 8312</span>                         G_CALLBACK (ev_view_document_changed_cb),</div>
-<div class="line"><a id="l08313" name="l08313"></a><span class="lineno"> 8313</span>                         view);</div>
-<div class="line"><a id="l08314" name="l08314"></a><span class="lineno"> 8314</span>}</div>
-</div>
+<div class="line"><a id="l08306" name="l08306"></a><span class="lineno"> 8306</span> </div>
+<div class="line"><a id="l08307" name="l08307"></a><span class="lineno"> 8307</span><span class="comment">/*** Cursor operations ***/</span></div>
+<div class="line"><a id="l08308" name="l08308"></a><span class="lineno"> 8308</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l08309" name="l08309"></a><span class="lineno"> 8309</span>ev_view_set_cursor (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view, <a class="code hl_enumeration" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bf">EvViewCursor</a> new_cursor)</div>
+<div class="line"><a id="l08310" name="l08310"></a><span class="lineno"> 8310</span>{</div>
+<div class="line"><a id="l08311" name="l08311"></a><span class="lineno"> 8311</span>    GdkDisplay *display;</div>
+<div class="line"><a id="l08312" name="l08312"></a><span class="lineno"> 8312</span>    GdkCursor *cursor = <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a id="l08313" name="l08313"></a><span class="lineno"> 8313</span>    GtkWidget *widget;</div>
+<div class="line"><a id="l08314" name="l08314"></a><span class="lineno"> 8314</span>    GdkWindow *bin_window;</div>
 <div class="line"><a id="l08315" name="l08315"></a><span class="lineno"> 8315</span> </div>
-<div class="line"><a id="l08316" name="l08316"></a><span class="lineno"> 8316</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen08317" data-start="{" data-end="}">
-<div class="line"><a id="l08317" name="l08317"></a><span class="lineno"><a class="line" href="ev-view_8c.html#aa2e1feaf9cb8a9db2f6c57aa01c31614"> 8317</a></span><a class="code hl_function" href="ev-view_8c.html#aa2e1feaf9cb8a9db2f6c57aa01c31614">ev_view_set_allow_links_change_zoom</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view, gboolean allowed)</div>
-<div class="line"><a id="l08318" name="l08318"></a><span class="lineno"> 8318</span>{</div>
-<div class="line"><a id="l08319" name="l08319"></a><span class="lineno"> 8319</span>    g_return_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view));</div>
-<div class="line"><a id="l08320" name="l08320"></a><span class="lineno"> 8320</span> </div>
-<div class="line"><a id="l08321" name="l08321"></a><span class="lineno"> 8321</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e">allow_links_change_zoom</a> = allowed;</div>
-<div class="line"><a id="l08322" name="l08322"></a><span class="lineno"> 8322</span>}</div>
-</div>
-<div class="line"><a id="l08323" name="l08323"></a><span class="lineno"> 8323</span> </div>
-<div class="line"><a id="l08324" name="l08324"></a><span class="lineno"> 8324</span>gboolean</div>
-<div class="foldopen" id="foldopen08325" data-start="{" data-end="}">
-<div class="line"><a id="l08325" name="l08325"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ab7548a5d1d76f8d28bc9b6b646f19bba"> 8325</a></span><a class="code hl_function" href="ev-view_8c.html#ab7548a5d1d76f8d28bc9b6b646f19bba">ev_view_get_allow_links_change_zoom</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
-<div class="line"><a id="l08326" name="l08326"></a><span class="lineno"> 8326</span>{</div>
-<div class="line"><a id="l08327" name="l08327"></a><span class="lineno"> 8327</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l08328" name="l08328"></a><span class="lineno"> 8328</span> </div>
-<div class="line"><a id="l08329" name="l08329"></a><span class="lineno"> 8329</span>    <span class="keywordflow">return</span> view-&gt;<a class="code hl_variable" href="struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e">allow_links_change_zoom</a>;</div>
+<div class="line"><a id="l08316" name="l08316"></a><span class="lineno"> 8316</span>    <span class="keywordflow">if</span> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a97ac215d3beaf1b6b5fc1fd74c4989c7">cursor</a> == new_cursor) {</div>
+<div class="line"><a id="l08317" name="l08317"></a><span class="lineno"> 8317</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l08318" name="l08318"></a><span class="lineno"> 8318</span>    }</div>
+<div class="line"><a id="l08319" name="l08319"></a><span class="lineno"> 8319</span> </div>
+<div class="line"><a id="l08320" name="l08320"></a><span class="lineno"> 8320</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#a97ac215d3beaf1b6b5fc1fd74c4989c7">cursor</a> = new_cursor;</div>
+<div class="line"><a id="l08321" name="l08321"></a><span class="lineno"> 8321</span> </div>
+<div class="line"><a id="l08322" name="l08322"></a><span class="lineno"> 8322</span>    bin_window = gtk_widget_get_window (GTK_WIDGET (view));</div>
+<div class="line"><a id="l08323" name="l08323"></a><span class="lineno"> 8323</span>    widget = gtk_widget_get_toplevel (GTK_WIDGET (view));</div>
+<div class="line"><a id="l08324" name="l08324"></a><span class="lineno"> 8324</span>    display = gtk_widget_get_display (widget);</div>
+<div class="line"><a id="l08325" name="l08325"></a><span class="lineno"> 8325</span>    cursor = <a class="code hl_function" href="ev-view-cursor_8c.html#a7975912778dd7e651079615e70691dfe">ev_view_cursor_new</a> (display, new_cursor);</div>
+<div class="line"><a id="l08326" name="l08326"></a><span class="lineno"> 8326</span>    gdk_window_set_cursor (bin_window, cursor);</div>
+<div class="line"><a id="l08327" name="l08327"></a><span class="lineno"> 8327</span>    gdk_display_flush (display);</div>
+<div class="line"><a id="l08328" name="l08328"></a><span class="lineno"> 8328</span>    <span class="keywordflow">if</span> (cursor)</div>
+<div class="line"><a id="l08329" name="l08329"></a><span class="lineno"> 8329</span>        g_object_unref (cursor);</div>
 <div class="line"><a id="l08330" name="l08330"></a><span class="lineno"> 8330</span>}</div>
+<div class="line"><a id="l08331" name="l08331"></a><span class="lineno"> 8331</span> </div>
+<div class="line"><a id="l08332" name="l08332"></a><span class="lineno"> 8332</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08333" data-start="{" data-end="}">
+<div class="line"><a id="l08333" name="l08333"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ac675e02944a882f358ca2d4cddc83959"> 8333</a></span><a class="code hl_function" href="ev-view_8c.html#ac675e02944a882f358ca2d4cddc83959">ev_view_hide_cursor</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08334" name="l08334"></a><span class="lineno"> 8334</span>{</div>
+<div class="line"><a id="l08335" name="l08335"></a><span class="lineno"> 8335</span>       ev_view_set_cursor (view, <a class="code hl_enumvalue" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bfa882a22269a10d4bb4176fc0d8ad72617">EV_VIEW_CURSOR_HIDDEN</a>);</div>
+<div class="line"><a id="l08336" name="l08336"></a><span class="lineno"> 8336</span>}</div>
+</div>
+<div class="line"><a id="l08337" name="l08337"></a><span class="lineno"> 8337</span> </div>
+<div class="line"><a id="l08338" name="l08338"></a><span class="lineno"> 8338</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08339" data-start="{" data-end="}">
+<div class="line"><a id="l08339" name="l08339"></a><span class="lineno"><a class="line" href="ev-view_8c.html#af091740db5de01330541f99414c1b1a2"> 8339</a></span><a class="code hl_function" href="ev-view_8c.html#af091740db5de01330541f99414c1b1a2">ev_view_show_cursor</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08340" name="l08340"></a><span class="lineno"> 8340</span>{</div>
+<div class="line"><a id="l08341" name="l08341"></a><span class="lineno"> 8341</span>       ev_view_set_cursor (view, <a class="code hl_enumvalue" href="ev-view-cursor_8h.html#af392f0abfcc82c30f9307df8e36402bfa96c7298304eb5aa1b86f197ce6279e32">EV_VIEW_CURSOR_NORMAL</a>);</div>
+<div class="line"><a id="l08342" name="l08342"></a><span class="lineno"> 8342</span>}</div>
+</div>
+<div class="line"><a id="l08343" name="l08343"></a><span class="lineno"> 8343</span> </div>
+<div class="line"><a id="l08344" name="l08344"></a><span class="lineno"> 8344</span>gboolean</div>
+<div class="foldopen" id="foldopen08345" data-start="{" data-end="}">
+<div class="line"><a id="l08345" name="l08345"></a><span class="lineno"><a class="line" href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de"> 8345</a></span><a class="code hl_function" href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de">ev_view_next_page</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08346" name="l08346"></a><span class="lineno"> 8346</span>{</div>
+<div class="line"><a id="l08347" name="l08347"></a><span class="lineno"> 8347</span>    gint next_page;</div>
+<div class="line"><a id="l08348" name="l08348"></a><span class="lineno"> 8348</span> </div>
+<div class="line"><a id="l08349" name="l08349"></a><span class="lineno"> 8349</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l08350" name="l08350"></a><span class="lineno"> 8350</span> </div>
+<div class="line"><a id="l08351" name="l08351"></a><span class="lineno"> 8351</span>    next_page = go_to_next_page (view, view-&gt;<a class="code hl_variable" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
+<div class="line"><a id="l08352" name="l08352"></a><span class="lineno"> 8352</span>    <span class="keywordflow">if</span> (next_page == -1)</div>
+<div class="line"><a id="l08353" name="l08353"></a><span class="lineno"> 8353</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l08354" name="l08354"></a><span class="lineno"> 8354</span> </div>
+<div class="line"><a id="l08355" name="l08355"></a><span class="lineno"> 8355</span>    <a class="code hl_function" href="ev-document-model_8c.html#aefb8a0c3006b87f15bbcfab2186c61e5">ev_document_model_set_page</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>, next_page);</div>
+<div class="line"><a id="l08356" name="l08356"></a><span class="lineno"> 8356</span> </div>
+<div class="line"><a id="l08357" name="l08357"></a><span class="lineno"> 8357</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l08358" name="l08358"></a><span class="lineno"> 8358</span>}</div>
+</div>
+<div class="line"><a id="l08359" name="l08359"></a><span class="lineno"> 8359</span> </div>
+<div class="line"><a id="l08360" name="l08360"></a><span class="lineno"> 8360</span>gboolean</div>
+<div class="foldopen" id="foldopen08361" data-start="{" data-end="}">
+<div class="line"><a id="l08361" name="l08361"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241"> 8361</a></span><a class="code hl_function" href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241">ev_view_previous_page</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08362" name="l08362"></a><span class="lineno"> 8362</span>{</div>
+<div class="line"><a id="l08363" name="l08363"></a><span class="lineno"> 8363</span>    gint prev_page;</div>
+<div class="line"><a id="l08364" name="l08364"></a><span class="lineno"> 8364</span> </div>
+<div class="line"><a id="l08365" name="l08365"></a><span class="lineno"> 8365</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l08366" name="l08366"></a><span class="lineno"> 8366</span> </div>
+<div class="line"><a id="l08367" name="l08367"></a><span class="lineno"> 8367</span>    prev_page = go_to_previous_page (view, view-&gt;<a class="code hl_variable" href="struct__EvView.html#a7fbba9f2a238603c498d1863358bdd61">current_page</a>);</div>
+<div class="line"><a id="l08368" name="l08368"></a><span class="lineno"> 8368</span>    <span class="keywordflow">if</span> (prev_page == -1)</div>
+<div class="line"><a id="l08369" name="l08369"></a><span class="lineno"> 8369</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l08370" name="l08370"></a><span class="lineno"> 8370</span> </div>
+<div class="line"><a id="l08371" name="l08371"></a><span class="lineno"> 8371</span>    <a class="code hl_function" href="ev-document-model_8c.html#aefb8a0c3006b87f15bbcfab2186c61e5">ev_document_model_set_page</a> (view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>, prev_page);</div>
+<div class="line"><a id="l08372" name="l08372"></a><span class="lineno"> 8372</span> </div>
+<div class="line"><a id="l08373" name="l08373"></a><span class="lineno"> 8373</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l08374" name="l08374"></a><span class="lineno"> 8374</span>}</div>
+</div>
+<div class="line"><a id="l08375" name="l08375"></a><span class="lineno"> 8375</span> </div>
+<div class="line"><a id="l08383" name="l08383"></a><span class="lineno"> 8383</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08384" data-start="{" data-end="}">
+<div class="line"><a id="l08384" name="l08384"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ad94cb097e34ad25bde2ab1e05a57a3f3"> 8384</a></span><a class="code hl_function" href="ev-view_8c.html#ad94cb097e34ad25bde2ab1e05a57a3f3">ev_view_disconnect_handlers</a>(<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08385" name="l08385"></a><span class="lineno"> 8385</span>{</div>
+<div class="line"><a id="l08386" name="l08386"></a><span class="lineno"> 8386</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08387" name="l08387"></a><span class="lineno"> 8387</span>                         G_CALLBACK (ev_view_rotation_changed_cb),</div>
+<div class="line"><a id="l08388" name="l08388"></a><span class="lineno"> 8388</span>                         view);</div>
+<div class="line"><a id="l08389" name="l08389"></a><span class="lineno"> 8389</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08390" name="l08390"></a><span class="lineno"> 8390</span>                         G_CALLBACK (ev_view_inverted_colors_changed_cb),</div>
+<div class="line"><a id="l08391" name="l08391"></a><span class="lineno"> 8391</span>                         view);</div>
+<div class="line"><a id="l08392" name="l08392"></a><span class="lineno"> 8392</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08393" name="l08393"></a><span class="lineno"> 8393</span>                         G_CALLBACK (ev_view_sizing_mode_changed_cb),</div>
+<div class="line"><a id="l08394" name="l08394"></a><span class="lineno"> 8394</span>                         view);</div>
+<div class="line"><a id="l08395" name="l08395"></a><span class="lineno"> 8395</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08396" name="l08396"></a><span class="lineno"> 8396</span>                         G_CALLBACK (ev_view_page_layout_changed_cb),</div>
+<div class="line"><a id="l08397" name="l08397"></a><span class="lineno"> 8397</span>                         view);</div>
+<div class="line"><a id="l08398" name="l08398"></a><span class="lineno"> 8398</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08399" name="l08399"></a><span class="lineno"> 8399</span>                         G_CALLBACK (ev_view_scale_changed_cb),</div>
+<div class="line"><a id="l08400" name="l08400"></a><span class="lineno"> 8400</span>                         view);</div>
+<div class="line"><a id="l08401" name="l08401"></a><span class="lineno"> 8401</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08402" name="l08402"></a><span class="lineno"> 8402</span>                         G_CALLBACK (ev_view_continuous_changed_cb),</div>
+<div class="line"><a id="l08403" name="l08403"></a><span class="lineno"> 8403</span>                         view);</div>
+<div class="line"><a id="l08404" name="l08404"></a><span class="lineno"> 8404</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08405" name="l08405"></a><span class="lineno"> 8405</span>                         G_CALLBACK (ev_view_fullscreen_changed_cb),</div>
+<div class="line"><a id="l08406" name="l08406"></a><span class="lineno"> 8406</span>                         view);</div>
+<div class="line"><a id="l08407" name="l08407"></a><span class="lineno"> 8407</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08408" name="l08408"></a><span class="lineno"> 8408</span>                         G_CALLBACK (ev_view_page_changed_cb),</div>
+<div class="line"><a id="l08409" name="l08409"></a><span class="lineno"> 8409</span>                         view);</div>
+<div class="line"><a id="l08410" name="l08410"></a><span class="lineno"> 8410</span>    g_signal_handlers_disconnect_by_func(view-&gt;<a class="code hl_variable" href="struct__EvView.html#a66c938dceee0ea8cacf83e64d8ee6365">model</a>,</div>
+<div class="line"><a id="l08411" name="l08411"></a><span class="lineno"> 8411</span>                         G_CALLBACK (ev_view_document_changed_cb),</div>
+<div class="line"><a id="l08412" name="l08412"></a><span class="lineno"> 8412</span>                         view);</div>
+<div class="line"><a id="l08413" name="l08413"></a><span class="lineno"> 8413</span>}</div>
+</div>
+<div class="line"><a id="l08414" name="l08414"></a><span class="lineno"> 8414</span> </div>
+<div class="line"><a id="l08415" name="l08415"></a><span class="lineno"> 8415</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen08416" data-start="{" data-end="}">
+<div class="line"><a id="l08416" name="l08416"></a><span class="lineno"><a class="line" href="ev-view_8c.html#aa2e1feaf9cb8a9db2f6c57aa01c31614"> 8416</a></span><a class="code hl_function" href="ev-view_8c.html#aa2e1feaf9cb8a9db2f6c57aa01c31614">ev_view_set_allow_links_change_zoom</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view, gboolean allowed)</div>
+<div class="line"><a id="l08417" name="l08417"></a><span class="lineno"> 8417</span>{</div>
+<div class="line"><a id="l08418" name="l08418"></a><span class="lineno"> 8418</span>    g_return_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view));</div>
+<div class="line"><a id="l08419" name="l08419"></a><span class="lineno"> 8419</span> </div>
+<div class="line"><a id="l08420" name="l08420"></a><span class="lineno"> 8420</span>    view-&gt;<a class="code hl_variable" href="struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e">allow_links_change_zoom</a> = allowed;</div>
+<div class="line"><a id="l08421" name="l08421"></a><span class="lineno"> 8421</span>}</div>
+</div>
+<div class="line"><a id="l08422" name="l08422"></a><span class="lineno"> 8422</span> </div>
+<div class="line"><a id="l08423" name="l08423"></a><span class="lineno"> 8423</span>gboolean</div>
+<div class="foldopen" id="foldopen08424" data-start="{" data-end="}">
+<div class="line"><a id="l08424" name="l08424"></a><span class="lineno"><a class="line" href="ev-view_8c.html#ab7548a5d1d76f8d28bc9b6b646f19bba"> 8424</a></span><a class="code hl_function" href="ev-view_8c.html#ab7548a5d1d76f8d28bc9b6b646f19bba">ev_view_get_allow_links_change_zoom</a> (<a class="code hl_struct" href="struct__EvView.html">EvView</a> *view)</div>
+<div class="line"><a id="l08425" name="l08425"></a><span class="lineno"> 8425</span>{</div>
+<div class="line"><a id="l08426" name="l08426"></a><span class="lineno"> 8426</span>    g_return_val_if_fail (<a class="code hl_define" href="ev-view_8h.html#a7fa4cb7985ad3611123c994e07e28865">EV_IS_VIEW</a> (view), <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a id="l08427" name="l08427"></a><span class="lineno"> 8427</span> </div>
+<div class="line"><a id="l08428" name="l08428"></a><span class="lineno"> 8428</span>    <span class="keywordflow">return</span> view-&gt;<a class="code hl_variable" href="struct__EvView.html#acd29361a0b1e77decbb5ae77b8e0a66e">allow_links_change_zoom</a>;</div>
+<div class="line"><a id="l08429" name="l08429"></a><span class="lineno"> 8429</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -8723,9 +8824,9 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-selection_8h_html_ad9c860db4ca7e80d1c5ca8d01195c23da510cf15f15107c345fac47333e1d96c1"><div class="ttname"><a href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23da510cf15f15107c345fac47333e1d96c1">EV_SELECTION_STYLE_LINE</a></div><div class="ttdeci">@ EV_SELECTION_STYLE_LINE</div><div class="ttdef"><b>Definition</b> <a href="ev-selection_8h_source.html#l00046">ev-selection.h:45</a></div></div>
 <div class="ttc" id="aev-selection_8h_html_ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228"><div class="ttname"><a href="ev-selection_8h.html#ad9c860db4ca7e80d1c5ca8d01195c23dabc99da0f5c0a0bf8ab49c3a067905228">EV_SELECTION_STYLE_GLYPH</a></div><div class="ttdeci">@ EV_SELECTION_STYLE_GLYPH</div><div class="ttdef"><b>Definition</b> <a href="ev-selection_8h_source.html#l00043">ev-selection.h:43</a></div></div>
 <div class="ttc" id="aev-selection_8h_html_af28e76c170f7f0cf713717c5e2cdd323"><div class="ttname"><a href="ev-selection_8h.html#af28e76c170f7f0cf713717c5e2cdd323">EV_IS_SELECTION</a></div><div class="ttdeci">#define EV_IS_SELECTION(o)</div><div class="ttdef"><b>Definition</b> <a href="ev-selection_8h_source.html#l00038">ev-selection.h:38</a></div></div>
-<div class="ttc" id="aev-view-accessible_8c_html_a2285e940b9609cafe9b04fb39a1636dc"><div class="ttname"><a href="ev-view-accessible_8c.html#a2285e940b9609cafe9b04fb39a1636dc">ev_view_accessible_set_model</a></div><div class="ttdeci">void ev_view_accessible_set_model(EvViewAccessible *accessible, EvDocumentModel *model)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00415">ev-view-accessible.c:415</a></div></div>
-<div class="ttc" id="aev-view-accessible_8c_html_a36bf6e6933c132f0c18c63bc2ba4e36c"><div class="ttname"><a href="ev-view-accessible_8c.html#a36bf6e6933c132f0c18c63bc2ba4e36c">ev_view_accessible_new</a></div><div class="ttdeci">AtkObject * ev_view_accessible_new(GtkWidget *widget)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00461">ev-view-accessible.c:461</a></div></div>
-<div class="ttc" id="aev-view-accessible_8c_html_a524a6a680a70e1f03ba73c741bd22184"><div class="ttname"><a href="ev-view-accessible_8c.html#a524a6a680a70e1f03ba73c741bd22184">ev_view_accessible_set_page_range</a></div><div class="ttdeci">void ev_view_accessible_set_page_range(EvViewAccessible *accessible, gint start, gint end)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00567">ev-view-accessible.c:567</a></div></div>
+<div class="ttc" id="aev-view-accessible_8c_html_a2285e940b9609cafe9b04fb39a1636dc"><div class="ttname"><a href="ev-view-accessible_8c.html#a2285e940b9609cafe9b04fb39a1636dc">ev_view_accessible_set_model</a></div><div class="ttdeci">void ev_view_accessible_set_model(EvViewAccessible *accessible, EvDocumentModel *model)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00499">ev-view-accessible.c:499</a></div></div>
+<div class="ttc" id="aev-view-accessible_8c_html_a36bf6e6933c132f0c18c63bc2ba4e36c"><div class="ttname"><a href="ev-view-accessible_8c.html#a36bf6e6933c132f0c18c63bc2ba4e36c">ev_view_accessible_new</a></div><div class="ttdeci">AtkObject * ev_view_accessible_new(GtkWidget *widget)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00545">ev-view-accessible.c:545</a></div></div>
+<div class="ttc" id="aev-view-accessible_8c_html_a524a6a680a70e1f03ba73c741bd22184"><div class="ttname"><a href="ev-view-accessible_8c.html#a524a6a680a70e1f03ba73c741bd22184">ev_view_accessible_set_page_range</a></div><div class="ttdeci">void ev_view_accessible_set_page_range(EvViewAccessible *accessible, gint start, gint end)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8c_source.html#l00651">ev-view-accessible.c:651</a></div></div>
 <div class="ttc" id="aev-view-accessible_8h_html"><div class="ttname"><a href="ev-view-accessible_8h.html">ev-view-accessible.h</a></div></div>
 <div class="ttc" id="aev-view-accessible_8h_html_ac434b0bb6ac6ef44cbde83a830a200e1"><div class="ttname"><a href="ev-view-accessible_8h.html#ac434b0bb6ac6ef44cbde83a830a200e1">EV_VIEW_ACCESSIBLE</a></div><div class="ttdeci">#define EV_VIEW_ACCESSIBLE(obj)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-accessible_8h_source.html#l00032">ev-view-accessible.h:32</a></div></div>
 <div class="ttc" id="aev-view-cursor_8c_html_a7975912778dd7e651079615e70691dfe"><div class="ttname"><a href="ev-view-cursor_8c.html#a7975912778dd7e651079615e70691dfe">ev_view_cursor_new</a></div><div class="ttdeci">GdkCursor * ev_view_cursor_new(GdkDisplay *display, EvViewCursor new_cursor)</div><div class="ttdef"><b>Definition</b> <a href="ev-view-cursor_8c_source.html#l00023">ev-view-cursor.c:23</a></div></div>
@@ -8749,25 +8850,26 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-view_8c_html_a002b2f4894492820fe708b1b7e7c5e70"><div class="ttname"><a href="ev-view_8c.html#a002b2f4894492820fe708b1b7e7c5e70">EPSILON</a></div><div class="ttdeci">#define EPSILON</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06968">ev-view.c:6968</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a026f9468b065fb1c6d1a0aa8bbfe3b2e"><div class="ttname"><a href="ev-view_8c.html#a026f9468b065fb1c6d1a0aa8bbfe3b2e">ev_view_set_page_cache_size</a></div><div class="ttdeci">void ev_view_set_page_cache_size(EvView *view, gsize cache_size)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06740">ev-view.c:6740</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a05b0ab1968466d2dd2a3cd7add43cfb9"><div class="ttname"><a href="ev-view_8c.html#a05b0ab1968466d2dd2a3cd7add43cfb9">ev_view_get_page_extents</a></div><div class="ttdeci">gboolean ev_view_get_page_extents(EvView *view, gint page, GdkRectangle *page_area, GtkBorder *border)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01180">ev-view.c:1180</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a0eca4b102321f5dde4a2ebe8f8868fe5"><div class="ttname"><a href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5">ev_view_copy</a></div><div class="ttdeci">void ev_view_copy(EvView *ev_view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08109">ev-view.c:8109</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a1279ae33808548a39a2c114e7ddbc7de"><div class="ttname"><a href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de">ev_view_next_page</a></div><div class="ttdeci">gboolean ev_view_next_page(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08246">ev-view.c:8246</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a0ebdc61a3deea9ab02f4d4df14286f17"><div class="ttname"><a href="ev-view_8c.html#a0ebdc61a3deea9ab02f4d4df14286f17">_ev_view_add_selection</a></div><div class="ttdeci">void _ev_view_add_selection(EvView *view, GdkPoint *start_point, GdkPoint *end_point)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08114">ev-view.c:8114</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a0eca4b102321f5dde4a2ebe8f8868fe5"><div class="ttname"><a href="ev-view_8c.html#a0eca4b102321f5dde4a2ebe8f8868fe5">ev_view_copy</a></div><div class="ttdeci">void ev_view_copy(EvView *ev_view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08208">ev-view.c:8208</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a1279ae33808548a39a2c114e7ddbc7de"><div class="ttname"><a href="ev-view_8c.html#a1279ae33808548a39a2c114e7ddbc7de">ev_view_next_page</a></div><div class="ttdeci">gboolean ev_view_next_page(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08345">ev-view.c:8345</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a15f0eb308bff776931875e5002390df9"><div class="ttname"><a href="ev-view_8c.html#a15f0eb308bff776931875e5002390df9">ev_view_zoom_out</a></div><div class="ttdeci">void ev_view_zoom_out(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07174">ev-view.c:7174</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a1fe12716987095c8e5993acf1fcab0f4"><div class="ttname"><a href="ev-view_8c.html#a1fe12716987095c8e5993acf1fcab0f4">ev_view_autoscroll_stop</a></div><div class="ttdeci">void ev_view_autoscroll_stop(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06820">ev-view.c:6820</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a226485a540de86ba8676ec0aaa05e980"><div class="ttname"><a href="ev-view_8c.html#a226485a540de86ba8676ec0aaa05e980">CURSOR_OFF_MULTIPLIER</a></div><div class="ttdeci">#define CURSOR_OFF_MULTIPLIER</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03272">ev-view.c:3272</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a2e6c9f7e0c8bedfc59263b8bfdaee158"><div class="ttname"><a href="ev-view_8c.html#a2e6c9f7e0c8bedfc59263b8bfdaee158">_ev_view_set_focused_element</a></div><div class="ttdeci">void _ev_view_set_focused_element(EvView *view, EvMapping *element_mapping, gint page)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l02106">ev-view.c:2106</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a38d042ab1bd6fede307f94e7cf56ec30"><div class="ttname"><a href="ev-view_8c.html#a38d042ab1bd6fede307f94e7cf56ec30">_ev_view_remove_page_selection</a></div><div class="ttdeci">gboolean _ev_view_remove_page_selection(EvView *view, gint page)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08145">ev-view.c:8145</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a3a0276055c23a9ee1aa0cc1c1d77e7bb"><div class="ttname"><a href="ev-view_8c.html#a3a0276055c23a9ee1aa0cc1c1d77e7bb">G_DEFINE_TYPE_WITH_CODE</a></div><div class="ttdeci">G_DEFINE_TYPE_WITH_CODE(EvView, ev_view, GTK_TYPE_CONTAINER, G_IMPLEMENT_INTERFACE(GTK_TYPE_SCROLLABLE, NULL))</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00292">ev-view.c:292</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a3b05fea97420f6f5da941c85b21615cf"><div class="ttname"><a href="ev-view_8c.html#a3b05fea97420f6f5da941c85b21615cf">_ev_view_transform_doc_point_to_view_point</a></div><div class="ttdeci">void _ev_view_transform_doc_point_to_view_point(EvView *view, int page, EvPoint *doc_point, GdkPoint *view_point)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01319">ev-view.c:1319</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a3bbd25512a4068064161deaed737a173"><div class="ttname"><a href="ev-view_8c.html#a3bbd25512a4068064161deaed737a173">ev_view_find_search_changed</a></div><div class="ttdeci">void ev_view_find_search_changed(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07662">ev-view.c:7662</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a3cdddd7ddb5c37f953ffc494e4a75a40"><div class="ttname"><a href="ev-view_8c.html#a3cdddd7ddb5c37f953ffc494e4a75a40">CURSOR_ON_MULTIPLIER</a></div><div class="ttdeci">#define CURSOR_ON_MULTIPLIER</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03271">ev-view.c:3271</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a451bb8751ffbcc07e73f7d82f7d106ef"><div class="ttname"><a href="ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a></div><div class="ttdeci">void _ev_view_clear_selection(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08052">ev-view.c:8052</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a47539db7d40303d49e68db231d19a548"><div class="ttname"><a href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev_view_get_has_selection</a></div><div class="ttdeci">gboolean ev_view_get_has_selection(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08046">ev-view.c:8046</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a451bb8751ffbcc07e73f7d82f7d106ef"><div class="ttname"><a href="ev-view_8c.html#a451bb8751ffbcc07e73f7d82f7d106ef">_ev_view_clear_selection</a></div><div class="ttdeci">void _ev_view_clear_selection(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08103">ev-view.c:8103</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a47539db7d40303d49e68db231d19a548"><div class="ttname"><a href="ev-view_8c.html#a47539db7d40303d49e68db231d19a548">ev_view_get_has_selection</a></div><div class="ttdeci">gboolean ev_view_get_has_selection(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08097">ev-view.c:8097</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a4b1e8f5d374cde8a895b422077ddc6fc"><div class="ttname"><a href="ev-view_8c.html#a4b1e8f5d374cde8a895b422077ddc6fc">ev_view_is_caret_navigation_enabled</a></div><div class="ttdeci">gboolean ev_view_is_caret_navigation_enabled(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03521">ev-view.c:3521</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a4c42acdf6c13434a1c99764b14ee747f"><div class="ttname"><a href="ev-view_8c.html#a4c42acdf6c13434a1c99764b14ee747f">ev_view_supports_caret_navigation</a></div><div class="ttdeci">gboolean ev_view_supports_caret_navigation(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03491">ev-view.c:3491</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a5117bfa1532fd619165ed0715a71b9b4"><div class="ttname"><a href="ev-view_8c.html#a5117bfa1532fd619165ed0715a71b9b4">ev_view_select_all</a></div><div class="ttdeci">void ev_view_select_all(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08016">ev-view.c:8016</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a554cbcf8dd2c8d45ee3d5c28e334e799"><div class="ttname"><a href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev_view_copy_link_address</a></div><div class="ttdeci">void ev_view_copy_link_address(EvView *view, EvLinkAction *action)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08197">ev-view.c:8197</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a5117bfa1532fd619165ed0715a71b9b4"><div class="ttname"><a href="ev-view_8c.html#a5117bfa1532fd619165ed0715a71b9b4">ev_view_select_all</a></div><div class="ttdeci">void ev_view_select_all(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08067">ev-view.c:8067</a></div></div>
+<div class="ttc" id="aev-view_8c_html_a554cbcf8dd2c8d45ee3d5c28e334e799"><div class="ttname"><a href="ev-view_8c.html#a554cbcf8dd2c8d45ee3d5c28e334e799">ev_view_copy_link_address</a></div><div class="ttdeci">void ev_view_copy_link_address(EvView *view, EvLinkAction *action)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08296">ev-view.c:8296</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a55a71f5eae08c31b06428804be981307"><div class="ttname"><a href="ev-view_8c.html#a55a71f5eae08c31b06428804be981307">ev_view_new</a></div><div class="ttdeci">GtkWidget * ev_view_new(void)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06682">ev-view.c:6682</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a5645b735d3c744081c6f5544162313d4"><div class="ttname"><a href="ev-view_8c.html#a5645b735d3c744081c6f5544162313d4">ev_view_set_loading</a></div><div class="ttdeci">void ev_view_set_loading(EvView *view, gboolean loading)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06752">ev-view.c:6752</a></div></div>
-<div class="ttc" id="aev-view_8c_html_a58e08a3b11353d7b0baa0fa57af59327"><div class="ttname"><a href="ev-view_8c.html#a58e08a3b11353d7b0baa0fa57af59327">_ev_view_set_selection</a></div><div class="ttdeci">void _ev_view_set_selection(EvView *view, GdkPoint *start_point, GdkPoint *end_point)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08058">ev-view.c:8058</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a6057c02ba21d898d3e20d091cf642050"><div class="ttname"><a href="ev-view_8c.html#a6057c02ba21d898d3e20d091cf642050">ev_view_autoscroll_start</a></div><div class="ttdeci">void ev_view_autoscroll_start(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06801">ev-view.c:6801</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a60b52ce8d5e2aa3cb26fb9678cbcc558"><div class="ttname"><a href="ev-view_8c.html#a60b52ce8d5e2aa3cb26fb9678cbcc558">_ev_view_get_selection_colors</a></div><div class="ttdeci">void _ev_view_get_selection_colors(EvView *view, GdkRGBA *bg_color, GdkRGBA *fg_color)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l05773">ev-view.c:5773</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a69eb99221b1d5354ccfb4640f925f8e4"><div class="ttname"><a href="ev-view_8c.html#a69eb99221b1d5354ccfb4640f925f8e4">ev_view_find_cancel</a></div><div class="ttdeci">void ev_view_find_cancel(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07677">ev-view.c:7677</a></div></div>
@@ -8783,7 +8885,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-view_8c_html_a8c882e0b7ddf3bf5a611d981a155e4e6"><div class="ttname"><a href="ev-view_8c.html#a8c882e0b7ddf3bf5a611d981a155e4e6">_ev_view_transform_doc_rect_to_view_rect</a></div><div class="ttdeci">void _ev_view_transform_doc_rect_to_view_rect(EvView *view, int page, EvRectangle *doc_rect, GdkRectangle *view_rect)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01356">ev-view.c:1356</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a9dcdadb4a8672331acfbd8d9d4445276"><div class="ttname"><a href="ev-view_8c.html#a9dcdadb4a8672331acfbd8d9d4445276">ev_view_find_next</a></div><div class="ttdeci">void ev_view_find_next(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07621">ev-view.c:7621</a></div></div>
 <div class="ttc" id="aev-view_8c_html_a9fece6b2092f4e88751504f349f9d979"><div class="ttname"><a href="ev-view_8c.html#a9fece6b2092f4e88751504f349f9d979">ev_view_set_model</a></div><div class="ttdeci">void ev_view_set_model(EvView *view, EvDocumentModel *model)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07038">ev-view.c:7038</a></div></div>
-<div class="ttc" id="aev-view_8c_html_aa2e1feaf9cb8a9db2f6c57aa01c31614"><div class="ttname"><a href="ev-view_8c.html#aa2e1feaf9cb8a9db2f6c57aa01c31614">ev_view_set_allow_links_change_zoom</a></div><div class="ttdeci">void ev_view_set_allow_links_change_zoom(EvView *view, gboolean allowed)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08317">ev-view.c:8317</a></div></div>
+<div class="ttc" id="aev-view_8c_html_aa2e1feaf9cb8a9db2f6c57aa01c31614"><div class="ttname"><a href="ev-view_8c.html#aa2e1feaf9cb8a9db2f6c57aa01c31614">ev_view_set_allow_links_change_zoom</a></div><div class="ttdeci">void ev_view_set_allow_links_change_zoom(EvView *view, gboolean allowed)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08416">ev-view.c:8416</a></div></div>
 <div class="ttc" id="aev-view_8c_html_aa49963d34c4251df044c3d7422e2965b"><div class="ttname"><a href="ev-view_8c.html#aa49963d34c4251df044c3d7422e2965b">ev_view_begin_add_annotation</a></div><div class="ttdeci">void ev_view_begin_add_annotation(EvView *view, EvAnnotationType annot_type)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03176">ev-view.c:3176</a></div></div>
 <div class="ttc" id="aev-view_8c_html_aac1ce83ac501de6e8d018e06c69fa9b8"><div class="ttname"><a href="ev-view_8c.html#aac1ce83ac501de6e8d018e06c69fa9b8">ev_view_zoom_in</a></div><div class="ttdeci">void ev_view_zoom_in(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07168">ev-view.c:7168</a></div></div>
 <div class="ttc" id="aev-view_8c_html_aad79f884575dd1d0d005c7144f88f2e1"><div class="ttname"><a href="ev-view_8c.html#aad79f884575dd1d0d005c7144f88f2e1">ev_view_reload</a></div><div class="ttdeci">void ev_view_reload(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07122">ev-view.c:7122</a></div></div>
@@ -8792,7 +8894,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-view_8c_html_ab2cf93cf86f9ce5f9c237c2df3fcd52b"><div class="ttname"><a href="ev-view_8c.html#ab2cf93cf86f9ce5f9c237c2df3fcd52b">ev_view_handle_link</a></div><div class="ttdeci">void ev_view_handle_link(EvView *view, EvLink *link)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01864">ev-view.c:1864</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ab3ebef6a342b62c1c77f6c5e3a914d96"><div class="ttname"><a href="ev-view_8c.html#ab3ebef6a342b62c1c77f6c5e3a914d96">CURSOR_PEND_MULTIPLIER</a></div><div class="ttdeci">#define CURSOR_PEND_MULTIPLIER</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03273">ev-view.c:3273</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ab508decb6ec537488156e4034a148bc2"><div class="ttname"><a href="ev-view_8c.html#ab508decb6ec537488156e4034a148bc2">ev_view_scroll</a></div><div class="ttdeci">void ev_view_scroll(EvView *view, GtkScrollType scroll, gboolean horizontal)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00939">ev-view.c:939</a></div></div>
-<div class="ttc" id="aev-view_8c_html_ab7548a5d1d76f8d28bc9b6b646f19bba"><div class="ttname"><a href="ev-view_8c.html#ab7548a5d1d76f8d28bc9b6b646f19bba">ev_view_get_allow_links_change_zoom</a></div><div class="ttdeci">gboolean ev_view_get_allow_links_change_zoom(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08325">ev-view.c:8325</a></div></div>
+<div class="ttc" id="aev-view_8c_html_ab7548a5d1d76f8d28bc9b6b646f19bba"><div class="ttname"><a href="ev-view_8c.html#ab7548a5d1d76f8d28bc9b6b646f19bba">ev_view_get_allow_links_change_zoom</a></div><div class="ttdeci">gboolean ev_view_get_allow_links_change_zoom(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08424">ev-view.c:8424</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ab88d94f6186ec24f9ae6e9dc500f10ac"><div class="ttname"><a href="ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10ac">EvViewFindDirection</a></div><div class="ttdeci">EvViewFindDirection</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00084">ev-view.c:84</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ab88d94f6186ec24f9ae6e9dc500f10aca3bcd1bec3d101640a969c309af92bdd9"><div class="ttname"><a href="ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca3bcd1bec3d101640a969c309af92bdd9">EV_VIEW_FIND_NEXT</a></div><div class="ttdeci">@ EV_VIEW_FIND_NEXT</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00085">ev-view.c:85</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ab88d94f6186ec24f9ae6e9dc500f10aca856b96a01eac0324eb4b00e56dddc23b"><div class="ttname"><a href="ev-view_8c.html#ab88d94f6186ec24f9ae6e9dc500f10aca856b96a01eac0324eb4b00e56dddc23b">EV_VIEW_FIND_PREV</a></div><div class="ttdeci">@ EV_VIEW_FIND_PREV</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00087">ev-view.c:86</a></div></div>
@@ -8801,11 +8903,11 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-view_8c_html_abe512525bb472b40103269f290bbcf29"><div class="ttname"><a href="ev-view_8c.html#abe512525bb472b40103269f290bbcf29">ev_view_is_loading</a></div><div class="ttdeci">gboolean ev_view_is_loading(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l06763">ev-view.c:6763</a></div></div>
 <div class="ttc" id="aev-view_8c_html_abe5d5a88fd3890cfe71853f5b9253af7"><div class="ttname"><a href="ev-view_8c.html#abe5d5a88fd3890cfe71853f5b9253af7">ev_view_zoom_reset</a></div><div class="ttdeci">void ev_view_zoom_reset(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07180">ev-view.c:7180</a></div></div>
 <div class="ttc" id="aev-view_8c_html_abf04da7d40073a3c8c77647aaeaf1c6f"><div class="ttname"><a href="ev-view_8c.html#abf04da7d40073a3c8c77647aaeaf1c6f">EV_STYLE_CLASS_DOCUMENT_PAGE</a></div><div class="ttdeci">#define EV_STYLE_CLASS_DOCUMENT_PAGE</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00106">ev-view.c:106</a></div></div>
-<div class="ttc" id="aev-view_8c_html_ac675e02944a882f358ca2d4cddc83959"><div class="ttname"><a href="ev-view_8c.html#ac675e02944a882f358ca2d4cddc83959">ev_view_hide_cursor</a></div><div class="ttdeci">void ev_view_hide_cursor(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08234">ev-view.c:8234</a></div></div>
+<div class="ttc" id="aev-view_8c_html_ac675e02944a882f358ca2d4cddc83959"><div class="ttname"><a href="ev-view_8c.html#ac675e02944a882f358ca2d4cddc83959">ev_view_hide_cursor</a></div><div class="ttdeci">void ev_view_hide_cursor(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08333">ev-view.c:8333</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ac6da081ef72b7691ed4e6ffd1df3a230"><div class="ttname"><a href="ev-view_8c.html#ac6da081ef72b7691ed4e6ffd1df3a230">ev_view_remove_annotation</a></div><div class="ttdeci">void ev_view_remove_annotation(EvView *view, EvAnnotation *annot)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03204">ev-view.c:3204</a></div></div>
-<div class="ttc" id="aev-view_8c_html_ac73a18c65269189aaba636ef848e5241"><div class="ttname"><a href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241">ev_view_previous_page</a></div><div class="ttdeci">gboolean ev_view_previous_page(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08262">ev-view.c:8262</a></div></div>
+<div class="ttc" id="aev-view_8c_html_ac73a18c65269189aaba636ef848e5241"><div class="ttname"><a href="ev-view_8c.html#ac73a18c65269189aaba636ef848e5241">ev_view_previous_page</a></div><div class="ttdeci">gboolean ev_view_previous_page(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08361">ev-view.c:8361</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ad252527b78bb0905ab35216ca2ac3a70"><div class="ttname"><a href="ev-view_8c.html#ad252527b78bb0905ab35216ca2ac3a70">ev_view_set_caret_cursor_position</a></div><div class="ttdeci">void ev_view_set_caret_cursor_position(EvView *view, guint page, guint offset)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l03529">ev-view.c:3529</a></div></div>
-<div class="ttc" id="aev-view_8c_html_ad94cb097e34ad25bde2ab1e05a57a3f3"><div class="ttname"><a href="ev-view_8c.html#ad94cb097e34ad25bde2ab1e05a57a3f3">ev_view_disconnect_handlers</a></div><div class="ttdeci">void ev_view_disconnect_handlers(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08285">ev-view.c:8285</a></div></div>
+<div class="ttc" id="aev-view_8c_html_ad94cb097e34ad25bde2ab1e05a57a3f3"><div class="ttname"><a href="ev-view_8c.html#ad94cb097e34ad25bde2ab1e05a57a3f3">ev_view_disconnect_handlers</a></div><div class="ttdeci">void ev_view_disconnect_handlers(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08384">ev-view.c:8384</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ad95bffa913795b3fa5550bab38cada05"><div class="ttname"><a href="ev-view_8c.html#ad95bffa913795b3fa5550bab38cada05">ev_view_find_set_result</a></div><div class="ttdeci">void ev_view_find_set_result(EvView *view, gint page, gint result)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07654">ev-view.c:7654</a></div></div>
 <div class="ttc" id="aev-view_8c_html_adef64e99488d53e10d8294dca85ea128"><div class="ttname"><a href="ev-view_8c.html#adef64e99488d53e10d8294dca85ea128">ev_view_can_zoom_out</a></div><div class="ttdeci">gboolean ev_view_can_zoom_out(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07150">ev-view.c:7150</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ae0e760f53072cc44dc1b1757a49081b5"><div class="ttname"><a href="ev-view_8c.html#ae0e760f53072cc44dc1b1757a49081b5">_ev_view_transform_view_point_to_doc_point</a></div><div class="ttdeci">void _ev_view_transform_view_point_to_doc_point(EvView *view, GdkPoint *view_point, GdkRectangle *page_area, double *doc_point_x, double *doc_point_y)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01296">ev-view.c:1296</a></div></div>
@@ -8822,7 +8924,7 @@ $(document).ready(function(){initNavTree('ev-view_8c_source.html',''); initResiz
 <div class="ttc" id="aev-view_8c_html_ae8a3b6a5d0d3244ed73924ab2421a0d0a8f27d962b0275bc775a2e76581ed1c4e"><div class="ttname"><a href="ev-view_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a8f27d962b0275bc775a2e76581ed1c4e">SIGNAL_SELECTION_CHANGED</a></div><div class="ttdeci">@ SIGNAL_SELECTION_CHANGED</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00055">ev-view.c:55</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ae8a3b6a5d0d3244ed73924ab2421a0d0abcf1e4e63aa60f8cd23aadae4d89c433"><div class="ttname"><a href="ev-view_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0abcf1e4e63aa60f8cd23aadae4d89c433">SIGNAL_MOVE_CURSOR</a></div><div class="ttdeci">@ SIGNAL_MOVE_CURSOR</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00060">ev-view.c:60</a></div></div>
 <div class="ttc" id="aev-view_8c_html_ae8a3b6a5d0d3244ed73924ab2421a0d0af1b1ff86dfe7416a02aaade1a1fbc668"><div class="ttname"><a href="ev-view_8c.html#ae8a3b6a5d0d3244ed73924ab2421a0d0af1b1ff86dfe7416a02aaade1a1fbc668">SIGNAL_EXTERNAL_LINK</a></div><div class="ttdeci">@ SIGNAL_EXTERNAL_LINK</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00053">ev-view.c:53</a></div></div>
-<div class="ttc" id="aev-view_8c_html_af091740db5de01330541f99414c1b1a2"><div class="ttname"><a href="ev-view_8c.html#af091740db5de01330541f99414c1b1a2">ev_view_show_cursor</a></div><div class="ttdeci">void ev_view_show_cursor(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08240">ev-view.c:8240</a></div></div>
+<div class="ttc" id="aev-view_8c_html_af091740db5de01330541f99414c1b1a2"><div class="ttname"><a href="ev-view_8c.html#af091740db5de01330541f99414c1b1a2">ev_view_show_cursor</a></div><div class="ttdeci">void ev_view_show_cursor(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l08339">ev-view.c:8339</a></div></div>
 <div class="ttc" id="aev-view_8c_html_af51d374635b49a10eb30711e9a5909c1"><div class="ttname"><a href="ev-view_8c.html#af51d374635b49a10eb30711e9a5909c1">_get_page_size_for_scale_and_rotation</a></div><div class="ttdeci">void _get_page_size_for_scale_and_rotation(EvDocument *document, gint page, gdouble scale, gint rotation, gint *page_width, gint *page_height)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l01101">ev-view.c:1101</a></div></div>
 <div class="ttc" id="aev-view_8c_html_af70c84aafc088507c77dccb1895bcec2"><div class="ttname"><a href="ev-view_8c.html#af70c84aafc088507c77dccb1895bcec2">ev_view_find_previous</a></div><div class="ttdeci">void ev_view_find_previous(EvView *view)</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l07639">ev-view.c:7639</a></div></div>
 <div class="ttc" id="aev-view_8c_html_af715e26dfffd1f8de1c18449e2770cffa6e3994dcfcfa5316f60813bb50eeabd4"><div class="ttname"><a href="ev-view_8c.html#af715e26dfffd1f8de1c18449e2770cffa6e3994dcfcfa5316f60813bb50eeabd4">TARGET_DND_URI</a></div><div class="ttdeci">@ TARGET_DND_URI</div><div class="ttdef"><b>Definition</b> <a href="ev-view_8c_source.html#l00066">ev-view.c:66</a></div></div>

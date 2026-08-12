@@ -1,5 +1,7 @@
 var NAVTREEINDEX203 =
 {
+"struct__TerminalScreenClass.html#a193a1bddedbde7b72bebfe22e100ac84":[35,0,969,1],
+"struct__TerminalScreenClass.html#a1b0d0824c64dbaef96b953537e979fe3":[35,0,969,3],
 "struct__TerminalScreenClass.html#a70bdd9eba9471eaa1465f3110716a36d":[35,0,969,0],
 "struct__TerminalScreenClass.html#aef804353f40eb7cdcf09078b047746b6":[35,0,969,2],
 "struct__TerminalScreenClass.html#aff0cca5e877ba80c43e35ccdfd7df97f":[35,0,969,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX203 =
 "structjpeg__comp__master.html#a72c70556604030b6b10d798f6c193e6f":[35,0,1384,3],
 "structjpeg__comp__master.html#a81648a22581acb403aa707a5e56bf993":[35,0,1384,0],
 "structjpeg__comp__master.html#aac35b3d9e718376d1aacdde9df32e75d":[35,0,1384,4],
-"structjpeg__comp__master.html#ac7e4391d1afe92c685cb4ffea5383d2c":[35,0,1384,1],
-"structjpeg__comp__master.html#afdbee5aedaedd9c6c9837b6bfd834a63":[35,0,1384,2],
-"structjpeg__d__coef__controller.html":[35,0,1385]
+"structjpeg__comp__master.html#ac7e4391d1afe92c685cb4ffea5383d2c":[35,0,1384,1]
 };

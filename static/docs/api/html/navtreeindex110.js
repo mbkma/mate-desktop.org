@@ -1,5 +1,7 @@
 var NAVTREEINDEX110 =
 {
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a3e3bfe80e919a1a0828d6ab05efdd2ce":[36,0,0,28,1,4,0,1],
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a3ea9e23a699e27248095711cb262cc15":[36,0,0,28,1,4,0,2],
 "mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a42911acc1fbb8cd990f53ccc4696e092":[36,0,0,28,1,4,0,4],
 "mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#a795fa18a412ceb20ad705be8851264b5":[36,0,0,28,1,4,0,3],
 "mate-settings-daemon_2plugins_2common_2eggaccelerators_8c.html#aef5ddd82f23b1e091a1231750d98f12e":[36,0,0,28,1,4,0,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX110 =
 "mate-settings-profile_8c_source.html":[36,0,0,28,0,11],
 "mate-settings-profile_8h.html":[36,0,0,28,0,12],
 "mate-settings-profile_8h.html#a4bc88033567526c32624c8ba97979899":[36,0,0,28,0,12,1],
-"mate-settings-profile_8h.html#a92bde843dac8db7f3e30ea562f0b9c4e":[36,0,0,28,0,12,0],
-"mate-settings-profile_8h.html#aae6734b7bb21f84c49ba9bbd4a968952":[36,0,0,28,0,12,3],
-"mate-settings-profile_8h.html#acc07af3cb341464026d2bb6f9a12ef04":[36,0,0,28,0,12,2]
+"mate-settings-profile_8h.html#a92bde843dac8db7f3e30ea562f0b9c4e":[36,0,0,28,0,12,0]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX98 =
 {
+"mate-client_8c.html#a1b3e7ad70148d1dc3c47db5223fba9d9":[36,0,0,9,2,12,23],
+"mate-client_8c.html#a1bfcac2baa3a304eb78a404fe84494c7":[36,0,0,9,2,12,34],
 "mate-client_8c.html#a1c0c9e07eeda8e80657e1501719a53d0":[36,0,0,9,2,12,31],
 "mate-client_8c.html#a1c25bd310b09a65c12e183f32e6b807f":[36,0,0,9,2,12,17],
 "mate-client_8c.html#a2099755d731d5322a4d38b14b6c3060a":[36,0,0,9,2,12,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX98 =
 "mate-colorseldialog_8h.html#a99987306f1f800c2dc0381b655e2b9bd":[36,0,0,15,0,10,8],
 "mate-colorseldialog_8h.html#aa37673befcda30d3c41552c4f7294904":[36,0,0,15,0,10,6],
 "mate-colorseldialog_8h.html#ab1c43b4bde6652e46edf66be9a8da1cf":[36,0,0,15,0,10,3],
-"mate-colorseldialog_8h.html#ab1d078bb99d96f4b8ea7c481554294a3":[36,0,0,15,0,10,9],
-"mate-colorseldialog_8h.html#ac58444770a30adc58d97e14c50601ecd":[36,0,0,15,0,10,11],
-"mate-colorseldialog_8h.html#ac5d7c83f9a5d29ce1180f9e99cb6a3c5":[36,0,0,15,0,10,12]
+"mate-colorseldialog_8h.html#ab1d078bb99d96f4b8ea7c481554294a3":[36,0,0,15,0,10,9]
 };

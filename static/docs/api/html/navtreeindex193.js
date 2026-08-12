@@ -1,5 +1,7 @@
 var NAVTREEINDEX193 =
 {
+"struct__LogviewFilterManager.html":[35,0,545],
+"struct__LogviewFilterManager.html#a93ca7e4cb3676a8f90cf5be001d6f2d8":[35,0,545,0],
 "struct__LogviewFilterManager.html#afe706959d48d423f467e726a6010cbbd":[35,0,545,1],
 "struct__LogviewFilterManagerClass.html":[35,0,546],
 "struct__LogviewFilterManagerClass.html#a355a9f673a2b3ef8bfc7d95640da67c4":[35,0,546,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX193 =
 "struct__MateDruidPageEdge.html":[35,0,584],
 "struct__MateDruidPageEdge.html#a0d0fb6c838621360821fbf19af880b03":[35,0,584,1],
 "struct__MateDruidPageEdge.html#a0e7d1f31274b9e7c4a1dc3c3612692b8":[35,0,584,7],
-"struct__MateDruidPageEdge.html#a1e3073b09689be2764ec44f95d03f71f":[35,0,584,8],
-"struct__MateDruidPageEdge.html#a1e67c08bafeeab2ac5fe59d6cca1b6ea":[35,0,584,6],
-"struct__MateDruidPageEdge.html#a848506b963dcf5c4deecb0bc13eb658f":[35,0,584,11]
+"struct__MateDruidPageEdge.html#a1e3073b09689be2764ec44f95d03f71f":[35,0,584,8]
 };

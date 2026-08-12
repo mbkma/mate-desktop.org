@@ -1,5 +1,7 @@
 var NAVTREEINDEX144 =
 {
+"panel-ditem-editor_8h.html#afbc5330c8cb6b1efc55a9626a00ab15d":[36,0,0,22,2,38,18],
+"panel-ditem-editor_8h_source.html":[36,0,0,22,2,38],
 "panel-enums-gsettings_8h.html":[36,0,0,22,2,39],
 "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4":[36,0,0,22,2,39,4],
 "panel-enums-gsettings_8h.html#a58232b7efd2c6ed0a0605ce194d698c4a17fcf1bed515b1958bdea35b90b16fe4":[36,0,0,22,2,39,4,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX144 =
 "panel-list_8h.html#a24a97d51f619b902470abd8318b1f9a5":[36,0,0,22,2,1,17,4],
 "panel-list_8h.html#a2b6a755cae506ef0c6ba44198278371a":[36,0,0,22,2,1,17,2],
 "panel-list_8h.html#a7f9027ef3c3a2b810c010b0bf65212f3":[36,0,0,22,2,1,17,0],
-"panel-list_8h.html#a97f71b3df161ee395670ac42293e8158":[36,0,0,22,2,1,17,5],
-"panel-list_8h.html#ab2ae6360893f8df1c05a2bb78da3befb":[36,0,0,22,2,1,17,3],
-"panel-list_8h.html#ac063536facc95c54d9bd4d8ba8cd89b7":[36,0,0,22,2,1,17,1]
+"panel-list_8h.html#a97f71b3df161ee395670ac42293e8158":[36,0,0,22,2,1,17,5]
 };

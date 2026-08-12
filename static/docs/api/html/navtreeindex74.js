@@ -1,5 +1,7 @@
 var NAVTREEINDEX74 =
 {
+"gdict-app_8c.html#a07094e9baa217d5cd081442e8f52f5f5":[36,0,0,32,3,1,4,1],
+"gdict-app_8c.html#a6b41b21185a6e713aae9d65715a166ba":[36,0,0,32,3,1,4,3],
 "gdict-app_8c.html#a8991d3cb94bd838481970033a9365980":[36,0,0,32,3,1,4,2],
 "gdict-app_8c.html#a9584da4739e5b81cc3f50ee6a49f52a0":[36,0,0,32,3,1,4,0],
 "gdict-app_8c_source.html":[36,0,0,32,3,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX74 =
 "gdict-debug_8h.html":[36,0,0,32,3,0,7],
 "gdict-debug_8h.html#a1ab5360bb92b9091bedafadf854b058e":[36,0,0,32,3,0,7,2],
 "gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505":[36,0,0,32,3,0,7,1],
-"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505a18404f60baca92c7886ea0805de49857":[36,0,0,32,3,0,7,1,4],
-"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505a347f6c1104db6405c5288fea7b78bda7":[36,0,0,32,3,0,7,1,0],
-"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505a6db18269dd62c70be88c144e6c5ff460":[36,0,0,32,3,0,7,1,3]
+"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505a18404f60baca92c7886ea0805de49857":[36,0,0,32,3,0,7,1,4]
 };
