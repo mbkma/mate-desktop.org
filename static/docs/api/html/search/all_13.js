@@ -810,7 +810,7 @@ var searchData=
   ['slide_807',['Slide',['../mate-bg_8c.html#a5411080cad4b24d79dd63f2cece15071',1,'mate-bg.c']]],
   ['slider_5fvisible_808',['slider_visible',['../struct__CajaPathBar.html#a730a73a526f5086aaa628de93b088850',1,'_CajaPathBar']]],
   ['slider_5fwidth_809',['slider_width',['../struct__CajaPathBar.html#a60b24c1a2bc9dd0a98df1aaa65044585',1,'_CajaPathBar']]],
-  ['slideshow_810',['slideshow',['../mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a78859b6ccbd77c4dd4657e637a9e2666',1,'SLIDESHOW:&#160;mate-bg.c'],['../mate-bg_8c.html#afac613a409ad770e8f36f735705828ee',1,'SlideShow:&#160;mate-bg.c']]],
+  ['slideshow_810',['slideshow',['../mate-bg_8c.html#afac613a409ad770e8f36f735705828ee',1,'SlideShow:&#160;mate-bg.c'],['../mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3a78859b6ccbd77c4dd4657e637a9e2666',1,'SLIDESHOW:&#160;mate-bg.c']]],
   ['slideshow_2ec_811',['slideshow.c',['../slideshow_8c.html',1,'']]],
   ['slots_812',['slots',['../struct__CajaWindowPane.html#a39636166d18027b9a3b90e659dd3fdf6',1,'_CajaWindowPane']]],
   ['slowfoo_813',['slowfoo',['../structAccessxStatusApplet.html#a09f38f62df7da36a42bc1beba54d0588',1,'AccessxStatusApplet']]],
