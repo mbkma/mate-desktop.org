@@ -1,7 +1,5 @@
 var NAVTREEINDEX204 =
 {
-"structjpeg__comp__master.html#afdbee5aedaedd9c6c9837b6bfd834a63":[35,0,1384,2],
-"structjpeg__d__coef__controller.html":[35,0,1385],
 "structjpeg__d__coef__controller.html#a4c0e8d307e0852eae338a0f4f3c96edb":[35,0,1385,0],
 "structjpeg__d__coef__controller.html#a5d61ba56d9f5d8de0662df091aa6d9e1":[35,0,1385,1],
 "structjpeg__d__coef__controller.html#a6611f9e18fbbbb13d117caadb5d14dc1":[35,0,1385,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX204 =
 "sushi-font-widget_8h.html#a6589d55f053c27e1560f0df68fc8af10":[36,0,0,14,1,11,2],
 "sushi-font-widget_8h.html#a68d89581da5962e061ab93872ca9e42c":[36,0,0,14,1,11,9],
 "sushi-font-widget_8h.html#a781ceb55736647ae19d4d8eda5f63a70":[36,0,0,14,1,11,10],
-"sushi-font-widget_8h.html#a84bd142bce9619b226cda7053e848685":[36,0,0,14,1,11,11]
+"sushi-font-widget_8h.html#a84bd142bce9619b226cda7053e848685":[36,0,0,14,1,11,11],
+"sushi-font-widget_8h.html#a914e654c00019764a85ab441a7c3a5b8":[36,0,0,14,1,11,14],
+"sushi-font-widget_8h.html#aa78dfed9434a9ada614f4ab5c155f496":[36,0,0,14,1,11,15]
 };

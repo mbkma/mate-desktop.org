@@ -1,7 +1,5 @@
 var NAVTREEINDEX192 =
 {
-"struct__GdictSource.html":[35,0,487],
-"struct__GdictSource.html#a9a29172fbcf27e164fcfe60fbd877f0a":[35,0,487,1],
 "struct__GdictSource.html#ad19ccc7c12c662823de7634b851ab05b":[35,0,487,0],
 "struct__GdictSourceChooser.html":[35,0,488],
 "struct__GdictSourceChooser.html#a0ee9e8f239325a6c07246f45c0865d9c":[35,0,488,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX192 =
 "struct__LogviewFilter.html#a0f08e70b2f32631230862fc8ad61a090":[35,0,543,1],
 "struct__LogviewFilter.html#ab275e05bed17028e7bd8e08fe065744b":[35,0,543,0],
 "struct__LogviewFilterClass.html":[35,0,544],
-"struct__LogviewFilterClass.html#a318487e26009e7f098ed5a79099b2ad1":[35,0,544,0]
+"struct__LogviewFilterClass.html#a318487e26009e7f098ed5a79099b2ad1":[35,0,544,0],
+"struct__LogviewFilterManager.html":[35,0,545],
+"struct__LogviewFilterManager.html#a93ca7e4cb3676a8f90cf5be001d6f2d8":[35,0,545,0]
 };

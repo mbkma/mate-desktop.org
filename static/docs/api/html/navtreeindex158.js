@@ -1,7 +1,5 @@
 var NAVTREEINDEX158 =
 {
-"pluma-utils_8h.html#a5cba3b1c6480bf53458a41afc8123459":[36,0,0,34,1,89,30],
-"pluma-utils_8h.html#a63cb256a0d6d042d27df7bc84b691467":[36,0,0,34,1,89,21],
 "pluma-utils_8h.html#a66545903f08d0c4ff0ccea13bd27a7c1":[36,0,0,34,1,89,15],
 "pluma-utils_8h.html#a6d09ae96cba107f103c931db4200b110":[36,0,0,34,1,89,24],
 "pluma-utils_8h.html#a779ee3180db78b9fe0a0087375e345ea":[36,0,0,34,1,89,32],
@@ -249,5 +247,7 @@ var NAVTREEINDEX158 =
 "plumatextregion_8h_source.html":[36,0,0,34,1,101],
 "pmu-sys-plugin_8c.html":[36,0,0,26,1,12,0],
 "pmu-sys-plugin_8c.html#a39cb9803524b6f3b783344b2f89867b4":[36,0,0,26,1,12,0,3],
-"pmu-sys-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[36,0,0,26,1,12,0,10]
+"pmu-sys-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[36,0,0,26,1,12,0,10],
+"pmu-sys-plugin_8c.html#a4d8bf1b87b7c9e61b5dc93b6e2ff7972":[36,0,0,26,1,12,0,4],
+"pmu-sys-plugin_8c.html#a6c1a5e285f6759c18baa294ea1b35b2c":[36,0,0,26,1,12,0,5]
 };

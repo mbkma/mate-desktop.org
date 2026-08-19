@@ -1,6 +1,5 @@
 var NAVTREEINDEX111 =
 {
-"mate-settings-profile_8h.html#aae6734b7bb21f84c49ba9bbd4a968952":[36,0,0,28,0,12,3],
 "mate-settings-profile_8h.html#acc07af3cb341464026d2bb6f9a12ef04":[36,0,0,28,0,12,2],
 "mate-settings-profile_8h_source.html":[36,0,0,28,0,12],
 "mate-stock-icons_8c.html":[36,0,0,9,2,72],
@@ -249,5 +248,6 @@ var NAVTREEINDEX111 =
 "mate-system-monitor_2src_2util_8h.html#a2579d15cfa2b93939fc0f10b32d3eb49":[36,0,0,29,0,52,23],
 "mate-system-monitor_2src_2util_8h.html#a3e4bd68722d9dd9c4fa7c1e71e5e91b0":[36,0,0,29,0,52,18],
 "mate-system-monitor_2src_2util_8h.html#a49f7cbe528cd06741b79aa7c7ab3aea8":[36,0,0,29,0,52,3],
-"mate-system-monitor_2src_2util_8h.html#a4f14af139c4032675308c409a79efdb5":[36,0,0,29,0,52,13]
+"mate-system-monitor_2src_2util_8h.html#a4f14af139c4032675308c409a79efdb5":[36,0,0,29,0,52,13],
+"mate-system-monitor_2src_2util_8h.html#a7f0cfb28e59a08a75a79335d84a3fc0d":[36,0,0,29,0,52,11]
 };

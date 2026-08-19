@@ -1,7 +1,5 @@
 var NAVTREEINDEX121 =
 {
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md29":[8,3,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md30":[8,4],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md31":[8,5],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md32":[8,6],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md33":[8,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX121 =
 "mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3d37159d56085cb7a247f71c31c43740":[36,0,0,0,0,2,0,20,96,6],
 "mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa47547406975ad98a80675b7a05e46bea":[36,0,0,0,0,2,0,20,96,7],
 "mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa5050adb6da4c31f1d91310d21d5a63a8":[36,0,0,0,0,2,0,20,96,8],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa76fcec8e7002b86b56579f62c4c0479f":[36,0,0,0,0,2,0,20,96,5]
+"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa76fcec8e7002b86b56579f62c4c0479f":[36,0,0,0,0,2,0,20,96,5],
+"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa8aa4b976783f6871e2ff5f18c98670ea":[36,0,0,0,0,2,0,20,96,2],
+"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfabed28fd6f3b3c9f39bf1d51cbe54c57d":[36,0,0,0,0,2,0,20,96,0]
 };

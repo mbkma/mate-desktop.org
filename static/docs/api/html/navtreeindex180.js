@@ -1,7 +1,5 @@
 var NAVTREEINDEX180 =
 {
-"structPrefsDialog.html#ab597d357264f21064460af413b4d29c3":[35,0,1611,18],
-"structPrefsDialog.html#abc90f5e37f1c5ce7ee8f5f43f4fcf3dc":[35,0,1611,22],
 "structPrefsDialog.html#aca6c9a92b0a6ade55a448448159578b5":[35,0,1611,30],
 "structPrefsDialog.html#ad3072a64b850708098dfeec48aaf8d1e":[35,0,1611,24],
 "structPrefsDialog.html#ad4386eb37b1fe13e1c4fa54370ba80e2":[35,0,1611,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX180 =
 "structTestIFaceInterface.html#a4100b4ae46e5c84c76fddbec2e7b195a":[35,0,1641,1],
 "structTestIFaceInterface.html#ae33a2bf9dd53fe94e24ac876f44b0f24":[35,0,1641,0],
 "structTestIFaceInterface.html#af4cf6645c9313ca9e8d2281d3878e163":[35,0,1641,3],
-"structTestIFaceInterface.html#af56389c9d9dc2ccaa2c4d769fcb83916":[35,0,1641,2]
+"structTestIFaceInterface.html#af56389c9d9dc2ccaa2c4d769fcb83916":[35,0,1641,2],
+"structThemedIcon.html":[35,0,1642],
+"structThemedIcon.html#a1caf8752dba08b431fe4a7b4c218a0e2":[35,0,1642,1]
 };

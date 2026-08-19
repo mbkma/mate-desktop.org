@@ -100,10 +100,9 @@ var NAVTREEINDEX105 =
 "mate-netbook_2maximus_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747aedbd26b3debcb24b2ad251d7926fc259":[36,0,0,20,1,1,0,13],
 "mate-netbook_2maximus_2eggaccelerators_8h_source.html":[36,0,0,20,1,1],
 "mate-netbook_2maximus_2main_8c.html":[36,0,0,20,1,2],
-"mate-netbook_2maximus_2main_8c.html#a1c9e8841c107eb11d227cc67118cac1e":[36,0,0,20,1,2,3],
-"mate-netbook_2maximus_2main_8c.html#a5a0ff716101085fa28ca0d833811a238":[36,0,0,20,1,2,0],
-"mate-netbook_2maximus_2main_8c.html#a7490dccd8cae3e56d4df21f6d03c351d":[36,0,0,20,1,2,1],
-"mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc":[36,0,0,20,1,2,2],
+"mate-netbook_2maximus_2main_8c.html#a1c9e8841c107eb11d227cc67118cac1e":[36,0,0,20,1,2,2],
+"mate-netbook_2maximus_2main_8c.html#a7490dccd8cae3e56d4df21f6d03c351d":[36,0,0,20,1,2,0],
+"mate-netbook_2maximus_2main_8c.html#a76565232f25302e8cb99c60a629034cc":[36,0,0,20,1,2,1],
 "mate-netbook_2maximus_2main_8c_source.html":[36,0,0,20,1,2],
 "mate-netbook_2maximus_2tomboykeybinder_8c.html":[36,0,0,20,1,7],
 "mate-netbook_2maximus_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e":[36,0,0,20,1,7,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX105 =
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a970e3f71276cf2b205341a1e2007f229":[36,0,0,21,0,3,2,0,0],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#a9b04e8b964f62412523058f572272508":[36,0,0,21,0,3,2,0,19],
 "mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#aa04bc1c7097ac26666feaf83fa949b8c":[36,0,0,21,0,3,2,0,14],
-"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#aa910282b5ee7805b89749ea0599c59c4":[36,0,0,21,0,3,2,0,21]
+"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#aa910282b5ee7805b89749ea0599c59c4":[36,0,0,21,0,3,2,0,21],
+"mate-notification-daemon_2src_2themes_2slider_2theme_8c.html#ab0feb92c9cc16ceee5860fdfdfaf3715":[36,0,0,21,0,3,2,0,4]
 };

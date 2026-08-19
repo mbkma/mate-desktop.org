@@ -1,7 +1,5 @@
 var NAVTREEINDEX219 =
 {
-"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0a49b479c37592105bd5b5761abef6091f":[36,0,0,22,0,3,13,14,3],
-"workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0ac7792d2bd1b3959a7d95f8bd0c0c34c7":[36,0,0,22,0,3,13,14,4],
 "workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0ae969b19c2f8a19760796f6f81bab5cd7":[36,0,0,22,0,3,13,14,0],
 "workspace-switcher_8c.html#aa89c8c2ea6a60a8f92520ea59402c1e0af4d4ca1235a9957824e0baac9370c4ec":[36,0,0,22,0,3,13,14,2],
 "workspace-switcher_8c.html#ac96f868fe3276011e3d0722ca4f91591":[36,0,0,22,0,3,13,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX219 =
 "xsettings-manager_8h.html#ad051dc33a2ea99f340d169f034e72d54":[36,0,0,28,1,19,11,7],
 "xsettings-manager_8h_source.html":[36,0,0,28,1,19,11],
 "xstuff_8c.html":[36,0,0,22,2,96],
-"xstuff_8c.html#a06494d8e8c4aeb4ef3bbdf3cd0edc9da":[36,0,0,22,2,96,8]
+"xstuff_8c.html#a06494d8e8c4aeb4ef3bbdf3cd0edc9da":[36,0,0,22,2,96,8],
+"xstuff_8c.html#a1ad06daf9bbafde3aeb2f52bf3a6e2e4":[36,0,0,22,2,96,9],
+"xstuff_8c.html#a1f06629187024721b4adc3f54e4bdcf1":[36,0,0,22,2,96,4]
 };

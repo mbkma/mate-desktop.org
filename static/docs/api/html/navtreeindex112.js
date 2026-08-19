@@ -1,6 +1,5 @@
 var NAVTREEINDEX112 =
 {
-"mate-system-monitor_2src_2util_8h.html#a7f0cfb28e59a08a75a79335d84a3fc0d":[36,0,0,29,0,52,11],
 "mate-system-monitor_2src_2util_8h.html#a83a61345b6debaab3b4418e4410a6e46":[36,0,0,29,0,52,25],
 "mate-system-monitor_2src_2util_8h.html#a963cfdc3c6b7d9833928bf46451d1826":[36,0,0,29,0,52,22],
 "mate-system-monitor_2src_2util_8h.html#a9adb961601145224e5c9cb24fb38ed27":[36,0,0,29,0,52,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX112 =
 "mate-ui-init_8h.html#a637d6a1d298b1a170df8399112c69d32":[36,0,0,9,2,81,4],
 "mate-ui-init_8h.html#a80e3976db8f16870534426e5984292d4":[36,0,0,9,2,81,6],
 "mate-ui-init_8h.html#a9479f2222dadf77948278bc6c4a7edf4":[36,0,0,9,2,81,0],
-"mate-ui-init_8h.html#ac2d92903d7f5ac4e73f72d22ed924bd5":[36,0,0,9,2,81,8]
+"mate-ui-init_8h.html#ac2d92903d7f5ac4e73f72d22ed924bd5":[36,0,0,9,2,81,8],
+"mate-ui-init_8h.html#ae8f8b01f7b89c85a375d59de6211728a":[36,0,0,9,2,81,1]
 };

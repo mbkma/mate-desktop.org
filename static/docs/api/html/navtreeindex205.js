@@ -1,7 +1,5 @@
 var NAVTREEINDEX205 =
 {
-"sushi-font-widget_8h.html#a914e654c00019764a85ab441a7c3a5b8":[36,0,0,14,1,11,14],
-"sushi-font-widget_8h.html#aa78dfed9434a9ada614f4ab5c155f496":[36,0,0,14,1,11,15],
 "sushi-font-widget_8h.html#ad93b67d2e7288cedc7b331bd7364a1c6":[36,0,0,14,1,11,4],
 "sushi-font-widget_8h.html#af5452eb9d328db3a4fc38c143aab44a2":[36,0,0,14,1,11,8],
 "sushi-font-widget_8h_source.html":[36,0,0,14,1,11],
@@ -249,5 +247,7 @@ var NAVTREEINDEX205 =
 "terminal-app_8c.html#af9a93f907f7a7f483756579930cebcf0":[36,0,0,30,0,10,4],
 "terminal-app_8c.html#afe7e58aae967c99451b5101d7398e1e8":[36,0,0,30,0,10,11],
 "terminal-app_8c.html#afed94e5cb2b998d0a20c8ff717119b8b":[36,0,0,30,0,10,0],
-"terminal-app_8c.html#aff0ae209248161a1f747fb4207e746e6":[36,0,0,30,0,10,8]
+"terminal-app_8c.html#aff0ae209248161a1f747fb4207e746e6":[36,0,0,30,0,10,8],
+"terminal-app_8c_source.html":[36,0,0,30,0,10],
+"terminal-app_8h.html":[36,0,0,30,0,11]
 };
