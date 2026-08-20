@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"file-utils_8c.html#a41488bd6e1d04e9e54c2c7f2ab57ecba":[36,0,0,5,1,33,44],
 "file-utils_8c.html#a428205000235499a9f99f5d91a6b5b05":[36,0,0,5,1,33,40],
 "file-utils_8c.html#a45855c662ce82e1a2ee870f6cd7bdbac":[36,0,0,5,1,33,13],
 "file-utils_8c.html#a48eeb1ce412c19c04b0bb3356ad55d49":[36,0,0,5,1,33,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "fm-desktop-icon-view_8h.html#a0ad10e1e40c2b5e36e38f0f21fa61de5":[36,0,0,1,3,0,3,10],
 "fm-desktop-icon-view_8h.html#a0bf81c5c3527f22977313465219efa48":[36,0,0,1,3,0,3,7],
 "fm-desktop-icon-view_8h.html#a53987ce7915aec0b32ccc3c6dab197f4":[36,0,0,1,3,0,3,6],
-"fm-desktop-icon-view_8h.html#a576b5110ca7e48442d223041b91d069b":[36,0,0,1,3,0,3,8],
-"fm-desktop-icon-view_8h.html#a5ffb504a71f5296132e91454035770db":[36,0,0,1,3,0,3,3]
+"fm-desktop-icon-view_8h.html#a576b5110ca7e48442d223041b91d069b":[36,0,0,1,3,0,3,8]
 };

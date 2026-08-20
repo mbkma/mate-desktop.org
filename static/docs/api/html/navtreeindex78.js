@@ -1,5 +1,6 @@
 var NAVTREEINDEX78 =
 {
+"globals_defs_i.html":[36,1,6,9],
 "globals_defs_j.html":[36,1,6,10],
 "globals_defs_k.html":[36,1,6,11],
 "globals_defs_l.html":[36,1,6,12],
@@ -135,8 +136,8 @@ var NAVTREEINDEX78 =
 "globals_type_y.html":[36,1,3,21],
 "globals_u.html":[36,1,0,21],
 "globals_v.html":[36,1,0,22],
-"globals_vars.html":[36,1,2],
 "globals_vars.html":[36,1,2,0],
+"globals_vars.html":[36,1,2],
 "globals_vars_a.html":[36,1,2,1],
 "globals_vars_b.html":[36,1,2,2],
 "globals_vars_c.html":[36,1,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX78 =
 "gpm-button_8h.html#ad5f8b982043ccd3a645c63c170d7af1c":[36,0,0,24,1,20,13],
 "gpm-button_8h.html#ad8f58071e06f248d53ae0811258e1067":[36,0,0,24,1,20,3],
 "gpm-button_8h.html#adb6432bea957b61e79524b747bd2dc02":[36,0,0,24,1,20,18],
-"gpm-button_8h.html#adf088656570b565fd805bb0d51317c06":[36,0,0,24,1,20,19],
-"gpm-button_8h.html#ae050f916b1fc8d62220a424b8b51dce7":[36,0,0,24,1,20,6]
+"gpm-button_8h.html#adf088656570b565fd805bb0d51317c06":[36,0,0,24,1,20,19]
 };

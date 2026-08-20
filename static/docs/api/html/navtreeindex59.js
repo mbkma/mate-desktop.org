@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"ev-init_8h.html#ab2afbda257866b06281ff86e3cf87242":[36,0,0,0,2,52,2],
 "ev-init_8h.html#ab5d2e0202a044fab82ff25b5f2ecc979":[36,0,0,0,2,52,1],
 "ev-init_8h_source.html":[36,0,0,0,2,52],
 "ev-job-scheduler_8c.html":[36,0,0,0,4,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "ev-link-accessible_8c_source.html":[36,0,0,0,4,12],
 "ev-link-accessible_8h.html":[36,0,0,0,4,13],
 "ev-link-accessible_8h.html#a4e0a5c29145ec97975c85d628308e209":[36,0,0,0,4,13,7],
-"ev-link-accessible_8h.html#a567127f6a11abe9e4221db8479937243":[36,0,0,0,4,13,5],
-"ev-link-accessible_8h.html#a87f9779c8c639005b2ba6442fce0f642":[36,0,0,0,4,13,8]
+"ev-link-accessible_8h.html#a567127f6a11abe9e4221db8479937243":[36,0,0,0,4,13,5]
 };

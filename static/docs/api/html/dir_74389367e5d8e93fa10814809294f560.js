@@ -2,6 +2,8 @@ var dir_74389367e5d8e93fa10814809294f560 =
 [
     [ "list.c", "mate-settings-daemon_2plugins_2clipboard_2list_8c.html", "mate-settings-daemon_2plugins_2clipboard_2list_8c" ],
     [ "list.h", "list_8h.html", "list_8h" ],
+    [ "msd-clipboard-manager-wayland.c", "msd-clipboard-manager-wayland_8c.html", "msd-clipboard-manager-wayland_8c" ],
+    [ "msd-clipboard-manager-wayland.h", "msd-clipboard-manager-wayland_8h.html", "msd-clipboard-manager-wayland_8h" ],
     [ "msd-clipboard-manager.c", "msd-clipboard-manager_8c.html", "msd-clipboard-manager_8c" ],
     [ "msd-clipboard-manager.h", "msd-clipboard-manager_8h.html", "msd-clipboard-manager_8h" ],
     [ "msd-clipboard-plugin.c", "msd-clipboard-plugin_8c.html", null ],

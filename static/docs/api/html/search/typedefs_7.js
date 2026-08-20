@@ -79,7 +79,7 @@ var searchData=
   ['gpmscreensaverprivate_76',['GpmScreensaverPrivate',['../gpm-screensaver_8h.html#a545f64d0c284b261145a7722511fbf9a',1,'gpm-screensaver.h']]],
   ['gpmsessionprivate_77',['GpmSessionPrivate',['../gpm-session_8h.html#aca8b4e9aec7be5d369280bcdfc0fa52f',1,'gpm-session.h']]],
   ['gpmtrayiconprivate_78',['GpmTrayIconPrivate',['../gpm-tray-icon_8h.html#a79517ff43f7c4646f1652baf3c1e8fbf',1,'gpm-tray-icon.h']]],
-  ['grabinfo_79',['GrabInfo',['../xrandr-capplet_8c.html#ae9c4bd6fe64e40d93660c4520f8a38b1',1,'xrandr-capplet.c']]],
+  ['grabinfo_79',['grabinfo',['../wlrandr-capplet_8c.html#ae9c4bd6fe64e40d93660c4520f8a38b1',1,'GrabInfo:&#160;wlrandr-capplet.c'],['../xrandr-capplet_8c.html#ae9c4bd6fe64e40d93660c4520f8a38b1',1,'GrabInfo:&#160;xrandr-capplet.c']]],
   ['groupsignal_80',['GroupSignal',['../wayland-workspace_8c.html#a75c21a68902d6bc9410d1b16b7ff857f',1,'wayland-workspace.c']]],
   ['gsauthmessagefunc_81',['GSAuthMessageFunc',['../gs-auth_8h.html#adb12eeb929c6a382e9e4eb6f2c9de90e',1,'gs-auth.h']]],
   ['gsearchcommanddetails_82',['GSearchCommandDetails',['../gsearchtool_8h.html#a8c3faa293295b595b3828ccceaa749fa',1,'gsearchtool.h']]],

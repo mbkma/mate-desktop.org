@@ -1,5 +1,6 @@
 var NAVTREEINDEX79 =
 {
+"gpm-button_8h.html#ae050f916b1fc8d62220a424b8b51dce7":[36,0,0,24,1,20,6],
 "gpm-button_8h.html#ae4524c0fdd7eb74096b920f92dfe517d":[36,0,0,24,1,20,2],
 "gpm-button_8h.html#ae52fc168a440085a07d915075ef0a172":[36,0,0,24,1,20,15],
 "gpm-button_8h.html#ae89614b68564f056efd91914ad643dfd":[36,0,0,24,1,20,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX79 =
 "gpm-manager_8c_source.html":[36,0,0,24,1,39],
 "gpm-manager_8h.html":[36,0,0,24,1,40],
 "gpm-manager_8h.html#a0f5edef270f5fea3da6ed3e1d86bd451":[36,0,0,24,1,40,3],
-"gpm-manager_8h.html#a12aecda524b1bd312e034d8afdd33575":[36,0,0,24,1,40,5],
-"gpm-manager_8h.html#a1dc8bff671f934802a1473689f9eb603":[36,0,0,24,1,40,12]
+"gpm-manager_8h.html#a12aecda524b1bd312e034d8afdd33575":[36,0,0,24,1,40,5]
 };

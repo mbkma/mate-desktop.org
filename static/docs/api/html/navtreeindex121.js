@@ -1,5 +1,10 @@
 var NAVTREEINDEX121 =
 {
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md26":[8,2,2],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md27":[8,3],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md28":[8,3,0],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md29":[8,3,1],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md30":[8,4],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md31":[8,5],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md32":[8,6],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md33":[8,7],
@@ -41,13 +46,13 @@ var NAVTREEINDEX121 =
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md63":[21,0,0],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md64":[21,0,1],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md65":[21,0,2],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md66":[21,0,2,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md67":[21,0,2,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md68":[21,0,2,2],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md69":[21,0,2,3],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md70":[21,0,2,4],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md71":[21,0,3],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md72":[21,0,3,0],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md66":[21,0,3],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md67":[21,0,3,0],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md68":[21,0,3,1],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md69":[21,0,3,2],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md70":[21,0,3,3],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md71":[21,0,4],
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-wayland-session_2README.html#autotoc_md72":[21,0,4,0],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html":[32],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html#autotoc_md88":[32,0],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma-plugins_2README.html#autotoc_md89":[32,0,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX121 =
 "mdvi_8h.html#a84d5c75b700601250ba5e90a38f465b1":[36,0,0,0,0,2,0,20,140],
 "mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4df":[36,0,0,0,0,2,0,20,96],
 "mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3351aa6080e0acb46a944af7d5782f7c":[36,0,0,0,0,2,0,20,96,4],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3d37159d56085cb7a247f71c31c43740":[36,0,0,0,0,2,0,20,96,6],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa47547406975ad98a80675b7a05e46bea":[36,0,0,0,0,2,0,20,96,7],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa5050adb6da4c31f1d91310d21d5a63a8":[36,0,0,0,0,2,0,20,96,8],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa76fcec8e7002b86b56579f62c4c0479f":[36,0,0,0,0,2,0,20,96,5],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa8aa4b976783f6871e2ff5f18c98670ea":[36,0,0,0,0,2,0,20,96,2],
-"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfabed28fd6f3b3c9f39bf1d51cbe54c57d":[36,0,0,0,0,2,0,20,96,0]
+"mdvi_8h.html#a85ee7796ae16260fa8fbf9df1c81e4dfa3d37159d56085cb7a247f71c31c43740":[36,0,0,0,0,2,0,20,96,6]
 };

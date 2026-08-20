@@ -35,7 +35,7 @@ var searchData=
   ['alsatoggleclass_32',['AlsaToggleClass',['../alsa-toggle_8h.html#ad6148c1ce814d2a6635dbbc25b8ae733',1,'alsa-toggle.h']]],
   ['alsatoggleprivate_33',['AlsaTogglePrivate',['../alsa-toggle_8h.html#a473358af64bc6fcd1c34f496d9d73681',1,'alsa-toggle.h']]],
   ['apm_5finfo_34',['apm_info',['../apm_8h.html#a1ef067865e80315996d6dc1268e70d7d',1,'apm.h']]],
-  ['app_35',['App',['../xrandr-capplet_8c.html#a9309685b6ae50a38292f53a69a02b712',1,'xrandr-capplet.c']]],
+  ['app_35',['app',['../xrandr-capplet_8c.html#a9309685b6ae50a38292f53a69a02b712',1,'App:&#160;xrandr-capplet.c'],['../wlrandr-capplet_8c.html#a9309685b6ae50a38292f53a69a02b712',1,'App:&#160;wlrandr-capplet.c']]],
   ['appletdata_36',['AppletData',['../panel-widget_8h.html#a9a19e7ce3cc4adc1cc24ab0f0ac9a336',1,'panel-widget.h']]],
   ['appletrecord_37',['AppletRecord',['../panel-widget_8h.html#a08f03e529e4990f54590d5b5d3579db7',1,'panel-widget.h']]],
   ['appletsizehints_38',['AppletSizeHints',['../panel-widget_8h.html#a6ea80f8782f7b73e9a54da6d47d82fa4',1,'panel-widget.h']]],

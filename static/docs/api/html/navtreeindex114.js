@@ -1,5 +1,10 @@
 var NAVTREEINDEX114 =
 {
+"matekbd-desktop-config_8h.html#a15fde6481829df9ba3636d52f86f8c39":[36,0,0,7,0,2,11],
+"matekbd-desktop-config_8h.html#a29572d3d6d217338f4fe5448216ace34":[36,0,0,7,0,2,1],
+"matekbd-desktop-config_8h.html#a2c724d7210b68441081f34a7d3b2713f":[36,0,0,7,0,2,10],
+"matekbd-desktop-config_8h.html#a2fafe32965b3a545c0a9a4803fe4638c":[36,0,0,7,0,2,6],
+"matekbd-desktop-config_8h.html#a41bd286e626c7e7193f6350d562f43bc":[36,0,0,7,0,2,7],
 "matekbd-desktop-config_8h.html#a46b71fa031dabe89bbe9f651436faeb1":[36,0,0,7,0,2,8],
 "matekbd-desktop-config_8h.html#a46d06f2cb6584feec9e32ec8dfa923fe":[36,0,0,7,0,2,2],
 "matekbd-desktop-config_8h.html#a8e84604ddb972252be5c0b24716c386e":[36,0,0,7,0,2,14],
@@ -244,10 +249,5 @@ var NAVTREEINDEX114 =
 "matekbd-util_8c.html#ad8296099b963c55ee1b9d247dbcfbaf6":[36,0,0,7,0,13,5],
 "matekbd-util_8c.html#af1925c98c8c9a399f9e37351df52a32e":[36,0,0,7,0,13,1],
 "matekbd-util_8c.html#af6fc3279080ec6630c13607ac5f744ea":[36,0,0,7,0,13,6],
-"matekbd-util_8c_source.html":[36,0,0,7,0,13],
-"matekbd-util_8h.html":[36,0,0,7,0,14],
-"matekbd-util_8h.html#a0d1180c1d3050b681d1bc0bd7552b1dc":[36,0,0,7,0,14,1],
-"matekbd-util_8h.html#a3b5a8449b1e741561668b5a964073fbe":[36,0,0,7,0,14,3],
-"matekbd-util_8h.html#a5cd3fcc0882a1866c79d2e3a9803427a":[36,0,0,7,0,14,2],
-"matekbd-util_8h.html#af1925c98c8c9a399f9e37351df52a32e":[36,0,0,7,0,14,0]
+"matekbd-util_8c_source.html":[36,0,0,7,0,13]
 };

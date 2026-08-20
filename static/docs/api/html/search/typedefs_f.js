@@ -20,7 +20,7 @@ var searchData=
   ['signalnode_17',['SignalNode',['../pluma-file-browser-widget_8c.html#a31f48babee0e878848bef9dbfedf4bac',1,'pluma-file-browser-widget.c']]],
   ['slide_18',['Slide',['../mate-bg_8c.html#a5411080cad4b24d79dd63f2cece15071',1,'mate-bg.c']]],
   ['slideshow_19',['SlideShow',['../mate-bg_8c.html#afac613a409ad770e8f36f735705828ee',1,'mate-bg.c']]],
-  ['snap_20',['Snap',['../xrandr-capplet_8c.html#a788176c3f7886c4ef3414e6774ab3c2c',1,'xrandr-capplet.c']]],
+  ['snap_20',['snap',['../xrandr-capplet_8c.html#a788176c3f7886c4ef3414e6774ab3c2c',1,'Snap:&#160;xrandr-capplet.c'],['../wlrandr-capplet_8c.html#a788176c3f7886c4ef3414e6774ab3c2c',1,'Snap:&#160;wlrandr-capplet.c']]],
   ['sndbusmenu_21',['SnDBusMenu',['../sn-dbus-menu_8h.html#a8d7e8d10f753102b9f4a57274bc92560',1,'sn-dbus-menu.h']]],
   ['sndbusmenuclass_22',['SnDBusMenuClass',['../sn-dbus-menu_8h.html#a833deec7e218217e89ff950e3bbaaa76',1,'sn-dbus-menu.h']]],
   ['snflatbutton_23',['SnFlatButton',['../sn-flat-button_8h.html#a772660754bd5045f4333ae516599d957',1,'sn-flat-button.h']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX54 =
 {
+"ev-annotation-properties-dialog_8h.html#a1231c1c1f67930a03d24b6856d9ec5a0":[36,0,0,0,7,3,4],
 "ev-annotation-properties-dialog_8h.html#a3225b745ca8a8a10fee4be870e94f8b9":[36,0,0,0,7,3,13],
 "ev-annotation-properties-dialog_8h.html#a4682d2c58b0bdd047d7c1bb01bc8c3ff":[36,0,0,0,7,3,9],
 "ev-annotation-properties-dialog_8h.html#a53365e3a07b485b05cb617b0336ece56":[36,0,0,0,7,3,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX54 =
 "ev-archive_8h.html#a601fc7d04a2c373ebfb2a6a252d56634":[36,0,0,0,0,0,3,4],
 "ev-archive_8h.html#a8a26bfd1d278123a5f16fba61384ec1f":[36,0,0,0,0,0,3,7],
 "ev-archive_8h.html#a8beeb72c1dd8aeb432f609c5632358c6":[36,0,0,0,0,0,3,8],
-"ev-archive_8h.html#a91d4702afa755d52fcac7862cfca6314":[36,0,0,0,0,0,3,13],
-"ev-archive_8h.html#a92b02ca5d81d79c9a98e8b3316182f3e":[36,0,0,0,0,0,3,10]
+"ev-archive_8h.html#a91d4702afa755d52fcac7862cfca6314":[36,0,0,0,0,0,3,13]
 };

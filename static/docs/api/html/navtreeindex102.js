@@ -1,5 +1,6 @@
 var NAVTREEINDEX102 =
 {
+"mate-font-picker_8h.html#a5033e417a354c51e475240b7ebf021e4ad472e500f8e90685dad4a0323733401e":[36,0,0,9,2,33,11,2],
 "mate-font-picker_8h.html#a54de8cf1435bbbe66c166ff00ec5d87c":[36,0,0,9,2,33,6],
 "mate-font-picker_8h.html#a8387b643431d6a4efe46d81896730c6a":[36,0,0,9,2,33,18],
 "mate-font-picker_8h.html#a85221dfdea2ee78bdbb6970999eafb4a":[36,0,0,9,2,33,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX102 =
 "mate-icon-list_8h.html#ad59795cb8d574cd5439a1cd2eaa3963f":[36,0,0,9,2,41,18],
 "mate-icon-list_8h.html#ae89f9884cac0de3abf8a91460ec37876":[36,0,0,9,2,41,20],
 "mate-icon-list_8h.html#ae8e2d685732879602b02e70ff52ce5e9":[36,0,0,9,2,41,32],
-"mate-icon-list_8h.html#af424ef3e4daf8ebbcaf28ca6dcf9c3fc":[36,0,0,9,2,41,27],
-"mate-icon-list_8h.html#af510d4724caa090395a3da40a834887b":[36,0,0,9,2,41,45]
+"mate-icon-list_8h.html#af424ef3e4daf8ebbcaf28ca6dcf9c3fc":[36,0,0,9,2,41,27]
 };

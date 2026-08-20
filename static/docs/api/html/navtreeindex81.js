@@ -1,5 +1,6 @@
 var NAVTREEINDEX81 =
 {
+"gpm-upower_8c.html#a0e6adc7faf9fafa7b831eb1d9f633ecf":[36,0,0,24,1,58,3],
 "gpm-upower_8c.html#a1c21eb1f43f8669e4487152fdf517c5a":[36,0,0,24,1,58,7],
 "gpm-upower_8c.html#a202505a798be368aa138012629af8dc1":[36,0,0,24,1,58,4],
 "gpm-upower_8c.html#a32689291cafe39b5973159848e83cf49":[36,0,0,24,1,58,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX81 =
 "gs-grab_8h.html#ae9549e1da38b3b368e501b4813d3b33f":[36,0,0,25,2,13,5],
 "gs-grab_8h.html#af6991b2a84b46b1c5db7303146dd63b7":[36,0,0,25,2,13,3],
 "gs-grab_8h.html#afa92dfd857d61390a97b8e6563aeec8c":[36,0,0,25,2,13,8],
-"gs-grab_8h_source.html":[36,0,0,25,2,13],
-"gs-idle-monitor_8c.html":[36,0,0,27,1,0]
+"gs-grab_8h_source.html":[36,0,0,25,2,13]
 };

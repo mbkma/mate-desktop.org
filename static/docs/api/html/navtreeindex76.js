@@ -1,5 +1,6 @@
 var NAVTREEINDEX76 =
 {
+"gdict-source_8c.html#aa5cb2ad4099aadcef805256d9ab52fff":[36,0,0,32,3,0,15,4],
 "gdict-source_8c.html#ab07fa16331d9b3a5f04a3701e4ad6600":[36,0,0,32,3,0,15,7],
 "gdict-source_8c.html#ab50b73d1b84a7f02fbf556f8b9b75d6a":[36,0,0,32,3,0,15,1],
 "gdict-source_8c.html#abb895be089d0fc1955b427d92c7f966e":[36,0,0,32,3,0,15,0],
@@ -99,12 +100,12 @@ var NAVTREEINDEX76 =
 "gdict-strategy-chooser_8c.html#a2e8549c621ebe39999c4ea9fc07936eb":[36,0,0,32,3,0,19,7],
 "gdict-strategy-chooser_8c.html#a5759189f42736cec9ea4a64102db054e":[36,0,0,32,3,0,19,6],
 "gdict-strategy-chooser_8c.html#a75507527c24d9d18984da19dae9cbd03":[36,0,0,32,3,0,19,5],
+"gdict-strategy-chooser_8c.html#a7b2d49ccfc60374ac2d9afc8138f165e":[36,0,0,32,3,0,19,15],
 "gdict-strategy-chooser_8c.html#a8352e4d95fee4a23bd41b5ede135f0dd":[36,0,0,32,3,0,19,3],
 "gdict-strategy-chooser_8c.html#a8456d0e903084841a6ceee7a1e1d80a6":[36,0,0,32,3,0,19,8],
 "gdict-strategy-chooser_8c.html#aa7ee9df95affbbc1c0431cfb67b6e69c":[36,0,0,32,3,0,19,1],
 "gdict-strategy-chooser_8c.html#aa942a23801851e14c3fbc9e3c2c26700":[36,0,0,32,3,0,19,9],
 "gdict-strategy-chooser_8c.html#aac5f586208bc880279cf856b51154ec2":[36,0,0,32,3,0,19,14],
-"gdict-strategy-chooser_8c.html#ab5ee7b56f5e25de3a49c6da4a2c7c231":[36,0,0,32,3,0,19,15],
 "gdict-strategy-chooser_8c.html#ab8e9176abf0846f5f0c036c3c28e2346":[36,0,0,32,3,0,19,10],
 "gdict-strategy-chooser_8c.html#ac345285e71b8d52d236a404fde402c3a":[36,0,0,32,3,0,19,11],
 "gdict-strategy-chooser_8c.html#aca3276b11e77d80cb7fae1fc6a81293f":[36,0,0,32,3,0,19,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX76 =
 "gf-sn-watcher-v0_8c_source.html":[36,0,0,22,0,2,0,0],
 "gf-sn-watcher-v0_8h.html":[36,0,0,22,0,2,0,1],
 "gf-sn-watcher-v0_8h.html#a1fb7a810a5f08972d3aa24c36885a51e":[36,0,0,22,0,2,0,1,5],
-"gf-sn-watcher-v0_8h.html#a2184542cdd5d723cc5a82b3f9b3525e1":[36,0,0,22,0,2,0,1,7],
-"gf-sn-watcher-v0_8h.html#a553f326b920ebdb861d742fb5eb54fb1":[36,0,0,22,0,2,0,1,1]
+"gf-sn-watcher-v0_8h.html#a2184542cdd5d723cc5a82b3f9b3525e1":[36,0,0,22,0,2,0,1,7]
 };

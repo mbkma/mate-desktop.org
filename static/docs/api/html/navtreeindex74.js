@@ -1,5 +1,6 @@
 var NAVTREEINDEX74 =
 {
+"gdict-app_8c.html":[36,0,0,32,3,1,4],
 "gdict-app_8c.html#a07094e9baa217d5cd081442e8f52f5f5":[36,0,0,32,3,1,4,1],
 "gdict-app_8c.html#a6b41b21185a6e713aae9d65715a166ba":[36,0,0,32,3,1,4,3],
 "gdict-app_8c.html#a8991d3cb94bd838481970033a9365980":[36,0,0,32,3,1,4,2],
@@ -203,13 +204,13 @@ var NAVTREEINDEX74 =
 "gdict-context_8h.html#afb652d0f64ebf51bbadb67b60ea9c2a4":[36,0,0,32,3,0,4,33],
 "gdict-context_8h_source.html":[36,0,0,32,3,0,4],
 "gdict-database-chooser_8c.html":[36,0,0,32,3,0,5],
+"gdict-database-chooser_8c.html#a219c9328286e065ef9e78e17dc4df6a2":[36,0,0,32,3,0,5,15],
 "gdict-database-chooser_8c.html#a28180e3b1fc9f6bea2a6a3df585eb4b1":[36,0,0,32,3,0,5,0],
 "gdict-database-chooser_8c.html#a2ad6d2cf01866157d1868d7a19a50745":[36,0,0,32,3,0,5,9],
 "gdict-database-chooser_8c.html#a2ada26a5ebde4fa9aab5a9682f6dc4e1":[36,0,0,32,3,0,5,8],
 "gdict-database-chooser_8c.html#a342181151b94f9a6165c5af9fdab5240":[36,0,0,32,3,0,5,3],
 "gdict-database-chooser_8c.html#a4ea9aa28f85e0932e340d9135be58af8":[36,0,0,32,3,0,5,10],
 "gdict-database-chooser_8c.html#a4f1b535b993eeaf62cf477bc8bb39113":[36,0,0,32,3,0,5,2],
-"gdict-database-chooser_8c.html#a5695266656460787f7339fbf1e1b51e2":[36,0,0,32,3,0,5,15],
 "gdict-database-chooser_8c.html#a641cf7220d01bf2e26f8b27351a63dfe":[36,0,0,32,3,0,5,13],
 "gdict-database-chooser_8c.html#a7e4053855d96ccd9be5d8f94f332823b":[36,0,0,32,3,0,5,4],
 "gdict-database-chooser_8c.html#a8195f7672e918b0af1a1244df4ac0253":[36,0,0,32,3,0,5,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX74 =
 "gdict-database-chooser_8h_source.html":[36,0,0,32,3,0,6],
 "gdict-debug_8h.html":[36,0,0,32,3,0,7],
 "gdict-debug_8h.html#a1ab5360bb92b9091bedafadf854b058e":[36,0,0,32,3,0,7,2],
-"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505":[36,0,0,32,3,0,7,1],
-"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505a18404f60baca92c7886ea0805de49857":[36,0,0,32,3,0,7,1,4]
+"gdict-debug_8h.html#adf64e231e73c355a6d713bb25a3cc505":[36,0,0,32,3,0,7,1]
 };

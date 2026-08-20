@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"egg-desktop-file_8h.html#aac77a113287e7569e325537d238f73cf":[36,0,0,2,0,1,91,19],
 "egg-desktop-file_8h.html#aae79c37508b2a628a70613445654e1fa":[36,0,0,2,0,1,91,17],
 "egg-desktop-file_8h.html#aaea32d02c0210dcec88ed67f2443f2ea":[36,0,0,2,0,1,91,12],
 "egg-desktop-file_8h.html#ab1f6d0630cb6e4f9dcbbed0c174365cb":[36,0,0,2,0,1,91,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX46 =
 "eggcellrendererkeys_8h_source.html":[36,0,0,14,0,6,3],
 "eggfileformatchooser_8c.html":[36,0,0,5,1,27],
 "eggfileformatchooser_8c.html#a09670425e2a793165e88150947235b51":[36,0,0,5,1,27,0],
-"eggfileformatchooser_8c.html#a0f3032d442152ee006c4bb5b1a9c0472":[36,0,0,5,1,27,11],
-"eggfileformatchooser_8c.html#a19b8158fed304f7adfd064f404ea0539":[36,0,0,5,1,27,7]
+"eggfileformatchooser_8c.html#a0f3032d442152ee006c4bb5b1a9c0472":[36,0,0,5,1,27,11]
 };

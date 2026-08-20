@@ -1,5 +1,6 @@
 var NAVTREEINDEX50 =
 {
+"eom-metadata-details_8h_source.html":[36,0,0,6,3,33],
 "eom-metadata-reader-jpg_8c.html":[36,0,0,6,3,34],
 "eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231":[36,0,0,6,3,34,6],
 "eom-metadata-reader-jpg_8c.html#a0afb9dc849ccfaa47261b24e7d70b231a07fb4f71b6b22e1729c379c4ea461361":[36,0,0,6,3,34,6,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX50 =
 "eom-properties-dialog_8h.html#ae7812036b7e05903f490e9d954cbb093":[36,0,0,6,3,55,7],
 "eom-properties-dialog_8h.html#af0416c0e794a6c9080c4006544144526":[36,0,0,6,3,55,14],
 "eom-properties-dialog_8h.html#afae4606ae2b902e7562d323d9da854ef":[36,0,0,6,3,55,10],
-"eom-properties-dialog_8h_source.html":[36,0,0,6,3,55],
-"eom-reload-plugin_8c.html":[36,0,0,6,2,1,0]
+"eom-properties-dialog_8h_source.html":[36,0,0,6,3,55]
 };

@@ -12,5 +12,6 @@ var xrandr_capplet_8c =
     [ "Edge", "xrandr-capplet_8c.html#a89b91ff6921535d9c8215110f215c2c7", null ],
     [ "GrabInfo", "xrandr-capplet_8c.html#ae9c4bd6fe64e40d93660c4520f8a38b1", null ],
     [ "Snap", "xrandr-capplet_8c.html#a788176c3f7886c4ef3414e6774ab3c2c", null ],
-    [ "main", "xrandr-capplet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ]
+    [ "main", "xrandr-capplet_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
+    [ "wlrandr_capplet_main", "xrandr-capplet_8c.html#ad58d093994a591fca508a3689599efe5", null ]
 ];

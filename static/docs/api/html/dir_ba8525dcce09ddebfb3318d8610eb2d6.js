@@ -17,6 +17,7 @@ var dir_ba8525dcce09ddebfb3318d8610eb2d6 =
     [ "smartcard", "dir_7ac96464bf5ac3f165891d3a425ff1fc.html", "dir_7ac96464bf5ac3f165891d3a425ff1fc" ],
     [ "sound", "dir_b9d62da35a1b626e1ce1c3f1890c1070.html", "dir_b9d62da35a1b626e1ce1c3f1890c1070" ],
     [ "typing-break", "dir_cc2a628272122c93b102b046b0b34844.html", "dir_cc2a628272122c93b102b046b0b34844" ],
+    [ "wlrandr", "dir_7e9012c96771220617414869a57b3bad.html", "dir_7e9012c96771220617414869a57b3bad" ],
     [ "xrandr", "dir_af0e384353e8c33edacf3ec633353636.html", "dir_af0e384353e8c33edacf3ec633353636" ],
     [ "xrdb", "dir_89cc9b2c22f6b7080c63399fc3fbc59c.html", "dir_89cc9b2c22f6b7080c63399fc3fbc59c" ],
     [ "xsettings", "dir_57ef06c7cb1bb5332080236e4057e032.html", "dir_57ef06c7cb1bb5332080236e4057e032" ]

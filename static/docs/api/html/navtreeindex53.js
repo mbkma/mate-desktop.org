@@ -1,5 +1,6 @@
 var NAVTREEINDEX53 =
 {
+"eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4bab336fd2e14cb16dcf8215e62f0092884":[36,0,0,6,3,81,13,3],
 "eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4babe3b04915bfbf70f939d798a0ff433ae":[36,0,0,6,3,81,13,0],
 "eom-window_8h.html#aef7fe3a26643fcedbe6ad78bcff22d4baf6998dbc635574b85beddd498f53d099":[36,0,0,6,3,81,13,2],
 "eom-window_8h.html#af1545d50c0f496aed22908e468eea140":[36,0,0,6,3,81,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX53 =
 "ev-annotation-properties-dialog_8c_source.html":[36,0,0,0,7,2],
 "ev-annotation-properties-dialog_8h.html":[36,0,0,0,7,3],
 "ev-annotation-properties-dialog_8h.html#a0c49f86860beeb518150ea5e104f173c":[36,0,0,0,7,3,12],
-"ev-annotation-properties-dialog_8h.html#a113f92f6132f7aae34041e5762a84181":[36,0,0,0,7,3,14],
-"ev-annotation-properties-dialog_8h.html#a1231c1c1f67930a03d24b6856d9ec5a0":[36,0,0,0,7,3,4]
+"ev-annotation-properties-dialog_8h.html#a113f92f6132f7aae34041e5762a84181":[36,0,0,0,7,3,14]
 };

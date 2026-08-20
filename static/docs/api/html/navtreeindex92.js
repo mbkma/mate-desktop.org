@@ -1,5 +1,6 @@
 var NAVTREEINDEX92 =
 {
+"logview-app_8h.html#ac9eecd32703b1e0cab1ba60a3d5e66cc":[36,0,0,32,2,0,3,3],
 "logview-app_8h.html#adddd44b3be6c70b97ebfd6c1b3a225a2":[36,0,0,32,2,0,3,14],
 "logview-app_8h_source.html":[36,0,0,32,2,0,3],
 "logview-filter-manager_8c.html":[36,0,0,32,2,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX92 =
 "logview-utils_8h.html#ab1b2d4170991ec6bf6c525374883c633":[36,0,0,32,2,0,20,4],
 "logview-utils_8h.html#ab6595cad1278dfe6faac52f78f9a8b7d":[36,0,0,32,2,0,20,1],
 "logview-utils_8h.html#adad66ec04d4ae3436e5b314cd2e48526":[36,0,0,32,2,0,20,5],
-"logview-utils_8h_source.html":[36,0,0,32,2,0,20],
-"logview-window_8c.html":[36,0,0,32,2,0,21]
+"logview-utils_8h_source.html":[36,0,0,32,2,0,20]
 };

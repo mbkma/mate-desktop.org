@@ -1,5 +1,10 @@
 var NAVTREEINDEX120 =
 {
+"math-equation_8h.html#aef0a2f63435df1e59659802764f8e90c":[36,0,0,13,0,19,37],
+"math-equation_8h.html#aefdc5d2941993daa2e2511c5f3569ef0":[36,0,0,13,0,19,65],
+"math-equation_8h.html#af0cb661bc1197149ffeff23712205fa4":[36,0,0,13,0,19,35],
+"math-equation_8h.html#affaa20df49fbbfddfdbdb37a60f80e46":[36,0,0,13,0,19,9],
+"math-equation_8h.html#affee0790339bf34bb6759a157f085c55":[36,0,0,13,0,19,34],
 "math-equation_8h_source.html":[36,0,0,13,0,19],
 "math-history-entry_8c.html":[36,0,0,13,0,20],
 "math-history-entry_8c.html#a223269b82e353fe3e05f0a1d0762fe3e":[36,0,0,13,0,20,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX120 =
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md22":[8,1,2],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md23":[8,2],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md24":[8,2,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md25":[8,2,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md26":[8,2,2],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md27":[8,3],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md28":[8,3,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md29":[8,3,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md30":[8,4]
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md25":[8,2,1]
 };

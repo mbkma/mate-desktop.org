@@ -19,5 +19,7 @@ var searchData=
   ['weathervisibility_16',['WeatherVisibility',['../weather-priv_8h.html#a30bd3ae84d66ef99809e705f059a963f',1,'weather-priv.h']]],
   ['weatherwinddirection_17',['WeatherWindDirection',['../weather_8h.html#adb8db206194a9038d54ee4c352282bcd',1,'weather.h']]],
   ['weatherwindspeed_18',['WeatherWindSpeed',['../weather-priv_8h.html#af12bcb1c6c70a0e255cfd93cd1022af5',1,'weather-priv.h']]],
-  ['wmcallbackdata_19',['WMCallbackData',['../mate-control-center_2capplets_2common_2wm-common_8c.html#a0517de70eb139d6db312cc78ae4710e8',1,'wm-common.c']]]
+  ['wloutputhead_19',['WlOutputHead',['../msd-wlrandr-manager_8c.html#a1c53fc5cafe648b548a28bd7ef2c5c7d',1,'msd-wlrandr-manager.c']]],
+  ['wloutputmode_20',['WlOutputMode',['../msd-wlrandr-manager_8c.html#a066f755b624f305e3b77df531ef16b9d',1,'msd-wlrandr-manager.c']]],
+  ['wmcallbackdata_21',['WMCallbackData',['../mate-control-center_2capplets_2common_2wm-common_8c.html#a0517de70eb139d6db312cc78ae4710e8',1,'wm-common.c']]]
 ];
