@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('md__2home_2runner_2work_2mate-desktop_
 <ul>
 <li><b>Display Managers</b>: Tested and known to work under SDDM, should work with any Wayland-supporting display manager.</li>
 <li><b>Session <a class="el" href="structLauncher.html">Launcher</a></b>: A script (<code>mate-wayland-components.sh</code>) launches MATE programs inside Wayfire. This session cannot run simultaneously with an X11 session using dbus on another TTY.</li>
-<li><b>Startup Configuration</b>: Edit <code>~/.config/wayfire.ini</code> to add <code>mate-wayland-components.sh</code> and disable the default Wayfire shell.</li>
+<li><b>Startup Configuration</b>: First run copies <code>~/.config/wayfire.ini</code> to <code>~/.config/mate/wayfire.ini</code>, adds <code>mate-wayland-components.sh</code> and disables the default Wayfire shell. A few other MATE defaults are also applied.</li>
 <li><b>Components</b>: Starts MATE components like Caja and Mate-panel without interfering with other parts of any existing Wayfire configuration</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md67"></a>
