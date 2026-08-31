@@ -413,10 +413,10 @@ var NAVTREEINDEX =
 "time-zones_8h.html#a74b9976953abf21c15c88e0e10c3dc9e",
 "timezone-menu_8h.html#a637b1ad2a05db4fd71e624cf0354e98e",
 "unit-manager_8h.html#aaefff5fed5e33b29a0777b4ddd196caa",
-"weather_8c.html#a12f9d8466290bf9a38fb4aa9ca4d2e77",
-"window-menu_8h.html#a06b233033cd3db153390bfd3a77d3aee",
-"window_8c.html#a95ece5e1e760586058c17e430f5a91ee",
-"xprops_8c.html#a7056fc33959ef4ed6739fd155dbff8c4"
+"weather-sun_8c_source.html",
+"window-list_8h.html#a18c3c641f3ef61c34ccc77cfb3384eec",
+"window_8c.html#a86ab4574070f715a2f011ceea033bdcf",
+"xprops_8c.html#a242a1e3a9deb0a9ab95f95e792bb0889"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

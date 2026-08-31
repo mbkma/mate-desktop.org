@@ -10,5 +10,9 @@ var dir_df24157b8075052a44797dc85033e13c =
     [ "screenshot-utils.c", "screenshot-utils_8c.html", "screenshot-utils_8c" ],
     [ "screenshot-utils.h", "screenshot-utils_8h.html", "screenshot-utils_8h" ],
     [ "screenshot-xfer.c", "screenshot-xfer_8c.html", "screenshot-xfer_8c" ],
-    [ "screenshot-xfer.h", "screenshot-xfer_8h.html", "screenshot-xfer_8h" ]
+    [ "screenshot-xfer.h", "screenshot-xfer_8h.html", "screenshot-xfer_8h" ],
+    [ "wayland-screenshot.c", "wayland-screenshot_8c.html", null ],
+    [ "wayland-screenshot.h", "wayland-screenshot_8h.html", null ],
+    [ "wayland-select-region.c", "wayland-select-region_8c.html", null ],
+    [ "wayland-select-region.h", "wayland-select-region_8h.html", null ]
 ];
