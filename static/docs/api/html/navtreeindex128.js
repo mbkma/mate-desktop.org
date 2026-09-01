@@ -1,5 +1,6 @@
 var NAVTREEINDEX128 =
 {
+"msd-wlrandr-manager_8c.html#a1b07c2eedaa6a64068a4f50deb8e636d":[36,0,0,28,1,17,0,20],
 "msd-wlrandr-manager_8c.html#a1c53fc5cafe648b548a28bd7ef2c5c7d":[36,0,0,28,1,17,0,21],
 "msd-wlrandr-manager_8c.html#a4240f06e86bff2e93e9571eed91a467f":[36,0,0,28,1,17,0,7],
 "msd-wlrandr-manager_8c.html#a4dd2ec6d26e9ec71c5a55d952a240b9a":[36,0,0,28,1,17,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX128 =
 "multiload_2src_2netspeed_8c.html#a04132731a3bb0796c2fadf27c4e0dbd4":[36,0,0,12,9,0,8,2],
 "multiload_2src_2netspeed_8c.html#a7c404158d7be3fe7cbfcc5691fb4f69d":[36,0,0,12,9,0,8,3],
 "multiload_2src_2netspeed_8c.html#ad1622bb9df575d7f258dc435fab37aef":[36,0,0,12,9,0,8,0],
-"multiload_2src_2netspeed_8c_source.html":[36,0,0,12,9,0,8],
-"multiload_2src_2netspeed_8h.html":[36,0,0,12,9,0,9]
+"multiload_2src_2netspeed_8c_source.html":[36,0,0,12,9,0,8]
 };

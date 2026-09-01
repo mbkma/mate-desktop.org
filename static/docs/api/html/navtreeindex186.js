@@ -1,5 +1,6 @@
 var NAVTREEINDEX186 =
 {
+"struct__DviContext.html#af3efe887bb045c80c1446791ca3fc2e0":[35,0,171,18],
 "struct__DviContext.html#af9f97f052639c87c18b65636f944b4c3":[35,0,171,17],
 "struct__DviDevice.html":[35,0,172],
 "struct__DviDevice.html#a2191cece01dd91f670ed9fcadd50ad5a":[35,0,172,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX186 =
 "struct__EelCanvasRE.html#af5d597f4edd5a444888391d1df45b5e3":[35,0,197,8],
 "struct__EelCanvasREClass.html":[35,0,198],
 "struct__EelCanvasREClass.html#a00546bdba07c0ae942839f8e1c791b63":[35,0,198,0],
-"struct__EelCanvasRect.html":[35,0,199],
-"struct__EelCanvasRect.html#a2e5d7e8a4e3920370e30a79b280b32ee":[35,0,199,1]
+"struct__EelCanvasRect.html":[35,0,199]
 };

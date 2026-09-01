@@ -1,5 +1,6 @@
 var NAVTREEINDEX185 =
 {
+"struct__CajaViewIface.html#aff6cca46cb64670253c3173e0426b8bc":[35,0,115,22],
 "struct__CajaViewInfo.html":[35,0,116],
 "struct__CajaViewInfo.html#a0b4418248173b167d13bb221a3c33e4f":[35,0,116,8],
 "struct__CajaViewInfo.html#a115b4d9f5303fb4c4d07a9a1b2455e96":[35,0,116,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX185 =
 "struct__DviContext.html#ae09ec9bd93b8d8e50df17382ee214f47":[35,0,171,33],
 "struct__DviContext.html#ae13ef42ef37556db36ec9b49a5144b7c":[35,0,171,15],
 "struct__DviContext.html#ae9999a51ef6544cef2b8a6f582ad13a5":[35,0,171,27],
-"struct__DviContext.html#aea4196ee2845510e3924e2f94d1c88bc":[35,0,171,30],
-"struct__DviContext.html#af3efe887bb045c80c1446791ca3fc2e0":[35,0,171,18]
+"struct__DviContext.html#aea4196ee2845510e3924e2f94d1c88bc":[35,0,171,30]
 };

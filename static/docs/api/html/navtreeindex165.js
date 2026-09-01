@@ -1,5 +1,6 @@
 var NAVTREEINDEX165 =
 {
+"screen_8h.html#ac11a8067892dc2c324a63e6a02d589ae":[36,0,0,11,0,2,11,4],
 "screen_8h.html#adecebb95ee962786da65e56d64c9e284":[36,0,0,11,0,2,11,5],
 "screen_8h.html#aefe710bba63b2e732d88420d3718e256":[36,0,0,11,0,2,11,0],
 "screen_8h_source.html":[36,0,0,11,0,2,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX165 =
 "sensors-applet-settings_8c.html#a26444bb3378a54b15206e5c04a7272b6":[36,0,0,26,2,15,0],
 "sensors-applet-settings_8c.html#a478cf0b11dd7ee0cdbba1aec0fd9c8fc":[36,0,0,26,2,15,3],
 "sensors-applet-settings_8c.html#a7e52128b5686be1298954042c472e0d5":[36,0,0,26,2,15,2],
-"sensors-applet-settings_8c.html#ab475bad43371077124eeb158cb83a16d":[36,0,0,26,2,15,1],
-"sensors-applet-settings_8c.html#adaa11d244a2a92a6338c5eaeed01d78e":[36,0,0,26,2,15,4]
+"sensors-applet-settings_8c.html#ab475bad43371077124eeb158cb83a16d":[36,0,0,26,2,15,1]
 };

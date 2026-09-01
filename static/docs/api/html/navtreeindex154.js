@@ -1,5 +1,6 @@
 var NAVTREEINDEX154 =
 {
+"pluma-history-entry_8h.html#a6f4ccf9e3bbf785d79336b9ed54dbd30":[36,0,0,34,1,44,3],
 "pluma-history-entry_8h.html#a796d016d6922b784fa176fa6f4a183fa":[36,0,0,34,1,44,10],
 "pluma-history-entry_8h.html#a8058c6e9f84e6eb4d94b6bbc684422b1":[36,0,0,34,1,44,17],
 "pluma-history-entry_8h.html#a92ddb0fa2606eb112d8bedf9f0be6dc0":[36,0,0,34,1,44,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX154 =
 "pluma-panel_8c.html#a0c1e160e3abe81385a133d11c5916f0e":[36,0,0,34,1,59,9],
 "pluma-panel_8c.html#a17fe926d10614996bf2e90a41b14df06":[36,0,0,34,1,59,7],
 "pluma-panel_8c.html#a1a91b8e6e1fd3d6e7c718385bfd7cd1f":[36,0,0,34,1,59,8],
-"pluma-panel_8c.html#a23d9a722c46a4e0da33940d4749680ed":[36,0,0,34,1,59,4],
-"pluma-panel_8c.html#a5731a79570824ab65f273e857b510335":[36,0,0,34,1,59,5]
+"pluma-panel_8c.html#a23d9a722c46a4e0da33940d4749680ed":[36,0,0,34,1,59,4]
 };

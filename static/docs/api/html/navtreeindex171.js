@@ -1,5 +1,6 @@
 var NAVTREEINDEX171 =
 {
+"structCajaDirectoryClass.html#aa2870ddfd2477eaee3f247a67cb51ce9":[35,0,1102,8],
 "structCajaDirectoryClass.html#aacbab3679066a292528a85a7cf7bac63":[35,0,1102,13],
 "structCajaDirectoryClass.html#aad26d792fb4f6b9b1fb712f5a6465beb":[35,0,1102,7],
 "structCajaDirectoryClass.html#ab15af359290e3ec3772d4b834047c96d":[35,0,1102,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX171 =
 "structCajaIconContainerDetails.html#ada55bda25e45a3e4c14892d940031dda":[35,0,1122,12],
 "structCajaIconContainerDetails.html#adaccb6e4a4c9c5dca63509d13de8f71f":[35,0,1122,61],
 "structCajaIconContainerDetails.html#adb3ee0fe8e37a20b18c096293eb59a83":[35,0,1122,18],
-"structCajaIconContainerDetails.html#adb49adcad1f51d062b9ac62f4e09aa33":[35,0,1122,14],
-"structCajaIconContainerDetails.html#ae7ff78c68065b0ecdfa584f7b8cf3fd6":[35,0,1122,52]
+"structCajaIconContainerDetails.html#adb49adcad1f51d062b9ac62f4e09aa33":[35,0,1122,14]
 };

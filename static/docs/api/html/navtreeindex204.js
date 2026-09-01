@@ -1,5 +1,6 @@
 var NAVTREEINDEX204 =
 {
+"struct__WeatherPrefs.html#af8cb42c0cb793012aad88964dc5dbf0f":[35,0,990,1],
 "struct__XSettingsBuffer.html":[35,0,991],
 "struct__XSettingsBuffer.html#ac6c635c2ba70162d208a5ffc5e19faa5":[35,0,991,3],
 "struct__XSettingsBuffer.html#ac868abb897a1d4eccf205e16a893186d":[35,0,991,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX204 =
 "structparse__node.html#a77e44f0b1327f3e39b04bfbd6d60a855":[35,0,1611,8],
 "structparse__node.html#ab9a24e48447a6cbbe34cdb8ff364578b":[35,0,1611,2],
 "structparse__node.html#abf50c2b0dbe9fb65b7707b02724358c2":[35,0,1611,3],
-"structparser__state.html":[35,0,1612],
-"structparser__state.html#a02acfdd8e314b0589b1300556a0dc4fc":[35,0,1612,5]
+"structparser__state.html":[35,0,1612]
 };

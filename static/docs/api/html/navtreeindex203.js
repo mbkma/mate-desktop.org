@@ -1,5 +1,6 @@
 var NAVTREEINDEX203 =
 {
+"struct__SensorsApplet.html#a31715ff4778353ed01d801880fefeb5e":[35,0,939,2],
 "struct__SensorsApplet.html#a378b47110e80ffc28a0ec100cdafe67b":[35,0,939,0],
 "struct__SensorsApplet.html#a4f85f90ab256386b4e2d26f30784777f":[35,0,939,5],
 "struct__SensorsApplet.html#a506f614505a16638fbe1cac8b4d107be":[35,0,939,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX203 =
 "struct__WeatherPrefs.html#a7a3abf75e8dc3e4efc47eb867db3eb84":[35,0,990,4],
 "struct__WeatherPrefs.html#a8737b7536719d68feac1529e24ab8e5a":[35,0,990,6],
 "struct__WeatherPrefs.html#a88a456c8b406159f5cbe98fe003ce919":[35,0,990,3],
-"struct__WeatherPrefs.html#abcdfb2b8a8814db6f012013874811358":[35,0,990,5],
-"struct__WeatherPrefs.html#af8cb42c0cb793012aad88964dc5dbf0f":[35,0,990,1]
+"struct__WeatherPrefs.html#abcdfb2b8a8814db6f012013874811358":[35,0,990,5]
 };

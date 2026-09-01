@@ -1,5 +1,6 @@
 var NAVTREEINDEX183 =
 {
+"struct__CPUFreqPrefs.html":[35,0,152],
 "struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966":[35,0,152,1],
 "struct__CPUFreqPrefs.html#ab1e83134965cef4678e35bf433c30d39":[35,0,152,0],
 "struct__CPUFreqPrefsClass.html":[35,0,153],
@@ -248,6 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaFilePrivate.html#ae5b33c88c9a632783334f456e8a767d0":[35,0,63,59],
 "struct__CajaFilePrivate.html#ae6a7559f9d6dcf255d96d4329dab8a11":[35,0,63,42],
 "struct__CajaFilePrivate.html#aeb259884b2f1654d8e16c9dc947bd6e2":[35,0,63,75],
-"struct__CajaFilePrivate.html#aeb371dfebb7684898de5170dbe3a5009":[35,0,63,60],
-"struct__CajaFilePrivate.html#aeb583f1980b32cada6cb80e206f9f4eb":[35,0,63,9]
+"struct__CajaFilePrivate.html#aeb371dfebb7684898de5170dbe3a5009":[35,0,63,60]
 };

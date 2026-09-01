@@ -1,5 +1,6 @@
 var NAVTREEINDEX188 =
 {
+"struct__EomMetadataDetails.html#ad4cb775a17f851d29b48167f39030b5c":[35,0,251,1],
 "struct__EomMetadataDetailsClass.html":[35,0,252],
 "struct__EomMetadataDetailsClass.html#a47db2f501c4a064bada5fe16946861ee":[35,0,252,0],
 "struct__EomMetadataReaderInterface.html":[35,0,253],
@@ -248,6 +249,5 @@ var NAVTREEINDEX188 =
 "struct__EvDocumentTextInterface.html":[35,0,314],
 "struct__EvDocumentTextInterface.html#a68475c55c38af07db0aa196055e240dc":[35,0,314,0],
 "struct__EvDocumentTextInterface.html#a71394b68f10943b449dd36324441b893":[35,0,314,1],
-"struct__EvDocumentTextInterface.html#ad895f35a3baa3503779ef64e0a3f3330":[35,0,314,4],
-"struct__EvDocumentTextInterface.html#adca910bd4e5d42dc04a7ad8c593f3472":[35,0,314,3]
+"struct__EvDocumentTextInterface.html#ad895f35a3baa3503779ef64e0a3f3330":[35,0,314,4]
 };

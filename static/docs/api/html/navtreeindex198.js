@@ -1,5 +1,6 @@
 var NAVTREEINDEX198 =
 {
+"struct__MetaFrameGeometry.html#a47f1c6fa1e2186f178cb30e87f91a44f":[35,0,705,1],
 "struct__MetaFrameGeometry.html#a4d339ab6b0330446644d1175bb21d8a2":[35,0,705,22],
 "struct__MetaFrameGeometry.html#a5073b7993da53f2290ecf848a9977233":[35,0,705,17],
 "struct__MetaFrameGeometry.html#a56e9e950e978b2e090a27927b39468b0":[35,0,705,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX198 =
 "struct__MetaUIFrame.html#aaa8c19c0ed8d639ec5d5d24a8d8c0e77":[35,0,723,8],
 "struct__MetaUIFrame.html#acc69b8236b03dfc45827d482362b06f1":[35,0,723,0],
 "struct__MetaUIFrame.html#ad6d517f8ef8e4acaf356d730b748d8c1":[35,0,723,5],
-"struct__MetaWindow.html":[35,0,724],
-"struct__MetaWindow.html#a00dad34d061eba55537b1ac21e4a2d4a":[35,0,724,26]
+"struct__MetaWindow.html":[35,0,724]
 };

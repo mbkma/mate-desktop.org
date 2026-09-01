@@ -1,5 +1,6 @@
 var NAVTREEINDEX175 =
 {
+"structFMIconViewClass.html#a3a7364ee0580754a5d14e9b2e53e414c":[35,0,1276,7],
 "structFMIconViewClass.html#a427fd0500d6e9ffc937253a15356106c":[35,0,1276,3],
 "structFMIconViewClass.html#a5b4ab4be94ba09e758e7eaa1b278f046":[35,0,1276,12],
 "structFMIconViewClass.html#a636682afdb0a5a92053fab38bce36bbd":[35,0,1276,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX175 =
 "structGSWindowClass.html#ac65f07fe84e0a1b001dc9ebbee17f773":[35,0,1368,0],
 "structGSWindowClass.html#ada1459fb313bf9c9cf98cd215f5ea141":[35,0,1368,3],
 "structGlobalFontInfo.html":[35,0,1304],
-"structGlobalFontInfo.html#a06ae98179cd0917834e0a629cff13d7b":[35,0,1304,15],
-"structGlobalFontInfo.html#a2514473fe20cc9ab0192aa942eb1ceff":[35,0,1304,10]
+"structGlobalFontInfo.html#a06ae98179cd0917834e0a629cff13d7b":[35,0,1304,15]
 };

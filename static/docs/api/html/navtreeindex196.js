@@ -1,5 +1,6 @@
 var NAVTREEINDEX196 =
 {
+"struct__MatePropertyBox.html#ad9bd67dfe5ec61df66c6ba64f6e72652":[35,0,667,0],
 "struct__MatePropertyBoxClass.html":[35,0,668],
 "struct__MatePropertyBoxClass.html#a4a8375d14a14bf7cca01957d3ae69fe4":[35,0,668,0],
 "struct__MatePropertyBoxClass.html#ab6d35bb2762bdf16f667985a9154dea5":[35,0,668,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX196 =
 "struct__MetaAccelLabelClass.html":[35,0,691],
 "struct__MetaAccelLabelClass.html#a132a237d73f5befb81f7acfe4292f08c":[35,0,691,12],
 "struct__MetaAccelLabelClass.html#a1cfc2b3080d0d9306d1a50477ac42458":[35,0,691,6],
-"struct__MetaAccelLabelClass.html#a2b2a5647a4eadd50a2949df48403560a":[35,0,691,14],
-"struct__MetaAccelLabelClass.html#a2b975571af66727bf486c7441b51f98f":[35,0,691,13]
+"struct__MetaAccelLabelClass.html#a2b2a5647a4eadd50a2949df48403560a":[35,0,691,14]
 };

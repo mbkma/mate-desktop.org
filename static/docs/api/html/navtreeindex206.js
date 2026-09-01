@@ -1,5 +1,6 @@
 var NAVTREEINDEX206 =
 {
+"task-list_8h.html#af5984a1a8e4fda0e7d6578a4fc68a9ae":[36,0,0,20,0,4,2],
 "task-list_8h_source.html":[36,0,0,20,0,4],
 "task-title_8c.html":[36,0,0,20,0,5],
 "task-title_8c.html#a09ce8f2b2425794ef7cf733bd0df7dfa":[36,0,0,20,0,5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX206 =
 "terminal-encoding_8h.html#a9aad5e9d5cf4da4adae11a90b1df0e17":[36,0,0,30,0,17,5],
 "terminal-encoding_8h.html#aab3dbdb201c8ffade69ebfbf1872bea8":[36,0,0,30,0,17,2],
 "terminal-encoding_8h.html#ab2e27778a0c55f466ce1fabb8ecbc6e0":[36,0,0,30,0,17,8],
-"terminal-encoding_8h.html#ad0729010e9eb9420a9cd2a07e511d8dc":[36,0,0,30,0,17,6],
-"terminal-encoding_8h.html#ae927f1ee7d0c3d2b64fb52ebf3684093":[36,0,0,30,0,17,7]
+"terminal-encoding_8h.html#ad0729010e9eb9420a9cd2a07e511d8dc":[36,0,0,30,0,17,6]
 };

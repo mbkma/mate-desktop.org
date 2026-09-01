@@ -8,6 +8,7 @@ var msd_mouse_manager_8c =
     [ "KEY_MOTION_ACCELERATION", "msd-mouse-manager_8c.html#a4b0be4b2f258e9ccb97a536fcdd1654e", null ],
     [ "KEY_MOTION_THRESHOLD", "msd-mouse-manager_8c.html#a6448e5fd1e7fcff0b771d5dbc3d2b621", null ],
     [ "KEY_MOUSE_LOCATE_POINTER", "msd-mouse-manager_8c.html#a1e05d00ad29174efc50a08b0a0d2c9d9", null ],
+    [ "KEY_MOUSE_NATURAL_SCROLL", "msd-mouse-manager_8c.html#ac5f7acd43fa58f5dbf60b5691c9c87a9", null ],
     [ "KEY_TOUCHPAD_DISABLE_W_TYPING", "msd-mouse-manager_8c.html#ae7abc41db5ff41d8fb2549076f7b54a5", null ],
     [ "KEY_TOUCHPAD_ENABLED", "msd-mouse-manager_8c.html#a35ccf5084bad0713cef178e7e224152b", null ],
     [ "KEY_TOUCHPAD_NATURAL_SCROLL", "msd-mouse-manager_8c.html#af3517b6c40e6e54a307a5e896955d926", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX178 =
 {
+"structMetaWorkspaceLayout.html#a6f188ea4a12db02047d41d5062a786c9":[35,0,1462,5],
 "structMetaWorkspaceLayout.html#a702ba77a79c544edf2f1b4a3356c5e48":[35,0,1462,0],
 "structMetaWorkspaceLayout.html#a7487fa8cd44172c3896941f130c12942":[35,0,1462,3],
 "structMetaWorkspaceLayout.html#ae699f8e4ef19cbde59a4d587fac2ae7e":[35,0,1462,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX178 =
 "structMutableProcInfo.html#a2a90dedf0b85e8a9371e4ddd1031757f":[35,0,1536,16],
 "structMutableProcInfo.html#a2cf062765b2cdf52e4a34d762c54cc10":[35,0,1536,4],
 "structMutableProcInfo.html#a2dbb3be4f4bd5e62ba7e1d93dbcdbd71":[35,0,1536,5],
-"structMutableProcInfo.html#a4f51720b3126d538e16d05adb5c52582":[35,0,1536,8],
-"structMutableProcInfo.html#a58884638c35aa7b588a10ccca60e426a":[35,0,1536,20]
+"structMutableProcInfo.html#a4f51720b3126d538e16d05adb5c52582":[35,0,1536,8]
 };

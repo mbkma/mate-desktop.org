@@ -1,5 +1,6 @@
 var NAVTREEINDEX180 =
 {
+"structNAPivotClass.html":[35,0,1585],
 "structNAPivotClass.html#a61b4cfe443a198e721dab36267bb40b2":[35,0,1585,0],
 "structNAPivotClass.html#aea3e9d679ac678fd31317a0f5eb36772":[35,0,1585,1],
 "structNASelectedInfo.html":[35,0,1586],
@@ -248,6 +249,5 @@ var NAVTREEINDEX180 =
 "structStickyNote.html#a0372ba523aee67c04083327283682d5d":[35,0,1633,5],
 "structStickyNote.html#a126de5831603be3f198f71e4fed7eab9":[35,0,1633,27],
 "structStickyNote.html#a1e149446d0cdd11911dc95b4b91706a5":[35,0,1633,10],
-"structStickyNote.html#a2c419c9abfea08750b597690cccd40ac":[35,0,1633,18],
-"structStickyNote.html#a3255aaeb524155621d62972e2c5afe60":[35,0,1633,23]
+"structStickyNote.html#a2c419c9abfea08750b597690cccd40ac":[35,0,1633,18]
 };

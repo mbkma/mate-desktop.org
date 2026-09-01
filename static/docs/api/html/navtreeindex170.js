@@ -1,5 +1,6 @@
 var NAVTREEINDEX170 =
 {
+"structBatteryStatus.html#a5c26bf97b45228a4a85bb5c571d3d668":[35,0,1023,0],
 "structBatteryStatus.html#a65a1f84f846d17d570cb93c059593fd0":[35,0,1023,2],
 "structBatteryStatus.html#ae4178cd57ab98fc078fd57faab273bde":[35,0,1023,1],
 "structBatteryStatus.html#ae503408d880df1ffaf9c3cc51dd0e59a":[35,0,1023,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX170 =
 "structCajaDirectoryClass.html#a59a83c7a069701de132ee253993bd74d":[35,0,1102,6],
 "structCajaDirectoryClass.html#a6c80e0e33d01a7a315345cfad05b4a3c":[35,0,1102,10],
 "structCajaDirectoryClass.html#a7682084c3a49cf23f45d40d68d02d302":[35,0,1102,5],
-"structCajaDirectoryClass.html#a983e1d0d79602aa77e161158a750d9da":[35,0,1102,11],
-"structCajaDirectoryClass.html#aa2870ddfd2477eaee3f247a67cb51ce9":[35,0,1102,8]
+"structCajaDirectoryClass.html#a983e1d0d79602aa77e161158a750d9da":[35,0,1102,11]
 };

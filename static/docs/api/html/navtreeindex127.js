@@ -1,5 +1,6 @@
 var NAVTREEINDEX127 =
 {
+"msd-rfkill-plugin_8h.html#a83168787b8e1cf83f2a9909928216492":[36,0,0,28,1,13,3,5],
 "msd-rfkill-plugin_8h.html#ab1151435b39ba8b4dfde0d7a0a3b3542":[36,0,0,28,1,13,3,4],
 "msd-rfkill-plugin_8h.html#ad36c6e8510f6bc4680363d4a2cb0b470":[36,0,0,28,1,13,3,7],
 "msd-rfkill-plugin_8h.html#adc77b6f0f08b443dbaebf095b6e1ec2b":[36,0,0,28,1,13,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX127 =
 "msd-wlrandr-manager_8c.html":[36,0,0,28,1,17,0],
 "msd-wlrandr-manager_8c.html#a05a5585f8d738ddddd0d12283561287b":[36,0,0,28,1,17,0,19],
 "msd-wlrandr-manager_8c.html#a066f755b624f305e3b77df531ef16b9d":[36,0,0,28,1,17,0,22],
-"msd-wlrandr-manager_8c.html#a07842444a55e978baa3f69b724c7c331":[36,0,0,28,1,17,0,3],
-"msd-wlrandr-manager_8c.html#a1b07c2eedaa6a64068a4f50deb8e636d":[36,0,0,28,1,17,0,20]
+"msd-wlrandr-manager_8c.html#a07842444a55e978baa3f69b724c7c331":[36,0,0,28,1,17,0,3]
 };

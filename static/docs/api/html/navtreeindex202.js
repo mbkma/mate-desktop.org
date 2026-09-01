@@ -1,5 +1,6 @@
 var NAVTREEINDEX202 =
 {
+"struct__PlumaTaglistPluginPanel.html#a2e764892497cf77e8e190da39b95fb10":[35,0,882,1],
 "struct__PlumaTaglistPluginPanel.html#ab506ae60f6c3319880e12e4a526cace6":[35,0,882,0],
 "struct__PlumaTaglistPluginPanelClass.html":[35,0,883],
 "struct__PlumaTaglistPluginPanelClass.html#a9e6e5132d1de0aabd283dee01f39bcb1":[35,0,883,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX202 =
 "struct__PulseStreamControlClass.html#a2e86b611e8dfda3c089a69053b0a7a5a":[35,0,938,3],
 "struct__PulseStreamControlClass.html#a33cb6803730bf5fdaa1b9f67ec096220":[35,0,938,2],
 "struct__PulseStreamControlClass.html#a386e6c53b303c73ec9008d24b46fe548":[35,0,938,1],
-"struct__SensorsApplet.html":[35,0,939],
-"struct__SensorsApplet.html#a31715ff4778353ed01d801880fefeb5e":[35,0,939,2]
+"struct__SensorsApplet.html":[35,0,939]
 };

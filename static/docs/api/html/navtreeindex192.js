@@ -1,5 +1,6 @@
 var NAVTREEINDEX192 =
 {
+"struct__GSearchWindow.html#aaf2af93c6bd775e78971f6ab27f2a80b":[35,0,509,45],
 "struct__GSearchWindow.html#aba4319535732bd9060564467e7a11325":[35,0,509,19],
 "struct__GSearchWindow.html#ac1c1c4be9f3b35f11fcd6dae7dc5b07a":[35,0,509,10],
 "struct__GSearchWindow.html#acc4725faf6e8ea6415ea027cc2fe4e1c":[35,0,509,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX192 =
 "struct__GsmClientClass.html#a99d5a89c0e5668d196b571da3190c9cc":[35,0,511,9],
 "struct__GsmClientClass.html#ab81ec8244d6b7b1ee43dab4daf7b3cbf":[35,0,511,5],
 "struct__GsmClientClass.html#acfe2181e8d5b57263c76881893fe280e":[35,0,511,4],
-"struct__GsmClientClass.html#ad816632c4affe54369d87ffb5492dff9":[35,0,511,10],
-"struct__GsmClientClass.html#afe9d3040aaf7b4de1d7d53d8a5b5d9a4":[35,0,511,2]
+"struct__GsmClientClass.html#ad816632c4affe54369d87ffb5492dff9":[35,0,511,10]
 };

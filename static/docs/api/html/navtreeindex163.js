@@ -1,5 +1,6 @@
 var NAVTREEINDEX163 =
 {
+"pulse-ext-stream_8h.html#a89727ae7fdc603dd13244d3c7bac9763":[36,0,0,8,0,3,14,11],
 "pulse-ext-stream_8h.html#a911be50d7f639d1afc670e9cba55c260":[36,0,0,8,0,3,14,4],
 "pulse-ext-stream_8h.html#abfdf2652f25f15b47f82ba0aec768316":[36,0,0,8,0,3,14,7],
 "pulse-ext-stream_8h.html#ac0a3a59c9ad162eacb65a4b33fdb749a":[36,0,0,8,0,3,14,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX163 =
 "pulse-stream-control_8h.html#a8f99734aca676fa4e0648e6cba74538b":[36,0,0,8,0,3,40,18],
 "pulse-stream-control_8h.html#a95ff8533bfb2e506bc717c55125ea1ba":[36,0,0,8,0,3,40,10],
 "pulse-stream-control_8h.html#ac905f555b08e53bfe14cbdcd5429eeb3":[36,0,0,8,0,3,40,9],
-"pulse-stream-control_8h.html#aca57e188c8c2e897c6161a4ac11222b2":[36,0,0,8,0,3,40,7],
-"pulse-stream-control_8h.html#ad8f7fe41e9754639fc1f4f11f147a9bf":[36,0,0,8,0,3,40,13]
+"pulse-stream-control_8h.html#aca57e188c8c2e897c6161a4ac11222b2":[36,0,0,8,0,3,40,7]
 };

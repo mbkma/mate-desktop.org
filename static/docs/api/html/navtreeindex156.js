@@ -1,5 +1,6 @@
 var NAVTREEINDEX156 =
 {
+"pluma-search-dialog_8h.html#aed5ef4c9cc12707729326d94c2173757":[36,0,0,34,1,0,7,15],
 "pluma-search-dialog_8h.html#afe73dee6c1e27289a4871462dea1ca47":[36,0,0,34,1,0,7,13],
 "pluma-search-dialog_8h_source.html":[36,0,0,34,1,0,7],
 "pluma-session_8c.html":[36,0,0,34,1,71],
@@ -248,6 +249,5 @@ var NAVTREEINDEX156 =
 "pluma-spell-language-dialog_8h.html#adb9549d32c5f1459c44a688a360c164c":[36,0,0,34,0,4,9,11],
 "pluma-spell-language-dialog_8h.html#adefc6a6531923ce39c9eaeb9ad868fbe":[36,0,0,34,0,4,9,8],
 "pluma-spell-language-dialog_8h.html#af3e2a04ac32adad7d22e8e09fe97c3a1":[36,0,0,34,0,4,9,6],
-"pluma-spell-language-dialog_8h_source.html":[36,0,0,34,0,4,9],
-"pluma-spell-plugin_8c.html":[36,0,0,34,0,4,10]
+"pluma-spell-language-dialog_8h_source.html":[36,0,0,34,0,4,9]
 };

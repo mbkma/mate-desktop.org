@@ -1,5 +1,6 @@
 var NAVTREEINDEX182 =
 {
+"struct__AlsaBackend.html":[35,0,2],
 "struct__AlsaBackend.html#ab55a3f1ed2b8f59632a846206e9e21a1":[35,0,2,0],
 "struct__AlsaBackend.html#acf9bbf9a3193b0da43f0c859c6585b40":[35,0,2,1],
 "struct__AlsaBackendClass.html":[35,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX182 =
 "struct__CPUFreqPopup.html#a2981bde82310ef381af79f651bc889d5":[35,0,150,1],
 "struct__CPUFreqPopup.html#a97c71d50d24cf4812d615021b89d8ee0":[35,0,150,0],
 "struct__CPUFreqPopupClass.html":[35,0,151],
-"struct__CPUFreqPopupClass.html#ada1fe6899d3f1fca56f42a480f3bb9cf":[35,0,151,0],
-"struct__CPUFreqPrefs.html":[35,0,152]
+"struct__CPUFreqPopupClass.html#ada1fe6899d3f1fca56f42a480f3bb9cf":[35,0,151,0]
 };

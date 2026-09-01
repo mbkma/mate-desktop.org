@@ -1,5 +1,6 @@
 var NAVTREEINDEX179 =
 {
+"structMutableProcInfo.html#a58884638c35aa7b588a10ccca60e426a":[35,0,1536,20],
 "structMutableProcInfo.html#a5b98f92a31d95cb9a387c1817d13ba58":[35,0,1536,17],
 "structMutableProcInfo.html#a5bb1ca1bd82da6a13305f1313e6de414":[35,0,1536,13],
 "structMutableProcInfo.html#a5cae3b2b48622448c3503ea581bf0635":[35,0,1536,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX179 =
 "structNAObjectProfileClass.html#ad9a89cef6cce3584fde37899a0add5df":[35,0,1583,0],
 "structNAPivot.html":[35,0,1584],
 "structNAPivot.html#a582047c331c2c9ab12cb51868ab5849c":[35,0,1584,0],
-"structNAPivot.html#aa9b6ad782177b863cb152c19d990c4ee":[35,0,1584,1],
-"structNAPivotClass.html":[35,0,1585]
+"structNAPivot.html#aa9b6ad782177b863cb152c19d990c4ee":[35,0,1584,1]
 };

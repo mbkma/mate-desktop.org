@@ -1,5 +1,6 @@
 var NAVTREEINDEX213 =
 {
+"time-tool_8c.html#ad4fff35fb1c6c17b43795bfd07226708":[36,0,0,14,0,11,0,5,3],
 "time-tool_8c.html#ae9424c57697f4005b61bc6433dd6105b":[36,0,0,14,0,11,0,5,6],
 "time-tool_8c.html#af76569586f368a523fd2d8bda674566e":[36,0,0,14,0,11,0,5,2],
 "time-tool_8c_source.html":[36,0,0,14,0,11,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX213 =
 "time-zones_8h.html#a718a8d555e5c764416bbf48604cd1e28":[36,0,0,14,0,11,0,9,73],
 "time-zones_8h.html#a720cd86f7fdc8799d82ca26656fb80d3":[36,0,0,14,0,11,0,9,103],
 "time-zones_8h.html#a726d1a38c7c14e481f4154fa762e5b91":[36,0,0,14,0,11,0,9,115],
-"time-zones_8h.html#a72f604bddc5295c133c1795206ca5172":[36,0,0,14,0,11,0,9,2],
-"time-zones_8h.html#a735f77af523351189a2422566f8db063":[36,0,0,14,0,11,0,9,340]
+"time-zones_8h.html#a72f604bddc5295c133c1795206ca5172":[36,0,0,14,0,11,0,9,2]
 };

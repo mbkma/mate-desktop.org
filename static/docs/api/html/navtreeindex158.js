@@ -1,5 +1,6 @@
 var NAVTREEINDEX158 =
 {
+"pluma-taglist-plugin_8c_source.html":[36,0,0,34,0,5,4],
 "pluma-taglist-plugin_8h.html":[36,0,0,34,0,5,5],
 "pluma-taglist-plugin_8h.html#a00978b594ee66f63680f87fb47289821":[36,0,0,34,0,5,5,5],
 "pluma-taglist-plugin_8h.html#a0f2bc4877602a72b012e807632cbfcf2":[36,0,0,34,0,5,5,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX158 =
 "pluma-window_8c.html#ae58cb4d9c00aa252fb32b09faaedfbce":[36,0,0,34,1,97,30],
 "pluma-window_8c.html#aec8469a1e6dd9f39e9f10438b79f6398":[36,0,0,34,1,97,19],
 "pluma-window_8c.html#af67c37de5ae574f6a990eadc40f596d6":[36,0,0,34,1,97,18],
-"pluma-window_8c.html#af6ffa00c34c1ef7a8f3098c31f008ab2":[36,0,0,34,1,97,23],
-"pluma-window_8c_source.html":[36,0,0,34,1,97]
+"pluma-window_8c.html#af6ffa00c34c1ef7a8f3098c31f008ab2":[36,0,0,34,1,97,23]
 };

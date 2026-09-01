@@ -1,5 +1,6 @@
 var NAVTREEINDEX166 =
 {
+"sensors-applet-settings_8c.html#adaa11d244a2a92a6338c5eaeed01d78e":[36,0,0,26,2,15,4],
 "sensors-applet-settings_8c.html#af624ecaabdab34ed075195e2381e0c19":[36,0,0,26,2,15,5],
 "sensors-applet-settings_8c_source.html":[36,0,0,26,2,15],
 "sensors-applet-settings_8h.html":[36,0,0,26,2,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX166 =
 "skey-popup_8c.html#a224d2c4c4ad07a5c1e2a64c5f55dc9b9":[36,0,0,30,0,6,1],
 "skey-popup_8c.html#a444ec1cb92f87a7195d1ae48be23ff97":[36,0,0,30,0,6,0],
 "skey-popup_8c.html#a8deb4459dc1fba7bb0d10af8c391d386":[36,0,0,30,0,6,2],
-"skey-popup_8c_source.html":[36,0,0,30,0,6],
-"skey-popup_8h.html":[36,0,0,30,0,7]
+"skey-popup_8c_source.html":[36,0,0,30,0,6]
 };

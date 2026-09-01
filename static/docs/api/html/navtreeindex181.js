@@ -1,5 +1,6 @@
 var NAVTREEINDEX181 =
 {
+"structStickyNote.html#a3255aaeb524155621d62972e2c5afe60":[35,0,1633,23],
 "structStickyNote.html#a417ce7007c544df002262d046ca265e8":[35,0,1633,17],
 "structStickyNote.html#a4bf3728a611300effdd758c638b19fc2":[35,0,1633,33],
 "structStickyNote.html#a501c7de7c5333e2f928289713a3da261":[35,0,1633,29],
@@ -248,6 +249,5 @@ var NAVTREEINDEX181 =
 "struct__ActiveSensor.html#aca4a7ea8389f5e13e67b85ab5c62b3bb":[35,0,1,9],
 "struct__ActiveSensor.html#ae607250ad78d89319dfa3406c14a957a":[35,0,1,2],
 "struct__ActiveSensor.html#af23cb4051565cd4aee43b700a06084cf":[35,0,1,15],
-"struct__ActiveSensor.html#af36c4566c337a2d789f632d92556099d":[35,0,1,7],
-"struct__AlsaBackend.html":[35,0,2]
+"struct__ActiveSensor.html#af36c4566c337a2d789f632d92556099d":[35,0,1,7]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX169 =
 {
+"stickynotes__applet__callbacks_8h.html#ade6bf316eb3687c3ed094f56ce2cd692":[36,0,0,12,11,5,9],
 "stickynotes__applet__callbacks_8h.html#af42f22ed9580c9b945c839967110f532":[36,0,0,12,11,5,12],
 "stickynotes__applet__callbacks_8h_source.html":[36,0,0,12,11,5],
 "stickynotes__callbacks_8c.html":[36,0,0,12,11,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX169 =
 "structBaseWindowClass.html#ad8b50af87f4561ad8db5bc16cc32f324":[35,0,1022,1],
 "structBaseWindowClass.html#afb18bdf49afc9b98a1ca555dc75f5b37":[35,0,1022,0],
 "structBatteryStatus.html":[35,0,1023],
-"structBatteryStatus.html#a4c883da28aadbe17b0ff8dab7118b5b4":[35,0,1023,4],
-"structBatteryStatus.html#a5c26bf97b45228a4a85bb5c571d3d668":[35,0,1023,0]
+"structBatteryStatus.html#a4c883da28aadbe17b0ff8dab7118b5b4":[35,0,1023,4]
 };
