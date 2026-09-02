@@ -584,58 +584,62 @@ $(document).ready(function(){initNavTree('gpm-tray-icon_8c_source.html',''); ini
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>                                               APP_INDICATOR_CATEGORY_HARDWARE);</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>    g_object_ref_sink (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;indicator);</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span> </div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="comment">/* start hidden; the engine decides when to show the icon */</span></div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    app_indicator_set_status (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;indicator, APP_INDICATOR_STATUS_PASSIVE);</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon = gtk_status_icon_new ();</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    gpm_tray_icon_show (icon, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    g_signal_connect_object (G_OBJECT (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon),</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                 <span class="stringliteral">&quot;popup_menu&quot;</span>,</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                 G_CALLBACK (gpm_tray_icon_popup_menu_cb),</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>                 icon, 0);</div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="comment">/* the SNI host resolves icon names in its own process, so it needs</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="comment">     * to be told where our status icons live */</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    app_indicator_set_icon_theme_path (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;indicator, GPM_ICONS_DATA);</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    <span class="comment">/* start hidden; the engine decides when to show the icon */</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    app_indicator_set_status (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;indicator, APP_INDICATOR_STATUS_PASSIVE);</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon = gtk_status_icon_new ();</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>    gpm_tray_icon_show (icon, <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    g_signal_connect_object (G_OBJECT (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon),</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                 <span class="stringliteral">&quot;activate&quot;</span>,</div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                 G_CALLBACK (gpm_tray_icon_activate_cb),</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                 <span class="stringliteral">&quot;popup_menu&quot;</span>,</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                 G_CALLBACK (gpm_tray_icon_popup_menu_cb),</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>                 icon, 0);</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span> </div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    allowed_in_menu = g_settings_get_boolean (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;settings, <a class="code hl_define" href="src_2gpm-common_8h.html#a9bfdcd2c483012442a54d71ce8da9930">GPM_SETTINGS_SHOW_ACTIONS</a>);</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    gpm_tray_icon_enable_actions (icon, allowed_in_menu);</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    gpm_tray_icon_rebuild_menu (icon);</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>}</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>gpm_tray_icon_finalize (GObject *<span class="keywordtype">object</span>)</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>{</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <a class="code hl_struct" href="structGpmTrayIcon.html">GpmTrayIcon</a> *tray_icon;</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    g_return_if_fail (<span class="keywordtype">object</span> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    g_return_if_fail (<a class="code hl_define" href="gpm-tray-icon_8h.html#a9a453c9b7672d6c1f8dca34acfa98955">GPM_IS_TRAY_ICON</a> (<span class="keywordtype">object</span>));</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    tray_icon = <a class="code hl_define" href="gpm-tray-icon_8h.html#a0bbfb1043c3cdb9ec2f36ee9ed005b94">GPM_TRAY_ICON</a> (<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;settings);</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="preprocessor">#ifdef HAVE_APP_INDICATOR</span></div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;indicator);</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon);</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;engine);</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    g_free (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;current_icon);</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    g_return_if_fail (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (gpm_tray_icon_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>}</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><a class="code hl_struct" href="structGpmTrayIcon.html">GpmTrayIcon</a> *</div>
-<div class="foldopen" id="foldopen00615" data-start="{" data-end="}">
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno"><a class="line" href="gpm-tray-icon_8c.html#af5f6101ad390bb06898d1a678be85b34">  615</a></span><a class="code hl_function" href="gpm-tray-icon_8c.html#af5f6101ad390bb06898d1a678be85b34">gpm_tray_icon_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>{</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <a class="code hl_struct" href="structGpmTrayIcon.html">GpmTrayIcon</a> *tray_icon;</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    tray_icon = g_object_new (<a class="code hl_define" href="gpm-tray-icon_8h.html#af78846c2ee255268814d193e655a5ea5">GPM_TYPE_TRAY_ICON</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="gpm-tray-icon_8h.html#a0bbfb1043c3cdb9ec2f36ee9ed005b94">GPM_TRAY_ICON</a> (tray_icon);</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>}</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    g_signal_connect_object (G_OBJECT (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon),</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                 <span class="stringliteral">&quot;activate&quot;</span>,</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                 G_CALLBACK (gpm_tray_icon_activate_cb),</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>                 icon, 0);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    allowed_in_menu = g_settings_get_boolean (icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;settings, <a class="code hl_define" href="src_2gpm-common_8h.html#a9bfdcd2c483012442a54d71ce8da9930">GPM_SETTINGS_SHOW_ACTIONS</a>);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    gpm_tray_icon_enable_actions (icon, allowed_in_menu);</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    gpm_tray_icon_rebuild_menu (icon);</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>}</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>gpm_tray_icon_finalize (GObject *<span class="keywordtype">object</span>)</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>{</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    <a class="code hl_struct" href="structGpmTrayIcon.html">GpmTrayIcon</a> *tray_icon;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    g_return_if_fail (<span class="keywordtype">object</span> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    g_return_if_fail (<a class="code hl_define" href="gpm-tray-icon_8h.html#a9a453c9b7672d6c1f8dca34acfa98955">GPM_IS_TRAY_ICON</a> (<span class="keywordtype">object</span>));</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    tray_icon = <a class="code hl_define" href="gpm-tray-icon_8h.html#a0bbfb1043c3cdb9ec2f36ee9ed005b94">GPM_TRAY_ICON</a> (<span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;settings);</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="preprocessor">#ifdef HAVE_APP_INDICATOR</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;indicator);</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;status_icon);</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    g_object_unref (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;engine);</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    g_free (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a>-&gt;current_icon);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    g_return_if_fail (tray_icon-&gt;<a class="code hl_variable" href="structGpmTrayIcon.html#a3118bd2b527aed1f59978965dd647e1d">priv</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (gpm_tray_icon_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>}</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><a class="code hl_struct" href="structGpmTrayIcon.html">GpmTrayIcon</a> *</div>
+<div class="foldopen" id="foldopen00619" data-start="{" data-end="}">
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno"><a class="line" href="gpm-tray-icon_8c.html#af5f6101ad390bb06898d1a678be85b34">  619</a></span><a class="code hl_function" href="gpm-tray-icon_8c.html#af5f6101ad390bb06898d1a678be85b34">gpm_tray_icon_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>{</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    <a class="code hl_struct" href="structGpmTrayIcon.html">GpmTrayIcon</a> *tray_icon;</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    tray_icon = g_object_new (<a class="code hl_define" href="gpm-tray-icon_8h.html#af78846c2ee255268814d193e655a5ea5">GPM_TYPE_TRAY_ICON</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="gpm-tray-icon_8h.html#a0bbfb1043c3cdb9ec2f36ee9ed005b94">GPM_TRAY_ICON</a> (tray_icon);</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>}</div>
 </div>
 <div class="ttc" id="aacme_8h_html_a53ba42873949ed19f570feb354c80069"><div class="ttname"><a href="acme_8h.html#a53ba42873949ed19f570feb354c80069">key</a></div><div class="ttdeci">Key * key</div><div class="ttdef"><b>Definition</b> <a href="acme_8h_source.html#l00075">acme.h:75</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
@@ -653,7 +657,7 @@ $(document).ready(function(){initNavTree('gpm-tray-icon_8c_source.html',''); ini
 <div class="ttc" id="agpm-tray-icon_8c_html_a57bc099d462a54e96145a5c5f0dd4763"><div class="ttname"><a href="gpm-tray-icon_8c.html#a57bc099d462a54e96145a5c5f0dd4763">ABOUT_GROUP</a></div><div class="ttdeci">#define ABOUT_GROUP</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8c_source.html#l00198">gpm-tray-icon.c:198</a></div></div>
 <div class="ttc" id="agpm-tray-icon_8c_html_a5909d0254a27cb3a4d70a0bb4661dc43"><div class="ttname"><a href="gpm-tray-icon_8c.html#a5909d0254a27cb3a4d70a0bb4661dc43">EMAILIFY</a></div><div class="ttdeci">#define EMAILIFY(string)</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8c_source.html#l00199">gpm-tray-icon.c:199</a></div></div>
 <div class="ttc" id="agpm-tray-icon_8c_html_a8f42cac03dc8dd6f5e9eada3e2b8d350"><div class="ttname"><a href="gpm-tray-icon_8c.html#a8f42cac03dc8dd6f5e9eada3e2b8d350">gpm_tray_icon_set_icon</a></div><div class="ttdeci">gboolean gpm_tray_icon_set_icon(GpmTrayIcon *icon, const gchar *icon_name)</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8c_source.html#l00137">gpm-tray-icon.c:137</a></div></div>
-<div class="ttc" id="agpm-tray-icon_8c_html_af5f6101ad390bb06898d1a678be85b34"><div class="ttname"><a href="gpm-tray-icon_8c.html#af5f6101ad390bb06898d1a678be85b34">gpm_tray_icon_new</a></div><div class="ttdeci">GpmTrayIcon * gpm_tray_icon_new(void)</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8c_source.html#l00615">gpm-tray-icon.c:615</a></div></div>
+<div class="ttc" id="agpm-tray-icon_8c_html_af5f6101ad390bb06898d1a678be85b34"><div class="ttname"><a href="gpm-tray-icon_8c.html#af5f6101ad390bb06898d1a678be85b34">gpm_tray_icon_new</a></div><div class="ttdeci">GpmTrayIcon * gpm_tray_icon_new(void)</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8c_source.html#l00619">gpm-tray-icon.c:619</a></div></div>
 <div class="ttc" id="agpm-tray-icon_8c_html_af70a5bf084f4d46723d58c0dd0ad7049"><div class="ttname"><a href="gpm-tray-icon_8c.html#af70a5bf084f4d46723d58c0dd0ad7049">gpm_tray_icon_get_icon_name</a></div><div class="ttdeci">gchar * gpm_tray_icon_get_icon_name(GpmTrayIcon *icon)</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8c_source.html#l00124">gpm-tray-icon.c:124</a></div></div>
 <div class="ttc" id="agpm-tray-icon_8h_html"><div class="ttname"><a href="gpm-tray-icon_8h.html">gpm-tray-icon.h</a></div></div>
 <div class="ttc" id="agpm-tray-icon_8h_html_a0bbfb1043c3cdb9ec2f36ee9ed005b94"><div class="ttname"><a href="gpm-tray-icon_8h.html#a0bbfb1043c3cdb9ec2f36ee9ed005b94">GPM_TRAY_ICON</a></div><div class="ttdeci">#define GPM_TRAY_ICON(o)</div><div class="ttdef"><b>Definition</b> <a href="gpm-tray-icon_8h_source.html#l00032">gpm-tray-icon.h:32</a></div></div>
