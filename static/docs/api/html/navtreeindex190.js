@@ -1,5 +1,7 @@
 var NAVTREEINDEX190 =
 {
+"struct__EvNavigationActionWidgetClass.html#ad561595102b05d2cacc86ede64f59e1f":[35,0,379,1],
+"struct__EvNavigationActionWidgetClass.html#ae5d92ab97b1e254acac3dc4decb6115e":[35,0,379,0],
 "struct__EvOpenRecentAction.html":[35,0,380],
 "struct__EvOpenRecentAction.html#acfd98c93b9af865fe08123e2bc3a0185":[35,0,380,0],
 "struct__EvOpenRecentActionClass.html":[35,0,381],
@@ -247,7 +249,5 @@ var NAVTREEINDEX190 =
 "struct__FrCommand.html#a06f3452eb604376c61d16f43bf38d14b":[35,0,425,21],
 "struct__FrCommand.html#a098a86161b08d6a112657b4f32313dff":[35,0,425,6],
 "struct__FrCommand.html#a26af2d98121825a23ceb49a376f5562e":[35,0,425,18],
-"struct__FrCommand.html#a2a947efc6d982ec875777d82d698b7f5":[35,0,425,29],
-"struct__FrCommand.html#a2da17830dd31e9ae2a8d0d767a0b8b6c":[35,0,425,0],
-"struct__FrCommand.html#a34b4b92cf51d4dbdca783fbd01931785":[35,0,425,1]
+"struct__FrCommand.html#a2a947efc6d982ec875777d82d698b7f5":[35,0,425,29]
 };

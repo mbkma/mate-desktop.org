@@ -1,5 +1,7 @@
 var NAVTREEINDEX220 =
 {
+"xprops_8c.html#a162d806b602d4319d99b01208496b679":[36,0,0,11,0,1,51,17],
+"xprops_8c.html#a1b40ceb455086d9cdb68ed3d3bf2775f":[36,0,0,11,0,1,51,9],
 "xprops_8c.html#a1db1c09ee1900a6bba85e33cf29faf3b":[36,0,0,11,0,1,51,14],
 "xprops_8c.html#a242a1e3a9deb0a9ab95f95e792bb0889":[36,0,0,11,0,1,51,23],
 "xprops_8c.html#a297b1dd9720b2c8beb2acde9c120591d":[36,0,0,11,0,1,51,1],

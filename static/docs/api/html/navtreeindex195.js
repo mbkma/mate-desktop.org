@@ -1,5 +1,7 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMDI.html#a48ec63007630f3c690631a35d0bf609f":[35,0,619,14],
+"struct__MateMDI.html#a4c0e04fc4da6a3c3edd88fc16d56e42e":[35,0,619,4],
 "struct__MateMDI.html#a5434fdbb31934d8fe42fa527a7b233fb":[35,0,619,1],
 "struct__MateMDI.html#a858d7b04e34948f174f2b4dd6bef28f3":[35,0,619,10],
 "struct__MateMDI.html#a952b79c42d3aff4817f53d27337d9590":[35,0,619,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MatePropertyBox.html#a07575facd1d3164126b3f200baf0c681":[35,0,667,1],
 "struct__MatePropertyBox.html#a113d94a8b89648996a2f8c0e9ad03216":[35,0,667,5],
 "struct__MatePropertyBox.html#a2fe93ebe4e3671b5f9948e3134921d75":[35,0,667,2],
-"struct__MatePropertyBox.html#a75f676d33ecbc529dc131eeedfaf229a":[35,0,667,3],
-"struct__MatePropertyBox.html#a897d58894cff42b1a0dfb3151522a841":[35,0,667,4],
-"struct__MatePropertyBox.html#aa4abb4e263e615bd6221ad21a3714b27":[35,0,667,6]
+"struct__MatePropertyBox.html#a75f676d33ecbc529dc131eeedfaf229a":[35,0,667,3]
 };

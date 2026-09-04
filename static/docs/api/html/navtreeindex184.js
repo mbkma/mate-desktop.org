@@ -1,5 +1,7 @@
 var NAVTREEINDEX184 =
 {
+"struct__CajaFilePrivate.html#aeb259884b2f1654d8e16c9dc947bd6e2":[35,0,63,75],
+"struct__CajaFilePrivate.html#aeb371dfebb7684898de5170dbe3a5009":[35,0,63,60],
 "struct__CajaFilePrivate.html#aeb583f1980b32cada6cb80e206f9f4eb":[35,0,63,9],
 "struct__CajaFilePrivate.html#aed1273ff00fab53d09259444cb7c2237":[35,0,63,70],
 "struct__CajaFilePrivate.html#aedb8a60d63e0c825d2eeba91985aa130":[35,0,63,38],
@@ -247,7 +249,5 @@ var NAVTREEINDEX184 =
 "struct__CajaViewIface.html#aea58df5eef697c5500bb346f3824dd45":[35,0,115,21],
 "struct__CajaViewIface.html#aedb770f3bfccb30dda86081650ecdc42":[35,0,115,31],
 "struct__CajaViewIface.html#aeee7a8bdf7a237661e08edb4fe076896":[35,0,115,15],
-"struct__CajaViewIface.html#af43ac21f07788e7bfa5153829e096e06":[35,0,115,24],
-"struct__CajaViewIface.html#af50078c61f686391ae4c9aba7f3c2efc":[35,0,115,14],
-"struct__CajaViewIface.html#afdb351126b18d6cbe193206526e02ea6":[35,0,115,18]
+"struct__CajaViewIface.html#af43ac21f07788e7bfa5153829e096e06":[35,0,115,24]
 };

@@ -980,7 +980,7 @@ var searchData=
   ['math_5fvariable_5fpopup_977',['MATH_VARIABLE_POPUP',['../math-variable-popup_8h.html#aa16dedae6ff12451c342c8ae03e46dad',1,'math-variable-popup.h']]],
   ['math_5fvariables_978',['MATH_VARIABLES',['../math-variables_8h.html#a80ae4d094bf69c89b12c94adc57f83b1',1,'math-variables.h']]],
   ['math_5fwindow_979',['MATH_WINDOW',['../math-window_8h.html#a9e9e9896defb235418521cd7bc80b56c',1,'math-window.h']]],
-  ['max_980',['max',['../jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f',1,'MAX:&#160;jpegint-8a.h'],['../atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4886a8f966a69949cefc46a6a3468006',1,'Max:&#160;common.h']]],
+  ['max_980',['max',['../atril_2backend_2dvi_2mdvi-lib_2common_8h.html#a4886a8f966a69949cefc46a6a3468006',1,'Max:&#160;common.h'],['../jpegint-8a_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f',1,'MAX:&#160;jpegint-8a.h']]],
   ['max_5facceleration_981',['MAX_ACCELERATION',['../gste-starfield_8c.html#a58daa60c7e280af9449f3cc46097652b',1,'gste-starfield.c']]],
   ['max_5faddtopanel_5fheight_982',['MAX_ADDTOPANEL_HEIGHT',['../panel-addto_8c.html#ab815e3b67c9750e11d6e7ac29b6d0440',1,'panel-addto.c']]],
   ['max_5fasync_5fjobs_983',['MAX_ASYNC_JOBS',['../caja-directory-async_8c.html#a26a738419d73c9e81e51ec0cca76a104',1,'caja-directory-async.c']]],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX189 =
 {
+"struct__EvDocumentTextInterface.html#a71394b68f10943b449dd36324441b893":[35,0,314,1],
+"struct__EvDocumentTextInterface.html#ad895f35a3baa3503779ef64e0a3f3330":[35,0,314,4],
 "struct__EvDocumentTextInterface.html#adca910bd4e5d42dc04a7ad8c593f3472":[35,0,314,3],
 "struct__EvDocumentTextInterface.html#ae7d410f028610007c896d10da8616a8b":[35,0,314,2],
 "struct__EvDocumentThumbnailsInterface.html":[35,0,315],
@@ -247,7 +249,5 @@ var NAVTREEINDEX189 =
 "struct__EvNavigationActionWidget.html":[35,0,378],
 "struct__EvNavigationActionWidget.html#a70d074f324a553dd341358191865db48":[35,0,378,0],
 "struct__EvNavigationActionWidget.html#a9aca9569d404e8fd8e1b08f393e231cf":[35,0,378,1],
-"struct__EvNavigationActionWidgetClass.html":[35,0,379],
-"struct__EvNavigationActionWidgetClass.html#ad561595102b05d2cacc86ede64f59e1f":[35,0,379,1],
-"struct__EvNavigationActionWidgetClass.html#ae5d92ab97b1e254acac3dc4decb6115e":[35,0,379,0]
+"struct__EvNavigationActionWidgetClass.html":[35,0,379]
 };

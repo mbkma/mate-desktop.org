@@ -100,7 +100,7 @@ var NAVTREEINDEX76 =
 "gdict-strategy-chooser_8c.html#a2e8549c621ebe39999c4ea9fc07936eb":[36,0,0,32,3,0,19,7],
 "gdict-strategy-chooser_8c.html#a5759189f42736cec9ea4a64102db054e":[36,0,0,32,3,0,19,6],
 "gdict-strategy-chooser_8c.html#a75507527c24d9d18984da19dae9cbd03":[36,0,0,32,3,0,19,5],
-"gdict-strategy-chooser_8c.html#a7b2d49ccfc60374ac2d9afc8138f165e":[36,0,0,32,3,0,19,15],
+"gdict-strategy-chooser_8c.html#a7e205acc6eb2cc06cfabdf8949b8b621":[36,0,0,32,3,0,19,15],
 "gdict-strategy-chooser_8c.html#a8352e4d95fee4a23bd41b5ede135f0dd":[36,0,0,32,3,0,19,3],
 "gdict-strategy-chooser_8c.html#a8456d0e903084841a6ceee7a1e1d80a6":[36,0,0,32,3,0,19,8],
 "gdict-strategy-chooser_8c.html#aa7ee9df95affbbc1c0431cfb67b6e69c":[36,0,0,32,3,0,19,1],

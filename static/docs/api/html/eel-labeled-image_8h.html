@@ -940,7 +940,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>eel_labeled_image_new_from_file_name: @text: Text to use for label or NULL. @file_name: File name of picture to use for pixbuf. Cannot be NULL.</p>
+<p>eel_labeled_image_new_from_file_name: @text: Text to use for label or NULL. @pixbuf_file_name: File name of picture to use for pixbuf. Cannot be NULL.</p>
 <p>Returns A newly allocated <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. If the &amp;text parameter is not NULL then the LabeledImage will show a label. </p>
 
 <p class="definition">Definition at line <a class="el" href="eel-labeled-image_8c_source.html#l01316">1316</a> of file <a class="el" href="eel-labeled-image_8c_source.html">eel-labeled-image.c</a>.</p>
@@ -1182,7 +1182,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>eel_labeled_image_set_pixbuf: @labaled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @pixbuf: New pixbuf to use or NULL.</p>
+<p>eel_labeled_image_set_pixbuf: @labeled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @pixbuf: New pixbuf to use or NULL.</p>
 <p>Change the pixbuf displayed by the LabeledImage. Note that the widget display is only updated if the show_image attribute is TRUE.</p>
 <p>If no internal image widget exists as of yet, a new one will be created.</p>
 <p>A NULL &amp;pixbuf will cause the internal image widget (if alive) to be destroyed. </p>
@@ -1322,7 +1322,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>eel_labeled_image_set_show_label: @labeled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @show_image: A boolean value indicating whether the label should be shown.</p>
+<p>eel_labeled_image_set_show_label: @labeled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @show_label: A boolean value indicating whether the label should be shown.</p>
 <p>Update the labeled image to either show or hide the internal label widget. This function doesnt have any effect if the LabeledImage doesnt already contain an label. </p>
 
 <p class="definition">Definition at line <a class="el" href="eel-labeled-image_8c_source.html#l01394">1394</a> of file <a class="el" href="eel-labeled-image_8c_source.html">eel-labeled-image.c</a>.</p>
@@ -1390,7 +1390,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>eel_labeled_image_set_text: @labaled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @text: New text (with mnemnonic) to use or NULL.</p>
+<p>eel_labeled_image_set_text: @labeled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @text: New text (with mnemnonic) to use or NULL.</p>
 <p>Change the text displayed by the LabeledImage. Note that the widget display is only updated if the show_label attribute is TRUE.</p>
 <p>If no internal label widget exists as of yet, a new one will be created.</p>
 <p>A NULL &amp;text will cause the internal label widget (if alive) to be destroyed. </p>
@@ -1530,7 +1530,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>eel_labeled_image_set_y_padding: @labeled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @x_padding: The new vertical padding.</p>
+<p>eel_labeled_image_set_y_padding: @labeled_image: A <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. @y_padding: The new vertical padding.</p>
 <p>Set vertical padding for the <a class="el" href="structEelLabeledImage.html">EelLabeledImage</a>. The padding attribute work just like that in GtkMisc. </p>
 
 <p class="definition">Definition at line <a class="el" href="eel-labeled-image_8c_source.html#l01648">1648</a> of file <a class="el" href="eel-labeled-image_8c_source.html">eel-labeled-image.c</a>.</p>

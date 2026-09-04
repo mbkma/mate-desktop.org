@@ -1,5 +1,7 @@
 var NAVTREEINDEX207 =
 {
+"terminal-encoding_8h.html#ab2e27778a0c55f466ce1fabb8ecbc6e0":[36,0,0,30,0,17,8],
+"terminal-encoding_8h.html#ad0729010e9eb9420a9cd2a07e511d8dc":[36,0,0,30,0,17,6],
 "terminal-encoding_8h.html#ae927f1ee7d0c3d2b64fb52ebf3684093":[36,0,0,30,0,17,7],
 "terminal-encoding_8h_source.html":[36,0,0,30,0,17],
 "terminal-info-bar_8c.html":[36,0,0,30,0,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX207 =
 "terminal-profile_8h.html#afa44fdba6ecc675c11f2370a2dfc7778":[36,0,0,30,0,24,17],
 "terminal-profile_8h.html#afb9964e5ad54f8e0cdf80e7b2a87c87e":[36,0,0,30,0,24,57],
 "terminal-profile_8h_source.html":[36,0,0,30,0,24],
-"terminal-screen-container_8c.html":[36,0,0,30,0,25],
-"terminal-screen-container_8c.html#a0a28c2577551e2c8e21999d93c90b537":[36,0,0,30,0,25,0],
-"terminal-screen-container_8c.html#a314a5817130e749e1fc5f175358e3759":[36,0,0,30,0,25,2]
+"terminal-screen-container_8c.html":[36,0,0,30,0,25]
 };

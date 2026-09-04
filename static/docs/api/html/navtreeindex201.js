@@ -1,5 +1,7 @@
 var NAVTREEINDEX201 =
 {
+"struct__PlumaCloseConfirmationDialogClass.html":[35,0,804],
+"struct__PlumaCloseConfirmationDialogClass.html#a881e92fc22efd22716543192decce1aa":[35,0,804,0],
 "struct__PlumaDocInfoPlugin.html":[35,0,805],
 "struct__PlumaDocInfoPlugin.html#ae4cc3bda64614571b41c465c773e9444":[35,0,805,1],
 "struct__PlumaDocInfoPlugin.html#ae74ea25a4d901bedcf2e73b9efc7e4e0":[35,0,805,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX201 =
 "struct__PlumaTaglistPlugin.html":[35,0,880],
 "struct__PlumaTaglistPlugin.html#a4b07bb56e18bf88afb26fce5682b2770":[35,0,880,1],
 "struct__PlumaTaglistPlugin.html#ad77c15f452670d152fc0171c84d4ea64":[35,0,880,0],
-"struct__PlumaTaglistPluginClass.html":[35,0,881],
-"struct__PlumaTaglistPluginClass.html#a50b66d4d6b46900dc6e71368b51c78d3":[35,0,881,0],
-"struct__PlumaTaglistPluginPanel.html":[35,0,882]
+"struct__PlumaTaglistPluginClass.html":[35,0,881]
 };

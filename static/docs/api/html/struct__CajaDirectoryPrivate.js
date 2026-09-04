@@ -3,7 +3,7 @@ var struct__CajaDirectoryPrivate =
     [ "as_file", "struct__CajaDirectoryPrivate.html#ad556d894ddccea3e060879fade4df9c3", null ],
     [ "call_ready_idle_id", "struct__CajaDirectoryPrivate.html#a2edc54930783d86cad34cfd341ff8668", null ],
     [ "call_when_ready_counters", "struct__CajaDirectoryPrivate.html#addf2cd8d4ebd84ef7ed4a810706d4757", null ],
-    [ "call_when_ready_list", "struct__CajaDirectoryPrivate.html#a9479e0b647eee2a5bc917448e0dfe4e6", null ],
+    [ "call_when_ready_hash", "struct__CajaDirectoryPrivate.html#aab17fe6ea5d1a9495594ef2b9d812ea6", null ],
     [ "confirmed_file_count", "struct__CajaDirectoryPrivate.html#a9b350f5502d0d82993d843b3134ba23f", null ],
     [ "count_in_progress", "struct__CajaDirectoryPrivate.html#a79e1dca1048a797cbdd0814308b37bcf", null ],
     [ "deep_count_file", "struct__CajaDirectoryPrivate.html#a1587ab0eff8f0171e8fc3d46c2545e7d", null ],
@@ -39,7 +39,9 @@ var struct__CajaDirectoryPrivate =
     [ "mount_state", "struct__CajaDirectoryPrivate.html#a6c228c9bcbf62485b204fbab21775004", null ],
     [ "new_files_in_progress", "struct__CajaDirectoryPrivate.html#a3de6a135ca8a9c8f94ace1c474a4fda1", null ],
     [ "pending_file_info", "struct__CajaDirectoryPrivate.html#ada155239c651fe060849b64e317386d2", null ],
+    [ "ready", "struct__CajaDirectoryPrivate.html#a34fcf1b64a89874186b38b20f627cb4b", null ],
     [ "state_changed", "struct__CajaDirectoryPrivate.html#a4078a7f393454d57aa431db88cc46d63", null ],
     [ "thumbnail_state", "struct__CajaDirectoryPrivate.html#a44cca55e205efac891212fd4f3d3b848", null ],
-    [ "top_left_read_state", "struct__CajaDirectoryPrivate.html#a9645d68a0364bd325fb4a8e9641b04ac", null ]
+    [ "top_left_read_state", "struct__CajaDirectoryPrivate.html#a9645d68a0364bd325fb4a8e9641b04ac", null ],
+    [ "unsatisfied", "struct__CajaDirectoryPrivate.html#a3a5954e85aec682bf8e8b6da91b053e1", null ]
 ];

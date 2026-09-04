@@ -1,5 +1,7 @@
 var NAVTREEINDEX200 =
 {
+"struct__NaFixedTipClass.html":[35,0,743],
+"struct__NaFixedTipClass.html#a272ff5dfd81cdf2b563558cb5504c886":[35,0,743,0],
 "struct__NaFixedTipClass.html#a5844bf63c431c66b31198066bf200d0e":[35,0,743,1],
 "struct__NaHostInterface.html":[35,0,744],
 "struct__NaHostInterface.html#a0bf7a4ccbfde09a4ca2a2dae07e07e07":[35,0,744,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX200 =
 "struct__PlumaCloseButtonClass.html#a3ba0931e089f1e041032fd2ec544594b":[35,0,802,0],
 "struct__PlumaCloseConfirmationDialog.html":[35,0,803],
 "struct__PlumaCloseConfirmationDialog.html#a30a7f46d9a2baa06ebe91c435fe1c7f7":[35,0,803,0],
-"struct__PlumaCloseConfirmationDialog.html#a8fc2346f9bd724f6b33575e0c44661b8":[35,0,803,1],
-"struct__PlumaCloseConfirmationDialogClass.html":[35,0,804],
-"struct__PlumaCloseConfirmationDialogClass.html#a881e92fc22efd22716543192decce1aa":[35,0,804,0]
+"struct__PlumaCloseConfirmationDialog.html#a8fc2346f9bd724f6b33575e0c44661b8":[35,0,803,1]
 };

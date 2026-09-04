@@ -1,6 +1,6 @@
 var structCajaDragSlotProxyInfo =
 [
-    [ "data", "structCajaDragSlotProxyInfo.html#a55b53b41220ecf35c6c644251247c447", null ],
+    [ "data", "structCajaDragSlotProxyInfo.html#a567609e6110eb6061964d819a24e1472", null ],
     [ "drop_occured", "structCajaDragSlotProxyInfo.html#abf7e3125c147a3c2571d8269c5ccb914", null ],
     [ "have_data", "structCajaDragSlotProxyInfo.html#a64c5ba7c5b7c258b24daabe884115886", null ],
     [ "have_valid_data", "structCajaDragSlotProxyInfo.html#ab292cb0e93bf1dd3db8c4217c1c9c48b", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX187 =
 {
+"struct__EelCanvasREClass.html#a00546bdba07c0ae942839f8e1c791b63":[35,0,198,0],
+"struct__EelCanvasRect.html":[35,0,199],
 "struct__EelCanvasRect.html#a2e5d7e8a4e3920370e30a79b280b32ee":[35,0,199,1],
 "struct__EelCanvasRect.html#a905b84be7c97a2b7cc19e8029be0ed62":[35,0,199,0],
 "struct__EelCanvasRectClass.html":[35,0,200],
@@ -247,7 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EomListStoreClass.html#a472d989d68e3d9787100082bc7158637":[35,0,250,0],
 "struct__EomListStoreClass.html#a8ebded9f8c32d36189d1e2770d2eabac":[35,0,250,2],
 "struct__EomListStoreClass.html#ac6aa09994dbf968922e87463c05f6f6c":[35,0,250,3],
-"struct__EomListStoreClass.html#aff07add8b355bacf828444817052d9d5":[35,0,250,1],
-"struct__EomMetadataDetails.html":[35,0,251],
-"struct__EomMetadataDetails.html#ac1bbd13d39812ff2d2479b5cdb811cec":[35,0,251,0]
+"struct__EomListStoreClass.html#aff07add8b355bacf828444817052d9d5":[35,0,250,1]
 };

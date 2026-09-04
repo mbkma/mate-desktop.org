@@ -1,5 +1,7 @@
 var NAVTREEINDEX192 =
 {
+"struct__GSearchWindow.html#aa6f29a05dd42cdd22403681344d49b76":[35,0,509,1],
+"struct__GSearchWindow.html#aa7713a53b4bc00d8deea4851960d8c2d":[35,0,509,25],
 "struct__GSearchWindow.html#aaf2af93c6bd775e78971f6ab27f2a80b":[35,0,509,45],
 "struct__GSearchWindow.html#aba4319535732bd9060564467e7a11325":[35,0,509,19],
 "struct__GSearchWindow.html#ac1c1c4be9f3b35f11fcd6dae7dc5b07a":[35,0,509,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX192 =
 "struct__GsmClientClass.html#a5897fdb566901933d2050a26d96b5b07":[35,0,511,8],
 "struct__GsmClientClass.html#a8aa2588f5832f63f6f7bfa56acc1c927":[35,0,511,6],
 "struct__GsmClientClass.html#a99d5a89c0e5668d196b571da3190c9cc":[35,0,511,9],
-"struct__GsmClientClass.html#ab81ec8244d6b7b1ee43dab4daf7b3cbf":[35,0,511,5],
-"struct__GsmClientClass.html#acfe2181e8d5b57263c76881893fe280e":[35,0,511,4],
-"struct__GsmClientClass.html#ad816632c4affe54369d87ffb5492dff9":[35,0,511,10]
+"struct__GsmClientClass.html#ab81ec8244d6b7b1ee43dab4daf7b3cbf":[35,0,511,5]
 };

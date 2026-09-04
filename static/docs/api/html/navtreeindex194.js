@@ -1,5 +1,7 @@
 var NAVTREEINDEX194 =
 {
+"struct__MateColorPickerClass.html#a22b266cd4fcbf37b8047b25bd28cd295":[35,0,568,3],
+"struct__MateColorPickerClass.html#a4b9327e39deeddfd3da6550c5dd1328a":[35,0,568,2],
 "struct__MateColorPickerClass.html#aac8e0cb209b1453df59cac92cbb19fb0":[35,0,568,1],
 "struct__MateColorPickerClass.html#aeaaf2dc3514cc4a4af38c654064a0da3":[35,0,568,0],
 "struct__MateColorSelection.html":[35,0,569],
@@ -247,7 +249,5 @@ var NAVTREEINDEX194 =
 "struct__MateMDI.html#a0b8ac87b5c069b07b4ef2383de8c9e83":[35,0,619,3],
 "struct__MateMDI.html#a180c3f8d43ee2870866f4ecebaf01acf":[35,0,619,8],
 "struct__MateMDI.html#a188b372c870ae4b28aeaeaf7eb628f76":[35,0,619,11],
-"struct__MateMDI.html#a1b912734d1cd92ffdf393269edfb2266":[35,0,619,9],
-"struct__MateMDI.html#a48ec63007630f3c690631a35d0bf609f":[35,0,619,14],
-"struct__MateMDI.html#a4c0e04fc4da6a3c3edd88fc16d56e42e":[35,0,619,4]
+"struct__MateMDI.html#a1b912734d1cd92ffdf393269edfb2266":[35,0,619,9]
 };

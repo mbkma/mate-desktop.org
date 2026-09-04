@@ -1,5 +1,7 @@
 var NAVTREEINDEX204 =
 {
+"struct__WeatherPrefs.html#a88a456c8b406159f5cbe98fe003ce919":[35,0,990,3],
+"struct__WeatherPrefs.html#abcdfb2b8a8814db6f012013874811358":[35,0,990,5],
 "struct__WeatherPrefs.html#af8cb42c0cb793012aad88964dc5dbf0f":[35,0,990,1],
 "struct__XSettingsBuffer.html":[35,0,991],
 "struct__XSettingsBuffer.html#ac6c635c2ba70162d208a5ffc5e19faa5":[35,0,991,3],
@@ -20,8 +22,8 @@ var NAVTREEINDEX204 =
 "struct__XSettingsSetting.html#a9f457736b4cdcfe360509a43740a6d5e":[35,0,994,2],
 "struct__XSettingsSetting.html#aa7f75a91b9c6b75c706f9dae07f02f13":[35,0,994,4],
 "struct__XSettingsSetting.html#ace2066e84a9e05db679d500346a17661":[35,0,994,6],
+"struct__XSettingsSetting.html#ae559d0b404956b6b8ac46ba92f594976":[35,0,994,0],
 "struct__XSettingsSetting.html#ae85ea1668a8b11b0082f2c2bcf562e48":[35,0,994,5],
-"struct__XSettingsSetting.html#aee7d3677681ac6726084a0c22d2f7639":[35,0,994,0],
 "struct__charpick__button__cb__data.html":[35,0,136],
 "struct__charpick__button__cb__data.html#a30a771626ee425bcb60cc2a802a2648e":[35,0,136,1],
 "struct__charpick__button__cb__data.html#ab7116524cb4f345382727fcdb27fe33e":[35,0,136,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX204 =
 "structparse__node.html#a71f1b4145571ee048a718d51f650e851":[35,0,1611,4],
 "structparse__node.html#a72d71fb6cca5bc1edae9fd444146b5c9":[35,0,1611,7],
 "structparse__node.html#a77e44f0b1327f3e39b04bfbd6d60a855":[35,0,1611,8],
-"structparse__node.html#ab9a24e48447a6cbbe34cdb8ff364578b":[35,0,1611,2],
-"structparse__node.html#abf50c2b0dbe9fb65b7707b02724358c2":[35,0,1611,3],
-"structparser__state.html":[35,0,1612]
+"structparse__node.html#ab9a24e48447a6cbbe34cdb8ff364578b":[35,0,1611,2]
 };

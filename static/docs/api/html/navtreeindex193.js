@@ -1,5 +1,7 @@
 var NAVTREEINDEX193 =
 {
+"struct__GsmClientClass.html#acfe2181e8d5b57263c76881893fe280e":[35,0,511,4],
+"struct__GsmClientClass.html#ad816632c4affe54369d87ffb5492dff9":[35,0,511,10],
 "struct__GsmClientClass.html#afe9d3040aaf7b4de1d7d53d8a5b5d9a4":[35,0,511,2],
 "struct__GsmConsolekitClass.html":[35,0,513],
 "struct__GsmConsolekitClass.html#a329743fab0f91b19e2c5aae52f955b24":[35,0,513,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX193 =
 "struct__MateColorPicker.html":[35,0,567],
 "struct__MateColorPicker.html#a285a11dc4433c95621cc14f1d5d7214c":[35,0,567,1],
 "struct__MateColorPicker.html#ad1348ca617ab0b6d885cf7f187de855c":[35,0,567,0],
-"struct__MateColorPickerClass.html":[35,0,568],
-"struct__MateColorPickerClass.html#a22b266cd4fcbf37b8047b25bd28cd295":[35,0,568,3],
-"struct__MateColorPickerClass.html#a4b9327e39deeddfd3da6550c5dd1328a":[35,0,568,2]
+"struct__MateColorPickerClass.html":[35,0,568]
 };
