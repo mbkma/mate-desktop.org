@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['interface_0',['interface',['../group__iface__zwlr__foreign__toplevel__handle__v1.html',1,'The zwlr_foreign_toplevel_handle_v1 interface'],['../group__iface__zwlr__foreign__toplevel__manager__v1.html',1,'The zwlr_foreign_toplevel_manager_v1 interface']]]
+  ['parser_0',['The theme expression parser',['../group__parser.html',1,'']]],
+  ['pings_1',['Pings',['../group__pings.html',1,'']]]
 ];

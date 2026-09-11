@@ -27,13 +27,11 @@ var searchData=
   ['window_2dprops_2eh_24',['window-props.h',['../window-props_8h.html',1,'']]],
   ['window_2ec_25',['window.c',['../window_8c.html',1,'']]],
   ['window_2eh_26',['window.h',['../window_8h.html',1,'']]],
-  ['wlr_2dforeign_2dtoplevel_2dmanagement_2dunstable_2dv1_2dclient_2eh_27',['wlr-foreign-toplevel-management-unstable-v1-client.h',['../wlr-foreign-toplevel-management-unstable-v1-client_8h.html',1,'']]],
-  ['wlr_2dforeign_2dtoplevel_2dmanagement_2dunstable_2dv1_2dcode_2ec_28',['wlr-foreign-toplevel-management-unstable-v1-code.c',['../wlr-foreign-toplevel-management-unstable-v1-code_8c.html',1,'']]],
-  ['wlrandr_2dcapplet_2ec_29',['wlrandr-capplet.c',['../wlrandr-capplet_8c.html',1,'']]],
-  ['wncklet_2ec_30',['wncklet.c',['../wncklet_8c.html',1,'']]],
-  ['wncklet_2eh_31',['wncklet.h',['../wncklet_8h.html',1,'']]],
-  ['workspace_2dswitcher_2ec_32',['workspace-switcher.c',['../workspace-switcher_8c.html',1,'']]],
-  ['workspace_2dswitcher_2eh_33',['workspace-switcher.h',['../workspace-switcher_8h.html',1,'']]],
-  ['workspace_2ec_34',['workspace.c',['../workspace_8c.html',1,'']]],
-  ['workspace_2eh_35',['workspace.h',['../workspace_8h.html',1,'']]]
+  ['wlrandr_2dcapplet_2ec_27',['wlrandr-capplet.c',['../wlrandr-capplet_8c.html',1,'']]],
+  ['wncklet_2ec_28',['wncklet.c',['../wncklet_8c.html',1,'']]],
+  ['wncklet_2eh_29',['wncklet.h',['../wncklet_8h.html',1,'']]],
+  ['workspace_2dswitcher_2ec_30',['workspace-switcher.c',['../workspace-switcher_8c.html',1,'']]],
+  ['workspace_2dswitcher_2eh_31',['workspace-switcher.h',['../workspace-switcher_8h.html',1,'']]],
+  ['workspace_2ec_32',['workspace.c',['../workspace_8c.html',1,'']]],
+  ['workspace_2eh_33',['workspace.h',['../workspace_8h.html',1,'']]]
 ];

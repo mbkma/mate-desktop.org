@@ -334,10 +334,10 @@ $(document).ready(function(){initNavTree('mate-dialog_8c_source.html',''); initR
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordflow">if</span> (title)</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    gtk_window_set_title (GTK_WINDOW (dialog), title);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a>) {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordflow">if</span> (buttons) {</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordflow">while</span> (<a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>) {</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      button_name = *<a class="code hl_variable" href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a>++;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      button_name = *buttons++;</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <span class="keywordflow">if</span> (button_name == <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keywordflow">break</span>;</div>
@@ -383,7 +383,7 @@ $(document).ready(function(){initNavTree('mate-dialog_8c_source.html',''); initR
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  dialog = g_object_new (<a class="code hl_define" href="mate-dialog_8h.html#a75fd550ea968a1da639f50841da52f34">MATE_TYPE_DIALOG</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <a class="code hl_function" href="mate-dialog_8c.html#a8db4dc7f21a0b93cc683fda4dff36627">mate_dialog_constructv</a>(dialog, title, <a class="code hl_variable" href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a>);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <a class="code hl_function" href="mate-dialog_8c.html#a8db4dc7f21a0b93cc683fda4dff36627">mate_dialog_constructv</a>(dialog, title, buttons);</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordflow">return</span> GTK_WIDGET (dialog);</div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>}</div>
@@ -542,9 +542,9 @@ $(document).ready(function(){initNavTree('mate-dialog_8c_source.html',''); initR
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span>  g_return_if_fail(dialog != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  g_return_if_fail(<a class="code hl_define" href="mate-dialog_8h.html#aa1fb8ea61fcf0ff8070c1e9b76484814">MATE_IS_DIALOG</a>(dialog));</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
-<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  <span class="keywordflow">while</span>(*<a class="code hl_variable" href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a> != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <a class="code hl_function" href="mate-dialog_8c.html#adb704d8807bfb38363cbdd2d2ba18063">mate_dialog_append_button</a> (dialog, *<a class="code hl_variable" href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a>);</div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    <a class="code hl_variable" href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a>++;</div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>  <span class="keywordflow">while</span>(*buttons != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>    <a class="code hl_function" href="mate-dialog_8c.html#adb704d8807bfb38363cbdd2d2ba18063">mate_dialog_append_button</a> (dialog, *buttons);</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>    buttons++;</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>  }</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>}</div>
 </div>
@@ -1021,7 +1021,6 @@ $(document).ready(function(){initNavTree('mate-dialog_8c_source.html',''); initR
 <div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span><span class="preprocessor">#endif </span><span class="comment">/* MATE_DISABLE_DEPRECATED_SOURCE */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
-<div class="ttc" id="aapplets_2wncklet_2wayland-backend_8c_html_a4aa425dc4d4109707598ae000631ab9c"><div class="ttname"><a href="applets_2wncklet_2wayland-backend_8c.html#a4aa425dc4d4109707598ae000631ab9c">buttons</a></div><div class="ttdeci">guint buttons</div><div class="ttdef"><b>Definition</b> <a href="applets_2wncklet_2wayland-backend_8c_source.html#l00083">applets/wncklet/wayland-backend.c:83</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="acaja-desktop-directory_8c_html_a9acb5cadd331d9e9960736182a1a1a67"><div class="ttname"><a href="caja-desktop-directory_8c.html#a9acb5cadd331d9e9960736182a1a1a67">parent_class</a></div><div class="ttdeci">#define parent_class</div><div class="ttdef"><b>Definition</b> <a href="caja-desktop-directory_8c_source.html#l00072">caja-desktop-directory.c:72</a></div></div>
 <div class="ttc" id="amate-app-helper_8c_html_af20b8d139279b360b0fdeae71f8f43bc"><div class="ttname"><a href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a></div><div class="ttdeci">#define _(x)</div><div class="ttdef"><b>Definition</b> <a href="mate-app-helper_8c_source.html#l02507">mate-app-helper.c:2507</a></div></div>

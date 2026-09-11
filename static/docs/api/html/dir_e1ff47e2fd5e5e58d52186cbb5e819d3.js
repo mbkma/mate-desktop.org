@@ -1,6 +1,5 @@
 var dir_e1ff47e2fd5e5e58d52186cbb5e819d3 =
 [
-    [ "wayland-protocol", "dir_31ee69c9befa5dd6e2ed6e1242ce399c.html", "dir_31ee69c9befa5dd6e2ed6e1242ce399c" ],
     [ "showdesktop.c", "showdesktop_8c.html", "showdesktop_8c" ],
     [ "showdesktop.h", "showdesktop_8h.html", "showdesktop_8h" ],
     [ "wayland-backend.c", "applets_2wncklet_2wayland-backend_8c.html", "applets_2wncklet_2wayland-backend_8c" ],

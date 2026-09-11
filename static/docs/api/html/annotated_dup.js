@@ -1675,7 +1675,5 @@ var annotated_dup =
     [ "xPropSizeHints", "structxPropSizeHints.html", "structxPropSizeHints" ],
     [ "xPropStandardColormap", "structxPropStandardColormap.html", "structxPropStandardColormap" ],
     [ "xPropWMHints", "structxPropWMHints.html", "structxPropWMHints" ],
-    [ "xPropWMState", "structxPropWMState.html", "structxPropWMState" ],
-    [ "zwlr_foreign_toplevel_handle_v1_listener", "structzwlr__foreign__toplevel__handle__v1__listener.html", "structzwlr__foreign__toplevel__handle__v1__listener" ],
-    [ "zwlr_foreign_toplevel_manager_v1_listener", "structzwlr__foreign__toplevel__manager__v1__listener.html", "structzwlr__foreign__toplevel__manager__v1__listener" ]
+    [ "xPropWMState", "structxPropWMState.html", "structxPropWMState" ]
 ];

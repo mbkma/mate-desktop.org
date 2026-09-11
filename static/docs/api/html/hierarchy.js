@@ -1678,7 +1678,5 @@ var hierarchy =
     [ "xPropSizeHints", "structxPropSizeHints.html", null ],
     [ "xPropStandardColormap", "structxPropStandardColormap.html", null ],
     [ "xPropWMHints", "structxPropWMHints.html", null ],
-    [ "xPropWMState", "structxPropWMState.html", null ],
-    [ "zwlr_foreign_toplevel_handle_v1_listener", "structzwlr__foreign__toplevel__handle__v1__listener.html", null ],
-    [ "zwlr_foreign_toplevel_manager_v1_listener", "structzwlr__foreign__toplevel__manager__v1__listener.html", null ]
+    [ "xPropWMState", "structxPropWMState.html", null ]
 ];

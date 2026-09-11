@@ -709,7 +709,7 @@ $(document).ready(function(){initNavTree('msd-clipboard-manager-wayland_8c_sourc
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (g_strcmp0 (interface, <span class="stringliteral">&quot;wl_seat&quot;</span>) == 0) {</div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>                wl-&gt;seat = wl_registry_bind (registry,</div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>                                             <a class="code hl_variable" href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a>,</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                                             &amp;<a class="code hl_variable" href="wlr-foreign-toplevel-management-unstable-v1-code_8c.html#abaec16e5d3db301ad4c2f3430c218239">wl_seat_interface</a>,</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>                                             &amp;wl_seat_interface,</div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>                                             <a class="code hl_define" href="jpegint-8a_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">MIN</a> (version, 5u));</div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        }</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>}</div>
@@ -893,7 +893,6 @@ $(document).ready(function(){initNavTree('msd-clipboard-manager-wayland_8c_sourc
 <div class="ttc" id="amsd-clipboard-manager-wayland_8c_html_ad940b6206859eab897d7fa9a399f9ac5"><div class="ttname"><a href="msd-clipboard-manager-wayland_8c.html#ad940b6206859eab897d7fa9a399f9ac5">msd_clipboard_manager_wayland_destroy</a></div><div class="ttdeci">void msd_clipboard_manager_wayland_destroy(MsdClipboardManagerWayland *wl)</div><div class="ttdef"><b>Definition</b> <a href="msd-clipboard-manager-wayland_8c_source.html#l00725">msd-clipboard-manager-wayland.c:725</a></div></div>
 <div class="ttc" id="amsd-clipboard-manager-wayland_8c_html_af6a831b0f62ebc80ad697cb47f6b7491"><div class="ttname"><a href="msd-clipboard-manager-wayland_8c.html#af6a831b0f62ebc80ad697cb47f6b7491">REOFFER_WINDOW_MS</a></div><div class="ttdeci">#define REOFFER_WINDOW_MS</div><div class="ttdef"><b>Definition</b> <a href="msd-clipboard-manager-wayland_8c_source.html#l00119">msd-clipboard-manager-wayland.c:119</a></div></div>
 <div class="ttc" id="amsd-clipboard-manager-wayland_8h_html"><div class="ttname"><a href="msd-clipboard-manager-wayland_8h.html">msd-clipboard-manager-wayland.h</a></div></div>
-<div class="ttc" id="awlr-foreign-toplevel-management-unstable-v1-code_8c_html_abaec16e5d3db301ad4c2f3430c218239"><div class="ttname"><a href="wlr-foreign-toplevel-management-unstable-v1-code_8c.html#abaec16e5d3db301ad4c2f3430c218239">wl_seat_interface</a></div><div class="ttdeci">const struct wl_interface wl_seat_interface</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

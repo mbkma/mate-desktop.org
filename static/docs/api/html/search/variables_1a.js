@@ -2,7 +2,7 @@ var searchData=
 [
   ['z_0',['z',['../struct__DviState.html#a1230f7f183b70c63bb2fc0d60493a11e',1,'_DviState']]],
   ['zip_5fmime_5ftype_1',['zip_mime_type',['../fr-command-zip_8c.html#a52e750607e627140290d81df372e5548',1,'fr-command-zip.c']]],
-  ['zone_2',['zone',['../structMateWeatherTimezoneMenu.html#a1971b3c00ea5db4c3119769064b8c295',1,'MateWeatherTimezoneMenu::zone'],['../structTzLocation.html#a979d7230f3a00a36f53467f26155cd65',1,'TzLocation::zone'],['../struct__WeatherLocation.html#a143c6c42b9366a181e6cf241414e0dd4',1,'_WeatherLocation::zone']]],
+  ['zone_2',['zone',['../structMateWeatherTimezoneMenu.html#a1971b3c00ea5db4c3119769064b8c295',1,'MateWeatherTimezoneMenu::zone'],['../struct__WeatherLocation.html#a143c6c42b9366a181e6cf241414e0dd4',1,'_WeatherLocation::zone'],['../structTzLocation.html#a979d7230f3a00a36f53467f26155cd65',1,'TzLocation::zone']]],
   ['zone_5fvalid_3',['zone_valid',['../struct__WeatherLocation.html#a80470b0014e8498c2762459dabd749b8',1,'_WeatherLocation']]],
   ['zoo_5fmime_5ftype_4',['zoo_mime_type',['../fr-command-zoo_8c.html#a546d62aa5cbf0f2c152bbe12a26d3af6',1,'fr-command-zoo.c']]],
   ['zoom_5',['zoom',['../structTerminalOptions.html#ac2985c48591988d82c99d3f3eec17c5b',1,'TerminalOptions::zoom'],['../structInitialTab.html#aa476de5920087a5e8fb3aaa1bc44ec2e',1,'InitialTab::zoom']]],
@@ -20,7 +20,5 @@ var searchData=
   ['zoom_5fto_5fdefault_17',['zoom_to_default',['../structCajaZoomControlClass.html#a044d5391825b4f4877ac205673bea827',1,'CajaZoomControlClass']]],
   ['zoom_5fto_5flevel_18',['zoom_to_level',['../struct__EphyZoomActionClass.html#aa4069f6ff27a18c9d01d6b91db186933',1,'_EphyZoomActionClass::zoom_to_level'],['../struct__EphyZoomControlClass.html#ad695e4e7d97ab33168fe15f4e04e63dc',1,'_EphyZoomControlClass::zoom_to_level'],['../struct__CajaViewIface.html#a2bd4f90c32bf833e90e5563894485f6d',1,'_CajaViewIface::zoom_to_level'],['../structCajaZoomControlClass.html#a30c9017b9ebf6e5e1d456eab888f674c',1,'CajaZoomControlClass::zoom_to_level'],['../structFMDirectoryViewClass.html#a30e25dafa6bac6779ecab05353ea2520',1,'FMDirectoryViewClass::zoom_to_level']]],
   ['zoom_5fxofs_19',['zoom_xofs',['../struct__EelCanvas.html#ab9236ec634ac8a630be5cef3c7699e50',1,'_EelCanvas']]],
-  ['zoom_5fyofs_20',['zoom_yofs',['../struct__EelCanvas.html#a42038f56d11585a03b903d94a773956f',1,'_EelCanvas']]],
-  ['zwlr_5fforeign_5ftoplevel_5fhandle_5fv1_5finterface_21',['zwlr_foreign_toplevel_handle_v1_interface',['../wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a8ba3c4c3a85036803cae732dedf42d0d',1,'zwlr_foreign_toplevel_handle_v1_interface:&#160;wlr-foreign-toplevel-management-unstable-v1-code.c'],['../wlr-foreign-toplevel-management-unstable-v1-code_8c.html#a8ba3c4c3a85036803cae732dedf42d0d',1,'zwlr_foreign_toplevel_handle_v1_interface:&#160;wlr-foreign-toplevel-management-unstable-v1-code.c']]],
-  ['zwlr_5fforeign_5ftoplevel_5fmanager_5fv1_5finterface_22',['zwlr_foreign_toplevel_manager_v1_interface',['../wlr-foreign-toplevel-management-unstable-v1-client_8h.html#a473a090b7636c7825c5000140a83ddfd',1,'zwlr_foreign_toplevel_manager_v1_interface:&#160;wlr-foreign-toplevel-management-unstable-v1-code.c'],['../wlr-foreign-toplevel-management-unstable-v1-code_8c.html#a3b18797cdc43ac3f44b94d62b0430d4e',1,'zwlr_foreign_toplevel_manager_v1_interface:&#160;wlr-foreign-toplevel-management-unstable-v1-code.c']]]
+  ['zoom_5fyofs_20',['zoom_yofs',['../struct__EelCanvas.html#a42038f56d11585a03b903d94a773956f',1,'_EelCanvas']]]
 ];
