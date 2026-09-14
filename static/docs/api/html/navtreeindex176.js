@@ -1,5 +1,13 @@
 var NAVTREEINDEX176 =
 {
+"structGpmButton.html#a6c7e2fad6eb6a69d925f4eaedd53b925":[34,0,1309,0],
+"structGpmButtonClass.html":[34,0,1310],
+"structGpmButtonClass.html#a106b558d6862a36fed01515a5564f351":[34,0,1310,0],
+"structGpmButtonClass.html#ae3c718a8b1a0a46f64a8c9b1ba84bac1":[34,0,1310,1],
+"structGpmControl.html":[34,0,1311],
+"structGpmControl.html#a43ff2991f7e609750a592caf18c3edc1":[34,0,1311,0],
+"structGpmControl.html#aec802af94057a41a74c5123b375ab44e":[34,0,1311,1],
+"structGpmControlClass.html":[34,0,1312],
 "structGpmControlClass.html#a0e76367f8de2cef2d95a0bf797688b02":[34,0,1312,2],
 "structGpmControlClass.html#a2b4ff1601acae1053b57b001d1f4d21a":[34,0,1312,4],
 "structGpmControlClass.html#abb29296788c4dd4508969e0e3d588040":[34,0,1312,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX176 =
 "structMateIconData.html#a15b01647ad2ec7812207bca1ca468c39":[34,0,1408,1],
 "structMateIconData.html#a2f11ea49cd345a70d5b50dbf35c268d3":[34,0,1408,6],
 "structMateIconData.html#a7340eb565507deb169996b4a2dc458d1":[34,0,1408,7],
-"structMateIconData.html#a7516e7d9c16abaa0fef99a85b586c6b0":[34,0,1408,3],
-"structMateIconData.html#a933249624c6e0b3dfebf11ec4e62279c":[34,0,1408,0],
-"structMateIconData.html#ab4ffb02c154309729640b7fd9ebdf3e9":[34,0,1408,5],
-"structMateIconData.html#add98bcd6fca50d96af1234c17b7c1f3f":[34,0,1408,2],
-"structMateIconData.html#aea5b4defd5d5397121611587b92d509c":[34,0,1408,4],
-"structMateIconDataPoint.html":[34,0,1409],
-"structMateIconDataPoint.html#a4b389d7d2503d830852a9fc5bae43e5f":[34,0,1409,0],
-"structMateIconDataPoint.html#af8a99de0ef50d6cbf5887631bf442076":[34,0,1409,1],
-"structMateNotificationDBusContext.html":[34,0,1410]
+"structMateIconData.html#a7516e7d9c16abaa0fef99a85b586c6b0":[34,0,1408,3]
 };

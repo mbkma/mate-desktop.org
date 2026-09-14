@@ -1,5 +1,13 @@
 var NAVTREEINDEX89 =
 {
+"gvc-level-bar_8h.html#a63f5f533d403072792f529615defd4f5":[35,0,0,18,0,11,8],
+"gvc-level-bar_8h.html#a81207d1f40bbcfb6f9452183bf55b730":[35,0,0,18,0,11,3],
+"gvc-level-bar_8h.html#a94798eb08e11bf25fee9cee5181c7eb2":[35,0,0,18,0,11,16],
+"gvc-level-bar_8h.html#aa6beb0cf2dead54c1d604382673e94a0":[35,0,0,18,0,11,7],
+"gvc-level-bar_8h.html#adc940eab127cf802ab7838e10743aa76":[35,0,0,18,0,11,12],
+"gvc-level-bar_8h.html#aef4c1eb8c703310a5e99ca840229cab2":[35,0,0,18,0,11,18],
+"gvc-level-bar_8h.html#afcac837b917cb38d3064a199bca934c6":[35,0,0,18,0,11,5],
+"gvc-level-bar_8h.html#affd1302df98f066800fc89b7ca073b59":[35,0,0,18,0,11,20],
 "gvc-level-bar_8h_source.html":[35,0,0,18,0,11],
 "gvc-mixer-dialog_8c.html":[35,0,0,18,0,12],
 "gvc-mixer-dialog_8c.html#a10e4e7d02fbb116c5392d61f7f88b227":[35,0,0,18,0,12,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX89 =
 "i2c-sys-plugin_8h.html":[35,0,0,26,1,4,1],
 "i2c-sys-plugin_8h_source.html":[35,0,0,26,1,4,1],
 "i8k-plugin_8c.html":[35,0,0,26,1,5,0],
-"i8k-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[35,0,0,26,1,5,0,3],
-"i8k-plugin_8c.html#a65a1069872492aa0a4c66db12bf3d3be":[35,0,0,26,1,5,0,0],
-"i8k-plugin_8c.html#aa6ca93acbd005deadd231685a93e2bc7":[35,0,0,26,1,5,0,1],
-"i8k-plugin_8c.html#aaf42a20354e160b976528e4abf538759":[35,0,0,26,1,5,0,5],
-"i8k-plugin_8c.html#abf798412de6a7e9341640ab881c20be1":[35,0,0,26,1,5,0,4],
-"i8k-plugin_8c.html#ad556b67a590a4e204059882c2d0740d0":[35,0,0,26,1,5,0,2],
-"i8k-plugin_8c_source.html":[35,0,0,26,1,5,0],
-"i8k-plugin_8h.html":[35,0,0,26,1,5,1],
-"i8k-plugin_8h_source.html":[35,0,0,26,1,5,1]
+"i8k-plugin_8c.html#a39cbbe29c19e2f03e5e40150e74c3612":[35,0,0,26,1,5,0,3]
 };

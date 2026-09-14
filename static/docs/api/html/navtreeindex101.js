@@ -1,5 +1,13 @@
 var NAVTREEINDEX101 =
 {
+"mate-dialog_8h.html#ac733af771abff6a6e493ab074194be64":[35,0,0,9,2,21,9],
+"mate-dialog_8h.html#ac73e4e20ee3e845c717a7e883845e542":[35,0,0,9,2,21,38],
+"mate-dialog_8h.html#acd60e394c2ded37dd699a22424699aba":[35,0,0,9,2,21,39],
+"mate-dialog_8h.html#ad248a3aa775a71639a18fee0f7b4d7fd":[35,0,0,9,2,21,14],
+"mate-dialog_8h.html#adb704d8807bfb38363cbdd2d2ba18063":[35,0,0,9,2,21,22],
+"mate-dialog_8h.html#ae5de10023669545631ccbebdf49d0e13":[35,0,0,9,2,21,37],
+"mate-dialog_8h_source.html":[35,0,0,9,2,21],
+"mate-display-properties-install-systemwide_8c.html":[35,0,0,14,0,5,0],
 "mate-display-properties-install-systemwide_8c.html#a3c04138a5bfe5d72780bb7e82a18e627":[35,0,0,14,0,5,0,1],
 "mate-display-properties-install-systemwide_8c.html#a5dfea86edc7bf3f41567c40140b9f37b":[35,0,0,14,0,5,0,0],
 "mate-display-properties-install-systemwide_8c_source.html":[35,0,0,14,0,5,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX101 =
 "mate-gsettings_8c.html#a134e08232e28d2e359a106d0ba3a5f5a":[35,0,0,15,0,19,1],
 "mate-gsettings_8c.html#a3be716c3741ad056e1d0e67cb93a5dd1":[35,0,0,15,0,19,4],
 "mate-gsettings_8c.html#ab9a64c56cefa8b52beffff57639c2c59":[35,0,0,15,0,19,0],
-"mate-gsettings_8c.html#abcb90ed7a1316d68cbf2f1223c6425ae":[35,0,0,15,0,19,3],
-"mate-gsettings_8c.html#affeb4b8092dc7e3f55f46556f4b83e25":[35,0,0,15,0,19,2],
-"mate-gsettings_8c_source.html":[35,0,0,15,0,19],
-"mate-gsettings_8h.html":[35,0,0,15,0,20],
-"mate-gsettings_8h.html#a134e08232e28d2e359a106d0ba3a5f5a":[35,0,0,15,0,20,1],
-"mate-gsettings_8h.html#a3be716c3741ad056e1d0e67cb93a5dd1":[35,0,0,15,0,20,4],
-"mate-gsettings_8h.html#ab9a64c56cefa8b52beffff57639c2c59":[35,0,0,15,0,20,0],
-"mate-gsettings_8h.html#abcb90ed7a1316d68cbf2f1223c6425ae":[35,0,0,15,0,20,3],
-"mate-gsettings_8h.html#affeb4b8092dc7e3f55f46556f4b83e25":[35,0,0,15,0,20,2]
+"mate-gsettings_8c.html#abcb90ed7a1316d68cbf2f1223c6425ae":[35,0,0,15,0,19,3]
 };

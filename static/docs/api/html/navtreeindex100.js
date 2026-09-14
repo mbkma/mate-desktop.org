@@ -1,5 +1,13 @@
 var NAVTREEINDEX100 =
 {
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a0b3ee0a200f88c9f515dd3548b3b330f":[35,0,0,15,0,14,41,2],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a1c628dd083876c60ac76b42190a2b1ea":[35,0,0,15,0,14,41,5],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a62a8c979ee5b686f0ef37f649f4e34a4":[35,0,0,15,0,14,41,8],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a6efce2d900b616663e47bfc51c145edc":[35,0,0,15,0,14,41,7],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a707eb9bb82d159f9efa48cf817150c49":[35,0,0,15,0,14,41,4],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a87b93e87ece923c6e3367d798de9f005":[35,0,0,15,0,14,41,6],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2a96c8ba1e01ebefbf81ab99716229c445":[35,0,0,15,0,14,41,0],
+"mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2aac34f2527c527ae423e147da9bbe57ae":[35,0,0,15,0,14,41,3],
 "mate-desktop-item_8h.html#a31c57e99647f89e1db14ff5ee47f03f2acefaff7aafe1d71c28a51908a01dcc40":[35,0,0,15,0,14,41,1],
 "mate-desktop-item_8h.html#a32bc3743b90aef51245b49ad86b5a511":[35,0,0,15,0,14,61],
 "mate-desktop-item_8h.html#a33c261753189d2eab991c016fe16a79e":[35,0,0,15,0,14,49],
@@ -241,13 +249,5 @@ var NAVTREEINDEX100 =
 "mate-dialog_8h.html#ab0ce940972358bd4e0fc13da8e891f80":[35,0,0,9,2,21,20],
 "mate-dialog_8h.html#ab12edddf57bdb074dde054bf4b4a25de":[35,0,0,9,2,21,4],
 "mate-dialog_8h.html#ab7e38c5a42c48742b8694e46f5fb24c3":[35,0,0,9,2,21,41],
-"mate-dialog_8h.html#ac1996889e132d6273f818245e29a8232":[35,0,0,9,2,21,15],
-"mate-dialog_8h.html#ac733af771abff6a6e493ab074194be64":[35,0,0,9,2,21,9],
-"mate-dialog_8h.html#ac73e4e20ee3e845c717a7e883845e542":[35,0,0,9,2,21,38],
-"mate-dialog_8h.html#acd60e394c2ded37dd699a22424699aba":[35,0,0,9,2,21,39],
-"mate-dialog_8h.html#ad248a3aa775a71639a18fee0f7b4d7fd":[35,0,0,9,2,21,14],
-"mate-dialog_8h.html#adb704d8807bfb38363cbdd2d2ba18063":[35,0,0,9,2,21,22],
-"mate-dialog_8h.html#ae5de10023669545631ccbebdf49d0e13":[35,0,0,9,2,21,37],
-"mate-dialog_8h_source.html":[35,0,0,9,2,21],
-"mate-display-properties-install-systemwide_8c.html":[35,0,0,14,0,5,0]
+"mate-dialog_8h.html#ac1996889e132d6273f818245e29a8232":[35,0,0,9,2,21,15]
 };

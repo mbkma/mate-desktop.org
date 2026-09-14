@@ -1,5 +1,13 @@
 var NAVTREEINDEX181 =
 {
+"structStickyNote.html#afe5ed31f647ef833ead120b449944c89":[34,0,1633,31],
+"structStickyNotes.html":[34,0,1634],
+"structStickyNotes.html#a05a2153663f012a04a383f6a8a69b1bb":[34,0,1634,21],
+"structStickyNotes.html#a07052ee68148f3e7bca1ee7aa8b748a8":[34,0,1634,6],
+"structStickyNotes.html#a0ca4874d707edbf59ddecde14268b236":[34,0,1634,18],
+"structStickyNotes.html#a1eaeed35ad495964f7fc5576647b4253":[34,0,1634,4],
+"structStickyNotes.html#a208186be27c5fee87aa8dae9e7f611de":[34,0,1634,13],
+"structStickyNotes.html#a20a5de68ee6f7cf2133d566d328f246e":[34,0,1634,5],
 "structStickyNotes.html#a238fea2d6ec38922114f121ae12e3e7c":[34,0,1634,11],
 "structStickyNotes.html#a2efb673dd26a1d2b71f77cf7769ee193":[34,0,1634,2],
 "structStickyNotes.html#a52cd59235323fee41fbb4b69ceddcfbc":[34,0,1634,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX181 =
 "struct__AlsaStreamControlClass.html#a13e1d4edea1766784a225cf02954fc84":[34,0,10,1],
 "struct__AlsaStreamControlClass.html#a37a80ed38c5a29973c7802e67391ccd1":[34,0,10,6],
 "struct__AlsaStreamControlClass.html#a47cc95df4f5d0cd5e066f1bab6ad5f2b":[34,0,10,3],
-"struct__AlsaStreamControlClass.html#a541c75c9bd9985a48efc8ef190913c87":[34,0,10,5],
-"struct__AlsaStreamControlClass.html#a71596e1f443a235ea57d090662b42701":[34,0,10,0],
-"struct__AlsaStreamControlClass.html#ab152e94abc4914085ec6003a7d3f2e30":[34,0,10,4],
-"struct__AlsaStreamControlClass.html#ad95e28527fd61939d34a1ca407435553":[34,0,10,2],
-"struct__AlsaStreamInputControl.html":[34,0,11],
-"struct__AlsaStreamInputControl.html#aac39c7c6605e6e675e7ecbb0dfa4816f":[34,0,11,0],
-"struct__AlsaStreamInputControlClass.html":[34,0,12],
-"struct__AlsaStreamInputControlClass.html#aed1d2c31b3b9be7032203fd68d7a808f":[34,0,12,0],
-"struct__AlsaStreamOutputControl.html":[34,0,13]
+"struct__AlsaStreamControlClass.html#a541c75c9bd9985a48efc8ef190913c87":[34,0,10,5]
 };

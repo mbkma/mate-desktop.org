@@ -1,5 +1,13 @@
 var NAVTREEINDEX109 =
 {
+"mate-scores_8c.html#a51a177e7de93f60c9aa9455c02fb8aa5":[35,0,0,9,2,70,1],
+"mate-scores_8c.html#a7961741c86fc068bd77b10587cfea7f2":[35,0,0,9,2,70,3],
+"mate-scores_8c.html#a8ead16f056ed0f427cf5f9f8c454919a":[35,0,0,9,2,70,7],
+"mate-scores_8c.html#a984467551965997a6829458779023e65":[35,0,0,9,2,70,8],
+"mate-scores_8c.html#aaf85fe1f7cd691793fb33adc60b56a8d":[35,0,0,9,2,70,11],
+"mate-scores_8c.html#aec1d54057388b973b57b949d6d01b8c2":[35,0,0,9,2,70,2],
+"mate-scores_8c.html#af7e4c22c4b9ef0995bbca4b828912baa":[35,0,0,9,2,70,4],
+"mate-scores_8c.html#afbf248974832bc10ba2529e3588a7f7d":[35,0,0,9,2,70,5],
 "mate-scores_8c_source.html":[35,0,0,9,2,70],
 "mate-scores_8h.html":[35,0,0,9,2,71],
 "mate-scores_8h.html#a0362d457d11c85ad57c9dd6cb918700e":[35,0,0,9,2,71,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX109 =
 "mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747a62789709c35e8cd9865265d86bb90a35":[35,0,0,28,1,4,1,0,3],
 "mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747a8c982721a3be6e6902d1e42a8dd6f0d9":[35,0,0,28,1,4,1,0,2],
 "mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747a9242045936deb9aa63b4bd543ccb308a":[35,0,0,28,1,4,1,0,6],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ac360d1b3694b0a7f0e5f57675aeaed07":[35,0,0,28,1,4,1,0,15],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ac41cbb726567a4d68c95be59355d9924":[35,0,0,28,1,4,1,0,9],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ac43d9628bdc1ecfd48001954015421fe":[35,0,0,28,1,4,1,0,12],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ad48a76acbbf527053418aa061d38b2d4":[35,0,0,28,1,4,1,0,1],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ad591bfdfde967840471711f0b15bf27a":[35,0,0,28,1,4,1,0,8],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ae3e3d5558d472df7a0b135d77864cc83":[35,0,0,28,1,4,1,0,14],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ae83558af3b0b21e2d69d22f35d152f03":[35,0,0,28,1,4,1,0,13],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747aedbd26b3debcb24b2ad251d7926fc259":[35,0,0,28,1,4,1,0,10],
-"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#aef5ddd82f23b1e091a1231750d98f12e":[35,0,0,28,1,4,1,4]
+"mate-settings-daemon_2plugins_2common_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747ac360d1b3694b0a7f0e5f57675aeaed07":[35,0,0,28,1,4,1,0,15]
 };

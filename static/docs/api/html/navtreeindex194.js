@@ -1,5 +1,13 @@
 var NAVTREEINDEX194 =
 {
+"struct__MateDACapplet.html#a1b2280242e11a54f0b4f380129c02d60":[34,0,573,38],
+"struct__MateDACapplet.html#a2c41c58b93a32ecb1bd04d23c7cf71f8":[34,0,573,3],
+"struct__MateDACapplet.html#a338aba2dae5d3b2e60bf75fe17d1ee3c":[34,0,573,8],
+"struct__MateDACapplet.html#a392b83e69cee38587aa94be6dddbc291":[34,0,573,34],
+"struct__MateDACapplet.html#a46a7d140771f4c6ee1d8be4009401600":[34,0,573,33],
+"struct__MateDACapplet.html#a4727548f0436dafd94e85dffbdf157d7":[34,0,573,18],
+"struct__MateDACapplet.html#a5247bc5d7d986828bef069588654212f":[34,0,573,9],
+"struct__MateDACapplet.html#a555ff6bb93c2673e08520ee80bda597c":[34,0,573,22],
 "struct__MateDACapplet.html#a58fbad3b66f1b2896dcc27fa13353c7a":[34,0,573,23],
 "struct__MateDACapplet.html#a5f7749c1ca4a6db22775295e025080ef":[34,0,573,26],
 "struct__MateDACapplet.html#a60a3d56f85c1a3902faf18bf286514e8":[34,0,573,19],
@@ -241,13 +249,5 @@ var NAVTREEINDEX194 =
 "struct__MateMDIClass.html":[34,0,622],
 "struct__MateMDIClass.html#a0022e35526548e6fd33bd82ef97a3582":[34,0,622,6],
 "struct__MateMDIClass.html#a0d944c61272a866d7558d37107bc19f7":[34,0,622,0],
-"struct__MateMDIClass.html#a33f18ffacfd90f67af3d87657a350b2b":[34,0,622,3],
-"struct__MateMDIClass.html#a4e980e637c4b8c49b279297b238e7add":[34,0,622,5],
-"struct__MateMDIClass.html#ab8cb8826be023a670deeca4dca959063":[34,0,622,7],
-"struct__MateMDIClass.html#abb30450913c437f68d22e0c5862e4e56":[34,0,622,2],
-"struct__MateMDIClass.html#acfb4eaa6586a4dec4f4de843dd9a9c39":[34,0,622,4],
-"struct__MateMDIClass.html#ae0897bec1cc3ddd3b58902420f40df78":[34,0,622,1],
-"struct__MateMDIGenericChild.html":[34,0,623],
-"struct__MateMDIGenericChild.html#a082ad9655bfde5aa930b51b867cdac14":[34,0,623,11],
-"struct__MateMDIGenericChild.html#a0d34069947ad10da0122d95861cde5a7":[34,0,623,7]
+"struct__MateMDIClass.html#a33f18ffacfd90f67af3d87657a350b2b":[34,0,622,3]
 };

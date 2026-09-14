@@ -1,5 +1,12 @@
 var NAVTREEINDEX40 =
 {
+"drive-list_8h.html#ad56a5d2cf63f14bc61db16407a6e2f08":[35,0,0,12,5,0,3,5],
+"drive-list_8h.html#adffefbe1f54260678b79012fc66e732c":[35,0,0,12,5,0,3,6],
+"drive-list_8h.html#ae12b0c2a2c1261f30be5e6cdac0a9393":[35,0,0,12,5,0,3,11],
+"drive-list_8h.html#af4a38769e2db6318f62342ea0407ee23":[35,0,0,12,5,0,3,10],
+"drive-list_8h_source.html":[35,0,0,12,5,0,3],
+"drivemount_8c.html":[35,0,0,12,5,0,4],
+"drivemount_8c_source.html":[35,0,0,12,5,0,4],
 "dropbox-client-util_8c.html":[35,0,0,3,0,5],
 "dropbox-client-util_8c.html#a7c0210f4221cce668b9ac635754fc7f6":[35,0,0,3,0,5,1],
 "dropbox-client-util_8c.html#ac78fd2594ff07e8c2016fed4cee94fa2":[35,0,0,3,0,5,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX40 =
 "dviopcodes_8h.html#afc088a965ccbb581149da44e1832873e":[35,0,0,0,0,2,0,9,0],
 "dviopcodes_8h.html#afc6dbea3ff0c58133626939bdbdd0ec4":[35,0,0,0,0,2,0,9,6],
 "dviopcodes_8h.html#afecd72f6c58a1f2eb34de0873db7de98":[35,0,0,0,0,2,0,9,7],
-"dviopcodes_8h.html#affff1269859a026a5ac0e6edbd654a7f":[35,0,0,0,0,2,0,9,34],
-"dviopcodes_8h_source.html":[35,0,0,0,0,2,0,9],
-"dviread_8c.html":[35,0,0,0,0,2,0,10],
-"dviread_8c.html#a022618eee56e9abc91304e707542c45b":[35,0,0,0,0,2,0,10,1],
-"dviread_8c.html#a05117055ab4cdfb1165554f4fb215682":[35,0,0,0,0,2,0,10,6],
-"dviread_8c.html#a10431d6ed08445537e83dee24c550206":[35,0,0,0,0,2,0,10,21],
-"dviread_8c.html#a176f130796bdb70b99c6b17d21c39c50":[35,0,0,0,0,2,0,10,17],
-"dviread_8c.html#a17dd6b69b2134718685f5aefece45e74":[35,0,0,0,0,2,0,10,20]
+"dviopcodes_8h.html#affff1269859a026a5ac0e6edbd654a7f":[35,0,0,0,0,2,0,9,34]
 };

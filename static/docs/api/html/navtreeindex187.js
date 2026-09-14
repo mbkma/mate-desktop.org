@@ -1,5 +1,13 @@
 var NAVTREEINDEX187 =
 {
+"struct__EelEditableLabelClass.html#a9fb4b522b8f6135e1ad7678374728e1e":[34,0,202,3],
+"struct__EelEditableLabelClass.html#aabc752c144cef0ec53be2067e6b662d3":[34,0,202,5],
+"struct__EelEditableLabelClass.html#abd6100b79057f06b7c7a713b51a248ae":[34,0,202,8],
+"struct__EelEditableLabelClass.html#acc0d3e058bd000175095992f8ac06d97":[34,0,202,2],
+"struct__EelEditableLabelClass.html#af33a017a68758524da983a87ffcd86ce":[34,0,202,6],
+"struct__EelEditableLabelClass.html#afd7b9a193aef6211772b65f111938697":[34,0,202,1],
+"struct__EggCellRendererKeys.html":[34,0,203],
+"struct__EggCellRendererKeys.html#a362dfe176289c05dc8db326df2864d2b":[34,0,203,7],
 "struct__EggCellRendererKeys.html#a7ee9c55a92e86842540682f2abed718a":[34,0,203,8],
 "struct__EggCellRendererKeys.html#a82944f28e332a5812d09dc3a5d49cad0":[34,0,203,3],
 "struct__EggCellRendererKeys.html#a87d6736a997deb4983e083a53a3f21cd":[34,0,203,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX187 =
 "struct__EomMetadataSidebarClass.html":[34,0,259],
 "struct__EomMetadataSidebarClass.html#a81529ef8730cf47008bb65eded2c4514":[34,0,259,0],
 "struct__EomPluginEngine.html":[34,0,260],
-"struct__EomPluginEngine.html#a62514baaf4c91d958a90ebdcb30fe46c":[34,0,260,1],
-"struct__EomPluginEngine.html#a729307b4ed039ad57c97ad4f224ae571":[34,0,260,0],
-"struct__EomPluginEngineClass.html":[34,0,261],
-"struct__EomPluginEngineClass.html#a8ee18d3e162a5516d7480e452525423c":[34,0,261,0],
-"struct__EomPreferencesDialog.html":[34,0,262],
-"struct__EomPreferencesDialog.html#a5f935257e146f022dab1132a50473e7f":[34,0,262,1],
-"struct__EomPreferencesDialog.html#aea9dfc2fd74225e9f0b1ada3fff03baf":[34,0,262,0],
-"struct__EomPreferencesDialogClass.html":[34,0,263],
-"struct__EomPreferencesDialogClass.html#ae8282e3a3bc4bdaeede2108ed521d727":[34,0,263,0]
+"struct__EomPluginEngine.html#a62514baaf4c91d958a90ebdcb30fe46c":[34,0,260,1]
 };

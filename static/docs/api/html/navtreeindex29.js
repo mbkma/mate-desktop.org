@@ -1,5 +1,12 @@
 var NAVTREEINDEX29 =
 {
+"caja-vfs-directory_8c_source.html":[35,0,0,1,2,131],
+"caja-vfs-directory_8h.html":[35,0,0,1,2,132],
+"caja-vfs-directory_8h.html#a10d58f4c2c212e5df16bc5f8fbaa8548":[35,0,0,1,2,132,5],
+"caja-vfs-directory_8h.html#a163d89900b20a4e74d1971f4ee33dc78":[35,0,0,1,2,132,8],
+"caja-vfs-directory_8h.html#a1f6ecfbf525849a5f52846878092429c":[35,0,0,1,2,132,9],
+"caja-vfs-directory_8h.html#a27429b9942335420a81f90a25dffba32":[35,0,0,1,2,132,6],
+"caja-vfs-directory_8h.html#a2fd9ef64b59bbf46d97efd16cbb831eb":[35,0,0,1,2,132,3],
 "caja-vfs-directory_8h.html#a916b648a024a1373408e3af34a2a8035":[35,0,0,1,2,132,4],
 "caja-vfs-directory_8h.html#aa7ba22c57eec4507650770a8330b7d17":[35,0,0,1,2,132,7],
 "caja-vfs-directory_8h.html#ab7fa078a3abf5423911d7114eaa8187b":[35,0,0,1,2,132,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX29 =
 "caja-window-info_8h.html#adb160950b79b2673f15f43324fd1ade3a8c7e140b92896a7c101ed323782310c1":[35,0,0,1,2,140,16,2],
 "caja-window-info_8h.html#adb160950b79b2673f15f43324fd1ade3ab0a6e6a5d52687e012d8accf53a4b2e3":[35,0,0,1,2,140,16,1],
 "caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec":[35,0,0,1,2,140,14],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4eca5df2b444113075241473ce5edd385775":[35,0,0,1,2,140,14,0],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ecae99d393dcb3a5576a82c3605212fb467":[35,0,0,1,2,140,14,1],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ecaf135886fe60c7bc0d1207ebedb64c3f7":[35,0,0,1,2,140,14,2],
-"caja-window-info_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9":[35,0,0,1,2,140,7],
-"caja-window-info_8h.html#ae395c1f12ad57d695a18f28ab0c4949d":[35,0,0,1,2,140,3],
-"caja-window-info_8h.html#af8dd10123569d781c43c14743f607c1b":[35,0,0,1,2,140,18],
-"caja-window-info_8h.html#afb4ef1dee64ba9859f8cc73cdf4f2da5":[35,0,0,1,2,140,9],
-"caja-window-info_8h.html#afeccf15f3e76a3f7266e5ae767c2a905":[35,0,0,1,2,140,4]
+"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4eca5df2b444113075241473ce5edd385775":[35,0,0,1,2,140,14,0]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX166 =
 {
+"sensors-applet-settings_8h.html#aefb2aa75be4323fe06eb3ec8394bdfc7":[35,0,0,26,2,16,13],
+"sensors-applet-settings_8h.html#af624ecaabdab34ed075195e2381e0c19":[35,0,0,26,2,16,28],
+"sensors-applet-settings_8h.html#afd20e661c412526f7357da2b15a5fc5e":[35,0,0,26,2,16,10],
+"sensors-applet-settings_8h_source.html":[35,0,0,26,2,16],
+"sensors-applet_8c.html":[35,0,0,26,2,17],
+"sensors-applet_8c.html#a05c26aeb0fead155f7b2fac1b55218ee":[35,0,0,26,2,17,10],
+"sensors-applet_8c.html#a130ac76cd10bec38776da21e5565fcc8":[35,0,0,26,2,17,1],
+"sensors-applet_8c.html#a3f777bcba634c4b3f5c9431be2cc6bb5":[35,0,0,26,2,17,7],
 "sensors-applet_8c.html#a5dc7c010531abd2d115dac13c196eda3":[35,0,0,26,2,17,2],
 "sensors-applet_8c.html#a5ec5947d558b0085f785a555c43e05bd":[35,0,0,26,2,17,19],
 "sensors-applet_8c.html#a5f1b165e06efb6728fd95ad66ab7d19f":[35,0,0,26,2,17,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX166 =
 "slab-mate-util_8c.html#a98e7b676d9ff277aff470a0b55d8742d":[35,0,0,14,2,21,1],
 "slab-mate-util_8c_source.html":[35,0,0,14,2,21],
 "slab-mate-util_8h.html":[35,0,0,14,2,22],
-"slab-mate-util_8h.html#a21dd6d687d57fe609e32521f5bc2fa3c":[35,0,0,14,2,22,2],
-"slab-mate-util_8h.html#a3687df70c81ae78cf69710c14e6d8c0e":[35,0,0,14,2,22,3],
-"slab-mate-util_8h.html#a8f4b966e4e97797b0796672ecad095fa":[35,0,0,14,2,22,0],
-"slab-mate-util_8h.html#a98e7b676d9ff277aff470a0b55d8742d":[35,0,0,14,2,22,1],
-"slab-mate-util_8h_source.html":[35,0,0,14,2,22],
-"slab-section_8c.html":[35,0,0,14,2,23],
-"slab-section_8c.html#a2c594d456611ec42bc469740144a4f88":[35,0,0,14,2,23,0],
-"slab-section_8c.html#a31b299792e7b73394120b3f002639b0f":[35,0,0,14,2,23,3],
-"slab-section_8c.html#a3ec9e7373e092e85c5477f8bf3d75514":[35,0,0,14,2,23,4]
+"slab-mate-util_8h.html#a21dd6d687d57fe609e32521f5bc2fa3c":[35,0,0,14,2,22,2]
 };

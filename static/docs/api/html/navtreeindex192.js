@@ -1,5 +1,13 @@
 var NAVTREEINDEX192 =
 {
+"struct__GdictAlignedWindowClass.html#a091965716cbe2e0385c9c60b93e1892b":[34,0,472,3],
+"struct__GdictAlignedWindowClass.html#a388e2a8287208d2749d838b38baae189":[34,0,472,0],
+"struct__GdictAlignedWindowClass.html#a717bbbf921001dc992d8287970b82b42":[34,0,472,4],
+"struct__GdictAlignedWindowClass.html#ac218eeb7368d39f7af89deb1d84664bb":[34,0,472,2],
+"struct__GdictAlignedWindowClass.html#ae98a6214296f1bb1983bc81ce1764c89":[34,0,472,1],
+"struct__GdictApp.html":[34,0,473],
+"struct__GdictApp.html#a0c5d312c5ad9e296d8b213b58a015660":[34,0,473,3],
+"struct__GdictApp.html#a3262fbc20563900ad09d2ff3cf4c2a50":[34,0,473,0],
 "struct__GdictApp.html#a40bbd8dd2e216c03c53e0fd9ffed70d6":[34,0,473,10],
 "struct__GdictApp.html#a44943f6f4d3985b0974a1b4bb1da856e":[34,0,473,6],
 "struct__GdictApp.html#a48acb3e67cd519b074dc74cf26ac740e":[34,0,473,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX192 =
 "struct__GvcChannelBarClass.html#a2f55a6b9b4d1813bf1130319e41331ef":[34,0,522,0],
 "struct__GvcComboBox.html":[34,0,523],
 "struct__GvcComboBox.html#a204b6c1b5f4ac27bc82c00bceba3e7a4":[34,0,523,0],
-"struct__GvcComboBox.html#af5b1eb762d7587844ee413cf7cd44718":[34,0,523,1],
-"struct__GvcComboBoxClass.html":[34,0,524],
-"struct__GvcComboBoxClass.html#a494113a96554110cbe295e69f4b7bb6b":[34,0,524,1],
-"struct__GvcComboBoxClass.html#a7c8e6a2517291aa7a0f5b754181c8a58":[34,0,524,0],
-"struct__GvcComboBoxClass.html#a8af638ba31071442265c2a032216db1f":[34,0,524,2],
-"struct__GvcLevelBar.html":[34,0,525],
-"struct__GvcLevelBar.html#a068e0ac80246f8e3738ca307f401a602":[34,0,525,1],
-"struct__GvcLevelBar.html#a73e1612c42178a44ae0959c1a892458e":[34,0,525,0],
-"struct__GvcLevelBarClass.html":[34,0,526]
+"struct__GvcComboBox.html#af5b1eb762d7587844ee413cf7cd44718":[34,0,523,1]
 };

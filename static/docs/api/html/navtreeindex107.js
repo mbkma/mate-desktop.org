@@ -1,5 +1,13 @@
 var NAVTREEINDEX107 =
 {
+"mate-panel_2mate-panel_2menu_8c.html#a12c4ecc1bcdc81e494f2dba5152d603a":[35,0,0,22,2,13,3],
+"mate-panel_2mate-panel_2menu_8c.html#a5b521b1fbfc2360f942def2493e1b1ba":[35,0,0,22,2,13,8],
+"mate-panel_2mate-panel_2menu_8c.html#a624fb71fa32488d8df69370a82a4bded":[35,0,0,22,2,13,9],
+"mate-panel_2mate-panel_2menu_8c.html#a6aa03047078ec798c37e57080510b6b0":[35,0,0,22,2,13,1],
+"mate-panel_2mate-panel_2menu_8c.html#a6cc4b2f51d5dcbd93ba98b232f29ef6e":[35,0,0,22,2,13,0],
+"mate-panel_2mate-panel_2menu_8c.html#a853351eddb408385cfca552641c5fa6d":[35,0,0,22,2,13,7],
+"mate-panel_2mate-panel_2menu_8c.html#a9d28a014e599d33f8831b519380bd85a":[35,0,0,22,2,13,6],
+"mate-panel_2mate-panel_2menu_8c.html#aa3940c32eb820be044f38c9199248f6f":[35,0,0,22,2,13,12],
 "mate-panel_2mate-panel_2menu_8c.html#ab713eb92647724c6ec00acee8b19bf50":[35,0,0,22,2,13,5],
 "mate-panel_2mate-panel_2menu_8c.html#ae76d0734191bb9db85e9a514c9a745d6":[35,0,0,22,2,13,2],
 "mate-panel_2mate-panel_2menu_8c.html#aecc761ec5572952d2bf91cef5b075260":[35,0,0,22,2,13,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX107 =
 "mate-rr-config_8h.html#a09e22830e05cdcca0a563fa92b951191":[35,0,0,15,0,28,50],
 "mate-rr-config_8h.html#a0b5d323032a384ac7a745a571fe32765":[35,0,0,15,0,28,25],
 "mate-rr-config_8h.html#a1902d3330cb55acbe654f96afc6a5911":[35,0,0,15,0,28,7],
-"mate-rr-config_8h.html#a274815f81b6d4f5a3c87fa6db2adc5a0":[35,0,0,15,0,28,51],
-"mate-rr-config_8h.html#a2cf6a3a01218fe314265dbcbfea5b6a9":[35,0,0,15,0,28,12],
-"mate-rr-config_8h.html#a3cd6f863bcc8c2f522f3356f2127fb96":[35,0,0,15,0,28,36],
-"mate-rr-config_8h.html#a3d7d05242dd02e304a0de5dfba598490":[35,0,0,15,0,28,23],
-"mate-rr-config_8h.html#a3dfdf78f608068cdef694dd93ee66bb4":[35,0,0,15,0,28,55],
-"mate-rr-config_8h.html#a43c7c6788a385935f698a188bd5b05fc":[35,0,0,15,0,28,21],
-"mate-rr-config_8h.html#a46e3804668dc1a2d34253a033ab85f50":[35,0,0,15,0,28,39],
-"mate-rr-config_8h.html#a46ef49e51e6b6fdc45b90e52b69e04d8":[35,0,0,15,0,28,32],
-"mate-rr-config_8h.html#a4ac8d0c8a65f5db53b9af0c461345def":[35,0,0,15,0,28,54]
+"mate-rr-config_8h.html#a274815f81b6d4f5a3c87fa6db2adc5a0":[35,0,0,15,0,28,51]
 };

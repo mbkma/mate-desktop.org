@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zoommode_0',['ZoomMode',['../eom-scroll-view_8c.html#a9b67fd62012924ab8540c821afd2ab72',1,'eom-scroll-view.c']]]
+  ['xsettingsresult_0',['XSettingsResult',['../xsettings-common_8h.html#aea3330de56720dc6fafc1b0bcb2862bd',1,'xsettings-common.h']]],
+  ['xsettingstype_1',['XSettingsType',['../xsettings-common_8h.html#ab8bbe81bca89b1e6aa014317095b4dd1',1,'xsettings-common.h']]]
 ];

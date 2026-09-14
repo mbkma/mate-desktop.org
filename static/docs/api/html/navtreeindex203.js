@@ -1,5 +1,13 @@
 var NAVTREEINDEX203 =
 {
+"struct__ShellWindow.html#a58434c1697ef5976bfac50275ef5e52c":[34,0,941,3],
+"struct__ShellWindow.html#abfcfa4405f3ba5817dbf7eca193e72c5":[34,0,941,1],
+"struct__ShellWindow.html#ad370dd0626d86240cff9ecaaba42a85b":[34,0,941,4],
+"struct__ShellWindowClass.html":[34,0,942],
+"struct__ShellWindowClass.html#a1be6516679d3998b90daeb344d95b207":[34,0,942,0],
+"struct__SnDBusMenuClass.html":[34,0,943],
+"struct__SnDBusMenuClass.html#ad58b40aaa5d019391f4b96c7b84ea0e8":[34,0,943,0],
+"struct__SnFlatButton.html":[34,0,944],
 "struct__SnFlatButton.html#a4ad8c9439ad230ab84e700cbd4f3bf97":[34,0,944,0],
 "struct__SnFlatButton.html#a600ecb8002f2ff2329bac3a3d2a8784f":[34,0,944,1],
 "struct__SnFlatButtonClass.html":[34,0,945],
@@ -241,13 +249,5 @@ var NAVTREEINDEX203 =
 "struct__charpick__button__cb__data.html#ab7116524cb4f345382727fcdb27fe33e":[34,0,136,0],
 "struct__charpick__data.html":[34,0,137],
 "struct__charpick__data.html#a0097360bd05da5f7013cf1e0b5a00334":[34,0,137,3],
-"struct__charpick__data.html#a0e2ce71ed11e8af728da302379f25b66":[34,0,137,6],
-"struct__charpick__data.html#a1c92d292654662039fbbbb4203213cef":[34,0,137,16],
-"struct__charpick__data.html#a1ef9f49fb067da3af9693547958b0e67":[34,0,137,1],
-"struct__charpick__data.html#a205a3e5154e035b92eeb07e9b613e419":[34,0,137,18],
-"struct__charpick__data.html#a22d9522d070251c6799b3c02c714b1eb":[34,0,137,13],
-"struct__charpick__data.html#a2487113feb271c547085259b5aeacbe9":[34,0,137,14],
-"struct__charpick__data.html#a29429809520a84f8204e7ea5e44b8c46":[34,0,137,0],
-"struct__charpick__data.html#a3a092007b81814fd65b8258caeda79e6":[34,0,137,5],
-"struct__charpick__data.html#a3e04a78ecef25c61195909d652ef2003":[34,0,137,10]
+"struct__charpick__data.html#a0e2ce71ed11e8af728da302379f25b66":[34,0,137,6]
 };

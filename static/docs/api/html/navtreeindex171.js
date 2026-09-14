@@ -1,5 +1,13 @@
 var NAVTREEINDEX171 =
 {
+"structCajaDragSlotProxyInfo.html":[34,0,1105],
+"structCajaDragSlotProxyInfo.html#a24db05d638dc43eb92b6d5511f25b587":[34,0,1105,9],
+"structCajaDragSlotProxyInfo.html#a49008be274961e8729c1f0897687b0b4":[34,0,1105,7],
+"structCajaDragSlotProxyInfo.html#a567609e6110eb6061964d819a24e1472":[34,0,1105,0],
+"structCajaDragSlotProxyInfo.html#a64c5ba7c5b7c258b24daabe884115886":[34,0,1105,2],
+"structCajaDragSlotProxyInfo.html#aa1464d9ef104440167cca2c83d075947":[34,0,1105,6],
+"structCajaDragSlotProxyInfo.html#aa1ae0d586aa0bf31b7c595ea0ee5be32":[34,0,1105,8],
+"structCajaDragSlotProxyInfo.html#ab292cb0e93bf1dd3db8c4217c1c9c48b":[34,0,1105,3],
 "structCajaDragSlotProxyInfo.html#abf7e3125c147a3c2571d8269c5ccb914":[34,0,1105,1],
 "structCajaDragSlotProxyInfo.html#afabe7daf1f39c1ade0f38e97f3bd0b8d":[34,0,1105,5],
 "structCajaDragSlotProxyInfo.html#afefe7eda0deeca2775213b1b81a32b73":[34,0,1105,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX171 =
 "structCajaImagePropertiesPage.html":[34,0,1126],
 "structCajaImagePropertiesPage.html#a6f5180f286f8c28bf90dd8a53be1b36f":[34,0,1126,0],
 "structCajaImagePropertiesPage.html#af08fe24a6935533e07fd5b70b5971ab1":[34,0,1126,1],
-"structCajaImagePropertiesPageClass.html":[34,0,1127],
-"structCajaImagePropertiesPageClass.html#a9a4217b0dc53762e0d4c8cf04658db0d":[34,0,1127,0],
-"structCajaInformationPanel.html":[34,0,1128],
-"structCajaInformationPanel.html#a06995cdac925a6cf34be827b48c6edf5":[34,0,1128,1],
-"structCajaInformationPanel.html#a360b6aaef1bf845a8cd18e24a5930085":[34,0,1128,0],
-"structCajaInformationPanelClass.html":[34,0,1129],
-"structCajaInformationPanelClass.html#a6ac436c8a6bdeaab71295308eafc89a9":[34,0,1129,1],
-"structCajaInformationPanelClass.html#aa326094a713362ff23f4e654da00edbd":[34,0,1129,0],
-"structCajaKeepLastVerticalBox.html":[34,0,1130]
+"structCajaImagePropertiesPageClass.html":[34,0,1127]
 };

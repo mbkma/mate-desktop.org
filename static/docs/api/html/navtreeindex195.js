@@ -1,5 +1,13 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMDIClass.html#a4e980e637c4b8c49b279297b238e7add":[34,0,622,5],
+"struct__MateMDIClass.html#ab8cb8826be023a670deeca4dca959063":[34,0,622,7],
+"struct__MateMDIClass.html#abb30450913c437f68d22e0c5862e4e56":[34,0,622,2],
+"struct__MateMDIClass.html#acfb4eaa6586a4dec4f4de843dd9a9c39":[34,0,622,4],
+"struct__MateMDIClass.html#ae0897bec1cc3ddd3b58902420f40df78":[34,0,622,1],
+"struct__MateMDIGenericChild.html":[34,0,623],
+"struct__MateMDIGenericChild.html#a082ad9655bfde5aa930b51b867cdac14":[34,0,623,11],
+"struct__MateMDIGenericChild.html#a0d34069947ad10da0122d95861cde5a7":[34,0,623,7],
 "struct__MateMDIGenericChild.html#a156c79342b92d26eb5d80ce3e836804c":[34,0,623,5],
 "struct__MateMDIGenericChild.html#a226c77916636146dcd1eb725e2583ff2":[34,0,623,12],
 "struct__MateMDIGenericChild.html#a23125aa0711151ac22f970d06eb3ee37":[34,0,623,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateThemeCursorInfo.html":[34,0,674],
 "struct__MateThemeCursorInfo.html#a0e8e5c688a838b0b9f364b0a826b3f59":[34,0,674,5],
 "struct__MateThemeCursorInfo.html#a39019456e450d0b77e659bc522e130b6":[34,0,674,7],
-"struct__MateThemeCursorInfo.html#a62edabc6fa48cdcee633bfd2ec9f3b17":[34,0,674,0],
-"struct__MateThemeCursorInfo.html#a65d0568052d2e082ddf9528ce1ea4e62":[34,0,674,1],
-"struct__MateThemeCursorInfo.html#ab1a29a334cd64ac775617712339ce0ef":[34,0,674,3],
-"struct__MateThemeCursorInfo.html#abf7f8bcf8f46b45f1bc73475b0f4ff78":[34,0,674,6],
-"struct__MateThemeCursorInfo.html#aded8acadb5c1849e12c993e597d26126":[34,0,674,2],
-"struct__MateThemeCursorInfo.html#afee0c96078586efe930026f64a047cb6":[34,0,674,4],
-"struct__MateThemeInfo.html":[34,0,675],
-"struct__MateThemeInfo.html#a0cadbd23d4480cd3c0fee583a9e17bc8":[34,0,675,1],
-"struct__MateThemeInfo.html#a2be7b699fecf638bec221655cac8a372":[34,0,675,0]
+"struct__MateThemeCursorInfo.html#a62edabc6fa48cdcee633bfd2ec9f3b17":[34,0,674,0]
 };

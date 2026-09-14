@@ -1,5 +1,13 @@
 var NAVTREEINDEX196 =
 {
+"struct__MateThemeCursorInfo.html#a65d0568052d2e082ddf9528ce1ea4e62":[34,0,674,1],
+"struct__MateThemeCursorInfo.html#ab1a29a334cd64ac775617712339ce0ef":[34,0,674,3],
+"struct__MateThemeCursorInfo.html#abf7f8bcf8f46b45f1bc73475b0f4ff78":[34,0,674,6],
+"struct__MateThemeCursorInfo.html#aded8acadb5c1849e12c993e597d26126":[34,0,674,2],
+"struct__MateThemeCursorInfo.html#afee0c96078586efe930026f64a047cb6":[34,0,674,4],
+"struct__MateThemeInfo.html":[34,0,675],
+"struct__MateThemeInfo.html#a0cadbd23d4480cd3c0fee583a9e17bc8":[34,0,675,1],
+"struct__MateThemeInfo.html#a2be7b699fecf638bec221655cac8a372":[34,0,675,0],
 "struct__MateThemeInfo.html#a3ed92da9124a5453a8a730da70ab0b37":[34,0,675,8],
 "struct__MateThemeInfo.html#a436ca01ded341d98834293a6342e2fcb":[34,0,675,4],
 "struct__MateThemeInfo.html#a4c13ea13e67b98a32b6e47442edecd69":[34,0,675,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX196 =
 "struct__MetaButtonLayout.html#a961fc04d89fd2c87a58f19edae482412":[34,0,693,3],
 "struct__MetaButtonLayout.html#ab6a6f59bbf2673b0f48e2a014f6679bf":[34,0,693,2],
 "struct__MetaButtonSpace.html":[34,0,694],
-"struct__MetaButtonSpace.html#a0bf75f7c212518bbd40f38ade76cbc07":[34,0,694,0],
-"struct__MetaButtonSpace.html#ace5dfa5b8798591553e65931b5d5fdc0":[34,0,694,1],
-"struct__MetaColorSpec.html":[34,0,695],
-"struct__MetaColorSpec.html#a2b8704b9b673bfd42d4162cbfb9b5c95":[34,0,695,5],
-"struct__MetaColorSpec.html#a38957136e80633f4406c2ba28d008172":[34,0,695,14],
-"struct__MetaColorSpec.html#a536d389219c27f5afb26d71d511fbf96":[34,0,695,3],
-"struct__MetaColorSpec.html#a55b14076188db3df032ebc2762e4dda1":[34,0,695,12],
-"struct__MetaColorSpec.html#a5cc56df6a01a300816e7ddf37ac6e5de":[34,0,695,13],
-"struct__MetaColorSpec.html#a727ec6f015d028626693adfc934fd20b":[34,0,695,2]
+"struct__MetaButtonSpace.html#a0bf75f7c212518bbd40f38ade76cbc07":[34,0,694,0]
 };

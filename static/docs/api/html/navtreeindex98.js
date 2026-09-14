@@ -1,5 +1,13 @@
 var NAVTREEINDEX98 =
 {
+"mate-client_8c.html#a9d32c205660595ccc746625bcd264095":[35,0,0,9,2,12,22],
+"mate-client_8c.html#aa943a5284d2c78b0a8c41f1febe83b58":[35,0,0,9,2,12,8],
+"mate-client_8c.html#ab1a71bff0f72ab544e54efd29853ea8c":[35,0,0,9,2,12,30],
+"mate-client_8c.html#abfdcbb1954e6b8c8ffbc8a01f7581d9b":[35,0,0,9,2,12,18],
+"mate-client_8c.html#ac125602c762dcf9ad22dcfc24e3d594f":[35,0,0,9,2,12,29],
+"mate-client_8c.html#ac356b059bae0385ca8736abdbaf3be77":[35,0,0,9,2,12,32],
+"mate-client_8c.html#ac955e321996fe78ba66f6b3dabebceb7":[35,0,0,9,2,12,14],
+"mate-client_8c.html#adb856279f6460677308e07ab8babd78c":[35,0,0,9,2,12,2],
 "mate-client_8c.html#ae2cb432cdb658c2d69c87f25b11dcb5d":[35,0,0,9,2,12,15],
 "mate-client_8c.html#ae3a0b94f6b257a93152b3464bce5226f":[35,0,0,9,2,12,33],
 "mate-client_8c.html#ae49970faac8b932e3a471e0ab649a7da":[35,0,0,9,2,12,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX98 =
 "mate-control-center_2capplets_2common_2dconf-util_8c.html#af765b977cdc249500a06ab884e9b39c1":[35,0,0,14,0,3,4,0],
 "mate-control-center_2capplets_2common_2dconf-util_8c_source.html":[35,0,0,14,0,3,4],
 "mate-control-center_2capplets_2common_2dconf-util_8h.html":[35,0,0,14,0,3,5],
-"mate-control-center_2capplets_2common_2dconf-util_8h.html#a2dd55f9ff9f4f8c76974c29499622e4e":[35,0,0,14,0,3,5,1],
-"mate-control-center_2capplets_2common_2dconf-util_8h.html#ae685d2862362dbd084c3f06a13cfa0f3":[35,0,0,14,0,3,5,2],
-"mate-control-center_2capplets_2common_2dconf-util_8h.html#af765b977cdc249500a06ab884e9b39c1":[35,0,0,14,0,3,5,0],
-"mate-control-center_2capplets_2common_2dconf-util_8h_source.html":[35,0,0,14,0,3,5],
-"mate-control-center_2capplets_2common_2wm-common_8c.html":[35,0,0,14,0,3,17],
-"mate-control-center_2capplets_2common_2wm-common_8c.html#a0517de70eb139d6db312cc78ae4710e8":[35,0,0,14,0,3,17,0],
-"mate-control-center_2capplets_2common_2wm-common_8c.html#a5ac450221e6f97c47e2933ea8c118cbe":[35,0,0,14,0,3,17,4],
-"mate-control-center_2capplets_2common_2wm-common_8c.html#ac921c756d540822d82c3f3ab04c4b5a4":[35,0,0,14,0,3,17,1],
-"mate-control-center_2capplets_2common_2wm-common_8c.html#af1a04a8fed4d0e501c3e3c51ac4415e9":[35,0,0,14,0,3,17,2]
+"mate-control-center_2capplets_2common_2dconf-util_8h.html#a2dd55f9ff9f4f8c76974c29499622e4e":[35,0,0,14,0,3,5,1]
 };

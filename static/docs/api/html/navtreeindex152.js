@@ -1,5 +1,13 @@
 var NAVTREEINDEX152 =
 {
+"pluma-encodings-combo-box_8h_source.html":[35,0,0,34,1,36],
+"pluma-encodings-dialog_8c.html":[35,0,0,34,1,0,2],
+"pluma-encodings-dialog_8c.html#af8c2cf76dd0cbbc13cad8a2838ff1b1b":[35,0,0,34,1,0,2,0],
+"pluma-encodings-dialog_8c_source.html":[35,0,0,34,1,0,2],
+"pluma-encodings-dialog_8h.html":[35,0,0,34,1,0,3],
+"pluma-encodings-dialog_8h.html#a0d60768e7e06e821e7f7f0135be4ac3a":[35,0,0,34,1,0,3,7],
+"pluma-encodings-dialog_8h.html#a0e160aaea7145c72d8150e101f468dee":[35,0,0,34,1,0,3,8],
+"pluma-encodings-dialog_8h.html#a5ab07808be7ecbacb5465f47412a7cad":[35,0,0,34,1,0,3,9],
 "pluma-encodings-dialog_8h.html#a66c64624e0dcd7fdc94941f07d6f1d28":[35,0,0,34,1,0,3,5],
 "pluma-encodings-dialog_8h.html#a84430ce7727e60046bdf68de4a499c71":[35,0,0,34,1,0,3,11],
 "pluma-encodings-dialog_8h.html#a981b73140227c0a7148c3e2192b9a596":[35,0,0,34,1,0,3,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX152 =
 "pluma-file-browser-store_8h.html#a331484fa6c7f4b8f5932f2739cf46290":[35,0,0,34,0,1,8,47],
 "pluma-file-browser-store_8h.html#a372096144dbe179e26529b8a13b12369":[35,0,0,34,0,1,8,34],
 "pluma-file-browser-store_8h.html#a37da1ab1ce18ba4cb4ec2786de90d321":[35,0,0,34,0,1,8,30],
-"pluma-file-browser-store_8h.html#a382786fe200bc5f40c91158a8dad4b31":[35,0,0,34,0,1,8,27],
-"pluma-file-browser-store_8h.html#a39a6b049a81ccd9f6db20c7ef0519c5e":[35,0,0,34,0,1,8,28],
-"pluma-file-browser-store_8h.html#a39f14a500d713e2018cbb138cede9426":[35,0,0,34,0,1,8,33],
-"pluma-file-browser-store_8h.html#a3bd7810ca55428020dd26ab85fe29b48":[35,0,0,34,0,1,8,46],
-"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2a":[35,0,0,34,0,1,8,19],
-"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa3ae0047e3eae622d1d65da6e9d499bf1":[35,0,0,34,0,1,8,19,0],
-"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa4757a36fc62d621a9677b49e29817419":[35,0,0,34,0,1,8,19,5],
-"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa4b6c3852b5fd22b83f41d64f942ad0a9":[35,0,0,34,0,1,8,19,1],
-"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa57c57d4268914bf72c550953fefc0c16":[35,0,0,34,0,1,8,19,4]
+"pluma-file-browser-store_8h.html#a382786fe200bc5f40c91158a8dad4b31":[35,0,0,34,0,1,8,27]
 };

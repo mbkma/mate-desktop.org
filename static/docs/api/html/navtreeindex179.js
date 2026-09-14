@@ -1,5 +1,13 @@
 var NAVTREEINDEX179 =
 {
+"structNADataDef.html#a20410a2ab0359b91bb47e3acff98b1e3":[34,0,1541,17],
+"structNADataDef.html#a28e929e5778a81d59b7a83b81d4339ae":[34,0,1541,14],
+"structNADataDef.html#a3cad612396e47a618e984ff07083deca":[34,0,1541,19],
+"structNADataDef.html#a54655965107f9e65d3a7d10f28e4399d":[34,0,1541,9],
+"structNADataDef.html#a59e79dbf483da752fb18a5b1673f3631":[34,0,1541,7],
+"structNADataDef.html#a5aa3026774bba078753437f37e3d817d":[34,0,1541,10],
+"structNADataDef.html#a732c0f79070a06d3293415017a5c2074":[34,0,1541,15],
+"structNADataDef.html#a74bc7efc609421d984d12f7d0e197ab1":[34,0,1541,20],
 "structNADataDef.html#a8cb4bd27d3b2683ff461cca6e284f251":[34,0,1541,0],
 "structNADataDef.html#a9206883ad7a2b212bb878bbab19aa19e":[34,0,1541,2],
 "structNADataDef.html#a991b244ad957018a9fd0905992969150":[34,0,1541,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX179 =
 "structNATrackerClass.html#ab488367fc6ea8d71fdb375e769775f4b":[34,0,1592,0],
 "structNAUpdater.html":[34,0,1593],
 "structNAUpdater.html#a065389a36451dae98d20a52a3563afc1":[34,0,1593,0],
-"structNAUpdater.html#a4fdef7945770ae82221e73d2fc42cbee":[34,0,1593,1],
-"structNAUpdaterClass.html":[34,0,1594],
-"structNAUpdaterClass.html#a8b92d3364574ff6c76cedea7bc749934":[34,0,1594,0],
-"structNAUpdaterClass.html#adbedd43041e1a707d25e217d860ab6db":[34,0,1594,1],
-"structNameplateTile.html":[34,0,1568],
-"structNameplateTile.html#a2f4d81645aba9318a3099f9f4e9c29cf":[34,0,1568,3],
-"structNameplateTile.html#a8f848ff2695182d6ddc804476aaa63bd":[34,0,1568,1],
-"structNameplateTile.html#ae675c6e2850d9667b4930cfb403b462f":[34,0,1568,0],
-"structNameplateTile.html#ae72fd2680b82e5cf66fcfad823ebf2e4":[34,0,1568,2]
+"structNAUpdater.html#a4fdef7945770ae82221e73d2fc42cbee":[34,0,1593,1]
 };

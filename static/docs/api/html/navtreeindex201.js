@@ -1,5 +1,13 @@
 var NAVTREEINDEX201 =
 {
+"struct__PlumaDocumentLoaderClass.html#af380d531d3143a1f67e7d633588425b9":[34,0,812,0],
+"struct__PlumaDocumentOutputStream.html":[34,0,813],
+"struct__PlumaDocumentOutputStream.html#a9c49405949574712e593224f08922001":[34,0,813,1],
+"struct__PlumaDocumentOutputStream.html#af8323b33fc03a3a47a8b140abac7b71d":[34,0,813,0],
+"struct__PlumaDocumentOutputStreamClass.html":[34,0,814],
+"struct__PlumaDocumentOutputStreamClass.html#aa5ae0223a5c2dac70357d364a31b5b5e":[34,0,814,0],
+"struct__PlumaDocumentSaver.html":[34,0,815],
+"struct__PlumaDocumentSaver.html#a0bd0c1dea691571e300f89951bb0f2ad":[34,0,815,0],
 "struct__PlumaDocumentSaver.html#aab5612fa38e7a0ff0779cdefccbb547b":[34,0,815,1],
 "struct__PlumaDocumentSaverClass.html":[34,0,816],
 "struct__PlumaDocumentSaverClass.html#a1a6fd6bb89e83a2a264e1d05773808bb":[34,0,816,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX201 =
 "struct__PlumaViewActivatableInterface.html#ab5dcf68afe830f2408b8df78f450752a":[34,0,890,1],
 "struct__PlumaViewClass.html":[34,0,891],
 "struct__PlumaViewClass.html#a249fd435f79217f7b4dd64b0c36d52f9":[34,0,891,3],
-"struct__PlumaViewClass.html#a32b07e7c1aee85963ff8c15b00ef0efd":[34,0,891,1],
-"struct__PlumaViewClass.html#a37657b774a20215b192fdacbb318b8c1":[34,0,891,2],
-"struct__PlumaViewClass.html#abfb06e65b124d82b68d768c90d2a3a1f":[34,0,891,0],
-"struct__PlumaViewClass.html#af74afd409fb2d6f076845104d3c43e85":[34,0,891,4],
-"struct__PlumaWindow.html":[34,0,892],
-"struct__PlumaWindow.html#a7a629d33cec2db285b7a64c276f265b8":[34,0,892,0],
-"struct__PlumaWindow.html#a9e2487c4259dc2eb9395626da7e08ec0":[34,0,892,1],
-"struct__PlumaWindowActivatableInterface.html":[34,0,893],
-"struct__PlumaWindowActivatableInterface.html#a889f524fdc5e62f16ccf01b26655de15":[34,0,893,0]
+"struct__PlumaViewClass.html#a32b07e7c1aee85963ff8c15b00ef0efd":[34,0,891,1]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX175 =
 {
+"structFMListViewColumn.html#ad42d15e261aeefbff47a8af24ca7e9ea":[34,0,1281,0],
+"structFMPropertiesWindow.html":[34,0,1282],
+"structFMPropertiesWindow.html#ac531f72ee4137912da3e71bb872ca9d8":[34,0,1282,0],
+"structFMPropertiesWindow.html#aeaad87e77cfd44bef566f6b8daeb804e":[34,0,1282,1],
+"structFMPropertiesWindowClass.html":[34,0,1283],
+"structFMPropertiesWindowClass.html#a207f9a4981f8ad3df2ef171ec1860baa":[34,0,1283,0],
+"structFMPropertiesWindowClass.html#ab17a8d8c487adbfd08bde87458f5e794":[34,0,1283,1],
+"structFMTreeModel.html":[34,0,1284],
 "structFMTreeModel.html#a6239cfc7943d0b3881df1c5eba8208ec":[34,0,1284,0],
 "structFMTreeModel.html#ad420ce0e42a72c607cf02848c0d5ee49":[34,0,1284,1],
 "structFMTreeModelClass.html":[34,0,1285],
@@ -241,13 +249,5 @@ var NAVTREEINDEX175 =
 "structGpmBrightnessClass.html#a3a8cd3519b42c8cad0e9035271b50356":[34,0,1308,1],
 "structGpmBrightnessClass.html#a9163bf7038c63413bda82d113780f840":[34,0,1308,0],
 "structGpmButton.html":[34,0,1309],
-"structGpmButton.html#a3159d984afa801f97432480e0951e6d5":[34,0,1309,1],
-"structGpmButton.html#a6c7e2fad6eb6a69d925f4eaedd53b925":[34,0,1309,0],
-"structGpmButtonClass.html":[34,0,1310],
-"structGpmButtonClass.html#a106b558d6862a36fed01515a5564f351":[34,0,1310,0],
-"structGpmButtonClass.html#ae3c718a8b1a0a46f64a8c9b1ba84bac1":[34,0,1310,1],
-"structGpmControl.html":[34,0,1311],
-"structGpmControl.html#a43ff2991f7e609750a592caf18c3edc1":[34,0,1311,0],
-"structGpmControl.html#aec802af94057a41a74c5123b375ab44e":[34,0,1311,1],
-"structGpmControlClass.html":[34,0,1312]
+"structGpmButton.html#a3159d984afa801f97432480e0951e6d5":[34,0,1309,1]
 };

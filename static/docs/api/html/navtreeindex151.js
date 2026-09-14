@@ -1,5 +1,13 @@
 var NAVTREEINDEX151 =
 {
+"pluma-document-loader_8h.html#a138a32ae6dcd394b857459c0d7bfb91e":[35,0,0,34,1,26,15],
+"pluma-document-loader_8h.html#a19c44ad40e0fb84639198624f8fc4820":[35,0,0,34,1,26,11],
+"pluma-document-loader_8h.html#a21c86c7597f62a26ec3541a966ecf183":[35,0,0,34,1,26,9],
+"pluma-document-loader_8h.html#a23ed908816c29884a9e26a793ed835a5":[35,0,0,34,1,26,12],
+"pluma-document-loader_8h.html#a25d8398bc262d8fa9d267991be4f75fd":[35,0,0,34,1,26,10],
+"pluma-document-loader_8h.html#a2dee89c44065de82968dc09b3c1eb2ed":[35,0,0,34,1,26,6],
+"pluma-document-loader_8h.html#a47740c72f7b06e7dde13452ef90d97c3":[35,0,0,34,1,26,4],
+"pluma-document-loader_8h.html#a4bd78ed1179a5d4450a71b58671f8219":[35,0,0,34,1,26,18],
 "pluma-document-loader_8h.html#a53533619b0d9596a8ce41947a52efb27":[35,0,0,34,1,26,20],
 "pluma-document-loader_8h.html#a55aa7fd85a3c779ea3b5760ce2e54088":[35,0,0,34,1,26,19],
 "pluma-document-loader_8h.html#a695c03f6c6f1b81da5921c0a1e8f5b0e":[35,0,0,34,1,26,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX151 =
 "pluma-encodings-combo-box_8h.html#ad9411b559e1aa5a64f1923a046a464e4":[35,0,0,34,1,36,4],
 "pluma-encodings-combo-box_8h.html#adcb131f6aeba77f41a77f7210f6e48e9":[35,0,0,34,1,36,14],
 "pluma-encodings-combo-box_8h.html#ae0330545ed927942a6f42ff8120d7d22":[35,0,0,34,1,36,2],
-"pluma-encodings-combo-box_8h.html#ae67abf1f092b0a429c9db9ba6ee70a51":[35,0,0,34,1,36,3],
-"pluma-encodings-combo-box_8h_source.html":[35,0,0,34,1,36],
-"pluma-encodings-dialog_8c.html":[35,0,0,34,1,0,2],
-"pluma-encodings-dialog_8c.html#af8c2cf76dd0cbbc13cad8a2838ff1b1b":[35,0,0,34,1,0,2,0],
-"pluma-encodings-dialog_8c_source.html":[35,0,0,34,1,0,2],
-"pluma-encodings-dialog_8h.html":[35,0,0,34,1,0,3],
-"pluma-encodings-dialog_8h.html#a0d60768e7e06e821e7f7f0135be4ac3a":[35,0,0,34,1,0,3,7],
-"pluma-encodings-dialog_8h.html#a0e160aaea7145c72d8150e101f468dee":[35,0,0,34,1,0,3,8],
-"pluma-encodings-dialog_8h.html#a5ab07808be7ecbacb5465f47412a7cad":[35,0,0,34,1,0,3,9]
+"pluma-encodings-combo-box_8h.html#ae67abf1f092b0a429c9db9ba6ee70a51":[35,0,0,34,1,36,3]
 };

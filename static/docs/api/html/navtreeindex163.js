@@ -1,5 +1,13 @@
 var NAVTREEINDEX163 =
 {
+"pulse-monitor_8h.html#aba6a3ef106ef7a51775904793bc6e170":[35,0,0,8,0,3,18,5],
+"pulse-monitor_8h.html#ad0c66af184c6da7ef1fd122436c4e9c8":[35,0,0,8,0,3,18,2],
+"pulse-monitor_8h.html#adb3e5fe3592c346694bceaf3762fe89b":[35,0,0,8,0,3,18,3],
+"pulse-monitor_8h.html#ae484964a7638bb3f6b84da0aa40ab091":[35,0,0,8,0,3,18,6],
+"pulse-monitor_8h.html#afac258b600f439b095b0dc3f21bc2e30":[35,0,0,8,0,3,18,7],
+"pulse-monitor_8h_source.html":[35,0,0,8,0,3,18],
+"pulse-port-switch_8c.html":[35,0,0,8,0,3,19],
+"pulse-port-switch_8c.html#a39f9323bda46f7d3d13a39ab558ef394":[35,0,0,8,0,3,19,0],
 "pulse-port-switch_8c.html#a424c5f697478e57ccb4679546f5b3c37":[35,0,0,8,0,3,19,3],
 "pulse-port-switch_8c.html#a5a9304c309e6ec9642d0371787ed5f0f":[35,0,0,8,0,3,19,1],
 "pulse-port-switch_8c.html#a9177fd681e0cda7cc74b0df19aa27e12":[35,0,0,8,0,3,19,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX163 =
 "pulse-types_8h.html#a31944b5274261834a12cac2f56ac3d35":[35,0,0,8,0,3,43,5],
 "pulse-types_8h.html#a337eb97e4205ef0a31b323d594683858":[35,0,0,8,0,3,43,6],
 "pulse-types_8h.html#a52d174327f668015bcbaf59adf03c654":[35,0,0,8,0,3,43,16],
-"pulse-types_8h.html#a7f510299356287dcb1bfaf9714b0a56d":[35,0,0,8,0,3,43,15],
-"pulse-types_8h.html#a812987ba2f8d28721c9ebeaa2fc65197":[35,0,0,8,0,3,43,1],
-"pulse-types_8h.html#a8d75f751b040f9e601b8ddc6ec13ab55":[35,0,0,8,0,3,43,0],
-"pulse-types_8h.html#a8f48bcb301ab41a852c1ae1b5cca1410":[35,0,0,8,0,3,43,9],
-"pulse-types_8h.html#a9e0013c43ef19202672d6de2cd5df1f1":[35,0,0,8,0,3,43,12],
-"pulse-types_8h.html#aa95ae0fa4fb7dda452497ba5ad4af7ac":[35,0,0,8,0,3,43,18],
-"pulse-types_8h.html#aae77249a8ebc49cbda2286cd02c4becd":[35,0,0,8,0,3,43,8],
-"pulse-types_8h.html#ab4abe61164a1c2904e4c9aaa7c29493b":[35,0,0,8,0,3,43,14],
-"pulse-types_8h.html#ab6b2fb4cb2c390de11153b11814d2df7":[35,0,0,8,0,3,43,2]
+"pulse-types_8h.html#a7f510299356287dcb1bfaf9714b0a56d":[35,0,0,8,0,3,43,15]
 };

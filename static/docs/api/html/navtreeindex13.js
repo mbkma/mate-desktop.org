@@ -1,5 +1,12 @@
 var NAVTREEINDEX13 =
 {
+"caja-bookmark-list_8h.html#aa6fbdc5939f50a157488b684921e1441":[35,0,0,1,3,6,20],
+"caja-bookmark-list_8h.html#aac3886ec08b1db9dc96e1e3f1f64c451":[35,0,0,1,3,6,13],
+"caja-bookmark-list_8h.html#acf452f4b4fa50947b8abd5c53156ea6d":[35,0,0,1,3,6,7],
+"caja-bookmark-list_8h.html#ade4585a119c389be6d7d110acb6b78cf":[35,0,0,1,3,6,4],
+"caja-bookmark-list_8h.html#aded661da923d01a9c1f72c4e600ef901":[35,0,0,1,3,6,5],
+"caja-bookmark-list_8h.html#ae5534342dd167952814806e822f9a889":[35,0,0,1,3,6,10],
+"caja-bookmark-list_8h_source.html":[35,0,0,1,3,6],
 "caja-bookmark_8c.html":[35,0,0,1,2,2],
 "caja-bookmark_8c.html#a014ec1a586f0a83fcd2c763477c13f16":[35,0,0,1,2,2,13],
 "caja-bookmark_8c.html#a0c12f79bad25307c5350a761a3018799":[35,0,0,1,2,2,9],
@@ -242,12 +249,5 @@ var NAVTREEINDEX13 =
 "caja-connect-server-dialog_8h.html#a4eedba094d9c85c19ae6660373a2037e":[35,0,0,1,3,14,5],
 "caja-connect-server-dialog_8h.html#a766ce42bd30a18c32a39212b2f7a6049":[35,0,0,1,3,14,2],
 "caja-connect-server-dialog_8h.html#a77afd52248cde589e3378a41c63f52e2":[35,0,0,1,3,14,11],
-"caja-connect-server-dialog_8h.html#a83c5264abcff498ed77e84ad683099bf":[35,0,0,1,3,14,6],
-"caja-connect-server-dialog_8h.html#a8a4eb1a14af78312f8feb7f096bd2d00":[35,0,0,1,3,14,7],
-"caja-connect-server-dialog_8h.html#a909e8bc1201ff5e016f2fbdecccba706":[35,0,0,1,3,14,9],
-"caja-connect-server-dialog_8h.html#aba5827eb995f0aedea6db053b1c76297":[35,0,0,1,3,14,13],
-"caja-connect-server-dialog_8h.html#ad143ae2256a693c743bb4114ea037a53":[35,0,0,1,3,14,10],
-"caja-connect-server-dialog_8h.html#adfb9abfc6f70336b7c8409aaa2f72bad":[35,0,0,1,3,14,4],
-"caja-connect-server-dialog_8h.html#af6e1bfe001cb8030b58e86e70681806e":[35,0,0,1,3,14,12],
-"caja-connect-server-dialog_8h_source.html":[35,0,0,1,3,14]
+"caja-connect-server-dialog_8h.html#a83c5264abcff498ed77e84ad683099bf":[35,0,0,1,3,14,6]
 };

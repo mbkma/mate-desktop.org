@@ -1,5 +1,13 @@
 var NAVTREEINDEX172 =
 {
+"structCajaImagePropertiesPageClass.html#a9a4217b0dc53762e0d4c8cf04658db0d":[34,0,1127,0],
+"structCajaInformationPanel.html":[34,0,1128],
+"structCajaInformationPanel.html#a06995cdac925a6cf34be827b48c6edf5":[34,0,1128,1],
+"structCajaInformationPanel.html#a360b6aaef1bf845a8cd18e24a5930085":[34,0,1128,0],
+"structCajaInformationPanelClass.html":[34,0,1129],
+"structCajaInformationPanelClass.html#a6ac436c8a6bdeaab71295308eafc89a9":[34,0,1129,1],
+"structCajaInformationPanelClass.html#aa326094a713362ff23f4e654da00edbd":[34,0,1129,0],
+"structCajaKeepLastVerticalBox.html":[34,0,1130],
 "structCajaKeepLastVerticalBox.html#a4c1730de2d535ff0a6d03a0202cfea2d":[34,0,1130,0],
 "structCajaKeepLastVerticalBoxClass.html":[34,0,1131],
 "structCajaKeepLastVerticalBoxClass.html#a8f64d3139fbfcee0efdfe88b2370287a":[34,0,1131,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX172 =
 "structCappDesktopFileClass.html#a1b7e76b8eb3d7ed2760e03bc7c8a6cd9":[34,0,1188,0],
 "structCappDesktopFileClass.html#a4aa974bbe30af2b67d934d6331d06f35":[34,0,1188,1],
 "structCappDesktopProvider.html":[34,0,1189],
-"structCappDesktopProvider.html#a59f7f8b4aac797edb803a3e2fe4c6d68":[34,0,1189,0],
-"structCappDesktopProvider.html#a5e000c03934ba9068e72c3cc777e0796":[34,0,1189,1],
-"structCappDesktopProviderClass.html":[34,0,1190],
-"structCappDesktopProviderClass.html#a5d2ffe39eb9beb498fad5d29db77d5a9":[34,0,1190,0],
-"structCappDesktopProviderClass.html#a648deeb18d62daf6dbe32fbd25d07904":[34,0,1190,1],
-"structCappMonitor.html":[34,0,1191],
-"structCappMonitor.html#a25a60bb2bdc677a586535d1b1300a7d9":[34,0,1191,1],
-"structCappMonitor.html#ae849253cfca3379f14ff4be362cf35db":[34,0,1191,0],
-"structCappMonitorClass.html":[34,0,1192]
+"structCappDesktopProvider.html#a59f7f8b4aac797edb803a3e2fe4c6d68":[34,0,1189,0]
 };

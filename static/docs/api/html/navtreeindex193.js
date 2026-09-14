@@ -1,5 +1,13 @@
 var NAVTREEINDEX193 =
 {
+"struct__GvcComboBoxClass.html":[34,0,524],
+"struct__GvcComboBoxClass.html#a494113a96554110cbe295e69f4b7bb6b":[34,0,524,1],
+"struct__GvcComboBoxClass.html#a7c8e6a2517291aa7a0f5b754181c8a58":[34,0,524,0],
+"struct__GvcComboBoxClass.html#a8af638ba31071442265c2a032216db1f":[34,0,524,2],
+"struct__GvcLevelBar.html":[34,0,525],
+"struct__GvcLevelBar.html#a068e0ac80246f8e3738ca307f401a602":[34,0,525,1],
+"struct__GvcLevelBar.html#a73e1612c42178a44ae0959c1a892458e":[34,0,525,0],
+"struct__GvcLevelBarClass.html":[34,0,526],
 "struct__GvcLevelBarClass.html#a4712b57fb973e13d22edd4fdd7213ce1":[34,0,526,0],
 "struct__GvcMixerDialog.html":[34,0,527],
 "struct__GvcMixerDialog.html#a3077bc8fdc078d8c813bec9e35e0b02d":[34,0,527,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX193 =
 "struct__MateDACapplet.html":[34,0,573],
 "struct__MateDACapplet.html#a1002c95dbd567f75d2931b9ffbb8f3b4":[34,0,573,21],
 "struct__MateDACapplet.html#a1704a7ebb2b254bcee1a458d530f00e6":[34,0,573,13],
-"struct__MateDACapplet.html#a175d0e7eb1e394fbcc0525a251ee6f6b":[34,0,573,37],
-"struct__MateDACapplet.html#a1b2280242e11a54f0b4f380129c02d60":[34,0,573,38],
-"struct__MateDACapplet.html#a2c41c58b93a32ecb1bd04d23c7cf71f8":[34,0,573,3],
-"struct__MateDACapplet.html#a338aba2dae5d3b2e60bf75fe17d1ee3c":[34,0,573,8],
-"struct__MateDACapplet.html#a392b83e69cee38587aa94be6dddbc291":[34,0,573,34],
-"struct__MateDACapplet.html#a46a7d140771f4c6ee1d8be4009401600":[34,0,573,33],
-"struct__MateDACapplet.html#a4727548f0436dafd94e85dffbdf157d7":[34,0,573,18],
-"struct__MateDACapplet.html#a5247bc5d7d986828bef069588654212f":[34,0,573,9],
-"struct__MateDACapplet.html#a555ff6bb93c2673e08520ee80bda597c":[34,0,573,22]
+"struct__MateDACapplet.html#a175d0e7eb1e394fbcc0525a251ee6f6b":[34,0,573,37]
 };

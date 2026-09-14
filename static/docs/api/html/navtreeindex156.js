@@ -1,5 +1,13 @@
 var NAVTREEINDEX156 =
 {
+"pluma-settings_8c.html#ab9a4d828d71af0cef1cee2d34c0693d5":[35,0,0,34,1,73,12],
+"pluma-settings_8c_source.html":[35,0,0,34,1,73],
+"pluma-settings_8h.html":[35,0,0,34,1,74],
+"pluma-settings_8h.html#a038caebd492bb4cf2faf3f2428ac75eb":[35,0,0,34,1,74,31],
+"pluma-settings_8h.html#a0588a3539a7762d7d3ccef24c462e022":[35,0,0,34,1,74,53],
+"pluma-settings_8h.html#a0c5922855edbcdfcbc88a0a5e575af62":[35,0,0,34,1,74,6],
+"pluma-settings_8h.html#a0df45b8f036c774ec1a6932e6d961e89":[35,0,0,34,1,74,50],
+"pluma-settings_8h.html#a0f71e9a00477bb256994353aa34a7e55":[35,0,0,34,1,74,48],
 "pluma-settings_8h.html#a14079a4f8587af959d7129af95106b71":[35,0,0,34,1,74,9],
 "pluma-settings_8h.html#a14222dac20e77af17847febc13d4048f":[35,0,0,34,1,74,34],
 "pluma-settings_8h.html#a16466d88e5a4ec52176378f74b50340e":[35,0,0,34,1,74,51],
@@ -45,8 +53,8 @@ var NAVTREEINDEX156 =
 "pluma-settings_8h.html#aa79a1496a4fb74f086ecb6fad0d377c4":[35,0,0,34,1,74,80],
 "pluma-settings_8h.html#aa930e28dde504aa7af638865f0955c31":[35,0,0,34,1,74,39],
 "pluma-settings_8h.html#ab1e695dc94fd49df7957c38304f19a0b":[35,0,0,34,1,74,68],
-"pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[35,0,0,34,1,74,64],
 "pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[35,0,0,34,1,74,65],
+"pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86":[35,0,0,34,1,74,64],
 "pluma-settings_8h.html#ab4a66042ef1149310a2aeb040a4fff1e":[35,0,0,34,1,74,4],
 "pluma-settings_8h.html#ab4dec487dc77cd2cf42b03bd1b89cfd3":[35,0,0,34,1,74,59],
 "pluma-settings_8h.html#ab69e32e557d2dbafe0886e423c18c0c0":[35,0,0,34,1,74,41],
@@ -241,13 +249,5 @@ var NAVTREEINDEX156 =
 "pluma-spell-plugin_8h.html#afbc113dbcbba90bcc7fe0cd273eb6ce4":[35,0,0,34,0,4,11,7],
 "pluma-spell-plugin_8h_source.html":[35,0,0,34,0,4,11],
 "pluma-spell-utils_8c.html":[35,0,0,34,0,4,12],
-"pluma-spell-utils_8c.html#a2c3e4ae68912b77998be02433e8ad39b":[35,0,0,34,0,4,12,1],
-"pluma-spell-utils_8c.html#a5526d68be77d680d9a3cbdf77aad7d39":[35,0,0,34,0,4,12,0],
-"pluma-spell-utils_8c_source.html":[35,0,0,34,0,4,12],
-"pluma-spell-utils_8h.html":[35,0,0,34,0,4,13],
-"pluma-spell-utils_8h.html#a2c3e4ae68912b77998be02433e8ad39b":[35,0,0,34,0,4,13,1],
-"pluma-spell-utils_8h.html#a5526d68be77d680d9a3cbdf77aad7d39":[35,0,0,34,0,4,13,0],
-"pluma-spell-utils_8h_source.html":[35,0,0,34,0,4,13],
-"pluma-status-combo-box_8c.html":[35,0,0,34,1,77],
-"pluma-status-combo-box_8c.html#a089092b9394e1b8f487b05e0b8c92e71":[35,0,0,34,1,77,10]
+"pluma-spell-utils_8c.html#a2c3e4ae68912b77998be02433e8ad39b":[35,0,0,34,0,4,12,1]
 };

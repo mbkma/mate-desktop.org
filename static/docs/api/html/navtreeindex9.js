@@ -1,5 +1,12 @@
 var NAVTREEINDEX9 =
 {
+"cact-clipboard_8h.html#a65d38511bc100b19ae5cb4dca3e2609b":[35,0,0,2,0,1,28,4],
+"cact-clipboard_8h.html#a6647ea87701e0bec9a74a98f3b8e80dc":[35,0,0,2,0,1,28,16],
+"cact-clipboard_8h.html#a89bce2e58e38bc98392e342e8912b89f":[35,0,0,2,0,1,28,15],
+"cact-clipboard_8h.html#a8addc342ecd158538a3911185f2168ee":[35,0,0,2,0,1,28,18],
+"cact-clipboard_8h.html#a9f3a9af2b03d0b6c24a48335dd4a4425":[35,0,0,2,0,1,28,19],
+"cact-clipboard_8h.html#aa9fc9056bc2b8ddfcb4519547322bbab":[35,0,0,2,0,1,28,8],
+"cact-clipboard_8h.html#aaeebd30c9379bfcbd4f8bd9bd233583c":[35,0,0,2,0,1,28,6],
 "cact-clipboard_8h.html#ab3caa32080774373c06ecf7475040418":[35,0,0,2,0,1,28,14],
 "cact-clipboard_8h.html#ab98e7605453c1d5294891b8ce5a7befd":[35,0,0,2,0,1,28,5],
 "cact-clipboard_8h.html#aceca5713d4650211540113d9e9935ef9":[35,0,0,2,0,1,28,10],
@@ -242,12 +249,5 @@ var NAVTREEINDEX9 =
 "cact-main-tab_8h.html#a455b5d9cc0a92d7cf58ac26613afcd0d":[35,0,0,2,0,1,58,1],
 "cact-main-tab_8h.html#a9fce93584eaef473cc7b938793689ea8":[35,0,0,2,0,1,58,3],
 "cact-main-tab_8h.html#ae675ef3a3d94f2eb63f0e41da25e9ae7":[35,0,0,2,0,1,58,2],
-"cact-main-tab_8h_source.html":[35,0,0,2,0,1,58],
-"cact-main-toolbar_8c.html":[35,0,0,2,0,1,59],
-"cact-main-toolbar_8c.html#a45b69d2ff70037effb1693e344318704":[35,0,0,2,0,1,59,0],
-"cact-main-toolbar_8c.html#a6c53ef3617159c0a3db71d891a2d25f2":[35,0,0,2,0,1,59,1],
-"cact-main-toolbar_8c_source.html":[35,0,0,2,0,1,59],
-"cact-main-toolbar_8h.html":[35,0,0,2,0,1,60],
-"cact-main-toolbar_8h.html#a6c53ef3617159c0a3db71d891a2d25f2":[35,0,0,2,0,1,60,1],
-"cact-main-toolbar_8h.html#a7fd784a60086dbc54c01158b5c1a9b9a":[35,0,0,2,0,1,60,0]
+"cact-main-tab_8h_source.html":[35,0,0,2,0,1,58]
 };

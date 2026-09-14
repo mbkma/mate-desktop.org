@@ -1,5 +1,12 @@
 var NAVTREEINDEX14 =
 {
+"caja-connect-server-dialog_8h.html#a8a4eb1a14af78312f8feb7f096bd2d00":[35,0,0,1,3,14,7],
+"caja-connect-server-dialog_8h.html#a909e8bc1201ff5e016f2fbdecccba706":[35,0,0,1,3,14,9],
+"caja-connect-server-dialog_8h.html#aba5827eb995f0aedea6db053b1c76297":[35,0,0,1,3,14,13],
+"caja-connect-server-dialog_8h.html#ad143ae2256a693c743bb4114ea037a53":[35,0,0,1,3,14,10],
+"caja-connect-server-dialog_8h.html#adfb9abfc6f70336b7c8409aaa2f72bad":[35,0,0,1,3,14,4],
+"caja-connect-server-dialog_8h.html#af6e1bfe001cb8030b58e86e70681806e":[35,0,0,1,3,14,12],
+"caja-connect-server-dialog_8h_source.html":[35,0,0,1,3,14],
 "caja-connect-server-operation_8c.html":[35,0,0,1,3,15],
 "caja-connect-server-operation_8c.html#a5d525dbe810486c9605e06553b0d7d7b":[35,0,0,1,3,15,0],
 "caja-connect-server-operation_8c.html#a88802a63beb401abec713c158114f16f":[35,0,0,1,3,15,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX14 =
 "caja-directory-async_8c.html#a9c4eaf6c0906d86c7aabb730fea305fb":[35,0,0,1,2,32,4],
 "caja-directory-async_8c.html#aacda9daece1218429c687ba3304f93de":[35,0,0,1,2,32,22],
 "caja-directory-async_8c.html#aaead5751db30684ff0d9a78edd243dcb":[35,0,0,1,2,32,11],
-"caja-directory-async_8c.html#abf0caff8aae11bfbbc0300ee1abe4e10":[35,0,0,1,2,32,19],
-"caja-directory-async_8c.html#ac36fcc48cf5df7afe5fe1b016cffa581":[35,0,0,1,2,32,10],
-"caja-directory-async_8c.html#adfadf4842fe94fff7ae2304c993f3905":[35,0,0,1,2,32,25],
-"caja-directory-async_8c.html#aeb8566ac289624b3232aaad03f4635cc":[35,0,0,1,2,32,5],
-"caja-directory-async_8c.html#aecb47ab92e06958331abbae0d333b722":[35,0,0,1,2,32,15],
-"caja-directory-async_8c_source.html":[35,0,0,1,2,32],
-"caja-directory-background_8c.html":[35,0,0,1,2,33],
-"caja-directory-background_8c.html#a77411b6e208dbef43219b7ae837164a4":[35,0,0,1,2,33,0]
+"caja-directory-async_8c.html#abf0caff8aae11bfbbc0300ee1abe4e10":[35,0,0,1,2,32,19]
 };

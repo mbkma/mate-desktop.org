@@ -1,5 +1,13 @@
 var NAVTREEINDEX180 =
 {
+"structNAUpdaterClass.html":[34,0,1594],
+"structNAUpdaterClass.html#a8b92d3364574ff6c76cedea7bc749934":[34,0,1594,0],
+"structNAUpdaterClass.html#adbedd43041e1a707d25e217d860ab6db":[34,0,1594,1],
+"structNameplateTile.html":[34,0,1568],
+"structNameplateTile.html#a2f4d81645aba9318a3099f9f4e9c29cf":[34,0,1568,3],
+"structNameplateTile.html#a8f848ff2695182d6ddc804476aaa63bd":[34,0,1568,1],
+"structNameplateTile.html#ae675c6e2850d9667b4930cfb403b462f":[34,0,1568,0],
+"structNameplateTile.html#ae72fd2680b82e5cf66fcfad823ebf2e4":[34,0,1568,2],
 "structNameplateTileClass.html":[34,0,1569],
 "structNameplateTileClass.html#ab77a6e96b069e3a1d72543d91e2b3a14":[34,0,1569,0],
 "structNewAppConfig.html":[34,0,1595],
@@ -241,13 +249,5 @@ var NAVTREEINDEX180 =
 "structStickyNote.html#ae3b950284f7e357e7308412b830e273f":[34,0,1633,11],
 "structStickyNote.html#ae4e3fc84a5bded9a5b55f90f6f0d84fe":[34,0,1633,16],
 "structStickyNote.html#ae6885bfa2b0317864de8f135b022945f":[34,0,1633,34],
-"structStickyNote.html#afc4c676106567a8bbad441674b8c9b3a":[34,0,1633,6],
-"structStickyNote.html#afe5ed31f647ef833ead120b449944c89":[34,0,1633,31],
-"structStickyNotes.html":[34,0,1634],
-"structStickyNotes.html#a05a2153663f012a04a383f6a8a69b1bb":[34,0,1634,21],
-"structStickyNotes.html#a07052ee68148f3e7bca1ee7aa8b748a8":[34,0,1634,6],
-"structStickyNotes.html#a0ca4874d707edbf59ddecde14268b236":[34,0,1634,18],
-"structStickyNotes.html#a1eaeed35ad495964f7fc5576647b4253":[34,0,1634,4],
-"structStickyNotes.html#a208186be27c5fee87aa8dae9e7f611de":[34,0,1634,13],
-"structStickyNotes.html#a20a5de68ee6f7cf2133d566d328f246e":[34,0,1634,5]
+"structStickyNote.html#afc4c676106567a8bbad441674b8c9b3a":[34,0,1633,6]
 };

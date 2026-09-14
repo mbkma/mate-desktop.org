@@ -1,5 +1,13 @@
 var NAVTREEINDEX197 =
 {
+"struct__MetaButtonSpace.html#ace5dfa5b8798591553e65931b5d5fdc0":[34,0,694,1],
+"struct__MetaColorSpec.html":[34,0,695],
+"struct__MetaColorSpec.html#a2b8704b9b673bfd42d4162cbfb9b5c95":[34,0,695,5],
+"struct__MetaColorSpec.html#a38957136e80633f4406c2ba28d008172":[34,0,695,14],
+"struct__MetaColorSpec.html#a536d389219c27f5afb26d71d511fbf96":[34,0,695,3],
+"struct__MetaColorSpec.html#a55b14076188db3df032ebc2762e4dda1":[34,0,695,12],
+"struct__MetaColorSpec.html#a5cc56df6a01a300816e7ddf37ac6e5de":[34,0,695,13],
+"struct__MetaColorSpec.html#a727ec6f015d028626693adfc934fd20b":[34,0,695,2],
 "struct__MetaColorSpec.html#a7aee309b270499a051ab3738e2fb12b9":[34,0,695,9],
 "struct__MetaColorSpec.html#a8b447117cd86860b85a6d179d4161714":[34,0,695,10],
 "struct__MetaColorSpec.html#a99ca859d7e97457b8a554316ed2be430":[34,0,695,15],
@@ -241,13 +249,5 @@ var NAVTREEINDEX197 =
 "struct__MetaFrameGeometry.html#aec5f8847a6ec0503a933ba5f73a6059a":[34,0,705,6],
 "struct__MetaFrameGeometry.html#aec8bb6e7400f3c6eb5faefe400b453c8":[34,0,705,0],
 "struct__MetaFrameGeometry.html#af516a03b75c31afa2db86c6c9a95f864":[34,0,705,2],
-"struct__MetaFrameGeometry.html#afc8c808bcf74400862f211e8f627b78c":[34,0,705,8],
-"struct__MetaFrameLayout.html":[34,0,706],
-"struct__MetaFrameLayout.html#a14d310e4182efc461169af8f384e7af4":[34,0,706,10],
-"struct__MetaFrameLayout.html#a16715f6dfebb01d574824dc4f7f3de7d":[34,0,706,20],
-"struct__MetaFrameLayout.html#a17f084f1d35288edd6e9e4bfc15997aa":[34,0,706,17],
-"struct__MetaFrameLayout.html#a21cdc1e566f9fda03c1b9c681627ce54":[34,0,706,18],
-"struct__MetaFrameLayout.html#a2b6981503bb6405653d24cc749cf85b3":[34,0,706,9],
-"struct__MetaFrameLayout.html#a37c3ac31e4a6133ef3d5e996848f4182":[34,0,706,19],
-"struct__MetaFrameLayout.html#a3bcbe2f1691bf8bbc2ac5038c3d3051b":[34,0,706,5]
+"struct__MetaFrameGeometry.html#afc8c808bcf74400862f211e8f627b78c":[34,0,705,8]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX182 =
 {
+"struct__AlsaStreamControlClass.html#a71596e1f443a235ea57d090662b42701":[34,0,10,0],
+"struct__AlsaStreamControlClass.html#ab152e94abc4914085ec6003a7d3f2e30":[34,0,10,4],
+"struct__AlsaStreamControlClass.html#ad95e28527fd61939d34a1ca407435553":[34,0,10,2],
+"struct__AlsaStreamInputControl.html":[34,0,11],
+"struct__AlsaStreamInputControl.html#aac39c7c6605e6e675e7ecbb0dfa4816f":[34,0,11,0],
+"struct__AlsaStreamInputControlClass.html":[34,0,12],
+"struct__AlsaStreamInputControlClass.html#aed1d2c31b3b9be7032203fd68d7a808f":[34,0,12,0],
+"struct__AlsaStreamOutputControl.html":[34,0,13],
 "struct__AlsaStreamOutputControl.html#a08723872b369b75ddf1f0126f250c33b":[34,0,13,0],
 "struct__AlsaStreamOutputControlClass.html":[34,0,14],
 "struct__AlsaStreamOutputControlClass.html#a6ed42c1ded7faed50119ab7c652f0afb":[34,0,14,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX182 =
 "struct__CactMenubarPrivate.html#a4c1a0dd3d72f7d3428dcdbcefc23a953":[34,0,45,9],
 "struct__CactMenubarPrivate.html#a4f507cf6d5f8e6cbb05b456b461328d3":[34,0,45,4],
 "struct__CactMenubarPrivate.html#a5a99adb471291cacaa65f57206dfbdf4":[34,0,45,23],
-"struct__CactMenubarPrivate.html#a5c6ae6d6b6cb91ea2241c7b8f40090fc":[34,0,45,7],
-"struct__CactMenubarPrivate.html#a665710c1914e751884413863ed9e6a26":[34,0,45,27],
-"struct__CactMenubarPrivate.html#a7538511c5d499e5fa1dae52f828ca096":[34,0,45,28],
-"struct__CactMenubarPrivate.html#a798dd2c1ac1312bfe68d5c605f92795e":[34,0,45,15],
-"struct__CactMenubarPrivate.html#a7ad87536f0952bca4b602c64fad14e4d":[34,0,45,21],
-"struct__CactMenubarPrivate.html#a86824807e4606d58ff9557c781d0c9bc":[34,0,45,14],
-"struct__CactMenubarPrivate.html#a90a1e4611cc162509285f9990aae95d2":[34,0,45,3],
-"struct__CactMenubarPrivate.html#a9b6b7e94e4e7b73fcac367f3e3d0588b":[34,0,45,6],
-"struct__CactMenubarPrivate.html#aae144986aef47c8da87df5c17d5ce774":[34,0,45,25]
+"struct__CactMenubarPrivate.html#a5c6ae6d6b6cb91ea2241c7b8f40090fc":[34,0,45,7]
 };

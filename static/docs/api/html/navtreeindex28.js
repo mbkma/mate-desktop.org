@@ -1,5 +1,12 @@
 var NAVTREEINDEX28 =
 {
+"caja-sidebar-title_8c.html#a7244587b194deacd490806f3e5e2437e":[35,0,0,1,3,66,2],
+"caja-sidebar-title_8c.html#a7749a9d153a748008226d0d1b9b8d8e2":[35,0,0,1,3,66,12],
+"caja-sidebar-title_8c.html#aa5b8edad3247233d265fe13a021dae8a":[35,0,0,1,3,66,8],
+"caja-sidebar-title_8c.html#aaa338cbfcd0fa8ed5f4d644d063e433d":[35,0,0,1,3,66,9],
+"caja-sidebar-title_8c.html#ad8d192ef82678073828314fd2c5b390a":[35,0,0,1,3,66,10],
+"caja-sidebar-title_8c.html#af0eb9be6d20fb3ac29d748f654420ce3":[35,0,0,1,3,66,3],
+"caja-sidebar-title_8c.html#af38db2df6ce74c3c22e8cc19fca5c861":[35,0,0,1,3,66,7],
 "caja-sidebar-title_8c_source.html":[35,0,0,1,3,66],
 "caja-sidebar-title_8h.html":[35,0,0,1,3,67],
 "caja-sidebar-title_8h.html#a189d75c89199472eb3657b59de45e021":[35,0,0,1,3,67,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX28 =
 "caja-undostack-manager_8h.html#af80f828f58ca6159142651ac7775ee66":[35,0,0,1,2,130,4],
 "caja-undostack-manager_8h_source.html":[35,0,0,1,2,130],
 "caja-vfs-directory_8c.html":[35,0,0,1,2,131],
-"caja-vfs-directory_8c.html#a25f6aaae93fc6958969c369aff9272db":[35,0,0,1,2,131,0],
-"caja-vfs-directory_8c_source.html":[35,0,0,1,2,131],
-"caja-vfs-directory_8h.html":[35,0,0,1,2,132],
-"caja-vfs-directory_8h.html#a10d58f4c2c212e5df16bc5f8fbaa8548":[35,0,0,1,2,132,5],
-"caja-vfs-directory_8h.html#a163d89900b20a4e74d1971f4ee33dc78":[35,0,0,1,2,132,8],
-"caja-vfs-directory_8h.html#a1f6ecfbf525849a5f52846878092429c":[35,0,0,1,2,132,9],
-"caja-vfs-directory_8h.html#a27429b9942335420a81f90a25dffba32":[35,0,0,1,2,132,6],
-"caja-vfs-directory_8h.html#a2fd9ef64b59bbf46d97efd16cbb831eb":[35,0,0,1,2,132,3]
+"caja-vfs-directory_8c.html#a25f6aaae93fc6958969c369aff9272db":[35,0,0,1,2,131,0]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX145 =
 {
+"panel-icon-names_8h.html#a5e51015417b9c2a3e4f58d788fb4b1da":[35,0,0,22,2,46,5],
+"panel-icon-names_8h.html#a673041720affd24cc3dbb83895e50196":[35,0,0,22,2,46,16],
+"panel-icon-names_8h.html#a6a819cda662df04455265d02d58b7df0":[35,0,0,22,2,46,26],
+"panel-icon-names_8h.html#a6d6f5c0e9407f01fc41cd47ce1937bb2":[35,0,0,22,2,46,18],
+"panel-icon-names_8h.html#a6dc2027f14238781e1c018aa2088edbb":[35,0,0,22,2,46,29],
+"panel-icon-names_8h.html#a718a2c2b19df3d0d93cf308830c7f97c":[35,0,0,22,2,46,22],
+"panel-icon-names_8h.html#a9658f18487a9d4691e78dd4eed58d9bc":[35,0,0,22,2,46,11],
+"panel-icon-names_8h.html#a9a00e1685feb4b567f73eba3f2eb3e60":[35,0,0,22,2,46,25],
 "panel-icon-names_8h.html#aa39e1ac2f53e7e4ca77150f6b48d055d":[35,0,0,22,2,46,4],
 "panel-icon-names_8h.html#aa988b5044b83ffabf2e3662f4aaffcaa":[35,0,0,22,2,46,33],
 "panel-icon-names_8h.html#aaab37ff3fa099ec72fff7fbb11e03d62":[35,0,0,22,2,46,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX145 =
 "panel-multimonitor_8h.html":[35,0,0,22,2,60],
 "panel-multimonitor_8h.html#a04c0cc7354f7ca4a0f50779e3132e1d0":[35,0,0,22,2,60,9],
 "panel-multimonitor_8h.html#a1a709b9613b823e32e16ca0f7214e240":[35,0,0,22,2,60,8],
-"panel-multimonitor_8h.html#a1b6676343f57e54fb8fe123bff2127ba":[35,0,0,22,2,60,3],
-"panel-multimonitor_8h.html#a28c36045e9656c730a1994fb55c02b3c":[35,0,0,22,2,60,1],
-"panel-multimonitor_8h.html#a432be053ce2be88534108c01657ee5cc":[35,0,0,22,2,60,10],
-"panel-multimonitor_8h.html#a60f96500df4d4c3a4d25387538a35027":[35,0,0,22,2,60,4],
-"panel-multimonitor_8h.html#a61220572f9fdad10ed74a5586635cc00":[35,0,0,22,2,60,0],
-"panel-multimonitor_8h.html#a6624592c02d6413ea2749dc8bf0fc02e":[35,0,0,22,2,60,2],
-"panel-multimonitor_8h.html#a86cfd92d3c6c21f1cf86a8cc4b3d74ff":[35,0,0,22,2,60,7],
-"panel-multimonitor_8h.html#a892d97f25535b005e98aabe8bcdc492e":[35,0,0,22,2,60,6],
-"panel-multimonitor_8h.html#aeabaef3372fa44bbbaba9f538fca7b1b":[35,0,0,22,2,60,5]
+"panel-multimonitor_8h.html#a1b6676343f57e54fb8fe123bff2127ba":[35,0,0,22,2,60,3]
 };

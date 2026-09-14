@@ -1,5 +1,12 @@
 var NAVTREEINDEX33 =
 {
+"classSmoothRefresh.html#aa9590e02ef2457b3b8fdfb6fc4505a32":[34,0,1630,0],
+"classSmoothRefresh.html#ae7b6a818258491687a89a01ec8788711":[34,0,1630,2],
+"classes.html":[34,1],
+"classprocman_1_1IconThemeWrapper.html":[34,0,0,0],
+"classprocman_1_1IconThemeWrapper.html#a398aebf835d89b7885017d55464ed0b3":[34,0,0,0,2],
+"classprocman_1_1IconThemeWrapper.html#a581c2b9a58b064000108bc955c87966b":[34,0,0,0,1],
+"classprocman_1_1IconThemeWrapper.html#a98e816ba2b33c3f1b832c48cb06ee9cd":[34,0,0,0,0],
 "classprocman_1_1OptionGroup.html":[34,0,0,1],
 "classprocman_1_1OptionGroup.html#a2caa971f51d7d845cf7661a130ddff7e":[34,0,0,1,3],
 "classprocman_1_1OptionGroup.html#a4961c23f3390651b4636ab3ad3eeab4f":[34,0,0,1,1],
@@ -242,12 +249,5 @@ var NAVTREEINDEX33 =
 "color_8h.html#affb7fd92ae05dae8d179f647b0e4240c":[35,0,0,0,0,2,0,5,1],
 "color_8h_source.html":[35,0,0,0,0,2,0,5],
 "comics-document_8c.html":[35,0,0,0,0,0,0],
-"comics-document_8c.html#a05dd9e85705d11932b7ec85e845f78c2":[35,0,0,0,0,0,0,5],
-"comics-document_8c.html#a3fdf5066b36e8fe5a4463112507bcba6":[35,0,0,0,0,0,0,3],
-"comics-document_8c.html#a4bc7d62e4bf240006f5efe90ebffee80":[35,0,0,0,0,0,0,6],
-"comics-document_8c.html#a6c1e04ff214bec59246d71a1bfd1440a":[35,0,0,0,0,0,0,2],
-"comics-document_8c.html#a6fe8089c7af3b23c0684cb075d02d108":[35,0,0,0,0,0,0,7],
-"comics-document_8c.html#a92545dfa07e09c8f53f4a7450e9de1a8":[35,0,0,0,0,0,0,4],
-"comics-document_8c.html#ad51ded0bbd705f02f73fc60c0b721ced":[35,0,0,0,0,0,0,1],
-"comics-document_8c.html#ad6cd5acea4ead678821b84655d56cbd4":[35,0,0,0,0,0,0,0]
+"comics-document_8c.html#a05dd9e85705d11932b7ec85e845f78c2":[35,0,0,0,0,0,0,5]
 };

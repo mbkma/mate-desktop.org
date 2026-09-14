@@ -233,6 +233,7 @@ var menudata={children:[
 {text:"r",url:"globals_enum_r.html#index_r"},
 {text:"s",url:"globals_enum_s.html#index_s"},
 {text:"t",url:"globals_enum_t.html#index_t"},
+{text:"w",url:"globals_enum_w.html#index_w"},
 {text:"x",url:"globals_enum_x.html#index_x"},
 {text:"z",url:"globals_enum_z.html#index_z"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[

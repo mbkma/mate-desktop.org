@@ -1,5 +1,13 @@
 var NAVTREEINDEX170 =
 {
+"structCactAddSchemeDialogClass.html#ac853c07165bba16f6226719c9ecd8b6c":[34,0,1033,0],
+"structCactAddSchemeDialogClass.html#af74efd6ccc0a4c7f808814cd494eacfe":[34,0,1033,1],
+"structCactApplication.html":[34,0,1034],
+"structCactApplication.html#ab9f96d49f108ba505cd02c04a11ef395":[34,0,1034,1],
+"structCactApplication.html#ad0607c5b98476a7e5ef2b5eab428ae3c":[34,0,1034,0],
+"structCactApplicationClass.html":[34,0,1035],
+"structCactApplicationClass.html#a3c6391166277b3e504deea4828f2fd80":[34,0,1035,0],
+"structCactApplicationClass.html#a51b400791c8da30b5ab302cd613cf8ac":[34,0,1035,1],
 "structCactAssistantExport.html":[34,0,1036],
 "structCactAssistantExport.html#a51f1318ca7981cf285e39205d4e6f518":[34,0,1036,0],
 "structCactAssistantExport.html#a6fd2f70e503e917dfb5d983a75082e76":[34,0,1036,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX170 =
 "structCajaDragSelectionItem.html#a918459d84a7ae1428b0d9a4824a9273b":[34,0,1104,0],
 "structCajaDragSelectionItem.html#aab3813be441643c30ef6b7948300bad5":[34,0,1104,3],
 "structCajaDragSelectionItem.html#ac2d57c342945bf4998b120acba404d6b":[34,0,1104,4],
-"structCajaDragSelectionItem.html#afb5ffe587f4a4ae092865a91db2ddc57":[34,0,1104,2],
-"structCajaDragSlotProxyInfo.html":[34,0,1105],
-"structCajaDragSlotProxyInfo.html#a24db05d638dc43eb92b6d5511f25b587":[34,0,1105,9],
-"structCajaDragSlotProxyInfo.html#a49008be274961e8729c1f0897687b0b4":[34,0,1105,7],
-"structCajaDragSlotProxyInfo.html#a567609e6110eb6061964d819a24e1472":[34,0,1105,0],
-"structCajaDragSlotProxyInfo.html#a64c5ba7c5b7c258b24daabe884115886":[34,0,1105,2],
-"structCajaDragSlotProxyInfo.html#aa1464d9ef104440167cca2c83d075947":[34,0,1105,6],
-"structCajaDragSlotProxyInfo.html#aa1ae0d586aa0bf31b7c595ea0ee5be32":[34,0,1105,8],
-"structCajaDragSlotProxyInfo.html#ab292cb0e93bf1dd3db8c4217c1c9c48b":[34,0,1105,3]
+"structCajaDragSelectionItem.html#afb5ffe587f4a4ae092865a91db2ddc57":[34,0,1104,2]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX150 =
 {
+"pluma-close-confirmation-dialog_8h.html#a6b0f10511b3d0450bf731dbec85f3965":[35,0,0,34,1,0,1,7],
+"pluma-close-confirmation-dialog_8h.html#a71cf72e549a4901995b51050fe006caa":[35,0,0,34,1,0,1,10],
+"pluma-close-confirmation-dialog_8h.html#a74c33d3ce47f260b4c3630b5027c5a68":[35,0,0,34,1,0,1,15],
+"pluma-close-confirmation-dialog_8h.html#a8783f54b4472c1091b1b364149e53fd5":[35,0,0,34,1,0,1,6],
+"pluma-close-confirmation-dialog_8h.html#a98b01d8249268dd8e8f7bc2e19f86e43":[35,0,0,34,1,0,1,5],
+"pluma-close-confirmation-dialog_8h.html#a9cfcfc0db47f78aedc13800a3639242d":[35,0,0,34,1,0,1,8],
+"pluma-close-confirmation-dialog_8h.html#aa4107af06a13776f1898d2d1ddc0e7e5":[35,0,0,34,1,0,1,12],
+"pluma-close-confirmation-dialog_8h.html#aa78df20eb1f67ee3a1d72a5c39c4db69":[35,0,0,34,1,0,1,2],
 "pluma-close-confirmation-dialog_8h.html#abea858d29019ada2abe4baa5cc1ae9c7":[35,0,0,34,1,0,1,9],
 "pluma-close-confirmation-dialog_8h.html#aec3714bb4c7fe635255e3e9eee3cafbb":[35,0,0,34,1,0,1,13],
 "pluma-close-confirmation-dialog_8h_source.html":[35,0,0,34,1,0,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX150 =
 "pluma-document-loader_8c.html#afd0ce96472be84bf3efaa71187aa4205":[35,0,0,34,1,25,11],
 "pluma-document-loader_8c_source.html":[35,0,0,34,1,25],
 "pluma-document-loader_8h.html":[35,0,0,34,1,26],
-"pluma-document-loader_8h.html#a12f6d71e7d54ebf58b766998ad01adb1":[35,0,0,34,1,26,14],
-"pluma-document-loader_8h.html#a138a32ae6dcd394b857459c0d7bfb91e":[35,0,0,34,1,26,15],
-"pluma-document-loader_8h.html#a19c44ad40e0fb84639198624f8fc4820":[35,0,0,34,1,26,11],
-"pluma-document-loader_8h.html#a21c86c7597f62a26ec3541a966ecf183":[35,0,0,34,1,26,9],
-"pluma-document-loader_8h.html#a23ed908816c29884a9e26a793ed835a5":[35,0,0,34,1,26,12],
-"pluma-document-loader_8h.html#a25d8398bc262d8fa9d267991be4f75fd":[35,0,0,34,1,26,10],
-"pluma-document-loader_8h.html#a2dee89c44065de82968dc09b3c1eb2ed":[35,0,0,34,1,26,6],
-"pluma-document-loader_8h.html#a47740c72f7b06e7dde13452ef90d97c3":[35,0,0,34,1,26,4],
-"pluma-document-loader_8h.html#a4bd78ed1179a5d4450a71b58671f8219":[35,0,0,34,1,26,18]
+"pluma-document-loader_8h.html#a12f6d71e7d54ebf58b766998ad01adb1":[35,0,0,34,1,26,14]
 };

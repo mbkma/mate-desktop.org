@@ -1,5 +1,13 @@
 var NAVTREEINDEX153 =
 {
+"pluma-file-browser-store_8h.html#a39a6b049a81ccd9f6db20c7ef0519c5e":[35,0,0,34,0,1,8,28],
+"pluma-file-browser-store_8h.html#a39f14a500d713e2018cbb138cede9426":[35,0,0,34,0,1,8,33],
+"pluma-file-browser-store_8h.html#a3bd7810ca55428020dd26ab85fe29b48":[35,0,0,34,0,1,8,46],
+"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2a":[35,0,0,34,0,1,8,19],
+"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa3ae0047e3eae622d1d65da6e9d499bf1":[35,0,0,34,0,1,8,19,0],
+"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa4757a36fc62d621a9677b49e29817419":[35,0,0,34,0,1,8,19,5],
+"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa4b6c3852b5fd22b83f41d64f942ad0a9":[35,0,0,34,0,1,8,19,1],
+"pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa57c57d4268914bf72c550953fefc0c16":[35,0,0,34,0,1,8,19,4],
 "pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aa6ee6d3f142ad00c3050128bce86e530b":[35,0,0,34,0,1,8,19,3],
 "pluma-file-browser-store_8h.html#a3e3fefce3acb11f7386a9d281d03be2aac641cd8352d838ae1534dc874dfd4e7c":[35,0,0,34,0,1,8,19,2],
 "pluma-file-browser-store_8h.html#a41f71d4712f97bf0a7366518d14ef256":[35,0,0,34,0,1,8,44],
@@ -241,13 +249,5 @@ var NAVTREEINDEX153 =
 "pluma-io-error-message-area_8h.html#a8b3034d4e66c030a759be4ca06ce94f0":[35,0,0,34,1,46,0],
 "pluma-io-error-message-area_8h.html#a99c58d71664289b3d6c5905647a9e656":[35,0,0,34,1,46,4],
 "pluma-io-error-message-area_8h.html#aaa52e3b8d21cfeade457825046adb69d":[35,0,0,34,1,46,7],
-"pluma-io-error-message-area_8h.html#ae67e420a29e1471ce7d257da46b5de1f":[35,0,0,34,1,46,1],
-"pluma-io-error-message-area_8h.html#af4ac3c8c15c272976adaac19406a2823":[35,0,0,34,1,46,8],
-"pluma-io-error-message-area_8h.html#afcb0500129ff6f01aa1646b4b80d64a2":[35,0,0,34,1,46,5],
-"pluma-io-error-message-area_8h_source.html":[35,0,0,34,1,46],
-"pluma-language-manager_8c.html":[35,0,0,34,1,47],
-"pluma-language-manager_8c.html#a620177012f0a4a924438f2efbaa66d94":[35,0,0,34,1,47,1],
-"pluma-language-manager_8c.html#ae743d675de55b09a57b851e706c30efe":[35,0,0,34,1,47,0],
-"pluma-language-manager_8c_source.html":[35,0,0,34,1,47],
-"pluma-language-manager_8h.html":[35,0,0,34,1,48]
+"pluma-io-error-message-area_8h.html#ae67e420a29e1471ce7d257da46b5de1f":[35,0,0,34,1,46,1]
 };

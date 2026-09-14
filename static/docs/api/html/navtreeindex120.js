@@ -1,5 +1,13 @@
 var NAVTREEINDEX120 =
 {
+"math-history-entry_8h.html#a44f76ef52c75f14dfe3e533b9443a316":[35,0,0,13,0,21,8],
+"math-history-entry_8h.html#a7d7519071ae534803c112158f408178e":[35,0,0,13,0,21,7],
+"math-history-entry_8h.html#adf0e665f9123fb8d7851c502c419814b":[35,0,0,13,0,21,6],
+"math-history-entry_8h.html#aeba12f68687ffa6da2ed1f8f66d1c42f":[35,0,0,13,0,21,2],
+"math-history-entry_8h_source.html":[35,0,0,13,0,21],
+"math-history_8c.html":[35,0,0,13,0,22],
+"math-history_8c.html#a10293cb83a8558ad35107b5c22b1d614":[35,0,0,13,0,22,1],
+"math-history_8c.html#a4866e0615d87674ae31d2f626ba7483a":[35,0,0,13,0,22,4],
 "math-history_8c.html#a5436ab05696a8861d9041a4e0d39bb50":[35,0,0,13,0,22,0],
 "math-history_8c.html#a58af8a5ad91be2fe4536b8c9f79009f0":[35,0,0,13,0,22,3],
 "math-history_8c.html#a6c420314b047befcbb6e694628a0797f":[35,0,0,13,0,22,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX120 =
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md42":[14,6],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md43":[14,7],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html":[15],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md44":[15,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md45":[15,0,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md46":[15,0,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md47":[15,0,2],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md48":[15,0,3],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html":[16],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md50":[16,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md51":[16,0,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-dev-scripts_2travis_2README.html#autotoc_md52":[16,0,1]
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md44":[15,0]
 };

@@ -1,5 +1,12 @@
 var NAVTREEINDEX30 =
 {
+"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ecae99d393dcb3a5576a82c3605212fb467":[35,0,0,1,2,140,14,1],
+"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ecaf135886fe60c7bc0d1207ebedb64c3f7":[35,0,0,1,2,140,14,2],
+"caja-window-info_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9":[35,0,0,1,2,140,7],
+"caja-window-info_8h.html#ae395c1f12ad57d695a18f28ab0c4949d":[35,0,0,1,2,140,3],
+"caja-window-info_8h.html#af8dd10123569d781c43c14743f607c1b":[35,0,0,1,2,140,18],
+"caja-window-info_8h.html#afb4ef1dee64ba9859f8cc73cdf4f2da5":[35,0,0,1,2,140,9],
+"caja-window-info_8h.html#afeccf15f3e76a3f7266e5ae767c2a905":[35,0,0,1,2,140,4],
 "caja-window-info_8h_source.html":[35,0,0,1,2,140],
 "caja-window-manage-views_8c.html":[35,0,0,1,3,76],
 "caja-window-manage-views_8c.html#a06a0d4adc1183acb9dd4614439352230":[35,0,0,1,3,76,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX30 =
 "caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008a4295bea81abb4fceaa85871f28c0586b":[35,0,0,1,3,83,11,0],
 "caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008a8eebf083b962503fb4daf8f49e587cd7":[35,0,0,1,3,83,11,3],
 "caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008ab4038666b52279a50481313a48194ebd":[35,0,0,1,3,83,11,2],
-"caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008abb4a507eed1aadde9441e271d67e69de":[35,0,0,1,3,83,11,1],
-"caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008ac121132094b652cc49a1d341e06195f3":[35,0,0,1,3,83,11,4],
-"caja-window-slot_8h.html#af486f419c36c0e1d2b42b1d1758ff141":[35,0,0,1,3,83,14],
-"caja-window-slot_8h.html#af554d48a16cf315bcda0f0d75b548d92":[35,0,0,1,3,83,28],
-"caja-window-slot_8h.html#afc10a313b9264c4be11fb734eca2cdd9":[35,0,0,1,3,83,5],
-"caja-window-slot_8h.html#afef835746409928eb8f5122c10a1d211":[35,0,0,1,3,83,2],
-"caja-window-slot_8h_source.html":[35,0,0,1,3,83],
-"caja-window-toolbars_8c.html":[35,0,0,1,3,84]
+"caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008abb4a507eed1aadde9441e271d67e69de":[35,0,0,1,3,83,11,1]
 };

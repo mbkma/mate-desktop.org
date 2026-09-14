@@ -1,5 +1,13 @@
 var NAVTREEINDEX202 =
 {
+"struct__PlumaViewClass.html#a37657b774a20215b192fdacbb318b8c1":[34,0,891,2],
+"struct__PlumaViewClass.html#abfb06e65b124d82b68d768c90d2a3a1f":[34,0,891,0],
+"struct__PlumaViewClass.html#af74afd409fb2d6f076845104d3c43e85":[34,0,891,4],
+"struct__PlumaWindow.html":[34,0,892],
+"struct__PlumaWindow.html#a7a629d33cec2db285b7a64c276f265b8":[34,0,892,0],
+"struct__PlumaWindow.html#a9e2487c4259dc2eb9395626da7e08ec0":[34,0,892,1],
+"struct__PlumaWindowActivatableInterface.html":[34,0,893],
+"struct__PlumaWindowActivatableInterface.html#a889f524fdc5e62f16ccf01b26655de15":[34,0,893,0],
 "struct__PlumaWindowActivatableInterface.html#aa8dc28673f75add15f82c04a50c94e3d":[34,0,893,1],
 "struct__PlumaWindowActivatableInterface.html#ae5c1e4017524fa24e3e92c2985fc62a5":[34,0,893,3],
 "struct__PlumaWindowActivatableInterface.html#afe1a6491190973a7005dea6eaf812f99":[34,0,893,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX202 =
 "struct__SensorsAppletSensorInfo.html#adcdaacb84add13064da94b0a7b8df01a":[34,0,940,1],
 "struct__ShellWindow.html":[34,0,941],
 "struct__ShellWindow.html#a0777d37c31e5e2c94d4fec0a46bbc072":[34,0,941,2],
-"struct__ShellWindow.html#a483450015046b07e6ccb1282298e54e8":[34,0,941,0],
-"struct__ShellWindow.html#a58434c1697ef5976bfac50275ef5e52c":[34,0,941,3],
-"struct__ShellWindow.html#abfcfa4405f3ba5817dbf7eca193e72c5":[34,0,941,1],
-"struct__ShellWindow.html#ad370dd0626d86240cff9ecaaba42a85b":[34,0,941,4],
-"struct__ShellWindowClass.html":[34,0,942],
-"struct__ShellWindowClass.html#a1be6516679d3998b90daeb344d95b207":[34,0,942,0],
-"struct__SnDBusMenuClass.html":[34,0,943],
-"struct__SnDBusMenuClass.html#ad58b40aaa5d019391f4b96c7b84ea0e8":[34,0,943,0],
-"struct__SnFlatButton.html":[34,0,944]
+"struct__ShellWindow.html#a483450015046b07e6ccb1282298e54e8":[34,0,941,0]
 };

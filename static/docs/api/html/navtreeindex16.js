@@ -1,5 +1,12 @@
 var NAVTREEINDEX16 =
 {
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813a24840a036da8a92dcc19c603316854ce":[35,0,0,1,2,40,16,10],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813a453a0dc17c08d6f0b5fd8019f5c2226b":[35,0,0,1,2,40,16,3],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813a4bd0441edb4d94597fb9bb6bc0f8de98":[35,0,0,1,2,40,16,2],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813a5d6451a512f2616c565945858e1a40cb":[35,0,0,1,2,40,16,7],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813a73a500a2e67e626361c75b738b609357":[35,0,0,1,2,40,16,8],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813ac13a7364ccc3fcfd5c5ade5d332841e5":[35,0,0,1,2,40,16,9],
+"caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813ad9dd058d87736a43f1e8366ffcd5c813":[35,0,0,1,2,40,16,1],
 "caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813aded228d0e37c5688de7cca203ce5546a":[35,0,0,1,2,40,16,6],
 "caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813ae1840daa38582354c27d954d3e288c6b":[35,0,0,1,2,40,16,5],
 "caja-dnd_8h.html#ab6452d8142af26668d0c5dc5f8ce8813aee5e47383730812ef5e81d87f6c6a43e":[35,0,0,1,2,40,16,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX16 =
 "caja-file-conflict-dialog_8h.html#a61d296258575b64037d08d3d33e5bf71":[35,0,0,1,2,51,7],
 "caja-file-conflict-dialog_8h.html#a65701d0bb16d4a67655b791d467883a0":[35,0,0,1,2,51,11],
 "caja-file-conflict-dialog_8h.html#a701a5d1ae9d2ed356e887cf06df03fc2":[35,0,0,1,2,51,8],
-"caja-file-conflict-dialog_8h.html#a7eef52cfb17da1088d3b3b7a4b5f5b5c":[35,0,0,1,2,51,13],
-"caja-file-conflict-dialog_8h.html#a871764725ef7b37074517e330afba784":[35,0,0,1,2,51,4],
-"caja-file-conflict-dialog_8h.html#a8c03fdb7436fdecc26aafc7e0ee1fa04":[35,0,0,1,2,51,9],
-"caja-file-conflict-dialog_8h.html#a917e4b5f2202b603a82fc414654569e8":[35,0,0,1,2,51,12],
-"caja-file-conflict-dialog_8h.html#aa366db810a25696e28cc78952f87b82a":[35,0,0,1,2,51,3],
-"caja-file-conflict-dialog_8h.html#ae9e13daabd9849e55c93eb55d669b38b":[35,0,0,1,2,51,5],
-"caja-file-conflict-dialog_8h.html#aec9a19207236c3a14ba4b040e24804cf":[35,0,0,1,2,51,2],
-"caja-file-conflict-dialog_8h_source.html":[35,0,0,1,2,51]
+"caja-file-conflict-dialog_8h.html#a7eef52cfb17da1088d3b3b7a4b5f5b5c":[35,0,0,1,2,51,13]
 };

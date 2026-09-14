@@ -1,5 +1,13 @@
 var NAVTREEINDEX183 =
 {
+"struct__CactMenubarPrivate.html#a665710c1914e751884413863ed9e6a26":[34,0,45,27],
+"struct__CactMenubarPrivate.html#a7538511c5d499e5fa1dae52f828ca096":[34,0,45,28],
+"struct__CactMenubarPrivate.html#a798dd2c1ac1312bfe68d5c605f92795e":[34,0,45,15],
+"struct__CactMenubarPrivate.html#a7ad87536f0952bca4b602c64fad14e4d":[34,0,45,21],
+"struct__CactMenubarPrivate.html#a86824807e4606d58ff9557c781d0c9bc":[34,0,45,14],
+"struct__CactMenubarPrivate.html#a90a1e4611cc162509285f9990aae95d2":[34,0,45,3],
+"struct__CactMenubarPrivate.html#a9b6b7e94e4e7b73fcac367f3e3d0588b":[34,0,45,6],
+"struct__CactMenubarPrivate.html#aae144986aef47c8da87df5c17d5ce774":[34,0,45,25],
 "struct__CactMenubarPrivate.html#ab1521d0371fdacb6b48933914b4b2431":[34,0,45,13],
 "struct__CactMenubarPrivate.html#ab4586a0cd94c5734435a269dd422e1fd":[34,0,45,19],
 "struct__CactMenubarPrivate.html#ab9486113854b9ff010048843316dc80f":[34,0,45,18],
@@ -241,13 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaLocationDialog.html#a11576d839dd0137e4054dc4193a591c6":[34,0,69,1],
 "struct__CajaLocationDialog.html#a5c970cd48148dfdf10169d3d781e697c":[34,0,69,0],
 "struct__CajaLocationDialogClass.html":[34,0,70],
-"struct__CajaLocationDialogClass.html#ad9ff0e15e10acd5bf15caf681d73788e":[34,0,70,0],
-"struct__CajaLocationWidgetProviderIface.html":[34,0,71],
-"struct__CajaLocationWidgetProviderIface.html#a5d4dcaa5ba61089f7ee7cfe84b1f30b9":[34,0,71,0],
-"struct__CajaLocationWidgetProviderIface.html#a72b4fb42d1887c2463eb82d139a50eeb":[34,0,71,1],
-"struct__CajaMenu.html":[34,0,72],
-"struct__CajaMenu.html#a6790f0e7244676ee7ee9ee60f9b3d8bc":[34,0,72,1],
-"struct__CajaMenu.html#ac87945badd295f13ab75803edc277d03":[34,0,72,0],
-"struct__CajaMenuClass.html":[34,0,73],
-"struct__CajaMenuClass.html#a9fca9e124334cb5639e9a7bf2ad0f8aa":[34,0,73,0]
+"struct__CajaLocationDialogClass.html#ad9ff0e15e10acd5bf15caf681d73788e":[34,0,70,0]
 };

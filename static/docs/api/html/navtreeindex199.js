@@ -1,5 +1,13 @@
 var NAVTREEINDEX199 =
 {
+"struct__MetaWindow.html#a359bd465e29925d6bc015400087389f6":[34,0,724,29],
+"struct__MetaWindow.html#a36f97f64ca5a1be3966a3315ea1167af":[34,0,724,65],
+"struct__MetaWindow.html#a37e1b169af070a1551faa75a637a189d":[34,0,724,104],
+"struct__MetaWindow.html#a3cfc227660585405177d73d28d412b34":[34,0,724,0],
+"struct__MetaWindow.html#a43d378c71cd5c5209802df4a55516495":[34,0,724,17],
+"struct__MetaWindow.html#a45a6724c1debff6e1f55a6aec07ac473":[34,0,724,103],
+"struct__MetaWindow.html#a4721e59732bf1b5d4b528e781516f1f4":[34,0,724,63],
+"struct__MetaWindow.html#a487a8555d0aae3c8ac6c3c1e22a048cf":[34,0,724,87],
 "struct__MetaWindow.html#a491566e046ac15599e8216f69b49f9de":[34,0,724,114],
 "struct__MetaWindow.html#a4bf565c8f003ecda49bb03700c3f38fb":[34,0,724,109],
 "struct__MetaWindow.html#a4cb33c270ac4f2216f12619a3c5d779c":[34,0,724,22],
@@ -241,13 +249,5 @@ var NAVTREEINDEX199 =
 "struct__NaTrayChild.html#ad345b8fee2a29ddd7f03577e0a7fc240":[34,0,749,5],
 "struct__NaTrayChildClass.html":[34,0,750],
 "struct__NaTrayChildClass.html#afd7feaa813c0fe7bd29a980eafbb8a08":[34,0,750,0],
-"struct__NaTrayClass.html":[34,0,751],
-"struct__NaTrayClass.html#ab92cfa4b673f294bbda76808181f8d65":[34,0,751,0],
-"struct__NaTrayManager.html":[34,0,752],
-"struct__NaTrayManager.html#a061a928a14c0eb5c5361761c7cf06ef3":[34,0,752,4],
-"struct__NaTrayManager.html#a15bed890a5eb28f729e1e3325355bedd":[34,0,752,0],
-"struct__NaTrayManager.html#a4f1d01a84cf7b32a909b000d376f64de":[34,0,752,10],
-"struct__NaTrayManager.html#a6ab6d80b965e2f50a7a9ff9f0face21d":[34,0,752,11],
-"struct__NaTrayManager.html#a7d10b9ed499691a5a5bd03a491de2e79":[34,0,752,6],
-"struct__NaTrayManager.html#a803c6c9e4bd48128e8cfc16083de1c8a":[34,0,752,5]
+"struct__NaTrayClass.html":[34,0,751]
 };

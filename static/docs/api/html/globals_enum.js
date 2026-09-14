@@ -20,6 +20,7 @@ var globals_enum =
     [ "r", "globals_enum_r.html", null ],
     [ "s", "globals_enum_s.html", null ],
     [ "t", "globals_enum_t.html", null ],
+    [ "w", "globals_enum_w.html", null ],
     [ "x", "globals_enum_x.html", null ],
     [ "z", "globals_enum_z.html", null ]
 ];
