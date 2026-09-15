@@ -401,10 +401,10 @@ var NAVTREEINDEX =
 "time-zones_8h.html#a87ffeb9b9e7768a652a80c6e69afc5b3",
 "totem-resources_8c.html#a2acb9229ec569e091a13ab26bacf5c6b",
 "user__share-common_8h.html",
-"weather_8c.html#ab83fbf9f1448f4d7f3876241fe888b21",
-"window-private_8h.html#a34347846d16608093fe8bee4ab101241",
-"window_8c.html#ad3266e9bfb7072280252b769c6aa7437",
-"xprops_8h.html#ae8bc13feb72307fe931903874196932ca86f988cb498f4cc32cec837e9177d808"
+"weather_8c.html#aa03a1b549f8044fe2ff7e2dbc04a458c",
+"window-private_8h.html#a2a55197c09961eb12c5b1b9b3537cf53",
+"window_8c.html#ac2f2c36a502a2951d0034ed4d7af8812",
+"xprops_8h.html#ac72ae1210c59f10decf997ab1fb14831"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
