@@ -926,95 +926,97 @@ $(document).ready(function(){initNavTree('gpm-brightness_8c_source.html',''); in
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    g_return_if_fail (<a class="code hl_define" href="gpm-brightness_8h.html#ab64c583124ce7045ddef837e03201513">GPM_IS_BRIGHTNESS</a> (<span class="keywordtype">object</span>));</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    brightness = <a class="code hl_define" href="gpm-brightness_8h.html#a209e20846d7c56571e55ff9262ecbeb0">GPM_BRIGHTNESS</a> (<span class="keywordtype">object</span>);</div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span><span class="preprocessor">#ifdef HAVE_X11</span></div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    g_ptr_array_unref (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;resources);</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>    gdk_window_remove_filter (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window,</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>                  gpm_brightness_filter_xevents, brightness);</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (gpm_brightness_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>}</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>gpm_brightness_class_init (<a class="code hl_struct" href="structGpmBrightnessClass.html">GpmBrightnessClass</a> *klass)</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>{</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    GObjectClass *object_class = <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (klass);</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    object_class-&gt;finalize = gpm_brightness_finalize;</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span> </div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    signals [<a class="code hl_enumvalue" href="gpm-brightness_8c.html#ab8e24ebce014ea428b3e98beb158621face60bccb031746e12d41031d63c6bf7a">BRIGHTNESS_CHANGED</a>] =</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>        g_signal_new (<span class="stringliteral">&quot;brightness-changed&quot;</span>,</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>                  G_TYPE_FROM_CLASS (object_class), G_SIGNAL_RUN_LAST,</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>                  G_STRUCT_OFFSET (<a class="code hl_struct" href="structGpmBrightnessClass.html">GpmBrightnessClass</a>, brightness_changed),</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                  <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, g_cclosure_marshal_VOID__UINT,</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                  G_TYPE_NONE, 1, G_TYPE_UINT);</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>}</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>gpm_brightness_init (<a class="code hl_struct" href="structGpmBrightness.html">GpmBrightness</a> *brightness)</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>{</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a> = gpm_brightness_get_instance_private (brightness);</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;cache_trusted = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;has_changed_events = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;cache_percentage = 0;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;hw_changed = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;extension_levels = -1;</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span><span class="preprocessor">#ifdef HAVE_X11</span></div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    <span class="keywordflow">if</span> (gdk_display_get_default () != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp;</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>        <a class="code hl_define" href="clock_8c.html#a59ad01704f8b88ba9fac520818f2b921">GDK_IS_X11_DISPLAY</a> (gdk_display_get_default ())) {</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>        GdkScreen *screen;</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        GdkDisplay *display;</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        <span class="keywordtype">int</span> event_base;</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        <span class="keywordtype">int</span> ignore;</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;resources = g_ptr_array_new_with_free_func ((GDestroyNotify) XRRFreeScreenResources);</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    <span class="keywordflow">if</span> (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;resources != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>        g_ptr_array_unref (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;resources);</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    <span class="keywordflow">if</span> (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>        gdk_window_remove_filter (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window,</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>                      gpm_brightness_filter_xevents, brightness);</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (gpm_brightness_parent_class)-&gt;finalize (<span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>}</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span> </div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>gpm_brightness_class_init (<a class="code hl_struct" href="structGpmBrightnessClass.html">GpmBrightnessClass</a> *klass)</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>{</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    GObjectClass *object_class = <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (klass);</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    object_class-&gt;finalize = gpm_brightness_finalize;</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span> </div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    signals [<a class="code hl_enumvalue" href="gpm-brightness_8c.html#ab8e24ebce014ea428b3e98beb158621face60bccb031746e12d41031d63c6bf7a">BRIGHTNESS_CHANGED</a>] =</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>        g_signal_new (<span class="stringliteral">&quot;brightness-changed&quot;</span>,</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>                  G_TYPE_FROM_CLASS (object_class), G_SIGNAL_RUN_LAST,</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>                  G_STRUCT_OFFSET (<a class="code hl_struct" href="structGpmBrightnessClass.html">GpmBrightnessClass</a>, brightness_changed),</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>                  <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, g_cclosure_marshal_VOID__UINT,</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>                  G_TYPE_NONE, 1, G_TYPE_UINT);</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>}</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span> </div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>gpm_brightness_init (<a class="code hl_struct" href="structGpmBrightness.html">GpmBrightness</a> *brightness)</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>{</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a> = gpm_brightness_get_instance_private (brightness);</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span> </div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;cache_trusted = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;has_changed_events = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;cache_percentage = 0;</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;hw_changed = <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;extension_levels = -1;</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span> </div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span><span class="preprocessor">#ifdef HAVE_X11</span></div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>    <span class="keywordflow">if</span> (gdk_display_get_default () != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp;</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        <a class="code hl_define" href="clock_8c.html#a59ad01704f8b88ba9fac520818f2b921">GDK_IS_X11_DISPLAY</a> (gdk_display_get_default ())) {</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        GdkScreen *screen;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        GdkDisplay *display;</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>        <span class="keywordtype">int</span> event_base;</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>        <span class="keywordtype">int</span> ignore;</div>
 <div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span> </div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        <span class="comment">/* can we do this */</span></div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>        brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;has_extension = gpm_brightness_setup_display (brightness);</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>        <span class="keywordflow">if</span> (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;has_extension == <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>            g_debug (<span class="stringliteral">&quot;no XRANDR extension&quot;</span>);</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span> </div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>        screen = gdk_screen_get_default ();</div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>        brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window = gdk_screen_get_root_window (screen);</div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>        display = gdk_display_get_default ();</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span> </div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>        <span class="comment">/* as we a filtering by a window, we have to add an event type */</span></div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>        <span class="keywordflow">if</span> (!XRRQueryExtension (GDK_DISPLAY_XDISPLAY (gdk_display_get_default()), &amp;event_base, &amp;ignore)) {</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>            g_warning (<span class="stringliteral">&quot;can&#39;t get event_base for XRR&quot;</span>);</div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>        }</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>        gdk_x11_register_standard_event_type (display, event_base, RRNotify + 1);</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>        gdk_window_add_filter (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window,</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>                       gpm_brightness_filter_xevents, brightness);</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span> </div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>        <span class="comment">/* don&#39;t abort on error */</span></div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>        gdk_x11_display_error_trap_push (display);</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>        XRRSelectInput (GDK_DISPLAY_XDISPLAY (gdk_display_get_default()),</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>                GDK_WINDOW_XID (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window),</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>                RRScreenChangeNotifyMask |</div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>                RROutputPropertyNotifyMask); <span class="comment">/* &lt;--- the only one we need, but see rh:345551 */</span></div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>        gdk_display_flush (display);</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>        <span class="keywordflow">if</span> (gdk_x11_display_error_trap_pop (display))</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>            g_warning (<span class="stringliteral">&quot;failed to select XRRSelectInput&quot;</span>);</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>        <span class="comment">/* create cache of XRRScreenResources as XRRGetScreenResources() is slow */</span></div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>        gpm_brightness_update_cache (brightness);</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>    }</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    g_debug (<span class="stringliteral">&quot;No XRandR brightness backend; using sysfs fallback only&quot;</span>);</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>}</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span> </div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span><a class="code hl_struct" href="structGpmBrightness.html">GpmBrightness</a> *</div>
-<div class="foldopen" id="foldopen01013" data-start="{" data-end="}">
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"><a class="line" href="gpm-brightness_8c.html#a2b8133f9975aeb4140db501bb17deb37"> 1013</a></span><a class="code hl_function" href="gpm-brightness_8c.html#a2b8133f9975aeb4140db501bb17deb37">gpm_brightness_new</a> (<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>{</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>    <span class="keywordflow">if</span> (gpm_brightness_object != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>        g_object_ref (gpm_brightness_object);</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        gpm_brightness_object = g_object_new (<a class="code hl_define" href="gpm-brightness_8h.html#a940b00fcf8b8de3419f5e0405376dc54">GPM_TYPE_BRIGHTNESS</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>        g_object_add_weak_pointer (gpm_brightness_object, &amp;gpm_brightness_object);</div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>    }</div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="gpm-brightness_8h.html#a209e20846d7c56571e55ff9262ecbeb0">GPM_BRIGHTNESS</a> (gpm_brightness_object);</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>}</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>        brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;resources = g_ptr_array_new_with_free_func ((GDestroyNotify) XRRFreeScreenResources);</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span> </div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>        <span class="comment">/* can we do this */</span></div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>        brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;has_extension = gpm_brightness_setup_display (brightness);</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>        <span class="keywordflow">if</span> (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;has_extension == <a class="code hl_define" href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>            g_debug (<span class="stringliteral">&quot;no XRANDR extension&quot;</span>);</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>        screen = gdk_screen_get_default ();</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>        brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window = gdk_screen_get_root_window (screen);</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>        display = gdk_display_get_default ();</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>        <span class="comment">/* as we a filtering by a window, we have to add an event type */</span></div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>        <span class="keywordflow">if</span> (!XRRQueryExtension (GDK_DISPLAY_XDISPLAY (gdk_display_get_default()), &amp;event_base, &amp;ignore)) {</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>            g_warning (<span class="stringliteral">&quot;can&#39;t get event_base for XRR&quot;</span>);</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>        }</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>        gdk_x11_register_standard_event_type (display, event_base, RRNotify + 1);</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>        gdk_window_add_filter (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window,</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>                       gpm_brightness_filter_xevents, brightness);</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>        <span class="comment">/* don&#39;t abort on error */</span></div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>        gdk_x11_display_error_trap_push (display);</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>        XRRSelectInput (GDK_DISPLAY_XDISPLAY (gdk_display_get_default()),</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>                GDK_WINDOW_XID (brightness-&gt;<a class="code hl_variable" href="structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669">priv</a>-&gt;root_window),</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>                RRScreenChangeNotifyMask |</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>                RROutputPropertyNotifyMask); <span class="comment">/* &lt;--- the only one we need, but see rh:345551 */</span></div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>        gdk_display_flush (display);</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        <span class="keywordflow">if</span> (gdk_x11_display_error_trap_pop (display))</div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>            g_warning (<span class="stringliteral">&quot;failed to select XRRSelectInput&quot;</span>);</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span> </div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>        <span class="comment">/* create cache of XRRScreenResources as XRRGetScreenResources() is slow */</span></div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>        gpm_brightness_update_cache (brightness);</div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    }</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>    g_debug (<span class="stringliteral">&quot;No XRandR brightness backend; using sysfs fallback only&quot;</span>);</div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>}</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span> </div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span><a class="code hl_struct" href="structGpmBrightness.html">GpmBrightness</a> *</div>
+<div class="foldopen" id="foldopen01015" data-start="{" data-end="}">
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"><a class="line" href="gpm-brightness_8c.html#a2b8133f9975aeb4140db501bb17deb37"> 1015</a></span><a class="code hl_function" href="gpm-brightness_8c.html#a2b8133f9975aeb4140db501bb17deb37">gpm_brightness_new</a> (<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>{</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>    <span class="keywordflow">if</span> (gpm_brightness_object != <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        g_object_ref (gpm_brightness_object);</div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>        gpm_brightness_object = g_object_new (<a class="code hl_define" href="gpm-brightness_8h.html#a940b00fcf8b8de3419f5e0405376dc54">GPM_TYPE_BRIGHTNESS</a>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>        g_object_add_weak_pointer (gpm_brightness_object, &amp;gpm_brightness_object);</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    }</div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="gpm-brightness_8h.html#a209e20846d7c56571e55ff9262ecbeb0">GPM_BRIGHTNESS</a> (gpm_brightness_object);</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -1027,7 +1029,7 @@ $(document).ready(function(){initNavTree('gpm-brightness_8c_source.html',''); in
 <div class="ttc" id="aegg-discrete_8h_html"><div class="ttname"><a href="egg-discrete_8h.html">egg-discrete.h</a></div></div>
 <div class="ttc" id="afr-command-rar_8c_html_aa982111a96cd1739707949709230d0a5"><div class="ttname"><a href="fr-command-rar_8c.html#aa982111a96cd1739707949709230d0a5">command</a></div><div class="ttdeci">const gchar * command</div><div class="ttdef"><b>Definition</b> <a href="fr-command-rar_8c_source.html#l00059">fr-command-rar.c:59</a></div></div>
 <div class="ttc" id="agpm-brightness_8c_html_a1616d6ff184000d9c58fc8345e1c76e0"><div class="ttname"><a href="gpm-brightness_8c.html#a1616d6ff184000d9c58fc8345e1c76e0">GPM_SOLE_SETTER_USE_CACHE</a></div><div class="ttdeci">#define GPM_SOLE_SETTER_USE_CACHE</div><div class="ttdef"><b>Definition</b> <a href="gpm-brightness_8c_source.html#l00057">gpm-brightness.c:57</a></div></div>
-<div class="ttc" id="agpm-brightness_8c_html_a2b8133f9975aeb4140db501bb17deb37"><div class="ttname"><a href="gpm-brightness_8c.html#a2b8133f9975aeb4140db501bb17deb37">gpm_brightness_new</a></div><div class="ttdeci">GpmBrightness * gpm_brightness_new(void)</div><div class="ttdef"><b>Definition</b> <a href="gpm-brightness_8c_source.html#l01013">gpm-brightness.c:1013</a></div></div>
+<div class="ttc" id="agpm-brightness_8c_html_a2b8133f9975aeb4140db501bb17deb37"><div class="ttname"><a href="gpm-brightness_8c.html#a2b8133f9975aeb4140db501bb17deb37">gpm_brightness_new</a></div><div class="ttdeci">GpmBrightness * gpm_brightness_new(void)</div><div class="ttdef"><b>Definition</b> <a href="gpm-brightness_8c_source.html#l01015">gpm-brightness.c:1015</a></div></div>
 <div class="ttc" id="agpm-brightness_8c_html_a3470d68f8b5d6c0dc42bcb5f9c45fe38"><div class="ttname"><a href="gpm-brightness_8c.html#a3470d68f8b5d6c0dc42bcb5f9c45fe38">gpm_brightness_set</a></div><div class="ttdeci">gboolean gpm_brightness_set(GpmBrightness *brightness, guint percentage, gboolean *hw_changed)</div><div class="ttdef"><b>Definition</b> <a href="gpm-brightness_8c_source.html#l00663">gpm-brightness.c:663</a></div></div>
 <div class="ttc" id="agpm-brightness_8c_html_a62d7b3ca9eb1089aab0e094d5da41aaf"><div class="ttname"><a href="gpm-brightness_8c.html#a62d7b3ca9eb1089aab0e094d5da41aaf">gpm_brightness_get</a></div><div class="ttdeci">gboolean gpm_brightness_get(GpmBrightness *brightness, guint *percentage)</div><div class="ttdef"><b>Definition</b> <a href="gpm-brightness_8c_source.html#l00717">gpm-brightness.c:717</a></div></div>
 <div class="ttc" id="agpm-brightness_8c_html_ab8728f88b8b07d11d9288a1bb3da915f"><div class="ttname"><a href="gpm-brightness_8c.html#ab8728f88b8b07d11d9288a1bb3da915f">gpm_brightness_up</a></div><div class="ttdeci">gboolean gpm_brightness_up(GpmBrightness *brightness, gboolean *hw_changed)</div><div class="ttdef"><b>Definition</b> <a href="gpm-brightness_8c_source.html#l00774">gpm-brightness.c:774</a></div></div>
