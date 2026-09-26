@@ -1,5 +1,16 @@
 var NAVTREEINDEX199 =
 {
+"struct__MetaWindow.html#a2453c9db6325cb02435316e78d43d26a":[34,0,724,122],
+"struct__MetaWindow.html#a249badcae90b473c14ba77ef063bc203":[34,0,724,76],
+"struct__MetaWindow.html#a27d5b706935ea3ddb955764b96566f6f":[34,0,724,39],
+"struct__MetaWindow.html#a28648b3efca67ddf4f80b58793a12755":[34,0,724,18],
+"struct__MetaWindow.html#a2a0fc9748ae77b9fdb0b31afe84ef61c":[34,0,724,47],
+"struct__MetaWindow.html#a2e6bd6ce9810e251adbef8498f0cce1e":[34,0,724,58],
+"struct__MetaWindow.html#a317091e8a24a52ff00a34d5816d7e173":[34,0,724,56],
+"struct__MetaWindow.html#a320e4a91ec98bb4aa237698db926356e":[34,0,724,74],
+"struct__MetaWindow.html#a3217bc39776bf7fc04fc364eb94dd16e":[34,0,724,123],
+"struct__MetaWindow.html#a3297848e9c113ca14b84e2002b804485":[34,0,724,91],
+"struct__MetaWindow.html#a333780258cfbca4e8a3691479643863d":[34,0,724,21],
 "struct__MetaWindow.html#a359bd465e29925d6bc015400087389f6":[34,0,724,29],
 "struct__MetaWindow.html#a36f97f64ca5a1be3966a3315ea1167af":[34,0,724,65],
 "struct__MetaWindow.html#a37e1b169af070a1551faa75a637a189d":[34,0,724,104],
@@ -238,16 +249,5 @@ var NAVTREEINDEX199 =
 "struct__NaTrayApplet.html":[34,0,747],
 "struct__NaTrayApplet.html#a31347051f89bedf187f2758455ea2f53":[34,0,747,0],
 "struct__NaTrayApplet.html#ac718a9e94be0c6ca51ace6d32af2c609":[34,0,747,1],
-"struct__NaTrayAppletClass.html":[34,0,748],
-"struct__NaTrayAppletClass.html#a053573a139b5bb9984bfad53f35c54be":[34,0,748,0],
-"struct__NaTrayChild.html":[34,0,749],
-"struct__NaTrayChild.html#a05206f6f6faab8227f0914098757eebb":[34,0,749,0],
-"struct__NaTrayChild.html#a3bd41e1fd7dbc3b736451cf42868c3f8":[34,0,749,2],
-"struct__NaTrayChild.html#a45471430b42cf22e8002250a192c2193":[34,0,749,4],
-"struct__NaTrayChild.html#a5df5001c2ef6f5e1382373c09c2629c3":[34,0,749,3],
-"struct__NaTrayChild.html#aba7b2a91b4539ff589043925380f7bc3":[34,0,749,1],
-"struct__NaTrayChild.html#ad345b8fee2a29ddd7f03577e0a7fc240":[34,0,749,5],
-"struct__NaTrayChildClass.html":[34,0,750],
-"struct__NaTrayChildClass.html#afd7feaa813c0fe7bd29a980eafbb8a08":[34,0,750,0],
-"struct__NaTrayClass.html":[34,0,751]
+"struct__NaTrayAppletClass.html":[34,0,748]
 };

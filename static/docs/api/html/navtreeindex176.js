@@ -1,5 +1,16 @@
 var NAVTREEINDEX176 =
 {
+"structGpmBacklightClass.html":[34,0,1306],
+"structGpmBacklightClass.html#a00973d740384258581a01b7f7f25b978":[34,0,1306,0],
+"structGpmBacklightClass.html#a45288a8beb7c2959ca68f842ef2d5b89":[34,0,1306,1],
+"structGpmBrightness.html":[34,0,1307],
+"structGpmBrightness.html#a2dc6a8f6804fc133da74de040ae15696":[34,0,1307,0],
+"structGpmBrightness.html#a533e88e45393ae391fc0f592c76e4669":[34,0,1307,1],
+"structGpmBrightnessClass.html":[34,0,1308],
+"structGpmBrightnessClass.html#a3a8cd3519b42c8cad0e9035271b50356":[34,0,1308,1],
+"structGpmBrightnessClass.html#a9163bf7038c63413bda82d113780f840":[34,0,1308,0],
+"structGpmButton.html":[34,0,1309],
+"structGpmButton.html#a3159d984afa801f97432480e0951e6d5":[34,0,1309,1],
 "structGpmButton.html#a6c7e2fad6eb6a69d925f4eaedd53b925":[34,0,1309,0],
 "structGpmButtonClass.html":[34,0,1310],
 "structGpmButtonClass.html#a106b558d6862a36fed01515a5564f351":[34,0,1310,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX176 =
 "structMPEquationParserState.html#a3b6477873b39ff69750ebb1aee302fe0":[34,0,1466,0],
 "structMPEquationParserState.html#a4b833a275952df41f2a5b3676d48ca17":[34,0,1466,8],
 "structMPEquationParserState.html#a570545ff47dd84c05d2e407e0f9301d2":[34,0,1466,9],
-"structMPEquationParserState.html#a632725e906b31a8a56c7adfbfaec2316":[34,0,1466,5],
-"structMPEquationParserState.html#a809bca6e51d9b2f75776b23ee15940e2":[34,0,1466,1],
-"structMPEquationParserState.html#a89169ac37d95c07bb8621544e2dab13a":[34,0,1466,4],
-"structMPEquationParserState.html#a9f03602a910dc951ef26a3db5bee3d0d":[34,0,1466,2],
-"structMPEquationParserState.html#ad9efb3d895752a8e619a2163352b094d":[34,0,1466,6],
-"structMPNumber.html":[34,0,1467],
-"structMPNumber.html#af8d578709bd1cc98cdb8574d84d0ba6d":[34,0,1467,0],
-"structMateIconData.html":[34,0,1408],
-"structMateIconData.html#a15b01647ad2ec7812207bca1ca468c39":[34,0,1408,1],
-"structMateIconData.html#a2f11ea49cd345a70d5b50dbf35c268d3":[34,0,1408,6],
-"structMateIconData.html#a7340eb565507deb169996b4a2dc458d1":[34,0,1408,7],
-"structMateIconData.html#a7516e7d9c16abaa0fef99a85b586c6b0":[34,0,1408,3]
+"structMPEquationParserState.html#a632725e906b31a8a56c7adfbfaec2316":[34,0,1466,5]
 };

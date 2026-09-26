@@ -1,5 +1,16 @@
 var NAVTREEINDEX172 =
 {
+"structCajaIconRubberbandInfo.html#a2e973d8de0d5868760280d8621caee06":[34,0,1125,5],
+"structCajaIconRubberbandInfo.html#a51b650519829355bdfcdac425907ca54":[34,0,1125,3],
+"structCajaIconRubberbandInfo.html#a66b5d4a0403ceebe9ae9e6ac0977a749":[34,0,1125,6],
+"structCajaIconRubberbandInfo.html#a6f3c007bfc2160a4792e0e1716170cb8":[34,0,1125,2],
+"structCajaIconRubberbandInfo.html#a82851bc9a2eeebb10d2a51387f422a2f":[34,0,1125,7],
+"structCajaIconRubberbandInfo.html#a8e87bd5f786c16f2f1c77047170e1eae":[34,0,1125,4],
+"structCajaIconRubberbandInfo.html#aa013fa77d3150132500e6ad10e19227f":[34,0,1125,8],
+"structCajaImagePropertiesPage.html":[34,0,1126],
+"structCajaImagePropertiesPage.html#a6f5180f286f8c28bf90dd8a53be1b36f":[34,0,1126,0],
+"structCajaImagePropertiesPage.html#af08fe24a6935533e07fd5b70b5971ab1":[34,0,1126,1],
+"structCajaImagePropertiesPageClass.html":[34,0,1127],
 "structCajaImagePropertiesPageClass.html#a9a4217b0dc53762e0d4c8cf04658db0d":[34,0,1127,0],
 "structCajaInformationPanel.html":[34,0,1128],
 "structCajaInformationPanel.html#a06995cdac925a6cf34be827b48c6edf5":[34,0,1128,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX172 =
 "structCalendarTask.html#a2dc0f96f1b89e5a85485463f0776c89b":[34,0,1186,5],
 "structCalendarTask.html#a4b8aac383b2c21ac72b6738819da3708":[34,0,1186,9],
 "structCalendarTask.html#a5400fc91f96a32d01398415541dfa7fe":[34,0,1186,1],
-"structCalendarTask.html#a9c72a608e2b47fa80eedacdf9654f453":[34,0,1186,7],
-"structCalendarTask.html#afd648967ab40509dc59002d90ae3493f":[34,0,1186,2],
-"structCalendarTask.html#afec6234dea432177a45426aa305a7c4f":[34,0,1186,6],
-"structCalendarTask.html#aff3d7b1576ed590a41fbde43c8dbdaa4":[34,0,1186,8],
-"structCappDesktopFile.html":[34,0,1187],
-"structCappDesktopFile.html#a15c69c8f8825a8788703b33821937da2":[34,0,1187,1],
-"structCappDesktopFile.html#a6f2d661d7d1be0d03e34cd8e2ac990a2":[34,0,1187,0],
-"structCappDesktopFileClass.html":[34,0,1188],
-"structCappDesktopFileClass.html#a1b7e76b8eb3d7ed2760e03bc7c8a6cd9":[34,0,1188,0],
-"structCappDesktopFileClass.html#a4aa974bbe30af2b67d934d6331d06f35":[34,0,1188,1],
-"structCappDesktopProvider.html":[34,0,1189],
-"structCappDesktopProvider.html#a59f7f8b4aac797edb803a3e2fe4c6d68":[34,0,1189,0]
+"structCalendarTask.html#a9c72a608e2b47fa80eedacdf9654f453":[34,0,1186,7]
 };

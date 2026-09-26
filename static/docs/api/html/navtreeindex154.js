@@ -1,5 +1,16 @@
 var NAVTREEINDEX154 =
 {
+"pluma-io-error-message-area_8c.html#af4ac3c8c15c272976adaac19406a2823":[35,0,0,34,1,45,9],
+"pluma-io-error-message-area_8c.html#afcb0500129ff6f01aa1646b4b80d64a2":[35,0,0,34,1,45,6],
+"pluma-io-error-message-area_8c_source.html":[35,0,0,34,1,45],
+"pluma-io-error-message-area_8h.html":[35,0,0,34,1,46],
+"pluma-io-error-message-area_8h.html#a10d4b9c6ad23d53c1e762ac2ac1c9648":[35,0,0,34,1,46,6],
+"pluma-io-error-message-area_8h.html#a491b05da544c615494b15e30c3ae8d33":[35,0,0,34,1,46,2],
+"pluma-io-error-message-area_8h.html#a4df80e866e69753d1b43261be1c0fef3":[35,0,0,34,1,46,3],
+"pluma-io-error-message-area_8h.html#a8b3034d4e66c030a759be4ca06ce94f0":[35,0,0,34,1,46,0],
+"pluma-io-error-message-area_8h.html#a99c58d71664289b3d6c5905647a9e656":[35,0,0,34,1,46,4],
+"pluma-io-error-message-area_8h.html#aaa52e3b8d21cfeade457825046adb69d":[35,0,0,34,1,46,7],
+"pluma-io-error-message-area_8h.html#ae67e420a29e1471ce7d257da46b5de1f":[35,0,0,34,1,46,1],
 "pluma-io-error-message-area_8h.html#af4ac3c8c15c272976adaac19406a2823":[35,0,0,34,1,46,8],
 "pluma-io-error-message-area_8h.html#afcb0500129ff6f01aa1646b4b80d64a2":[35,0,0,34,1,46,5],
 "pluma-io-error-message-area_8h_source.html":[35,0,0,34,1,46],
@@ -238,16 +249,5 @@ var NAVTREEINDEX154 =
 "pluma-panel_8h.html#a23d9a722c46a4e0da33940d4749680ed":[35,0,0,34,1,60,13],
 "pluma-panel_8h.html#a47b2d2df34a333e5b8539a54c89ca6ba":[35,0,0,34,1,60,7],
 "pluma-panel_8h.html#a5731a79570824ab65f273e857b510335":[35,0,0,34,1,60,14],
-"pluma-panel_8h.html#a628f4fc5ef11dccb36bf725037f9a756":[35,0,0,34,1,60,4],
-"pluma-panel_8h.html#a75a4448279c9b104a14e5b1fcb86bedf":[35,0,0,34,1,60,9],
-"pluma-panel_8h.html#a77f128f55bb0e04f835d70f9c506e605":[35,0,0,34,1,60,11],
-"pluma-panel_8h.html#a85ad06cc2bad1630447bfbb8b0d6ff3f":[35,0,0,34,1,60,15],
-"pluma-panel_8h.html#a8658e90dc90367e0f38b2d45d0cf15b3":[35,0,0,34,1,60,6],
-"pluma-panel_8h.html#aa70c15308c99267e693d5a3c6840be29":[35,0,0,34,1,60,12],
-"pluma-panel_8h.html#aa7fceac7fffbc9392e0a835cbad9f474":[35,0,0,34,1,60,8],
-"pluma-panel_8h.html#aac397eee7f7abbacb8ad4385d553aac4":[35,0,0,34,1,60,5],
-"pluma-panel_8h.html#ab533f8051618313eec686eb66b56df04":[35,0,0,34,1,60,10],
-"pluma-panel_8h.html#abba2d2fac60d18376b534527560b986b":[35,0,0,34,1,60,3],
-"pluma-panel_8h.html#ac983fc928d6801cf26acab238cfb539e":[35,0,0,34,1,60,21],
-"pluma-panel_8h.html#ae8c876a26f910ecb68711d2ea34799b4":[35,0,0,34,1,60,20]
+"pluma-panel_8h.html#a628f4fc5ef11dccb36bf725037f9a756":[35,0,0,34,1,60,4]
 };

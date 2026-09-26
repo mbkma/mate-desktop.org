@@ -1,5 +1,16 @@
 var NAVTREEINDEX200 =
 {
+"struct__NaTrayAppletClass.html#a053573a139b5bb9984bfad53f35c54be":[34,0,748,0],
+"struct__NaTrayChild.html":[34,0,749],
+"struct__NaTrayChild.html#a05206f6f6faab8227f0914098757eebb":[34,0,749,0],
+"struct__NaTrayChild.html#a3bd41e1fd7dbc3b736451cf42868c3f8":[34,0,749,2],
+"struct__NaTrayChild.html#a45471430b42cf22e8002250a192c2193":[34,0,749,4],
+"struct__NaTrayChild.html#a5df5001c2ef6f5e1382373c09c2629c3":[34,0,749,3],
+"struct__NaTrayChild.html#aba7b2a91b4539ff589043925380f7bc3":[34,0,749,1],
+"struct__NaTrayChild.html#ad345b8fee2a29ddd7f03577e0a7fc240":[34,0,749,5],
+"struct__NaTrayChildClass.html":[34,0,750],
+"struct__NaTrayChildClass.html#afd7feaa813c0fe7bd29a980eafbb8a08":[34,0,750,0],
+"struct__NaTrayClass.html":[34,0,751],
 "struct__NaTrayClass.html#ab92cfa4b673f294bbda76808181f8d65":[34,0,751,0],
 "struct__NaTrayManager.html":[34,0,752],
 "struct__NaTrayManager.html#a061a928a14c0eb5c5361761c7cf06ef3":[34,0,752,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX200 =
 "struct__PlumaDocumentClass.html#a3d9724569437d90574781addf5adde19":[34,0,808,1],
 "struct__PlumaDocumentClass.html#a994f343b5a4e58206693214988bbe269":[34,0,808,5],
 "struct__PlumaDocumentClass.html#a9ffdfcab574992ddd5e260f7571dda7a":[34,0,808,6],
-"struct__PlumaDocumentClass.html#ac31c110fe1ced151072284d3a5f1b43c":[34,0,808,0],
-"struct__PlumaDocumentClass.html#aea88af06ef58a0cb1bb909d8ea319bb1":[34,0,808,4],
-"struct__PlumaDocumentInputStream.html":[34,0,809],
-"struct__PlumaDocumentInputStream.html#a09be6cbeecf49ff446c0b0d66a8743e7":[34,0,809,1],
-"struct__PlumaDocumentInputStream.html#af2658eb52255c45c30b0508fa5f73ca1":[34,0,809,0],
-"struct__PlumaDocumentInputStreamClass.html":[34,0,810],
-"struct__PlumaDocumentInputStreamClass.html#a5c8e5af70d0bdd1cd1fc4bdc4cb6dd47":[34,0,810,0],
-"struct__PlumaDocumentLoader.html":[34,0,811],
-"struct__PlumaDocumentLoader.html#a801cb97a4f85d648800717fba7a05b17":[34,0,811,1],
-"struct__PlumaDocumentLoader.html#ad4db911b4359119a6bcec8e4510abc62":[34,0,811,0],
-"struct__PlumaDocumentLoaderClass.html":[34,0,812],
-"struct__PlumaDocumentLoaderClass.html#a6cfd7294e509876c441be1b28c913950":[34,0,812,1]
+"struct__PlumaDocumentClass.html#ac31c110fe1ced151072284d3a5f1b43c":[34,0,808,0]
 };

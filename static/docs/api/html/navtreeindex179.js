@@ -1,5 +1,16 @@
 var NAVTREEINDEX179 =
 {
+"structNABoxedClass.html#a0030bb3f25091f7d64e7d8a15ad6e655":[34,0,1538,0],
+"structNABoxedClass.html#a623e8d369ab6dd3fe6c4d662b3d5b122":[34,0,1538,1],
+"structNADataBoxed.html":[34,0,1539],
+"structNADataBoxed.html#a476b4b974fbc10aa2e11640bb9bd46ba":[34,0,1539,1],
+"structNADataBoxed.html#a56ac6f1f6e21f332d1e49f33cec02729":[34,0,1539,0],
+"structNADataBoxedClass.html":[34,0,1540],
+"structNADataBoxedClass.html#a4cc25f93fb96235d60d41c46608dd7d9":[34,0,1540,1],
+"structNADataBoxedClass.html#aafacecef1062fd185dd0e9b96d8b351c":[34,0,1540,0],
+"structNADataDef.html":[34,0,1541],
+"structNADataDef.html#a02e6149f21f4e4e9b9aeeb6c95d5a249":[34,0,1541,1],
+"structNADataDef.html#a109072a53be676f23a0906f4e65180f9":[34,0,1541,18],
 "structNADataDef.html#a20410a2ab0359b91bb47e3acff98b1e3":[34,0,1541,17],
 "structNADataDef.html#a28e929e5778a81d59b7a83b81d4339ae":[34,0,1541,14],
 "structNADataDef.html#a3cad612396e47a618e984ff07083deca":[34,0,1541,19],
@@ -238,16 +249,5 @@ var NAVTREEINDEX179 =
 "structNATokens.html":[34,0,1589],
 "structNATokens.html#a37985d7f348b27ec0c3252c46626b30f":[34,0,1589,0],
 "structNATokens.html#adb4342e68e7beaa7ee7b66d287c82ffa":[34,0,1589,1],
-"structNATokensClass.html":[34,0,1590],
-"structNATokensClass.html#a774b4df18eaccfc7bd4097943ed78a40":[34,0,1590,0],
-"structNATokensClass.html#ae2f81c23b79713a3936e5b9a08b7da8f":[34,0,1590,1],
-"structNATracker.html":[34,0,1591],
-"structNATracker.html#a048c6b2ade215840b66716b1331768eb":[34,0,1591,1],
-"structNATracker.html#a3ef9ea00129615ad54f665a57d5abd82":[34,0,1591,0],
-"structNATrackerClass.html":[34,0,1592],
-"structNATrackerClass.html#a76ef7635e433dc06713956226adb01bb":[34,0,1592,1],
-"structNATrackerClass.html#ab488367fc6ea8d71fdb375e769775f4b":[34,0,1592,0],
-"structNAUpdater.html":[34,0,1593],
-"structNAUpdater.html#a065389a36451dae98d20a52a3563afc1":[34,0,1593,0],
-"structNAUpdater.html#a4fdef7945770ae82221e73d2fc42cbee":[34,0,1593,1]
+"structNATokensClass.html":[34,0,1590]
 };

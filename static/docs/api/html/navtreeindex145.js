@@ -1,5 +1,15 @@
 var NAVTREEINDEX145 =
 {
+"panel-icon-names_8h.html#a200d62b8da06ad0ec9c9b10bee8757d5":[35,0,0,22,2,46,0],
+"panel-icon-names_8h.html#a26c6c2d92cb8d7406b3f12aad60ad1d9":[35,0,0,22,2,46,34],
+"panel-icon-names_8h.html#a2efc64c7faafb36dc36db15ee69d44b3":[35,0,0,22,2,46,32],
+"panel-icon-names_8h.html#a31f4832ba3b60589e3f911b0174dd06f":[35,0,0,22,2,46,14],
+"panel-icon-names_8h.html#a34f8799f50b74e414ad116334c545c62":[35,0,0,22,2,46,9],
+"panel-icon-names_8h.html#a3793e76bd2678b4e5ec4672172e40f04":[35,0,0,22,2,46,2],
+"panel-icon-names_8h.html#a3c1c61c12d820d7ab4230c4e351e8bcd":[35,0,0,22,2,46,7],
+"panel-icon-names_8h.html#a3dda9d0d79e32f24b64c74bcf28f8e0e":[35,0,0,22,2,46,27],
+"panel-icon-names_8h.html#a40fcf0b25b4d1ec82e54d087dfc261dd":[35,0,0,22,2,46,17],
+"panel-icon-names_8h.html#a41809c1cefac22ac5b937ad36b6afd4d":[35,0,0,22,2,46,20],
 "panel-icon-names_8h.html#a5e51015417b9c2a3e4f58d788fb4b1da":[35,0,0,22,2,46,5],
 "panel-icon-names_8h.html#a673041720affd24cc3dbb83895e50196":[35,0,0,22,2,46,16],
 "panel-icon-names_8h.html#a6a819cda662df04455265d02d58b7df0":[35,0,0,22,2,46,26],
@@ -239,15 +249,5 @@ var NAVTREEINDEX145 =
 "panel-multimonitor_8c.html#a28c36045e9656c730a1994fb55c02b3c":[35,0,0,22,2,59,2],
 "panel-multimonitor_8c.html#a3fdd804b2c0122d1a9c687be871550eb":[35,0,0,22,2,59,5],
 "panel-multimonitor_8c.html#a432be053ce2be88534108c01657ee5cc":[35,0,0,22,2,59,11],
-"panel-multimonitor_8c.html#a59ad01704f8b88ba9fac520818f2b921":[35,0,0,22,2,59,0],
-"panel-multimonitor_8c.html#a61220572f9fdad10ed74a5586635cc00":[35,0,0,22,2,59,1],
-"panel-multimonitor_8c.html#a6624592c02d6413ea2749dc8bf0fc02e":[35,0,0,22,2,59,3],
-"panel-multimonitor_8c.html#a86cfd92d3c6c21f1cf86a8cc4b3d74ff":[35,0,0,22,2,59,8],
-"panel-multimonitor_8c.html#abf1a4ec897eb55d4f6517a1d839ff217":[35,0,0,22,2,59,7],
-"panel-multimonitor_8c.html#aeabaef3372fa44bbbaba9f538fca7b1b":[35,0,0,22,2,59,6],
-"panel-multimonitor_8c_source.html":[35,0,0,22,2,59],
-"panel-multimonitor_8h.html":[35,0,0,22,2,60],
-"panel-multimonitor_8h.html#a04c0cc7354f7ca4a0f50779e3132e1d0":[35,0,0,22,2,60,9],
-"panel-multimonitor_8h.html#a1a709b9613b823e32e16ca0f7214e240":[35,0,0,22,2,60,8],
-"panel-multimonitor_8h.html#a1b6676343f57e54fb8fe123bff2127ba":[35,0,0,22,2,60,3]
+"panel-multimonitor_8c.html#a59ad01704f8b88ba9fac520818f2b921":[35,0,0,22,2,59,0]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX151 =
 {
+"pluma-document-loader_8c.html#a53533619b0d9596a8ce41947a52efb27":[35,0,0,34,1,25,9],
+"pluma-document-loader_8c.html#a55aa7fd85a3c779ea3b5760ce2e54088":[35,0,0,34,1,25,8],
+"pluma-document-loader_8c.html#a695c03f6c6f1b81da5921c0a1e8f5b0e":[35,0,0,34,1,25,10],
+"pluma-document-loader_8c.html#a8bd54bfdd0c3d5a71e6cdb165ee5dd13":[35,0,0,34,1,25,3],
+"pluma-document-loader_8c.html#a8eb6029a8cefbeaa7b7130b25e4ed4e6":[35,0,0,34,1,25,6],
+"pluma-document-loader_8c.html#a9551cd2d694a771abac867fffd6882ac":[35,0,0,34,1,25,0],
+"pluma-document-loader_8c.html#abcc95277f8b1b1315f2bb9b12de215a3":[35,0,0,34,1,25,7],
+"pluma-document-loader_8c.html#afd0ce96472be84bf3efaa71187aa4205":[35,0,0,34,1,25,11],
+"pluma-document-loader_8c_source.html":[35,0,0,34,1,25],
+"pluma-document-loader_8h.html":[35,0,0,34,1,26],
+"pluma-document-loader_8h.html#a12f6d71e7d54ebf58b766998ad01adb1":[35,0,0,34,1,26,14],
 "pluma-document-loader_8h.html#a138a32ae6dcd394b857459c0d7bfb91e":[35,0,0,34,1,26,15],
 "pluma-document-loader_8h.html#a19c44ad40e0fb84639198624f8fc4820":[35,0,0,34,1,26,11],
 "pluma-document-loader_8h.html#a21c86c7597f62a26ec3541a966ecf183":[35,0,0,34,1,26,9],
@@ -238,16 +249,5 @@ var NAVTREEINDEX151 =
 "pluma-encodings-combo-box_8c_source.html":[35,0,0,34,1,35],
 "pluma-encodings-combo-box_8h.html":[35,0,0,34,1,36],
 "pluma-encodings-combo-box_8h.html#a0938226b899d047934d9760f049329fe":[35,0,0,34,1,36,9],
-"pluma-encodings-combo-box_8h.html#a1e1a69b5709c028b744579a8280f18cd":[35,0,0,34,1,36,13],
-"pluma-encodings-combo-box_8h.html#a4584972df2011f6e4e9f9b7c0c761764":[35,0,0,34,1,36,12],
-"pluma-encodings-combo-box_8h.html#a5214d12a2b3423bf288c31d12a89c7a3":[35,0,0,34,1,36,11],
-"pluma-encodings-combo-box_8h.html#ab017d7d753e4b62476e1ffdf142dad67":[35,0,0,34,1,36,6],
-"pluma-encodings-combo-box_8h.html#ac4518447f5b138bde0beda0fc008c69d":[35,0,0,34,1,36,10],
-"pluma-encodings-combo-box_8h.html#ac583c9df0a0f172a62d80183b5e1edef":[35,0,0,34,1,36,7],
-"pluma-encodings-combo-box_8h.html#acea692b2e45d2b6b8d0f4ef7e5535f49":[35,0,0,34,1,36,8],
-"pluma-encodings-combo-box_8h.html#ad379a8e7a3280b3a385d8f44f524e2c8":[35,0,0,34,1,36,5],
-"pluma-encodings-combo-box_8h.html#ad9411b559e1aa5a64f1923a046a464e4":[35,0,0,34,1,36,4],
-"pluma-encodings-combo-box_8h.html#adcb131f6aeba77f41a77f7210f6e48e9":[35,0,0,34,1,36,14],
-"pluma-encodings-combo-box_8h.html#ae0330545ed927942a6f42ff8120d7d22":[35,0,0,34,1,36,2],
-"pluma-encodings-combo-box_8h.html#ae67abf1f092b0a429c9db9ba6ee70a51":[35,0,0,34,1,36,3]
+"pluma-encodings-combo-box_8h.html#a1e1a69b5709c028b744579a8280f18cd":[35,0,0,34,1,36,13]
 };

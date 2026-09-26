@@ -1,5 +1,16 @@
 var NAVTREEINDEX206 =
 {
+"terminal-accels_8c.html#a2945e227b3cf2c8a5109ff2d97e35525":[35,0,0,30,0,8,54],
+"terminal-accels_8c.html#a2b54f27a21d1aa0d125459684c648297":[35,0,0,30,0,8,60],
+"terminal-accels_8c.html#a2e48f6fe076bc44e92aa04921c7d8b9f":[35,0,0,30,0,8,43],
+"terminal-accels_8c.html#a34eefb60097a88e80fbcf01822987d9b":[35,0,0,30,0,8,5],
+"terminal-accels_8c.html#a38145b5f4220dc8e8bb6c3936adafcc8":[35,0,0,30,0,8,21],
+"terminal-accels_8c.html#a3826525fc4412dcebb82582b82cf1097":[35,0,0,30,0,8,53],
+"terminal-accels_8c.html#a38276863ec29ad81f032e6f5d9f2f78c":[35,0,0,30,0,8,22],
+"terminal-accels_8c.html#a4590ab5bc9d318c3ac77c1fb3ed6da6a":[35,0,0,30,0,8,26],
+"terminal-accels_8c.html#a4c5fca5ab5bac42224cc66a643c6c9a1":[35,0,0,30,0,8,8],
+"terminal-accels_8c.html#a50f8844f03a9f404b036a9bc55e6e274":[35,0,0,30,0,8,9],
+"terminal-accels_8c.html#a523c3b56c6df738fe80ff01768d83c5d":[35,0,0,30,0,8,12],
 "terminal-accels_8c.html#a5566fbdb1e53636fb6a1b9a52c0508de":[35,0,0,30,0,8,3],
 "terminal-accels_8c.html#a56325406c8d0b74362a5bb6b08bb5ae3":[35,0,0,30,0,8,16],
 "terminal-accels_8c.html#a5929ba6224c6edaf4fdf09dbdc61b84d":[35,0,0,30,0,8,44],
@@ -238,16 +249,5 @@ var NAVTREEINDEX206 =
 "terminal-options_8c.html#a309e8ef7ebfe0382c0d999dee319dac6":[35,0,0,30,0,21,0],
 "terminal-options_8c.html#aa6b1e599a3afe189b05649fbc50e7687":[35,0,0,30,0,21,3],
 "terminal-options_8c.html#ac389c1a2dfa358bca01bde481718c259":[35,0,0,30,0,21,1],
-"terminal-options_8c.html#afeee6b2bb71a89010fcb59fa16c6e3e4":[35,0,0,30,0,21,2],
-"terminal-options_8c_source.html":[35,0,0,30,0,21],
-"terminal-options_8h.html":[35,0,0,30,0,22],
-"terminal-options_8h.html#a309e8ef7ebfe0382c0d999dee319dac6":[35,0,0,30,0,22,5],
-"terminal-options_8h.html#a84e1eef38224e15e37f161adff6779b1":[35,0,0,30,0,22,4],
-"terminal-options_8h.html#a84e1eef38224e15e37f161adff6779b1a1090b44869e6b75edd8001654986164b":[35,0,0,30,0,22,4,2],
-"terminal-options_8h.html#a84e1eef38224e15e37f161adff6779b1a1eb6b8ecdd1344c62c5c11070388d8fb":[35,0,0,30,0,22,4,0],
-"terminal-options_8h.html#a84e1eef38224e15e37f161adff6779b1a3f6f815cafd512ae1bb994e8d567b6d0":[35,0,0,30,0,22,4,1],
-"terminal-options_8h.html#a84e1eef38224e15e37f161adff6779b1aaa56232aab67da869250b3b48bb793c4":[35,0,0,30,0,22,4,3],
-"terminal-options_8h.html#a86db36c492a05ac84f07d91ac6de61c4":[35,0,0,30,0,22,3],
-"terminal-options_8h.html#aa6b1e599a3afe189b05649fbc50e7687":[35,0,0,30,0,22,8],
-"terminal-options_8h.html#ac389c1a2dfa358bca01bde481718c259":[35,0,0,30,0,22,6]
+"terminal-options_8c.html#afeee6b2bb71a89010fcb59fa16c6e3e4":[35,0,0,30,0,21,2]
 };

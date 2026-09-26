@@ -1,5 +1,16 @@
 var NAVTREEINDEX201 =
 {
+"struct__PlumaDocumentClass.html#aea88af06ef58a0cb1bb909d8ea319bb1":[34,0,808,4],
+"struct__PlumaDocumentInputStream.html":[34,0,809],
+"struct__PlumaDocumentInputStream.html#a09be6cbeecf49ff446c0b0d66a8743e7":[34,0,809,1],
+"struct__PlumaDocumentInputStream.html#af2658eb52255c45c30b0508fa5f73ca1":[34,0,809,0],
+"struct__PlumaDocumentInputStreamClass.html":[34,0,810],
+"struct__PlumaDocumentInputStreamClass.html#a5c8e5af70d0bdd1cd1fc4bdc4cb6dd47":[34,0,810,0],
+"struct__PlumaDocumentLoader.html":[34,0,811],
+"struct__PlumaDocumentLoader.html#a801cb97a4f85d648800717fba7a05b17":[34,0,811,1],
+"struct__PlumaDocumentLoader.html#ad4db911b4359119a6bcec8e4510abc62":[34,0,811,0],
+"struct__PlumaDocumentLoaderClass.html":[34,0,812],
+"struct__PlumaDocumentLoaderClass.html#a6cfd7294e509876c441be1b28c913950":[34,0,812,1],
 "struct__PlumaDocumentLoaderClass.html#af380d531d3143a1f67e7d633588425b9":[34,0,812,0],
 "struct__PlumaDocumentOutputStream.html":[34,0,813],
 "struct__PlumaDocumentOutputStream.html#a9c49405949574712e593224f08922001":[34,0,813,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX201 =
 "struct__PlumaTrailSavePlugin.html":[34,0,887],
 "struct__PlumaTrailSavePlugin.html#a45a85f70e18fb042ab7d0e0fe03a77a5":[34,0,887,0],
 "struct__PlumaTrailSavePlugin.html#a58171d594b14257d7c3fc3db16bff5ec":[34,0,887,1],
-"struct__PlumaTrailSavePluginClass.html":[34,0,888],
-"struct__PlumaTrailSavePluginClass.html#ac96044de455e7eba2b28cd8545ebad3a":[34,0,888,0],
-"struct__PlumaView.html":[34,0,889],
-"struct__PlumaView.html#a361aaafaec2939bd88f296b97808aaa3":[34,0,889,0],
-"struct__PlumaView.html#af1f10e6dce52fedc48ec7d01bf51c8a3":[34,0,889,1],
-"struct__PlumaViewActivatableInterface.html":[34,0,890],
-"struct__PlumaViewActivatableInterface.html#a0b521c23f6a122bc16a8d5ed04d6b502":[34,0,890,2],
-"struct__PlumaViewActivatableInterface.html#a15707441c6a87ede3886ba987460a6fd":[34,0,890,0],
-"struct__PlumaViewActivatableInterface.html#ab5dcf68afe830f2408b8df78f450752a":[34,0,890,1],
-"struct__PlumaViewClass.html":[34,0,891],
-"struct__PlumaViewClass.html#a249fd435f79217f7b4dd64b0c36d52f9":[34,0,891,3],
-"struct__PlumaViewClass.html#a32b07e7c1aee85963ff8c15b00ef0efd":[34,0,891,1]
+"struct__PlumaTrailSavePluginClass.html":[34,0,888]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX114 =
 {
+"matekbd-desktop-config_8h.html#acf4f5f83f3a0dd91007b7831b2eed746":[35,0,0,7,0,2,5],
+"matekbd-desktop-config_8h.html#ae7dde7f1770b73ba272fe6abb2041d1c":[35,0,0,7,0,2,4],
+"matekbd-desktop-config_8h_source.html":[35,0,0,7,0,2],
+"matekbd-indicator-config_8c.html":[35,0,0,7,0,3],
+"matekbd-indicator-config_8c.html#a1fd6b2029474324c2d22b5b0466e5a75":[35,0,0,7,0,3,3],
+"matekbd-indicator-config_8c.html#a29e48cb159f7a8c5c9d527d320ef3a2e":[35,0,0,7,0,3,15],
+"matekbd-indicator-config_8c.html#a32eb5eea091cc24a9ae6aea8c604970b":[35,0,0,7,0,3,9],
+"matekbd-indicator-config_8c.html#a3994e872d5c7915e44c743af6a65fbbd":[35,0,0,7,0,3,13],
+"matekbd-indicator-config_8c.html#a43369e6551362a7a23879fe746a391bb":[35,0,0,7,0,3,10],
+"matekbd-indicator-config_8c.html#a4b043d7c59d0097a51f414a2879fd483":[35,0,0,7,0,3,2],
 "matekbd-indicator-config_8c.html#a69b574bfe29eaac4218740027c0a44ba":[35,0,0,7,0,3,5],
 "matekbd-indicator-config_8c.html#a6f99509f842726ce4647d7ce296afc8d":[35,0,0,7,0,3,8],
 "matekbd-indicator-config_8c.html#a84d071862cd4d3883b53bd6c34b9cec3":[35,0,0,7,0,3,14],
@@ -239,15 +249,5 @@ var NAVTREEINDEX114 =
 "matemenu-tree_8c.html#a07ce7045f9025e775bc6d9ff19aca83a":[35,0,0,19,0,4,49],
 "matemenu-tree_8c.html#a0ed195e266bcba7636b85df3b681a155":[35,0,0,19,0,4,46],
 "matemenu-tree_8c.html#a1099bf2adb6a39d716958a757a9625d1":[35,0,0,19,0,4,53],
-"matemenu-tree_8c.html#a1b7bd65296ae4e7090db0ead02662ace":[35,0,0,19,0,4,33],
-"matemenu-tree_8c.html#a20822ccfe5b860e1c436a705511b4a48":[35,0,0,19,0,4,25],
-"matemenu-tree_8c.html#a24d57ec7901003bae102a66cc39a24c2":[35,0,0,19,0,4,34],
-"matemenu-tree_8c.html#a25ebd0494f2806d68c6c5596b29f214d":[35,0,0,19,0,4,48],
-"matemenu-tree_8c.html#a2c86427ed9a02d43402d50dd2f48908b":[35,0,0,19,0,4,57],
-"matemenu-tree_8c.html#a2f1d7c0f010aff97310574d77983fe24":[35,0,0,19,0,4,31],
-"matemenu-tree_8c.html#a30a191bd1ef21a3fb5dbc921f84e435b":[35,0,0,19,0,4,3],
-"matemenu-tree_8c.html#a33c64045106f4b3b3a3b483dfcc634e7":[35,0,0,19,0,4,8],
-"matemenu-tree_8c.html#a33c64045106f4b3b3a3b483dfcc634e7a099e9744f3a94cc272b0201bf8d9ff07":[35,0,0,19,0,4,8,0],
-"matemenu-tree_8c.html#a33c64045106f4b3b3a3b483dfcc634e7a478170bd02a6760b3a30b30df81dc91e":[35,0,0,19,0,4,8,3],
-"matemenu-tree_8c.html#a33c64045106f4b3b3a3b483dfcc634e7a4fbe1d78a26a4e17b4096912e0c6a415":[35,0,0,19,0,4,8,2]
+"matemenu-tree_8c.html#a1b7bd65296ae4e7090db0ead02662ace":[35,0,0,19,0,4,33]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX194 =
 {
+"struct__MateColorSelectionDialog.html#a3d3e6d158bebde9ecda126fced01567a":[34,0,571,0],
+"struct__MateColorSelectionDialogClass.html":[34,0,572],
+"struct__MateColorSelectionDialogClass.html#a18ddce66a2d27d6d3818861a229ab232":[34,0,572,4],
+"struct__MateColorSelectionDialogClass.html#a503fe2fb96600626247f7cff2be5c5c8":[34,0,572,2],
+"struct__MateColorSelectionDialogClass.html#a51113ef32f6840ba479b55f64e119ad2":[34,0,572,0],
+"struct__MateColorSelectionDialogClass.html#aac697acd309b19382ebe66b0893aaba4":[34,0,572,3],
+"struct__MateColorSelectionDialogClass.html#afc8f38417edb26f5d67da290e2af8b44":[34,0,572,1],
+"struct__MateDACapplet.html":[34,0,573],
+"struct__MateDACapplet.html#a1002c95dbd567f75d2931b9ffbb8f3b4":[34,0,573,21],
+"struct__MateDACapplet.html#a1704a7ebb2b254bcee1a458d530f00e6":[34,0,573,13],
+"struct__MateDACapplet.html#a175d0e7eb1e394fbcc0525a251ee6f6b":[34,0,573,37],
 "struct__MateDACapplet.html#a1b2280242e11a54f0b4f380129c02d60":[34,0,573,38],
 "struct__MateDACapplet.html#a2c41c58b93a32ecb1bd04d23c7cf71f8":[34,0,573,3],
 "struct__MateDACapplet.html#a338aba2dae5d3b2e60bf75fe17d1ee3c":[34,0,573,8],
@@ -238,16 +249,5 @@ var NAVTREEINDEX194 =
 "struct__MateMDIChild.html#a5802aa3bdd9fa7601f7528c3cec98176":[34,0,620,5],
 "struct__MateMDIChild.html#ab7e50a0f43217f2a594858b945e1f09a":[34,0,620,2],
 "struct__MateMDIChild.html#acda18fdefbb92c17d6583a9684eb6f4c":[34,0,620,4],
-"struct__MateMDIChild.html#af7b3bb7b2118e6cf26f088982cc58d06":[34,0,620,3],
-"struct__MateMDIChild.html#afa57fbe84704e5b839d65e12b64e0973":[34,0,620,0],
-"struct__MateMDIChildClass.html":[34,0,621],
-"struct__MateMDIChildClass.html#a71de172b31439b3477c442882072e470":[34,0,621,1],
-"struct__MateMDIChildClass.html#a79da20923c7193e549cfce78516ef0f4":[34,0,621,2],
-"struct__MateMDIChildClass.html#a83df2148dbb1f6cea672983a86642083":[34,0,621,4],
-"struct__MateMDIChildClass.html#aae37d58de3a9de818e81bf0e4309fc7a":[34,0,621,3],
-"struct__MateMDIChildClass.html#af8d58567f196ae922abe86f4e55746d6":[34,0,621,0],
-"struct__MateMDIClass.html":[34,0,622],
-"struct__MateMDIClass.html#a0022e35526548e6fd33bd82ef97a3582":[34,0,622,6],
-"struct__MateMDIClass.html#a0d944c61272a866d7558d37107bc19f7":[34,0,622,0],
-"struct__MateMDIClass.html#a33f18ffacfd90f67af3d87657a350b2b":[34,0,622,3]
+"struct__MateMDIChild.html#af7b3bb7b2118e6cf26f088982cc58d06":[34,0,620,3]
 };

@@ -3,6 +3,7 @@ var panel_toplevel_8c =
     [ "ANIMATION_TIME_FAST", "panel-toplevel_8c.html#a406c5a754fd2587103298700d1495bac", null ],
     [ "ANIMATION_TIME_MEDIUM", "panel-toplevel_8c.html#a5789c15f65e4e67d8e54212cb5a9208b", null ],
     [ "ANIMATION_TIME_SLOW", "panel-toplevel_8c.html#ac53d16620278cca59ea3a93e3c6b350f", null ],
+    [ "AUTO_HIDE_HIT_MARGIN", "panel-toplevel_8c.html#acef2c9e16f02f3afc952c60ef77c5344", null ],
     [ "DEFAULT_ARROW_SIZE", "panel-toplevel_8c.html#ae6c32826dfdbdd5ff3dae339eea9fb00", null ],
     [ "DEFAULT_AUTO_HIDE_SIZE", "panel-toplevel_8c.html#a572cc5cb90f7eb915b500c3b53b6295b", null ],
     [ "DEFAULT_DND_THRESHOLD", "panel-toplevel_8c.html#ad063ea8d5cd30a82a6dff4e7a46a9a30", null ],

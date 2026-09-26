@@ -1,5 +1,16 @@
 var NAVTREEINDEX197 =
 {
+"struct__MetaAlphaGradientSpec.html":[34,0,692],
+"struct__MetaAlphaGradientSpec.html#a7657b9bac45bb6a09834274aff20348d":[34,0,692,1],
+"struct__MetaAlphaGradientSpec.html#a9c9d1f65cb0a8032acd2ac6576febe73":[34,0,692,0],
+"struct__MetaAlphaGradientSpec.html#ace230d1e281765b0799b005e1d6c7cbc":[34,0,692,2],
+"struct__MetaButtonLayout.html":[34,0,693],
+"struct__MetaButtonLayout.html#a035bf21cfdd64926d2503ad6c10b7e91":[34,0,693,0],
+"struct__MetaButtonLayout.html#a4c271b530940642652217b835c607aea":[34,0,693,1],
+"struct__MetaButtonLayout.html#a961fc04d89fd2c87a58f19edae482412":[34,0,693,3],
+"struct__MetaButtonLayout.html#ab6a6f59bbf2673b0f48e2a014f6679bf":[34,0,693,2],
+"struct__MetaButtonSpace.html":[34,0,694],
+"struct__MetaButtonSpace.html#a0bf75f7c212518bbd40f38ade76cbc07":[34,0,694,0],
 "struct__MetaButtonSpace.html#ace5dfa5b8798591553e65931b5d5fdc0":[34,0,694,1],
 "struct__MetaColorSpec.html":[34,0,695],
 "struct__MetaColorSpec.html#a2b8704b9b673bfd42d4162cbfb9b5c95":[34,0,695,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX197 =
 "struct__MetaFrameGeometry.html#a97b7e97f7013f1239670827ab137d71a":[34,0,705,5],
 "struct__MetaFrameGeometry.html#a9a25d0e33269d1710b7ab4bf482f24aa":[34,0,705,24],
 "struct__MetaFrameGeometry.html#a9ce9a6593da8424f2e602dd1e77f6cb4":[34,0,705,29],
-"struct__MetaFrameGeometry.html#aa292d28bf53d103975ea6a9d2d6d22af":[34,0,705,23],
-"struct__MetaFrameGeometry.html#aa41d42938d7b71dfec1a12ce33263b94":[34,0,705,20],
-"struct__MetaFrameGeometry.html#aab129ed0777f8c0dda456783028aa503":[34,0,705,32],
-"struct__MetaFrameGeometry.html#ab40d931074fa9d6b8bb5b7cc78e0b4f9":[34,0,705,28],
-"struct__MetaFrameGeometry.html#acabf68c21901abad94f1365df1703cfe":[34,0,705,13],
-"struct__MetaFrameGeometry.html#ad17962c0dbe03c0e940a432f48d7d876":[34,0,705,25],
-"struct__MetaFrameGeometry.html#ae57f7d73ac31e2fd88d70912c8ddbac4":[34,0,705,31],
-"struct__MetaFrameGeometry.html#ae7a5f6020813fb7ad9a5cca9ba8b10e6":[34,0,705,10],
-"struct__MetaFrameGeometry.html#aec5f8847a6ec0503a933ba5f73a6059a":[34,0,705,6],
-"struct__MetaFrameGeometry.html#aec8bb6e7400f3c6eb5faefe400b453c8":[34,0,705,0],
-"struct__MetaFrameGeometry.html#af516a03b75c31afa2db86c6c9a95f864":[34,0,705,2],
-"struct__MetaFrameGeometry.html#afc8c808bcf74400862f211e8f627b78c":[34,0,705,8]
+"struct__MetaFrameGeometry.html#aa292d28bf53d103975ea6a9d2d6d22af":[34,0,705,23]
 };

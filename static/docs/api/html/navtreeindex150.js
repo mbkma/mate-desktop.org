@@ -1,5 +1,16 @@
 var NAVTREEINDEX150 =
 {
+"pluma-close-confirmation-dialog_8c.html#a4dcb747f0e7d80c1dfab528de0789f8a":[35,0,0,34,1,0,0,3],
+"pluma-close-confirmation-dialog_8c.html#a62912e01b262140f1bfa16967bb1d7ad":[35,0,0,34,1,0,0,1],
+"pluma-close-confirmation-dialog_8c.html#a74c33d3ce47f260b4c3630b5027c5a68":[35,0,0,34,1,0,0,4],
+"pluma-close-confirmation-dialog_8c.html#aae12255067aba4a24b92f41723554fb5":[35,0,0,34,1,0,0,0],
+"pluma-close-confirmation-dialog_8c.html#aec3714bb4c7fe635255e3e9eee3cafbb":[35,0,0,34,1,0,0,2],
+"pluma-close-confirmation-dialog_8c_source.html":[35,0,0,34,1,0,0],
+"pluma-close-confirmation-dialog_8h.html":[35,0,0,34,1,0,1],
+"pluma-close-confirmation-dialog_8h.html#a0ef47505dcbeeb75c954da5f07af5a19":[35,0,0,34,1,0,1,4],
+"pluma-close-confirmation-dialog_8h.html#a3b5006a68d4473b4a84c0abadeffb50a":[35,0,0,34,1,0,1,3],
+"pluma-close-confirmation-dialog_8h.html#a4dcb747f0e7d80c1dfab528de0789f8a":[35,0,0,34,1,0,1,14],
+"pluma-close-confirmation-dialog_8h.html#a62912e01b262140f1bfa16967bb1d7ad":[35,0,0,34,1,0,1,11],
 "pluma-close-confirmation-dialog_8h.html#a6b0f10511b3d0450bf731dbec85f3965":[35,0,0,34,1,0,1,7],
 "pluma-close-confirmation-dialog_8h.html#a71cf72e549a4901995b51050fe006caa":[35,0,0,34,1,0,1,10],
 "pluma-close-confirmation-dialog_8h.html#a74c33d3ce47f260b4c3630b5027c5a68":[35,0,0,34,1,0,1,15],
@@ -238,16 +249,5 @@ var NAVTREEINDEX150 =
 "pluma-document-loader_8c.html#a12f6d71e7d54ebf58b766998ad01adb1":[35,0,0,34,1,25,4],
 "pluma-document-loader_8c.html#a138a32ae6dcd394b857459c0d7bfb91e":[35,0,0,34,1,25,5],
 "pluma-document-loader_8c.html#a23ed908816c29884a9e26a793ed835a5":[35,0,0,34,1,25,2],
-"pluma-document-loader_8c.html#a502354849201d196ff0b975db5ef8141":[35,0,0,34,1,25,1],
-"pluma-document-loader_8c.html#a53533619b0d9596a8ce41947a52efb27":[35,0,0,34,1,25,9],
-"pluma-document-loader_8c.html#a55aa7fd85a3c779ea3b5760ce2e54088":[35,0,0,34,1,25,8],
-"pluma-document-loader_8c.html#a695c03f6c6f1b81da5921c0a1e8f5b0e":[35,0,0,34,1,25,10],
-"pluma-document-loader_8c.html#a8bd54bfdd0c3d5a71e6cdb165ee5dd13":[35,0,0,34,1,25,3],
-"pluma-document-loader_8c.html#a8eb6029a8cefbeaa7b7130b25e4ed4e6":[35,0,0,34,1,25,6],
-"pluma-document-loader_8c.html#a9551cd2d694a771abac867fffd6882ac":[35,0,0,34,1,25,0],
-"pluma-document-loader_8c.html#abcc95277f8b1b1315f2bb9b12de215a3":[35,0,0,34,1,25,7],
-"pluma-document-loader_8c.html#afd0ce96472be84bf3efaa71187aa4205":[35,0,0,34,1,25,11],
-"pluma-document-loader_8c_source.html":[35,0,0,34,1,25],
-"pluma-document-loader_8h.html":[35,0,0,34,1,26],
-"pluma-document-loader_8h.html#a12f6d71e7d54ebf58b766998ad01adb1":[35,0,0,34,1,26,14]
+"pluma-document-loader_8c.html#a502354849201d196ff0b975db5ef8141":[35,0,0,34,1,25,1]
 };

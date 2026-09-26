@@ -1,5 +1,16 @@
 var NAVTREEINDEX191 =
 {
+"struct__FrCommand.html#ac0dcaa00665cf3a229eab0eedc78a3af":[34,0,425,4],
+"struct__FrCommand.html#ac4825180ca9588cec04c3d44b7ed0637":[34,0,425,20],
+"struct__FrCommand.html#ae4ce6f2309b213ea64404caee108686a":[34,0,425,23],
+"struct__FrCommand.html#ae8c12dfc10e676c2ea921bea188b8fc2":[34,0,425,13],
+"struct__FrCommand.html#ae9687d165e3d894b96b398b77b9d6d9a":[34,0,425,8],
+"struct__FrCommand.html#af8030bf8acaf0f733b301595a16cb8c2":[34,0,425,25],
+"struct__FrCommand7z.html":[34,0,426],
+"struct__FrCommand7z.html#a15ef445187b623c419724a86f296d382":[34,0,426,1],
+"struct__FrCommand7z.html#a6b0bcd1ab1053d33be597d904864062b":[34,0,426,3],
+"struct__FrCommand7z.html#acce7f61609a8a27ea80ce392c50b7142":[34,0,426,0],
+"struct__FrCommand7z.html#affdb36caf88114d6b2ef6b289f60b2d8":[34,0,426,2],
 "struct__FrCommand7zClass.html":[34,0,427],
 "struct__FrCommand7zClass.html#a03e55a41a5a16daaa5e558083635f434":[34,0,427,0],
 "struct__FrCommandAce.html":[34,0,428],
@@ -238,16 +249,5 @@ var NAVTREEINDEX191 =
 "struct__GSearchWindow.html#ae430f35737ed0979eaeb9129b10a65ba":[34,0,509,39],
 "struct__GSearchWindow.html#aecb15afce7d5f0f71eccc8fe180fbe66":[34,0,509,41],
 "struct__GSearchWindow.html#af9f13045ae310c65bc29a5a092b6a783":[34,0,509,0],
-"struct__GSearchWindow.html#afefdea2ee6b52f06c8f1a5d2aea09cda":[34,0,509,42],
-"struct__GSearchWindowClass.html":[34,0,510],
-"struct__GSearchWindowClass.html#a29b8306ab62fcc6ce0c8e655d7bc1c2a":[34,0,510,0],
-"struct__GdMainToolbar.html":[34,0,500],
-"struct__GdMainToolbar.html#a65df0a105f7f47d88551ac157dedc5a2":[34,0,500,0],
-"struct__GdMainToolbar.html#af3f5fbbbe027b23dad71e3127e5483b2":[34,0,500,1],
-"struct__GdMainToolbarClass.html":[34,0,501],
-"struct__GdMainToolbarClass.html#ab8f876320506608f9c9fad67c6e6c302":[34,0,501,0],
-"struct__GdictAlignedWindow.html":[34,0,471],
-"struct__GdictAlignedWindow.html#ae0b62e3fcc19367425d8b8f158b11355":[34,0,471,1],
-"struct__GdictAlignedWindow.html#ae1b934feaa49e088d70c8afad2e4801a":[34,0,471,0],
-"struct__GdictAlignedWindowClass.html":[34,0,472]
+"struct__GSearchWindow.html#afefdea2ee6b52f06c8f1a5d2aea09cda":[34,0,509,42]
 };

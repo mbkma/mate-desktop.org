@@ -1,5 +1,16 @@
 var NAVTREEINDEX204 =
 {
+"struct__XSettingsSetting.html#a9f457736b4cdcfe360509a43740a6d5e":[34,0,994,2],
+"struct__XSettingsSetting.html#aa7f75a91b9c6b75c706f9dae07f02f13":[34,0,994,4],
+"struct__XSettingsSetting.html#ace2066e84a9e05db679d500346a17661":[34,0,994,6],
+"struct__XSettingsSetting.html#ae559d0b404956b6b8ac46ba92f594976":[34,0,994,0],
+"struct__XSettingsSetting.html#ae85ea1668a8b11b0082f2c2bcf562e48":[34,0,994,5],
+"struct__charpick__button__cb__data.html":[34,0,136],
+"struct__charpick__button__cb__data.html#a30a771626ee425bcb60cc2a802a2648e":[34,0,136,1],
+"struct__charpick__button__cb__data.html#ab7116524cb4f345382727fcdb27fe33e":[34,0,136,0],
+"struct__charpick__data.html":[34,0,137],
+"struct__charpick__data.html#a0097360bd05da5f7013cf1e0b5a00334":[34,0,137,3],
+"struct__charpick__data.html#a0e2ce71ed11e8af728da302379f25b66":[34,0,137,6],
 "struct__charpick__data.html#a1c92d292654662039fbbbb4203213cef":[34,0,137,16],
 "struct__charpick__data.html#a1ef9f49fb067da3af9693547958b0e67":[34,0,137,1],
 "struct__charpick__data.html#a205a3e5154e035b92eeb07e9b613e419":[34,0,137,18],
@@ -238,16 +249,5 @@ var NAVTREEINDEX204 =
 "structparser__state.html#ae7378829d2bc288d08114370242727da":[34,0,1612,7],
 "structrfkill__event.html":[34,0,1624],
 "structrfkill__event.html#a051102f72b8f2ff9431a07b5995e0cc5":[34,0,1624,2],
-"structrfkill__event.html#a091ba8afb2daccd01b4814da2e14965a":[34,0,1624,0],
-"structrfkill__event.html#a49a6fff9f48941a00295f10c757c96f2":[34,0,1624,3],
-"structrfkill__event.html#a8d67d6607f7cbaa2d01e5edfb8975542":[34,0,1624,4],
-"structrfkill__event.html#ac03f0a902f476a56afe5af8d3ae1f66a":[34,0,1624,1],
-"structxPropIconSize.html":[34,0,1667],
-"structxPropIconSize.html#a2e4a1067641c537d14ed33b7ec8cab3e":[34,0,1667,0],
-"structxPropIconSize.html#a7b94bfb0908c29682cc2a9bbc8e64748":[34,0,1667,2],
-"structxPropIconSize.html#a7f7da93c64081a815fa47912efeb80e8":[34,0,1667,4],
-"structxPropIconSize.html#a80f3d84d21064913c8664f5b01fce2bf":[34,0,1667,1],
-"structxPropIconSize.html#ac7b9233ac804eb203703ddfceb067c8e":[34,0,1667,3],
-"structxPropIconSize.html#af250a420f0b44dbb323f718eb05b5276":[34,0,1667,5],
-"structxPropSizeHints.html":[34,0,1668]
+"structrfkill__event.html#a091ba8afb2daccd01b4814da2e14965a":[34,0,1624,0]
 };

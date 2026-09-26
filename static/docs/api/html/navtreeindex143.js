@@ -1,5 +1,15 @@
 var NAVTREEINDEX143 =
 {
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aea43d20eb3f3b67372ba2536fe602b57d7":[35,0,0,22,2,21,1,7],
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aea85e448f6332267c04aa183c270f7c12c":[35,0,0,22,2,21,1,0],
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aeaa109bc81358dcefb8dc3ee7eac8eceb7":[35,0,0,22,2,21,1,2],
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aeaa4bfbaee77274b3827bfe928defccb6a":[35,0,0,22,2,21,1,3],
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aeab41ba2013585dbe8f483db260470aa19":[35,0,0,22,2,21,1,6],
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aeac13164f6205787e7f9f915b8f1070b24":[35,0,0,22,2,21,1,1],
+"panel-addto_8c.html#a83cefb8a9d2befa2667b90ae286554aead2f150819bf5a3a95e78eab9a53a4e4e":[35,0,0,22,2,21,1,8],
+"panel-addto_8c.html#ab815e3b67c9750e11d6e7ac29b6d0440":[35,0,0,22,2,21,0],
+"panel-addto_8c_source.html":[35,0,0,22,2,21],
+"panel-addto_8h.html":[35,0,0,22,2,22],
 "panel-addto_8h.html#a0f702ffcf488a0c6c5fe97d5a0baa7cd":[35,0,0,22,2,22,0],
 "panel-addto_8h_source.html":[35,0,0,22,2,22],
 "panel-applet-container_8c.html":[35,0,0,22,2,0,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX143 =
 "panel-background_8h.html#a8540e2a180bffb8b33c1e773b559d412":[35,0,0,22,2,30,8],
 "panel-background_8h.html#a977936112065afe418a1200714b5b69d":[35,0,0,22,2,30,19],
 "panel-background_8h.html#a9a899b4ff35bc9141ad7b556d9a19603":[35,0,0,22,2,30,10],
-"panel-background_8h.html#adeac1bbd39e6ab5b1de20584ee92ad7d":[35,0,0,22,2,30,11],
-"panel-background_8h.html#ae55eb1a8648f0d857f10637f1b13bea8":[35,0,0,22,2,30,12],
-"panel-background_8h.html#aeaf9f60ad5cb2705b7cd165eadff6b84":[35,0,0,22,2,30,3],
-"panel-background_8h.html#afce82c85925ee53217346314fddda802":[35,0,0,22,2,30,15],
-"panel-background_8h_source.html":[35,0,0,22,2,30],
-"panel-bindings_8c.html":[35,0,0,22,2,31],
-"panel-bindings_8c.html#a06ac3dbe8f820da2f47efa6306b2b6e3":[35,0,0,22,2,31,1],
-"panel-bindings_8c.html#a817b89bfa4feba3576e856181b30fa34":[35,0,0,22,2,31,0],
-"panel-bindings_8c.html#aac0b2e348cb0b7d1948a3980a3fc015f":[35,0,0,22,2,31,2],
-"panel-bindings_8c_source.html":[35,0,0,22,2,31],
-"panel-bindings_8h.html":[35,0,0,22,2,32]
+"panel-background_8h.html#adeac1bbd39e6ab5b1de20584ee92ad7d":[35,0,0,22,2,30,11]
 };

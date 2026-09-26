@@ -1,5 +1,16 @@
 var NAVTREEINDEX165 =
 {
+"screenshot-dialog_8h.html#a50160f5b1d53e4f28ab1fab45e5911f3":[35,0,0,32,5,0,2,1],
+"screenshot-dialog_8h.html#a7cdfca046e34e7677aa008c16fbd4bfe":[35,0,0,32,5,0,2,10],
+"screenshot-dialog_8h.html#a8290ca76a90254880c481feece3e8f86":[35,0,0,32,5,0,2,9],
+"screenshot-dialog_8h.html#a9d97cb89a8ae2c29d67431f2ff54756c":[35,0,0,32,5,0,2,4],
+"screenshot-dialog_8h.html#aaa454c34394d34eed50c20e5542a7987":[35,0,0,32,5,0,2,2],
+"screenshot-dialog_8h.html#ab9f39d9f028ec4a19b200d7f8e631d59":[35,0,0,32,5,0,2,0],
+"screenshot-dialog_8h.html#acb1cd2ecca8845838a6cd850f4b0812a":[35,0,0,32,5,0,2,6],
+"screenshot-dialog_8h.html#afd1a5fa1e2d5002da431a1eafe45006b":[35,0,0,32,5,0,2,5],
+"screenshot-dialog_8h_source.html":[35,0,0,32,5,0,2],
+"screenshot-save_8c.html":[35,0,0,32,5,0,3],
+"screenshot-save_8c.html#a35f30b46b919a15b7a1380a0e9008787":[35,0,0,32,5,0,3,1],
 "screenshot-save_8c.html#ae04b4fe0ad8737f74f458a73e675d35e":[35,0,0,32,5,0,3,0],
 "screenshot-save_8c_source.html":[35,0,0,32,5,0,3],
 "screenshot-save_8h.html":[35,0,0,32,5,0,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX165 =
 "sensors-applet-settings_8h.html#a73c228f87e038e8295ee8ea8eceaa5ac":[35,0,0,26,2,16,4],
 "sensors-applet-settings_8h.html#a77ceac8d6af195fe72f95f6afd87c45e":[35,0,0,26,2,16,12],
 "sensors-applet-settings_8h.html#a7e50e560465beee875e6fc371a99cb6e":[35,0,0,26,2,16,0],
-"sensors-applet-settings_8h.html#a7e52128b5686be1298954042c472e0d5":[35,0,0,26,2,16,25],
-"sensors-applet-settings_8h.html#a7f4227184bd6a7aa7599703c57b1a67e":[35,0,0,26,2,16,16],
-"sensors-applet-settings_8h.html#a9287e35d4c0c950a01b03d2eac6064bd":[35,0,0,26,2,16,3],
-"sensors-applet-settings_8h.html#aa968a61524f9ed159c4c5464cb26dd41":[35,0,0,26,2,16,5],
-"sensors-applet-settings_8h.html#ab0139008fdda107456f13f837872b410":[35,0,0,26,2,16,20],
-"sensors-applet-settings_8h.html#ab43ba3a6e428bdcb9d7c635a019a1f79":[35,0,0,26,2,16,22],
-"sensors-applet-settings_8h.html#ab7ffb5a0ee7b15aecd0b32e84b93e2ee":[35,0,0,26,2,16,18],
-"sensors-applet-settings_8h.html#ab909947eb49bfce3b280b12ef3e7f5fc":[35,0,0,26,2,16,23],
-"sensors-applet-settings_8h.html#ad97191f745b50dde22d79adb189ec4c8":[35,0,0,26,2,16,9],
-"sensors-applet-settings_8h.html#adaa11d244a2a92a6338c5eaeed01d78e":[35,0,0,26,2,16,27],
-"sensors-applet-settings_8h.html#adf39a275a654a92222e6ab25a0fda9ed":[35,0,0,26,2,16,6],
-"sensors-applet-settings_8h.html#ae2b4bc72a89a7d23d1efe5b3f70b43f0":[35,0,0,26,2,16,2]
+"sensors-applet-settings_8h.html#a7e52128b5686be1298954042c472e0d5":[35,0,0,26,2,16,25]
 };

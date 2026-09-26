@@ -4,7 +4,7 @@ var searchData=
   ['keep_5fchoice_1',['keep_choice',['../structNAImporterAskUserParms.html#a406dc5e35045ecd0905fa60e9d75c8ae',1,'NAImporterAskUserParms']]],
   ['keep_5fexpensive_5fcache_5fsecs_2',['KEEP_EXPENSIVE_CACHE_SECS',['../mate-bg_8c.html#a80f11e805a3abc946797a320fccc17a0',1,'mate-bg.c']]],
   ['kelvin_3',['KELVIN',['../sensors-applet_8h.html#a5989ed19948070f3b19b3954da33efb3a1ee6e694f8ea36c8ed7c0e5c76439b50',1,'sensors-applet.h']]],
-  ['key_4',['key',['../structKey.html',1,'Key'],['../struct__MetaTabEntry.html#ac142bb277d177743c5da1506fcf092a6',1,'_MetaTabEntry::key'],['../structSnShortcut.html#a535bc1a6bc52510c7ad2f7e68fa66d99',1,'SnShortcut::key'],['../classSmoothRefresh.html#aad3fd9b2e64a94b39df3396bbc6607a5',1,'SmoothRefresh::KEY'],['../acme_8h.html#a53ba42873949ed19f570feb354c80069',1,'key:&#160;acme.h']]],
+  ['key_4',['key',['../structKey.html',1,'Key'],['../classSmoothRefresh.html#aad3fd9b2e64a94b39df3396bbc6607a5',1,'SmoothRefresh::KEY'],['../struct__MetaTabEntry.html#ac142bb277d177743c5da1506fcf092a6',1,'_MetaTabEntry::key'],['../structSnShortcut.html#a535bc1a6bc52510c7ad2f7e68fa66d99',1,'SnShortcut::key'],['../acme_8h.html#a53ba42873949ed19f570feb354c80069',1,'key:&#160;acme.h']]],
   ['key_20apis_5',['Key APIs',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md27',1,'']]],
   ['key_5fa11y_5fschema_6',['KEY_A11Y_SCHEMA',['../msd-a11y-preferences-dialog_8c.html#a904ad4cc350a3b189ce1cc465278f686',1,'msd-a11y-preferences-dialog.c']]],
   ['key_5faccel_5fprofile_7',['KEY_ACCEL_PROFILE',['../msd-mouse-manager_8c.html#af83e56e41d870c00143f880e41f163ea',1,'msd-mouse-manager.c']]],

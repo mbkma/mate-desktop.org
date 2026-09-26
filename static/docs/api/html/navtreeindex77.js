@@ -240,14 +240,14 @@ var NAVTREEINDEX77 =
 "global_8h.html#aff2653af055bee4e52bfac5d77ac6c04a402849cad70829b37237391809188c6e":[35,0,0,12,9,0,2,57,2],
 "global_8h.html#aff2653af055bee4e52bfac5d77ac6c04a54391595216f945ad35e6a524c7fc596":[35,0,0,12,9,0,2,57,0],
 "global_8h_source.html":[35,0,0,12,9,0,2],
-"globals.html":[35,1,0,0],
 "globals.html":[35,1,0],
+"globals.html":[35,1,0,0],
 "globals_a.html":[35,1,0,1],
 "globals_b.html":[35,1,0,2],
 "globals_c.html":[35,1,0,3],
 "globals_d.html":[35,1,0,4],
-"globals_defs.html":[35,1,6],
 "globals_defs.html":[35,1,6,0],
+"globals_defs.html":[35,1,6],
 "globals_defs_a.html":[35,1,6,1],
 "globals_defs_b.html":[35,1,6,2]
 };

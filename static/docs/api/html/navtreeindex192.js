@@ -1,5 +1,16 @@
 var NAVTREEINDEX192 =
 {
+"struct__GSearchWindowClass.html":[34,0,510],
+"struct__GSearchWindowClass.html#a29b8306ab62fcc6ce0c8e655d7bc1c2a":[34,0,510,0],
+"struct__GdMainToolbar.html":[34,0,500],
+"struct__GdMainToolbar.html#a65df0a105f7f47d88551ac157dedc5a2":[34,0,500,0],
+"struct__GdMainToolbar.html#af3f5fbbbe027b23dad71e3127e5483b2":[34,0,500,1],
+"struct__GdMainToolbarClass.html":[34,0,501],
+"struct__GdMainToolbarClass.html#ab8f876320506608f9c9fad67c6e6c302":[34,0,501,0],
+"struct__GdictAlignedWindow.html":[34,0,471],
+"struct__GdictAlignedWindow.html#ae0b62e3fcc19367425d8b8f158b11355":[34,0,471,1],
+"struct__GdictAlignedWindow.html#ae1b934feaa49e088d70c8afad2e4801a":[34,0,471,0],
+"struct__GdictAlignedWindowClass.html":[34,0,472],
 "struct__GdictAlignedWindowClass.html#a091965716cbe2e0385c9c60b93e1892b":[34,0,472,3],
 "struct__GdictAlignedWindowClass.html#a388e2a8287208d2749d838b38baae189":[34,0,472,0],
 "struct__GdictAlignedWindowClass.html#a717bbbf921001dc992d8287970b82b42":[34,0,472,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX192 =
 "struct__GvcAppletClass.html#a364fb525268f0e1f4e91d1005b360d0b":[34,0,518,0],
 "struct__GvcBalanceBar.html":[34,0,519],
 "struct__GvcBalanceBar.html#a4733cc03d45e212db8d22ade13503d28":[34,0,519,0],
-"struct__GvcBalanceBar.html#af7b1672b5719d68fe50a66fe1672a5e2":[34,0,519,1],
-"struct__GvcBalanceBarClass.html":[34,0,520],
-"struct__GvcBalanceBarClass.html#ab79586c5b918276005c5473fbcb29469":[34,0,520,0],
-"struct__GvcChannelBar.html":[34,0,521],
-"struct__GvcChannelBar.html#a41882cf9dbc64f2527e6774a57324a3b":[34,0,521,0],
-"struct__GvcChannelBar.html#a7e965a7bbc038fe9c75093feca5dbf3b":[34,0,521,1],
-"struct__GvcChannelBarClass.html":[34,0,522],
-"struct__GvcChannelBarClass.html#a1abd3b86c1638d16f3ec4f7771e8dc34":[34,0,522,1],
-"struct__GvcChannelBarClass.html#a2f55a6b9b4d1813bf1130319e41331ef":[34,0,522,0],
-"struct__GvcComboBox.html":[34,0,523],
-"struct__GvcComboBox.html#a204b6c1b5f4ac27bc82c00bceba3e7a4":[34,0,523,0],
-"struct__GvcComboBox.html#af5b1eb762d7587844ee413cf7cd44718":[34,0,523,1]
+"struct__GvcBalanceBar.html#af7b1672b5719d68fe50a66fe1672a5e2":[34,0,519,1]
 };

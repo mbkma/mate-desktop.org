@@ -1,5 +1,16 @@
 var NAVTREEINDEX163 =
 {
+"pulse-monitor_8c.html#a7274ef4f8be0592d85139fad430a15c4":[35,0,0,8,0,3,17,0],
+"pulse-monitor_8c.html#a7782f48da82710db01549fa92b57a0c4":[35,0,0,8,0,3,17,3],
+"pulse-monitor_8c_source.html":[35,0,0,8,0,3,17],
+"pulse-monitor_8h.html":[35,0,0,8,0,3,18],
+"pulse-monitor_8h.html#a290043b132e7e57686da9065ba3833e9":[35,0,0,8,0,3,18,12],
+"pulse-monitor_8h.html#a32c8c52b2dc7f6f1dd79b06b9545b0eb":[35,0,0,8,0,3,18,8],
+"pulse-monitor_8h.html#a3c8ef669d9c0ed67cf7b0db5356f1cf0":[35,0,0,8,0,3,18,4],
+"pulse-monitor_8h.html#a4ce2c1c1dae5a2a585b8f65ca99dd85d":[35,0,0,8,0,3,18,10],
+"pulse-monitor_8h.html#a667790b5b9e7006d325ae35154b2898e":[35,0,0,8,0,3,18,9],
+"pulse-monitor_8h.html#a7782f48da82710db01549fa92b57a0c4":[35,0,0,8,0,3,18,13],
+"pulse-monitor_8h.html#a7e7356dd80cf153f69585ba43f9e3cf0":[35,0,0,8,0,3,18,11],
 "pulse-monitor_8h.html#aba6a3ef106ef7a51775904793bc6e170":[35,0,0,8,0,3,18,5],
 "pulse-monitor_8h.html#ad0c66af184c6da7ef1fd122436c4e9c8":[35,0,0,8,0,3,18,2],
 "pulse-monitor_8h.html#adb3e5fe3592c346694bceaf3762fe89b":[35,0,0,8,0,3,18,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX163 =
 "pulse-stream_8h.html#a709dbf9fc2c4909a11b528a04d702745":[35,0,0,8,0,3,42,2],
 "pulse-stream_8h.html#a7baba1d216fe2bea411d1b7837e9463b":[35,0,0,8,0,3,42,11],
 "pulse-stream_8h.html#ab418a8655f7cd0c230c99c69ece239f6":[35,0,0,8,0,3,42,5],
-"pulse-stream_8h.html#aec67cae932c368fe1c7461264040a4ad":[35,0,0,8,0,3,42,8],
-"pulse-stream_8h.html#aee3812816637241a6f2461b4cff982cc":[35,0,0,8,0,3,42,9],
-"pulse-stream_8h.html#aee9a3a74ee9849e1806e4dfbef3e5f95":[35,0,0,8,0,3,42,10],
-"pulse-stream_8h_source.html":[35,0,0,8,0,3,42],
-"pulse-types_8h.html":[35,0,0,8,0,3,43],
-"pulse-types_8h.html#a09dfb3fe879ceea84159294d9d8fb168":[35,0,0,8,0,3,43,17],
-"pulse-types_8h.html#a1ad3d3c9981aca260f0d544cdf324d25":[35,0,0,8,0,3,43,3],
-"pulse-types_8h.html#a206837da417897f5e22881837ccc14fe":[35,0,0,8,0,3,43,4],
-"pulse-types_8h.html#a31944b5274261834a12cac2f56ac3d35":[35,0,0,8,0,3,43,5],
-"pulse-types_8h.html#a337eb97e4205ef0a31b323d594683858":[35,0,0,8,0,3,43,6],
-"pulse-types_8h.html#a52d174327f668015bcbaf59adf03c654":[35,0,0,8,0,3,43,16],
-"pulse-types_8h.html#a7f510299356287dcb1bfaf9714b0a56d":[35,0,0,8,0,3,43,15]
+"pulse-stream_8h.html#aec67cae932c368fe1c7461264040a4ad":[35,0,0,8,0,3,42,8]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX120 =
 {
+"math-history-entry_8c.html#a8d83d27ba5c9abd393d5f3a01320906e":[35,0,0,13,0,20,3],
+"math-history-entry_8c.html#aab823ee625123eef967f0db951326686":[35,0,0,13,0,20,0],
+"math-history-entry_8c.html#abe88126e74dfec0e40b5dd543b75b8f9":[35,0,0,13,0,20,4],
+"math-history-entry_8c.html#adf0e665f9123fb8d7851c502c419814b":[35,0,0,13,0,20,6],
+"math-history-entry_8c.html#af3ed1652cc0ac6304e66acb9dce1e52d":[35,0,0,13,0,20,2],
+"math-history-entry_8c_source.html":[35,0,0,13,0,20],
+"math-history-entry_8h.html":[35,0,0,13,0,21],
+"math-history-entry_8h.html#a232818af44b0681e0134ed8ebb4c48d6":[35,0,0,13,0,21,5],
+"math-history-entry_8h.html#a33ac3b2634b987d6a59755add7390cc6":[35,0,0,13,0,21,3],
+"math-history-entry_8h.html#a38cff8e1fa49a7ca61ce34bff0014425":[35,0,0,13,0,21,4],
 "math-history-entry_8h.html#a44f76ef52c75f14dfe3e533b9443a316":[35,0,0,13,0,21,8],
 "math-history-entry_8h.html#a7d7519071ae534803c112158f408178e":[35,0,0,13,0,21,7],
 "math-history-entry_8h.html#adf0e665f9123fb8d7851c502c419814b":[35,0,0,13,0,21,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX120 =
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md33":[8,7],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md34":[8,8],
 "md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md35":[8,9],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html":[14],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md36":[14,0],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md37":[14,1],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md38":[14,2],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md39":[14,3],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md40":[14,4],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md41":[14,5],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md42":[14,6],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html#autotoc_md43":[14,7],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html":[15],
-"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2mate-calc_2README.html#autotoc_md44":[15,0]
+"md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2marco_2README.html":[14]
 };

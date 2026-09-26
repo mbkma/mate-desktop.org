@@ -1,5 +1,16 @@
 var NAVTREEINDEX178 =
 {
+"structMonitorInfo.html#a3e418e86d1895b8db9a20c21d4dc8f23":[34,0,1463,43],
+"structMonitorInfo.html#a40c7eb262e4b72cfee336637bbbf52bf":[34,0,1463,49],
+"structMonitorInfo.html#a454a1af23a534bc795089bcd5a55df1e":[34,0,1463,36],
+"structMonitorInfo.html#a4aae07d27888106abaf66c06fd4ae19d":[34,0,1463,1],
+"structMonitorInfo.html#a4c804f4ede8aa60e466c93503a155406":[34,0,1463,14],
+"structMonitorInfo.html#a53d42ffd14274cc519a333d477bc7088":[34,0,1463,18],
+"structMonitorInfo.html#a5809756cdc0459422027036552204eed":[34,0,1463,0],
+"structMonitorInfo.html#a590f06948de9abf67b64253a4318ebac":[34,0,1463,23],
+"structMonitorInfo.html#a5cf91a81e40663efb0b26a8f1aeada4c":[34,0,1463,16],
+"structMonitorInfo.html#a60afe49923ae0979afdc0aa9965a4669":[34,0,1463,2],
+"structMonitorInfo.html#a60c70151564558c1eb3b49d49c012189":[34,0,1463,8],
 "structMonitorInfo.html#a778bd8b92484b0b02b20c07b833f33ca":[34,0,1463,22],
 "structMonitorInfo.html#a7b0c5500ad60d0f1d39419b92688b7fe":[34,0,1463,48],
 "structMonitorInfo.html#a7d3ea1713d8ea2da1704c37300436b1b":[34,0,1463,24],
@@ -238,16 +249,5 @@ var NAVTREEINDEX178 =
 "structNABoxed.html":[34,0,1537],
 "structNABoxed.html#a017b91c0ae25533bbe81ef1bcd20756d":[34,0,1537,0],
 "structNABoxed.html#ac9cbb1fe6b8cadadd30f18b266c27381":[34,0,1537,1],
-"structNABoxedClass.html":[34,0,1538],
-"structNABoxedClass.html#a0030bb3f25091f7d64e7d8a15ad6e655":[34,0,1538,0],
-"structNABoxedClass.html#a623e8d369ab6dd3fe6c4d662b3d5b122":[34,0,1538,1],
-"structNADataBoxed.html":[34,0,1539],
-"structNADataBoxed.html#a476b4b974fbc10aa2e11640bb9bd46ba":[34,0,1539,1],
-"structNADataBoxed.html#a56ac6f1f6e21f332d1e49f33cec02729":[34,0,1539,0],
-"structNADataBoxedClass.html":[34,0,1540],
-"structNADataBoxedClass.html#a4cc25f93fb96235d60d41c46608dd7d9":[34,0,1540,1],
-"structNADataBoxedClass.html#aafacecef1062fd185dd0e9b96d8b351c":[34,0,1540,0],
-"structNADataDef.html":[34,0,1541],
-"structNADataDef.html#a02e6149f21f4e4e9b9aeeb6c95d5a249":[34,0,1541,1],
-"structNADataDef.html#a109072a53be676f23a0906f4e65180f9":[34,0,1541,18]
+"structNABoxedClass.html":[34,0,1538]
 };

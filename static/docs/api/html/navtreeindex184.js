@@ -1,5 +1,16 @@
 var NAVTREEINDEX184 =
 {
+"struct__CajaImageConverterClass.html":[34,0,67],
+"struct__CajaImageConverterClass.html#aab5c39f733e45fd3eea1ab19048fc793":[34,0,67,0],
+"struct__CajaInfoProviderIface.html":[34,0,68],
+"struct__CajaInfoProviderIface.html#a8c5ff70bc9fc801a534edae3c9a28b42":[34,0,68,0],
+"struct__CajaInfoProviderIface.html#aa1e67a4dcac098708c1113debb588a16":[34,0,68,1],
+"struct__CajaInfoProviderIface.html#ad4a7d82f4149bd5248ca31fb58039b0f":[34,0,68,2],
+"struct__CajaLocationDialog.html":[34,0,69],
+"struct__CajaLocationDialog.html#a11576d839dd0137e4054dc4193a591c6":[34,0,69,1],
+"struct__CajaLocationDialog.html#a5c970cd48148dfdf10169d3d781e697c":[34,0,69,0],
+"struct__CajaLocationDialogClass.html":[34,0,70],
+"struct__CajaLocationDialogClass.html#ad9ff0e15e10acd5bf15caf681d73788e":[34,0,70,0],
 "struct__CajaLocationWidgetProviderIface.html":[34,0,71],
 "struct__CajaLocationWidgetProviderIface.html#a5d4dcaa5ba61089f7ee7cfe84b1f30b9":[34,0,71,0],
 "struct__CajaLocationWidgetProviderIface.html#a72b4fb42d1887c2463eb82d139a50eeb":[34,0,71,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX184 =
 "struct__CajaWidgetViewProviderIface.html#a1b39a8f3752964d1eb0e847cf62eab14":[34,0,117,7],
 "struct__CajaWidgetViewProviderIface.html#a210e87afb301d9243b7f71bd704a1a1c":[34,0,117,0],
 "struct__CajaWidgetViewProviderIface.html#a239dc38a37fec8e25288cd0cd7bc9155":[34,0,117,8],
-"struct__CajaWidgetViewProviderIface.html#a67e01eefcd9566cd6479ad327c9c0ca5":[34,0,117,4],
-"struct__CajaWidgetViewProviderIface.html#a8c735cc4f711b89f546194d6be3772ad":[34,0,117,1],
-"struct__CajaWidgetViewProviderIface.html#a97a26799c162fa77e8373e1701c312ca":[34,0,117,6],
-"struct__CajaWidgetViewProviderIface.html#aafa059c9047b3e7830ee5a04066e67f5":[34,0,117,3],
-"struct__CajaWidgetViewProviderIface.html#adedbff908f6c36d6bdc824537de3f3b0":[34,0,117,2],
-"struct__CajaWindowInfoIface.html":[34,0,118],
-"struct__CajaWindowInfoIface.html#a00aa52dd45e2118de652814c51204e37":[34,0,118,3],
-"struct__CajaWindowInfoIface.html#a010895c32a1e65ad24bdbd641234b4c5":[34,0,118,7],
-"struct__CajaWindowInfoIface.html#a09230fd72fcbc6045c4dbd5b2a316983":[34,0,118,1],
-"struct__CajaWindowInfoIface.html#a0ebb5f49f02055d1493e8e629a709ff7":[34,0,118,27],
-"struct__CajaWindowInfoIface.html#a0f8f46c86e2e0ab6f2d09164b04ddf0e":[34,0,118,4],
-"struct__CajaWindowInfoIface.html#a1c811ae50d40650a02f07deaf6d6a964":[34,0,118,6]
+"struct__CajaWidgetViewProviderIface.html#a67e01eefcd9566cd6479ad327c9c0ca5":[34,0,117,4]
 };

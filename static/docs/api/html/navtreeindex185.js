@@ -1,5 +1,16 @@
 var NAVTREEINDEX185 =
 {
+"struct__CajaWidgetViewProviderIface.html#a8c735cc4f711b89f546194d6be3772ad":[34,0,117,1],
+"struct__CajaWidgetViewProviderIface.html#a97a26799c162fa77e8373e1701c312ca":[34,0,117,6],
+"struct__CajaWidgetViewProviderIface.html#aafa059c9047b3e7830ee5a04066e67f5":[34,0,117,3],
+"struct__CajaWidgetViewProviderIface.html#adedbff908f6c36d6bdc824537de3f3b0":[34,0,117,2],
+"struct__CajaWindowInfoIface.html":[34,0,118],
+"struct__CajaWindowInfoIface.html#a00aa52dd45e2118de652814c51204e37":[34,0,118,3],
+"struct__CajaWindowInfoIface.html#a010895c32a1e65ad24bdbd641234b4c5":[34,0,118,7],
+"struct__CajaWindowInfoIface.html#a09230fd72fcbc6045c4dbd5b2a316983":[34,0,118,1],
+"struct__CajaWindowInfoIface.html#a0ebb5f49f02055d1493e8e629a709ff7":[34,0,118,27],
+"struct__CajaWindowInfoIface.html#a0f8f46c86e2e0ab6f2d09164b04ddf0e":[34,0,118,4],
+"struct__CajaWindowInfoIface.html#a1c811ae50d40650a02f07deaf6d6a964":[34,0,118,6],
 "struct__CajaWindowInfoIface.html#a2502ccc62a3b01fd3045334fb2ad942a":[34,0,118,2],
 "struct__CajaWindowInfoIface.html#a359e5a63dc5e78667947308d2bde0820":[34,0,118,16],
 "struct__CajaWindowInfoIface.html#a4e917234c923e9d2792463318b3a9f25":[34,0,118,13],
@@ -238,16 +249,5 @@ var NAVTREEINDEX185 =
 "struct__DviDevice.html#adbd79d3ba7190df76fbe7190ac30b3b3":[34,0,172,1],
 "struct__DviDevice.html#aeafbb8c4e69807ee8b7055eaf03ba4ba":[34,0,172,0],
 "struct__DviEncoding.html":[34,0,173],
-"struct__DviEncoding.html#a1bf5f143c2c75b6f107852698447eb25":[34,0,173,8],
-"struct__DviEncoding.html#a240f623d255cb026b31df33fb54932d2":[34,0,173,6],
-"struct__DviEncoding.html#a30de27617b25990b8d138ae7d03b843a":[34,0,173,3],
-"struct__DviEncoding.html#a3910a13f3f52bdda611cfda7d45254cb":[34,0,173,2],
-"struct__DviEncoding.html#a53c54be4fd5b12910936ab137f3ccf98":[34,0,173,1],
-"struct__DviEncoding.html#a5e70dd1e9ede49b62c00be801f9c5a1c":[34,0,173,4],
-"struct__DviEncoding.html#a6caa50f1f820e702bcc8018a915a4658":[34,0,173,5],
-"struct__DviEncoding.html#acc1231240875e66bb45ad06c23610280":[34,0,173,0],
-"struct__DviEncoding.html#acf61db799c5fc7ea73c4e7d47a37767c":[34,0,173,7],
-"struct__DviFont.html":[34,0,174],
-"struct__DviFont.html#a00b82e0ec4b05cb214bc3c75b31d66d1":[34,0,174,16],
-"struct__DviFont.html#a09ce4702cd098c3abb121c77c37e2f10":[34,0,174,2]
+"struct__DviEncoding.html#a1bf5f143c2c75b6f107852698447eb25":[34,0,173,8]
 };

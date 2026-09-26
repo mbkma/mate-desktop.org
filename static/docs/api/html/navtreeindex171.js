@@ -1,5 +1,16 @@
 var NAVTREEINDEX171 =
 {
+"structCajaDragInfo.html#ac4f09dcd2ed625dee55e3d0b76faa24a":[34,0,1103,11],
+"structCajaDragInfo.html#acf8df35dee189c0f88a771a476471bd2":[34,0,1103,9],
+"structCajaDragInfo.html#adb066aa0eeb6dab3c8e21ea0d4f384f2":[34,0,1103,5],
+"structCajaDragInfo.html#adb7de7fe7e039940e7fbbec884982630":[34,0,1103,8],
+"structCajaDragSelectionItem.html":[34,0,1104],
+"structCajaDragSelectionItem.html#a11e7bba1bd6d586e384f14c0fa2d31b2":[34,0,1104,5],
+"structCajaDragSelectionItem.html#a40912fb78e3a6f8661d1c8882f5529d8":[34,0,1104,1],
+"structCajaDragSelectionItem.html#a918459d84a7ae1428b0d9a4824a9273b":[34,0,1104,0],
+"structCajaDragSelectionItem.html#aab3813be441643c30ef6b7948300bad5":[34,0,1104,3],
+"structCajaDragSelectionItem.html#ac2d57c342945bf4998b120acba404d6b":[34,0,1104,4],
+"structCajaDragSelectionItem.html#afb5ffe587f4a4ae092865a91db2ddc57":[34,0,1104,2],
 "structCajaDragSlotProxyInfo.html":[34,0,1105],
 "structCajaDragSlotProxyInfo.html#a24db05d638dc43eb92b6d5511f25b587":[34,0,1105,9],
 "structCajaDragSlotProxyInfo.html#a49008be274961e8729c1f0897687b0b4":[34,0,1105,7],
@@ -238,16 +249,5 @@ var NAVTREEINDEX171 =
 "structCajaIconRubberbandInfo.html":[34,0,1125],
 "structCajaIconRubberbandInfo.html#a047f140becd41d1e982b4384bf925634":[34,0,1125,9],
 "structCajaIconRubberbandInfo.html#a0cf8999fcaaaed72d3847a38fa0a8eb4":[34,0,1125,1],
-"structCajaIconRubberbandInfo.html#a2c8da58daeacf15e00625806c4b247ba":[34,0,1125,0],
-"structCajaIconRubberbandInfo.html#a2e973d8de0d5868760280d8621caee06":[34,0,1125,5],
-"structCajaIconRubberbandInfo.html#a51b650519829355bdfcdac425907ca54":[34,0,1125,3],
-"structCajaIconRubberbandInfo.html#a66b5d4a0403ceebe9ae9e6ac0977a749":[34,0,1125,6],
-"structCajaIconRubberbandInfo.html#a6f3c007bfc2160a4792e0e1716170cb8":[34,0,1125,2],
-"structCajaIconRubberbandInfo.html#a82851bc9a2eeebb10d2a51387f422a2f":[34,0,1125,7],
-"structCajaIconRubberbandInfo.html#a8e87bd5f786c16f2f1c77047170e1eae":[34,0,1125,4],
-"structCajaIconRubberbandInfo.html#aa013fa77d3150132500e6ad10e19227f":[34,0,1125,8],
-"structCajaImagePropertiesPage.html":[34,0,1126],
-"structCajaImagePropertiesPage.html#a6f5180f286f8c28bf90dd8a53be1b36f":[34,0,1126,0],
-"structCajaImagePropertiesPage.html#af08fe24a6935533e07fd5b70b5971ab1":[34,0,1126,1],
-"structCajaImagePropertiesPageClass.html":[34,0,1127]
+"structCajaIconRubberbandInfo.html#a2c8da58daeacf15e00625806c4b247ba":[34,0,1125,0]
 };

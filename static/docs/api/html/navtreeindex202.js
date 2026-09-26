@@ -1,5 +1,16 @@
 var NAVTREEINDEX202 =
 {
+"struct__PlumaTrailSavePluginClass.html#ac96044de455e7eba2b28cd8545ebad3a":[34,0,888,0],
+"struct__PlumaView.html":[34,0,889],
+"struct__PlumaView.html#a361aaafaec2939bd88f296b97808aaa3":[34,0,889,0],
+"struct__PlumaView.html#af1f10e6dce52fedc48ec7d01bf51c8a3":[34,0,889,1],
+"struct__PlumaViewActivatableInterface.html":[34,0,890],
+"struct__PlumaViewActivatableInterface.html#a0b521c23f6a122bc16a8d5ed04d6b502":[34,0,890,2],
+"struct__PlumaViewActivatableInterface.html#a15707441c6a87ede3886ba987460a6fd":[34,0,890,0],
+"struct__PlumaViewActivatableInterface.html#ab5dcf68afe830f2408b8df78f450752a":[34,0,890,1],
+"struct__PlumaViewClass.html":[34,0,891],
+"struct__PlumaViewClass.html#a249fd435f79217f7b4dd64b0c36d52f9":[34,0,891,3],
+"struct__PlumaViewClass.html#a32b07e7c1aee85963ff8c15b00ef0efd":[34,0,891,1],
 "struct__PlumaViewClass.html#a37657b774a20215b192fdacbb318b8c1":[34,0,891,2],
 "struct__PlumaViewClass.html#abfb06e65b124d82b68d768c90d2a3a1f":[34,0,891,0],
 "struct__PlumaViewClass.html#af74afd409fb2d6f076845104d3c43e85":[34,0,891,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX202 =
 "struct__SensorsAppletSensorInfo.html":[34,0,940],
 "struct__SensorsAppletSensorInfo.html#a326bf3e3cb2201cd9810690236a95570":[34,0,940,0],
 "struct__SensorsAppletSensorInfo.html#a3fbdc71f6131f090d6e45f357ed1ff16":[34,0,940,9],
-"struct__SensorsAppletSensorInfo.html#a67cacd5bff97fca40468765c238b3476":[34,0,940,8],
-"struct__SensorsAppletSensorInfo.html#a7c8b83114f03844aa9089e65204cb7ad":[34,0,940,5],
-"struct__SensorsAppletSensorInfo.html#a90c48f10c57a73830e8e6c5b23469352":[34,0,940,2],
-"struct__SensorsAppletSensorInfo.html#a9fa122b1c2d7f921b1238640e4c0914a":[34,0,940,7],
-"struct__SensorsAppletSensorInfo.html#aa046767b75e9dca4cdb2aabf52329cdb":[34,0,940,4],
-"struct__SensorsAppletSensorInfo.html#ac3e5bd85d5679f578135fd09df8a10ba":[34,0,940,3],
-"struct__SensorsAppletSensorInfo.html#ac6dc57a2af2eee6a55db035d96fbb8e9":[34,0,940,6],
-"struct__SensorsAppletSensorInfo.html#ac6f8f87719a77706fbd40fb679233938":[34,0,940,10],
-"struct__SensorsAppletSensorInfo.html#adcdaacb84add13064da94b0a7b8df01a":[34,0,940,1],
-"struct__ShellWindow.html":[34,0,941],
-"struct__ShellWindow.html#a0777d37c31e5e2c94d4fec0a46bbc072":[34,0,941,2],
-"struct__ShellWindow.html#a483450015046b07e6ccb1282298e54e8":[34,0,941,0]
+"struct__SensorsAppletSensorInfo.html#a67cacd5bff97fca40468765c238b3476":[34,0,940,8]
 };

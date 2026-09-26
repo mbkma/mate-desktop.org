@@ -1,5 +1,16 @@
 var NAVTREEINDEX153 =
 {
+"pluma-file-browser-store_8h.html#a0212658c93f0fa862f6f0f0a1883f670ad3b8e07e24ae2553be119927651c16e6":[35,0,0,34,0,1,8,21,0],
+"pluma-file-browser-store_8h.html#a0212658c93f0fa862f6f0f0a1883f670af54eadf1eabeb131ffc9a2c9a7a2013f":[35,0,0,34,0,1,8,21,2],
+"pluma-file-browser-store_8h.html#a134538b1cf2ebd578e73eb8091894682":[35,0,0,34,0,1,8,8],
+"pluma-file-browser-store_8h.html#a1f7e88625bbf7611b4849625d4dca2f8":[35,0,0,34,0,1,8,40],
+"pluma-file-browser-store_8h.html#a212d62fd5b7962d826ecf2bac32bb9b2":[35,0,0,34,0,1,8,39],
+"pluma-file-browser-store_8h.html#a214718258b91e9627c04609ebd153243":[35,0,0,34,0,1,8,36],
+"pluma-file-browser-store_8h.html#a2e27fecaffdf3d3b8ed3b1ae9aee60a5":[35,0,0,34,0,1,8,12],
+"pluma-file-browser-store_8h.html#a331484fa6c7f4b8f5932f2739cf46290":[35,0,0,34,0,1,8,47],
+"pluma-file-browser-store_8h.html#a372096144dbe179e26529b8a13b12369":[35,0,0,34,0,1,8,34],
+"pluma-file-browser-store_8h.html#a37da1ab1ce18ba4cb4ec2786de90d321":[35,0,0,34,0,1,8,30],
+"pluma-file-browser-store_8h.html#a382786fe200bc5f40c91158a8dad4b31":[35,0,0,34,0,1,8,27],
 "pluma-file-browser-store_8h.html#a39a6b049a81ccd9f6db20c7ef0519c5e":[35,0,0,34,0,1,8,28],
 "pluma-file-browser-store_8h.html#a39f14a500d713e2018cbb138cede9426":[35,0,0,34,0,1,8,33],
 "pluma-file-browser-store_8h.html#a3bd7810ca55428020dd26ab85fe29b48":[35,0,0,34,0,1,8,46],
@@ -238,16 +249,5 @@ var NAVTREEINDEX153 =
 "pluma-io-error-message-area_8c.html#a99c58d71664289b3d6c5905647a9e656":[35,0,0,34,1,45,5],
 "pluma-io-error-message-area_8c.html#aaa52e3b8d21cfeade457825046adb69d":[35,0,0,34,1,45,8],
 "pluma-io-error-message-area_8c.html#ae67e420a29e1471ce7d257da46b5de1f":[35,0,0,34,1,45,2],
-"pluma-io-error-message-area_8c.html#aee7163436d6dcaaf1d203704485c3fea":[35,0,0,34,1,45,0],
-"pluma-io-error-message-area_8c.html#af4ac3c8c15c272976adaac19406a2823":[35,0,0,34,1,45,9],
-"pluma-io-error-message-area_8c.html#afcb0500129ff6f01aa1646b4b80d64a2":[35,0,0,34,1,45,6],
-"pluma-io-error-message-area_8c_source.html":[35,0,0,34,1,45],
-"pluma-io-error-message-area_8h.html":[35,0,0,34,1,46],
-"pluma-io-error-message-area_8h.html#a10d4b9c6ad23d53c1e762ac2ac1c9648":[35,0,0,34,1,46,6],
-"pluma-io-error-message-area_8h.html#a491b05da544c615494b15e30c3ae8d33":[35,0,0,34,1,46,2],
-"pluma-io-error-message-area_8h.html#a4df80e866e69753d1b43261be1c0fef3":[35,0,0,34,1,46,3],
-"pluma-io-error-message-area_8h.html#a8b3034d4e66c030a759be4ca06ce94f0":[35,0,0,34,1,46,0],
-"pluma-io-error-message-area_8h.html#a99c58d71664289b3d6c5905647a9e656":[35,0,0,34,1,46,4],
-"pluma-io-error-message-area_8h.html#aaa52e3b8d21cfeade457825046adb69d":[35,0,0,34,1,46,7],
-"pluma-io-error-message-area_8h.html#ae67e420a29e1471ce7d257da46b5de1f":[35,0,0,34,1,46,1]
+"pluma-io-error-message-area_8c.html#aee7163436d6dcaaf1d203704485c3fea":[35,0,0,34,1,45,0]
 };

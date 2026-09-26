@@ -1,5 +1,15 @@
 var NAVTREEINDEX146 =
 {
+"panel-multimonitor_8c.html#a61220572f9fdad10ed74a5586635cc00":[35,0,0,22,2,59,1],
+"panel-multimonitor_8c.html#a6624592c02d6413ea2749dc8bf0fc02e":[35,0,0,22,2,59,3],
+"panel-multimonitor_8c.html#a86cfd92d3c6c21f1cf86a8cc4b3d74ff":[35,0,0,22,2,59,8],
+"panel-multimonitor_8c.html#abf1a4ec897eb55d4f6517a1d839ff217":[35,0,0,22,2,59,7],
+"panel-multimonitor_8c.html#aeabaef3372fa44bbbaba9f538fca7b1b":[35,0,0,22,2,59,6],
+"panel-multimonitor_8c_source.html":[35,0,0,22,2,59],
+"panel-multimonitor_8h.html":[35,0,0,22,2,60],
+"panel-multimonitor_8h.html#a04c0cc7354f7ca4a0f50779e3132e1d0":[35,0,0,22,2,60,9],
+"panel-multimonitor_8h.html#a1a709b9613b823e32e16ca0f7214e240":[35,0,0,22,2,60,8],
+"panel-multimonitor_8h.html#a1b6676343f57e54fb8fe123bff2127ba":[35,0,0,22,2,60,3],
 "panel-multimonitor_8h.html#a28c36045e9656c730a1994fb55c02b3c":[35,0,0,22,2,60,1],
 "panel-multimonitor_8h.html#a432be053ce2be88534108c01657ee5cc":[35,0,0,22,2,60,10],
 "panel-multimonitor_8h.html#a60f96500df4d4c3a4d25387538a35027":[35,0,0,22,2,60,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX146 =
 "panel-schemas_8h.html#ab69eb83e10cdf1e94c25479dd04fba4c":[35,0,0,22,2,71,66],
 "panel-schemas_8h.html#ab7aa1707accd84927a3a6cbadb0abf78":[35,0,0,22,2,71,13],
 "panel-schemas_8h.html#ac3ecad593ddee0c7acfbb6a51dcc3528":[35,0,0,22,2,71,26],
-"panel-schemas_8h.html#acd0923c4e2e31e551e648c07b944fb69":[35,0,0,22,2,71,18],
-"panel-schemas_8h.html#ad1162705b66f9bdc401a98bec1427df0":[35,0,0,22,2,71,21],
-"panel-schemas_8h.html#ad1c57e3db77b413b3bc1f41446954457":[35,0,0,22,2,71,59],
-"panel-schemas_8h.html#ad77bdae713dc103ef78464180e2a61ca":[35,0,0,22,2,71,11],
-"panel-schemas_8h.html#ad7d42ab4ad42da027d8031ad0264c24d":[35,0,0,22,2,71,64],
-"panel-schemas_8h.html#add9c245a2a860c0a99a4239da1b2aecc":[35,0,0,22,2,71,39],
-"panel-schemas_8h.html#add9fa908f95b89181ce904a2e5345e64":[35,0,0,22,2,71,63],
-"panel-schemas_8h.html#ade512a515a3d62a47ead8dcefeb8bc5c":[35,0,0,22,2,71,40],
-"panel-schemas_8h.html#adff829bbc1d50b371d40858b0dda8693":[35,0,0,22,2,71,79],
-"panel-schemas_8h.html#af598b9ce6e908dc5b7354c8f9b5f1565":[35,0,0,22,2,71,7],
-"panel-schemas_8h.html#af641434b8d8cdf7dafa006d43683e543":[35,0,0,22,2,71,38]
+"panel-schemas_8h.html#acd0923c4e2e31e551e648c07b944fb69":[35,0,0,22,2,71,18]
 };

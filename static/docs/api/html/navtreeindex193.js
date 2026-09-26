@@ -1,5 +1,16 @@
 var NAVTREEINDEX193 =
 {
+"struct__GvcBalanceBarClass.html":[34,0,520],
+"struct__GvcBalanceBarClass.html#ab79586c5b918276005c5473fbcb29469":[34,0,520,0],
+"struct__GvcChannelBar.html":[34,0,521],
+"struct__GvcChannelBar.html#a41882cf9dbc64f2527e6774a57324a3b":[34,0,521,0],
+"struct__GvcChannelBar.html#a7e965a7bbc038fe9c75093feca5dbf3b":[34,0,521,1],
+"struct__GvcChannelBarClass.html":[34,0,522],
+"struct__GvcChannelBarClass.html#a1abd3b86c1638d16f3ec4f7771e8dc34":[34,0,522,1],
+"struct__GvcChannelBarClass.html#a2f55a6b9b4d1813bf1130319e41331ef":[34,0,522,0],
+"struct__GvcComboBox.html":[34,0,523],
+"struct__GvcComboBox.html#a204b6c1b5f4ac27bc82c00bceba3e7a4":[34,0,523,0],
+"struct__GvcComboBox.html#af5b1eb762d7587844ee413cf7cd44718":[34,0,523,1],
 "struct__GvcComboBoxClass.html":[34,0,524],
 "struct__GvcComboBoxClass.html#a494113a96554110cbe295e69f4b7bb6b":[34,0,524,1],
 "struct__GvcComboBoxClass.html#a7c8e6a2517291aa7a0f5b754181c8a58":[34,0,524,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX193 =
 "struct__MateColorSelectionDialog.html#a030ad7b81ec08471b30b12069d2dfff9":[34,0,571,3],
 "struct__MateColorSelectionDialog.html#a05bd91d685620ce654ac83c762d609c9":[34,0,571,2],
 "struct__MateColorSelectionDialog.html#a06fc1469616457b9f539ab72769e906a":[34,0,571,1],
-"struct__MateColorSelectionDialog.html#a2b0bc6e165f17f00865e8ca4fcbd674c":[34,0,571,4],
-"struct__MateColorSelectionDialog.html#a3d3e6d158bebde9ecda126fced01567a":[34,0,571,0],
-"struct__MateColorSelectionDialogClass.html":[34,0,572],
-"struct__MateColorSelectionDialogClass.html#a18ddce66a2d27d6d3818861a229ab232":[34,0,572,4],
-"struct__MateColorSelectionDialogClass.html#a503fe2fb96600626247f7cff2be5c5c8":[34,0,572,2],
-"struct__MateColorSelectionDialogClass.html#a51113ef32f6840ba479b55f64e119ad2":[34,0,572,0],
-"struct__MateColorSelectionDialogClass.html#aac697acd309b19382ebe66b0893aaba4":[34,0,572,3],
-"struct__MateColorSelectionDialogClass.html#afc8f38417edb26f5d67da290e2af8b44":[34,0,572,1],
-"struct__MateDACapplet.html":[34,0,573],
-"struct__MateDACapplet.html#a1002c95dbd567f75d2931b9ffbb8f3b4":[34,0,573,21],
-"struct__MateDACapplet.html#a1704a7ebb2b254bcee1a458d530f00e6":[34,0,573,13],
-"struct__MateDACapplet.html#a175d0e7eb1e394fbcc0525a251ee6f6b":[34,0,573,37]
+"struct__MateColorSelectionDialog.html#a2b0bc6e165f17f00865e8ca4fcbd674c":[34,0,571,4]
 };

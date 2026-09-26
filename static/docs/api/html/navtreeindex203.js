@@ -1,5 +1,16 @@
 var NAVTREEINDEX203 =
 {
+"struct__SensorsAppletSensorInfo.html#a7c8b83114f03844aa9089e65204cb7ad":[34,0,940,5],
+"struct__SensorsAppletSensorInfo.html#a90c48f10c57a73830e8e6c5b23469352":[34,0,940,2],
+"struct__SensorsAppletSensorInfo.html#a9fa122b1c2d7f921b1238640e4c0914a":[34,0,940,7],
+"struct__SensorsAppletSensorInfo.html#aa046767b75e9dca4cdb2aabf52329cdb":[34,0,940,4],
+"struct__SensorsAppletSensorInfo.html#ac3e5bd85d5679f578135fd09df8a10ba":[34,0,940,3],
+"struct__SensorsAppletSensorInfo.html#ac6dc57a2af2eee6a55db035d96fbb8e9":[34,0,940,6],
+"struct__SensorsAppletSensorInfo.html#ac6f8f87719a77706fbd40fb679233938":[34,0,940,10],
+"struct__SensorsAppletSensorInfo.html#adcdaacb84add13064da94b0a7b8df01a":[34,0,940,1],
+"struct__ShellWindow.html":[34,0,941],
+"struct__ShellWindow.html#a0777d37c31e5e2c94d4fec0a46bbc072":[34,0,941,2],
+"struct__ShellWindow.html#a483450015046b07e6ccb1282298e54e8":[34,0,941,0],
 "struct__ShellWindow.html#a58434c1697ef5976bfac50275ef5e52c":[34,0,941,3],
 "struct__ShellWindow.html#abfcfa4405f3ba5817dbf7eca193e72c5":[34,0,941,1],
 "struct__ShellWindow.html#ad370dd0626d86240cff9ecaaba42a85b":[34,0,941,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX203 =
 "struct__XSettingsList.html#ad1795f4c0125a561338b56efc5afb4bf":[34,0,993,0],
 "struct__XSettingsSetting.html":[34,0,994],
 "struct__XSettingsSetting.html#a14050a46a703fe2a76aa0defbab212b9":[34,0,994,1],
-"struct__XSettingsSetting.html#a433ee65c177db4c04ce64b4ad1d9ecad":[34,0,994,3],
-"struct__XSettingsSetting.html#a9f457736b4cdcfe360509a43740a6d5e":[34,0,994,2],
-"struct__XSettingsSetting.html#aa7f75a91b9c6b75c706f9dae07f02f13":[34,0,994,4],
-"struct__XSettingsSetting.html#ace2066e84a9e05db679d500346a17661":[34,0,994,6],
-"struct__XSettingsSetting.html#ae559d0b404956b6b8ac46ba92f594976":[34,0,994,0],
-"struct__XSettingsSetting.html#ae85ea1668a8b11b0082f2c2bcf562e48":[34,0,994,5],
-"struct__charpick__button__cb__data.html":[34,0,136],
-"struct__charpick__button__cb__data.html#a30a771626ee425bcb60cc2a802a2648e":[34,0,136,1],
-"struct__charpick__button__cb__data.html#ab7116524cb4f345382727fcdb27fe33e":[34,0,136,0],
-"struct__charpick__data.html":[34,0,137],
-"struct__charpick__data.html#a0097360bd05da5f7013cf1e0b5a00334":[34,0,137,3],
-"struct__charpick__data.html#a0e2ce71ed11e8af728da302379f25b66":[34,0,137,6]
+"struct__XSettingsSetting.html#a433ee65c177db4c04ce64b4ad1d9ecad":[34,0,994,3]
 };

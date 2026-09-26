@@ -1,5 +1,16 @@
 var NAVTREEINDEX170 =
 {
+"structBuffer.html#aeec1fd4af0ddf6765b0187466d4361b8":[34,0,1029,0],
+"structCactAddCapabilityDialog.html":[34,0,1030],
+"structCactAddCapabilityDialog.html#a1306d45de6b9be04afb302d4ea1d96d4":[34,0,1030,1],
+"structCactAddCapabilityDialog.html#ad055ffef905750bf1b7d588d4e0425b1":[34,0,1030,0],
+"structCactAddCapabilityDialogClass.html":[34,0,1031],
+"structCactAddCapabilityDialogClass.html#a077e4c0f298d33c85a1652cc1c4e8e9a":[34,0,1031,0],
+"structCactAddCapabilityDialogClass.html#a6fd0904f4e261fb75f0e989e8d7f2c65":[34,0,1031,1],
+"structCactAddSchemeDialog.html":[34,0,1032],
+"structCactAddSchemeDialog.html#a18886436f33e0fcf073f6df0f75dac46":[34,0,1032,0],
+"structCactAddSchemeDialog.html#a38046b6e6411cb878f766f0e16f727b3":[34,0,1032,1],
+"structCactAddSchemeDialogClass.html":[34,0,1033],
 "structCactAddSchemeDialogClass.html#ac853c07165bba16f6226719c9ecd8b6c":[34,0,1033,0],
 "structCactAddSchemeDialogClass.html#af74efd6ccc0a4c7f808814cd494eacfe":[34,0,1033,1],
 "structCactApplication.html":[34,0,1034],
@@ -238,16 +249,5 @@ var NAVTREEINDEX170 =
 "structCajaDragInfo.html#a5c7ec9393deab079c8d42d8051fafcf3":[34,0,1103,2],
 "structCajaDragInfo.html#a92a517c079969af354595c78bc4d0783":[34,0,1103,6],
 "structCajaDragInfo.html#a956cb7121fca0cd9bfb8d16b58a8d5be":[34,0,1103,4],
-"structCajaDragInfo.html#a9cac07474d2da88664d2aa59eaa4dd5f":[34,0,1103,3],
-"structCajaDragInfo.html#ac4f09dcd2ed625dee55e3d0b76faa24a":[34,0,1103,11],
-"structCajaDragInfo.html#acf8df35dee189c0f88a771a476471bd2":[34,0,1103,9],
-"structCajaDragInfo.html#adb066aa0eeb6dab3c8e21ea0d4f384f2":[34,0,1103,5],
-"structCajaDragInfo.html#adb7de7fe7e039940e7fbbec884982630":[34,0,1103,8],
-"structCajaDragSelectionItem.html":[34,0,1104],
-"structCajaDragSelectionItem.html#a11e7bba1bd6d586e384f14c0fa2d31b2":[34,0,1104,5],
-"structCajaDragSelectionItem.html#a40912fb78e3a6f8661d1c8882f5529d8":[34,0,1104,1],
-"structCajaDragSelectionItem.html#a918459d84a7ae1428b0d9a4824a9273b":[34,0,1104,0],
-"structCajaDragSelectionItem.html#aab3813be441643c30ef6b7948300bad5":[34,0,1104,3],
-"structCajaDragSelectionItem.html#ac2d57c342945bf4998b120acba404d6b":[34,0,1104,4],
-"structCajaDragSelectionItem.html#afb5ffe587f4a4ae092865a91db2ddc57":[34,0,1104,2]
+"structCajaDragInfo.html#a9cac07474d2da88664d2aa59eaa4dd5f":[34,0,1103,3]
 };

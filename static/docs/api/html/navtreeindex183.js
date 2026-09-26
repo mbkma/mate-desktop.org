@@ -1,5 +1,16 @@
 var NAVTREEINDEX183 =
 {
+"struct__CactMenubarPrivate.html#a18cd836988d5583340043946121d7e53":[34,0,45,12],
+"struct__CactMenubarPrivate.html#a1b698d39046555cc1f7e57e654e83a51":[34,0,45,5],
+"struct__CactMenubarPrivate.html#a261979a4232d77d2e0ac8f7e07c45a4e":[34,0,45,11],
+"struct__CactMenubarPrivate.html#a297810d054bce660b29c090d9f2ec070":[34,0,45,24],
+"struct__CactMenubarPrivate.html#a2e170f46197ce2f02a038fe3a7d3728d":[34,0,45,17],
+"struct__CactMenubarPrivate.html#a31470614070a1ccac154d1e783886107":[34,0,45,8],
+"struct__CactMenubarPrivate.html#a43fe3cbd8c0515c5255b9edfe313fd73":[34,0,45,16],
+"struct__CactMenubarPrivate.html#a4c1a0dd3d72f7d3428dcdbcefc23a953":[34,0,45,9],
+"struct__CactMenubarPrivate.html#a4f507cf6d5f8e6cbb05b456b461328d3":[34,0,45,4],
+"struct__CactMenubarPrivate.html#a5a99adb471291cacaa65f57206dfbdf4":[34,0,45,23],
+"struct__CactMenubarPrivate.html#a5c6ae6d6b6cb91ea2241c7b8f40090fc":[34,0,45,7],
 "struct__CactMenubarPrivate.html#a665710c1914e751884413863ed9e6a26":[34,0,45,27],
 "struct__CactMenubarPrivate.html#a7538511c5d499e5fa1dae52f828ca096":[34,0,45,28],
 "struct__CactMenubarPrivate.html#a798dd2c1ac1312bfe68d5c605f92795e":[34,0,45,15],
@@ -238,16 +249,5 @@ var NAVTREEINDEX183 =
 "struct__CajaFrClass.html":[34,0,65],
 "struct__CajaFrClass.html#a18b31343da6553f362b00dde74bb9c65":[34,0,65,0],
 "struct__CajaImageConverter.html":[34,0,66],
-"struct__CajaImageConverter.html#a88c3484524e914672f6d7135961ed343":[34,0,66,0],
-"struct__CajaImageConverterClass.html":[34,0,67],
-"struct__CajaImageConverterClass.html#aab5c39f733e45fd3eea1ab19048fc793":[34,0,67,0],
-"struct__CajaInfoProviderIface.html":[34,0,68],
-"struct__CajaInfoProviderIface.html#a8c5ff70bc9fc801a534edae3c9a28b42":[34,0,68,0],
-"struct__CajaInfoProviderIface.html#aa1e67a4dcac098708c1113debb588a16":[34,0,68,1],
-"struct__CajaInfoProviderIface.html#ad4a7d82f4149bd5248ca31fb58039b0f":[34,0,68,2],
-"struct__CajaLocationDialog.html":[34,0,69],
-"struct__CajaLocationDialog.html#a11576d839dd0137e4054dc4193a591c6":[34,0,69,1],
-"struct__CajaLocationDialog.html#a5c970cd48148dfdf10169d3d781e697c":[34,0,69,0],
-"struct__CajaLocationDialogClass.html":[34,0,70],
-"struct__CajaLocationDialogClass.html#ad9ff0e15e10acd5bf15caf681d73788e":[34,0,70,0]
+"struct__CajaImageConverter.html#a88c3484524e914672f6d7135961ed343":[34,0,66,0]
 };

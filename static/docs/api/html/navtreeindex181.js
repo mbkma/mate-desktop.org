@@ -1,5 +1,16 @@
 var NAVTREEINDEX181 =
 {
+"structStickyNote.html#a94874669d4708890c49d50381d2619d8":[34,0,1633,20],
+"structStickyNote.html#a98e6eea1ecd86aa8cc0c463cf522b7cd":[34,0,1633,13],
+"structStickyNote.html#a9dc4a6680634b015622148b018ca14f1":[34,0,1633,30],
+"structStickyNote.html#aa6d83503cbf5e9e0e4e879531145ec6c":[34,0,1633,19],
+"structStickyNote.html#aa76c0a703e87f112627385936c9ee8eb":[34,0,1633,3],
+"structStickyNote.html#ac76a906aa5cf4bf54d769f75804a2893":[34,0,1633,15],
+"structStickyNote.html#ad362ac6301fe5fe96e2d781b09a7812c":[34,0,1633,22],
+"structStickyNote.html#ae3b950284f7e357e7308412b830e273f":[34,0,1633,11],
+"structStickyNote.html#ae4e3fc84a5bded9a5b55f90f6f0d84fe":[34,0,1633,16],
+"structStickyNote.html#ae6885bfa2b0317864de8f135b022945f":[34,0,1633,34],
+"structStickyNote.html#afc4c676106567a8bbad441674b8c9b3a":[34,0,1633,6],
 "structStickyNote.html#afe5ed31f647ef833ead120b449944c89":[34,0,1633,31],
 "structStickyNotes.html":[34,0,1634],
 "structStickyNotes.html#a05a2153663f012a04a383f6a8a69b1bb":[34,0,1634,21],
@@ -238,16 +249,5 @@ var NAVTREEINDEX181 =
 "struct__AlsaElementInterface.html#ad17c2885dc49ec55f5233f7ade14ca50":[34,0,6,4],
 "struct__AlsaElementInterface.html#af8a958599cb848f71e4eedd6ce085682":[34,0,6,3],
 "struct__AlsaStream.html":[34,0,7],
-"struct__AlsaStream.html#a1dc17ee6793bf4b0889bfc16ec02189a":[34,0,7,1],
-"struct__AlsaStream.html#a67f81be96209439eab454e78d7e07094":[34,0,7,0],
-"struct__AlsaStreamClass.html":[34,0,8],
-"struct__AlsaStreamClass.html#a73dc7f67363656b2ea3db2d7fe5accc5":[34,0,8,0],
-"struct__AlsaStreamControl.html":[34,0,9],
-"struct__AlsaStreamControl.html#a40f74d763f8a4f81bf704162a823309a":[34,0,9,1],
-"struct__AlsaStreamControl.html#a869b658d1260c1ffa763d773d49b87f4":[34,0,9,0],
-"struct__AlsaStreamControlClass.html":[34,0,10],
-"struct__AlsaStreamControlClass.html#a13e1d4edea1766784a225cf02954fc84":[34,0,10,1],
-"struct__AlsaStreamControlClass.html#a37a80ed38c5a29973c7802e67391ccd1":[34,0,10,6],
-"struct__AlsaStreamControlClass.html#a47cc95df4f5d0cd5e066f1bab6ad5f2b":[34,0,10,3],
-"struct__AlsaStreamControlClass.html#a541c75c9bd9985a48efc8ef190913c87":[34,0,10,5]
+"struct__AlsaStream.html#a1dc17ee6793bf4b0889bfc16ec02189a":[34,0,7,1]
 };

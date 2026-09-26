@@ -2,7 +2,7 @@ var searchData=
 [
   ['keep_5faligned_0',['keep_aligned',['../structCajaIconContainerDetails.html#a43fa0e89a799c1bc8461619cd9e3cdfe',1,'CajaIconContainerDetails']]],
   ['keep_5fchoice_1',['keep_choice',['../structNAImporterAskUserParms.html#a406dc5e35045ecd0905fa60e9d75c8ae',1,'NAImporterAskUserParms']]],
-  ['key_2',['key',['../acme_8h.html#a53ba42873949ed19f570feb354c80069',1,'key:&#160;acme.h'],['../classSmoothRefresh.html#aad3fd9b2e64a94b39df3396bbc6607a5',1,'SmoothRefresh::KEY'],['../structSnShortcut.html#a535bc1a6bc52510c7ad2f7e68fa66d99',1,'SnShortcut::key'],['../struct__MetaTabEntry.html#ac142bb277d177743c5da1506fcf092a6',1,'_MetaTabEntry::key']]],
+  ['key_2',['key',['../acme_8h.html#a53ba42873949ed19f570feb354c80069',1,'key:&#160;acme.h'],['../structSnShortcut.html#a535bc1a6bc52510c7ad2f7e68fa66d99',1,'SnShortcut::key'],['../struct__MetaTabEntry.html#ac142bb277d177743c5da1506fcf092a6',1,'_MetaTabEntry::key'],['../classSmoothRefresh.html#aad3fd9b2e64a94b39df3396bbc6607a5',1,'SmoothRefresh::KEY']]],
   ['key_5fbinding_5fhandled_3',['key_binding_handled',['../struct__EvView.html#aeea168491cedc1bb5af1e667c2e2749d',1,'_EvView']]],
   ['key_5fbindings_4',['key_bindings',['../struct__MetaDisplay.html#a921d70af8a70a95f82e350ceaa0a5582',1,'_MetaDisplay']]],
   ['key_5fdefault_5fvalue_5',['KEY_DEFAULT_VALUE',['../classSmoothRefresh.html#a9e64c79b0f6e0d384149746a17522f3d',1,'SmoothRefresh']]],

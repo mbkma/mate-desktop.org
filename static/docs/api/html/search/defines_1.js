@@ -203,9 +203,10 @@ var searchData=
   ['attribute_5fnot_5ffound_200',['ATTRIBUTE_NOT_FOUND',['../theme-parser_8c.html#a0a92d59dce47d30b3199c112228f2a08',1,'theme-parser.c']]],
   ['attributes_5ffor_5fcreating_5fthumbnail_201',['ATTRIBUTES_FOR_CREATING_THUMBNAIL',['../font-model_8c.html#a52b5fff62c122cb50904059466eb41d9',1,'font-model.c']]],
   ['attributes_5ffor_5fexisting_5fthumbnail_202',['ATTRIBUTES_FOR_EXISTING_THUMBNAIL',['../font-model_8c.html#a1cb9d64b28e0d4eeff54194f3ee849c0',1,'font-model.c']]],
-  ['auto_5fscroll_5fmargin_203',['auto_scroll_margin',['../caja-dnd_8c.html#a8d436895600d21f0a40e6e73499909f1',1,'AUTO_SCROLL_MARGIN:&#160;caja-dnd.c'],['../caja-tree-view-drag-dest_8c.html#a8d436895600d21f0a40e6e73499909f1',1,'AUTO_SCROLL_MARGIN:&#160;caja-tree-view-drag-dest.c']]],
-  ['autocheck_5ftype_5fkey_204',['AUTOCHECK_TYPE_KEY',['../pluma-spell-plugin_8c.html#a7e2fcc47711954047706727c79eb4375',1,'pluma-spell-plugin.c']]],
-  ['autoscroll_5finitial_5fdelay_205',['AUTOSCROLL_INITIAL_DELAY',['../caja-dnd_8c.html#a3b66ffbd64158e172d19a1d989fe4069',1,'caja-dnd.c']]],
-  ['autoscroll_5ftimeout_5finterval_206',['AUTOSCROLL_TIMEOUT_INTERVAL',['../caja-dnd_8c.html#acc019531e849682d9ede5b3934617b99',1,'caja-dnd.c']]],
-  ['avahi_5flabel_5fmax_207',['AVAHI_LABEL_MAX',['../http_8c.html#aa3afae3e73320ecda156b23541f50d8d',1,'http.c']]]
+  ['auto_5fhide_5fhit_5fmargin_203',['AUTO_HIDE_HIT_MARGIN',['../panel-toplevel_8c.html#acef2c9e16f02f3afc952c60ef77c5344',1,'panel-toplevel.c']]],
+  ['auto_5fscroll_5fmargin_204',['auto_scroll_margin',['../caja-dnd_8c.html#a8d436895600d21f0a40e6e73499909f1',1,'AUTO_SCROLL_MARGIN:&#160;caja-dnd.c'],['../caja-tree-view-drag-dest_8c.html#a8d436895600d21f0a40e6e73499909f1',1,'AUTO_SCROLL_MARGIN:&#160;caja-tree-view-drag-dest.c']]],
+  ['autocheck_5ftype_5fkey_205',['AUTOCHECK_TYPE_KEY',['../pluma-spell-plugin_8c.html#a7e2fcc47711954047706727c79eb4375',1,'pluma-spell-plugin.c']]],
+  ['autoscroll_5finitial_5fdelay_206',['AUTOSCROLL_INITIAL_DELAY',['../caja-dnd_8c.html#a3b66ffbd64158e172d19a1d989fe4069',1,'caja-dnd.c']]],
+  ['autoscroll_5ftimeout_5finterval_207',['AUTOSCROLL_TIMEOUT_INTERVAL',['../caja-dnd_8c.html#acc019531e849682d9ede5b3934617b99',1,'caja-dnd.c']]],
+  ['avahi_5flabel_5fmax_208',['AVAHI_LABEL_MAX',['../http_8c.html#aa3afae3e73320ecda156b23541f50d8d',1,'http.c']]]
 ];

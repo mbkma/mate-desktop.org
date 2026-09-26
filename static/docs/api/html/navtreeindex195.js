@@ -1,5 +1,16 @@
 var NAVTREEINDEX195 =
 {
+"struct__MateMDIChild.html#afa57fbe84704e5b839d65e12b64e0973":[34,0,620,0],
+"struct__MateMDIChildClass.html":[34,0,621],
+"struct__MateMDIChildClass.html#a71de172b31439b3477c442882072e470":[34,0,621,1],
+"struct__MateMDIChildClass.html#a79da20923c7193e549cfce78516ef0f4":[34,0,621,2],
+"struct__MateMDIChildClass.html#a83df2148dbb1f6cea672983a86642083":[34,0,621,4],
+"struct__MateMDIChildClass.html#aae37d58de3a9de818e81bf0e4309fc7a":[34,0,621,3],
+"struct__MateMDIChildClass.html#af8d58567f196ae922abe86f4e55746d6":[34,0,621,0],
+"struct__MateMDIClass.html":[34,0,622],
+"struct__MateMDIClass.html#a0022e35526548e6fd33bd82ef97a3582":[34,0,622,6],
+"struct__MateMDIClass.html#a0d944c61272a866d7558d37107bc19f7":[34,0,622,0],
+"struct__MateMDIClass.html#a33f18ffacfd90f67af3d87657a350b2b":[34,0,622,3],
 "struct__MateMDIClass.html#a4e980e637c4b8c49b279297b238e7add":[34,0,622,5],
 "struct__MateMDIClass.html#ab8cb8826be023a670deeca4dca959063":[34,0,622,7],
 "struct__MateMDIClass.html#abb30450913c437f68d22e0c5862e4e56":[34,0,622,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX195 =
 "struct__MateScoresClass.html":[34,0,672],
 "struct__MateScoresClass.html#a4a4e3490efbf24e8b82b63b2b3548d61":[34,0,672,0],
 "struct__MateScoresClass.html#a831808648085106981d0302f4b6cdc80":[34,0,672,1],
-"struct__MateScoresClass.html#ad14f9edf4bd28f7e1008c0de9866c4e5":[34,0,672,2],
-"struct__MateThemeCommonInfo.html":[34,0,673],
-"struct__MateThemeCommonInfo.html#a06634e4a535a0036bcbabb1967f5b6fa":[34,0,673,1],
-"struct__MateThemeCommonInfo.html#a1cfc4128fe72c27595b110002afee624":[34,0,673,3],
-"struct__MateThemeCommonInfo.html#a3ecbe70db2a38c51d2ebf4c12502b031":[34,0,673,4],
-"struct__MateThemeCommonInfo.html#a6e1503515fe6631a9b9c99abee8f2558":[34,0,673,2],
-"struct__MateThemeCommonInfo.html#a7bca6ae27baf31c1d0ba9969ea585fb8":[34,0,673,5],
-"struct__MateThemeCommonInfo.html#a8dc3e3068d8e031a45fe0f44f1002956":[34,0,673,0],
-"struct__MateThemeCursorInfo.html":[34,0,674],
-"struct__MateThemeCursorInfo.html#a0e8e5c688a838b0b9f364b0a826b3f59":[34,0,674,5],
-"struct__MateThemeCursorInfo.html#a39019456e450d0b77e659bc522e130b6":[34,0,674,7],
-"struct__MateThemeCursorInfo.html#a62edabc6fa48cdcee633bfd2ec9f3b17":[34,0,674,0]
+"struct__MateScoresClass.html#ad14f9edf4bd28f7e1008c0de9866c4e5":[34,0,672,2]
 };

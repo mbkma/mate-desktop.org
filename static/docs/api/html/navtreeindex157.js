@@ -1,5 +1,16 @@
 var NAVTREEINDEX157 =
 {
+"pluma-spell-plugin_8h.html#a89c0ae8d5e5f4972056562bf043a3d05":[35,0,0,34,0,4,11,3],
+"pluma-spell-plugin_8h.html#a978265f02097da66e3fd6739eb51e8d0":[35,0,0,34,0,4,11,4],
+"pluma-spell-plugin_8h.html#a9838764da35cc9c99745ef1cc724c825":[35,0,0,34,0,4,11,8],
+"pluma-spell-plugin_8h.html#aaf0ebbbd2b6bc371987c7efa85fe7ef3":[35,0,0,34,0,4,11,6],
+"pluma-spell-plugin_8h.html#ae201a8ae07b6cad215d5ceb789b1f0ab":[35,0,0,34,0,4,11,11],
+"pluma-spell-plugin_8h.html#ae47c607e0fec372168183835bbf96f6d":[35,0,0,34,0,4,11,12],
+"pluma-spell-plugin_8h.html#afab689bf99ce98d0effbb1438bfa3b6a":[35,0,0,34,0,4,11,2],
+"pluma-spell-plugin_8h.html#afbc113dbcbba90bcc7fe0cd273eb6ce4":[35,0,0,34,0,4,11,7],
+"pluma-spell-plugin_8h_source.html":[35,0,0,34,0,4,11],
+"pluma-spell-utils_8c.html":[35,0,0,34,0,4,12],
+"pluma-spell-utils_8c.html#a2c3e4ae68912b77998be02433e8ad39b":[35,0,0,34,0,4,12,1],
 "pluma-spell-utils_8c.html#a5526d68be77d680d9a3cbdf77aad7d39":[35,0,0,34,0,4,12,0],
 "pluma-spell-utils_8c_source.html":[35,0,0,34,0,4,12],
 "pluma-spell-utils_8h.html":[35,0,0,34,0,4,13],
@@ -238,16 +249,5 @@ var NAVTREEINDEX157 =
 "pluma-time-plugin_8c.html#a14c813a42d3db223927149c546ed2507":[35,0,0,34,0,6,0,3],
 "pluma-time-plugin_8c.html#a2287a378de9e56a84e9b2bdde76c0ef1":[35,0,0,34,0,6,0,0],
 "pluma-time-plugin_8c.html#a2786433e41b94926d06e356c31f1595b":[35,0,0,34,0,6,0,7],
-"pluma-time-plugin_8c.html#a3a9249bc4030a743e7f5a676f66d9365":[35,0,0,34,0,6,0,2],
-"pluma-time-plugin_8c.html#a6769ebb1ae12ec262826763531649f50":[35,0,0,34,0,6,0,1],
-"pluma-time-plugin_8c.html#ac8869e6e720904952408cb36fde80d3c":[35,0,0,34,0,6,0,4],
-"pluma-time-plugin_8c.html#ac8aaf4a654dc5b25db42dbafba67bf61":[35,0,0,34,0,6,0,6],
-"pluma-time-plugin_8c.html#acf6eb4923fc730fe2d1d4c03458495c9":[35,0,0,34,0,6,0,8],
-"pluma-time-plugin_8c.html#acf6eb4923fc730fe2d1d4c03458495c9a008f766280a0a9cf9f7d7a2e8ece79d2":[35,0,0,34,0,6,0,8,0],
-"pluma-time-plugin_8c.html#acf6eb4923fc730fe2d1d4c03458495c9a0ce448f721939719871c133af548d7e3":[35,0,0,34,0,6,0,8,1],
-"pluma-time-plugin_8c.html#acf6eb4923fc730fe2d1d4c03458495c9a74d36bdda6803fcde4e1391852e1607e":[35,0,0,34,0,6,0,8,3],
-"pluma-time-plugin_8c.html#acf6eb4923fc730fe2d1d4c03458495c9a9897ea3817d4e13a77ea844ae766edcc":[35,0,0,34,0,6,0,8,2],
-"pluma-time-plugin_8c.html#ad2577b9323b5c5894f1635bb8e0086ea":[35,0,0,34,0,6,0,5],
-"pluma-time-plugin_8c.html#ae201a8ae07b6cad215d5ceb789b1f0ab":[35,0,0,34,0,6,0,10],
-"pluma-time-plugin_8c.html#afc4aa1dfadefa28c58c0cd17b9c3dd83":[35,0,0,34,0,6,0,9]
+"pluma-time-plugin_8c.html#a3a9249bc4030a743e7f5a676f66d9365":[35,0,0,34,0,6,0,2]
 };

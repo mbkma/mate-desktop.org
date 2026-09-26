@@ -1,5 +1,16 @@
 var NAVTREEINDEX166 =
 {
+"sensors-applet-settings_8h.html#a7f4227184bd6a7aa7599703c57b1a67e":[35,0,0,26,2,16,16],
+"sensors-applet-settings_8h.html#a9287e35d4c0c950a01b03d2eac6064bd":[35,0,0,26,2,16,3],
+"sensors-applet-settings_8h.html#aa968a61524f9ed159c4c5464cb26dd41":[35,0,0,26,2,16,5],
+"sensors-applet-settings_8h.html#ab0139008fdda107456f13f837872b410":[35,0,0,26,2,16,20],
+"sensors-applet-settings_8h.html#ab43ba3a6e428bdcb9d7c635a019a1f79":[35,0,0,26,2,16,22],
+"sensors-applet-settings_8h.html#ab7ffb5a0ee7b15aecd0b32e84b93e2ee":[35,0,0,26,2,16,18],
+"sensors-applet-settings_8h.html#ab909947eb49bfce3b280b12ef3e7f5fc":[35,0,0,26,2,16,23],
+"sensors-applet-settings_8h.html#ad97191f745b50dde22d79adb189ec4c8":[35,0,0,26,2,16,9],
+"sensors-applet-settings_8h.html#adaa11d244a2a92a6338c5eaeed01d78e":[35,0,0,26,2,16,27],
+"sensors-applet-settings_8h.html#adf39a275a654a92222e6ab25a0fda9ed":[35,0,0,26,2,16,6],
+"sensors-applet-settings_8h.html#ae2b4bc72a89a7d23d1efe5b3f70b43f0":[35,0,0,26,2,16,2],
 "sensors-applet-settings_8h.html#aefb2aa75be4323fe06eb3ec8394bdfc7":[35,0,0,26,2,16,13],
 "sensors-applet-settings_8h.html#af624ecaabdab34ed075195e2381e0c19":[35,0,0,26,2,16,28],
 "sensors-applet-settings_8h.html#afd20e661c412526f7357da2b15a5fc5e":[35,0,0,26,2,16,10],
@@ -238,16 +249,5 @@ var NAVTREEINDEX166 =
 "skeyutil_8c.html#a4ddd8293217445bd62ac31057dcb2510":[35,0,0,30,0,0,10,0],
 "skeyutil_8c.html#a66da17140e5c53f76d3907f6d874e86b":[35,0,0,30,0,0,10,1],
 "skeyutil_8c_source.html":[35,0,0,30,0,0,10],
-"skeyutil_8h.html":[35,0,0,30,0,0,11],
-"skeyutil_8h.html#a4ddd8293217445bd62ac31057dcb2510":[35,0,0,30,0,0,11,0],
-"skeyutil_8h.html#a66da17140e5c53f76d3907f6d874e86b":[35,0,0,30,0,0,11,1],
-"skeyutil_8h_source.html":[35,0,0,30,0,0,11],
-"slab-mate-util_8c.html":[35,0,0,14,2,21],
-"slab-mate-util_8c.html#a21dd6d687d57fe609e32521f5bc2fa3c":[35,0,0,14,2,21,2],
-"slab-mate-util_8c.html#a3687df70c81ae78cf69710c14e6d8c0e":[35,0,0,14,2,21,3],
-"slab-mate-util_8c.html#a8f4b966e4e97797b0796672ecad095fa":[35,0,0,14,2,21,0],
-"slab-mate-util_8c.html#a98e7b676d9ff277aff470a0b55d8742d":[35,0,0,14,2,21,1],
-"slab-mate-util_8c_source.html":[35,0,0,14,2,21],
-"slab-mate-util_8h.html":[35,0,0,14,2,22],
-"slab-mate-util_8h.html#a21dd6d687d57fe609e32521f5bc2fa3c":[35,0,0,14,2,22,2]
+"skeyutil_8h.html":[35,0,0,30,0,0,11]
 };
