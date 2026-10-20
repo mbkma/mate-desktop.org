@@ -638,75 +638,79 @@ $(document).ready(function(){initNavTree('cpufreq-prefs_8c_source.html',''); ini
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>{</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>    GtkBuilder *builder;</div>
 <div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
-<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    builder = gtk_builder_new_from_resource (CPUFREQ_RESOURCE_PATH <span class="stringliteral">&quot;cpufreq-preferences.ui&quot;</span>);</div>
-<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span> </div>
-<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_dialog&quot;</span>));</div>
-<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span> </div>
-<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;cpu_combo = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_cpu_number&quot;</span>));</div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span>    builder = gtk_builder_new ();</div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span>    gtk_builder_set_translation_domain (builder, GETTEXT_PACKAGE);</div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>    gtk_builder_add_from_resource (builder,</div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>                                   CPUFREQ_RESOURCE_PATH <span class="stringliteral">&quot;cpufreq-preferences.ui&quot;</span>,</div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>                                   <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span> </div>
-<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_mode_combo = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_mode&quot;</span>));</div>
+<div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_dialog&quot;</span>));</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_freq = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_freq&quot;</span>));</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_unit = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_unit&quot;</span>));</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_perc = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_perc&quot;</span>));</div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;cpu_combo = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_cpu_number&quot;</span>));</div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_mode_combo = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_mode&quot;</span>));</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;monitor_settings_frame = GTK_WIDGET (gtk_builder_get_object (builder,</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>                                                                              <span class="stringliteral">&quot;monitor_settings_frame&quot;</span>));</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    g_object_unref (builder);</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    cpufreq_prefs_dialog_show_mode_combo_setup (prefs);</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_freq = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_freq&quot;</span>));</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_unit = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_unit&quot;</span>));</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_perc = GTK_WIDGET (gtk_builder_get_object (builder, <span class="stringliteral">&quot;prefs_show_perc&quot;</span>));</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span> </div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;monitor_settings_frame = GTK_WIDGET (gtk_builder_get_object (builder,</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>                                                                              <span class="stringliteral">&quot;monitor_settings_frame&quot;</span>));</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span> </div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="cpufreq-utils_8c.html#a430e8fbf6630d7a351879bbbed584b3b">cpufreq_utils_get_n_cpus</a> () &gt; 1)</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        cpufreq_prefs_dialog_cpu_combo_setup (prefs);</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span> </div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    g_signal_connect_swapped (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog, <span class="stringliteral">&quot;response&quot;</span>,</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>                              G_CALLBACK (cpufreq_prefs_dialog_response_cb),</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>                              prefs);</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    g_object_unref (builder);</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    cpufreq_prefs_dialog_show_mode_combo_setup (prefs);</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span> </div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="cpufreq-utils_8c.html#a430e8fbf6630d7a351879bbbed584b3b">cpufreq_utils_get_n_cpus</a> () &gt; 1)</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>        cpufreq_prefs_dialog_cpu_combo_setup (prefs);</div>
 <div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span> </div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_freq, <span class="stringliteral">&quot;toggled&quot;</span>,</div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_freq_toggled),</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                      prefs);</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>    g_signal_connect_swapped (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog, <span class="stringliteral">&quot;response&quot;</span>,</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>                              G_CALLBACK (cpufreq_prefs_dialog_response_cb),</div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>                              prefs);</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_unit, <span class="stringliteral">&quot;toggled&quot;</span>,</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_unit_toggled),</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_freq, <span class="stringliteral">&quot;toggled&quot;</span>,</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_freq_toggled),</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>                      prefs);</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span> </div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_perc, <span class="stringliteral">&quot;toggled&quot;</span>,</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_perc_toggled),</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_unit, <span class="stringliteral">&quot;toggled&quot;</span>,</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_unit_toggled),</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>                      prefs);</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;cpu_combo, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                      G_CALLBACK (cpufreq_prefs_dialog_cpu_number_changed),</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_perc, <span class="stringliteral">&quot;toggled&quot;</span>,</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_perc_toggled),</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>                      prefs);</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_mode_combo, <span class="stringliteral">&quot;changed&quot;</span>,</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_mode_changed),</div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;cpu_combo, <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>                      G_CALLBACK (cpufreq_prefs_dialog_cpu_number_changed),</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                      prefs);</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>}</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span> </div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00581" data-start="{" data-end="}">
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno"><a class="line" href="cpufreq-prefs_8c.html#ae28072eac40400a72183557d3713c8dc">  581</a></span><a class="code hl_function" href="cpufreq-prefs_8c.html#ae28072eac40400a72183557d3713c8dc">cpufreq_preferences_dialog_run</a> (<a class="code hl_struct" href="struct__CPUFreqPrefs.html">CPUFreqPrefs</a> *prefs,</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>                                GdkScreen    *screen)</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>{</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    g_return_if_fail (<a class="code hl_define" href="cpufreq-prefs_8h.html#afdb8b8fb9100f01b060ee37fe4757aa1">CPUFREQ_IS_PREFS</a> (prefs));</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keywordflow">if</span> (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog) {</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        <span class="comment">/* Dialog already exist, only show it */</span></div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        gtk_window_present (GTK_WINDOW (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog));</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    }</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    cpufreq_prefs_dialog_create (prefs);</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    gtk_window_set_screen (GTK_WINDOW (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog), screen);</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span> </div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    cpufreq_prefs_dialog_update_sensitivity (prefs);</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    cpufreq_prefs_dialog_update_visibility (prefs);</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    cpufreq_prefs_dialog_update (prefs);</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span> </div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    g_signal_connect (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;show_mode_combo, <span class="stringliteral">&quot;changed&quot;</span>,</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>                      G_CALLBACK (cpufreq_prefs_dialog_show_mode_changed),</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>                      prefs);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>}</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00585" data-start="{" data-end="}">
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno"><a class="line" href="cpufreq-prefs_8c.html#ae28072eac40400a72183557d3713c8dc">  585</a></span><a class="code hl_function" href="cpufreq-prefs_8c.html#ae28072eac40400a72183557d3713c8dc">cpufreq_preferences_dialog_run</a> (<a class="code hl_struct" href="struct__CPUFreqPrefs.html">CPUFreqPrefs</a> *prefs,</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                                GdkScreen    *screen)</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>{</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    g_return_if_fail (<a class="code hl_define" href="cpufreq-prefs_8h.html#afdb8b8fb9100f01b060ee37fe4757aa1">CPUFREQ_IS_PREFS</a> (prefs));</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    <span class="keywordflow">if</span> (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog) {</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>        <span class="comment">/* Dialog already exist, only show it */</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>        gtk_window_present (GTK_WINDOW (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog));</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    cpufreq_prefs_dialog_create (prefs);</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    gtk_window_set_screen (GTK_WINDOW (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog), screen);</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span> </div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    gtk_widget_show (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog);</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>}</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    cpufreq_prefs_dialog_update_sensitivity (prefs);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    cpufreq_prefs_dialog_update_visibility (prefs);</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    cpufreq_prefs_dialog_update (prefs);</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    gtk_widget_show (prefs-&gt;<a class="code hl_variable" href="struct__CPUFreqPrefs.html#a1ca061f5b71f29761c8244f8601af966">priv</a>-&gt;dialog);</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -728,7 +732,7 @@ $(document).ready(function(){initNavTree('cpufreq-prefs_8c_source.html',''); ini
 <div class="ttc" id="acpufreq-prefs_8c_html_ab719707cad671ce69bd3b488843e06b9ac37dda0da1a44e10c0504afeeb863f3c"><div class="ttname"><a href="cpufreq-prefs_8c.html#ab719707cad671ce69bd3b488843e06b9ac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a></div><div class="ttdeci">@ PROP_0</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00034">cpufreq-prefs.c:34</a></div></div>
 <div class="ttc" id="acpufreq-prefs_8c_html_ab719707cad671ce69bd3b488843e06b9ad0c4f9d6881279c23e9c26d4fa7bc471"><div class="ttname"><a href="cpufreq-prefs_8c.html#ab719707cad671ce69bd3b488843e06b9ad0c4f9d6881279c23e9c26d4fa7bc471">PROP_SHOW_TEXT_MODE</a></div><div class="ttdeci">@ PROP_SHOW_TEXT_MODE</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00037">cpufreq-prefs.c:37</a></div></div>
 <div class="ttc" id="acpufreq-prefs_8c_html_abf3b777c066d23af23455797f3bab25e"><div class="ttname"><a href="cpufreq-prefs_8c.html#abf3b777c066d23af23455797f3bab25e">cpufreq_prefs_get_show_text_mode</a></div><div class="ttdeci">CPUFreqShowTextMode cpufreq_prefs_get_show_text_mode(CPUFreqPrefs *prefs)</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00259">cpufreq-prefs.c:259</a></div></div>
-<div class="ttc" id="acpufreq-prefs_8c_html_ae28072eac40400a72183557d3713c8dc"><div class="ttname"><a href="cpufreq-prefs_8c.html#ae28072eac40400a72183557d3713c8dc">cpufreq_preferences_dialog_run</a></div><div class="ttdeci">void cpufreq_preferences_dialog_run(CPUFreqPrefs *prefs, GdkScreen *screen)</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00581">cpufreq-prefs.c:581</a></div></div>
+<div class="ttc" id="acpufreq-prefs_8c_html_ae28072eac40400a72183557d3713c8dc"><div class="ttname"><a href="cpufreq-prefs_8c.html#ae28072eac40400a72183557d3713c8dc">cpufreq_preferences_dialog_run</a></div><div class="ttdeci">void cpufreq_preferences_dialog_run(CPUFreqPrefs *prefs, GdkScreen *screen)</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00585">cpufreq-prefs.c:585</a></div></div>
 <div class="ttc" id="acpufreq-prefs_8c_html_ae7ee588ad13c106d19e6e765f2dcc86e"><div class="ttname"><a href="cpufreq-prefs_8c.html#ae7ee588ad13c106d19e6e765f2dcc86e">cpufreq_prefs_get_cpu</a></div><div class="ttdeci">guint cpufreq_prefs_get_cpu(CPUFreqPrefs *prefs)</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00242">cpufreq-prefs.c:242</a></div></div>
 <div class="ttc" id="acpufreq-prefs_8c_html_aeda5cf11a1e7e8e72c98adc6bf3c9397"><div class="ttname"><a href="cpufreq-prefs_8c.html#aeda5cf11a1e7e8e72c98adc6bf3c9397">cpufreq_prefs_get_show_mode</a></div><div class="ttdeci">CPUFreqShowMode cpufreq_prefs_get_show_mode(CPUFreqPrefs *prefs)</div><div class="ttdef"><b>Definition</b> <a href="cpufreq-prefs_8c_source.html#l00250">cpufreq-prefs.c:250</a></div></div>
 <div class="ttc" id="acpufreq-prefs_8h_html"><div class="ttname"><a href="cpufreq-prefs_8h.html">cpufreq-prefs.h</a></div></div>

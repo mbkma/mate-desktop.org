@@ -442,52 +442,53 @@ $(document).ready(function(){initNavTree('caja-image-resizer_8c_source.html','')
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>{</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    GtkBuilder *builder;</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    builder = gtk_builder_new_from_resource (<span class="stringliteral">&quot;/org/mate/caja/extensions/imageconverter/caja-image-resize.ui&quot;</span>);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    builder = gtk_builder_new ();</div>
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="preprocessor">#ifdef ENABLE_NLS</span></div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    gtk_builder_set_translation_domain (builder, GETTEXT_PACKAGE);</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="preprocessor">#endif </span><span class="comment">/* ENABLE_NLS */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="comment">/* Grab some widgets */</span></div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    resizer-&gt;resize_dialog = GTK_DIALOG (gtk_builder_get_object (builder, <span class="stringliteral">&quot;resize_dialog&quot;</span>));</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    resizer-&gt;default_size_radiobutton =</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;default_size_radiobutton&quot;</span>));</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    resizer-&gt;size_combobox = GTK_COMBO_BOX_TEXT (gtk_builder_get_object (builder, <span class="stringliteral">&quot;comboboxtext_size&quot;</span>));</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    resizer-&gt;custom_pct_radiobutton =</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;custom_pct_radiobutton&quot;</span>));</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    resizer-&gt;pct_spinbutton = GTK_SPIN_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;pct_spinbutton&quot;</span>));</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    resizer-&gt;custom_size_radiobutton =</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;custom_size_radiobutton&quot;</span>));</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    resizer-&gt;width_spinbutton = GTK_SPIN_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;width_spinbutton&quot;</span>));</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    resizer-&gt;height_spinbutton = GTK_SPIN_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;height_spinbutton&quot;</span>));</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    resizer-&gt;append_radiobutton = GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;append_radiobutton&quot;</span>));</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    resizer-&gt;name_entry = GTK_ENTRY (gtk_builder_get_object (builder, <span class="stringliteral">&quot;name_entry&quot;</span>));</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    resizer-&gt;inplace_radiobutton = GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;inplace_radiobutton&quot;</span>));</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="comment">/* Set default item in combo box */</span></div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="comment">/* gtk_combo_box_set_active  (resizer-&gt;size_combobox, 4);  1024x768 */</span></div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="comment">/* Connect signal */</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    g_signal_connect (resizer-&gt;resize_dialog, <span class="stringliteral">&quot;response&quot;</span>,</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                      G_CALLBACK (on_caja_image_resizer_response),</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                      resizer);</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    g_object_unref (builder);</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>}</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span> </div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>CajaImageResizer *</div>
-<div class="foldopen" id="foldopen00376" data-start="{" data-end="}">
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno"><a class="line" href="caja-image-resizer_8c.html#acb299188a823c626b6e58644770a2023">  376</a></span><a class="code hl_function" href="caja-image-resizer_8c.html#acb299188a823c626b6e58644770a2023">caja_image_resizer_new</a> (GList *files)</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>{</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    <span class="keywordflow">return</span> g_object_new (<a class="code hl_define" href="caja-image-resizer_8h.html#afa40c950799c4edc3ff8de5664f08273">CAJA_TYPE_IMAGE_RESIZER</a>, <span class="stringliteral">&quot;files&quot;</span>, files, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>}</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    gtk_builder_add_from_resource (builder, <span class="stringliteral">&quot;/org/mate/caja/extensions/imageconverter/caja-image-resize.ui&quot;</span>, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="comment">/* Grab some widgets */</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    resizer-&gt;resize_dialog = GTK_DIALOG (gtk_builder_get_object (builder, <span class="stringliteral">&quot;resize_dialog&quot;</span>));</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    resizer-&gt;default_size_radiobutton =</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>        GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;default_size_radiobutton&quot;</span>));</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    resizer-&gt;size_combobox = GTK_COMBO_BOX_TEXT (gtk_builder_get_object (builder, <span class="stringliteral">&quot;comboboxtext_size&quot;</span>));</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    resizer-&gt;custom_pct_radiobutton =</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;custom_pct_radiobutton&quot;</span>));</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    resizer-&gt;pct_spinbutton = GTK_SPIN_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;pct_spinbutton&quot;</span>));</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    resizer-&gt;custom_size_radiobutton =</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>        GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;custom_size_radiobutton&quot;</span>));</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    resizer-&gt;width_spinbutton = GTK_SPIN_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;width_spinbutton&quot;</span>));</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    resizer-&gt;height_spinbutton = GTK_SPIN_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;height_spinbutton&quot;</span>));</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    resizer-&gt;append_radiobutton = GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;append_radiobutton&quot;</span>));</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    resizer-&gt;name_entry = GTK_ENTRY (gtk_builder_get_object (builder, <span class="stringliteral">&quot;name_entry&quot;</span>));</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>    resizer-&gt;inplace_radiobutton = GTK_RADIO_BUTTON (gtk_builder_get_object (builder, <span class="stringliteral">&quot;inplace_radiobutton&quot;</span>));</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span> </div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    <span class="comment">/* Set default item in combo box */</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="comment">/* gtk_combo_box_set_active  (resizer-&gt;size_combobox, 4);  1024x768 */</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    <span class="comment">/* Connect signal */</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    g_signal_connect (resizer-&gt;resize_dialog, <span class="stringliteral">&quot;response&quot;</span>,</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                      G_CALLBACK (on_caja_image_resizer_response),</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                      resizer);</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    g_object_unref (builder);</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>}</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>CajaImageResizer *</div>
+<div class="foldopen" id="foldopen00377" data-start="{" data-end="}">
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno"><a class="line" href="caja-image-resizer_8c.html#acb299188a823c626b6e58644770a2023">  377</a></span><a class="code hl_function" href="caja-image-resizer_8c.html#acb299188a823c626b6e58644770a2023">caja_image_resizer_new</a> (GList *files)</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>{</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    <span class="keywordflow">return</span> g_object_new (<a class="code hl_define" href="caja-image-resizer_8h.html#afa40c950799c4edc3ff8de5664f08273">CAJA_TYPE_IMAGE_RESIZER</a>, <span class="stringliteral">&quot;files&quot;</span>, files, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>}</div>
 </div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00382" data-start="{" data-end="}">
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno"><a class="line" href="caja-image-resizer_8c.html#a64672e36ba70f75e99f2566f0ad76074">  382</a></span><a class="code hl_function" href="caja-image-resizer_8c.html#a64672e36ba70f75e99f2566f0ad76074">caja_image_resizer_show_dialog</a> (CajaImageResizer *resizer)</div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>{</div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    gtk_widget_show (GTK_WIDGET (resizer-&gt;resize_dialog));</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>}</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00383" data-start="{" data-end="}">
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="caja-image-resizer_8c.html#a64672e36ba70f75e99f2566f0ad76074">  383</a></span><a class="code hl_function" href="caja-image-resizer_8c.html#a64672e36ba70f75e99f2566f0ad76074">caja_image_resizer_show_dialog</a> (CajaImageResizer *resizer)</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>{</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    gtk_widget_show (GTK_WIDGET (resizer-&gt;resize_dialog));</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>}</div>
 </div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
@@ -497,12 +498,12 @@ $(document).ready(function(){initNavTree('caja-image-resizer_8c_source.html','')
 <div class="ttc" id="acaja-file-info_8c_html_ab37c91f28d394a36b01c0ae13aeb81ec"><div class="ttname"><a href="caja-file-info_8c.html#ab37c91f28d394a36b01c0ae13aeb81ec">caja_file_info_get_name</a></div><div class="ttdeci">char * caja_file_info_get_name(CajaFileInfo *file)</div><div class="ttdef"><b>Definition</b> <a href="caja-file-info_8c_source.html#l00131">caja-file-info.c:131</a></div></div>
 <div class="ttc" id="acaja-file-info_8h_html"><div class="ttname"><a href="caja-file-info_8h.html">caja-file-info.h</a></div></div>
 <div class="ttc" id="acaja-file-info_8h_html_adca6d2f54cc9503ef29c87c3a5ab250f"><div class="ttname"><a href="caja-file-info_8h.html#adca6d2f54cc9503ef29c87c3a5ab250f">CAJA_FILE_INFO</a></div><div class="ttdeci">#define CAJA_FILE_INFO(obj)</div><div class="ttdef"><b>Definition</b> <a href="caja-file-info_8h_source.html#l00035">caja-file-info.h:35</a></div></div>
-<div class="ttc" id="acaja-image-resizer_8c_html_a64672e36ba70f75e99f2566f0ad76074"><div class="ttname"><a href="caja-image-resizer_8c.html#a64672e36ba70f75e99f2566f0ad76074">caja_image_resizer_show_dialog</a></div><div class="ttdeci">void caja_image_resizer_show_dialog(CajaImageResizer *resizer)</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00382">caja-image-resizer.c:382</a></div></div>
+<div class="ttc" id="acaja-image-resizer_8c_html_a64672e36ba70f75e99f2566f0ad76074"><div class="ttname"><a href="caja-image-resizer_8c.html#a64672e36ba70f75e99f2566f0ad76074">caja_image_resizer_show_dialog</a></div><div class="ttdeci">void caja_image_resizer_show_dialog(CajaImageResizer *resizer)</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00383">caja-image-resizer.c:383</a></div></div>
 <div class="ttc" id="acaja-image-resizer_8c_html_a997998525275c9c992157fad463205b2"><div class="ttname"><a href="caja-image-resizer_8c.html#a997998525275c9c992157fad463205b2">CajaImageResizerSignalType</a></div><div class="ttdeci">CajaImageResizerSignalType</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00075">caja-image-resizer.c:75</a></div></div>
 <div class="ttc" id="acaja-image-resizer_8c_html_a997998525275c9c992157fad463205b2a0c34d85df8279641afad9e3c9b3a54ce"><div class="ttname"><a href="caja-image-resizer_8c.html#a997998525275c9c992157fad463205b2a0c34d85df8279641afad9e3c9b3a54ce">LAST_SIGNAL</a></div><div class="ttdeci">@ LAST_SIGNAL</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00079">caja-image-resizer.c:78</a></div></div>
 <div class="ttc" id="acaja-image-resizer_8c_html_a997998525275c9c992157fad463205b2a901215bd843588a307d27750fd109b22"><div class="ttname"><a href="caja-image-resizer_8c.html#a997998525275c9c992157fad463205b2a901215bd843588a307d27750fd109b22">SIGNAL_TYPE_EXAMPLE</a></div><div class="ttdeci">@ SIGNAL_TYPE_EXAMPLE</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00077">caja-image-resizer.c:77</a></div></div>
 <div class="ttc" id="acaja-image-resizer_8c_html_abe4eb8a7f480877e96248c1c2b2b96a4af8da18d2ff88e2087530accc2757e3a4"><div class="ttname"><a href="caja-image-resizer_8c.html#abe4eb8a7f480877e96248c1c2b2b96a4af8da18d2ff88e2087530accc2757e3a4">PROP_FILES</a></div><div class="ttdeci">@ PROP_FILES</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00072">caja-image-resizer.c:72</a></div></div>
-<div class="ttc" id="acaja-image-resizer_8c_html_acb299188a823c626b6e58644770a2023"><div class="ttname"><a href="caja-image-resizer_8c.html#acb299188a823c626b6e58644770a2023">caja_image_resizer_new</a></div><div class="ttdeci">CajaImageResizer * caja_image_resizer_new(GList *files)</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00376">caja-image-resizer.c:376</a></div></div>
+<div class="ttc" id="acaja-image-resizer_8c_html_acb299188a823c626b6e58644770a2023"><div class="ttname"><a href="caja-image-resizer_8c.html#acb299188a823c626b6e58644770a2023">caja_image_resizer_new</a></div><div class="ttdeci">CajaImageResizer * caja_image_resizer_new(GList *files)</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8c_source.html#l00377">caja-image-resizer.c:377</a></div></div>
 <div class="ttc" id="acaja-image-resizer_8h_html"><div class="ttname"><a href="caja-image-resizer_8h.html">caja-image-resizer.h</a></div></div>
 <div class="ttc" id="acaja-image-resizer_8h_html_afa40c950799c4edc3ff8de5664f08273"><div class="ttname"><a href="caja-image-resizer_8h.html#afa40c950799c4edc3ff8de5664f08273">CAJA_TYPE_IMAGE_RESIZER</a></div><div class="ttdeci">#define CAJA_TYPE_IMAGE_RESIZER</div><div class="ttdef"><b>Definition</b> <a href="caja-image-resizer_8h_source.html#l00031">caja-image-resizer.h:31</a></div></div>
 <div class="ttc" id="aephy-zoom_8h_html_abe91710dad809409dba210f43e519079"><div class="ttname"><a href="ephy-zoom_8h.html#abe91710dad809409dba210f43e519079">name</a></div><div class="ttdeci">gchar * name</div><div class="ttdef"><b>Definition</b> <a href="ephy-zoom_8h_source.html#l00043">ephy-zoom.h:43</a></div></div>
