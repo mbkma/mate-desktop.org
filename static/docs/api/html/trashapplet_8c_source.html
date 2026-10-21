@@ -727,41 +727,40 @@ $(document).ready(function(){initNavTree('trashapplet_8c_source.html',''); initR
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="preprocessor">#ifndef ENABLE_IN_PROCESS</span></div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>      g_set_application_name (<a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Trash Applet&quot;</span>));</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span> </div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>      gtk_window_set_default_icon_name (<span class="stringliteral">&quot;user-trash&quot;</span>);</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>      <span class="comment">/* Set up the menu */</span></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      action_group = gtk_action_group_new (<span class="stringliteral">&quot;Trash Applet Actions&quot;</span>);</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>      gtk_action_group_add_actions (action_group,</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                    trash_applet_menu_actions,</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                    G_N_ELEMENTS (trash_applet_menu_actions),</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>                    applet);</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      <a class="code hl_function" href="mate-panel-applet_8c.html#a57f26128837c1ca7dc274f91d1a34888">mate_panel_applet_setup_menu_from_resource</a> (applet,</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>                                                  GRESOURCE <span class="stringliteral">&quot;trashapplet-menu.xml&quot;</span>,</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>                                                  action_group);</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>      g_object_unref (action_group);</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      atk_obj = gtk_widget_get_accessible (GTK_WIDGET (applet));</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>      <span class="keywordflow">if</span> (GTK_IS_ACCESSIBLE (atk_obj)) {</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>          atk_object_set_name (atk_obj, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Trash Applet&quot;</span>));</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>      }</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      gtk_widget_show (GTK_WIDGET (applet));</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>      retval = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>  }</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  <span class="keywordflow">return</span> retval;</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>}</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><a class="code hl_function" href="stickynotes__applet_8c.html#a256b99c44170e649c82a495713f72843">PANEL_APPLET_FACTORY</a> (<span class="stringliteral">&quot;TrashAppletFactory&quot;</span>,</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>              <a class="code hl_define" href="trashapplet_8c.html#a8c9f72e0b15e6a25523c527fa6d2fd7c">TRASH_TYPE_APPLET</a>,</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>              <span class="stringliteral">&quot;TrashApplet&quot;</span>,</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>              trash_applet_factory,</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>              <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>      gtk_window_set_default_icon_name (<span class="stringliteral">&quot;user-trash&quot;</span>);</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>      <span class="comment">/* Set up the menu */</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>      action_group = gtk_action_group_new (<span class="stringliteral">&quot;Trash Applet Actions&quot;</span>);</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>      gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      gtk_action_group_add_actions (action_group,</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>                    trash_applet_menu_actions,</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>                    G_N_ELEMENTS (trash_applet_menu_actions),</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>                    applet);</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      <a class="code hl_function" href="mate-panel-applet_8c.html#a57f26128837c1ca7dc274f91d1a34888">mate_panel_applet_setup_menu_from_resource</a> (applet,</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>                                                  GRESOURCE <span class="stringliteral">&quot;trashapplet-menu.xml&quot;</span>,</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>                                                  action_group);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>      g_object_unref (action_group);</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>      atk_obj = gtk_widget_get_accessible (GTK_WIDGET (applet));</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>      <span class="keywordflow">if</span> (GTK_IS_ACCESSIBLE (atk_obj)) {</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>          atk_object_set_name (atk_obj, <a class="code hl_define" href="mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc">_</a>(<span class="stringliteral">&quot;Trash Applet&quot;</span>));</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>      }</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>      gtk_widget_show (GTK_WIDGET (applet));</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      retval = <a class="code hl_define" href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  }</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>}</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><a class="code hl_function" href="stickynotes__applet_8c.html#a256b99c44170e649c82a495713f72843">PANEL_APPLET_FACTORY</a> (<span class="stringliteral">&quot;TrashAppletFactory&quot;</span>,</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>              <a class="code hl_define" href="trashapplet_8c.html#a8c9f72e0b15e6a25523c527fa6d2fd7c">TRASH_TYPE_APPLET</a>,</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>              <span class="stringliteral">&quot;TrashApplet&quot;</span>,</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>              trash_applet_factory,</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>              <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>

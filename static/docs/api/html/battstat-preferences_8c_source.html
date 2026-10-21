@@ -363,94 +363,97 @@ $(document).ready(function(){initNavTree('battstat-preferences_8c_source.html','
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>{</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  gtk_widget_init_template (GTK_WIDGET (dialog));</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  g_object_bind_property (dialog-&gt;check_text, <span class="stringliteral">&quot;active&quot;</span>,</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                          dialog-&gt;check_text_ptr, <span class="stringliteral">&quot;sensitive&quot;</span>,</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>                          G_BINDING_DEFAULT);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  g_object_bind_property (dialog-&gt;lowbatt_toggle, <span class="stringliteral">&quot;active&quot;</span>,</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                          dialog-&gt;hbox_ptr, <span class="stringliteral">&quot;sensitive&quot;</span>,</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                          G_BINDING_DEFAULT);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>}</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">static</span> GObject*</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>battstat_preferences_constructor (GType                  type,</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                                  guint                  n_construct_params,</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                                  GObjectConstructParam *construct_params)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>{</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  GObject *object;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  BattstatPreferences *self;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="keywordtype">object</span> = <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (battstat_preferences_parent_class)-&gt;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    constructor (type, n_construct_params, construct_params);</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  self = BATTSTAT_PREFERENCES (<span class="keywordtype">object</span>);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  battstat_preferences_update (self);</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  g_settings_bind (self-&gt;battstat-&gt;settings, <span class="stringliteral">&quot;low-battery-notification&quot;</span>,</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                   self-&gt;lowbatt_toggle, <span class="stringliteral">&quot;active&quot;</span>,</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                   G_SETTINGS_BIND_DEFAULT);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  g_settings_bind (self-&gt;battstat-&gt;settings, <span class="stringliteral">&quot;full-battery-notification&quot;</span>,</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                   self-&gt;full_toggle, <span class="stringliteral">&quot;active&quot;</span>,</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                   G_SETTINGS_BIND_DEFAULT);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="keywordflow">return</span> object;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  g_signal_connect (dialog, <span class="stringliteral">&quot;delete-event&quot;</span>,</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>                    G_CALLBACK (gtk_widget_hide_on_delete), <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  g_object_bind_property (dialog-&gt;check_text, <span class="stringliteral">&quot;active&quot;</span>,</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                          dialog-&gt;check_text_ptr, <span class="stringliteral">&quot;sensitive&quot;</span>,</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                          G_BINDING_DEFAULT);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  g_object_bind_property (dialog-&gt;lowbatt_toggle, <span class="stringliteral">&quot;active&quot;</span>,</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                          dialog-&gt;hbox_ptr, <span class="stringliteral">&quot;sensitive&quot;</span>,</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                          G_BINDING_DEFAULT);</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="keyword">static</span> GObject*</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>battstat_preferences_constructor (GType                  type,</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                                  guint                  n_construct_params,</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                                  GObjectConstructParam *construct_params)</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>{</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  GObject *object;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  BattstatPreferences *self;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keywordtype">object</span> = <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (battstat_preferences_parent_class)-&gt;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    constructor (type, n_construct_params, construct_params);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  self = BATTSTAT_PREFERENCES (<span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  battstat_preferences_update (self);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  g_settings_bind (self-&gt;battstat-&gt;settings, <span class="stringliteral">&quot;low-battery-notification&quot;</span>,</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                   self-&gt;lowbatt_toggle, <span class="stringliteral">&quot;active&quot;</span>,</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                   G_SETTINGS_BIND_DEFAULT);</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  g_settings_bind (self-&gt;battstat-&gt;settings, <span class="stringliteral">&quot;full-battery-notification&quot;</span>,</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                   self-&gt;full_toggle, <span class="stringliteral">&quot;active&quot;</span>,</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                   G_SETTINGS_BIND_DEFAULT);</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>GtkWidget*</div>
-<div class="foldopen" id="foldopen00301" data-start="{" data-end="}">
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="battstat-preferences_8c.html#ab2672a37d9ddae1389a3d1a8c713cf14">  301</a></span><a class="code hl_function" href="battstat-preferences_8c.html#ab2672a37d9ddae1389a3d1a8c713cf14">battstat_preferences_new</a> (ProgressData *battstat)</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>{</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordflow">return</span> g_object_new (<a class="code hl_define" href="battstat-preferences_8h.html#afbd2b26db3ec975ae9a34b579c2391a2">BATTSTAT_TYPE_PREFERENCES</a>,</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                       <span class="stringliteral">&quot;progress-data&quot;</span>, battstat,</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>                       <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>}</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">return</span> object;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>GtkWidget*</div>
+<div class="foldopen" id="foldopen00304" data-start="{" data-end="}">
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="battstat-preferences_8c.html#ab2672a37d9ddae1389a3d1a8c713cf14">  304</a></span><a class="code hl_function" href="battstat-preferences_8c.html#ab2672a37d9ddae1389a3d1a8c713cf14">battstat_preferences_new</a> (ProgressData *battstat)</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>{</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="keywordflow">return</span> g_object_new (<a class="code hl_define" href="battstat-preferences_8h.html#afbd2b26db3ec975ae9a34b579c2391a2">BATTSTAT_TYPE_PREFERENCES</a>,</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>                       <span class="stringliteral">&quot;progress-data&quot;</span>, battstat,</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                       <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>}</div>
 </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>battstat_preferences_class_init (BattstatPreferencesClass *klass)</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>{</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  GObjectClass   *object_class = <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (klass);</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  object_class-&gt;set_property = battstat_preferences_set_property;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  object_class-&gt;get_property = battstat_preferences_get_property;</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  object_class-&gt;constructor  = battstat_preferences_constructor;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  g_object_class_install_property (object_class,</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                                   <a class="code hl_enumvalue" href="battstat-preferences_8c.html#a21585a8778ca0c944c970059792ad318ac0e19bd6b733d7af17b5c01acc85e180">PROP_PROGRESS_DATA</a>,</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                                   g_param_spec_pointer (<span class="stringliteral">&quot;progress-data&quot;</span>,</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                                                         <span class="stringliteral">&quot;Progress Data&quot;</span>,</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                                                         <span class="stringliteral">&quot;The Progress Data&quot;</span>,</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  gtk_widget_class_set_template_from_resource (widget_class,</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                                               BATTSTAT_RESOURCE_PATH <span class="stringliteral">&quot;battstat-preferences.ui&quot;</span>);</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>battstat_preferences_class_init (BattstatPreferencesClass *klass)</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>{</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  GObjectClass   *object_class = <a class="code hl_function" href="pluma-plugin_8c.html#aef4541645ed074255d452114efa6882a">G_OBJECT_CLASS</a> (klass);</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  object_class-&gt;set_property = battstat_preferences_set_property;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  object_class-&gt;get_property = battstat_preferences_get_property;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  object_class-&gt;constructor  = battstat_preferences_constructor;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  g_object_class_install_property (object_class,</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                                   <a class="code hl_enumvalue" href="battstat-preferences_8c.html#a21585a8778ca0c944c970059792ad318ac0e19bd6b733d7af17b5c01acc85e180">PROP_PROGRESS_DATA</a>,</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                                   g_param_spec_pointer (<span class="stringliteral">&quot;progress-data&quot;</span>,</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                                                         <span class="stringliteral">&quot;Progress Data&quot;</span>,</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                                                         <span class="stringliteral">&quot;The Progress Data&quot;</span>,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                                                         G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, check_text);</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, check_text_ptr);</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, radio_text_1);</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, radio_text_2);</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, lowbatt_toggle);</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, full_toggle);</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, hbox_ptr);</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, combo_ptr);</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, spin_ptr);</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  gtk_widget_class_bind_template_callback (widget_class, lowbatt_toggled);</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  gtk_widget_class_bind_template_callback (widget_class, combo_ptr_cb);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  gtk_widget_class_bind_template_callback (widget_class, spin_ptr_cb);</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  gtk_widget_class_bind_template_callback (widget_class, full_toggled);</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  gtk_widget_class_bind_template_callback (widget_class, show_text_toggled);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  gtk_widget_class_bind_template_callback (widget_class, response_cb);</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>}</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  gtk_widget_class_set_template_from_resource (widget_class,</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>                                               BATTSTAT_RESOURCE_PATH <span class="stringliteral">&quot;battstat-preferences.ui&quot;</span>);</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, check_text);</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, check_text_ptr);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, radio_text_1);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, radio_text_2);</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, lowbatt_toggle);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, full_toggle);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, hbox_ptr);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, combo_ptr);</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  gtk_widget_class_bind_template_child (widget_class, BattstatPreferences, spin_ptr);</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  gtk_widget_class_bind_template_callback (widget_class, lowbatt_toggled);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  gtk_widget_class_bind_template_callback (widget_class, combo_ptr_cb);</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  gtk_widget_class_bind_template_callback (widget_class, spin_ptr_cb);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  gtk_widget_class_bind_template_callback (widget_class, full_toggled);</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  gtk_widget_class_bind_template_callback (widget_class, show_text_toggled);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  gtk_widget_class_bind_template_callback (widget_class, response_cb);</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}</div>
 <div class="ttc" id="aafmparse_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="afmparse_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00085">afmparse.h:85</a></div></div>
 <div class="ttc" id="aafmparse_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="afmparse_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition</b> <a href="afmparse_8h_source.html#l00086">afmparse.h:86</a></div></div>
 <div class="ttc" id="aasync-getprop_8c_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition</b> <a href="async-getprop_8c_source.html#l00044">async-getprop.c:44</a></div></div>
 <div class="ttc" id="abattstat-preferences_8c_html_a06522d3cd7d78d3b82039949adcbdc11"><div class="ttname"><a href="battstat-preferences_8c.html#a06522d3cd7d78d3b82039949adcbdc11">G_DEFINE_TYPE</a></div><div class="ttdeci">G_DEFINE_TYPE(BattstatPreferences, battstat_preferences, GTK_TYPE_DIALOG)</div></div>
 <div class="ttc" id="abattstat-preferences_8c_html_a21585a8778ca0c944c970059792ad318ac0e19bd6b733d7af17b5c01acc85e180"><div class="ttname"><a href="battstat-preferences_8c.html#a21585a8778ca0c944c970059792ad318ac0e19bd6b733d7af17b5c01acc85e180">PROP_PROGRESS_DATA</a></div><div class="ttdeci">@ PROP_PROGRESS_DATA</div><div class="ttdef"><b>Definition</b> <a href="battstat-preferences_8c_source.html#l00052">battstat-preferences.c:51</a></div></div>
 <div class="ttc" id="abattstat-preferences_8c_html_a21585a8778ca0c944c970059792ad318ac37dda0da1a44e10c0504afeeb863f3c"><div class="ttname"><a href="battstat-preferences_8c.html#a21585a8778ca0c944c970059792ad318ac37dda0da1a44e10c0504afeeb863f3c">PROP_0</a></div><div class="ttdeci">@ PROP_0</div><div class="ttdef"><b>Definition</b> <a href="battstat-preferences_8c_source.html#l00050">battstat-preferences.c:50</a></div></div>
-<div class="ttc" id="abattstat-preferences_8c_html_ab2672a37d9ddae1389a3d1a8c713cf14"><div class="ttname"><a href="battstat-preferences_8c.html#ab2672a37d9ddae1389a3d1a8c713cf14">battstat_preferences_new</a></div><div class="ttdeci">GtkWidget * battstat_preferences_new(ProgressData *battstat)</div><div class="ttdef"><b>Definition</b> <a href="battstat-preferences_8c_source.html#l00301">battstat-preferences.c:301</a></div></div>
+<div class="ttc" id="abattstat-preferences_8c_html_ab2672a37d9ddae1389a3d1a8c713cf14"><div class="ttname"><a href="battstat-preferences_8c.html#ab2672a37d9ddae1389a3d1a8c713cf14">battstat_preferences_new</a></div><div class="ttdeci">GtkWidget * battstat_preferences_new(ProgressData *battstat)</div><div class="ttdef"><b>Definition</b> <a href="battstat-preferences_8c_source.html#l00304">battstat-preferences.c:304</a></div></div>
 <div class="ttc" id="abattstat-preferences_8h_html"><div class="ttname"><a href="battstat-preferences_8h.html">battstat-preferences.h</a></div></div>
 <div class="ttc" id="abattstat-preferences_8h_html_afbd2b26db3ec975ae9a34b579c2391a2"><div class="ttname"><a href="battstat-preferences_8h.html#afbd2b26db3ec975ae9a34b579c2391a2">BATTSTAT_TYPE_PREFERENCES</a></div><div class="ttdeci">#define BATTSTAT_TYPE_PREFERENCES</div><div class="ttdef"><b>Definition</b> <a href="battstat-preferences_8h_source.html#l00031">battstat-preferences.h:31</a></div></div>
 <div class="ttc" id="abattstat_8h_html_a219bef17e6b860a37c30e56a1dd5bc59a7e3f45072e46c5e920fdb1331da1cd7f"><div class="ttname"><a href="battstat_8h.html#a219bef17e6b860a37c30e56a1dd5bc59a7e3f45072e46c5e920fdb1331da1cd7f">APPLET_SHOW_TIME</a></div><div class="ttdeci">@ APPLET_SHOW_TIME</div><div class="ttdef"><b>Definition</b> <a href="battstat_8h_source.html#l00047">battstat.h:46</a></div></div>
