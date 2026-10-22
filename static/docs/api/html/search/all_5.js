@@ -3517,7 +3517,7 @@ var searchData=
   ['cajawidgetviewprovider_3514',['CajaWidgetViewProvider',['../caja-widget-view-provider_8h.html#ac0c068724fa14e84cd92ac2a17d24a63',1,'caja-widget-view-provider.h']]],
   ['cajawidgetviewprovideriface_3515',['CajaWidgetViewProviderIface',['../caja-widget-view-provider_8h.html#a295e4361e211c18a44f7e8c54553511d',1,'caja-widget-view-provider.h']]],
   ['cajawidthmeasurecallback_3516',['CajaWidthMeasureCallback',['../caja-file_8h.html#a5ddad7e3f6214e05b9975399db1fbd16',1,'caja-file.h']]],
-  ['cajawindow_3517',['cajawindow',['../caja-window-info_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9',1,'CajaWindow:&#160;caja-window-info.h'],['../structCajaWindow.html',1,'CajaWindow'],['../caja-application_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9',1,'CajaWindow:&#160;caja-application.h']]],
+  ['cajawindow_3517',['cajawindow',['../caja-application_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9',1,'CajaWindow:&#160;caja-application.h'],['../structCajaWindow.html',1,'CajaWindow'],['../caja-window-info_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9',1,'CajaWindow:&#160;caja-window-info.h']]],
   ['cajawindowclass_3518',['CajaWindowClass',['../structCajaWindowClass.html',1,'']]],
   ['cajawindowgotocallback_3519',['CajaWindowGoToCallback',['../caja-window-info_8h.html#a94b37535abe366afe05d22203fd7c6f3',1,'caja-window-info.h']]],
   ['cajawindowinfo_3520',['CajaWindowInfo',['../caja-window-info_8h.html#afb4ef1dee64ba9859f8cc73cdf4f2da5',1,'caja-window-info.h']]],
