@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['object_5fcolumn_0',['OBJECT_COLUMN',['../na-ioptions-list_8c.html#aafc5993fe6fd7fec62e94ef57859c353a5858b9d8b53130a2f3aaf30f2fcdbefc',1,'na-ioptions-list.c']]],
-  ['offset_5fcolumn_1',['OFFSET_COLUMN',['../sensors-applet_8h.html#a98a0646fdaabeabb8133601f5f29d60da6aac0edb499b65cbd2b67d03ab6325f8',1,'sensors-applet.h']]],
-  ['omnibook_5fdevice_5ffile_5fopen_5ferror_2',['OMNIBOOK_DEVICE_FILE_OPEN_ERROR',['../omnibook-plugin_8c.html#a8e3574907238dfaec7117a4e35a85293aa5c32ed5b584115f742b731dba373705',1,'omnibook-plugin.c']]],
-  ['omnibook_5fdevice_5ffile_5fread_5ferror_3',['OMNIBOOK_DEVICE_FILE_READ_ERROR',['../omnibook-plugin_8c.html#a8e3574907238dfaec7117a4e35a85293a4ec4074404924251b2dad938d8a0218e',1,'omnibook-plugin.c']]],
-  ['on_5fscreen_5fkeyboard_5fkey_4',['ON_SCREEN_KEYBOARD_KEY',['../acme_8h.html#af23404d669a6e97dc4e55100fb8b2a65ad6abd2178f00371e4b557f523bb8a20d',1,'acme.h']]],
-  ['onsecheader_5',['OnSecHeader',['../mate-desktop-item_8c.html#ad8101dee6fa22c7112aba8726ea404f9afc9ff948d5432d583a6636d0aedc5058',1,'mate-desktop-item.c']]],
+  ['object_5fcolumn_0',['OBJECT_COLUMN',['../na-ioptions-list_8c.html#a0cb9ad5c204285f3afbbc6f4619089c3a5858b9d8b53130a2f3aaf30f2fcdbefc',1,'na-ioptions-list.c']]],
+  ['offset_5fcolumn_1',['OFFSET_COLUMN',['../sensors-applet_8h.html#a5a200a2e5a0413d76ed6b0828fc4c622a6aac0edb499b65cbd2b67d03ab6325f8',1,'sensors-applet.h']]],
+  ['omnibook_5fdevice_5ffile_5fopen_5ferror_2',['OMNIBOOK_DEVICE_FILE_OPEN_ERROR',['../omnibook-plugin_8c.html#ab90f09fdaa137d48bf26b658edd7702baa5c32ed5b584115f742b731dba373705',1,'omnibook-plugin.c']]],
+  ['omnibook_5fdevice_5ffile_5fread_5ferror_3',['OMNIBOOK_DEVICE_FILE_READ_ERROR',['../omnibook-plugin_8c.html#ab90f09fdaa137d48bf26b658edd7702ba4ec4074404924251b2dad938d8a0218e',1,'omnibook-plugin.c']]],
+  ['on_5fscreen_5fkeyboard_5fkey_4',['ON_SCREEN_KEYBOARD_KEY',['../acme_8h.html#aff2846667f2d4a8232599689e6d473bbad6abd2178f00371e4b557f523bb8a20d',1,'acme.h']]],
+  ['onsecheader_5',['OnSecHeader',['../mate-desktop-item_8c.html#a285332ca8592787502c0864ebb533996afc9ff948d5432d583a6636d0aedc5058',1,'mate-desktop-item.c']]],
   ['op_5fkind_5fcopy_6',['OP_KIND_COPY',['../caja-file-operations_8c.html#aaa3fe0830521b81926c6aa017c02e76faf2f21c9c2fe212679f168f0a6f3d86ff',1,'caja-file-operations.c']]],
   ['op_5fkind_5fcreate_7',['OP_KIND_CREATE',['../caja-file-operations_8c.html#aaa3fe0830521b81926c6aa017c02e76fa167c601a4f4b8c8474ca7f1e4e04110f',1,'caja-file-operations.c']]],
   ['op_5fkind_5fdelete_8',['OP_KIND_DELETE',['../caja-file-operations_8c.html#aaa3fe0830521b81926c6aa017c02e76faf05755b538dd530a3202aa90c3e2a24b',1,'caja-file-operations.c']]],

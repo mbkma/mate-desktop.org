@@ -1,5 +1,28 @@
 var searchData=
 [
-  ['zwlr_5fforeign_5ftoplevel_5fhandle_5fv1_0',['zwlr_foreign_toplevel_handle_v1',['../page_iface_zwlr_foreign_toplevel_handle_v1.html',1,'page_wlr_foreign_toplevel_management_unstable_v1']]],
-  ['zwlr_5fforeign_5ftoplevel_5fmanager_5fv1_1',['zwlr_foreign_toplevel_manager_v1',['../page_iface_zwlr_foreign_toplevel_manager_v1.html',1,'page_wlr_foreign_toplevel_management_unstable_v1']]]
+  ['save_20without_20trailing_20spaces_20plugin_0',['Save Without Trailing Spaces Plugin',['../dir_e33dc8c30adcb4b3d71f88b19053dc60.html#autotoc_md81',1,'']]],
+  ['see_20the_20other_20folders_20for_20better_20understanding_1',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_bdb4a2277ff532f07550f9b2c1cb685b.html#autotoc_md76',1,'']]],
+  ['session_2',['SESSION',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md66',1,'📋 Details of MATE-WAYLAND-SESSION'],['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md63',1,'📦 Building MATE-WAYLAND-SESSION']]],
+  ['session_3',['🚀 MATE Wayland Session',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md62',1,'']]],
+  ['setting_20themes_20and_20fonts_4',['🔧 Setting Themes and Fonts',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md68',1,'']]],
+  ['settings_20daemon_201_2029_201_20or_20later_20required_5',['📦 New: mate-settings-daemon 1.29.1 or later required',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md64',1,'']]],
+  ['shrinking_20marco_6',['SHRINKING MARCO',['../dir_85494d9b725fda5504d36ae4fcf15916.html#autotoc_md39',1,'']]],
+  ['signals_20and_20their_20usages_7',['Some signals and their usages',['../cact-main-window_8h.html#autotoc_md16',1,'']]],
+  ['since_20matedruid_20is_8',['be prepended to the list. Since MateDruid is',['../will.html',1,'']]],
+  ['some_20signals_20and_20their_20usages_9',['Some signals and their usages',['../cact-main-window_8h.html#autotoc_md16',1,'']]],
+  ['sort_20plugin_10',['Sort Plugin',['../dir_3fee88ef4babb320e43f279f988ba742.html#autotoc_md77',1,'']]],
+  ['source_11',['Source',['../dir_5000e5bb8bbaa43d122d4f220de37ccb.html#autotoc_md9',1,'']]],
+  ['spaces_20plugin_12',['Save Without Trailing Spaces Plugin',['../dir_e33dc8c30adcb4b3d71f88b19053dc60.html#autotoc_md81',1,'']]],
+  ['spell_20checker_20plugin_13',['Spell Checker Plugin',['../dir_05d27c0bb0895db9714206399d931150.html#autotoc_md78',1,'']]],
+  ['start_14',['Quick Start',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md18',1,'']]],
+  ['start_20travis_20ci_15',['Start Travis CI',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md56',1,'']]],
+  ['statistics_20plugin_16',['Document Statistics Plugin',['../dir_f59eb5aa8166e73c8000597ac4b32787.html#autotoc_md73',1,'']]],
+  ['status_17',['Package status',['../dir_5000e5bb8bbaa43d122d4f220de37ccb.html#autotoc_md13',1,'']]],
+  ['step_18',['Steps by Step',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md52',1,'']]],
+  ['steps_19',['Next Steps',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md35',1,'']]],
+  ['steps_20by_20step_20',['Steps by Step',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md52',1,'']]],
+  ['structure_21',['Plugin Structure',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md19',1,'']]],
+  ['submitting_20patches_22',['REPORTING BUGS AND SUBMITTING PATCHES',['../dir_85494d9b725fda5504d36ae4fcf15916.html#autotoc_md38',1,'']]],
+  ['submitting_20patches_23',['🐞 Reporting Bugs and Submitting Patches',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
+  ['system_20requirements_24',['System Requirements',['../dir_48dde7679739ae369c3e012ed15b0ba4.html#autotoc_md59',1,'']]]
 ];

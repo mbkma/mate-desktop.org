@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['save_20without_20trailing_20spaces_20plugin_0',['Save Without Trailing Spaces Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2trailsave_2README.html',1,'']]],
-  ['see_20the_20other_20folders_20for_20better_20understanding_1',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2README.html',1,'']]],
-  ['since_20matedruid_20is_2',['be prepended to the list.  Since #MateDruid is',['../will.html',1,'']]],
-  ['sort_20plugin_3',['Sort Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2sort_2README.html',1,'']]],
-  ['spaces_20plugin_4',['Save Without Trailing Spaces Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2trailsave_2README.html',1,'']]],
-  ['spell_20checker_20plugin_5',['Spell Checker Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2spell_2README.html',1,'']]],
-  ['statistics_20plugin_6',['Document Statistics Plugin',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2pluma_2plugins_2docinfo_2README.html',1,'']]]
+  ['new_3a_20mate_20settings_20daemon_201_2029_201_20or_20later_20required_0',['📦 New: mate-settings-daemon 1.29.1 or later required',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md64',1,'']]],
+  ['next_20steps_1',['Next Steps',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md35',1,'']]],
+  ['non_20features_20and_20caveats_2',['MARCO BUGS, NON-FEATURES, AND CAVEATS',['../dir_85494d9b725fda5504d36ae4fcf15916.html#autotoc_md42',1,'']]]
 ];

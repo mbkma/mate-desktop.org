@@ -16,7 +16,7 @@ var nl80211_8h =
     [ "NL80211_ATTR_BSS_BASIC_RATES", "nl80211_8h.html#ac97f99b93f5379f9fac64d92f616704b", null ],
     [ "NL80211_ATTR_CIPHER_SUITE_GROUP", "nl80211_8h.html#a271badc6c6d55a0052fa799a94487566", null ],
     [ "NL80211_ATTR_CIPHER_SUITES_PAIRWISE", "nl80211_8h.html#aba7f4ec011c8bd3438e6e803396a5197", null ],
-    [ "NL80211_ATTR_FEATURE_FLAGS", "nl80211_8h.html#a11fc42d7b7667f832bf1ded8494dd345", null ],
+    [ "NL80211_ATTR_FEATURE_FLAGS", "nl80211_8h.html#a83e8caaa6a206d4a97de806ffa88a473", null ],
     [ "NL80211_ATTR_FEATURE_FLAGS", "nl80211_8h.html#a11fc42d7b7667f832bf1ded8494dd345", null ],
     [ "NL80211_ATTR_FRAME", "nl80211_8h.html#a4810ae1a63bebeb889f0efdead708bc1", null ],
     [ "NL80211_ATTR_HT_CAPABILITY", "nl80211_8h.html#a8995e96c64fd434cba7399944443291d", null ],

@@ -1,5 +1,9 @@
 var prefs_8c =
 [
+    [ "_BINDINGS_DEFINED_CONSTANTS", "prefs_8c.html#a89560a4c34351a4d58f8808fc4922461", null ],
+    [ "BINDING_IS_REVERSED", "prefs_8c.html#a8cf1390d0bd7941ff59350443dbee68c", null ],
+    [ "BINDING_PER_WINDOW", "prefs_8c.html#a7c72c80ac8ea130a1433e3f67fb416a4", null ],
+    [ "BINDING_REVERSES", "prefs_8c.html#a2db7cbdf70575b6f3c5900f20565fdb0", null ],
     [ "KEY_COMMAND_PREFIX", "prefs_8c.html#a91418bdb966bfe162a857586b9d9cafd", null ],
     [ "KEY_COMMAND_SCHEMA", "prefs_8c.html#a2d73074bb90388eae24418702836a7c0", null ],
     [ "KEY_GENERAL_ALT_TAB_EXPAND_TO_FIT_TITLE", "prefs_8c.html#a71a44691d8ec1eb2fec538a32f130c03", null ],
@@ -28,6 +32,7 @@ var prefs_8c =
     [ "MAX_REASONABLE_AUTO_RAISE_DELAY", "prefs_8c.html#af344f5a1c415010e06d96cd0db2b266d", null ],
     [ "MAX_REASONABLE_WORKSPACES", "prefs_8c.html#a25a5e54ea267ca30e2f9f51cebe066fa", null ],
     [ "METAINTPREFERENCE_NO_CHANGE_ON_DESTROY", "prefs_8c.html#aa502bab7bea91760075226a10ff4c4d8", null ],
+    [ "REVERSES_AND_REVERSED", "prefs_8c.html#a3070432a7ea9b41609ac0c500d49f17f", null ],
     [ "SETTINGS", "prefs_8c.html#a354ff99b15cc3bb6b287f7abfbfd1145", null ],
     [ "meta_prefs_add_listener", "prefs_8c.html#a9859a75b65ad17e24dbeb240e8cc4ea5", null ],
     [ "meta_prefs_bell_is_audible", "prefs_8c.html#af8b66848fe2c387067f7b6bdb0749578", null ],

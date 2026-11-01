@@ -1,7 +1,7 @@
 var searchData=
 [
   ['rectangle_0',['Rectangle',['../floaters_8c.html#a1023cbbeacb63a0dbce6b57ec8f2a8ba',1,'floaters.c']]],
-  ['reloadvaluefunc_1',['reloadvaluefunc',['../group-props_8c.html#aae62f172623a54c94208fe70d4dfba74',1,'ReloadValueFunc:&#160;group-props.c'],['../window-props_8c.html#a460891b491299e6b2f0db77a274cff5d',1,'ReloadValueFunc:&#160;window-props.c']]],
+  ['reloadvaluefunc_1',['ReloadValueFunc',['../group-props_8c.html#aae62f172623a54c94208fe70d4dfba74',1,'ReloadValueFunc:&#160;group-props.c'],['../window-props_8c.html#a460891b491299e6b2f0db77a274cff5d',1,'ReloadValueFunc:&#160;window-props.c']]],
   ['rendergradientfunc_2',['RenderGradientFunc',['../testgradient_8c.html#a0a54362c5bdee2f88e06fc0e12a4a666',1,'testgradient.c']]],
   ['request_3',['Request',['../caja-directory-private_8h.html#af859917372c162d48be6032ff7db1106',1,'caja-directory-private.h']]],
   ['requestcheck_4',['RequestCheck',['../caja-directory-async_8c.html#a1397545fedc47d5b23f2de906990bb75',1,'caja-directory-async.c']]],

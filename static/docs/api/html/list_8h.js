@@ -2,7 +2,6 @@ var list_8h =
 [
     [ "_List", "struct__List.html", "struct__List" ],
     [ "Callback", "list_8h.html#a2ecf7a30ec1dcdfbbbe0de3b8ec15f6c", null ],
-    [ "List", "list_8h.html#af415aadeab887feeda9d2e42371a40b0", null ],
     [ "ListFindFunc", "list_8h.html#ae576345873267d9252dc8fa1b53143d2", null ],
     [ "list_copy", "list_8h.html#a84d54d1d5bb5e6871711cf74c555b3a3", null ],
     [ "list_find", "list_8h.html#a600e3b057b7fce58d4a71d6311dfc5c5", null ],

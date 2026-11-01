@@ -55,7 +55,7 @@ var mate_app_helper_8h =
     [ "MATEUIINFO_MENU_PRINT_ITEM", "mate-app-helper_8h.html#a5032de852b6ebb2d2aa20ca5108addc9", null ],
     [ "MATEUIINFO_MENU_PRINT_SETUP_ITEM", "mate-app-helper_8h.html#a97d69a2844a52a2eedcbbe5f13e1eab2", null ],
     [ "MATEUIINFO_MENU_PROPERTIES_ITEM", "mate-app-helper_8h.html#af2ee8093a7e57657178398f29d14b18b", null ],
-    [ "MATEUIINFO_MENU_QUIT_ITEM", "mate-app-helper_8h.html#a18c78c7e64f3ffb68c5cc61fcea805b0", null ],
+    [ "MATEUIINFO_MENU_QUIT_ITEM", "mate-app-helper_8h.html#a351e8c62a8081eb1d435abeb83666341", null ],
     [ "MATEUIINFO_MENU_QUIT_ITEM", "mate-app-helper_8h.html#a18c78c7e64f3ffb68c5cc61fcea805b0", null ],
     [ "MATEUIINFO_MENU_REDO_ITEM", "mate-app-helper_8h.html#a0774c4f44674cc4acf970339fcf229f2", null ],
     [ "MATEUIINFO_MENU_REDO_MOVE_ITEM", "mate-app-helper_8h.html#af9b274a77bd3c9df0e4ac8a27e0d8849", null ],

@@ -53,7 +53,7 @@ var searchData=
   ['beaglequerypart_50',['BeagleQueryPart',['../caja-search-engine-beagle_8c.html#a15ff8ade871261c2d82e70760988d743',1,'caja-search-engine-beagle.c']]],
   ['beaglequerypartproperty_51',['BeagleQueryPartProperty',['../caja-search-engine-beagle_8c.html#a1b3937b6a4570430ac16195f6b7230d7',1,'caja-search-engine-beagle.c']]],
   ['beaglerequest_52',['BeagleRequest',['../caja-search-engine-beagle_8c.html#aae939ad9d8860b0f283651feed778d90',1,'caja-search-engine-beagle.c']]],
-  ['binding_53',['binding',['../mate-indicator-applet_2src_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e',1,'Binding:&#160;tomboykeybinder.c'],['../mate-netbook_2maximus_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e',1,'Binding:&#160;tomboykeybinder.c']]],
+  ['binding_53',['Binding',['../mate-indicator-applet_2src_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e',1,'Binding:&#160;tomboykeybinder.c'],['../mate-netbook_2maximus_2tomboykeybinder_8c.html#a15eb24b880338abbe85f65db5d4d231e',1,'Binding:&#160;tomboykeybinder.c']]],
   ['bmunit_54',['BmUnit',['../bitmap_8h.html#a1ffa76a2f167a079c19e47d7fdf05802',1,'bitmap.h']]],
   ['border_5foutline_5ft_55',['border_outline_t',['../tabpopup_8h.html#a80b6913fba9e0d59e0697b5d2a9278c1',1,'tabpopup.h']]],
   ['buttondata_56',['ButtonData',['../caja-pathbar_8c.html#a32b792f783a807c608cf98f0ff6a33ab',1,'caja-pathbar.c']]],

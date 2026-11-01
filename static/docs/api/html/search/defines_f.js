@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['obj_5fpath_0',['obj_path',['../pidgin_8c.html#a70f4b9045e4165a429c69ed04c1620af',1,'OBJ_PATH:&#160;pidgin.c'],['../gajim_8c.html#a70f4b9045e4165a429c69ed04c1620af',1,'OBJ_PATH:&#160;gajim.c']]],
+  ['obj_5fpath_0',['OBJ_PATH',['../gajim_8c.html#a70f4b9045e4165a429c69ed04c1620af',1,'OBJ_PATH:&#160;gajim.c'],['../pidgin_8c.html#a70f4b9045e4165a429c69ed04c1620af',1,'OBJ_PATH:&#160;pidgin.c']]],
   ['offset_1',['OFFSET',['../sensors-applet-settings_8h.html#a21005f9f4e2ce7597c5eb4351816d7e2',1,'sensors-applet-settings.h']]],
   ['ok_2',['ok',['../afmparse_8h.html#ad6ab145d5e3b6aea160603e7178369b0',1,'afmparse.h']]],
   ['old_5ftemp_5fscale_3',['OLD_TEMP_SCALE',['../prefs-dialog_8c.html#a1d850d545244d10a0c5e0ba24d9716be',1,'prefs-dialog.c']]],
@@ -72,7 +72,7 @@ var searchData=
   ['outline_5foffset_69',['OUTLINE_OFFSET',['../screenshot-shadow_8c.html#a05cb3095f9157338c8f497d92e4fd24d',1,'screenshot-shadow.c']]],
   ['outline_5fopacity_70',['OUTLINE_OPACITY',['../screenshot-shadow_8c.html#a9423ec7e1ff7eefd7c2c364d2faeed01',1,'screenshot-shadow.c']]],
   ['outline_5fradius_71',['OUTLINE_RADIUS',['../screenshot-shadow_8c.html#ab86e0c5052c9bd08c7514c62ea09b514',1,'screenshot-shadow.c']]],
-  ['outline_5fwidth_72',['outline_width',['../screen_8c.html#a38a1f439739ede11aa608ea45eaf24e5',1,'OUTLINE_WIDTH:&#160;screen.c'],['../tile-preview_8c.html#a38a1f439739ede11aa608ea45eaf24e5',1,'OUTLINE_WIDTH:&#160;tile-preview.c']]],
+  ['outline_5fwidth_72',['OUTLINE_WIDTH',['../screen_8c.html#a38a1f439739ede11aa608ea45eaf24e5',1,'OUTLINE_WIDTH:&#160;screen.c'],['../tile-preview_8c.html#a38a1f439739ede11aa608ea45eaf24e5',1,'OUTLINE_WIDTH:&#160;tile-preview.c']]],
   ['output_5ftitle_5fitem_5fborder_73',['OUTPUT_TITLE_ITEM_BORDER',['../msd-xrandr-manager_8c.html#a1169e7495436c8c386ce054fb99e78d5',1,'msd-xrandr-manager.c']]],
   ['output_5ftitle_5fitem_5fpadding_74',['OUTPUT_TITLE_ITEM_PADDING',['../msd-xrandr-manager_8c.html#a8ae9cd3ae207966c59ce4317bd775841',1,'msd-xrandr-manager.c']]],
   ['outside_5fselect_5frect_75',['OUTSIDE_SELECT_RECT',['../tabpopup_8c.html#a6a31a317c0df032d3bc00b62162b0034',1,'tabpopup.c']]],

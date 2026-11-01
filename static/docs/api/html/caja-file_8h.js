@@ -18,7 +18,6 @@ var caja_file_8h =
     [ "CAJA_IS_FILE_CLASS", "caja-file_8h.html#a10269d0d96cfd4e7bba89e029505572c", null ],
     [ "CAJA_TYPE_FILE", "caja-file_8h.html#a47335fd9b2289cc9ba7e274b7faa50fe", null ],
     [ "UNDEFINED_TIME", "caja-file_8h.html#aef1ebdf703ce7f626bbe909905c2ac86", null ],
-    [ "CajaFile", "caja-file_8h.html#adf4b059555fbd5ace819b4f208ad29ee", null ],
     [ "CajaFileCallback", "caja-file_8h.html#acdacf1d59348b26079d42e2e44d09a6d", null ],
     [ "CajaFileListCallback", "caja-file_8h.html#a45be7476b501c5619be12cf149630276", null ],
     [ "CajaFileListHandle", "caja-file_8h.html#a88c7961bd3b7f34f849231338fb526c9", null ],

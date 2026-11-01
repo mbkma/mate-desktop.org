@@ -2,7 +2,7 @@ var searchData=
 [
   ['filetransferdialogoptions_0',['FileTransferDialogOptions',['../file-transfer-dialog_8h.html#a84d3e308bc85deeaa69f6ff252cb52b6',1,'file-transfer-dialog.h']]],
   ['filetype_1',['FileType',['../mate-bg_8c.html#a2c794c5c13ab4dd7e65bad031dbe41c3',1,'mate-bg.c']]],
-  ['filteroptions_2',['filteroptions',['../caja-file_8c.html#a7f1dfeea870eec2a3f18186ad02bc817',1,'FilterOptions:&#160;caja-file.c'],['../gio-utils_8c.html#a7f1dfeea870eec2a3f18186ad02bc817',1,'FilterOptions:&#160;gio-utils.c']]],
+  ['filteroptions_2',['FilterOptions',['../caja-file_8c.html#a7f1dfeea870eec2a3f18186ad02bc817',1,'FilterOptions:&#160;caja-file.c'],['../gio-utils_8c.html#a7f1dfeea870eec2a3f18186ad02bc817',1,'FilterOptions:&#160;gio-utils.c']]],
   ['finc_5fdialogs_3',['finc_dialogs',['../financial_8h.html#aa8221bbae3f145674fff7402eef47963',1,'financial.h']]],
   ['firstvolumeextension_4',['FirstVolumeExtension',['../rar-utils_8c.html#adbd12641da3fbbc9f163c263dcd0224b',1,'rar-utils.c']]],
   ['fixeddirections_5',['FixedDirections',['../boxes_8h.html#ae50c64f77cfc9ad199b61ed0c79f5df6',1,'boxes.h']]],

@@ -7,9 +7,6 @@ var msd_media_keys_window_8h =
     [ "MSD_MEDIA_KEYS_WINDOW", "msd-media-keys-window_8h.html#afa99b376248ae30495b2d65512823e4c", null ],
     [ "MSD_MEDIA_KEYS_WINDOW_CLASS", "msd-media-keys-window_8h.html#a83d1a35a4cdbd2de72d640a671d1e8fa", null ],
     [ "MSD_TYPE_MEDIA_KEYS_WINDOW", "msd-media-keys-window_8h.html#ac6ee862f7f80376d84c9ba1f306e409e", null ],
-    [ "MsdMediaKeysWindow", "msd-media-keys-window_8h.html#acc319ef7ea304a4903e733928822bba7", null ],
-    [ "MsdMediaKeysWindowClass", "msd-media-keys-window_8h.html#aef77d4a54db1248f1eee3ff7f977ad57", null ],
-    [ "MsdMediaKeysWindowPrivate", "msd-media-keys-window_8h.html#a57fa9dbb76691d8575977db9d985c37b", null ],
     [ "MsdMediaKeysWindowAction", "msd-media-keys-window_8h.html#a86763506ec5ce3ef809a53c7bed19d22", [
       [ "MSD_MEDIA_KEYS_WINDOW_ACTION_VOLUME", "msd-media-keys-window_8h.html#a86763506ec5ce3ef809a53c7bed19d22a8d71be6a1679b7bb91925cdc65adaffa", null ],
       [ "MSD_MEDIA_KEYS_WINDOW_ACTION_CUSTOM", "msd-media-keys-window_8h.html#a86763506ec5ce3ef809a53c7bed19d22ac7eb32f7214aa0220cec0217f863e3a4", null ]

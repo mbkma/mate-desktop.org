@@ -20,7 +20,7 @@ var caja_query_editor_8c =
     [ "caja_query_editor_set_query", "caja-query-editor_8c.html#a70a3b6a7ed573bfdf00fa5573c10252a", null ],
     [ "caja_query_editor_set_visible", "caja-query-editor_8c.html#adcc2971089804c07e4a49625629ee767", null ],
     [ "EEL_CLASS_BOILERPLATE", "caja-query-editor_8c.html#aa59ebf927052fbb2c27ddd6579d8344e", null ],
-    [ "mime_type_groups", "caja-query-editor_8c.html#a8730a0039f6306de8555316f874c97cc", null ],
+    [ "mime_type_groups", "caja-query-editor_8c.html#a899a215ccdec2133aa58d57d58bcee58", null ],
     [ "mimetypes", "caja-query-editor_8c.html#abe291d6af1f1dd2e4b49d2b88ac42957", null ],
     [ "name", "caja-query-editor_8c.html#a5ac083a645d964373f022d03df4849c8", null ]
 ];

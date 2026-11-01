@@ -64,7 +64,7 @@ var pluma_settings_8h =
     [ "PLUMA_SETTINGS_WINDOW_SIZE", "pluma-settings_8h.html#aefdb7575b9fe9c75274842aacb246955", null ],
     [ "PLUMA_SETTINGS_WINDOW_STATE", "pluma-settings_8h.html#a536d97b10b083c7c06a91963d3622d8f", null ],
     [ "PLUMA_SETTINGS_WRAP_MODE", "pluma-settings_8h.html#a3a70ce93467047ae8f59a94aaf10e398", null ],
-    [ "PLUMA_SETTINGS_WRITABLE_VFS_SCHEMES", "pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86", null ],
+    [ "PLUMA_SETTINGS_WRITABLE_VFS_SCHEMES", "pluma-settings_8h.html#a04ea7ac034663c290f596fb69c1b9abe", null ],
     [ "PLUMA_SETTINGS_WRITABLE_VFS_SCHEMES", "pluma-settings_8h.html#ab21b26549c74712c5900d865cc1b8e86", null ],
     [ "PLUMA_TYPE_SETTINGS", "pluma-settings_8h.html#a6ec4b948f0c5446e6cfebf6c23e9901e", null ],
     [ "PlumaSettings", "pluma-settings_8h.html#a4602a705695c007dadb6827686b9b486", null ],

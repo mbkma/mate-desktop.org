@@ -1,8 +1,8 @@
 var annotated_dup =
 [
     [ "procman", "namespaceprocman.html", [
-      [ "IconThemeWrapper", "classprocman_1_1IconThemeWrapper.html", "classprocman_1_1IconThemeWrapper" ],
       [ "OptionGroup", "classprocman_1_1OptionGroup.html", "classprocman_1_1OptionGroup" ],
+      [ "IconThemeWrapper", "classprocman_1_1IconThemeWrapper.html", "classprocman_1_1IconThemeWrapper" ],
       [ "SelectionMemento", "classprocman_1_1SelectionMemento.html", "classprocman_1_1SelectionMemento" ]
     ] ],
     [ "_ActiveSensor", "struct__ActiveSensor.html", "struct__ActiveSensor" ],

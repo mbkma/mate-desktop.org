@@ -12,7 +12,6 @@ var mate_client_8c =
     [ "mate_client_get_config_prefix", "mate-client_8c.html#aecfad8cc8f7ea1d89da90c80008e6052", null ],
     [ "mate_client_get_desktop_id", "mate-client_8c.html#af0da84eb7186cbdea1a2728f45ce99c4", null ],
     [ "mate_client_get_flags", "mate-client_8c.html#a59c5115544612f4bbac85d10b36b9aa7", null ],
-    [ "mate_client_get_global_config_prefix", "mate-client_8c.html#a5a21caa170a8073585d85312f5c2c7e5", null ],
     [ "mate_client_get_id", "mate-client_8c.html#a5972f6abb80176c6d12841097569a9cc", null ],
     [ "mate_client_get_previous_id", "mate-client_8c.html#ac955e321996fe78ba66f6b3dabebceb7", null ],
     [ "mate_client_module_info_get", "mate-client_8c.html#ae2cb432cdb658c2d69c87f25b11dcb5d", null ],

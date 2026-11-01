@@ -1,5 +1,6 @@
 var struct__MetaDisplay =
 [
+    [ "item", "struct__MetaDisplay.html#a87f33aaa81c91f09c127a84b974ad1c2", null ],
     [ "active_screen", "struct__MetaDisplay.html#a0e005ebed918ca1651f1df7abaa1b1e9", null ],
     [ "allow_terminal_deactivation", "struct__MetaDisplay.html#a35135fd86764c5897a222c01d7692a45", null ],
     [ "autoraise_timeout_id", "struct__MetaDisplay.html#aa291faa4a41e812792bc5a6b1ea41175", null ],
@@ -18,7 +19,6 @@ var struct__MetaDisplay =
     [ "error_traps", "struct__MetaDisplay.html#a3bccf49dd7a1d1de66bdc7fad1d0cdf0", null ],
     [ "events", "struct__MetaDisplay.html#a40522fbcc58286427de23542e9eed907", null ],
     [ "expected_focus_window", "struct__MetaDisplay.html#a6f9bd011f3d50b5bf7e5c073a7dc2785", null ],
-    [ "focus_window", "struct__MetaDisplay.html#a9ba04f6c6aa5a622c64da437301f6e76", null ],
     [ "grab_anchor_root_x", "struct__MetaDisplay.html#a2a7e6b75a74ad1d28bf37ab94c490226", null ],
     [ "grab_anchor_root_y", "struct__MetaDisplay.html#a41eae5008ab21b21afd2448ce444816b", null ],
     [ "grab_anchor_window_pos", "struct__MetaDisplay.html#ae6e2f87cd155df7eecd4016b90368c68", null ],

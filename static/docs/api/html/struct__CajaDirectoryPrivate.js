@@ -3,7 +3,7 @@ var struct__CajaDirectoryPrivate =
     [ "as_file", "struct__CajaDirectoryPrivate.html#ad556d894ddccea3e060879fade4df9c3", null ],
     [ "call_ready_idle_id", "struct__CajaDirectoryPrivate.html#a2edc54930783d86cad34cfd341ff8668", null ],
     [ "call_when_ready_counters", "struct__CajaDirectoryPrivate.html#addf2cd8d4ebd84ef7ed4a810706d4757", null ],
-    [ "call_when_ready_hash", "struct__CajaDirectoryPrivate.html#aab17fe6ea5d1a9495594ef2b9d812ea6", null ],
+    [ "call_when_ready_hash", "struct__CajaDirectoryPrivate.html#a722ad13219f52c10321e253d87074431", null ],
     [ "confirmed_file_count", "struct__CajaDirectoryPrivate.html#a9b350f5502d0d82993d843b3134ba23f", null ],
     [ "count_in_progress", "struct__CajaDirectoryPrivate.html#a79e1dca1048a797cbdd0814308b37bcf", null ],
     [ "deep_count_file", "struct__CajaDirectoryPrivate.html#a1587ab0eff8f0171e8fc3d46c2545e7d", null ],

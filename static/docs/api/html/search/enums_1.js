@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['accelprofile_0',['accelprofile',['../mate-mouse-properties_8c.html#ab5ee04389b095fb39f811b097fadd647',1,'AccelProfile:&#160;mate-mouse-properties.c'],['../msd-mouse-manager_8c.html#ab5ee04389b095fb39f811b097fadd647',1,'AccelProfile:&#160;msd-mouse-manager.c']]],
+  ['accelprofile_0',['AccelProfile',['../mate-mouse-properties_8c.html#ab5ee04389b095fb39f811b097fadd647',1,'AccelProfile:&#160;mate-mouse-properties.c'],['../msd-mouse-manager_8c.html#ab5ee04389b095fb39f811b097fadd647',1,'AccelProfile:&#160;msd-mouse-manager.c']]],
   ['acceptsetting_1',['AcceptSetting',['../user__share-private_8h.html#a09174f432a5e367ac84b94e086d2c8a6',1,'user_share-private.h']]],
   ['accessxstatuserrortype_2',['AccessxStatusErrorType',['../mate-applets_2accessx-status_2src_2applet_8h.html#a0650e31627b058b93da6b4645352a338',1,'applet.h']]],
   ['accessxstatusnotifytype_3',['AccessxStatusNotifyType',['../mate-applets_2accessx-status_2src_2applet_8h.html#a54b37afd743f9027ad0a3b88274a91ab',1,'applet.h']]],

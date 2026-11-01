@@ -50,7 +50,7 @@ var dir_0b619299d47d5cd8ea6521d4d82b9294 =
     [ "smooth_refresh.cpp", "smooth__refresh_8cpp.html", null ],
     [ "smooth_refresh.h", "smooth__refresh_8h.html", "smooth__refresh_8h" ],
     [ "sysinfo.cpp", "sysinfo_8cpp.html", "sysinfo_8cpp" ],
-    [ "sysinfo.h", "sysinfo_8h.html", null ],
+    [ "sysinfo.h", "sysinfo_8h.html", "sysinfo_8h" ],
     [ "util.cpp", "util_8cpp.html", "util_8cpp" ],
     [ "util.h", "mate-system-monitor_2src_2util_8h.html", "mate-system-monitor_2src_2util_8h" ]
 ];

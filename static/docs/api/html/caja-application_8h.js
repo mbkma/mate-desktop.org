@@ -13,7 +13,6 @@ var caja_application_8h =
     [ "CAJA_WINDOW_DEFINED", "caja-application_8h.html#ae395c1f12ad57d695a18f28ab0c4949d", null ],
     [ "CajaApplicationPrivate", "caja-application_8h.html#a4e2086ae326b39167164880a28896526", null ],
     [ "CajaSpatialWindow", "caja-application_8h.html#a93a7f2de9f89b381a4ea727afb545b62", null ],
-    [ "CajaWindow", "caja-application_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9", null ],
     [ "caja_application_close_all_navigation_windows", "caja-application_8h.html#a0c9918785203a10c59a537614e3bd824", null ],
     [ "caja_application_close_all_spatial_windows", "caja-application_8h.html#a432e661d3b277fdacf8aa08a75d61f96", null ],
     [ "caja_application_close_parent_windows", "caja-application_8h.html#a05aa59b015d7e0d205e8cbf52f7a824a", null ],

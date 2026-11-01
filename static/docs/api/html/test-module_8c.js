@@ -9,8 +9,6 @@ var test_module_8c =
     [ "NA_MODULE_GET_CLASS", "test-module_8c.html#abb73639bb084e646989c15f2bf535155", null ],
     [ "NA_TYPE_MODULE", "test-module_8c.html#a832a7d7fee0cba450dda8ef4b32b113b", null ],
     [ "PLUGIN_NAME", "test-module_8c.html#a0acf7475326cdcd31d690b72033de33a", null ],
-    [ "NAModuleClassPrivate", "test-module_8c.html#a7e11e975b0a5be9cffd861f0b549cf8f", null ],
-    [ "NAModulePrivate", "test-module_8c.html#a335f7c2b71d26e1725bc71869de6c532", null ],
     [ "main", "test-module_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
     [ "na_module_get_type", "test-module_8c.html#aaccb1feb7ba6cc37b9ef782fcb05eab9", null ]
 ];

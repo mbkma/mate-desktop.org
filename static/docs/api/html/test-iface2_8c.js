@@ -13,10 +13,6 @@ var test_iface2_8c =
     [ "TEST_IS_BASE", "test-iface2_8c.html#a5a99165dbe8211f3ff28936ef1a7c3f7", null ],
     [ "TEST_IS_BASE_CLASS", "test-iface2_8c.html#aa2d5a30eab02214315fe674360479eec", null ],
     [ "TEST_IS_IFACE", "test-iface2_8c.html#a26e2c4ab8f3c858411a3419864ed3753", null ],
-    [ "TestBaseClassPrivate", "test-iface2_8c.html#af1ed7ae0e1da06e16035ac39742a413b", null ],
-    [ "TestBasePrivate", "test-iface2_8c.html#ac973e2e7528fad1c7273138f913e5737", null ],
-    [ "TestIFace", "test-iface2_8c.html#a5050d8682a876a2e270d768e389c5b9c", null ],
-    [ "TestIFaceInterfacePrivate", "test-iface2_8c.html#a267ef9a0278538d66eb7916be44d9edc", null ],
     [ "main", "test-iface2_8c.html#a3c04138a5bfe5d72780bb7e82a18e627", null ],
     [ "test_base_get_type", "test-iface2_8c.html#ae533e2bd7f6f83912ee4de4f61c9d673", null ],
     [ "test_iface_get_type", "test-iface2_8c.html#af21e91b1da823c1ef42601a4d8f8c050", null ]

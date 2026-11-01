@@ -1,6 +1,6 @@
 var mate_app_helper_8c =
 [
-    [ "_", "mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc", null ],
+    [ "_", "mate-app-helper_8c.html#a4a4723591ba58c99df7b76f73bf1e6de", null ],
     [ "_", "mate-app-helper_8c.html#af20b8d139279b360b0fdeae71f8f43bc", null ],
     [ "mate_accelerators_sync", "mate-app-helper_8c.html#a429670d77737eb44d662096875803bfb", null ],
     [ "mate_app_create_menus", "mate-app-helper_8c.html#a1ae1fb108aa909186dbd6d2299dacc21", null ],

@@ -10,10 +10,6 @@ var eom_2cut_n_paste_2toolbar_editor_2egg_toolbars_model_8h =
     [ "EGG_TOOLBARS_MODEL_CLASS", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#aa08d9e7ebb3df0c0bf3cebc8979554cf", null ],
     [ "EGG_TOOLBARS_MODEL_GET_CLASS", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#af3b659fb1b402710a2f58e0940cfb515", null ],
     [ "EGG_TYPE_TOOLBARS_MODEL", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#aedf2701d42fcebc50cfaac8e68028753", null ],
-    [ "EggToolbarsItemType", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a6dea973931748438d16fe73081f88758", null ],
-    [ "EggToolbarsModel", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a8fd947c4689eceddba9bd13c45314147", null ],
-    [ "EggToolbarsModelClass", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a1290091d636a2f7777fba4c4449ce46e", null ],
-    [ "EggToolbarsModelPrivate", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a96aa6f480c56bdc352abe747f29d99d6", null ],
     [ "EggTbModelFlags", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a281ae76cffc60e5986aaf15bb0c69271", [
       [ "EGG_TB_MODEL_NOT_REMOVABLE", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a281ae76cffc60e5986aaf15bb0c69271af92b8fa04bd4b39f3a475f8ab97835b4", null ],
       [ "EGG_TB_MODEL_NOT_EDITABLE", "eom_2cut-n-paste_2toolbar-editor_2egg-toolbars-model_8h.html#a281ae76cffc60e5986aaf15bb0c69271aeefd7bed7db697970d389753a931f57c", null ],

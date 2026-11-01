@@ -10,7 +10,6 @@ var eom_list_store_8h =
     [ "EOM_LIST_STORE_GET_CLASS", "eom-list-store_8h.html#a1a4194a5bf03160175d45a28b75a79a2", null ],
     [ "EOM_LIST_STORE_THUMB_SIZE", "eom-list-store_8h.html#afff5ed88e0b9b2a3e04eda794f7e1922", null ],
     [ "EOM_TYPE_LIST_STORE", "eom-list-store_8h.html#ae06a8b95fd83545ef4ccf4840fc9a07b", null ],
-    [ "EomImage", "eom-list-store_8h.html#a11f7708d5c19af4336a19fcf5a539573", null ],
     [ "EomListStore", "eom-list-store_8h.html#adebafc1709399ac66c1cc3feea18c620", null ],
     [ "EomListStoreClass", "eom-list-store_8h.html#af474cdf16608319c4bc9f883119c667d", null ],
     [ "EomListStorePrivate", "eom-list-store_8h.html#afb14d77034830eecb489ee0942d71750", null ],

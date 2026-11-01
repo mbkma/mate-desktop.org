@@ -12,7 +12,6 @@ var caja_window_8h =
     [ "CajaWindowOpenSlotFlags", "caja-window_8h.html#a862cdcca7c81d1fc16c1856cf0f367ea", null ],
     [ "CajaWindowPane", "caja-window_8h.html#ae2d6643534eafa023bcf92841021f4c4", null ],
     [ "CajaWindowPrivate", "caja-window_8h.html#a3c05dd21bc188f2b2c9259b84d40debe", null ],
-    [ "CajaWindowSlot", "caja-window_8h.html#aa2c76a7ef63f17fb605ccc9e3c6e3c7f", null ],
     [ "CajaWindowSlotClass", "caja-window_8h.html#a0d3a9cffe6fa9ab857acb7fc1da69889", null ],
     [ "CajaWindowOpenSlotFlags", "caja-window_8h.html#a3e19dac771473d028b5a933c486f2fe1", [
       [ "CAJA_WINDOW_OPEN_SLOT_NONE", "caja-window_8h.html#a3e19dac771473d028b5a933c486f2fe1a99d5eca112811475e827ff4ed1452a11", null ],

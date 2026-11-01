@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['hack_5fuid_0',['hack_uid',['../setuid_8h.html#ad80d8c7ad7194fe465985dafe13f1b74',1,'hack_uid(char **nolock_reason, char **orig_uid, char **uid_message):&#160;setuid.c'],['../setuid_8c.html#ad80d8c7ad7194fe465985dafe13f1b74',1,'hack_uid(char **nolock_reason, char **orig_uid, char **uid_message):&#160;setuid.c']]],
+  ['hack_5fuid_0',['hack_uid',['../setuid_8c.html#ad80d8c7ad7194fe465985dafe13f1b74',1,'hack_uid(char **nolock_reason, char **orig_uid, char **uid_message):&#160;setuid.c'],['../setuid_8h.html#ad80d8c7ad7194fe465985dafe13f1b74',1,'hack_uid(char **nolock_reason, char **orig_uid, char **uid_message):&#160;setuid.c']]],
   ['handle_5fstatic_5faction_5fclicked_1',['handle_static_action_clicked',['../control-center_8c.html#af497c19c4760e1932150b35a473b3465',1,'control-center.c']]],
   ['hide_5fshell_2',['hide_shell',['../app-shell_8c.html#ab22660163abc6818d9adf27dbf4f267a',1,'hide_shell(AppShellData *app_data):&#160;app-shell.c'],['../app-shell_8h.html#ab22660163abc6818d9adf27dbf4f267a',1,'hide_shell(AppShellData *app_data):&#160;app-shell.c']]],
   ['history_5fcontext_5ffree_3',['history_context_free',['../mate-notification-applet-history_8c.html#a0e32f636defa44f282b6ef385ba1aff8',1,'history_context_free(MateNotificationHistoryContext *context):&#160;mate-notification-applet-history.c'],['../mate-notification-applet-history_8h.html#a0e32f636defa44f282b6ef385ba1aff8',1,'history_context_free(MateNotificationHistoryContext *context):&#160;mate-notification-applet-history.c']]],

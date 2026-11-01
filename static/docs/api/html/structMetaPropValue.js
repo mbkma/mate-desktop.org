@@ -1,10 +1,10 @@
 var structMetaPropValue =
 [
     [ "atom", "structMetaPropValue.html#a65f4606a9f14f84de09a4952dd51a827", null ],
-    [ "atom_list", "structMetaPropValue.html#a7cf5b772f086976b2419a43577082734", null ],
+    [ "atom_list", "structMetaPropValue.html#ad9513861678cc35798011fa119586714", null ],
     [ "atoms", "structMetaPropValue.html#a7b2638f3691606bb1f0d75889a8adbf7", null ],
     [ "cardinal", "structMetaPropValue.html#ae2a112569b00c84ec1d80c7c86fd26f3", null ],
-    [ "cardinal_list", "structMetaPropValue.html#a2e6ce3f77a61914cd75e77c9000b99d6", null ],
+    [ "cardinal_list", "structMetaPropValue.html#a98818df6bfaa7c72f4cec583aa6930b6", null ],
     [ "cardinals", "structMetaPropValue.html#ab44cb3bf5f71a237960e052d9cc06600", null ],
     [ "class_hint", "structMetaPropValue.html#aec72cfbf63f15b6311feb77f55759487", null ],
     [ "flags", "structMetaPropValue.html#ae73e20b32f350d3701d479cd887bdb03", null ],
@@ -14,12 +14,12 @@ var structMetaPropValue =
     [ "n_cardinals", "structMetaPropValue.html#a5fd27266f4e0bedf0d8c8000d12f84db", null ],
     [ "n_strings", "structMetaPropValue.html#a8e96742bd273a535f90a4e0a7405a9d1", null ],
     [ "required_type", "structMetaPropValue.html#a5500f4c46793835bb6c447ef9c7a67ce", null ],
-    [ "size_hints", "structMetaPropValue.html#a39b1b2f796fc647232c080ff58632f4f", null ],
+    [ "size_hints", "structMetaPropValue.html#aaeedb678eb8478be0120fd80d9c1c973", null ],
     [ "str", "structMetaPropValue.html#ae852a0c6d5fc18667ddcd15b01f98bea", null ],
-    [ "string_list", "structMetaPropValue.html#a0f914a4498a4f9214f56ef16e9c28593", null ],
+    [ "string_list", "structMetaPropValue.html#af64cc45096e30476d701bee324cb5a70", null ],
     [ "strings", "structMetaPropValue.html#a7c3d68d65f014075f8b9b867191063a5", null ],
     [ "type", "structMetaPropValue.html#aaac6cefe1d284659fe38fb42b43052ba", null ],
-    [ "v", "structMetaPropValue.html#ad4a0da5faa642c7af561cbca550f69a1", null ],
+    [ "v", "structMetaPropValue.html#a8b4b9b4b6abf790614f28098e36f89ed", null ],
     [ "wm_hints", "structMetaPropValue.html#a13747a7c6b2745e1ed7be3f82eaf3c74", null ],
     [ "xwindow", "structMetaPropValue.html#a1cfcd984110085c3c12ef6570a4e261f", null ]
 ];

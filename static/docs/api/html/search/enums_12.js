@@ -19,5 +19,5 @@ var searchData=
   ['stereotype_16',['StereoType',['../edid_8h.html#adacd321a7d4855441de8125d3ae39c7e',1,'edid.h']]],
   ['stickynotesdefaultaction_17',['StickyNotesDefaultAction',['../stickynotes__applet_8h.html#ad196126eaef35250974fcc36b8f82d71',1,'stickynotes_applet.h']]],
   ['synctype_18',['SyncType',['../mate-icon-list_8c.html#a0652753315ecfcf1bc528cda9e11d57e',1,'mate-icon-list.c']]],
-  ['systemtimezoneerror_19',['systemtimezoneerror',['../mate-panel_2applets_2clock_2system-timezone_8h.html#af2563e765ce190a4e875dfe572fefcbc',1,'SystemTimezoneError:&#160;system-timezone.h'],['../mate-settings-daemon_2plugins_2datetime_2system-timezone_8h.html#af2563e765ce190a4e875dfe572fefcbc',1,'SystemTimezoneError:&#160;system-timezone.h']]]
+  ['systemtimezoneerror_19',['SystemTimezoneError',['../mate-panel_2applets_2clock_2system-timezone_8h.html#af2563e765ce190a4e875dfe572fefcbc',1,'SystemTimezoneError:&#160;system-timezone.h'],['../mate-settings-daemon_2plugins_2datetime_2system-timezone_8h.html#af2563e765ce190a4e875dfe572fefcbc',1,'SystemTimezoneError:&#160;system-timezone.h']]]
 ];

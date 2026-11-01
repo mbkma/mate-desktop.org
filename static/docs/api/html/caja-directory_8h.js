@@ -11,7 +11,6 @@ var caja_directory_8h =
     [ "CAJA_TYPE_DIRECTORY", "caja-directory_8h.html#a9223a9a10acaa39a76ca959462180b9d", null ],
     [ "CajaDirectoryCallback", "caja-directory_8h.html#aad052a7ef3b0d6a3e9df281ccc2b232c", null ],
     [ "CajaDirectoryPrivate", "caja-directory_8h.html#acbd3cfcae0033ff614c91f5b5b50416c", null ],
-    [ "CajaFile", "caja-directory_8h.html#adf4b059555fbd5ace819b4f208ad29ee", null ],
     [ "caja_directory_are_all_files_seen", "caja-directory_8h.html#abce1e53ccaee9994809f12f4190b9668", null ],
     [ "caja_directory_call_when_ready", "caja-directory_8h.html#a36d7d52f629bc812221e47003f791ec5", null ],
     [ "caja_directory_cancel_callback", "caja-directory_8h.html#ac2c6a488ecbf728d13342f7e12c56f4e", null ],

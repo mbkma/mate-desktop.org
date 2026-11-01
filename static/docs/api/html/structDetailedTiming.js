@@ -1,10 +1,10 @@
 var structDetailedTiming =
 [
-    [ "analog", "structDetailedTiming.html#ae01939742f646d3beb2c8f9f520c2335", null ],
+    [ "analog", "structDetailedTiming.html#a437e506a02e4a490d80fbce1a33a0e3f", null ],
     [ "bipolar", "structDetailedTiming.html#adbc30b6a9a7100f8e1108810957b481f", null ],
     [ "composite", "structDetailedTiming.html#a5bf4188f80c526b06b07894d89e5f3ab", null ],
-    [ "connector", "structDetailedTiming.html#a7b76de74c905c5c11869f03f1f0cce8c", null ],
-    [ "digital", "structDetailedTiming.html#ac3e1a3f0fabff6cb8a565a0628980806", null ],
+    [ "connector", "structDetailedTiming.html#af50445b7b27c263d13ad0b50a450508d", null ],
+    [ "digital", "structDetailedTiming.html#a80f6ac5251a21ed913b3410fa6838b21", null ],
     [ "digital_sync", "structDetailedTiming.html#ac3afa3691f412e8fac989e6513109691", null ],
     [ "h_addr", "structDetailedTiming.html#a85c0d36888c55c4ee71121b85cea61b9", null ],
     [ "h_blank", "structDetailedTiming.html#a27daa8f6f8dfb12a284941ed5e43aa4f", null ],

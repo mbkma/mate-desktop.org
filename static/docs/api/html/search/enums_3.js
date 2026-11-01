@@ -2,7 +2,7 @@ var searchData=
 [
   ['cacttreemode_0',['CactTreeMode',['../cact-tree-view_8h.html#a2b19c8a49bfbd431574f5b00aeec0940',1,'cact-tree-view.h']]],
   ['cajabarmode_1',['CajaBarMode',['../caja-navigation-window-slot_8h.html#a679026230e54f36ddf2dab0492949f9d',1,'caja-navigation-window-slot.h']]],
-  ['cajadateformat_2',['cajadateformat',['../gsearchtool_8h.html#a25b8a34c0613e4dba8ae4907e238e1ba',1,'CajaDateFormat:&#160;gsearchtool.h'],['../caja-global-preferences_8h.html#a25b8a34c0613e4dba8ae4907e238e1ba',1,'CajaDateFormat:&#160;caja-global-preferences.h']]],
+  ['cajadateformat_2',['CajaDateFormat',['../caja-global-preferences_8h.html#a25b8a34c0613e4dba8ae4907e238e1ba',1,'CajaDateFormat:&#160;caja-global-preferences.h'],['../gsearchtool_8h.html#a25b8a34c0613e4dba8ae4907e238e1ba',1,'CajaDateFormat:&#160;gsearchtool.h']]],
   ['cajadatetype_3',['CajaDateType',['../caja-file_8h.html#a3c007127133a66053c26f33acdfdea19',1,'caja-file.h']]],
   ['cajadesktoplinktype_4',['CajaDesktopLinkType',['../caja-desktop-link_8h.html#a199b520d112c48ecb615e2dbedefaa5b',1,'caja-desktop-link.h']]],
   ['cajadisplaygitbranch_5',['CajaDisplayGitBranch',['../caja-icon-container_8h.html#a7e6680e1fdf3f6c42cbfb7997f9e4264',1,'caja-icon-container.h']]],
