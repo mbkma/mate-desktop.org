@@ -273,7 +273,7 @@ var searchData=
   ['state_5ftitle_270',['STATE_TITLE',['../theme-parser_8c.html#a99f78dec5b5884642b44f101ef1d2460a0079bd1b6491096cefae97276883f6c7',1,'theme-parser.c']]],
   ['state_5fwarn_271',['STATE_WARN',['../drwright_8c.html#a8838dce87a493e27726ae26a5a07b8ccacc8bce4c49d5c090344155dc043d55f4',1,'drwright.c']]],
   ['state_5fwindow_272',['STATE_WINDOW',['../theme-parser_8c.html#a99f78dec5b5884642b44f101ef1d2460a9ce279416cca86e16c390fd357fb6ef4',1,'theme-parser.c']]],
-  ['status_5fchanged_273',['STATUS_CHANGED',['../ev-print-operation_8c.html#a3af56d6500f15f22159da0aaddea7530a1d772deb7ca80ddbfed6b64115049e9b',1,'STATUS_CHANGED:&#160;ev-print-operation.c'],['../gsm-presence_8c.html#afa50ca036185a8967a0db49c6d9e7c6da1d772deb7ca80ddbfed6b64115049e9b',1,'STATUS_CHANGED:&#160;gsm-presence.c']]],
+  ['status_5fchanged_273',['STATUS_CHANGED',['../ev-print-operation_8c.html#a3af56d6500f15f22159da0aaddea7530a1d772deb7ca80ddbfed6b64115049e9b',1,'STATUS_CHANGED:&#160;ev-print-operation.c'],['../gvc-mpris-player_8c.html#ac822eece80f128c700932ee3df0b4a15a1d772deb7ca80ddbfed6b64115049e9b',1,'STATUS_CHANGED:&#160;gvc-mpris-player.c'],['../gsm-presence_8c.html#afa50ca036185a8967a0db49c6d9e7c6da1d772deb7ca80ddbfed6b64115049e9b',1,'STATUS_CHANGED:&#160;gsm-presence.c']]],
   ['status_5fpixmap_5fac_274',['STATUS_PIXMAP_AC',['../battstat_8h.html#a2457782e954fe832394ea1f3869b0a7fa21bae7172bb30d83be0e272242ea30f7',1,'battstat.h']]],
   ['status_5fpixmap_5fbattery_275',['STATUS_PIXMAP_BATTERY',['../battstat_8h.html#a2457782e954fe832394ea1f3869b0a7fa639e644feecd97692a486119bef4fa4b',1,'battstat.h']]],
   ['status_5fpixmap_5fcharge_276',['STATUS_PIXMAP_CHARGE',['../battstat_8h.html#a2457782e954fe832394ea1f3869b0a7fa1fadbb003147d0f1a564253a11d8c8f8',1,'battstat.h']]],

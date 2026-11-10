@@ -97,17 +97,22 @@ $(function(){initNavTree('panel-launch_8c.html','',''); });
 <code>#include &lt;gio/gdesktopappinfo.h&gt;</code><br />
 <code>#include &lt;gdk/gdk.h&gt;</code><br />
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mate-systemd_8h_source.html">libmate-desktop/mate-systemd.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="panel-error_8h_source.html">panel-error.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="panel-glib_8h_source.html">panel-glib.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="panel-launch_8h_source.html">panel-launch.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for panel-launch.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="panel-launch_8c__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="panel-launch_8c__incl.svg" width="100%" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="panel-launch_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:accf002c50d07fec7ddcaf35fde15c5e9" id="r_accf002c50d07fec7ddcaf35fde15c5e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf002c50d07fec7ddcaf35fde15c5e9">MATE_DESKTOP_USE_UNSTABLE_API</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a01da9dde45fa76bac6d86d36776d32de" id="r_a01da9dde45fa76bac6d86d36776d32de"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01da9dde45fa76bac6d86d36776d32de">panel_app_info_launch_uris</a> (GDesktopAppInfo *appinfo, GList *uris, GdkScreen *screen, const gchar *<a class="el" href="caja-navigation-window_8c.html#ab1db9bdb9ca2c111e4aef51de082553e">action</a>, guint32 timestamp, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
@@ -116,6 +121,23 @@ Functions</h2></td></tr>
 <tr class="memitem:aee20b52140a302d3c64397fe535ef33d" id="r_aee20b52140a302d3c64397fe535ef33d"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee20b52140a302d3c64397fe535ef33d">panel_launch_desktop_file</a> (const char *desktop_file, GdkScreen *screen, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="memitem:a749d04bda12fe3ef53869fc9dcd4ffd4" id="r_a749d04bda12fe3ef53869fc9dcd4ffd4"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a749d04bda12fe3ef53869fc9dcd4ffd4">panel_launch_desktop_file_with_fallback</a> (const char *desktop_file, const char *fallback_exec, GdkScreen *screen, GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="accf002c50d07fec7ddcaf35fde15c5e9" name="accf002c50d07fec7ddcaf35fde15c5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf002c50d07fec7ddcaf35fde15c5e9">&#9670;&#160;</a></span>MATE_DESKTOP_USE_UNSTABLE_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATE_DESKTOP_USE_UNSTABLE_API</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00033">33</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a317b6620542ae45adab2549277682096" name="a317b6620542ae45adab2549277682096"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a317b6620542ae45adab2549277682096">&#9670;&#160;</a></span>panel_app_info_launch_uri()</h2>
@@ -151,9 +173,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00141">141</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00159">159</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="panel-launch_8c_source.html#l00099">panel_app_info_launch_uris()</a>.</p>
+<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="panel-launch_8c_source.html#l00117">panel_app_info_launch_uris()</a>.</p>
 
 </div>
 </div>
@@ -196,11 +218,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00099">99</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00117">117</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="panel-launch_8c_source.html#l00141">panel_app_info_launch_uri()</a>, <a class="el" href="panel-launch_8c_source.html#l00194">panel_launch_desktop_file()</a>, and <a class="el" href="panel-launch_8c_source.html#l00167">panel_launch_key_file()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="panel-launch_8c_source.html#l00159">panel_app_info_launch_uri()</a>, <a class="el" href="panel-launch_8c_source.html#l00212">panel_launch_desktop_file()</a>, and <a class="el" href="panel-launch_8c_source.html#l00185">panel_launch_key_file()</a>.</p>
 
 </div>
 </div>
@@ -228,11 +250,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00194">194</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00212">212</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-launch_8c_source.html#l00099">panel_app_info_launch_uris()</a>, and <a class="el" href="panel-glib_8c_source.html#l00099">panel_g_lookup_in_applications_dirs()</a>.</p>
+<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-launch_8c_source.html#l00117">panel_app_info_launch_uris()</a>, and <a class="el" href="panel-glib_8c_source.html#l00099">panel_g_lookup_in_applications_dirs()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="panel-launch_8c_source.html#l00241">panel_launch_desktop_file_with_fallback()</a>, and <a class="el" href="panel-menu-items_8c_source.html#l01617">panel_menu_item_activate_desktop_file()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="panel-launch_8c_source.html#l00259">panel_launch_desktop_file_with_fallback()</a>, and <a class="el" href="panel-menu-items_8c_source.html#l01617">panel_menu_item_activate_desktop_file()</a>.</p>
 
 </div>
 </div>
@@ -265,9 +287,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00241">241</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00259">259</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-launch_8c_source.html#l00194">panel_launch_desktop_file()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="mate-systemd_8c_source.html#l00213">mate_start_systemd_scope()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-launch_8c_source.html#l00212">panel_launch_desktop_file()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="panel-menu-bar_8c_source.html#l00447">panel_menu_bar_invoke_menu()</a>, and <a class="el" href="panel-menu-button_8c_source.html#l01021">panel_menu_button_invoke_menu()</a>.</p>
 
@@ -307,9 +329,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00167">167</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-launch_8c_source.html#l00185">185</a> of file <a class="el" href="panel-launch_8c_source.html">panel-launch.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="panel-launch_8c_source.html#l00099">panel_app_info_launch_uris()</a>.</p>
+<p class="reference">References <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="panel-launch_8c_source.html#l00117">panel_app_info_launch_uris()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="launcher_8c_source.html#l00134">launcher_launch()</a>.</p>
 

@@ -138,7 +138,13 @@ Macros</h2></td></tr>
 <tr class="memitem:aabe09bbef30796762c4ae98feba1d906" id="r_aabe09bbef30796762c4ae98feba1d906"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe09bbef30796762c4ae98feba1d906">GSM_MANAGER_DBUS_PATH</a>&#160;&#160;&#160;&quot;/org/gnome/SessionManager&quot;</td></tr>
 <tr class="memitem:ae8e277a3ba46bca09d583a8490d297a6" id="r_ae8e277a3ba46bca09d583a8490d297a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8e277a3ba46bca09d583a8490d297a6">GSM_MANAGER_DBUS_NAME</a>&#160;&#160;&#160;&quot;org.gnome.SessionManager&quot;</td></tr>
 <tr class="memitem:ad3227828dda9eb140d99d3a92e782561" id="r_ad3227828dda9eb140d99d3a92e782561"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3227828dda9eb140d99d3a92e782561">GSM_MANAGER_PHASE_TIMEOUT</a>&#160;&#160;&#160;30 /* seconds */</td></tr>
+<tr class="memitem:ac510539a11be369612c61267f0276302" id="r_ac510539a11be369612c61267f0276302"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac510539a11be369612c61267f0276302">GSM_MANAGER_PHASE_TIMEOUT_WAYLAND</a>&#160;&#160;&#160;3 /* seconds */</td></tr>
+<tr class="memitem:ad26d58db8ae58d5ea0ed6d419da3c4a8" id="r_ad26d58db8ae58d5ea0ed6d419da3c4a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad26d58db8ae58d5ea0ed6d419da3c4a8">GSM_MANAGER_AUTOSTART_TIMEOUT</a>&#160;&#160;&#160;5 /* seconds */</td></tr>
+<tr class="memitem:ae2a09d34e8783c207b372c675b314611" id="r_ae2a09d34e8783c207b372c675b314611"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2a09d34e8783c207b372c675b314611">GSM_MANAGER_AUTOSTART_TIMEOUT_WAYLAND</a>&#160;&#160;&#160;3 /* seconds */</td></tr>
 <tr class="memitem:aeaac39c41e10f4db4acf6bf98104f1ca" id="r_aeaac39c41e10f4db4acf6bf98104f1ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaac39c41e10f4db4acf6bf98104f1ca">GSM_MANAGER_EXIT_PHASE_TIMEOUT</a>&#160;&#160;&#160;1 /* seconds */</td></tr>
+<tr class="memitem:ace8348d16b0142854ee15337323611cc" id="r_ace8348d16b0142854ee15337323611cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace8348d16b0142854ee15337323611cc">GSM_MANAGER_LOGOUT_DIALOG_TIMEOUT</a>&#160;&#160;&#160;10 /* seconds */</td></tr>
+<tr class="memitem:ad121c45f702cd7f35ddcb8e27074bca0" id="r_ad121c45f702cd7f35ddcb8e27074bca0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad121c45f702cd7f35ddcb8e27074bca0">GSM_MANAGER_CONFIRM_DIALOG_TIMEOUT</a>&#160;&#160;&#160;30 /* seconds */</td></tr>
+<tr class="memitem:aa6c9ba1ff263a28c0735fb1646874e1d" id="r_aa6c9ba1ff263a28c0735fb1646874e1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6c9ba1ff263a28c0735fb1646874e1d">GSM_MANAGER_END_SESSION_RESPONSE_TIMEOUT</a>&#160;&#160;&#160;5 /* seconds */</td></tr>
 <tr class="memitem:a40e5aa64cad00cfc0f743a27e937324c" id="r_a40e5aa64cad00cfc0f743a27e937324c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40e5aa64cad00cfc0f743a27e937324c">MDM_FLEXISERVER_COMMAND</a>&#160;&#160;&#160;&quot;mdmflexiserver&quot;</td></tr>
 <tr class="memitem:ad6ff54ec4f51b691fb6b5899298f6b37" id="r_ad6ff54ec4f51b691fb6b5899298f6b37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6ff54ec4f51b691fb6b5899298f6b37">MDM_FLEXISERVER_ARGS</a>&#160;&#160;&#160;&quot;--startnew Standard&quot;</td></tr>
 <tr class="memitem:a60914a80468226c147a39839833f6577" id="r_a60914a80468226c147a39839833f6577"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60914a80468226c147a39839833f6577">GDM_FLEXISERVER_COMMAND</a>&#160;&#160;&#160;&quot;gdmflexiserver&quot;</td></tr>
@@ -191,6 +197,7 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:afc2f87fdee14b84005ce2fd404dd2638" id="r_afc2f87fdee14b84005ce2fd404dd2638"><td class="memItemLeft" align="right" valign="top">GQuark&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc2f87fdee14b84005ce2fd404dd2638">gsm_manager_error_quark</a> (void)</td></tr>
 <tr class="memitem:a0383bfce1645efad103de07436f4d8e0" id="r_a0383bfce1645efad103de07436f4d8e0"><td class="memItemLeft" align="right" valign="top">GType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0383bfce1645efad103de07436f4d8e0">gsm_manager_error_get_type</a> (void)</td></tr>
+<tr class="memitem:a8ddc72c1a29648aa3da07ad909933f72" id="r_a8ddc72c1a29648aa3da07ad909933f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ddc72c1a29648aa3da07ad909933f72">gsm_manager_quit</a> (GsmManager *manager)</td></tr>
 <tr class="memitem:aadc2b163f0b6c4f8ae7eb393d5314a84" id="r_aadc2b163f0b6c4f8ae7eb393d5314a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadc2b163f0b6c4f8ae7eb393d5314a84">gsm_manager_start</a> (GsmManager *manager)</td></tr>
 <tr class="memitem:a2390bc924c76d56377c7cc64b6dfe0e4" id="r_a2390bc924c76d56377c7cc64b6dfe0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2390bc924c76d56377c7cc64b6dfe0e4">_gsm_manager_set_renderer</a> (GsmManager *manager, const char *renderer)</td></tr>
 <tr class="memitem:af94e33de62bc93d71362a6b465733769" id="r_af94e33de62bc93d71362a6b465733769"><td class="memItemLeft" align="right" valign="top">GsmManager *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af94e33de62bc93d71362a6b465733769">gsm_manager_new</a> (GsmStore *client_store, gboolean failsafe)</td></tr>
@@ -235,9 +242,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{ NAME, <span class="stringliteral">&quot;&quot;</span> #NAME <span class="stringliteral">&quot;&quot;</span>, DESC }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00208">208</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00239">239</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l00211">gsm_manager_error_get_type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l00242">gsm_manager_error_get_type()</a>.</p>
 
 </div>
 </div>
@@ -253,7 +260,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00088">88</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00111">111</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -269,7 +276,55 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00110">110</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+</div>
+</div>
+<a id="ad26d58db8ae58d5ea0ed6d419da3c4a8" name="ad26d58db8ae58d5ea0ed6d419da3c4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26d58db8ae58d5ea0ed6d419da3c4a8">&#9670;&#160;</a></span>GSM_MANAGER_AUTOSTART_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GSM_MANAGER_AUTOSTART_TIMEOUT&#160;&#160;&#160;5 /* seconds */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00086">86</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+</div>
+</div>
+<a id="ae2a09d34e8783c207b372c675b314611" name="ae2a09d34e8783c207b372c675b314611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a09d34e8783c207b372c675b314611">&#9670;&#160;</a></span>GSM_MANAGER_AUTOSTART_TIMEOUT_WAYLAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GSM_MANAGER_AUTOSTART_TIMEOUT_WAYLAND&#160;&#160;&#160;3 /* seconds */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00087">87</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+</div>
+</div>
+<a id="ad121c45f702cd7f35ddcb8e27074bca0" name="ad121c45f702cd7f35ddcb8e27074bca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad121c45f702cd7f35ddcb8e27074bca0">&#9670;&#160;</a></span>GSM_MANAGER_CONFIRM_DIALOG_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GSM_MANAGER_CONFIRM_DIALOG_TIMEOUT&#160;&#160;&#160;30 /* seconds */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00099">99</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -305,6 +360,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa6c9ba1ff263a28c0735fb1646874e1d" name="aa6c9ba1ff263a28c0735fb1646874e1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6c9ba1ff263a28c0735fb1646874e1d">&#9670;&#160;</a></span>GSM_MANAGER_END_SESSION_RESPONSE_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GSM_MANAGER_END_SESSION_RESPONSE_TIMEOUT&#160;&#160;&#160;5 /* seconds */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00105">105</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+</div>
+</div>
 <a id="aeaac39c41e10f4db4acf6bf98104f1ca" name="aeaac39c41e10f4db4acf6bf98104f1ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeaac39c41e10f4db4acf6bf98104f1ca">&#9670;&#160;</a></span>GSM_MANAGER_EXIT_PHASE_TIMEOUT</h2>
 
@@ -317,7 +388,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00082">82</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00092">92</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -342,6 +413,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ace8348d16b0142854ee15337323611cc" name="ace8348d16b0142854ee15337323611cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace8348d16b0142854ee15337323611cc">&#9670;&#160;</a></span>GSM_MANAGER_LOGOUT_DIALOG_TIMEOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GSM_MANAGER_LOGOUT_DIALOG_TIMEOUT&#160;&#160;&#160;10 /* seconds */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00098">98</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+</div>
+</div>
 <a id="ad3227828dda9eb140d99d3a92e782561" name="ad3227828dda9eb140d99d3a92e782561"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad3227828dda9eb140d99d3a92e782561">&#9670;&#160;</a></span>GSM_MANAGER_PHASE_TIMEOUT</h2>
 
@@ -358,6 +445,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac510539a11be369612c61267f0276302" name="ac510539a11be369612c61267f0276302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac510539a11be369612c61267f0276302">&#9670;&#160;</a></span>GSM_MANAGER_PHASE_TIMEOUT_WAYLAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GSM_MANAGER_PHASE_TIMEOUT_WAYLAND&#160;&#160;&#160;3 /* seconds */</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00081">81</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+</div>
+</div>
 <a id="ab72a1345503c04803a850c28abaed5e5" name="ab72a1345503c04803a850c28abaed5e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab72a1345503c04803a850c28abaed5e5">&#9670;&#160;</a></span>KEY_AUTOSAVE</h2>
 
@@ -370,7 +473,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00097">97</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00120">120</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -386,7 +489,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00096">96</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00119">119</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -402,7 +505,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00091">91</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00114">114</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -418,7 +521,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00092">92</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00115">115</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -434,7 +537,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00100">100</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00123">123</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -450,7 +553,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00093">93</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00116">116</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -466,7 +569,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00090">90</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00113">113</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -482,7 +585,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00085">85</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00108">108</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -498,7 +601,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00084">84</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00107">107</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -514,7 +617,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00099">99</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00122">122</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -530,7 +633,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00095">95</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00118">118</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -546,7 +649,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00105">105</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00128">128</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -569,7 +672,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac49bbba8ff7d09653cc3d56f2da5af22ae7399e0f6f5abb644b194782d56086c5" name="ac49bbba8ff7d09653cc3d56f2da5af22ae7399e0f6f5abb644b194782d56086c5"></a>PROP_FAILSAFE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00158">158</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00182">182</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -595,7 +698,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a30d8e0412dc4477a2b772da0203ee977a0c34d85df8279641afad9e3c9b3a54ce" name="a30d8e0412dc4477a2b772da0203ee977a0c34d85df8279641afad9e3c9b3a54ce"></a>LAST_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00165">165</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00189">189</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -621,7 +724,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a80d07a09a703e174c04ef3b4d0a91b5caeb0e5e9ce2d2a7d218e9e1848e261637" name="a80d07a09a703e174c04ef3b4d0a91b5caeb0e5e9ce2d2a7d218e9e1848e261637"></a>GSM_MANAGER_LOGOUT_SHUTDOWN_MDM&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00108">108</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00131">131</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -645,9 +748,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l01709">1709</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l02002">2002</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00595">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
 
 </div>
 </div>
@@ -675,11 +778,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04253">4253</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04658">4658</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-autostart-app_8c_source.html#l01225">gsm_autostart_app_new()</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-autostart-app_8c_source.html#l01246">gsm_autostart_app_new()</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l04291">gsm_manager_add_autostart_apps_from_dir()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l04696">gsm_manager_add_autostart_apps_from_dir()</a>.</p>
 
 </div>
 </div>
@@ -702,9 +805,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04291">4291</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04696">4696</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8c_source.html#l04253">gsm_manager_add_autostart_app()</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8c_source.html#l04658">gsm_manager_add_autostart_app()</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -732,7 +835,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03678">3678</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04083">4083</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-consolekit_8c_source.html#l00958">gsm_consolekit_can_hibernate()</a>, <a class="el" href="gsm-consolekit_8c_source.html#l00847">gsm_consolekit_can_restart()</a>, <a class="el" href="gsm-consolekit_8c_source.html#l00882">gsm_consolekit_can_stop()</a>, <a class="el" href="gsm-consolekit_8c_source.html#l00918">gsm_consolekit_can_suspend()</a>, <a class="el" href="gsm-consolekit_8c_source.html#l01067">gsm_get_consolekit()</a>, <a class="el" href="gsm-systemd_8c_source.html#l01012">gsm_get_systemd()</a>, <a class="el" href="gsm-systemd_8c_source.html#l00830">gsm_systemd_can_hibernate()</a>, <a class="el" href="gsm-systemd_8c_source.html#l00751">gsm_systemd_can_restart()</a>, <a class="el" href="gsm-systemd_8c_source.html#l00790">gsm_systemd_can_stop()</a>, <a class="el" href="gsm-systemd_8c_source.html#l00869">gsm_systemd_can_suspend()</a>, <a class="el" href="clock_8c_source.html#l00102">LOGIND_RUNNING</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -753,9 +856,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00211">211</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00242">242</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gsm-manager_8c_source.html#l00208">ENUM_ENTRY</a>, <a class="el" href="gsm-manager_8h_source.html#l00082">GSM_MANAGER_ERROR_ALREADY_REGISTERED</a>, <a class="el" href="gsm-manager_8h_source.html#l00079">GSM_MANAGER_ERROR_GENERAL</a>, <a class="el" href="gsm-manager_8h_source.html#l00084">GSM_MANAGER_ERROR_INVALID_OPTION</a>, <a class="el" href="gsm-manager_8h_source.html#l00085">GSM_MANAGER_ERROR_LOCKED_DOWN</a>, <a class="el" href="gsm-manager_8h_source.html#l00080">GSM_MANAGER_ERROR_NOT_IN_INITIALIZATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00083">GSM_MANAGER_ERROR_NOT_REGISTERED</a>, and <a class="el" href="gsm-manager_8h_source.html#l00086">GSM_MANAGER_NUM_ERRORS</a>.</p>
+<p class="reference">References <a class="el" href="gsm-manager_8c_source.html#l00239">ENUM_ENTRY</a>, <a class="el" href="gsm-manager_8h_source.html#l00082">GSM_MANAGER_ERROR_ALREADY_REGISTERED</a>, <a class="el" href="gsm-manager_8h_source.html#l00079">GSM_MANAGER_ERROR_GENERAL</a>, <a class="el" href="gsm-manager_8h_source.html#l00084">GSM_MANAGER_ERROR_INVALID_OPTION</a>, <a class="el" href="gsm-manager_8h_source.html#l00085">GSM_MANAGER_ERROR_LOCKED_DOWN</a>, <a class="el" href="gsm-manager_8h_source.html#l00080">GSM_MANAGER_ERROR_NOT_IN_INITIALIZATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00083">GSM_MANAGER_ERROR_NOT_REGISTERED</a>, and <a class="el" href="gsm-manager_8h_source.html#l00086">GSM_MANAGER_NUM_ERRORS</a>.</p>
 
 </div>
 </div>
@@ -774,7 +877,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00198">198</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00229">229</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 </div>
 </div>
@@ -802,7 +905,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04071">4071</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04476">4476</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-store_8c_source.html#l00111">gsm_store_foreach()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -832,7 +935,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04090">4090</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04495">4495</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-store_8c_source.html#l00111">gsm_store_foreach()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -877,7 +980,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03905">3905</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04310">4310</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00561">gsm_inhibitor_new()</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00345">gsm_inhibitor_peek_id()</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00079">GSM_MANAGER_ERROR_GENERAL</a>, <a class="el" href="gsm-manager_8h_source.html#l00094">GSM_MANAGER_LOGOUT_MODE_FORCE</a>, <a class="el" href="gsm-store_8c_source.html#l00238">gsm_store_add()</a>, <a class="el" href="gsm-util_8h_source.html#l00031">IS_STRING_EMPTY</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -912,9 +1015,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l02981">2981</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03263">3263</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00080">GSM_MANAGER_ERROR_NOT_IN_INITIALIZATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00060">GSM_MANAGER_PHASE_INITIALIZATION</a>, <a class="el" href="gsm-util_8c_source.html#l00375">gsm_util_init_error()</a>, <a class="el" href="baobab-utils_8c_source.html#l00227">message()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00080">GSM_MANAGER_ERROR_NOT_IN_INITIALIZATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00060">GSM_MANAGER_PHASE_INITIALIZATION</a>, <a class="el" href="gsm-util_8c_source.html#l00376">gsm_util_init_error()</a>, <a class="el" href="baobab-utils_8c_source.html#l00227">message()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -947,7 +1050,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04126">4126</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04531">4531</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gs-idle-monitor_8h_source.html#l00036">condition</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -982,7 +1085,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04031">4031</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04436">4436</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="gsm-store_8c_source.html#l00071">gsm_store_size()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1012,7 +1115,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04325">4325</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04730">4730</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00070">GSM_MANAGER_PHASE_RUNNING</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1042,7 +1145,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03716">3716</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04121">4121</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00084">GSM_MANAGER_ERROR_INVALID_OPTION</a>, <a class="el" href="gsm-manager_8h_source.html#l00085">GSM_MANAGER_ERROR_LOCKED_DOWN</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00094">GSM_MANAGER_LOGOUT_MODE_FORCE</a>, <a class="el" href="gsm-manager_8h_source.html#l00093">GSM_MANAGER_LOGOUT_MODE_NO_CONFIRMATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00092">GSM_MANAGER_LOGOUT_MODE_NORMAL</a>, <a class="el" href="gsm-manager_8h_source.html#l00070">GSM_MANAGER_PHASE_RUNNING</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1067,11 +1170,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l02931">2931</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03213">3213</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gsm-manager_8h_source.html#l00032">GSM_TYPE_MANAGER</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00595">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
+
+</div>
+</div>
+<a id="a8ddc72c1a29648aa3da07ad909933f72" name="a8ddc72c1a29648aa3da07ad909933f72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ddc72c1a29648aa3da07ad909933f72">&#9670;&#160;</a></span>gsm_manager_quit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gsm_manager_quit </td>
+          <td>(</td>
+          <td class="paramtype">GsmManager *</td>          <td class="paramname"><span class="paramname"><em>manager</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l00524">524</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gsm-consolekit_8c_source.html#l00425">gsm_consolekit_attempt_restart()</a>, <a class="el" href="gsm-consolekit_8c_source.html#l00459">gsm_consolekit_attempt_stop()</a>, <a class="el" href="gsm-consolekit_8c_source.html#l01067">gsm_get_consolekit()</a>, <a class="el" href="gsm-systemd_8c_source.html#l01012">gsm_get_systemd()</a>, <a class="el" href="gsm-manager_8c_source.html#l00134">GSM_MANAGER_LOGOUT_LOGOUT</a>, <a class="el" href="gsm-manager_8c_source.html#l00135">GSM_MANAGER_LOGOUT_REBOOT</a>, <a class="el" href="gsm-manager_8c_source.html#l00136">GSM_MANAGER_LOGOUT_REBOOT_INTERACT</a>, <a class="el" href="gsm-manager_8c_source.html#l00137">GSM_MANAGER_LOGOUT_REBOOT_MDM</a>, <a class="el" href="gsm-manager_8c_source.html#l00138">GSM_MANAGER_LOGOUT_SHUTDOWN</a>, <a class="el" href="gsm-manager_8c_source.html#l00139">GSM_MANAGER_LOGOUT_SHUTDOWN_INTERACT</a>, <a class="el" href="gsm-manager_8c_source.html#l00140">GSM_MANAGER_LOGOUT_SHUTDOWN_MDM</a>, <a class="el" href="gsm-systemd_8c_source.html#l00508">gsm_systemd_attempt_restart()</a>, <a class="el" href="gsm-systemd_8c_source.html#l00543">gsm_systemd_attempt_stop()</a>, <a class="el" href="gsm-util_8c_source.html#l00765">gsm_util_session_is_wayland()</a>, <a class="el" href="clock_8c_source.html#l00102">LOGIND_RUNNING</a>, <a class="el" href="mdm_8h_source.html#l00039">MDM_LOGOUT_ACTION_NONE</a>, <a class="el" href="mdm_8h_source.html#l00041">MDM_LOGOUT_ACTION_REBOOT</a>, <a class="el" href="mdm_8h_source.html#l00040">MDM_LOGOUT_ACTION_SHUTDOWN</a>, and <a class="el" href="mdm_8c_source.html#l00442">mdm_set_logout_action()</a>.</p>
 
 </div>
 </div>
@@ -1104,9 +1228,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03763">3763</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04168">4168</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-app_8c_source.html#l00408">gsm_app_peek_app_id()</a>, <a class="el" href="gsm-app_8c_source.html#l00560">gsm_app_registered()</a>, <a class="el" href="gsm-client_8c_source.html#l00375">gsm_client_peek_id()</a>, <a class="el" href="gsm-client_8c_source.html#l00215">gsm_client_set_app_id()</a>, <a class="el" href="gsm-client_8c_source.html#l00182">gsm_client_set_status()</a>, <a class="el" href="gsm-dbus-client_8c_source.html#l00683">gsm_dbus_client_new()</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00082">GSM_MANAGER_ERROR_ALREADY_REGISTERED</a>, <a class="el" href="gsm-manager_8h_source.html#l00079">GSM_MANAGER_ERROR_GENERAL</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00072">GSM_MANAGER_PHASE_QUERY_END_SESSION</a>, <a class="el" href="gsm-store_8c_source.html#l00238">gsm_store_add()</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="gsm-util_8c_source.html#l00419">gsm_util_generate_startup_id()</a>, <a class="el" href="gsm-util_8h_source.html#l00031">IS_STRING_EMPTY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-app_8c_source.html#l00414">gsm_app_peek_app_id()</a>, <a class="el" href="gsm-app_8c_source.html#l00566">gsm_app_registered()</a>, <a class="el" href="gsm-client_8c_source.html#l00375">gsm_client_peek_id()</a>, <a class="el" href="gsm-client_8c_source.html#l00215">gsm_client_set_app_id()</a>, <a class="el" href="gsm-client_8c_source.html#l00182">gsm_client_set_status()</a>, <a class="el" href="gsm-dbus-client_8c_source.html#l00683">gsm_dbus_client_new()</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00082">GSM_MANAGER_ERROR_ALREADY_REGISTERED</a>, <a class="el" href="gsm-manager_8h_source.html#l00079">GSM_MANAGER_ERROR_GENERAL</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00072">GSM_MANAGER_PHASE_QUERY_END_SESSION</a>, <a class="el" href="gsm-store_8c_source.html#l00238">gsm_store_add()</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="gsm-util_8c_source.html#l00420">gsm_util_generate_startup_id()</a>, <a class="el" href="gsm-util_8h_source.html#l00031">IS_STRING_EMPTY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1129,7 +1253,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03602">3602</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04007">4007</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00070">GSM_MANAGER_PHASE_RUNNING</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1154,7 +1278,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03579">3579</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03984">3984</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00070">GSM_MANAGER_PHASE_RUNNING</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1179,11 +1303,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03566">3566</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03971">3971</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l01697">gsm_manager_start()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l01990">gsm_manager_start()</a>.</p>
 
 </div>
 </div>
@@ -1216,9 +1340,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l02957">2957</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03239">3239</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00080">GSM_MANAGER_ERROR_NOT_IN_INITIALIZATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00060">GSM_MANAGER_PHASE_INITIALIZATION</a>, <a class="el" href="gsm-util_8c_source.html#l00718">gsm_util_setenv()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00080">GSM_MANAGER_ERROR_NOT_IN_INITIALIZATION</a>, <a class="el" href="gsm-manager_8h_source.html#l00060">GSM_MANAGER_PHASE_INITIALIZATION</a>, <a class="el" href="gsm-util_8c_source.html#l00719">gsm_util_setenv()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1365,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03647">3647</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04052">4052</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00085">GSM_MANAGER_ERROR_LOCKED_DOWN</a>, <a class="el" href="gsm-manager_8h_source.html#l00081">GSM_MANAGER_ERROR_NOT_IN_RUNNING</a>, <a class="el" href="gsm-manager_8h_source.html#l00070">GSM_MANAGER_PHASE_RUNNING</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1262,11 +1386,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l01697">1697</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l01990">1990</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gsm-manager_8h_source.html#l00060">GSM_MANAGER_PHASE_INITIALIZATION</a>, and <a class="el" href="gsm-manager_8c_source.html#l03566">gsm_manager_set_phase()</a>.</p>
+<p class="reference">References <a class="el" href="gsm-manager_8h_source.html#l00060">GSM_MANAGER_PHASE_INITIALIZATION</a>, and <a class="el" href="gsm-manager_8c_source.html#l03971">gsm_manager_set_phase()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00595">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
 
 </div>
 </div>
@@ -1294,7 +1418,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03989">3989</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04394">4394</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00353">gsm_inhibitor_peek_app_id()</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00258">gsm_inhibitor_peek_bus_name()</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00377">gsm_inhibitor_peek_flags()</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00345">gsm_inhibitor_peek_id()</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00369">gsm_inhibitor_peek_reason()</a>, <a class="el" href="gsm-inhibitor_8c_source.html#l00385">gsm_inhibitor_peek_toplevel_xid()</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00079">GSM_MANAGER_ERROR_GENERAL</a>, <a class="el" href="gsm-store_8c_source.html#l00126">gsm_store_find()</a>, <a class="el" href="gsm-store_8c_source.html#l00079">gsm_store_remove()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1324,7 +1448,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l03869">3869</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-manager_8c_source.html#l04274">4274</a> of file <a class="el" href="gsm-manager_8c_source.html">gsm-manager.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gsm-client_8c_source.html#l00182">gsm_client_set_status()</a>, <a class="el" href="gsm-manager_8h_source.html#l00089">GSM_MANAGER_ERROR</a>, <a class="el" href="gsm-manager_8h_source.html#l00083">GSM_MANAGER_ERROR_NOT_REGISTERED</a>, <a class="el" href="gsm-store_8c_source.html#l00144">gsm_store_lookup()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 

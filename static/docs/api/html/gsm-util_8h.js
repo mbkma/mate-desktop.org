@@ -12,6 +12,8 @@ var gsm_util_8h =
     [ "gsm_util_get_empty_tmp_session_dir", "gsm-util_8h.html#a826cd614d8aaa75a3ebba7e81a5b9af3", null ],
     [ "gsm_util_get_saved_session_dir", "gsm-util_8h.html#aa4ff11f26e4189e5d7479178824caa8a", null ],
     [ "gsm_util_init_error", "gsm-util_8h.html#a5e9c5edf5e0fe942b138cfe01644f214", null ],
+    [ "gsm_util_running_under_systemd_user", "gsm-util_8h.html#a3f46c553e8ab2c00ff9bca6f773801a2", null ],
+    [ "gsm_util_session_is_wayland", "gsm-util_8h.html#a9f469e49bc4b3e2858de67af0cbdc0b9", null ],
     [ "gsm_util_setenv", "gsm-util_8h.html#a27730d964792260d13b38de300dc5376", null ],
     [ "gsm_util_text_is_blank", "gsm-util_8h.html#a2e78d94631928f40b047fa423d784c85", null ]
 ];

@@ -1,40 +1,49 @@
 <map id="_GvcApplet" name="_GvcApplet">
-<area shape="rect" id="Node000001" title=" " alt="" coords="2669,171,2764,198"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="2446,171,2588,198"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2603,182,2671,185,2665,185,2603,187"/>
-<area shape="rect" id="Node000003" href="$struct__GvcStreamAppletIcon.html" title=" " alt="" coords="1065,32,1234,60"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1249,46,1544,50,2269,50,2306,54,2343,64,2378,79,2410,97,2466,136,2504,171,2499,170,2462,140,2407,101,2375,83,2341,69,2305,59,2268,55,1543,55,1250,51"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="567,28,782,56"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="798,40,1067,45,1062,46,798,46"/>
-<area shape="rect" id="Node000005" href="$struct__MateMixerStreamControl.html" title=" " alt="" coords="275,82,466,109"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="467,76,594,55,589,58,469,81"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="580,171,770,198"/>
-<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="421,112,491,136,611,170,605,171,489,142,421,118"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="1262,102,1500,129"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1246,115,467,100,466,95,1248,110"/>
-<area shape="rect" id="Node000007" href="$struct__MateMixerStream.html" title=" " alt="" coords="880,171,1024,198"/>
-<area shape="poly" id="edge20_Node000002_Node000007" title=" " alt="" coords="1039,182,1380,182,2268,182,2449,185,2443,185,2268,187,1380,187,1040,187"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1039,168,1293,129,1288,130,1040,173"/>
-<area shape="rect" id="Node000014" title=" " alt="" coords="1282,256,1480,284"/>
-<area shape="poly" id="edge15_Node000014_Node000007" title=" " alt="" coords="984,205,1022,229,1066,248,1120,261,1176,269,1284,276,1279,276,1176,274,1119,266,1064,253,1020,234,983,211"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="785,182,882,184,877,185,786,187"/>
-<area shape="rect" id="Node000009" href="$struct__MateMixerDevice.html" title=" " alt="" coords="299,183,442,210"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="457,194,543,192,582,192,576,193,543,198,458,200"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="5,183,194,210"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="209,194,301,195,296,198,210,199"/>
-<area shape="rect" id="Node000011" href="$struct__MateMixerContext.html" title=" " alt="" coords="2193,230,2341,257"/>
-<area shape="poly" id="edge11_Node000002_Node000011" title=" " alt="" coords="2356,237,2422,226,2458,213,2488,200,2493,198,2460,217,2423,231,2357,243"/>
-<area shape="rect" id="Node000012" title=" " alt="" coords="1918,255,2112,282"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="2127,255,2190,251,2195,251,2128,260"/>
-<area shape="rect" id="Node000013" href="$struct__MateMixerBackend.html" title=" " alt="" coords="1609,282,1762,309"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1777,297,1835,296,1893,292,1957,283,1962,283,1894,298,1835,302,1777,302"/>
-<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="1496,277,1612,289,1606,289,1496,282"/>
-<area shape="rect" id="Node000015" href="$struct__MateMixerAppInfo.html" title=" " alt="" coords="1612,227,1759,254"/>
-<area shape="poly" id="edge16_Node000012_Node000015" title=" " alt="" coords="1775,246,1920,260,1915,260,1775,251"/>
-<area shape="rect" id="Node000016" href="$struct__MateMixerBackendModule.html" title=" " alt="" coords="1585,339,1786,366"/>
-<area shape="poly" id="edge17_Node000012_Node000016" title=" " alt="" coords="1801,345,1847,338,1893,327,1946,305,1989,284,1994,282,1949,310,1894,332,1848,343,1802,350"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="1258,339,1504,366"/>
-<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="1520,350,1588,353,1582,353,1520,355"/>
-<area shape="rect" id="Node000018" href="$struct__MateMixerBackendInfo.html" title=" " alt="" coords="863,339,1041,366"/>
-<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="1056,350,1260,353,1255,353,1056,355"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="2730,174,2826,202"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="2508,174,2649,202"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="2665,185,2732,188,2727,188,2665,190"/>
+<area shape="rect" id="Node000003" href="$struct__GvcStreamAppletIcon.html" title=" " alt="" coords="2181,42,2350,70"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="2366,63,2426,77,2485,100,2511,116,2534,136,2569,175,2564,173,2530,139,2508,120,2483,105,2425,82,2366,68"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="1806,27,2022,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="2037,43,2183,52,2178,52,2038,49"/>
+<area shape="rect" id="Node000005" href="$struct__GvcMprisPlayer.html" title=" " alt="" coords="1529,68,1659,96"/>
+<area shape="poly" id="edge25_Node000002_Node000005" title=" " alt="" coords="1675,85,2027,113,2254,136,2484,166,2512,173,2507,173,2484,172,2254,142,2026,118,1675,90"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1675,80,1782,71,1863,56,1868,55,1783,77,1675,85"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1202,68,1378,96"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1393,80,1531,82,1526,83,1394,85"/>
+<area shape="rect" id="Node000007" href="$struct__MateMixerStreamControl.html" title=" " alt="" coords="275,75,466,103"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="428,68,536,41,598,31,661,28,1596,28,1809,35,1803,36,1595,33,661,33,599,37,537,46,430,73"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="567,174,757,202"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="424,106,491,130,617,173,612,174,489,135,424,111"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1171,122,1408,150"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1153,125,1143,126,767,107,466,95,466,89,768,101,1143,121,1158,124"/>
+<area shape="rect" id="Node000009" href="$struct__MateMixerStream.html" title=" " alt="" coords="855,174,999,202"/>
+<area shape="poly" id="edge22_Node000002_Node000009" title=" " alt="" coords="1015,185,1288,185,2267,185,2510,188,2505,188,2267,190,1288,190,1015,190"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1014,170,1039,166,1177,150,1172,151,1040,172,1015,176"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1191,242,1389,270"/>
+<area shape="poly" id="edge17_Node000016_Node000009" title=" " alt="" coords="959,209,997,233,1040,251,1078,259,1116,263,1193,266,1188,267,1116,269,1077,264,1039,256,994,237,957,214"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="773,185,857,187,852,188,773,190"/>
+<area shape="rect" id="Node000011" href="$struct__MateMixerDevice.html" title=" " alt="" coords="299,176,442,204"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="457,187,569,188,564,189,457,192"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="5,176,194,204"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="209,188,301,189,296,192,210,193"/>
+<area shape="rect" id="Node000013" href="$struct__MateMixerContext.html" title=" " alt="" coords="2191,227,2340,255"/>
+<area shape="poly" id="edge13_Node000002_Node000013" title=" " alt="" coords="2355,242,2419,239,2483,229,2520,216,2551,203,2556,201,2522,221,2485,234,2419,244,2355,248"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1817,234,2011,262"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="2027,243,2193,242,2188,243,2027,248"/>
+<area shape="rect" id="Node000015" href="$struct__MateMixerBackend.html" title=" " alt="" coords="1518,239,1670,267"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="1686,249,1819,249,1814,249,1686,254"/>
+<area shape="poly" id="edge16_Node000015_Node000016" title=" " alt="" coords="1404,252,1520,254,1515,254,1404,257"/>
+<area shape="rect" id="Node000017" href="$struct__MateMixerAppInfo.html" title=" " alt="" coords="1520,346,1668,374"/>
+<area shape="poly" id="edge18_Node000014_Node000017" title=" " alt="" coords="1683,355,1734,344,1759,334,1781,320,1789,309,1792,298,1795,285,1805,272,1825,263,1830,261,1808,276,1800,287,1797,299,1794,312,1784,324,1761,338,1736,349,1684,361"/>
+<area shape="rect" id="Node000018" href="$struct__MateMixerBackendModule.html" title=" " alt="" coords="1494,292,1694,320"/>
+<area shape="poly" id="edge19_Node000014_Node000018" title=" " alt="" coords="1710,290,1782,278,1806,272,1852,262,1857,262,1807,277,1783,283,1710,296"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1167,296,1413,324"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="1428,306,1496,308,1491,308,1429,311"/>
+<area shape="rect" id="Node000020" href="$struct__MateMixerBackendInfo.html" title=" " alt="" coords="838,298,1016,326"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="1031,309,1169,311,1163,311,1031,314"/>
+<area shape="rect" id="Node000021" href="$struct__GvcMprisManager.html" title=" " alt="" coords="2192,283,2338,311"/>
+<area shape="poly" id="edge23_Node000002_Node000021" title=" " alt="" coords="2354,298,2419,292,2452,284,2483,273,2509,258,2532,238,2565,203,2570,201,2535,242,2512,262,2485,278,2453,289,2420,297,2354,304"/>
+<area shape="rect" id="Node000022" title=" " alt="" coords="1818,286,2010,314"/>
+<area shape="poly" id="edge24_Node000021_Node000022" title=" " alt="" coords="2026,296,2194,297,2189,298,2026,301"/>
 </map>

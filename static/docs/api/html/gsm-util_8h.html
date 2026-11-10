@@ -125,6 +125,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a99a5606af9e74d745925e6f0d3526618" id="r_a99a5606af9e74d745925e6f0d3526618"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99a5606af9e74d745925e6f0d3526618">gsm_util_generate_startup_id</a> (void)</td></tr>
 <tr class="memitem:a6f186fc11549980957a0357611ef0211" id="r_a6f186fc11549980957a0357611ef0211"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f186fc11549980957a0357611ef0211">gsm_util_export_activation_environment</a> (GError **<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>)</td></tr>
 <tr class="memitem:a27730d964792260d13b38de300dc5376" id="r_a27730d964792260d13b38de300dc5376"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27730d964792260d13b38de300dc5376">gsm_util_setenv</a> (const char *variable, const char *value)</td></tr>
+<tr class="memitem:a9f469e49bc4b3e2858de67af0cbdc0b9" id="r_a9f469e49bc4b3e2858de67af0cbdc0b9"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f469e49bc4b3e2858de67af0cbdc0b9">gsm_util_session_is_wayland</a> (void)</td></tr>
+<tr class="memitem:a3f46c553e8ab2c00ff9bca6f773801a2" id="r_a3f46c553e8ab2c00ff9bca6f773801a2"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f46c553e8ab2c00ff9bca6f773801a2">gsm_util_running_under_systemd_user</a> (void)</td></tr>
 <tr class="memitem:a7eff4e8f53996c9354b20c1527f5191f" id="r_a7eff4e8f53996c9354b20c1527f5191f"><td class="memItemLeft" align="right" valign="top">GtkWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eff4e8f53996c9354b20c1527f5191f">gsm_util_dialog_add_button</a> (GtkDialog *dialog, const gchar *button_text, const gchar *icon_name, gint response_id)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
@@ -147,7 +149,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="gsm-util_8h_source.html#l00031">31</a> of file <a class="el" href="gsm-util_8h_source.html">gsm-util.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-inhibitor_8c_source.html#l00282">gsm_inhibitor_get_client_id()</a>, <a class="el" href="gsm-manager_8c_source.html#l03905">gsm_manager_inhibit()</a>, and <a class="el" href="gsm-manager_8c_source.html#l03763">gsm_manager_register_client()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-inhibitor_8c_source.html#l00282">gsm_inhibitor_get_client_id()</a>, <a class="el" href="gsm-manager_8c_source.html#l04310">gsm_manager_inhibit()</a>, and <a class="el" href="gsm-manager_8c_source.html#l04168">gsm_manager_register_client()</a>.</p>
 
 </div>
 </div>
@@ -167,7 +169,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00051">51</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00052">52</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -202,7 +204,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00744">744</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00745">745</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -223,11 +225,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00520">520</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00521">521</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
-<p class="reference">References <a class="el" href="udisks2-plugin_8c_source.html#l00072">connection</a>, <a class="el" href="gsm-util_8c_source.html#l00512">ENV_NAME_PATTERN</a>, <a class="el" href="gsm-util_8c_source.html#l00516">ENV_VALUE_PATTERN</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="udisks2-plugin_8c_source.html#l00072">connection</a>, <a class="el" href="gsm-util_8c_source.html#l00513">ENV_NAME_PATTERN</a>, <a class="el" href="gsm-util_8c_source.html#l00517">ENV_VALUE_PATTERN</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00595">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
 
 </div>
 </div>
@@ -250,9 +252,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00078">78</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00079">79</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gsm-util_8c_source.html#l00280">gsm_util_get_app_dirs()</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="gsm-util_8c_source.html#l00281">gsm_util_get_app_dirs()</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -274,11 +276,11 @@ Functions</h2></td></tr>
 <p>Generates a new SM client ID.</p>
 <p>Return value: an SM client ID. </p>
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00419">419</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00420">420</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l03763">gsm_manager_register_client()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l04168">gsm_manager_register_client()</a>.</p>
 
 </div>
 </div>
@@ -297,11 +299,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00280">280</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00281">281</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-util_8c_source.html#l00078">gsm_util_find_desktop_file_for_app_name()</a>, and <a class="el" href="gsm-util_8c_source.html#l00307">gsm_util_get_desktop_dirs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-util_8c_source.html#l00079">gsm_util_find_desktop_file_for_app_name()</a>, and <a class="el" href="gsm-util_8c_source.html#l00308">gsm_util_get_desktop_dirs()</a>.</p>
 
 </div>
 </div>
@@ -320,11 +322,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00247">247</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00248">248</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-util_8c_source.html#l00307">gsm_util_get_desktop_dirs()</a>, and <a class="el" href="gsp-app-manager_8c_source.html#l00492">gsp_app_manager_fill()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-util_8c_source.html#l00308">gsm_util_get_desktop_dirs()</a>, and <a class="el" href="gsp-app-manager_8c_source.html#l00492">gsp_app_manager_fill()</a>.</p>
 
 </div>
 </div>
@@ -343,9 +345,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00307">307</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00308">308</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gsm-util_8c_source.html#l00280">gsm_util_get_app_dirs()</a>, <a class="el" href="gsm-util_8c_source.html#l00247">gsm_util_get_autostart_dirs()</a>, <a class="el" href="gsm-util_8c_source.html#l00216">gsm_util_get_saved_session_dir()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="gsm-util_8c_source.html#l00281">gsm_util_get_app_dirs()</a>, <a class="el" href="gsm-util_8c_source.html#l00248">gsm_util_get_autostart_dirs()</a>, <a class="el" href="gsm-util_8c_source.html#l00217">gsm_util_get_saved_session_dir()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -364,7 +366,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00179">179</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00180">180</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="file-utils_8c_source.html#l00469">ensure_dir_exists()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -387,11 +389,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00216">216</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00217">217</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="file-utils_8c_source.html#l00469">ensure_dir_exists()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-session-save_8c_source.html#l00118">gsm_session_save()</a>, and <a class="el" href="gsm-util_8c_source.html#l00307">gsm_util_get_desktop_dirs()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-session-save_8c_source.html#l00118">gsm_session_save()</a>, and <a class="el" href="gsm-util_8c_source.html#l00308">gsm_util_get_desktop_dirs()</a>.</p>
 
 </div>
 </div>
@@ -422,11 +424,55 @@ Functions</h2></td></tr>
 <p>Displays the error message to the user. If @fatal is TRUE, gsm will exit after displaying the message.</p>
 <p>This should be called for major errors that occur before the session is up and running. (Notably, it positions the dialog box itself, since no window manager will be running yet.) </p>
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00375">375</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00376">376</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l02981">gsm_manager_initialization_error()</a>, and <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00595">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l03263">gsm_manager_initialization_error()</a>, and <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
+
+</div>
+</div>
+<a id="a3f46c553e8ab2c00ff9bca6f773801a2" name="a3f46c553e8ab2c00ff9bca6f773801a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f46c553e8ab2c00ff9bca6f773801a2">&#9670;&#160;</a></span>gsm_util_running_under_systemd_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean gsm_util_running_under_systemd_user </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00780">780</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a9f469e49bc4b3e2858de67af0cbdc0b9" name="a9f469e49bc4b3e2858de67af0cbdc0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f469e49bc4b3e2858de67af0cbdc0b9">&#9670;&#160;</a></span>gsm_util_session_is_wayland()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean gsm_util_session_is_wayland </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00765">765</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l00524">gsm_manager_quit()</a>, and <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
 
 </div>
 </div>
@@ -449,11 +495,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00718">718</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00719">719</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l02957">gsm_manager_setenv()</a>, and <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00595">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gsm-manager_8c_source.html#l03239">gsm_manager_setenv()</a>, and <a class="el" href="mate-session-manager_2mate-session_2main_8c_source.html#l00690">main()</a>.</p>
 
 </div>
 </div>
@@ -472,7 +518,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00344">344</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gsm-util_8c_source.html#l00345">345</a> of file <a class="el" href="gsm-util_8c_source.html">gsm-util.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 

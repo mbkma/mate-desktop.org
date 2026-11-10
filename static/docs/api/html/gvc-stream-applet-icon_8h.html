@@ -94,7 +94,9 @@ $(function(){initNavTree('gvc-stream-applet-icon_8h.html','',''); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;glib.h&gt;</code><br />
 <code>#include &lt;glib-object.h&gt;</code><br />
+<code>#include &lt;gio/gio.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="matemixer_8h_source.html">libmatemixer/matemixer.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="gvc-mpris-player_8h_source.html">gvc-mpris-player.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gvc-stream-applet-icon.h:</div>
 <div class="dyncontent">
@@ -140,6 +142,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6b373685d0ef7817eb56ca5d6a21fbd2" id="r_a6b373685d0ef7817eb56ca5d6a21fbd2"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b373685d0ef7817eb56ca5d6a21fbd2">gvc_stream_applet_icon_get_mute</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon)</td></tr>
 <tr class="memitem:a1509e880db0b132c2b75212160487727" id="r_a1509e880db0b132c2b75212160487727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1509e880db0b132c2b75212160487727">gvc_stream_applet_icon_set_mute</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon, gboolean mute)</td></tr>
 <tr class="memitem:a81cffd6edc0f62c9d5112dda2c9adc50" id="r_a81cffd6edc0f62c9d5112dda2c9adc50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81cffd6edc0f62c9d5112dda2c9adc50">gvc_stream_applet_icon_volume_control</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon)</td></tr>
+<tr class="memitem:a6067ef64a65024a02465f2a503a762f1" id="r_a6067ef64a65024a02465f2a503a762f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6067ef64a65024a02465f2a503a762f1">gvc_stream_applet_icon_set_player_widget</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon, GtkWidget *player_widget)</td></tr>
+<tr class="memitem:a2a622574f712e80d8eb24fd23541ec87" id="r_a2a622574f712e80d8eb24fd23541ec87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a622574f712e80d8eb24fd23541ec87">gvc_stream_applet_icon_set_mpris_player</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon, <a class="el" href="gvc-mpris-player_8h.html#a715295b59f48eb821e9591d24275492d">GvcMprisPlayer</a> *player)</td></tr>
+<tr class="memitem:a659a8423eec9c586385949c67d44c1dc" id="r_a659a8423eec9c586385949c67d44c1dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a659a8423eec9c586385949c67d44c1dc">gvc_stream_applet_icon_set_player_widget_visible</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon, gboolean visible)</td></tr>
+<tr class="memitem:a7b798379776872e96631f108d5559d6b" id="r_a7b798379776872e96631f108d5559d6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b798379776872e96631f108d5559d6b">gvc_stream_applet_icon_set_applet_settings</a> (<a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *icon, GSettings *settings)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="aba95d18813e39469144b80654ad09149" name="aba95d18813e39469144b80654ad09149"></a>
@@ -157,11 +163,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_INSTANCE_TYPE ((o), <a class="code hl_define" href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a>))</div>
-<div class="ttc" id="agvc-stream-applet-icon_8h_html_ad3f3932e7a759ef543f04ad3aadeb9bd"><div class="ttname"><a href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a></div><div class="ttdeci">#define GVC_TYPE_STREAM_APPLET_ICON</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-applet-icon_8h_source.html#l00033">gvc-stream-applet-icon.h:33</a></div></div>
+<div class="ttc" id="agvc-stream-applet-icon_8h_html_ad3f3932e7a759ef543f04ad3aadeb9bd"><div class="ttname"><a href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a></div><div class="ttdeci">#define GVC_TYPE_STREAM_APPLET_ICON</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-applet-icon_8h_source.html#l00036">gvc-stream-applet-icon.h:36</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00036">36</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">39</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00592">gvc_stream_applet_icon_set_control()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00578">gvc_stream_applet_icon_set_display_name()</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00538">gvc_stream_applet_icon_set_icon_names()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00592">gvc_stream_applet_icon_set_applet_settings()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01082">gvc_stream_applet_icon_set_control()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01068">gvc_stream_applet_icon_set_display_name()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01028">gvc_stream_applet_icon_set_icon_names()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00675">gvc_stream_applet_icon_set_mpris_player()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00623">gvc_stream_applet_icon_set_player_widget()</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00698">gvc_stream_applet_icon_set_player_widget_visible()</a>.</p>
 
 </div>
 </div>
@@ -181,7 +187,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_CLASS_TYPE ((k), <a class="code hl_define" href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a>))</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00037">37</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00040">40</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -200,9 +206,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_INSTANCE_CAST ((o), <a class="code hl_define" href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a>, <a class="code hl_typedef" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a>))</div>
-<div class="ttc" id="agvc-stream-applet-icon_8h_html_ae7666cfd9f14e7b567cb6d5eca147207"><div class="ttname"><a href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a></div><div class="ttdeci">struct _GvcStreamAppletIcon GvcStreamAppletIcon</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-applet-icon_8h_source.html#l00040">gvc-stream-applet-icon.h:40</a></div></div>
+<div class="ttc" id="agvc-stream-applet-icon_8h_html_ae7666cfd9f14e7b567cb6d5eca147207"><div class="ttname"><a href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a></div><div class="ttdeci">struct _GvcStreamAppletIcon GvcStreamAppletIcon</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-applet-icon_8h_source.html#l00043">gvc-stream-applet-icon.h:43</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00034">34</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00037">37</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -221,9 +227,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_CLASS_CAST ((k), <a class="code hl_define" href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a>, <a class="code hl_typedef" href="#a3d7c0f8022b0bf2f5d3255fa6c840ecd">GvcStreamAppletIconClass</a>))</div>
-<div class="ttc" id="agvc-stream-applet-icon_8h_html_a3d7c0f8022b0bf2f5d3255fa6c840ecd"><div class="ttname"><a href="#a3d7c0f8022b0bf2f5d3255fa6c840ecd">GvcStreamAppletIconClass</a></div><div class="ttdeci">struct _GvcStreamAppletIconClass GvcStreamAppletIconClass</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-applet-icon_8h_source.html#l00041">gvc-stream-applet-icon.h:41</a></div></div>
+<div class="ttc" id="agvc-stream-applet-icon_8h_html_a3d7c0f8022b0bf2f5d3255fa6c840ecd"><div class="ttname"><a href="#a3d7c0f8022b0bf2f5d3255fa6c840ecd">GvcStreamAppletIconClass</a></div><div class="ttdeci">struct _GvcStreamAppletIconClass GvcStreamAppletIconClass</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-applet-icon_8h_source.html#l00044">gvc-stream-applet-icon.h:44</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00035">35</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00038">38</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -243,7 +249,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_INSTANCE_GET_CLASS ((o), <a class="code hl_define" href="#ad3f3932e7a759ef543f04ad3aadeb9bd">GVC_TYPE_STREAM_APPLET_ICON</a>, <a class="code hl_typedef" href="#a3d7c0f8022b0bf2f5d3255fa6c840ecd">GvcStreamAppletIconClass</a>))</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00038">38</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00041">41</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -259,9 +265,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00033">33</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00036">36</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00873">gvc_stream_applet_icon_new()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01394">gvc_stream_applet_icon_new()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +284,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00040">40</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00043">43</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -294,7 +300,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00041">41</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00044">44</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +316,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00042">42</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00045">45</a> of file <a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +336,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00264">264</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00536">536</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
 <p class="reference">References <a class="el" href="matemixer-stream-control_8c_source.html#l00439">mate_mixer_stream_control_get_mute()</a>.</p>
 
@@ -374,9 +380,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00873">873</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01394">1394</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00033">GVC_TYPE_STREAM_APPLET_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00036">GVC_TYPE_STREAM_APPLET_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a7b798379776872e96631f108d5559d6b" name="a7b798379776872e96631f108d5559d6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b798379776872e96631f108d5559d6b">&#9670;&#160;</a></span>gvc_stream_applet_icon_set_applet_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_applet_icon_set_applet_settings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GSettings *</td>          <td class="paramname"><span class="paramname"><em>settings</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00592">592</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -399,9 +430,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00592">592</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01082">1082</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-channel-bar_8h_source.html#l00035">GVC_CHANNEL_BAR</a>, <a class="el" href="gvc-channel-bar_8c_source.html#l00570">gvc_channel_bar_set_control()</a>, <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00036">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-balance-bar_8c_source.html#l00053">PROP_CONTROL</a>.</p>
+<p class="reference">References <a class="el" href="gvc-channel-bar_8h_source.html#l00035">GVC_CHANNEL_BAR</a>, <a class="el" href="gvc-channel-bar_8c_source.html#l00570">gvc_channel_bar_set_control()</a>, <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-balance-bar_8c_source.html#l00053">PROP_CONTROL</a>.</p>
 
 </div>
 </div>
@@ -424,9 +455,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00578">578</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01068">1068</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00036">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00062">PROP_DISPLAY_NAME</a>.</p>
+<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00072">PROP_DISPLAY_NAME</a>.</p>
 
 </div>
 </div>
@@ -449,9 +480,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00538">538</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01028">1028</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00036">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00063">PROP_ICON_NAMES</a>.</p>
+<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00073">PROP_ICON_NAMES</a>.</p>
+
+</div>
+</div>
+<a id="a2a622574f712e80d8eb24fd23541ec87" name="a2a622574f712e80d8eb24fd23541ec87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a622574f712e80d8eb24fd23541ec87">&#9670;&#160;</a></span>gvc_stream_applet_icon_set_mpris_player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_applet_icon_set_mpris_player </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gvc-mpris-player_8h.html#a715295b59f48eb821e9591d24275492d">GvcMprisPlayer</a> *</td>          <td class="paramname"><span class="paramname"><em>player</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00675">675</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="glib-utils_8h_source.html#l00028">g_signal_handlers_disconnect_by_data</a>, <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -474,7 +530,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00258">258</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00530">530</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
 <p class="reference">References <a class="el" href="matemixer-stream-control_8c_source.html#l00452">mate_mixer_stream_control_set_mute()</a>.</p>
 
@@ -499,11 +555,61 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00524">524</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01014">1014</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-panel-applet_8h_source.html#l00047">MatePanelAppletOrient</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvc-applet_8c_source.html#l00512">gvc_applet_fill()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvc-applet_8c_source.html#l01161">gvc_applet_fill()</a>.</p>
+
+</div>
+</div>
+<a id="a6067ef64a65024a02465f2a503a762f1" name="a6067ef64a65024a02465f2a503a762f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6067ef64a65024a02465f2a503a762f1">&#9670;&#160;</a></span>gvc_stream_applet_icon_set_player_widget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_applet_icon_set_player_widget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *</td>          <td class="paramname"><span class="paramname"><em>player_widget</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00623">623</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+</div>
+</div>
+<a id="a659a8423eec9c586385949c67d44c1dc" name="a659a8423eec9c586385949c67d44c1dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a659a8423eec9c586385949c67d44c1dc">&#9670;&#160;</a></span>gvc_stream_applet_icon_set_player_widget_visible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_applet_icon_set_player_widget_visible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae7666cfd9f14e7b567cb6d5eca147207">GvcStreamAppletIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gboolean</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00698">698</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvc-stream-applet-icon_8h_source.html#l00039">GVC_IS_STREAM_APPLET_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -526,9 +632,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00505">505</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00994">994</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvc-applet_8c_source.html#l00512">gvc_applet_fill()</a>.</p>
+<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gvc-applet_8c_source.html#l01161">gvc_applet_fill()</a>.</p>
 
 </div>
 </div>
@@ -547,7 +655,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00270">270</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00542">542</a> of file <a class="el" href="gvc-stream-applet-icon_8c_source.html">gvc-stream-applet-icon.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="mate-desktop-utils_8c_source.html#l00201">mate_gdk_spawn_command_line_on_screen()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 

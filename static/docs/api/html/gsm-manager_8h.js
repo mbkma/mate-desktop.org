@@ -47,6 +47,7 @@ var gsm_manager_8h =
     [ "gsm_manager_is_session_running", "gsm-manager_8h.html#a19e522861b9a9d98d0451fda732a5687", null ],
     [ "gsm_manager_logout", "gsm-manager_8h.html#ae4ecffa091a18255c810d7c3814b2d39", null ],
     [ "gsm_manager_new", "gsm-manager_8h.html#af94e33de62bc93d71362a6b465733769", null ],
+    [ "gsm_manager_quit", "gsm-manager_8h.html#a8ddc72c1a29648aa3da07ad909933f72", null ],
     [ "gsm_manager_register_client", "gsm-manager_8h.html#a10eee675d0c42cc6ea191f6af40965a0", null ],
     [ "gsm_manager_request_reboot", "gsm-manager_8h.html#aae0981783a0a20cc0ccc3a293a64dc3f", null ],
     [ "gsm_manager_request_shutdown", "gsm-manager_8h.html#ae7986e33c705d50322567e76fcf78ada", null ],

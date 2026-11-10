@@ -13,7 +13,13 @@ var gvc_stream_status_icon_8h =
     [ "GvcStreamStatusIconPrivate", "gvc-stream-status-icon_8h.html#a5faad8a911057d2ac70573e1b6791664", null ],
     [ "gvc_stream_status_icon_get_type", "gvc-stream-status-icon_8h.html#a6ce0ce7df0033e1a98f1686fdc6eb71a", null ],
     [ "gvc_stream_status_icon_new", "gvc-stream-status-icon_8h.html#a07af129108ddaebd01ac0d66bb29c192", null ],
+    [ "gvc_stream_status_icon_set_applet_settings", "gvc-stream-status-icon_8h.html#ab672743288571b39d5c3fb082c1a422f", null ],
     [ "gvc_stream_status_icon_set_control", "gvc-stream-status-icon_8h.html#a5d5b9eb579c30ba8c9659f9f31fc9473", null ],
     [ "gvc_stream_status_icon_set_display_name", "gvc-stream-status-icon_8h.html#a23a55cbec4d98f9a00dd471eff4161d1", null ],
-    [ "gvc_stream_status_icon_set_icon_names", "gvc-stream-status-icon_8h.html#a0059bbc5aa115169a95ce9183241fea9", null ]
+    [ "gvc_stream_status_icon_set_icon_names", "gvc-stream-status-icon_8h.html#a0059bbc5aa115169a95ce9183241fea9", null ],
+    [ "gvc_stream_status_icon_set_mate_mixer_context", "gvc-stream-status-icon_8h.html#a30006f9479e04435aecdd7ecaf9eb77d", null ],
+    [ "gvc_stream_status_icon_set_mpris_manager", "gvc-stream-status-icon_8h.html#a25e328b67767510380bc50378f711f3c", null ],
+    [ "gvc_stream_status_icon_set_mpris_player", "gvc-stream-status-icon_8h.html#a921fe926b0588d5031f3a193180c3ed1", null ],
+    [ "gvc_stream_status_icon_set_player_widget", "gvc-stream-status-icon_8h.html#a31840c7a05a7ddfd8292c29c18c11d6e", null ],
+    [ "gvc_stream_status_icon_set_player_widget_visible", "gvc-stream-status-icon_8h.html#a26b60df706585d62012c5dd6aa01e279", null ]
 ];

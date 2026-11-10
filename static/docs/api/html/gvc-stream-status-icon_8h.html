@@ -94,7 +94,10 @@ $(function(){initNavTree('gvc-stream-status-icon_8h.html','',''); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;glib.h&gt;</code><br />
 <code>#include &lt;glib-object.h&gt;</code><br />
+<code>#include &lt;gtk/gtk.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="matemixer_8h_source.html">libmatemixer/matemixer.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="gvc-mpris-manager_8h_source.html">gvc-mpris-manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gvc-mpris-player_8h_source.html">gvc-mpris-player.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gvc-stream-status-icon.h:</div>
 <div class="dyncontent">
@@ -135,6 +138,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a0059bbc5aa115169a95ce9183241fea9" id="r_a0059bbc5aa115169a95ce9183241fea9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0059bbc5aa115169a95ce9183241fea9">gvc_stream_status_icon_set_icon_names</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, const gchar **icon_names)</td></tr>
 <tr class="memitem:a23a55cbec4d98f9a00dd471eff4161d1" id="r_a23a55cbec4d98f9a00dd471eff4161d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23a55cbec4d98f9a00dd471eff4161d1">gvc_stream_status_icon_set_display_name</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, const gchar *display_name)</td></tr>
 <tr class="memitem:a5d5b9eb579c30ba8c9659f9f31fc9473" id="r_a5d5b9eb579c30ba8c9659f9f31fc9473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d5b9eb579c30ba8c9659f9f31fc9473">gvc_stream_status_icon_set_control</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, <a class="el" href="matemixer-types_8h.html#a146f055bce5ac720ba604ca26a1e25d7">MateMixerStreamControl</a> *control)</td></tr>
+<tr class="memitem:ab672743288571b39d5c3fb082c1a422f" id="r_ab672743288571b39d5c3fb082c1a422f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab672743288571b39d5c3fb082c1a422f">gvc_stream_status_icon_set_applet_settings</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, GSettings *settings)</td></tr>
+<tr class="memitem:a31840c7a05a7ddfd8292c29c18c11d6e" id="r_a31840c7a05a7ddfd8292c29c18c11d6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31840c7a05a7ddfd8292c29c18c11d6e">gvc_stream_status_icon_set_player_widget</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, GtkWidget *player_widget)</td></tr>
+<tr class="memitem:a921fe926b0588d5031f3a193180c3ed1" id="r_a921fe926b0588d5031f3a193180c3ed1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921fe926b0588d5031f3a193180c3ed1">gvc_stream_status_icon_set_mpris_player</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, <a class="el" href="gvc-mpris-player_8h.html#a715295b59f48eb821e9591d24275492d">GvcMprisPlayer</a> *player)</td></tr>
+<tr class="memitem:a26b60df706585d62012c5dd6aa01e279" id="r_a26b60df706585d62012c5dd6aa01e279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26b60df706585d62012c5dd6aa01e279">gvc_stream_status_icon_set_player_widget_visible</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, gboolean visible)</td></tr>
+<tr class="memitem:a25e328b67767510380bc50378f711f3c" id="r_a25e328b67767510380bc50378f711f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25e328b67767510380bc50378f711f3c">gvc_stream_status_icon_set_mpris_manager</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, <a class="el" href="gvc-mpris-manager_8h.html#a84c37bec4fd279c7a4422116462c6856">GvcMprisManager</a> *manager)</td></tr>
+<tr class="memitem:a30006f9479e04435aecdd7ecaf9eb77d" id="r_a30006f9479e04435aecdd7ecaf9eb77d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30006f9479e04435aecdd7ecaf9eb77d">gvc_stream_status_icon_set_mate_mixer_context</a> (<a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *icon, <a class="el" href="matemixer-types_8h.html#ad60038e84443f071c4bb5a3cf69240b1">MateMixerContext</a> *context)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="ac9024ba4d736b8ddd3ba009ce9f65e3b" name="ac9024ba4d736b8ddd3ba009ce9f65e3b"></a>
@@ -152,11 +161,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_INSTANCE_TYPE ((o), <a class="code hl_define" href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a>))</div>
-<div class="ttc" id="agvc-stream-status-icon_8h_html_a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1"><div class="ttname"><a href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a></div><div class="ttdeci">#define GVC_TYPE_STREAM_STATUS_ICON</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-status-icon_8h_source.html#l00032">gvc-stream-status-icon.h:32</a></div></div>
+<div class="ttc" id="agvc-stream-status-icon_8h_html_a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1"><div class="ttname"><a href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a></div><div class="ttdeci">#define GVC_TYPE_STREAM_STATUS_ICON</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-status-icon_8h_source.html#l00036">gvc-stream-status-icon.h:36</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00035">35</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">39</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvc-stream-status-icon_8c_source.html#l00527">gvc_stream_status_icon_set_control()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l00513">gvc_stream_status_icon_set_display_name()</a>, and <a class="el" href="gvc-stream-status-icon_8c_source.html#l00473">gvc_stream_status_icon_set_icon_names()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvc-stream-status-icon_8c_source.html#l01062">gvc_stream_status_icon_set_applet_settings()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l01016">gvc_stream_status_icon_set_control()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l01002">gvc_stream_status_icon_set_display_name()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l00964">gvc_stream_status_icon_set_icon_names()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l01186">gvc_stream_status_icon_set_mate_mixer_context()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l01171">gvc_stream_status_icon_set_mpris_manager()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l01134">gvc_stream_status_icon_set_mpris_player()</a>, <a class="el" href="gvc-stream-status-icon_8c_source.html#l01080">gvc_stream_status_icon_set_player_widget()</a>, and <a class="el" href="gvc-stream-status-icon_8c_source.html#l01157">gvc_stream_status_icon_set_player_widget_visible()</a>.</p>
 
 </div>
 </div>
@@ -176,7 +185,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_CLASS_TYPE ((k), <a class="code hl_define" href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a>))</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00036">36</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00040">40</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -195,9 +204,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_INSTANCE_CAST ((o), <a class="code hl_define" href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a>, <a class="code hl_typedef" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a>))</div>
-<div class="ttc" id="agvc-stream-status-icon_8h_html_a9f1e1873db24a499e935aef1591459c2"><div class="ttname"><a href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a></div><div class="ttdeci">struct _GvcStreamStatusIcon GvcStreamStatusIcon</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-status-icon_8h_source.html#l00039">gvc-stream-status-icon.h:39</a></div></div>
+<div class="ttc" id="agvc-stream-status-icon_8h_html_a9f1e1873db24a499e935aef1591459c2"><div class="ttname"><a href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a></div><div class="ttdeci">struct _GvcStreamStatusIcon GvcStreamStatusIcon</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-status-icon_8h_source.html#l00043">gvc-stream-status-icon.h:43</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00033">33</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00037">37</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -216,9 +225,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_CHECK_CLASS_CAST ((k), <a class="code hl_define" href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a>, <a class="code hl_typedef" href="#aad79e37de4bc01046a03762e32157450">GvcStreamStatusIconClass</a>))</div>
-<div class="ttc" id="agvc-stream-status-icon_8h_html_aad79e37de4bc01046a03762e32157450"><div class="ttname"><a href="#aad79e37de4bc01046a03762e32157450">GvcStreamStatusIconClass</a></div><div class="ttdeci">struct _GvcStreamStatusIconClass GvcStreamStatusIconClass</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-status-icon_8h_source.html#l00040">gvc-stream-status-icon.h:40</a></div></div>
+<div class="ttc" id="agvc-stream-status-icon_8h_html_aad79e37de4bc01046a03762e32157450"><div class="ttname"><a href="#aad79e37de4bc01046a03762e32157450">GvcStreamStatusIconClass</a></div><div class="ttdeci">struct _GvcStreamStatusIconClass GvcStreamStatusIconClass</div><div class="ttdef"><b>Definition</b> <a href="gvc-stream-status-icon_8h_source.html#l00044">gvc-stream-status-icon.h:44</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00034">34</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00038">38</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -238,7 +247,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(G_TYPE_INSTANCE_GET_CLASS ((o), <a class="code hl_define" href="#a8bff9ca1ce7dc9fb96c1f3d51ed4b9d1">GVC_TYPE_STREAM_STATUS_ICON</a>, <a class="code hl_typedef" href="#aad79e37de4bc01046a03762e32157450">GvcStreamStatusIconClass</a>))</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00037">37</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00041">41</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -254,9 +263,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00032">32</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00036">36</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gvc-stream-status-icon_8c_source.html#l00808">gvc_stream_status_icon_new()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gvc-stream-status-icon_8c_source.html#l01473">gvc_stream_status_icon_new()</a>.</p>
 
 </div>
 </div>
@@ -273,7 +282,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">39</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00043">43</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -289,7 +298,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00040">40</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00044">44</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -305,7 +314,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00041">41</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8h_source.html#l00045">45</a> of file <a class="el" href="gvc-stream-status-icon_8h_source.html">gvc-stream-status-icon.h</a>.</p>
 
 </div>
 </div>
@@ -346,9 +355,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l00808">808</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01473">1473</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00032">GVC_TYPE_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00036">GVC_TYPE_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="ab672743288571b39d5c3fb082c1a422f" name="ab672743288571b39d5c3fb082c1a422f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab672743288571b39d5c3fb082c1a422f">&#9670;&#160;</a></span>gvc_stream_status_icon_set_applet_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_status_icon_set_applet_settings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GSettings *</td>          <td class="paramname"><span class="paramname"><em>settings</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01062">1062</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -371,9 +405,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l00527">527</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01016">1016</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-channel-bar_8h_source.html#l00035">GVC_CHANNEL_BAR</a>, <a class="el" href="gvc-channel-bar_8c_source.html#l00570">gvc_channel_bar_set_control()</a>, <a class="el" href="gvc-stream-status-icon_8h_source.html#l00035">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-balance-bar_8c_source.html#l00053">PROP_CONTROL</a>.</p>
+<p class="reference">References <a class="el" href="gvc-channel-bar_8h_source.html#l00035">GVC_CHANNEL_BAR</a>, <a class="el" href="gvc-channel-bar_8c_source.html#l00570">gvc_channel_bar_set_control()</a>, <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-balance-bar_8c_source.html#l00053">PROP_CONTROL</a>.</p>
 
 </div>
 </div>
@@ -396,9 +430,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l00513">513</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01002">1002</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00035">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00062">PROP_DISPLAY_NAME</a>.</p>
+<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00072">PROP_DISPLAY_NAME</a>.</p>
 
 </div>
 </div>
@@ -421,9 +455,134 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l00473">473</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l00964">964</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
 
-<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00035">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00063">PROP_ICON_NAMES</a>.</p>
+<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00073">PROP_ICON_NAMES</a>.</p>
+
+</div>
+</div>
+<a id="a30006f9479e04435aecdd7ecaf9eb77d" name="a30006f9479e04435aecdd7ecaf9eb77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30006f9479e04435aecdd7ecaf9eb77d">&#9670;&#160;</a></span>gvc_stream_status_icon_set_mate_mixer_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_status_icon_set_mate_mixer_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="matemixer-types_8h.html#ad60038e84443f071c4bb5a3cf69240b1">MateMixerContext</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01186">1186</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a25e328b67767510380bc50378f711f3c" name="a25e328b67767510380bc50378f711f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e328b67767510380bc50378f711f3c">&#9670;&#160;</a></span>gvc_stream_status_icon_set_mpris_manager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_status_icon_set_mpris_manager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gvc-mpris-manager_8h.html#a84c37bec4fd279c7a4422116462c6856">GvcMprisManager</a> *</td>          <td class="paramname"><span class="paramname"><em>manager</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01171">1171</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a921fe926b0588d5031f3a193180c3ed1" name="a921fe926b0588d5031f3a193180c3ed1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921fe926b0588d5031f3a193180c3ed1">&#9670;&#160;</a></span>gvc_stream_status_icon_set_mpris_player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_status_icon_set_mpris_player </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gvc-mpris-player_8h.html#a715295b59f48eb821e9591d24275492d">GvcMprisPlayer</a> *</td>          <td class="paramname"><span class="paramname"><em>player</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01134">1134</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="glib-utils_8h_source.html#l00028">g_signal_handlers_disconnect_by_data</a>, <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a31840c7a05a7ddfd8292c29c18c11d6e" name="a31840c7a05a7ddfd8292c29c18c11d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31840c7a05a7ddfd8292c29c18c11d6e">&#9670;&#160;</a></span>gvc_stream_status_icon_set_player_widget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_status_icon_set_player_widget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GtkWidget *</td>          <td class="paramname"><span class="paramname"><em>player_widget</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01080">1080</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+</div>
+</div>
+<a id="a26b60df706585d62012c5dd6aa01e279" name="a26b60df706585d62012c5dd6aa01e279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b60df706585d62012c5dd6aa01e279">&#9670;&#160;</a></span>gvc_stream_status_icon_set_player_widget_visible()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gvc_stream_status_icon_set_player_widget_visible </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a9f1e1873db24a499e935aef1591459c2">GvcStreamStatusIcon</a> *</td>          <td class="paramname"><span class="paramname"><em>icon</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gboolean</td>          <td class="paramname"><span class="paramname"><em>visible</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gvc-stream-status-icon_8c_source.html#l01157">1157</a> of file <a class="el" href="gvc-stream-status-icon_8c_source.html">gvc-stream-status-icon.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gvc-stream-status-icon_8h_source.html#l00039">GVC_IS_STREAM_STATUS_ICON</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>

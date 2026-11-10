@@ -35,6 +35,8 @@ var dir_9ba31b5428451983af08a174d8fe262a =
     [ "mate-rr-private.h", "mate-rr-private_8h.html", "mate-rr-private_8h" ],
     [ "mate-rr.c", "mate-rr_8c.html", "mate-rr_8c" ],
     [ "mate-rr.h", "mate-rr_8h.html", "mate-rr_8h" ],
+    [ "mate-systemd.c", "mate-systemd_8c.html", "mate-systemd_8c" ],
+    [ "mate-systemd.h", "mate-systemd_8h.html", "mate-systemd_8h" ],
     [ "private.h", "mate-desktop_2libmate-desktop_2private_8h.html", "mate-desktop_2libmate-desktop_2private_8h" ],
     [ "test-desktop-thumbnail.c", "test-desktop-thumbnail_8c.html", "test-desktop-thumbnail_8c" ],
     [ "test-ditem.c", "test-ditem_8c.html", "test-ditem_8c" ],

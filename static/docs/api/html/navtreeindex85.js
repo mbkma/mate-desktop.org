@@ -149,9 +149,10 @@ var NAVTREEINDEX85 =
 "gsm-app_8h.html#af15f7be8e28735e6d8661f4ae914b25b":[14,0,0,27,1,3,10],
 "gsm-app_8h_source.html":[14,0,0,27,1,3],
 "gsm-autostart-app_8c.html":[14,0,0,27,1,4],
-"gsm-autostart-app_8c.html#a5a0ff716101085fa28ca0d833811a238":[14,0,0,27,1,4,1],
+"gsm-autostart-app_8c.html#a5a0ff716101085fa28ca0d833811a238":[14,0,0,27,1,4,2],
 "gsm-autostart-app_8c.html#a6bf47a08ee5eb4db08664871aac4f984":[14,0,0,27,1,4,0],
-"gsm-autostart-app_8c.html#a861e87ed2abb33ccccbb2cc70edcf24d":[14,0,0,27,1,4,2],
+"gsm-autostart-app_8c.html#a861e87ed2abb33ccccbb2cc70edcf24d":[14,0,0,27,1,4,3],
+"gsm-autostart-app_8c.html#accf002c50d07fec7ddcaf35fde15c5e9":[14,0,0,27,1,4,1],
 "gsm-autostart-app_8c_source.html":[14,0,0,27,1,4],
 "gsm-autostart-app_8h.html":[14,0,0,27,1,5],
 "gsm-autostart-app_8h.html#a047bcd83f36d5556ab8aff854c56ce5a":[14,0,0,27,1,5,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX85 =
 "gsm-consolekit_8c.html#ab331dfde89a51105090929984f410e4b":[14,0,0,27,1,8,11],
 "gsm-consolekit_8c.html#ab7879e63ccf793abcddf324552326845":[14,0,0,27,1,8,1],
 "gsm-consolekit_8c.html#ab8e8e4bddc4001972588e7134f9bdf22":[14,0,0,27,1,8,19],
-"gsm-consolekit_8c.html#abb2439bc521b600a2dfe9cba9db680cc":[14,0,0,27,1,8,6],
-"gsm-consolekit_8c.html#ac05a6370a0f704fb68a59cad73f1d8f3":[14,0,0,27,1,8,20]
+"gsm-consolekit_8c.html#abb2439bc521b600a2dfe9cba9db680cc":[14,0,0,27,1,8,6]
 };

@@ -97,10 +97,13 @@ $(function(){initNavTree('gvc-applet_8c.html','',''); });
 <code>#include &lt;glib.h&gt;</code><br />
 <code>#include &lt;glib/gi18n-lib.h&gt;</code><br />
 <code>#include &lt;glib-object.h&gt;</code><br />
+<code>#include &lt;gio/gdesktopappinfo.h&gt;</code><br />
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="matemixer_8h_source.html">libmatemixer/matemixer.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="mate-panel-applet_8h_source.html">mate-panel-applet.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="gvc-applet_8h_source.html">gvc-applet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gvc-mpris-manager_8h_source.html">gvc-mpris-manager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gvc-player-widget_8h_source.html">gvc-player-widget.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gvc-stream-applet-icon_8h_source.html">gvc-stream-applet-icon.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for gvc-applet.c:</div>
@@ -136,9 +139,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-applet_8c_source.html#l00512">512</a> of file <a class="el" href="gvc-applet_8c_source.html">gvc-applet.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-applet_8c_source.html#l01161">1161</a> of file <a class="el" href="gvc-applet_8c_source.html">gvc-applet.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="command_8c_source.html#l00038">APPLET_ICON</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00524">gvc_stream_applet_icon_set_orient()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00505">gvc_stream_applet_icon_set_size()</a>, <a class="el" href="mate-panel-applet_8h_source.html#l00058">MATE_PANEL_APPLET_EXPAND_MINOR</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00400">mate_panel_applet_get_orient()</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00366">mate_panel_applet_get_size()</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00212">mate_panel_applet_set_flags()</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00747">mate_panel_applet_setup_menu()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="gvc-applet_8h_source.html#l00049">_GvcApplet::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="command_8c_source.html#l00038">APPLET_ICON</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l01014">gvc_stream_applet_icon_set_orient()</a>, <a class="el" href="gvc-stream-applet-icon_8c_source.html#l00994">gvc_stream_applet_icon_set_size()</a>, <a class="el" href="mate-panel-applet_8h_source.html#l00058">MATE_PANEL_APPLET_EXPAND_MINOR</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00400">mate_panel_applet_get_orient()</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00366">mate_panel_applet_get_size()</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00212">mate_panel_applet_set_flags()</a>, <a class="el" href="mate-panel-applet_8c_source.html#l00747">mate_panel_applet_setup_menu()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="gvc-applet_8h_source.html#l00049">_GvcApplet::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -157,7 +160,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-applet_8c_source.html#l00431">431</a> of file <a class="el" href="gvc-applet_8c_source.html">gvc-applet.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-applet_8c_source.html#l01103">1103</a> of file <a class="el" href="gvc-applet_8c_source.html">gvc-applet.c</a>.</p>
 
 <p class="reference">References <a class="el" href="gvc-applet_8h_source.html#l00035">GVC_TYPE_APPLET</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -178,7 +181,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gvc-applet_8c_source.html#l00350">350</a> of file <a class="el" href="gvc-applet_8c_source.html">gvc-applet.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gvc-applet_8c_source.html#l00945">945</a> of file <a class="el" href="gvc-applet_8c_source.html">gvc-applet.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="gvc-applet_8h_source.html#l00038">GVC_IS_APPLET</a>, <a class="el" href="matemixer-context_8c_source.html#l00798">mate_mixer_context_open()</a>, <a class="el" href="gvc-applet_8h_source.html#l00049">_GvcApplet::priv</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
