@@ -33,7 +33,7 @@ var searchData=
   ['enable_5flayout_5fconfig_30',['enable_layout_config',['../struct__MateApp.html#a55977a6fd72cea04ce2e368870397328',1,'_MateApp']]],
   ['enable_5fnew_5fprofile_31',['enable_new_profile',['../struct__CactMenubarPrivate.html#a261979a4232d77d2e0ac8f7e07c45a4e',1,'_CactMenubarPrivate']]],
   ['enable_5frenderer_32',['enable_renderer',['../structPrefsDialog.html#ad8c6b497636462cae8a19a9ef0bfea1f',1,'PrefsDialog']]],
-  ['enabled_33',['enabled',['../struct__Tile.html#a5bf40e1f106ada78a19d9f8485ec8079',1,'_Tile::enabled'],['../structSnDBusMenuItem.html#a4fda7e38242c5b6b93036cc63e36b480',1,'SnDBusMenuItem::enabled']]],
+  ['enabled_33',['enabled',['../structOutputHead.html#a59b9ac3f7343ada5a148d3d4ea772296',1,'OutputHead::enabled'],['../struct__Tile.html#a5bf40e1f106ada78a19d9f8485ec8079',1,'_Tile::enabled'],['../structSnDBusMenuItem.html#a4fda7e38242c5b6b93036cc63e36b480',1,'SnDBusMenuItem::enabled']]],
   ['encfile_34',['encfile',['../struct__DviFontMapEnt.html#abf8e131c0f5f6a60a2764ff104a58bbc',1,'_DviFontMapEnt']]],
   ['encoding_35',['encoding',['../structDviFontMapInfo.html#a08fdd7b5d39f3b49988b5bc269b35244',1,'DviFontMapInfo::encoding'],['../struct__DviFontMapEnt.html#a8c20097421fbe04adaf1954ac1aacbad',1,'_DviFontMapEnt::encoding']]],
   ['encodingscheme_36',['encodingScheme',['../structGlobalFontInfo.html#af6a12d8109a46d90f220547a82cfd43f',1,'GlobalFontInfo']]],

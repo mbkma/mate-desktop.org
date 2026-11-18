@@ -1219,6 +1219,7 @@ var hierarchy =
     [ "Day", "structDay.html", null ],
     [ "DetailedTiming", "structDetailedTiming.html", null ],
     [ "DevInfo", "structDevInfo.html", null ],
+    [ "DisplayBackend", "structDisplayBackend.html", null ],
     [ "DlgNewData", "structDlgNewData.html", null ],
     [ "DoubleClickDetector", "structDoubleClickDetector.html", null ],
     [ "DoubleClickDetectorClass", "structDoubleClickDetectorClass.html", null ],
@@ -1472,6 +1473,7 @@ var hierarchy =
     [ "MetaKeyPref", "structMetaKeyPref.html", null ],
     [ "MetaPropValue", "structMetaPropValue.html", null ],
     [ "MetaWorkspaceLayout", "structMetaWorkspaceLayout.html", null ],
+    [ "Mode", "structMode.html", null ],
     [ "MonitorInfo", "structMonitorInfo.html", null ],
     [ "MotifWmHints", "structMotifWmHints.html", null ],
     [ "MPEquationOptions", "structMPEquationOptions.html", null ],
@@ -1624,6 +1626,7 @@ var hierarchy =
     [ "Glib::OptionGroup", null, [
       [ "procman::OptionGroup", "classprocman_1_1OptionGroup.html", null ]
     ] ],
+    [ "OutputHead", "structOutputHead.html", null ],
     [ "PairKernData", "structPairKernData.html", null ],
     [ "parse_node", "structparse__node.html", null ],
     [ "parser_state", "structparser__state.html", null ],

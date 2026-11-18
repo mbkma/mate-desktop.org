@@ -207,7 +207,7 @@ var searchData=
   ['trans_204',['trans',['../struct__EomImagePrivate.html#a033b66ed4f30e065b39538f601176b37',1,'_EomImagePrivate::trans'],['../struct__EomJobTransform.html#a92b0ff16b58b0b02e6e1a523e470345c',1,'_EomJobTransform::trans']]],
   ['trans_5fautorotate_205',['trans_autorotate',['../struct__EomImagePrivate.html#a7ff4570c7f8710f3b6b5c8879eacb872',1,'_EomImagePrivate']]],
   ['transcode_5fonly_206',['transcode_only',['../jpegint-8a_8h.html#a5ccf354db2a2e4a0e103fd2daa675084',1,'jpegint-8a.h']]],
-  ['transform_207',['transform',['../structjpeg__transform__info.html#aa3227394d9b01bae8543faf79e9c5fe8',1,'jpeg_transform_info']]],
+  ['transform_207',['transform',['../structjpeg__transform__info.html#aa3227394d9b01bae8543faf79e9c5fe8',1,'jpeg_transform_info::transform'],['../structOutputHead.html#ab51fe7bc03d168033d02177107d5531a',1,'OutputHead::transform']]],
   ['transformed_208',['transformed',['../struct__PanelBackground.html#a2318893b4bd60dac03c6e29f72b00739',1,'_PanelBackground']]],
   ['transformed_5fimage_209',['transformed_image',['../struct__PanelBackground.html#aa8f509ac0d206c4c86cdf0ef558f045f',1,'_PanelBackground']]],
   ['transient_5fparent_5fis_5froot_5fwindow_210',['transient_parent_is_root_window',['../struct__MetaWindow.html#a45a6724c1debff6e1f55a6aec07ac473',1,'_MetaWindow']]],

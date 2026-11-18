@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['edge_0',['Edge',['../wlrandr-capplet_8c.html#a89b91ff6921535d9c8215110f215c2c7',1,'Edge:&#160;wlrandr-capplet.c'],['../xrandr-capplet_8c.html#a89b91ff6921535d9c8215110f215c2c7',1,'Edge:&#160;xrandr-capplet.c']]],
+  ['edge_0',['Edge',['../xrandr-capplet_8c.html#a89b91ff6921535d9c8215110f215c2c7',1,'xrandr-capplet.c']]],
   ['eel_5fboolean_5fbit_1',['eel_boolean_bit',['../eel-glib-extensions_8h.html#ac69a07a5461af0d9576f02872ba8a142',1,'eel-glib-extensions.h']]],
   ['eelaccessibletext_2',['EelAccessibleText',['../eel-accessibility_8h.html#a129a576675ed6389466af3e289bed438',1,'eel-accessibility.h']]],
   ['eelbackground_3',['EelBackground',['../eel-background_8h.html#a7af6565b5db81a582d3cc2699d596a92',1,'eel-background.h']]],

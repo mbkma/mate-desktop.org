@@ -306,13 +306,14 @@ var searchData=
   ['output_5ftitle_5fitem_5fpadding_303',['OUTPUT_TITLE_ITEM_PADDING',['../msd-xrandr-manager_8c.html#a8ae9cd3ae207966c59ce4317bd775841',1,'msd-xrandr-manager.c']]],
   ['output_5ftype_304',['output_type',['../struct__FrCommandRar.html#a1a6bc719f06f8e03eb8ad8fe12dd8dd0',1,'_FrCommandRar']]],
   ['output_5fwidth_305',['output_width',['../structjpeg__transform__info.html#ad7b80a24544a8287eae5d4c51b763f39',1,'jpeg_transform_info']]],
-  ['outputs_306',['outputs',['../structScreenInfo.html#ad548e4e20fc29e2234992b735b4b9bf4',1,'ScreenInfo::outputs'],['../structMateRRConfigPrivate.html#a3bf61759c7b64c53a208c90ba7905870',1,'MateRRConfigPrivate::outputs']]],
-  ['outside_5fselect_5frect_307',['OUTSIDE_SELECT_RECT',['../tabpopup_8c.html#a6a31a317c0df032d3bc00b62162b0034',1,'tabpopup.c']]],
-  ['overflow_308',['OVERFLOW',['../mate-desktop-item_8c.html#a1bde9ac0e4c1c736578ab9941eef76c0',1,'mate-desktop-item.c']]],
-  ['override_309',['📑 GSettings Override',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md69',1,'']]],
-  ['overwrite_310',['overwrite',['../struct__EomImageSaveInfo.html#a534dcf7ad609fb325864ed01174a9b02',1,'_EomImageSaveInfo']]],
-  ['overwrite_5fmode_311',['overwrite_mode',['../struct__EelEditableLabel.html#aceaa6f9da133a16265d7b0bf28e310fa',1,'_EelEditableLabel']]],
-  ['ovf_5ffont_5finfo_312',['ovf_font_info',['../fonts_8c.html#a30667ee6d5f900c909736435d808e8f9',1,'ovf_font_info:&#160;vf.c'],['../vf_8c.html#a30667ee6d5f900c909736435d808e8f9',1,'ovf_font_info:&#160;vf.c']]],
-  ['owner_313',['owner',['../struct__CajaFilePrivate.html#ada711d92006807313ffaa821626b3115',1,'_CajaFilePrivate::owner'],['../structMutableProcInfo.html#a235012f8db9ddd01436b449d74a5bf74',1,'MutableProcInfo::owner']]],
-  ['owner_5freal_314',['owner_real',['../struct__CajaFilePrivate.html#a59df2b175ddebe0a9facd77b39713637',1,'_CajaFilePrivate']]]
+  ['outputhead_306',['OutputHead',['../structOutputHead.html',1,'']]],
+  ['outputs_307',['outputs',['../structScreenInfo.html#ad548e4e20fc29e2234992b735b4b9bf4',1,'ScreenInfo::outputs'],['../structMateRRConfigPrivate.html#a3bf61759c7b64c53a208c90ba7905870',1,'MateRRConfigPrivate::outputs']]],
+  ['outside_5fselect_5frect_308',['OUTSIDE_SELECT_RECT',['../tabpopup_8c.html#a6a31a317c0df032d3bc00b62162b0034',1,'tabpopup.c']]],
+  ['overflow_309',['OVERFLOW',['../mate-desktop-item_8c.html#a1bde9ac0e4c1c736578ab9941eef76c0',1,'mate-desktop-item.c']]],
+  ['override_310',['📑 GSettings Override',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md69',1,'']]],
+  ['overwrite_311',['overwrite',['../struct__EomImageSaveInfo.html#a534dcf7ad609fb325864ed01174a9b02',1,'_EomImageSaveInfo']]],
+  ['overwrite_5fmode_312',['overwrite_mode',['../struct__EelEditableLabel.html#aceaa6f9da133a16265d7b0bf28e310fa',1,'_EelEditableLabel']]],
+  ['ovf_5ffont_5finfo_313',['ovf_font_info',['../fonts_8c.html#a30667ee6d5f900c909736435d808e8f9',1,'ovf_font_info:&#160;vf.c'],['../vf_8c.html#a30667ee6d5f900c909736435d808e8f9',1,'ovf_font_info:&#160;vf.c']]],
+  ['owner_314',['owner',['../struct__CajaFilePrivate.html#ada711d92006807313ffaa821626b3115',1,'_CajaFilePrivate::owner'],['../structMutableProcInfo.html#a235012f8db9ddd01436b449d74a5bf74',1,'MutableProcInfo::owner']]],
+  ['owner_5freal_315',['owner_real',['../struct__CajaFilePrivate.html#a59df2b175ddebe0a9facd77b39713637',1,'_CajaFilePrivate']]]
 ];
