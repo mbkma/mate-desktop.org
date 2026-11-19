@@ -1269,7 +1269,7 @@ var searchData=
   ['network_5fshare_5fprefix_1266',['NETWORK_SHARE_PREFIX',['../caja-share_8c.html#aafe149df1931d7e757c695a5362f719a',1,'caja-share.c']]],
   ['network_5furi_1267',['NETWORK_URI',['../caja-window-menus_8c.html#a2c6949c851195188ef1bafd65a33420e',1,'caja-window-menus.c']]],
   ['never_5fsensitive_1268',['NEVER_SENSITIVE',['../mateweather-pref_8c.html#a203a1c4b47256e29c280e9d66f2986ff',1,'NEVER_SENSITIVE:&#160;mateweather-pref.c'],['../multiload_2src_2properties_8c.html#a203a1c4b47256e29c280e9d66f2986ff',1,'NEVER_SENSITIVE:&#160;properties.c'],['../clock_8c.html#a203a1c4b47256e29c280e9d66f2986ff',1,'NEVER_SENSITIVE:&#160;clock.c'],['../workspace-switcher_8c.html#a203a1c4b47256e29c280e9d66f2986ff',1,'NEVER_SENSITIVE:&#160;workspace-switcher.c']]],
-  ['new_3a_20mate_20settings_20daemon_201_2029_201_20or_20later_20required_1269',['📦 New: mate-settings-daemon 1.29.1 or later required',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md64',1,'']]],
+  ['new_3a_20mate_20settings_20daemon_201_2029_201_20or_20later_20required_1269',['📦 New: mate-settings-daemon 1.29.1 or later required',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md67',1,'']]],
   ['new_5fapps_1270',['new_apps',['../struct__AppShellData.html#aa87ae069bbb71d63d87d433c70d3dd46',1,'_AppShellData']]],
   ['new_5fcaja_5faction_1271',['NEW_CAJA_ACTION',['../na-object-action_8c.html#ababc41f6fb01afa5e4526702c7da8167',1,'na-object-action.c']]],
   ['new_5fcaja_5fmenu_1272',['NEW_CAJA_MENU',['../na-object-menu_8c.html#a445df46e77d67ee2659882972eb39f74',1,'na-object-menu.c']]],

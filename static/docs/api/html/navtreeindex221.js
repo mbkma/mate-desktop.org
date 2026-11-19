@@ -1,5 +1,7 @@
 var NAVTREEINDEX221 =
 {
+"xdg-user-dir-lookup_8h.html":[14,0,0,25,1,15],
+"xdg-user-dir-lookup_8h.html#a64ff967c7cb437d2afcd5995c840a2e2":[14,0,0,25,1,15,0],
 "xdg-user-dir-lookup_8h_source.html":[14,0,0,25,1,15],
 "xprops_8c.html":[14,0,0,11,0,1,51],
 "xprops_8c.html#a09e163c4b54054bf02b78a6e0d4c00d9":[14,0,0,11,0,1,51,4],

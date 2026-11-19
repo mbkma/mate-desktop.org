@@ -312,8 +312,8 @@ var NAVTREEINDEX =
 "ui_8c.html#a16a94524ac9961b05269675afd52dbfe",
 "weather-moon_8c.html#ab76a11f19f27e848887d4925445bc5e0",
 "weather_8h.html#a96f8e3618bab34fc2a46aed796b6e015ab3346eb9eedbbcc5cac2e71d12084ca2",
-"window-props_8c.html#ad8a133185517fee701d5baf011e97143",
-"xdg-user-dir-lookup_8h_source.html"
+"window-props_8c.html#ac956117a90023ec0971b8f9fce9dec75",
+"xdg-user-dir-lookup_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

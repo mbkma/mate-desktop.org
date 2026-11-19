@@ -98,12 +98,12 @@ Directory dependency graph for travis:</div>
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="dir_62b73c36930ec353b6d8214290be854d_dep.svg" width="166" height="104"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md49"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md52"></a>
 README</h1>
 <p><span class="tt">docker-build</span> is a generic script that using the Docker container to build for the different distributions. It requires a configuration file to work with. By default, a YAML file called <span class="tt">.docker-build.yml</span> is used.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md50"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md53"></a>
 Usage</h1>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md51"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md54"></a>
 Command line usage</h2>
 <div class="fragment"><div class="line">usage: docker-build [-h] [-c FILE] [-n IMAGE] [-l N] [-s] [-v] [-i]</div>
 <div class="line">                    [-b autotools|meson|scripts] [-r github|scripts] [-t TAG]</div>
@@ -130,7 +130,7 @@ Command line usage</h2>
 <div class="line">                        &quot;TRAVIS_TAG&quot; envirment variable)</div>
 <div class="line">  --version             Show the version</div>
 <div class="line">  -C, --clean           Clean up the docker container.</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md52"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md55"></a>
 Steps by Step</h2>
 <p>Make sure the docker works in the system and don't see the error output by running the <span class="tt">docker images</span> command.</p>
 <ol type="1">
@@ -180,7 +180,7 @@ Steps by Step</h2>
 <div class="fragment"><div class="line">docker-build --name ubuntu:18.10 --verbose --build autotools</div>
 </div><!-- fragment --><p>You may see an error, usually because of a lack of dependencies, you can try adding it in <span class="tt">.docker-build.yml</span> and run it again.</p>
 <p>If you want to delete the container, run the follow command: </p><div class="fragment"><div class="line">docker-build --name ubuntu:18.10 --clean</div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md53"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md56"></a>
 Configuration file format</h1>
 <p><span class="tt">docker-build</span> requires a configuration file to run, which can be saved in JSON or YAML formats with similar structures, default use YAML format, called <span class="tt">.docker-build.yml</span>.</p>
 <p>If you want to use a different configuration file name, please use the <span class="tt">docker-build --config another_config_file</span>.</p>
@@ -192,7 +192,7 @@ Configuration file format</h1>
 <li><span class="tt">variables</span>: The environment variables to be used when building.</li>
 </ol>
 <p>In the configuration file, only <span class="tt">requires</span> is required, others are optional.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md54"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md57"></a>
 Environmental variable</h2>
 <p>The following environment variables can be used in before/after scripts:</p>
 <ul>
@@ -243,7 +243,7 @@ Environmental variable</h2>
 <div class="line">after_scripts:</div>
 <div class="line">  - if [ &quot;$BUILD_TYPE&quot; = &quot;meson&quot; ]; then meson test; else make test; fi</div>
 <div class="line">  - if [ &quot;$BUILD_TYPE&quot; = &quot;meson&quot; ]; then ninja dist; else make distcheck; fi</div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md55"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md58"></a>
 Travis CI</h1>
 <p>Travis CI provides Continuous Integration (CI). It binds the project on Github and will automatically fetch as long as there is new code. Then, provide a runtime environment, perform tests, complete the build, and deploy to the server.</p>
 <p>Travis CI only supports Github and does not support other code hosting services. This means that you must meet the following conditions in order to use Travis CI.</p>
@@ -253,7 +253,7 @@ Travis CI</h1>
 <li>There are runnable code in the project.</li>
 <li>The project also includes build or test scripts</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md56"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md59"></a>
 Start Travis CI</h2>
 <ol type="1">
 <li>First, visit the official website travis-ci.org, click on the profile picture in the upper right corner, and log in to Travis CI using your Github account.</li>
@@ -267,7 +267,7 @@ Start Travis CI</h2>
 <div class="fragment"><div class="line">language: python</div>
 <div class="line">script: true</div>
 </div><!-- fragment --><p>See the documentation for more details: <a href="https://docs.travis-ci.com/">https://docs.travis-ci.com/</a></p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md57"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md60"></a>
 Run docker-build on Travis CI</h1>
 <ol type="1">
 <li>First need Travis CI to work in your repo.</li>

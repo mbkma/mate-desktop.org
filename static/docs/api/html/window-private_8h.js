@@ -150,6 +150,7 @@ var window_private_8h =
     [ "meta_window_update_keyboard_move", "window-private_8h.html#a8073681de6abd220c390f35a97ff1204", null ],
     [ "meta_window_update_keyboard_resize", "window-private_8h.html#a592d5c7a86ea52869cd425e26dc55d30", null ],
     [ "meta_window_update_layer", "window-private_8h.html#abc881a2bcf2b82a9a69bbedfbbd71dba", null ],
+    [ "meta_window_update_net_frame_extents", "window-private_8h.html#a3338df5bf6a37ab62b6471a77c2b5477", null ],
     [ "meta_window_update_net_wm_type", "window-private_8h.html#a2685816f48d3a502e95e145c32e79137", null ],
     [ "meta_window_update_role", "window-private_8h.html#aaf65e4da996bd4e3ee2bb4b82336ae0e", null ],
     [ "meta_window_update_struts", "window-private_8h.html#a9f3c6fe82264ef115f6dd5370973d0db", null ],

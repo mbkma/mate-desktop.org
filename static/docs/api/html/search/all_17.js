@@ -49,7 +49,7 @@ var searchData=
   ['undefined_5ftime_46',['UNDEFINED_TIME',['../caja-file_8h.html#aef1ebdf703ce7f626bbe909905c2ac86',1,'UNDEFINED_TIME:&#160;caja-file.h'],['../caja-icon-container_8c.html#aef1ebdf703ce7f626bbe909905c2ac86',1,'UNDEFINED_TIME:&#160;caja-icon-container.c']]],
   ['underlineposition_47',['underlinePosition',['../structGlobalFontInfo.html#a2dd77e9fcdddd766cf1f12435e17b800',1,'GlobalFontInfo']]],
   ['underlinethickness_48',['underlineThickness',['../structGlobalFontInfo.html#a8b039a996091c984d22281ecb7119c8c',1,'GlobalFontInfo']]],
-  ['understanding_49',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_bdb4a2277ff532f07550f9b2c1cb685b.html#autotoc_md76',1,'']]],
+  ['understanding_49',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_bdb4a2277ff532f07550f9b2c1cb685b.html#autotoc_md79',1,'']]],
   ['undo_5fcb_50',['undo_cb',['../math-buttons_8c.html#aa36880f2315a0a693eb7d566d2ed6bb1',1,'math-buttons.c']]],
   ['undo_5fdescription_51',['undo_description',['../struct__CajaUndoStackMenuData.html#a4a17716e4ca57e9cc683dd69ca1da18e',1,'_CajaUndoStackMenuData']]],
   ['undo_5flabel_52',['undo_label',['../struct__CajaUndoStackMenuData.html#a191fbed15bed58e67fc44a84313d8b84',1,'_CajaUndoStackMenuData']]],
@@ -250,8 +250,8 @@ var searchData=
   ['urx_247',['urx',['../structBBox.html#a92ba6be0c85c5b3e488f857cf43cd869',1,'BBox']]],
   ['ury_248',['URY',['../sp-epsf_8c.html#abaebb23ddefa1ee787fffc4f59a28390',1,'sp-epsf.c']]],
   ['ury_249',['ury',['../structBBox.html#a5fe76c411e58300e8132bef60754075e',1,'BBox']]],
-  ['usage_250',['Usage',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md50',1,'']]],
-  ['usage_251',['Command line usage',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md51',1,'']]],
+  ['usage_250',['Usage',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md53',1,'']]],
+  ['usage_251',['Command line usage',['../dir_62b73c36930ec353b6d8214290be854d.html#autotoc_md54',1,'']]],
   ['usages_252',['Some signals and their usages',['../cact-main-window_8h.html#autotoc_md16',1,'']]],
   ['use_5fcustom_5fformat_253',['USE_CUSTOM_FORMAT',['../pluma-time-plugin_8c.html#acf6eb4923fc730fe2d1d4c03458495c9a74d36bdda6803fcde4e1391852e1607e',1,'pluma-time-plugin.c']]],
   ['use_5fcustom_5fradar_5furl_254',['use_custom_radar_url',['../struct__MateWeatherPrefs.html#aab2dd000028ca90b222da46649f3b0bb',1,'_MateWeatherPrefs']]],
@@ -314,5 +314,5 @@ var searchData=
   ['utc_5foffset_311',['utc_offset',['../structTzInfo.html#a845d91ab553e02eff81518ccd59031ce',1,'TzInfo']]],
   ['util_2ecpp_312',['util.cpp',['../util_8cpp.html',1,'']]],
   ['utility_2eh_313',['utility.h',['../utility_8h.html',1,'']]],
-  ['utils_314',['mate-utils',['../dir_0aa8c52ea4f578d5a621a065f8d80f07.html#autotoc_md60',1,'']]]
+  ['utils_314',['mate-utils',['../dir_0aa8c52ea4f578d5a621a065f8d80f07.html#autotoc_md63',1,'']]]
 ];
