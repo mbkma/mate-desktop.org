@@ -176,7 +176,7 @@ var searchData=
   ['mate_20text_20editor_173',['Pluma - The MATE text editor',['../dir_6ab8e7c6eb2d0c5a30071b11b6fbf711.html#autotoc_md85',1,'']]],
   ['mate_20utils_174',['mate-utils',['../dir_0aa8c52ea4f578d5a621a065f8d80f07.html#autotoc_md63',1,'']]],
   ['mate_20wayland_20session_175',['MATE WAYLAND SESSION',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md69',1,'📋 Details of MATE-WAYLAND-SESSION'],['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md66',1,'📦 Building MATE-WAYLAND-SESSION']]],
-  ['mate_20wayland_20session_176',['🚀 MATE Wayland Session',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
+  ['mate_20wayland_20session_20legacy_176',['🚀 MATE Wayland Session (legacy)',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
   ['mate_2dabout_2dme_2dfingerprint_2ec_177',['mate-about-me-fingerprint.c',['../mate-about-me-fingerprint_8c.html',1,'']]],
   ['mate_2dabout_2dme_2dfingerprint_2eh_178',['mate-about-me-fingerprint.h',['../mate-about-me-fingerprint_8h.html',1,'']]],
   ['mate_2dabout_2dme_2dpassword_2ec_179',['mate-about-me-password.c',['../mate-about-me-password_8c.html',1,'']]],

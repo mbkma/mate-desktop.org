@@ -3,7 +3,7 @@ var searchData=
   ['save_20without_20trailing_20spaces_20plugin_0',['Save Without Trailing Spaces Plugin',['../dir_e33dc8c30adcb4b3d71f88b19053dc60.html#autotoc_md84',1,'']]],
   ['see_20the_20other_20folders_20for_20better_20understanding_1',['This is the plugins directory for pluma. If you want to write a plugin, you have to put the plugin folder here. Each plugin folder must contain a README file having a brief description of the plugin. See the other folders for better understanding.',['../dir_bdb4a2277ff532f07550f9b2c1cb685b.html#autotoc_md79',1,'']]],
   ['session_2',['SESSION',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md69',1,'📋 Details of MATE-WAYLAND-SESSION'],['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md66',1,'📦 Building MATE-WAYLAND-SESSION']]],
-  ['session_3',['🚀 MATE Wayland Session',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
+  ['session_20legacy_3',['🚀 MATE Wayland Session (legacy)',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
   ['setting_20themes_20and_20fonts_4',['🔧 Setting Themes and Fonts',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md71',1,'']]],
   ['settings_20daemon_201_2029_201_20or_20later_20required_5',['📦 New: mate-settings-daemon 1.29.1 or later required',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md67',1,'']]],
   ['shrinking_20marco_6',['SHRINKING MARCO',['../dir_85494d9b725fda5504d36ae4fcf15916.html#autotoc_md39',1,'']]],

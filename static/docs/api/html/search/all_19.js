@@ -49,7 +49,7 @@ var searchData=
   ['watermark_5fimage_46',['watermark_image',['../struct__MateDruidPageEdge.html#acd1cac5d23664be531de390a6c701790',1,'_MateDruidPageEdge']]],
   ['wayfire_20configuration_20manager_20wcm_20recommended_47',['📂 Wayfire Configuration Manager (WCM) Recommended',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md74',1,'']]],
   ['wayland_20session_48',['WAYLAND SESSION',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md69',1,'📋 Details of MATE-WAYLAND-SESSION'],['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md66',1,'📦 Building MATE-WAYLAND-SESSION']]],
-  ['wayland_20session_49',['🚀 MATE Wayland Session',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
+  ['wayland_20session_20legacy_49',['🚀 MATE Wayland Session (legacy)',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
   ['wayland_2dscreenshot_2ec_50',['wayland-screenshot.c',['../wayland-screenshot_8c.html',1,'']]],
   ['wayland_2dscreenshot_2eh_51',['wayland-screenshot.h',['../wayland-screenshot_8h.html',1,'']]],
   ['wayland_2dselect_2dregion_2ec_52',['wayland-select-region.c',['../wayland-select-region_8c.html',1,'']]],

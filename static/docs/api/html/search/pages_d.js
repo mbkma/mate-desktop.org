@@ -14,7 +14,7 @@ var searchData=
   ['mate_20text_20editor_11',['Pluma - The MATE text editor',['../dir_6ab8e7c6eb2d0c5a30071b11b6fbf711.html#autotoc_md85',1,'']]],
   ['mate_20utils_12',['mate-utils',['../dir_0aa8c52ea4f578d5a621a065f8d80f07.html#autotoc_md63',1,'']]],
   ['mate_20wayland_20session_13',['MATE WAYLAND SESSION',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md69',1,'📋 Details of MATE-WAYLAND-SESSION'],['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md66',1,'📦 Building MATE-WAYLAND-SESSION']]],
-  ['mate_20wayland_20session_14',['🚀 MATE Wayland Session',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
+  ['mate_20wayland_20session_20legacy_14',['🚀 MATE Wayland Session (legacy)',['../dir_bc14f1ef754faa8bc4e16422f86fdfe7.html#autotoc_md65',1,'']]],
   ['matedruid_20is_15',['be prepended to the list. Since MateDruid is',['../will.html',1,'']]],
   ['menu_20item_16',['Adding a Menu Item',['../md__2home_2runner_2work_2mate-desktop_8org_2mate-src_2eom_2HACKING-PLUGINS.html#autotoc_md24',1,'']]],
   ['modelines_20plugin_17',['Modelines Plugin',['../dir_ba77a50ef831b9c40c8917db0d5025a2.html#autotoc_md78',1,'']]],
