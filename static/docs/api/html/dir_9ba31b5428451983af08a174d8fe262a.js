@@ -27,6 +27,8 @@ var dir_9ba31b5428451983af08a174d8fe262a =
     [ "mate-image-menu-item.h", "mate-image-menu-item_8h.html", "mate-image-menu-item_8h" ],
     [ "mate-languages.c", "mate-languages_8c.html", "mate-languages_8c" ],
     [ "mate-languages.h", "mate-languages_8h.html", "mate-languages_8h" ],
+    [ "mate-monitor-info.c", "mate-monitor-info_8c.html", "mate-monitor-info_8c" ],
+    [ "mate-monitor-info.h", "mate-monitor-info_8h.html", "mate-monitor-info_8h" ],
     [ "mate-rr-config.c", "mate-rr-config_8c.html", "mate-rr-config_8c" ],
     [ "mate-rr-config.h", "mate-rr-config_8h.html", "mate-rr-config_8h" ],
     [ "mate-rr-labeler.c", "mate-rr-labeler_8c.html", "mate-rr-labeler_8c" ],
@@ -41,5 +43,7 @@ var dir_9ba31b5428451983af08a174d8fe262a =
     [ "test-desktop-thumbnail.c", "test-desktop-thumbnail_8c.html", "test-desktop-thumbnail_8c" ],
     [ "test-ditem.c", "test-ditem_8c.html", "test-ditem_8c" ],
     [ "test-image-menu-item.c", "test-image-menu-item_8c.html", "test-image-menu-item_8c" ],
-    [ "test-languages.c", "test-languages_8c.html", "test-languages_8c" ]
+    [ "test-languages.c", "test-languages_8c.html", "test-languages_8c" ],
+    [ "test-monitor-info.c", "test-monitor-info_8c.html", "test-monitor-info_8c" ],
+    [ "test-monitor-migrate.c", "test-monitor-migrate_8c.html", "test-monitor-migrate_8c" ]
 ];

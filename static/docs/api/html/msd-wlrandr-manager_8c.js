@@ -8,15 +8,19 @@ var msd_wlrandr_manager_8c =
     [ "CONFIG_INTENDED_BASENAME", "msd-wlrandr-manager_8c.html#a60f73813c16e8d6e81df3d1f24751f95", null ],
     [ "CONFIRMATION_DIALOG_SECONDS", "msd-wlrandr-manager_8c.html#ac3a06cae24f2f4d385fbb73ccd98356e", null ],
     [ "HEAD_INFO_FORMAT", "msd-wlrandr-manager_8c.html#a4240f06e86bff2e93e9571eed91a467f", null ],
+    [ "HEAD_INFO_FORMAT_3", "msd-wlrandr-manager_8c.html#a4bac715143315f0f3235456c726ec1e4", null ],
     [ "HEAD_INFO_TYPE", "msd-wlrandr-manager_8c.html#a66bf08cc250d37e081340f4f10f61244", null ],
+    [ "HEAD_INFO_TYPE_3", "msd-wlrandr-manager_8c.html#a07834c83d0f353ba65c5ed2cbe9e98f4", null ],
     [ "HEAD_SET_FORMAT", "msd-wlrandr-manager_8c.html#a8dc536d4a94d09e8d187d1d5c763c508", null ],
     [ "HEAD_SET_TYPE", "msd-wlrandr-manager_8c.html#aeb605de94ee1da0502e9eb1a4399042b", null ],
+    [ "HEAD_SET_TYPE_3", "msd-wlrandr-manager_8c.html#aac870a861cd24f435f044586c15f0d2e", null ],
     [ "MATE_DESKTOP_USE_UNSTABLE_API", "msd-wlrandr-manager_8c.html#accf002c50d07fec7ddcaf35fde15c5e9", null ],
     [ "MODE_FORMAT", "msd-wlrandr-manager_8c.html#aba642093514494553fdc1643ce5f06d6", null ],
     [ "MSD_DBUS_NAME", "msd-wlrandr-manager_8c.html#af72cfb435d93be008bbe0c9e8828223e", null ],
     [ "MSD_DBUS_PATH", "msd-wlrandr-manager_8c.html#a8323d964618c6b24e7c3f2fdfef50955", null ],
     [ "MSD_WLRANDR_DBUS_NAME", "msd-wlrandr-manager_8c.html#a7ce59476a8e23d2f92324fc91f280ed4", null ],
     [ "MSD_WLRANDR_DBUS_NAME_2", "msd-wlrandr-manager_8c.html#af25851f068fd707595a0deea7445e738", null ],
+    [ "MSD_WLRANDR_DBUS_NAME_3", "msd-wlrandr-manager_8c.html#a9102299cb8f0ff2fff3eec039b287cc1", null ],
     [ "MSD_WLRANDR_DBUS_PATH", "msd-wlrandr-manager_8c.html#add55f28550360b0a7021dbbfda7ec36c", null ],
     [ "MSD_WLRANDR_DISPLAY_CAPPLET", "msd-wlrandr-manager_8c.html#a7dd0e3999c685e4bf6875743aea1cae4", null ],
     [ "MSD_WLRANDR_ICON_NAME", "msd-wlrandr-manager_8c.html#a05a5585f8d738ddddd0d12283561287b", null ],
@@ -35,6 +39,8 @@ var msd_wlrandr_manager_8c =
       [ "HEAD_INFO_FIELD_ADAPTIVE_SYNC", "msd-wlrandr-manager_8c.html#a7f5c1db2832707effc371ed3f0752bb6a385d61fcb33bffeeff5b7a1672b5a396", null ],
       [ "HEAD_INFO_FIELD_CURRENT_MODE", "msd-wlrandr-manager_8c.html#a7f5c1db2832707effc371ed3f0752bb6aaf0d0372ad3aff794887d7f960f32426", null ],
       [ "HEAD_INFO_FIELD_MODES", "msd-wlrandr-manager_8c.html#a7f5c1db2832707effc371ed3f0752bb6a2e21735e1e84370a7abba21a6024dc16", null ],
+      [ "HEAD_INFO_FIELD_ID", "msd-wlrandr-manager_8c.html#a7f5c1db2832707effc371ed3f0752bb6ab74f86ac3f10f47ac5a0246db38673d6", null ],
+      [ "HEAD_INFO_FIELD_PRIMARY", "msd-wlrandr-manager_8c.html#a7f5c1db2832707effc371ed3f0752bb6a77bc3804040b09118928132c21448feb", null ],
       [ "HEAD_INFO_N_FIELDS", "msd-wlrandr-manager_8c.html#a7f5c1db2832707effc371ed3f0752bb6a89372f08f0dfa9db8e283d376deb41b2", null ]
     ] ],
     [ "HeadSetField", "msd-wlrandr-manager_8c.html#ad662cca3e31df64eb4daff9ade3b5817", [
@@ -48,6 +54,7 @@ var msd_wlrandr_manager_8c =
       [ "HEAD_SET_FIELD_SCALE", "msd-wlrandr-manager_8c.html#ad662cca3e31df64eb4daff9ade3b5817a195736043876ae43339beb21a597d420", null ],
       [ "HEAD_SET_FIELD_TRANSFORM", "msd-wlrandr-manager_8c.html#ad662cca3e31df64eb4daff9ade3b5817a35e8cb09f00eaf83d6a0b7526be009a2", null ],
       [ "HEAD_SET_FIELD_ADAPTIVE_SYNC", "msd-wlrandr-manager_8c.html#ad662cca3e31df64eb4daff9ade3b5817a9d15532befbb777da89a676bbcc86002", null ],
+      [ "HEAD_SET_FIELD_PRIMARY", "msd-wlrandr-manager_8c.html#ad662cca3e31df64eb4daff9ade3b5817a6a8830c755868209192ab9840e31f7cf", null ],
       [ "HEAD_SET_N_FIELDS", "msd-wlrandr-manager_8c.html#ad662cca3e31df64eb4daff9ade3b5817af257b148b761784447d3dc0feb0e2b2d", null ]
     ] ],
     [ "ModeField", "msd-wlrandr-manager_8c.html#ae3a3ab74a9b2a1a3452a326982b39980", [

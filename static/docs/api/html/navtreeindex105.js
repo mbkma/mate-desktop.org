@@ -1,5 +1,14 @@
 var NAVTREEINDEX105 =
 {
+"mate-indicator-applet_2src_2eggaccelerators_8c.html#a42911acc1fbb8cd990f53ccc4696e092":[14,0,0,17,0,1,4],
+"mate-indicator-applet_2src_2eggaccelerators_8c.html#a795fa18a412ceb20ad705be8851264b5":[14,0,0,17,0,1,3],
+"mate-indicator-applet_2src_2eggaccelerators_8c.html#a942b687075d177865744a475f9f401f4":[14,0,0,17,0,1,1],
+"mate-indicator-applet_2src_2eggaccelerators_8c_source.html":[14,0,0,17,0,1],
+"mate-indicator-applet_2src_2eggaccelerators_8h.html":[14,0,0,17,0,2],
+"mate-indicator-applet_2src_2eggaccelerators_8h.html#a42911acc1fbb8cd990f53ccc4696e092":[14,0,0,17,0,2,3],
+"mate-indicator-applet_2src_2eggaccelerators_8h.html#a795fa18a412ceb20ad705be8851264b5":[14,0,0,17,0,2,2],
+"mate-indicator-applet_2src_2eggaccelerators_8h.html#a942b687075d177865744a475f9f401f4":[14,0,0,17,0,2,1],
+"mate-indicator-applet_2src_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747":[14,0,0,17,0,2,0],
 "mate-indicator-applet_2src_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747a09c79d1d75f02c2d7fe8d0d6a9735d16":[14,0,0,17,0,2,0,4],
 "mate-indicator-applet_2src_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747a11b3f43db6be075cb883e8603128e63a":[14,0,0,17,0,2,0,9],
 "mate-indicator-applet_2src_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747a1d3e3d7e8d094df4dc5519714a082d24":[14,0,0,17,0,2,0,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX105 =
 "mate-mdi-child_8h.html#a248feeead4ca46e5380903245e9aea31":[14,0,0,9,2,52,15],
 "mate-mdi-child_8h.html#a27b4d49b77f9fab52bbc56d2f953d9d8":[14,0,0,9,2,52,13],
 "mate-mdi-child_8h.html#a2c2a4e9c99cfe99eab621056604ae488":[14,0,0,9,2,52,12],
-"mate-mdi-child_8h.html#a35aa352f7bd3d546d2d44ab808c3196c":[14,0,0,9,2,52,11],
-"mate-mdi-child_8h.html#a43c9d3a147e328598ed127ed195ff4f8":[14,0,0,9,2,52,7],
-"mate-mdi-child_8h.html#a540cdf8000781c65bd7290a407ae9b1b":[14,0,0,9,2,52,2],
-"mate-mdi-child_8h.html#a88f4311df806ca49cf7bd416a04b25b0":[14,0,0,9,2,52,6],
-"mate-mdi-child_8h.html#a901c24d9aee37f6fdafdf0cfd267d0d8":[14,0,0,9,2,52,5],
-"mate-mdi-child_8h.html#a90e0d90f5ad8d16f02126b78bc6428d0":[14,0,0,9,2,52,16],
-"mate-mdi-child_8h.html#abfb2a211b34f094fabeeb69d662df10b":[14,0,0,9,2,52,9],
-"mate-mdi-child_8h.html#ac370b793992b2d96edd51798e2ae5f0e":[14,0,0,9,2,52,17],
-"mate-mdi-child_8h.html#ad54bccfc56fa0622219c2a559d29e205":[14,0,0,9,2,52,8],
-"mate-mdi-child_8h.html#ae244c79ff466d18d7c8ae7174c632c06":[14,0,0,9,2,52,4]
+"mate-mdi-child_8h.html#a35aa352f7bd3d546d2d44ab808c3196c":[14,0,0,9,2,52,11]
 };

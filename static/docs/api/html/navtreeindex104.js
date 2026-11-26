@@ -1,5 +1,14 @@
 var NAVTREEINDEX104 =
 {
+"mate-icon-item_8h.html#a169f3754682d7bca14191c6eff2a74fe":[14,0,0,9,2,39,4],
+"mate-icon-item_8h.html#a1aee2e0192604936339dfc611f1598fb":[14,0,0,9,2,39,15],
+"mate-icon-item_8h.html#a1d6aa387e56cf236544f1ebe85f4a88b":[14,0,0,9,2,39,8],
+"mate-icon-item_8h.html#a1e120647de3eadcdab0edd711a47dd20":[14,0,0,9,2,39,9],
+"mate-icon-item_8h.html#a27449159c133b816aae338ef6c2fe644":[14,0,0,9,2,39,7],
+"mate-icon-item_8h.html#a48ee555dd83d9848929186b67f61ecaa":[14,0,0,9,2,39,19],
+"mate-icon-item_8h.html#a59e1709ed0b4a3e28faaf1370241e34a":[14,0,0,9,2,39,17],
+"mate-icon-item_8h.html#a5b5680f0a510e4194d7ceb7d263320f6":[14,0,0,9,2,39,14],
+"mate-icon-item_8h.html#a71fa74870bd2d40b809403914e823574":[14,0,0,9,2,39,6],
 "mate-icon-item_8h.html#a72aef7a33f49a68f23041d1c6a07df25":[14,0,0,9,2,39,2],
 "mate-icon-item_8h.html#a7923c913015add2dab42c39ffe4677a7":[14,0,0,9,2,39,12],
 "mate-icon-item_8h.html#a96b0e30aac7bbe6bbfabd5b49d28b064":[14,0,0,9,2,39,5],
@@ -240,14 +249,5 @@ var NAVTREEINDEX104 =
 "mate-indicator-applet_2src_2applet-main_8c_source.html":[14,0,0,17,0,0],
 "mate-indicator-applet_2src_2eggaccelerators_8c.html":[14,0,0,17,0,1],
 "mate-indicator-applet_2src_2eggaccelerators_8c.html#a2ade0fd1a9f7c3f9431c791668ae1359":[14,0,0,17,0,1,0],
-"mate-indicator-applet_2src_2eggaccelerators_8c.html#a3ea9e23a699e27248095711cb262cc15":[14,0,0,17,0,1,2],
-"mate-indicator-applet_2src_2eggaccelerators_8c.html#a42911acc1fbb8cd990f53ccc4696e092":[14,0,0,17,0,1,4],
-"mate-indicator-applet_2src_2eggaccelerators_8c.html#a795fa18a412ceb20ad705be8851264b5":[14,0,0,17,0,1,3],
-"mate-indicator-applet_2src_2eggaccelerators_8c.html#a942b687075d177865744a475f9f401f4":[14,0,0,17,0,1,1],
-"mate-indicator-applet_2src_2eggaccelerators_8c_source.html":[14,0,0,17,0,1],
-"mate-indicator-applet_2src_2eggaccelerators_8h.html":[14,0,0,17,0,2],
-"mate-indicator-applet_2src_2eggaccelerators_8h.html#a42911acc1fbb8cd990f53ccc4696e092":[14,0,0,17,0,2,3],
-"mate-indicator-applet_2src_2eggaccelerators_8h.html#a795fa18a412ceb20ad705be8851264b5":[14,0,0,17,0,2,2],
-"mate-indicator-applet_2src_2eggaccelerators_8h.html#a942b687075d177865744a475f9f401f4":[14,0,0,17,0,2,1],
-"mate-indicator-applet_2src_2eggaccelerators_8h.html#a94da4777c4befa64192ea0bbeaa83747":[14,0,0,17,0,2,0]
+"mate-indicator-applet_2src_2eggaccelerators_8c.html#a3ea9e23a699e27248095711cb262cc15":[14,0,0,17,0,1,2]
 };

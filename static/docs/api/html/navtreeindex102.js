@@ -1,5 +1,14 @@
 var NAVTREEINDEX102 =
 {
+"mate-desktop-thumbnail_8h.html":[14,0,0,15,0,16],
+"mate-desktop-thumbnail_8h.html#a00ba82a5807d743bc572ed85f4350a94":[14,0,0,15,0,16,15],
+"mate-desktop-thumbnail_8h.html#a09fb267e5a47d2062f85eebe620d9476":[14,0,0,15,0,16,2],
+"mate-desktop-thumbnail_8h.html#a1dfe0c4b684eb0ed6ea911a1f7020bd5":[14,0,0,15,0,16,5],
+"mate-desktop-thumbnail_8h.html#a236393f3d80c3cfe671f20d66c679fbd":[14,0,0,15,0,16,11],
+"mate-desktop-thumbnail_8h.html#a36bf0f1fae59450fd914de5a813a7140":[14,0,0,15,0,16,20],
+"mate-desktop-thumbnail_8h.html#a3748c10ae1d8bbfbebb5bf346502a14d":[14,0,0,15,0,16,18],
+"mate-desktop-thumbnail_8h.html#a4d4584c3fe699ca7c9ba028627be0977":[14,0,0,15,0,16,3],
+"mate-desktop-thumbnail_8h.html#a53383b37fa35d5fd161adf68aa332435":[14,0,0,15,0,16,21],
 "mate-desktop-thumbnail_8h.html#a5482b656ec8c0e5a17b242f2e25749e9":[14,0,0,15,0,16,19],
 "mate-desktop-thumbnail_8h.html#a747725e14c5607034fec7142445c98f8":[14,0,0,15,0,16,4],
 "mate-desktop-thumbnail_8h.html#a76302cd62427b0ed88d0398c0b296bfa":[14,0,0,15,0,16,16],
@@ -31,9 +40,9 @@ var NAVTREEINDEX102 =
 "mate-desktop-utils_8h.html#a7a69a459e3ca64b6dc6b47fc41abaaf9":[14,0,0,15,0,18,1],
 "mate-desktop-utils_8h.html#a7a81b839d6202d1b6a166e3504c2e5d0":[14,0,0,15,0,18,3],
 "mate-desktop-utils_8h_source.html":[14,0,0,15,0,18],
-"mate-desktop_2libmate-desktop_2private_8h.html":[14,0,0,15,0,37],
-"mate-desktop_2libmate-desktop_2private_8h.html#a0e2e10c62062d4489865ec8c6e482037":[14,0,0,15,0,37,0],
-"mate-desktop_2libmate-desktop_2private_8h_source.html":[14,0,0,15,0,37],
+"mate-desktop_2libmate-desktop_2private_8h.html":[14,0,0,15,0,39],
+"mate-desktop_2libmate-desktop_2private_8h.html#a0e2e10c62062d4489865ec8c6e482037":[14,0,0,15,0,39,0],
+"mate-desktop_2libmate-desktop_2private_8h_source.html":[14,0,0,15,0,39],
 "mate-dialog-util_8c.html":[14,0,0,9,2,18],
 "mate-dialog-util_8c.html#a019ac4b9f91a90637ff0ab420e5a6271":[14,0,0,9,2,18,8],
 "mate-dialog-util_8c.html#a33012df6b3d3a1cfbac95dc2cc42f3e5":[14,0,0,9,2,18,16],
@@ -240,14 +249,5 @@ var NAVTREEINDEX102 =
 "mate-druid-page-standard_8h.html#ae5342898820022b5c0d9f1ab1972a115":[14,0,0,9,2,25,3],
 "mate-druid-page-standard_8h.html#ae6db495a6321406b04b13f0f77592f58":[14,0,0,9,2,25,23],
 "mate-druid-page-standard_8h.html#af8f37e24c09a88b50dc3d22217a2d46e":[14,0,0,9,2,25,14],
-"mate-druid-page-standard_8h_source.html":[14,0,0,9,2,25],
-"mate-druid-page_8c.html":[14,0,0,9,2,26],
-"mate-druid-page_8c.html#a088e13cf10922255f1ca0615e6926ce1":[14,0,0,9,2,26,5],
-"mate-druid-page_8c.html#a2b677b0f62f66e37f2e92045c7a29017":[14,0,0,9,2,26,1],
-"mate-druid-page_8c.html#a2c72f179dcaa4877f722b200ab10baa1":[14,0,0,9,2,26,0],
-"mate-druid-page_8c.html#a3845816ca5b1f741b08a15b2b47e1c57":[14,0,0,9,2,26,6],
-"mate-druid-page_8c.html#a52cd8d9cc376e5c7cd1019fbe966e2b6":[14,0,0,9,2,26,3],
-"mate-druid-page_8c.html#a7468244815d1cee3606b94b9bca1fa6b":[14,0,0,9,2,26,4],
-"mate-druid-page_8c.html#ab0b1f7c342e77b47018d30a4cb86d8a2":[14,0,0,9,2,26,2],
-"mate-druid-page_8c_source.html":[14,0,0,9,2,26]
+"mate-druid-page-standard_8h_source.html":[14,0,0,9,2,25]
 };
