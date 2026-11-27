@@ -51,6 +51,7 @@ var structCajaIconContainerDetails =
     [ "original_text", "structCajaIconContainerDetails.html#a1df89078f64fd7938ccf8a99e8aae8c6", null ],
     [ "pending_icon_to_rename", "structCajaIconContainerDetails.html#ab383f97c34a366ccd7882e35a877727d", null ],
     [ "pending_icon_to_reveal", "structCajaIconContainerDetails.html#a777f9fd6f555bdda0c5376c57f964d20", null ],
+    [ "position_change_automatic", "structCajaIconContainerDetails.html#a087a8c4a9f0c854ec347b471e04f1a56", null ],
     [ "range_selection_base_icon", "structCajaIconContainerDetails.html#a63a40d63e678e37d67fee6dc26e45d61", null ],
     [ "rename_widget", "structCajaIconContainerDetails.html#ae7ff78c68065b0ecdfa584f7b8cf3fd6", null ],
     [ "renaming", "structCajaIconContainerDetails.html#a4b700e9b1844ee49cdc69167ef497a18", null ],

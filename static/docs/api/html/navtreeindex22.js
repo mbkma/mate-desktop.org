@@ -1,5 +1,15 @@
 var NAVTREEINDEX22 =
 {
+"caja-icon-info_8c.html#a7ba6f6d8dffee3f9119884189a9bdfc6":[14,0,0,1,2,71,26],
+"caja-icon-info_8c.html#a82a435e21043e2e00a6c287c61c861d3":[14,0,0,1,2,71,13],
+"caja-icon-info_8c.html#a865cdde0afb5307066b4d0a3ca0c27d1":[14,0,0,1,2,71,16],
+"caja-icon-info_8c.html#a93922f58661b21c3c99b0715078509ac":[14,0,0,1,2,71,5],
+"caja-icon-info_8c.html#a957f7172dc191660a3ba164ee726d557":[14,0,0,1,2,71,27],
+"caja-icon-info_8c.html#a9e13017857c093ae4a03adda2ad3e93a":[14,0,0,1,2,71,17],
+"caja-icon-info_8c.html#aa0d38adf9ff5cd72eb4a9e7f0be1e7fd":[14,0,0,1,2,71,24],
+"caja-icon-info_8c.html#aa2ce66198e66e98bb5e475dd8c22a8bd":[14,0,0,1,2,71,14],
+"caja-icon-info_8c.html#ab223412593dc67562c48c6a94425a4fd":[14,0,0,1,2,71,10],
+"caja-icon-info_8c.html#abaeb95e3dfe77b3c23ab48659f134d6f":[14,0,0,1,2,71,28],
 "caja-icon-info_8c.html#abb7a4405529076ac93f4ead838240df8":[14,0,0,1,2,71,15],
 "caja-icon-info_8c.html#ac1613bf950cc37347e57e0e3b172f3e6":[14,0,0,1,2,71,23],
 "caja-icon-info_8c.html#ac6a5659e5ee3ac90e648dbecef3a9609":[14,0,0,1,2,71,22],
@@ -239,15 +249,5 @@ var NAVTREEINDEX22 =
 "caja-link_8c_source.html":[14,0,0,1,2,79],
 "caja-link_8h.html":[14,0,0,1,2,80],
 "caja-link_8h.html#a42d05fb1d5e8fa13bc350fdf88d6ba1d":[14,0,0,1,2,80,0],
-"caja-link_8h.html#a5055f7210f2a36e70a933cb46803d9d6":[14,0,0,1,2,80,2],
-"caja-link_8h.html#a6d8876f092fc5b8fae3407a553fe45bd":[14,0,0,1,2,80,3],
-"caja-link_8h.html#a858dfa6f0d0acf127e609a521a34e531":[14,0,0,1,2,80,4],
-"caja-link_8h.html#aa4d1e6cdac29d9efb4a74094326a3cbf":[14,0,0,1,2,80,5],
-"caja-link_8h.html#ac4286f55ac39134222ad3322921c3625":[14,0,0,1,2,80,6],
-"caja-link_8h.html#aee4d6196d26f03e07c2619f58c2e923d":[14,0,0,1,2,80,1],
-"caja-link_8h_source.html":[14,0,0,1,2,80],
-"caja-location-bar_8c.html":[14,0,0,1,3,32],
-"caja-location-bar_8c.html#a10ba56108ef28496b857994c6b03faf5":[14,0,0,1,3,32,1],
-"caja-location-bar_8c.html#a30fb0f6e372dabceeb4a2593061e4994":[14,0,0,1,3,32,5],
-"caja-location-bar_8c.html#a4cb960b324ef039ca6aac93597892b2b":[14,0,0,1,3,32,4]
+"caja-link_8h.html#a5055f7210f2a36e70a933cb46803d9d6":[14,0,0,1,2,80,2]
 };

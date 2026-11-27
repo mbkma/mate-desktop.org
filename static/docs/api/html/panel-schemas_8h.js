@@ -69,6 +69,7 @@ var panel_schemas_8h =
     [ "PANEL_TOPLEVEL_EXPAND_KEY", "panel-schemas_8h.html#ab69eb83e10cdf1e94c25479dd04fba4c", null ],
     [ "PANEL_TOPLEVEL_HIDE_DELAY_KEY", "panel-schemas_8h.html#a18765046a1bd00f932f260bdcc482dfb", null ],
     [ "PANEL_TOPLEVEL_ID_LIST_KEY", "panel-schemas_8h.html#a8999aec25e4b7be756548791ad48b4fb", null ],
+    [ "PANEL_TOPLEVEL_MONITOR_ID_KEY", "panel-schemas_8h.html#ab33e4c767837b623a495e81fe91aeaa9", null ],
     [ "PANEL_TOPLEVEL_MONITOR_KEY", "panel-schemas_8h.html#a83bda957f1f705f5269b5e5cf9e1c38a", null ],
     [ "PANEL_TOPLEVEL_NAME_KEY", "panel-schemas_8h.html#a793a695367c8c5a58a475a63c25d2a76", null ],
     [ "PANEL_TOPLEVEL_ORIENTATION_KEY", "panel-schemas_8h.html#a8c9eee06f86b2f96af3c81c81a497653", null ],

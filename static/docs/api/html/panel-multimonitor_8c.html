@@ -99,7 +99,7 @@ $(function(){initNavTree('panel-multimonitor_8c.html','',''); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for panel-multimonitor.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="panel-multimonitor_8c__incl.svg" width="528" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="panel-multimonitor_8c__incl.svg" width="526" height="266"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="panel-multimonitor_8c_source.html">Go to the source code of this file.</a></p>
@@ -121,6 +121,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a28c36045e9656c730a1994fb55c02b3c" id="r_a28c36045e9656c730a1994fb55c02b3c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28c36045e9656c730a1994fb55c02b3c">panel_multimonitor_get_monitor_at_point</a> (int x, int y)</td></tr>
 <tr class="memitem:a3fdd804b2c0122d1a9c687be871550eb" id="r_a3fdd804b2c0122d1a9c687be871550eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fdd804b2c0122d1a9c687be871550eb">panel_multimonitor_is_at_visible_extreme</a> (int n_monitor, gboolean *leftmost, gboolean *rightmost, gboolean *topmost, gboolean *bottommost)</td></tr>
 <tr class="memitem:a61220572f9fdad10ed74a5586635cc00" id="r_a61220572f9fdad10ed74a5586635cc00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61220572f9fdad10ed74a5586635cc00">panel_multimonitor_get_bounds</a> (GdkPoint *min, GdkPoint *max)</td></tr>
+<tr class="memitem:a2372e73f1af301135918ded0d740a782" id="r_a2372e73f1af301135918ded0d740a782"><td class="memItemLeft" align="right" valign="top">GdkMonitor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2372e73f1af301135918ded0d740a782">panel_multimonitor_get_gdk_monitor</a> (int monitor)</td></tr>
+<tr class="memitem:abcb623243e3d608770590e58315cb56a" id="r_abcb623243e3d608770590e58315cb56a"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb623243e3d608770590e58315cb56a">panel_multimonitor_has_monitor_ids</a> (void)</td></tr>
+<tr class="memitem:ab98dffd36ec0410acd48cce67d4b2efd" id="r_ab98dffd36ec0410acd48cce67d4b2efd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPanelMonitorEntry.html">PanelMonitorEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab98dffd36ec0410acd48cce67d4b2efd">panel_multimonitor_get_entries</a> (int *n_entries)</td></tr>
+<tr class="memitem:a4d50783c1b2641e440f40472221d2d71" id="r_a4d50783c1b2641e440f40472221d2d71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d50783c1b2641e440f40472221d2d71">panel_multimonitor_get_primary</a> (void)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="a59ad01704f8b88ba9fac520818f2b921" name="a59ad01704f8b88ba9fac520818f2b921"></a>
@@ -140,6 +144,8 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">!(G_TYPE_CHECK_INSTANCE_TYPE ((<span class="keywordtype">object</span>), GDK_TYPE_WAYLAND_DISPLAY))</div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00038">38</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="panel-multimonitor_8c_source.html#l00789">panel_multimonitor_has_monitor_ids()</a>.</p>
 
 </div>
 </div>
@@ -163,9 +169,55 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00684">684</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00726">726</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 <p class="reference">References <a class="el" href="jpegint-8a_8h_source.html#l00262">MAX</a>, and <a class="el" href="jpegint-8a_8h_source.html#l00264">MIN</a>.</p>
+
+</div>
+</div>
+<a id="ab98dffd36ec0410acd48cce67d4b2efd" name="ab98dffd36ec0410acd48cce67d4b2efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98dffd36ec0410acd48cce67d4b2efd">&#9670;&#160;</a></span>panel_multimonitor_get_entries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structPanelMonitorEntry.html">PanelMonitorEntry</a> * panel_multimonitor_get_entries </td>
+          <td>(</td>
+          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>n_entries</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00800">800</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+
+<p class="reference">References <a class="el" href="mate-monitor-info_8c_source.html#l00381">mate_monitor_info_get_for_display()</a>, <a class="el" href="mate-monitor-info_8c_source.html#l00537">mate_monitor_info_get_id()</a>, <a class="el" href="jpegint-8a_8h_source.html#l00262">MAX</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="panel-multimonitor_8c_source.html#l00789">panel_multimonitor_has_monitor_ids()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="panel-toplevel_8c_source.html#l05727">panel_toplevel_adopt_monitor_index()</a>.</p>
+
+</div>
+</div>
+<a id="a2372e73f1af301135918ded0d740a782" name="a2372e73f1af301135918ded0d740a782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2372e73f1af301135918ded0d740a782">&#9670;&#160;</a></span>panel_multimonitor_get_gdk_monitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GdkMonitor * panel_multimonitor_get_gdk_monitor </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>monitor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00772">772</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+
+<p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="mate-panel_2wayland-backend_8c_source.html#l00159">wayland_panel_toplevel_update_placement()</a>.</p>
 
 </div>
 </div>
@@ -188,7 +240,53 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00582">582</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00624">624</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+
+</div>
+</div>
+<a id="a4d50783c1b2641e440f40472221d2d71" name="a4d50783c1b2641e440f40472221d2d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d50783c1b2641e440f40472221d2d71">&#9670;&#160;</a></span>panel_multimonitor_get_primary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int panel_multimonitor_get_primary </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00828">828</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+
+<p class="reference">References <a class="el" href="mate-monitor-info_8c_source.html#l00381">mate_monitor_info_get_for_display()</a>, and <a class="el" href="mate-monitor-info_8c_source.html#l00598">mate_monitor_info_is_primary()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="panel-toplevel_8c_source.html#l05727">panel_toplevel_adopt_monitor_index()</a>.</p>
+
+</div>
+</div>
+<a id="abcb623243e3d608770590e58315cb56a" name="abcb623243e3d608770590e58315cb56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb623243e3d608770590e58315cb56a">&#9670;&#160;</a></span>panel_multimonitor_has_monitor_ids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean panel_multimonitor_has_monitor_ids </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00789">789</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="panel-multimonitor_8c_source.html#l00038">GDK_IS_X11_DISPLAY</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="panel-multimonitor_8c_source.html#l00800">panel_multimonitor_get_entries()</a>, <a class="el" href="panel-multimonitor_8c_source.html#l00475">panel_multimonitor_init()</a>, <a class="el" href="panel-toplevel_8c_source.html#l05727">panel_toplevel_adopt_monitor_index()</a>, and <a class="el" href="panel-toplevel_8c_source.html#l05755">panel_toplevel_set_monitor()</a>.</p>
 
 </div>
 </div>
@@ -207,7 +305,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00546">546</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00588">588</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 </div>
 </div>
@@ -226,11 +324,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00446">446</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00475">475</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="mate-monitor-info_8c_source.html#l00381">mate_monitor_info_get_for_display()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="panel-multimonitor_8c_source.html#l00789">panel_multimonitor_has_monitor_ids()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mate-panel_2mate-panel_2main_8c_source.html#l00075">main()</a>, and <a class="el" href="panel-multimonitor_8c_source.html#l00500">panel_multimonitor_reinit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mate-panel_2mate-panel_2main_8c_source.html#l00075">main()</a>, and <a class="el" href="panel-multimonitor_8c_source.html#l00542">panel_multimonitor_reinit()</a>.</p>
 
 </div>
 </div>
@@ -268,7 +366,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00636">636</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00678">678</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -291,7 +389,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00553">553</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00595">595</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -312,9 +410,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00519">519</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00561">561</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="panel-toplevel_8c_source.html#l05661">panel_toplevel_set_monitor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="panel-toplevel_8c_source.html#l05727">panel_toplevel_adopt_monitor_index()</a>, and <a class="el" href="panel-toplevel_8c_source.html#l05755">panel_toplevel_set_monitor()</a>.</p>
 
 </div>
 </div>
@@ -333,9 +431,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00500">500</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00542">542</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="panel-multimonitor_8c_source.html#l00446">panel_multimonitor_init()</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="panel-multimonitor_8c_source.html#l00475">panel_multimonitor_init()</a>.</p>
 
 </div>
 </div>
@@ -354,7 +452,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00539">539</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00581">581</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 </div>
 </div>
@@ -373,7 +471,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00525">525</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00567">567</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 </div>
 </div>
@@ -392,7 +490,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00532">532</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="panel-multimonitor_8c_source.html#l00574">574</a> of file <a class="el" href="panel-multimonitor_8c_source.html">panel-multimonitor.c</a>.</p>
 
 </div>
 </div>

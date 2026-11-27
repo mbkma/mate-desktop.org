@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"caja-search-directory_8h.html#a20bec99986f1d23705abc4f5bff46823":[14,0,0,1,2,106,14],
+"caja-search-directory_8h.html#a34e54582455048a97645dde6eb7618b7":[14,0,0,1,2,106,17],
+"caja-search-directory_8h.html#a3eda05cc57a77ec59379ffc0244dd643":[14,0,0,1,2,106,8],
+"caja-search-directory_8h.html#a3f1fe79c15d520348a8ede9b33eae4db":[14,0,0,1,2,106,19],
+"caja-search-directory_8h.html#a4302e25a14054d0680b1aeef9c1aaeff":[14,0,0,1,2,106,16],
+"caja-search-directory_8h.html#a5fffe536cdc111e19c08ed30173cd556":[14,0,0,1,2,106,15],
+"caja-search-directory_8h.html#a6720af4a57b3ce5836300d0ead6932fa":[14,0,0,1,2,106,7],
+"caja-search-directory_8h.html#a703b6bcc31c193ef76297e347895a0fd":[14,0,0,1,2,106,5],
+"caja-search-directory_8h.html#a7dfde9b8b78e7633b2d334b2c83fdbe6":[14,0,0,1,2,106,10],
+"caja-search-directory_8h.html#a97874a6a016117d325e9910563f76c61":[14,0,0,1,2,106,6],
 "caja-search-directory_8h.html#aa821f814b9e08b44240f11bf0fe98517":[14,0,0,1,2,106,9],
 "caja-search-directory_8h.html#aaceade4e52493c49b4e1b3b9229e16dd":[14,0,0,1,2,106,3],
 "caja-search-directory_8h.html#aae1e8676c4d8b0494929d73f960c61c3":[14,0,0,1,2,106,18],
@@ -239,15 +249,5 @@ var NAVTREEINDEX27 =
 "caja-sidebar-provider_8h.html#ac160eff195c4ca60168c2c5f58a863e3":[14,0,0,1,2,116,3],
 "caja-sidebar-provider_8h.html#aed6f65c32532a793575a132d8037c279":[14,0,0,1,2,116,9],
 "caja-sidebar-provider_8h.html#af7fe2de05eec69f3afe0aad78d6e5293":[14,0,0,1,2,116,7],
-"caja-sidebar-provider_8h_source.html":[14,0,0,1,2,116],
-"caja-sidebar-title_8c.html":[14,0,0,1,3,66],
-"caja-sidebar-title_8c.html#a11336d18b1d7566bd66bc7c816466249":[14,0,0,1,3,66,5],
-"caja-sidebar-title_8c.html#a18fcb8093b8edd3953ecf9879359aa65":[14,0,0,1,3,66,1],
-"caja-sidebar-title_8c.html#a3ccd2cbd6af47f3538649bce1663cfad":[14,0,0,1,3,66,11],
-"caja-sidebar-title_8c.html#a3e349ad084c776bc495ac7d15fa3d231":[14,0,0,1,3,66,6],
-"caja-sidebar-title_8c.html#a4cf1aef9b3a5e54bd9bcca2987fba4fe":[14,0,0,1,3,66,0],
-"caja-sidebar-title_8c.html#a5293eeb516415b65be09518811d01259":[14,0,0,1,3,66,4],
-"caja-sidebar-title_8c.html#a7244587b194deacd490806f3e5e2437e":[14,0,0,1,3,66,2],
-"caja-sidebar-title_8c.html#a7749a9d153a748008226d0d1b9b8d8e2":[14,0,0,1,3,66,12],
-"caja-sidebar-title_8c.html#aa5b8edad3247233d265fe13a021dae8a":[14,0,0,1,3,66,8]
+"caja-sidebar-provider_8h_source.html":[14,0,0,1,2,116]
 };

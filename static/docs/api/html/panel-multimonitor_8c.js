@@ -2,7 +2,11 @@ var panel_multimonitor_8c =
 [
     [ "GDK_IS_X11_DISPLAY", "panel-multimonitor_8c.html#a59ad01704f8b88ba9fac520818f2b921", null ],
     [ "panel_multimonitor_get_bounds", "panel-multimonitor_8c.html#a61220572f9fdad10ed74a5586635cc00", null ],
+    [ "panel_multimonitor_get_entries", "panel-multimonitor_8c.html#ab98dffd36ec0410acd48cce67d4b2efd", null ],
+    [ "panel_multimonitor_get_gdk_monitor", "panel-multimonitor_8c.html#a2372e73f1af301135918ded0d740a782", null ],
     [ "panel_multimonitor_get_monitor_at_point", "panel-multimonitor_8c.html#a28c36045e9656c730a1994fb55c02b3c", null ],
+    [ "panel_multimonitor_get_primary", "panel-multimonitor_8c.html#a4d50783c1b2641e440f40472221d2d71", null ],
+    [ "panel_multimonitor_has_monitor_ids", "panel-multimonitor_8c.html#abcb623243e3d608770590e58315cb56a", null ],
     [ "panel_multimonitor_height", "panel-multimonitor_8c.html#a6624592c02d6413ea2749dc8bf0fc02e", null ],
     [ "panel_multimonitor_init", "panel-multimonitor_8c.html#a1b6676343f57e54fb8fe123bff2127ba", null ],
     [ "panel_multimonitor_is_at_visible_extreme", "panel-multimonitor_8c.html#a3fdd804b2c0122d1a9c687be871550eb", null ],

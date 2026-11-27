@@ -93,6 +93,7 @@ $(function(){initNavTree('caja-directory-background_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;config.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mate-bg_8h_source.html">libmate-desktop/mate-bg.h</a>&gt;</code><br />
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="eel-gdk-extensions_8h_source.html">eel/eel-gdk-extensions.h</a>&gt;</code><br />
@@ -111,11 +112,32 @@ Include dependency graph for caja-directory-background.c:</div>
 </div>
 <p><a href="caja-directory-background_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:accf002c50d07fec7ddcaf35fde15c5e9" id="r_accf002c50d07fec7ddcaf35fde15c5e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf002c50d07fec7ddcaf35fde15c5e9">MATE_DESKTOP_USE_UNSTABLE_API</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a77411b6e208dbef43219b7ae837164a4" id="r_a77411b6e208dbef43219b7ae837164a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77411b6e208dbef43219b7ae837164a4">caja_connect_background_to_file_metadata</a> (GtkWidget *widget, <a class="el" href="structCajaFile.html">CajaFile</a> *file, GdkDragAction default_drag_action)</td></tr>
 <tr class="memitem:a7a8984f767f2c497bad50a25c2957612" id="r_a7a8984f767f2c497bad50a25c2957612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a8984f767f2c497bad50a25c2957612">caja_connect_desktop_background_to_settings</a> (<a class="el" href="structCajaIconContainer.html">CajaIconContainer</a> *icon_container)</td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="accf002c50d07fec7ddcaf35fde15c5e9" name="accf002c50d07fec7ddcaf35fde15c5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf002c50d07fec7ddcaf35fde15c5e9">&#9670;&#160;</a></span>MATE_DESKTOP_USE_UNSTABLE_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATE_DESKTOP_USE_UNSTABLE_API</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="caja-directory-background_8c_source.html#l00032">32</a> of file <a class="el" href="caja-directory-background_8c_source.html">caja-directory-background.c</a>.</p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a77411b6e208dbef43219b7ae837164a4" name="a77411b6e208dbef43219b7ae837164a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77411b6e208dbef43219b7ae837164a4">&#9670;&#160;</a></span>caja_connect_background_to_file_metadata()</h2>
@@ -141,9 +163,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-directory-background_8c_source.html#l00235">235</a> of file <a class="el" href="caja-directory-background_8c_source.html">caja-directory-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-directory-background_8c_source.html#l00238">238</a> of file <a class="el" href="caja-directory-background_8c_source.html">caja-directory-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-file-attributes_8h_source.html#l00034">CAJA_FILE_ATTRIBUTE_INFO</a>, <a class="el" href="caja-file_8c_source.html#l04151">caja_file_monitor_add()</a>, <a class="el" href="caja-file_8c_source.html#l04164">caja_file_monitor_remove()</a>, <a class="el" href="caja-file_8c_source.html#l00850">caja_file_ref()</a>, <a class="el" href="caja-file_8c_source.html#l00865">caja_file_unref()</a>, <a class="el" href="caja-file_8h_source.html#l00052">CAJA_IS_FILE</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00038">caja_preferences</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00038">CAJA_PREFERENCES_BACKGROUND_COLOR</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00037">CAJA_PREFERENCES_BACKGROUND_SET</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00039">CAJA_PREFERENCES_BACKGROUND_URI</a>, <a class="el" href="eel-background_8c_source.html#l00751">eel_get_widget_background()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="caja-file-attributes_8h_source.html#l00034">CAJA_FILE_ATTRIBUTE_INFO</a>, <a class="el" href="caja-file_8c_source.html#l04151">caja_file_monitor_add()</a>, <a class="el" href="caja-file_8c_source.html#l04164">caja_file_monitor_remove()</a>, <a class="el" href="caja-file_8c_source.html#l00850">caja_file_ref()</a>, <a class="el" href="caja-file_8c_source.html#l00865">caja_file_unref()</a>, <a class="el" href="caja-file_8h_source.html#l00052">CAJA_IS_FILE</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_preferences</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00039">CAJA_PREFERENCES_BACKGROUND_COLOR</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00038">CAJA_PREFERENCES_BACKGROUND_SET</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00040">CAJA_PREFERENCES_BACKGROUND_URI</a>, <a class="el" href="eel-background_8c_source.html#l00966">eel_get_widget_background()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -162,9 +184,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-directory-background_8c_source.html#l00384">384</a> of file <a class="el" href="caja-directory-background_8c_source.html">caja-directory-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-directory-background_8c_source.html#l00527">527</a> of file <a class="el" href="caja-directory-background_8c_source.html">caja-directory-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-background_8c_source.html#l00879">eel_background_set_desktop()</a>, <a class="el" href="eel-background_8c_source.html#l01026">eel_bg_load_from_gsettings()</a>, <a class="el" href="eel-background_8c_source.html#l00751">eel_get_widget_background()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00048">mate_background_preferences</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="eel-background_8c_source.html#l01094">eel_background_set_desktop()</a>, <a class="el" href="eel-background_8c_source.html#l01241">eel_bg_load_from_gsettings()</a>, <a class="el" href="eel-background_8c_source.html#l00966">eel_get_widget_background()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00051">mate_background_preferences</a>, <a class="el" href="mate-bg_8h_source.html#l00056">MATE_BG_KEY_DRAW_BACKGROUND</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>

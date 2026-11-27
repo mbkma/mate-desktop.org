@@ -1,5 +1,15 @@
 var NAVTREEINDEX29 =
 {
+"caja-undostack-manager_8h.html#ae5dac803728b6bb4d31a14cf465e7831":[14,0,0,1,2,130,20],
+"caja-undostack-manager_8h.html#ae7e6fac3c1b0f23984f6bd3db3043fa7":[14,0,0,1,2,130,18],
+"caja-undostack-manager_8h.html#aeb1bdef849147797024326eef6976729":[14,0,0,1,2,130,12],
+"caja-undostack-manager_8h.html#af80f828f58ca6159142651ac7775ee66":[14,0,0,1,2,130,4],
+"caja-undostack-manager_8h_source.html":[14,0,0,1,2,130],
+"caja-vfs-directory_8c.html":[14,0,0,1,2,131],
+"caja-vfs-directory_8c.html#a25f6aaae93fc6958969c369aff9272db":[14,0,0,1,2,131,0],
+"caja-vfs-directory_8c_source.html":[14,0,0,1,2,131],
+"caja-vfs-directory_8h.html":[14,0,0,1,2,132],
+"caja-vfs-directory_8h.html#a10d58f4c2c212e5df16bc5f8fbaa8548":[14,0,0,1,2,132,5],
 "caja-vfs-directory_8h.html#a163d89900b20a4e74d1971f4ee33dc78":[14,0,0,1,2,132,8],
 "caja-vfs-directory_8h.html#a1f6ecfbf525849a5f52846878092429c":[14,0,0,1,2,132,9],
 "caja-vfs-directory_8h.html#a27429b9942335420a81f90a25dffba32":[14,0,0,1,2,132,6],
@@ -239,15 +249,5 @@ var NAVTREEINDEX29 =
 "caja-window-info_8h.html#aa2c76a7ef63f17fb605ccc9e3c6e3c7f":[14,0,0,1,2,140,11],
 "caja-window-info_8h.html#aac39936ce3ac852cd133b115e56361f5":[14,0,0,1,2,140,6],
 "caja-window-info_8h.html#ab8ca3c0fe26844bae26895ae1926c651":[14,0,0,1,2,140,34],
-"caja-window-info_8h.html#ac06fc4778050bd6c09b122ab90b0f650":[14,0,0,1,2,140,33],
-"caja-window-info_8h.html#acf41c866144574c2fee209ae7972dc9c":[14,0,0,1,2,140,12],
-"caja-window-info_8h.html#adb160950b79b2673f15f43324fd1ade3":[14,0,0,1,2,140,16],
-"caja-window-info_8h.html#adb160950b79b2673f15f43324fd1ade3a20a668a8f63298fccb37825969738c9e":[14,0,0,1,2,140,16,0],
-"caja-window-info_8h.html#adb160950b79b2673f15f43324fd1ade3a8c7e140b92896a7c101ed323782310c1":[14,0,0,1,2,140,16,2],
-"caja-window-info_8h.html#adb160950b79b2673f15f43324fd1ade3ab0a6e6a5d52687e012d8accf53a4b2e3":[14,0,0,1,2,140,16,1],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ec":[14,0,0,1,2,140,14],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4eca5df2b444113075241473ce5edd385775":[14,0,0,1,2,140,14,0],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ecae99d393dcb3a5576a82c3605212fb467":[14,0,0,1,2,140,14,1],
-"caja-window-info_8h.html#adef2a74d6794fcd02357a77a2ccac4ecaf135886fe60c7bc0d1207ebedb64c3f7":[14,0,0,1,2,140,14,2],
-"caja-window-info_8h.html#ae10b7397b449a14b99c8f55ead8ab1e9":[14,0,0,1,2,140,7]
+"caja-window-info_8h.html#ac06fc4778050bd6c09b122ab90b0f650":[14,0,0,1,2,140,33]
 };

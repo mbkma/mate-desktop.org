@@ -1,5 +1,15 @@
 var NAVTREEINDEX26 =
 {
+"caja-property-page_8c.html":[14,0,0,1,1,23],
+"caja-property-page_8c.html#a187334b22670bf50b0668c1d2b7ae90e":[14,0,0,1,1,23,1],
+"caja-property-page_8c.html#a3325387a4dfd3786443a1c621381cb70":[14,0,0,1,1,23,0],
+"caja-property-page_8c_source.html":[14,0,0,1,1,23],
+"caja-property-page_8h.html":[14,0,0,1,1,24],
+"caja-property-page_8h.html#a0b05fc504aa10a1c26236f9f0f54f630":[14,0,0,1,1,24,2],
+"caja-property-page_8h.html#a3325387a4dfd3786443a1c621381cb70":[14,0,0,1,1,24,11],
+"caja-property-page_8h.html#a3f18685b9563b314b8aee918e700f990":[14,0,0,1,1,24,8],
+"caja-property-page_8h.html#a5176c52076a65ffbf1d4e10fb9df0dc9":[14,0,0,1,1,24,12],
+"caja-property-page_8h.html#a802ffd6adff6b79e286065c5c773d432":[14,0,0,1,1,24,6],
 "caja-property-page_8h.html#aa940aee520d7a33c28df6721539ccd7f":[14,0,0,1,1,24,9],
 "caja-property-page_8h.html#acae0823483fffaaf6d647c9243d6d6cc":[14,0,0,1,1,24,5],
 "caja-property-page_8h.html#acbddf3e8ddaf175fd2dd5ce0540c8023":[14,0,0,1,1,24,4],
@@ -239,15 +249,5 @@ var NAVTREEINDEX26 =
 "caja-search-directory_8c.html#af0fab1389111a76fc450e8d5b6a2c951":[14,0,0,1,2,105,10],
 "caja-search-directory_8c_source.html":[14,0,0,1,2,105],
 "caja-search-directory_8h.html":[14,0,0,1,2,106],
-"caja-search-directory_8h.html#a0c6a5ea06f18b96fde242e81687e3a24":[14,0,0,1,2,106,12],
-"caja-search-directory_8h.html#a20bec99986f1d23705abc4f5bff46823":[14,0,0,1,2,106,14],
-"caja-search-directory_8h.html#a34e54582455048a97645dde6eb7618b7":[14,0,0,1,2,106,17],
-"caja-search-directory_8h.html#a3eda05cc57a77ec59379ffc0244dd643":[14,0,0,1,2,106,8],
-"caja-search-directory_8h.html#a3f1fe79c15d520348a8ede9b33eae4db":[14,0,0,1,2,106,19],
-"caja-search-directory_8h.html#a4302e25a14054d0680b1aeef9c1aaeff":[14,0,0,1,2,106,16],
-"caja-search-directory_8h.html#a5fffe536cdc111e19c08ed30173cd556":[14,0,0,1,2,106,15],
-"caja-search-directory_8h.html#a6720af4a57b3ce5836300d0ead6932fa":[14,0,0,1,2,106,7],
-"caja-search-directory_8h.html#a703b6bcc31c193ef76297e347895a0fd":[14,0,0,1,2,106,5],
-"caja-search-directory_8h.html#a7dfde9b8b78e7633b2d334b2c83fdbe6":[14,0,0,1,2,106,10],
-"caja-search-directory_8h.html#a97874a6a016117d325e9910563f76c61":[14,0,0,1,2,106,6]
+"caja-search-directory_8h.html#a0c6a5ea06f18b96fde242e81687e3a24":[14,0,0,1,2,106,12]
 };

@@ -124,7 +124,7 @@ var searchData=
   ['button_5fsizing_121',['button_sizing',['../struct__MetaFrameLayout.html#a544da33d3c2dbc66c846c671a64176b3',1,'_MetaFrameLayout']]],
   ['button_5fwidth_122',['button_width',['../struct__MetaFrameLayout.html#ab9be4a3823b1ddd97ba44af7c6f86288',1,'_MetaFrameLayout']]],
   ['buttonlock_123',['ButtonLock',['../structTimeAdmin.html#a03a0de6db17b9ae4e6fe1a9baf89004e',1,'TimeAdmin']]],
-  ['buttons_124',['buttons',['../struct__MateDialog.html#a0b788696e6c83402b4971e3f9e73ae9d',1,'_MateDialog::buttons'],['../struct__MetaFrameStyle.html#a70b1b42295ba80889f570b1976166c68',1,'_MetaFrameStyle::buttons']]],
+  ['buttons_124',['buttons',['../struct__MateDialog.html#a0b788696e6c83402b4971e3f9e73ae9d',1,'_MateDialog::buttons'],['../struct__MetaFrameStyle.html#a70b1b42295ba80889f570b1976166c68',1,'_MetaFrameStyle::buttons'],['../structInputDeviceDescription.html#a774012906e706f9261084b749ade5099',1,'InputDeviceDescription::buttons']]],
   ['buttons_5fbox_125',['buttons_box',['../structPrefsDialog.html#a8ff223c6136f25df45be8629e61282ea',1,'PrefsDialog']]],
   ['byte_5forder_126',['byte_order',['../struct__XSettingsBuffer.html#ad427a66c3c8e01fd2c328bbcb3cd3b1a',1,'_XSettingsBuffer']]],
   ['bytes_127',['bytes',['../struct__EomImagePrivate.html#a483f2db0bb0ed20737a1fe2bf1f5bf4c',1,'_EomImagePrivate']]],

@@ -315,5 +315,6 @@ var searchData=
   ['overwrite_5fmode_312',['overwrite_mode',['../struct__EelEditableLabel.html#aceaa6f9da133a16265d7b0bf28e310fa',1,'_EelEditableLabel']]],
   ['ovf_5ffont_5finfo_313',['ovf_font_info',['../fonts_8c.html#a30667ee6d5f900c909736435d808e8f9',1,'ovf_font_info:&#160;vf.c'],['../vf_8c.html#a30667ee6d5f900c909736435d808e8f9',1,'ovf_font_info:&#160;vf.c']]],
   ['owner_314',['owner',['../struct__CajaFilePrivate.html#ada711d92006807313ffaa821626b3115',1,'_CajaFilePrivate::owner'],['../structMutableProcInfo.html#a235012f8db9ddd01436b449d74a5bf74',1,'MutableProcInfo::owner']]],
-  ['owner_5freal_315',['owner_real',['../struct__CajaFilePrivate.html#a59df2b175ddebe0a9facd77b39713637',1,'_CajaFilePrivate']]]
+  ['owner_5freal_315',['owner_real',['../struct__CajaFilePrivate.html#a59df2b175ddebe0a9facd77b39713637',1,'_CajaFilePrivate']]],
+  ['owns_5ffile_316',['owns_file',['../structFMIconViewClass.html#a5e778430111d43480921277e42f8364f',1,'FMIconViewClass']]]
 ];

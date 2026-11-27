@@ -1,5 +1,15 @@
 var NAVTREEINDEX28 =
 {
+"caja-sidebar-title_8c.html":[14,0,0,1,3,66],
+"caja-sidebar-title_8c.html#a11336d18b1d7566bd66bc7c816466249":[14,0,0,1,3,66,5],
+"caja-sidebar-title_8c.html#a18fcb8093b8edd3953ecf9879359aa65":[14,0,0,1,3,66,1],
+"caja-sidebar-title_8c.html#a3ccd2cbd6af47f3538649bce1663cfad":[14,0,0,1,3,66,11],
+"caja-sidebar-title_8c.html#a3e349ad084c776bc495ac7d15fa3d231":[14,0,0,1,3,66,6],
+"caja-sidebar-title_8c.html#a4cf1aef9b3a5e54bd9bcca2987fba4fe":[14,0,0,1,3,66,0],
+"caja-sidebar-title_8c.html#a5293eeb516415b65be09518811d01259":[14,0,0,1,3,66,4],
+"caja-sidebar-title_8c.html#a7244587b194deacd490806f3e5e2437e":[14,0,0,1,3,66,2],
+"caja-sidebar-title_8c.html#a7749a9d153a748008226d0d1b9b8d8e2":[14,0,0,1,3,66,12],
+"caja-sidebar-title_8c.html#aa5b8edad3247233d265fe13a021dae8a":[14,0,0,1,3,66,8],
 "caja-sidebar-title_8c.html#aaa338cbfcd0fa8ed5f4d644d063e433d":[14,0,0,1,3,66,9],
 "caja-sidebar-title_8c.html#ad8d192ef82678073828314fd2c5b390a":[14,0,0,1,3,66,10],
 "caja-sidebar-title_8c.html#af0eb9be6d20fb3ac29d748f654420ce3":[14,0,0,1,3,66,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX28 =
 "caja-undostack-manager_8h.html#ad2649a85aa066cfd018130747b3addf9":[14,0,0,1,2,130,25],
 "caja-undostack-manager_8h.html#ada2ca9d547b05ea49bc10d223881dea2":[14,0,0,1,2,130,17],
 "caja-undostack-manager_8h.html#add78218429250c2d173c0604b50277ef":[14,0,0,1,2,130,11],
-"caja-undostack-manager_8h.html#ade3ab9e2adca53b2e8351979c42c21f0":[14,0,0,1,2,130,14],
-"caja-undostack-manager_8h.html#ae5dac803728b6bb4d31a14cf465e7831":[14,0,0,1,2,130,20],
-"caja-undostack-manager_8h.html#ae7e6fac3c1b0f23984f6bd3db3043fa7":[14,0,0,1,2,130,18],
-"caja-undostack-manager_8h.html#aeb1bdef849147797024326eef6976729":[14,0,0,1,2,130,12],
-"caja-undostack-manager_8h.html#af80f828f58ca6159142651ac7775ee66":[14,0,0,1,2,130,4],
-"caja-undostack-manager_8h_source.html":[14,0,0,1,2,130],
-"caja-vfs-directory_8c.html":[14,0,0,1,2,131],
-"caja-vfs-directory_8c.html#a25f6aaae93fc6958969c369aff9272db":[14,0,0,1,2,131,0],
-"caja-vfs-directory_8c_source.html":[14,0,0,1,2,131],
-"caja-vfs-directory_8h.html":[14,0,0,1,2,132],
-"caja-vfs-directory_8h.html#a10d58f4c2c212e5df16bc5f8fbaa8548":[14,0,0,1,2,132,5]
+"caja-undostack-manager_8h.html#ade3ab9e2adca53b2e8351979c42c21f0":[14,0,0,1,2,130,14]
 };

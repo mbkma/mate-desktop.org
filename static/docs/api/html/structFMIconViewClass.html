@@ -118,6 +118,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a5b4ab4be94ba09e758e7eaa1b278f046" id="r_a5b4ab4be94ba09e758e7eaa1b278f046"><td class="memItemLeft" align="right" valign="top">gboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b4ab4be94ba09e758e7eaa1b278f046">supports_keep_aligned</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view)</td></tr>
 <tr class="memitem:a22d32569065fa351a26f862708a5b473" id="r_a22d32569065fa351a26f862708a5b473"><td class="memItemLeft" align="right" valign="top">gboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d32569065fa351a26f862708a5b473">supports_labels_beside_icons</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view)</td></tr>
 <tr class="memitem:aeb250d06077bba5babe3dc5e8833f57f" id="r_aeb250d06077bba5babe3dc5e8833f57f"><td class="memItemLeft" align="right" valign="top">gboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb250d06077bba5babe3dc5e8833f57f">supports_display_git_branch</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view)</td></tr>
+<tr class="memitem:a5e778430111d43480921277e42f8364f" id="r_a5e778430111d43480921277e42f8364f"><td class="memItemLeft" align="right" valign="top">gboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e778430111d43480921277e42f8364f">owns_file</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view, <a class="el" href="structCajaFile.html">CajaFile</a> *file)</td></tr>
+<tr class="memitem:abc85540cd5b92f14216ed40edf88bd05" id="r_abc85540cd5b92f14216ed40edf88bd05"><td class="memItemLeft" align="right" valign="top">gboolean(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc85540cd5b92f14216ed40edf88bd05">keeps_stored_position</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view, <a class="el" href="structCajaFile.html">CajaFile</a> *file)</td></tr>
+<tr class="memitem:a0f7d1795fba0b3567d0e087372845576" id="r_a0f7d1795fba0b3567d0e087372845576"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7d1795fba0b3567d0e087372845576">position_to_view</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view, int *x, int *y)</td></tr>
+<tr class="memitem:acc0bf948f83a8bbcc0433e6deab97510" id="r_acc0bf948f83a8bbcc0433e6deab97510"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc0bf948f83a8bbcc0433e6deab97510">position_from_view</a> )(<a class="el" href="structFMIconView.html">FMIconView</a> *view, int *x, int *y)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -203,6 +207,38 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="abc85540cd5b92f14216ed40edf88bd05" name="abc85540cd5b92f14216ed40edf88bd05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc85540cd5b92f14216ed40edf88bd05">&#9670;&#160;</a></span>keeps_stored_position</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean(* FMIconViewClass::keeps_stored_position) (<a class="el" href="structFMIconView.html">FMIconView</a> *view, <a class="el" href="structCajaFile.html">CajaFile</a> *file)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-icon-view_8h_source.html#l00125">125</a> of file <a class="el" href="fm-icon-view_8h_source.html">fm-icon-view.h</a>.</p>
+
+</div>
+</div>
+<a id="a5e778430111d43480921277e42f8364f" name="a5e778430111d43480921277e42f8364f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e778430111d43480921277e42f8364f">&#9670;&#160;</a></span>owns_file</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean(* FMIconViewClass::owns_file) (<a class="el" href="structFMIconView.html">FMIconView</a> *view, <a class="el" href="structCajaFile.html">CajaFile</a> *file)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-icon-view_8h_source.html#l00123">123</a> of file <a class="el" href="fm-icon-view_8h_source.html">fm-icon-view.h</a>.</p>
+
+</div>
+</div>
 <a id="af43cced94a38933aca14450eb486e0fc" name="af43cced94a38933aca14450eb486e0fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af43cced94a38933aca14450eb486e0fc">&#9670;&#160;</a></span>parent_class</h2>
 
@@ -216,6 +252,38 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="fm-icon-view_8h_source.html#l00058">58</a> of file <a class="el" href="fm-icon-view_8h_source.html">fm-icon-view.h</a>.</p>
+
+</div>
+</div>
+<a id="acc0bf948f83a8bbcc0433e6deab97510" name="acc0bf948f83a8bbcc0433e6deab97510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0bf948f83a8bbcc0433e6deab97510">&#9670;&#160;</a></span>position_from_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* FMIconViewClass::position_from_view) (<a class="el" href="structFMIconView.html">FMIconView</a> *view, int *x, int *y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-icon-view_8h_source.html#l00130">130</a> of file <a class="el" href="fm-icon-view_8h_source.html">fm-icon-view.h</a>.</p>
+
+</div>
+</div>
+<a id="a0f7d1795fba0b3567d0e087372845576" name="a0f7d1795fba0b3567d0e087372845576"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7d1795fba0b3567d0e087372845576">&#9670;&#160;</a></span>position_to_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* FMIconViewClass::position_to_view) (<a class="el" href="structFMIconView.html">FMIconView</a> *view, int *x, int *y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-icon-view_8h_source.html#l00127">127</a> of file <a class="el" href="fm-icon-view_8h_source.html">fm-icon-view.h</a>.</p>
 
 </div>
 </div>

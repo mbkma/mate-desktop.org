@@ -100,6 +100,7 @@ var caja_global_preferences_8h =
     ] ],
     [ "caja_global_preferences_get_default_folder_viewer_preference_as_iid", "caja-global-preferences_8h.html#a171f45c6fd079ff8a9c209a2b3c06f37", null ],
     [ "caja_global_preferences_init", "caja-global-preferences_8h.html#a5353afb7cea2bea83bdc354a3254df1d", null ],
+    [ "caja_preferences_get_monitor_settings", "caja-global-preferences_8h.html#a5679a3a7bfbc1ae98f8f862aacad25bc", null ],
     [ "caja_compact_view_preferences", "caja-global-preferences_8h.html#afcb97f3dc936eed96a1eaf20e096213e", null ],
     [ "caja_desktop_preferences", "caja-global-preferences_8h.html#a16fb34082c54a48c42b4534511d8e60d", null ],
     [ "caja_extension_preferences", "caja-global-preferences_8h.html#add959fe8fc4b51c5643ec31f43ca4280", null ],

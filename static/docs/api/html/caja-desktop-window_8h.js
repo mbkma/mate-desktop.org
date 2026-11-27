@@ -12,8 +12,9 @@ var caja_desktop_window_8h =
     [ "CAJA_TYPE_DESKTOP_WINDOW", "caja-desktop-window_8h.html#ac16424eea67ff2d2ccf5aec805133de0", null ],
     [ "CAJA_TYPE_DESKTOP_WINDOW_ACCESSIBLE", "caja-desktop-window_8h.html#a919f169965cc67b5d154e4bee4e61a3a", null ],
     [ "CajaDesktopWindowPrivate", "caja-desktop-window_8h.html#a7acd5e74de3bc6e38a0eb51beafa6993", null ],
+    [ "caja_desktop_window_get_monitor", "caja-desktop-window_8h.html#a7a2d7807e76c9f5d7a26113bb17fa14d", null ],
     [ "caja_desktop_window_get_type", "caja-desktop-window_8h.html#ae683d6a37182dc655ae3f7eb85272a30", null ],
     [ "caja_desktop_window_loaded", "caja-desktop-window_8h.html#a5d6eb076ac1dae84a4d4a7fdccf7441e", null ],
-    [ "caja_desktop_window_new", "caja-desktop-window_8h.html#ae4d620ef9d784097f3536a6982bbe62c", null ],
+    [ "caja_desktop_window_new", "caja-desktop-window_8h.html#aeb2b92f29f62b75160eda936d698eecc", null ],
     [ "caja_desktop_window_update_directory", "caja-desktop-window_8h.html#a7e3bc9b445b78be931ea543d9b0b7482", null ]
 ];

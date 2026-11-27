@@ -1,5 +1,15 @@
 var NAVTREEINDEX34 =
 {
+"color_8h.html#a2ecb0d22037eaf9069454fdac0fad612":[14,0,0,0,0,2,0,5,0],
+"color_8h.html#abfef87f1cab2386bf62b26453457de1f":[14,0,0,0,0,2,0,5,2],
+"color_8h.html#affb7fd92ae05dae8d179f647b0e4240c":[14,0,0,0,0,2,0,5,1],
+"color_8h_source.html":[14,0,0,0,0,2,0,5],
+"comics-document_8c.html":[14,0,0,0,0,0,0],
+"comics-document_8c.html#a05dd9e85705d11932b7ec85e845f78c2":[14,0,0,0,0,0,0,5],
+"comics-document_8c.html#a3fdf5066b36e8fe5a4463112507bcba6":[14,0,0,0,0,0,0,3],
+"comics-document_8c.html#a4bc7d62e4bf240006f5efe90ebffee80":[14,0,0,0,0,0,0,6],
+"comics-document_8c.html#a6c1e04ff214bec59246d71a1bfd1440a":[14,0,0,0,0,0,0,2],
+"comics-document_8c.html#a6fe8089c7af3b23c0684cb075d02d108":[14,0,0,0,0,0,0,7],
 "comics-document_8c.html#a92545dfa07e09c8f53f4a7450e9de1a8":[14,0,0,0,0,0,0,4],
 "comics-document_8c.html#ad51ded0bbd705f02f73fc60c0b721ced":[14,0,0,0,0,0,0,1],
 "comics-document_8c.html#ad6cd5acea4ead678821b84655d56cbd4":[14,0,0,0,0,0,0,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX34 =
 "core_8h.html#a34c79ce6ee6a2cafe5edbce1b876f43a":[14,0,0,11,0,2,4,9],
 "core_8h.html#a38a3eceb7ae78f59f868d2fa4473d7cf":[14,0,0,11,0,2,4,12],
 "core_8h.html#a3b579968c55dfdb35dc0be147264067f":[14,0,0,11,0,2,4,14],
-"core_8h.html#a4321734986c1fad755c65461db67265e":[14,0,0,11,0,2,4,18],
-"core_8h.html#a48dcf351dede2c988854f054351f76c4":[14,0,0,11,0,2,4,10],
-"core_8h.html#a4ea1b1719133889796cdb04a77007ae6":[14,0,0,11,0,2,4,13],
-"core_8h.html#a5a520c0b7b881ba778998248eaca31c8":[14,0,0,11,0,2,4,23],
-"core_8h.html#a71fcde5d99c960d736f39a86eb71f154":[14,0,0,11,0,2,4,17],
-"core_8h.html#a76757f978955aaa21271ff8819af7e4d":[14,0,0,11,0,2,4,2],
-"core_8h.html#a797f7b2310e7e7f9a6ad84466a52b8e8":[14,0,0,11,0,2,4,4],
-"core_8h.html#a89a050eb1c764160c0656df899ac91dc":[14,0,0,11,0,2,4,33],
-"core_8h.html#a8ea28f339cc0fc82a33db2dedf1a65b5":[14,0,0,11,0,2,4,35],
-"core_8h.html#a8ebe061a73c46579d7f2a6d16238a808":[14,0,0,11,0,2,4,1],
-"core_8h.html#a9bc7a7d4a7c775c6a1a273db6daae0a1":[14,0,0,11,0,2,4,21]
+"core_8h.html#a4321734986c1fad755c65461db67265e":[14,0,0,11,0,2,4,18]
 };

@@ -7,5 +7,6 @@ var searchData=
   ['ieee80211_5fvht_5fmcs_5finfo_4',['ieee80211_vht_mcs_info',['../structieee80211__vht__mcs__info.html',1,'']]],
   ['imagedndinfo_5',['ImageDNDInfo',['../structImageDNDInfo.html',1,'']]],
   ['initialtab_6',['InitialTab',['../structInitialTab.html',1,'']]],
-  ['initialwindow_7',['InitialWindow',['../structInitialWindow.html',1,'']]]
+  ['initialwindow_7',['InitialWindow',['../structInitialWindow.html',1,'']]],
+  ['inputdevicedescription_8',['InputDeviceDescription',['../structInputDeviceDescription.html',1,'']]]
 ];

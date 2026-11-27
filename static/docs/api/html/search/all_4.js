@@ -756,7 +756,7 @@ var searchData=
   ['buttondata_753',['ButtonData',['../caja-pathbar_8c.html#a32b792f783a807c608cf98f0ff6a33ab',1,'caja-pathbar.c']]],
   ['buttonlock_754',['ButtonLock',['../structTimeAdmin.html#a03a0de6db17b9ae4e6fe1a9baf89004e',1,'TimeAdmin']]],
   ['buttonmode_755',['ButtonMode',['../math-buttons_8h.html#a01460e52ca327f95180815b461c0dce1',1,'math-buttons.h']]],
-  ['buttons_756',['buttons',['../struct__MateDialog.html#a0b788696e6c83402b4971e3f9e73ae9d',1,'_MateDialog::buttons'],['../struct__MetaFrameStyle.html#a70b1b42295ba80889f570b1976166c68',1,'_MetaFrameStyle::buttons']]],
+  ['buttons_756',['buttons',['../struct__MateDialog.html#a0b788696e6c83402b4971e3f9e73ae9d',1,'_MateDialog::buttons'],['../struct__MetaFrameStyle.html#a70b1b42295ba80889f570b1976166c68',1,'_MetaFrameStyle::buttons'],['../structInputDeviceDescription.html#a774012906e706f9261084b749ade5099',1,'InputDeviceDescription::buttons']]],
   ['buttons_5fbox_757',['buttons_box',['../structPrefsDialog.html#a8ff223c6136f25df45be8629e61282ea',1,'PrefsDialog']]],
   ['buttontype_758',['ButtonType',['../caja-pathbar_8c.html#ae2d5c50fae96a83cc4f5974af78e6943',1,'caja-pathbar.c']]],
   ['buttonwidget_759',['ButtonWidget',['../button-widget_8h.html#ab194f61d99ee3fae3bdffe0175fdf27b',1,'button-widget.h']]],

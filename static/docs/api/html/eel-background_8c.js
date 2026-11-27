@@ -1,6 +1,7 @@
 var eel_background_8c =
 [
     [ "CLAMP_COLOR", "eel-background_8c.html#a4ef44071da09eb9c4d297e814a079d5c", null ],
+    [ "EEL_MIN_DESKTOP_ALLOCATION", "eel-background_8c.html#a53896c379d06564814ee5844f722be06", null ],
     [ "SATURATE", "eel-background_8c.html#a4ab526db08cd0410d2f034fe42057df9", null ],
     [ "eel_background_draw", "eel-background_8c.html#a7b19e4a22255a99357ceff90f2da3a1b", null ],
     [ "eel_background_get_color", "eel-background_8c.html#a8db8349b728c7c31dea54565ecc1809d", null ],

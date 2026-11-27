@@ -1,5 +1,15 @@
 var NAVTREEINDEX41 =
 {
+"drw-timer_8c.html#afe559f8c25b2aa216d5509bee904692d":[14,0,0,14,3,6,1],
+"drw-timer_8c_source.html":[14,0,0,14,3,6],
+"drw-timer_8h.html":[14,0,0,14,3,7],
+"drw-timer_8h.html#a3584c17c09a3b2bb55854682d31145d7":[14,0,0,14,3,7,4],
+"drw-timer_8h.html#a5460c1732be05d6fdd883d8f0fd36d91":[14,0,0,14,3,7,0],
+"drw-timer_8h.html#adc741b717e0d16304dfa162f6d49c58b":[14,0,0,14,3,7,3],
+"drw-timer_8h.html#af3ce9224f4fccaf76f8649f67613b429":[14,0,0,14,3,7,1],
+"drw-timer_8h.html#afe559f8c25b2aa216d5509bee904692d":[14,0,0,14,3,7,2],
+"drw-timer_8h_source.html":[14,0,0,14,3,7],
+"drw-utils_8c.html":[14,0,0,14,3,8],
 "drw-utils_8c.html#aa8e8f7505b167c4bdc6379de33886fa3":[14,0,0,14,3,8,0],
 "drw-utils_8c_source.html":[14,0,0,14,3,8],
 "drw-utils_8h.html":[14,0,0,14,3,9],
@@ -239,15 +249,5 @@ var NAVTREEINDEX41 =
 "edid_8h.html#adacd321a7d4855441de8125d3ae39c7ea988d95042e24e12d7f43576c4ced8e75":[14,0,0,15,0,2,9,5],
 "edid_8h.html#adacd321a7d4855441de8125d3ae39c7ead33516f108689e28c7bfa7ea055b370a":[14,0,0,15,0,2,9,3],
 "edid_8h.html#adacd321a7d4855441de8125d3ae39c7ead48a38b60c96120dbc0075c7a2a292e9":[14,0,0,15,0,2,9,0],
-"edid_8h.html#adacd321a7d4855441de8125d3ae39c7eafe8fdb2b63122c1df865f07ba4979fb3":[14,0,0,15,0,2,9,6],
-"edid_8h_source.html":[14,0,0,15,0,2],
-"eel-accessibility_8c.html":[14,0,0,1,0,1],
-"eel-accessibility_8c.html#a01f3b9f60bcbf955a888a84b25971c24":[14,0,0,1,0,1,2],
-"eel-accessibility_8c.html#a0f6096a363c74bbb797bf8ef75a4faaf":[14,0,0,1,0,1,3],
-"eel-accessibility_8c.html#a2157c3e90252d834a4092fb168f1a093":[14,0,0,1,0,1,8],
-"eel-accessibility_8c.html#a456e116dd379fc9b21a02ad97143fe17":[14,0,0,1,0,1,7],
-"eel-accessibility_8c.html#a48579071df28dd11c2b18d95f5d00ee1":[14,0,0,1,0,1,0],
-"eel-accessibility_8c.html#a52c21ba2bbdf8076f9969ab079e5058b":[14,0,0,1,0,1,4],
-"eel-accessibility_8c.html#a5b750868ad61146ce7e89d9fde3effc7":[14,0,0,1,0,1,10],
-"eel-accessibility_8c.html#a5e8b71e1a199769d3015ffb58c888b35":[14,0,0,1,0,1,1]
+"edid_8h.html#adacd321a7d4855441de8125d3ae39c7eafe8fdb2b63122c1df865f07ba4979fb3":[14,0,0,15,0,2,9,6]
 };

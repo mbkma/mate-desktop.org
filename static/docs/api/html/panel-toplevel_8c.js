@@ -26,6 +26,7 @@ var panel_toplevel_8c =
       [ "PANEL_GRAB_OP_RESIZE_LEFT", "panel-toplevel_8c.html#a981d18067efd0b9d882fd07574857463aa6c0d2919238e4d0db8795fb52baf1e0", null ],
       [ "PANEL_GRAB_OP_RESIZE_RIGHT", "panel-toplevel_8c.html#a981d18067efd0b9d882fd07574857463a8901bf4fa3ce56e5eee184ad7c8302e3", null ]
     ] ],
+    [ "panel_toplevel_adopt_monitor_index", "panel-toplevel_8c.html#a2b6e684bd97c5d777d93aa433e75aefb", null ],
     [ "panel_toplevel_attach_to_widget", "panel-toplevel_8c.html#ad6425a5e766b67de83e4e5cc2fd2d244", null ],
     [ "panel_toplevel_detach", "panel-toplevel_8c.html#a9600b73de25067f08b254bedb83eeded", null ],
     [ "panel_toplevel_get_animate", "panel-toplevel_8c.html#a7a46cafe2a07d4f049871e824a040ccc", null ],
@@ -45,6 +46,7 @@ var panel_toplevel_8c =
     [ "panel_toplevel_get_maximum_size", "panel-toplevel_8c.html#a5268051fd091495313651cbcc5e9c612", null ],
     [ "panel_toplevel_get_minimum_size", "panel-toplevel_8c.html#a7cd592a724590b62576f75b7f07a1531", null ],
     [ "panel_toplevel_get_monitor", "panel-toplevel_8c.html#ae0c8bc08cf6a728a6ce5edea37e4e933", null ],
+    [ "panel_toplevel_get_monitor_id", "panel-toplevel_8c.html#a74ef34e1070a9313abfc1243c61946d0", null ],
     [ "panel_toplevel_get_name", "panel-toplevel_8c.html#ae14a675e3175a123f279491756709c29", null ],
     [ "panel_toplevel_get_orientation", "panel-toplevel_8c.html#a15604653cf4cf4f940065ce8c64703f7", null ],
     [ "panel_toplevel_get_panel_widget", "panel-toplevel_8c.html#ab944898839024b7e57d1e8298d952019", null ],
@@ -72,6 +74,7 @@ var panel_toplevel_8c =
     [ "panel_toplevel_set_expand", "panel-toplevel_8c.html#a048f6d00cfd239161c79d449fa68e0fe", null ],
     [ "panel_toplevel_set_hide_delay", "panel-toplevel_8c.html#a7df2c7978c7ba30e77567c1d8eb3d11c", null ],
     [ "panel_toplevel_set_monitor", "panel-toplevel_8c.html#a996a61d479c4aa157ab9832fda78ee70", null ],
+    [ "panel_toplevel_set_monitor_id", "panel-toplevel_8c.html#aac370f6eab88561bf031268a85d54967", null ],
     [ "panel_toplevel_set_name", "panel-toplevel_8c.html#a056c6729cb914f3ca9b099ff7b0818d3", null ],
     [ "panel_toplevel_set_orientation", "panel-toplevel_8c.html#a58f68e417848bbeaed812ceb63ba17ee", null ],
     [ "panel_toplevel_set_settings_path", "panel-toplevel_8c.html#ab3b565349c61a39664c5349bb5e529e9", null ],

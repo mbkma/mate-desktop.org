@@ -219,7 +219,7 @@ var searchData=
   ['modtime_216',['modtime',['../struct__DviContext.html#adb3d6a927e8ec91ae56add75385229fa',1,'_DviContext']]],
   ['module_217',['module',['../struct__Extension.html#ab2ded94a78af4922156cdac6e4198909',1,'_Extension::module'],['../struct__NstPlugin.html#a6ddaa2ddccf53dc36f0b12be5df7b136',1,'_NstPlugin::module']]],
   ['momentum_218',['momentum',['../structDragInfo.html#a169ed1fe9242d88ade1043a51106da8b',1,'DragInfo']]],
-  ['monitor_219',['monitor',['../struct__CajaDirectoryPrivate.html#a738ad581fe3a065ba51c01e3bc9c8c5d',1,'_CajaDirectoryPrivate::monitor'],['../structCajaBookmarkList.html#a53d9d270adb59934dd69fcfccc1d556f',1,'CajaBookmarkList::monitor'],['../structOpenFile.html#a74cc5e0f776029ef68774c12ec8c8391',1,'OpenFile::monitor'],['../structLauncher.html#adcf8f5040ad7f7af7892f9853c2bdc3e',1,'Launcher::monitor']]],
+  ['monitor_219',['monitor',['../struct__CajaDirectoryPrivate.html#a738ad581fe3a065ba51c01e3bc9c8c5d',1,'_CajaDirectoryPrivate::monitor'],['../structCajaBookmarkList.html#a53d9d270adb59934dd69fcfccc1d556f',1,'CajaBookmarkList::monitor'],['../structOpenFile.html#a74cc5e0f776029ef68774c12ec8c8391',1,'OpenFile::monitor'],['../structLauncher.html#adcf8f5040ad7f7af7892f9853c2bdc3e',1,'Launcher::monitor'],['../structPanelMonitorEntry.html#a3a2831c3228eaa2ea42459388bfa2084',1,'PanelMonitorEntry::monitor']]],
   ['monitor_5fadd_220',['monitor_add',['../structCajaFileClass.html#a54e6cae2876c6cf0e67637a28215ec42',1,'CajaFileClass']]],
   ['monitor_5fcounters_221',['monitor_counters',['../struct__CajaDirectoryPrivate.html#a023a6bb7bfc76f90f4116192e6767383',1,'_CajaDirectoryPrivate']]],
   ['monitor_5fhome_222',['monitor_home',['../struct__BaobabApplication.html#a90249f0856ac4ed798fc7fca6d4125ec',1,'_BaobabApplication']]],

@@ -254,7 +254,7 @@ var searchData=
   ['compression_251',['compression',['../struct__FrCommand.html#a77b8c4b6abd19a4e248c7d3456af1bae',1,'_FrCommand']]],
   ['cond_252',['cond',['../struct__WeatherInfo.html#ad3e67b26417704940aefb3309d0e8ace',1,'_WeatherInfo']]],
   ['condition_253',['condition',['../gs-idle-monitor_8h.html#aa92cea053a410afe0deffd2c7ed8715b',1,'gs-idle-monitor.h']]],
-  ['config_254',['config',['../structProcData.html#a3015e4980f167d4591cb8560d72b50ac',1,'ProcData']]],
+  ['config_254',['config',['../structInputDeviceDescription.html#a6e72b180bc4ca5c767fd5a06b74577dd',1,'InputDeviceDescription::config'],['../structProcData.html#a3015e4980f167d4591cb8560d72b50ac',1,'ProcData::config']]],
   ['config_5ffile_255',['config_file',['../structTerminalOptions.html#a67fcc7468954839b81d11adeb77c0fad',1,'TerminalOptions']]],
   ['config_5flistener_5fid_256',['config_listener_id',['../struct__MatekbdDesktopConfig.html#afeb6bdc988acb26ba0a2a1cba23469c7',1,'_MatekbdDesktopConfig::config_listener_id'],['../struct__MatekbdIndicatorConfig.html#a671fe025a3b91333f1629fb9a2c9bf10',1,'_MatekbdIndicatorConfig::config_listener_id'],['../struct__MatekbdKeyboardConfig.html#ad5934a275fe9fad9e6331d88853e82cd',1,'_MatekbdKeyboardConfig::config_listener_id']]],
   ['config_5fprefix_257',['config_prefix',['../struct__MateClient.html#ac6fe9bf1b89ebab3cfee8dea7e5a3b56',1,'_MateClient']]],

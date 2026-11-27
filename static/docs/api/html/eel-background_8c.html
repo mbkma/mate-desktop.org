@@ -96,6 +96,7 @@ $(function(){initNavTree('eel-background_8c.html','',''); });
 <code>#include &lt;gtk/gtk.h&gt;</code><br />
 <code>#include &lt;cairo-xlib.h&gt;</code><br />
 <code>#include &lt;gdk/gdkx.h&gt;</code><br />
+<code>#include &lt;X11/Xatom.h&gt;</code><br />
 <code>#include &lt;gio/gio.h&gt;</code><br />
 <code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;stdio.h&gt;</code><br />
@@ -107,13 +108,14 @@ $(function(){initNavTree('eel-background_8c.html','',''); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for eel-background.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="eel-background_8c__incl.svg" width="100%" height="558"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="eel-background_8c__incl.svg" width="100%" height="569"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="eel-background_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a53896c379d06564814ee5844f722be06" id="r_a53896c379d06564814ee5844f722be06"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53896c379d06564814ee5844f722be06">EEL_MIN_DESKTOP_ALLOCATION</a>&#160;&#160;&#160;100</td></tr>
 <tr class="memitem:a4ef44071da09eb9c4d297e814a079d5c" id="r_a4ef44071da09eb9c4d297e814a079d5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ef44071da09eb9c4d297e814a079d5c">CLAMP_COLOR</a>(v)</td></tr>
 <tr class="memitem:a4ab526db08cd0410d2f034fe42057df9" id="r_a4ab526db08cd0410d2f034fe42057df9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ab526db08cd0410d2f034fe42057df9">SATURATE</a>(v)</td></tr>
 </table><table class="memberdecls">
@@ -167,7 +169,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(CLAMP ((v), 0, 1))</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00155">155</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00165">165</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+
+</div>
+</div>
+<a id="a53896c379d06564814ee5844f722be06" name="a53896c379d06564814ee5844f722be06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53896c379d06564814ee5844f722be06">&#9670;&#160;</a></span>EEL_MIN_DESKTOP_ALLOCATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EEL_MIN_DESKTOP_ALLOCATION&#160;&#160;&#160;100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00087">87</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 </div>
 </div>
@@ -187,7 +205,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">((1.0 - saturation) * intensity + saturation * (v))</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00156">156</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00166">166</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 </div>
 </div>
@@ -210,7 +228,7 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a0c5868f645fd3c9f20b6f5d371235976a0c34d85df8279641afad9e3c9b3a54ce" name="a0c5868f645fd3c9f20b6f5d371235976a0c34d85df8279641afad9e3c9b3a54ce"></a>LAST_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00042">42</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00047">47</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 </div>
 </div>
@@ -234,9 +252,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00386">386</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00568">568</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8c_source.html#l00751">eel_get_widget_background()</a>, <a class="el" href="mate-bg-crossfade_8c_source.html#l00740">mate_bg_crossfade_is_started()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8c_source.html#l00966">eel_get_widget_background()</a>, <a class="el" href="mate-bg-crossfade_8c_source.html#l00740">mate_bg_crossfade_is_started()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -255,7 +273,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00277">277</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00287">287</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -276,7 +294,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00939">939</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01154">1154</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, <a class="el" href="mate-bg_8c_source.html#l00657">mate_bg_get_filename()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -297,7 +315,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00926">926</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01141">1141</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, and <a class="el" href="mate-bg_8c_source.html#l01280">mate_bg_is_dark()</a>.</p>
 
@@ -320,7 +338,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00906">906</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01121">1121</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>.</p>
 
@@ -343,7 +361,7 @@ Functions</h2></td></tr>
 <p>eel_background_is_set:</p>
 <p>Check whether the background's color or image has been set. </p>
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00856">856</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01071">1071</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, <a class="el" href="mate-bg_8c_source.html#l00657">mate_bg_get_filename()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -366,11 +384,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01166">1166</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01377">1377</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00058">EEL_BACKGROUND</a>, <a class="el" href="eel-background_8h_source.html#l00057">EEL_TYPE_BACKGROUND</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eel-background_8c_source.html#l00751">eel_get_widget_background()</a>, and <a class="el" href="eel-background_8c_source.html#l01178">eel_self_check_background()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eel-background_8c_source.html#l00966">eel_get_widget_background()</a>, and <a class="el" href="eel-background_8c_source.html#l01389">eel_self_check_background()</a>.</p>
 
 </div>
 </div>
@@ -391,9 +409,9 @@ Functions</h2></td></tr>
 <p>eel_background_reset:</p>
 <p>Emit the reset signal to forget any color or image that has been set previously. </p>
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00871">871</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01086">1086</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, and <a class="el" href="eel-background_8c_source.html#l00046">RESET</a>.</p>
+<p class="reference">References <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, and <a class="el" href="eel-background_8c_source.html#l00051">RESET</a>.</p>
 
 </div>
 </div>
@@ -416,7 +434,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00912">912</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01127">1127</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>.</p>
 
@@ -441,11 +459,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00286">286</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00296">296</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="eel-background_8c_source.html#l01178">eel_self_check_background()</a>, <a class="el" href="test-eel-background_8c_source.html#l00010">main()</a>, and <a class="el" href="caja_2test_2test_8c_source.html#l00071">test_gtk_widget_set_background_color()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="eel-background_8c_source.html#l01389">eel_self_check_background()</a>, <a class="el" href="test-eel-background_8c_source.html#l00010">main()</a>, and <a class="el" href="caja_2test_2test_8c_source.html#l00071">test_gtk_widget_set_background_color()</a>.</p>
 
 </div>
 </div>
@@ -468,11 +486,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00879">879</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01094">1094</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00384">caja_connect_desktop_background_to_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00527">caja_connect_desktop_background_to_settings()</a>.</p>
 
 </div>
 </div>
@@ -515,7 +533,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01073">1073</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01284">1284</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00304">eel_gradient_set_bottom_color_spec()</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00250">eel_gradient_set_left_color_spec()</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00286">eel_gradient_set_right_color_spec()</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00268">eel_gradient_set_top_color_spec()</a>, <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -545,7 +563,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01061">1061</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01272">1272</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="mate-bg_8h_source.html#l00081">MATE_BG_PLACEMENT_TILED</a>, <a class="el" href="mate-bg_8c_source.html#l00597">mate_bg_set_placement()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -570,7 +588,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00977">977</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01192">1192</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -597,7 +615,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00300">300</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00310">310</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>.</p>
 
@@ -618,7 +636,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00191">191</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00201">201</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00407">eel_gdk_rgb_to_color_spec()</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00368">eel_gdk_rgba_to_rgb()</a>, <a class="el" href="eel-gdk-extensions_8c_source.html#l00050">eel_gradient_new()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="mate-bg_8h_source.html#l00076">MATE_BG_COLOR_H_GRADIENT</a>, <a class="el" href="mate-bg_8h_source.html#l00077">MATE_BG_COLOR_V_GRADIENT</a>, <a class="el" href="mate-bg_8c_source.html#l00618">mate_bg_get_color()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -643,11 +661,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01026">1026</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01241">1241</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="mate-bg_8h_source.html#l00069">MATE_BG_KEY_PICTURE_FILENAME</a>, and <a class="el" href="mate-bg_8c_source.html#l00385">mate_bg_load_from_gsettings()</a>.</p>
+<p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, and <a class="el" href="mate-bg_8c_source.html#l00385">mate_bg_load_from_gsettings()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00384">caja_connect_desktop_background_to_settings()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00527">caja_connect_desktop_background_to_settings()</a>.</p>
 
 </div>
 </div>
@@ -675,7 +693,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01049">1049</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01260">1260</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, and <a class="el" href="mate-bg_8c_source.html#l00353">mate_bg_load_from_system_gsettings()</a>.</p>
 
@@ -700,7 +718,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01017">1017</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01232">1232</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, and <a class="el" href="mate-bg_8c_source.html#l00469">mate_bg_save_to_gsettings()</a>.</p>
 
@@ -725,7 +743,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01008">1008</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01223">1223</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, and <a class="el" href="mate-bg_8c_source.html#l00597">mate_bg_set_placement()</a>.</p>
 
@@ -746,11 +764,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00751">751</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l00966">966</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8h_source.html#l00058">EEL_BACKGROUND</a>, <a class="el" href="eel-background_8c_source.html#l01166">eel_background_new()</a>, <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="eel-background_8h_source.html#l00134">EelBackground::details</a>, <a class="el" href="eel-background_8h_source.html#l00058">EEL_BACKGROUND</a>, <a class="el" href="eel-background_8c_source.html#l01377">eel_background_new()</a>, <a class="el" href="eel-background_8h_source.html#l00062">EEL_IS_BACKGROUND</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00235">caja_connect_background_to_file_metadata()</a>, <a class="el" href="caja-directory-background_8c_source.html#l00384">caja_connect_desktop_background_to_settings()</a>, <a class="el" href="eel-background_8c_source.html#l00386">eel_background_draw()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03639">fm_directory_view_get_background()</a>, <a class="el" href="test-eel-background_8c_source.html#l00010">main()</a>, <a class="el" href="caja_2test_2test_8c_source.html#l00071">test_gtk_widget_set_background_color()</a>, and <a class="el" href="caja_2test_2test_8c_source.html#l00052">test_gtk_widget_set_background_image()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00238">caja_connect_background_to_file_metadata()</a>, <a class="el" href="caja-directory-background_8c_source.html#l00527">caja_connect_desktop_background_to_settings()</a>, <a class="el" href="eel-background_8c_source.html#l00568">eel_background_draw()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03639">fm_directory_view_get_background()</a>, <a class="el" href="test-eel-background_8c_source.html#l00010">main()</a>, <a class="el" href="caja_2test_2test_8c_source.html#l00071">test_gtk_widget_set_background_color()</a>, and <a class="el" href="caja_2test_2test_8c_source.html#l00052">test_gtk_widget_set_background_image()</a>.</p>
 
 </div>
 </div>
@@ -769,9 +787,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01178">1178</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="eel-background_8c_source.html#l01389">1389</a> of file <a class="el" href="eel-background_8c_source.html">eel-background.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-background_8c_source.html#l01166">eel_background_new()</a>, <a class="el" href="eel-background_8c_source.html#l00286">eel_background_set_color()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="eel-background_8c_source.html#l01377">eel_background_new()</a>, <a class="el" href="eel-background_8c_source.html#l00296">eel_background_set_color()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,15 @@
 var NAVTREEINDEX35 =
 {
+"core_8h.html#a48dcf351dede2c988854f054351f76c4":[14,0,0,11,0,2,4,10],
+"core_8h.html#a4ea1b1719133889796cdb04a77007ae6":[14,0,0,11,0,2,4,13],
+"core_8h.html#a5a520c0b7b881ba778998248eaca31c8":[14,0,0,11,0,2,4,23],
+"core_8h.html#a71fcde5d99c960d736f39a86eb71f154":[14,0,0,11,0,2,4,17],
+"core_8h.html#a76757f978955aaa21271ff8819af7e4d":[14,0,0,11,0,2,4,2],
+"core_8h.html#a797f7b2310e7e7f9a6ad84466a52b8e8":[14,0,0,11,0,2,4,4],
+"core_8h.html#a89a050eb1c764160c0656df899ac91dc":[14,0,0,11,0,2,4,33],
+"core_8h.html#a8ea28f339cc0fc82a33db2dedf1a65b5":[14,0,0,11,0,2,4,35],
+"core_8h.html#a8ebe061a73c46579d7f2a6d16238a808":[14,0,0,11,0,2,4,1],
+"core_8h.html#a9bc7a7d4a7c775c6a1a273db6daae0a1":[14,0,0,11,0,2,4,21],
 "core_8h.html#a9f095f4b06a776b485c2cb3b5d7c036a":[14,0,0,11,0,2,4,37],
 "core_8h.html#aa1711d85d3fd7e6a659aab48b19a6eea":[14,0,0,11,0,2,4,3],
 "core_8h.html#aab803b18827e47dd674f8cd1c900fd84":[14,0,0,11,0,2,4,34],
@@ -239,15 +249,5 @@ var NAVTREEINDEX35 =
 "cpufreq-selector-sysfs_8c_source.html":[14,0,0,12,4,0,0,6],
 "cpufreq-selector-sysfs_8h.html":[14,0,0,12,4,0,0,7],
 "cpufreq-selector-sysfs_8h.html#a37a0571b8c28e50b8352dc1e04a89328":[14,0,0,12,4,0,0,7,7],
-"cpufreq-selector-sysfs_8h.html#a4e927664f5c04e11114f4e3d735d416b":[14,0,0,12,4,0,0,7,4],
-"cpufreq-selector-sysfs_8h.html#a538507f1282e5b86fc3e2dd28a765d6a":[14,0,0,12,4,0,0,7,2],
-"cpufreq-selector-sysfs_8h.html#a5897965d4e32852cdd667851f177fe0b":[14,0,0,12,4,0,0,7,12],
-"cpufreq-selector-sysfs_8h.html#a6c88d0dcffd9785d7d2be9fee6acdce2":[14,0,0,12,4,0,0,7,5],
-"cpufreq-selector-sysfs_8h.html#a7adefe8f367b80ae3cc3ebeafb8dabd9":[14,0,0,12,4,0,0,7,11],
-"cpufreq-selector-sysfs_8h.html#a7ce3a872ca322edf19623f2cb102eeea":[14,0,0,12,4,0,0,7,6],
-"cpufreq-selector-sysfs_8h.html#a9263ba8a404119c25c92485e01d4d96a":[14,0,0,12,4,0,0,7,3],
-"cpufreq-selector-sysfs_8h.html#a9d798480a84ac810ba71ecf42da9774b":[14,0,0,12,4,0,0,7,10],
-"cpufreq-selector-sysfs_8h.html#abf1f349ba7369d5dc5136aeeb5bc2c06":[14,0,0,12,4,0,0,7,9],
-"cpufreq-selector-sysfs_8h.html#ae5d67dd21aed7f6309a4b5477305cdb1":[14,0,0,12,4,0,0,7,8],
-"cpufreq-selector-sysfs_8h_source.html":[14,0,0,12,4,0,0,7]
+"cpufreq-selector-sysfs_8h.html#a4e927664f5c04e11114f4e3d735d416b":[14,0,0,12,4,0,0,7,4]
 };

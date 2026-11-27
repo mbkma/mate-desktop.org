@@ -4,7 +4,7 @@ var dir_04a70c4eeec9b1638a4f2adc7f65e275 =
     [ "fm-actions.h", "fm-actions_8h.html", "fm-actions_8h" ],
     [ "fm-desktop-icon-view.c", "fm-desktop-icon-view_8c.html", "fm-desktop-icon-view_8c" ],
     [ "fm-desktop-icon-view.h", "fm-desktop-icon-view_8h.html", "fm-desktop-icon-view_8h" ],
-    [ "fm-desktop-wayland-bg-dialog.c", "fm-desktop-wayland-bg-dialog_8c.html", null ],
+    [ "fm-desktop-wayland-bg-dialog.c", "fm-desktop-wayland-bg-dialog_8c.html", "fm-desktop-wayland-bg-dialog_8c" ],
     [ "fm-desktop-wayland-bg-dialog.h", "fm-desktop-wayland-bg-dialog_8h.html", null ],
     [ "fm-directory-view.c", "fm-directory-view_8c.html", "fm-directory-view_8c" ],
     [ "fm-directory-view.h", "fm-directory-view_8h.html", "fm-directory-view_8h" ],

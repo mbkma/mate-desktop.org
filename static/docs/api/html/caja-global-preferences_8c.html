@@ -93,6 +93,7 @@ $(function(){initNavTree('caja-global-preferences_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;config.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mate-bg_8h_source.html">libmate-desktop/mate-bg.h</a>&gt;</code><br />
 <code>#include &lt;glib/gi18n.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="eel-glib-extensions_8h_source.html">eel/eel-glib-extensions.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="eel-gtk-extensions_8h_source.html">eel/eel-gtk-extensions.h</a>&gt;</code><br />
@@ -104,15 +105,20 @@ $(function(){initNavTree('caja-global-preferences_8c.html','',''); });
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for caja-global-preferences.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="caja-global-preferences_8c__incl.svg" width="100%" height="492"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="caja-global-preferences_8c__incl.svg" width="100%" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="caja-global-preferences_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:accf002c50d07fec7ddcaf35fde15c5e9" id="r_accf002c50d07fec7ddcaf35fde15c5e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf002c50d07fec7ddcaf35fde15c5e9">MATE_DESKTOP_USE_UNSTABLE_API</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a171f45c6fd079ff8a9c209a2b3c06f37" id="r_a171f45c6fd079ff8a9c209a2b3c06f37"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a171f45c6fd079ff8a9c209a2b3c06f37">caja_global_preferences_get_default_folder_viewer_preference_as_iid</a> (void)</td></tr>
 <tr class="memitem:a5353afb7cea2bea83bdc354a3254df1d" id="r_a5353afb7cea2bea83bdc354a3254df1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5353afb7cea2bea83bdc354a3254df1d">caja_global_preferences_init</a> (void)</td></tr>
+<tr class="memitem:a5679a3a7bfbc1ae98f8f862aacad25bc" id="r_a5679a3a7bfbc1ae98f8f862aacad25bc"><td class="memItemLeft" align="right" valign="top">GSettings *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5679a3a7bfbc1ae98f8f862aacad25bc">caja_preferences_get_monitor_settings</a> (GdkMonitor *monitor)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -128,6 +134,23 @@ Variables</h2></td></tr>
 <tr class="memitem:abfe9eaa85b3ebc399fbbcf486fa59cc7" id="r_abfe9eaa85b3ebc399fbbcf486fa59cc7"><td class="memItemLeft" align="right" valign="top">GSettings *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfe9eaa85b3ebc399fbbcf486fa59cc7">mate_background_preferences</a></td></tr>
 <tr class="memitem:a2746c14653531e5aaa8297cbe18d1ccd" id="r_a2746c14653531e5aaa8297cbe18d1ccd"><td class="memItemLeft" align="right" valign="top">GSettings *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2746c14653531e5aaa8297cbe18d1ccd">mate_lockdown_preferences</a></td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="accf002c50d07fec7ddcaf35fde15c5e9" name="accf002c50d07fec7ddcaf35fde15c5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf002c50d07fec7ddcaf35fde15c5e9">&#9670;&#160;</a></span>MATE_DESKTOP_USE_UNSTABLE_API</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MATE_DESKTOP_USE_UNSTABLE_API</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00028">28</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a171f45c6fd079ff8a9c209a2b3c06f37" name="a171f45c6fd079ff8a9c209a2b3c06f37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a171f45c6fd079ff8a9c209a2b3c06f37">&#9670;&#160;</a></span>caja_global_preferences_get_default_folder_viewer_preference_as_iid()</h2>
@@ -144,9 +167,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00055">55</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00058">58</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-global-preferences_8h_source.html#l00136">CAJA_COMPACT_VIEW_IID</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00129">CAJA_DEFAULT_FOLDER_VIEWER_COMPACT_VIEW</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00130">CAJA_DEFAULT_FOLDER_VIEWER_LIST_VIEW</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00135">CAJA_ICON_VIEW_IID</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00137">CAJA_LIST_VIEW_IID</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00038">caja_preferences</a>, and <a class="el" href="caja-global-preferences_8h_source.html#l00124">CAJA_PREFERENCES_DEFAULT_FOLDER_VIEWER</a>.</p>
+<p class="reference">References <a class="el" href="caja-global-preferences_8h_source.html#l00137">CAJA_COMPACT_VIEW_IID</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00130">CAJA_DEFAULT_FOLDER_VIEWER_COMPACT_VIEW</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00131">CAJA_DEFAULT_FOLDER_VIEWER_LIST_VIEW</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00136">CAJA_ICON_VIEW_IID</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00138">CAJA_LIST_VIEW_IID</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_preferences</a>, and <a class="el" href="caja-global-preferences_8h_source.html#l00125">CAJA_PREFERENCES_DEFAULT_FOLDER_VIEWER</a>.</p>
 
 </div>
 </div>
@@ -165,11 +188,32 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00080">80</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00083">83</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-global-preferences_8c_source.html#l00044">caja_compact_view_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00042">caja_desktop_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00046">caja_extension_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_icon_view_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00045">caja_list_view_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00039">caja_media_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00038">caja_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00043">caja_tree_sidebar_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00040">caja_window_state</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00048">mate_background_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00049">mate_lockdown_preferences</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="caja-global-preferences_8c_source.html#l00047">caja_compact_view_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00045">caja_desktop_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00049">caja_extension_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00044">caja_icon_view_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00048">caja_list_view_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00042">caja_media_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00046">caja_tree_sidebar_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00043">caja_window_state</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00051">mate_background_preferences</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00052">mate_lockdown_preferences</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="caja-directory_8c_source.html#l00269">caja_directory_get_internal()</a>, and <a class="el" href="caja-connect-server-dialog-main_8c_source.html#l00106">main()</a>.</p>
+
+</div>
+</div>
+<a id="a5679a3a7bfbc1ae98f8f862aacad25bc" name="a5679a3a7bfbc1ae98f8f862aacad25bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5679a3a7bfbc1ae98f8f862aacad25bc">&#9670;&#160;</a></span>caja_preferences_get_monitor_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GSettings * caja_preferences_get_monitor_settings </td>
+          <td>(</td>
+          <td class="paramtype">GdkMonitor *</td>          <td class="paramname"><span class="paramname"><em>monitor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00109">109</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+
+<p class="reference">References <a class="el" href="mate-bg_8c_source.html#l00266">mate_bg_get_monitor_id()</a>, <a class="el" href="mate-bg_8c_source.html#l00275">mate_bg_get_monitor_settings()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -186,9 +230,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00044">44</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00047">47</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -204,9 +248,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00042">42</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00045">45</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-desktop-link_8c_source.html#l00211">caja_desktop_link_new()</a>, <a class="el" href="caja-desktop-link_8c_source.html#l00411">caja_desktop_link_rename()</a>, and <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-desktop-link_8c_source.html#l00211">caja_desktop_link_new()</a>, <a class="el" href="caja-desktop-link_8c_source.html#l00411">caja_desktop_link_rename()</a>, and <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -222,9 +266,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00046">46</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00049">49</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -240,9 +284,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00041">41</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00044">44</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -258,9 +302,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00045">45</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00048">48</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -276,9 +320,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00039">39</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00042">42</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-autorun_8c_source.html#l01272">caja_autorun()</a>, <a class="el" href="caja-autorun_8c_source.html#l00071">caja_autorun_get_preferences()</a>, <a class="el" href="caja-autorun_8c_source.html#l00151">caja_autorun_set_preferences()</a>, and <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-autorun_8c_source.html#l01272">caja_autorun()</a>, <a class="el" href="caja-autorun_8c_source.html#l00071">caja_autorun_get_preferences()</a>, <a class="el" href="caja-autorun_8c_source.html#l00151">caja_autorun_set_preferences()</a>, and <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -294,9 +338,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00038">38</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00041">41</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-file-operations_8c_source.html#l00198">caja_application_notify_unmount_show()</a>, <a class="el" href="caja-directory-background_8c_source.html#l00235">caja_connect_background_to_file_metadata()</a>, <a class="el" href="caja-connect-server-dialog-nonmain_8c_source.html#l00067">caja_connect_server_dialog_display_location_async()</a>, <a class="el" href="caja-file_8c_source.html#l07225">caja_file_get_volume_free_space()</a>, <a class="el" href="caja-file_8c_source.html#l05115">caja_file_should_get_top_left_text()</a>, <a class="el" href="caja-file_8c_source.html#l05071">caja_file_should_show_directory_item_count()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00522">caja_get_desktop_directory()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00055">caja_global_preferences_get_default_folder_viewer_preference_as_iid()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00743">caja_is_desktop_directory()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00721">caja_is_desktop_directory_file()</a>, <a class="el" href="caja-navigation-window-pane_8c_source.html#l00746">caja_navigation_window_pane_hide_temporary_bars()</a>, <a class="el" href="caja-navigation-window-menus_8c_source.html#l00352">caja_navigation_window_update_spatial_menu_item()</a>, <a class="el" href="caja-window-menus_8c_source.html#l01053">caja_window_finalize_menus()</a>, <a class="el" href="caja-window-menus_8c_source.html#l00987">caja_window_initialize_menus()</a>, <a class="el" href="caja-window_8c_source.html#l00282">caja_window_new_tab()</a>, <a class="el" href="caja-window-manage-views_8c_source.html#l00514">caja_window_slot_open_location_full()</a>, <a class="el" href="fm-directory-view_8c_source.html#l02232">fm_directory_view_display_selection_info()</a>, and <a class="el" href="caja-icon-canvas-item_8c.html#ac34603a81e6147f2a40f4f316b6ce068">G_DEFINE_TYPE_WITH_CODE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-file-operations_8c_source.html#l00198">caja_application_notify_unmount_show()</a>, <a class="el" href="caja-directory-background_8c_source.html#l00238">caja_connect_background_to_file_metadata()</a>, <a class="el" href="caja-connect-server-dialog-nonmain_8c_source.html#l00067">caja_connect_server_dialog_display_location_async()</a>, <a class="el" href="caja-file_8c_source.html#l07225">caja_file_get_volume_free_space()</a>, <a class="el" href="caja-file_8c_source.html#l05115">caja_file_should_get_top_left_text()</a>, <a class="el" href="caja-file_8c_source.html#l05071">caja_file_should_show_directory_item_count()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00522">caja_get_desktop_directory()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00058">caja_global_preferences_get_default_folder_viewer_preference_as_iid()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00743">caja_is_desktop_directory()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00721">caja_is_desktop_directory_file()</a>, <a class="el" href="caja-navigation-window-pane_8c_source.html#l00746">caja_navigation_window_pane_hide_temporary_bars()</a>, <a class="el" href="caja-navigation-window-menus_8c_source.html#l00352">caja_navigation_window_update_spatial_menu_item()</a>, <a class="el" href="caja-window-menus_8c_source.html#l01053">caja_window_finalize_menus()</a>, <a class="el" href="caja-window-menus_8c_source.html#l00987">caja_window_initialize_menus()</a>, <a class="el" href="caja-window_8c_source.html#l00282">caja_window_new_tab()</a>, <a class="el" href="caja-window-manage-views_8c_source.html#l00514">caja_window_slot_open_location_full()</a>, <a class="el" href="fm-directory-view_8c_source.html#l02232">fm_directory_view_display_selection_info()</a>, and <a class="el" href="caja-icon-canvas-item_8c.html#ac34603a81e6147f2a40f4f316b6ce068">G_DEFINE_TYPE_WITH_CODE()</a>.</p>
 
 </div>
 </div>
@@ -312,9 +356,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00043">43</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00046">46</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -330,9 +374,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00040">40</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00043">43</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-application_8c_source.html#l01040">caja_application_create_navigation_window()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00677">caja_navigation_window_add_sidebar_panel()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01042">caja_navigation_window_hide_sidebar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00995">caja_navigation_window_hide_status_bar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01026">caja_navigation_window_hide_toolbar()</a>, <a class="el" href="caja-navigation-window-pane_8c_source.html#l01038">caja_navigation_window_pane_hide_location_bar()</a>, <a class="el" href="caja-navigation-window-pane_8c_source.html#l01051">caja_navigation_window_pane_show_location_bar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01056">caja_navigation_window_show_sidebar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01005">caja_navigation_window_show_status_bar()</a>, and <a class="el" href="caja-navigation-window_8c_source.html#l01034">caja_navigation_window_show_toolbar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-application_8c_source.html#l01182">caja_application_create_navigation_window()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00677">caja_navigation_window_add_sidebar_panel()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01042">caja_navigation_window_hide_sidebar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00995">caja_navigation_window_hide_status_bar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01026">caja_navigation_window_hide_toolbar()</a>, <a class="el" href="caja-navigation-window-pane_8c_source.html#l01038">caja_navigation_window_pane_hide_location_bar()</a>, <a class="el" href="caja-navigation-window-pane_8c_source.html#l01051">caja_navigation_window_pane_show_location_bar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01056">caja_navigation_window_show_sidebar()</a>, <a class="el" href="caja-navigation-window_8c_source.html#l01005">caja_navigation_window_show_status_bar()</a>, and <a class="el" href="caja-navigation-window_8c_source.html#l01034">caja_navigation_window_show_toolbar()</a>.</p>
 
 </div>
 </div>
@@ -348,9 +392,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00048">48</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00051">51</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00384">caja_connect_desktop_background_to_settings()</a>, and <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-directory-background_8c_source.html#l00527">caja_connect_desktop_background_to_settings()</a>, and <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>
@@ -366,9 +410,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00049">49</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-global-preferences_8c_source.html#l00052">52</a> of file <a class="el" href="caja-global-preferences_8c_source.html">caja-global-preferences.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00080">caja_global_preferences_init()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-global-preferences_8c_source.html#l00083">caja_global_preferences_init()</a>.</p>
 
 </div>
 </div>

@@ -3,6 +3,7 @@ var caja_application_8c =
     [ "APPLICATION_WINDOW_MIN_HEIGHT", "caja-application_8c.html#a1b3a7e651215e1435e65425f156b3cc7", null ],
     [ "APPLICATION_WINDOW_MIN_WIDTH", "caja-application_8c.html#ae4aa3d3ad97355bc6a820c401bb977fc", null ],
     [ "CAJA_ACCEL_MAP_SAVE_DELAY", "caja-application_8c.html#a1334dfe254f1518bbce33a1bd64c324c", null ],
+    [ "DESKTOP_MONITORS_SETTLE_MS", "caja-application_8c.html#af3350702f0d2e373eabf65650785dcfb", null ],
     [ "MATE_DESKTOP_USE_UNSTABLE_API", "caja-application_8c.html#accf002c50d07fec7ddcaf35fde15c5e9", null ],
     [ "caja_application_close_all_navigation_windows", "caja-application_8c.html#a0c9918785203a10c59a537614e3bd824", null ],
     [ "caja_application_close_all_spatial_windows", "caja-application_8c.html#a432e661d3b277fdacf8aa08a75d61f96", null ],

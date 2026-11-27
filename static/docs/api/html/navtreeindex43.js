@@ -1,5 +1,16 @@
 var NAVTREEINDEX43 =
 {
+"eel-canvas_8h.html#a100d29669d70845d06fa41fe11de1125":[14,0,0,1,0,14,35],
+"eel-canvas_8h.html#a1d5a6e8051c19ab7dce5e2596d66c065":[14,0,0,1,0,14,38],
+"eel-canvas_8h.html#a1e23f027026655c3f3588c86bef37a3a":[14,0,0,1,0,14,45],
+"eel-canvas_8h.html#a21b0d5332c695b5a1b1b78b1520fe511":[14,0,0,1,0,14,12],
+"eel-canvas_8h.html#a23bbc9bd8c278332c8090b199c6f7193":[14,0,0,1,0,14,42],
+"eel-canvas_8h.html#a28eecd00329bda405f6de81878f1db51":[14,0,0,1,0,14,39],
+"eel-canvas_8h.html#a2d07f453ab5d41ccfa715f2df190858c":[14,0,0,1,0,14,56],
+"eel-canvas_8h.html#a42f03d4bc702f13866611ea665994c70":[14,0,0,1,0,14,74],
+"eel-canvas_8h.html#a4680aab819a012c1eb19574ac152593f":[14,0,0,1,0,14,52],
+"eel-canvas_8h.html#a472faafc60bc52e129725be2ceac0161":[14,0,0,1,0,14,18],
+"eel-canvas_8h.html#a499473158864d2cc36ebddc56bd10e56":[14,0,0,1,0,14,24],
 "eel-canvas_8h.html#a4acc0231abe79930cc568038537e4064":[14,0,0,1,0,14,11],
 "eel-canvas_8h.html#a51969eac7ad53670df99054293494331":[14,0,0,1,0,14,78],
 "eel-canvas_8h.html#a578c8bae103d2b11d94ea9bf90948670":[14,0,0,1,0,14,17],
@@ -238,16 +249,5 @@ var NAVTREEINDEX43 =
 "eel-gdk-extensions_8c.html#acd95681042b501cbf43a404e08f5bc6c":[14,0,0,1,0,19,100],
 "eel-gdk-extensions_8c.html#acfc83d9a18ab60664d154ce8813c00ad":[14,0,0,1,0,19,51],
 "eel-gdk-extensions_8c.html#ad46570601d6a853f875aac61c9501a5e":[14,0,0,1,0,19,49],
-"eel-gdk-extensions_8c.html#ad4e7582464ca962830cd04a95c84d6ea":[14,0,0,1,0,19,43],
-"eel-gdk-extensions_8c.html#ad64eec0e06f26c436ad0aecba63f6fb0":[14,0,0,1,0,19,66],
-"eel-gdk-extensions_8c.html#ad9af43426af5e4c3589e02f1f32239ef":[14,0,0,1,0,19,124],
-"eel-gdk-extensions_8c.html#adcd0f2d388aadc2d52839af06d9ff94f":[14,0,0,1,0,19,133],
-"eel-gdk-extensions_8c.html#ae1b97b9c0cad460de8b109b2c10c0e9b":[14,0,0,1,0,19,115],
-"eel-gdk-extensions_8c.html#ae2983fff9c8da7a917086f3ead68316c":[14,0,0,1,0,19,55],
-"eel-gdk-extensions_8c.html#ae3758b91ebb549f6e07415630476d009":[14,0,0,1,0,19,84],
-"eel-gdk-extensions_8c.html#ae41474d9950fa1a42bc836f170d90812":[14,0,0,1,0,19,81],
-"eel-gdk-extensions_8c.html#ae4a5cc3f382e6b6699c0c5fdf74a92d8":[14,0,0,1,0,19,6],
-"eel-gdk-extensions_8c.html#ae5d7cee2d4fc2ef75457d240d2326506":[14,0,0,1,0,19,30],
-"eel-gdk-extensions_8c.html#ae6669b9463497865dbfc4612cd5a8942":[14,0,0,1,0,19,102],
-"eel-gdk-extensions_8c.html#aea55041a67042d42d3a26f2de399e142":[14,0,0,1,0,19,27]
+"eel-gdk-extensions_8c.html#ad4e7582464ca962830cd04a95c84d6ea":[14,0,0,1,0,19,43]
 };

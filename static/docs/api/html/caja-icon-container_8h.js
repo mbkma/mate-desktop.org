@@ -58,6 +58,7 @@ var caja_icon_container_8h =
     [ "caja_icon_container_is_layout_rtl", "caja-icon-container_8h.html#a550f2b502c9d06e8913801cf0f59f5b6", null ],
     [ "caja_icon_container_is_layout_vertical", "caja-icon-container_8h.html#a6d9973bcd53eeb86157c2fbb0f1b4014", null ],
     [ "caja_icon_container_is_lock_icons_position", "caja-icon-container_8h.html#aec1ab630a0b781f241bacd66835e318c", null ],
+    [ "caja_icon_container_is_position_change_automatic", "caja-icon-container_8h.html#a247e6a3f0c6783c83271f437cff25eb7", null ],
     [ "caja_icon_container_is_stretched", "caja-icon-container_8h.html#a98d015995a21257a53f9cb1f0de123ff", null ],
     [ "caja_icon_container_is_tighter_layout", "caja-icon-container_8h.html#a89234db9f1eba7f817cce3b62e8b413b", null ],
     [ "caja_icon_container_layout_now", "caja-icon-container_8h.html#a85d9dda6b1589ce0409fe8e37f996d13", null ],

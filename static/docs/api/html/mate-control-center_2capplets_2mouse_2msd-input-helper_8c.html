@@ -95,21 +95,25 @@ $(function(){initNavTree('mate-control-center_2capplets_2mouse_2msd-input-helper
 <div class="textblock"><code>#include &quot;config.h&quot;</code><br />
 <code>#include &lt;gdk/gdk.h&gt;</code><br />
 <code>#include &lt;gdk/gdkx.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;sys/types.h&gt;</code><br />
 <code>#include &lt;X11/Xatom.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8h_source.html">msd-input-helper.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mate-control-center/capplets/mouse/msd-input-helper.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="mate-control-center_2capplets_2mouse_2msd-input-helper_8c__incl.svg" width="100%" height="437"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="mate-control-center_2capplets_2mouse_2msd-input-helper_8c__incl.svg" width="100%" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:aa374b8eef911e30808509097886d9e11" id="r_aa374b8eef911e30808509097886d9e11"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa374b8eef911e30808509097886d9e11">touchpad_lacks_left_button</a> (void)</td></tr>
+<tr class="memitem:af854889e98886d6248b866672556db65" id="r_af854889e98886d6248b866672556db65"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af854889e98886d6248b866672556db65">pointer_support</a> (gboolean touchpads, <a class="el" href="structInputDeviceDescription.html">InputDeviceDescription</a> *support)</td></tr>
 <tr class="memitem:addbd9b34db5d9fec73cfa5b7ae59ebdf" id="r_addbd9b34db5d9fec73cfa5b7ae59ebdf"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addbd9b34db5d9fec73cfa5b7ae59ebdf">supports_xinput_devices</a> (void)</td></tr>
 <tr class="memitem:a1e5e4593ae5563aaa9721577c5d78594" id="r_a1e5e4593ae5563aaa9721577c5d78594"><td class="memItemLeft" align="right" valign="top">XDevice *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e5e4593ae5563aaa9721577c5d78594">device_is_touchpad</a> (XDeviceInfo *deviceinfo)</td></tr>
+<tr class="memitem:a0af9125ab3497e31be33e21d7983b4ae" id="r_a0af9125ab3497e31be33e21d7983b4ae"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0af9125ab3497e31be33e21d7983b4ae">pointer_threshold_ignored</a> (gboolean touchpads)</td></tr>
 <tr class="memitem:a11f4bb27df71f36e62f5b47c4303ba92" id="r_a11f4bb27df71f36e62f5b47c4303ba92"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11f4bb27df71f36e62f5b47c4303ba92">touchpad_is_present</a> (void)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
@@ -128,11 +132,57 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00072">72</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00149">149</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
 
 <p class="reference">References <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00096">touchpad_is_present()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00245">touchpad_is_present()</a>.</p>
+
+</div>
+</div>
+<a id="af854889e98886d6248b866672556db65" name="af854889e98886d6248b866672556db65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af854889e98886d6248b866672556db65">&#9670;&#160;</a></span>pointer_support()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean pointer_support </td>
+          <td>(</td>
+          <td class="paramtype">gboolean</td>          <td class="paramname"><span class="paramname"><em>touchpads</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structInputDeviceDescription.html">InputDeviceDescription</a> *</td>          <td class="paramname"><span class="paramname"><em>support</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00082">82</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
+
+<p class="reference">References <a class="el" href="msd-input-wayland_8h_source.html#l00058">InputDeviceDescription::accel_profiles</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00056">InputDeviceDescription::config</a>, <a class="el" href="udisks2-plugin_8c_source.html#l00069">devices</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="msd-input-wayland_8c_source.html#l00260">input_devices_describe()</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00054">InputDeviceDescription::kind</a>, <a class="el" href="jpegint-8a_8h_source.html#l00262">MAX</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00059">InputDeviceDescription::scroll_methods</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00057">InputDeviceDescription::tap_fingers</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+</div>
+</div>
+<a id="a0af9125ab3497e31be33e21d7983b4ae" name="a0af9125ab3497e31be33e21d7983b4ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0af9125ab3497e31be33e21d7983b4ae">&#9670;&#160;</a></span>pointer_threshold_ignored()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean pointer_threshold_ignored </td>
+          <td>(</td>
+          <td class="paramtype">gboolean</td>          <td class="paramname"><span class="paramname"><em>touchpads</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00203">203</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
+
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="ephy-zoom_8h_source.html#l00043">name</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00109">supports_xinput_devices()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -151,11 +201,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00032">32</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00109">109</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
 
 <p class="reference">References <a class="el" href="ma-command_8h_source.html#l00030">error</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="msd-mouse-manager_8c_source.html#l01861">msd_mouse_manager_start()</a>, and <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00096">touchpad_is_present()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="msd-mouse-manager_8c_source.html#l01861">msd_mouse_manager_start()</a>, <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00203">pointer_threshold_ignored()</a>, and <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00245">touchpad_is_present()</a>.</p>
 
 </div>
 </div>
@@ -174,9 +224,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00096">96</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00245">245</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00072">device_is_touchpad()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00032">supports_xinput_devices()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00149">device_is_touchpad()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00109">supports_xinput_devices()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+</div>
+</div>
+<a id="aa374b8eef911e30808509097886d9e11" name="aa374b8eef911e30808509097886d9e11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa374b8eef911e30808509097886d9e11">&#9670;&#160;</a></span>touchpad_lacks_left_button()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean touchpad_lacks_left_button </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html#l00063">63</a> of file <a class="el" href="mate-control-center_2capplets_2mouse_2msd-input-helper_8c_source.html">mate-control-center/capplets/mouse/msd-input-helper.c</a>.</p>
+
+<p class="reference">References <a class="el" href="msd-input-wayland_8h_source.html#l00055">InputDeviceDescription::buttons</a>, <a class="el" href="udisks2-plugin_8c_source.html#l00069">devices</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00036">INPUT_BUTTON_LEFT</a>, <a class="el" href="msd-input-wayland_8c_source.html#l00260">input_devices_describe()</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00030">INPUT_KIND_TOUCHPAD</a>, <a class="el" href="msd-input-wayland_8h_source.html#l00054">InputDeviceDescription::kind</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>

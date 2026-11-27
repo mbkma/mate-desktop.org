@@ -133,7 +133,8 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae683d6a37182dc655ae3f7eb85272a30" id="r_ae683d6a37182dc655ae3f7eb85272a30"><td class="memItemLeft" align="right" valign="top">GType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae683d6a37182dc655ae3f7eb85272a30">caja_desktop_window_get_type</a> (void)</td></tr>
-<tr class="memitem:ae4d620ef9d784097f3536a6982bbe62c" id="r_ae4d620ef9d784097f3536a6982bbe62c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCajaDesktopWindow.html">CajaDesktopWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4d620ef9d784097f3536a6982bbe62c">caja_desktop_window_new</a> (<a class="el" href="structCajaApplication.html">CajaApplication</a> *application, GdkScreen *screen)</td></tr>
+<tr class="memitem:aeb2b92f29f62b75160eda936d698eecc" id="r_aeb2b92f29f62b75160eda936d698eecc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structCajaDesktopWindow.html">CajaDesktopWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb2b92f29f62b75160eda936d698eecc">caja_desktop_window_new</a> (<a class="el" href="structCajaApplication.html">CajaApplication</a> *application, GdkScreen *screen, GdkMonitor *monitor)</td></tr>
+<tr class="memitem:a7a2d7807e76c9f5d7a26113bb17fa14d" id="r_a7a2d7807e76c9f5d7a26113bb17fa14d"><td class="memItemLeft" align="right" valign="top">GdkMonitor *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a2d7807e76c9f5d7a26113bb17fa14d">caja_desktop_window_get_monitor</a> (<a class="el" href="structCajaDesktopWindow.html">CajaDesktopWindow</a> *window)</td></tr>
 <tr class="memitem:a7e3bc9b445b78be931ea543d9b0b7482" id="r_a7e3bc9b445b78be931ea543d9b0b7482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e3bc9b445b78be931ea543d9b0b7482">caja_desktop_window_update_directory</a> (<a class="el" href="structCajaDesktopWindow.html">CajaDesktopWindow</a> *window)</td></tr>
 <tr class="memitem:a5d6eb076ac1dae84a4d4a7fdccf7441e" id="r_a5d6eb076ac1dae84a4d4a7fdccf7441e"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d6eb076ac1dae84a4d4a7fdccf7441e">caja_desktop_window_loaded</a> (<a class="el" href="structCajaDesktopWindow.html">CajaDesktopWindow</a> *window)</td></tr>
 </table>
@@ -158,7 +159,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="caja-desktop-window_8h_source.html#l00038">38</a> of file <a class="el" href="caja-desktop-window_8h_source.html">caja-desktop-window.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00185">caja_desktop_window_new()</a>, and <a class="el" href="caja-window-manage-views_8c_source.html#l00514">caja_window_slot_open_location_full()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00179">caja_desktop_window_new()</a>, and <a class="el" href="caja-window-manage-views_8c_source.html#l00514">caja_window_slot_open_location_full()</a>.</p>
 
 </div>
 </div>
@@ -221,7 +222,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="caja-desktop-window_8h_source.html#l00042">42</a> of file <a class="el" href="caja-desktop-window_8h_source.html">caja-desktop-window.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00141">caja_desktop_window_update_directory()</a>, <a class="el" href="caja-location-dialog_8c_source.html#l00218">caja_location_dialog_new()</a>, <a class="el" href="caja-window-slot_8c_source.html#l00591">caja_window_slot_add_current_location_to_history_list()</a>, and <a class="el" href="caja-window-manage-views_8c_source.html#l00514">caja_window_slot_open_location_full()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00452">caja_desktop_window_get_monitor()</a>, <a class="el" href="caja-desktop-window_8c_source.html#l00144">caja_desktop_window_update_directory()</a>, <a class="el" href="caja-location-dialog_8c_source.html#l00218">caja_location_dialog_new()</a>, <a class="el" href="caja-window-slot_8c_source.html#l00591">caja_window_slot_add_current_location_to_history_list()</a>, and <a class="el" href="caja-window-manage-views_8c_source.html#l00514">caja_window_slot_open_location_full()</a>.</p>
 
 </div>
 </div>
@@ -273,7 +274,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8h_source.html#l00069">69</a> of file <a class="el" href="caja-desktop-window_8h_source.html">caja-desktop-window.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8h_source.html#l00071">71</a> of file <a class="el" href="caja-desktop-window_8h_source.html">caja-desktop-window.h</a>.</p>
 
 </div>
 </div>
@@ -295,6 +296,27 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a7a2d7807e76c9f5d7a26113bb17fa14d" name="a7a2d7807e76c9f5d7a26113bb17fa14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2d7807e76c9f5d7a26113bb17fa14d">&#9670;&#160;</a></span>caja_desktop_window_get_monitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GdkMonitor * caja_desktop_window_get_monitor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCajaDesktopWindow.html">CajaDesktopWindow</a> *</td>          <td class="paramname"><span class="paramname"><em>window</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00452">452</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
+
+<p class="reference">References <a class="el" href="caja-desktop-window_8h_source.html#l00042">CAJA_IS_DESKTOP_WINDOW</a>, <a class="el" href="caja-desktop-window_8h_source.html#l00054">CajaDesktopWindow::details</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
 <a id="ae683d6a37182dc655ae3f7eb85272a30" name="ae683d6a37182dc655ae3f7eb85272a30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae683d6a37182dc655ae3f7eb85272a30">&#9670;&#160;</a></span>caja_desktop_window_get_type()</h2>
 
@@ -310,7 +332,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00185">caja_desktop_window_new()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00179">caja_desktop_window_new()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +351,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00435">435</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00460">460</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-desktop-window_8h_source.html#l00054">CajaDesktopWindow::details</a>.</p>
 
@@ -337,8 +359,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae4d620ef9d784097f3536a6982bbe62c" name="ae4d620ef9d784097f3536a6982bbe62c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4d620ef9d784097f3536a6982bbe62c">&#9670;&#160;</a></span>caja_desktop_window_new()</h2>
+<a id="aeb2b92f29f62b75160eda936d698eecc" name="aeb2b92f29f62b75160eda936d698eecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2b92f29f62b75160eda936d698eecc">&#9670;&#160;</a></span>caja_desktop_window_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,14 +373,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GdkScreen *</td>          <td class="paramname"><span class="paramname"><em>screen</em></span>&#160;)</td>
+          <td class="paramtype">GdkScreen *</td>          <td class="paramname"><span class="paramname"><em>screen</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GdkMonitor *</td>          <td class="paramname"><span class="paramname"><em>monitor</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00185">185</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00179">179</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-desktop-window_8h_source.html#l00038">CAJA_DESKTOP_WINDOW</a>, <a class="el" href="#ae683d6a37182dc655ae3f7eb85272a30">caja_desktop_window_get_type()</a>, <a class="el" href="caja-desktop-window_8c_source.html#l00141">caja_desktop_window_update_directory()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-desktop-window_8h_source.html#l00038">CAJA_DESKTOP_WINDOW</a>, <a class="el" href="#ae683d6a37182dc655ae3f7eb85272a30">caja_desktop_window_get_type()</a>, <a class="el" href="caja-desktop-window_8c_source.html#l00144">caja_desktop_window_update_directory()</a>, <a class="el" href="caja-desktop-window_8h_source.html#l00054">CajaDesktopWindow::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="clock_8c_source.html#l00065">GDK_IS_X11_DISPLAY</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -377,11 +404,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00141">141</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="caja-desktop-window_8c_source.html#l00144">144</a> of file <a class="el" href="caja-desktop-window_8c_source.html">caja-desktop-window.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-desktop-window_8h_source.html#l00042">CAJA_IS_DESKTOP_WINDOW</a>, <a class="el" href="caja-window_8h_source.html#l00044">CAJA_WINDOW</a>, <a class="el" href="caja-window_8c_source.html#l00234">caja_window_go_to()</a>, <a class="el" href="caja-desktop-window_8h_source.html#l00054">CajaDesktopWindow::details</a>, <a class="el" href="eel-vfs-extensions_8h_source.html#l00039">EEL_DESKTOP_URI</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00185">caja_desktop_window_new()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="caja-desktop-window_8c_source.html#l00179">caja_desktop_window_new()</a>.</p>
 
 </div>
 </div>
