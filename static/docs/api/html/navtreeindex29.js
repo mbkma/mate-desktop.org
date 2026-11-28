@@ -1,5 +1,13 @@
 var NAVTREEINDEX29 =
 {
+"caja-undostack-manager_8h.html#abf17ed0641c6d3ab18fc48103026c130":[14,0,0,1,2,130,27],
+"caja-undostack-manager_8h.html#acc8b11f4a32dbba6cad96ac020d849fd":[14,0,0,1,2,130,8],
+"caja-undostack-manager_8h.html#acdf597c5449e523d6edd28b979f850c8":[14,0,0,1,2,130,35],
+"caja-undostack-manager_8h.html#ad02ad75ba00f42ce36674667440bed50":[14,0,0,1,2,130,13],
+"caja-undostack-manager_8h.html#ad2649a85aa066cfd018130747b3addf9":[14,0,0,1,2,130,25],
+"caja-undostack-manager_8h.html#ada2ca9d547b05ea49bc10d223881dea2":[14,0,0,1,2,130,17],
+"caja-undostack-manager_8h.html#add78218429250c2d173c0604b50277ef":[14,0,0,1,2,130,11],
+"caja-undostack-manager_8h.html#ade3ab9e2adca53b2e8351979c42c21f0":[14,0,0,1,2,130,14],
 "caja-undostack-manager_8h.html#ae5dac803728b6bb4d31a14cf465e7831":[14,0,0,1,2,130,20],
 "caja-undostack-manager_8h.html#ae7e6fac3c1b0f23984f6bd3db3043fa7":[14,0,0,1,2,130,18],
 "caja-undostack-manager_8h.html#aeb1bdef849147797024326eef6976729":[14,0,0,1,2,130,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX29 =
 "caja-window-info_8h.html#a7f87186a04cd8968d22efcc42f15966ea3dce1892b3f85e5ada1f9d10a372c60e":[14,0,0,1,2,140,17,2],
 "caja-window-info_8h.html#a7f87186a04cd8968d22efcc42f15966ea6428eaa6452a304943e1ec8a8d0ebbb8":[14,0,0,1,2,140,17,1],
 "caja-window-info_8h.html#a8e97881902dd03d408a433d3729f4ef3":[14,0,0,1,2,140,28],
-"caja-window-info_8h.html#a94b37535abe366afe05d22203fd7c6f3":[14,0,0,1,2,140,8],
-"caja-window-info_8h.html#a95b5df8f5a9212938fa18003db403a60":[14,0,0,1,2,140,22],
-"caja-window-info_8h.html#a99f9d52f1630e93a91595d0ad89c59f6":[14,0,0,1,2,140,40],
-"caja-window-info_8h.html#aa18cc7ee72c25e3a25d65aa97dc6ae89":[14,0,0,1,2,140,27],
-"caja-window-info_8h.html#aa2660fe9681b8df8418a0eee55575657":[14,0,0,1,2,140,24],
-"caja-window-info_8h.html#aa2c76a7ef63f17fb605ccc9e3c6e3c7f":[14,0,0,1,2,140,11],
-"caja-window-info_8h.html#aac39936ce3ac852cd133b115e56361f5":[14,0,0,1,2,140,6],
-"caja-window-info_8h.html#ab8ca3c0fe26844bae26895ae1926c651":[14,0,0,1,2,140,34],
-"caja-window-info_8h.html#ac06fc4778050bd6c09b122ab90b0f650":[14,0,0,1,2,140,33]
+"caja-window-info_8h.html#a94b37535abe366afe05d22203fd7c6f3":[14,0,0,1,2,140,8]
 };

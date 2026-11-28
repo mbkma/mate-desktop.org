@@ -122,7 +122,7 @@ $(function(){initNavTree('netspeed_2src_2netspeed_8c_source.html','',''); });
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="mate-panel-applet_8h.html">mate-panel-applet.h</a>&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &lt;<a class="code" href="mate-panel-applet-gsettings_8h.html">mate-panel-applet-gsettings.h</a>&gt;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;glib.h&gt;</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;glib/gi18n.h&gt;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;glib/gi18n-lib.h&gt;</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;gio/gio.h&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="backend_8h.html">backend.h</a>&quot;</span></div>
@@ -155,7 +155,7 @@ $(function(){initNavTree('netspeed_2src_2netspeed_8c_source.html','',''); });
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> IN_ICON[] = <span class="stringliteral">&quot;go-down&quot;</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> OUT_ICON[] = <span class="stringliteral">&quot;go-up&quot;</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> ERROR_ICON[] = <span class="stringliteral">&quot;gtk-dialog-error&quot;</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> ERROR_ICON[] = <span class="stringliteral">&quot;dialog-error&quot;</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> LOGO_ICON[] = <span class="stringliteral">&quot;mate-netspeed-applet&quot;</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">/* How many old in out values do we store?</span></div>
@@ -738,19 +738,19 @@ $(function(){initNavTree('netspeed_2src_2netspeed_8c_source.html','',''); });
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keywordtype">int</span> hours;</div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keywordflow">if</span> (sec &lt; 60)</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        <span class="keywordflow">return</span> g_strdup_printf (ngettext (<span class="stringliteral">&quot;%&#39;&quot;</span> G_GUINT32_FORMAT <span class="stringliteral">&quot; second&quot;</span>,<span class="stringliteral">&quot;%&#39;&quot;</span> G_GUINT32_FORMAT <span class="stringliteral">&quot; seconds&quot;</span>, sec), sec);</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        <span class="keywordflow">return</span> g_strdup_printf (dngettext (GETTEXT_PACKAGE, <span class="stringliteral">&quot;%&#39;&quot;</span> G_GUINT32_FORMAT <span class="stringliteral">&quot; second&quot;</span>,<span class="stringliteral">&quot;%&#39;&quot;</span> G_GUINT32_FORMAT <span class="stringliteral">&quot; seconds&quot;</span>, sec), sec);</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    hours = (sec/3600);</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    minutes = (sec -(3600*hours))/60;</div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    seconds = (sec -(3600*hours)-(minutes*60));</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    m = g_strdup_printf (ngettext (<span class="stringliteral">&quot;%&#39;d minute&quot;</span>, <span class="stringliteral">&quot;%&#39;d minutes&quot;</span>, minutes), minutes);</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    s = g_strdup_printf (ngettext (<span class="stringliteral">&quot;%&#39;d secon&quot;</span>, <span class="stringliteral">&quot;%&#39;d seconds&quot;</span>, seconds), seconds);</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    m = g_strdup_printf (dngettext (GETTEXT_PACKAGE, <span class="stringliteral">&quot;%&#39;d minute&quot;</span>, <span class="stringliteral">&quot;%&#39;d minutes&quot;</span>, minutes), minutes);</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    s = g_strdup_printf (dngettext (GETTEXT_PACKAGE, <span class="stringliteral">&quot;%&#39;d secon&quot;</span>, <span class="stringliteral">&quot;%&#39;d seconds&quot;</span>, seconds), seconds);</div>
 <div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>    <span class="keywordflow">if</span> (sec &lt; 60*60) {</div>
 <div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>        res = g_strconcat (m, <span class="stringliteral">&quot;, &quot;</span>, s, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>        <span class="keywordtype">char</span> *h;</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        h = g_strdup_printf (ngettext (<span class="stringliteral">&quot;%&#39;d hour&quot;</span>, <span class="stringliteral">&quot;%&#39;d hours&quot;</span>, hours), hours);</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>        h = g_strdup_printf (dngettext (GETTEXT_PACKAGE, <span class="stringliteral">&quot;%&#39;d hour&quot;</span>, <span class="stringliteral">&quot;%&#39;d hours&quot;</span>, hours), hours);</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>        res = g_strconcat (h, <span class="stringliteral">&quot;, &quot;</span>, m, <span class="stringliteral">&quot;, &quot;</span>, s, <a class="code hl_define" href="async-getprop_8c.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
 <div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>        g_free (h);</div>
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    }</div>

@@ -1295,6 +1295,7 @@ var annotated_dup =
     [ "FMListViewColumn", "structFMListViewColumn.html", "structFMListViewColumn" ],
     [ "FMPropertiesWindow", "structFMPropertiesWindow.html", "structFMPropertiesWindow" ],
     [ "FMPropertiesWindowClass", "structFMPropertiesWindowClass.html", "structFMPropertiesWindowClass" ],
+    [ "FMRenameContext", "structFMRenameContext.html", "structFMRenameContext" ],
     [ "FMTreeModel", "structFMTreeModel.html", "structFMTreeModel" ],
     [ "FMTreeModelClass", "structFMTreeModelClass.html", "structFMTreeModelClass" ],
     [ "FMTreeView", "structFMTreeView.html", "structFMTreeView" ],

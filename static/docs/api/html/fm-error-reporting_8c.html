@@ -120,10 +120,11 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0026a4f495da7e4274111fd164bf95e3" id="r_a0026a4f495da7e4274111fd164bf95e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0026a4f495da7e4274111fd164bf95e3">fm_report_error_loading_directory</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, GtkWindow *parent_window)</td></tr>
-<tr class="memitem:a29f65b34968942c45407313a2d0db1fe" id="r_a29f65b34968942c45407313a2d0db1fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f65b34968942c45407313a2d0db1fe">fm_report_error_renaming_file</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *new_name, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, GtkWindow *parent_window)</td></tr>
+<tr class="memitem:a3b27958e587b9c2e7bfe6f4d2ddc58e5" id="r_a3b27958e587b9c2e7bfe6f4d2ddc58e5"><td class="memItemLeft" align="right" valign="top">GtkDialog *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b27958e587b9c2e7bfe6f4d2ddc58e5">fm_report_error_renaming_file</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *new_name, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, GtkWindow *parent_window)</td></tr>
 <tr class="memitem:a48bfe9de90d3fb702fc832f2c54f7b83" id="r_a48bfe9de90d3fb702fc832f2c54f7b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48bfe9de90d3fb702fc832f2c54f7b83">fm_report_error_setting_group</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, GtkWindow *parent_window)</td></tr>
 <tr class="memitem:a24d38254cf48ca1dc6215af4e24d4f08" id="r_a24d38254cf48ca1dc6215af4e24d4f08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24d38254cf48ca1dc6215af4e24d4f08">fm_report_error_setting_owner</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, GtkWindow *parent_window)</td></tr>
 <tr class="memitem:a847b33f8a2d6a10b1390f92fe4a1e377" id="r_a847b33f8a2d6a10b1390f92fe4a1e377"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a847b33f8a2d6a10b1390f92fe4a1e377">fm_report_error_setting_permissions</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, GError *<a class="el" href="ma-command_8h.html#ac36b8f6de2d241028f9813d37e59e11d">error</a>, GtkWindow *parent_window)</td></tr>
+<tr class="memitem:a03f90b0614ed76c464ef85cc203fd73a" id="r_a03f90b0614ed76c464ef85cc203fd73a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03f90b0614ed76c464ef85cc203fd73a">fm_rename_file_with_context</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *new_name, <a class="el" href="caja-file_8h.html#a67954f5a613fd838dee5fea7a49db979">CajaFileOperationCallback</a> callback, gpointer callback_data, <a class="el" href="structFMRenameContext.html">FMRenameContext</a> *context)</td></tr>
 <tr class="memitem:abb15fb2ebe2039d54d8236d7eb069201" id="r_abb15fb2ebe2039d54d8236d7eb069201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb15fb2ebe2039d54d8236d7eb069201">fm_rename_file</a> (<a class="el" href="structCajaFile.html">CajaFile</a> *file, const char *new_name, <a class="el" href="caja-file_8h.html#a67954f5a613fd838dee5fea7a49db979">CajaFileOperationCallback</a> callback, gpointer callback_data)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
@@ -157,7 +158,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00039">39</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-error-reporting_8c_source.html#l00335">fm_rename_file()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-error-reporting_8c_source.html#l00369">fm_rename_file_with_context()</a>.</p>
 
 </div>
 </div>
@@ -206,9 +207,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00335">335</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00428">428</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
+
+<p class="reference">References <a class="el" href="fm-error-reporting_8c_source.html#l00369">fm_rename_file_with_context()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+
+</div>
+</div>
+<a id="a03f90b0614ed76c464ef85cc203fd73a" name="a03f90b0614ed76c464ef85cc203fd73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03f90b0614ed76c464ef85cc203fd73a">&#9670;&#160;</a></span>fm_rename_file_with_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fm_rename_file_with_context </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>new_name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="caja-file_8h.html#a67954f5a613fd838dee5fea7a49db979">CajaFileOperationCallback</a></td>          <td class="paramname"><span class="paramname"><em>callback</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gpointer</td>          <td class="paramname"><span class="paramname"><em>callback_data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structFMRenameContext.html">FMRenameContext</a> *</td>          <td class="paramname"><span class="paramname"><em>context</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00369">369</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-debug-log_8c_source.html#l00068">caja_debug_log()</a>, <a class="el" href="caja-debug-log_8h_source.html#l00030">CAJA_DEBUG_LOG_DOMAIN_USER</a>, <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="caja-file_8c_source.html#l01599">caja_file_get_uri()</a>, <a class="el" href="caja-file_8c_source.html#l01801">caja_file_rename()</a>, <a class="el" href="caja-file_8h_source.html#l00052">CAJA_IS_FILE</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00372">eel_timed_wait_start()</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-error-reporting_8c_source.html#l00039">NEW_NAME_TAG</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l04132">fm_directory_view_rename_and_continue()</a>, and <a class="el" href="fm-error-reporting_8c_source.html#l00428">fm_rename_file()</a>.</p>
 
 </div>
 </div>
@@ -242,14 +285,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a29f65b34968942c45407313a2d0db1fe" name="a29f65b34968942c45407313a2d0db1fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29f65b34968942c45407313a2d0db1fe">&#9670;&#160;</a></span>fm_report_error_renaming_file()</h2>
+<a id="a3b27958e587b9c2e7bfe6f4d2ddc58e5" name="a3b27958e587b9c2e7bfe6f4d2ddc58e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b27958e587b9c2e7bfe6f4d2ddc58e5">&#9670;&#160;</a></span>fm_report_error_renaming_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fm_report_error_renaming_file </td>
+          <td class="memname">GtkDialog * fm_report_error_renaming_file </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
         </tr>
@@ -301,7 +344,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00171">171</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00173">173</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00578">eel_show_error_dialog()</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="baobab-utils_8c_source.html#l00227">message()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -331,7 +374,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00216">216</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00218">218</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00578">eel_show_error_dialog()</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="baobab-utils_8c_source.html#l00227">message()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -361,7 +404,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00239">239</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-error-reporting_8c_source.html#l00241">241</a> of file <a class="el" href="fm-error-reporting_8c_source.html">fm-error-reporting.c</a>.</p>
 
 <p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00578">eel_show_error_dialog()</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="baobab-utils_8c_source.html#l00227">message()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 

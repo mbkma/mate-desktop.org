@@ -1,5 +1,13 @@
 var NAVTREEINDEX46 =
 {
+"eel-vfs-extensions_8h.html#a7f62e8e0a3d12ad22aa0940ff47819ec":[14,0,0,1,0,47,5],
+"eel-vfs-extensions_8h.html#a8787e92cc61083f129571e094c93e6bf":[14,0,0,1,0,47,1],
+"eel-vfs-extensions_8h.html#a926c1b35fdf098362198560c0cbf720b":[14,0,0,1,0,47,3],
+"eel-vfs-extensions_8h.html#aa10638bd228f2ffe8c2478bd64f6020e":[14,0,0,1,0,47,7],
+"eel-vfs-extensions_8h.html#ab532fc812abbeea167ee4eabe21f5561":[14,0,0,1,0,47,8],
+"eel-vfs-extensions_8h.html#ad86ed50ea254bd01cff030fce1617c3b":[14,0,0,1,0,47,0],
+"eel-vfs-extensions_8h.html#ada9e931a641370fc7b150496631f60bf":[14,0,0,1,0,47,6],
+"eel-vfs-extensions_8h.html#af98200a782c2878d282b9f7b1d9fe1b6":[14,0,0,1,0,47,9],
 "eel-vfs-extensions_8h_source.html":[14,0,0,1,0,47],
 "eel-wrap-table_8c.html":[14,0,0,1,0,48],
 "eel-wrap-table_8c.html#a09a53f25e0ad5d0a3769dd0562e79476":[14,0,0,1,0,48,9],
@@ -241,13 +249,5 @@ var NAVTREEINDEX46 =
 "egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558a9385a83c22923a7da8aef193e6b1c520":[14,0,0,2,0,1,91,23,5],
 "egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558a9d4bd514bac01afc19309363f1974251":[14,0,0,2,0,1,91,23,4],
 "egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558a9db55a6ecaa50edc44d8ad3a36f16bc8":[14,0,0,2,0,1,91,23,8],
-"egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558abc43bf23741c8ceade7197f596f08d34":[14,0,0,2,0,1,91,23,1],
-"egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558af08a2880c025cdfaadad82319608b3b1":[14,0,0,2,0,1,91,23,11],
-"egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558afc584bbe1fb6c6b85d345ac034fe2d69":[14,0,0,2,0,1,91,23,7],
-"egg-desktop-file_8h.html#a3875938eea7e890b5fb1afd9a1a8ee2b":[14,0,0,2,0,1,91,11],
-"egg-desktop-file_8h.html#a478ca02e9b155dd3fcbb4fc4dcdb46c9":[14,0,0,2,0,1,91,24],
-"egg-desktop-file_8h.html#a478ca02e9b155dd3fcbb4fc4dcdb46c9a4ee435388663bdcdf671d4c06bbaa3c4":[14,0,0,2,0,1,91,24,2],
-"egg-desktop-file_8h.html#a478ca02e9b155dd3fcbb4fc4dcdb46c9a5b428a557bce76e1604230c9f7d34432":[14,0,0,2,0,1,91,24,1],
-"egg-desktop-file_8h.html#a478ca02e9b155dd3fcbb4fc4dcdb46c9acb093bd04f9f2b74b9797bd220063f45":[14,0,0,2,0,1,91,24,3],
-"egg-desktop-file_8h.html#a478ca02e9b155dd3fcbb4fc4dcdb46c9ad06d62cbf81b86918afd9d2b23e710e7":[14,0,0,2,0,1,91,24,0]
+"egg-desktop-file_8h.html#a30bd35d6af6cf7bd8417b8c8f02c9558abc43bf23741c8ceade7197f596f08d34":[14,0,0,2,0,1,91,23,1]
 };

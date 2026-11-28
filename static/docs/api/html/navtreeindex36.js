@@ -1,5 +1,13 @@
 var NAVTREEINDEX36 =
 {
+"cpufreq-selector-service_8h_source.html":[14,0,0,12,4,0,0,5],
+"cpufreq-selector-sysfs_8c.html":[14,0,0,12,4,0,0,6],
+"cpufreq-selector-sysfs_8c.html#a2e93c64ca7e320c9b249cb96af1c3881":[14,0,0,12,4,0,0,6,0],
+"cpufreq-selector-sysfs_8c.html#a5897965d4e32852cdd667851f177fe0b":[14,0,0,12,4,0,0,6,1],
+"cpufreq-selector-sysfs_8c_source.html":[14,0,0,12,4,0,0,6],
+"cpufreq-selector-sysfs_8h.html":[14,0,0,12,4,0,0,7],
+"cpufreq-selector-sysfs_8h.html#a37a0571b8c28e50b8352dc1e04a89328":[14,0,0,12,4,0,0,7,7],
+"cpufreq-selector-sysfs_8h.html#a4e927664f5c04e11114f4e3d735d416b":[14,0,0,12,4,0,0,7,4],
 "cpufreq-selector-sysfs_8h.html#a538507f1282e5b86fc3e2dd28a765d6a":[14,0,0,12,4,0,0,7,2],
 "cpufreq-selector-sysfs_8h.html#a5897965d4e32852cdd667851f177fe0b":[14,0,0,12,4,0,0,7,12],
 "cpufreq-selector-sysfs_8h.html#a6c88d0dcffd9785d7d2be9fee6acdce2":[14,0,0,12,4,0,0,7,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX36 =
 "dir_0159cca7b90cf505306ed2cd0e7a359b.html":[14,0,0,12,9],
 "dir_01a6d30ea0de145838d2ae68bbbe6c54.html":[14,0,0,4,4,0,2],
 "dir_01cc4cd8f99efb890e00ce04425ec973.html":[14,0,0,26,1,15],
-"dir_03263059216d0efa8a4c8561e42639fc.html":[14,0,0,2,0,7],
-"dir_04a70c4eeec9b1638a4f2adc7f65e275.html":[14,0,0,1,3,0],
-"dir_05d27c0bb0895db9714206399d931150.html":[14,0,0,34,0,4],
-"dir_0618632cc89df370dddf570e0e68a3c5.html":[14,0,0,34,2],
-"dir_06d9cf475ab3dd972b103a52faf5c38f.html":[14,0,0,6,0],
-"dir_08eda223503ad3aeb152e98dda1d256c.html":[14,0,0,28,1,1],
-"dir_0a1f4690fc876f5c0063e4ddd076a1d4.html":[14,0,0,0,5],
-"dir_0a47bd7784c8c8787a5d6f5b4f36c180.html":[14,0,0,0],
-"dir_0a919345c1804ea6763f835d0585cc86.html":[14,0,0,12,10]
+"dir_03263059216d0efa8a4c8561e42639fc.html":[14,0,0,2,0,7]
 };

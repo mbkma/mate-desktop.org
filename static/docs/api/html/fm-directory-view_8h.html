@@ -160,6 +160,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3385d25be56f3539821cfc4219a58bf2" id="r_a3385d25be56f3539821cfc4219a58bf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3385d25be56f3539821cfc4219a58bf2">fm_directory_view_select_all</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view)</td></tr>
 <tr class="memitem:ab729fd7110b6613daa080983cc7a236c" id="r_ab729fd7110b6613daa080983cc7a236c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab729fd7110b6613daa080983cc7a236c">fm_directory_view_set_selection</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view, GList *selection)</td></tr>
 <tr class="memitem:a4edb31532140ed10b703bf3f7b392142" id="r_a4edb31532140ed10b703bf3f7b392142"><td class="memItemLeft" align="right" valign="top">GArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4edb31532140ed10b703bf3f7b392142">fm_directory_view_get_selected_icon_locations</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view)</td></tr>
+<tr class="memitem:ac8f9bcdd476d4778a1f3a14765b3871b" id="r_ac8f9bcdd476d4778a1f3a14765b3871b"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8f9bcdd476d4778a1f3a14765b3871b">fm_directory_view_is_rename_navigation_pending</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view)</td></tr>
+<tr class="memitem:a3f511ebb74bc00c0ae903d50b86e4973" id="r_a3f511ebb74bc00c0ae903d50b86e4973"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f511ebb74bc00c0ae903d50b86e4973">fm_directory_view_is_rename_navigation_key</a> (GdkEventKey *event)</td></tr>
+<tr class="memitem:a130064ceaa020c77724284f3d0cdd78f" id="r_a130064ceaa020c77724284f3d0cdd78f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a130064ceaa020c77724284f3d0cdd78f">fm_directory_view_rename_and_continue</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view, <a class="el" href="structCajaFile.html">CajaFile</a> *file, <a class="el" href="structCajaFile.html">CajaFile</a> *next_file, const char *new_name)</td></tr>
 <tr class="memitem:a0da8f202bacc0b3c172239de5a628260" id="r_a0da8f202bacc0b3c172239de5a628260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0da8f202bacc0b3c172239de5a628260">fm_directory_view_reveal_selection</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view)</td></tr>
 <tr class="memitem:ae7186ec0254f772071f241f691cfecfe" id="r_ae7186ec0254f772071f241f691cfecfe"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7186ec0254f772071f241f691cfecfe">fm_directory_view_is_empty</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view)</td></tr>
 <tr class="memitem:aeaddd8c188a6efbe47957defa1a92a14" id="r_aeaddd8c188a6efbe47957defa1a92a14"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaddd8c188a6efbe47957defa1a92a14">fm_directory_view_is_read_only</a> (<a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *view)</td></tr>
@@ -255,7 +258,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="fm-directory-view_8h_source.html#l00050">50</a> of file <a class="el" href="fm-directory-view_8h_source.html">fm-directory-view.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10128">fm_directory_view_accepts_dragged_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03497">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03575">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03615">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03629">fm_directory_view_get_background_widget()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09823">fm_directory_view_get_emblem_names_to_exclude()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03707">fm_directory_view_get_item_count()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09999">fm_directory_view_get_selected_icon_locations()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03677">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03697">fm_directory_view_get_selection_for_file_transfer()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03532">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03687">fm_directory_view_invert_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10068">fm_directory_view_is_empty()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10058">fm_directory_view_is_read_only()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09931">fm_directory_view_reset_to_defaults()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03552">fm_directory_view_restore_default_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10014">fm_directory_view_reveal_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09954">fm_directory_view_select_all()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09971">fm_directory_view_set_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10118">fm_directory_view_supports_creating_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10169">fm_directory_view_supports_properties()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10229">fm_directory_view_update_menus()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10205">fm_directory_view_using_manual_layout()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03517">fm_directory_view_zoom_to_level()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10320">fm_directory_view_accepts_dragged_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03498">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03576">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03616">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03630">fm_directory_view_get_background_widget()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10015">fm_directory_view_get_emblem_names_to_exclude()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03708">fm_directory_view_get_item_count()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10191">fm_directory_view_get_selected_icon_locations()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03678">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03698">fm_directory_view_get_selection_for_file_transfer()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03533">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03688">fm_directory_view_invert_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10260">fm_directory_view_is_empty()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10250">fm_directory_view_is_read_only()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10123">fm_directory_view_reset_to_defaults()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03553">fm_directory_view_restore_default_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10206">fm_directory_view_reveal_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10146">fm_directory_view_select_all()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10163">fm_directory_view_set_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10310">fm_directory_view_supports_creating_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10361">fm_directory_view_supports_properties()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10421">fm_directory_view_update_menus()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10397">fm_directory_view_using_manual_layout()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03518">fm_directory_view_zoom_to_level()</a>.</p>
 
 </div>
 </div>
@@ -297,7 +300,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="fm-directory-view_8h_source.html#l00052">52</a> of file <a class="el" href="fm-directory-view_8h_source.html">fm-directory-view.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10128">fm_directory_view_accepts_dragged_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03450">fm_directory_view_begin_loading()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03497">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_can_accept_item()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03575">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03615">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03433">fm_directory_view_clear()</a>, <a class="el" href="fm-directory-view_8c_source.html#l02232">fm_directory_view_display_selection_info()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03467">fm_directory_view_end_loading()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10947">fm_directory_view_get_active()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03629">fm_directory_view_get_background_widget()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03743">fm_directory_view_get_copied_files_atom()</a>, <a class="el" href="fm-directory-view_8c_source.html#l04312">fm_directory_view_get_directory_as_file()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09823">fm_directory_view_get_emblem_names_to_exclude()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03707">fm_directory_view_get_item_count()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03483">fm_directory_view_get_loading()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03735">fm_directory_view_get_model()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09999">fm_directory_view_get_selected_icon_locations()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03677">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03697">fm_directory_view_get_selection_for_file_transfer()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10271">fm_directory_view_get_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03532">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03687">fm_directory_view_invert_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10068">fm_directory_view_is_empty()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10058">fm_directory_view_is_read_only()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09561">fm_directory_view_notify_selection_changed()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09323">fm_directory_view_pop_up_background_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09422">fm_directory_view_pop_up_location_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09292">fm_directory_view_pop_up_selection_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09931">fm_directory_view_reset_to_defaults()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03552">fm_directory_view_restore_default_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10014">fm_directory_view_reveal_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09954">fm_directory_view_select_all()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09971">fm_directory_view_set_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10403">fm_directory_view_start_batching_selection_changes()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10031">fm_directory_view_stop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10412">fm_directory_view_stop_batching_selection_changes()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10118">fm_directory_view_supports_creating_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10169">fm_directory_view_supports_properties()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10229">fm_directory_view_update_menus()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10205">fm_directory_view_using_manual_layout()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03517">fm_directory_view_zoom_to_level()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10320">fm_directory_view_accepts_dragged_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03451">fm_directory_view_begin_loading()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03498">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10571">fm_directory_view_can_accept_item()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03576">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03616">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03434">fm_directory_view_clear()</a>, <a class="el" href="fm-directory-view_8c_source.html#l02233">fm_directory_view_display_selection_info()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03468">fm_directory_view_end_loading()</a>, <a class="el" href="fm-directory-view_8c_source.html#l11139">fm_directory_view_get_active()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03630">fm_directory_view_get_background_widget()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03744">fm_directory_view_get_copied_files_atom()</a>, <a class="el" href="fm-directory-view_8c_source.html#l04504">fm_directory_view_get_directory_as_file()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10015">fm_directory_view_get_emblem_names_to_exclude()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03708">fm_directory_view_get_item_count()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03484">fm_directory_view_get_loading()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03736">fm_directory_view_get_model()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10191">fm_directory_view_get_selected_icon_locations()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03678">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03698">fm_directory_view_get_selection_for_file_transfer()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10463">fm_directory_view_get_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03533">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03688">fm_directory_view_invert_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10260">fm_directory_view_is_empty()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10250">fm_directory_view_is_read_only()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09753">fm_directory_view_notify_selection_changed()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09515">fm_directory_view_pop_up_background_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09614">fm_directory_view_pop_up_location_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09484">fm_directory_view_pop_up_selection_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10123">fm_directory_view_reset_to_defaults()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03553">fm_directory_view_restore_default_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10206">fm_directory_view_reveal_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10146">fm_directory_view_select_all()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10163">fm_directory_view_set_selection()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10595">fm_directory_view_start_batching_selection_changes()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10223">fm_directory_view_stop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10604">fm_directory_view_stop_batching_selection_changes()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10310">fm_directory_view_supports_creating_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10361">fm_directory_view_supports_properties()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10421">fm_directory_view_update_menus()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10397">fm_directory_view_using_manual_layout()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03518">fm_directory_view_zoom_to_level()</a>.</p>
 
 </div>
 </div>
@@ -404,7 +407,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10128">10128</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10320">10320</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -439,9 +442,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00750">750</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00751">751</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-mime-actions_8c_source.html#l02572">caja_mime_activate_file()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>.</p>
+<p class="reference">References <a class="el" href="caja-mime-actions_8c_source.html#l02572">caja_mime_activate_file()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>.</p>
 
 </div>
 </div>
@@ -479,9 +482,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00729">729</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00730">730</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-mime-actions_8c_source.html#l02477">caja_mime_activate_files()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>.</p>
+<p class="reference">References <a class="el" href="caja-mime-actions_8c_source.html#l02477">caja_mime_activate_files()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>.</p>
 
 </div>
 </div>
@@ -504,7 +507,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03368">3368</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03369">3369</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-directory_8c_source.html#l01439">caja_directory_file_monitor_add()</a>, <a class="el" href="caja-directory_8c_source.html#l00128">caja_directory_ref()</a>, <a class="el" href="caja-file-attributes_8h_source.html#l00037">CAJA_FILE_ATTRIBUTE_DIRECTORY_ITEM_COUNT</a>, <a class="el" href="caja-file-attributes_8h_source.html#l00041">CAJA_FILE_ATTRIBUTE_EXTENSION_INFO</a>, <a class="el" href="caja-file-attributes_8h_source.html#l00034">CAJA_FILE_ATTRIBUTE_INFO</a>, <a class="el" href="caja-file-attributes_8h_source.html#l00035">CAJA_FILE_ATTRIBUTE_LINK_INFO</a>, <a class="el" href="caja-file-attributes_8h_source.html#l00043">CAJA_FILE_ATTRIBUTE_MOUNT</a>, <a class="el" href="caja-file_8h_source.html#l00121">CAJA_FILE_ATTRIBUTES_FOR_ICON</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
 
@@ -527,7 +530,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_begin_loading:</p>
 <p>Emit the signal to prepare for loading the contents of a new location. Subclasses might want to override the signal handler for this signal. This is normally called only by <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> that is switching to view a new location. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03450">3450</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03451">3451</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8c_source.html#l00136">BEGIN_LOADING</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -554,11 +557,11 @@ Functions</h2></td></tr>
 <p>fm_directory_view_bump_zoom_level:</p>
 <p>bump the current zoom level by invoking the relevant subclass through the slot </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03497">3497</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03498">3498</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l11007">fm_directory_view_handle_scroll_event()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l11199">fm_directory_view_handle_scroll_event()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>
@@ -586,7 +589,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10379">10379</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10571">10571</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-file-dnd_8c_source.html#l00076">caja_drag_can_accept_item()</a>, <a class="el" href="caja-file_8h_source.html#l00052">CAJA_IS_FILE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -610,11 +613,11 @@ Functions</h2></td></tr>
 <p>Determine whether the view can be zoomed any closer. @view: The zoomable <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>.</p>
 <p>Return value: TRUE if @view can be zoomed any closer, FALSE otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03575">3575</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03576">3576</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>
@@ -636,11 +639,11 @@ Functions</h2></td></tr>
 <p>Determine whether the view can be zoomed any further away. @view: The zoomable <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>.</p>
 <p>Return value: TRUE if @view can be zoomed any further away, FALSE otherwise. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03615">3615</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03616">3616</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>
@@ -661,7 +664,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_clear:</p>
 <p>Emit the signal to clear the contents of the view. Subclasses must override the signal handler for this signal. This is normally called only by <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> to empty. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03433">3433</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03434">3434</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8c_source.html#l00137">CLEAR</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -684,9 +687,9 @@ Functions</h2></td></tr>
 <p>fm_directory_view_display_selection_info:</p>
 <p>Display information about the current selection, and notify the view frame of the changed selection. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> for which to display selection info. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l02232">2232</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l02233">2233</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-file_8c_source.html#l05259">caja_file_can_get_size()</a>, <a class="el" href="caja-file_8c_source.html#l05157">caja_file_get_directory_item_count()</a>, <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="caja-file_8c_source.html#l05274">caja_file_get_size()</a>, <a class="el" href="caja-file_8c_source.html#l07225">caja_file_get_volume_free_space()</a>, <a class="el" href="caja-file_8c_source.html#l07383">caja_file_is_directory()</a>, <a class="el" href="caja-file_8c_source.html#l08163">caja_file_list_free()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_preferences</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00071">CAJA_PREFERENCES_USE_IEC_UNITS</a>, <a class="el" href="caja-window-slot-info_8c_source.html#l00095">caja_window_slot_info_set_status()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l03707">fm_directory_view_get_item_count()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03677">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-file_8c_source.html#l05259">caja_file_can_get_size()</a>, <a class="el" href="caja-file_8c_source.html#l05157">caja_file_get_directory_item_count()</a>, <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="caja-file_8c_source.html#l05274">caja_file_get_size()</a>, <a class="el" href="caja-file_8c_source.html#l07225">caja_file_get_volume_free_space()</a>, <a class="el" href="caja-file_8c_source.html#l07383">caja_file_is_directory()</a>, <a class="el" href="caja-file_8c_source.html#l08163">caja_file_list_free()</a>, <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_preferences</a>, <a class="el" href="caja-global-preferences_8h_source.html#l00071">CAJA_PREFERENCES_USE_IEC_UNITS</a>, <a class="el" href="caja-window-slot-info_8c_source.html#l00095">caja_window_slot_info_set_status()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l03708">fm_directory_view_get_item_count()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03678">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -711,7 +714,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_end_loading:</p>
 <p>Emit the signal after loading the contents of a new location. Subclasses might want to override the signal handler for this signal. This is normally called only by <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> that is switching to view a new location. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03467">3467</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03468">3468</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8c_source.html#l00140">END_LOADING</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -732,7 +735,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03000">3000</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03001">3001</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -753,7 +756,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10947">10947</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l11139">11139</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -774,7 +777,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l02477">2477</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l02478">2478</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
 
@@ -795,9 +798,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03639">3639</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03640">3640</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-background_8c_source.html#l00966">eel_get_widget_background()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03629">fm_directory_view_get_background_widget()</a>.</p>
+<p class="reference">References <a class="el" href="eel-background_8c_source.html#l00966">eel_get_widget_background()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03630">fm_directory_view_get_background_widget()</a>.</p>
 
 </div>
 </div>
@@ -816,11 +819,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03629">3629</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03630">3630</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l03639">fm_directory_view_get_background()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l03640">fm_directory_view_get_background()</a>.</p>
 
 </div>
 </div>
@@ -839,11 +842,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10282">10282</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10474">10474</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-desktop-directory_8h_source.html#l00033">CAJA_DESKTOP_DIRECTORY</a>, <a class="el" href="caja-desktop-directory_8c_source.html#l00424">caja_desktop_directory_get_real_directory()</a>, <a class="el" href="caja-directory_8c_source.html#l00441">caja_directory_get_uri()</a>, <a class="el" href="caja-directory_8c_source.html#l00128">caja_directory_ref()</a>, <a class="el" href="caja-directory_8c_source.html#l00142">caja_directory_unref()</a>, <a class="el" href="caja-desktop-directory_8h_source.html#l00037">CAJA_IS_DESKTOP_DIRECTORY</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10599">fm_directory_view_handle_netscape_url_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10897">fm_directory_view_handle_raw_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10858">fm_directory_view_handle_text_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10773">fm_directory_view_handle_uri_list_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l04240">fm_directory_view_new_file()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l04173">fm_directory_view_new_folder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10791">fm_directory_view_handle_netscape_url_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l11089">fm_directory_view_handle_raw_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l11050">fm_directory_view_handle_text_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10965">fm_directory_view_handle_uri_list_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l04432">fm_directory_view_new_file()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l04365">fm_directory_view_new_folder()</a>.</p>
 
 </div>
 </div>
@@ -862,7 +865,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00604">604</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00605">605</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -883,7 +886,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00612">612</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00613">613</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -904,11 +907,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00624">624</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l00625">625</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l00750">fm_directory_view_activate_file()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00729">fm_directory_view_activate_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10599">fm_directory_view_handle_netscape_url_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10773">fm_directory_view_handle_uri_list_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10309">fm_directory_view_move_copy_items()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l09561">fm_directory_view_notify_selection_changed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l00751">fm_directory_view_activate_file()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00730">fm_directory_view_activate_files()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10791">fm_directory_view_handle_netscape_url_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10965">fm_directory_view_handle_uri_list_drop()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10501">fm_directory_view_move_copy_items()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l09753">fm_directory_view_notify_selection_changed()</a>.</p>
 
 </div>
 </div>
@@ -927,7 +930,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03743">3743</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03744">3744</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -948,7 +951,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04312">4312</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04504">4504</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -969,7 +972,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09823">9823</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10015">10015</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -990,11 +993,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03707">3707</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03708">3708</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l02232">fm_directory_view_display_selection_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l02233">fm_directory_view_display_selection_info()</a>.</p>
 
 </div>
 </div>
@@ -1015,7 +1018,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_get_loading: @view: an <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>.</p>
 <p>Return value: #gboolean inicating whether @view is currently loaded. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03483">3483</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03484">3484</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1039,11 +1042,11 @@ Functions</h2></td></tr>
 <p>Get the model for this <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a>. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> of interest.</p>
 <p>Return value: <a class="el" href="structCajaDirectory.html">CajaDirectory</a> for this view. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03735">3735</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03736">3736</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10078">fm_directory_view_is_editable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10270">fm_directory_view_is_editable()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l04132">fm_directory_view_rename_and_continue()</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1067,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_get_selected_icon_locations:</p>
 <p>return an array of locations of selected icons if available Return value: GArray of GdkPoints </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09999">9999</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10191">10191</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1088,11 +1091,11 @@ Functions</h2></td></tr>
 <p>Get a list of <a class="el" href="structCajaFile.html">CajaFile</a> pointers that represents the currently-selected items in this view. Subclasses must override the signal handler for the 'get_selection' signal. Callers are responsible for g_free-ing the list (but not its data). @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> whose selected items are of interest.</p>
 <p>Return value: GList of <a class="el" href="structCajaFile.html">CajaFile</a> pointers representing the selection. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03677">3677</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03678">3678</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l02232">fm_directory_view_display_selection_info()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l09561">fm_directory_view_notify_selection_changed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l02233">fm_directory_view_display_selection_info()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l09753">fm_directory_view_notify_selection_changed()</a>.</p>
 
 </div>
 </div>
@@ -1111,7 +1114,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03697">3697</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03698">3698</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1149,7 +1152,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03717">3717</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03718">3718</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-window-info_8c_source.html#l00281">caja_window_info_get_ui_manager()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1170,7 +1173,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10271">10271</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10463">10463</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-directory_8c_source.html#l00441">caja_directory_get_uri()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1191,11 +1194,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03532">3532</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03533">3533</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-icon-info_8h_source.html#l00019">CAJA_ZOOM_LEVEL_STANDARD</a>, <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="caja-icon-info_8h_source.html#l00019">CAJA_ZOOM_LEVEL_STANDARD</a>, <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>
@@ -1238,9 +1241,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10599">10599</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10791">10791</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="caja-link_8c_source.html#l00191">caja_link_local_create()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00578">eel_show_error_dialog()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00568">eel_show_warning_dialog()</a>, <a class="el" href="eel-string_8c_source.html#l00063">eel_str_is_empty()</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10309">fm_directory_view_move_copy_items()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="caja-link_8c_source.html#l00191">caja_link_local_create()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00578">eel_show_error_dialog()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00568">eel_show_warning_dialog()</a>, <a class="el" href="eel-string_8c_source.html#l00063">eel_str_is_empty()</a>, <a class="el" href="ma-command_8h_source.html#l00030">error</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10501">fm_directory_view_move_copy_items()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1293,9 +1296,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10897">10897</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l11089">11089</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -1318,9 +1321,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l11007">11007</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l11199">11199</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l03497">fm_directory_view_bump_zoom_level()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l03498">fm_directory_view_bump_zoom_level()</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1363,9 +1366,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10858">10858</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l11050">11050</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -1408,9 +1411,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10773">10773</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10965">10965</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="caja-dnd_8c_source.html#l00806">caja_drag_drop_action_ask()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00568">eel_show_warning_dialog()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10309">fm_directory_view_move_copy_items()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="mate-app-helper_8c_source.html#l02507">_</a>, <a class="el" href="caja-navigation-window_8c_source.html#l00100">action</a>, <a class="el" href="caja-dnd_8c_source.html#l00806">caja_drag_drop_action_ask()</a>, <a class="el" href="eel-stock-dialogs_8c_source.html#l00568">eel_show_warning_dialog()</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10501">fm_directory_view_move_copy_items()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1429,7 +1432,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10251">10251</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10443">10443</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
@@ -1450,9 +1453,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l01972">1972</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l01973">1973</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-view_8h_source.html#l00101">_CajaViewIface::bump_zoom_level</a>, <a class="el" href="caja-view_8h_source.html#l00107">_CajaViewIface::can_zoom_in</a>, <a class="el" href="caja-view_8h_source.html#l00108">_CajaViewIface::can_zoom_out</a>, <a class="el" href="caja-view_8h_source.html#l00129">_CajaViewIface::drop_proxy_received_netscape_url</a>, <a class="el" href="caja-view_8h_source.html#l00125">_CajaViewIface::drop_proxy_received_uris</a>, <a class="el" href="fm-directory-view_8c_source.html#l03497">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03575">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03615">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03532">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09422">fm_directory_view_pop_up_location_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03552">fm_directory_view_restore_default_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03517">fm_directory_view_zoom_to_level()</a>, <a class="el" href="caja-view_8h_source.html#l00079">_CajaViewIface::get_selection</a>, <a class="el" href="caja-view_8h_source.html#l00076">_CajaViewIface::get_selection_count</a>, <a class="el" href="caja-view_8h_source.html#l00064">_CajaViewIface::get_widget</a>, <a class="el" href="caja-view_8h_source.html#l00105">_CajaViewIface::get_zoom_level</a>, <a class="el" href="caja-view_8h_source.html#l00110">_CajaViewIface::grab_focus</a>, <a class="el" href="caja-view_8h_source.html#l00069">_CajaViewIface::load_location</a>, <a class="el" href="caja-view_8h_source.html#l00121">_CajaViewIface::pop_up_location_context_menu</a>, <a class="el" href="caja-view_8h_source.html#l00106">_CajaViewIface::restore_default_zoom_level</a>, <a class="el" href="caja-view_8h_source.html#l00133">_CajaViewIface::set_is_active</a>, <a class="el" href="caja-view_8h_source.html#l00082">_CajaViewIface::set_selection</a>, <a class="el" href="caja-view_8h_source.html#l00073">_CajaViewIface::stop_loading</a>, <a class="el" href="caja-view_8h_source.html#l00100">_CajaViewIface::supports_zooming</a>, <a class="el" href="caja-view_8h_source.html#l00111">_CajaViewIface::update_menus</a>, and <a class="el" href="caja-view_8h_source.html#l00103">_CajaViewIface::zoom_to_level</a>.</p>
+<p class="reference">References <a class="el" href="caja-view_8h_source.html#l00101">_CajaViewIface::bump_zoom_level</a>, <a class="el" href="caja-view_8h_source.html#l00107">_CajaViewIface::can_zoom_in</a>, <a class="el" href="caja-view_8h_source.html#l00108">_CajaViewIface::can_zoom_out</a>, <a class="el" href="caja-view_8h_source.html#l00129">_CajaViewIface::drop_proxy_received_netscape_url</a>, <a class="el" href="caja-view_8h_source.html#l00125">_CajaViewIface::drop_proxy_received_uris</a>, <a class="el" href="fm-directory-view_8c_source.html#l03498">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03576">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03616">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03533">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l09614">fm_directory_view_pop_up_location_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03553">fm_directory_view_restore_default_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03518">fm_directory_view_zoom_to_level()</a>, <a class="el" href="caja-view_8h_source.html#l00079">_CajaViewIface::get_selection</a>, <a class="el" href="caja-view_8h_source.html#l00076">_CajaViewIface::get_selection_count</a>, <a class="el" href="caja-view_8h_source.html#l00064">_CajaViewIface::get_widget</a>, <a class="el" href="caja-view_8h_source.html#l00105">_CajaViewIface::get_zoom_level</a>, <a class="el" href="caja-view_8h_source.html#l00110">_CajaViewIface::grab_focus</a>, <a class="el" href="caja-view_8h_source.html#l00069">_CajaViewIface::load_location</a>, <a class="el" href="caja-view_8h_source.html#l00121">_CajaViewIface::pop_up_location_context_menu</a>, <a class="el" href="caja-view_8h_source.html#l00106">_CajaViewIface::restore_default_zoom_level</a>, <a class="el" href="caja-view_8h_source.html#l00133">_CajaViewIface::set_is_active</a>, <a class="el" href="caja-view_8h_source.html#l00082">_CajaViewIface::set_selection</a>, <a class="el" href="caja-view_8h_source.html#l00073">_CajaViewIface::stop_loading</a>, <a class="el" href="caja-view_8h_source.html#l00100">_CajaViewIface::supports_zooming</a>, <a class="el" href="caja-view_8h_source.html#l00111">_CajaViewIface::update_menus</a>, and <a class="el" href="caja-view_8h_source.html#l00103">_CajaViewIface::zoom_to_level</a>.</p>
 
 </div>
 </div>
@@ -1471,7 +1474,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03687">3687</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03688">3688</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1492,9 +1495,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10078">10078</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10270">10270</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-directory_8c_source.html#l01543">caja_directory_is_editable()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03735">fm_directory_view_get_model()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="caja-directory_8c_source.html#l01543">caja_directory_is_editable()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03736">fm_directory_view_get_model()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
 </div>
 </div>
@@ -1513,7 +1516,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10068">10068</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10260">10260</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1534,9 +1537,51 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10058">10058</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10250">10250</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+
+</div>
+</div>
+<a id="a3f511ebb74bc00c0ae903d50b86e4973" name="a3f511ebb74bc00c0ae903d50b86e4973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f511ebb74bc00c0ae903d50b86e4973">&#9670;&#160;</a></span>fm_directory_view_is_rename_navigation_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean fm_directory_view_is_rename_navigation_key </td>
+          <td>(</td>
+          <td class="paramtype">GdkEventKey *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04119">4119</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+
+<p class="reference">References <a class="el" href="caja-global-preferences_8c_source.html#l00041">caja_preferences</a>, and <a class="el" href="caja-global-preferences_8h_source.html#l00107">CAJA_PREFERENCES_TAB_TO_RENAME_NEXT_FILE</a>.</p>
+
+</div>
+</div>
+<a id="ac8f9bcdd476d4778a1f3a14765b3871b" name="ac8f9bcdd476d4778a1f3a14765b3871b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f9bcdd476d4778a1f3a14765b3871b">&#9670;&#160;</a></span>fm_directory_view_is_rename_navigation_pending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gboolean fm_directory_view_is_rename_navigation_pending </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04113">4113</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+
+<p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
 
 </div>
 </div>
@@ -1584,11 +1629,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10309">10309</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10501">10501</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-file_8c_source.html#l00731">caja_file_get_existing_by_uri()</a>, <a class="el" href="caja-file_8c_source.html#l07422">caja_file_is_archive()</a>, <a class="el" href="caja-file_8c_source.html#l04176">caja_file_is_launcher()</a>, <a class="el" href="caja-file-operations_8c_source.html#l05938">caja_file_operations_copy_move()</a>, <a class="el" href="caja-file_8c_source.html#l00865">caja_file_unref()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00947">caja_is_engrampa_installed()</a>, <a class="el" href="caja-program-choosing_8c_source.html#l00437">caja_launch_desktop_file()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>, <a class="el" href="mate-desktop-utils_8c_source.html#l00201">mate_gdk_spawn_command_line_on_screen()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="schema-bindings_8c_source.html#l00049">target_file</a>.</p>
+<p class="reference">References <a class="el" href="caja-file_8c_source.html#l00731">caja_file_get_existing_by_uri()</a>, <a class="el" href="caja-file_8c_source.html#l07422">caja_file_is_archive()</a>, <a class="el" href="caja-file_8c_source.html#l04176">caja_file_is_launcher()</a>, <a class="el" href="caja-file-operations_8c_source.html#l05938">caja_file_operations_copy_move()</a>, <a class="el" href="caja-file_8c_source.html#l00865">caja_file_unref()</a>, <a class="el" href="caja-file-utilities_8c_source.html#l00947">caja_is_engrampa_installed()</a>, <a class="el" href="caja-program-choosing_8c_source.html#l00437">caja_launch_desktop_file()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>, <a class="el" href="mate-desktop-utils_8c_source.html#l00201">mate_gdk_spawn_command_line_on_screen()</a>, <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>, and <a class="el" href="schema-bindings_8c_source.html#l00049">target_file</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10599">fm_directory_view_handle_netscape_url_drop()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l10773">fm_directory_view_handle_uri_list_drop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10791">fm_directory_view_handle_netscape_url_drop()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l10965">fm_directory_view_handle_uri_list_drop()</a>.</p>
 
 </div>
 </div>
@@ -1642,9 +1687,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04240">4240</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04432">4432</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-file_8c_source.html#l01599">caja_file_get_uri()</a>, <a class="el" href="caja-file_8c_source.html#l02046">caja_file_is_local()</a>, <a class="el" href="caja-file-operations_8c_source.html#l06379">caja_file_operations_new_file_from_template()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="caja-file_8c_source.html#l01599">caja_file_get_uri()</a>, <a class="el" href="caja-file_8c_source.html#l02046">caja_file_is_local()</a>, <a class="el" href="caja-file-operations_8c_source.html#l06379">caja_file_operations_new_file_from_template()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -1663,9 +1708,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04173">4173</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04365">4365</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-file-operations_8c_source.html#l06341">caja_file_operations_new_folder()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="fm-directory-view_8c_source.html#l10282">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
+<p class="reference">References <a class="el" href="caja-file-operations_8c_source.html#l06341">caja_file_operations_new_folder()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="fm-directory-view_8c_source.html#l10474">fm_directory_view_get_backing_uri()</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
 </div>
 </div>
@@ -1686,11 +1731,11 @@ Functions</h2></td></tr>
 <p>fm_directory_view_notify_selection_changed:</p>
 <p>Notify this view that the selection has changed. This is normally called only by subclasses. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> whose selection has changed. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09561">9561</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09753">9753</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="caja-debug-log_8h_source.html#l00030">CAJA_DEBUG_LOG_DOMAIN_USER</a>, <a class="el" href="caja-debug-log_8c_source.html#l00449">caja_debug_log_is_domain_enabled()</a>, <a class="el" href="caja-debug-log_8c_source.html#l00277">caja_debug_log_with_file_list()</a>, <a class="el" href="caja-file_8c_source.html#l08163">caja_file_list_free()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l00624">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03677">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="caja-debug-log_8h_source.html#l00030">CAJA_DEBUG_LOG_DOMAIN_USER</a>, <a class="el" href="caja-debug-log_8c_source.html#l00449">caja_debug_log_is_domain_enabled()</a>, <a class="el" href="caja-debug-log_8c_source.html#l00277">caja_debug_log_with_file_list()</a>, <a class="el" href="caja-file_8c_source.html#l08163">caja_file_list_free()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8c_source.html#l00625">fm_directory_view_get_containing_window()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03678">fm_directory_view_get_selection()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="afmparse_8h_source.html#l00085">TRUE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10412">fm_directory_view_stop_batching_selection_changes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l10604">fm_directory_view_stop_batching_selection_changes()</a>.</p>
 
 </div>
 </div>
@@ -1716,7 +1761,7 @@ Functions</h2></td></tr>
 <p>Pop up a context menu appropriate to the view globally at the last right click location. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> of interest.</p>
 <p>Return value: <a class="el" href="structCajaDirectory.html">CajaDirectory</a> for this view. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09323">9323</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09515">9515</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-extensions_8c_source.html#l00281">eel_pop_up_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00124">FM_DIRECTORY_VIEW_POPUP_PATH_BACKGROUND</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1748,11 +1793,11 @@ Functions</h2></td></tr>
 <p>fm_directory_view_pop_up_location_context_menu</p>
 <p>Pop up a context menu appropriate to the view globally. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> of interest. @event: GdkEventButton triggering the popup. @location: The location the popup-menu should be created for, or NULL for the currently displayed location. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09422">9422</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09614">9614</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-file_8c_source.html#l00744">caja_file_get_by_uri()</a>, <a class="el" href="caja-file_8c_source.html#l00850">caja_file_ref()</a>, <a class="el" href="caja-file_8c_source.html#l00865">caja_file_unref()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>
@@ -1778,7 +1823,7 @@ Functions</h2></td></tr>
 <p>Pop up a context menu appropriate to the selected items. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> of interest. @event: The event that triggered this context menu.</p>
 <p>Return value: <a class="el" href="structCajaDirectory.html">CajaDirectory</a> for this view. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09292">9292</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09484">9484</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-extensions_8c_source.html#l00281">eel_pop_up_context_menu()</a>, <a class="el" href="fm-directory-view_8c_source.html#l00117">FM_DIRECTORY_VIEW_POPUP_PATH_SELECTION</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1826,9 +1871,44 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03403">3403</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03404">3404</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-directory_8c_source.html#l01460">caja_directory_file_monitor_remove()</a>, <a class="el" href="caja-directory_8c_source.html#l00142">caja_directory_unref()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
+
+</div>
+</div>
+<a id="a130064ceaa020c77724284f3d0cdd78f" name="a130064ceaa020c77724284f3d0cdd78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130064ceaa020c77724284f3d0cdd78f">&#9670;&#160;</a></span>fm_directory_view_rename_and_continue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fm_directory_view_rename_and_continue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> *</td>          <td class="paramname"><span class="paramname"><em>view</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structCajaFile.html">CajaFile</a> *</td>          <td class="paramname"><span class="paramname"><em>next_file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>new_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l04132">4132</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+
+<p class="reference">References <a class="el" href="caja-file_8c_source.html#l04111">caja_file_get_display_name()</a>, <a class="el" href="caja-file_8c_source.html#l00850">caja_file_ref()</a>, <a class="el" href="mdm-signal-handler_8h_source.html#l00032">data</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8c_source.html#l03736">fm_directory_view_get_model()</a>, and <a class="el" href="fm-error-reporting_8c_source.html#l00369">fm_rename_file_with_context()</a>.</p>
 
 </div>
 </div>
@@ -1849,7 +1929,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_reset_to_defaults:</p>
 <p>set sorting order, zoom level, etc. to match defaults </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09931">9931</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10123">10123</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-window-info_8c_source.html#l00245">caja_window_info_get_hidden_files_mode()</a>, <a class="el" href="caja-window-info_8c_source.html#l00253">caja_window_info_set_hidden_files_mode()</a>, <a class="el" href="caja-window-info_8h_source.html#l00040">CAJA_WINDOW_SHOW_HIDDEN_FILES_DEFAULT</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1872,11 +1952,11 @@ Functions</h2></td></tr>
 <p>fm_directory_view_restore_default_zoom_level:</p>
 <p>restore to the default zoom level by invoking the relevant subclass through the slot </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03552">3552</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03553">3553</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>
@@ -1897,7 +1977,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_reveal_selection:</p>
 <p>Scroll as necessary to reveal the selected items. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10014">10014</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10206">10206</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1920,7 +2000,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_select_all:</p>
 <p>select all the items in the view </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09954">9954</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10146">10146</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -1941,7 +2021,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l02469">2469</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l02470">2470</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-window-info_8c_source.html#l00162">caja_window_info_report_selection_changed()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>.</p>
 
@@ -1966,7 +2046,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10092">10092</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10284">10284</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-window-info_8c_source.html#l00313">caja_window_info_set_initiated_unmount()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -1993,7 +2073,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_set_selection:</p>
 <p>set the selection to the items identified in @selection. @selection should be a list of CajaFiles </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l09971">9971</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10163">10163</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -2018,7 +2098,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10264">10264</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10456">10456</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
 
@@ -2045,7 +2125,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_should_show_file</p>
 <p>Returns whether or not this file should be displayed based on current filtering options. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10144">10144</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10336">10336</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-file_8c_source.html#l03708">caja_file_should_show()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
 
@@ -2066,11 +2146,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l01650">1650</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l01651">1651</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-icon-view_8c_source.html#l02576">fm_icon_view_compare_files()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-icon-view_8c_source.html#l02631">fm_icon_view_compare_files()</a>.</p>
 
 </div>
 </div>
@@ -2089,7 +2169,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10403">10403</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10595">10595</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -2112,7 +2192,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_stop:</p>
 <p>Stop the current ongoing process, such as switching to a new uri. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> in question. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10031">10031</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10223">10223</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="caja-directory_8c_source.html#l01460">caja_directory_file_monitor_remove()</a>, <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -2133,9 +2213,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10412">10412</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10604">10604</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8c_source.html#l09561">fm_directory_view_notify_selection_changed()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="fm-directory-view_8c_source.html#l09753">fm_directory_view_notify_selection_changed()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
 </div>
 </div>
@@ -2154,7 +2234,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10118">10118</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10310">10310</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -2175,7 +2255,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10169">10169</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10361">10361</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -2196,11 +2276,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10187">10187</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10379">10379</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l03497">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03575">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03615">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03532">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03552">fm_directory_view_restore_default_zoom_level()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03517">fm_directory_view_zoom_to_level()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l03498">fm_directory_view_bump_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03576">fm_directory_view_can_zoom_in()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03616">fm_directory_view_can_zoom_out()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03533">fm_directory_view_get_zoom_level()</a>, <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>, <a class="el" href="fm-directory-view_8c_source.html#l03553">fm_directory_view_restore_default_zoom_level()</a>, and <a class="el" href="fm-directory-view_8c_source.html#l03518">fm_directory_view_zoom_to_level()</a>.</p>
 
 </div>
 </div>
@@ -2219,7 +2299,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03008">3008</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03009">3009</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, and <a class="el" href="async-getprop_8c_source.html#l00044">NULL</a>.</p>
 
@@ -2242,7 +2322,7 @@ Functions</h2></td></tr>
 <p>fm_directory_view_update_menus:</p>
 <p>Update the sensitivity and wording of dynamic menu items. @view: <a class="el" href="structFMDirectoryView.html">FMDirectoryView</a> in question. </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10229">10229</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10421">10421</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="fm-directory-view_8h_source.html#l00064">FMDirectoryView::details</a>, <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -2263,7 +2343,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10205">10205</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l10397">10397</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
 <p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00115">EEL_CALL_METHOD_WITH_RETURN_VALUE</a>, <a class="el" href="afmparse_8h_source.html#l00086">FALSE</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
@@ -2290,11 +2370,11 @@ Functions</h2></td></tr>
 <p>fm_directory_view_zoom_to_level:</p>
 <p>Set the current zoom level by invoking the relevant subclass through the slot </p>
 
-<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03517">3517</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="fm-directory-view_8c_source.html#l03518">3518</a> of file <a class="el" href="fm-directory-view_8c_source.html">fm-directory-view.c</a>.</p>
 
-<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10187">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
+<p class="reference">References <a class="el" href="eel-gtk-macros_8h_source.html#l00105">EEL_CALL_METHOD</a>, <a class="el" href="fm-directory-view_8h_source.html#l00050">FM_DIRECTORY_VIEW_CLASS</a>, <a class="el" href="fm-directory-view_8c_source.html#l10379">fm_directory_view_supports_zooming()</a>, and <a class="el" href="fm-directory-view_8h_source.html#l00052">FM_IS_DIRECTORY_VIEW</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01972">fm_directory_view_init_view_iface()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="fm-directory-view_8c_source.html#l01973">fm_directory_view_init_view_iface()</a>.</p>
 
 </div>
 </div>

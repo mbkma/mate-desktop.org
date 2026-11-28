@@ -1,5 +1,13 @@
 var NAVTREEINDEX31 =
 {
+"caja-window-slot_8h.html#acffa1f0d14852e1e953322986d91fa43":[14,0,0,1,3,83,32],
+"caja-window-slot_8h.html#ad2df1606688fe7801a964c8774fb19cf":[14,0,0,1,3,83,25],
+"caja-window-slot_8h.html#adbfe126d617b533250b86980b260e89d":[14,0,0,1,3,83,15],
+"caja-window-slot_8h.html#adc02b687b8d418b2974fa4a91f5a428d":[14,0,0,1,3,83,24],
+"caja-window-slot_8h.html#ae2e9168c379ab61bdf69e1602cb5ea17":[14,0,0,1,3,83,27],
+"caja-window-slot_8h.html#ae47d7883fd64420af7ad4b7fd9f921b7":[14,0,0,1,3,83,3],
+"caja-window-slot_8h.html#ae816b0dd0ece7db9bb80ac815b45ebdd":[14,0,0,1,3,83,4],
+"caja-window-slot_8h.html#aef0b3a415284a96f033b9507a93e4e85":[14,0,0,1,3,83,35],
 "caja-window-slot_8h.html#af1635fecc708350fa7fb13580f51273f":[14,0,0,1,3,83,12],
 "caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008":[14,0,0,1,3,83,11],
 "caja-window-slot_8h.html#af1e1b7d7465b848ca49f84be4b22b008a2c69a70c4b3a76b45fd5f825f3a6e232":[14,0,0,1,3,83,11,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX31 =
 "caja_2src_2caja-actions_8h.html#a747e27b9880f9d1de2461f62a14b2a14":[14,0,0,1,3,1,8],
 "caja_2src_2caja-actions_8h.html#a769af0c6c1e1a3367d19b24ab41472f8":[14,0,0,1,3,1,13],
 "caja_2src_2caja-actions_8h.html#a7fd2cc2a21e4b351149608fbc0cb8fbc":[14,0,0,1,3,1,19],
-"caja_2src_2caja-actions_8h.html#a8135d5bc3fe39d75e246d48f9ff79c95":[14,0,0,1,3,1,4],
-"caja_2src_2caja-actions_8h.html#a86f7ff65b3eecba4542630b082f76bf0":[14,0,0,1,3,1,1],
-"caja_2src_2caja-actions_8h.html#a97943a4c5aaa0fae9eaf80f4db65347f":[14,0,0,1,3,1,11],
-"caja_2src_2caja-actions_8h.html#a97c430591d881e5249bf39c4a9a9e855":[14,0,0,1,3,1,2],
-"caja_2src_2caja-actions_8h.html#a997530da98762f8d283bd8ffcfe08d6f":[14,0,0,1,3,1,12],
-"caja_2src_2caja-actions_8h.html#aa26cb7f3a25c87801bed5f48c274424d":[14,0,0,1,3,1,0],
-"caja_2src_2caja-actions_8h.html#aa96f5999e9a37ef42c00714e522ad4c7":[14,0,0,1,3,1,9],
-"caja_2src_2caja-actions_8h.html#aab0e6f7437202e1abc88582e20a6e6a9":[14,0,0,1,3,1,25],
-"caja_2src_2caja-actions_8h.html#ac0d1eb02651eae0dcbfb33a3d46d5c66":[14,0,0,1,3,1,6]
+"caja_2src_2caja-actions_8h.html#a8135d5bc3fe39d75e246d48f9ff79c95":[14,0,0,1,3,1,4]
 };

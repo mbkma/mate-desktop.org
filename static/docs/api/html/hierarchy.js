@@ -1293,6 +1293,7 @@ var hierarchy =
     [ "FMListViewColumn", "structFMListViewColumn.html", null ],
     [ "FMPropertiesWindow", "structFMPropertiesWindow.html", null ],
     [ "FMPropertiesWindowClass", "structFMPropertiesWindowClass.html", null ],
+    [ "FMRenameContext", "structFMRenameContext.html", null ],
     [ "FMTreeModel", "structFMTreeModel.html", null ],
     [ "FMTreeModelClass", "structFMTreeModelClass.html", null ],
     [ "FMTreeView", "structFMTreeView.html", null ],

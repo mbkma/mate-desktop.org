@@ -1,5 +1,13 @@
 var NAVTREEINDEX28 =
 {
+"caja-sidebar-provider_8h.html#a4bd5606b25936635325ceec4b311dcce":[14,0,0,1,2,116,8],
+"caja-sidebar-provider_8h.html#a73c020102419dff87138e1b9b77f373c":[14,0,0,1,2,116,5],
+"caja-sidebar-provider_8h.html#a9d3f1e0051b14f51ae304ed021479666":[14,0,0,1,2,116,4],
+"caja-sidebar-provider_8h.html#aa578cdf13b2f1d6d54ce2977ac799489":[14,0,0,1,2,116,2],
+"caja-sidebar-provider_8h.html#ac160eff195c4ca60168c2c5f58a863e3":[14,0,0,1,2,116,3],
+"caja-sidebar-provider_8h.html#aed6f65c32532a793575a132d8037c279":[14,0,0,1,2,116,9],
+"caja-sidebar-provider_8h.html#af7fe2de05eec69f3afe0aad78d6e5293":[14,0,0,1,2,116,7],
+"caja-sidebar-provider_8h_source.html":[14,0,0,1,2,116],
 "caja-sidebar-title_8c.html":[14,0,0,1,3,66],
 "caja-sidebar-title_8c.html#a11336d18b1d7566bd66bc7c816466249":[14,0,0,1,3,66,5],
 "caja-sidebar-title_8c.html#a18fcb8093b8edd3953ecf9879359aa65":[14,0,0,1,3,66,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX28 =
 "caja-undostack-manager_8h.html#aa9865572852308ca2426e3b0dc420457ac58cfd9cf2683443b4487be66dd0ae2f":[14,0,0,1,2,130,15,5],
 "caja-undostack-manager_8h.html#aa9865572852308ca2426e3b0dc420457ad356e8c31d5d376f4a7e18b5e8b22048":[14,0,0,1,2,130,15,2],
 "caja-undostack-manager_8h.html#aa9865572852308ca2426e3b0dc420457aef0474fb5b9d9ea6a2d2dce5f7448d3e":[14,0,0,1,2,130,15,8],
-"caja-undostack-manager_8h.html#aae6700cbcfcd3f4d049155e3c21ed56f":[14,0,0,1,2,130,5],
-"caja-undostack-manager_8h.html#abf17ed0641c6d3ab18fc48103026c130":[14,0,0,1,2,130,27],
-"caja-undostack-manager_8h.html#acc8b11f4a32dbba6cad96ac020d849fd":[14,0,0,1,2,130,8],
-"caja-undostack-manager_8h.html#acdf597c5449e523d6edd28b979f850c8":[14,0,0,1,2,130,35],
-"caja-undostack-manager_8h.html#ad02ad75ba00f42ce36674667440bed50":[14,0,0,1,2,130,13],
-"caja-undostack-manager_8h.html#ad2649a85aa066cfd018130747b3addf9":[14,0,0,1,2,130,25],
-"caja-undostack-manager_8h.html#ada2ca9d547b05ea49bc10d223881dea2":[14,0,0,1,2,130,17],
-"caja-undostack-manager_8h.html#add78218429250c2d173c0604b50277ef":[14,0,0,1,2,130,11],
-"caja-undostack-manager_8h.html#ade3ab9e2adca53b2e8351979c42c21f0":[14,0,0,1,2,130,14]
+"caja-undostack-manager_8h.html#aae6700cbcfcd3f4d049155e3c21ed56f":[14,0,0,1,2,130,5]
 };

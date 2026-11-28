@@ -26,6 +26,7 @@ var caja_icon_canvas_item_8c =
     [ "caja_icon_canvas_item_get_bounds_for_layout", "caja-icon-canvas-item_8c.html#aac22813a50815297b296aeda1de008c9", null ],
     [ "caja_icon_canvas_item_get_drag_surface", "caja-icon-canvas-item_8c.html#a7634073470e3e97ca212383dcc42bf00", null ],
     [ "caja_icon_canvas_item_get_editable_text", "caja-icon-canvas-item_8c.html#ae20d04f62c965b59b61828e61ab354bc", null ],
+    [ "caja_icon_canvas_item_get_editable_text_rectangle", "caja-icon-canvas-item_8c.html#a2d583e463c4a3e3a7506dac848a0693c", null ],
     [ "caja_icon_canvas_item_get_icon_rectangle", "caja-icon-canvas-item_8c.html#a8d2af6cb5cf293de2cf3f909f0e64912", null ],
     [ "caja_icon_canvas_item_get_max_text_width", "caja-icon-canvas-item_8c.html#a9900133a268434c13966219da23f34a8", null ],
     [ "caja_icon_canvas_item_get_text_rectangle", "caja-icon-canvas-item_8c.html#a003770e9cb55612490bc3d4953ab702b", null ],

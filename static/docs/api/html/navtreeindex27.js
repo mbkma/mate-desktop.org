@@ -1,5 +1,13 @@
 var NAVTREEINDEX27 =
 {
+"caja-search-directory_8c.html#aa821f814b9e08b44240f11bf0fe98517":[14,0,0,1,2,105,0],
+"caja-search-directory_8c.html#aae1e8676c4d8b0494929d73f960c61c3":[14,0,0,1,2,105,8],
+"caja-search-directory_8c.html#acc1573fbd66fae931e0b844f08c813fb":[14,0,0,1,2,105,2],
+"caja-search-directory_8c.html#aebeed84e29cb41ee56f3afe7b74769eb":[14,0,0,1,2,105,3],
+"caja-search-directory_8c.html#af0fab1389111a76fc450e8d5b6a2c951":[14,0,0,1,2,105,10],
+"caja-search-directory_8c_source.html":[14,0,0,1,2,105],
+"caja-search-directory_8h.html":[14,0,0,1,2,106],
+"caja-search-directory_8h.html#a0c6a5ea06f18b96fde242e81687e3a24":[14,0,0,1,2,106,12],
 "caja-search-directory_8h.html#a20bec99986f1d23705abc4f5bff46823":[14,0,0,1,2,106,14],
 "caja-search-directory_8h.html#a34e54582455048a97645dde6eb7618b7":[14,0,0,1,2,106,17],
 "caja-search-directory_8h.html#a3eda05cc57a77ec59379ffc0244dd643":[14,0,0,1,2,106,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX27 =
 "caja-sidebar-provider_8c_source.html":[14,0,0,1,2,115],
 "caja-sidebar-provider_8h.html":[14,0,0,1,2,116],
 "caja-sidebar-provider_8h.html#a0519b6d371e0157c0b46a7b931e5fc7c":[14,0,0,1,2,116,6],
-"caja-sidebar-provider_8h.html#a1fd2b64a03d973ce05bbd0c94cd4f988":[14,0,0,1,2,116,1],
-"caja-sidebar-provider_8h.html#a4bd5606b25936635325ceec4b311dcce":[14,0,0,1,2,116,8],
-"caja-sidebar-provider_8h.html#a73c020102419dff87138e1b9b77f373c":[14,0,0,1,2,116,5],
-"caja-sidebar-provider_8h.html#a9d3f1e0051b14f51ae304ed021479666":[14,0,0,1,2,116,4],
-"caja-sidebar-provider_8h.html#aa578cdf13b2f1d6d54ce2977ac799489":[14,0,0,1,2,116,2],
-"caja-sidebar-provider_8h.html#ac160eff195c4ca60168c2c5f58a863e3":[14,0,0,1,2,116,3],
-"caja-sidebar-provider_8h.html#aed6f65c32532a793575a132d8037c279":[14,0,0,1,2,116,9],
-"caja-sidebar-provider_8h.html#af7fe2de05eec69f3afe0aad78d6e5293":[14,0,0,1,2,116,7],
-"caja-sidebar-provider_8h_source.html":[14,0,0,1,2,116]
+"caja-sidebar-provider_8h.html#a1fd2b64a03d973ce05bbd0c94cd4f988":[14,0,0,1,2,116,1]
 };
